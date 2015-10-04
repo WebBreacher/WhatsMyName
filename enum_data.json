@@ -7,7 +7,7 @@
         "url" : "http://about.me/{account}",
         "account_existence_code" : "200",
         "account_existence_string" : "g.PAGE_USER_NAME =",
-        "known_accounts" : [""],
+        "known_accounts" : ["test"],
         "account_missing_string" : "",
         "comments" : [""],
         "category" : "social"
