@@ -12,17 +12,21 @@ import urllib
 
 # Read in the JSON file
 # for each JSON entry
-# Perform lookup
-# Analyze if lookup was successful
-# If yes, 
-	# Mark valid == True
-	# Update the comments to note it was successfully verified on the date/time
-# If no,
-	# does the "missing" string and code work?
-		# If yes, then bad test user account
-			# Mark valid == True
-			# Update comments to note bad test user account
-		# If no, then site issues
-			# Mark valid == False
-			# Update comments to note bad discovery string
-
+	# Perform lookup
+	# Analyze if lookup was successful
+	# If yes, 
+		# Mark valid == True
+		# Update the comments to note it was successfully verified on the date/time
+	# If no,
+		# does the "missing" string and code work?
+			# If yes, then bad test user account
+				# Mark valid == True
+				# Update comments to note bad test user account
+			# If no, then site issues
+				# Mark valid == False
+				# Update comments to note bad discovery string
+	# Look for false positives
+		# Make request for does-not-exist-#{rand(1000000000000)}"
+			# If yes, then then site issues
+				# Mark valid == False
+				# Update comments to note bad discovery string
