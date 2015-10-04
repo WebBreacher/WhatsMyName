@@ -208,24 +208,53 @@
          "comments" : ["verified 10/4/2015 - webbreacher"]
       },
       {
+         "resource" : "Blogspot",
+         "url" : "http://{account}.blogspot.com",
+         "account_existence_code" : "200",
+         "account_existence_string" : "Blogger Template Style",
+         "account_missing_string" : "Blog not found",
+         "account_missing_code" : "200",
+         "known_accounts" : ["test"],
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "blog",
+         "comments" : ["verified 10/4/2015 - webbreacher"]
+      },
+      {
+         "name" : "BodyBuilding.com",
+         "check_uri" : "http://api.bodybuilding.com/api-proxy/bbc/get?slug={account}",
+         "pretty_uri" : "http://bodyspace.bodybuilding.com/{account}/",
+         "account_existence_code" : "200",
+         "account_existence_string" : "username",
+         "account_missing_string" : ["data\":\"\""],
+         "account_missing_code" : "200",
+         "known_accounts" : ["mike"],
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "health",
+         "comments" : ["verified 10/4/2015 - webbreacher"]
+      },
+      {
          "name" : "Break",
          "check_uri" : "http://www.break.com/user/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "--No uploads yet--",
+         "account_existence_string" : "Joined Break in",
          "account_missing_string" : ["Must Watch Today"],
-         "account_missing_code" : "",
+         "account_missing_code" : "302",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"]
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "video",
+         "comments" : ["verified 10/4/2015 - webbreacher"]
       },
       {
          "name" : "Buzznet",
          "check_uri" : "http://{account}.buzznet.com/user/",
          "account_existence_code" : "200",
-         "account_existence_string" : "body class=\"userhome\"",
+         "account_existence_string" : "All posts",
          "account_missing_string" : "",
-         "account_missing_code" : "",
+         "account_missing_code" : "404",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"]
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "social",
+         "comments" : ["verified 10/4/2015 - webbreacher"]
       },
       {
          "name" : "CarDomain",

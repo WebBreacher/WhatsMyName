@@ -1,46 +1,5 @@
     {
-        "resource" : "Blogmarks",
-        "url" : "http://blogmarks.net/user/{account}",
-        "account_existence_code" : "200",
-        "account_existence_string" : "<title>Blogmarks : Public marks from",
-
-        "category" : "bookmarks",
-    },
-    {
-        "resource" : "Blogspot",
-        "url" : "http://{account}.blogspot.com",
-        "account_existence_code" : "200",
-        "account_existence_string" : "Blogger Template Style",
-
-        "category" : "blog",
-    },
-    {
-        "resource" : "BodyBuilding.com",
-        "url" : "http://bodyspace.bodybuilding.com/{account}/",
-        "account_existence_code" : "200",
-        "account_existence_string" : "s BodySpace - Bodybuilding.com</title>",
-
-        "category" : "health",
-    },
-    {
-        "resource" : "Break",
-        "url" : "http://www.break.com/user/{account}",
-        "account_existence_code" : "200",
-        "account_existence_string" : " | Break.com</title>",
-
-        "category" : "video",
-    },
-    {
-        "resource" : "Buzznet",
-        "url" : "http://{account}.buzznet.com/user/",
-        "account_existence_code" : "200",
-        "account_existence_string" : "body class=\"userhome\"",
-
-        "category" : "social",
-    },
-    {
-        "resource" :
-        "cafemom",
+        "resource" : "cafemom",
         "url" : "http://www.cafemom.com/home/{account}",
         "account_existence_code" : "200",
         "account_existence_string" : "h3 id=\"profile-user\"",
@@ -48,8 +7,7 @@
         "category" : "social",
     },
     {
-        "resource" :
-        "carDomain",
+        "resource" : "carDomain",
         "url" : "http://www.cardomain.com/member/{account}/",
         "account_existence_code" : "200",
         "account_existence_string" : "s Profile in",
@@ -57,8 +15,7 @@
         "category" : "hobby",
     },
     {
-        "resource" :
-        "cHEEZburger",
+        "resource" : "cHEEZburger",
         "url" : "http://profile.cheezburger.com/{account}",
         "account_existence_code" : "200",
         "account_existence_string" : "s Profile - Dashboard -",
@@ -66,29 +23,24 @@
         "category" : "hobby",
     },
     {
-        "resource" :
-        "codePlex",
+        "resource" : "codePlex",
         "url" : "http://www.codeplex.com/site/users/view/{account}",
         "account_existence_code" : "200",
         "account_existence_string" : "property=\"profile:username\" />",
 
-        "category" :
-        "coding",
+        "category" : "coding",
     },
     {
-        "resource" :
-        "coderStats",
+        "resource" : "coderStats",
         "url" : "http://coderstats.net/github/{account}/",
         "account_existence_code" : "200",
         "account_existence_string" : "var repos = [{
 \"",
 
-        "category" :
-        "coding",
+        "category" : "coding",
     },
     {
-        "resource" :
-        "cOLOURlovers",
+        "resource" : "cOLOURlovers",
         "url" : "http://www.colourlovers.com/lover/{account}",
         "account_existence_code" : "200",
         "account_existence_string" : "Send A Love Note",
@@ -96,8 +48,7 @@
         "category" : "hobby",
     },
     {
-        "resource" :
-        "conferize",
+        "resource" : "conferize",
         "url" : "https://www.conferize.com/u/{account}/",
         "account_existence_code" : "200",
         "account_existence_string" : "| Conferize - Never miss a Conference</title>",
@@ -105,8 +56,7 @@
         "category" : "social",
     },
     {
-        "resource" :
-        "copytaste",
+        "resource" : "copytaste",
         "url" : "http://copytaste.com/profile/{account}",
         "account_existence_code" : "200",
         "account_existence_string" : " property=\"og:title\" content=\"",
@@ -114,8 +64,7 @@
         "category" : "sharing",
     },
     {
-        "resource" :
-        "cruiseMates",
+        "resource" : "cruiseMates",
         "url" : "http://www.cruisemates.com/forum/members/{account}.html",
         "account_existence_code" : "200",
         "account_existence_string" : "- View Profile: ",
@@ -401,8 +350,7 @@
         "account_existence_code" : "200",
         "account_existence_string" : "\"login\" : \"",
 
-        "category" :
-        "coding",
+        "category" : "coding",
     },
     {
         "resource" : "GodTube",
@@ -429,8 +377,7 @@
         "category" : "books",
     },
     {
-        "resource" :
-        "gRavatar",
+        "resource" : "gRavatar",
         "url" : "http://en.gravatar.com/profiles/{account}.json",
         "account_existence_code" : "200",
         "account_existence_string" : "\"displayName\" :",
@@ -779,8 +726,7 @@
         "account_existence_code" : "200",
         "account_existence_string" : "s Open Source Report Card</title>",
 
-        "category" :
-        "coding",
+        "category" : "coding",
     },
     {
         "resource" : "Overcast Network",
@@ -964,8 +910,7 @@
         "account_existence_code" : "200",
         "account_existence_string" : "on Scratch</title>",
 
-        "category" :
-        "coding",
+        "category" : "coding",
     },
     {
         "resource" : "Security Street",
@@ -1085,8 +1030,7 @@
         "account_existence_code" : "200",
         "account_existence_string" : " / Profile</title>",
 
-        "category" :
-        "coding",
+        "category" : "coding",
     },
     {
         "resource" : "Speaker Deck",
@@ -1217,8 +1161,7 @@
         "category" : "social",
     },
     {
-        "resource" :
-        "untappd",
+        "resource" : "untappd",
         "url" : "https://untappd.com/user/{account}/",
         "account_existence_code" : "200",
         "account_existence_string" : "on Untappd</title>",
@@ -1226,8 +1169,7 @@
         "category" : "food",
     },
     {
-        "resource" :
-        "uSTREAM",
+        "resource" : "uSTREAM",
         "url" : "http://www.ustream.tv/channel/{account}",
         "account_existence_code" : "200",
         "account_existence_string" : "on USTREAM:",
