@@ -103,7 +103,7 @@
          "check_uri" : "https://audioboom.com/{account}",
          "account_existence_code" : "200",
          "account_existence_string" : "Playlists",
-         "account_missing_strings" : ["That page doesn't seem to exist"],
+         "account_missing_string" : ["That page doesn't seem to exist"],
          "account_missing_code" : "404",
          "known_accounts" : ["test", "john"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
@@ -132,7 +132,19 @@
          "known_accounts" : ["john", "whynot"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "social",
-         "comments" : [""]
+         "comments" : ["verified 10/4/2015 - webbreacher"]
+      },
+      {
+         "name" : "Behance",
+         "check_uri" : "https://www.behance.net/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "profile-header-actions",
+         "account_missing_string" : "",
+         "account_missing_code" : "404",
+         "known_accounts" : ["test", "john"],
+         "allowed_types" : ["String","Person","WebAccount","Username","Organization"],
+         "category" : "coding",
+         "comments" : ["verified 10/4/2015 - webbreacher"]
       },
       {
          "name" : "Bitbucket",
@@ -140,57 +152,67 @@
          "pretty_uri" : "https://bitbucket.org/{account}/",
          "account_existence_code" : "200",
          "account_existence_string" : "\"username\": ",
-         "account_missing_string" : "",
-         "account_missing_code" : "",
-         "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username","Organization"]
+         "account_missing_string" : "\"error\":",
+         "account_missing_code" : "404",
+         "known_accounts" : ["test", "webbreacher"],
+         "allowed_types" : ["String","Person","WebAccount","Username","Organization"],
+         "category" : "coding",
+         "comments" : ["verified 10/4/2015 - webbreacher"]
       },
       {
          "name" : "Bitly",
-         "check_uri" : "http://bit.ly/u/{account}",
+         "check_uri" : "https://bit.ly/u/{account}",
          "account_existence_code" : "200",
          "account_existence_string" : "| Public Profile</title>",
-         "account_missing_string" : "",
-         "account_missing_code" : "",
+         "account_missing_string" : "Page Not Found",
+         "account_missing_code" : "404",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username","Organization"]
+         "allowed_types" : ["String","Person","WebAccount","Username","Organization"],
+         "category" : "url shortener",
+         "comments" : ["verified 10/4/2015 - webbreacher"]
       },
       {
          "name" : "BLIP.fm",
          "check_uri" : "http://blip.fm/{account}",
          "account_existence_code" : "200",
          "account_existence_string" : "recommended",
-         "account_missing_strings" : [""],
-         "account_missing_code" : "",
-         "known_accounts" : ["walnuts"],
-         "allowed_types" : ["String","Person","WebAccount","Username"]
+         "account_missing_string" : "",
+         "account_missing_code" : "404",
+         "known_accounts" : ["john", "walnuts"],
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "music",
+         "comments" : ["verified 10/4/2015 - webbreacher"]
       },
       {
          "name" : "Black Planet",
          "check_uri" : "http://www.blackplanet.com/{account}/",
          "account_existence_code" : "200",
          "account_existence_string" : "username=",
-         "account_missing_strings" : [""],
-         "account_missing_code" : "",
-         "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"]
+         "account_missing_string" : "Page not found",
+         "account_missing_code" : "404",
+         "known_accounts" : ["test", "john"],
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "social",
+         "comments" : ["verified 10/4/2015 - webbreacher"]
       },
       {
          "name" : "Blogmarks",
          "check_uri" : "http://blogmarks.net/user/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "<title>Blogmarks : Public marks from",
+         "account_existence_string" : "class=\"mark\"",
          "account_missing_string" : "",
-         "account_missing_code" : "",
-         "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"]
+         "account_missing_code" : "200",
+         "known_accounts" : ["test", "mike"],
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "bookmarks",
+         "comments" : ["verified 10/4/2015 - webbreacher"]
       },
       {
          "name" : "Break",
          "check_uri" : "http://www.break.com/user/{account}",
          "account_existence_code" : "200",
          "account_existence_string" : "--No uploads yet--",
-         "account_missing_strings" : ["Must Watch Today"],
+         "account_missing_string" : ["Must Watch Today"],
          "account_missing_code" : "",
          "known_accounts" : ["test"],
          "allowed_types" : ["String","Person","WebAccount","Username"]
@@ -451,7 +473,7 @@
          "pretty_uri" : "https://github.com/{account}",
          "account_existence_code" : "200",
          "account_existence_string" : "login",
-         "account_missing_strings" : ["Not Found"],
+         "account_missing_string" : ["Not Found"],
          "account_missing_code" : "",
          "known_accounts" : ["test"],
          "allowed_types" : ["String","Person","WebAccount","Username","Organization"]
