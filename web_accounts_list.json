@@ -12,6 +12,7 @@
          "known_accounts" : ["test", "john"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "social",
+         "valid" : "",
          "comments" : ["verified 10/4/2015 - webbreacher"]
       },
       {
@@ -24,6 +25,7 @@
          "known_accounts" : ["test", "mike"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "dating",
+         "valid" : "",
          "comments" : ["verified 10/4/2015 - webbreacher"]
       },
       {
@@ -36,6 +38,7 @@
          "known_accounts" : ["test", "john"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "dating",
+         "valid" : "",
          "comments" : ["verified 10/4/2015 - webbreacher"]
       },
       {
@@ -48,6 +51,7 @@
          "known_accounts" : ["john", "mike"],
          "allowed_types" : ["String","Organization"],
          "category" : "finance",
+         "valid" : "",
          "comments" : ["verified 10/4/2015 - webbreacher", "'test' returns a list of folks with skills in 'test' - dig into this"]
       },
       {
@@ -60,6 +64,7 @@
          "known_accounts" : ["test", "john"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "books",
+         "valid" : "",
          "comments" : ["verified 10/4/2015 - webbreacher"]
       },
       {
@@ -72,6 +77,7 @@
          "known_accounts" : ["test"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "social",
+         "valid" : "",
          "comments" : ["verified 10/4/2015 - webbreacher"]
       },
       {
@@ -84,6 +90,7 @@
          "known_accounts" : ["tshock"],
          "allowed_types" : ["Organization", "String"],
          "category" : "coding",
+         "valid" : "",
          "comments" : ["verified 10/4/2015 - webbreacher"]
       },
       {
@@ -96,6 +103,7 @@
          "known_accounts" : ["tshock"],
          "allowed_types" : ["Organization", "String"],
          "category" : "coding",
+         "valid" : "",
          "comments" : ["verified 10/4/2015 - webbreacher", "look for orgs that allow self-signup by arbitrary users. much win"]
       },
       {
@@ -108,6 +116,7 @@
          "known_accounts" : ["test", "john"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "video",
+         "valid" : "",
          "comments" : ["verified 10/4/2015 - webbreacher"]
       },
       {
@@ -120,6 +129,7 @@
          "known_accounts" : ["test", "john"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "preso",
+         "valid" : "",
          "comments" : ["verified 10/4/2015 - webbreacher"]
       },
       {
@@ -132,6 +142,7 @@
          "known_accounts" : ["john", "whynot"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "social",
+         "valid" : "",
          "comments" : ["verified 10/4/2015 - webbreacher"]
       },
       {
@@ -144,6 +155,7 @@
          "known_accounts" : ["test", "john"],
          "allowed_types" : ["String","Person","WebAccount","Username","Organization"],
          "category" : "coding",
+         "valid" : "",
          "comments" : ["verified 10/4/2015 - webbreacher"]
       },
       {
@@ -157,6 +169,7 @@
          "known_accounts" : ["test", "webbreacher"],
          "allowed_types" : ["String","Person","WebAccount","Username","Organization"],
          "category" : "coding",
+         "valid" : "",
          "comments" : ["verified 10/4/2015 - webbreacher"]
       },
       {
@@ -169,6 +182,7 @@
          "known_accounts" : ["test"],
          "allowed_types" : ["String","Person","WebAccount","Username","Organization"],
          "category" : "url shortener",
+         "valid" : "",
          "comments" : ["verified 10/4/2015 - webbreacher"]
       },
       {
@@ -181,6 +195,7 @@
          "known_accounts" : ["john", "walnuts"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "music",
+         "valid" : "",
          "comments" : ["verified 10/4/2015 - webbreacher"]
       },
       {
@@ -193,6 +208,7 @@
          "known_accounts" : ["test", "john"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "social",
+         "valid" : "",
          "comments" : ["verified 10/4/2015 - webbreacher"]
       },
       {
@@ -205,6 +221,7 @@
          "known_accounts" : ["test", "mike"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "bookmarks",
+         "valid" : "",
          "comments" : ["verified 10/4/2015 - webbreacher"]
       },
       {
@@ -217,6 +234,7 @@
          "known_accounts" : ["test"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "blog",
+         "valid" : "",
          "comments" : ["verified 10/4/2015 - webbreacher"]
       },
       {
@@ -225,11 +243,12 @@
          "pretty_uri" : "http://bodyspace.bodybuilding.com/{account}/",
          "account_existence_code" : "200",
          "account_existence_string" : "username",
-         "account_missing_string" : ["data\":\"\""],
+         "account_missing_string" : "data\":\"\"",
          "account_missing_code" : "200",
          "known_accounts" : ["mike"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "health",
+         "valid" : "",
          "comments" : ["verified 10/4/2015 - webbreacher"]
       },
       {
@@ -237,11 +256,12 @@
          "check_uri" : "http://www.break.com/user/{account}",
          "account_existence_code" : "200",
          "account_existence_string" : "Joined Break in",
-         "account_missing_string" : ["Must Watch Today"],
+         "account_missing_string" : "Must Watch Today",
          "account_missing_code" : "302",
          "known_accounts" : ["test"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "video",
+         "valid" : "",
          "comments" : ["verified 10/4/2015 - webbreacher"]
       },
       {
@@ -254,6 +274,7 @@
          "known_accounts" : ["test"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "social",
+         "valid" : "",
          "comments" : ["verified 10/4/2015 - webbreacher"]
       },
       {
@@ -400,7 +421,7 @@
          "name" : "facebook.com",
          "check_uri" : "https://www.facebook.com/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "hidden_elem"],
+         "account_existence_string" : "hidden_elem",
          "account_missing_string" : "",
          "known_accounts" : ["test123"],
          "allowed_types" : ["String","Person","WebAccount","Username"]
