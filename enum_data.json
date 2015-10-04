@@ -1,1747 +1,1939 @@
 {
     "authors" : ["webbreacher", "jcran"],
-    "sites":[
+    "comments" : "",
+    "sites" : [
     {
-        "resource": "about.me",
-        "url": "http://about.me/%s",
-        "good_response_code": "200",
-        "good_response_text": "g.PAGE_USER_NAME =",
+        "resource" : "about.me",
+        "url" : "http://about.me/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "g.PAGE_USER_NAME =",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "social"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "social"
     },
     {
-        "resource": "AdultFriendFinder",
-        "url": "http://imcservices.passion.com/profile/%s",
-        "good_response_code": "200",
-        "good_response_text": "Member Profile - Adult FriendFinder</title>",
+        "resource" : "AdultFriendFinder",
+        "url" : "http://imcservices.passion.com/profile/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "Member Profile - Adult FriendFinder</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "dating"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "dating"
     },
     {
-        "resource": "AdultMatchDoctor",
-        "url": "http://www.adultmatchdoctor.com/profile_%s.html",
-        "good_response_code": "200",
-        "good_response_text": "Last Activity:",
+        "resource" : "AdultMatchDoctor",
+        "url" : "http://www.adultmatchdoctor.com/profile_{account}.html",
+        "account_existence_code" : "200",
+        "account_existence_string" : "Last Activity:",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "dating"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "dating"
     },
     {
-        "resource": "aNobil",
-        "url": "http://www.anobii.com/%s/books",
-        "good_response_code": "200",
-        "good_response_text": "- aNobii</title>",
+        "resource" : "aNobil",
+        "url" : "http://www.anobii.com/{account}/books",
+        "account_existence_code" : "200",
+        "account_existence_string" : "- aNobii</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "books"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "books"
     },
     {
-        "resource": "ask.fm",
-        "url": "http://ask.fm/%s",
-        "good_response_code": "200",
-        "good_response_text": "| ask.fm/",
+        "resource" : "ask.fm",
+        "url" : "http://ask.fm/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "| ask.fm/",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "social"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "social"
     },
     {
-        "resource": "AudioBoom",
-        "url": "http://audioboom.com/%s",
-        "good_response_code": "200",
-        "good_response_text": "<title>audioBoom / ",
+        "resource" : "AudioBoom",
+        "url" : "http://audioboom.com/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "<title>audioBoom / ",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "video"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "video"
     },
     {
-        "resource": "authorSTREAM",
-        "url": "http://www.authorstream.com/%s/",
-        "good_response_code": "200",
-        "good_response_text": "Presentations on authorSTREAM",
+        "resource" : "authorSTREAM",
+        "url" : "http://www.authorstream.com/{account}/",
+        "account_existence_code" : "200",
+        "account_existence_string" : "Presentations on authorSTREAM",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "preso"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "preso"
     },
     {
-        "resource": "badoo",
-        "url": "http://badoo.com/%s/",
-        "good_response_code": "200",
-        "good_response_text": "| Badoo</title>",
+        "resource" : "badoo",
+        "url" : "http://badoo.com/{account}/",
+        "account_existence_code" : "200",
+        "account_existence_string" : "| Badoo</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "social"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "social"
     },
     {
-        "resource": "Bebo",
-        "url": "http://bebo.com/%s",
-        "good_response_code": "302",
-        "good_response_text": "Location: /Profile.jsp?MemberId=",
+        "resource" : "Bebo",
+        "url" : "http://bebo.com/{account}",
+        "account_existence_code" : "302",
+        "account_existence_string" : "Location: /Profile.jsp?MemberId=",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "social"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "social"
     },
     {
-        "resource": "Behance",
-        "url": "https://www.behance.net/%s",
-        "good_response_code": "200",
-        "good_response_text": " on Behance\" />",
+        "resource" : "Behance",
+        "url" : "https://www.behance.net/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : " on Behance\" />",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "social"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "social"
     },
     {
-        "resource": "Bitbucket",
-        "url": "https://bitbucket.org/api/2.0/users/%s",
-        "good_response_code": "200",
-        "good_response_text": "\"username\": ",
+        "resource" : "Bitbucket",
+        "url" : "https://bitbucket.org/api/2.0/users/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "\"username\" : ",
         "known_accounts" : [""],
-        "comments": [""],
-        "category":
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" :
         "coding"
     },
     {
-        "resource": "Bitly",
-        "url": "http://bit.ly/u/%s",
-        "good_response_code": "200",
-        "good_response_text": "| Public Profile</title>",
+        "resource" : "Bitly",
+        "url" : "http://bit.ly/u/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "| Public Profile</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category":
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" :
         "url shortener"
     },
     {
-        "resource": "blinklist",
-        "url": "https://app.blinklist.com/users/%s",
-        "good_response_code": "200",
-        "good_response_text": " BlinkList Page.</title>",
+        "resource" : "blinklist",
+        "url" : "https://app.blinklist.com/users/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : " BlinkList Page.</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "social"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "social"
     },
     {
-        "resource": "BLIP.fm",
-        "url": "http://blip.fm/%s",
-        "good_response_code": "200",
-        "good_response_text": "<title>Free Music | Listen to Music Online |",
+        "resource" : "BLIP.fm",
+        "url" : "http://blip.fm/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "<title>Free Music | Listen to Music Online |",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "music"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "music"
     },
     {
-        "resource": "Blogmarks",
-        "url": "http://blogmarks.net/user/%s",
-        "good_response_code": "200",
-        "good_response_text": "<title>Blogmarks : Public marks from",
+        "resource" : "Blogmarks",
+        "url" : "http://blogmarks.net/user/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "<title>Blogmarks : Public marks from",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "bookmarks"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "bookmarks"
     },
     {
-        "resource": "Blogspot",
-        "url": "http://%s.blogspot.com",
-        "good_response_code": "200",
-        "good_response_text": "Blogger Template Style",
+        "resource" : "Blogspot",
+        "url" : "http://{account}.blogspot.com",
+        "account_existence_code" : "200",
+        "account_existence_string" : "Blogger Template Style",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "blog"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "blog"
     },
     {
-        "resource": "BodyBuilding.com",
-        "url": "http://bodyspace.bodybuilding.com/%s/",
-        "good_response_code": "200",
-        "good_response_text": "s BodySpace - Bodybuilding.com</title>",
+        "resource" : "BodyBuilding.com",
+        "url" : "http://bodyspace.bodybuilding.com/{account}/",
+        "account_existence_code" : "200",
+        "account_existence_string" : "s BodySpace - Bodybuilding.com</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "health"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "health"
     },
     {
-        "resource": "Break",
-        "url": "http://www.break.com/user/%s",
-        "good_response_code": "200",
-        "good_response_text": " | Break.com</title>",
+        "resource" : "Break",
+        "url" : "http://www.break.com/user/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : " | Break.com</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "video"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "video"
     },
     {
-        "resource": "Buzznet",
-        "url": "http://%s.buzznet.com/user/",
-        "good_response_code": "200",
-        "good_response_text": "body class=\"userhome\"",
+        "resource" : "Buzznet",
+        "url" : "http://{account}.buzznet.com/user/",
+        "account_existence_code" : "200",
+        "account_existence_string" : "body class=\"userhome\"",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "social"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "social"
     },
     {
-        "resource":
+        "resource" :
         "cafemom",
-        "url": "http://www.cafemom.com/home/%s",
-        "good_response_code": "200",
-        "good_response_text": "h3 id=\"profile-user\"",
+        "url" : "http://www.cafemom.com/home/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "h3 id=\"profile-user\"",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "social"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "social"
     },
     {
-        "resource":
+        "resource" :
         "carDomain",
-        "url": "http://www.cardomain.com/member/%s/",
-        "good_response_code": "200",
-        "good_response_text": "s Profile in",
+        "url" : "http://www.cardomain.com/member/{account}/",
+        "account_existence_code" : "200",
+        "account_existence_string" : "s Profile in",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "hobby"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "hobby"
     },
     {
-        "resource":
+        "resource" :
         "cHEEZburger",
-        "url": "http://profile.cheezburger.com/%s",
-        "good_response_code": "200",
-        "good_response_text": "s Profile - Dashboard -",
+        "url" : "http://profile.cheezburger.com/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "s Profile - Dashboard -",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "hobby"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "hobby"
     },
     {
-        "resource":
+        "resource" :
         "codePlex",
-        "url": "http://www.codeplex.com/site/users/view/%s",
-        "good_response_code": "200",
-        "good_response_text": "property=\"profile:username\" />",
+        "url" : "http://www.codeplex.com/site/users/view/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "property=\"profile:username\" />",
         "known_accounts" : [""],
-        "comments": [""],
-        "category":
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" :
         "coding"
     },
     {
-        "resource":
+        "resource" :
         "coderStats",
-        "url": "http://coderstats.net/github/%s/",
-        "good_response_code": "200",
-        "good_response_text": "var repos = [{
+        "url" : "http://coderstats.net/github/{account}/",
+        "account_existence_code" : "200",
+        "account_existence_string" : "var repos = [{
 \"",
         "known_accounts" : [""],
-        "comments": [""],
-        "category":
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" :
         "coding"
     },
     {
-        "resource":
+        "resource" :
         "cOLOURlovers",
-        "url": "http://www.colourlovers.com/lover/%s",
-        "good_response_code": "200",
-        "good_response_text": "Send A Love Note",
+        "url" : "http://www.colourlovers.com/lover/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "Send A Love Note",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "hobby"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "hobby"
     },
     {
-        "resource":
+        "resource" :
         "conferize",
-        "url": "https://www.conferize.com/u/%s/",
-        "good_response_code": "200",
-        "good_response_text": "| Conferize - Never miss a Conference</title>",
+        "url" : "https://www.conferize.com/u/{account}/",
+        "account_existence_code" : "200",
+        "account_existence_string" : "| Conferize - Never miss a Conference</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "social"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "social"
     },
     {
-        "resource":
+        "resource" :
         "copytaste",
-        "url": "http://copytaste.com/profile/%s",
-        "good_response_code": "200",
-        "good_response_text": " property=\"og:title\" content=\"",
+        "url" : "http://copytaste.com/profile/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : " property=\"og:title\" content=\"",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "sharing"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "sharing"
     },
     {
-        "resource":
+        "resource" :
         "cruiseMates",
-        "url": "http://www.cruisemates.com/forum/members/%s.html",
-        "good_response_code": "200",
-        "good_response_text": "- View Profile: ",
+        "url" : "http://www.cruisemates.com/forum/members/{account}.html",
+        "account_existence_code" : "200",
+        "account_existence_string" : "- View Profile: ",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "travel"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "travel"
     },
     {
-        "resource": "Dailymotion",
-        "url": "http://www.dailymotion.com/%s",
-        "good_response_code": "200",
-        "good_response_text": " - Dailymotion</title>",
+        "resource" : "Dailymotion",
+        "url" : "http://www.dailymotion.com/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : " - Dailymotion</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "video"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "video"
     },
     {
-        "resource": "DATEHOOKUP",
-        "url": "http://www.datehookup.com/profile/%s",
-        "good_response_code": "200",
-        "good_response_text": "DateHookup | Profile</title>",
+        "resource" : "DATEHOOKUP",
+        "url" : "http://www.datehookup.com/profile/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "DateHookup | Profile</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "dating"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "dating"
     },
     {
-        "resource": "Delicious",
-        "url": "https://avosapi.delicious.com/api/v1/tags/bundles/%s",
-        "good_response_code": "200",
-        "good_response_text": "\"owner_id\":\"",
+        "resource" : "Delicious",
+        "url" : "https://avosapi.delicious.com/api/v1/tags/bundles/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "\"owner_id\" :\"",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "bookmarks"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "bookmarks"
     },
     {
-        "resource": "DeviantArt",
-        "url": "http://%s.deviantart.com/",
-        "good_response_code": "200",
-        "good_response_text": "s Journal\"",
+        "resource" : "DeviantArt",
+        "url" : "http://{account}.deviantart.com/",
+        "account_existence_code" : "200",
+        "account_existence_string" : "s Journal\"",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "images"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "images"
     },
     {
-        "resource": "diigo",
-        "url": "https://www.diigo.com/profile/%s",
-        "good_response_code": "200",
-        "good_response_text": " Public Profile in the Diigo Community</title>",
+        "resource" : "diigo",
+        "url" : "https://www.diigo.com/profile/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : " Public Profile in the Diigo Community</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "social"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "social"
     },
     {
-        "resource": "Diply",
-        "url": "http://diply.com/api/users/%s",
-        "good_response_code": "200",
-        "good_response_text": "{
+        "resource" : "Diply",
+        "url" : "http://diply.com/api/users/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "{
 \"Id\"",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "shopping"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "shopping"
     },
     {
-        "resource": "Disqus",
-        "url": "https://disqus.com/by/%s/",
-        "good_response_code": "200",
-        "good_response_text": "<title>Disqus</title>",
+        "resource" : "Disqus",
+        "url" : "https://disqus.com/by/{account}/",
+        "account_existence_code" : "200",
+        "account_existence_string" : "<title>Disqus</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "social"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "social"
     },
     {
-        "resource": "DIY",
-        "url": "https://diy.org/%s",
-        "good_response_code": "200",
-        "good_response_text": "iphone\" content=\"diy://diy.org/",
+        "resource" : "DIY",
+        "url" : "https://diy.org/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "iphone\" content=\"diy://diy.org/",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "video"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "video"
     },
     {
-        "resource": "Docstoc",
-        "url": "http://www.docstoc.com/profile/%s",
-        "good_response_code": "200",
-        "good_response_text": "h1 class=\"name\">",
+        "resource" : "Docstoc",
+        "url" : "http://www.docstoc.com/profile/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "h1 class=\"name\">",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "business"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "business"
     },
     {
-        "resource": "dribble",
-        "url": "https://www.dribbble.com/players/%s",
-        "good_response_code": "200",
-        "good_response_text": "<title>Dribbble - ",
+        "resource" : "dribble",
+        "url" : "https://www.dribbble.com/players/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "<title>Dribbble - ",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "images"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "images"
     },
     {
-        "resource": "eBay",
-        "url": "http://www.ebay.com/usr/%s",
-        "good_response_code": "200",
-        "good_response_text": "on eBay</title>",
+        "resource" : "eBay",
+        "url" : "http://www.ebay.com/usr/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "on eBay</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "shopping"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "shopping"
     },
     {
-        "resource": "EightBit",
-        "url": "http://eightbit.me/%s",
-        "good_response_code": "200",
-        "good_response_text": "on EightBit</title>",
+        "resource" : "EightBit",
+        "url" : "http://eightbit.me/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "on EightBit</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "gaming"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "gaming"
     },
     {
-        "resource": "Engadget",
-        "url": "http://www.engadget.com/profile/%s/",
-        "good_response_code": "200",
-        "good_response_text": "profile - Engadget</title>",
+        "resource" : "Engadget",
+        "url" : "http://www.engadget.com/profile/{account}/",
+        "account_existence_code" : "200",
+        "account_existence_string" : "profile - Engadget</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "tech"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "tech"
     },
     {
-        "resource": "Epinions",
-        "url": "http://www.epinions.com/user-%s?sb=1",
-        "good_response_code": "200",
-        "good_response_text": "s Profile Reviews and Products | Epinions.com</title>",
+        "resource" : "Epinions",
+        "url" : "http://www.epinions.com/user-{account}?sb=1",
+        "account_existence_code" : "200",
+        "account_existence_string" : "s Profile Reviews and Products | Epinions.com</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "social"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "social"
     },
     {
-        "resource": "EPORNER",
-        "url": "http://www.eporner.com/profile/%s/",
-        "good_response_code": "200",
-        "good_response_text": ">Recently watched</a>",
+        "resource" : "EPORNER",
+        "url" : "http://www.eporner.com/profile/{account}/",
+        "account_existence_code" : "200",
+        "account_existence_string" : ">Recently watched</a>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "XXX PORN XXX"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "XXX PORN XXX"
     },
     {
-        "resource": "Etsy",
-        "url": "https://www.etsy.com/people/%s",
-        "good_response_code": "200",
-        "good_response_text": " on Etsy</title>",
+        "resource" : "Etsy",
+        "url" : "https://www.etsy.com/people/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : " on Etsy</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "shopping"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "shopping"
     },
     {
-        "resource": "Examine.com",
-        "url": "http://examine.com/user/%s/",
-        "good_response_code": "200",
-        "good_response_text": "Profile | Examine.com</title>",
+        "resource" : "Examine.com",
+        "url" : "http://examine.com/user/{account}/",
+        "account_existence_code" : "200",
+        "account_existence_string" : "Profile | Examine.com</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "health"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "health"
     },
     {
-        "resource": "families.com",
-        "url": "http://www.families.com/author/%s",
-        "good_response_code": "200",
-        "good_response_text": "  </title>",
+        "resource" : "families.com",
+        "url" : "http://www.families.com/author/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "  </title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "news"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "news"
     },
     {
-        "resource": "fanpop",
-        "url": "http://www.fanpop.com/fans/%s",
-        "good_response_code": "200",
-        "good_response_text": "s Profile Page</title>",
+        "resource" : "fanpop",
+        "url" : "http://www.fanpop.com/fans/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "s Profile Page</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "movies"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "movies"
     },
     {
-        "resource": "Favstar",
-        "url": "http://favstar.fm/users/%s",
-        "good_response_code": "200",
-        "good_response_text": "Best Tweets</title>",
+        "resource" : "Favstar",
+        "url" : "http://favstar.fm/users/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "Best Tweets</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "social"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "social"
     },
     {
-        "resource": "FFFFOUND!",
-        "url": "http://ffffound.com/home/%s/found/",
-        "good_response_code": "200",
-        "good_response_text": "<title>FFFFOUND!</title>",
+        "resource" : "FFFFOUND!",
+        "url" : "http://ffffound.com/home/{account}/found/",
+        "account_existence_code" : "200",
+        "account_existence_string" : "<title>FFFFOUND!</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "image"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "image"
     },
     {
-        "resource": "Flavors",
-        "url": "http://%s.flavors.me",
-        "good_response_code": "200",
-        "good_response_text": ": Flavors.me",
+        "resource" : "Flavors",
+        "url" : "http://{account}.flavors.me",
+        "account_existence_code" : "200",
+        "account_existence_string" : " : Flavors.me",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "blog"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "blog"
     },
     {
-        "resource": "Flickr",
-        "url": "https://www.flickr.com/photos/%s/",
-        "good_response_code": "200",
-        "good_response_text": "s Photostream</title>",
+        "resource" : "Flickr",
+        "url" : "https://www.flickr.com/photos/{account}/",
+        "account_existence_code" : "200",
+        "account_existence_string" : "s Photostream</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "images"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "images"
     },
     {
-        "resource": "Foodspotting",
-        "url": "http://www.foodspotting.com/%s",
-        "good_response_code": "200",
-        "good_response_text": " - Foodspotting</title>",
+        "resource" : "Foodspotting",
+        "url" : "http://www.foodspotting.com/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : " - Foodspotting</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "social"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "social"
     },
     {
-        "resource": "Fotolog",
-        "url": "http://www.fotolog.com/%s/",
-        "good_response_code": "200",
-        "good_response_text": " - Fotolog</title>",
+        "resource" : "Fotolog",
+        "url" : "http://www.fotolog.com/{account}/",
+        "account_existence_code" : "200",
+        "account_existence_string" : " - Fotolog</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "images"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "images"
     },
     {
-        "resource": "Foursquare",
-        "url": "https://foursquare.com/%s",
-        "good_response_code": "200",
-        "good_response_text": "on Foursquare</title>",
+        "resource" : "Foursquare",
+        "url" : "https://foursquare.com/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "on Foursquare</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "location"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "location"
     },
     {
-        "resource": "freesound",
-        "url": "http://www.freesound.org/people/%s/",
-        "good_response_code": "200",
-        "good_response_text": "START of Content area",
+        "resource" : "freesound",
+        "url" : "http://www.freesound.org/people/{account}/",
+        "account_existence_code" : "200",
+        "account_existence_string" : "START of Content area",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "music"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "music"
     },
     {
-        "resource": "FriendFeed",
-        "url": "http://friendfeed.com/%s",
-        "good_response_code": "200",
-        "good_response_text": " - FriendFeed</title>",
+        "resource" : "FriendFeed",
+        "url" : "http://friendfeed.com/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : " - FriendFeed</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "social"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "social"
     },
     {
-        "resource": "FriendFinder-X",
-        "url": "http://www.friendfinder-x.com/profile/%s",
-        "good_response_code": "200",
-        "good_response_text": "Member Profile - FriendFinder-x</title>",
+        "resource" : "FriendFinder-X",
+        "url" : "http://www.friendfinder-x.com/profile/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "Member Profile - FriendFinder-x</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "dating"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "dating"
     },
     {
-        "resource": "FunnyOrDie",
-        "url": "http://www.funnyordie.com/%s",
-        "good_response_code": "200",
-        "good_response_text": " - Home on Funny or Die</title>",
+        "resource" : "FunnyOrDie",
+        "url" : "http://www.funnyordie.com/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : " - Home on Funny or Die</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "video"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "video"
     },
     {
-        "resource": "Garmin connect",
-        "url": "http://connect.garmin.com/modern/profile/%s",
-        "good_response_code": "200",
-        "good_response_text": "VIEWER_USERPREFERENCES =",
+        "resource" : "Garmin connect",
+        "url" : "http://connect.garmin.com/modern/profile/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "VIEWER_USERPREFERENCES =",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "exercise"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "exercise"
     },
     {
-        "resource": "GeekGrade",
-        "url": "http://www.geekgrade.com/geeksheet/%s/blogs",
-        "good_response_code": "200",
-        "good_response_text": "- Geek Grade</title>",
+        "resource" : "GeekGrade",
+        "url" : "http://www.geekgrade.com/geeksheet/{account}/blogs",
+        "account_existence_code" : "200",
+        "account_existence_string" : "- Geek Grade</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "social"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "social"
     },
     {
-        "resource": "Geocaching",
-        "url": "http://www.geocaching.com/seek/nearest.aspx?u=%s",
-        "good_response_code": "200",
-        "good_response_text": "By Username (Hidden) - User:",
+        "resource" : "Geocaching",
+        "url" : "http://www.geocaching.com/seek/nearest.aspx?u={account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "By Username (Hidden) - User:",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "hobby"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "hobby"
     },
     {
-        "resource": "GETItON",
-        "url": "http://getiton.com/profile/%s",
-        "good_response_code": "200",
-        "good_response_text": "s Profile</title>",
+        "resource" : "GETItON",
+        "url" : "http://getiton.com/profile/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "s Profile</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "dating"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "dating"
     },
     {
-        "resource": "GitHub",
-        "url": "https://api.github.com/users/%s",
-        "good_response_code": "200",
-        "good_response_text": "\"login\": \"",
+        "resource" : "GitHub",
+        "url" : "https://api.github.com/users/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "\"login\" : \"",
         "known_accounts" : [""],
-        "comments": [""],
-        "category":
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" :
         "coding"
     },
     {
-        "resource": "GodTube",
-        "url": "http://www.godtube.com/%s/",
-        "good_response_code": "200",
-        "good_response_text": "Last Visit Date:</span>",
+        "resource" : "GodTube",
+        "url" : "http://www.godtube.com/{account}/",
+        "account_existence_code" : "200",
+        "account_existence_string" : "Last Visit Date:</span>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "video"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "video"
     },
     {
-        "resource": "gogobot",
-        "url": "http://www.gogobot.com/user/%s",
-        "good_response_code": "200",
-        "good_response_text": "Travel Tips &amp; Activities",
+        "resource" : "gogobot",
+        "url" : "http://www.gogobot.com/user/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "Travel Tips &amp; Activities",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "travel"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "travel"
     },
     {
-        "resource": "goodreads",
-        "url": "http://www.goodreads.com/%s",
-        "good_response_code": "301",
-        "good_response_text": "www.goodreads.com/user/show/",
+        "resource" : "goodreads",
+        "url" : "http://www.goodreads.com/{account}",
+        "account_existence_code" : "301",
+        "account_existence_string" : "www.goodreads.com/user/show/",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "books"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "books"
     },
     {
-        "resource":
+        "resource" :
         "gRavatar",
-        "url": "http://en.gravatar.com/profiles/%s.json",
-        "good_response_code": "200",
-        "good_response_text": "\"displayName\":",
+        "url" : "http://en.gravatar.com/profiles/{account}.json",
+        "account_existence_code" : "200",
+        "account_existence_string" : "\"displayName\" :",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "images"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "images"
     },
     {
-        "resource": "howaboutwe",
-        "url": "http://www.howaboutwe.com/users/%s",
-        "good_response_code": "200",
-        "good_response_text": "location font_20\"",
+        "resource" : "howaboutwe",
+        "url" : "http://www.howaboutwe.com/users/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "location font_20\"",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "dating"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "dating"
     },
     {
-        "resource": "HubPages",
-        "url": "http://%s.hubpages.com/",
-        "good_response_code": "200",
-        "good_response_text": "on HubPages</title>",
+        "resource" : "HubPages",
+        "url" : "http://{account}.hubpages.com/",
+        "account_existence_code" : "200",
+        "account_existence_string" : "on HubPages</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "blog"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "blog"
     },
     {
-        "resource": "I-am-pregnant",
-        "url": "http://www.i-am-pregnant.com/vip/%s",
-        "good_response_code": "200",
-        "good_response_text": "This is the stylesheet for your pages. Add your own rules below this line",
+        "resource" : "I-am-pregnant",
+        "url" : "http://www.i-am-pregnant.com/vip/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "This is the stylesheet for your pages. Add your own rules below this line",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "health"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "health"
     },
     {
-        "resource": "IFTTT",
-        "url": "https://ifttt.com/p/%s/shared",
-        "good_response_code": "200",
-        "good_response_text": "s Published Recipes - IFTTT",
+        "resource" : "IFTTT",
+        "url" : "https://ifttt.com/p/{account}/shared",
+        "account_existence_code" : "200",
+        "account_existence_string" : "s Published Recipes - IFTTT",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "hobby"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "hobby"
     },
     {
-        "resource": "ImageShack",
-        "url": "https://imageshack.com/user/%s",
-        "good_response_code": "200",
-        "good_response_text": "s Images</title>",
+        "resource" : "ImageShack",
+        "url" : "https://imageshack.com/user/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "s Images</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "image"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "image"
     },
     {
-        "resource": "imgur",
-        "url": "http://imgur.com/user/%s",
-        "good_response_code": "200",
-        "good_response_text": "on Imgur</title>",
+        "resource" : "imgur",
+        "url" : "http://imgur.com/user/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "on Imgur</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "images"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "images"
     },
     {
-        "resource": "InsaneJournal",
-        "url": "http://%s.insanejournal.com/profile",
-        "good_response_code": "200",
-        "good_response_text": "<title>User Info</title>",
+        "resource" : "InsaneJournal",
+        "url" : "http://{account}.insanejournal.com/profile",
+        "account_existence_code" : "200",
+        "account_existence_string" : "<title>User Info</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "social"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "social"
     },
     {
-        "resource": "Instagram",
-        "url": "http://instagram.com/%s",
-        "good_response_code": "200",
-        "good_response_text": "on Instagram\" />",
+        "resource" : "Instagram",
+        "url" : "http://instagram.com/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "on Instagram\" />",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "images"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "images"
     },
     {
-        "resource": "instructables",
-        "url": "http://www.instructables.com/member/%s/",
-        "good_response_code": "200",
-        "good_response_text": "<title>Instructables Member:",
+        "resource" : "instructables",
+        "url" : "http://www.instructables.com/member/{account}/",
+        "account_existence_code" : "200",
+        "account_existence_string" : "<title>Instructables Member:",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "hobby"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "hobby"
     },
     {
-        "resource": "Internet Archive",
-        "url": "http://archive.org/search.php?query=subject%%3A%%22%s%%22",
-        "good_response_code": "200",
-        "good_response_text": "<tr class=\"hitRow\">",
+        "resource" : "Internet Archive",
+        "url" : "http://archive.org/search.php?query=subject%%3A%%22{account}%%22",
+        "account_existence_code" : "200",
+        "account_existence_string" : "<tr class=\"hitRow\">",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "search"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "search"
     },
     {
-        "resource": "interpals",
-        "url": "http://www.interpals.net/%s",
-        "good_response_code": "200",
-        "good_response_text": "s Profile</title>",
+        "resource" : "interpals",
+        "url" : "http://www.interpals.net/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "s Profile</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "hobby"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "hobby"
     },
     {
-        "resource": "JamBase",
-        "url": "http://www.jambase.com/Fans/%s",
-        "good_response_code": "200",
-        "good_response_text": "on JamBase",
+        "resource" : "JamBase",
+        "url" : "http://www.jambase.com/Fans/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "on JamBase",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "music"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "music"
     },
     {
-        "resource": "kaboodle",
-        "url": "http://www.kaboodle.com/%s",
-        "good_response_code": "200",
-        "good_response_text": "s Kaboodle profile</title>",
+        "resource" : "kaboodle",
+        "url" : "http://www.kaboodle.com/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "s Kaboodle profile</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "shopping"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "shopping"
     },
     {
-        "resource": "Keybase",
-        "url": "https://keybase.io/%s",
-        "good_response_code": "200",
-        "good_response_text": "| Keybase</title>",
+        "resource" : "Keybase",
+        "url" : "https://keybase.io/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "| Keybase</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "business"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "business"
     },
     {
-        "resource": "Kik!",
-        "url": "http://www.kik.com/u/%s",
-        "good_response_code": "200",
-        "good_response_text": "Hey! I'm on Kik - my username is",
+        "resource" : "Kik!",
+        "url" : "http://www.kik.com/u/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "Hey! I'm on Kik - my username is",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "social"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "social"
     },
     {
-        "resource": "Klout",
-        "url": "https://klout.com/%s",
-        "good_response_code": "200",
-        "good_response_text": "| Klout.com\">",
+        "resource" : "Klout",
+        "url" : "https://klout.com/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "| Klout.com\">",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "social"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "social"
     },
     {
-        "resource": "Kongregate",
-        "url": "http://www.kongregate.com/accounts/%s",
-        "good_response_code": "200",
-        "good_response_text": "s profile on Kongregate</title>",
+        "resource" : "Kongregate",
+        "url" : "http://www.kongregate.com/accounts/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "s profile on Kongregate</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "gaming"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "gaming"
     },
     {
-        "resource": "Lanyrd",
-        "url": "http://lanyrd.com/profile/%s/",
-        "good_response_code": "200",
-        "good_response_text": "s conference talks and presentations | Lanyrd</title>",
+        "resource" : "Lanyrd",
+        "url" : "http://lanyrd.com/profile/{account}/",
+        "account_existence_code" : "200",
+        "account_existence_string" : "s conference talks and presentations | Lanyrd</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "social"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "social"
     },
     {
-        "resource": "Last.fm",
-        "url": "http://www.last.fm/user/%s",
-        "good_response_code": "200",
-        "good_response_text": "s Music Profile - Users",
+        "resource" : "Last.fm",
+        "url" : "http://www.last.fm/user/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "s Music Profile - Users",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "music"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "music"
     },
     {
-        "resource": "LawOfAttraction",
-        "url": "http://www.lawofattractionsingles.com/%s",
-        "good_response_code": "200",
-        "good_response_text": "s profile on Law Of Attraction Singles</title>",
+        "resource" : "LawOfAttraction",
+        "url" : "http://www.lawofattractionsingles.com/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "s profile on Law Of Attraction Singles</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "dating"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "dating"
     },
     {
-        "resource": "LibraryThing",
-        "url": "http://www.librarything.com/profile/%s",
-        "good_response_code": "200",
-        "good_response_text": "| LibraryThing</title>",
+        "resource" : "LibraryThing",
+        "url" : "http://www.librarything.com/profile/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "| LibraryThing</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "books"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "books"
     },
     {
-        "resource": "LinkedIn",
-        "url": "https://www.linkedin.com/in/%s",
-        "good_response_code": "200",
-        "good_response_text": "summary=\"Overview for ",
+        "resource" : "LinkedIn",
+        "url" : "https://www.linkedin.com/in/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "summary=\"Overview for ",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "social"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "social"
     },
     {
-        "resource": "LIVEJASMIN",
-        "url": "http://www.livejasmin.com/perfinfo.php?performerid=%s",
-        "good_response_code": "200",
-        "good_response_text": "Live Sex - Hot Live Sex Shows!... LiveJasmin ..</title>",
+        "resource" : "LIVEJASMIN",
+        "url" : "http://www.livejasmin.com/perfinfo.php?performerid={account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "Live Sex - Hot Live Sex Shows!... LiveJasmin ..</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "XXX PORN XXX"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "XXX PORN XXX"
     },
     {
-        "resource": "Marketing Land",
-        "url": "http://marketingland.com/author/%s",
-        "good_response_code": "200",
-        "good_response_text": "property=\"og:url\" content=",
+        "resource" : "Marketing Land",
+        "url" : "http://marketingland.com/author/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "property=\"og:url\" content=",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "business"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "business"
     },
     {
-        "resource": "Match.com",
-        "url": "http://www.match.com/Profile/Display/About//?handle=%s&tp=prtbk",
-        "good_response_code": "200",
-        "good_response_text": "property=\"og:title\" content=\"",
+        "resource" : "Match.com",
+        "url" : "http://www.match.com/Profile/Display/About//?handle={account}&tp=prtbk",
+        "account_existence_code" : "200",
+        "account_existence_string" : "property=\"og:title\" content=\"",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "dating"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "dating"
     },
     {
-        "resource": "mate1",
-        "url": "http://www.mate1.com/profiles/%s",
-        "good_response_code": "200",
-        "good_response_text": "basicInfoTitle\">Basic Info",
+        "resource" : "mate1",
+        "url" : "http://www.mate1.com/profiles/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "basicInfoTitle\">Basic Info",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "dating"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "dating"
     },
     {
-        "resource": "Medium",
-        "url": "https://medium.com/@%s",
-        "good_response_code": "200",
-        "good_response_text": "name=\"description\" content=\"",
+        "resource" : "Medium",
+        "url" : "https://medium.com/@{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "name=\"description\" content=\"",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "news"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "news"
     },
     {
-        "resource": "Meetzur",
-        "url": "http://www.meetzur.com/%s",
-        "good_response_code": "200",
-        "good_response_text": "MEETZUR_PROFILE_300x250",
+        "resource" : "Meetzur",
+        "url" : "http://www.meetzur.com/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "MEETZUR_PROFILE_300x250",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "dating"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "dating"
     },
     {
-        "resource": "Mixcloud",
-        "url": "http://www.mixcloud.com/%s/",
-        "good_response_code": "200",
-        "good_response_text": "s Favorites | Mixcloud</title>",
+        "resource" : "Mixcloud",
+        "url" : "http://www.mixcloud.com/{account}/",
+        "account_existence_code" : "200",
+        "account_existence_string" : "s Favorites | Mixcloud</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "music"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "music"
     },
     {
-        "resource": "Mixcrate",
-        "url": "http://www.mixcrate.com/%s",
-        "good_response_code": "200",
-        "good_response_text": "- Mixcrate</title>",
+        "resource" : "Mixcrate",
+        "url" : "http://www.mixcrate.com/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "- Mixcrate</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "music"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "music"
     },
     {
-        "resource": "Mixlr",
-        "url": "http://mixlr.com/%s/",
-        "good_response_code": "200",
-        "good_response_text": "is on Mixlr. Mixlr is a simple way to share live",
+        "resource" : "Mixlr",
+        "url" : "http://mixlr.com/{account}/",
+        "account_existence_code" : "200",
+        "account_existence_string" : "is on Mixlr. Mixlr is a simple way to share live",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "music"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "music"
     },
     {
-        "resource": "Mod DB",
-        "url": "http://www.moddb.com/members/%s",
-        "good_response_code": "200",
-        "good_response_text": "View the Mod DB  member ",
+        "resource" : "Mod DB",
+        "url" : "http://www.moddb.com/members/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "View the Mod DB  member ",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "gaming"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "gaming"
     },
     {
-        "resource": "Muck Rack",
-        "url": "http://muckrack.com/%s",
-        "good_response_code": "200",
-        "good_response_text": "on Muck Rack</title>",
+        "resource" : "Muck Rack",
+        "url" : "http://muckrack.com/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "on Muck Rack</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "news"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "news"
     },
     {
-        "resource": "Muzy",
-        "url": "http://%s.muzy.com/",
-        "good_response_code": "200",
-        "good_response_text": "' property='og:title' />",
+        "resource" : "Muzy",
+        "url" : "http://{account}.muzy.com/",
+        "account_existence_code" : "200",
+        "account_existence_string" : "' property='og:title' />",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "images"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "images"
     },
     {
-        "resource": "MyAnimeList",
-        "url": "http://myanimelist.net/profile/%s",
-        "good_response_code": "200",
-        "good_response_text": "s Profile - MyAnimeList.net</title>",
+        "resource" : "MyAnimeList",
+        "url" : "http://myanimelist.net/profile/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "s Profile - MyAnimeList.net</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "hobby"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "hobby"
     },
     {
-        "resource": "MyBuilder.com",
-        "url": "http://www.mybuilder.com/profile/view/%s",
-        "good_response_code": "200",
-        "good_response_text": "s profile</title>",
+        "resource" : "MyBuilder.com",
+        "url" : "http://www.mybuilder.com/profile/view/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "s profile</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "jobs"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "jobs"
     },
     {
-        "resource": "myfitnesspal",
-        "url": "http://www.myfitnesspal.com/user/%s/status",
-        "good_response_code": "200",
-        "good_response_text": "s profile | MyFitnessPal.com</title>",
+        "resource" : "myfitnesspal",
+        "url" : "http://www.myfitnesspal.com/user/{account}/status",
+        "account_existence_code" : "200",
+        "account_existence_string" : "s profile | MyFitnessPal.com</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "health"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "health"
     },
     {
-        "resource": "myLot",
-        "url": "http://www.mylot.com/%s",
-        "good_response_code": "200",
-        "good_response_text": "on myLot</title>",
+        "resource" : "myLot",
+        "url" : "http://www.mylot.com/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "on myLot</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "social"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "social"
     },
     {
-        "resource": "myspace",
-        "url": "https://www.myspace.com/%s",
-        "good_response_code": "200",
-        "good_response_text": ") on Myspace</title>",
+        "resource" : "myspace",
+        "url" : "https://www.myspace.com/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : ") on Myspace</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "social"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "social"
     },
     {
-        "resource": "netvibes",
-        "url": "https://www.netvibes.com/%s",
-        "good_response_code": "200",
-        "good_response_text": "s Public Page</title>",
+        "resource" : "netvibes",
+        "url" : "https://www.netvibes.com/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "s Public Page</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "social"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "social"
     },
     {
-        "resource": "NEWSVINE",
-        "url": "http://%s.newsvine.com/_tps/_author/profile",
-        "good_response_code": "200",
-        "good_response_text": " Profile</title>",
+        "resource" : "NEWSVINE",
+        "url" : "http://{account}.newsvine.com/_tps/_author/profile",
+        "account_existence_code" : "200",
+        "account_existence_string" : " Profile</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "blog"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "blog"
     },
     {
-        "resource": "OkCupid",
-        "url": "http://www.okcupid.com/profile/%s",
-        "good_response_code": "200",
-        "good_response_text": "<title>OkCupid |",
+        "resource" : "OkCupid",
+        "url" : "http://www.okcupid.com/profile/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "<title>OkCupid |",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "dating"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "dating"
     },
     {
-        "resource": "Open Source Report Card",
-        "url": "https://osrc.dfm.io/%s/",
-        "good_response_code": "200",
-        "good_response_text": "s Open Source Report Card</title>",
+        "resource" : "Open Source Report Card",
+        "url" : "https://osrc.dfm.io/{account}/",
+        "account_existence_code" : "200",
+        "account_existence_string" : "s Open Source Report Card</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category":
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" :
         "coding"
     },
     {
-        "resource": "Overcast Network",
-        "url": "https://oc.tc/%s",
-        "good_response_code": "200",
-        "good_response_text": "https://avatar.oc.tc/",
+        "resource" : "Overcast Network",
+        "url" : "https://oc.tc/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "https://avatar.oc.tc/",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "gaming"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "gaming"
     },
     {
-        "resource": "Pandora",
-        "url": "http://www.pandora.com/profile/%s",
-        "good_response_code": "200",
-        "good_response_text": "div class=\"profile_container_static\"",
+        "resource" : "Pandora",
+        "url" : "http://www.pandora.com/profile/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "div class=\"profile_container_static\"",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "music"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "music"
     },
     {
-        "resource": "Photoblog!",
-        "url": "http://www.photoblog.com/%s/",
-        "good_response_code": "200",
-        "good_response_text": "photoblog_username = \"",
+        "resource" : "Photoblog!",
+        "url" : "http://www.photoblog.com/{account}/",
+        "account_existence_code" : "200",
+        "account_existence_string" : "photoblog_username = \"",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "images"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "images"
     },
     {
-        "resource": "PhotoBucket",
-        "url": "http://smg.photobucket.com/user/%s/profile/",
-        "good_response_code": "200",
-        "good_response_text": " Pictures, Photos & Images | Photobucket</title>",
+        "resource" : "PhotoBucket",
+        "url" : "http://smg.photobucket.com/user/{account}/profile/",
+        "account_existence_code" : "200",
+        "account_existence_string" : " Pictures, Photos & Images | Photobucket</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "images"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "images"
     },
     {
-        "resource": "Picasa",
-        "url": "https://picasaweb.google.com/%s/",
-        "good_response_code": "302",
-        "good_response_text": "s Picasa Web Gallery\"/>",
+        "resource" : "Picasa",
+        "url" : "https://picasaweb.google.com/{account}/",
+        "account_existence_code" : "302",
+        "account_existence_string" : "s Picasa Web Gallery\"/>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "images"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "images"
     },
     {
-        "resource": "PictureTrail",
-        "url": "http://picturetrail.com/homepage/%s",
-        "good_response_code": "200",
-        "good_response_text": "<title>PictureTrail</title>",
+        "resource" : "PictureTrail",
+        "url" : "http://picturetrail.com/homepage/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "<title>PictureTrail</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "images"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "images"
     },
     {
-        "resource": "PinkBike",
-        "url": "http://www.pinkbike.com/u/%s/",
-        "good_response_code": "200",
-        "good_response_text": "on Pinkbike</title>",
+        "resource" : "PinkBike",
+        "url" : "http://www.pinkbike.com/u/{account}/",
+        "account_existence_code" : "200",
+        "account_existence_string" : "on Pinkbike</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "hobby"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "hobby"
     },
     {
-        "resource": "Pinterest",
-        "url": "https://www.pinterest.com/%s/",
-        "good_response_code": "200",
-        "good_response_text": "on Pinterest</title>",
+        "resource" : "Pinterest",
+        "url" : "https://www.pinterest.com/{account}/",
+        "account_existence_code" : "200",
+        "account_existence_string" : "on Pinterest</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "social"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "social"
     },
     {
-        "resource": "Plancast",
-        "url": "http://plancast.com/%s/",
-        "good_response_code": "200",
-        "good_response_text": "<title>Attend Events with",
+        "resource" : "Plancast",
+        "url" : "http://plancast.com/{account}/",
+        "account_existence_code" : "200",
+        "account_existence_string" : "<title>Attend Events with",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "social"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "social"
     },
     {
-        "resource": "plaxo",
-        "url": "http://www.plaxo.com/profile/showPublic/%s",
-        "good_response_code": "200",
-        "good_response_text": "s Public Profile</title>",
+        "resource" : "plaxo",
+        "url" : "http://www.plaxo.com/profile/showPublic/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "s Public Profile</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "social"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "social"
     },
     {
-        "resource": "Playlists.net",
-        "url": "http://playlists.net/members/%s",
-        "good_response_code": "200",
-        "good_response_text": "<title>Profile for ",
+        "resource" : "Playlists.net",
+        "url" : "http://playlists.net/members/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "<title>Profile for ",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "music"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "music"
     },
     {
-        "resource": "Plurk",
-        "url": "http://www.plurk.com/%s",
-        "good_response_code": "200",
-        "good_response_text": "] on Plurk - Plurk</title>",
+        "resource" : "Plurk",
+        "url" : "http://www.plurk.com/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "] on Plurk - Plurk</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "social"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "social"
     },
     {
-        "resource": "POF",
-        "url": "http://www.pof.com/basicusersearch.aspx?usernamet=%s",
-        "good_response_code": "200",
-        "good_response_text": "div class=\        "results\"",
+        "resource" : "POF",
+        "url" : "http://www.pof.com/basicusersearch.aspx?usernamet={account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "div class=\        "results\"",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "dating"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "dating"
     },
     {
-        "resource": "PORN.COM",
-        "url": "http://www.porn.com/profile/%s",
-        "good_response_code": "200",
-        "good_response_text": "Member Profile - PORN.COM</title>",
+        "resource" : "PORN.COM",
+        "url" : "http://www.porn.com/profile/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "Member Profile - PORN.COM</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "XXX PORN XXX"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "XXX PORN XXX"
     },
     {
-        "resource": "Pornhub",
-        "url": "http://www.pornhub.com/users/%s",
-        "good_response_code": "200",
-        "good_response_text": "s Profile - Pornhub.com</title>",
+        "resource" : "Pornhub",
+        "url" : "http://www.pornhub.com/users/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "s Profile - Pornhub.com</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "XXX PORN XXX"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "XXX PORN XXX"
     },
     {
-        "resource": "Printfection",
-        "url": "http://www.printfection.com/%s/",
-        "good_response_code": "200",
-        "good_response_text": "- Printfection.com</title>",
+        "resource" : "Printfection",
+        "url" : "http://www.printfection.com/{account}/",
+        "account_existence_code" : "200",
+        "account_existence_string" : "- Printfection.com</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "shopping"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "shopping"
     },
     {
-        "resource":         "raptr",
-        "url": "http://raptr.com/%s/about",
-        "good_response_code": "200",
-        "good_response_text": "'s Profile - Raptr</title>",
+        "resource" :         "raptr",
+        "url" : "http://raptr.com/{account}/about",
+        "account_existence_code" : "200",
+        "account_existence_string" : "'s Profile - Raptr</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "gaming"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "gaming"
     },
     {
-        "resource":         "rate Your Music",
-        "url": "http://rateyourmusic.com/~%s",
-        "good_response_code": "200",
-        "good_response_text":         "rate Your Music</title>",
+        "resource" :         "rate Your Music",
+        "url" : "http://rateyourmusic.com/~{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" :         "rate Your Music</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "music"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "music"
     },
     {
-        "resource":         "readability",
-        "url": "https://www.readability.com/%s/",
-        "good_response_code": "200",
-        "good_response_text": "on Readability",
+        "resource" :         "readability",
+        "url" : "https://www.readability.com/{account}/",
+        "account_existence_code" : "200",
+        "account_existence_string" : "on Readability",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "social"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "social"
     },
     {
-        "resource":         "reddit",
-        "url": "http://www.reddit.com/user/%s/",
-        "good_response_code": "200",
-        "good_response_text": "<title>overview for ",
+        "resource" :         "reddit",
+        "url" : "http://www.reddit.com/user/{account}/",
+        "account_existence_code" : "200",
+        "account_existence_string" : "<title>overview for ",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "news"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "news"
     },
     {
-        "resource":         "redTube",
-        "url": "http://www.redtube.com/%s",
-        "good_response_code": "200",
-        "good_response_text":         "redTube - Home of Porn - Free Porn</title>",
+        "resource" :         "redTube",
+        "url" : "http://www.redtube.com/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" :         "redTube - Home of Porn - Free Porn</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "XXX PORN XXX"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "XXX PORN XXX"
     },
     {
-        "resource":         "reunion.com",
-        "url": "http://www.reunion.com/%s/",
-        "good_response_code": "200",
-        "good_response_text": "@ Reunion.com</title>",
+        "resource" :         "reunion.com",
+        "url" : "http://www.reunion.com/{account}/",
+        "account_existence_code" : "200",
+        "account_existence_string" : "@ Reunion.com</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "social"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "social"
     },
     {
-        "resource": "scratch",
-        "url": "http://scratch.mit.edu/users/%s/",
-        "good_response_code": "200",
-        "good_response_text": "on Scratch</title>",
+        "resource" : "scratch",
+        "url" : "http://scratch.mit.edu/users/{account}/",
+        "account_existence_code" : "200",
+        "account_existence_string" : "on Scratch</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category":
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" :
         "coding"
     },
     {
-        "resource": "Security Street",
-        "url": "https://community.rapid7.com/people/%s",
-        "good_response_code": "200",
-        "good_response_text": "s Profile     | SecurityStreet",
+        "resource" : "Security Street",
+        "url" : "https://community.rapid7.com/people/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "s Profile     | SecurityStreet",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "social"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "social"
     },
     {
-        "resource": "setlist.fm",
-        "url": "http://www.setlist.fm/user/%s",
-        "good_response_code": "200",
-        "good_response_text": "s setlist.fm | setlist.fm</title>",
+        "resource" : "setlist.fm",
+        "url" : "http://www.setlist.fm/user/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "s setlist.fm | setlist.fm</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "music"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "music"
     },
     {
-        "resource": "shelfari",
-        "url": "http://www.shelfari.com/%s",
-        "good_response_code": "200",
-        "good_response_text": "s Profile</title>",
+        "resource" : "shelfari",
+        "url" : "http://www.shelfari.com/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "s Profile</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "books"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "books"
     },
     {
-        "resource": "Shopcade",
-        "url": "http://www.shopcade.com/%s",
-        "good_response_code": "200",
-        "good_response_text": ") on Shopcade</title",
+        "resource" : "Shopcade",
+        "url" : "http://www.shopcade.com/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : ") on Shopcade</title",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "shopping"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "shopping"
     },
     {
-        "resource": "singlemuslim",
-        "url": "http://www.singlemuslim.com/%s",
-        "good_response_code": "200",
-        "good_response_text": "- Single Muslim Rest of the World</title>",
+        "resource" : "singlemuslim",
+        "url" : "http://www.singlemuslim.com/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "- Single Muslim Rest of the World</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "dating"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "dating"
     },
     {
-        "resource": "Slashdot",
-        "url": "http://slashdot.org/~%s",
-        "good_response_code": "200",
-        "good_response_text": " - Slashdot User</title>",
+        "resource" : "Slashdot",
+        "url" : "http://slashdot.org/~{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : " - Slashdot User</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "news"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "news"
     },
     {
-        "resource": "slideshare",
-        "url": "http://www.slideshare.net/%s",
-        "good_response_code": "200",
-        "good_response_text": "s presentations</title>",
+        "resource" : "slideshare",
+        "url" : "http://www.slideshare.net/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "s presentations</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "presos"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "presos"
     },
     {
-        "resource": "SmiteGuru",
-        "url": "https://smite.guru/stats/%s",
-        "good_response_code": "200",
-        "good_response_text": "<title>SmiteGuru - ",
+        "resource" : "SmiteGuru",
+        "url" : "https://smite.guru/stats/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "<title>SmiteGuru - ",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "gaming"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "gaming"
     },
     {
-        "resource": "SmugMug",
-        "url": "http://%s.smugmug.com",
-        "good_response_code": "200",
-        "good_response_text": "pageon: homepage",
+        "resource" : "SmugMug",
+        "url" : "http://{account}.smugmug.com",
+        "account_existence_code" : "200",
+        "account_existence_string" : "pageon: homepage",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "images"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "images"
     },
     {
-        "resource": "smule",
-        "url": "http://www.smule.com/%s/",
-        "good_response_code": "200",
-        "good_response_text": "s Profile on Smule</title>",
+        "resource" : "smule",
+        "url" : "http://www.smule.com/{account}/",
+        "account_existence_code" : "200",
+        "account_existence_string" : "s Profile on Smule</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "music"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "music"
     },
     {
-        "resource": "snooth",
-        "url": "http://www.snooth.com/profiles/%s/",
-        "good_response_code": "301",
-        "good_response_text": "Location: http://www.snooth.com/profiles/John/",
+        "resource" : "snooth",
+        "url" : "http://www.snooth.com/profiles/{account}/",
+        "account_existence_code" : "301",
+        "account_existence_string" : "Location: http://www.snooth.com/profiles/John/",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "food"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "food"
     },
     {
-        "resource": "SoldierX",
-        "url": "https://www.soldierx.com/hdb/%s",
-        "good_response_code": "200",
-        "good_response_text": "div id=\"node-",
+        "resource" : "SoldierX",
+        "url" : "https://www.soldierx.com/hdb/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "div id=\"node-",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "hacker"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "hacker"
     },
     {
-        "resource": "SoundCloud",
-        "url": "https://soundcloud.com/%s",
-        "good_response_code": "200",
-        "good_response_text": "profile - Hear the world",
+        "resource" : "SoundCloud",
+        "url" : "https://soundcloud.com/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "profile - Hear the world",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "music"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "music"
     },
     {
-        "resource": "Soup",
-        "url": "http://%s.soup.io",
-        "good_response_code": "200",
-        "good_response_text": "s soup</title>",
+        "resource" : "Soup",
+        "url" : "http://{account}.soup.io",
+        "account_existence_code" : "200",
+        "account_existence_string" : "s soup</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "blog"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "blog"
     },
     {
-        "resource": "SourceForge",
-        "url": "http://sourceforge.net/u/%s/profile/",
-        "good_response_code": "200",
-        "good_response_text": " / Profile</title>",
+        "resource" : "SourceForge",
+        "url" : "http://sourceforge.net/u/{account}/profile/",
+        "account_existence_code" : "200",
+        "account_existence_string" : " / Profile</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category":
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" :
         "coding"
     },
     {
-        "resource": "Speaker Deck",
-        "url": "https://speakerdeck.com/%s",
-        "good_response_code": "200",
-        "good_response_text": "<title>Presentations by",
+        "resource" : "Speaker Deck",
+        "url" : "https://speakerdeck.com/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "<title>Presentations by",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "presos"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "presos"
     },
     {
-        "resource": "sporcle",
-        "url": "http://www.sporcle.com/user/%s/connections",
-        "good_response_code": "200",
-        "good_response_text": "id='UserBox'>",
+        "resource" : "sporcle",
+        "url" : "http://www.sporcle.com/user/{account}/connections",
+        "account_existence_code" : "200",
+        "account_existence_string" : "id='UserBox'>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "gaming"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "gaming"
     },
     {
-        "resource": "Steam",
-        "url": "http://steamcommunity.com/id/%s",
-        "good_response_code": "200",
-        "good_response_text": "g_rgProfileData =",
+        "resource" : "Steam",
+        "url" : "http://steamcommunity.com/id/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "g_rgProfileData =",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "gaming"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "gaming"
     },
     {
-        "resource": "StumbleUpon",
-        "url": "http://www.stumbleupon.com/stumbler/%s",
-        "good_response_code": "200",
-        "good_response_text": "s Likes | StumbleUpon.com</title>",
+        "resource" : "StumbleUpon",
+        "url" : "http://www.stumbleupon.com/stumbler/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "s Likes | StumbleUpon.com</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "social"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "social"
     },
     {
-        "resource": "stupidcancer",
-        "url": "http://stupidcancer.org/community/profile/%s",
-        "good_response_code": "200",
-        "good_response_text": "- Stupid Cancer Community</title>",
+        "resource" : "stupidcancer",
+        "url" : "http://stupidcancer.org/community/profile/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "- Stupid Cancer Community</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "health"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "health"
     },
     {
-        "resource": "Technorati",
-        "url": "http://technorati.com/author/%s/",
-        "good_response_code": "200",
-        "good_response_text": " | Technorati</title>",
+        "resource" : "Technorati",
+        "url" : "http://technorati.com/author/{account}/",
+        "account_existence_code" : "200",
+        "account_existence_string" : " | Technorati</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "business"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "business"
     },
     {
-        "resource": "TF2 Backpack Examiner",
-        "url": "http://www.tf2items.com/id/%s/",
-        "good_response_code": "200",
-        "good_response_text": "<title>TF2 Backpack -",
+        "resource" : "TF2 Backpack Examiner",
+        "url" : "http://www.tf2items.com/id/{account}/",
+        "account_existence_code" : "200",
+        "account_existence_string" : "<title>TF2 Backpack -",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "gaming"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "gaming"
     },
     {
-        "resource": "theguardian",
-        "url": "https://id.theguardian.com/profile/%s/public",
-        "good_response_code": "200",
-        "good_response_text": "profile | The Guardian",
+        "resource" : "theguardian",
+        "url" : "https://id.theguardian.com/profile/{account}/public",
+        "account_existence_code" : "200",
+        "account_existence_string" : "profile | The Guardian",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "news"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "news"
     },
     {
-        "resource": "thesixtyone",
-        "url": "http://www.thesixtyone.com/%s/",
-        "good_response_code": "200",
-        "good_response_text": "s music on thesixtyone",
+        "resource" : "thesixtyone",
+        "url" : "http://www.thesixtyone.com/{account}/",
+        "account_existence_code" : "200",
+        "account_existence_string" : "s music on thesixtyone",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "music"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "music"
     },
     {
-        "resource": "tribe",
-        "url": "http://people.tribe.net/%s",
-        "good_response_code": "200",
-        "good_response_text": "Profile - tribe.net</title>",
+        "resource" : "tribe",
+        "url" : "http://people.tribe.net/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "Profile - tribe.net</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "dating"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "dating"
     },
     {
-        "resource": "tripadvisor",
-        "url": "http://www.tripadvisor.com/members/%s",
-        "good_response_code": "200",
-        "good_response_text": "<title>Member Profile - ",
+        "resource" : "tripadvisor",
+        "url" : "http://www.tripadvisor.com/members/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "<title>Member Profile - ",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "travel"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "travel"
     },
     {
-        "resource": "Tripit",
-        "url": "https://www.tripit.com/people/%s#/profile/basic-info",
-        "good_response_code": "200",
-        "good_response_text": "Travel Profile - TripIt</title>",
+        "resource" : "Tripit",
+        "url" : "https://www.tripit.com/people/{account}#/profile/basic-info",
+        "account_existence_code" : "200",
+        "account_existence_string" : "Travel Profile - TripIt</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "travel"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "travel"
     },
     {
-        "resource": "tumblr",
-        "url": "http://%s.tumblr.com",
-        "good_response_code": "200",
-        "good_response_text": "X-Tumblr-User:",
+        "resource" : "tumblr",
+        "url" : "http://{account}.tumblr.com",
+        "account_existence_code" : "200",
+        "account_existence_string" : "X-Tumblr-User:",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "images"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "images"
     },
     {
-        "resource": "Twitpic",
-        "url": "http://twitpic.com/photos/%s",
-        "good_response_code": "200",
-        "good_response_text": "<title>Twitpic /",
+        "resource" : "Twitpic",
+        "url" : "http://twitpic.com/photos/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "<title>Twitpic /",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "social"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "social"
     },
     {
-        "resource": "Twitter",
-        "url": "https://twitter.com/%s",
-        "good_response_code": "200",
-        "good_response_text": "| Twitter</title>",
+        "resource" : "Twitter",
+        "url" : "https://twitter.com/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "| Twitter</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "social"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "social"
     },
     {
-        "resource": "twtrland",
-        "url": "http://twtrland.com/profile/%s/",
-        "good_response_code": "200",
-        "good_response_text": "var query_global =",
+        "resource" : "twtrland",
+        "url" : "http://twtrland.com/profile/{account}/",
+        "account_existence_code" : "200",
+        "account_existence_string" : "var query_global =",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "social"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "social"
     },
     {
-        "resource":
+        "resource" :
         "untappd",
-        "url": "https://untappd.com/user/%s/",
-        "good_response_code": "200",
-        "good_response_text": "on Untappd</title>",
+        "url" : "https://untappd.com/user/{account}/",
+        "account_existence_code" : "200",
+        "account_existence_string" : "on Untappd</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "food"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "food"
     },
     {
-        "resource":
+        "resource" :
         "uSTREAM",
-        "url": "http://www.ustream.tv/channel/%s",
-        "good_response_code": "200",
-        "good_response_text": "on USTREAM:",
+        "url" : "http://www.ustream.tv/channel/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "on USTREAM:",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "video"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "video"
     },
     {
-        "resource": "viddler",
-        "url": "http://www.viddler.com/explore/%s/",
-        "good_response_code": "200",
-        "good_response_text": "s profile - Viddler</title>",
+        "resource" : "viddler",
+        "url" : "http://www.viddler.com/explore/{account}/",
+        "account_existence_code" : "200",
+        "account_existence_string" : "s profile - Viddler</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "video"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "video"
     },
     {
-        "resource": "VideoLike",
-        "url": "http://videolike.org/video/%s",
-        "good_response_code": "200",
-        "good_response_text": ":: VideoLike</title>",
+        "resource" : "VideoLike",
+        "url" : "http://videolike.org/video/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : " :: VideoLike</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "video"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "video"
     },
     {
-        "resource": "vidme",
-        "url": "https://vid.me/u/%s",
-        "good_response_code": "200",
-        "good_response_text": "s videos - vidme</title>",
+        "resource" : "vidme",
+        "url" : "https://vid.me/u/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "s videos - vidme</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "video"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "video"
     },
     {
-        "resource": "Vimeo",
-        "url": "http://vimeo.com/%s",
-        "good_response_code": "200",
-        "good_response_text": "on Vimeo</title>",
+        "resource" : "Vimeo",
+        "url" : "http://vimeo.com/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "on Vimeo</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "video"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "video"
     },
     {
-        "resource": "Vine",
-        "url": "https://platform.vine.co/api/users/profiles/vanity/%s",
-        "good_response_code": "200",
-        "good_response_text": "success\": true",
+        "resource" : "Vine",
+        "url" : "https://platform.vine.co/api/users/profiles/vanity/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "success\" : true",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "video"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "video"
     },
     {
-        "resource": "VisualizeUs",
-        "url": "http://vi.sualize.us/%s/",
-        "good_response_code": "200",
-        "good_response_text": "favorite pictures on VisualizeUs</title>",
+        "resource" : "VisualizeUs",
+        "url" : "http://vi.sualize.us/{account}/",
+        "account_existence_code" : "200",
+        "account_existence_string" : "favorite pictures on VisualizeUs</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "images"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "images"
     },
     {
-        "resource": "Voices.com",
-        "url": "https://www.voices.com/people/%s",
-        "good_response_code": "200",
-        "good_response_text": "/assets/images/branding/default_profile_avatar",
+        "resource" : "Voices.com",
+        "url" : "https://www.voices.com/people/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "/assets/images/branding/default_profile_avatar",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "business"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "business"
     },
     {
-        "resource": "Wanelo",
-        "url": "http://wanelo.com/%s",
-        "good_response_code": "200",
-        "good_response_text": "on Wanelo</title>",
+        "resource" : "Wanelo",
+        "url" : "http://wanelo.com/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "on Wanelo</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "shopping"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "shopping"
     },
     {
-        "resource": "wattpad",
-        "url": "http://www.wattpad.com/user/%s",
-        "good_response_code": "200",
-        "good_response_text": "- Wattpad </title>",
+        "resource" : "wattpad",
+        "url" : "http://www.wattpad.com/user/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "- Wattpad </title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "social"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "social"
     },
     {
-        "resource": "WeeWorld",
-        "url": "http://www.weeworld.com/home/%s",
-        "good_response_code": "200",
-        "good_response_text": "s Home) - WeeMee",
+        "resource" : "WeeWorld",
+        "url" : "http://www.weeworld.com/home/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "s Home) - WeeMee",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "gaming"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "gaming"
     },
     {
-        "resource": "Wefollow",
-        "url": "http://wefollow.com/%s",
-        "good_response_code": "200",
-        "good_response_text": "on Wefollow</title>",
+        "resource" : "Wefollow",
+        "url" : "http://wefollow.com/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "on Wefollow</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "social"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "social"
     },
     {
-        "resource": "wishlistr",
-        "url": "http://www.wishlistr.com/profile/%s/",
-        "good_response_code": "200",
-        "good_response_text": "s profile</title>",
+        "resource" : "wishlistr",
+        "url" : "http://www.wishlistr.com/profile/{account}/",
+        "account_existence_code" : "200",
+        "account_existence_string" : "s profile</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "shopping"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "shopping"
     },
     {
-        "resource": "woot!",
-        "url": "http://deals.woot.com/deals/users/%s",
-        "good_response_code": "200",
-        "good_response_text": "div class=\"deal forumList clearfix",
+        "resource" : "woot!",
+        "url" : "http://deals.woot.com/deals/users/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "div class=\"deal forumList clearfix",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "shopping"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "shopping"
     },
     {
-        "resource": "WordPress",
-        "url": "https://profiles.wordpress.org/%s",
-        "good_response_code": "200",
-        "good_response_text": "alt=\"Profile picture of",
+        "resource" : "WordPress",
+        "url" : "https://profiles.wordpress.org/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "alt=\"Profile picture of",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "blog"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "blog"
     },
     {
-        "resource": "WordPress Support",
-        "url": "https://wordpress.org/support/profile/%s",
-        "good_response_code": "200",
-        "good_response_text":
+        "resource" : "WordPress Support",
+        "url" : "https://wordpress.org/support/profile/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" :
         "user Favorites: ",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "support"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "support"
     },
     {
-        "resource": "Xanga",
-        "url": "http://%s.xanga.com/",
-        "good_response_code": "200",
-        "good_response_text": "s Xanga Site | Just another Xanga site</title>",
+        "resource" : "Xanga",
+        "url" : "http://{account}.xanga.com/",
+        "account_existence_code" : "200",
+        "account_existence_string" : "s Xanga Site | Just another Xanga site</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "blog"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "blog"
     },
     {
-        "resource": "Xbox Gamertag",
-        "url": "http://www.xboxgamertag.com/search/%s/",
-        "good_response_code": "200",
-        "good_response_text": " - Xbox Live Gamertag </title>",
+        "resource" : "Xbox Gamertag",
+        "url" : "http://www.xboxgamertag.com/search/{account}/",
+        "account_existence_code" : "200",
+        "account_existence_string" : " - Xbox Live Gamertag </title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "gaming"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "gaming"
     },
     {
-        "resource": "XboxLiveScore",
-        "url": "http://www.xboxlivescore.com/profile/%s",
-        "good_response_code": "200",
-        "good_response_text": "on the Gamerscore Leaderboard</title>",
+        "resource" : "XboxLiveScore",
+        "url" : "http://www.xboxlivescore.com/profile/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "on the Gamerscore Leaderboard</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "gaming"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "gaming"
     },
     {
-        "resource": "Xfire Main",
-        "url": "http://www.xfire.com/%s",
-        "good_response_code": "200",
-        "good_response_text": "<h1 class=\"username\">",
+        "resource" : "Xfire Main",
+        "url" : "http://www.xfire.com/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "<h1 class=\"username\">",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "gaming"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "gaming"
     },
     {
-        "resource": "Xfire Social",
-        "url": "http://social.xfire.com/profile/%s",
-        "good_response_code": "200",
-        "good_response_text": "s Profile</title>",
+        "resource" : "Xfire Social",
+        "url" : "http://social.xfire.com/profile/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "s Profile</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "gaming"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "gaming"
     },
     {
-        "resource": "xHamster",
-        "url": "http://xhamster.com/user/%s",
-        "good_response_code": "200",
-        "good_response_text": "s Profile</title>",
+        "resource" : "xHamster",
+        "url" : "http://xhamster.com/user/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "s Profile</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "XXX PORN XXX"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "XXX PORN XXX"
     },
     {
-        "resource": "XVIDEOS",
-        "url": "http://www.xvideos.com/profiles/%s",
-        "good_response_code": "200",
-        "good_response_text": "id_user = ",
+        "resource" : "XVIDEOS",
+        "url" : "http://www.xvideos.com/profiles/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "id_user = ",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "XXX PORN XXX"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "XXX PORN XXX"
     },
     {
-        "resource": "Yahoo Email",
-        "url": "https://na.edit.yahoo.com/reg_json?PartnerName=yahoo_default&RequestVersion=1&AccountID=%s@yahoo.com&ApiName=ValidateFields&intl=us",
-        "good_response_code": "200",
-        "good_response_text": "\"SUCCESS\"",
+        "resource" : "Yahoo Email",
+        "url" : "https://na.edit.yahoo.com/reg_json?PartnerName=yahoo_default&RequestVersion=1&AccountID={account}@yahoo.com&ApiName=ValidateFields&intl=us",
+        "account_existence_code" : "200",
+        "account_existence_string" : "\"SUCCESS\"",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "email"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "email"
     },
     {
-        "resource": "YouTube",
-        "url": "https://www.youtube.com/user/%s/videos",
-        "good_response_code": "200",
-        "good_response_text": "- YouTube</title>",
+        "resource" : "YouTube",
+        "url" : "https://www.youtube.com/user/{account}/videos",
+        "account_existence_code" : "200",
+        "account_existence_string" : "- YouTube</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "video"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "video"
     },
     {
-        "resource": "Zooppa",
-        "url": "http://zooppa.com/en-us/users/%s",
-        "good_response_code": "200",
-        "good_response_text": "<title>Zooppa</title>",
+        "resource" : "Zooppa",
+        "url" : "http://zooppa.com/en-us/users/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "<title>Zooppa</title>",
         "known_accounts" : [""],
-        "comments": [""],
-        "category": "social"
+        "account_missing_string" : "",
+        "comments" : [""],
+        "category" : "social"
     }
 ]
     }
