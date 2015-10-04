@@ -68,9 +68,11 @@
          "account_existence_code" : "200",
          "account_existence_string" : "| ask.fm/",
          "account_missing_string" : "",
-         "account_missing_code" : "",
+         "account_missing_code" : "404",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"]
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "social",
+         "comments" : ["verified 10/4/2015 - webbreacher"]
       },
       {
          "name" : "Atlassian",
@@ -78,9 +80,11 @@
          "account_existence_code" : "200",
          "account_existence_string" : "Unable to access your account",
          "account_missing_string" : "",
-         "account_missing_code" : "",
+         "account_missing_code" : "502",
          "known_accounts" : ["tshock"],
-         "allowed_types" : ["Organization", "String"]
+         "allowed_types" : ["Organization", "String"],
+         "category" : "coding",
+         "comments" : ["verified 10/4/2015 - webbreacher"]
       },
       {
          "name" : "Atlassian Self-Signup",
@@ -88,10 +92,11 @@
          "account_existence_code" : "200",
          "account_existence_string" : "User management",
          "account_missing_string" : "",
-         "account_missing_code" : "",
+         "account_missing_code" : "502",
          "known_accounts" : ["tshock"],
          "allowed_types" : ["Organization", "String"],
-         "comments" : ["look for orgs that allow self-signup by arbitrary users. much win"]
+         "category" : "coding",
+         "comments" : ["verified 10/4/2015 - webbreacher", "look for orgs that allow self-signup by arbitrary users. much win"]
       },
       {
          "name" : "AudioBoom",
@@ -99,9 +104,11 @@
          "account_existence_code" : "200",
          "account_existence_string" : "Playlists",
          "account_missing_strings" : ["That page doesn't seem to exist"],
-         "account_missing_code" : "",
-         "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"]
+         "account_missing_code" : "404",
+         "known_accounts" : ["test", "john"],
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "video",
+         "comments" : ["verified 10/4/2015 - webbreacher"]
       },
       {
          "name" : "authorSTREAM",
@@ -109,9 +116,11 @@
          "account_existence_code" : "200",
          "account_existence_string" : "Presentations on authorSTREAM",
          "account_missing_string" : "",
-         "account_missing_code" : "",
-         "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"]
+         "account_missing_code" : "404",
+         "known_accounts" : ["test", "john"],
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "preso",
+         "comments" : ["verified 10/4/2015 - webbreacher"]
       },
       {
          "name" : "badoo",
@@ -119,9 +128,10 @@
          "account_existence_code" : "200",
          "account_existence_string" : "| Badoo</title>",
          "account_missing_string" : "",
-         "account_missing_code" : "",
-         "known_accounts" : ["whynot"],
+         "account_missing_code" : "404",
+         "known_accounts" : ["john", "whynot"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "social",
          "comments" : [""]
       },
       {
