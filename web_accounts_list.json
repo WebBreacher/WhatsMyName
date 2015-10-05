@@ -30,7 +30,7 @@
       },
       {
          "resource" : "AdultMatchDoctor",
-         "url" : "http://www.adultmatchdoctor.com/profile_{account}.html",
+         "check_uri" : "http://www.adultmatchdoctor.com/profile_{account}.html",
          "account_existence_code" : "200",
          "account_existence_string" : "Last Activity:",
          "account_missing_string" : "",
@@ -226,7 +226,7 @@
       },
       {
          "resource" : "Blogspot",
-         "url" : "http://{account}.blogspot.com",
+         "check_uri" : "http://{account}.blogspot.com",
          "account_existence_code" : "200",
          "account_existence_string" : "Blogger Template Style",
          "account_missing_string" : "Blog not found",
