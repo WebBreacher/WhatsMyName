@@ -1,6 +1,13 @@
 '''
     Author : Micah Hoffman (@WebBreacher)
-    Description : Takes each username from the web_accounts_list.json file and performs the lookup to see if the discovery determinator is still valid
+    Description : Takes each username from the web_accounts_list.json file and performs the lookup to see if the
+                  discovery determinator is still valid
+
+    TODO - 
+    	1 - Make it so the script will toggle validity factor per entry and write to output file
+    	2 - Make it so the script will append comment to the entry and output to file
+    	3 - Colorize output
+
 '''
 from pprint import pprint
 import requests
@@ -11,7 +18,7 @@ import datetime
 import string
 
 # Set HTTP Header info.
-headers = {'User-Agent' : 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36'}
+headers = {'User-Agent' : 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0'}
 
 # Main
 # Read in the JSON file
