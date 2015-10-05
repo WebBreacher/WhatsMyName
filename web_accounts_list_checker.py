@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 '''
     Author : Micah Hoffman (@WebBreacher)
     Description : Takes each username from the web_accounts_list.json file and performs the lookup to see if the
