@@ -53,7 +53,6 @@ print '[-] %s sites found in file.' % len(data['sites'])
 
 x = 0 # Debug - put in here so I can test script without going through whole JSON file
 for site in data['sites'] :
-	code_match, string_match = False, False
 	# Examine the current validity of the entry
 	if site['valid'] == False:
 		print '[!] Skipping %s as it is marked as not valid.' % site['name']
@@ -102,7 +101,7 @@ for site in data['sites'] :
 			pass
 	elif code_match == True and string_match == False:
 		#TODO set site['valid'] = False
-		print '     [!] ERROR: BAD DETECTION STRING. String "%s" was not found on resulting page.' % site['account_existence_string']
+		print '     [!] ERROR: BAD DETECTION STRING. String was not found on resulting page.'
 		overall_results[site['name']] = 'Bad detection string.'
 	elif code_match == False and string_match == True:
 		#TODO set site['valid'] = False
