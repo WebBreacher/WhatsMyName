@@ -278,24 +278,56 @@
          "comments" : ["verified 10/4/2015 - webbreacher"]
       },
       {
+         "name" : "cafemom",
+         "check_uri" : "http://www.cafemom.com/home/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "member-about",
+         "account_missing_string" : "is not a CafeMom member.",
+         "account_missing_code" : "200",
+         "known_accounts" : ["test"],
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "social",
+         "valid" : true,
+         "comments" : ["verified 10/6/2015 - webbreacher"]
+      },
+      {
          "name" : "CarDomain",
          "check_uri" : "http://www.cardomain.com/member/{account}/",
          "account_existence_code" : "200",
-         "account_existence_string" : "s Profile in",
+         "account_existence_string" : "RidePostsAreaID",
          "account_missing_string" : "",
-         "account_missing_code" : "",
+         "account_missing_code" : "404",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"]
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "hobby",
+         "valid" : true,
+         "comments" : ["verified 10/6/2015 - webbreacher"]
+      },
+      {
+         "name" : "cHEEZburger",
+         "check_uri" : "http://profile.cheezburger.com/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "profile-header",
+         "account_missing_string" : "",
+         "account_missing_code" : "302",
+         "known_accounts" : ["john"],
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "hobby",
+         "valid" : true,
+         "comments" : ["verified 10/6/2015 - webbreacher"]
       },
       {
          "name" : "CodePlex",
          "check_uri" : "http://www.codeplex.com/site/users/view/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "property=\"profile:username\" />",
+         "account_existence_string" : "profile:username",
          "account_missing_string" : "",
-         "account_missing_code" : "",
+         "account_missing_code" : "302",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username","Organization"]
+         "allowed_types" : ["String","Person","WebAccount","Username","Organization"],
+         "category" : "coding",
+         "valid" : true,
+         "comments" : ["verified 10/6/2015 - webbreacher"]
       },
       {
          "name" : "CoderStats",
