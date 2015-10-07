@@ -1,40 +1,7 @@
 
     {
-        "resource" : "coderStats",
-        "url" : "http://coderstats.net/github/{account}/",
-        "account_existence_code" : "200",
-        "account_existence_string" : "var repos = [{
-\"",
-
-        "category" : "coding",
-    },
-    {
-        "resource" : "cOLOURlovers",
-        "url" : "http://www.colourlovers.com/lover/{account}",
-        "account_existence_code" : "200",
-        "account_existence_string" : "Send A Love Note",
-
-        "category" : "hobby",
-    },
-    {
-        "resource" : "conferize",
-        "url" : "https://www.conferize.com/u/{account}/",
-        "account_existence_code" : "200",
-        "account_existence_string" : "| Conferize - Never miss a Conference</title>",
-
-        "category" : "social",
-    },
-    {
-        "resource" : "copytaste",
-        "url" : "http://copytaste.com/profile/{account}",
-        "account_existence_code" : "200",
-        "account_existence_string" : " property=\"og:title\" content=\"",
-
-        "category" : "sharing",
-    },
-    {
         "resource" : "cruiseMates",
-        "url" : "http://www.cruisemates.com/forum/members/{account}.html",
+        "url" : "",
         "account_existence_code" : "200",
         "account_existence_string" : "- View Profile: ",
 
