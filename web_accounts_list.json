@@ -447,6 +447,19 @@
          "comments" : ["verified 10/7/2015 - webbreacher"]
       },
       {
+         "name" : "Diply",
+         "check_uri" : "/api/v1/articlecard/user/{account}/details",
+         "account_existence_code" : "200",
+         "account_existence_string" : "Name",
+         "account_missing_string" : "Not Found",
+         "account_missing_code" : "404",
+         "known_accounts" : ["JackDing"],
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "images",
+         "valid" : true,
+         "comments" : ["verified 10/7/2015 - webbreacher"]
+      },
+      {
          "name" : "DIY",
          "check_uri" : "https://diy.org/{account}",
          "account_existence_code" : "200",
