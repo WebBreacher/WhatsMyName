@@ -395,24 +395,56 @@
          "comments" : ["verified 10/7/2015 - webbreacher"]
       },
       {
+         "name" : "Dailymotion",
+         "check_uri" : "http://www.dailymotion.com/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "/followers/",
+         "account_missing_string" : "",
+         "account_missing_code" : "301",
+         "known_accounts" : ["john"],
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "video",
+         "valid" : true,
+         "comments" : ["verified 10/7/2015 - webbreacher"]
+      },
+      {
+         "name" : "Delicious",
+         "check_uri" : "https://avosapi.delicious.com/api/v1/tags/bundles/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "owner_name:",
+         "account_missing_string" : "user does not exist",
+         "account_missing_code" : "200",
+         "known_accounts" : ["john"],
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "bookmarks",
+         "valid" : true,
+         "comments" : ["verified 10/7/2015 - webbreacher"]
+      },
+      {
          "name" : "DeviantArt",
          "check_uri" : "http://{account}.deviantart.com/",
          "account_existence_code" : "200",
-         "account_existence_string" : "s Journal\"",
-         "account_missing_string" : "",
-         "account_missing_code" : "",
-         "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"]
+         "account_existence_string" : "aboutme-profile-pic-shadow",
+         "account_missing_string" : "Not Found - DeviantArt",
+         "account_missing_code" : "404",
+         "known_accounts" : ["test", "john"],
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "images",
+         "valid" : true,
+         "comments" : ["verified 10/7/2015 - webbreacher"]
       },
       {
          "name" : "diigo",
          "check_uri" : "https://www.diigo.com/profile/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : " Public Profile in the Diigo Community</title>",
-         "account_missing_string" : "",
-         "account_missing_code" : "",
-         "known_accounts" : ["whoami"],
-         "allowed_types" : ["String","Person","WebAccount","Username"]
+         "account_existence_string" : "Member since",
+         "account_missing_string" : "This account doesn't exist",
+         "account_missing_code" : "200",
+         "known_accounts" : ["whoami", "johndoe"],
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "images",
+         "valid" : true,
+         "comments" : ["verified 10/7/2015 - webbreacher"]
       },
       {
          "name" : "DIY",
