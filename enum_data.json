@@ -1,43 +1,4 @@
-    {
-        "resource" : "EightBit",
-        "url" : "http://eightbit.me/{account}",
-        "account_existence_code" : "200",
-        "account_existence_string" : "on EightBit</title>",
 
-        "category" : "gaming",
-    },
-    {
-        "resource" : "Engadget",
-        "url" : "http://www.engadget.com/profile/{account}/",
-        "account_existence_code" : "200",
-        "account_existence_string" : "profile - Engadget</title>",
-
-        "category" : "tech",
-    },
-    {
-        "resource" : "Epinions",
-        "url" : "http://www.epinions.com/user-{account}?sb=1",
-        "account_existence_code" : "200",
-        "account_existence_string" : "s Profile Reviews and Products | Epinions.com</title>",
-
-        "category" : "social",
-    },
-    {
-        "resource" : "EPORNER",
-        "url" : "http://www.eporner.com/profile/{account}/",
-        "account_existence_code" : "200",
-        "account_existence_string" : ">Recently watched</a>",
-
-        "category" : "XXX PORN XXX",
-    },
-    {
-        "resource" : "Etsy",
-        "url" : "https://www.etsy.com/people/{account}",
-        "account_existence_code" : "200",
-        "account_existence_string" : " on Etsy</title>",
-
-        "category" : "shopping",
-    },
     {
         "resource" : "Examine.com",
         "url" : "http://examine.com/user/{account}/",
