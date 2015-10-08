@@ -146,19 +146,6 @@
          "comments" : ["verified 10/4/2015 - webbreacher"]
       },
       {
-         "name" : "Behance",
-         "check_uri" : "https://www.behance.net/{account}",
-         "account_existence_code" : "200",
-         "account_existence_string" : "profile-header-actions",
-         "account_missing_string" : "",
-         "account_missing_code" : "404",
-         "known_accounts" : ["test", "john"],
-         "allowed_types" : ["String","Person","WebAccount","Username","Organization"],
-         "category" : "coding",
-         "valid" : true,
-         "comments" : ["verified 10/4/2015 - webbreacher"]
-      },
-      {
          "name" : "Bitbucket",
          "check_uri" : "https://bitbucket.org/api/2.0/users/{account}",
          "pretty_uri" : "https://bitbucket.org/{account}/",
@@ -411,7 +398,7 @@
          "name" : "Delicious",
          "check_uri" : "https://avosapi.delicious.com/api/v1/tags/bundles/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "owner_name:",
+         "account_existence_string" : "owner_name",
          "account_missing_string" : "user does not exist",
          "account_missing_code" : "200",
          "known_accounts" : ["john"],
@@ -448,7 +435,7 @@
       },
       {
          "name" : "Diply",
-         "check_uri" : "/api/v1/articlecard/user/{account}/details",
+         "check_uri" : "http://diply.com/api/v1/articlecard/user/{account}/details",
          "account_existence_code" : "200",
          "account_existence_string" : "Name",
          "account_missing_string" : "Not Found",
@@ -541,7 +528,7 @@
          "name" : "Etsy",
          "check_uri" : "https://www.etsy.com/people/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "who joined etsy on",
+         "account_existence_string" : " on Etsy</title>",
          "account_missing_string" : "Sorry, the member you are looking for does not exist",
          "account_missing_code" : "404",
          "known_accounts" : ["happiness"],

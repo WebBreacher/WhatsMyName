@@ -1,12 +1,3 @@
-
-    {
-        "resource" : "Examine.com",
-        "url" : "http://examine.com/user/{account}/",
-        "account_existence_code" : "200",
-        "account_existence_string" : "Profile | Examine.com</title>",
-
-        "category" : "health",
-    },
     {
         "resource" : "families.com",
         "url" : "http://www.families.com/author/{account}",
