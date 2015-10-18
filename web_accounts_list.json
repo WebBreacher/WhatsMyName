@@ -544,7 +544,22 @@
          "account_existence_string" : "hidden_elem",
          "account_missing_string" : "",
          "known_accounts" : ["test123"],
-         "allowed_types" : ["String","Person","WebAccount","Username"]
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "social",
+         "valid" : false,
+         "comments" : [""]
+      },
+      {
+         "name" : "families.com",
+         "check_uri" : "http://www.families.com/author/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "  </title>",
+         "account_missing_string" : "",
+         "known_accounts" : [""],
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "news",
+         "valid" : false,
+         "comments" : [""]
       },
       {
          "name" : "fanpop",
@@ -554,7 +569,10 @@
          "account_missing_string" : "",
          "account_missing_code" : "",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"]
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "movies",
+         "valid" : false,
+         "comments" : [""]
       },
       {
          "name" : "Favstar",
@@ -564,7 +582,23 @@
          "account_missing_string" : "",
          "account_missing_code" : "",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"]
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "social",
+         "valid" : false,
+         "comments" : [""]
+      },
+      {
+         "name" : "FFFFOUND!",
+         "check_uri" : "http://ffffound.com/home/{account}/found/",
+         "account_existence_code" : "200",
+         "account_existence_string" : "<title>FFFFOUND!</title>",
+         "account_missing_string" : "",
+         "account_missing_code" : "",
+         "known_accounts" : [""],
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "image",
+         "valid" : false,
+         "comments" : [""]
       },
       {
          "name" : "Flavors",
@@ -574,7 +608,23 @@
          "account_missing_string" : "",
          "account_missing_code" : "",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"]
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "blog",
+         "valid" : false,
+         "comments" : [""]
+      },
+      {
+         "name" : "Flickr",
+         "check_uri" : "https://www.flickr.com/photos/{account}/",
+         "account_existence_code" : "200",
+         "account_existence_string" : "s Photostream</title>",
+         "account_missing_string" : "",
+         "account_missing_code" : "",
+         "known_accounts" : [""],
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "images",
+         "valid" : false,
+         "comments" : [""]
       },
       {
          "name" : "Foodspotting",
@@ -584,7 +634,10 @@
          "account_missing_string" : "",
          "account_missing_code" : "",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"]
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "social",
+         "valid" : false,
+         "comments" : [""]
       },
       {
          "name" : "Fotolog",
@@ -595,7 +648,24 @@
          "account_missing_code" : "",
          "known_accounts" : ["test"],
          "known_missing_accounts" : ["does-not-exist"],
-         "allowed_types" : ["String","Person","WebAccount","Username"]
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "images",
+         "valid" : false,
+         "comments" : [""]
+      },
+      {
+         "name" : "Foursquare",
+         "check_uri" : "https://foursquare.com/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "on Foursquare</title>",
+         "account_missing_string" : "",
+         "account_missing_code" : "",
+         "known_accounts" : [""],
+         "known_missing_accounts" : [""],
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "location",
+         "valid" : false,
+         "comments" : [""]
       },
       {
          "name" : "freesound",
@@ -605,7 +675,62 @@
          "account_missing_string" : "",
          "account_missing_code" : "",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"]
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "music",
+         "valid" : false,
+         "comments" : [""]
+      },
+      {
+         "name" : "FriendFeed",
+         "check_uri" : "http://friendfeed.com/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : " - FriendFeed</title>",
+         "account_missing_string" : "",
+         "account_missing_code" : "",
+         "known_accounts" : [""],
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "social",
+         "valid" : false,
+         "comments" : [""]
+      },
+      {
+         "name" : "FriendFinder-X",
+         "check_uri" : "http://www.friendfinder-x.com/profile/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "Member Profile - FriendFinder-x</title>",
+         "account_missing_string" : "",
+         "account_missing_code" : "",
+         "known_accounts" : [""],
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "dating",
+         "valid" : false,
+         "comments" : [""]
+      },
+      {
+         "name" : "FunnyOrDie",
+         "check_uri" : "http://www.funnyordie.com/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : " - Home on Funny or Die</title>",
+         "account_missing_string" : "",
+         "account_missing_code" : "",
+         "known_accounts" : [""],
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "video",
+         "valid" : false,
+         "comments" : [""]
+      },
+      {
+         "name" : "Garmin connect",
+         "check_uri" : "http://connect.garmin.com/modern/profile/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "VIEWER_USERPREFERENCES =",
+         "account_missing_string" : "",
+         "account_missing_code" : "",
+         "known_accounts" : [""],
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "health",
+         "valid" : false,
+         "comments" : [""]
       },
       {
          "name" : "GeekGrade",
@@ -615,7 +740,10 @@
          "account_missing_string" : "",
          "account_missing_code" : "",
          "known_accounts" : ["walnuts"],
-         "allowed_types" : ["String","Person","WebAccount","Username"]
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "",
+         "valid" : false,
+         "comments" : [""]
       },
       {
          "name" : "Geocaching",
@@ -625,7 +753,10 @@
          "account_missing_string" : "",
          "account_missing_code" : "",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"]
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "",
+         "valid" : false,
+         "comments" : [""]
       },
       {
          "name" : "GETItON",
@@ -635,7 +766,10 @@
          "account_missing_string" : "",
          "account_missing_code" : "",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"]
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "",
+         "valid" : false,
+         "comments" : [""]
       },
       {
          "name" : "GitHub",
@@ -656,7 +790,10 @@
          "account_missing_string" : "",
          "account_missing_code" : "",
          "known_accounts" : ["walnuts"],
-         "allowed_types" : ["String","Person","WebAccount","Username"]
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "",
+         "valid" : false,
+         "comments" : [""]
       },
       {
          "name" : "gogobot",
@@ -666,7 +803,10 @@
          "account_missing_string" : "",
          "account_missing_code" : "",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"]
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "",
+         "valid" : false,
+         "comments" : [""]
       },
       {
          "name" : "goodreads",
@@ -676,7 +816,10 @@
          "account_missing_string" : "",
          "account_missing_code" : "",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"]
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "",
+         "valid" : false,
+         "comments" : [""]
       },
       {
          "name" : "Gravatar",
@@ -687,7 +830,10 @@
          "account_missing_string" : "",
          "account_missing_code" : "",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"]
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "",
+         "valid" : false,
+         "comments" : [""]
       },
       {
          "name" : "Hackers List",
@@ -697,7 +843,10 @@
          "account_missing_string" : "",
          "account_missing_code" : "",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"]
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "",
+         "valid" : false,
+         "comments" : [""]
       },
       {
          "name" : "howaboutwe",
@@ -707,7 +856,10 @@
          "account_missing_string" : "",
          "account_missing_code" : "",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"]
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "",
+         "valid" : false,
+         "comments" : [""]
       },
       {
          "name" : "HubPages",
@@ -717,7 +869,10 @@
          "account_missing_string" : "",
          "account_missing_code" : "",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"]
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "",
+         "valid" : false,
+         "comments" : [""]
       },
       {
          "name" : "ImageShack",
@@ -727,7 +882,10 @@
          "account_missing_string" : "",
          "account_missing_code" : "",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"]
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "",
+         "valid" : false,
+         "comments" : [""]
       },
       {
          "name" : "imgur",
@@ -737,7 +895,10 @@
          "account_missing_string" : "",
          "account_missing_code" : "",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"]
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "",
+         "valid" : false,
+         "comments" : [""]
       },
       {
          "name" : "Instagram",
@@ -747,7 +908,10 @@
          "account_missing_string" : "",
          "account_missing_code" : "",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"]
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "",
+         "valid" : false,
+         "comments" : [""]
       },
       {
          "name" : "instructables",
@@ -757,7 +921,10 @@
          "account_missing_string" : "",
          "account_missing_code" : "",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"]
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "",
+         "valid" : false,
+         "comments" : [""]
       },
       {
          "name" : "Internet Archive",
@@ -767,7 +934,10 @@
          "account_missing_string" : "",
          "account_missing_code" : "",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"]
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "",
+         "valid" : false,
+         "comments" : [""]
       },
       {
          "name" : "interpals",
@@ -777,7 +947,10 @@
          "account_missing_string" : "",
          "account_missing_code" : "",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"]
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "",
+         "valid" : false,
+         "comments" : [""]
       },
       {
          "name" : "Keybase",
@@ -787,7 +960,10 @@
          "account_missing_string" : "",
          "account_missing_code" : "",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"]
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "",
+         "valid" : false,
+         "comments" : [""]
       },
       {
          "name" : "Klout",
@@ -807,7 +983,10 @@
          "account_missing_string" : "",
          "account_missing_code" : "",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"]
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "",
+         "valid" : false,
+         "comments" : [""]
       },
       {
          "name" : "Lanyrd",
@@ -827,7 +1006,10 @@
          "account_missing_string" : "",
          "account_missing_code" : "",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"]
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "",
+         "valid" : false,
+         "comments" : [""]
       },
       {
          "name" : "LibraryThing",
@@ -837,7 +1019,10 @@
          "account_missing_string" : "",
          "account_missing_code" : "",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"]
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "",
+         "valid" : false,
+         "comments" : [""]
       },
       {
          "name" : "LinkedIn",
@@ -857,7 +1042,10 @@
          "account_missing_string" : "",
          "account_missing_code" : "",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"]
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "",
+         "valid" : false,
+         "comments" : [""]
       },
       {
          "name" : "Medium",
@@ -867,7 +1055,10 @@
          "account_missing_string" : "",
          "account_missing_code" : "",
          "known_accounts" : ["test123"],
-         "allowed_types" : ["String","Person","WebAccount","Username"]
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "",
+         "valid" : false,
+         "comments" : [""]
       },
       {
          "name" : "Mixcloud",
@@ -877,7 +1068,10 @@
          "account_missing_string" : "",
          "account_missing_code" : "",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"]
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "",
+         "valid" : false,
+         "comments" : [""]
       },
       {
          "name" : "Mixcrate",
@@ -887,7 +1081,10 @@
          "account_missing_string" : "",
          "account_missing_code" : "",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"]
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "",
+         "valid" : false,
+         "comments" : [""]
       },
       {
          "name" : "Mixlr",
@@ -897,7 +1094,10 @@
          "account_missing_string" : "",
          "account_missing_code" : "",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"]
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "",
+         "valid" : false,
+         "comments" : [""]
       },
       {
          "name" : "Mod DB",
@@ -907,7 +1107,10 @@
          "account_missing_string" : "",
          "account_missing_code" : "",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"]
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "",
+         "valid" : false,
+         "comments" : [""]
       },
       {
          "name" : "Muzy",
@@ -917,7 +1120,10 @@
          "account_missing_string" : "",
          "account_missing_code" : "",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"]
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "",
+         "valid" : false,
+         "comments" : [""]
       },
       {
          "name" : "MyBuilder.com",
@@ -927,7 +1133,10 @@
          "account_missing_string" : "",
          "account_missing_code" : "",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"]
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "",
+         "valid" : false,
+         "comments" : [""]
       },
       {
          "name" : "netvibes",
@@ -937,7 +1146,10 @@
          "account_missing_string" : "",
          "account_missing_code" : "",
          "known_accounts" : ["adam"],
-         "allowed_types" : ["String","Person","WebAccount","Username"]
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "",
+         "valid" : false,
+         "comments" : [""]
       },
       {
          "name" : "Okta",
@@ -957,7 +1169,10 @@
          "account_missing_string" : "",
          "account_missing_code" : "",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"]
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "",
+         "valid" : false,
+         "comments" : [""]
       },
       {
          "name" : "PhotoBucket",
@@ -967,7 +1182,10 @@
          "account_missing_string" : "",
          "account_missing_code" : "",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"]
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "",
+         "valid" : false,
+         "comments" : [""]
       },
       {
          "name" : "Pinterest",
@@ -977,7 +1195,10 @@
          "account_missing_string" : "",
          "account_missing_code" : "",
          "known_accounts" : ["test123"],
-         "allowed_types" : ["String","Person","WebAccount","Username"]
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "",
+         "valid" : false,
+         "comments" : [""]
       },
       {
          "name" : "Plancast",
@@ -987,7 +1208,10 @@
          "account_missing_string" : "",
          "account_missing_code" : "",
          "known_accounts" : ["test123"],
-         "allowed_types" : ["String","Person","WebAccount","Username"]
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "",
+         "valid" : false,
+         "comments" : [""]
       },
       {
          "name" : "Playlists.net",
@@ -997,7 +1221,10 @@
          "account_missing_string" : "",
          "account_missing_code" : "",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"]
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "",
+         "valid" : false,
+         "comments" : [""]
       },
       {
          "name" : "Plurk",
@@ -1007,7 +1234,10 @@
          "account_missing_string" : "",
          "account_missing_code" : "",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"]
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "",
+         "valid" : false,
+         "comments" : [""]
       },
       {
          "name" : "POF",
@@ -1017,7 +1247,10 @@
          "account_missing_string" : "",
          "account_missing_code" : "",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"]
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "",
+         "valid" : false,
+         "comments" : [""]
       },
       {
          "name" : "PSNProfiles",
@@ -1027,7 +1260,10 @@
          "account_missing_string" : "",
          "account_missing_code" : "",
          "known_accounts" : ["jeieem"],
-         "allowed_types" : ["String","Person","WebAccount","Username"]
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "",
+         "valid" : false,
+         "comments" : [""]
       },
       {
          "name" : "Rate Your Music",
@@ -1037,7 +1273,10 @@
          "account_missing_string" : "",
          "account_missing_code" : "",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"]
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "",
+         "valid" : false,
+         "comments" : [""]
       },
       {
          "name" : "Readability",
@@ -1047,7 +1286,10 @@
          "account_missing_string" : "",
          "account_missing_code" : "",
          "known_accounts" : ["test123"],
-         "allowed_types" : ["String","Person","WebAccount","Username"]
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "",
+         "valid" : false,
+         "comments" : [""]
       },
       {
          "name" : "reddit",
@@ -1067,7 +1309,10 @@
          "account_missing_string" : "",
          "account_missing_code" : "",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"]
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "",
+         "valid" : false,
+         "comments" : [""]
       },
       {
          "name" : "Security Street",
@@ -1077,7 +1322,10 @@
          "account_missing_string" : "",
          "account_missing_code" : "",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"]
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "",
+         "valid" : false,
+         "comments" : [""]
       },
       {
          "name" : "setlist.fm",
@@ -1087,7 +1335,10 @@
          "account_missing_string" : "",
          "account_missing_code" : "",
          "known_accounts" : ["jesus"],
-         "allowed_types" : ["String","Person","WebAccount","Username"]
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "",
+         "valid" : false,
+         "comments" : [""]
       },
       {
          "name" : "shelfari",
@@ -1097,7 +1348,10 @@
          "account_missing_string" : "",
          "account_missing_code" : "",
          "known_accounts" : ["test123"],
-         "allowed_types" : ["String","Person","WebAccount","Username"]
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "",
+         "valid" : false,
+         "comments" : [""]
       },
       {
          "name" : "Shopcade",
@@ -1107,7 +1361,10 @@
          "account_missing_string" : "",
          "account_missing_code" : "",
          "known_accounts" : ["test123"],
-         "allowed_types" : ["String","Person","WebAccount","Username"]
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "",
+         "valid" : false,
+         "comments" : [""]
       },
       {
          "name" : "singlemuslim",
@@ -1117,7 +1374,10 @@
          "account_missing_string" : "",
          "account_missing_code" : "",
          "known_accounts" : ["mohammed"],
-         "allowed_types" : ["String","Person","WebAccount","Username"]
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "",
+         "valid" : false,
+         "comments" : [""]
       },
       {
          "name" : "slideshare",
@@ -1137,7 +1397,10 @@
          "account_missing_string" : "",
          "account_missing_code" : "",
          "known_accounts" : ["wow"],
-         "allowed_types" : ["String","Person","WebAccount","Username"]
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "",
+         "valid" : false,
+         "comments" : [""]
       },
       {
          "name" : "smule",
@@ -1147,7 +1410,10 @@
          "account_missing_string" : "",
          "account_missing_code" : "",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"]
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "",
+         "valid" : false,
+         "comments" : [""]
       },
       {
          "name" : "snooth",
@@ -1177,7 +1443,10 @@
          "account_missing_string" : "",
          "account_missing_code" : "",
          "known_accounts" : ["test123"],
-         "allowed_types" : ["String","Person","WebAccount","Username"]
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "",
+         "valid" : false,
+         "comments" : [""]
       },
       {
          "name" : "Soup",
@@ -1187,7 +1456,10 @@
          "account_missing_string" : "",
          "account_missing_code" : "",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"]
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "",
+         "valid" : false,
+         "comments" : [""]
       },
       {
          "name" : "Speaker Deck",
@@ -1197,7 +1469,10 @@
          "account_missing_string" : "",
          "account_missing_code" : "",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"]
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "",
+         "valid" : false,
+         "comments" : [""]
       },
       {
          "name" : "sporcle",
@@ -1207,7 +1482,10 @@
          "account_missing_string" : "",
          "account_missing_code" : "",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"]
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "",
+         "valid" : false,
+         "comments" : [""]
       },
       {
          "name" : "Steam",
@@ -1217,7 +1495,10 @@
          "account_missing_string" : "",
          "account_missing_code" : "",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"]
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "",
+         "valid" : false,
+         "comments" : [""]
       },
       {
          "name" : "stupidcancer",
@@ -1227,7 +1508,10 @@
          "account_missing_string" : "",
          "account_missing_code" : "",
          "known_accounts" : ["myriam"],
-         "allowed_types" : ["String","Person","WebAccount","Username"]
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "",
+         "valid" : false,
+         "comments" : [""]
       },
       {
          "name" : "TF2 Backpack Examiner",
@@ -1237,7 +1521,10 @@
          "account_missing_string" : "",
          "account_missing_code" : "",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"]
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "",
+         "valid" : false,
+         "comments" : [""]
       },
       {
          "name" : "theguardian",
@@ -1247,7 +1534,10 @@
          "account_missing_string" : "",
          "account_missing_code" : "",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"]
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "",
+         "valid" : false,
+         "comments" : [""]
       },
       {
          "name" : "tripadvisor",
@@ -1257,7 +1547,10 @@
          "account_missing_string" : "",
          "account_missing_code" : "",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"]
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "",
+         "valid" : false,
+         "comments" : [""]
       },
       {
          "name" : "tumblr",
@@ -1297,7 +1590,10 @@
          "account_missing_string" : "",
          "account_missing_code" : "",
          "known_accounts" : ["test123"],
-         "allowed_types" : ["String","Person","WebAccount","Username"]
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "",
+         "valid" : false,
+         "comments" : [""]
       },
       {
          "name" : "untappd",
@@ -1317,7 +1613,10 @@
          "account_missing_string" : "",
          "account_missing_code" : "",
          "known_accounts" : ["GamingParodies"],
-         "allowed_types" : ["String","Person","WebAccount","Username"]
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "",
+         "valid" : false,
+         "comments" : [""]
       },
       {
          "name" : "VideoLike",
@@ -1327,7 +1626,10 @@
          "account_missing_string" : "",
          "account_missing_code" : "",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"]
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "",
+         "valid" : false,
+         "comments" : [""]
       },
       {
          "name" : "Vimeo",
@@ -1347,7 +1649,10 @@
          "account_missing_string" : "",
          "account_missing_code" : "",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"]
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "",
+         "valid" : false,
+         "comments" : [""]
       },
       {
          "name" : "Voices.com",
@@ -1357,7 +1662,10 @@
          "account_missing_string" : "",
          "account_missing_code" : "",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"]
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "",
+         "valid" : false,
+         "comments" : [""]
       },
       {
          "name" : "Wanelo",
@@ -1367,7 +1675,10 @@
          "account_missing_string" : "",
          "account_missing_code" : "",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"]
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "",
+         "valid" : false,
+         "comments" : [""]
       },
       {
          "name" : "wattpad",
@@ -1377,7 +1688,10 @@
          "account_missing_string" : "",
          "account_missing_code" : "",
          "known_accounts" : ["test123"],
-         "allowed_types" : ["String","Person","WebAccount","Username"]
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "",
+         "valid" : false,
+         "comments" : [""]
       },
       {
          "name" : "WeeWorld",
@@ -1387,7 +1701,10 @@
          "account_missing_string" : "",
          "account_missing_code" : "",
          "known_accounts" : ["test123"],
-         "allowed_types" : ["String","Person","WebAccount","Username"]
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "",
+         "valid" : false,
+         "comments" : [""]
       },
       {
          "name" : "wishlistr",
@@ -1397,7 +1714,10 @@
          "account_missing_string" : "",
          "account_missing_code" : "",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"]
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "",
+         "valid" : false,
+         "comments" : [""]
       },
       {
          "name" : "Wikipedia",
@@ -1407,7 +1727,10 @@
          "account_missing_string" : "",
          "account_missing_code" : "",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"]
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "",
+         "valid" : false,
+         "comments" : [""]
       },
       {
          "name" : "WordPress",
@@ -1427,7 +1750,10 @@
          "account_missing_string" : "",
          "account_missing_code" : "",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"]
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "",
+         "valid" : false,
+         "comments" : [""]
       },
       {
          "name" : "Xbox Gamertag",
@@ -1437,7 +1763,10 @@
          "account_missing_string" : "",
          "account_missing_code" : "",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"]
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "",
+         "valid" : false,
+         "comments" : [""]
       },
       {
          "name" : "XboxLiveScore",
@@ -1447,7 +1776,10 @@
          "account_missing_string" : "",
          "account_missing_code" : "",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"]
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "",
+         "valid" : false,
+         "comments" : [""]
       },
       {
          "name" : "YouTube",
@@ -1467,7 +1799,10 @@
          "account_missing_string" : "",
          "account_missing_code" : "",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"]
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "",
+         "valid" : false,
+         "comments" : [""]
       }
    ]
 }
