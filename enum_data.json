@@ -1,15 +1,3 @@
-"resource" : "Open Source Report Card",
-"url" : "https://osrc.dfm.io/{account}/",
-"account_existence_code" : "200",
-"account_existence_string" : "s Open Source Report Card</title>",
-"category" : "coding",
-
-"resource" : "Overcast Network",
-"url" : "https://oc.tc/{account}",
-"account_existence_code" : "200",
-"account_existence_string" : "https://avatar.oc.tc/",
-"category" : "gaming",
-
 "resource" : "Pandora",
 "url" : "http://www.pandora.com/profile/{account}",
 "account_existence_code" : "200",
