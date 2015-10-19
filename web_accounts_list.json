@@ -1099,6 +1099,19 @@
          "comments" : [""]
       },
       {
+         "name" : "LawOfAttraction",
+         "check_uri" : "http://www.lawofattractionsingles.com/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "s profile on Law Of Attraction Singles</title>",
+         "account_missing_string" : "",
+         "account_missing_code" : "",
+         "known_accounts" : [""],
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "dating",
+         "valid" : false,
+         "comments" : [""]
+      },
+      {
          "name" : "LibraryThing",
          "check_uri" : "http://www.librarything.com/profile/{account}",
          "account_existence_code" : "200",
@@ -1107,7 +1120,7 @@
          "account_missing_code" : "",
          "known_accounts" : ["test"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
-         "category" : "",
+         "category" : "books",
          "valid" : false,
          "comments" : [""]
       },
@@ -1119,7 +1132,36 @@
          "account_missing_string" : "",
          "account_missing_code" : "",
          "known_accounts" : ["test123"],
-         "allowed_types" : ["String","Person","WebAccount","Username","Organization"]
+         "allowed_types" : ["String","Person","WebAccount","Username","Organization"],
+         "category" : "social",
+         "valid" : false,
+         "comments" : [""]
+      },
+      {
+         "name" : "LiveJasmin",
+         "check_uri" : "http://www.livejasmin.com/perfinfo.php?performerid={account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "Live Sex - Hot Live Sex Shows!... LiveJasmin ..</title>",
+         "account_missing_string" : "",
+         "account_missing_code" : "",
+         "known_accounts" : [""],
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "XXX PORN XXX",
+         "valid" : false,
+         "comments" : [""]
+      },
+      {
+         "name" : "Marketing Land",
+         "check_uri" : "http://marketingland.com/author/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "property=\"og:url\" content=",
+         "account_missing_string" : "",
+         "account_missing_code" : "",
+         "known_accounts" : [""],
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "business",
+         "valid" : false,
+         "comments" : [""]
       },
       {
          "name" : "mate1",
@@ -1130,7 +1172,7 @@
          "account_missing_code" : "",
          "known_accounts" : ["test"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
-         "category" : "",
+         "category" : "dating",
          "valid" : false,
          "comments" : [""]
       },
@@ -1143,7 +1185,20 @@
          "account_missing_code" : "",
          "known_accounts" : ["test123"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
-         "category" : "",
+         "category" : "news",
+         "valid" : false,
+         "comments" : [""]
+      },
+      {
+         "name" : "Meetzur",
+         "check_uri" : "http://www.meetzur.com/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "More on",
+         "account_missing_string" : "",
+         "account_missing_code" : "",
+         "known_accounts" : ["john"],
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "dating",
          "valid" : false,
          "comments" : [""]
       },
@@ -1156,7 +1211,7 @@
          "account_missing_code" : "",
          "known_accounts" : ["test"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
-         "category" : "",
+         "category" : "music",
          "valid" : false,
          "comments" : [""]
       },
@@ -1169,7 +1224,7 @@
          "account_missing_code" : "",
          "known_accounts" : ["test"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
-         "category" : "",
+         "category" : "music",
          "valid" : false,
          "comments" : [""]
       },
@@ -1182,7 +1237,7 @@
          "account_missing_code" : "",
          "known_accounts" : ["test"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
-         "category" : "",
+         "category" : "music",
          "valid" : false,
          "comments" : [""]
       },
@@ -1195,7 +1250,7 @@
          "account_missing_code" : "",
          "known_accounts" : ["test"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
-         "category" : "",
+         "category" : "gaming",
          "valid" : false,
          "comments" : [""]
       },
