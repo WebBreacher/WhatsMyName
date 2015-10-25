@@ -56,7 +56,10 @@ for site in data['sites'] :
 	code_match, string_match = False, False
 	# Examine the current validity of the entry
 	if site['valid'] == False:
-		print '[!] Skipping %s as it is marked as not valid.' % site['name']
+		print '[!] Skipping %s - Marked as not valid.' % site['name']
+		continue
+	if site['known_accounts'][0] == False:
+		print '[!] Skipping %s - No valid user names to test.' % site['name']
 		continue
 
 	# Perform initial lookup
