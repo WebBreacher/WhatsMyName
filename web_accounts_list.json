@@ -1564,6 +1564,19 @@
          "comments" : [""]
       },
       {
+         "name" : "Prinfection",
+         "check_uri" : "http://www.printfection.com/{account}/",
+         "account_existence_code" : "200",
+         "account_existence_string" : "- Printfection.com</title>",
+         "account_missing_string" : "",
+         "account_missing_code" : "",
+         "known_accounts" : [""],
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "shopping",
+         "valid" : false,
+         "comments" : [""]
+      },
+      {
          "name" : "PSNProfiles",
          "check_uri" : "http://psnprofiles.com/{account}",
          "account_existence_code" : "200",
@@ -1572,7 +1585,20 @@
          "account_missing_code" : "",
          "known_accounts" : ["jeieem"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
-         "category" : "",
+         "category" : "gaming",
+         "valid" : false,
+         "comments" : [""]
+      },
+      {
+         "name" : "raptr",
+         "checkurl" : "http://raptr.com/{account}/about",
+         "account_existence_code" : "200",
+         "account_existence_string" : "'s Profile - Raptr</title>",
+         "account_missing_string" : "",
+         "account_missing_code" : "",
+         "known_accounts" : [""],
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "gaming",
          "valid" : false,
          "comments" : [""]
       },
@@ -1585,7 +1611,7 @@
          "account_missing_code" : "",
          "known_accounts" : ["test"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
-         "category" : "",
+         "category" : "music",
          "valid" : false,
          "comments" : [""]
       },
@@ -1598,7 +1624,7 @@
          "account_missing_code" : "",
          "known_accounts" : ["test123"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
-         "category" : "",
+         "category" : "social",
          "valid" : false,
          "comments" : [""]
       },
@@ -1610,7 +1636,23 @@
          "account_missing_string" : "",
          "account_missing_code" : "",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username","Organization"]
+         "allowed_types" : ["String","Person","WebAccount","Username","Organization"],
+         "category" : "news",
+         "valid" : false,
+         "comments" : [""]
+      },
+      {
+         "name" : "redTube",
+         "check_uri" : "http://www.redtube.com/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "redTube - Home of Porn - Free Porn</title>",
+         "account_missing_string" : "",
+         "account_missing_code" : "",
+         "known_accounts" : [""],
+         "allowed_types" : ["String","Person","WebAccount","Username","Organization"],
+         "category" : "XXX PORN XXX",
+         "valid" : false,
+         "comments" : [""]
       },
       {
          "name" : "Reunion.com",
@@ -1621,7 +1663,20 @@
          "account_missing_code" : "",
          "known_accounts" : ["test"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
-         "category" : "",
+         "category" : "social",
+         "valid" : false,
+         "comments" : [""]
+      },
+      {
+         "name" : "scratch",
+         "check_uri" : "http://scratch.mit.edu/users/{account}/",
+         "account_existence_code" : "200",
+         "account_existence_string" : "on Scratch</title>",
+         "account_missing_string" : "",
+         "account_missing_code" : "",
+         "known_accounts" : [""],
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "coding",
          "valid" : false,
          "comments" : [""]
       },
@@ -1634,7 +1689,7 @@
          "account_missing_code" : "",
          "known_accounts" : ["test"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
-         "category" : "",
+         "category" : "social",
          "valid" : false,
          "comments" : [""]
       },
@@ -1647,7 +1702,7 @@
          "account_missing_code" : "",
          "known_accounts" : ["jesus"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
-         "category" : "",
+         "category" : "music",
          "valid" : false,
          "comments" : [""]
       },
