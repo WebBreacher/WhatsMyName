@@ -1,9 +1,3 @@
-			"name" : "setlist.fm",
-			"check_uri" : "http://www.setlist.fm/user/{account}",
-			"account_existence_code" : "200",
-			"account_existence_string" : "s setlist.fm | setlist.fm</title>",
-			"category" : "music",
-
 			"name" : "shelfari",
 			"check_uri" : "http://www.shelfari.com/{account}",
 			"account_existence_code" : "200",
