@@ -67,7 +67,7 @@ for site in data['sites'] :
 	url = site['check_uri'].replace("{account}", site['known_accounts'][0])
 	print '[-] Looking up %s' % url
 	# Make web request for that URL
-	r = requests.get(url, headers = headers)
+	r = requests.get(url, headers=headers, timeout=30)
 	# Analyze the responses against what they should be
 	if r.status_code == int(site['account_existence_code']):
 		code_match = True
