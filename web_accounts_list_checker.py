@@ -11,6 +11,11 @@
     	3 - Colorize output
     	4 - Make a stub file shows last time sites were checked and problems.
 
+    ISSUES -
+    	1 - Had an issue with SSL handshakes and this script. Had to do the following to get it working
+    		[From https://github.com/kennethreitz/requests/issues/2022]
+    		# sudo apt-get install libffi-dev
+			# pip install pyOpenSSL ndg-httpsclient pyasn1
 '''
 import requests
 import json

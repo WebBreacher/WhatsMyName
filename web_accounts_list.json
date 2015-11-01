@@ -1367,7 +1367,10 @@
          "account_missing_string" : "",
          "account_missing_code" : "",
          "known_accounts" : ["workday"],
-         "allowed_types" : ["Organization","String"]
+         "allowed_types" : ["Organization","String"],
+         "category" : "",
+         "valid" : false,
+         "comments" : [""]
       },
       {
          "name" : "Overcast Network",
