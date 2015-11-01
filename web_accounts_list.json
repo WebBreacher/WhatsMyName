@@ -1927,7 +1927,7 @@
          "account_missing_code" : "",
          "known_accounts" : ["test"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
-         "category" : "",
+         "category" : "gaming",
          "valid" : false,
          "comments" : [""]
       },
@@ -1940,7 +1940,33 @@
          "account_missing_code" : "",
          "known_accounts" : ["test"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
-         "category" : "",
+         "category" : "news",
+         "valid" : false,
+         "comments" : [""]
+      },
+      {
+         "name" : "thesixtyone",
+         "check_uri" : "http://www.thesixtyone.com/{account}/",
+         "account_existence_code" : "200",
+         "account_existence_string" : "s music on thesixtyone",
+         "account_missing_string" : "",
+         "account_missing_code" : "",
+         "known_accounts" : ["john"],
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "music",
+         "valid" : false,
+         "comments" : [""]
+      },
+      {
+         "name" : "tribe",
+         "check_uri" : "http://people.tribe.net/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "Profile - tribe.net</title>",
+         "account_missing_string" : "",
+         "account_missing_code" : "",
+         "known_accounts" : [""],
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "dating",
          "valid" : false,
          "comments" : [""]
       },
@@ -1953,9 +1979,22 @@
          "account_missing_code" : "",
          "known_accounts" : ["test"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
-         "category" : "",
+         "category" : "travel",
          "valid" : false,
          "comments" : [""]
+      },
+      {
+         "name" : "Tripit",
+         "check_uri" : "https://www.tripit.com/people/{account}#/profile/basic-info",
+         "account_existence_code" : "200",
+         "account_existence_string" : "profile_modal_dialog",
+         "account_missing_string" : "",
+         "account_missing_code" : "",
+         "known_accounts" : ["Kristin444"],
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "travel",
+         "valid" : true,
+         "comments" : ["Validated 2015-11-01 webbreacher"]
       },
       {
          "name" : "tumblr",
@@ -1965,7 +2004,10 @@
          "account_missing_string" : "",
          "account_missing_code" : "",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username","Organization"]
+         "allowed_types" : ["String","Person","WebAccount","Username","Organization"],
+         "category" : "images",
+         "valid" : false,
+         "comments" : [""]
       },
       {
          "name" : "Twitpic",
@@ -1975,7 +2017,10 @@
          "account_missing_string" : "",
          "account_missing_code" : "",
          "known_accounts" : ["mannequin"],
-         "allowed_types" : ["String","Person","WebAccount","Username","Organization"]
+         "allowed_types" : ["String","Person","WebAccount","Username","Organization"],
+         "category" : "travel",
+         "valid" : "social",
+         "comments" : [""]
       },
       {
          "name" : "Twitter",
@@ -1985,7 +2030,10 @@
          "account_missing_string" : "",
          "account_missing_code" : "",
          "known_accounts" : ["test123"],
-         "allowed_types" : ["String","Person","WebAccount","Username","Organization"]
+         "allowed_types" : ["String","Person","WebAccount","Username","Organization"],
+         "category" : "social",
+         "valid" : false,
+         "comments" : [""]
       },
       {
          "name" : "twtrland",
@@ -1996,7 +2044,7 @@
          "account_missing_code" : "",
          "known_accounts" : ["test123"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
-         "category" : "",
+         "category" : "social",
          "valid" : false,
          "comments" : [""]
       },
