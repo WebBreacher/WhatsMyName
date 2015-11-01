@@ -541,7 +541,6 @@
          "name" : "facebook.com",
          "check_uri" : "https://www.facebook.com/{account}",
          "account_existence_code" : "200",
-<<<<<<< HEAD
          "account_existence_string" : "pagesTimelineLayout",
          "account_missing_string" : "Sorry, this page isn't available",
          "account_missing_code" : "200",
@@ -550,14 +549,6 @@
          "category" : "social",
          "valid" : true,
          "comments" : ["verified 10/10/2015 - webbreacher"]
-=======
-         "account_existence_string" : "hidden_elem",
-         "account_missing_string" : "",
-         "known_accounts" : ["test123"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
-         "category" : "social",
-         "valid" : false,
-         "comments" : [""]
       },
       {
          "name" : "families.com",
@@ -570,7 +561,6 @@
          "category" : "news",
          "valid" : false,
          "comments" : [""]
->>>>>>> origin/master
       },
       {
          "name" : "fanpop",
