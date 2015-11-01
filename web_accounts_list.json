@@ -1726,7 +1726,7 @@
          "account_missing_code" : "",
          "known_accounts" : ["test123"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
-         "category" : "",
+         "category" : "books",
          "valid" : false,
          "comments" : [""]
       },
@@ -1739,7 +1739,7 @@
          "account_missing_code" : "",
          "known_accounts" : ["test123"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
-         "category" : "",
+         "category" : "shopping",
          "valid" : false,
          "comments" : [""]
       },
@@ -1752,7 +1752,20 @@
          "account_missing_code" : "",
          "known_accounts" : ["mohammed"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
-         "category" : "",
+         "category" : "dating",
+         "valid" : false,
+         "comments" : [""]
+      },
+      {
+         "name" : "Slashdot",
+         "check_uri" : "http://slashdot.org/~{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : " - Slashdot User</title>",
+         "account_missing_string" : "",
+         "account_missing_code" : "",
+         "known_accounts" : [""],
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "news",
          "valid" : false,
          "comments" : [""]
       },
@@ -1764,7 +1777,23 @@
          "account_missing_string" : "",
          "account_missing_code" : "",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username","Organization"]
+         "allowed_types" : ["String","Person","WebAccount","Username","Organization"],
+         "category" : "presos",
+         "valid" : false,
+         "comments" : [""]
+      },
+      {
+         "name" : "SmiteGuru",
+         "check_uri" : "https://smite.guru/stats/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "<title>SmiteGuru - ",
+         "account_missing_string" : "",
+         "account_missing_code" : "",
+         "known_accounts" : [""],
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "gaming",
+         "valid" : false,
+         "comments" : [""]
       },
       {
          "name" : "SmugMug",
@@ -1775,7 +1804,7 @@
          "account_missing_code" : "",
          "known_accounts" : ["wow"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
-         "category" : "",
+         "category" : "images",
          "valid" : false,
          "comments" : [""]
       },
@@ -1788,7 +1817,7 @@
          "account_missing_code" : "",
          "known_accounts" : ["test"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
-         "category" : "",
+         "category" : "music",
          "valid" : false,
          "comments" : [""]
       },
@@ -1800,7 +1829,10 @@
          "account_missing_string" : "",
          "account_missing_code" : "",
          "known_accounts" : ["test123"],
-         "allowed_types" : ["String","Person","WebAccount","Username","food"]
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "food",
+         "valid" : false,
+         "comments" : [""]
       },
       {
          "name" : "SoldierX",
@@ -1810,7 +1842,10 @@
          "account_missing_string" : "",
          "account_missing_code" : "",
          "known_accounts" : ["AC"],
-         "allowed_types" : ["String","Person","WebAccount","Username","hacker"]
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "hacker",
+         "valid" : false,
+         "comments" : [""]
       },
       {
          "name" : "SoundCloud",
@@ -1821,7 +1856,7 @@
          "account_missing_code" : "",
          "known_accounts" : ["test123"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
-         "category" : "",
+         "category" : "music",
          "valid" : false,
          "comments" : [""]
       },
@@ -1834,7 +1869,7 @@
          "account_missing_code" : "",
          "known_accounts" : ["test"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
-         "category" : "",
+         "category" : "blog",
          "valid" : false,
          "comments" : [""]
       },
@@ -1847,7 +1882,7 @@
          "account_missing_code" : "",
          "known_accounts" : ["test"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
-         "category" : "",
+         "category" : "presos",
          "valid" : false,
          "comments" : [""]
       },
@@ -1860,7 +1895,7 @@
          "account_missing_code" : "",
          "known_accounts" : ["test"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
-         "category" : "",
+         "category" : "gaming",
          "valid" : false,
          "comments" : [""]
       },
@@ -1873,7 +1908,20 @@
          "account_missing_code" : "",
          "known_accounts" : ["test"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
-         "category" : "",
+         "category" : "gaming",
+         "valid" : false,
+         "comments" : [""]
+      },
+      {
+         "name" : "StumbleUpon",
+         "check_uri" : "http://www.stumbleupon.com/stumbler/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "s Likes | StumbleUpon.com</title>",
+         "account_missing_string" : "",
+         "account_missing_code" : "",
+         "known_accounts" : ["john"],
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "social",
          "valid" : false,
          "comments" : [""]
       },
@@ -1886,7 +1934,7 @@
          "account_missing_code" : "",
          "known_accounts" : ["myriam"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
-         "category" : "",
+         "category" : "health",
          "valid" : false,
          "comments" : [""]
       },
