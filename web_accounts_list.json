@@ -541,39 +541,39 @@
          "name" : "families.com",
          "check_uri" : "http://www.families.com/author/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "  </title>",
-         "account_missing_string" : "",
-         "known_accounts" : [""],
+         "account_existence_string" : "archive author author-",
+         "account_missing_string" : "<title>, Author at Families.com",
+         "known_accounts" : ["maliamom"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "news",
-         "valid" : false,
-         "comments" : [""]
+         "valid" : true,
+         "comments" : ["verified 11/07/2015 - webbreacher"]
       },
       {
          "name" : "fanpop",
          "check_uri" : "http://www.fanpop.com/fans/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "s Profile Page</title>",
+         "account_existence_string" : "Fanpopping since",
          "account_missing_string" : "",
-         "account_missing_code" : "",
-         "known_accounts" : ["test"],
+         "account_missing_code" : "302",
+         "known_accounts" : ["test","johndoe"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "movies",
-         "valid" : false,
-         "comments" : [""]
+         "valid" : true,
+         "comments" : ["verified 11/07/2015 - webbreacher"]
       },
       {
          "name" : "Favstar",
          "check_uri" : "http://favstar.fm/users/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "Best Tweets</title>",
-         "account_missing_string" : "",
-         "account_missing_code" : "",
+         "account_existence_string" : "Best Tweets",
+         "account_missing_string" : "<title>Not Found<",
+         "account_missing_code" : "404",
          "known_accounts" : ["test"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "social",
-         "valid" : false,
-         "comments" : [""]
+         "valid" : true,
+         "comments" : ["verified 11/07/2015 - webbreacher"]
       },
       {
          "name" : "FFFFOUND!",
@@ -589,30 +589,17 @@
          "comments" : [""]
       },
       {
-         "name" : "Flavors",
-         "check_uri" : "http://{account}.flavors.me",
-         "account_existence_code" : "200",
-         "account_existence_string" : ": Flavors.me",
-         "account_missing_string" : "",
-         "account_missing_code" : "",
-         "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
-         "category" : "blog",
-         "valid" : false,
-         "comments" : [""]
-      },
-      {
          "name" : "Flickr",
          "check_uri" : "https://www.flickr.com/photos/{account}/",
          "account_existence_code" : "200",
-         "account_existence_string" : "s Photostream</title>",
+         "account_existence_string" : "| Flickr",
          "account_missing_string" : "",
-         "account_missing_code" : "",
-         "known_accounts" : [""],
+         "account_missing_code" : "404",
+         "known_accounts" : ["glaciernps","test"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "images",
-         "valid" : false,
-         "comments" : [""]
+         "valid" : true,
+         "comments" : ["verified 11/07/2015 - webbreacher"]
       },
       {
          "name" : "Foodspotting",
