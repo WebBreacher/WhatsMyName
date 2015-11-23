@@ -266,6 +266,19 @@
          "comments" : ["verified 10/4/2015 - webbreacher"]
       },
       {
+         "name" : "Bugcrowd",
+         "check_uri" : "https://bugcrowd.com/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "Bugs Found",
+         "account_missing_string" : "Something went wrong",
+         "account_missing_code" : "404",
+         "known_accounts" : ["Mico","Bitquark"],
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "hacker",
+         "valid" : true,
+         "comments" : ["verified 11/23/2015 - webbreacher"]
+      },
+      {
          "name" : "cafemom",
          "check_uri" : "http://www.cafemom.com/home/{account}",
          "account_existence_code" : "200",
@@ -807,40 +820,40 @@
          "name" : "Hackers List",
          "check_uri" : "https://hackerslist.com/user/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "Hacker's List | Find a professional hacker | Employer Profile -",
+         "account_existence_string" : "Average Pricing",
          "account_missing_string" : "",
-         "account_missing_code" : "",
-         "known_accounts" : ["test"],
+         "account_missing_code" : "404",
+         "known_accounts" : ["test","bob"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "hacker",
-         "valid" : false,
-         "comments" : [""]
+         "valid" : true,
+         "comments" : ["verified 11/23/2015 - webbreacher"]
       },
       {
          "name" : "howaboutwe",
          "check_uri" : "http://www.howaboutwe.com/users/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "location font_20\"",
-         "account_missing_string" : "",
-         "account_missing_code" : "",
+         "account_existence_string" : "basics",
+         "account_missing_string" : "Page Not Found",
+         "account_missing_code" : "404",
          "known_accounts" : ["test"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "dating",
-         "valid" : false,
-         "comments" : [""]
+         "valid" : true,
+         "comments" : ["verified 11/23/2015 - webbreacher"]
       },
       {
          "name" : "HubPages",
-         "check_uri" : "http://{account}.hubpages.com/",
+         "check_uri" : "http://hubpages.com/@{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "on HubPages</title>",
-         "account_missing_string" : "",
+         "account_existence_string" : "Joined ",
+         "account_missing_string" : "Sorry, that user does not exist",
          "account_missing_code" : "",
-         "known_accounts" : ["test"],
+         "known_accounts" : ["test","bob"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "blog",
-         "valid" : false,
-         "comments" : [""]
+         "valid" : true,
+         "comments" : ["verified 11/23/2015 - webbreacher"]
       },
       {
          "name" : "I-am-pregnant",
@@ -860,13 +873,13 @@
          "check_uri" : "https://ifttt.com/p/{account}/shared",
          "account_existence_code" : "200",
          "account_existence_string" : "s Published Recipes - IFTTT",
-         "account_missing_string" : "",
-         "account_missing_code" : "",
-         "known_accounts" : [""],
+         "account_missing_string" : "The requested page or file does not seem to exist",
+         "account_missing_code" : "404",
+         "known_accounts" : ["npr"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "hobby",
-         "valid" : false,
-         "comments" : [""]
+         "valid" : true,
+         "comments" : ["verified 11/23/2015 - webbreacher"]
       },
       {
          "name" : "ImageShack",
@@ -874,12 +887,12 @@
          "account_existence_code" : "200",
          "account_existence_string" : "s Images</title>",
          "account_missing_string" : "",
-         "account_missing_code" : "",
+         "account_missing_code" : "302",
          "known_accounts" : ["test"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "images",
-         "valid" : false,
-         "comments" : [""]
+         "valid" : true,
+         "comments" : ["verified 11/23/2015 - webbreacher"]
       },
       {
          "name" : "imgur",
