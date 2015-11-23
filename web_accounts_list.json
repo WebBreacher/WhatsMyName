@@ -740,14 +740,14 @@
          "name" : "GETItON",
          "check_uri" : "http://getiton.com/profile/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "s Profile</title>",
+         "account_existence_string" : "Last Visit",
          "account_missing_string" : "",
-         "account_missing_code" : "",
-         "known_accounts" : ["test"],
+         "account_missing_code" : "200",
+         "known_accounts" : ["test","johndoe"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "dating",
-         "valid" : false,
-         "comments" : [""]
+         "valid" : true,
+         "comments" : ["verified 11/23/2015 - webbreacher"]
       },
       {
          "name" : "GitHub",
@@ -767,27 +767,27 @@
          "name" : "gogobot",
          "check_uri" : "http://www.gogobot.com/user/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "Travel Tips &amp; Activities",
-         "account_missing_string" : "",
-         "account_missing_code" : "",
-         "known_accounts" : ["test"],
+         "account_existence_string" : "Places I've been",
+         "account_missing_string" : "Page not found",
+         "account_missing_code" : "410",
+         "known_accounts" : ["test","mike"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "travel",
-         "valid" : false,
-         "comments" : [""]
+         "valid" : true,
+         "comments" : ["verified 11/23/2015 - webbreacher"]
       },
       {
          "name" : "goodreads",
          "check_uri" : "http://www.goodreads.com/{account}",
          "account_existence_code" : "301",
          "account_existence_string" : "www.goodreads.com/user/show/",
-         "account_missing_string" : "",
-         "account_missing_code" : "",
-         "known_accounts" : ["test"],
+         "account_missing_string" : "Page Not Found",
+         "account_missing_code" : "404",
+         "known_accounts" : ["test","mike"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "books",
-         "valid" : false,
-         "comments" : [""]
+         "valid" : true,
+         "comments" : ["verified 11/23/2015 - webbreacher"]
       },
       {
          "name" : "Gravatar",
@@ -795,13 +795,13 @@
          "pretty_uri" : "http://en.gravatar.com/profiles/{account}",
          "account_existence_code" : "200",
          "account_existence_string" : "entry",
-         "account_missing_string" : "",
-         "account_missing_code" : "",
+         "account_missing_string" : "User not found",
+         "account_missing_code" : "404",
          "known_accounts" : ["test"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "images",
-         "valid" : false,
-         "comments" : [""]
+         "valid" : true,
+         "comments" : ["verified 11/23/2015 - webbreacher"]
       },
       {
          "name" : "Hackers List",
