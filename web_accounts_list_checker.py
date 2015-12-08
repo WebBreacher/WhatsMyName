@@ -70,8 +70,13 @@ for site in data['sites'] :
 	# Pull the first user from known_accounts and replace the {account} with it
 	url = site['check_uri'].replace("{account}", site['known_accounts'][0])
 	print '[-] Looking up %s' % url
-	# Make web request for that URL, timeout in X secs and don't verify SSL/TLS certs
-	r = requests.get(url, headers=headers, timeout=30, verify=False)
+	try:
+		# Make web request for that URL, timeout in X secs and don't verify SSL/TLS certs
+		r = requests.get(url, headers=headers, timeout=30, verify=False)
+	except:
+		print "[!!!] Error in web call"
+		sys.exit()
+
 	# Analyze the responses against what they should be
 	if r.status_code == int(site['account_existence_code']):
 		code_match = True
@@ -88,9 +93,14 @@ for site in data['sites'] :
 		not_there_string = ''.join(random.choice(string.ascii_lowercase + string.ascii_uppercase + string.digits) for x in range(20))
 		url_fp = site['check_uri'].replace("{account}", not_there_string)
 		
-		# False positive checking
-		#print '     [-] Checking for False Positives. Looking up %s' % url_fp
-		r_fp = requests.get(url_fp, headers = headers)
+		try:
+			# False positive checking
+			#print '     [-] Checking for False Positives. Looking up %s' % url_fp
+			r_fp = requests.get(url_fp, headers=headers, timeout=30, verify=False)
+		except:
+			print "[!!!] Error in FP web call"
+			sys.exit()
+			
 		if r_fp.status_code == int(site['account_existence_code']):
 			code_match = True
 		else:
