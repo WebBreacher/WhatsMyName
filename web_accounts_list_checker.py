@@ -56,7 +56,6 @@ with open('web_accounts_list.json') as data_file:
     data = json.load(data_file)
 print '[-] %s sites found in file.' % len(data['sites'])
 
-x = 0 # Debug - put in here so I can test script without going through whole JSON file
 for site in data['sites'] :
 	code_match, string_match = False, False
 	# Examine the current validity of the entry
