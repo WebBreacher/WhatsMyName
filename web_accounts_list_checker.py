@@ -73,8 +73,8 @@ for site in data['sites'] :
 	try:
 		# Make web request for that URL, timeout in X secs and don't verify SSL/TLS certs
 		r = requests.get(url, headers=headers, timeout=30, verify=False)
-	except:
-		print "[!!!] Error in web call"
+	except ValueError, Argument::
+		print "[!!!] Error in web call -> %s -- %s" % (ValueError, Argument)
 		sys.exit()
 
 	# Analyze the responses against what they should be
@@ -97,10 +97,10 @@ for site in data['sites'] :
 			# False positive checking
 			#print '     [-] Checking for False Positives. Looking up %s' % url_fp
 			r_fp = requests.get(url_fp, headers=headers, timeout=30, verify=False)
-		except:
-			print "[!!!] Error in FP web call"
+		except ValueError, Argument::
+			print "[!!!] Error in FP web call -> %s -- %s" % (ValueError, Argument)
 			sys.exit()
-			
+
 		if r_fp.status_code == int(site['account_existence_code']):
 			code_match = True
 		else:
