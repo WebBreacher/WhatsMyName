@@ -88,7 +88,7 @@ for site in data['sites'] :
     print '[-] Looking up %s' % url
     r = web_call(url)
     if isinstance(r, str):
-        # If this is a string then web got an error
+        # We got an error on the web call
         print r
         continue
 
@@ -112,7 +112,7 @@ for site in data['sites'] :
             # If this is a string then web got an error
             print r_fp
             continue
-            
+
         if r_fp.status_code == int(site['account_existence_code']):
             code_match = True
         else:
