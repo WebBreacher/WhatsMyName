@@ -81,7 +81,7 @@ for site in data['sites'] :
         continue
     except requests.exceptions.RequestException as e:
         print '     [!] ERROR: CRITICAL ERROR. %s' % e
-        sys.exit(1)
+        continue
 
     # Analyze the responses against what they should be
     if r.status_code == int(site['account_existence_code']):
@@ -111,7 +111,7 @@ for site in data['sites'] :
             continue
         except requests.exceptions.RequestException as e:
             print '     [!] ERROR: CRITICAL ERROR FP. %s' % e
-            sys.exit(1)
+            continue
 
         if r_fp.status_code == int(site['account_existence_code']):
             code_match = True
