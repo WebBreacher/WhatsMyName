@@ -34,9 +34,25 @@ headers = {'User-Agent' : 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTM
 overall_results = {}
 
 def signal_handler(signal, frame):
-        print('[!!!] You pressed Ctrl+C. Exitting script.')
-        FinalOutput()
-        sys.exit(0)
+    print('[!!!] You pressed Ctrl+C. Exitting script.')
+    FinalOutput()
+    sys.exit(0)
+
+def web_call(url):
+    try:
+        # Make web request for that URL, timeout in X secs and don't verify SSL/TLS certs
+        r = requests.get(url, headers=headers, timeout=30, verify=False)
+    except requests.exceptions.Timeout:
+        print '     [!] ERROR: CONNECTION TIME OUT. Try increasing the timeout delay.'
+        continue
+    except requests.exceptions.TooManyRedirects:
+        print '     [!] ERROR: TOO MANY REDIRECTS. Try changing the URL.'
+        continue
+    except requests.exceptions.RequestException as e:
+        print '     [!] ERROR: CRITICAL ERROR. %s' % e
+        continue
+    else:
+        return r
 
 def FinalOutput():
     if len(overall_results) > 0:
@@ -70,7 +86,8 @@ for site in data['sites'] :
     # Pull the first user from known_accounts and replace the {account} with it
     url = site['check_uri'].replace("{account}", site['known_accounts'][0])
     print '[-] Looking up %s' % url
-    try:
+    r = web_call(url)
+    '''try:
         # Make web request for that URL, timeout in X secs and don't verify SSL/TLS certs
         r = requests.get(url, headers=headers, timeout=30, verify=False)
     except requests.exceptions.Timeout:
@@ -81,7 +98,7 @@ for site in data['sites'] :
         continue
     except requests.exceptions.RequestException as e:
         print '     [!] ERROR: CRITICAL ERROR. %s' % e
-        continue
+        continue'''
 
     # Analyze the responses against what they should be
     if r.status_code == int(site['account_existence_code']):
