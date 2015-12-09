@@ -43,13 +43,13 @@ def web_call(url):
         # Make web request for that URL, timeout in X secs and don't verify SSL/TLS certs
         r = requests.get(url, headers=headers, timeout=30, verify=False)
     except requests.exceptions.Timeout:
-        print '     [!] ERROR: CONNECTION TIME OUT. Try increasing the timeout delay.'
+        r = '     [!] ERROR: CONNECTION TIME OUT. Try increasing the timeout delay.'
         return
     except requests.exceptions.TooManyRedirects:
-        print '     [!] ERROR: TOO MANY REDIRECTS. Try changing the URL.'
+        r = '     [!] ERROR: TOO MANY REDIRECTS. Try changing the URL.'
         return
     except requests.exceptions.RequestException as e:
-        print '     [!] ERROR: CRITICAL ERROR. %s' % e
+        r = '     [!] ERROR: CRITICAL ERROR. %s' % e
         return
     else:
         return r
@@ -87,18 +87,10 @@ for site in data['sites'] :
     url = site['check_uri'].replace("{account}", site['known_accounts'][0])
     print '[-] Looking up %s' % url
     r = web_call(url)
-    '''try:
-        # Make web request for that URL, timeout in X secs and don't verify SSL/TLS certs
-        r = requests.get(url, headers=headers, timeout=30, verify=False)
-    except requests.exceptions.Timeout:
-        print '     [!] ERROR: CONNECTION TIME OUT. Try increasing the timeout delay.'
+    if isinstance(r, str):
+        # If this is a string then web got an error
+        print r
         continue
-    except requests.exceptions.TooManyRedirects:
-        print '     [!] ERROR: TOO MANY REDIRECTS. Try changing the URL.'
-        continue
-    except requests.exceptions.RequestException as e:
-        print '     [!] ERROR: CRITICAL ERROR. %s' % e
-        continue'''
 
     # Analyze the responses against what they should be
     if r.status_code == int(site['account_existence_code']):
@@ -115,21 +107,12 @@ for site in data['sites'] :
         # Generate a random string to use in place of known_accounts
         not_there_string = ''.join(random.choice(string.ascii_lowercase + string.ascii_uppercase + string.digits) for x in range(20))
         url_fp = site['check_uri'].replace("{account}", not_there_string)
-        
-        try:
-            # False positive checking
-            #print '     [-] Checking for False Positives. Looking up %s' % url_fp
-            r_fp = requests.get(url_fp, headers=headers, timeout=30, verify=False)
-        except requests.exceptions.Timeout:
-            print '     [!] ERROR: CONNECTION TIME OUT. Try increasing the timeout delay in FP Check.'
+        r_fp = web_call(url_fp)
+        if isinstance(r_fp, str):
+            # If this is a string then web got an error
+            print r_fp
             continue
-        except requests.exceptions.TooManyRedirects:
-            print '     [!] ERROR: TOO MANY REDIRECTS. Try changing the URL in FP Check.'
-            continue
-        except requests.exceptions.RequestException as e:
-            print '     [!] ERROR: CRITICAL ERROR FP. %s' % e
-            continue
-
+            
         if r_fp.status_code == int(site['account_existence_code']):
             code_match = True
         else:
