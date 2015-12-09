@@ -44,13 +44,13 @@ def web_call(url):
         r = requests.get(url, headers=headers, timeout=30, verify=False)
     except requests.exceptions.Timeout:
         print '     [!] ERROR: CONNECTION TIME OUT. Try increasing the timeout delay.'
-        continue
+        return
     except requests.exceptions.TooManyRedirects:
         print '     [!] ERROR: TOO MANY REDIRECTS. Try changing the URL.'
-        continue
+        return
     except requests.exceptions.RequestException as e:
         print '     [!] ERROR: CRITICAL ERROR. %s' % e
-        continue
+        return
     else:
         return r
 
