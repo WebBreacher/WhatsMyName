@@ -73,9 +73,15 @@ for site in data['sites'] :
 	try:
 		# Make web request for that URL, timeout in X secs and don't verify SSL/TLS certs
 		r = requests.get(url, headers=headers, timeout=30, verify=False)
-	except ValueError, Argument::
-		print "[!!!] Error in web call -> %s -- %s" % (ValueError, Argument)
-		sys.exit()
+	except requests.exceptions.Timeout:
+    	print '     [!] ERROR: CONNECTION TIME OUT. Try increasing the timeout delay.'
+    	continue
+	except requests.exceptions.TooManyRedirects:
+	    print '     [!] ERROR: TOO MANY REDIRECTS. Try changing the URL.'
+    	continue
+	except requests.exceptions.RequestException as e:
+	    print '     [!] ERROR: CRITICAL ERROR. %s' % e
+	    sys.exit(1)
 
 	# Analyze the responses against what they should be
 	if r.status_code == int(site['account_existence_code']):
@@ -97,9 +103,15 @@ for site in data['sites'] :
 			# False positive checking
 			#print '     [-] Checking for False Positives. Looking up %s' % url_fp
 			r_fp = requests.get(url_fp, headers=headers, timeout=30, verify=False)
-		except ValueError, Argument::
-			print "[!!!] Error in FP web call -> %s -- %s" % (ValueError, Argument)
-			sys.exit()
+		except requests.exceptions.Timeout:
+	    	print '     [!] ERROR: CONNECTION TIME OUT. Try increasing the timeout delay in FP Check.'
+	    	continue
+		except requests.exceptions.TooManyRedirects:
+		    print '     [!] ERROR: TOO MANY REDIRECTS. Try changing the URL in FP Check.'
+	    	continue
+		except requests.exceptions.RequestException as e:
+		    print '     [!] ERROR: CRITICAL ERROR FP. %s' % e
+		    sys.exit(1)
 
 		if r_fp.status_code == int(site['account_existence_code']):
 			code_match = True
