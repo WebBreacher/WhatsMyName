@@ -43,14 +43,11 @@ def web_call(url):
         # Make web request for that URL, timeout in X secs and don't verify SSL/TLS certs
         r = requests.get(url, headers=headers, timeout=30, verify=False)
     except requests.exceptions.Timeout:
-        r = '     [!] ERROR: CONNECTION TIME OUT. Try increasing the timeout delay.'
-        return
+        return '     [!] ERROR: CONNECTION TIME OUT. Try increasing the timeout delay.'
     except requests.exceptions.TooManyRedirects:
-        r = '     [!] ERROR: TOO MANY REDIRECTS. Try changing the URL.'
-        return
+        return '     [!] ERROR: TOO MANY REDIRECTS. Try changing the URL.'
     except requests.exceptions.RequestException as e:
-        r = '     [!] ERROR: CRITICAL ERROR. %s' % e
-        return
+        return '     [!] ERROR: CRITICAL ERROR. %s' % e
     else:
         return r
 
