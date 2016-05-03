@@ -55,7 +55,7 @@ def FinalOutput():
     if len(overall_results) > 0:
         print '------------'
         print 'The following previously "valid" sites had errors:'
-        for site, results in sorted(overall_results).iteritems():
+        for site, results in sorted(overall_results.iteritems()):
             print '     %s --> %s' % (site, results)
     else:
         print ":) No problems with the JSON file were found."
