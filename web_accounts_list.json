@@ -1718,51 +1718,51 @@
          "account_existence_code" : "200",
          "account_existence_string" : "s soup</title>",
          "account_missing_string" : "",
-         "account_missing_code" : "",
+         "account_missing_code" : "302",
          "known_accounts" : ["test"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "blog",
-         "valid" : false,
-         "comments" : [""]
+         "valid" : true,
+         "comments" : ["verified 05/03/2016 - webbreacher"]
       },
       {
          "name" : "Speaker Deck",
          "check_uri" : "https://speakerdeck.com/{account}",
          "account_existence_code" : "200",
          "account_existence_string" : "<title>Presentations by",
-         "account_missing_string" : "",
-         "account_missing_code" : "",
-         "known_accounts" : ["test"],
+         "account_missing_string" : "Oh, this is very sad",
+         "account_missing_code" : "404",
+         "known_accounts" : ["petecheslock"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "presos",
-         "valid" : false,
-         "comments" : [""]
+         "valid" : true,
+         "comments" : ["verified 05/03/2016 - webbreacher"]
       },
       {
          "name" : "sporcle",
          "check_uri" : "http://www.sporcle.com/user/{account}/connections",
          "account_existence_code" : "200",
          "account_existence_string" : "id='UserBox'>",
-         "account_missing_string" : "",
-         "account_missing_code" : "",
+         "account_missing_string" : "This Sporcle user cannot be found.",
+         "account_missing_code" : "200",
          "known_accounts" : ["test"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "gaming",
-         "valid" : false,
-         "comments" : [""]
+         "valid" : true,
+         "comments" : ["verified 05/03/2016 - webbreacher"]
       },
       {
          "name" : "Steam",
          "check_uri" : "http://steamcommunity.com/id/{account}",
          "account_existence_code" : "200",
          "account_existence_string" : "g_rgProfileData =",
-         "account_missing_string" : "",
-         "account_missing_code" : "",
+         "account_missing_string" : "Steam Community :: Error",
+         "account_missing_code" : "200",
          "known_accounts" : ["test"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "gaming",
-         "valid" : false,
-         "comments" : [""]
+         "valid" : true,
+         "comments" : ["verified 05/03/2016 - webbreacher"]
       },
       {
          "name" : "StumbleUpon",
