@@ -1796,38 +1796,38 @@
          "account_existence_code" : "200",
          "account_existence_string" : "<title>TF2 Backpack -",
          "account_missing_string" : "",
-         "account_missing_code" : "",
+         "account_missing_code" : "302",
          "known_accounts" : ["test"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "gaming",
-         "valid" : false,
-         "comments" : [""]
+         "valid" : true,
+         "comments" : ["verified 05/03/2016 - mmaczko"]
       },
       {
          "name" : "theguardian",
-         "check_uri" : "https://id.theguardian.com/profile/{account}/public",
+         "check_uri" : "https://profile.theguardian.com/user/{account}",
          "account_existence_code" : "200",
          "account_existence_string" : "Member since",
-         "account_missing_string" : "",
-         "account_missing_code" : "",
+         "account_missing_string" : "Sorry - we haven’t been able to serve the page you asked for",
+         "account_missing_code" : "404",
          "known_accounts" : ["test"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "news",
-         "valid" : false,
-         "comments" : [""]
+         "valid" : true,
+         "comments" : ["verified 05/03/2016 - mmaczko"]
       },
       {
          "name" : "thesixtyone",
          "check_uri" : "http://www.thesixtyone.com/{account}/",
          "account_existence_code" : "200",
          "account_existence_string" : "s music on thesixtyone",
-         "account_missing_string" : "",
-         "account_missing_code" : "",
+         "account_missing_string" : "no longer exists.",
+         "account_missing_code" : "200",
          "known_accounts" : ["john"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "music",
-         "valid" : false,
-         "comments" : [""]
+         "valid" : true,
+         "comments" : ["verified 05/03/2016 - mmaczko"]
       },
       {
          "name" : "tribe",
@@ -1836,11 +1836,11 @@
          "account_existence_string" : "Profile - tribe.net</title>",
          "account_missing_string" : "",
          "account_missing_code" : "",
-         "known_accounts" : [""],
+         "known_accounts" : ["mike"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "dating",
-         "valid" : false,
-         "comments" : [""]
+         "valid" : true,
+         "comments" : ["verified 05/03/2016 - mmaczko, account missing string not found"]
       },
       {
          "name" : "tripadvisor",
