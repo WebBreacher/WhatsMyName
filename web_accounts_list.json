@@ -445,7 +445,7 @@
       },
       {
          "name" : "Diply",
-         "check_uri" : "http://diply.com/profile/{account}",
+         "check_uri" : "http://diply.com/api/v1/articlecard/user/{account}/details",
          "account_existence_code" : "200",
          "account_existence_string" : "CoverUrl",
          "account_missing_string" : "",
@@ -466,19 +466,6 @@
          "known_accounts" : ["test", "john"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "video",
-         "valid" : true,
-         "comments" : ["verified 10/7/2015 - webbreacher"]
-      },
-      {
-         "name" : "Docstoc",
-         "check_uri" : "http://www.docstoc.com/profile/{account}",
-         "account_existence_code" : "200",
-         "account_existence_string" : "profile-pic",
-         "account_missing_string" : "404 Not Found",
-         "account_missing_code" : "404",
-         "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
-         "category" : "business",
          "valid" : true,
          "comments" : ["verified 10/7/2015 - webbreacher"]
       },
@@ -510,16 +497,16 @@
       },
       {
          "name" : "Engadget",
-         "check_uri" : "http://www.engadget.com/profile/{account}/",
+         "check_uri" : "http://www.engadget.com/about/editors/{account}/",
          "account_existence_code" : "200",
-         "account_existence_string" : "on Engadget: see their gadgets,",
-         "account_missing_string" : "Not Found - Engadget",
-         "account_missing_code" : "404",
-         "known_accounts" : ["johndoe"],
+         "account_existence_string" : "latest-listing-featured",
+         "account_missing_string" : "<title>,  -",
+         "account_missing_code" : "200",
+         "known_accounts" : ["brittany-vincent"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "tech",
          "valid" : true,
-         "comments" : ["verified 10/7/2015 - webbreacher"]
+         "comments" : ["verified 05/05/2016 - webbreacher"]
       },
       {
          "name" : "EPORNER",
@@ -969,19 +956,6 @@
          "comments" : ["verified 11/24/2015 - webbreacher"]
       },
       {
-         "name" : "JamBase",
-         "check_uri" : "http://www.jambase.com/Fans/{account}",
-         "account_existence_code" : "200",
-         "account_existence_string" : "Member Since",
-         "account_missing_string" : "Object moved to",
-         "account_missing_code" : "302",
-         "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
-         "category" : "music",
-         "valid" : true,
-         "comments" : ["verified 11/24/2015 - webbreacher"]
-      },
-      {
          "name" : "Keybase",
          "check_uri" : "https://keybase.io/{account}",
          "account_existence_code" : "200",
@@ -991,19 +965,6 @@
          "known_accounts" : ["test","mubix"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "business",
-         "valid" : true,
-         "comments" : ["verified 11/24/2015 - webbreacher"]
-      },
-      {
-         "name" : "Kik!",
-         "check_uri" : "http://www.kik.com/u/{account}",
-         "account_existence_code" : "200",
-         "account_existence_string" : "display-name",
-         "account_missing_string" : "there is no Kik user with that username",
-         "account_missing_code" : "200",
-         "known_accounts" : ["test","john"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
-         "category" : "social",
          "valid" : true,
          "comments" : ["verified 11/24/2015 - webbreacher"]
       },
@@ -1056,19 +1017,6 @@
          "known_accounts" : ["test"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "music",
-         "valid" : true,
-         "comments" : ["verified 12/07/2015 - webbreacher"]
-      },
-      {
-         "name" : "LawOfAttraction",
-         "check_uri" : "http://www.lawofattractionsingles.com/{account}",
-         "account_existence_code" : "200",
-         "account_existence_string" : "Member Name",
-         "account_missing_string" : "Profile not available for view",
-         "account_missing_code" : "404",
-         "known_accounts" : ["mike","frank"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
-         "category" : "dating",
          "valid" : true,
          "comments" : ["verified 12/07/2015 - webbreacher"]
       },
