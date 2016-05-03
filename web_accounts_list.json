@@ -1275,13 +1275,13 @@
          "check_uri" : "https://www.netvibes.com/{account}",
          "account_existence_code" : "200",
          "account_existence_string" : "s Public Page</title>",
-         "account_missing_string" : "",
-         "account_missing_code" : "",
+         "account_missing_string" : "Sorry, the page you are looking for",
+         "account_missing_code" : "404",
          "known_accounts" : ["adam"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "social",
-         "valid" : false,
-         "comments" : [""]
+         "valid" : true,
+         "comments" : ["verified 05/02/2016 - webbreacher"]
       },
       {
          "name" : "Newsvine",
@@ -1289,12 +1289,12 @@
          "account_existence_code" : "200",
          "account_existence_string" : " Profile</title>",
          "account_missing_string" : "",
-         "account_missing_code" : "",
+         "account_missing_code" : "404",
          "known_accounts" : ["mubix"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "blog",
-         "valid" : false,
-         "comments" : [""]
+         "valid" : true,
+         "comments" : ["verified 05/02/2016 - webbreacher"]
       },
       {
          "name" : "OKCupid",
