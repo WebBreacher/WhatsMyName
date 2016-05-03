@@ -18,6 +18,7 @@
             # pip install pyOpenSSL ndg-httpsclient pyasn1
 '''
 import requests
+from requests.packages.urllib3.exceptions import InsecureRequestWarning
 import json
 import os
 import random
@@ -31,7 +32,10 @@ import sys
 ###################
 # Set HTTP Header info.
 headers = {'User-Agent' : 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0'}
+
+# Create the final results dictionary
 overall_results = {}
+
 
 def signal_handler(signal, frame):
     print('[!!!] You pressed Ctrl+C. Exitting script.')
@@ -63,7 +67,13 @@ def FinalOutput():
 ###################
 # Main
 ###################
+
+# Add this in case user presses CTRL-C
 signal.signal(signal.SIGINT, signal_handler)
+
+# Suppress HTTPS warnings
+requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
+
 # Read in the JSON file
 with open('web_accounts_list.json') as data_file:    
     data = json.load(data_file)
