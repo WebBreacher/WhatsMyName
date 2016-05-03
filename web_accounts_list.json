@@ -1349,19 +1349,6 @@
          "comments" : [""]
       },
       {
-         "name" : "Plancast",
-         "check_uri" : "http://plancast.com/{account}/",
-         "account_existence_code" : "200",
-         "account_existence_string" : "<title>Attend Events with",
-         "account_missing_string" : "",
-         "account_missing_code" : "",
-         "known_accounts" : ["test123"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
-         "category" : "social",
-         "valid" : false,
-         "comments" : [""]
-      },
-      {
          "name" : "Plaxo",
          "check_uri" : "http://www.plaxo.com/profile/showPublic/{account}",
          "account_existence_code" : "200",
@@ -1379,39 +1366,39 @@
          "check_uri" : "http://playlists.net/members/{account}",
          "account_existence_code" : "200",
          "account_existence_string" : "<title>Profile for ",
-         "account_missing_string" : "",
-         "account_missing_code" : "",
+         "account_missing_string" : "Sorry we can't find that page",
+         "account_missing_code" : "404",
          "known_accounts" : ["test"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "music",
-         "valid" : false,
-         "comments" : [""]
+         "valid" : true,
+         "comments" : ["verified 05/03/2016 - mmaczko"]
       },
       {
          "name" : "Plurk",
          "check_uri" : "http://www.plurk.com/{account}",
          "account_existence_code" : "200",
          "account_existence_string" : "] on Plurk - Plurk</title>",
-         "account_missing_string" : "",
-         "account_missing_code" : "",
+         "account_missing_string" : "User Not Found!",
+         "account_missing_code" : "200",
          "known_accounts" : ["test"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "social",
-         "valid" : false,
-         "comments" : [""]
+         "valid" : true,
+         "comments" : ["verified 05/03/2016 - mmaczko"]
       },
       {
          "name" : "POF",
          "check_uri" : "http://www.pof.com/basicusersearch.aspx?usernamet={account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "div class=\"results\"",
+         "account_existence_string" : "viewprofile.aspx?profile_id",
          "account_missing_string" : "",
-         "account_missing_code" : "",
+         "account_missing_code" : "200",
          "known_accounts" : ["test"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "dating",
-         "valid" : false,
-         "comments" : [""]
+         "valid" : true,
+         "comments" : ["verified 05/03/2016 - mmaczko, account missing string not found"]
       },
       {
          "name" : "Porn.com",
@@ -1457,13 +1444,13 @@
          "check_uri" : "http://psnprofiles.com/{account}",
          "account_existence_code" : "200",
          "account_existence_string" : "PSN Profile - PSNProfiles.com",
-         "account_missing_string" : "",
-         "account_missing_code" : "",
+         "account_missing_string" : "PS4 Trophies, PS3 Trophies, PS Vita Trophies",
+         "account_missing_code" : "200",
          "known_accounts" : ["jeieem"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "gaming",
          "valid" : false,
-         "comments" : [""]
+         "comments" : ["verified 05/03/2016 - mmaczko"]
       },
       {
          "name" : "raptr",
