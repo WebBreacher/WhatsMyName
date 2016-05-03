@@ -1276,12 +1276,12 @@
          "account_existence_code" : "200",
          "account_existence_string" : "div class=\"profile_container_static\"",
          "account_missing_string" : "",
-         "account_missing_code" : "",
+         "account_missing_code" : "200",
          "known_accounts" : ["test"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "music",
-         "valid" : false,
-         "comments" : [""]
+         "valid" : true,
+         "comments" : ["verified 05/03/2016 - mmaczko, account missing string not found"]
       },
       {
          "name" : "Photoblog",
@@ -1301,13 +1301,13 @@
          "check_uri" : "http://smg.photobucket.com/user/{account}/profile/",
          "account_existence_code" : "200",
          "account_existence_string" : " Pictures, Photos & Images | Photobucket</title>",
-         "account_missing_string" : "",
-         "account_missing_code" : "",
+         "account_missing_string" : "Sorry, the requested page does not exist.",
+         "account_missing_code" : "404",
          "known_accounts" : ["test"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "images",
-         "valid" : false,
-         "comments" : [""]
+         "valid" : true,
+         "comments" : ["verified 05/03/2016 - mmaczko"]
       },
       {
          "name" : "PictureTrail",
