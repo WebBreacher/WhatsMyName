@@ -750,14 +750,14 @@
          "name" : "goodreads",
          "check_uri" : "http://www.goodreads.com/{account}",
          "account_existence_code" : "301",
-         "account_existence_string" : "www.goodreads.com/user/show/",
+         "account_existence_string" : "You are being",
          "account_missing_string" : "Page Not Found",
          "account_missing_code" : "404",
          "known_accounts" : ["test","mike"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "books",
          "valid" : true,
-         "comments" : ["verified 11/23/2015 - webbreacher"]
+         "comments" : ["fixed good string 20160509 - webbreacher","verified 11/23/2015 - webbreacher"]
       },
       {
          "name" : "Gravatar",
@@ -775,16 +775,16 @@
       },
       {
          "name" : "Hackers List",
-         "check_uri" : "https://hackerslist.com/user/{account}",
+         "check_uri" : "https://hackerslist.com/author/{account}/",
          "account_existence_code" : "200",
-         "account_existence_string" : "Average Pricing",
-         "account_missing_string" : "",
+         "account_existence_string" : "Member Since",
+         "account_missing_string" : ">Page not found",
          "account_missing_code" : "404",
-         "known_accounts" : ["test","bob"],
+         "known_accounts" : ["mike","john"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "hacker",
          "valid" : true,
-         "comments" : ["verified 11/23/2015 - webbreacher"]
+         "comments" : ["fixed URL and good string 20160509 - webbreacher","verified 11/23/2015 - webbreacher"]
       },
       {
          "name" : "howaboutwe",
@@ -1599,14 +1599,14 @@
          "name" : "Slashdot",
          "check_uri" : "http://slashdot.org/~{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : " - Slashdot User</title>",
+         "account_existence_string" : " - Slashdot User",
          "account_missing_string" : "The user you requested does not exist",
          "account_missing_code" : "200",
          "known_accounts" : ["DrSkwid"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "news",
          "valid" : true,
-         "comments" : ["verified 05/03/2016 - webbreacher"]
+         "comments" : ["fixed 20160509 - webbreacher, removed title from regex","verified 05/03/2016 - webbreacher"]
       },
       {
          "name" : "slideshare",
@@ -1626,7 +1626,7 @@
          "check_uri" : "http://smite.guru/stats/hr/{account}/summary",
          "account_existence_code" : "200",
          "account_existence_string" : "<title>SmiteGuru - ",
-         "account_missing_string" : ">Redirecting to http://smite.guru",
+         "account_missing_string" : "",
          "account_missing_code" : "302",
          "known_accounts" : ["RayGunRushi"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
