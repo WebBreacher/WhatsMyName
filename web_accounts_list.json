@@ -170,19 +170,6 @@
          "comments" : ["verified 10/4/2015 - webbreacher"]
       },
       {
-         "name" : "Bitly",
-         "check_uri" : "https://bit.ly/u/{account}",
-         "account_existence_code" : "200",
-         "account_existence_string" : "| Public Profile</title>",
-         "account_missing_string" : "Page Not Found",
-         "account_missing_code" : "404",
-         "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username","Organization"],
-         "category" : "url shortener",
-         "valid" : true,
-         "comments" : ["verified 10/4/2015 - webbreacher"]
-      },
-      {
          "name" : "BLIP.fm",
          "check_uri" : "http://blip.fm/{account}",
          "account_existence_code" : "200",
@@ -442,19 +429,6 @@
          "category" : "images",
          "valid" : true,
          "comments" : ["verified 10/7/2015 - webbreacher"]
-      },
-      {
-         "name" : "Diply",
-         "check_uri" : "http://diply.com/api/v1/articlecard/user/{account}/details",
-         "account_existence_code" : "200",
-         "account_existence_string" : "CoverUrl",
-         "account_missing_string" : "",
-         "account_missing_code" : "404",
-         "known_accounts" : ["AdotLalama","JackDing"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
-         "category" : "images",
-         "valid" : true,
-         "comments" : ["verified 05/02/2016 - webbreacher"]
       },
       {
          "name" : "DIY",

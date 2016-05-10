@@ -31,14 +31,56 @@ import sys
 # Variables && Functions
 ###################
 # Set HTTP Header info.
-headers = {'User-Agent' : 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0'}
+headers = {'User-Agent' : 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2228.0'}
 
 # Create the final results dictionary
 overall_results = {}
 
 
+def check_os():
+    if os.name == "nt":
+        operating_system = "windows"
+    if os.name == "posix":
+        operating_system = "posix"
+    return operating_system
+
+#
+# Class for colors
+#
+if check_os() == "posix":
+    class bcolors:
+        CYAN = '\033[96m'
+        GREEN = '\033[92m'
+        YELLOW = '\033[93m'
+        RED = '\033[91m'
+        ENDC = '\033[0m'
+
+        def disable(self):
+            self.CYAN = ''
+            self.GREEN = ''
+            self.YELLOW = ''
+            self.RED = ''
+            self.ENDC = ''
+
+# if we are windows or something like that then define colors as nothing
+else:
+    class bcolors:
+        CYAN = ''
+        GREEN = ''
+        YELLOW = ''
+        RED = ''
+        ENDC = ''
+
+        def disable(self):
+            self.CYAN = ''
+            self.GREEN = ''
+            self.YELLOW = ''
+            self.RED = ''
+            self.ENDC = ''
+
+
 def signal_handler(signal, frame):
-    print('[!!!] You pressed Ctrl+C. Exitting script.')
+    print(bcolors.RED + ' !!!  You pressed Ctrl+C. Exitting script.' + bcolors.ENDC)
     FinalOutput()
     sys.exit(0)
 
@@ -47,11 +89,11 @@ def web_call(url):
         # Make web request for that URL, timeout in X secs and don't verify SSL/TLS certs
         r = requests.get(url, headers=headers, timeout=60, verify=False)
     except requests.exceptions.Timeout:
-        return '     [!] ERROR: CONNECTION TIME OUT. Try increasing the timeout delay.'
+        return bcolors.RED + '      ! ERROR: CONNECTION TIME OUT. Try increasing the timeout delay.' + bcolors.ENDC
     except requests.exceptions.TooManyRedirects:
-        return '     [!] ERROR: TOO MANY REDIRECTS. Try changing the URL.'
+        return bcolors.RED + '      ! ERROR: TOO MANY REDIRECTS. Try changing the URL.' + bcolors.ENDC
     except requests.exceptions.RequestException as e:
-        return '     [!] ERROR: CRITICAL ERROR. %s' % e
+        return bcolors.RED + '      ! ERROR: CRITICAL ERROR. %s' % e + bcolors.ENDC 
     else:
         return r
 
@@ -60,7 +102,7 @@ def FinalOutput():
         print '------------'
         print 'The following previously "valid" sites had errors:'
         for site, results in sorted(overall_results.iteritems()):
-            print '     %s --> %s' % (site, results)
+            print bcolors.YELLOW + '     %s --> %s' % (site, results) + bcolors.ENDC
     else:
         print ":) No problems with the JSON file were found."
 
@@ -77,22 +119,22 @@ requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
 # Read in the JSON file
 with open('web_accounts_list.json') as data_file:    
     data = json.load(data_file)
-print '[-] %s sites found in file.' % len(data['sites'])
+print ' -  %s sites found in file.' % len(data['sites'])
 
 for site in data['sites'] :
     code_match, string_match = False, False
     # Examine the current validity of the entry
     if site['valid'] == False:
-        print '[!] Skipping %s - Marked as not valid.' % site['name']
+        print bcolors.CYAN + ' *  Skipping %s - Marked as not valid.' % site['name'] + bcolors.ENDC 
         continue
     if site['known_accounts'][0] == False:
-        print '[!] Skipping %s - No valid user names to test.' % site['name']
+        print bcolors.CYAN + ' *  Skipping %s - No valid user names to test.' % site['name'] + bcolors.ENDC 
         continue
 
     # Perform initial lookup
     # Pull the first user from known_accounts and replace the {account} with it
     url = site['check_uri'].replace("{account}", site['known_accounts'][0])
-    print '[-] Looking up %s' % url
+    print ' -  Looking up %s' % url
     r = web_call(url)
     if isinstance(r, str):
         # We got an error on the web call
@@ -129,8 +171,8 @@ for site in data['sites'] :
         else:
             string_match = False
         if code_match == True and string_match == True:
-            print '     [-] Code: %s; String: %s' % (code_match, string_match)
-            print '     [!] ERROR: FALSE POSITIVE DETECTED. Response code and Search Strings match expected.'
+            print '      -  Code: %s; String: %s' % (code_match, string_match)
+            print bcolors.RED + '      !  ERROR: FALSE POSITIVE DETECTED. Response code and Search Strings match expected.' + bcolors.ENDC
             #TODO set site['valid'] = False
             overall_results[site['name']] = 'False Positive'
         else:
@@ -138,15 +180,16 @@ for site in data['sites'] :
             pass
     elif code_match == True and string_match == False:
         #TODO set site['valid'] = False
-        print '     [!] ERROR: BAD DETECTION STRING. "%s" was not found on resulting page.' % site['account_existence_string']
+        print bcolors.RED + '      !  ERROR: BAD DETECTION STRING. "%s" was not found on resulting page.'% site['account_existence_string'] + bcolors.ENDC
         overall_results[site['name']] = 'Bad detection string.'
     elif code_match == False and string_match == True:
         #TODO set site['valid'] = False
-        print '     [!] ERROR: BAD DETECTION RESPONSE CODE. HTTP Response code different than expected.'
+        print bcolors.RED + '      !  ERROR: BAD DETECTION RESPONSE CODE. HTTP Response code different than expected.' + bcolors.ENDC
         overall_results[site['name']] = 'Bad detection code. Expected: %s; Received: %s.' % (str(r.status_code), site['account_existence_code'])
     else:
         #TODO set site['valid'] = False
-        print '     [!] ERROR: BAD CODE AND STRING. Neither the HTTP response code or detection string worked.'
+        print bcolors.RED + '      !  ERROR: BAD CODE AND STRING. Neither the HTTP response code or detection string worked.' + bcolors.ENDC
         overall_results[site['name']] = 'Bad detection code and string. Expected Code: %s; Received Code: %s.' % (str(r.status_code), site['account_existence_code'])
+
 
 FinalOutput()
