@@ -564,13 +564,13 @@
          "check_uri" : "http://ffffound.com/home/{account}/found/",
          "account_existence_code" : "200",
          "account_existence_string" : "<title>FFFFOUND!</title>",
-         "account_missing_string" : "",
-         "account_missing_code" : "",
-         "known_accounts" : [""],
+         "account_missing_string" : "Not FFFFound!",
+         "account_missing_code" : "404",
+         "known_accounts" : ["jensen","bit"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "image",
-         "valid" : false,
-         "comments" : [""]
+         "valid" : true,
+         "comments" : ["verified 20160511 webbreacher"]
       },
       {
          "name" : "Flickr",
@@ -816,13 +816,13 @@
          "name" : "I-am-pregnant",
          "check_uri" : "http://www.i-am-pregnant.com/vip/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "This is the stylesheet for your pages. Add your own rules below this line",
-         "account_missing_string" : "",
-         "account_missing_code" : "",
-         "known_accounts" : [""],
+         "account_existence_string" : "| Activity RSS Feed",
+         "account_missing_string" : "404 Page",
+         "account_missing_code" : "404",
+         "known_accounts" : ["Kelly","Cney"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "health",
-         "valid" : false,
+         "valid" : true,
          "comments" : [""]
       },
       {
@@ -1847,13 +1847,13 @@
          "check_uri" : "http://{account}.tumblr.com",
          "account_existence_code" : "200",
          "account_existence_string" : "media.tumblr.com/avatar",
-         "account_missing_string" : "<title>Not found",
+         "account_missing_string" : "There's nothing here",
          "account_missing_code" : "404",
          "known_accounts" : ["test","test1"],
          "allowed_types" : ["String","Person","WebAccount","Username","Organization"],
          "category" : "images",
-         "valid" : false,
-         "comments" : ["verified 05/03/2016 - mmaczko"]
+         "valid" : true,
+         "comments" : ["verified = 20160511 - webbreacher","verified 05/03/2016 - mmaczko"]
       },
       {
          "name" : "Twitpic",
