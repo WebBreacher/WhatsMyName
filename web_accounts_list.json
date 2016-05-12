@@ -1740,29 +1740,29 @@
       },
       {
          "name" : "StumbleUpon",
-         "check_uri" : "http://www.stumbleupon.com/stumbler/{account}",
+         "check_uri" : "http://www.stumbleupon.com/stumbler/{account}?_nospa=true",
          "account_existence_code" : "200",
          "account_existence_string" : "s Likes | StumbleUpon.com</title>",
-         "account_missing_string" : "",
-         "account_missing_code" : "",
-         "known_accounts" : ["john"],
+         "account_missing_string" : "we can't find the page you're looking for ",
+         "account_missing_code" : "404",
+         "known_accounts" : ["mike","john"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "social",
-         "valid" : false,
-         "comments" : [""]
+         "valid" : true,
+         "comments" : ["verified - 20160511 - webbreacher"]
       },
       {
          "name" : "stupidcancer",
          "check_uri" : "http://stupidcancer.org/community/profile/{account}",
          "account_existence_code" : "200",
          "account_existence_string" : "- Stupid Cancer Community</title>",
-         "account_missing_string" : "",
-         "account_missing_code" : "",
+         "account_missing_string" : "User not found",
+         "account_missing_code" : "404",
          "known_accounts" : ["myriam"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "health",
-         "valid" : false,
-         "comments" : [""]
+         "valid" : true,
+         "comments" : ["verified - 20160511 - webbreacher"]
       },
       {
          "name" : "TF2 Backpack Examiner",
@@ -1808,26 +1808,26 @@
          "check_uri" : "http://people.tribe.net/{account}",
          "account_existence_code" : "200",
          "account_existence_string" : "Profile - tribe.net</title>",
-         "account_missing_string" : "",
-         "account_missing_code" : "",
-         "known_accounts" : ["mike"],
+         "account_missing_string" : "><body></body></html>",
+         "account_missing_code" : "200",
+         "known_accounts" : ["mike","john"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "dating",
          "valid" : true,
-         "comments" : ["verified 05/03/2016 - mmaczko, account missing string not found"]
+         "comments" : ["verified - 20160511 - webbreacher","verified 05/03/2016 - mmaczko, account missing string not found"]
       },
       {
          "name" : "tripadvisor",
-         "check_uri" : "http://www.tripadvisor.com/members/{account}",
+         "check_uri" : "https://www.tripadvisor.com/members/{account}",
          "account_existence_code" : "200",
          "account_existence_string" : "Total Points",
-         "account_missing_string" : "",
-         "account_missing_code" : "",
-         "known_accounts" : ["test"],
+         "account_missing_string" : "This page is on vacation",
+         "account_missing_code" : "404",
+         "known_accounts" : ["john","test"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "travel",
-         "valid" : false,
-         "comments" : [""]
+         "valid" : true,
+         "comments" : ["verified - 20160511 - webbreacher"]
       },
       {
          "name" : "Tripit",
@@ -1873,13 +1873,13 @@
          "check_uri" : "https://twitter.com/{account}",
          "account_existence_code" : "200",
          "account_existence_string" : "| Twitter</title>",
-         "account_missing_string" : "",
-         "account_missing_code" : "",
-         "known_accounts" : ["test123"],
+         "account_missing_string" : "Sorry, that page doesn",
+         "account_missing_code" : "404",
+         "known_accounts" : ["webbreacher","osintninja"],
          "allowed_types" : ["String","Person","WebAccount","Username","Organization"],
          "category" : "social",
-         "valid" : false,
-         "comments" : [""]
+         "valid" : true,
+         "comments" : ["verified - 20160511 - webbreacher"]
       },
       {
          "name" : "untappd",
