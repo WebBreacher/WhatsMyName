@@ -402,7 +402,7 @@
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "bookmarks",
          "valid" : true,
-         "comments" : ["verified 05/02/2016 - webbreacher"]
+         "comments" : ["verified 20160502 - webbreacher"]
       },
       {
          "name" : "DeviantArt",
@@ -953,7 +953,7 @@
          "allowed_types" : ["String","Person","WebAccount","Username","Person"],
          "category" : "social",
          "valid" : true,
-         "comments" : ["verified 05/03/2016 - mmaczko"]
+         "comments" : ["verified 20160503 - mmaczko"]
       },
       {
          "name" : "Klout",
@@ -1151,7 +1151,7 @@
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "news",
          "valid" : true,
-         "comments" : ["verified 05/02/2016 - webbreacher"]
+         "comments" : ["verified 20160502 - webbreacher"]
       },
       {
          "name" : "MyBuilder.com",
@@ -1164,7 +1164,7 @@
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "business",
          "valid" : true,
-         "comments" : ["verified 05/02/2016 - webbreacher"]
+         "comments" : ["verified 20160502 - webbreacher"]
       },
       {
          "name" : "MyFitnessPal",
@@ -1177,7 +1177,7 @@
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "health",
          "valid" : true,
-         "comments" : ["verified 05/02/2016 - webbreacher"]
+         "comments" : ["verified 20160502 - webbreacher"]
       },
       {
          "name" : "MyLot",
@@ -1190,7 +1190,7 @@
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "social",
          "valid" : true,
-         "comments" : ["verified 05/02/2016 - webbreacher"]
+         "comments" : ["verified 20160502 - webbreacher"]
       },
       {
          "name" : "Myspace",
@@ -1203,7 +1203,7 @@
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "social",
          "valid" : true,
-         "comments" : ["verified 05/02/2016 - webbreacher"]
+         "comments" : ["verified 20160502 - webbreacher"]
       },
       {
          "name" : "netvibes",
@@ -1216,7 +1216,7 @@
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "social",
          "valid" : true,
-         "comments" : ["verified 05/02/2016 - webbreacher"]
+         "comments" : ["verified 20160502 - webbreacher"]
       },
       {
          "name" : "Newsvine",
@@ -1229,7 +1229,7 @@
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "blog",
          "valid" : true,
-         "comments" : ["verified 05/02/2016 - webbreacher"]
+         "comments" : ["verified 20160502 - webbreacher"]
       },
       {
          "name" : "OKCupid",
@@ -1242,7 +1242,7 @@
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "dating",
          "valid" : true,
-         "comments" : ["verified 05/02/2016 - webbreacher"]
+         "comments" : ["verified 20160502 - webbreacher"]
       },
       {
          "name" : "Overcast Network",
@@ -1255,7 +1255,7 @@
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "gaming",
          "valid" : true,
-         "comments" : ["verified 05/02/2016 - webbreacher"]
+         "comments" : ["verified 20160502 - webbreacher"]
       },
       {
          "name" : "Pandora",
@@ -1264,24 +1264,24 @@
          "account_existence_string" : "div class=\"profile_container_static\"",
          "account_missing_string" : "",
          "account_missing_code" : "200",
-         "known_accounts" : ["test"],
+         "known_accounts" : ["test","mike"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "music",
          "valid" : true,
-         "comments" : ["verified 05/03/2016 - mmaczko, account missing string not found"]
+         "comments" : ["verified 20160503 - mmaczko, account missing string not found"]
       },
       {
          "name" : "Photoblog",
          "check_uri" : "http://www.photoblog.com/{account}/",
          "account_existence_code" : "200",
-         "account_existence_string" : "photoblog_username = \"",
+         "account_existence_string" : ">Options<",
          "account_missing_string" : "",
-         "account_missing_code" : "",
-         "known_accounts" : [""],
+         "account_missing_code" : "302",
+         "known_accounts" : ["hatsumi","pdsdville"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "images",
-         "valid" : false,
-         "comments" : [""]
+         "valid" : true,
+         "comments" : ["verified 20160518 - webbreacher"]
       },
       {
          "name" : "PhotoBucket",
@@ -1294,7 +1294,7 @@
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "images",
          "valid" : true,
-         "comments" : ["verified 05/03/2016 - mmaczko"]
+         "comments" : ["verified 20160503 - mmaczko"]
       },
       {
          "name" : "PictureTrail",
@@ -1302,25 +1302,25 @@
          "account_existence_code" : "200",
          "account_existence_string" : "<title>PictureTrail</title>",
          "account_missing_string" : "",
-         "account_missing_code" : "",
-         "known_accounts" : [""],
+         "account_missing_code" : "302",
+         "known_accounts" : ["joanscreations","grunwalde"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "images",
-         "valid" : false,
-         "comments" : [""]
+         "valid" : true,
+         "comments" : ["verified 20160518 - webbreacher"]
       },
       {
          "name" : "PinkBike",
          "check_uri" : "http://www.pinkbike.com/u/{account}/",
          "account_existence_code" : "200",
          "account_existence_string" : "on Pinkbike</title>",
-         "account_missing_string" : "",
-         "account_missing_code" : "",
-         "known_accounts" : [""],
+         "account_missing_string" : "I couldn't find the page you were looking for",
+         "account_missing_code" : "404",
+         "known_accounts" : ["whistlermountainbikepark","paulhanson"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "hobby",
-         "valid" : false,
-         "comments" : [""]
+         "valid" : true,
+         "comments" : ["verified 20160518 - webbreacher"]
       },
       {
          "name" : "Pinterest",
@@ -1359,7 +1359,7 @@
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "music",
          "valid" : true,
-         "comments" : ["verified 05/03/2016 - mmaczko"]
+         "comments" : ["verified 20160503 - mmaczko"]
       },
       {
          "name" : "Plurk",
@@ -1372,7 +1372,7 @@
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "social",
          "valid" : true,
-         "comments" : ["verified 05/03/2016 - mmaczko"]
+         "comments" : ["verified 20160503 - mmaczko"]
       },
       {
          "name" : "POF",
@@ -1385,7 +1385,7 @@
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "dating",
          "valid" : true,
-         "comments" : ["verified 05/03/2016 - mmaczko, account missing string not found"]
+         "comments" : ["verified 20160503 - mmaczko, account missing string not found"]
       },
       {
          "name" : "Porn.com",
@@ -1437,7 +1437,7 @@
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "gaming",
          "valid" : false,
-         "comments" : ["verified 05/03/2016 - mmaczko"]
+         "comments" : ["verified 20160503 - mmaczko"]
       },
       {
          "name" : "raptr",
@@ -1463,7 +1463,7 @@
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "music",
          "valid" : true,
-         "comments" : ["verified 05/03/2016 - webbreacher"]
+         "comments" : ["verified 20160503 - webbreacher"]
       },
       {
          "name" : "Readability",
@@ -1476,7 +1476,7 @@
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "social",
          "valid" : true,
-         "comments" : ["verified 05/03/2016 - webbreacher"]
+         "comments" : ["verified 20160503 - webbreacher"]
       },
       {
          "name" : "reddit",
@@ -1489,7 +1489,7 @@
          "allowed_types" : ["String","Person","WebAccount","Username","Organization"],
          "category" : "news",
          "valid" : true,
-         "comments" : ["verified 05/03/2016 - webbreacher"]
+         "comments" : ["verified 20160503 - webbreacher"]
       },
       {
          "name" : "redTube",
@@ -1515,7 +1515,7 @@
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "social",
          "valid" : true,
-         "comments" : ["verified 05/03/2016 - webbreacher"]
+         "comments" : ["verified 20160503 - webbreacher"]
       },
       {
          "name" : "scratch",
@@ -1528,7 +1528,7 @@
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "coding",
          "valid" : true,
-         "comments" : ["verified 05/03/2016 - webbreacher"]
+         "comments" : ["verified 20160503 - webbreacher"]
       },
       {
          "name" : "Security Street",
@@ -1541,7 +1541,7 @@
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "social",
          "valid" : true,
-         "comments" : ["verified 05/03/2016 - webbreacher"]
+         "comments" : ["verified 20160503 - webbreacher"]
       },
       {
          "name" : "setlist.fm",
@@ -1554,7 +1554,7 @@
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "music",
          "valid" : true,
-         "comments" : ["verified 05/03/2016 - webbreacher"]
+         "comments" : ["verified 20160503 - webbreacher"]
       },
       {
          "name" : "shelfari",
@@ -1567,7 +1567,7 @@
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "books",
          "valid" : true,
-         "comments" : ["verified 05/03/2016 - webbreacher"]
+         "comments" : ["verified 20160503 - webbreacher"]
       },
       {
          "name" : "Shopcade",
@@ -1580,7 +1580,7 @@
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "shopping",
          "valid" : true,
-         "comments" : ["verified 05/03/2016 - webbreacher"]
+         "comments" : ["verified 20160503 - webbreacher"]
       },
       {
          "name" : "singlemuslim",
@@ -1593,7 +1593,7 @@
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "dating",
          "valid" : true,
-         "comments" : ["verified 05/03/2016 - webbreacher"]
+         "comments" : ["verified 20160503 - webbreacher"]
       },
       {
          "name" : "Slashdot",
@@ -1606,7 +1606,7 @@
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "news",
          "valid" : true,
-         "comments" : ["fixed 20160509 - webbreacher, removed title from regex","verified 05/03/2016 - webbreacher"]
+         "comments" : ["fixed 20160509 - webbreacher, removed title from regex","verified 20160503 - webbreacher"]
       },
       {
          "name" : "slideshare",
@@ -1619,7 +1619,7 @@
          "allowed_types" : ["String","Person","WebAccount","Username","Organization"],
          "category" : "presos",
          "valid" : true,
-         "comments" : ["verified 05/03/2016 - webbreacher"]
+         "comments" : ["verified 20160503 - webbreacher"]
       },
       {
          "name" : "SmiteGuru",
@@ -1632,7 +1632,7 @@
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "gaming",
          "valid" : true,
-         "comments" : ["verified 05/03/2016 - webbreacher"]
+         "comments" : ["verified 20160503 - webbreacher"]
       },
       {
          "name" : "SmugMug",
@@ -1645,7 +1645,7 @@
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "images",
          "valid" : true,
-         "comments" : ["verified 05/03/2016 - webbreacher"]
+         "comments" : ["verified 20160503 - webbreacher"]
       },
       {
          "name" : "smule",
@@ -1658,7 +1658,7 @@
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "music",
          "valid" : true,
-         "comments" : ["verified 05/03/2016 - webbreacher"]
+         "comments" : ["verified 20160503 - webbreacher"]
       },
       {
          "name" : "snooth",
@@ -1671,7 +1671,7 @@
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "food",
          "valid" : true,
-         "comments" : ["verified 05/03/2016 - webbreacher"]
+         "comments" : ["verified 20160503 - webbreacher"]
       },
       {
          "name" : "SoundCloud",
@@ -1697,7 +1697,7 @@
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "blog",
          "valid" : true,
-         "comments" : ["verified 05/03/2016 - webbreacher"]
+         "comments" : ["verified 20160503 - webbreacher"]
       },
       {
          "name" : "Speaker Deck",
@@ -1710,7 +1710,7 @@
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "presos",
          "valid" : true,
-         "comments" : ["verified 05/03/2016 - webbreacher"]
+         "comments" : ["verified 20160503 - webbreacher"]
       },
       {
          "name" : "sporcle",
@@ -1723,7 +1723,7 @@
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "gaming",
          "valid" : true,
-         "comments" : ["verified 05/03/2016 - webbreacher"]
+         "comments" : ["verified 20160503 - webbreacher"]
       },
       {
          "name" : "Steam",
@@ -1736,7 +1736,7 @@
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "gaming",
          "valid" : true,
-         "comments" : ["verified 05/03/2016 - webbreacher"]
+         "comments" : ["verified 20160503 - webbreacher"]
       },
       {
          "name" : "StumbleUpon",
@@ -1775,7 +1775,7 @@
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "gaming",
          "valid" : true,
-         "comments" : ["verified 05/03/2016 - mmaczko"]
+         "comments" : ["verified 20160503 - mmaczko"]
       },
       {
          "name" : "theguardian",
@@ -1788,7 +1788,7 @@
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "news",
          "valid" : true,
-         "comments" : ["verified 05/03/2016 - mmaczko"]
+         "comments" : ["verified 20160503 - mmaczko"]
       },
       {
          "name" : "thesixtyone",
@@ -1801,7 +1801,7 @@
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "music",
          "valid" : true,
-         "comments" : ["verified 05/03/2016 - mmaczko"]
+         "comments" : ["verified 20160503 - mmaczko"]
       },
       {
          "name" : "tribe",
@@ -1814,7 +1814,7 @@
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "dating",
          "valid" : true,
-         "comments" : ["verified - 20160511 - webbreacher","verified 05/03/2016 - mmaczko, account missing string not found"]
+         "comments" : ["verified - 20160511 - webbreacher","verified 20160503 - mmaczko, account missing string not found"]
       },
       {
          "name" : "tripadvisor",
@@ -1840,7 +1840,7 @@
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "travel",
          "valid" : true,
-         "comments" : ["Validated 2015-11-01 webbreacher","verified 05/03/2016 - mmaczko"]
+         "comments" : ["Validated 2015-11-01 webbreacher","verified 20160503 - mmaczko"]
       },
       {
          "name" : "tumblr",
@@ -1853,7 +1853,7 @@
          "allowed_types" : ["String","Person","WebAccount","Username","Organization"],
          "category" : "images",
          "valid" : true,
-         "comments" : ["verified = 20160511 - webbreacher","verified 05/03/2016 - mmaczko"]
+         "comments" : ["verified = 20160511 - webbreacher","verified 20160503 - mmaczko"]
       },
       {
          "name" : "Twitpic",
@@ -1866,7 +1866,7 @@
          "allowed_types" : ["String","Person","WebAccount","Username","Organization"],
          "category" : "travel",
          "valid" : "social",
-         "comments" : ["verified 05/03/2016 - mmaczko"]
+         "comments" : ["verified 20160503 - mmaczko"]
       },
       {
          "name" : "Twitter",
