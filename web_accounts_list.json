@@ -573,6 +573,19 @@
          "comments" : ["verified 20160511 webbreacher"]
       },
       {
+         "name" : "Fiverr",
+         "check_uri" : "https://www.fiverr.com/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : " | Fiverr</title>",
+         "account_missing_string" : "You are being ",
+         "account_missing_code" : "301",
+         "known_accounts" : ["test","gabarnes"],
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "image",
+         "valid" : true,
+         "comments" : ["verified 20160518 - webbreacher"]
+      },
+      {
          "name" : "Flickr",
          "check_uri" : "https://www.flickr.com/photos/{account}/",
          "account_existence_code" : "200",
@@ -1327,26 +1340,13 @@
          "check_uri" : "https://www.pinterest.com/{account}/",
          "account_existence_code" : "200",
          "account_existence_string" : "on Pinterest</title>",
-         "account_missing_string" : "",
-         "account_missing_code" : "",
-         "known_accounts" : ["test123"],
+         "account_missing_string" : "Whoops! We couldn't find that page",
+         "account_missing_code" : "404",
+         "known_accounts" : ["test123","frickcollection"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "social",
-         "valid" : false,
-         "comments" : [""]
-      },
-      {
-         "name" : "Plaxo",
-         "check_uri" : "http://www.plaxo.com/profile/showPublic/{account}",
-         "account_existence_code" : "200",
-         "account_existence_string" : "s Public Profile</title>",
-         "account_missing_string" : "",
-         "account_missing_code" : "",
-         "known_accounts" : [""],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
-         "category" : "social",
-         "valid" : false,
-         "comments" : [""]
+         "valid" : true,
+         "comments" : ["verified 20160518 - webbreacher"]
       },
       {
          "name" : "Playlists.net",
@@ -1392,26 +1392,26 @@
          "check_uri" : "http://www.porn.com/profile/{account}",
          "account_existence_code" : "200",
          "account_existence_string" : "Member Profile - PORN.COM</title>",
-         "account_missing_string" : "",
-         "account_missing_code" : "",
-         "known_accounts" : [""],
+         "account_missing_string" : "404 - Page not found",
+         "account_missing_code" : "404",
+         "known_accounts" : ["HottieDiana94","romarandi"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "XXX PORN XXX",
-         "valid" : false,
-         "comments" : [""]
+         "valid" : true,
+         "comments" : ["verified 20160518 - webbreacher"]
       },
       {
          "name" : "Pornhub",
          "check_uri" : "http://www.pornhub.com/users/{account}",
          "account_existence_code" : "200",
          "account_existence_string" : "s Profile - Pornhub.com</title>",
-         "account_missing_string" : "",
-         "account_missing_code" : "",
-         "known_accounts" : [""],
+         "account_missing_string" : "Error Page Not Found",
+         "account_missing_code" : "404",
+         "known_accounts" : ["test123"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "XXX PORN XXX",
-         "valid" : false,
-         "comments" : [""]
+         "valid" : true,
+         "comments" : ["verified 20160518 - webbreacher"]
       },
       {
          "name" : "Prinfection",
