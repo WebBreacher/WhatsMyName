@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/python
 
 '''
     Author : Micah Hoffman (@WebBreacher)
@@ -8,8 +8,7 @@
     TODO - 
         1 - Make it so the script will toggle validity factor per entry and write to output file
         2 - Make it so the script will append comment to the entry and output to file
-        3 - Colorize output
-        4 - Make a stub file shows last time sites were checked and problems.
+        3 - Make a stub file shows last time sites were checked and problems.
 
     ISSUES -
         1 - Had an issue with SSL handshakes and this script. Had to do the following to get it working
