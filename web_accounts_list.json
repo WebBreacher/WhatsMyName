@@ -1037,7 +1037,7 @@
          "name" : "LinkedIn",
          "check_uri" : "http://www.librarything.com/profile/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : " | LinkedIn</title>",
+         "account_existence_string" : "See who you know in common",
          "account_missing_string" : "Profile Not Found",
          "account_missing_code" : "404",
          "known_accounts" : ["mike-doiron-b4b2481","john-garcia-804b7b"],
@@ -1112,6 +1112,19 @@
          "category" : "dating",
          "valid" : true,
          "comments" : ["verified 12/07/2015 - webbreacher"]
+      },
+      {
+         "name" : "Microsoft Technet Community",
+         "check_uri" : "https://social.technet.microsoft.com/profile/{account}/",
+         "account_existence_code" : "200",
+         "account_existence_string" : "s Profile</title>",
+         "account_missing_string" : "The resource you are looking for has been removed",
+         "account_missing_code" : "404",
+         "known_accounts" : ["john","test"],
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "dating",
+         "valid" : true,
+         "comments" : ["verified 20160518 - webbreacher"]
       },
       {
          "name" : "Mixcloud",
