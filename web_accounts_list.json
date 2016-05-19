@@ -48,8 +48,8 @@
          "known_accounts" : ["test", "john"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "dating",
-         "valid" : true,
-         "comments" : ["verified 10/4/2015 - webbreacher"]
+         "valid" : false,
+         "comments" : ["DISABLED bad detection string - 20160518 - webbreacher","verified 10/4/2015 - webbreacher"]
       },
       {
          "name" : "AngelList",
@@ -556,8 +556,8 @@
          "known_accounts" : ["test"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "social",
-         "valid" : true,
-         "comments" : ["verified 11/07/2015 - webbreacher"]
+         "valid" : false,
+         "comments" : ["DISABLED false positive - 20160518 - webbreacher","verified 11/07/2015 - webbreacher"]
       },
       {
          "name" : "FFFFOUND!",
@@ -743,8 +743,8 @@
          "known_accounts" : ["test"],
          "allowed_types" : ["String","Person","WebAccount","Username","Organization"],
          "category" : "coding",
-         "valid" : true,
-         "comments" : ["verified 11/08/2015 - webbreacher"]
+         "valid" : false,
+         "comments" : ["DISABLED bad detection string - 20160518 - webbreacher","verified 11/08/2015 - webbreacher"]
       },
       {
          "name" : "gogobot",
@@ -769,8 +769,8 @@
          "known_accounts" : ["test","mike"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "books",
-         "valid" : true,
-         "comments" : ["fixed good string 20160509 - webbreacher","verified 11/23/2015 - webbreacher"]
+         "valid" : false,
+         "comments" : ["DISABLED bad detection string - 20160518 - webbreacher","fixed good string 20160509 - webbreacher","verified 11/23/2015 - webbreacher"]
       },
       {
          "name" : "Gravatar",
@@ -1462,8 +1462,8 @@
          "known_accounts" : ["test"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "music",
-         "valid" : true,
-         "comments" : ["verified 20160503 - webbreacher"]
+         "valid" : false,
+         "comments" : ["DISABLED bad detection string - 20160518 - webbreacher","verified 20160503 - webbreacher"]
       },
       {
          "name" : "Readability",
@@ -1618,8 +1618,8 @@
          "known_accounts" : ["DrSkwid"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "news",
-         "valid" : true,
-         "comments" : ["fixed 20160509 - webbreacher, removed title from regex","verified 20160503 - webbreacher"]
+         "valid" : false,
+         "comments" : ["DISABLED false positive - 20160518 - webbreacher","fixed 20160509 - webbreacher, removed title from regex","verified 20160503 - webbreacher"]
       },
       {
          "name" : "slideshare",
@@ -1644,8 +1644,8 @@
          "known_accounts" : ["RayGunRushi"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "gaming",
-         "valid" : true,
-         "comments" : ["verified 20160503 - webbreacher"]
+         "valid" : false,
+         "comments" : ["DISABLED false positive - 20160518 - webbreacher","verified 20160503 - webbreacher"]
       },
       {
          "name" : "SmugMug",
