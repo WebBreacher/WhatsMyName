@@ -556,8 +556,8 @@
          "known_accounts" : ["jill","mike"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "social",
-         "valid" : true,
-         "comments" : ["verified 20160730 - webbreacher", "DISABLED false positive - 20160518 - webbreacher","verified 11/07/2015 - webbreacher"]
+         "valid" : false,
+         "comments" : ["tried to verify 20160730 but still having issues - webbreacher", "DISABLED false positive - 20160518 - webbreacher","verified 11/07/2015 - webbreacher"]
       },
       {
          "name" : "FFFFOUND!",
@@ -1592,8 +1592,8 @@
          "known_accounts" : ["DrSkwid","TsuruchiBrian"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "news",
-         "valid" : true,
-         "comments" : ["verified 20160730 - webbreacher", "DISABLED false positive - 20160518 - webbreacher","fixed 20160509 - webbreacher, removed title from regex","verified 20160503 - webbreacher"]
+         "valid" : false,
+         "comments" : ["tried to verify 20160730 but still having issues - webbreacher", "DISABLED false positive - 20160518 - webbreacher","fixed 20160509 - webbreacher, removed title from regex","verified 20160503 - webbreacher"]
       },
       {
          "name" : "slideshare",
