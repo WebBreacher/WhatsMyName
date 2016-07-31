@@ -1423,12 +1423,12 @@
          "known_accounts" : ["WhiteWalls7","Roughdawg4"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "gaming",
-         "valid" : false,
+         "valid" : true,
          "comments" : ["verified 20160730 - webbreacher", "verified 20160503 - mmaczko"]
       },
       {
          "name" : "raptr",
-         "checkurl" : "http://raptr.com/{account}/about",
+         "checkuri" : "http://raptr.com/{account}/about",
          "account_existence_code" : "200",
          "account_existence_string" : "Recently Played Games",
          "account_missing_string" : "We couldn't find what you were looking",
