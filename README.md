@@ -1,5 +1,5 @@
 # WhatsMyName
-This repository has the unified data required to perform user enumeration on various websites. Content is in a JSON file and can easily be used in other projects.
+This repository has the unified data required to perform user and username enumeration on various websites. Content is in a JSON file and can easily be used in other projects.
 
 # Format
 The format of the JSON is simple. There are 3 main elements:
@@ -8,7 +8,7 @@ The format of the JSON is simple. There are 3 main elements:
 2. Authors - The people that have contributed to this project
 3. Sites - This is the main data
 
-Within the "sites" elements, the format is as follows:
+Within the "sites" elements, the format is as follows (with several parameters being optional):
 
 ```json
      ...
@@ -41,7 +41,7 @@ Here is an example of a site element:
          "account_existence_string" : "login:",
          "account_missing_string" : ["Not Found"],
          "account_missing_code" : "404",
-         "known_accounts" : ["test"],
+         "known_accounts" : ["test","webbreacher"],
          "allowed_types" : ["String","Person","WebAccount","Username","Organization"],
          "category" : "coding",
          "valid" : true,
