@@ -1428,7 +1428,7 @@
       },
       {
          "name" : "raptr",
-         "checkuri" : "http://raptr.com/{account}/about",
+         "check_uri" : "http://raptr.com/{account}/about",
          "account_existence_code" : "200",
          "account_existence_string" : "Recently Played Games",
          "account_missing_string" : "We couldn't find what you were looking",
