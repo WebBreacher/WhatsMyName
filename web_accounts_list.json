@@ -16,14 +16,14 @@
          "name" : "about.me",
          "check_uri" : "https://about.me/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "profilepage",
-         "account_missing_string" : "",
+         "account_existence_string" : " | about.me",
+         "account_missing_string" : "We couldn’t find what you’re looking for",
          "account_missing_code" : "302",
-         "known_accounts" : ["john"],
+         "known_accounts" : ["john","jill"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "social",
-         "valid" : false,
-         "comments" : ["verified 10/4/2015 - webbreacher"]
+         "valid" : true,
+         "comments" : ["verified 20160730 - webbreacher", "verified 10/4/2015 - webbreacher"]
       },
       {
          "name" : "AdultFriendFinder",
@@ -737,14 +737,14 @@
          "check_uri" : "https://api.github.com/users/{account}",
          "pretty_uri" : "https://github.com/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "login:",
+         "account_existence_string" : "following_url",
          "account_missing_string" : "Not Found",
          "account_missing_code" : "404",
-         "known_accounts" : ["test"],
+         "known_accounts" : ["test","webbreacher"],
          "allowed_types" : ["String","Person","WebAccount","Username","Organization"],
          "category" : "coding",
-         "valid" : false,
-         "comments" : ["DISABLED bad detection string - 20160518 - webbreacher","verified 11/08/2015 - webbreacher"]
+         "valid" : true,
+         "comments" : ["verified 20160730 - webbreacher", "DISABLED bad detection string - 20160518 - webbreacher","verified 11/08/2015 - webbreacher"]
       },
       {
          "name" : "gogobot",
@@ -761,16 +761,16 @@
       },
       {
          "name" : "goodreads",
-         "check_uri" : "http://www.goodreads.com/{account}",
-         "account_existence_code" : "301",
-         "account_existence_string" : "You are being",
+         "check_uri" : "https://www.goodreads.com/user/show/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "Recent Updates",
          "account_missing_string" : "Page Not Found",
          "account_missing_code" : "404",
-         "known_accounts" : ["test","mike"],
+         "known_accounts" : ["612715-jill-holtz","626151-carol-muscolino"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "books",
-         "valid" : false,
-         "comments" : ["DISABLED bad detection string - 20160518 - webbreacher","fixed good string 20160509 - webbreacher","verified 11/23/2015 - webbreacher"]
+         "valid" : true,
+         "comments" : ["verified 20160730 - webbreacher", "DISABLED bad detection string - 20160518 - webbreacher","fixed good string 20160509 - webbreacher","verified 11/23/2015 - webbreacher"]
       },
       {
          "name" : "Gravatar",
@@ -1584,16 +1584,16 @@
       },
       {
          "name" : "Slashdot",
-         "check_uri" : "http://slashdot.org/~{account}",
+         "check_uri" : "https://slashdot.org/~{account}",
          "account_existence_code" : "200",
          "account_existence_string" : " - Slashdot User",
          "account_missing_string" : "The user you requested does not exist",
          "account_missing_code" : "200",
-         "known_accounts" : ["DrSkwid"],
+         "known_accounts" : ["DrSkwid","TsuruchiBrian"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "news",
-         "valid" : false,
-         "comments" : ["DISABLED false positive - 20160518 - webbreacher","fixed 20160509 - webbreacher, removed title from regex","verified 20160503 - webbreacher"]
+         "valid" : true,
+         "comments" : ["verified 20160730 - webbreacher", "DISABLED false positive - 20160518 - webbreacher","fixed 20160509 - webbreacher, removed title from regex","verified 20160503 - webbreacher"]
       },
       {
          "name" : "slideshare",
