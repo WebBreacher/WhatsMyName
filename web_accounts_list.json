@@ -16,14 +16,14 @@
          "name" : "about.me",
          "check_uri" : "https://about.me/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "profilepage",
-         "account_missing_string" : "",
+         "account_existence_string" : " | about.me",
+         "account_missing_string" : "We couldn’t find what you’re looking for",
          "account_missing_code" : "302",
-         "known_accounts" : ["john"],
+         "known_accounts" : ["john","jill"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "social",
-         "valid" : false,
-         "comments" : ["verified 10/4/2015 - webbreacher"]
+         "valid" : true,
+         "comments" : ["verified 20160730 - webbreacher", "verified 10/4/2015 - webbreacher"]
       },
       {
          "name" : "AdultFriendFinder",
@@ -39,17 +39,17 @@
          "comments" : ["verified 10/4/2015 - webbreacher"]
       },
       {
-         "name" : "AdultMatchDoctor",
-         "check_uri" : "http://www.adultmatchdoctor.com/profile_{account}.html",
+         "name" : "Matchdoctor",
+         "check_uri" : "http://www.matchdoctor.com/profile_{account}.html",
          "account_existence_code" : "200",
          "account_existence_string" : "Last Activity:",
-         "account_missing_string" : "",
+         "account_missing_string" : "File or directory not found",
          "account_missing_code" : "404",
          "known_accounts" : ["test", "john"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "dating",
-         "valid" : false,
-         "comments" : ["DISABLED bad detection string - 20160518 - webbreacher","verified 10/4/2015 - webbreacher"]
+         "valid" : true,
+         "comments" : ["verified 20160730 - webbreacher", "DISABLED bad detection string - 20160518 - webbreacher","verified 10/4/2015 - webbreacher"]
       },
       {
          "name" : "AngelList",
@@ -120,14 +120,14 @@
          "name" : "AudioBoom",
          "check_uri" : "https://audioboom.com/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "Playlists",
-         "account_missing_string" : ["That page doesn't seem to exist"],
+         "account_existence_string" : "avatar-image",
+         "account_missing_string" : ["Page not found"],
          "account_missing_code" : "404",
          "known_accounts" : ["test", "john"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "video",
          "valid" : true,
-         "comments" : ["verified 10/4/2015 - webbreacher"]
+         "comments" : ["verified/fixed 20160730 - webbreacher", "verified 10/4/2015 - webbreacher"]
       },
       {
          "name" : "authorSTREAM",
@@ -255,11 +255,11 @@
          "account_existence_string" : "Bugs Found",
          "account_missing_string" : "Something went wrong",
          "account_missing_code" : "404",
-         "known_accounts" : ["Mico","Bitquark"],
+         "known_accounts" : ["Bitquark","RobertK"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "hacker",
          "valid" : true,
-         "comments" : ["verified 11/23/2015 - webbreacher"]
+         "comments" : ["verified 20160730 - webbreacher", "verified 11/23/2015 - webbreacher"]
       },
       {
          "name" : "cafemom",
@@ -548,16 +548,16 @@
       },
       {
          "name" : "Favstar",
-         "check_uri" : "http://favstar.fm/users/{account}",
+         "check_uri" : "https://favstar.fm/users/{account}",
          "account_existence_code" : "200",
          "account_existence_string" : "Best Tweets",
-         "account_missing_string" : "<title>Not Found<",
+         "account_missing_string" : "Favstar could not find that user",
          "account_missing_code" : "404",
-         "known_accounts" : ["test"],
+         "known_accounts" : ["jill","mike"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "social",
          "valid" : false,
-         "comments" : ["DISABLED false positive - 20160518 - webbreacher","verified 11/07/2015 - webbreacher"]
+         "comments" : ["tried to verify 20160730 but still having issues - webbreacher", "DISABLED false positive - 20160518 - webbreacher","verified 11/07/2015 - webbreacher"]
       },
       {
          "name" : "FFFFOUND!",
@@ -576,14 +576,14 @@
          "name" : "Fiverr",
          "check_uri" : "https://www.fiverr.com/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : " | Fiverr</title>",
+         "account_existence_string" : "Member since",
          "account_missing_string" : "You are being ",
          "account_missing_code" : "301",
          "known_accounts" : ["test","gabarnes"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "shopping",
          "valid" : true,
-         "comments" : ["verified 20160518 - webbreacher"]
+         "comments" : ["verified 20160730 - webbreacher", "verified 20160518 - webbreacher"]
       },
       {
          "name" : "Flickr",
@@ -737,14 +737,14 @@
          "check_uri" : "https://api.github.com/users/{account}",
          "pretty_uri" : "https://github.com/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "login:",
+         "account_existence_string" : "following_url",
          "account_missing_string" : "Not Found",
          "account_missing_code" : "404",
-         "known_accounts" : ["test"],
+         "known_accounts" : ["test","webbreacher"],
          "allowed_types" : ["String","Person","WebAccount","Username","Organization"],
          "category" : "coding",
-         "valid" : false,
-         "comments" : ["DISABLED bad detection string - 20160518 - webbreacher","verified 11/08/2015 - webbreacher"]
+         "valid" : true,
+         "comments" : ["verified 20160730 - webbreacher", "DISABLED bad detection string - 20160518 - webbreacher","verified 11/08/2015 - webbreacher"]
       },
       {
          "name" : "gogobot",
@@ -761,16 +761,16 @@
       },
       {
          "name" : "goodreads",
-         "check_uri" : "http://www.goodreads.com/{account}",
-         "account_existence_code" : "301",
-         "account_existence_string" : "You are being",
+         "check_uri" : "https://www.goodreads.com/user/show/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "Recent Updates",
          "account_missing_string" : "Page Not Found",
          "account_missing_code" : "404",
-         "known_accounts" : ["test","mike"],
+         "known_accounts" : ["612715-jill-holtz","626151-carol-muscolino"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "books",
-         "valid" : false,
-         "comments" : ["DISABLED bad detection string - 20160518 - webbreacher","fixed good string 20160509 - webbreacher","verified 11/23/2015 - webbreacher"]
+         "valid" : true,
+         "comments" : ["verified 20160730 - webbreacher", "DISABLED bad detection string - 20160518 - webbreacher","fixed good string 20160509 - webbreacher","verified 11/23/2015 - webbreacher"]
       },
       {
          "name" : "Gravatar",
@@ -785,19 +785,6 @@
          "category" : "images",
          "valid" : true,
          "comments" : ["verified 11/23/2015 - webbreacher"]
-      },
-      {
-         "name" : "Hackers List",
-         "check_uri" : "https://hackerslist.com/author/{account}/",
-         "account_existence_code" : "200",
-         "account_existence_string" : "Member Since",
-         "account_missing_string" : ">Page not found",
-         "account_missing_code" : "404",
-         "known_accounts" : ["mike","john"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
-         "category" : "hacker",
-         "valid" : true,
-         "comments" : ["fixed URL and good string 20160509 - webbreacher","verified 11/23/2015 - webbreacher"]
       },
       {
          "name" : "howaboutwe",
@@ -842,14 +829,14 @@
          "name" : "IFTTT",
          "check_uri" : "https://ifttt.com/p/{account}/shared",
          "account_existence_code" : "200",
-         "account_existence_string" : "s Published Recipes - IFTTT",
+         "account_existence_string" : "view_profile_image",
          "account_missing_string" : "The requested page or file does not seem to exist",
          "account_missing_code" : "404",
          "known_accounts" : ["npr"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "hobby",
          "valid" : true,
-         "comments" : ["verified 11/23/2015 - webbreacher"]
+         "comments" : ["verified 20160730 - webbreacher", "verified 11/23/2015 - webbreacher"]
       },
       {
          "name" : "ImageShack",
@@ -962,11 +949,11 @@
          "account_existence_string" : "View Full Profile",
          "account_missing_string" : "doesn't exist or is inactive",
          "account_missing_code" : "200",
-         "known_accounts" : ["test123","john"],
+         "known_accounts" : ["john"],
          "allowed_types" : ["String","Person","WebAccount","Username","Person"],
          "category" : "social",
          "valid" : true,
-         "comments" : ["verified 20160503 - mmaczko"]
+         "comments" : ["verified 20160730 - webbreacher", "verified 20160503 - mmaczko"]
       },
       {
          "name" : "Klout",
@@ -1035,16 +1022,16 @@
       },
       {
          "name" : "LinkedIn",
-         "check_uri" : "http://www.librarything.com/profile/{account}",
+         "check_uri" : "https://www.linkedin.com/in/{account}",
          "account_existence_code" : "200",
          "account_existence_string" : "See who you know in common",
          "account_missing_string" : "Profile Not Found",
          "account_missing_code" : "404",
-         "known_accounts" : ["mike-doiron-b4b2481","john-garcia-804b7b"],
+         "known_accounts" : ["becky-melvin-6504694","terry-kairu-75173041"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "business",
          "valid" : true,
-         "comments" : ["verified 20160518 - webbreacher"]
+         "comments" : ["verified 20160730 - webbreacher", "verified 20160518 - webbreacher"]
       },
       {
          "name" : "LiveJasmin",
@@ -1078,13 +1065,13 @@
          "check_uri" : "http://www.mate1.com/profiles/{account}",
          "account_existence_code" : "200",
          "account_existence_string" : "basicInfoTitle",
-         "account_missing_string" : "We couldn't find the profile you're looking for!",
+         "account_missing_string" : "We couldn't find the profile",
          "account_missing_code" : "404",
-         "known_accounts" : ["test"],
+         "known_accounts" : ["hfewq","Godloves435"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "dating",
          "valid" : true,
-         "comments" : ["verified 12/07/2015 - webbreacher"]
+         "comments" : ["verified 20160730 - webbreacher", "verified 12/07/2015 - webbreacher"]
       },
       {
          "name" : "Medium",
@@ -1298,16 +1285,16 @@
       },
       {
          "name" : "Photoblog",
-         "check_uri" : "http://www.photoblog.com/{account}/",
+         "check_uri" : "https://www.photoblog.com/{account}/",
          "account_existence_code" : "200",
-         "account_existence_string" : ">Options<",
-         "account_missing_string" : "",
-         "account_missing_code" : "302",
+         "account_existence_string" : "Blog Views",
+         "account_missing_string" : "Sorry, this page no longer exists",
+         "account_missing_code" : "404",
          "known_accounts" : ["hatsumi","pdsdville"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "images",
          "valid" : true,
-         "comments" : ["verified 20160518 - webbreacher"]
+         "comments" : ["verified 20160730 - webbreacher", "verified 20160518 - webbreacher"]
       },
       {
          "name" : "PhotoBucket",
@@ -1404,14 +1391,14 @@
          "name" : "Porn.com",
          "check_uri" : "http://www.porn.com/profile/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "Member Profile - PORN.COM</title>",
+         "account_existence_string" : "Mention me with",
          "account_missing_string" : "404 - Page not found",
          "account_missing_code" : "404",
          "known_accounts" : ["HottieDiana94","romarandi"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "XXX PORN XXX",
          "valid" : true,
-         "comments" : ["verified 20160518 - webbreacher"]
+         "comments" : ["verified 20160730 - webbreacher", "verified 20160518 - webbreacher"]
       },
       {
          "name" : "Pornhub",
@@ -1427,43 +1414,30 @@
          "comments" : ["verified 20160518 - webbreacher"]
       },
       {
-         "name" : "Prinfection",
-         "check_uri" : "http://www.printfection.com/{account}/",
-         "account_existence_code" : "200",
-         "account_existence_string" : "- Printfection.com</title>",
-         "account_missing_string" : "",
-         "account_missing_code" : "",
-         "known_accounts" : [""],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
-         "category" : "shopping",
-         "valid" : false,
-         "comments" : [""]
-      },
-      {
          "name" : "PSNProfiles",
          "check_uri" : "http://psnprofiles.com/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "PSN Profile - PSNProfiles.com",
-         "account_missing_string" : "PS4 Trophies, PS3 Trophies, PS Vita Trophies",
-         "account_missing_code" : "200",
-         "known_accounts" : ["jeieem"],
+         "account_existence_string" : "'s PSN Profile",
+         "account_missing_string" : "",
+         "account_missing_code" : "302",
+         "known_accounts" : ["WhiteWalls7","Roughdawg4"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "gaming",
-         "valid" : false,
-         "comments" : ["verified 20160503 - mmaczko"]
+         "valid" : true,
+         "comments" : ["verified 20160730 - webbreacher", "verified 20160503 - mmaczko"]
       },
       {
          "name" : "raptr",
-         "checkurl" : "http://raptr.com/{account}/about",
+         "check_uri" : "http://raptr.com/{account}/about",
          "account_existence_code" : "200",
-         "account_existence_string" : "'s Profile - Raptr</title>",
-         "account_missing_string" : "",
-         "account_missing_code" : "",
-         "known_accounts" : [""],
+         "account_existence_string" : "Recently Played Games",
+         "account_missing_string" : "We couldn't find what you were looking",
+         "account_missing_code" : "404",
+         "known_accounts" : ["omgmichaelr0ck5","Jagthier"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "gaming",
-         "valid" : false,
-         "comments" : [""]
+         "valid" : true,
+         "comments" : ["verified 20160730 - webbreacher"]
       },
       {
          "name" : "Rate Your Music",
@@ -1498,11 +1472,11 @@
          "account_existence_string" : "<title>overview for ",
          "account_missing_string" : "page not found",
          "account_missing_code" : "404",
-         "known_accounts" : ["test"],
+         "known_accounts" : ["gogitube","grandteton"],
          "allowed_types" : ["String","Person","WebAccount","Username","Organization"],
          "category" : "news",
          "valid" : true,
-         "comments" : ["verified 20160503 - webbreacher"]
+         "comments" : ["verified 20160730 - webbreacher", "verified 20160503 - webbreacher"]
       },
       {
          "name" : "redTube",
@@ -1583,19 +1557,6 @@
          "comments" : ["verified 20160503 - webbreacher"]
       },
       {
-         "name" : "shelfari",
-         "check_uri" : "http://www.shelfari.com/{account}",
-         "account_existence_code" : "200",
-         "account_existence_string" : "member since ",
-         "account_missing_string" : "Object moved to ",
-         "account_missing_code" : "302",
-         "known_accounts" : ["test123"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
-         "category" : "books",
-         "valid" : true,
-         "comments" : ["verified 20160503 - webbreacher"]
-      },
-      {
          "name" : "Shopcade",
          "check_uri" : "http://www.shopcade.com/{account}",
          "account_existence_code" : "200",
@@ -1610,29 +1571,29 @@
       },
       {
          "name" : "singlemuslim",
-         "check_uri" : "http://www.singlemuslim.com/{account}",
+         "check_uri" : "https://www.singlemuslim.com/searchuser/{account}/abc",
          "account_existence_code" : "200",
-         "account_existence_string" : "About Me...",
-         "account_missing_string" : "",
-         "account_missing_code" : "302",
-         "known_accounts" : ["mohammed","amm2016"],
+         "account_existence_string" : "Registration Reason",
+         "account_missing_string" : "The page you're looking for cannot be found",
+         "account_missing_code" : "404",
+         "known_accounts" : ["SaimD85","shabiruddin"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "dating",
          "valid" : true,
-         "comments" : ["verified 20160503 - webbreacher"]
+         "comments" : ["verified 20160730 - webbreacher", "verified 20160503 - webbreacher"]
       },
       {
          "name" : "Slashdot",
-         "check_uri" : "http://slashdot.org/~{account}",
+         "check_uri" : "https://slashdot.org/~{account}",
          "account_existence_code" : "200",
          "account_existence_string" : " - Slashdot User",
          "account_missing_string" : "The user you requested does not exist",
          "account_missing_code" : "200",
-         "known_accounts" : ["DrSkwid"],
+         "known_accounts" : ["DrSkwid","TsuruchiBrian"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "news",
          "valid" : false,
-         "comments" : ["DISABLED false positive - 20160518 - webbreacher","fixed 20160509 - webbreacher, removed title from regex","verified 20160503 - webbreacher"]
+         "comments" : ["tried to verify 20160730 but still having issues - webbreacher", "DISABLED false positive - 20160518 - webbreacher","fixed 20160509 - webbreacher, removed title from regex","verified 20160503 - webbreacher"]
       },
       {
          "name" : "slideshare",
@@ -1763,19 +1724,6 @@
          "category" : "gaming",
          "valid" : true,
          "comments" : ["verified 20160503 - webbreacher"]
-      },
-      {
-         "name" : "StumbleUpon",
-         "check_uri" : "http://www.stumbleupon.com/stumbler/{account}?_nospa=true",
-         "account_existence_code" : "200",
-         "account_existence_string" : "s Likes | StumbleUpon.com</title>",
-         "account_missing_string" : "we can't find the page you're looking for ",
-         "account_missing_code" : "404",
-         "known_accounts" : ["mike","john"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
-         "category" : "social",
-         "valid" : true,
-         "comments" : ["verified - 20160511 - webbreacher"]
       },
       {
          "name" : "stupidcancer",
@@ -1966,11 +1914,11 @@
          "account_existence_string" : "s videos - vidme</title>",
          "account_missing_string" : "this page doesn't seem to exist",
          "account_missing_code" : "404",
-         "known_accounts" : ["asanka","smoopy"],
+         "known_accounts" : ["smoopy","Abrahem919"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "video",
          "valid" : true,
-         "comments" : ["verified - 20160509 - webbreacher"]
+         "comments" : ["verified 20160730 - webbreacher", "verified - 20160509 - webbreacher"]
       },
       {
          "name" : "Vimeo",
