@@ -1065,13 +1065,13 @@
          "check_uri" : "http://www.mate1.com/profiles/{account}",
          "account_existence_code" : "200",
          "account_existence_string" : "basicInfoTitle",
-         "account_missing_string" : "We couldn't find the profile you're looking for!",
+         "account_missing_string" : "We couldn't find the profile",
          "account_missing_code" : "404",
-         "known_accounts" : ["test"],
+         "known_accounts" : ["hfewq","Godloves435"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "dating",
          "valid" : true,
-         "comments" : ["verified 12/07/2015 - webbreacher"]
+         "comments" : ["verified 20160730 - webbreacher", "verified 12/07/2015 - webbreacher"]
       },
       {
          "name" : "Medium",
@@ -1391,14 +1391,14 @@
          "name" : "Porn.com",
          "check_uri" : "http://www.porn.com/profile/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "Member Profile - PORN.COM</title>",
+         "account_existence_string" : "Mention me with",
          "account_missing_string" : "404 - Page not found",
          "account_missing_code" : "404",
          "known_accounts" : ["HottieDiana94","romarandi"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "XXX PORN XXX",
          "valid" : true,
-         "comments" : ["verified 20160518 - webbreacher"]
+         "comments" : ["verified 20160730 - webbreacher", "verified 20160518 - webbreacher"]
       },
       {
          "name" : "Pornhub",
@@ -1485,11 +1485,11 @@
          "account_existence_string" : "<title>overview for ",
          "account_missing_string" : "page not found",
          "account_missing_code" : "404",
-         "known_accounts" : ["test"],
+         "known_accounts" : ["gogitube","grandteton"],
          "allowed_types" : ["String","Person","WebAccount","Username","Organization"],
          "category" : "news",
          "valid" : true,
-         "comments" : ["verified 20160503 - webbreacher"]
+         "comments" : ["verified 20160730 - webbreacher", "verified 20160503 - webbreacher"]
       },
       {
          "name" : "redTube",
@@ -1570,19 +1570,6 @@
          "comments" : ["verified 20160503 - webbreacher"]
       },
       {
-         "name" : "shelfari",
-         "check_uri" : "http://www.shelfari.com/{account}",
-         "account_existence_code" : "200",
-         "account_existence_string" : "member since ",
-         "account_missing_string" : "Object moved to ",
-         "account_missing_code" : "302",
-         "known_accounts" : ["test123"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
-         "category" : "books",
-         "valid" : true,
-         "comments" : ["verified 20160503 - webbreacher"]
-      },
-      {
          "name" : "Shopcade",
          "check_uri" : "http://www.shopcade.com/{account}",
          "account_existence_code" : "200",
@@ -1597,16 +1584,16 @@
       },
       {
          "name" : "singlemuslim",
-         "check_uri" : "http://www.singlemuslim.com/{account}",
+         "check_uri" : "https://www.singlemuslim.com/searchuser/{account}/abc",
          "account_existence_code" : "200",
-         "account_existence_string" : "About Me...",
-         "account_missing_string" : "",
-         "account_missing_code" : "302",
-         "known_accounts" : ["mohammed","amm2016"],
+         "account_existence_string" : "Registration Reason",
+         "account_missing_string" : "The page you're looking for cannot be found",
+         "account_missing_code" : "404",
+         "known_accounts" : ["SaimD85","shabiruddin"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "dating",
          "valid" : true,
-         "comments" : ["verified 20160503 - webbreacher"]
+         "comments" : ["verified 20160730 - webbreacher", "verified 20160503 - webbreacher"]
       },
       {
          "name" : "Slashdot",
@@ -1750,19 +1737,6 @@
          "category" : "gaming",
          "valid" : true,
          "comments" : ["verified 20160503 - webbreacher"]
-      },
-      {
-         "name" : "StumbleUpon",
-         "check_uri" : "http://www.stumbleupon.com/stumbler/{account}?_nospa=true",
-         "account_existence_code" : "200",
-         "account_existence_string" : "s Likes | StumbleUpon.com</title>",
-         "account_missing_string" : "we can't find the page you're looking for ",
-         "account_missing_code" : "404",
-         "known_accounts" : ["mike","john"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
-         "category" : "social",
-         "valid" : true,
-         "comments" : ["verified - 20160511 - webbreacher"]
       },
       {
          "name" : "stupidcancer",
@@ -1953,11 +1927,11 @@
          "account_existence_string" : "s videos - vidme</title>",
          "account_missing_string" : "this page doesn't seem to exist",
          "account_missing_code" : "404",
-         "known_accounts" : ["asanka","smoopy"],
+         "known_accounts" : ["smoopy","Abrahem919"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "video",
          "valid" : true,
-         "comments" : ["verified - 20160509 - webbreacher"]
+         "comments" : ["verified 20160730 - webbreacher", "verified - 20160509 - webbreacher"]
       },
       {
          "name" : "Vimeo",
