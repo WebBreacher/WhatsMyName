@@ -1420,10 +1420,10 @@
          "account_existence_string" : "'s PSN Profile",
          "account_missing_string" : "",
          "account_missing_code" : "302",
-         "known_accounts" : ["Roughdawg4","WhiteWalls7"],
+         "known_accounts" : ["WhiteWalls7","Roughdawg4"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "gaming",
-         "valid" : true,
+         "valid" : false,
          "comments" : ["verified 20160730 - webbreacher", "verified 20160503 - mmaczko"]
       },
       {
