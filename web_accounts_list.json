@@ -1267,8 +1267,8 @@
          "known_accounts" : ["TallSexyNerd"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "dating",
-         "valid" : true,
-         "comments" : ["verified 20160502 - webbreacher"]
+         "valid" : false,
+         "comments" : ["status changed to false 20160814 due to bad responses - webbreacher", "verified 20160502 - webbreacher"]
       },
       {
          "name" : "Overcast Network",
@@ -1475,8 +1475,8 @@
          "known_accounts" : ["gogitube","grandteton"],
          "allowed_types" : ["String","Person","WebAccount","Username","Organization"],
          "category" : "news",
-         "valid" : true,
-         "comments" : ["verified 20160730 - webbreacher", "verified 20160503 - webbreacher"]
+         "valid" : false,
+         "comments" : ["status changed to false 20160814 due to bad responses - webbreacher", "verified 20160730 - webbreacher", "verified 20160503 - webbreacher"]
       },
       {
          "name" : "redTube",
