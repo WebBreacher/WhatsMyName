@@ -61,8 +61,8 @@
          "known_accounts" : ["john", "mike"],
          "allowed_types" : ["String","Organization","Person","WebAccount","Username"],
          "category" : "finance",
-         "valid" : true,
-         "comments" : ["verified 10/4/2015 - webbreacher", "'test' returns a list of folks with skills in 'test' - dig into this"]
+         "valid" : false,
+         "comments" : ["bad result 20160917 - WebBreacher","verified 10/4/2015 - webbreacher", "'test' returns a list of folks with skills in 'test' - dig into this"]
       },
       {
          "name" : "aNobil",
@@ -87,8 +87,8 @@
          "known_accounts" : ["test"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "social",
-         "valid" : true,
-         "comments" : ["verified 10/4/2015 - webbreacher"]
+         "valid" : false,
+         "comments" : ["bad result 20160917 - WebBreacher","verified 10/4/2015 - webbreacher"]
       },
       {
          "name" : "Atlassian",
@@ -492,8 +492,8 @@
          "known_accounts" : ["john"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "XXX PORN XXX",
-         "valid" : true,
-         "comments" : ["verified 10/7/2015 - webbreacher"]
+         "valid" : false,
+         "comments" : ["bad result 20160917 - WebBreacher","verified 10/7/2015 - webbreacher"]
       },
       {
          "name" : "Etsy",
@@ -623,8 +623,8 @@
          "known_missing_accounts" : ["does-not-exist"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "images",
-         "valid" : true,
-         "comments" : ["verified 11/07/2015 - webbreacher"]
+         "valid" : false,
+         "comments" : ["bad result 20160917 - WebBreacher","verified 11/07/2015 - webbreacher"]
       },
       {
          "name" : "Foursquare",
@@ -796,8 +796,8 @@
          "known_accounts" : ["test"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "dating",
-         "valid" : true,
-         "comments" : ["verified 11/23/2015 - webbreacher"]
+         "valid" : false,
+         "comments" : ["bad result 20160917 - WebBreacher","verified 11/23/2015 - webbreacher"]
       },
       {
          "name" : "HubPages",
@@ -1030,8 +1030,8 @@
          "known_accounts" : ["becky-melvin-6504694","terry-kairu-75173041"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "business",
-         "valid" : true,
-         "comments" : ["verified 20160730 - webbreacher", "verified 20160518 - webbreacher"]
+         "valid" : false,
+         "comments" : ["bad result 20160917 - WebBreacher","verified 20160730 - webbreacher", "verified 20160518 - webbreacher"]
       },
       {
          "name" : "LiveJasmin",
@@ -1228,8 +1228,8 @@
          "known_accounts" : ["michael"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "social",
-         "valid" : true,
-         "comments" : ["verified 20160502 - webbreacher"]
+         "valid" : false,
+         "comments" : ["bad result 20160917 - WebBreacher","verified 20160502 - webbreacher"]
       },
       {
          "name" : "netvibes",
@@ -1996,8 +1996,8 @@
          "known_accounts" : ["Test123","newadult"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "social",
-         "valid" : true,
-         "comments" : ["verified - 20160509 - webbreacher"]
+         "valid" : false,
+         "comments" : ["bad result 20160917 - WebBreacher","verified - 20160509 - webbreacher"]
       },
       {
          "name" : "WeeWorld",
@@ -2100,8 +2100,8 @@
          "known_accounts" : ["piperm","nymphRiley"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "XXX PORN XXX",
-         "valid" : true,
-         "comments" : ["verified - 20160511 - webbreacher"]
+         "valid" : false,
+         "comments" : ["bad result 20160917 - WebBreacher","verified - 20160511 - webbreacher"]
       },
       {
          "name" : "XVIDEOS",

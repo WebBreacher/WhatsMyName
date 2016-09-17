@@ -30,7 +30,7 @@ import sys
 # Variables && Functions
 ###################
 # Set HTTP Header info.
-headers = {'User-Agent' : 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2228.0'}
+headers = {'User-Agent' : 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2228.0'}
 
 # Create the final results dictionary
 overall_results = {}
