@@ -1398,20 +1398,7 @@
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "music",
          "valid" : true,
-         "comments" : ["Verified 2016-11-02 WebBreacher", "DISABLED bad detection string - 20160518 - webbreacher","verified 20160503 - webbreacher"]
-      },
-      {
-         "name" : "Readability",
-         "check_uri" : "https://www.readability.com/{account}/",
-         "account_existence_code" : "200",
-         "account_existence_string" : "on Readability",
-         "account_missing_string" : "This isn't the page you're looking for",
-         "account_missing_code" : "404",
-         "known_accounts" : ["test123"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
-         "category" : "social",
-         "valid" : true,
-         "comments" : ["verified 20160503 - webbreacher"]
+         "comments" : ["Verified 2016-11-02 WebBreacher. This site bans IP addresses that use scripts.", "DISABLED bad detection string - 20160518 - webbreacher","verified 20160503 - webbreacher"]
       },
       {
          "name" : "reddit",
