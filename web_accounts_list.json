@@ -419,16 +419,16 @@
       },
       {
          "name" : "diigo",
-         "check_uri" : "https://www.diigo.com/profile/{account}",
+         "check_uri" : "https://www.diigo.com/interact_api/load_profile_info?name={account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "Member since",
-         "account_missing_string" : "This account doesn't exist",
+         "account_existence_string" : "regist_at",
+         "account_missing_string" : "{}",
          "account_missing_code" : "200",
          "known_accounts" : ["whoami", "johndoe"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "images",
          "valid" : true,
-         "comments" : ["verified 10/7/2015 - webbreacher"]
+         "comments" : ["Changed to use API instead of web scrape. Altered existence string. Verified 2016-11-02 WebBreacher.", "verified 10/7/2015 - webbreacher"]
       },
       {
          "name" : "DIY",
@@ -450,11 +450,11 @@
          "account_existence_string" : "on eBay</title>",
          "account_missing_string" : "The User ID you entered was not found",
          "account_missing_code" : "200",
-         "known_accounts" : ["test123"],
+         "known_accounts" : ["the_gqs"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "shopping",
          "valid" : true,
-         "comments" : ["verified 10/7/2015 - webbreacher"]
+         "comments" : ["Altered test account. Verified 2016-11-02 WebBreacher.","verified 10/7/2015 - webbreacher"]
       },
       {
          "name" : "EightBit",
@@ -471,16 +471,16 @@
       },
       {
          "name" : "Engadget",
-         "check_uri" : "http://www.engadget.com/about/editors/{account}/",
+         "check_uri" : "https://www.engadget.com/about/editors/{account}/",
          "account_existence_code" : "200",
          "account_existence_string" : "latest-listing-featured",
          "account_missing_string" : "<title>,  -",
          "account_missing_code" : "200",
-         "known_accounts" : ["brittany-vincent"],
+         "known_accounts" : ["devindra-hardawar"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "tech",
          "valid" : true,
-         "comments" : ["verified 05/05/2016 - webbreacher"]
+         "comments" : ["Added HTTPS to URL and changed test account. Verified 2016-11-02 WebBreacher.", "verified 05/05/2016 - webbreacher"]
       },
       {
          "name" : "EPORNER",
@@ -894,14 +894,14 @@
          "name" : "instructables",
          "check_uri" : "http://www.instructables.com/member/{account}/",
          "account_existence_code" : "200",
-         "account_existence_string" : "About:",
-         "account_missing_string" : "ERROR 400: no member",
-         "account_missing_code" : "400",
+         "account_existence_string" : "Joined",
+         "account_missing_string" : "",
+         "account_missing_code" : "404",
          "known_accounts" : ["test"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "hobby",
          "valid" : true,
-         "comments" : ["verified 11/23/2015 - webbreacher"]
+         "comments" : ["Changed existence string and missing code. Verified 2016-11-02 WebBreacher","verified 11/23/2015 - webbreacher"]
       },
       {
          "name" : "Internet Archive",
@@ -985,14 +985,14 @@
          "name" : "Lanyrd",
          "check_uri" : "http://lanyrd.com/profile/{account}/",
          "account_existence_code" : "200",
-         "account_existence_string" : "fn n",
-         "account_missing_string" : "We can't find that page",
+         "account_existence_string" : "s conference talks and presentations | Lanyrd",
+         "account_missing_string" : "can't find that page",
          "account_missing_code" : "404",
-         "known_accounts" : ["test","webbreacher"],
+         "known_accounts" : ["webbreacher"],
          "allowed_types" : ["String","Person","WebAccount","Username","Person"],
          "category" : "social",
          "valid" : true,
-         "comments" : ["verified 12/07/2015 - webbreacher"]
+         "comments" : ["Altered existence string. Verified 2016-11-02 WebBreacher", "verified 12/07/2015 - webbreacher"]
       },
       {
          "name" : "Last.fm",
@@ -1120,19 +1120,6 @@
          "account_existence_string" : "is on Mixcloud",
          "account_missing_string" : "Page Not Found",
          "account_missing_code" : "404",
-         "known_accounts" : ["test","john"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
-         "category" : "music",
-         "valid" : true,
-         "comments" : ["verified 12/07/2015 - webbreacher"]
-      },
-      {
-         "name" : "Mixcrate",
-         "check_uri" : "http://www.mixcrate.com/{account}",
-         "account_existence_code" : "200",
-         "account_existence_string" : "Member since",
-         "account_missing_string" : "",
-         "account_missing_code" : "302",
          "known_accounts" : ["test","john"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "music",
@@ -1755,14 +1742,14 @@
          "name" : "theguardian",
          "check_uri" : "https://profile.theguardian.com/user/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "Member since",
+         "account_existence_string" : "Registered on",
          "account_missing_string" : "Sorry - we haven’t been able to serve the page you asked for",
          "account_missing_code" : "404",
          "known_accounts" : ["test"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "news",
          "valid" : true,
-         "comments" : ["verified 20160503 - mmaczko"]
+         "comments" : ["Changed existence string. Verified 2016-11-02 WebBreacher", "verified 20160503 - mmaczko"]
       },
       {
          "name" : "thesixtyone",
