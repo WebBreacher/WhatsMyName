@@ -68,7 +68,7 @@
          "name" : "ask.fm",
          "check_uri" : "http://ask.fm/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "Answers,",
+         "account_existence_string" : "answers,",
          "account_missing_string" : "Page not found",
          "account_missing_code" : "404",
          "known_accounts" : ["test"],
@@ -761,19 +761,6 @@
          "comments" : ["verified 11/23/2015 - webbreacher"]
       },
       {
-         "name" : "howaboutwe",
-         "check_uri" : "http://www.howaboutwe.com/users/{account}",
-         "account_existence_code" : "200",
-         "account_existence_string" : "basics",
-         "account_missing_string" : "Page Not Found",
-         "account_missing_code" : "404",
-         "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
-         "category" : "dating",
-         "valid" : false,
-         "comments" : ["bad result 20160917 - WebBreacher","verified 11/23/2015 - webbreacher"]
-      },
-      {
          "name" : "HubPages",
          "check_uri" : "http://hubpages.com/@{account}",
          "account_existence_code" : "200",
@@ -1001,11 +988,11 @@
          "account_existence_string" : "See who you know in common",
          "account_missing_string" : "Profile Not Found",
          "account_missing_code" : "404",
-         "known_accounts" : ["becky-melvin-6504694","terry-kairu-75173041"],
+         "known_accounts" : ["vanessadimauro"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "business",
-         "valid" : false,
-         "comments" : ["bad result 20160917 - WebBreacher","verified 20160730 - webbreacher", "verified 20160518 - webbreacher"]
+         "valid" : true,
+         "comments" : ["Linkedin does not like people accessing it from AWS. This existence string works if you don't use AWS. Verified 2016-11-02 WebBreacher.","bad result 20160917 - WebBreacher","verified 20160730 - webbreacher", "verified 20160518 - webbreacher"]
       },
       {
          "name" : "LiveJasmin",
@@ -1181,7 +1168,7 @@
       },
       {
          "name" : "Myspace",
-         "check_uri" : "https://www.myspace.com/{account}",
+         "check_uri" : "https://myspace.com/{account}",
          "account_existence_code" : "200",
          "account_existence_string" : ") on Myspace</title>",
          "account_missing_string" : "Page Not Found",
@@ -1189,8 +1176,8 @@
          "known_accounts" : ["michael"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "social",
-         "valid" : false,
-         "comments" : ["bad result 20160917 - WebBreacher","verified 20160502 - webbreacher"]
+         "valid" : true,
+         "comments" : ["Changed URL. Verified 2016-11-02 WebBreacher", "bad result 20160917 - WebBreacher","verified 20160502 - webbreacher"]
       },
       {
          "name" : "netvibes",
@@ -1223,13 +1210,13 @@
          "check_uri" : "https://www.okcupid.com/profile/{account}",
          "account_existence_code" : "200",
          "account_existence_string" : "p_profile",
-         "account_missing_string" : "<title>Account not found",
+         "account_missing_string" : "inactive,mustlogin,redirect,js_refresh",
          "account_missing_code" : "404",
          "known_accounts" : ["TallSexyNerd"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "dating",
-         "valid" : false,
-         "comments" : ["status changed to false 20160814 due to bad responses - webbreacher", "verified 20160502 - webbreacher"]
+         "valid" : true,
+         "comments" : ["Changed missing string. Verified 2016-11-02 WebBreacher", "status changed to false 20160814 due to bad responses - webbreacher", "verified 20160502 - webbreacher"]
       },
       {
          "name" : "Overcast Network",
@@ -1410,8 +1397,8 @@
          "known_accounts" : ["test"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "music",
-         "valid" : false,
-         "comments" : ["DISABLED bad detection string - 20160518 - webbreacher","verified 20160503 - webbreacher"]
+         "valid" : true,
+         "comments" : ["Verified 2016-11-02 WebBreacher", "DISABLED bad detection string - 20160518 - webbreacher","verified 20160503 - webbreacher"]
       },
       {
          "name" : "Readability",
@@ -1428,29 +1415,29 @@
       },
       {
          "name" : "reddit",
-         "check_uri" : "https://www.reddit.com/user/{account}/",
+         "check_uri" : "https://www.reddit.com/user/{account}",
          "account_existence_code" : "200",
          "account_existence_string" : "<title>overview for ",
          "account_missing_string" : "page not found",
          "account_missing_code" : "404",
-         "known_accounts" : ["gogitube","grandteton"],
+         "known_accounts" : ["mayorpaco", "Arzu1982"],
          "allowed_types" : ["String","Person","WebAccount","Username","Organization"],
          "category" : "news",
-         "valid" : false,
-         "comments" : ["status changed to false 20160814 due to bad responses - webbreacher", "verified 20160730 - webbreacher", "verified 20160503 - webbreacher"]
+         "valid" : true,
+         "comments" : ["Changed test accounts. Verified 2016-11-02 WebBreacher", "status changed to false 20160814 due to bad responses - webbreacher", "verified 20160730 - webbreacher", "verified 20160503 - webbreacher"]
       },
       {
          "name" : "redTube",
          "check_uri" : "http://www.redtube.com/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "redTube - Home of Porn - Free Porn</title>",
-         "account_missing_string" : "",
-         "account_missing_code" : "",
-         "known_accounts" : [""],
+         "account_existence_string" : "s Stream - Member Profiles",
+         "account_missing_string" : "Not Found Page",
+         "account_missing_code" : "404",
+         "known_accounts" : ["bocaj73"],
          "allowed_types" : ["String","Person","WebAccount","Username","Organization"],
          "category" : "XXX PORN XXX",
-         "valid" : false,
-         "comments" : [""]
+         "valid" : true,
+         "comments" : ["Initial content creation. 2016-11-02 WebBreacher"]
       },
       {
          "name" : "Reunion.com",
