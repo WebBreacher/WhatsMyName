@@ -53,6 +53,30 @@ Here is an example of a site element:
       ...
 ```
 
+# Standalone Checker
+If you just want to run this script to check user names on sites and don't wish to use it in combination with another tool (like Recon-NG and/or Spiderfoot), then you can use the included Python script as shown below:
+
+```
+ $  python ./web_accounts_list_checker.py -u sdfsfsdfsdfs
+ -  161 sites found in file.
+ -  Found user at http://www.break.com/user/sdfsfsdfsdfs
+      ! ERROR: CONNECTION TIME OUT. Try increasing the timeout delay.
+ -  Found user at https://klout.com/sdfsfsdfsdfs
+ -  Found user at https://social.technet.microsoft.com/profile/sdfsfsdfsdfs/
+ -  Found user at https://www.pinterest.com/sdfsfsdfsdfs/
+ -  Found user at https://www.reddit.com/user/sdfsfsdfsdfs
+ -  Found user at http://scratch.mit.edu/users/sdfsfsdfsdfs/
+ *  Skipping Slashdot - Marked as not valid.
+ *  Skipping SmiteGuru - Marked as not valid.
+ *  Skipping SoundCloud - Marked as not valid.
+ -  Found user at http://steamcommunity.com/id/sdfsfsdfsdfs
+ -  Found user at http://www.tf2items.com/id/sdfsfsdfsdfs/
+ -  Found user at https://twitter.com/sdfsfsdfsdfs
+ -  Found user at http://videolike.org/video/sdfsfsdfsdfs
+      ! ERROR: CONNECTION TIME OUT. Try increasing the timeout delay.
+ -  Found user at http://www.xvideos.com/profiles/sdfsfsdfsdfs
+```
+
 # Updates
 I update this project as I have time and would *LOVE* to have interested people help maintain and grow it. Please reach to me webbreacher {at} gmail {dot} com if you are interested.
 

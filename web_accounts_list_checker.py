@@ -17,6 +17,7 @@
             # pip install pyOpenSSL ndg-httpsclient pyasn1
 '''
 import requests
+import argparse
 from requests.packages.urllib3.exceptions import InsecureRequestWarning
 import json
 import os
@@ -31,6 +32,12 @@ import sys
 ###################
 # Set HTTP Header info.
 headers = {'User-Agent' : 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.93 Safari/537.36'}
+
+# Parse command line input
+parser = argparse.ArgumentParser(description="This standalone script will look up a single username using the JSON file or will run a check of the JSON file for bad detection strings.")
+parser.add_argument('-u', '--username', help='[OPTIONAL] If this param is passed then this script will perform the lookups against the given user name instead of running checks against the JSON file.')
+args = parser.parse_args()
+
 
 # Create the final results dictionary
 overall_results = {}
@@ -132,8 +139,11 @@ for site in data['sites'] :
 
     # Perform initial lookup
     # Pull the first user from known_accounts and replace the {account} with it
-    url = site['check_uri'].replace("{account}", site['known_accounts'][0])
-    print ' -  Looking up %s' % url
+    if args.username:
+        url = site['check_uri'].replace("{account}", args.username)
+    else:
+        url = site['check_uri'].replace("{account}", site['known_accounts'][0])
+        print ' -  Looking up %s' % url
     r = web_call(url)
     if isinstance(r, str):
         # We got an error on the web call
@@ -149,7 +159,12 @@ for site in data['sites'] :
         string_match = True
     else:
         string_match = False
-    
+
+    if args.username:
+        if code_match == True and string_match == True:
+            print ' -  Found user at %s' % url 
+        continue
+
     if code_match == True and string_match == True:
         #print '     [+] Response code and Search Strings match expected.'
         # Generate a random string to use in place of known_accounts
@@ -190,5 +205,5 @@ for site in data['sites'] :
         print bcolors.RED + '      !  ERROR: BAD CODE AND STRING. Neither the HTTP response code or detection string worked.' + bcolors.ENDC
         overall_results[site['name']] = 'Bad detection code and string. Expected Code: %s; Received Code: %s.' % (str(r.status_code), site['account_existence_code'])
 
-
-FinalOutput()
+if args.username == False:
+    FinalOutput()
