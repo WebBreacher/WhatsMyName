@@ -205,5 +205,5 @@ for site in data['sites'] :
         print bcolors.RED + '      !  ERROR: BAD CODE AND STRING. Neither the HTTP response code or detection string worked.' + bcolors.ENDC
         overall_results[site['name']] = 'Bad detection code and string. Expected Code: %s; Received Code: %s.' % (str(r.status_code), site['account_existence_code'])
 
-if args.username == False:
+if not args.username:
     FinalOutput()
