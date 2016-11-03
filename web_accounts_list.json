@@ -1440,6 +1440,19 @@
          "comments" : ["verified 20160503 - webbreacher"]
       },
       {
+         "name" : "Rotten Tomatoes",
+         "check_uri" : "https://www.rottentomatoes.com/critic/{account}/",
+         "account_existence_code" : "200",
+         "account_existence_string" : "jsonLdSchema",
+         "account_missing_string" : "Sorry, please try again later",
+         "account_missing_code" : "404",
+         "known_accounts" : ["guy-lodge","matthew-lickona"],
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "movies",
+         "valid" : true,
+         "comments" : ["Initial add 2016-11-02 WebBreacher"]
+      },
+      {
          "name" : "scratch",
          "check_uri" : "http://scratch.mit.edu/users/{account}/",
          "account_existence_code" : "200",
@@ -1817,6 +1830,19 @@
          "comments" : ["verified - 20160511 - webbreacher"]
       },
       {
+         "name" : "Vampire Freaks",
+         "check_uri" : "http://vampirefreaks.com/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "Account Status",
+         "account_missing_string" : "Page Not Found",
+         "account_missing_code" : "200",
+         "known_accounts" : ["jet", "PoisonApple"],
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "social",
+         "valid" : true,
+         "comments" : ["Initial add 2016-11-02 WebBreacher"]
+      },
+      {
          "name" : "viddler",
          "check_uri" : "http://www.viddler.com/channel/{account}/",
          "account_existence_code" : "200",
@@ -1894,6 +1920,19 @@
          "category" : "images",
          "valid" : true,
          "comments" : ["verified - 20160509 - webbreacher"]
+      },
+      {
+         "name" : "VK",
+         "check_uri" : "https://vk.com/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "last seen",
+         "account_missing_string" : "404 Not Found",
+         "account_missing_code" : "404",
+         "known_accounts" : ["mike.kidlazy","kostya___rock_n_roll"],
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "social",
+         "valid" : true,
+         "comments" : ["Initial load. 2016-11-02 WebBreacher"]
       },
       {
          "name" : "Voices.com",
