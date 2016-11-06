@@ -14,7 +14,7 @@
         1 - Had an issue with SSL handshakes and this script. Had to do the following to get it working
             [From https://github.com/kennethreitz/requests/issues/2022]
             # sudo apt-get install libffi-dev
-            # pip install pyOpenSSL ndg-httpsclient pyasn1
+            # pip install pyOpenSSL ndg-httpsclient pyasn1 requests
 '''
 import requests
 import argparse
