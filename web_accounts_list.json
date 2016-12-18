@@ -1699,7 +1699,7 @@
          "valid" : true,
          "comments" : ["verified 20160503 - webbreacher"]
       },
-       {
+      {
          "name" : "StoryCorps",
          "check_uri" : "https://storycorps.me/user/{account}/",
          "account_existence_code" : "200",
@@ -1815,6 +1815,19 @@
          "category" : "images",
          "valid" : true,
          "comments" : ["verified = 20160511 - webbreacher","verified 20160503 - mmaczko"]
+      },
+      {
+         "name" : "Twitch",
+         "check_uri" : "https://www.twitch.tv/{account}",
+         "account_existence_code" : 200,
+         "account_existence_string" : "twitch://stream",
+         "account_missing_string" : "MOBILE_VERSION_AVAILABLE = false;",
+         "account_missing_code" : 404,
+         "known_accounts" : ["test","john"],
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "video",
+         "valid" : true,
+         "comments" : [""]
       },
       {
          "name" : "Twitpic",
