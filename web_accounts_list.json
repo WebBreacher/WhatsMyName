@@ -1699,6 +1699,19 @@
          "valid" : true,
          "comments" : ["verified 20160503 - webbreacher"]
       },
+       {
+         "name" : "StoryCorps",
+         "check_uri" : "https://storycorps.me/user/{account}/",
+         "account_existence_code" : "200",
+         "account_existence_string" : "archive author author",
+         "account_missing_string" : "Page not found",
+         "account_missing_code" : "404",
+         "known_accounts" : ["jthorstad","paul-swider"],
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "",
+         "valid" : true,
+         "comments" : [""]
+      },
       {
          "name" : "stupidcancer",
          "check_uri" : "http://stupidcancer.org/community/profile/{account}",
