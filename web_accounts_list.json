@@ -143,6 +143,19 @@
          "comments" : ["verified 10/4/2015 - webbreacher"]
       },
       {
+         "name" : "Basecamp",
+         "check_uri" : "https://launchpad.37signals.com/session/lookup_identity_type?username={account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "passwordful",
+         "account_missing_string" : "unrecognized",
+         "account_missing_code" : "200",
+         "known_accounts" : ["test","john"],
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "business",
+         "valid" : true,
+         "comments" : ["verified 20161218 - L0r3m1p5um"]
+      },
+      {
          "name" : "Bitbucket",
          "check_uri" : "https://bitbucket.org/api/2.0/users/{account}",
          "pretty_uri" : "https://bitbucket.org/{account}/",
@@ -273,6 +286,19 @@
          "category" : "social",
          "valid" : true,
          "comments" : ["verified 10/6/2015 - webbreacher"]
+      },
+      {
+         "name" : "cash.me",
+         "check_uri" : "https://cash.me/${account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "<title>Pay",
+         "account_missing_string" : "",
+         "account_missing_code" : "404",
+         "known_accounts" : ["jill","john"],
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "business",
+         "valid" : true,
+         "comments" : ["verified 20161218 - L0r3m1p5um"]
       },
       {
          "name" : "CarDomain",
@@ -584,6 +610,19 @@
          "category" : "images",
          "valid" : true,
          "comments" : ["verified 11/07/2015 - webbreacher"]
+      },
+      {
+         "name" : "Flipboard",
+         "check_uri" : "https://flipboard.com/@{account}",
+         "account_existence_code" : 200,
+         "account_existence_string" : "Keep up with",
+         "account_missing_string" : "<title>Flipboard</title>",
+         "account_missing_code" : 404,
+         "known_accounts" : ["test","john"],
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "tech",
+         "valid" : true,
+         "comments" : ["verified 20161218 - L0r3m1p5um"]
       },
       {
          "name" : "Foodspotting",
@@ -1700,6 +1739,19 @@
          "comments" : ["verified 20160503 - webbreacher"]
       },
       {
+         "name" : "StoryCorps",
+         "check_uri" : "https://storycorps.me/user/{account}/",
+         "account_existence_code" : "200",
+         "account_existence_string" : "archive author author",
+         "account_missing_string" : "Page not found",
+         "account_missing_code" : "404",
+         "known_accounts" : ["jthorstad","paul-swider"],
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "blog",
+         "valid" : true,
+         "comments" : ["verified 20161218 - L0r3m1p5um"]
+      },
+      {
          "name" : "stupidcancer",
          "check_uri" : "http://stupidcancer.org/community/profile/{account}",
          "account_existence_code" : "200",
@@ -1802,6 +1854,19 @@
          "category" : "images",
          "valid" : true,
          "comments" : ["verified = 20160511 - webbreacher","verified 20160503 - mmaczko"]
+      },
+      {
+         "name" : "Twitch",
+         "check_uri" : "https://www.twitch.tv/{account}",
+         "account_existence_code" : 200,
+         "account_existence_string" : "twitch://stream",
+         "account_missing_string" : "MOBILE_VERSION_AVAILABLE = false;",
+         "account_missing_code" : 404,
+         "known_accounts" : ["test","john"],
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "video",
+         "valid" : true,
+         "comments" : ["verified 20161218 - L0r3m1p5um"]
       },
       {
          "name" : "Twitpic",
