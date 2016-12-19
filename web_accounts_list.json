@@ -153,7 +153,7 @@
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "business",
          "valid" : true,
-         "comments" : [""]
+         "comments" : ["verified 20161218 - L0r3m1p5um"]
       },
       {
          "name" : "Bitbucket",
@@ -298,7 +298,7 @@
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "business",
          "valid" : true,
-         "comments" : [""]
+         "comments" : ["verified 20161218 - L0r3m1p5um"]
       },
       {
          "name" : "CarDomain",
@@ -622,7 +622,7 @@
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "tech",
          "valid" : true,
-         "comments" : [""]
+         "comments" : ["verified 20161218 - L0r3m1p5um"]
       },
       {
          "name" : "Foodspotting",
@@ -1749,7 +1749,7 @@
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "blog",
          "valid" : true,
-         "comments" : [""]
+         "comments" : ["verified 20161218 - L0r3m1p5um"]
       },
       {
          "name" : "stupidcancer",
@@ -1866,7 +1866,7 @@
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "video",
          "valid" : true,
-         "comments" : [""]
+         "comments" : ["verified 20161218 - L0r3m1p5um"]
       },
       {
          "name" : "Twitpic",
