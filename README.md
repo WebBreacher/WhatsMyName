@@ -81,6 +81,6 @@ If you just want to run this script to check user names on sites and don't wish 
 I update this project as I have time and would *LOVE* to have interested people help maintain and grow it. Please reach to me webbreacher {at} gmail {dot} com if you are interested.
 
 # Contributors
-@webbreacher<br>
-@mmaczko
-L0r3m1p5um
+[@WebBreacher](https://github.com/WebBreacher/)<br>
+[@mmaczko](https://github.com/mmaczko/)<br>
+[@L0r3m1p5um](https://github.com/L0r3m1p5um/)<br>
