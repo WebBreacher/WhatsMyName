@@ -814,16 +814,16 @@
       },
       {
          "name" : "HaveIBeenPwnd",
-         "check_uri" : "https://haveibeenpwned.com/api/v2/breachedaccount/{account}?includeUnverified=true",
+         "check_uri" : "https://haveibeenpwned.com/api/v2/pasteaccount/{account}",
          "account_existence_code" : "200",
          "account_existence_string" : "Source",
          "account_missing_string" : "Sorry, that user does not exist",
          "account_missing_code" : "404",
-         "known_accounts" : ["john%40example.com"],
+         "known_accounts" : ["john%40example.com", "jane%40example.com"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "hacker",
          "valid" : true,
-         "comments" : ["Initial add 2016-11-03 WebBreacher"]
+         "comments" : ["Initial add 2016-11-03 WebBreacher", "Fixed detection string - 2016-12-18 - WebBreacher"]
       },
       {
          "name" : "HubPages",
@@ -920,14 +920,14 @@
          "name" : "instructables",
          "check_uri" : "http://www.instructables.com/member/{account}/",
          "account_existence_code" : "200",
-         "account_existence_string" : "Joined",
+         "account_existence_string" : "joined",
          "account_missing_string" : "",
          "account_missing_code" : "404",
          "known_accounts" : ["test"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "hobby",
          "valid" : true,
-         "comments" : ["Changed existence string and missing code. Verified 2016-11-02 WebBreacher","verified 11/23/2015 - webbreacher"]
+         "comments" : ["Changed existence string to lower case - 2016-12-18 - WebBreacher", "Changed existence string and missing code. Verified 2016-11-02 WebBreacher","verified 11/23/2015 - webbreacher"]
       },
       {
          "name" : "Internet Archive",
@@ -944,16 +944,16 @@
       },
       {
          "name" : "interpals",
-         "check_uri" : "http://www.interpals.net/{account}",
+         "check_uri" : "https://www.interpals.net/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "Joined ",
-         "account_missing_string" : "This user does not exist or the account has been deleted",
-         "account_missing_code" : "302",
+         "account_existence_string" : "Looking for",
+         "account_missing_string" : "User not found",
+         "account_missing_code" : "200",
          "known_accounts" : ["test"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "hobby",
          "valid" : true,
-         "comments" : ["verified 11/24/2015 - webbreacher"]
+         "comments" : ["Changed existence string. Site uses Web Sockets now. Changed missing code too. - 2016-12-18 - WebBreacher", "verified 11/24/2015 - webbreacher"]
       },
       {
          "name" : "Keybase",
@@ -2172,14 +2172,14 @@
          "name" : "XVIDEOS",
          "check_uri" : "http://www.xvideos.com/profiles/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "id_user = ",
+         "account_existence_string" : "id_user",
          "account_missing_string" : "Unknown - Profile page",
          "account_missing_code" : "200",
          "known_accounts" : ["chloe-foster","just-amber"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "XXX PORN XXX",
          "valid" : true,
-         "comments" : ["verified - 20160511 - webbreacher"]
+         "comments" : ["Changed existence string - 2016-12-18 - WebBreacher", "verified - 20160511 - webbreacher"]
       },
       {
          "name" : "YouTube",
