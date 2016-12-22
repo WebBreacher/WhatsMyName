@@ -999,6 +999,19 @@
          "comments" : ["verified 12/07/2015 - webbreacher"]
       },
       {
+         "name" : "Livejournal",
+         "check_uri" : "http://{account}.livejournal.com",
+         "account_existence_code" : "200",
+         "account_existence_string" : "svg xml:base",
+         "account_missing_string" : "<title>Unknown Journal",
+         "account_missing_code" : "404",
+         "known_accounts" : ["jill","john"],
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "blog",
+         "valid" : true,
+         "comments" : ["verified 20161221 - L0r3m1p5um"]
+      },
+      {
          "name" : "Marketing Land",
          "check_uri" : "http://marketingland.com/author/{account}",
          "account_existence_code" : "200",
@@ -1336,6 +1349,19 @@
          "category" : "XXX PORN XXX",
          "valid" : true,
          "comments" : ["verified 20160518 - webbreacher"]
+      },
+      {
+         "name" : "ProductHunt",
+         "check_uri" : "https://www.producthunt.com/@{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "'s profile on Product Hunt",
+         "account_missing_string" : "<body>You are being",
+         "account_missing_code" : "302",
+         "known_accounts" : ["jill","john"],
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "tech",
+         "valid" : true,
+         "comments" : ["verified 20161221 - L0r3m1p5um"]
       },
       {
          "name" : "PSNProfiles",
