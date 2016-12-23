@@ -1310,6 +1310,32 @@
          "comments" : ["verified 20160502 - webbreacher"]
       },
       {
+         "name" : "Pastebin",
+         "check_uri" : "http://pastebin.com/u/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "'s Pastebin",
+         "account_missing_string" : "",
+         "account_missing_code" : "302",
+         "known_accounts" : ["test","john"],
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "sharing",
+         "valid" : true,
+         "comments" : ["verified 20161222 - L0r3m1p5um"]
+      },
+      {
+         "name" : "Periscope",
+         "check_uri" : "https://www.periscope.tv/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "Periscope</title>",
+         "account_missing_string" : "404</title>",
+         "account_missing_code" : "404",
+         "known_accounts" : ["john","test"],
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "video",
+         "valid" : true,
+         "comments" : ["verified 20161222 - L0r3m1p5um"]
+      },
+      {
          "name" : "Photoblog",
          "check_uri" : "https://www.photoblog.com/{account}/",
          "account_existence_code" : "200",
