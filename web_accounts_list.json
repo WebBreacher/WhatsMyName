@@ -43,16 +43,16 @@
          "comments" : ["verified 10/4/2015 - webbreacher"]
       },
       {
-         "name" : "Matchdoctor",
-         "check_uri" : "http://www.matchdoctor.com/profile_{account}.html",
+         "name" : "AngelList",
+         "check_uri" : "https://angel.co/{account}?utm_source=people",
          "account_existence_code" : "200",
-         "account_existence_string" : "Last Activity:",
-         "account_missing_string" : "File or directory not found",
+         "account_existence_string" : "to find connections to",
+         "account_missing_string" : "Page not found",
          "account_missing_code" : "404",
-         "known_accounts" : ["test", "john"],
-         "category" : "dating",
+         "known_accounts" : ["jill", "john"],
+         "category" : "tech",
          "valid" : true,
-         "comments" : ["verified 20160730 - webbreacher", "DISABLED bad detection string - 20160518 - webbreacher","verified 10/4/2015 - webbreacher"]
+         "comments" : ["verified 20161231 - L0r3m1p5um"]
       },
       {
          "name" : "aNobil",
@@ -1049,6 +1049,20 @@
          "comments" : ["verified 20160730 - webbreacher", "verified 12/07/2015 - webbreacher"]
       },
       {
+         "name" : "Matchdoctor",
+         "check_uri" : "http://www.matchdoctor.com/profile_{account}.html",
+         "account_existence_code" : "200",
+         "account_existence_string" : "Last Activity:",
+         "account_missing_string" : "File or directory not found",
+         "account_missing_code" : "404",
+         "known_accounts" : ["test", "john"],
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "dating",
+         "valid" : true,
+         "comments" : ["verified 20160730 - webbreacher", "DISABLED bad detection string - 20160518 - webbreacher","verified 10/4/2015 - webbreacher"]
+      },
+ 
+      {
          "name" : "Medium",
          "check_uri" : "https://medium.com/@{account}/latest",
          "pretty_uri" : "https://medium.com/@{account}",
@@ -1917,6 +1931,19 @@
          "category" : "social",
          "valid" : true,
          "comments" : ["Initial load. 2016-11-02 WebBreacher"]
+      },
+      {
+         "name" : "Voat",
+         "check_uri" : "https://voat.co/user/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "Profile overview for",
+         "account_missing_string" : "<title>Whoops!",
+         "account_missing_code" : "200",
+         "known_accounts" : ["john","test"],
+         "allowed_types" : ["String","Person","WebAccount","Username"],
+         "category" : "social",
+         "valid" : true,
+         "comments" : ["verified 20161231 - L0r3m1p5um"]
       },
       {
          "name" : "Voices.com",
