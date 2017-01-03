@@ -321,18 +321,6 @@
          "comments" : ["verified 10/6/2015 - webbreacher"]
       },
       {
-         "name" : "CoderStats",
-         "check_uri" : "http://coderstats.net/github/{account}/",
-         "account_existence_code" : "200",
-         "account_existence_string" : "count_owned_repos",
-         "account_missing_string" : "",
-         "account_missing_code" : "404",
-         "known_accounts" : ["test", "john"],
-         "category" : "coding",
-         "valid" : true,
-         "comments" : ["verified 10/7/2015 - webbreacher"]
-      },
-      {
          "name" : "COLOURlovers",
          "check_uri" : "http://www.colourlovers.com/lover/{account}",
          "account_existence_code" : "200",
@@ -809,13 +797,13 @@
          "name" : "IFTTT",
          "check_uri" : "https://ifttt.com/p/{account}/shared",
          "account_existence_code" : "200",
-         "account_existence_string" : "view_profile_image",
+         "account_existence_string" : "s published applets",
          "account_missing_string" : "The requested page or file does not seem to exist",
          "account_missing_code" : "404",
-         "known_accounts" : ["npr"],
+         "known_accounts" : ["npr","fitbit"],
          "category" : "hobby",
          "valid" : true,
-         "comments" : ["verified 20160730 - webbreacher", "verified 11/23/2015 - webbreacher"]
+         "comments" : ["verified - 20170102 - WebBreacher", "verified 20160730 - webbreacher", "verified 11/23/2015 - webbreacher"]
       },
       {
          "name" : "ImageShack",
@@ -1024,7 +1012,8 @@
       },
       {
          "name" : "MassRoots",
-         "check_uri" : "https://massroots.com/user/{account}",
+         "check_uri" : "https://api.massroots.com/v1/accounts?singleUser=true&username={account}",
+         "pretty_uri" : "https://massroots.com/user/{account}",
          "account_existence_code" : "200",
          "account_existence_string" : "username",
          "account_missing_string" : "NotFound",
@@ -1085,7 +1074,7 @@
       },
       {
          "name" : "Mixcloud",
-         "check_uri" : "http://www.mixcloud.com/{account}/",
+         "check_uri" : "https://www.mixcloud.com/{account}/",
          "account_existence_code" : "200",
          "account_existence_string" : "is on Mixcloud",
          "account_missing_string" : "Page Not Found",
@@ -1093,7 +1082,7 @@
          "known_accounts" : ["test","john"],
          "category" : "music",
          "valid" : true,
-         "comments" : ["verified 12/07/2015 - webbreacher"]
+         "comments" : ["verified - 20170102 - WebBreacher", "verified 12/07/2015 - webbreacher"]
       },
       {
          "name" : "Mixlr",
@@ -1194,7 +1183,7 @@
       },
       {
          "name" : "Newsvine",
-         "check_uri" : "http://{account}.newsvine.com/_tps/_author/profile",
+         "check_uri" : "https://{account}.newsvine.com/_tps/_author/profile",
          "account_existence_code" : "200",
          "account_existence_string" : " Profile</title>",
          "account_missing_string" : "",
@@ -1202,7 +1191,7 @@
          "known_accounts" : ["mubix"],
          "category" : "blog",
          "valid" : true,
-         "comments" : ["verified 20160502 - webbreacher"]
+         "comments" : ["verified 20170102 - WebBreacher", "verified 20160502 - webbreacher"]
       },
       {
          "name" : "OKCupid",
@@ -1874,18 +1863,6 @@
          "account_missing_code" : "404",
          "known_accounts" : ["TomHarlock","Seks"],
          "category" : "video",
-         "valid" : true,
-         "comments" : ["verified - 20160509 - webbreacher"]
-      },
-      {
-         "name" : "VisualizeUs",
-         "check_uri" : "http://vi.sualize.us/{account}/",
-         "account_existence_code" : "200",
-         "account_existence_string" : "favorite pictures on VisualizeUs</title>",
-         "account_missing_string" : "page not found",
-         "account_missing_code" : "404",
-         "known_accounts" : ["test"],
-         "category" : "images",
          "valid" : true,
          "comments" : ["verified - 20160509 - webbreacher"]
       },
