@@ -1938,6 +1938,18 @@
          "comments" : ["Fixed existence string. Verified 2016-11-02 WebBreacher", "bad result 20160917 - WebBreacher","verified - 20160509 - webbreacher"]
       },
       {
+         "name" : "WeedLife",
+         "check_uri" : "https://www.weedlife.com/{account}",
+         "account_existence_code" : "303",
+         "account_existence_string" : "See other",
+         "account_missing_string" : "Page not found.",
+         "account_missing_code" : "404",
+         "known_accounts" : ["nerd420","high-beam-solar-glass-co"],
+         "category" : "drugs",
+         "valid" : true,
+         "comments" : ["verified - 20170102 - WebBreacher"]
+      },
+      {
          "name" : "WeeWorld",
          "check_uri" : "http://www.weeworld.com/home/{account}",
          "account_existence_code" : "200",
