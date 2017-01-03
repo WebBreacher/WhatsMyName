@@ -1,15 +1,21 @@
 {
-   "license" : [  "Copyright (c) 2016, Spotlight Infosec LLC. All rights reserved.",
-                  "Redistribution and use in source and binary forms, with or without modification,",
-                  "are permitted provided that the following conditions are met:",
-                  "Redistributions of source code must retain the above copyright notice, this list",
-                  "of conditions and the following disclaimer.",
-                  "Redistributions in binary form must reproduce the above copyright notice, this",
-                  "list of conditions and the following disclaimer in the documentation and/or other",
-                  "materials provided with the distribution.",
-                  "Neither the name of the copyright holder nor the names of its contributors may be",
-                  "used to endorse or promote products derived from this software without specific",
-                  "prior written permission."],
+   "license" : ["MIT License",
+                "Copyright (c) 2016, Spotlight Infosec LLC.",
+                "Permission is hereby granted, free of charge, to any person obtaining a",
+                "copy of this software and associated documentation files (the "Software"),",
+                "to deal in the Software without restriction, including without limitation",
+                "the rights to use, copy, modify, merge, publish, distribute, sublicense,",
+                "and/or sell copies of the Software, and to permit persons to whom the",
+                "Software is furnished to do so, subject to the following conditions:",
+                "The above copyright notice and this permission notice shall be included",
+                "in all copies or substantial portions of the Software.",
+                "THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS",
+                "OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,",
+                "FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL",
+                "THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR",
+                "OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,",
+                "ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR",
+                "OTHER DEALINGS IN THE SOFTWARE."],
    "authors" : ["webbreacher","mmaczko"],
    "sites" : [
       {
@@ -20,7 +26,6 @@
          "account_missing_string" : "We couldn’t find what you’re looking for",
          "account_missing_code" : "302",
          "known_accounts" : ["john","jill"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "social",
          "valid" : true,
          "comments" : ["verified 20160730 - webbreacher", "verified 10/4/2015 - webbreacher"]
@@ -33,7 +38,6 @@
          "account_missing_string" : "",
          "account_missing_code" : "404",
          "known_accounts" : ["test", "mike"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "dating",
          "valid" : true,
          "comments" : ["verified 10/4/2015 - webbreacher"]
@@ -46,7 +50,6 @@
          "account_missing_string" : "File or directory not found",
          "account_missing_code" : "404",
          "known_accounts" : ["test", "john"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "dating",
          "valid" : true,
          "comments" : ["verified 20160730 - webbreacher", "DISABLED bad detection string - 20160518 - webbreacher","verified 10/4/2015 - webbreacher"]
@@ -59,7 +62,6 @@
          "account_missing_string" : "",
          "account_missing_code" : "302",
          "known_accounts" : ["test", "john"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "books",
          "valid" : true,
          "comments" : ["verified 10/4/2015 - webbreacher"]
@@ -72,7 +74,6 @@
          "account_missing_string" : "Page not found",
          "account_missing_code" : "404",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "social",
          "valid" : true,
          "comments" : ["Changed existence string. Verified 2016-11-02 WebBreacher", "bad result 20160917 - WebBreacher","verified 10/4/2015 - webbreacher"]
@@ -85,7 +86,6 @@
          "account_missing_string" : "",
          "account_missing_code" : "502",
          "known_accounts" : ["tshock"],
-         "allowed_types" : ["Organization", "String"],
          "category" : "coding",
          "valid" : true,
          "comments" : ["verified 10/4/2015 - webbreacher"]
@@ -98,7 +98,6 @@
          "account_missing_string" : "",
          "account_missing_code" : "502",
          "known_accounts" : ["tshock"],
-         "allowed_types" : ["Organization", "String"],
          "category" : "coding",
          "valid" : true,
          "comments" : ["verified 10/4/2015 - webbreacher", "look for orgs that allow self-signup by arbitrary users. much win"]
@@ -111,7 +110,6 @@
          "account_missing_string" : ["Page not found"],
          "account_missing_code" : "404",
          "known_accounts" : ["test", "john"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "video",
          "valid" : true,
          "comments" : ["verified/fixed 20160730 - webbreacher", "verified 10/4/2015 - webbreacher"]
@@ -124,7 +122,6 @@
          "account_missing_string" : "",
          "account_missing_code" : "404",
          "known_accounts" : ["test", "john"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "preso",
          "valid" : true,
          "comments" : ["verified 10/4/2015 - webbreacher"]
@@ -137,7 +134,6 @@
          "account_missing_string" : "",
          "account_missing_code" : "404",
          "known_accounts" : ["john", "whynot"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "social",
          "valid" : true,
          "comments" : ["verified 10/4/2015 - webbreacher"]
@@ -150,7 +146,6 @@
          "account_missing_string" : "unrecognized",
          "account_missing_code" : "200",
          "known_accounts" : ["test","john"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "business",
          "valid" : true,
          "comments" : ["verified 20161218 - L0r3m1p5um"]
@@ -164,7 +159,6 @@
          "account_missing_string" : "\"error\":",
          "account_missing_code" : "404",
          "known_accounts" : ["test", "webbreacher"],
-         "allowed_types" : ["String","Person","WebAccount","Username","Organization"],
          "category" : "coding",
          "valid" : true,
          "comments" : ["verified 10/4/2015 - webbreacher"]
@@ -177,7 +171,6 @@
          "account_missing_string" : "",
          "account_missing_code" : "404",
          "known_accounts" : ["john", "walnuts"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "music",
          "valid" : true,
          "comments" : ["verified 10/4/2015 - webbreacher"]
@@ -190,7 +183,6 @@
          "account_missing_string" : "Page not found",
          "account_missing_code" : "404",
          "known_accounts" : ["test", "john"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "social",
          "valid" : true,
          "comments" : ["verified 10/4/2015 - webbreacher"]
@@ -203,7 +195,6 @@
          "account_missing_string" : "",
          "account_missing_code" : "200",
          "known_accounts" : ["test", "mike"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "bookmarks",
          "valid" : true,
          "comments" : ["verified 10/4/2015 - webbreacher"]
@@ -216,7 +207,6 @@
          "account_missing_string" : "Blog not found",
          "account_missing_code" : "200",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "blog",
          "valid" : true,
          "comments" : ["verified 10/4/2015 - webbreacher"]
@@ -230,7 +220,6 @@
          "account_missing_string" : "data\":\"\"",
          "account_missing_code" : "200",
          "known_accounts" : ["mike"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "health",
          "valid" : true,
          "comments" : ["verified 10/4/2015 - webbreacher"]
@@ -243,7 +232,6 @@
          "account_missing_string" : "Must Watch Today",
          "account_missing_code" : "302",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "video",
          "valid" : true,
          "comments" : ["verified 10/4/2015 - webbreacher"]
@@ -256,7 +244,6 @@
          "account_missing_string" : "Something went wrong",
          "account_missing_code" : "404",
          "known_accounts" : ["Bitquark","RobertK"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "hacker",
          "valid" : true,
          "comments" : ["verified 20160730 - webbreacher", "verified 11/23/2015 - webbreacher"]
@@ -269,7 +256,6 @@
          "account_missing_string" : "We can't find the page you're looking for",
          "account_missing_code" : "404",
          "known_accounts" : ["talhaishaq2001","RobertK"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "social",
          "valid" : true,
          "comments" : ["Initial add 2016-11-03 WebBreacher"]
@@ -282,7 +268,6 @@
          "account_missing_string" : "is not a CafeMom member.",
          "account_missing_code" : "200",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "social",
          "valid" : true,
          "comments" : ["verified 10/6/2015 - webbreacher"]
@@ -295,7 +280,6 @@
          "account_missing_string" : "",
          "account_missing_code" : "404",
          "known_accounts" : ["jill","john"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "business",
          "valid" : true,
          "comments" : ["verified 20161218 - L0r3m1p5um"]
@@ -308,7 +292,6 @@
          "account_missing_string" : "",
          "account_missing_code" : "404",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "hobby",
          "valid" : true,
          "comments" : ["verified 10/6/2015 - webbreacher"]
@@ -321,7 +304,6 @@
          "account_missing_string" : "",
          "account_missing_code" : "302",
          "known_accounts" : ["john"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "hobby",
          "valid" : true,
          "comments" : ["verified 10/6/2015 - webbreacher"]
@@ -334,7 +316,6 @@
          "account_missing_string" : "",
          "account_missing_code" : "302",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username","Organization"],
          "category" : "coding",
          "valid" : true,
          "comments" : ["verified 10/6/2015 - webbreacher"]
@@ -347,7 +328,6 @@
          "account_missing_string" : "",
          "account_missing_code" : "404",
          "known_accounts" : ["test", "john"],
-         "allowed_types" : ["String","Person","WebAccount","Username","Organization"],
          "category" : "coding",
          "valid" : true,
          "comments" : ["verified 10/7/2015 - webbreacher"]
@@ -360,7 +340,6 @@
          "account_missing_string" : "",
          "account_missing_code" : "",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "hobby",
          "valid" : true,
          "comments" : ["verified 10/7/2015 - webbreacher"]
@@ -373,7 +352,6 @@
          "account_missing_string" : "status\":\"not_found",
          "account_missing_code" : "404",
          "known_accounts" : ["avves", "john"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "social",
          "valid" : true,
          "comments" : ["verified 10/7/2015 - webbreacher"]
@@ -386,7 +364,6 @@
          "account_missing_string" : "Object moved to",
          "account_missing_code" : "302",
          "known_accounts" : ["test","john"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "sharing",
          "valid" : true,
          "comments" : ["verified 10/7/2015 - webbreacher"]
@@ -399,7 +376,6 @@
          "account_missing_string" : "This user has not registered",
          "account_missing_code" : "200",
          "known_accounts" : ["test","john"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "travel",
          "valid" : true,
          "comments" : ["verified 10/7/2015 - webbreacher"]
@@ -412,7 +388,6 @@
          "account_missing_string" : "",
          "account_missing_code" : "301",
          "known_accounts" : ["john"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "video",
          "valid" : true,
          "comments" : ["verified 10/7/2015 - webbreacher"]
@@ -425,7 +400,6 @@
          "account_missing_string" : "The page you requested could not be found",
          "account_missing_code" : "404",
          "known_accounts" : ["john","av2learner"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "bookmarks",
          "valid" : true,
          "comments" : ["verified 20160502 - webbreacher"]
@@ -438,7 +412,6 @@
          "account_missing_string" : "Not Found - DeviantArt",
          "account_missing_code" : "404",
          "known_accounts" : ["test", "john"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "images",
          "valid" : true,
          "comments" : ["verified 10/7/2015 - webbreacher"]
@@ -451,7 +424,6 @@
          "account_missing_string" : "{}",
          "account_missing_code" : "200",
          "known_accounts" : ["whoami", "johndoe"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "images",
          "valid" : true,
          "comments" : ["Changed to use API instead of web scrape. Altered existence string. Verified 2016-11-02 WebBreacher.", "verified 10/7/2015 - webbreacher"]
@@ -464,10 +436,21 @@
          "account_missing_string" : "We couldn't find that page",
          "account_missing_code" : "404",
          "known_accounts" : ["test", "john"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "video",
          "valid" : true,
          "comments" : ["verified 10/7/2015 - webbreacher"]
+      },
+      {
+         "name" : "duby",
+         "check_uri" : "https://www.duby.co/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "<title>@",
+         "account_missing_string" : "<title>Page Not Found",
+         "account_missing_code" : "404",
+         "known_accounts" : ["organicannabis","jonny5"],
+         "category" : "drugs",
+         "valid" : true,
+         "comments" : ["verified - 20170102 - WebBreacher"]
       },
       {
          "name" : "eBay",
@@ -477,7 +460,6 @@
          "account_missing_string" : "The User ID you entered was not found",
          "account_missing_code" : "200",
          "known_accounts" : ["the_gqs"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "shopping",
          "valid" : true,
          "comments" : ["Altered test account. Verified 2016-11-02 WebBreacher.","verified 10/7/2015 - webbreacher"]
@@ -490,7 +472,6 @@
          "account_missing_string" : "",
          "account_missing_code" : "",
          "known_accounts" : ["bomdiameucaro"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "gaming",
          "valid" : true,
          "comments" : ["verified 10/7/2015 - webbreacher"]
@@ -503,7 +484,6 @@
          "account_missing_string" : "<title>,  -",
          "account_missing_code" : "200",
          "known_accounts" : ["devindra-hardawar"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "tech",
          "valid" : true,
          "comments" : ["Added HTTPS to URL and changed test account. Verified 2016-11-02 WebBreacher.", "verified 05/05/2016 - webbreacher"]
@@ -516,7 +496,6 @@
          "account_missing_string" : "Profile not found",
          "account_missing_code" : "404",
          "known_accounts" : ["john"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "XXX PORN XXX",
          "valid" : true,
          "comments" : ["Verified working 2016-11-02 WebBreacher", "bad result 20160917 - WebBreacher","verified 10/7/2015 - webbreacher"]
@@ -529,7 +508,6 @@
          "account_missing_string" : "Sorry, the member you are looking for does not exist",
          "account_missing_code" : "404",
          "known_accounts" : ["happiness"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "shopping",
          "valid" : true,
          "comments" : ["verified 10/7/2015 - webbreacher"]
@@ -542,7 +520,6 @@
          "account_missing_string" : "Sorry, this page isn't available",
          "account_missing_code" : "200",
          "known_accounts" : ["john.heckle.9"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "social",
          "valid" : true,
          "comments" : ["verified 10/10/2015 - webbreacher"]
@@ -554,7 +531,6 @@
          "account_existence_string" : "archive author author-",
          "account_missing_string" : "<title>, Author at Families.com",
          "known_accounts" : ["maliamom"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "news",
          "valid" : true,
          "comments" : ["verified 11/07/2015 - webbreacher"]
@@ -567,7 +543,6 @@
          "account_missing_string" : "",
          "account_missing_code" : "302",
          "known_accounts" : ["test","johndoe"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "movies",
          "valid" : true,
          "comments" : ["verified 11/07/2015 - webbreacher"]
@@ -580,7 +555,6 @@
          "account_missing_string" : "Not FFFFound!",
          "account_missing_code" : "404",
          "known_accounts" : ["jensen","bit"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "image",
          "valid" : true,
          "comments" : ["Verified 2016-11-02 WebBreacher", "verified 20160511 webbreacher"]
@@ -593,7 +567,6 @@
          "account_missing_string" : "You are being ",
          "account_missing_code" : "301",
          "known_accounts" : ["test","gabarnes"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "shopping",
          "valid" : true,
          "comments" : ["verified 20160730 - webbreacher", "verified 20160518 - webbreacher"]
@@ -606,7 +579,6 @@
          "account_missing_string" : "",
          "account_missing_code" : "404",
          "known_accounts" : ["glaciernps","test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "images",
          "valid" : true,
          "comments" : ["verified 11/07/2015 - webbreacher"]
@@ -619,7 +591,6 @@
          "account_missing_string" : "<title>Flipboard</title>",
          "account_missing_code" : 404,
          "known_accounts" : ["test","john"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "tech",
          "valid" : true,
          "comments" : ["verified 20161218 - L0r3m1p5um"]
@@ -633,7 +604,6 @@
          "account_missing_code" : "404",
          "known_accounts" : ["test","john"],
          "known_missing_accounts" : ["johndoe"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "social",
          "valid" : true,
          "comments" : ["verified 11/07/2015 - webbreacher"]
@@ -647,7 +617,6 @@
          "account_missing_code" : "404",
          "known_accounts" : ["test","johndoe"],
          "known_missing_accounts" : ["does-not-exist"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "images",
          "valid" : true,
          "comments" : ["Verified 2016-11-02 WebBreacher", "bad result 20160917 - WebBreacher","verified 11/07/2015 - webbreacher"]
@@ -661,7 +630,6 @@
          "account_missing_code" : "404",
          "known_accounts" : ["john"],
          "known_missing_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "location",
          "valid" : true,
          "comments" : ["verified 11/07/2015 - webbreacher"]
@@ -674,7 +642,6 @@
          "account_missing_string" : "Page not found",
          "account_missing_code" : "404",
          "known_accounts" : ["test","johndoe"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "music",
          "valid" : true,
          "comments" : ["verified 11/08/2015 - webbreacher"]
@@ -687,7 +654,6 @@
          "account_missing_string" : "",
          "account_missing_code" : "200",
          "known_accounts" : ["john"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "dating",
          "valid" : true,
          "comments" : ["verified 11/23/2015 - webbreacher"]
@@ -700,7 +666,6 @@
          "account_missing_string" : "404 Not Found",
          "account_missing_code" : "404",
          "known_accounts" : ["john"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "video",
          "valid" : true,
          "comments" : ["verified 11/23/2015 - webbreacher"]
@@ -714,7 +679,6 @@
          "account_missing_string" : "Error report",
          "account_missing_code" : "403",
          "known_accounts" : ["DavidBrennan"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "health",
          "valid" : true,
          "comments" : ["verified 11/08/2015 - webbreacher"]
@@ -727,7 +691,6 @@
          "account_missing_string" : "404 - Missing Geekshee",
          "account_missing_code" : "200",
          "known_accounts" : ["webbreacher","jcran"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "coding",
          "valid" : true,
          "comments" : ["verified 11/08/2015 - webbreacher"]
@@ -740,7 +703,6 @@
          "account_missing_string" : "That username does not exist in the system",
          "account_missing_code" : "200",
          "known_accounts" : ["fourvegs","test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "hobby",
          "valid" : true,
          "comments" : ["verified 11/08/2015 - webbreacher"]
@@ -753,7 +715,6 @@
          "account_missing_string" : "",
          "account_missing_code" : "200",
          "known_accounts" : ["test","johndoe"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "dating",
          "valid" : true,
          "comments" : ["verified 11/23/2015 - webbreacher"]
@@ -767,7 +728,6 @@
          "account_missing_string" : "Not Found",
          "account_missing_code" : "404",
          "known_accounts" : ["test","webbreacher"],
-         "allowed_types" : ["String","Person","WebAccount","Username","Organization"],
          "category" : "coding",
          "valid" : true,
          "comments" : ["verified 20160730 - webbreacher", "DISABLED bad detection string - 20160518 - webbreacher","verified 11/08/2015 - webbreacher"]
@@ -780,7 +740,6 @@
          "account_missing_string" : "Page not found",
          "account_missing_code" : "410",
          "known_accounts" : ["test","mike"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "travel",
          "valid" : true,
          "comments" : ["verified 11/23/2015 - webbreacher"]
@@ -793,7 +752,6 @@
          "account_missing_string" : "Page Not Found",
          "account_missing_code" : "404",
          "known_accounts" : ["612715-jill-holtz","626151-carol-muscolino"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "books",
          "valid" : true,
          "comments" : ["verified 20160730 - webbreacher", "DISABLED bad detection string - 20160518 - webbreacher","fixed good string 20160509 - webbreacher","verified 11/23/2015 - webbreacher"]
@@ -807,7 +765,6 @@
          "account_missing_string" : "User not found",
          "account_missing_code" : "404",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "images",
          "valid" : true,
          "comments" : ["verified 11/23/2015 - webbreacher"]
@@ -820,7 +777,6 @@
          "account_missing_string" : "Sorry, that user does not exist",
          "account_missing_code" : "404",
          "known_accounts" : ["john%40example.com", "jane%40example.com"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "hacker",
          "valid" : true,
          "comments" : ["Initial add 2016-11-03 WebBreacher", "Fixed detection string - 2016-12-18 - WebBreacher"]
@@ -833,7 +789,6 @@
          "account_missing_string" : "Sorry, that user does not exist",
          "account_missing_code" : "",
          "known_accounts" : ["test","bob"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "blog",
          "valid" : true,
          "comments" : ["verified 11/23/2015 - webbreacher"]
@@ -846,7 +801,6 @@
          "account_missing_string" : "404 Page",
          "account_missing_code" : "404",
          "known_accounts" : ["Kelly","Cney"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "health",
          "valid" : true,
          "comments" : [""]
@@ -859,7 +813,6 @@
          "account_missing_string" : "The requested page or file does not seem to exist",
          "account_missing_code" : "404",
          "known_accounts" : ["npr"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "hobby",
          "valid" : true,
          "comments" : ["verified 20160730 - webbreacher", "verified 11/23/2015 - webbreacher"]
@@ -872,7 +825,6 @@
          "account_missing_string" : "",
          "account_missing_code" : "302",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "images",
          "valid" : true,
          "comments" : ["verified 11/23/2015 - webbreacher"]
@@ -885,7 +837,6 @@
          "account_missing_string" : "the simple 404 page",
          "account_missing_code" : "404",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "images",
          "valid" : true,
          "comments" : ["verified 11/23/2015 - webbreacher"]
@@ -898,7 +849,6 @@
          "account_missing_string" : "is not currently registered",
          "account_missing_code" : "200",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "social",
          "valid" : true,
          "comments" : ["verified 11/23/2015 - webbreacher"]
@@ -911,7 +861,6 @@
          "account_missing_string" : "Sorry, this page isn't available",
          "account_missing_code" : "404",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "images",
          "valid" : true,
          "comments" : ["verified 11/23/2015 - webbreacher"]
@@ -924,7 +873,6 @@
          "account_missing_string" : "",
          "account_missing_code" : "404",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "hobby",
          "valid" : true,
          "comments" : ["Changed existence string to lower case - 2016-12-18 - WebBreacher", "Changed existence string and missing code. Verified 2016-11-02 WebBreacher","verified 11/23/2015 - webbreacher"]
@@ -937,7 +885,6 @@
          "account_missing_string" : "",
          "account_missing_code" : "200",
          "known_accounts" : ["test","mubix"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "search",
          "valid" : true,
          "comments" : ["verified 11/24/2015 - webbreacher"]
@@ -950,7 +897,6 @@
          "account_missing_string" : "User not found",
          "account_missing_code" : "200",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "hobby",
          "valid" : true,
          "comments" : ["Changed existence string. Site uses Web Sockets now. Changed missing code too. - 2016-12-18 - WebBreacher", "verified 11/24/2015 - webbreacher"]
@@ -963,7 +909,6 @@
          "account_missing_string" : "sorry, not found",
          "account_missing_code" : "404",
          "known_accounts" : ["test","mubix"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "business",
          "valid" : true,
          "comments" : ["verified 11/24/2015 - webbreacher"]
@@ -976,7 +921,6 @@
          "account_missing_string" : "doesn't exist or is inactive",
          "account_missing_code" : "200",
          "known_accounts" : ["john"],
-         "allowed_types" : ["String","Person","WebAccount","Username","Person"],
          "category" : "social",
          "valid" : true,
          "comments" : ["verified 20160730 - webbreacher", "verified 20160503 - mmaczko"]
@@ -989,7 +933,6 @@
          "account_missing_string" : "does not exist",
          "account_missing_code" : "404",
          "known_accounts" : ["test123","john"],
-         "allowed_types" : ["String","Person","WebAccount","Username","Person"],
          "category" : "social",
          "valid" : true,
          "comments" : ["verified 12/07/2015 - webbreacher"]
@@ -1002,7 +945,6 @@
          "account_missing_string" : "Sorry, no account with that name was found",
          "account_missing_code" : "404",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "gaming",
          "valid" : true,
          "comments" : ["verified 12/07/2015 - webbreacher"]
@@ -1015,7 +957,6 @@
          "account_missing_string" : "can't find that page",
          "account_missing_code" : "404",
          "known_accounts" : ["webbreacher"],
-         "allowed_types" : ["String","Person","WebAccount","Username","Person"],
          "category" : "social",
          "valid" : true,
          "comments" : ["Altered existence string. Verified 2016-11-02 WebBreacher", "verified 12/07/2015 - webbreacher"]
@@ -1028,7 +969,6 @@
          "account_missing_string" : "Whoops! Sorry, but this page doesn't exist.",
          "account_missing_code" : "404",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "music",
          "valid" : true,
          "comments" : ["verified 12/07/2015 - webbreacher"]
@@ -1041,7 +981,6 @@
          "account_missing_string" : "Error: This user doesn't exist",
          "account_missing_code" : "200",
          "known_accounts" : ["test","john"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "books",
          "valid" : true,
          "comments" : ["verified 12/07/2015 - webbreacher"]
@@ -1054,7 +993,6 @@
          "account_missing_string" : "Profile Not Found",
          "account_missing_code" : "404",
          "known_accounts" : ["vanessadimauro"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "business",
          "valid" : true,
          "comments" : ["Linkedin does not like people accessing it from AWS. This existence string works if you don't use AWS. Verified 2016-11-02 WebBreacher.","bad result 20160917 - WebBreacher","verified 20160730 - webbreacher", "verified 20160518 - webbreacher"]
@@ -1068,7 +1006,6 @@
          "account_missing_string" : "\"success\": false",
          "account_missing_code" : "200",
          "known_accounts" : ["Aaryall","a1EnergeticJenny"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "XXX PORN XXX",
          "valid" : true,
          "comments" : ["verified 12/07/2015 - webbreacher"]
@@ -1081,10 +1018,21 @@
          "account_missing_string" : "Page not found",
          "account_missing_code" : "404",
          "known_accounts" : ["mani-karthik","james-green"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "business",
          "valid" : true,
          "comments" : ["verified 12/07/2015 - webbreacher"]
+      },
+      {
+         "name" : "MassRoots",
+         "check_uri" : "https://massroots.com/user/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "username",
+         "account_missing_string" : "NotFound",
+         "account_missing_code" : "404",
+         "known_accounts" : ["mrsparkzalot","valleyrec420"],
+         "category" : "drugs",
+         "valid" : true,
+         "comments" : ["verified - 20170102 - WebBreacher"]
       },
       {
          "name" : "mate1",
@@ -1094,7 +1042,6 @@
          "account_missing_string" : "We couldn't find the profile",
          "account_missing_code" : "404",
          "known_accounts" : ["hfewq","Godloves435"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "dating",
          "valid" : true,
          "comments" : ["verified 20160730 - webbreacher", "verified 12/07/2015 - webbreacher"]
@@ -1108,7 +1055,6 @@
          "account_missing_string" : "No user found for username",
          "account_missing_code" : "404",
          "known_accounts" : ["test123","johndoe"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "news",
          "valid" : true,
          "comments" : ["verified 12/07/2015 - webbreacher"]
@@ -1121,7 +1067,6 @@
          "account_missing_string" : "The page you are looking for does not exist.",
          "account_missing_code" : "200",
          "known_accounts" : ["john"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "dating",
          "valid" : true,
          "comments" : ["verified 12/07/2015 - webbreacher"]
@@ -1134,7 +1079,6 @@
          "account_missing_string" : "The resource you are looking for has been removed",
          "account_missing_code" : "404",
          "known_accounts" : ["john","test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "dating",
          "valid" : true,
          "comments" : ["verified 20160518 - webbreacher"]
@@ -1147,7 +1091,6 @@
          "account_missing_string" : "Page Not Found",
          "account_missing_code" : "404",
          "known_accounts" : ["test","john"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "music",
          "valid" : true,
          "comments" : ["verified 12/07/2015 - webbreacher"]
@@ -1161,7 +1104,6 @@
          "account_missing_string" : "Resource not found",
          "account_missing_code" : "404",
          "known_accounts" : ["test","john"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "music",
          "valid" : true,
          "comments" : ["verified 12/07/2015 - webbreacher"]
@@ -1174,7 +1116,6 @@
          "account_missing_string" : "The member requested could not be found",
          "account_missing_code" : "404",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "gaming",
          "valid" : true,
          "comments" : ["verified 12/07/2015 - webbreacher"]
@@ -1187,7 +1128,6 @@
          "account_missing_string" : "Oh no! Page not found.",
          "account_missing_code" : "404",
          "known_accounts" : ["john"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "news",
          "valid" : true,
          "comments" : ["verified 20160502 - webbreacher"]
@@ -1200,7 +1140,6 @@
          "account_missing_string" : "Whoops! You broke our site!",
          "account_missing_code" : "404",
          "known_accounts" : ["clif", "john"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "business",
          "valid" : true,
          "comments" : ["verified 20160502 - webbreacher"]
@@ -1213,7 +1152,6 @@
          "account_missing_string" : "Page not found",
          "account_missing_code" : "404",
          "known_accounts" : ["mike"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "health",
          "valid" : true,
          "comments" : ["verified 20160502 - webbreacher"]
@@ -1226,7 +1164,6 @@
          "account_missing_string" : " / Whoops!",
          "account_missing_code" : "404",
          "known_accounts" : ["Tampa_girl7"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "social",
          "valid" : true,
          "comments" : ["verified 20160502 - webbreacher"]
@@ -1239,7 +1176,6 @@
          "account_missing_string" : "Page Not Found",
          "account_missing_code" : "404",
          "known_accounts" : ["michael"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "social",
          "valid" : true,
          "comments" : ["Changed URL. Verified 2016-11-02 WebBreacher", "bad result 20160917 - WebBreacher","verified 20160502 - webbreacher"]
@@ -1252,7 +1188,6 @@
          "account_missing_string" : "Sorry, the page you are looking for",
          "account_missing_code" : "404",
          "known_accounts" : ["adam"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "social",
          "valid" : true,
          "comments" : ["verified 20160502 - webbreacher"]
@@ -1265,7 +1200,6 @@
          "account_missing_string" : "",
          "account_missing_code" : "404",
          "known_accounts" : ["mubix"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "blog",
          "valid" : true,
          "comments" : ["verified 20160502 - webbreacher"]
@@ -1278,7 +1212,6 @@
          "account_missing_string" : "inactive,mustlogin,redirect,js_refresh",
          "account_missing_code" : "404",
          "known_accounts" : ["TallSexyNerd"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "dating",
          "valid" : true,
          "comments" : ["Changed missing string. Verified 2016-11-02 WebBreacher", "status changed to false 20160814 due to bad responses - webbreacher", "verified 20160502 - webbreacher"]
@@ -1291,7 +1224,6 @@
          "account_missing_string" : "Not found - Overcast Network",
          "account_missing_code" : "404",
          "known_accounts" : ["Finik"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "gaming",
          "valid" : true,
          "comments" : ["verified 20160502 - webbreacher"]
@@ -1304,7 +1236,6 @@
          "account_missing_string" : "Sorry, this page no longer exists",
          "account_missing_code" : "404",
          "known_accounts" : ["hatsumi","pdsdville"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "images",
          "valid" : true,
          "comments" : ["verified 20160730 - webbreacher", "verified 20160518 - webbreacher"]
@@ -1317,7 +1248,6 @@
          "account_missing_string" : "Sorry, the requested page does not exist.",
          "account_missing_code" : "404",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "images",
          "valid" : true,
          "comments" : ["verified 20160503 - mmaczko"]
@@ -1330,7 +1260,6 @@
          "account_missing_string" : "",
          "account_missing_code" : "302",
          "known_accounts" : ["joanscreations","grunwalde"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "images",
          "valid" : true,
          "comments" : ["verified 20160518 - webbreacher"]
@@ -1343,7 +1272,6 @@
          "account_missing_string" : "I couldn't find the page you were looking for",
          "account_missing_code" : "404",
          "known_accounts" : ["whistlermountainbikepark","paulhanson"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "hobby",
          "valid" : true,
          "comments" : ["verified 20160518 - webbreacher"]
@@ -1356,7 +1284,6 @@
          "account_missing_string" : "Whoops! We couldn't find that page",
          "account_missing_code" : "404",
          "known_accounts" : ["test123","frickcollection"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "social",
          "valid" : true,
          "comments" : ["verified 20160518 - webbreacher"]
@@ -1369,7 +1296,6 @@
          "account_missing_string" : "Sorry we can't find that page",
          "account_missing_code" : "404",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "music",
          "valid" : true,
          "comments" : ["verified 20160503 - mmaczko"]
@@ -1382,7 +1308,6 @@
          "account_missing_string" : "User Not Found!",
          "account_missing_code" : "200",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "social",
          "valid" : true,
          "comments" : ["verified 20160503 - mmaczko"]
@@ -1395,7 +1320,6 @@
          "account_missing_string" : "",
          "account_missing_code" : "200",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "dating",
          "valid" : true,
          "comments" : ["verified 20160503 - mmaczko, account missing string not found"]
@@ -1408,7 +1332,6 @@
          "account_missing_string" : "404 - Page not found",
          "account_missing_code" : "404",
          "known_accounts" : ["HottieDiana94","romarandi"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "XXX PORN XXX",
          "valid" : true,
          "comments" : ["verified 20160730 - webbreacher", "verified 20160518 - webbreacher"]
@@ -1421,7 +1344,6 @@
          "account_missing_string" : "Error Page Not Found",
          "account_missing_code" : "404",
          "known_accounts" : ["test123"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "XXX PORN XXX",
          "valid" : true,
          "comments" : ["verified 20160518 - webbreacher"]
@@ -1434,7 +1356,6 @@
          "account_missing_string" : "",
          "account_missing_code" : "302",
          "known_accounts" : ["WhiteWalls7","Roughdawg4"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "gaming",
          "valid" : true,
          "comments" : ["verified 20160730 - webbreacher", "verified 20160503 - mmaczko"]
@@ -1447,7 +1368,6 @@
          "account_missing_string" : "We couldn't find what you were looking",
          "account_missing_code" : "404",
          "known_accounts" : ["omgmichaelr0ck5","Jagthier"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "gaming",
          "valid" : true,
          "comments" : ["verified 20160730 - webbreacher"]
@@ -1460,7 +1380,6 @@
          "account_missing_string" : "File not found",
          "account_missing_code" : "404",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "music",
          "valid" : true,
          "comments" : ["Verified 2016-11-02 WebBreacher. This site bans IP addresses that use scripts.", "DISABLED bad detection string - 20160518 - webbreacher","verified 20160503 - webbreacher"]
@@ -1473,7 +1392,6 @@
          "account_missing_string" : "page not found",
          "account_missing_code" : "404",
          "known_accounts" : ["mayorpaco", "Arzu1982"],
-         "allowed_types" : ["String","Person","WebAccount","Username","Organization"],
          "category" : "news",
          "valid" : true,
          "comments" : ["Changed test accounts. Verified 2016-11-02 WebBreacher", "status changed to false 20160814 due to bad responses - webbreacher", "verified 20160730 - webbreacher", "verified 20160503 - webbreacher"]
@@ -1486,7 +1404,6 @@
          "account_missing_string" : "Not Found Page",
          "account_missing_code" : "404",
          "known_accounts" : ["bocaj73"],
-         "allowed_types" : ["String","Person","WebAccount","Username","Organization"],
          "category" : "XXX PORN XXX",
          "valid" : true,
          "comments" : ["Initial content creation. 2016-11-02 WebBreacher"]
@@ -1499,7 +1416,6 @@
          "account_missing_string" : "Sorry! We were unable to find that page",
          "account_missing_code" : "404",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "social",
          "valid" : true,
          "comments" : ["verified 20160503 - webbreacher"]
@@ -1512,7 +1428,6 @@
          "account_missing_string" : "Sorry, please try again later",
          "account_missing_code" : "404",
          "known_accounts" : ["guy-lodge","matthew-lickona"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "movies",
          "valid" : true,
          "comments" : ["Initial add 2016-11-02 WebBreacher"]
@@ -1525,7 +1440,6 @@
          "account_missing_string" : "We couldn't find the page you're looking for.",
          "account_missing_code" : "404",
          "known_accounts" : ["griffpatch"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "coding",
          "valid" : true,
          "comments" : ["verified 20160503 - webbreacher"]
@@ -1538,7 +1452,6 @@
          "account_missing_string" : "The item does not exist. It may have been deleted",
          "account_missing_code" : "404",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "social",
          "valid" : true,
          "comments" : ["verified 20160503 - webbreacher"]
@@ -1551,7 +1464,6 @@
          "account_missing_string" : "<title>SEOClerks</title>",
          "account_missing_code" : "404",
          "known_accounts" : ["eljefeseo","gokudadon"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "social",
          "valid" : true,
          "comments" : ["verified 20160518 - webbreacher"]
@@ -1564,7 +1476,6 @@
          "account_missing_string" : "Sorry, the page you requested doesn't exist",
          "account_missing_code" : "404",
          "known_accounts" : ["jesus"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "music",
          "valid" : true,
          "comments" : ["verified 20160503 - webbreacher"]
@@ -1577,7 +1488,6 @@
          "account_missing_string" : "he link you followed may be broken",
          "account_missing_code" : "404",
          "known_accounts" : ["test123"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "shopping",
          "valid" : true,
          "comments" : ["verified 20160503 - webbreacher"]
@@ -1590,7 +1500,6 @@
          "account_missing_string" : "The page you're looking for cannot be found",
          "account_missing_code" : "404",
          "known_accounts" : ["SaimD85","shabiruddin"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "dating",
          "valid" : true,
          "comments" : ["verified 20160730 - webbreacher", "verified 20160503 - webbreacher"]
@@ -1603,7 +1512,6 @@
          "account_missing_string" : "The user you requested does not exist",
          "account_missing_code" : "200",
          "known_accounts" : ["DrSkwid","TsuruchiBrian"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "news",
          "valid" : false,
          "comments" : ["tried to verify 20160730 but still having issues - webbreacher", "DISABLED false positive - 20160518 - webbreacher","fixed 20160509 - webbreacher, removed title from regex","verified 20160503 - webbreacher"]
@@ -1616,7 +1524,6 @@
          "account_missing_string" : "is still available. Why not",
          "account_missing_code" : "404",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username","Organization"],
          "category" : "presos",
          "valid" : true,
          "comments" : ["verified 20160503 - webbreacher"]
@@ -1629,7 +1536,6 @@
          "account_missing_string" : "",
          "account_missing_code" : "302",
          "known_accounts" : ["RayGunRushi"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "gaming",
          "valid" : false,
          "comments" : ["DISABLED false positive - 20160518 - webbreacher","verified 20160503 - webbreacher"]
@@ -1642,7 +1548,6 @@
          "account_missing_string" : "schema.org/Thing",
          "account_missing_code" : "404",
          "known_accounts" : ["wow"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "images",
          "valid" : true,
          "comments" : ["verified 20160503 - webbreacher"]
@@ -1655,7 +1560,6 @@
          "account_missing_string" : "The page you are looking for is probably stuck in the dryer again",
          "account_missing_code" : "404",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "music",
          "valid" : true,
          "comments" : ["verified 20160503 - webbreacher"]
@@ -1668,7 +1572,6 @@
          "account_missing_string" : ">Profiles on Snooth<",
          "account_missing_code" : "200",
          "known_accounts" : ["test123"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "food",
          "valid" : true,
          "comments" : ["verified 20160503 - webbreacher"]
@@ -1681,7 +1584,6 @@
          "account_missing_string" : "",
          "account_missing_code" : "",
          "known_accounts" : ["test123"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "music",
          "valid" : false,
          "comments" : [""]
@@ -1694,7 +1596,6 @@
          "account_missing_string" : "",
          "account_missing_code" : "302",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "blog",
          "valid" : true,
          "comments" : ["verified 20160503 - webbreacher"]
@@ -1707,7 +1608,6 @@
          "account_missing_string" : "Oh, this is very sad",
          "account_missing_code" : "404",
          "known_accounts" : ["petecheslock"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "presos",
          "valid" : true,
          "comments" : ["verified 20160503 - webbreacher"]
@@ -1720,7 +1620,6 @@
          "account_missing_string" : "This Sporcle user cannot be found.",
          "account_missing_code" : "200",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "gaming",
          "valid" : true,
          "comments" : ["verified 20160503 - webbreacher"]
@@ -1733,7 +1632,6 @@
          "account_missing_string" : "Steam Community :: Error",
          "account_missing_code" : "200",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "gaming",
          "valid" : true,
          "comments" : ["verified 20160503 - webbreacher"]
@@ -1746,7 +1644,6 @@
          "account_missing_string" : "Page not found",
          "account_missing_code" : "404",
          "known_accounts" : ["jthorstad","paul-swider"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "blog",
          "valid" : true,
          "comments" : ["verified 20161218 - L0r3m1p5um"]
@@ -1759,7 +1656,6 @@
          "account_missing_string" : "User not found",
          "account_missing_code" : "404",
          "known_accounts" : ["myriam"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "health",
          "valid" : true,
          "comments" : ["verified - 20160511 - webbreacher"]
@@ -1772,7 +1668,6 @@
          "account_missing_string" : "",
          "account_missing_code" : "302",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "gaming",
          "valid" : true,
          "comments" : ["verified 20160503 - mmaczko"]
@@ -1785,7 +1680,6 @@
          "account_missing_string" : "Sorry - we haven’t been able to serve the page you asked for",
          "account_missing_code" : "404",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "news",
          "valid" : true,
          "comments" : ["Changed existence string. Verified 2016-11-02 WebBreacher", "verified 20160503 - mmaczko"]
@@ -1798,7 +1692,6 @@
          "account_missing_string" : "no longer exists.",
          "account_missing_code" : "200",
          "known_accounts" : ["john"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "music",
          "valid" : true,
          "comments" : ["verified 20160503 - mmaczko"]
@@ -1811,7 +1704,6 @@
          "account_missing_string" : "><body></body></html>",
          "account_missing_code" : "200",
          "known_accounts" : ["mike","john"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "dating",
          "valid" : true,
          "comments" : ["verified - 20160511 - webbreacher","verified 20160503 - mmaczko, account missing string not found"]
@@ -1824,7 +1716,6 @@
          "account_missing_string" : "This page is on vacation",
          "account_missing_code" : "404",
          "known_accounts" : ["john","test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "travel",
          "valid" : true,
          "comments" : ["verified - 20160511 - webbreacher"]
@@ -1837,7 +1728,6 @@
          "account_missing_string" : "url=https://www.tripit.com/home",
          "account_missing_code" : "302",
          "known_accounts" : ["Kristin444"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "travel",
          "valid" : true,
          "comments" : ["Validated 2015-11-01 webbreacher","verified 20160503 - mmaczko"]
@@ -1850,7 +1740,6 @@
          "account_missing_string" : "There's nothing here",
          "account_missing_code" : "404",
          "known_accounts" : ["test","test1"],
-         "allowed_types" : ["String","Person","WebAccount","Username","Organization"],
          "category" : "images",
          "valid" : true,
          "comments" : ["verified = 20160511 - webbreacher","verified 20160503 - mmaczko"]
@@ -1863,7 +1752,6 @@
          "account_missing_string" : "MOBILE_VERSION_AVAILABLE = false;",
          "account_missing_code" : 404,
          "known_accounts" : ["test","john"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "video",
          "valid" : true,
          "comments" : ["verified 20161218 - L0r3m1p5um"]
@@ -1876,7 +1764,6 @@
          "account_missing_string" : "<title>Page could not be found",
          "account_missing_code" : "404",
          "known_accounts" : ["mannequin"],
-         "allowed_types" : ["String","Person","WebAccount","Username","Organization"],
          "category" : "travel",
          "valid" : "social",
          "comments" : ["verified 20160503 - mmaczko"]
@@ -1889,7 +1776,6 @@
          "account_missing_string" : "Sorry, that page doesn",
          "account_missing_code" : "404",
          "known_accounts" : ["webbreacher","osintninja"],
-         "allowed_types" : ["String","Person","WebAccount","Username","Organization"],
          "category" : "social",
          "valid" : true,
          "comments" : ["verified - 20160511 - webbreacher"]
@@ -1902,8 +1788,7 @@
          "account_missing_string" : "Untappd | 404",
          "account_missing_code" : "404",
          "known_accounts" : ["test","phil"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
-         "category" : "food",
+         "category" : "drugs",
          "valid" : true,
          "comments" : ["verified - 20160511 - webbreacher"]
       },
@@ -1915,7 +1800,6 @@
          "account_missing_string" : "Sorry, the page you requested cannot be found",
          "account_missing_code" : "404",
          "known_accounts" : ["johndoe","wukf"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "video",
          "valid" : true,
          "comments" : ["verified - 20160511 - webbreacher"]
@@ -1928,7 +1812,6 @@
          "account_missing_string" : "Page Not Found",
          "account_missing_code" : "200",
          "known_accounts" : ["jet", "PoisonApple"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "social",
          "valid" : true,
          "comments" : ["Initial add 2016-11-02 WebBreacher"]
@@ -1941,7 +1824,6 @@
          "account_missing_string" : "User not found",
          "account_missing_code" : "404",
          "known_accounts" : ["GamingParodies","planphilly"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "video",
          "valid" : true,
          "comments" : ["verified - 20160509 - webbreacher"]
@@ -1954,7 +1836,6 @@
          "account_missing_string" : "404 Not Found ",
          "account_missing_code" : "404",
          "known_accounts" : ["test","john"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "video",
          "valid" : true,
          "comments" : ["verified - 20160509 - webbreacher"]
@@ -1967,7 +1848,6 @@
          "account_missing_string" : "this page doesn't seem to exist",
          "account_missing_code" : "404",
          "known_accounts" : ["smoopy","Abrahem919"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "video",
          "valid" : true,
          "comments" : ["verified 20160730 - webbreacher", "verified - 20160509 - webbreacher"]
@@ -1980,7 +1860,6 @@
          "account_missing_string" : "we couldn’t find that page",
          "account_missing_code" : "404",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "video",
          "valid" : true,
          "comments" : ["verified - 20160509 - webbreacher"]
@@ -1994,7 +1873,6 @@
          "account_missing_string" : "That record does not exist",
          "account_missing_code" : "404",
          "known_accounts" : ["TomHarlock","Seks"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "video",
          "valid" : true,
          "comments" : ["verified - 20160509 - webbreacher"]
@@ -2007,7 +1885,6 @@
          "account_missing_string" : "page not found",
          "account_missing_code" : "404",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "images",
          "valid" : true,
          "comments" : ["verified - 20160509 - webbreacher"]
@@ -2020,7 +1897,6 @@
          "account_missing_string" : "404 Not Found",
          "account_missing_code" : "404",
          "known_accounts" : ["mike.kidlazy","kostya___rock_n_roll"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "social",
          "valid" : true,
          "comments" : ["Initial load. 2016-11-02 WebBreacher"]
@@ -2033,7 +1909,6 @@
          "account_missing_string" : "",
          "account_missing_code" : "302",
          "known_accounts" : ["test","john"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "business",
          "valid" : true,
          "comments" : ["verified - 20160509 - webbreacher"]
@@ -2046,7 +1921,6 @@
          "account_missing_string" : "but could not find it",
          "account_missing_code" : "404",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "shopping",
          "valid" : true,
          "comments" : ["verified - 20160509 - webbreacher"]
@@ -2059,7 +1933,6 @@
          "account_missing_string" : "this profile seems to be missing",
          "account_missing_code" : "404",
          "known_accounts" : ["Test123","newadult"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "social",
          "valid" : true,
          "comments" : ["Fixed existence string. Verified 2016-11-02 WebBreacher", "bad result 20160917 - WebBreacher","verified - 20160509 - webbreacher"]
@@ -2072,7 +1945,6 @@
          "account_missing_string" : "we couldn't find the user you were looking for",
          "account_missing_code" : "200",
          "known_accounts" : ["test123","john"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "gaming",
          "valid" : true,
          "comments" : ["verified - 20160509 - webbreacher"]
@@ -2085,7 +1957,6 @@
          "account_missing_string" : "",
          "account_missing_code" : "302",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "shopping",
          "valid" : true,
          "comments" : ["verified - 20160509 - webbreacher"]
@@ -2098,7 +1969,6 @@
          "account_missing_string" : "",
          "account_missing_code" : "301",
          "known_accounts" : ["Mcd51"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "",
          "valid" : true,
          "comments" : ["verified - 20160509 - webbreacher"]
@@ -2111,7 +1981,6 @@
          "account_missing_string" : "",
          "account_missing_code" : "302",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username","Organization"],
          "category" : "blog",
          "valid" : true,
          "comments" : ["verified - 20160509 - webbreacher"]
@@ -2124,7 +1993,6 @@
          "account_missing_string" : "User not found",
          "account_missing_code" : "404",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "blog",
          "valid" : true,
          "comments" : ["verified - 20160509 - webbreacher"]
@@ -2137,7 +2005,6 @@
          "account_missing_string" : "",
          "account_missing_code" : "302",
          "known_accounts" : ["john"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "blog",
          "valid" : true,
          "comments" : ["verified - 20160509 - webbreacher"]
@@ -2150,7 +2017,6 @@
          "account_missing_string" : "Gamertag data is broken",
          "account_missing_code" : "500",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "gaming",
          "valid" : true,
          "comments" : ["verified - 20160509 - webbreacher"]
@@ -2163,7 +2029,6 @@
          "account_missing_string" : "User not found</title>",
          "account_missing_code" : "200",
          "known_accounts" : ["nymphRiley"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "XXX PORN XXX",
          "valid" : true,
          "comments" : ["Changed default test account. Verified 2016-11-02 WebBreacher", "bad result 20160917 - WebBreacher","verified - 20160511 - webbreacher"]
@@ -2176,7 +2041,6 @@
          "account_missing_string" : "Unknown - Profile page",
          "account_missing_code" : "200",
          "known_accounts" : ["chloe-foster","just-amber"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "XXX PORN XXX",
          "valid" : true,
          "comments" : ["Changed existence string - 2016-12-18 - WebBreacher", "verified - 20160511 - webbreacher"]
@@ -2189,7 +2053,6 @@
          "account_missing_string" : "This channel does not exist",
          "account_missing_code" : "404",
          "known_accounts" : ["test"],
-         "allowed_types" : ["String","Person","WebAccount","Username","Organization"],
          "category" : "video",
          "valid" : true,
          "comments" : ["verified - 20160509 - webbreacher"]
@@ -2203,7 +2066,6 @@
          "account_missing_string" : "users\": []",
          "account_missing_code" : "200",
          "known_accounts" : ["test","hacker"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "social",
          "valid" : true,
          "comments" : ["verified - 20160509 - webbreacher"]
