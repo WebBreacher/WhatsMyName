@@ -199,11 +199,11 @@ for site in data['sites'] :
     elif code_match == False and string_match == True:
         #TODO set site['valid'] = False
         print bcolors.RED + '      !  ERROR: BAD DETECTION RESPONSE CODE. HTTP Response code different than expected.' + bcolors.ENDC
-        overall_results[site['name']] = 'Bad detection code. Expected: %s; Received: %s.' % (str(r.status_code), site['account_existence_code'])
+        overall_results[site['name']] = 'Bad detection code. Received Code: %s; Expected Code: %s.' % (str(r.status_code), site['account_existence_code'])
     else:
         #TODO set site['valid'] = False
         print bcolors.RED + '      !  ERROR: BAD CODE AND STRING. Neither the HTTP response code or detection string worked.' + bcolors.ENDC
-        overall_results[site['name']] = 'Bad detection code and string. Expected Code: %s; Received Code: %s.' % (str(r.status_code), site['account_existence_code'])
+        overall_results[site['name']] = 'Bad detection code and string. Received Code: %s; Expected Code: %s.' % (str(r.status_code), site['account_existence_code'])
 
 if not args.username:
     FinalOutput()
