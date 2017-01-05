@@ -1398,18 +1398,6 @@
          "comments" : ["Initial content creation. 2016-11-02 WebBreacher"]
       },
       {
-         "name" : "Reunion.com",
-         "check_uri" : "http://www.reunion.com/{account}/",
-         "account_existence_code" : "200",
-         "account_existence_string" : "Find and View People Named",
-         "account_missing_string" : "Sorry! We were unable to find that page",
-         "account_missing_code" : "404",
-         "known_accounts" : ["test"],
-         "category" : "social",
-         "valid" : true,
-         "comments" : ["verified 20160503 - webbreacher"]
-      },
-      {
          "name" : "Rotten Tomatoes",
          "check_uri" : "https://www.rottentomatoes.com/critic/{account}/",
          "account_existence_code" : "200",
@@ -1753,8 +1741,8 @@
          "account_missing_string" : "<title>Page could not be found",
          "account_missing_code" : "404",
          "known_accounts" : ["mannequin"],
-         "category" : "travel",
-         "valid" : "social",
+         "category" : "social",
+         "valid" : true,
          "comments" : ["verified 20160503 - mmaczko"]
       },
       {
