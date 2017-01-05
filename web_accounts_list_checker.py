@@ -205,6 +205,7 @@ for site in data['sites']:
         print bcolors.RED + '      !  ERROR: BAD DETECTION STRING. "%s" was not found on resulting page.' % \
                             site['account_existence_string'] + bcolors.ENDC
         overall_results[site['name']] = 'Bad detection string.'
+
     elif not code_match and string_match:
         # TODO set site['valid'] = False
         print bcolors.RED + '      !  ERROR: BAD DETECTION RESPONSE CODE. HTTP Response code different than expected.' \
@@ -217,6 +218,7 @@ for site in data['sites']:
                             'worked.' + bcolors.ENDC
         overall_results[site['name']] = 'Bad detection code and string. Received Code: %s; Expected Code: %s.' % \
                                         (str(r.status_code), site['account_existence_code'])
+
 
 if not args.username:
     finaloutput()
