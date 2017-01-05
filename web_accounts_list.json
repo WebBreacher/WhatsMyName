@@ -1753,8 +1753,8 @@
          "account_missing_string" : "<title>Page could not be found",
          "account_missing_code" : "404",
          "known_accounts" : ["mannequin"],
-         "category" : "travel",
-         "valid" : "social",
+         "category" : "social",
+         "valid" : true,
          "comments" : ["verified 20160503 - mmaczko"]
       },
       {
