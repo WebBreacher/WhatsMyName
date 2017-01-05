@@ -1,11 +1,11 @@
 #!/usr/bin/python
 
-'''
+"""
     Author : Micah Hoffman (@WebBreacher)
     Description : Takes each username from the web_accounts_list.json file and performs the lookup to see if the
                   discovery determinator is still valid
 
-    TODO - 
+    TODO -
         1 - Make it so the script will toggle validity factor per entry and write to output file
         2 - Make it so the script will append comment to the entry and output to file
         3 - Make a stub file shows last time sites were checked and problems.
@@ -15,7 +15,7 @@
             [From https://github.com/kennethreitz/requests/issues/2022]
             # sudo apt-get install libffi-dev
             # pip install pyOpenSSL ndg-httpsclient pyasn1 requests
-'''
+"""
 import requests
 import argparse
 from requests.packages.urllib3.exceptions import InsecureRequestWarning
@@ -31,11 +31,15 @@ import sys
 # Variables && Functions
 ###################
 # Set HTTP Header info.
-headers = {'User-Agent' : 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.93 Safari/537.36'}
+headers = {'User-Agent' : 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) '
+                          'Chrome/45.0.2454.93 Safari/537.36'}
 
 # Parse command line input
-parser = argparse.ArgumentParser(description="This standalone script will look up a single username using the JSON file or will run a check of the JSON file for bad detection strings.")
-parser.add_argument('-u', '--username', help='[OPTIONAL] If this param is passed then this script will perform the lookups against the given user name instead of running checks against the JSON file.')
+parser = argparse.ArgumentParser(description="This standalone script will look up a single username using the JSON file"
+                                             " or will run a check of the JSON file for bad detection strings.")
+parser.add_argument('-u', '--username', help='[OPTIONAL] If this param is passed then this script will perform the '
+                                             'lookups against the given user name instead of running checks against '
+                                             'the JSON file.')
 args = parser.parse_args()
 
 
@@ -87,8 +91,9 @@ else:
 
 def signal_handler(signal, frame):
     print(bcolors.RED + ' !!!  You pressed Ctrl+C. Exitting script.' + bcolors.ENDC)
-    FinalOutput()
+    finaloutput()
     sys.exit(0)
+
 
 def web_call(url):
     try:
@@ -99,11 +104,12 @@ def web_call(url):
     except requests.exceptions.TooManyRedirects:
         return bcolors.RED + '      ! ERROR: TOO MANY REDIRECTS. Try changing the URL.' + bcolors.ENDC
     except requests.exceptions.RequestException as e:
-        return bcolors.RED + '      ! ERROR: CRITICAL ERROR. %s' % e + bcolors.ENDC 
+        return bcolors.RED + '      ! ERROR: CRITICAL ERROR. %s' % e + bcolors.ENDC
     else:
         return r
 
-def FinalOutput():
+
+def finaloutput():
     if len(overall_results) > 0:
         print '------------'
         print 'The following previously "valid" sites had errors:'
@@ -123,18 +129,18 @@ signal.signal(signal.SIGINT, signal_handler)
 requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
 
 # Read in the JSON file
-with open('web_accounts_list.json') as data_file:    
+with open('web_accounts_list.json') as data_file:
     data = json.load(data_file)
 print ' -  %s sites found in file.' % len(data['sites'])
 
-for site in data['sites'] :
+for site in data['sites']:
     code_match, string_match = False, False
     # Examine the current validity of the entry
-    if site['valid'] == False:
-        print bcolors.CYAN + ' *  Skipping %s - Marked as not valid.' % site['name'] + bcolors.ENDC 
+    if not site['valid']:
+        print bcolors.CYAN + ' *  Skipping %s - Marked as not valid.' % site['name'] + bcolors.ENDC
         continue
-    if site['known_accounts'][0] == False:
-        print bcolors.CYAN + ' *  Skipping %s - No valid user names to test.' % site['name'] + bcolors.ENDC 
+    if not site['known_accounts'][0]:
+        print bcolors.CYAN + ' *  Skipping %s - No valid user names to test.' % site['name'] + bcolors.ENDC
         continue
 
     # Perform initial lookup
@@ -161,14 +167,15 @@ for site in data['sites'] :
         string_match = False
 
     if args.username:
-        if code_match == True and string_match == True:
-            print ' -  Found user at %s' % url 
+        if code_match and string_match:
+            print ' -  Found user at %s' % url
         continue
 
-    if code_match == True and string_match == True:
-        #print '     [+] Response code and Search Strings match expected.'
+    if code_match and string_match:
+        # print '     [+] Response code and Search Strings match expected.'
         # Generate a random string to use in place of known_accounts
-        not_there_string = ''.join(random.choice(string.ascii_lowercase + string.ascii_uppercase + string.digits) for x in range(20))
+        not_there_string = ''.join(random.choice(string.ascii_lowercase + string.ascii_uppercase + string.digits)
+                                   for x in range(20))
         url_fp = site['check_uri'].replace("{account}", not_there_string)
         r_fp = web_call(url_fp)
         if isinstance(r_fp, str):
@@ -184,26 +191,32 @@ for site in data['sites'] :
             string_match = True
         else:
             string_match = False
-        if code_match == True and string_match == True:
+        if code_match and string_match:
             print '      -  Code: %s; String: %s' % (code_match, string_match)
-            print bcolors.RED + '      !  ERROR: FALSE POSITIVE DETECTED. Response code and Search Strings match expected.' + bcolors.ENDC
-            #TODO set site['valid'] = False
+            print bcolors.RED + '      !  ERROR: FALSE POSITIVE DETECTED. Response code and Search Strings match ' \
+                                'expected.' + bcolors.ENDC
+            # TODO set site['valid'] = False
             overall_results[site['name']] = 'False Positive'
         else:
-            #print '     [+] Passed false positives test.'
+            # print '     [+] Passed false positives test.'
             pass
-    elif code_match == True and string_match == False:
-        #TODO set site['valid'] = False
-        print bcolors.RED + '      !  ERROR: BAD DETECTION STRING. "%s" was not found on resulting page.'% site['account_existence_string'] + bcolors.ENDC
+    elif code_match and not string_match:
+        # TODO set site['valid'] = False
+        print bcolors.RED + '      !  ERROR: BAD DETECTION STRING. "%s" was not found on resulting page.' % \
+                            site['account_existence_string'] + bcolors.ENDC
         overall_results[site['name']] = 'Bad detection string.'
-    elif code_match == False and string_match == True:
-        #TODO set site['valid'] = False
-        print bcolors.RED + '      !  ERROR: BAD DETECTION RESPONSE CODE. HTTP Response code different than expected.' + bcolors.ENDC
-        overall_results[site['name']] = 'Bad detection code. Expected: %s; Received: %s.' % (str(r.status_code), site['account_existence_code'])
+    elif not code_match and string_match:
+        # TODO set site['valid'] = False
+        print bcolors.RED + '      !  ERROR: BAD DETECTION RESPONSE CODE. HTTP Response code different than expected.' \
+              + bcolors.ENDC
+        overall_results[site['name']] = 'Bad detection code. Received Code: %s; Expected Code: %s.' % \
+                                        (str(r.status_code), site['account_existence_code'])
     else:
-        #TODO set site['valid'] = False
-        print bcolors.RED + '      !  ERROR: BAD CODE AND STRING. Neither the HTTP response code or detection string worked.' + bcolors.ENDC
-        overall_results[site['name']] = 'Bad detection code and string. Expected Code: %s; Received Code: %s.' % (str(r.status_code), site['account_existence_code'])
+        # TODO set site['valid'] = False
+        print bcolors.RED + '      !  ERROR: BAD CODE AND STRING. Neither the HTTP response code or detection string ' \
+                            'worked.' + bcolors.ENDC
+        overall_results[site['name']] = 'Bad detection code and string. Received Code: %s; Expected Code: %s.' % \
+                                        (str(r.status_code), site['account_existence_code'])
 
 if not args.username:
-    FinalOutput()
+    finaloutput()
