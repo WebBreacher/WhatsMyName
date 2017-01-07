@@ -40,7 +40,7 @@ parser = argparse.ArgumentParser(description="This standalone script will look u
 parser.add_argument('-u', '--username', help='[OPTIONAL] If this param is passed then this script will perform the '
                                              'lookups against the given user name instead of running checks against '
                                              'the JSON file.')
-parser.add_argument('-se', '--stringerror', help="Creates a site by site file for files that do not match strings.",
+parser.add_argument('-se', '--stringerror', help="Creates a site by site file for files that do not match strings. Filenames will be 'se-(sitename).(username)",
                     action="store_true", default=False)
 args = parser.parse_args()
 
@@ -217,7 +217,7 @@ for site in data['sites']:
                                 % site['account_existence_string'] + bcolors.ENDC
             overall_results[site['name']] = 'Bad detection string.'
             if args.stringerror:
-                file_name = site['name'] + '.' + uname
+                file_name = 'se-' + site['name'] + '.' + uname
                 # Unicode sucks
                 file_name = file_name.encode('ascii', 'ignore').decode('ascii')
                 error_file = codecs.open(file_name, 'w', 'utf-8')
