@@ -22,10 +22,10 @@ from requests.packages.urllib3.exceptions import InsecureRequestWarning
 import json
 import os
 import random
-import datetime
 import string
 import signal
 import sys
+import codecs
 
 ###################
 # Variables && Functions
@@ -40,6 +40,8 @@ parser = argparse.ArgumentParser(description="This standalone script will look u
 parser.add_argument('-u', '--username', help='[OPTIONAL] If this param is passed then this script will perform the '
                                              'lookups against the given user name instead of running checks against '
                                              'the JSON file.')
+parser.add_argument('-se', '--stringerror', help="Creates a site by site file for files that do not match strings. Filenames will be 'se-(sitename).(username)",
+                    action="store_true", default=False)
 args = parser.parse_args()
 
 # Create the final results dictionary
@@ -150,11 +152,13 @@ for site in data['sites']:
     if args.username:
         url = site['check_uri'].replace("{account}", args.username)
         url_list.append(url)
+        uname = args.username
     else:
         account_list = site['known_accounts']
         for each in account_list:
             url = site['check_uri'].replace("{account}", each)
             url_list.append(url)
+            uname = each
     for each in url_list:
         print ' -  Looking up %s' % each
         r = web_call(each)
@@ -212,6 +216,14 @@ for site in data['sites']:
             print bcolors.RED + '      !  ERROR: BAD DETECTION STRING. "%s" was not found on resulting page.' \
                                 % site['account_existence_string'] + bcolors.ENDC
             overall_results[site['name']] = 'Bad detection string.'
+            if args.stringerror:
+                file_name = 'se-' + site['name'] + '.' + uname
+                # Unicode sucks
+                file_name = file_name.encode('ascii', 'ignore').decode('ascii')
+                error_file = codecs.open(file_name, 'w', 'utf-8')
+                error_file.write(r.text)
+                print "Raw data exported to file:" + file_name
+                error_file.close()
 
         elif not code_match and string_match:
             # TODO set site['valid'] = False
