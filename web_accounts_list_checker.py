@@ -42,7 +42,7 @@ parser.add_argument('-u', '--username', help='[OPTIONAL] If this param is passed
                                              'the JSON file.')
 parser.add_argument('-se', '--stringerror', help="Creates a site by site file for files that do not match strings. Filenames will be 'se-(sitename).(username)",
                     action="store_true", default=False)
-parser.add_argument('-s', '--site', nargs='*', help='[OPTIONAL] If this parameter is passed the script will check only the specified site or list of sites.')
+parser.add_argument('-s', '--site', nargs='*', help='[OPTIONAL] If this parameter is passed the script will check only the named site or list of sites.')
 args = parser.parse_args()
 
 
@@ -140,6 +140,8 @@ with open('web_accounts_list.json') as data_file:
     data = json.load(data_file)
 
 if args.site:
+
+    # cut the list of sites down to only the requested ones
     args.site = [x.lower() for x in args.site]
     data['sites'] = [x for x in data['sites'] if x['name'].lower() in args.site]
     if len(data['sites']) == 0:
@@ -149,9 +151,9 @@ if args.site:
     if sites_not_found:
         print ' -  WARNING: %d requested sites were not found in the list' % sites_not_found
     print ' -  Checking %d sites' % len(data['sites'])
+
 else:        
     print ' -  %s sites found in file.' % len(data['sites'])
-
 
 
 for site in data['sites']:
