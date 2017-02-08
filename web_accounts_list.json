@@ -39,8 +39,8 @@
          "account_missing_code" : "404",
          "known_accounts" : ["test", "mike"],
          "category" : "dating",
-         "valid" : true,
-         "comments" : ["verified 10/4/2015 - webbreacher"]
+         "valid" : false,
+         "comments" : ["broken 20170207 Webbreacher","verified 10/4/2015 - webbreacher"]
       },
       {
          "name" : "AngelList",
@@ -606,8 +606,8 @@
          "known_accounts" : ["test","johndoe"],
          "known_missing_accounts" : ["does-not-exist"],
          "category" : "images",
-         "valid" : true,
-         "comments" : ["Verified 2016-11-02 WebBreacher", "bad result 20160917 - WebBreacher","verified 11/07/2015 - webbreacher"]
+         "valid" : false,
+         "comments" : ["broken 20170207 Webbreacher","Verified 2016-11-02 WebBreacher", "bad result 20160917 - WebBreacher","verified 11/07/2015 - webbreacher"]
       },
       {
          "name" : "Foursquare",
@@ -802,8 +802,8 @@
          "account_missing_code" : "404",
          "known_accounts" : ["npr","fitbit"],
          "category" : "hobby",
-         "valid" : true,
-         "comments" : ["verified - 20170102 - WebBreacher", "verified 20160730 - webbreacher", "verified 11/23/2015 - webbreacher"]
+         "valid" : false,
+         "comments" : ["broken 20170207 Webbreacher","verified - 20170102 - WebBreacher", "verified 20160730 - webbreacher", "verified 11/23/2015 - webbreacher"]
       },
       {
          "name" : "ImageShack",
@@ -1157,8 +1157,8 @@
          "account_missing_code" : "404",
          "known_accounts" : ["clif", "john"],
          "category" : "business",
-         "valid" : true,
-         "comments" : ["verified 20160502 - webbreacher"]
+         "valid" : false,
+         "comments" : ["broken 20170207 Webbreacher","verified 20160502 - webbreacher"]
       },
       {
          "name" : "MyFitnessPal",
@@ -1241,8 +1241,8 @@
          "account_missing_code" : "404",
          "known_accounts" : ["Finik"],
          "category" : "gaming",
-         "valid" : true,
-         "comments" : ["verified 20160502 - webbreacher"]
+         "valid" : false,
+         "comments" : ["broken 20170207 Webbreacher","verified 20160502 - webbreacher"]
       },
       {
          "name" : "Pastebin",
@@ -1508,8 +1508,8 @@
          "account_missing_code" : "404",
          "known_accounts" : ["eljefeseo","gokudadon"],
          "category" : "social",
-         "valid" : true,
-         "comments" : ["verified 20160518 - webbreacher"]
+         "valid" : false,
+         "comments" : ["broken 20170207 Webbreacher","verified 20160518 - webbreacher"]
       },
       {
          "name" : "setlist.fm",
@@ -1640,8 +1640,8 @@
          "account_missing_code" : "302",
          "known_accounts" : ["test"],
          "category" : "blog",
-         "valid" : true,
-         "comments" : ["verified 20160503 - webbreacher"]
+         "valid" : false,
+         "comments" : ["broken 20170207 Webbreacher","verified 20160503 - webbreacher"]
       },
       {
          "name" : "Speaker Deck",
@@ -1784,8 +1784,8 @@
          "account_missing_code" : "404",
          "known_accounts" : ["test","test1"],
          "category" : "images",
-         "valid" : true,
-         "comments" : ["verified = 20160511 - webbreacher","verified 20160503 - mmaczko"]
+         "valid" : false,
+         "comments" : ["broken 20170207 Webbreacher","verified = 20160511 - webbreacher","verified 20160503 - mmaczko"]
       },
       {
          "name" : "Twitch",
@@ -1929,8 +1929,8 @@
          "account_missing_code" : "404",
          "known_accounts" : ["mike.kidlazy","kostya___rock_n_roll"],
          "category" : "social",
-         "valid" : true,
-         "comments" : ["Initial load. 2016-11-02 WebBreacher"]
+         "valid" : false,
+         "comments" : ["broken 20170207 Webbreacher","Initial load. 2016-11-02 WebBreacher"]
       },
       {
          "name" : "Voat",
@@ -1990,8 +1990,8 @@
          "account_missing_code" : "404",
          "known_accounts" : ["nerd420","high-beam-solar-glass-co"],
          "category" : "drugs",
-         "valid" : true,
-         "comments" : ["verified - 20170102 - WebBreacher"]
+         "valid" : false,
+         "comments" : ["broken 20170207 Webbreacher","verified - 20170102 - WebBreacher"]
       },
       {
          "name" : "WeeWorld",
