@@ -607,7 +607,7 @@
          "known_missing_accounts" : ["does-not-exist"],
          "category" : "images",
          "valid" : true,
-         "comments" : ["Verified 20160228 - L0r3m1p5um", "broken 20170207 Webbreacher","Verified 2016-11-02 WebBreacher", "bad result 20160917 - WebBreacher","verified 11/07/2015 - webbreacher"]
+         "comments" : ["Verified 20170228 - L0r3m1p5um", "broken 20170207 Webbreacher","Verified 2016-11-02 WebBreacher", "bad result 20160917 - WebBreacher","verified 11/07/2015 - webbreacher"]
       },
       {
          "name" : "Foursquare",
@@ -1158,7 +1158,7 @@
          "known_accounts" : ["clif", "john"],
          "category" : "business",
          "valid" : true,
-         "comments" : ["Verified 20160228 L0r3m1p5um", "broken 20170207 Webbreacher","verified 20160502 - webbreacher"]
+         "comments" : ["Verified 20170228 L0r3m1p5um", "broken 20170207 Webbreacher","verified 20160502 - webbreacher"]
       },
       {
          "name" : "MyFitnessPal",
@@ -1629,7 +1629,7 @@
          "known_accounts" : ["test123"],
          "category" : "music",
          "valid" : true,
-         "comments" : [""]
+         "comments" : ["Verified 20170228 - L0r3m1p5um"]
       },
       {
          "name" : "Soup",
@@ -1641,7 +1641,7 @@
          "known_accounts" : ["test"],
          "category" : "blog",
          "valid" : true,
-         "comments" : ["broken 20170207 Webbreacher","verified 20160503 - webbreacher"]
+         "comments" : ["Verified 20170228 - L0r3m1p5um","broken 20170207 Webbreacher","verified 20160503 - webbreacher"]
       },
       {
          "name" : "Speaker Deck",
@@ -1785,7 +1785,7 @@
          "known_accounts" : ["test","test1"],
          "category" : "images",
          "valid" : true,
-         "comments" : ["Verified 20160228 - L0r3m1p5um", "broken 20170207 Webbreacher","verified = 20160511 - webbreacher","verified 20160503 - mmaczko"]
+         "comments" : ["Verified 20170228 - L0r3m1p5um", "broken 20170207 Webbreacher","verified = 20160511 - webbreacher","verified 20160503 - mmaczko"]
       },
       {
          "name" : "Twitch",
@@ -1930,7 +1930,7 @@
          "known_accounts" : ["mike.kidlazy","ches_ches"],
          "category" : "social",
          "valid" : true,
-         "comments" : ["Verified 20160228 - L0r3m1p5um", "broken 20170207 Webbreacher","Initial load. 2016-11-02 WebBreacher"]
+         "comments" : ["Verified 20170228 - L0r3m1p5um", "broken 20170207 Webbreacher","Initial load. 2016-11-02 WebBreacher"]
       },
       {
          "name" : "Voat",
