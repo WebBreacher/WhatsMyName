@@ -600,14 +600,14 @@
          "name" : "Fotolog",
          "check_uri" : "http://www.fotolog.com/{account}/",
          "account_existence_code" : "200",
-         "account_existence_string" : "avatar",
+         "account_existence_string" : "Avatar",
          "account_missing_string" : "The requested page could not be found",
          "account_missing_code" : "404",
          "known_accounts" : ["test","johndoe"],
          "known_missing_accounts" : ["does-not-exist"],
          "category" : "images",
-         "valid" : false,
-         "comments" : ["broken 20170207 Webbreacher","Verified 2016-11-02 WebBreacher", "bad result 20160917 - WebBreacher","verified 11/07/2015 - webbreacher"]
+         "valid" : true,
+         "comments" : ["Verified 20170228 - L0r3m1p5um", "broken 20170207 Webbreacher","Verified 2016-11-02 WebBreacher", "bad result 20160917 - WebBreacher","verified 11/07/2015 - webbreacher"]
       },
       {
          "name" : "Foursquare",
@@ -1152,13 +1152,13 @@
          "name" : "MyBuilder.com",
          "check_uri" : "http://www.mybuilder.com/profile/view/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "Feedback score",
+         "account_existence_string" : "feedback",
          "account_missing_string" : "Whoops! You broke our site!",
          "account_missing_code" : "404",
          "known_accounts" : ["clif", "john"],
          "category" : "business",
-         "valid" : false,
-         "comments" : ["broken 20170207 Webbreacher","verified 20160502 - webbreacher"]
+         "valid" : true,
+         "comments" : ["Verified 20170228 L0r3m1p5um", "broken 20170207 Webbreacher","verified 20160502 - webbreacher"]
       },
       {
          "name" : "MyFitnessPal",
@@ -1623,25 +1623,25 @@
          "name" : "SoundCloud",
          "check_uri" : "https://soundcloud.com/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "/likes",
-         "account_missing_string" : "",
-         "account_missing_code" : "",
+         "account_existence_string" : "SoundCloud</title>",
+         "account_missing_string" : "sounds</title>",
+         "account_missing_code" : "404",
          "known_accounts" : ["test123"],
          "category" : "music",
-         "valid" : false,
-         "comments" : [""]
+         "valid" : true,
+         "comments" : ["Verified 20170228 - L0r3m1p5um"]
       },
       {
          "name" : "Soup",
-         "check_uri" : "http://{account}.soup.io",
+         "check_uri" : "http://{account}.soup.io/rss",
          "account_existence_code" : "200",
-         "account_existence_string" : "s soup</title>",
-         "account_missing_string" : "",
-         "account_missing_code" : "302",
+         "account_existence_string" : "rss version",
+         "account_missing_string" : "Blog not found",
+         "account_missing_code" : "404",
          "known_accounts" : ["test"],
          "category" : "blog",
-         "valid" : false,
-         "comments" : ["broken 20170207 Webbreacher","verified 20160503 - webbreacher"]
+         "valid" : true,
+         "comments" : ["Verified 20170228 - L0r3m1p5um","broken 20170207 Webbreacher","verified 20160503 - webbreacher"]
       },
       {
          "name" : "Speaker Deck",
@@ -1779,13 +1779,13 @@
          "name" : "tumblr",
          "check_uri" : "http://{account}.tumblr.com",
          "account_existence_code" : "200",
-         "account_existence_string" : "media.tumblr.com/avatar",
+         "account_existence_string" : "avatar",
          "account_missing_string" : "There's nothing here",
          "account_missing_code" : "404",
          "known_accounts" : ["test","test1"],
          "category" : "images",
-         "valid" : false,
-         "comments" : ["broken 20170207 Webbreacher","verified = 20160511 - webbreacher","verified 20160503 - mmaczko"]
+         "valid" : true,
+         "comments" : ["Verified 20170228 - L0r3m1p5um", "broken 20170207 Webbreacher","verified = 20160511 - webbreacher","verified 20160503 - mmaczko"]
       },
       {
          "name" : "Twitch",
@@ -1927,10 +1927,10 @@
          "account_existence_string" : "last seen",
          "account_missing_string" : "404 Not Found",
          "account_missing_code" : "404",
-         "known_accounts" : ["mike.kidlazy","kostya___rock_n_roll"],
+         "known_accounts" : ["mike.kidlazy","ches_ches"],
          "category" : "social",
-         "valid" : false,
-         "comments" : ["broken 20170207 Webbreacher","Initial load. 2016-11-02 WebBreacher"]
+         "valid" : true,
+         "comments" : ["Verified 20170228 - L0r3m1p5um", "broken 20170207 Webbreacher","Initial load. 2016-11-02 WebBreacher"]
       },
       {
          "name" : "Voat",
@@ -1984,14 +1984,14 @@
       {
          "name" : "WeedLife",
          "check_uri" : "https://www.weedlife.com/{account}",
-         "account_existence_code" : "303",
-         "account_existence_string" : "See other",
+         "account_existence_code" : "200",
+         "account_existence_string" : "<title>Login",
          "account_missing_string" : "Page not found.",
          "account_missing_code" : "404",
          "known_accounts" : ["nerd420","high-beam-solar-glass-co"],
          "category" : "drugs",
-         "valid" : false,
-         "comments" : ["broken 20170207 Webbreacher","verified - 20170102 - WebBreacher"]
+         "valid" : true,
+         "comments" : ["Verified 20170228 - L0r3m1p5um", "broken 20170207 Webbreacher","verified - 20170102 - WebBreacher"]
       },
       {
          "name" : "WeeWorld",
