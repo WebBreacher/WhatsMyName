@@ -26,17 +26,6 @@ import string
 import signal
 import sys
 import codecs
-from termcolor import colored
-
-
-#####
-#Color Styling
-#####
-
-
-class style:
-    BOLD = '\033[1m'
-    END = '\033[0m'
 
 ###################
 # Variables && Functions
@@ -210,7 +199,7 @@ for site in data['sites']:
 
         if args.username:
             if code_match and string_match:
-                print colored(style.BOLD + ' [+] Found user at %s' % each + style.END, 'green')
+                print bcolors.GREEN + '[+] Found user at %s' % each + bcolors.ENDC
             continue
 
         if code_match and string_match:
