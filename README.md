@@ -1,10 +1,20 @@
 # WhatsMyName
-This repository has the unified data required to perform user and username enumeration on various websites. Content is in a JSON file and can easily be used in other projects such as the ones below:
+This repository has the unified data required to perform user and username enumeration on various websites. 
+
+Content is in a JSON file and can easily be used in other projects such as the ones below:
 * [Recon-ng](https://bitbucket.org/LaNMaSteR53/recon-ng) - The [Profiler Module](https://bitbucket.org/LaNMaSteR53/recon-ng/src/7723096ce2301092906838ef73564e7907886748/modules/recon/profiles-profiles/profiler.py?at=master&fileviewer=file-view-default) grabs this JSON file and uses it. See https://webbreacher.com/2014/12/11/recon-ng-profiler-module/ for details. 
 * [Spiderfoot](https://github.com/smicallef/spiderfoot) uses this in the [sfp_account](https://github.com/smicallef/spiderfoot/blob/master/modules/sfp_accounts.py) module. 
 
+## Installation
 
-# Format
+The code can be installed by cloning the repository and installing via pip
+
+```
+pip install -e WhatsMyName
+```
+
+
+## Format
 The format of the JSON is simple. There are 3 main elements:
 
 1. License - The license for this project and its data
@@ -53,35 +63,43 @@ Here is an example of a site element:
       ...
 ```
 
-# Standalone Checker
+## Standalone Checker
 If you just want to run this script to check user names on sites and don't wish to use it in combination with another tool (like Recon-NG and/or Spiderfoot), then you can use the included Python script as shown below:
 
 ```
- $  python ./web_accounts_list_checker.py -u sdfsfsdfsdfs
- -  161 sites found in file.
- -  Found user at http://www.break.com/user/sdfsfsdfsdfs
-      ! ERROR: CONNECTION TIME OUT. Try increasing the timeout delay.
- -  Found user at https://klout.com/sdfsfsdfsdfs
- -  Found user at https://social.technet.microsoft.com/profile/sdfsfsdfsdfs/
- -  Found user at https://www.pinterest.com/sdfsfsdfsdfs/
- -  Found user at https://www.reddit.com/user/sdfsfsdfsdfs
- -  Found user at http://scratch.mit.edu/users/sdfsfsdfsdfs/
- *  Skipping Slashdot - Marked as not valid.
- *  Skipping SmiteGuru - Marked as not valid.
- *  Skipping SoundCloud - Marked as not valid.
- -  Found user at http://steamcommunity.com/id/sdfsfsdfsdfs
- -  Found user at http://www.tf2items.com/id/sdfsfsdfsdfs/
- -  Found user at https://twitter.com/sdfsfsdfsdfs
- -  Found user at http://videolike.org/video/sdfsfsdfsdfs
-      ! ERROR: CONNECTION TIME OUT. Try increasing the timeout delay.
- -  Found user at http://www.xvideos.com/profiles/sdfsfsdfsdfs
+ $  python -m whats_my_name -u username
+Running
+ -  174 sites found in file.
+ -  Looking up https://about.me/username
+[+] Found user at https://about.me/username
+ *  Skipping AdultFriendFinder - Marked as not valid.
+ -  Looking up https://angel.co/username?utm_source=people
+      !  ERROR: BAD CODE AND STRING. Neither the HTTP response code or detection string worked.
+ -  Looking up http://www.anobii.com/username/books
+      !  ERROR: BAD DETECTION STRING. "- aNobii</title>" was not found on resulting page.
+ -  Looking up http://ask.fm/username
+[+] Found user at http://ask.fm/username
+ -  Looking up https://username.atlassian.net/login
+      !  ERROR: BAD DETECTION STRING. "Unable to access your account" was not found on resulting page.
+ -  Looking up https://username.atlassian.net/admin/users/sign-up
+      !  ERROR: BAD CODE AND STRING. Neither the HTTP response code or detection string worked.
+ -  Looking up https://audioboom.com/username
+^C !!!  You pressed Ctrl+C. Exiting script.
+------------
+The following previously "valid" sites had errors:
+     AngelList --> Bad detection code and string. Received Code: 404; Expected Code: 200.
+     Atlassian --> Bad detection string.
+     Atlassian Self-Signup --> Bad detection code and string. Received Code: 502; Expected Code: 200.
+     aNobil --> Bad detection string.
 ```
 
-# Updates
-I update this project as I have time and would *LOVE* to have interested people help maintain and grow it. Please reach to me webbreacher {at} gmail {dot} com if you are interested.
+## Updates
+I update this project as I have time and would *LOVE* to have interested people help maintain and grow it. 
+Please reach to me webbreacher {at} gmail {dot} com if you are interested.
 
-# Contributors
+## Contributors
 [@WebBreacher](https://github.com/WebBreacher/)<br>
 [@Munchko](https://github.com/Munchko/)<br>
 [@L0r3m1p5um](https://github.com/L0r3m1p5um/)<br>
 [@lehuff](https://github.com/lehuff/)<br>
+[@rpiguy](https://github.com/andydennis/)<br>
