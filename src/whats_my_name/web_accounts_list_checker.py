@@ -242,7 +242,7 @@ class WebAccountsListChecker():
     def signal_handler(self, signal, frame):
         print(
             self.terminal_colors.RED +
-            ' !!!  You pressed Ctrl+C. Exitting script.' +
+            ' !!!  You pressed Ctrl+C. Exiting script.' +
             self.terminal_colors.ENDC)
         self.final_output()
         sys.exit(0)
