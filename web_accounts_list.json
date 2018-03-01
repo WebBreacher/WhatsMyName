@@ -321,18 +321,6 @@
          "comments" : ["verified 10/7/2015 - WebBreacher"]
       },
       {
-         "name" : "copytaste",
-         "check_uri" : "http://copytaste.com/profile/{account}",
-         "account_existence_code" : "200",
-         "account_existence_string" : "o.people.add",
-         "account_missing_string" : "Object moved to",
-         "account_missing_code" : "302",
-         "known_accounts" : ["test","john"],
-         "category" : "sharing",
-         "valid" : true,
-         "comments" : ["verified 10/7/2015 - WebBreacher"]
-      },
-      {
          "name" : "cruiseMates",
          "check_uri" : "http://www.cruisemates.com/forum/members/{account}.html",
          "account_existence_code" : "200",
@@ -499,17 +487,6 @@
          "category" : "social",
          "valid" : true,
          "comments" : ["Verified 20180228 - WebBreacher","verified 10/10/2015 - WebBreacher"]
-      },
-      {
-         "name" : "families.com",
-         "check_uri" : "http://www.families.com/author/{account}",
-         "account_existence_code" : "200",
-         "account_existence_string" : "archive author author-",
-         "account_missing_string" : "<title>, Author at Families.com",
-         "known_accounts" : ["maliamom"],
-         "category" : "news",
-         "valid" : true,
-         "comments" : ["verified 11/07/2015 - WebBreacher"]
       },
       {
          "name" : "fanpop",
@@ -1653,18 +1630,6 @@
          "category" : "news",
          "valid" : true,
          "comments" : ["Verified 20180228 - WebBreacher","Changed existence string. Verified 2016-11-02 WebBreacher", "verified 20160503 - mmaczko"]
-      },
-      {
-         "name" : "tribe",
-         "check_uri" : "http://people.tribe.net/{account}",
-         "account_existence_code" : "200",
-         "account_existence_string" : "Profile - tribe.net</title>",
-         "account_missing_string" : "><body></body></html>",
-         "account_missing_code" : "200",
-         "known_accounts" : ["mike","john"],
-         "category" : "dating",
-         "valid" : true,
-         "comments" : ["verified - 20160511 - WebBreacher","verified 20160503 - mmaczko, account missing string not found"]
       },
       {
          "name" : "tripadvisor",
