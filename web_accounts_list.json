@@ -1838,18 +1838,6 @@
          "comments" : ["Fixed existence string. Verified 2016-11-02 WebBreacher", "bad result 20160917 - WebBreacher","verified - 20160509 - WebBreacher"]
       },
       {
-         "name" : "WeeWorld",
-         "check_uri" : "http://www.weeworld.com/home/{account}",
-         "account_existence_code" : "200",
-         "account_existence_string" : "s Home) - WeeMee",
-         "account_missing_string" : "we couldn't find the user you were looking for",
-         "account_missing_code" : "200",
-         "known_accounts" : ["test123","john"],
-         "category" : "gaming",
-         "valid" : true,
-         "comments" : ["verified - 20160509 - WebBreacher"]
-      },
-      {
          "name" : "wishlistr",
          "check_uri" : "http://www.wishlistr.com/profile/{account}/",
          "account_existence_code" : "200",
