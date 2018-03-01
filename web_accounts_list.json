@@ -1358,25 +1358,25 @@
          "name" : "reddit",
          "check_uri" : "https://www.reddit.com/user/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "<title>overview for ",
+         "account_existence_string" : " Post Karma<br/>",
          "account_missing_string" : "page not found",
          "account_missing_code" : "404",
-         "known_accounts" : ["mayorpaco", "Arzu1982"],
+         "known_accounts" : ["mayorpaco", "leafstar2"],
          "category" : "news",
          "valid" : true,
-         "comments" : ["Changed test accounts. Verified 2016-11-02 WebBreacher", "status changed to false 20160814 due to bad responses - WebBreacher", "verified 20160730 - WebBreacher", "verified 20160503 - WebBreacher"]
+         "comments" : ["Changed test accounts. Verified 20180228 - WebBreacher", "Changed test accounts. Verified 2016-11-02 WebBreacher", "status changed to false 20160814 due to bad responses - WebBreacher", "verified 20160730 - WebBreacher", "verified 20160503 - WebBreacher"]
       },
       {
          "name" : "redTube",
-         "check_uri" : "http://www.redtube.com/{account}",
+         "check_uri" : "http://www.redtube.com/users/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "s Stream - Member Profiles",
-         "account_missing_string" : "Not Found Page",
+         "account_existence_string" : "s Profile - RedTube",
+         "account_missing_string" : "Page Not Found",
          "account_missing_code" : "404",
-         "known_accounts" : ["bocaj73"],
+         "known_accounts" : ["hollandhunter88"],
          "category" : "XXX PORN XXX",
          "valid" : true,
-         "comments" : ["Initial content creation. 2016-11-02 WebBreacher"]
+         "comments" : ["Verified 20180228 - WebBreacher", "Initial content creation. 2016-11-02 WebBreacher"]
       },
       {
          "name" : "Rotten Tomatoes",
@@ -1560,15 +1560,15 @@
       },
       {
          "name" : "sporcle",
-         "check_uri" : "http://www.sporcle.com/user/{account}/connections",
+         "check_uri" : "https://www.sporcle.com/user/{account}/people/",
          "account_existence_code" : "200",
-         "account_existence_string" : "id='UserBox'>",
+         "account_existence_string" : "'s Sporcle People",
          "account_missing_string" : "This Sporcle user cannot be found.",
          "account_missing_code" : "200",
-         "known_accounts" : ["test"],
+         "known_accounts" : ["test","lolshortee"],
          "category" : "gaming",
          "valid" : true,
-         "comments" : ["verified 20160503 - WebBreacher"]
+         "comments" : ["Verified 20180228 - WebBreacher", "verified 20160503 - WebBreacher"]
       },
       {
          "name" : "Steam",
