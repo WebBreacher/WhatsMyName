@@ -1620,27 +1620,15 @@
       },
       {
          "name" : "theguardian",
-         "check_uri" : "https://profile.theguardian.com/user/{account}",
+         "check_uri" : "https://witness.theguardian.com/user/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "Registered on",
-         "account_missing_string" : "Sorry - we haven’t been able to serve the page you asked for",
+         "account_existence_string" : "search?user=",
+         "account_missing_string" : "Sorry, we can't find that page",
          "account_missing_code" : "404",
-         "known_accounts" : ["test"],
+         "known_accounts" : ["SE7ite","TimmRanson"],
          "category" : "news",
          "valid" : true,
-         "comments" : ["Changed existence string. Verified 2016-11-02 WebBreacher", "verified 20160503 - mmaczko"]
-      },
-      {
-         "name" : "thesixtyone",
-         "check_uri" : "http://www.thesixtyone.com/{account}/",
-         "account_existence_code" : "200",
-         "account_existence_string" : "s music on thesixtyone",
-         "account_missing_string" : "no longer exists.",
-         "account_missing_code" : "200",
-         "known_accounts" : ["john"],
-         "category" : "music",
-         "valid" : true,
-         "comments" : ["verified 20160503 - mmaczko"]
+         "comments" : ["Verified 20180228 - WebBreacher","Changed existence string. Verified 2016-11-02 WebBreacher", "verified 20160503 - mmaczko"]
       },
       {
          "name" : "tribe",
@@ -1730,13 +1718,13 @@
          "name" : "uSTREAM",
          "check_uri" : "http://www.ustream.tv/channel/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "on USTREAM:",
+         "account_existence_string" : "Following</span>",
          "account_missing_string" : "Sorry, the page you requested cannot be found",
          "account_missing_code" : "404",
-         "known_accounts" : ["johndoe","wukf"],
+         "known_accounts" : ["wukf","johndoe"],
          "category" : "video",
          "valid" : true,
-         "comments" : ["verified - 20160511 - WebBreacher"]
+         "comments" : ["Verified 20180228 - WebBreacher","verified - 20160511 - WebBreacher"]
       },
       {
          "name" : "Vampire Freaks",
@@ -1773,18 +1761,6 @@
          "category" : "video",
          "valid" : true,
          "comments" : ["verified - 20160509 - WebBreacher"]
-      },
-      {
-         "name" : "vidme",
-         "check_uri" : "https://vid.me/{account}",
-         "account_existence_code" : "200",
-         "account_existence_string" : "s videos - vidme</title>",
-         "account_missing_string" : "this page doesn't seem to exist",
-         "account_missing_code" : "404",
-         "known_accounts" : ["smoopy","Abrahem919"],
-         "category" : "video",
-         "valid" : true,
-         "comments" : ["verified 20160730 - WebBreacher", "verified - 20160509 - WebBreacher"]
       },
       {
          "name" : "Vimeo",
@@ -1961,12 +1937,12 @@
          "check_uri" : "http://xhamster.com/user/{account}",
          "account_existence_code" : "200",
          "account_existence_string" : "s Profile</title>",
-         "account_missing_string" : "User not found</title>",
-         "account_missing_code" : "200",
-         "known_accounts" : ["nymphRiley"],
+         "account_missing_string" : "Internal Server Error",
+         "account_missing_code" : "500",
+         "known_accounts" : ["webyoung"],
          "category" : "XXX PORN XXX",
          "valid" : true,
-         "comments" : ["Changed default test account. Verified 2016-11-02 WebBreacher", "bad result 20160917 - WebBreacher","verified - 20160511 - WebBreacher"]
+         "comments" : ["Changed test account. Verified 20180228 - WebBreacher","Changed default test account. Verified 2016-11-02 WebBreacher", "bad result 20160917 - WebBreacher","verified - 20160511 - WebBreacher"]
       },
       {
          "name" : "XVIDEOS",
