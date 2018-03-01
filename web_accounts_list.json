@@ -417,6 +417,18 @@
          "comments" : ["Changed to use API instead of web scrape. Altered existence string. Verified 2016-11-02 WebBreacher.", "verified 10/7/2015 - webbreacher"]
       },
       {
+         "name" : "Disqus",
+         "check_uri" : "https://disqus.com/by/{account}/",
+         "account_existence_code" : "200",
+         "account_existence_string" : "<title>Disqus Profile",
+         "account_missing_string" : "Page not found (404) - Disqus",
+         "account_missing_code" : "404",
+         "known_accounts" : ["carlosharm"],
+         "category" : "discussion",
+         "valid" : true,
+         "comments" : ["verified 2018-02-28 WebBreacher"]
+      },
+      {
          "name" : "DIY",
          "check_uri" : "https://diy.org/{account}",
          "account_existence_code" : "200",
@@ -843,15 +855,15 @@
       },
       {
          "name" : "Instagram",
-         "check_uri" : "https://instagram.com/{account}/",
+         "check_uri" : "https://instagram.com/{account}/?__a=1",
          "account_existence_code" : "200",
-         "account_existence_string" : "Instagram photos and videos",
-         "account_missing_string" : "Sorry, this page isn't available",
+         "account_existence_string" : "external_url_linkshimmed",
+         "account_missing_string" : "Page Not Found",
          "account_missing_code" : "404",
          "known_accounts" : ["test"],
-         "category" : "images",
+         "category" : "social",
          "valid" : true,
-         "comments" : ["verified 11/23/2015 - webbreacher"]
+         "comments" : ["fixed 2018-02-28 - webbreacher","verified 11/23/2015 - webbreacher"]
       },
       {
          "name" : "instructables",
