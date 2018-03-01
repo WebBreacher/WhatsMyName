@@ -79,18 +79,6 @@
          "comments" : ["Changed existence string. Verified 2016-11-02 WebBreacher", "bad result 20160917 - WebBreacher","verified 10/4/2015 - WebBreacher"]
       },
       {
-         "name" : "Atlassian",
-         "check_uri" : "https://{account}.atlassian.net/login",
-         "account_existence_code" : "302",
-         "account_existence_string" : "Found. Redirecting to",
-         "account_missing_string" : "Your Atlassian Cloud site is currently unavailable",
-         "account_missing_code" : "503",
-         "known_accounts" : ["tshock"],
-         "category" : "coding",
-         "valid" : true,
-         "comments" : ["verified 2018-02-28 - WebBreacher", "verified 10/4/2015 - WebBreacher"]
-      },
-      {
          "name" : "Atlassian Self-Signup",
          "check_uri" : "https://{account}.atlassian.net/admin/rest/um/1/apps/navigation",
          "account_existence_code" : "401",
@@ -504,13 +492,13 @@
          "name" : "facebook.com",
          "check_uri" : "https://www.facebook.com/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "pagesTimelineLayout",
-         "account_missing_string" : "Sorry, this page isn't available",
-         "account_missing_code" : "200",
+         "account_existence_string" : "og:url",
+         "account_missing_string" : "This page isn't available",
+         "account_missing_code" : "404",
          "known_accounts" : ["john.heckle.9"],
          "category" : "social",
          "valid" : true,
-         "comments" : ["verified 10/10/2015 - WebBreacher"]
+         "comments" : ["Verified 20180228 - WebBreacher","verified 10/10/2015 - WebBreacher"]
       },
       {
          "name" : "families.com",
@@ -1449,6 +1437,18 @@
          "category" : "dating",
          "valid" : true,
          "comments" : ["verified 20160730 - WebBreacher", "verified 20160503 - WebBreacher"]
+      },
+      {
+         "name" : "Skyscanner",
+         "check_uri" : "https://www.trip.skyscanner.com/user/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "First Reviews",
+         "account_missing_string" : "Page not found",
+         "account_missing_code" : "410",
+         "known_accounts" : ["jay-bluher"],
+         "category" : "travel",
+         "valid" : true,
+         "comments" : ["Created 20180228 - WebBreacher"]
       },
       {
          "name" : "Slashdot",
