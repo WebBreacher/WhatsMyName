@@ -55,16 +55,16 @@
          "comments" : ["verified 20161231 - L0r3m1p5um"]
       },
       {
-         "name" : "aNobil",
-         "check_uri" : "http://www.anobii.com/{account}/books",
+         "name" : "aNobii",
+         "check_uri" : "http://www.anobii.com/{account}/profile",
          "account_existence_code" : "200",
-         "account_existence_string" : "- aNobii</title>",
-         "account_missing_string" : "",
+         "account_existence_string" : "- aNobii",
+         "account_missing_string" : ">Redirecting to ",
          "account_missing_code" : "302",
          "known_accounts" : ["test", "john"],
          "category" : "books",
          "valid" : true,
-         "comments" : ["verified 10/4/2015 - WebBreacher"]
+         "comments" : ["verified 20180228 - WebBreacher", "verified 10/4/2015 - WebBreacher"]
       },
       {
          "name" : "ask.fm",
@@ -695,18 +695,6 @@
          "category" : "coding",
          "valid" : true,
          "comments" : ["verified 20160730 - WebBreacher", "DISABLED bad detection string - 20160518 - WebBreacher","verified 11/08/2015 - WebBreacher"]
-      },
-      {
-         "name" : "gogobot",
-         "check_uri" : "http://www.gogobot.com/user/{account}",
-         "account_existence_code" : "200",
-         "account_existence_string" : "Places I've been",
-         "account_missing_string" : "Page not found",
-         "account_missing_code" : "410",
-         "known_accounts" : ["test","mike"],
-         "category" : "travel",
-         "valid" : true,
-         "comments" : ["verified 11/23/2015 - WebBreacher"]
       },
       {
          "name" : "goodreads",
