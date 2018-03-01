@@ -1715,18 +1715,6 @@
          "comments" : ["verified 20180228 - WebBreacher", "verified 20161218 - L0r3m1p5um"]
       },
       {
-         "name" : "Twitpic",
-         "check_uri" : "http://twitpic.com/photos/{account}",
-         "account_existence_code" : "200",
-         "account_existence_string" : "<title>Twitpic /",
-         "account_missing_string" : "<title>Page could not be found",
-         "account_missing_code" : "404",
-         "known_accounts" : ["mannequin"],
-         "category" : "social",
-         "valid" : true,
-         "comments" : ["verified 20160503 - mmaczko"]
-      },
-      {
          "name" : "Twitter",
          "check_uri" : "https://twitter.com/{account}",
          "account_existence_code" : "200",
@@ -1862,15 +1850,15 @@
       },
       {
          "name" : "Voices.com",
-         "check_uri" : "https://www.voices.com/people/{account}",
+         "check_uri" : "https://www.voices.com/actors/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "/assets/images/branding/default_profile_avatar",
-         "account_missing_string" : "",
-         "account_missing_code" : "302",
-         "known_accounts" : ["test","john"],
+         "account_existence_string" : "</span> Reviews",
+         "account_missing_string" : "We're Sorry",
+         "account_missing_code" : "404",
+         "known_accounts" : ["briankirchoff","bryankopta"],
          "category" : "business",
          "valid" : true,
-         "comments" : ["verified - 20160509 - WebBreacher"]
+         "comments" : ["verified - 20180228 - WebBreacher","verified - 20160509 - WebBreacher"]
       },
       {
          "name" : "Wanelo",
@@ -1895,18 +1883,6 @@
          "category" : "social",
          "valid" : true,
          "comments" : ["Fixed existence string. Verified 2016-11-02 WebBreacher", "bad result 20160917 - WebBreacher","verified - 20160509 - WebBreacher"]
-      },
-      {
-         "name" : "WeedLife",
-         "check_uri" : "https://www.weedlife.com/{account}",
-         "account_existence_code" : "200",
-         "account_existence_string" : "<title>Login",
-         "account_missing_string" : "Page not found.",
-         "account_missing_code" : "404",
-         "known_accounts" : ["nerd420","high-beam-solar-glass-co"],
-         "category" : "drugs",
-         "valid" : true,
-         "comments" : ["Verified 20170228 - L0r3m1p5um", "broken 20170207 WebBreacher","verified - 20170102 - WebBreacher"]
       },
       {
          "name" : "WeeWorld",
