@@ -1148,6 +1148,18 @@
          "comments" : ["verified 20160502 - WebBreacher"]
       },
       {
+         "name" : "OpenStreetMap",
+         "check_uri" : "https://www.openstreetmap.org/user/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "Mapper since:",
+         "account_missing_string" : "does not exist",
+         "account_missing_code" : "404",
+         "known_accounts" : ["kemkim"],
+         "category" : "social",
+         "valid" : true,
+         "comments" : ["Added 20180228 - WebBreacher"]
+      },
+      {
          "name" : "Overcast Network",
          "check_uri" : "https://oc.tc/{account}",
          "account_existence_code" : "200",
@@ -1473,6 +1485,18 @@
          "category" : "presos",
          "valid" : true,
          "comments" : ["verified 20160503 - WebBreacher"]
+      },
+      {
+         "name" : "SmashRun",
+         "check_uri" : "http://smashrun.com/{account}/",
+         "account_existence_code" : "200",
+         "account_existence_string" : "Miles run overall",
+         "account_missing_string" : "no Smashrunner with the username",
+         "account_missing_code" : "404",
+         "known_accounts" : ["john.young"],
+         "category" : "health",
+         "valid" : true,
+         "comments" : ["Added 20180228 - WebBreacher"]
       },
       {
          "name" : "SmiteGuru",
