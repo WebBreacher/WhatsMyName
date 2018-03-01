@@ -735,15 +735,15 @@
       },
       {
          "name" : "HaveIBeenPwnd",
-         "check_uri" : "https://haveibeenpwned.com/api/v2/pasteaccount/{account}",
+         "check_uri" : "https://haveibeenpwned.com/api/v2/breachedaccount/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "Source",
-         "account_missing_string" : "Sorry, that user does not exist",
+         "account_existence_string" : "Title",
+         "account_missing_string" : "",
          "account_missing_code" : "404",
-         "known_accounts" : ["john%40example.com", "jane%40example.com"],
+         "known_accounts" : ["john%40example.com"],
          "category" : "hacker",
          "valid" : true,
-         "comments" : ["Initial add 2016-11-03 WebBreacher", "Fixed detection string - 2016-12-18 - WebBreacher"]
+         "comments" : ["Fixed detection string 20180228 - WebBreacher","Fixed detection string - 2016-12-18 - WebBreacher","Initial add 2016-11-03 WebBreacher"]
       },
       {
          "name" : "HubPages",
@@ -914,18 +914,6 @@
          "comments" : ["verified 12/07/2015 - webbreacher"]
       },
       {
-         "name" : "Lanyrd",
-         "check_uri" : "http://lanyrd.com/profile/{account}/",
-         "account_existence_code" : "200",
-         "account_existence_string" : "s conference talks and presentations | Lanyrd",
-         "account_missing_string" : "can't find that page",
-         "account_missing_code" : "404",
-         "known_accounts" : ["webbreacher"],
-         "category" : "social",
-         "valid" : true,
-         "comments" : ["Altered existence string. Verified 2016-11-02 WebBreacher", "verified 12/07/2015 - webbreacher"]
-      },
-      {
          "name" : "Last.fm",
          "check_uri" : "http://www.last.fm/user/{account}",
          "account_existence_code" : "200",
@@ -954,12 +942,12 @@
          "check_uri" : "https://www.linkedin.com/in/{account}",
          "account_existence_code" : "200",
          "account_existence_string" : "See who you know in common",
-         "account_missing_string" : "Profile Not Found",
-         "account_missing_code" : "404",
+         "account_missing_string" : "sessionRedirect",
+         "account_missing_code" : "999",
          "known_accounts" : ["vanessadimauro"],
          "category" : "business",
          "valid" : true,
-         "comments" : ["Linkedin does not like people accessing it from AWS. This existence string works if you don't use AWS. Verified 2016-11-02 WebBreacher.","bad result 20160917 - WebBreacher","verified 20160730 - webbreacher", "verified 20160518 - webbreacher"]
+         "comments" : ["Fixed 20180228 - Webbreacher", "Linkedin does not like people accessing it from AWS. This existence string works if you don't use AWS. Verified 2016-11-02 WebBreacher.","bad result 20160917 - WebBreacher","verified 20160730 - webbreacher", "verified 20160518 - webbreacher"]
       },
       {
          "name" : "LiveJasmin",

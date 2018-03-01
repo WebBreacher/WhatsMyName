@@ -31,8 +31,8 @@ import codecs
 # Variables && Functions
 ###################
 # Set HTTP Header info.
-headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) '
-                         'Chrome/45.0.2454.93 Safari/537.36'}
+headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+                         '(KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36'}
 
 # Parse command line input
 parser = argparse.ArgumentParser(description="This standalone script will look up a single username using the JSON file"
