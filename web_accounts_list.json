@@ -37,10 +37,10 @@
          "account_existence_string" : "Sexual Orientation:",
          "account_missing_string" : "",
          "account_missing_code" : "404",
-         "known_accounts" : ["test", "mike"],
+         "known_accounts" : ["mike"],
          "category" : "dating",
-         "valid" : false,
-         "comments" : ["broken 20170207 WebBreacher","verified 10/4/2015 - WebBreacher"]
+         "valid" : true,
+         "comments" : ["fixed 20180303 - WebBreacher", "broken 20170207 WebBreacher","verified 10/4/2015 - WebBreacher"]
       },
       {
          "name" : "AngelList",
@@ -723,18 +723,6 @@
          "comments" : [""]
       },
       {
-         "name" : "IFTTT",
-         "check_uri" : "https://ifttt.com/p/{account}/shared",
-         "account_existence_code" : "200",
-         "account_existence_string" : "s published applets",
-         "account_missing_string" : "The requested page or file does not seem to exist",
-         "account_missing_code" : "404",
-         "known_accounts" : ["npr","fitbit"],
-         "category" : "hobby",
-         "valid" : false,
-         "comments" : ["broken 20170207 WebBreacher","verified - 20170102 - WebBreacher", "verified 20160730 - WebBreacher", "verified 11/23/2015 - WebBreacher"]
-      },
-      {
          "name" : "ImageShack",
          "check_uri" : "https://imageshack.com/user/{account}",
          "account_existence_code" : "200",
@@ -1137,18 +1125,6 @@
          "comments" : ["Added 20180228 - WebBreacher"]
       },
       {
-         "name" : "Overcast Network",
-         "check_uri" : "https://oc.tc/{account}",
-         "account_existence_code" : "200",
-         "account_existence_string" : "https://avatar.oc.tc/",
-         "account_missing_string" : "Not found - Overcast Network",
-         "account_missing_code" : "404",
-         "known_accounts" : ["Finik"],
-         "category" : "gaming",
-         "valid" : false,
-         "comments" : ["broken 20170207 WebBreacher","verified 20160502 - WebBreacher"]
-      },
-      {
          "name" : "Pastebin",
          "check_uri" : "http://pastebin.com/u/{account}",
          "account_existence_code" : "200",
@@ -1384,12 +1360,12 @@
          "check_uri" : "https://www.seoclerks.com/user/{account}",
          "account_existence_code" : "200",
          "account_existence_string" : " - SEOClerks</title>",
-         "account_missing_string" : "<title>SEOClerks</title>",
-         "account_missing_code" : "404",
+         "account_missing_string" : "User not found",
+         "account_missing_code" : "200",
          "known_accounts" : ["eljefeseo","gokudadon"],
          "category" : "social",
-         "valid" : false,
-         "comments" : ["broken 20170207 WebBreacher","verified 20160518 - WebBreacher"]
+         "valid" : true,
+         "comments" : ["fixed 20180303 - WebBreacher","broken 20170207 WebBreacher","verified 20160518 - WebBreacher"]
       },
       {
          "name" : "setlist.fm",
@@ -1448,8 +1424,8 @@
          "account_missing_code" : "200",
          "known_accounts" : ["DrSkwid","TsuruchiBrian"],
          "category" : "news",
-         "valid" : false,
-         "comments" : ["tried to verify 20160730 but still having issues - WebBreacher", "DISABLED false positive - 20160518 - WebBreacher","fixed 20160509 - WebBreacher, removed title from regex","verified 20160503 - WebBreacher"]
+         "valid" : true,
+         "comments" : ["fixed 20180303 - WebBreacher", "tried to verify 20160730 but still having issues - WebBreacher", "DISABLED false positive - 20160518 - WebBreacher","fixed 20160509 - WebBreacher, removed title from regex","verified 20160503 - WebBreacher"]
       },
       {
          "name" : "slideshare",
@@ -1477,15 +1453,15 @@
       },
       {
          "name" : "SmiteGuru",
-         "check_uri" : "http://smite.guru/stats/hr/{account}/summary",
+         "check_uri" : "http://smite.guru/profile/pc/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "<title>SmiteGuru - ",
+         "account_existence_string" : "Playtime</div>",
          "account_missing_string" : "",
          "account_missing_code" : "302",
          "known_accounts" : ["RayGunRushi"],
          "category" : "gaming",
-         "valid" : false,
-         "comments" : ["DISABLED false positive - 20160518 - WebBreacher","verified 20160503 - WebBreacher"]
+         "valid" : true,
+         "comments" : ["fixed 20180303 - WebBreacher", "DISABLED false positive - 20160518 - WebBreacher","verified 20160503 - WebBreacher"]
       },
       {
          "name" : "SmugMug",
