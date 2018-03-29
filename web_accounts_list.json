@@ -942,18 +942,6 @@
          "comments" : ["verified - 20170102 - WebBreacher"]
       },
       {
-         "name" : "mate1",
-         "check_uri" : "http://www.mate1.com/profiles/{account}",
-         "account_existence_code" : "200",
-         "account_existence_string" : "basicInfoTitle",
-         "account_missing_string" : "We couldn't find the profile",
-         "account_missing_code" : "404",
-         "known_accounts" : ["hfewq","Godloves435"],
-         "category" : "dating",
-         "valid" : true,
-         "comments" : ["verified 20160730 - WebBreacher", "verified 12/07/2015 - WebBreacher"]
-      },
-      {
          "name" : "Matchdoctor",
          "check_uri" : "http://www.matchdoctor.com/profile_{account}.html",
          "account_existence_code" : "200",
