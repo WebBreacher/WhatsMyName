@@ -54,10 +54,10 @@ Here is an example of a site element:
 ```
 
 # Standalone Checker
-If you just want to run this script to check user names on sites and don't wish to use it in combination with another tool (like Recon-NG and/or Spiderfoot), then you can use the included Python script as shown below:
+If you just want to run this script to check user names on sites and don't wish to use it in combination with another tool (like Recon-NG and/or Spiderfoot), then you can use the included Python 3 script as shown below:
 
 ```
- $  python ./web_accounts_list_checker.py -u sdfsfsdfsdfs
+ $  python3 ./web_accounts_list_checker.py -u sdfsfsdfsdfs
  -  161 sites found in file.
  -  Found user at http://www.break.com/user/sdfsfsdfsdfs
       ! ERROR: CONNECTION TIME OUT. Try increasing the timeout delay.
@@ -76,6 +76,8 @@ If you just want to run this script to check user names on sites and don't wish 
       ! ERROR: CONNECTION TIME OUT. Try increasing the timeout delay.
  -  Found user at http://www.xvideos.com/profiles/sdfsfsdfsdfs
 ```
+
+There is a bash script `whatsmyname.sh` in the repository that uses Zenity to run the Python standalone checker.
 
 # Updates
 I update this project as I have time and would *LOVE* to have interested people help maintain and grow it. Please reach to me webbreacher {at} gmail {dot} com if you are interested.
