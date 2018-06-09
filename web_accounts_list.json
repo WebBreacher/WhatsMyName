@@ -1404,18 +1404,6 @@
          "comments" : ["Created 20180228 - WebBreacher"]
       },
       {
-         "name" : "Slashdot",
-         "check_uri" : "https://slashdot.org/~{account}",
-         "account_existence_code" : "200",
-         "account_existence_string" : " - Slashdot User",
-         "account_missing_string" : "The user you requested does not exist",
-         "account_missing_code" : "200",
-         "known_accounts" : ["DrSkwid","TsuruchiBrian"],
-         "category" : "news",
-         "valid" : true,
-         "comments" : ["fixed 20180303 - WebBreacher", "tried to verify 20160730 but still having issues - WebBreacher", "DISABLED false positive - 20160518 - WebBreacher","fixed 20160509 - WebBreacher, removed title from regex","verified 20160503 - WebBreacher"]
-      },
-      {
          "name" : "slideshare",
          "check_uri" : "http://www.slideshare.net/{account}",
          "account_existence_code" : "200",
