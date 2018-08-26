@@ -601,6 +601,18 @@
          "comments" : ["verified 11/08/2015 - WebBreacher"]
       },
       {
+         "name" : "FriendFinder",
+         "check_uri" : "https://friendfinder.com/profile/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "Last Visit:",
+         "account_missing_string" : "302 Found",
+         "account_missing_code" : "302",
+         "known_accounts" : ["john"],
+         "category" : "dating",
+         "valid" : true,
+         "comments" : ["verified 8/25/2018 - WebBreacher"]
+      },
+      {
          "name" : "FriendFinder-X",
          "check_uri" : "http://www.friendfinder-x.com/profile/{account}",
          "account_existence_code" : "200",
@@ -802,7 +814,7 @@
          "account_missing_string" : "User not found",
          "account_missing_code" : "200",
          "known_accounts" : ["test"],
-         "category" : "hobby",
+         "category" : "dating",
          "valid" : true,
          "comments" : ["Changed existence string. Site uses Web Sockets now. Changed missing code too. - 2016-12-18 - WebBreacher", "verified 11/24/2015 - WebBreacher"]
       },
@@ -1380,16 +1392,16 @@
          "comments" : ["verified 20160503 - WebBreacher"]
       },
       {
-         "name" : "singlemuslim",
-         "check_uri" : "https://www.singlemuslim.com/searchuser/{account}/abc",
+         "name" : "SingleMuslim",
+         "check_uri" : "https://mobile.singlemuslim.com/?profile={account}",
          "account_existence_code" : "200",
          "account_existence_string" : "Registration Reason",
-         "account_missing_string" : "The page you're looking for cannot be found",
-         "account_missing_code" : "404",
-         "known_accounts" : ["SaimD85","shabiruddin"],
+         "account_missing_string" : "Home- Islamic",
+         "account_missing_code" : "200",
+         "known_accounts" : ["SaimD85","shabiruddin","firdha91"],
          "category" : "dating",
          "valid" : true,
-         "comments" : ["verified 20160730 - WebBreacher", "verified 20160503 - WebBreacher"]
+         "comments" : ["verified 20180825 - WebBreacher", "verified 20160730 - WebBreacher", "verified 20160503 - WebBreacher"]
       },
       {
          "name" : "Skyscanner",
