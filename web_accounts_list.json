@@ -1,5 +1,5 @@
 {
-   "license" : ["Copyright (C) 2018 Spotlight Infosec LLC",
+   "license" : ["Copyright (C) 2019 Micah Hoffman",
                 "This work is licensed under the Creative Commons Attribution-ShareAlike",
                 "4.0 International License. To view a copy of this license, visit",
                 "http://creativecommons.org/licenses/by-sa/4.0/ or send a letter to",
@@ -15,8 +15,7 @@
          "account_missing_code" : "302",
          "known_accounts" : ["john","jill"],
          "category" : "social",
-         "valid" : true,
-         "comments" : ["verified 20160730 - WebBreacher", "verified 10/4/2015 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "AdultFriendFinder",
@@ -27,8 +26,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["mike"],
          "category" : "dating",
-         "valid" : true,
-         "comments" : ["fixed 20180303 - WebBreacher", "broken 20170207 WebBreacher","verified 10/4/2015 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "AngelList",
@@ -39,8 +37,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["jill", "john"],
          "category" : "tech",
-         "valid" : true,
-         "comments" : ["verified 20161231 - L0r3m1p5um"]
+         "valid" : true
       },
       {
          "name" : "aNobii",
@@ -51,8 +48,7 @@
          "account_missing_code" : "302",
          "known_accounts" : ["test", "john"],
          "category" : "books",
-         "valid" : true,
-         "comments" : ["verified 20180228 - WebBreacher", "verified 10/4/2015 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "ask.fm",
@@ -63,8 +59,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["test"],
          "category" : "social",
-         "valid" : true,
-         "comments" : ["Changed existence string. Verified 2016-11-02 WebBreacher", "bad result 20160917 - WebBreacher","verified 10/4/2015 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "Atlassian Self-Signup",
@@ -75,8 +70,7 @@
          "account_missing_code" : "503",
          "known_accounts" : ["tshock"],
          "category" : "coding",
-         "valid" : true,
-         "comments" : ["verified 2018-02-28 - WebBreacher", "verified 10/4/2015 - WebBreacher", "look for orgs that allow self-signup by arbitrary users. much win"]
+         "valid" : true
       },
       {
          "name" : "AudioBoom",
@@ -87,8 +81,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["test", "john"],
          "category" : "video",
-         "valid" : true,
-         "comments" : ["verified/fixed 20160730 - WebBreacher", "verified 10/4/2015 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "authorSTREAM",
@@ -99,8 +92,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["test", "john"],
          "category" : "preso",
-         "valid" : true,
-         "comments" : ["verified 10/4/2015 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "badoo",
@@ -111,8 +103,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["john", "whynot"],
          "category" : "social",
-         "valid" : true,
-         "comments" : ["verified 10/4/2015 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "Basecamp",
@@ -123,8 +114,7 @@
          "account_missing_code" : "200",
          "known_accounts" : ["test","john"],
          "category" : "business",
-         "valid" : true,
-         "comments" : ["verified 20180228 - WebBreacher", "verified 20161218 - L0r3m1p5um"]
+         "valid" : true
       },
       {
          "name" : "Bitbucket",
@@ -136,8 +126,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["test", "WebBreacher"],
          "category" : "coding",
-         "valid" : true,
-         "comments" : ["verified 10/4/2015 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "BLIP.fm",
@@ -148,8 +137,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["john", "walnuts"],
          "category" : "music",
-         "valid" : true,
-         "comments" : ["verified 10/4/2015 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "Black Planet",
@@ -160,8 +148,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["test", "john"],
          "category" : "social",
-         "valid" : true,
-         "comments" : ["verified 10/4/2015 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "Blogmarks",
@@ -172,8 +159,7 @@
          "account_missing_code" : "200",
          "known_accounts" : ["test", "mike"],
          "category" : "bookmarks",
-         "valid" : true,
-         "comments" : ["verified 10/4/2015 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "Blogspot",
@@ -184,8 +170,7 @@
          "account_missing_code" : "200",
          "known_accounts" : ["test"],
          "category" : "blog",
-         "valid" : true,
-         "comments" : ["verified 10/4/2015 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "BodyBuilding.com",
@@ -197,8 +182,7 @@
          "account_missing_code" : "200",
          "known_accounts" : ["mike"],
          "category" : "health",
-         "valid" : true,
-         "comments" : ["verified 10/4/2015 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "Break",
@@ -209,8 +193,7 @@
          "account_missing_code" : "302",
          "known_accounts" : ["test"],
          "category" : "video",
-         "valid" : true,
-         "comments" : ["verified 10/4/2015 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "Bugcrowd",
@@ -221,8 +204,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["Bitquark","RobertK"],
          "category" : "hacker",
-         "valid" : true,
-         "comments" : ["verified 20180228 - WebBreacher", "verified 20160730 - WebBreacher", "verified 11/23/2015 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "BuzzFeed",
@@ -233,8 +215,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["talhaishaq2001","RobertK"],
          "category" : "social",
-         "valid" : true,
-         "comments" : ["Initial add 2016-11-03 WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "cafemom",
@@ -245,8 +226,7 @@
          "account_missing_code" : "200",
          "known_accounts" : ["test"],
          "category" : "social",
-         "valid" : true,
-         "comments" : ["verified 10/6/2015 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "cash.me",
@@ -257,8 +237,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["jill","john"],
          "category" : "business",
-         "valid" : true,
-         "comments" : ["verified 20161218 - L0r3m1p5um"]
+         "valid" : true
       },
       {
          "name" : "CarDomain",
@@ -269,8 +248,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["test"],
          "category" : "hobby",
-         "valid" : true,
-         "comments" : ["verified 10/6/2015 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "cHEEZburger",
@@ -281,8 +259,7 @@
          "account_missing_code" : "302",
          "known_accounts" : ["john"],
          "category" : "hobby",
-         "valid" : true,
-         "comments" : ["verified 10/6/2015 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "COLOURlovers",
@@ -293,8 +270,7 @@
          "account_missing_code" : "",
          "known_accounts" : ["test"],
          "category" : "hobby",
-         "valid" : true,
-         "comments" : ["verified 10/7/2015 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "Conferize",
@@ -305,8 +281,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["avves", "john"],
          "category" : "social",
-         "valid" : true,
-         "comments" : ["verified 10/7/2015 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "cruiseMates",
@@ -317,8 +292,7 @@
          "account_missing_code" : "200",
          "known_accounts" : ["test","john"],
          "category" : "travel",
-         "valid" : true,
-         "comments" : ["verified 10/7/2015 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "Dailymotion",
@@ -329,8 +303,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["WeHappyKids","john"],
          "category" : "video",
-         "valid" : true,
-         "comments" : ["verified 20180228 - WebBreacher", "verified 10/7/2015 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "Delicious",
@@ -341,8 +314,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["john","av2learner"],
          "category" : "bookmarks",
-         "valid" : true,
-         "comments" : ["verified 20160502 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "DeviantArt",
@@ -353,8 +325,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["test", "john"],
          "category" : "images",
-         "valid" : true,
-         "comments" : ["verified 10/7/2015 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "devRant",
@@ -365,8 +336,7 @@
          "account_missing_code" : "302",
          "known_accounts" : ["dfox", "trogus"],
          "category" : "social",
-         "valid" : true,
-         "comments" : []
+         "valid" : true
       },
       {
          "name" : "diigo",
@@ -377,8 +347,7 @@
          "account_missing_code" : "200",
          "known_accounts" : ["whoami", "johndoe"],
          "category" : "images",
-         "valid" : true,
-         "comments" : ["Changed to use API instead of web scrape. Altered existence string. Verified 2016-11-02 WebBreacher.", "verified 10/7/2015 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "Disqus",
@@ -389,8 +358,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["carlosharm"],
          "category" : "discussion",
-         "valid" : true,
-         "comments" : ["verified 2018-02-28 WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "DIY",
@@ -401,8 +369,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["test", "john"],
          "category" : "video",
-         "valid" : true,
-         "comments" : ["verified 10/7/2015 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "duby",
@@ -413,8 +380,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["organicannabis","jonny5"],
          "category" : "drugs",
-         "valid" : true,
-         "comments" : ["verified - 20170102 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "eBay",
@@ -425,8 +391,7 @@
          "account_missing_code" : "200",
          "known_accounts" : ["the_gqs"],
          "category" : "shopping",
-         "valid" : true,
-         "comments" : ["Altered test account. Verified 2016-11-02 WebBreacher.","verified 10/7/2015 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "EightBit",
@@ -437,8 +402,7 @@
          "account_missing_code" : "",
          "known_accounts" : ["bomdiameucaro"],
          "category" : "gaming",
-         "valid" : true,
-         "comments" : ["verified 10/7/2015 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "Engadget",
@@ -449,8 +413,7 @@
          "account_missing_code" : "200",
          "known_accounts" : ["devindra-hardawar"],
          "category" : "tech",
-         "valid" : true,
-         "comments" : ["Added HTTPS to URL and changed test account. Verified 2016-11-02 WebBreacher.", "verified 05/05/2016 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "EPORNER",
@@ -461,8 +424,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["john"],
          "category" : "XXX PORN XXX",
-         "valid" : true,
-         "comments" : ["Verified working 2016-11-02 WebBreacher", "bad result 20160917 - WebBreacher","verified 10/7/2015 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "Etsy",
@@ -473,8 +435,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["happiness"],
          "category" : "shopping",
-         "valid" : true,
-         "comments" : ["verified 10/7/2015 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "facebook.com",
@@ -485,8 +446,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["john.heckle.9"],
          "category" : "social",
-         "valid" : true,
-         "comments" : ["Verified 20180228 - WebBreacher","verified 10/10/2015 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "fanpop",
@@ -497,8 +457,7 @@
          "account_missing_code" : "302",
          "known_accounts" : ["test","johndoe"],
          "category" : "movies",
-         "valid" : true,
-         "comments" : ["verified 11/07/2015 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "Fiverr",
@@ -509,8 +468,7 @@
          "account_missing_code" : "301",
          "known_accounts" : ["test","gabarnes"],
          "category" : "shopping",
-         "valid" : true,
-         "comments" : ["verified 20160730 - WebBreacher", "verified 20160518 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "Flickr",
@@ -521,8 +479,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["glaciernps","test"],
          "category" : "images",
-         "valid" : true,
-         "comments" : ["verified 11/07/2015 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "Flipboard",
@@ -533,8 +490,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["test","john"],
          "category" : "tech",
-         "valid" : true,
-         "comments" : ["verified 20161218 - L0r3m1p5um"]
+         "valid" : true
       },
       {
          "name" : "Foodspotting",
@@ -546,8 +502,7 @@
          "known_accounts" : ["test","john"],
          "known_missing_accounts" : ["johndoe"],
          "category" : "social",
-         "valid" : true,
-         "comments" : ["verified 11/07/2015 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "Fotolog",
@@ -559,8 +514,7 @@
          "known_accounts" : ["test","johndoe"],
          "known_missing_accounts" : ["does-not-exist"],
          "category" : "images",
-         "valid" : true,
-         "comments" : ["Verified 20170228 - L0r3m1p5um", "broken 20170207 WebBreacher","Verified 2016-11-02 WebBreacher", "bad result 20160917 - WebBreacher","verified 11/07/2015 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "Foursquare",
@@ -572,8 +526,7 @@
          "known_accounts" : ["john"],
          "known_missing_accounts" : ["test"],
          "category" : "location",
-         "valid" : true,
-         "comments" : ["verified 11/07/2015 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "freelancer",
@@ -585,8 +538,7 @@
          "known_accounts" : ["mikehurley"],
          "known_missing_accounts" : [""],
          "category" : "business",
-         "valid" : true,
-         "comments" : ["verified 2018-02-28 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "freesound",
@@ -597,8 +549,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["test","johndoe"],
          "category" : "music",
-         "valid" : true,
-         "comments" : ["verified 11/08/2015 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "FriendFinder",
@@ -609,8 +560,7 @@
          "account_missing_code" : "302",
          "known_accounts" : ["john"],
          "category" : "dating",
-         "valid" : true,
-         "comments" : ["verified 8/25/2018 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "FriendFinder-X",
@@ -621,8 +571,7 @@
          "account_missing_code" : "200",
          "known_accounts" : ["john"],
          "category" : "dating",
-         "valid" : true,
-         "comments" : ["verified 11/23/2015 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "FunnyOrDie",
@@ -633,8 +582,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["john"],
          "category" : "video",
-         "valid" : true,
-         "comments" : ["verified 11/23/2015 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "Garmin connect",
@@ -645,8 +593,7 @@
          "account_missing_code" : "200",
          "known_accounts" : ["danielebarison","cderalow"],
          "category" : "health",
-         "valid" : true,
-         "comments" : ["verified 20180228 - WebBreacher", "verified 11/08/2015 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "GeekGrade",
@@ -657,8 +604,7 @@
          "account_missing_code" : "200",
          "known_accounts" : ["WebBreacher","jcran"],
          "category" : "coding",
-         "valid" : true,
-         "comments" : ["verified 11/08/2015 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "GitHub",
@@ -670,8 +616,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["test","WebBreacher"],
          "category" : "coding",
-         "valid" : true,
-         "comments" : ["verified 20160730 - WebBreacher", "DISABLED bad detection string - 20160518 - WebBreacher","verified 11/08/2015 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "goodreads",
@@ -682,8 +627,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["612715-jill-holtz","626151-carol-muscolino"],
          "category" : "books",
-         "valid" : true,
-         "comments" : ["verified 20160730 - WebBreacher", "DISABLED bad detection string - 20160518 - WebBreacher","fixed good string 20160509 - WebBreacher","verified 11/23/2015 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "Gravatar",
@@ -695,8 +639,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["test"],
          "category" : "images",
-         "valid" : true,
-         "comments" : ["verified 11/23/2015 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "HaveIBeenPwnd",
@@ -707,8 +650,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["john%40example.com"],
          "category" : "hacker",
-         "valid" : true,
-         "comments" : ["Fixed detection string 20180228 - WebBreacher","Fixed detection string - 2016-12-18 - WebBreacher","Initial add 2016-11-03 WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "HubPages",
@@ -719,8 +661,7 @@
          "account_missing_code" : "",
          "known_accounts" : ["test","bob"],
          "category" : "blog",
-         "valid" : true,
-         "comments" : ["verified 11/23/2015 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "I-am-pregnant",
@@ -731,8 +672,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["Kelly","Cney"],
          "category" : "health",
-         "valid" : true,
-         "comments" : [""]
+         "valid" : true
       },
       {
          "name" : "ImageShack",
@@ -743,8 +683,7 @@
          "account_missing_code" : "302",
          "known_accounts" : ["test"],
          "category" : "images",
-         "valid" : true,
-         "comments" : ["verified 11/23/2015 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "imgur",
@@ -755,8 +694,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["test"],
          "category" : "images",
-         "valid" : true,
-         "comments" : ["verified 11/23/2015 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "InsaneJournal",
@@ -767,8 +705,7 @@
          "account_missing_code" : "200",
          "known_accounts" : ["test"],
          "category" : "social",
-         "valid" : true,
-         "comments" : ["verified 11/23/2015 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "Instagram",
@@ -779,8 +716,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["test", "barackobama"],
          "category" : "social",
-         "valid" : true,
-         "comments" : ["fixed existence code and added test account - 20180915 - WebBreacher","fixed 2018-02-28 - WebBreacher","verified 11/23/2015 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "instructables",
@@ -791,8 +727,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["test"],
          "category" : "hobby",
-         "valid" : true,
-         "comments" : ["Changed existence string to lower case - 2016-12-18 - WebBreacher", "Changed existence string and missing code. Verified 2016-11-02 WebBreacher","verified 11/23/2015 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "Internet Archive",
@@ -803,8 +738,7 @@
          "account_missing_code" : "200",
          "known_accounts" : ["test","mubix"],
          "category" : "search",
-         "valid" : true,
-         "comments" : ["verified 11/24/2015 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "interpals",
@@ -815,8 +749,7 @@
          "account_missing_code" : "200",
          "known_accounts" : ["test"],
          "category" : "dating",
-         "valid" : true,
-         "comments" : ["Changed existence string. Site uses Web Sockets now. Changed missing code too. - 2016-12-18 - WebBreacher", "verified 11/24/2015 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "Keybase",
@@ -827,8 +760,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["test","mubix"],
          "category" : "business",
-         "valid" : true,
-         "comments" : ["verified 11/24/2015 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "Klear",
@@ -839,8 +771,7 @@
          "account_missing_code" : "200",
          "known_accounts" : ["john"],
          "category" : "social",
-         "valid" : true,
-         "comments" : ["verified 20160730 - WebBreacher", "verified 20160503 - mmaczko"]
+         "valid" : true
       },
       {
          "name" : "Klout",
@@ -851,8 +782,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["test123","john"],
          "category" : "social",
-         "valid" : true,
-         "comments" : ["verified 12/07/2015 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "Kongregate",
@@ -863,8 +793,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["test"],
          "category" : "gaming",
-         "valid" : true,
-         "comments" : ["verified 12/07/2015 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "Last.fm",
@@ -875,8 +804,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["test"],
          "category" : "music",
-         "valid" : true,
-         "comments" : ["verified 12/07/2015 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "LibraryThing",
@@ -887,8 +815,7 @@
          "account_missing_code" : "200",
          "known_accounts" : ["test","john"],
          "category" : "books",
-         "valid" : true,
-         "comments" : ["verified 12/07/2015 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "LinkedIn",
@@ -899,8 +826,7 @@
          "account_missing_code" : "999",
          "known_accounts" : ["vanessadimauro"],
          "category" : "business",
-         "valid" : true,
-         "comments" : ["Fixed 20180228 - WebBreacher", "Linkedin does not like people accessing it from AWS. This existence string works if you don't use AWS. Verified 2016-11-02 WebBreacher.","bad result 20160917 - WebBreacher","verified 20160730 - WebBreacher", "verified 20160518 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "LiveJasmin",
@@ -912,8 +838,7 @@
          "account_missing_code" : "200",
          "known_accounts" : ["Aaryall","a1EnergeticJenny"],
          "category" : "XXX PORN XXX",
-         "valid" : true,
-         "comments" : ["verified 12/07/2015 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "Livejournal",
@@ -925,8 +850,7 @@
          "known_accounts" : ["jill","john"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "blog",
-         "valid" : true,
-         "comments" : ["verified 20161221 - L0r3m1p5um"]
+         "valid" : true
       },
       {
          "name" : "Marketing Land",
@@ -937,8 +861,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["mani-karthik","james-green"],
          "category" : "business",
-         "valid" : true,
-         "comments" : ["verified 12/07/2015 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "MassRoots",
@@ -950,8 +873,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["mrsparkzalot","valleyrec420"],
          "category" : "drugs",
-         "valid" : true,
-         "comments" : ["verified - 20170102 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "Matchdoctor",
@@ -963,8 +885,7 @@
          "known_accounts" : ["test", "john"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "dating",
-         "valid" : true,
-         "comments" : ["verified 20160730 - WebBreacher", "DISABLED bad detection string - 20160518 - WebBreacher","verified 10/4/2015 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "Medium",
@@ -976,8 +897,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["test123","johndoe"],
          "category" : "news",
-         "valid" : true,
-         "comments" : ["verified 12/07/2015 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "Meetzur",
@@ -988,8 +908,7 @@
          "account_missing_code" : "200",
          "known_accounts" : ["john"],
          "category" : "dating",
-         "valid" : true,
-         "comments" : ["verified 12/07/2015 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "Microsoft Technet Community",
@@ -1000,8 +919,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["john","test"],
          "category" : "tech",
-         "valid" : true,
-         "comments" : ["verified 20160518 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "Mixcloud",
@@ -1012,8 +930,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["test","john"],
          "category" : "music",
-         "valid" : true,
-         "comments" : ["verified - 20170102 - WebBreacher", "verified 12/07/2015 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "Mixlr",
@@ -1025,8 +942,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["test","john"],
          "category" : "music",
-         "valid" : true,
-         "comments" : ["verified 12/07/2015 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "Mod DB",
@@ -1037,8 +953,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["test"],
          "category" : "gaming",
-         "valid" : true,
-         "comments" : ["verified 12/07/2015 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "Muck Rack",
@@ -1049,8 +964,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["john"],
          "category" : "news",
-         "valid" : true,
-         "comments" : ["verified 20160502 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "MyBuilder.com",
@@ -1061,8 +975,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["clif", "john"],
          "category" : "business",
-         "valid" : true,
-         "comments" : ["Verified 20170228 L0r3m1p5um", "broken 20170207 WebBreacher","verified 20160502 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "MyFitnessPal",
@@ -1073,8 +986,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["mike"],
          "category" : "health",
-         "valid" : true,
-         "comments" : ["verified 20160502 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "MyLot",
@@ -1085,8 +997,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["Tampa_girl7"],
          "category" : "social",
-         "valid" : true,
-         "comments" : ["verified 20160502 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "Myspace",
@@ -1097,8 +1008,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["michael"],
          "category" : "social",
-         "valid" : true,
-         "comments" : ["Changed URL. Verified 2016-11-02 WebBreacher", "bad result 20160917 - WebBreacher","verified 20160502 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "netvibes",
@@ -1109,8 +1019,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["adam"],
          "category" : "social",
-         "valid" : true,
-         "comments" : ["verified 20160502 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "OpenStreetMap",
@@ -1121,8 +1030,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["kemkim"],
          "category" : "social",
-         "valid" : true,
-         "comments" : ["Added 20180228 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "Pastebin",
@@ -1134,8 +1042,7 @@
          "known_accounts" : ["test","john"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "sharing",
-         "valid" : true,
-         "comments" : ["verified 20161222 - L0r3m1p5um"]
+         "valid" : true
       },
       {
          "name" : "Periscope",
@@ -1147,8 +1054,7 @@
          "known_accounts" : ["john","test"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "video",
-         "valid" : true,
-         "comments" : ["verified 20180228 - WebBreacher","verified 20161222 - L0r3m1p5um"]
+         "valid" : true
       },
       {
          "name" : "Photoblog",
@@ -1159,8 +1065,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["hatsumi","pdsdville"],
          "category" : "images",
-         "valid" : true,
-         "comments" : ["verified 20180228 - WebBreacher", "verified 20160730 - WebBreacher", "verified 20160518 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "PhotoBucket",
@@ -1171,8 +1076,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["test"],
          "category" : "images",
-         "valid" : true,
-         "comments" : ["verified 20160503 - mmaczko"]
+         "valid" : true
       },
       {
          "name" : "PictureTrail",
@@ -1183,8 +1087,7 @@
          "account_missing_code" : "302",
          "known_accounts" : ["joanscreations","grunwalde"],
          "category" : "images",
-         "valid" : true,
-         "comments" : ["verified 20160518 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "PinkBike",
@@ -1195,8 +1098,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["whistlermountainbikepark","paulhanson"],
          "category" : "hobby",
-         "valid" : true,
-         "comments" : ["verified 20160518 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "Pinterest",
@@ -1207,8 +1109,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["test123","frickcollection"],
          "category" : "social",
-         "valid" : true,
-         "comments" : ["verified 20160518 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "Playlists.net",
@@ -1219,8 +1120,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["test"],
          "category" : "music",
-         "valid" : true,
-         "comments" : ["verified 20160503 - mmaczko"]
+         "valid" : true
       },
       {
          "name" : "Plurk",
@@ -1231,8 +1131,7 @@
          "account_missing_code" : "200",
          "known_accounts" : ["test"],
          "category" : "social",
-         "valid" : true,
-         "comments" : ["verified 20160503 - mmaczko"]
+         "valid" : true
       },
       {
          "name" : "POF",
@@ -1243,8 +1142,7 @@
          "account_missing_code" : "200",
          "known_accounts" : ["test"],
          "category" : "dating",
-         "valid" : true,
-         "comments" : ["verified 20160503 - mmaczko, account missing string not found"]
+         "valid" : true
       },
       {
          "name" : "Porn.com",
@@ -1255,8 +1153,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["HottieDiana94","romarandi"],
          "category" : "XXX PORN XXX",
-         "valid" : true,
-         "comments" : ["verified 20180228 - WebBreacher", "verified 20160730 - WebBreacher", "verified 20160518 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "Pornhub",
@@ -1267,8 +1164,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["test123"],
          "category" : "XXX PORN XXX",
-         "valid" : true,
-         "comments" : ["verified 20160518 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "ProductHunt",
@@ -1280,8 +1176,7 @@
          "known_accounts" : ["jill","john"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "tech",
-         "valid" : true,
-         "comments" : ["verified 20161221 - L0r3m1p5um"]
+         "valid" : true
       },
       {
          "name" : "PSNProfiles",
@@ -1292,8 +1187,7 @@
          "account_missing_code" : "302",
          "known_accounts" : ["WhiteWalls7","Roughdawg4"],
          "category" : "gaming",
-         "valid" : true,
-         "comments" : ["verified 20160730 - WebBreacher", "verified 20160503 - mmaczko"]
+         "valid" : true
       },
       {
          "name" : "raptr",
@@ -1304,8 +1198,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["omgmichaelr0ck5","Jagthier"],
          "category" : "gaming",
-         "valid" : true,
-         "comments" : ["verified 20160730 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "reddit",
@@ -1316,8 +1209,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["mayorpaco", "leafstar2"],
          "category" : "news",
-         "valid" : true,
-         "comments" : ["Changed test accounts. Verified 20180228 - WebBreacher", "Changed test accounts. Verified 2016-11-02 WebBreacher", "status changed to false 20160814 due to bad responses - WebBreacher", "verified 20160730 - WebBreacher", "verified 20160503 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "redTube",
@@ -1328,8 +1220,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["hollandhunter88"],
          "category" : "XXX PORN XXX",
-         "valid" : true,
-         "comments" : ["Verified 20180228 - WebBreacher", "Initial content creation. 2016-11-02 WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "Rotten Tomatoes",
@@ -1340,8 +1231,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["guy-lodge","matthew-lickona"],
          "category" : "movies",
-         "valid" : true,
-         "comments" : ["Initial add 2016-11-02 WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "scratch",
@@ -1352,8 +1242,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["griffpatch"],
          "category" : "coding",
-         "valid" : true,
-         "comments" : ["verified 20160503 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "SEOClerks",
@@ -1364,8 +1253,7 @@
          "account_missing_code" : "200",
          "known_accounts" : ["eljefeseo","gokudadon"],
          "category" : "social",
-         "valid" : true,
-         "comments" : ["fixed 20180303 - WebBreacher","broken 20170207 WebBreacher","verified 20160518 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "setlist.fm",
@@ -1376,8 +1264,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["jesus"],
          "category" : "music",
-         "valid" : true,
-         "comments" : ["verified 20160503 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "Shopcade",
@@ -1388,8 +1275,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["test123"],
          "category" : "shopping",
-         "valid" : true,
-         "comments" : ["verified 20160503 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "SingleMuslim",
@@ -1400,8 +1286,7 @@
          "account_missing_code" : "200",
          "known_accounts" : ["SaimD85","shabiruddin","firdha91"],
          "category" : "dating",
-         "valid" : true,
-         "comments" : ["verified 20180825 - WebBreacher", "verified 20160730 - WebBreacher", "verified 20160503 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "Skyscanner",
@@ -1412,8 +1297,7 @@
          "account_missing_code" : "410",
          "known_accounts" : ["jay-bluher"],
          "category" : "travel",
-         "valid" : true,
-         "comments" : ["Created 20180228 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "slideshare",
@@ -1424,8 +1308,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["test"],
          "category" : "presos",
-         "valid" : true,
-         "comments" : ["verified 20160503 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "SmashRun",
@@ -1436,8 +1319,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["john.young"],
          "category" : "health",
-         "valid" : true,
-         "comments" : ["Added 20180228 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "SmiteGuru",
@@ -1448,8 +1330,7 @@
          "account_missing_code" : "302",
          "known_accounts" : ["RayGunRushi"],
          "category" : "gaming",
-         "valid" : true,
-         "comments" : ["fixed 20180303 - WebBreacher", "DISABLED false positive - 20160518 - WebBreacher","verified 20160503 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "SmugMug",
@@ -1460,8 +1341,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["wow"],
          "category" : "images",
-         "valid" : true,
-         "comments" : ["verified 20160503 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "smule",
@@ -1472,8 +1352,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["test"],
          "category" : "music",
-         "valid" : true,
-         "comments" : ["verified 20160503 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "snooth",
@@ -1484,8 +1363,7 @@
          "account_missing_code" : "200",
          "known_accounts" : ["test123"],
          "category" : "food",
-         "valid" : true,
-         "comments" : ["verified 20160503 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "SoundCloud",
@@ -1496,8 +1374,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["test123"],
          "category" : "music",
-         "valid" : true,
-         "comments" : ["Verified 20170228 - L0r3m1p5um"]
+         "valid" : true
       },
       {
          "name" : "Soup",
@@ -1508,8 +1385,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["test"],
          "category" : "blog",
-         "valid" : true,
-         "comments" : ["Verified 20170228 - L0r3m1p5um","broken 20170207 WebBreacher","verified 20160503 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "Speaker Deck",
@@ -1520,8 +1396,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["petecheslock"],
          "category" : "presos",
-         "valid" : true,
-         "comments" : ["verified 20160503 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "sporcle",
@@ -1532,8 +1407,7 @@
          "account_missing_code" : "200",
          "known_accounts" : ["test","lolshortee"],
          "category" : "gaming",
-         "valid" : true,
-         "comments" : ["Verified 20180228 - WebBreacher", "verified 20160503 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "Steam",
@@ -1544,8 +1418,7 @@
          "account_missing_code" : "200",
          "known_accounts" : ["test"],
          "category" : "gaming",
-         "valid" : true,
-         "comments" : ["verified 20160503 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "StoryCorps",
@@ -1556,8 +1429,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["jthorstad","paul-swider"],
          "category" : "blog",
-         "valid" : true,
-         "comments" : ["verified 20180228 - WebBreacher", "verified 20161218 - L0r3m1p5um"]
+         "valid" : true
       },
       {
          "name" : "stupidcancer",
@@ -1568,8 +1440,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["myriam"],
          "category" : "health",
-         "valid" : true,
-         "comments" : ["verified - 20160511 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "TF2 Backpack Examiner",
@@ -1580,8 +1451,7 @@
          "account_missing_code" : "302",
          "known_accounts" : ["test"],
          "category" : "gaming",
-         "valid" : true,
-         "comments" : ["verified 20160503 - mmaczko"]
+         "valid" : true
       },
       {
          "name" : "theguardian",
@@ -1592,8 +1462,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["SE7ite","TimmRanson"],
          "category" : "news",
-         "valid" : true,
-         "comments" : ["Verified 20180228 - WebBreacher","Changed existence string. Verified 2016-11-02 WebBreacher", "verified 20160503 - mmaczko"]
+         "valid" : true
       },
       {
          "name" : "tripadvisor",
@@ -1604,8 +1473,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["john","test"],
          "category" : "travel",
-         "valid" : true,
-         "comments" : ["verified - 20160511 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "Tripit",
@@ -1616,8 +1484,7 @@
          "account_missing_code" : "302",
          "known_accounts" : ["Kristin444"],
          "category" : "travel",
-         "valid" : true,
-         "comments" : ["Validated 2015-11-01 WebBreacher","verified 20160503 - mmaczko"]
+         "valid" : true
       },
       {
          "name" : "tumblr",
@@ -1628,8 +1495,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["test","test1"],
          "category" : "images",
-         "valid" : true,
-         "comments" : ["Verified 20170228 - L0r3m1p5um", "broken 20170207 WebBreacher","verified = 20160511 - WebBreacher","verified 20160503 - mmaczko"]
+         "valid" : true
       },
       {
          "name" : "Twitch",
@@ -1640,8 +1506,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["test","john"],
          "category" : "video",
-         "valid" : true,
-         "comments" : ["verified 20180228 - WebBreacher", "verified 20161218 - L0r3m1p5um"]
+         "valid" : true
       },
       {
          "name" : "Twitter",
@@ -1652,8 +1517,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["WebBreacher","osintninja"],
          "category" : "social",
-         "valid" : true,
-         "comments" : ["verified - 20160511 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "untappd",
@@ -1664,8 +1528,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["test","phil"],
          "category" : "drugs",
-         "valid" : true,
-         "comments" : ["verified - 20160511 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "uSTREAM",
@@ -1676,8 +1539,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["wukf","johndoe"],
          "category" : "video",
-         "valid" : true,
-         "comments" : ["Verified 20180228 - WebBreacher","verified - 20160511 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "Vampire Freaks",
@@ -1688,8 +1550,7 @@
          "account_missing_code" : "200",
          "known_accounts" : ["jet", "PoisonApple"],
          "category" : "social",
-         "valid" : true,
-         "comments" : ["Initial add 2016-11-02 WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "viddler",
@@ -1700,8 +1561,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["GamingParodies","planphilly"],
          "category" : "video",
-         "valid" : true,
-         "comments" : ["verified - 20160509 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "VideoLike",
@@ -1712,8 +1572,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["test","john"],
          "category" : "video",
-         "valid" : true,
-         "comments" : ["verified - 20160509 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "Vimeo",
@@ -1724,8 +1583,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["test"],
          "category" : "video",
-         "valid" : true,
-         "comments" : ["verified - 20160509 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "Vine",
@@ -1737,8 +1595,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["TomHarlock","Seks"],
          "category" : "video",
-         "valid" : true,
-         "comments" : ["verified - 20160509 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "VK",
@@ -1749,8 +1606,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["mike.kidlazy","ches_ches"],
          "category" : "social",
-         "valid" : true,
-         "comments" : ["Verified 20170228 - L0r3m1p5um", "broken 20170207 WebBreacher","Initial load. 2016-11-02 WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "Voat",
@@ -1762,8 +1618,7 @@
          "known_accounts" : ["john","test"],
          "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "social",
-         "valid" : true,
-         "comments" : ["verified 20161231 - L0r3m1p5um"]
+         "valid" : true
       },
       {
          "name" : "Voices.com",
@@ -1774,8 +1629,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["briankirchoff","bryankopta"],
          "category" : "business",
-         "valid" : true,
-         "comments" : ["verified - 20180228 - WebBreacher","verified - 20160509 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "Wanelo",
@@ -1786,8 +1640,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["test"],
          "category" : "shopping",
-         "valid" : true,
-         "comments" : ["verified - 20160509 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "wattpad",
@@ -1798,8 +1651,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["Test123","newadult"],
          "category" : "social",
-         "valid" : true,
-         "comments" : ["Fixed existence string. Verified 2016-11-02 WebBreacher", "bad result 20160917 - WebBreacher","verified - 20160509 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "wishlistr",
@@ -1810,8 +1662,7 @@
          "account_missing_code" : "302",
          "known_accounts" : ["test"],
          "category" : "shopping",
-         "valid" : true,
-         "comments" : ["verified - 20160509 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "Wikipedia",
@@ -1822,8 +1673,7 @@
          "account_missing_code" : "301",
          "known_accounts" : ["Mcd51"],
          "category" : "",
-         "valid" : true,
-         "comments" : ["verified - 20160509 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "WordPress",
@@ -1834,8 +1684,7 @@
          "account_missing_code" : "302",
          "known_accounts" : ["test"],
          "category" : "blog",
-         "valid" : true,
-         "comments" : ["verified - 20160509 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "WordPress Support",
@@ -1846,8 +1695,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["test"],
          "category" : "blog",
-         "valid" : true,
-         "comments" : ["verified - 20160509 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "Xanga",
@@ -1858,8 +1706,7 @@
          "account_missing_code" : "302",
          "known_accounts" : ["john"],
          "category" : "blog",
-         "valid" : true,
-         "comments" : ["verified - 20160509 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "Xbox Gamertag",
@@ -1870,8 +1717,7 @@
          "account_missing_code" : "500",
          "known_accounts" : ["test"],
          "category" : "gaming",
-         "valid" : true,
-         "comments" : ["verified - 20160509 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "xHamster",
@@ -1882,8 +1728,7 @@
          "account_missing_code" : "500",
          "known_accounts" : ["webyoung"],
          "category" : "XXX PORN XXX",
-         "valid" : true,
-         "comments" : ["Changed test account. Verified 20180228 - WebBreacher","Changed default test account. Verified 2016-11-02 WebBreacher", "bad result 20160917 - WebBreacher","verified - 20160511 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "XVIDEOS",
@@ -1894,8 +1739,7 @@
          "account_missing_code" : "200",
          "known_accounts" : ["chloe-foster","just-amber"],
          "category" : "XXX PORN XXX",
-         "valid" : true,
-         "comments" : ["Changed existence string - 2016-12-18 - WebBreacher", "verified - 20160511 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "YouTube",
@@ -1906,8 +1750,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["test"],
          "category" : "video",
-         "valid" : true,
-         "comments" : ["verified - 20160509 - WebBreacher"]
+         "valid" : true
       },
       {
          "name" : "Zooppa",
@@ -1919,8 +1762,7 @@
          "account_missing_code" : "200",
          "known_accounts" : ["test","hacker"],
          "category" : "social",
-         "valid" : true,
-         "comments" : ["verified - 20160509 - WebBreacher"]
+         "valid" : true
       }
    ]
 }
