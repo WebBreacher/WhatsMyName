@@ -367,7 +367,7 @@
          "account_existence_string" : "og:url",
          "account_missing_string" : "This page isn't available",
          "account_missing_code" : "404",
-         "known_accounts" : ["john.heckle.9"],
+         "known_accounts" : ["zuck"],
          "category" : "social",
          "valid" : true
       },
@@ -408,35 +408,11 @@
          "name" : "Flipboard",
          "check_uri" : "https://flipboard.com/@{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "Keep up with",
-         "account_missing_string" : "<title>Flipboard</title>",
+         "account_existence_string" : " on Flipboard</title>",
+         "account_missing_string" : "<title></title>",
          "account_missing_code" : "404",
-         "known_accounts" : ["test","john"],
+         "known_accounts" : ["flipboard"],
          "category" : "tech",
-         "valid" : true
-      },
-      {
-         "name" : "Foodspotting",
-         "check_uri" : "http://www.foodspotting.com/{account}",
-         "account_existence_code" : "200",
-         "account_existence_string" : "reviews of favorite dishes",
-         "account_missing_string" : "",
-         "account_missing_code" : "404",
-         "known_accounts" : ["test","john"],
-         "known_missing_accounts" : ["johndoe"],
-         "category" : "social",
-         "valid" : true
-      },
-      {
-         "name" : "Fotolog",
-         "check_uri" : "http://www.fotolog.com/{account}/",
-         "account_existence_code" : "200",
-         "account_existence_string" : "Avatar",
-         "account_missing_string" : "The requested page could not be found",
-         "account_missing_code" : "404",
-         "known_accounts" : ["test","johndoe"],
-         "known_missing_accounts" : ["does-not-exist"],
-         "category" : "images",
          "valid" : true
       },
       {
@@ -487,11 +463,11 @@
       },
       {
          "name" : "FriendFinder-X",
-         "check_uri" : "http://www.friendfinder-x.com/profile/{account}",
+         "check_uri" : "https://www.friendfinder-x.com/profile/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "Member Since",
-         "account_missing_string" : "",
-         "account_missing_code" : "200",
+         "account_existence_string" : "Member Since:",
+         "account_missing_string" : "The document has moved",
+         "account_missing_code" : "302",
          "known_accounts" : ["john"],
          "category" : "dating",
          "valid" : true
