@@ -474,12 +474,12 @@
       },
       {
          "name" : "FunnyOrDie",
-         "check_uri" : "http://www.funnyordie.com/{account}",
+         "check_uri" : "https://www.funnyordie.com/users/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "Subscribe to ",
+         "account_existence_string" : "Last Login:",
          "account_missing_string" : "404 Not Found",
          "account_missing_code" : "404",
-         "known_accounts" : ["john"],
+         "known_accounts" : ["graciehughes_FOD"],
          "category" : "video",
          "valid" : true
       },
@@ -673,17 +673,6 @@
          "valid" : true
       },
       {
-         "name" : "Klout",
-         "check_uri" : "https://klout.com/{account}",
-         "account_existence_code" : "200",
-         "account_existence_string" : "user-details-container",
-         "account_missing_string" : "does not exist",
-         "account_missing_code" : "404",
-         "known_accounts" : ["test123","john"],
-         "category" : "social",
-         "valid" : true
-      },
-      {
          "name" : "Kongregate",
          "check_uri" : "http://www.kongregate.com/accounts/{account}",
          "account_existence_code" : "200",
@@ -714,17 +703,6 @@
          "account_missing_code" : "200",
          "known_accounts" : ["test","john"],
          "category" : "books",
-         "valid" : true
-      },
-      {
-         "name" : "LinkedIn",
-         "check_uri" : "https://www.linkedin.com/in/{account}",
-         "account_existence_code" : "200",
-         "account_existence_string" : "See who you know in common",
-         "account_missing_string" : "sessionRedirect",
-         "account_missing_code" : "999",
-         "known_accounts" : ["vanessadimauro"],
-         "category" : "business",
          "valid" : true
       },
       {
@@ -772,18 +750,6 @@
          "account_missing_code" : "404",
          "known_accounts" : ["mrsparkzalot","valleyrec420"],
          "category" : "drugs",
-         "valid" : true
-      },
-      {
-         "name" : "Matchdoctor",
-         "check_uri" : "http://www.matchdoctor.com/profile_{account}.html",
-         "account_existence_code" : "200",
-         "account_existence_string" : "Last Activity:",
-         "account_missing_string" : "File or directory not found",
-         "account_missing_code" : "404",
-         "known_accounts" : ["test", "john"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
-         "category" : "dating",
          "valid" : true
       },
       {
@@ -1056,7 +1022,7 @@
       },
       {
          "name" : "Pornhub",
-         "check_uri" : "http://www.pornhub.com/users/{account}",
+         "check_uri" : "https://www.pornhub.com/users/{account}",
          "account_existence_code" : "200",
          "account_existence_string" : "s Profile - Pornhub.com</title>",
          "account_missing_string" : "Error Page Not Found",
@@ -1079,7 +1045,7 @@
       },
       {
          "name" : "PSNProfiles",
-         "check_uri" : "http://psnprofiles.com/{account}",
+         "check_uri" : "https://psnprofiles.com/{account}",
          "account_existence_code" : "200",
          "account_existence_string" : "'s PSN Profile",
          "account_missing_string" : "",
@@ -1089,23 +1055,12 @@
          "valid" : true
       },
       {
-         "name" : "raptr",
-         "check_uri" : "http://raptr.com/{account}/about",
-         "account_existence_code" : "200",
-         "account_existence_string" : "Recently Played Games",
-         "account_missing_string" : "We couldn't find what you were looking",
-         "account_missing_code" : "404",
-         "known_accounts" : ["omgmichaelr0ck5","Jagthier"],
-         "category" : "gaming",
-         "valid" : true
-      },
-      {
          "name" : "reddit",
          "check_uri" : "https://www.reddit.com/user/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : " Post Karma<br/>",
+         "account_existence_string" : "Cake day",
          "account_missing_string" : "page not found",
-         "account_missing_code" : "404",
+         "account_missing_code" : "200",
          "known_accounts" : ["mayorpaco", "leafstar2"],
          "category" : "news",
          "valid" : true
@@ -1123,9 +1078,9 @@
       },
       {
          "name" : "Rotten Tomatoes",
-         "check_uri" : "https://www.rottentomatoes.com/critic/{account}/",
+         "check_uri" : "https://www.rottentomatoes.com/critic/{account}/movies/",
          "account_existence_code" : "200",
-         "account_existence_string" : "jsonLdSchema",
+         "account_existence_string" : "Movies Reviews & Previews",
          "account_missing_string" : "Sorry, please try again later",
          "account_missing_code" : "404",
          "known_accounts" : ["guy-lodge","matthew-lickona"],
@@ -1134,7 +1089,7 @@
       },
       {
          "name" : "scratch",
-         "check_uri" : "http://scratch.mit.edu/users/{account}/",
+         "check_uri" : "https://scratch.mit.edu/users/{account}/",
          "account_existence_code" : "200",
          "account_existence_string" : "on Scratch</title>",
          "account_missing_string" : "We couldn't find the page you're looking for.",
@@ -1150,7 +1105,7 @@
          "account_existence_string" : " - SEOClerks</title>",
          "account_missing_string" : "User not found",
          "account_missing_code" : "200",
-         "known_accounts" : ["eljefeseo","gokudadon"],
+         "known_accounts" : ["Vfmseo","gokudadon"],
          "category" : "social",
          "valid" : true
       },
@@ -1163,28 +1118,6 @@
          "account_missing_code" : "404",
          "known_accounts" : ["jesus"],
          "category" : "music",
-         "valid" : true
-      },
-      {
-         "name" : "Shopcade",
-         "check_uri" : "http://www.shopcade.com/{account}",
-         "account_existence_code" : "200",
-         "account_existence_string" : ") on Shopcade",
-         "account_missing_string" : "he link you followed may be broken",
-         "account_missing_code" : "404",
-         "known_accounts" : ["test123"],
-         "category" : "shopping",
-         "valid" : true
-      },
-      {
-         "name" : "SingleMuslim",
-         "check_uri" : "https://mobile.singlemuslim.com/?profile={account}",
-         "account_existence_code" : "200",
-         "account_existence_string" : "Registration Reason",
-         "account_missing_string" : "Home- Islamic",
-         "account_missing_code" : "200",
-         "known_accounts" : ["SaimD85","shabiruddin","firdha91"],
-         "category" : "dating",
          "valid" : true
       },
       {
@@ -1244,7 +1177,7 @@
       },
       {
          "name" : "smule",
-         "check_uri" : "http://www.smule.com/{account}/",
+         "check_uri" : "https://www.smule.com/{account}/",
          "account_existence_code" : "200",
          "account_existence_string" : "Recommended Recordings",
          "account_missing_string" : "The page you are looking for is probably stuck in the dryer again",
@@ -1301,10 +1234,10 @@
          "name" : "sporcle",
          "check_uri" : "https://www.sporcle.com/user/{account}/people/",
          "account_existence_code" : "200",
-         "account_existence_string" : "'s Sporcle People",
+         "account_existence_string" : "'s Sporcle Friends",
          "account_missing_string" : "This Sporcle user cannot be found.",
          "account_missing_code" : "200",
-         "known_accounts" : ["test","lolshortee"],
+         "known_accounts" : ["Test","lolshortee"],
          "category" : "gaming",
          "valid" : true
       },
@@ -1331,17 +1264,6 @@
          "valid" : true
       },
       {
-         "name" : "stupidcancer",
-         "check_uri" : "http://stupidcancer.org/community/profile/{account}",
-         "account_existence_code" : "200",
-         "account_existence_string" : "- Stupid Cancer Community</title>",
-         "account_missing_string" : "User not found",
-         "account_missing_code" : "404",
-         "known_accounts" : ["myriam"],
-         "category" : "health",
-         "valid" : true
-      },
-      {
          "name" : "TF2 Backpack Examiner",
          "check_uri" : "http://www.tf2items.com/id/{account}/",
          "account_existence_code" : "200",
@@ -1354,12 +1276,12 @@
       },
       {
          "name" : "theguardian",
-         "check_uri" : "https://witness.theguardian.com/user/{account}",
+         "check_uri" : "https://www.theguardian.com/profile/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "search?user=",
-         "account_missing_string" : "Sorry, we can't find that page",
+         "account_existence_string" : "https://www.theguardian.com/profile/",
+         "account_missing_string" : "Page not found | The Guardian",
          "account_missing_code" : "404",
-         "known_accounts" : ["SE7ite","TimmRanson"],
+         "known_accounts" : ["minna-salami","johnnaughton"],
          "category" : "news",
          "valid" : true
       },
