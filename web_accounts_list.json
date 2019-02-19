@@ -229,6 +229,17 @@
          "valid" : true
       },
       {
+         "name" : "codementor",
+         "check_uri" : "https://www.codementor.io/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "ABOUT ME",
+         "account_missing_string" : "404/favicon.png",
+         "account_missing_code" : "404",
+         "known_accounts" : ["e4c5"],
+         "category" : "education",
+         "valid" : true
+      },
+      {
          "name" : "COLOURlovers",
          "check_uri" : "http://www.colourlovers.com/lover/{account}",
          "account_existence_code" : "200",
@@ -394,7 +405,7 @@
          "valid" : true
       },
       {
-         "name" : "facebook.com",
+         "name" : "Facebook",
          "check_uri" : "https://www.facebook.com/{account}",
          "account_existence_code" : "200",
          "account_existence_string" : "og:url",
@@ -574,6 +585,17 @@
          "valid" : true
       },
       {
+         "name" : "Hacker News",
+         "check_uri" : "https://news.ycombinator.com/user?id={account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "created:",
+         "account_missing_string" : "No such user.",
+         "account_missing_code" : "200",
+         "known_accounts" : ["mubix","egypt"],
+         "category" : "hacker",
+         "valid" : true
+      },
+      {
          "name" : "HaveIBeenPwnd",
          "check_uri" : "https://haveibeenpwned.com/api/v2/breachedaccount/{account}",
          "account_existence_code" : "200",
@@ -604,6 +626,17 @@
          "account_missing_code" : "404",
          "known_accounts" : ["Kelly","Cney"],
          "category" : "health",
+         "valid" : true
+      },
+      {
+         "name" : "IFTTT",
+         "check_uri" : "https://ifttt.com/p/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "Joined",
+         "account_missing_string" : "The requested page or file does not exist",
+         "account_missing_code" : "404",
+         "known_accounts" : ["nr9992","sss90"],
+         "category" : "misc",
          "valid" : true
       },
       {
