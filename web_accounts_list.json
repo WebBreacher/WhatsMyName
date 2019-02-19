@@ -18,24 +18,13 @@
          "valid" : true
       },
       {
-         "name" : "AdultFriendFinder",
-         "check_uri" : "http://imcservices.passion.com/profile/{account}",
-         "account_existence_code" : "200",
-         "account_existence_string" : "Sexual Orientation:",
-         "account_missing_string" : "",
-         "account_missing_code" : "404",
-         "known_accounts" : ["mike"],
-         "category" : "dating",
-         "valid" : true
-      },
-      {
          "name" : "AngelList",
-         "check_uri" : "https://angel.co/{account}?utm_source=people",
+         "check_uri" : "https://angel.co/{account}",
          "account_existence_code" : "200",
          "account_existence_string" : "to find connections to",
-         "account_missing_string" : "Page not found",
+         "account_missing_string" : "Page not found - 404 - AngelList",
          "account_missing_code" : "404",
-         "known_accounts" : ["jill", "john"],
+         "known_accounts" : ["sacca"],
          "category" : "tech",
          "valid" : true
       },
@@ -59,28 +48,6 @@
          "account_missing_code" : "404",
          "known_accounts" : ["test"],
          "category" : "social",
-         "valid" : true
-      },
-      {
-         "name" : "Atlassian Self-Signup",
-         "check_uri" : "https://{account}.atlassian.net/admin/rest/um/1/apps/navigation",
-         "account_existence_code" : "401",
-         "account_existence_string" : "User failed to authenticate",
-         "account_missing_string" : "<title>Atlassian Cloud Notifications - Page Unavailable",
-         "account_missing_code" : "503",
-         "known_accounts" : ["tshock"],
-         "category" : "coding",
-         "valid" : true
-      },
-      {
-         "name" : "AudioBoom",
-         "check_uri" : "https://audioboom.com/{account}",
-         "account_existence_code" : "200",
-         "account_existence_string" : "avatar-image",
-         "account_missing_string" : ["Page not found"],
-         "account_missing_code" : "404",
-         "known_accounts" : ["test", "john"],
-         "category" : "video",
          "valid" : true
       },
       {
@@ -140,17 +107,6 @@
          "valid" : true
       },
       {
-         "name" : "Black Planet",
-         "check_uri" : "http://www.blackplanet.com/{account}/",
-         "account_existence_code" : "200",
-         "account_existence_string" : "username=",
-         "account_missing_string" : "Page not found",
-         "account_missing_code" : "404",
-         "known_accounts" : ["test", "john"],
-         "category" : "social",
-         "valid" : true
-      },
-      {
          "name" : "Blogmarks",
          "check_uri" : "http://blogmarks.net/user/{account}",
          "account_existence_code" : "200",
@@ -185,24 +141,13 @@
          "valid" : true
       },
       {
-         "name" : "Break",
-         "check_uri" : "http://www.break.com/user/{account}",
-         "account_existence_code" : "200",
-         "account_existence_string" : "Joined Break in",
-         "account_missing_string" : "Must Watch Today",
-         "account_missing_code" : "302",
-         "known_accounts" : ["test"],
-         "category" : "video",
-         "valid" : true
-      },
-      {
          "name" : "Bugcrowd",
          "check_uri" : "https://bugcrowd.com/{account}",
          "account_existence_code" : "200",
          "account_existence_string" : "ResearcherDashboard",
          "account_missing_string" : ">Bugcrowd | Error",
          "account_missing_code" : "404",
-         "known_accounts" : ["Bitquark","RobertK"],
+         "known_accounts" : ["Bitquark"],
          "category" : "hacker",
          "valid" : true
       },
@@ -214,17 +159,6 @@
          "account_missing_string" : "We can't find the page you're looking for",
          "account_missing_code" : "404",
          "known_accounts" : ["talhaishaq2001","RobertK"],
-         "category" : "social",
-         "valid" : true
-      },
-      {
-         "name" : "cafemom",
-         "check_uri" : "http://www.cafemom.com/home/{account}",
-         "account_existence_code" : "200",
-         "account_existence_string" : "member-about",
-         "account_missing_string" : "is not a CafeMom member.",
-         "account_missing_code" : "200",
-         "known_accounts" : ["test"],
          "category" : "social",
          "valid" : true
       },
@@ -270,17 +204,6 @@
          "account_missing_code" : "",
          "known_accounts" : ["test"],
          "category" : "hobby",
-         "valid" : true
-      },
-      {
-         "name" : "Conferize",
-         "check_uri" : "https://www.conferize.com/modal/user/{account}.json",
-         "account_existence_code" : "200",
-         "account_existence_string" : "status\":\"ok",
-         "account_missing_string" : "status\":\"not_found",
-         "account_missing_code" : "404",
-         "known_accounts" : ["avves", "john"],
-         "category" : "social",
          "valid" : true
       },
       {
@@ -356,7 +279,7 @@
          "account_existence_string" : "<title>Disqus Profile",
          "account_missing_string" : "Page not found (404) - Disqus",
          "account_missing_code" : "404",
-         "known_accounts" : ["carlosharm"],
+         "known_accounts" : ["Aristotelian1","50calibercat"],
          "category" : "discussion",
          "valid" : true
       },
