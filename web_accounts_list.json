@@ -7,6 +7,17 @@
    "authors" : ["WebBreacher","Munchko","L0r3m1p5um","lehuff"],
    "sites" : [
       {
+         "name" : "9GAG",
+         "check_uri" : "https://9gag.com/u/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : " - 9GAG</title>",
+         "account_missing_string" : "404 Nothing here",
+         "account_missing_code" : "404",
+         "known_accounts" : ["_fatbatman_","strangelov3"],
+         "category" : "social",
+         "valid" : true
+      },
+      {
          "name" : "about.me",
          "check_uri" : "https://about.me/{account}",
          "account_existence_code" : "200",
@@ -163,6 +174,17 @@
          "valid" : true
       },
       {
+         "name" : "Canva",
+         "check_uri" : "https://www.canva.com/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "&ndash; Canva</title>",
+         "account_missing_string" : "Sorry, the page you are",
+         "account_missing_code" : "404",
+         "known_accounts" : ["marketplacedesigners","john"],
+         "category" : "business",
+         "valid" : true
+      },
+      {
          "name" : "cash.me",
          "check_uri" : "https://cash.me/${account}",
          "account_existence_code" : "200",
@@ -193,6 +215,17 @@
          "account_missing_code" : "302",
          "known_accounts" : ["john"],
          "category" : "hobby",
+         "valid" : true
+      },
+      {
+         "name" : "Codeacademy",
+         "check_uri" : "https://discuss.codecademy.com/u/{account}/summary",
+         "account_existence_code" : "200",
+         "account_existence_string" : "<title>  Profile - ",
+         "account_missing_string" : "Oops! That page doesn’t exist",
+         "account_missing_code" : "404",
+         "known_accounts" : ["doctypeme","jon_morris"],
+         "category" : "education",
          "valid" : true
       },
       {
@@ -899,6 +932,17 @@
          "valid" : true
       },
       {
+         "name" : "Patreon",
+         "check_uri" : "https://www.patreon.com/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "Become a patron of",
+         "account_missing_string" : "Oh no! Looks like you got lost.",
+         "account_missing_code" : "404",
+         "known_accounts" : ["mubix","doughboys"],
+         "category" : "finance",
+         "valid" : true
+      },
+      {
          "name" : "Periscope",
          "check_uri" : "https://www.periscope.tv/{account}",
          "account_existence_code" : "200",
@@ -1088,6 +1132,17 @@
          "valid" : true
       },
       {
+         "name" : "Scribd",
+         "check_uri" : "https://scratch.mit.edu/users/{account}/",
+         "account_existence_code" : "200",
+         "account_existence_string" : "on Scratch</title>",
+         "account_missing_string" : "We couldn't find the page you're looking for.",
+         "account_missing_code" : "404",
+         "known_accounts" : ["griffpatch"],
+         "category" : "coding",
+         "valid" : true
+      },
+      {
          "name" : "SEOClerks",
          "check_uri" : "https://www.seoclerks.com/user/{account}",
          "account_existence_code" : "200",
@@ -1228,6 +1283,17 @@
          "account_missing_code" : "200",
          "known_accounts" : ["Test","lolshortee"],
          "category" : "gaming",
+         "valid" : true
+      },
+      {
+         "name" : "Spotify",
+         "check_uri" : "https://open.spotify.com/user/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "Public Playlists",
+         "account_missing_string" : "<title>Whoops!",
+         "account_missing_code" : "404",
+         "known_accounts" : ["john"],
+         "category" : "music",
          "valid" : true
       },
       {
