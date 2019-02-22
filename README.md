@@ -76,7 +76,7 @@ If you just want to run this script to check user names on sites and don't wish 
 There is a bash script `whatsmyname.sh` in the repository that uses Zenity to run the Python standalone checker.
 
 # Updates
-I update this project as I have time and would *LOVE* to have interested people help maintain and grow it. Please reach to me webbreacher {at} gmail {dot} com if you are interested.
+I update this project as I have time and would *LOVE* to have interested people help maintain and grow it. Please reach to me webbreacher {at} protonmail {dot} com if you are interested.
 
 # Contributors
 [@WebBreacher](https://github.com/WebBreacher/)<br>
