@@ -2,8 +2,7 @@
 
 """
     Author : Micah Hoffman (@WebBreacher)
-    Description : Takes each username from the web_accounts_list.json file and performs the lookup to see if the
-                  discovery determinator is still valid
+    Description : Takes each username from the web_accounts_list.json file and performs the lookup to see if the discovery determinator is still valid
 
     TODO -
         1 - Make it so the script will toggle validity factor per entry and write to output file
@@ -31,8 +30,7 @@ import codecs
 # Variables && Functions
 ###################
 # Set HTTP Header info.
-headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
-           '(KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36'}
+headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:65.0) Gecko/20100101 Firefox/65.0'}
 
 # Parse command line input
 parser = argparse.ArgumentParser(description="This standalone script will look up a single username using the JSON file"
