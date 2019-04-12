@@ -372,7 +372,7 @@
          "name" : "discuss.elastic.co",
          "check_uri" : "https://discuss.elastic.co/u/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "regist_at",
+         "account_existence_string" : "<title>  Profile",
          "account_missing_string" : "Oops!",
          "account_missing_code" : "404",
          "known_accounts" : ["whoami", "johndoe"],
