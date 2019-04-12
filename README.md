@@ -83,6 +83,7 @@ I update this project as I have time and would *LOVE* to have interested people 
 [@Munchko](https://github.com/Munchko/)<br>
 [@L0r3m1p5um](https://github.com/L0r3m1p5um/)<br>
 [@lehuff](https://github.com/lehuff/)<br>
+[@arnydo](https://github.com/arnydo)<br>
 [@janbinx](https://github.com/janbinx/)<br>
 
 # License
