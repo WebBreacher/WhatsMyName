@@ -562,9 +562,9 @@
          "valid" : true
       },
       {
-			"name" : "Geocaching",
-			"check_uri" : "https://www.geocaching.com/profile/?u={account}",
-			"account_existence_code" : "200",
+	 "name" : "Geocaching",
+         "check_uri" : "https://www.geocaching.com/profile/?u={account}",
+         "account_existence_code" : "200",
          "account_existence_string" : "Profile for User: ",
          "account_missing_string" : "Error 404: DNF",
          "account_missing_code" : "404",
@@ -573,9 +573,9 @@
          "valid" : true,
       },
       {
-			"name" : "Giphy",
-			"check_uri" : "https://giphy.com/channel/{account}",
-			"account_existence_code" : "200",
+         "name" : "Giphy",
+         "check_uri" : "https://giphy.com/channel/{account}",
+         "account_existence_code" : "200",
          "account_existence_string" : "Share on GIPHY</title>",
          "account_missing_string" : "<title>404 Not Found</title>",
          "account_missing_code" : "404",
@@ -596,9 +596,9 @@
          "valid" : true
       },
       {
-			"name" : "GitLab",
-			"check_uri" : "https://gitlab.com/{account}",
-			"account_existence_code" : "200",
+         "name" : "GitLab",
+         "check_uri" : "https://gitlab.com/{account}",
+         "account_existence_code" : "200",
          "account_existence_string" : "Member since",
          "account_missing_string" : "GitLab.com offers free unlimited",
          "account_missing_code" : "200",
@@ -931,9 +931,9 @@
          "valid" : true
       },
       {
-			"name" : "Minecraft",
-			"check_uri" : "https://namemc.com/name/{account}",
-			"account_existence_code" : "200",
+         "name" : "Minecraft",
+         "check_uri" : "https://namemc.com/name/{account}",
+         "account_existence_code" : "200",
          "account_existence_string" : "name",
          "account_missing_string" : "The server has not found anything matching the request URI",
          "account_missing_code" : "404",
@@ -1042,9 +1042,9 @@
          "valid" : true
       },
       {
-			"name" : "OnlyFans",
-			"check_uri" : "https://onlyfans.com/{account}",
-			"account_existence_code" : "200",
+         "name" : "OnlyFans",
+         "check_uri" : "https://onlyfans.com/{account}",
+         "account_existence_code" : "200",
          "account_existence_string" : "Posts",
          "account_missing_string" : "this page is not available",
          "account_missing_code" : "404",
@@ -1209,9 +1209,9 @@
          "valid" : true,
       },
       {
-			"name" : "Pornhub Porn Stars",
-			"check_uri" : "https://www.pornhub.com/pornstar/{account}",
-			"account_existence_code" : "200",
+         "name" : "Pornhub Porn Stars",
+         "check_uri" : "https://www.pornhub.com/pornstar/{account}",
+         "account_existence_code" : "200",
          "account_existence_string" : "Pornstar Rank",
          "account_missing_string" : "We couldn’t find what you’re looking for",
          "account_missing_code" : "404",
