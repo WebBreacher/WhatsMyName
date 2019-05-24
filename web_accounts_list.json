@@ -570,7 +570,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["moun10bike","niraD"],
          "category" : "social",
-         "valid" : true,
+         "valid" : true
       },
       {
          "name" : "Giphy",
@@ -581,7 +581,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["buzz","test"],
          "category" : "social",
-         "valid" : true,
+         "valid" : true
       },
       {
          "name" : "GitHub",
@@ -604,7 +604,7 @@
          "account_missing_code" : "200",
          "known_accounts" : ["skennedy","KennBro"],
          "category" : "coding",
-         "valid" : true,
+         "valid" : true
       },
       {
          "name" : "goodreads",
@@ -939,7 +939,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["Alice","Bob"],
          "category" : "gaming",
-         "valid" : true,
+         "valid" : true
       },
       {
          "name" : "Mixcloud",
@@ -1050,7 +1050,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["kyliesummers","draeaxtell"],
          "category" : "social",
-         "valid" : true,
+         "valid" : true
       },
       {
          "name" : "OpenStreetMap",
@@ -1200,13 +1200,13 @@
       {
          "name" : "Pornhub Models",
          "check_uri" : "https://www.pornhub.com/model/{account}",
-         "account_existence_code" : "200"
+         "account_existence_code" : "200",
          "account_existence_string" : " Porn Videos &#124; Pornhub",
          "account_missing_string" : "We couldn't find what you're looking for",
          "account_missing_code" : "404",
          "known-accounts" : ["tinna-angel","lisa-ann"],
          "category" : "XXX PORN XXX",
-         "valid" : true,
+         "valid" : true
       },
       {
          "name" : "Pornhub Porn Stars",
@@ -1217,7 +1217,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["riley-reid","alex-adams"],
          "category" : "XXX PORN XXX",
-         "valid" : true,
+         "valid" : true
       },
       {
          "name" : "Pornhub Users",
@@ -1499,7 +1499,7 @@
          "name" : "Taringa",
          "check_uri" : "https://www.taringa.net/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "comentarios">Comments</a>",
+         "account_existence_string" : "comentarios\">Comments</a>",
          "account_missing_string" : "/dist/404Retina.png",
          "account_missing_code" : "404",
          "known_accounts" : ["jocaxav","engendrometal"],
