@@ -24,10 +24,8 @@ Within the "sites" elements, the format is as follows (with several parameters b
          "account_missing_string" : "this OPTIONAL string will only be in the response if there is no account found ",
          "account_missing_code" : "the HTTP response code for a bad 'account is not there' response",
          "known_accounts" : ["a list of user accounts that can be used to test","for user enumeration"],
-         "allowed_types" : ["these are the types of data and categories of the content"],
          "category" : "a category for what the site is mainly used for",
-         "valid" : "this true or false boolean field is used to enable or disable this site element",
-         "comments" : ["a list of comments including when this was last verified and outcomes"]
+         "valid" : "this true or false boolean field is used to enable or disable this site element"
       },
       ...
 ```
@@ -45,10 +43,8 @@ Here is an example of a site element:
          "account_missing_string" : ["Not Found"],
          "account_missing_code" : "404",
          "known_accounts" : ["test","webbreacher"],
-         "allowed_types" : ["String","Person","WebAccount","Username","Organization"],
          "category" : "coding",
-         "valid" : true,
-         "comments" : ["verified 11/08/2015 - webbreacher"]
+         "valid" : true
       },
       ...
 ```
@@ -80,13 +76,15 @@ If you just want to run this script to check user names on sites and don't wish 
 There is a bash script `whatsmyname.sh` in the repository that uses Zenity to run the Python standalone checker.
 
 # Updates
-I update this project as I have time and would *LOVE* to have interested people help maintain and grow it. Please reach to me webbreacher {at} gmail {dot} com if you are interested.
+I update this project as I have time and would *LOVE* to have interested people help maintain and grow it. Please reach to me webbreacher {at} protonmail {dot} com if you are interested.
 
 # Contributors
 [@WebBreacher](https://github.com/WebBreacher/)<br>
 [@Munchko](https://github.com/Munchko/)<br>
 [@L0r3m1p5um](https://github.com/L0r3m1p5um/)<br>
 [@lehuff](https://github.com/lehuff/)<br>
+[@arnydo](https://github.com/arnydo)<br>
+[@janbinx](https://github.com/janbinx/)<br>
 
 # License
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
