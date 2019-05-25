@@ -1213,9 +1213,9 @@
          "check_uri" : "https://www.pornhub.com/model/{account}",
          "account_existence_code" : "200",
          "account_existence_string" : " Porn Videos &#124; Pornhub",
-         "account_missing_string" : "We couldn't find what you're looking for",
+         "account_missing_string" : "Error Page Not Found",
          "account_missing_code" : "404",
-         "known-accounts" : ["tinna-angel","lisa-ann"],
+         "known_accounts" : ["tinna-angel","lisa-ann"],
          "category" : "XXX PORN XXX",
          "valid" : true
       },
@@ -1224,7 +1224,7 @@
          "check_uri" : "https://www.pornhub.com/pornstar/{account}",
          "account_existence_code" : "200",
          "account_existence_string" : "Pornstar Rank",
-         "account_missing_string" : "We couldn’t find what you’re looking for",
+         "account_missing_string" : "Error Page Not Found",
          "account_missing_code" : "404",
          "known_accounts" : ["riley-reid","alex-adams"],
          "category" : "XXX PORN XXX",
@@ -1636,6 +1636,17 @@
          "account_missing_code" : "200",
          "known_accounts" : ["jet", "PoisonApple"],
          "category" : "social",
+         "valid" : true
+      },
+      {
+         "name" : "viddler",
+         "check_uri" : "http://www.viddler.com/channel/{account}/",
+         "account_existence_code" : "200",
+         "account_existence_string" : "profile-details",
+         "account_missing_string" : "User not found",
+    	 "account_missing_code" : "404",
+         "known_accounts" : ["GamingParodies","planphilly"],
+         "category" : "video",
          "valid" : true
       },
       {
