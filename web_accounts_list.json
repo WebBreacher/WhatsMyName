@@ -13,7 +13,7 @@
          "account_existence_string" : " - 9GAG</title>",
          "account_missing_string" : "404 Nothing here",
          "account_missing_code" : "404",
-         "known_accounts" : ["_fatbatman_","strangelov3"],
+         "known_accounts" : ["_fatbatman_","strangelove"],
          "category" : "social",
          "valid" : true
       },
@@ -171,6 +171,17 @@
          "account_missing_code" : "404",
          "known_accounts" : ["talhaishaq2001","RobertK"],
          "category" : "social",
+         "valid" : true
+      },
+      {
+         "name" : "Buzznet",
+         "check_uri" : "https://www.buzznet.com/author/{account}/",
+         "account_existence_code" : "200",
+         "account_existence_string" : ", Author at buzznet</title>",
+         "account_missing_string" : "Page not found</title>",
+         "account_missing_code" : "404",
+         "known_accounts" : ["carolinegawlik"],
+         "category" : "news",
          "valid" : true
       },
       {
@@ -442,9 +453,9 @@
          "name" : "Fiverr",
          "check_uri" : "https://www.fiverr.com/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "Member since",
+         "account_existence_string" : " | Fiverr</title>",
          "account_missing_string" : "You are being ",
-         "account_missing_code" : "301",
+         "account_missing_code" : "302",
          "known_accounts" : ["test","gabarnes"],
          "category" : "shopping",
          "valid" : true
@@ -521,7 +532,7 @@
          "name" : "FriendFinder-X",
          "check_uri" : "https://www.friendfinder-x.com/profile/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "Member Since:",
+         "account_existence_string" : "'s Dating Profile on FriendFinder-x",
          "account_missing_string" : "The document has moved",
          "account_missing_code" : "302",
          "known_accounts" : ["john"],
@@ -562,6 +573,28 @@
          "valid" : true
       },
       {
+	 "name" : "Geocaching",
+         "check_uri" : "https://www.geocaching.com/profile/?u={account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "Profile for ",
+         "account_missing_string" : "Error 404: DNF",
+         "account_missing_code" : "404",
+         "known_accounts" : ["moun10bike","niraD"],
+         "category" : "social",
+         "valid" : true
+      },
+      {
+         "name" : "Giphy",
+         "check_uri" : "https://giphy.com/channel/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "Share on GIPHY</title>",
+         "account_missing_string" : "<title>404 Not Found</title>",
+         "account_missing_code" : "404",
+         "known_accounts" : ["buzz","test"],
+         "category" : "social",
+         "valid" : true
+      },
+      {
          "name" : "GitHub",
          "check_uri" : "https://api.github.com/users/{account}",
          "pretty_uri" : "https://github.com/{account}",
@@ -570,6 +603,17 @@
          "account_missing_string" : "Not Found",
          "account_missing_code" : "404",
          "known_accounts" : ["test","WebBreacher"],
+         "category" : "coding",
+         "valid" : true
+      },
+      {
+         "name" : "GitLab",
+         "check_uri" : "https://gitlab.com/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "Member since",
+         "account_missing_string" : "GitLab.com offers free unlimited",
+         "account_missing_code" : "200",
+         "known_accounts" : ["skennedy","KennBro"],
          "category" : "coding",
          "valid" : true
       },
@@ -611,7 +655,7 @@
          "name" : "HackerOne",
          "check_uri" : "https://hackerone.com/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "created_at",
+         "account_existence_string" : "profile that highlights",
          "account_missing_string" : "Page not found",
          "account_missing_code" : "404",
          "known_accounts" : ["yashrs","ameerpornillos"],
@@ -751,6 +795,17 @@
          "valid" : true
       },
       {
+         "name" : "kiwibox",
+         "check_uri" : "https://www.kiwibox.com/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "Gender:",
+         "account_missing_string" : "We could not find a user",
+         "account_missing_code" : "404",
+         "known_accounts" : ["alice","bob"],
+         "category" : "social",
+         "valid" : true
+      },
+      {
          "name" : "Klear",
          "check_uri" : "http://klear.com/profile/{account}",
          "account_existence_code" : "200",
@@ -810,7 +865,7 @@
          "name" : "Livejournal",
          "check_uri" : "http://{account}.livejournal.com",
          "account_existence_code" : "200",
-         "account_existence_string" : "svg xml:base",
+         "account_existence_string" : "<link rel=\"canonical\" href=\"",
          "account_missing_string" : "<title>Unknown Journal",
          "account_missing_code" : "404",
          "known_accounts" : ["jill","john"],
@@ -887,6 +942,17 @@
          "valid" : true
       },
       {
+         "name" : "Minecraft",
+         "check_uri" : "https://namemc.com/name/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "<a href=\"/profile/",
+         "account_missing_string" : "Available*",
+         "account_missing_code" : "404",
+         "known_accounts" : ["Alice","Bob"],
+         "category" : "gaming",
+         "valid" : true
+      },
+      {
          "name" : "Mixcloud",
          "check_uri" : "https://www.mixcloud.com/{account}/",
          "account_existence_code" : "200",
@@ -895,6 +961,17 @@
          "account_missing_code" : "404",
          "known_accounts" : ["test","john"],
          "category" : "music",
+         "valid" : true
+      },
+      {
+         "name" : "Mixer",
+         "check_uri" : "https://mixer.com/api/v1/channels/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "token",
+         "account_missing_string" : "Channel not found",
+         "account_missing_code" : "404",
+         "known_accounts" : ["uni05","PaladinsGame"],
+         "category" : "gaming",
          "valid" : true
       },
       {
@@ -972,6 +1049,17 @@
          "account_missing_string" : "Sorry, the page you are looking for",
          "account_missing_code" : "404",
          "known_accounts" : ["adam"],
+         "category" : "social",
+         "valid" : true
+      },
+      {
+         "name" : "OnlyFans",
+         "check_uri" : "https://onlyfans.com/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "Posts",
+         "account_missing_string" : "this page is not available",
+         "account_missing_code" : "404",
+         "known_accounts" : ["kyliesummers","draeaxtell"],
          "category" : "social",
          "valid" : true
       },
@@ -1121,7 +1209,29 @@
          "valid" : true
       },
       {
-         "name" : "Pornhub",
+         "name" : "Pornhub Models",
+         "check_uri" : "https://www.pornhub.com/model/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : " Porn Videos &#124; Pornhub",
+         "account_missing_string" : "Error Page Not Found",
+         "account_missing_code" : "404",
+         "known_accounts" : ["tinna-angel","lisa-ann"],
+         "category" : "XXX PORN XXX",
+         "valid" : true
+      },
+      {
+         "name" : "Pornhub Porn Stars",
+         "check_uri" : "https://www.pornhub.com/pornstar/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "Pornstar Rank",
+         "account_missing_string" : "Error Page Not Found",
+         "account_missing_code" : "404",
+         "known_accounts" : ["riley-reid","alex-adams"],
+         "category" : "XXX PORN XXX",
+         "valid" : true
+      },
+      {
+         "name" : "Pornhub Users",
          "check_uri" : "https://www.pornhub.com/users/{account}",
          "account_existence_code" : "200",
          "account_existence_string" : "s Profile - Pornhub.com</title>",
@@ -1229,6 +1339,17 @@
          "account_missing_code" : "404",
          "known_accounts" : ["jesus"],
          "category" : "music",
+         "valid" : true
+      },
+      {
+         "name" : "Skyrock",
+         "check_uri" : "https://{account}.skyrock.com/profil/",
+         "account_existence_code" : "200",
+         "account_existence_string" : "<title>Their Profile - ",
+         "account_missing_string" : "<title>Page not found - ",
+         "account_missing_code" : "404",
+         "known_accounts" : ["alice","bob"],
+         "category" : "social",
          "valid" : true
       },
       {
@@ -1386,6 +1507,17 @@
          "valid" : true
       },
       {
+         "name" : "Taringa",
+         "check_uri" : "https://www.taringa.net/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "comentarios\">Comments</a>",
+         "account_missing_string" : "/dist/404Retina.png",
+         "account_missing_code" : "404",
+         "known_accounts" : ["jocaxav","engendrometal"],
+         "category" : "social",
+         "valid" : true
+      },
+      {
          "name" : "TF2 Backpack Examiner",
          "check_uri" : "http://www.tf2items.com/id/{account}/",
          "account_existence_code" : "200",
@@ -1452,6 +1584,17 @@
          "valid" : true
       },
       {
+         "name" : "Twitch.tv",
+         "check_uri" : "https://passport.twitch.tv/usernames/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "",
+         "account_missing_string" : "",
+         "account_missing_code" : "204",
+         "known_accounts" : ["test","cohhcarnage"],
+         "category" : "gaming",
+         "valid" : true
+      },
+      {
          "name" : "Twitter",
          "check_uri" : "https://twitter.com/{account}",
          "account_existence_code" : "200",
@@ -1501,7 +1644,7 @@
          "account_existence_code" : "200",
          "account_existence_string" : "profile-details",
          "account_missing_string" : "User not found",
-         "account_missing_code" : "404",
+    	 "account_missing_code" : "404",
          "known_accounts" : ["GamingParodies","planphilly"],
          "category" : "video",
          "valid" : true
@@ -1682,6 +1825,17 @@
          "account_missing_code" : "404",
          "known_accounts" : ["test"],
          "category" : "video",
+         "valid" : true
+      },
+      {
+         "name" : "Xing",
+         "check_uri" : "https://www.xing.com/profile/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : " | XING</title>",
+         "account_missing_string" : "Es tut uns leid",
+         "account_missing_code" : "410",
+         "known_accounts" : ["Andy_Hausmann","Ramona_Hapke"],
+         "category" : "social",
          "valid" : true
       },
       {
