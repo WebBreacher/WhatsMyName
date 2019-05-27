@@ -964,6 +964,17 @@
          "valid" : true
       },
       {
+         "name" : "Mix",
+         "check_uri" : "https://www.mix.com/{account}/",
+         "account_existence_code" : "200",
+         "account_existence_string" : " Posts</title>",
+         "account_missing_string" : "",
+         "account_missing_code" : "302",
+         "known_accounts" : ["test","mixpicks"],
+         "category" : "social",
+         "valid" : true
+      },
+      {
          "name" : "Mixcloud",
          "check_uri" : "https://www.mixcloud.com/{account}/",
          "account_existence_code" : "200",
