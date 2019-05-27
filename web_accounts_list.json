@@ -84,6 +84,17 @@
          "valid" : true
       },
       {
+         "name" : "Bandcamp",
+         "check_uri" : "https://bandcamp.com/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : " collection | Bandcamp</title>",
+				 "account_missing_string" : "<h2>Sorry, that something isn’t here.</h2>",
+         "account_missing_code" : "404",
+         "known_accounts" : ["alice", "bob"],
+         "category" : "music",
+         "valid" : true
+      },
+      {
          "name" : "Basecamp",
          "check_uri" : "https://launchpad.37signals.com/session/profile?username={account}",
          "account_existence_code" : "200",
@@ -95,6 +106,17 @@
          "valid" : true
       },
       {
+         "name" : "Behance",
+         "check_uri" : "https://www.behance.net/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "<title>Behance</title>",
+         "account_missing_string" : "<title>Behance :: Oops! We can’t find that page.</title>",
+         "account_missing_code" : "404",
+         "known_accounts" : ["alice", "bob"],
+         "category" : "business",
+         "valid" : true
+      },
+		  {
          "name" : "Bitbucket",
          "check_uri" : "https://bitbucket.org/api/2.0/users/{account}",
          "pretty_uri" : "https://bitbucket.org/{account}/",
@@ -362,6 +384,17 @@
          "valid" : true
       },
       {
+         "name" : "Dribbble",
+         "check_uri" : "https://dribbble.com/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : " | Dribbble\n",
+         "account_missing_string" : "(404)</title>",
+         "account_missing_code" : "404",
+         "known_accounts" : ["UI8","keeplegend"],
+         "category" : "Business",
+         "valid" : true
+      },
+      {
          "name" : "duby",
          "check_uri" : "https://www.duby.co/{account}",
          "account_existence_code" : "200",
@@ -548,6 +581,17 @@
          "account_missing_code" : "404",
          "known_accounts" : ["graciehughes_FOD"],
          "category" : "video",
+         "valid" : true
+      },
+      {
+         "name" : "Gamespot",
+         "check_uri" : "https://www.gamespot.com/profile/{account}/",
+         "account_existence_code" : "200",
+         "account_existence_string" : "'s Profile - GameSpot</title>",
+         "account_missing_string" : "404: Not Found - GameSpot</title>",
+         "account_missing_code" : "200",
+         "known_accounts" : ["alice","bob"],
+         "category" : "gaming",
          "valid" : true
       },
       {
@@ -1042,6 +1086,17 @@
          "valid" : true
       },
       {
+         "name" : "MySpace",
+         "check_uri" : "https://myspace.com/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "<!-- Profile -->",
+         "account_missing_string" : "<!-- 404 -->",
+         "account_missing_code" : "404",
+         "known_accounts" : ["alice","bob"],
+         "category" : "social",
+         "valid" : true
+      },
+      {
          "name" : "netvibes",
          "check_uri" : "https://www.netvibes.com/{account}",
          "account_existence_code" : "200",
@@ -1262,6 +1317,17 @@
          "account_missing_code" : "302",
          "known_accounts" : ["WhiteWalls7","FairyCal"],
          "category" : "gaming",
+         "valid" : true
+      },
+      {
+         "name" : "Quora",
+         "check_uri" : "https://{account}.quora.com/profile/",
+         "account_existence_code" : "200",
+         "account_existence_string" : " - Quora</title>",
+         "account_missing_string" : "",
+         "account_missing_code" : "403",
+         "known_accounts" : ["alice","testing"],
+         "category" : "misc",
          "valid" : true
       },
       {
@@ -1725,6 +1791,17 @@
          "account_missing_string" : "this profile seems to be missing",
          "account_missing_code" : "404",
          "known_accounts" : ["Test123","newadult"],
+         "category" : "social",
+         "valid" : true
+      },
+      {
+         "name" : "weheartit",
+         "check_uri" : "https://weheartit.com/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : " on We Heart It</title>",
+         "account_missing_string" : " (404)</title>",
+         "account_missing_code" : "404",
+         "known_accounts" : ["test","alice"],
          "category" : "social",
          "valid" : true
       },
