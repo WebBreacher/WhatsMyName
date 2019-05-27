@@ -540,6 +540,17 @@
          "valid" : true
       },
       {
+         "name" : "FurAffinity",
+         "check_uri" : "https://www.furaffinity.net/user/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "<title>Userpage of",
+         "account_missing_string" : "user cannot be found",
+         "account_missing_code" : "200",
+         "known_accounts" : ["test"],
+         "category" : "XXX PORN XXX",
+         "valid" : true
+      },
+      {
          "name" : "FunnyOrDie",
          "check_uri" : "https://www.funnyordie.com/users/{account}",
          "account_existence_code" : "200",
