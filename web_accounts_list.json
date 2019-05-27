@@ -573,6 +573,17 @@
          "valid" : true
       },
       {
+         "name" : "FurAffinity",
+         "check_uri" : "https://www.furaffinity.net/user/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "<title>Userpage of",
+         "account_missing_string" : "user cannot be found",
+         "account_missing_code" : "200",
+         "known_accounts" : ["test"],
+         "category" : "XXX PORN XXX",
+         "valid" : true
+      },
+      {
          "name" : "FunnyOrDie",
          "check_uri" : "https://www.funnyordie.com/users/{account}",
          "account_existence_code" : "200",
@@ -997,6 +1008,17 @@
          "valid" : true
       },
       {
+         "name" : "Mix",
+         "check_uri" : "https://www.mix.com/{account}/",
+         "account_existence_code" : "200",
+         "account_existence_string" : " Posts</title>",
+         "account_missing_string" : "",
+         "account_missing_code" : "302",
+         "known_accounts" : ["test","mixpicks"],
+         "category" : "social",
+         "valid" : true
+      },
+      {
          "name" : "Mixcloud",
          "check_uri" : "https://www.mixcloud.com/{account}/",
          "account_existence_code" : "200",
@@ -1239,17 +1261,6 @@
          "account_missing_code" : "200",
          "known_accounts" : ["test"],
          "category" : "social",
-         "valid" : true
-      },
-      {
-         "name" : "POF",
-         "check_uri" : "http://www.pof.com/basicusersearch.aspx?usernamet={account}",
-         "account_existence_code" : "200",
-         "account_existence_string" : "viewprofile.aspx?profile_id",
-         "account_missing_string" : "",
-         "account_missing_code" : "200",
-         "known_accounts" : ["test"],
-         "category" : "dating",
          "valid" : true
       },
       {
@@ -1669,6 +1680,17 @@
          "account_missing_code" : "404",
          "known_accounts" : ["WebBreacher","osintninja"],
          "category" : "social",
+         "valid" : true
+      },
+      {
+         "name" : "Udemy",
+         "check_uri" : "https://www.udemy.com/user/{account}/",
+         "account_existence_code" : "200",
+         "account_existence_string" : "user-avatar",
+         "account_missing_string" : "",
+         "account_missing_code" : "301",
+         "known_accounts" : ["test"],
+         "category" : "education",
          "valid" : true
       },
       {
