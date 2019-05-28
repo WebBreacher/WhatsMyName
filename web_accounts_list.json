@@ -595,6 +595,17 @@
          "valid" : true
       },
       {
+         "name" : "Gamespot",
+         "check_uri" : "https://www.gamespot.com/profile/{account}/",
+         "account_existence_code" : "200",
+         "account_existence_string" : "'s Profile - GameSpot</title>",
+         "account_missing_string" : "404: Not Found - GameSpot</title>",
+         "account_missing_code" : "200",
+         "known_accounts" : ["alice","bob"],
+         "category" : "gaming",
+         "valid" : true
+      },
+      {
          "name" : "Garmin connect",
          "check_uri" : "https://connect.garmin.com/modern/profile/{account}",
          "account_existence_code" : "200",
