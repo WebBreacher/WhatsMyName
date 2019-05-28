@@ -1817,6 +1817,17 @@
          "valid" : true
       },
       {
+         "name" : "weheartit",
+         "check_uri" : "https://weheartit.com/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : " on We Heart It</title>",
+         "account_missing_string" : " (404)</title>",
+         "account_missing_code" : "404",
+         "known_accounts" : ["test","alice"],
+         "category" : "social",
+         "valid" : true
+      },
+      {
          "name" : "wishlistr",
          "check_uri" : "http://www.wishlistr.com/profile/{account}/",
          "account_existence_code" : "200",
@@ -1894,6 +1905,17 @@
          "valid" : true
       },
       {
+         "name" : "Xing",
+         "check_uri" : "https://www.xing.com/profile/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : " | XING</title>",
+         "account_missing_string" : "Es tut uns leid",
+         "account_missing_code" : "410",
+         "known_accounts" : ["Andy_Hausmann","Ramona_Hapke"],
+         "category" : "social",
+         "valid" : true
+      },
+      {
          "name" : "XVIDEOS",
          "check_uri" : "https://www.xvideos.com/pornstars/{account}",
          "account_existence_code" : "200",
@@ -1913,17 +1935,6 @@
          "account_missing_code" : "404",
          "known_accounts" : ["test"],
          "category" : "video",
-         "valid" : true
-      },
-      {
-         "name" : "Xing",
-         "check_uri" : "https://www.xing.com/profile/{account}",
-         "account_existence_code" : "200",
-         "account_existence_string" : " | XING</title>",
-         "account_missing_string" : "Es tut uns leid",
-         "account_missing_code" : "410",
-         "known_accounts" : ["Andy_Hausmann","Ramona_Hapke"],
-         "category" : "social",
          "valid" : true
       },
       {
