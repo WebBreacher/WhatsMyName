@@ -1331,6 +1331,17 @@
          "valid" : true
       },
       {
+         "name" : "Quora",
+         "check_uri" : "https://{account}.quora.com/profile/",
+         "account_existence_code" : "200",
+         "account_existence_string" : " - Quora</title>",
+         "account_missing_string" : "",
+         "account_missing_code" : "403",
+         "known_accounts" : ["alice","testing"],
+         "category" : "misc",
+         "valid" : true
+      },
+      {
          "name" : "reddit",
          "check_uri" : "https://www.reddit.com/user/{account}",
          "account_existence_code" : "200",
