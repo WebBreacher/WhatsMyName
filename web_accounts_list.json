@@ -106,6 +106,17 @@
          "valid" : true
       },
       {
+         "name" : "Behance",
+         "check_uri" : "https://www.behance.net/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "<title>Behance</title>",
+         "account_missing_string" : "<title>Behance :: Oops! We can’t find that page.</title>",
+         "account_missing_code" : "404",
+         "known_accounts" : ["alice", "bob"],
+         "category" : "business",
+         "valid" : true
+      },
+      {
          "name" : "Bitbucket",
          "check_uri" : "https://bitbucket.org/api/2.0/users/{account}",
          "pretty_uri" : "https://bitbucket.org/{account}/",
