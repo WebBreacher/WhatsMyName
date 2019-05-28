@@ -1463,6 +1463,18 @@
          "valid" : true
       },
       {
+         "name" : "Slack",
+         "check_uri" : "https://{account}.slack.com",
+         "account_existence_code" : "200",
+         "account_existence_string" : "<title>Slack</title>",
+         "account_missing_string" : "<title>There's been a glitch… | Slack</title>",
+         "account_missing_code" : "404",
+         "known_accounts" : ["alice"],
+         "category" : "social",
+         "valid" : true,
+         "comment" : "HTTP error code 302 is also possible, when the channel has been renamed, but string will still match"
+      },
+      {
          "name" : "slideshare",
          "check_uri" : "http://www.slideshare.net/{account}",
          "account_existence_code" : "200",
