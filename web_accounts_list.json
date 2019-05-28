@@ -1606,6 +1606,17 @@
          "valid" : true
       },
       {
+         "name" : "Telegram",
+         "check_uri" : "https://t.me/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "tgme_page_photo_image",
+         "account_missing_string" : " <meta name=\"robots\" content=\"noindex, nofollow\">",
+         "account_missing_code" : "200",
+         "known_accounts" : ["alice","giovanni"],
+         "category" : "social",
+         "valid" : true
+      },
+      {
          "name" : "TF2 Backpack Examiner",
          "check_uri" : "http://www.tf2items.com/id/{account}/",
          "account_existence_code" : "200",
