@@ -84,6 +84,17 @@
          "valid" : true
       },
       {
+         "name" : "Bandcamp",
+         "check_uri" : "https://bandcamp.com/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : " collection | Bandcamp</title>",
+         "account_missing_string" : "<h2>Sorry, that something isn’t here.</h2>",
+         "account_missing_code" : "404",
+         "known_accounts" : ["alice", "bob"],
+         "category" : "music",
+         "valid" : true
+      },
+      {
          "name" : "Basecamp",
          "check_uri" : "https://launchpad.37signals.com/session/profile?username={account}",
          "account_existence_code" : "200",
