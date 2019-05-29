@@ -1053,6 +1053,17 @@
          "valid" : true
       },
       {
+         "name" : "MyAnimeList",
+         "check_uri" : "https://www.myanimelist.net/profile/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "Profile - MyAnimeList.net",
+         "account_missing_string" : "<title>404 Not Found",
+         "account_missing_code" : "404",
+         "known_accounts" : ["test", "admin"],
+         "category" : "movies",
+         "valid" : true
+      },
+      {
          "name" : "MyBuilder.com",
          "check_uri" : "http://www.mybuilder.com/profile/view/{account}",
          "account_existence_code" : "200",
