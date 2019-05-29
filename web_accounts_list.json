@@ -640,6 +640,17 @@
          "valid" : true
       },
       {
+         "name" : "GPSies",
+         "check_uri" : "https://www.gpsies.com/mapUser.do?username={account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "\"page_mapUser\"",
+         "account_missing_string" : "<title>GPSies",
+         "account_missing_code" : "200",
+         "known_accounts" : ["test","admin"],
+         "category" : "health",
+         "valid" : true
+      },
+      {
          "name" : "Gravatar",
          "check_uri" : "http://en.gravatar.com/profiles/{account}.json",
          "pretty_uri" : "http://en.gravatar.com/profiles/{account}",
