@@ -69,7 +69,7 @@
          "account_missing_string" : "",
          "account_missing_code" : "404",
          "known_accounts" : ["test", "john"],
-         "category" : "preso",
+         "category" : "presos",
          "valid" : true
       },
       {
