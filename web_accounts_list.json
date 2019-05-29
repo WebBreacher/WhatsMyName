@@ -51,6 +51,17 @@
          "valid" : true
       },
       {
+         "name" : "appearoo",
+         "check_uri" : "https://appearoo.com/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "Your connection with",
+         "account_missing_string" : "Not Found</title>",
+         "account_missing_code" : "302",
+         "known_accounts" : ["yourname", "appearoo"],
+         "category" : "social",
+         "valid" : true
+      },
+      {
          "name" : "ask.fm",
          "check_uri" : "http://ask.fm/{account}",
          "account_existence_code" : "200",
