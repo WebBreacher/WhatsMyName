@@ -729,6 +729,17 @@
          "valid" : true
       },
       {
+         "name" : "IGN",
+         "check_uri" : "https://www.ign.com/boards/members/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "| IGN Boards</title>",
+         "account_missing_string" : "Page Not Found",
+         "account_missing_code" : "404",
+         "known_accounts" : ["darksydephil"],
+         "category" : "gaming",
+         "valid" : true
+      },
+      {
          "name" : "ImageShack",
          "check_uri" : "https://imageshack.com/user/{account}",
          "account_existence_code" : "200",
