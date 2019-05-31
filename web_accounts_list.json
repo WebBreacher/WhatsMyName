@@ -7,6 +7,17 @@
    "authors" : ["WebBreacher","Munchko","L0r3m1p5um","lehuff","janbinx","bcoles","Sector035"],
    "sites" : [
       {
+         "name" : "500px",
+         "check_uri" : "https://500px.com/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : " is using 500px, the world&#39;s most passionate photo sharing community.",
+         "account_missing_string" : "Oops! This page doesn’t exist",
+         "account_missing_code" : "404",
+         "known_accounts" : ["alice","bob"],
+         "category" : "images",
+         "valid" : true
+      },
+		  {
          "name" : "9GAG",
          "check_uri" : "https://9gag.com/u/{account}",
          "account_existence_code" : "200",
@@ -92,6 +103,17 @@
          "account_missing_code" : "404",
          "known_accounts" : ["john", "whynot"],
          "category" : "social",
+         "valid" : true
+      },
+      {
+         "name" : "Bandcamp",
+         "check_uri" : "https://bandcamp.com/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : " collection | Bandcamp</title>",
+         "account_missing_string" : "<h2>Sorry, that something isn’t here.</h2>",
+         "account_missing_code" : "404",
+         "known_accounts" : ["alice", "bob"],
+         "category" : "music",
          "valid" : true
       },
       {
@@ -850,6 +872,17 @@
          "valid" : true
       },
       {
+         "name" : "Kik",
+         "check_uri" : "https://kik.me/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "<meta property=\"og:image\"       content=\"http://profilepics.cf.kik.com",
+         "account_missing_string" : "<meta property=\"og:image\"       content=\"\"/>",
+         "account_missing_code" : "200",
+         "known_accounts" : ["alice","jake"],
+         "category" : "social",
+         "valid" : true
+      },
+      {
          "name" : "kiwibox",
          "check_uri" : "https://www.kiwibox.com/{account}",
          "account_existence_code" : "200",
@@ -1115,6 +1148,17 @@
          "account_missing_string" : " / Whoops!",
          "account_missing_code" : "404",
          "known_accounts" : ["Tampa_girl7"],
+         "category" : "social",
+         "valid" : true
+      },
+      {
+         "name" : "MySpace",
+         "check_uri" : "https://myspace.com/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "<!-- Profile -->",
+         "account_missing_string" : "<!-- 404 -->",
+         "account_missing_code" : "404",
+         "known_accounts" : ["alice","bob"],
          "category" : "social",
          "valid" : true
       },
@@ -1529,6 +1573,17 @@
          "valid" : true
       },
       {
+         "name" : "Sourceforge",
+         "check_uri" : "https://sourceforge.net/u/{account}/profile",
+         "account_existence_code" : "200",
+         "account_existence_string" : " / Profile</title>",
+         "account_missing_string" : "<title>Page not found",
+         "account_missing_code" : "404",
+         "known_accounts" : ["alice","bob"],
+         "category" : "coding",
+         "valid" : true
+      },
+      {
          "name" : "Speaker Deck",
          "check_uri" : "https://speakerdeck.com/{account}",
          "account_existence_code" : "200",
@@ -1602,6 +1657,17 @@
          "account_missing_string" : "/dist/404Retina.png",
          "account_missing_code" : "404",
          "known_accounts" : ["jocaxav","engendrometal"],
+         "category" : "social",
+         "valid" : true
+      },
+      {
+         "name" : "Telegram",
+         "check_uri" : "https://t.me/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "tgme_page_photo_image",
+         "account_missing_string" : " <meta name=\"robots\" content=\"noindex, nofollow\">",
+         "account_missing_code" : "200",
+         "known_accounts" : ["alice","giovanni"],
          "category" : "social",
          "valid" : true
       },
@@ -1835,6 +1901,17 @@
          "account_missing_string" : "this profile seems to be missing",
          "account_missing_code" : "404",
          "known_accounts" : ["Test123","newadult"],
+         "category" : "social",
+         "valid" : true
+      },
+      {
+         "name" : "weheartit",
+         "check_uri" : "https://weheartit.com/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : " on We Heart It</title>",
+         "account_missing_string" : " (404)</title>",
+         "account_missing_code" : "404",
+         "known_accounts" : ["alice","bob"],
          "category" : "social",
          "valid" : true
       },
