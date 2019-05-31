@@ -373,6 +373,17 @@
          "valid" : true
       },
       {
+         "name" : "Dribbble",
+         "check_uri" : "https://dribbble.com/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : " | Dribbble\n",
+         "account_missing_string" : "(404)</title>",
+         "account_missing_code" : "404",
+         "known_accounts" : ["UI8","keeplegend"],
+         "category" : "Business",
+         "valid" : true
+      },
+      {
          "name" : "duby",
          "check_uri" : "https://www.duby.co/{account}",
          "account_existence_code" : "200",
