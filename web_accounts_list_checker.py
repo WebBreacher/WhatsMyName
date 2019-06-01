@@ -41,10 +41,12 @@ parser.add_argument('-u', '--username', help='[OPTIONAL] If this param is passed
 parser.add_argument('-se', '--stringerror', help="Creates a site by site file for files that do not match strings. Filenames will be 'se-(sitename).(username)",
                     action="store_true", default=False)
 parser.add_argument('-s', '--site', nargs='*', help='[OPTIONAL] If this parameter is passed the script will check only the named site or list of sites.')
+parser.add_argument('-d', '--debug', help="Enable debug output", action="store_true")
+
 args = parser.parse_args()
 
-
-args = parser.parse_args()
+if args.debug:
+    print('Debug output enabled')
 
 # Create the final results dictionary
 overall_results = {}
@@ -184,6 +186,10 @@ for site in data['sites']:
             # We got an error on the web call
             print(r)
             continue
+
+        if args.debug:
+            print("- HTTP status: %s" % r.status_code)
+            print("- HTTP response: %s" % r.content)
 
         # Analyze the responses against what they should be
         if r.status_code == int(site['account_existence_code']):
