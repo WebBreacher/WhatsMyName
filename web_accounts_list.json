@@ -1185,6 +1185,17 @@
          "valid" : true
       },
       {
+         "name" : "New Project 2",
+         "check_uri" : "https://newproject2.com/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "join-button",
+         "account_missing_string" : "error-404",
+         "account_missing_code" : "404",
+         "known_accounts" : ["rekietalaw","hampture"],
+         "category" : "finance",
+         "valid" : true
+      },
+      {
          "name" : "OnlyFans",
          "check_uri" : "https://onlyfans.com/{account}",
          "account_existence_code" : "200",
