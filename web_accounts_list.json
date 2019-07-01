@@ -339,6 +339,17 @@
          "valid" : true
       },
       {
+         "name" : "Destructoid",
+         "check_uri" : "https://www.destructoid.com/?name={account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "Follow",
+         "account_missing_string" : "Error in query",
+         "account_missing_code" : "200",
+         "known_accounts" : ["john", "alice", "bob"],
+         "category" : "social",
+         "valid" : true
+      },
+      {
          "name" : "DeviantArt",
          "check_uri" : "http://{account}.deviantart.com/",
          "account_existence_code" : "200",
