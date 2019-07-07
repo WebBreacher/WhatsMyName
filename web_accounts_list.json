@@ -376,8 +376,8 @@
          "check_uri" : "https://devrant.com/users/{account}",
          "account_existence_code" : "200",
          "account_existence_string" : "Joined devRant on",
-         "account_missing_string" : "Feed",
-         "account_missing_code" : "302",
+         "account_missing_string" : "<!-- row start signup -->",
+         "account_missing_code" : "200",
          "known_accounts" : ["dfox", "trogus"],
          "category" : "social",
          "valid" : true
