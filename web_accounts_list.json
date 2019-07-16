@@ -1859,6 +1859,17 @@
          "valid" : true
       },
       {
+         "name" : "Venmo",
+         "check_uri" : "https://api.venmo.com/v1/users/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "\"data\":",
+         "account_missing_string" : "\"error\":",
+         "account_missing_code" : "400",
+         "known_accounts" : ["john", "doesnotexist"],
+         "category" : "finance",
+         "valid" : true
+      },
+      {
          "name" : "viddler",
          "check_uri" : "http://www.viddler.com/channel/{account}/",
          "account_existence_code" : "200",
