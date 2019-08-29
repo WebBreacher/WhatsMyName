@@ -74,7 +74,7 @@
       },
       {
          "name" : "ask.fm",
-         "check_uri" : "http://ask.fm/{account}",
+         "check_uri" : "https://ask.fm/{account}",
          "account_existence_code" : "200",
          "account_existence_string" : "answers,",
          "account_missing_string" : "Page not found",
