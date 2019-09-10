@@ -284,7 +284,7 @@
          "valid" : true
       },
       {
-         "name" : "Codeacademy",
+         "name" : "Codecademy",
          "check_uri" : "https://discuss.codecademy.com/u/{account}/summary",
          "account_existence_code" : "200",
          "account_existence_string" : "<title>  Profile - ",
