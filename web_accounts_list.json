@@ -650,6 +650,17 @@
          "valid" : true
       },
       {
+         "name" : "Furiffic",
+         "check_uri" : "https://www.furiffic.com/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "Registered Since",
+         "account_missing_string" : "<title>Whoops &middot; Furiffic</title>",
+         "account_missing_code" : "404",
+         "known_accounts" : ["furiffic","test","admin"],
+         "category" : "XXX PORN XXX",
+         "valid" : true
+      },
+      {
          "name" : "Gamespot",
          "check_uri" : "https://www.gamespot.com/profile/{account}/",
          "account_existence_code" : "200",
