@@ -872,6 +872,17 @@
          "valid" : true
       },
       {
+         "name" : "Inkbunny",
+         "check_uri" : "https://inkbunny.net/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "Profile | Inkbunny, the Furry Art Community</title>",
+         "account_missing_string" : ">in random order<",
+         "account_missing_code" : "200",
+         "known_accounts" : ["Inkbunny","test"],
+         "category" : "XXX PORN XXX",
+         "valid" : true
+      },
+      {
          "name" : "InsaneJournal",
          "check_uri" : "http://{account}.insanejournal.com/profile",
          "account_existence_code" : "200",
