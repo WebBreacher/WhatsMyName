@@ -1463,6 +1463,17 @@
          "valid" : true
       },
       {
+         "name" : "RapidAPI",
+         "check_uri" : "https://rapidapi.com/user/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "Developer Profile | RapidAPI</title>",
+         "account_missing_string" : "the page you're trying to reach doesn't exist",
+         "account_missing_code" : "200",
+         "known_accounts" : ["rapidapi", "test", "admin"],
+         "category" : "coding",
+         "valid" : true
+      },
+      {
          "name" : "reddit",
          "check_uri" : "https://www.reddit.com/user/{account}",
          "account_existence_code" : "200",
