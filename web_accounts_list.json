@@ -1814,6 +1814,7 @@
          "category" : "dating",
          "valid" : true
       },
+      {
          "name" : "T-Mobile Support",
          "check_url" : "https://support.t-mobile.com/people/{account}",
          "account_existence_code" : "200",
@@ -1823,6 +1824,7 @@
          "known_accounts" : ["admin","support"],
          "category" : "social",
          "valid" : true
+      },
       {
          "name" : "tripadvisor",
          "check_uri" : "https://www.tripadvisor.com/Profile/{account}",
