@@ -4,7 +4,7 @@
                 "4.0 International License. To view a copy of this license, visit",
                 "http://creativecommons.org/licenses/by-sa/4.0/ or send a letter to",
                 "Creative Commons, PO Box 1866, Mountain View, CA 94042, USA."],
-   "authors" : ["WebBreacher","Munchko","L0r3m1p5um","lehuff","janbinx","bcoles","Sector035"],
+   "authors" : ["WebBreacher","Munchko","L0r3m1p5um","lehuff","janbinx","bcoles","Sector035","arnydo"],
    "sites" : [
       {
          "name" : "500px",
@@ -1812,6 +1812,17 @@
          "account_missing_code" : "200",
          "known_accounts" : ["Alexey","Marsha"],
          "category" : "dating",
+         "valid" : true
+      },
+      {
+         "name" : "T-Mobile Support",
+         "check_url" : "https://support.t-mobile.com/people/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "connections",
+         "account_missing_string" : "404 ERROR",
+         "account_missing_code" : "404",
+         "known_accounts" : ["admin","support"],
+         "category" : "social",
          "valid" : true
       },
       {
