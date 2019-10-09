@@ -450,6 +450,17 @@
          "valid" : true
       },
       {
+         "name" : "e621",
+         "check_uri" : "https://e621.net/user/show/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "<title>User - ",
+         "account_missing_string" : "<title>User Listing -",
+         "account_missing_code" : "200",
+         "known_accounts" : ["admin", "doesnotexist", "test"],
+         "category" : "XXX PORN XXX",
+         "valid" : true
+      },
+      {
          "name" : "eBay",
          "check_uri" : "http://www.ebay.com/usr/{account}",
          "account_existence_code" : "200",
