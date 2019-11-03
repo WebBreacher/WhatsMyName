@@ -143,7 +143,7 @@
          "check_uri" : "https://bitbucket.org/api/2.0/users/{account}",
          "pretty_uri" : "https://bitbucket.org/{account}/",
          "account_existence_code" : "200",
-         "account_existence_string" : "\"username\": ",
+         "account_existence_string" : "display_name",
          "account_missing_string" : "\"error\":",
          "account_missing_code" : "404",
          "known_accounts" : ["test", "WebBreacher"],
