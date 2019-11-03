@@ -362,10 +362,10 @@
       },
       {
          "name" : "DeviantArt",
-         "check_uri" : "http://{account}.deviantart.com/",
+         "check_uri" : "https://www.deviantart.com/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "aboutme-profile-pic-shadow",
-         "account_missing_string" : "Not Found - DeviantArt",
+         "account_existence_string" : " | DeviantArt</title>",
+         "account_missing_string" : "DeviantArt: 404",
          "account_missing_code" : "404",
          "known_accounts" : ["test", "john"],
          "category" : "images",
