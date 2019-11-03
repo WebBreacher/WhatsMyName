@@ -873,14 +873,14 @@
       },
       {
          "name" : "imgur",
-         "check_uri" : "http://imgur.com/user/{account}",
+         "check_uri" : "https://imgur.com/user/{account}/about",
          "account_existence_code" : "200",
          "account_existence_string" : "Gallery comments",
          "account_missing_string" : "the simple 404 page",
          "account_missing_code" : "404",
-         "known_accounts" : ["test"],
+         "known_accounts" : ["test","sillybilly0401"],
          "category" : "images",
-         "valid" : true
+         "valid" : false
       },
       {
          "name" : "Inkbunny",
