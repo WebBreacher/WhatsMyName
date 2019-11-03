@@ -1510,7 +1510,7 @@
          "name" : "Rotten Tomatoes",
          "check_uri" : "https://www.rottentomatoes.com/critic/{account}/movies/",
          "account_existence_code" : "200",
-         "account_existence_string" : "Movies Reviews & Previews",
+         "account_existence_string" : "dateCreated",
          "account_missing_string" : "Sorry, please try again later",
          "account_missing_code" : "404",
          "known_accounts" : ["guy-lodge","matthew-lickona"],
