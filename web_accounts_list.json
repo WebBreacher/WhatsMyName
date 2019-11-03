@@ -807,14 +807,14 @@
       },
       {
          "name" : "HaveIBeenPwnd",
-         "check_uri" : "https://haveibeenpwned.com/api/v2/breachedaccount/{account}",
+         "check_uri" : "https://haveibeenpwned.com/unifiedsearch/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "Title",
+         "account_existence_string" : "Breaches",
          "account_missing_string" : "",
          "account_missing_code" : "404",
          "known_accounts" : ["john%40example.com"],
          "category" : "hacker",
-         "valid" : true
+         "valid" : false
       },
       {
          "name" : "HubPages",
