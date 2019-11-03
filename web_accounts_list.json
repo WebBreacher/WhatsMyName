@@ -823,7 +823,7 @@
          "account_existence_string" : "Joined ",
          "account_missing_string" : "Sorry, that user does not exist",
          "account_missing_code" : "",
-         "known_accounts" : ["test","bob"],
+         "known_accounts" : ["greeneyes1607","lmmartin"],
          "category" : "blog",
          "valid" : true
       },
