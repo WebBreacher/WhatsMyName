@@ -1816,7 +1816,7 @@
       },
       {
          "name" : "T-Mobile Support",
-         "check_url" : "https://support.t-mobile.com/people/{account}",
+         "check_uri" : "https://support.t-mobile.com/people/{account}",
          "account_existence_code" : "200",
          "account_existence_string" : "connections",
          "account_missing_string" : "404 ERROR",
