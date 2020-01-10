@@ -2037,6 +2037,17 @@
          "valid" : true
       },
       {
+         "name" : "Weasyl",
+         "check_uri" : "https://www.weasyl.com/~{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "&#39;s profile — Weasyl</title>",
+         "account_missing_string" : "This user doesn't seem to be in our database.",
+         "account_missing_code" : "404",
+         "known_accounts" : ["weasyl","test"],
+         "category" : "images",
+         "valid" : true
+      },
+      {
          "name" : "weheartit",
          "check_uri" : "https://weheartit.com/{account}",
          "account_existence_code" : "200",
