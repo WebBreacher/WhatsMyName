@@ -1,0 +1,5 @@
+setup.py
+goFindThem_pkg_carbonUnit42.egg-info/PKG-INFO
+goFindThem_pkg_carbonUnit42.egg-info/SOURCES.txt
+goFindThem_pkg_carbonUnit42.egg-info/dependency_links.txt
+goFindThem_pkg_carbonUnit42.egg-info/top_level.txt
