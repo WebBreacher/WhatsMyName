@@ -480,7 +480,7 @@
          "account_missing_code" : "",
          "known_accounts" : ["bomdiameucaro"],
          "category" : "gaming",
-         "valid" : true
+         "valid" : false
       },
       {
          "name" : "Engadget",
@@ -1327,7 +1327,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["test"],
          "category" : "images",
-         "valid" : true
+         "valid" : false
       },
       {
          "name" : "PictureTrail",
@@ -1746,7 +1746,7 @@
          "account_missing_code" : "400",
          "known_accounts" : ["stunited","stunited-educational-consultants"],
          "category" : "social",
-         "valid" : true
+         "valid" : false
       },
       {
          "name" : "Taringa",
@@ -2177,7 +2177,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["john","jess"],
          "category" : "food",
-         "valid" : true
+         "valid" : false
       },
       {
          "name" : "Zooppa",
@@ -2189,7 +2189,7 @@
          "account_missing_code" : "200",
          "known_accounts" : ["test","hacker"],
          "category" : "social",
-         "valid" : true
+         "valid" : false
       }
    ]
 }
