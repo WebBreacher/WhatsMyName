@@ -1,5 +1,5 @@
 {
-   "license" : ["Copyright (C) 2019 Micah Hoffman",
+   "license" : ["Copyright (C) 2020 Micah Hoffman",
                 "This work is licensed under the Creative Commons Attribution-ShareAlike",
                 "4.0 International License. To view a copy of this license, visit",
                 "http://creativecommons.org/licenses/by-sa/4.0/ or send a letter to",
@@ -43,20 +43,20 @@
          "name" : "AngelList",
          "check_uri" : "https://angel.co/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "to find connections to",
-         "account_missing_string" : "Page not found - 404 - AngelList",
+         "account_existence_string" : "s profile on AngelList",
+         "account_missing_string" : "Page not found - 404",
          "account_missing_code" : "404",
          "known_accounts" : ["sacca","rudyadler"],
          "category" : "tech",
-         "valid" : true
+         "valid" : false
       },
       {
          "name" : "aNobii",
-         "check_uri" : "http://www.anobii.com/{account}/profile",
+         "check_uri" : "https://www.anobii.com/{account}/profile",
          "account_existence_code" : "200",
-         "account_existence_string" : "- aNobii",
-         "account_missing_string" : "aNobii: STREAMING",
-         "account_missing_code" : "200",
+         "account_existence_string" : "Anobiian since",
+         "account_missing_string" : "Redirecting to",
+         "account_missing_code" : "302",
          "known_accounts" : ["test", "john"],
          "category" : "books",
          "valid" : true
@@ -232,12 +232,12 @@
          "name" : "Canva",
          "check_uri" : "https://www.canva.com/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "&ndash; Canva</title>",
+         "account_existence_string" : "This is a portfolio page for",
          "account_missing_string" : "Sorry, the page you are",
          "account_missing_code" : "404",
          "known_accounts" : ["marketplacedesigners","john"],
          "category" : "business",
-         "valid" : true
+         "valid" : false
       },
       {
          "name" : "cash.me",
@@ -806,17 +806,6 @@
          "valid" : true
       },
       {
-         "name" : "HaveIBeenPwnd",
-         "check_uri" : "https://haveibeenpwned.com/unifiedsearch/{account}",
-         "account_existence_code" : "200",
-         "account_existence_string" : "Breaches",
-         "account_missing_string" : "",
-         "account_missing_code" : "404",
-         "known_accounts" : ["john%40example.com"],
-         "category" : "hacker",
-         "valid" : false
-      },
-      {
          "name" : "HubPages",
          "check_uri" : "http://hubpages.com/@{account}",
          "account_existence_code" : "200",
@@ -927,7 +916,18 @@
          "valid" : true
       },
       {
-         "name" : "Internet Archive",
+         "name" : "Internet Archive Account",
+         "check_uri" : "http://archive.org/details/@{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "<title>User Account",
+         "account_missing_string" : "<title>cannot find account",
+         "account_missing_code" : "200",
+         "known_accounts" : ["webbreacher","jason_scott"],
+         "category" : "search",
+         "valid" : true
+      },
+      {
+         "name" : "Internet Archive User Search",
          "check_uri" : "http://archive.org/search.php?query={account}",
          "account_existence_code" : "200",
          "account_existence_string" : "item-ia",
@@ -1273,6 +1273,17 @@
          "valid" : true
       },
       {
+         "name" : "PatientsLikeMe",
+         "check_uri" : "https://www.patientslikeme.com/members/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "s profile | PatientsLikeMe",
+         "account_missing_string" : ">You are being",
+         "account_missing_code" : "302",
+         "known_accounts" : ["beachman","msmary"],
+         "category" : "health",
+         "valid" : true
+      },
+      {
          "name" : "Pastebin",
          "check_uri" : "http://pastebin.com/u/{account}",
          "account_existence_code" : "200",
@@ -1280,7 +1291,6 @@
          "account_missing_string" : "",
          "account_missing_code" : "302",
          "known_accounts" : ["test","john"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "sharing",
          "valid" : true
       },
@@ -1303,7 +1313,6 @@
          "account_missing_string" : "Sorry, this page doesn’t exist",
          "account_missing_code" : "404",
          "known_accounts" : ["john","test"],
-         "allowed_types" : ["String","Person","WebAccount","Username"],
          "category" : "video",
          "valid" : true
       },
