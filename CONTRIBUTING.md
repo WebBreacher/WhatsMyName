@@ -1,6 +1,6 @@
 You can contribute to the project in at least three different ways.
 
-== Way 1. Non-technical
+## Way 1. Non-technical
 
 Suggest a new site to be covered by the tool.
 
@@ -12,7 +12,7 @@ How to do that:
   and clicking "New issue"
 
 
-== Way 2. Technical, no programming skills required
+## Way 2. Technical, no programming skills required
 
 Requires a basic understanding of how Web/HTTP works (HTTP status codes, how
 what you see in a website translates to the source code).
@@ -106,7 +106,7 @@ Here is an example of a site element:
       ...
 ```
 
-== Way 3. Programming, enhancing the tool itself
+## Way 3. Programming, enhancing the tool itself
 
 Basic python programming skills required.
 
