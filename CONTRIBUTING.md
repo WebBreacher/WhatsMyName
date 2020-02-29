@@ -62,7 +62,7 @@ python3 ./web_accounts_list_checker.py -s my.new.site.Ive.added
 - submit a pull request with that change
 
 
-== Format of the JSON file
+## Format of the JSON file
 
 The format of the JSON is simple. There are 3 main elements:
 
