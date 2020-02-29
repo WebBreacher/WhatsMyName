@@ -1508,7 +1508,7 @@
          "name" : "Repl.it",
          "check_uri" : "https://repl.it/@{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "profile?username=",
+         "account_existence_string" : "isLoggedIn",
          "account_missing_string" : "<title>repl.it - online REPL",
          "account_missing_code" : "404",
          "known_accounts" : ["test","admin","john"],
