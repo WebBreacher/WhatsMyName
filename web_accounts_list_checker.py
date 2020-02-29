@@ -119,6 +119,9 @@ def web_call(location):
         return r
 
 
+def random_string(length):
+  return ''.join(random.choice(string.ascii_lowercase + string.ascii_uppercase + string.digits) for x in range(20))
+
 def finaloutput():
     if len(overall_results) > 0:
         print('------------')
@@ -207,9 +210,7 @@ for site in data['sites']:
         if code_match and string_match:
             # print('     [+] Response code and Search Strings match expected.')
             # Generate a random string to use in place of known_accounts
-            not_there_string = ''.join(random.choice(string.ascii_lowercase + string.ascii_uppercase + string.digits)
-                                       for x in range(20))
-            url_fp = site['check_uri'].replace("{account}", not_there_string)
+            url_fp = site['check_uri'].replace("{account}", random_string(20))
             r_fp = web_call(url_fp)
             if isinstance(r_fp, str):
                 # If this is a string then web got an error
