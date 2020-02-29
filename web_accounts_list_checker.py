@@ -15,25 +15,27 @@
             # sudo apt-get install libffi-dev
             # pip install pyOpenSSL ndg-httpsclient pyasn1 requests
 """
-import requests
 import argparse
-from requests.packages.urllib3.exceptions import InsecureRequestWarning
+import codecs
 import json
 import os
 import random
-import string
 import signal
+import string
 import sys
-import codecs
+
+import requests
+from requests.packages.urllib3.exceptions import InsecureRequestWarning
+
 
 ###################
 # Variables && Functions
 ###################
 # Set HTTP Header info.
-headers = { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:73.0) Gecko/20100101 Firefox/73.0',
-            'Accept' : 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-            'Accept-Language' : 'en-US,en;q=0.5',
-            'Accept-Encoding' : 'gzip, deflate'
+headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:73.0) Gecko/20100101 Firefox/73.0',
+           'Accept' : 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+           'Accept-Language' : 'en-US,en;q=0.5',
+           'Accept-Encoding' : 'gzip, deflate'
           }
 
 # Parse command line input
@@ -41,7 +43,7 @@ parser = argparse.ArgumentParser(description="This standalone script will look u
                                  " or will run a check of the JSON file for bad detection strings.")
 parser.add_argument('-u', '--username', help='[OPTIONAL] If this param is passed then this script will perform the '
                     'lookups against the given user name instead of running checks against '
-                                             'the JSON file.')
+                    'the JSON file.')
 parser.add_argument('-se', '--stringerror', help="Creates a site by site file for files that do not match strings. Filenames will be 'se-(sitename).(username)",
                     action="store_true", default=False)
 parser.add_argument('-s', '--site', nargs='*', help='[OPTIONAL] If this parameter is passed the script will check only the named site or list of sites.')
@@ -99,8 +101,8 @@ else:
             self.ENDC = ''
 
 
-def signal_handler(signal, frame):
-    print(bcolors.RED + ' !!!  You pressed Ctrl+C. Exitting script.' + bcolors.ENDC)
+def signal_handler(*_):
+    print(bcolors.RED + ' !!!  You pressed Ctrl+C. Exiting script.' + bcolors.ENDC)
     finaloutput()
     sys.exit(0)
 
@@ -108,7 +110,7 @@ def signal_handler(signal, frame):
 def web_call(location):
     try:
         # Make web request for that URL, timeout in X secs and don't verify SSL/TLS certs
-        r = requests.get(location, headers=headers, timeout=60, verify=False)
+        resp = requests.get(location, headers=headers, timeout=60, verify=False)
     except requests.exceptions.Timeout:
         return bcolors.RED + '      ! ERROR: CONNECTION TIME OUT. Try increasing the timeout delay.' + bcolors.ENDC
     except requests.exceptions.TooManyRedirects:
@@ -116,18 +118,18 @@ def web_call(location):
     except requests.exceptions.RequestException as e:
         return bcolors.RED + '      ! ERROR: CRITICAL ERROR. %s' % e + bcolors.ENDC
     else:
-        return r
+        return resp
 
 
 def random_string(length):
-  return ''.join(random.choice(string.ascii_lowercase + string.ascii_uppercase + string.digits) for x in range(20))
+    return ''.join(random.choice(string.ascii_lowercase + string.ascii_uppercase + string.digits) for x in range(length))
 
 def finaloutput():
     if len(overall_results) > 0:
         print('------------')
         print('The following previously "valid" sites had errors:')
-        for site, results in sorted(overall_results.iteritems()):
-            print(bcolors.YELLOW + '     %s --> %s' % (site, results) + bcolors.ENDC)
+        for site_with_error, results in sorted(overall_results.iteritems()):
+            print(bcolors.YELLOW + '     %s --> %s' % (site_with_error, results) + bcolors.ENDC)
     else:
         print(':) No problems with the JSON file were found.')
 
