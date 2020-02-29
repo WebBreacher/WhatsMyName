@@ -123,7 +123,7 @@ def finaloutput():
     if len(overall_results) > 0:
         print('------------')
         print('The following previously "valid" sites had errors:')
-        for site, results in sorted(overall_results.iteritems()):
+        for site, results in sorted(overall_results.items()):
             print(bcolors.YELLOW + '     %s --> %s' % (site, results) + bcolors.ENDC)
     else:
         print(':) No problems with the JSON file were found.')
