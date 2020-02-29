@@ -196,14 +196,8 @@ for site in data['sites']:
             print("- HTTP response: %s" % r.content)
 
         # Analyze the responses against what they should be
-        if r.status_code == int(site['account_existence_code']):
-            code_match = True
-        else:
-            code_match = False
-        if r.text.find(site['account_existence_string']) > 0:
-            string_match = True
-        else:
-            string_match = False
+        code_match = r.status_code == int(site['account_existence_code'])
+        string_match = r.text.find(site['account_existence_string']) > 0
 
         if args.username:
             if code_match and string_match:
@@ -222,14 +216,9 @@ for site in data['sites']:
                 print(r_fp)
                 continue
 
-            if r_fp.status_code == int(site['account_existence_code']):
-                code_match = True
-            else:
-                code_match = False
-            if r_fp.text.find(site['account_existence_string']) > 0:
-                string_match = True
-            else:
-                string_match = False
+            code_match = r_fp.status_code == int(site['account_existence_code'])
+            string_match = r_fp.text.find(site['account_existence_string']) > 0
+
             if code_match and string_match:
                 print('      -  Code: %s; String: %s' % (code_match, string_match))
                 print(bcolors.RED + '      !  ERROR: FALSE POSITIVE DETECTED. Response code and Search Strings match ' \
