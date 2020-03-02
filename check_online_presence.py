@@ -1,6 +1,7 @@
 #!/usr/bin/python
 
 import argparse
+import collections
 import json
 import os
 import random
@@ -12,6 +13,7 @@ import requests
 
 
 DEBUG_MODE = False
+COUNTER = collections.Counter()
 
 # Set HTTP Header info.
 HEADERS = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:73.0) Gecko/20100101 Firefox/73.0',
@@ -99,17 +101,21 @@ def check_site(site, username, if_found, if_not_found, if_neither):
             neutral("- HTTP response (match: %s): %s" % (string_match, resp.content))
 
         if code_match and string_match:
+            COUNTER["FOUND"] += 1
             return if_found(url)
 
         code_missing_match = resp.status_code == int(site['account_missing_code'])
         string_missing_match = resp.text.find(site['account_missing_string']) > 0
 
         if code_missing_match or string_missing_match:
+            COUNTER["NOT_FOUND"] += 1
             return if_not_found(url)
 
+        COUNTER["ERROR"] += 1
         return if_neither(url)
 
     except Exception as caught:
+        COUNTER["ERROR"] += 1
         error("Error when looking up %s (%s)" % (url, str(caught)))
 
 ###################
@@ -135,29 +141,38 @@ def main():
 
     sites_to_check = find_sites_to_check(args, data)
 
-    for site in sites_to_check:
-        if not site['valid']:
-            warn("[!] Skipping %s - Marked as not valid." % site['name'])
-            continue
+    try:
+        for site in sites_to_check:
+            if not site['valid']:
+                warn("[!] Skipping %s - Marked as not valid." % site['name'])
+                continue
 
-        if args.username:
-            check_site(site, args.username,
-                       if_found     = lambda url: positive("[+] User found at %s" % url),
-                       if_not_found = lambda url: neutral( "[-] User not found at %s" % url),
-                       if_neither   = lambda url: error(   "[!] Error. The check implementation is broken for %s" % url))
-        else:
-            non_existent = random_string(20)
+            if args.username:
+                check_site(site, args.username,
+                           if_found     = lambda url: positive("[+] User found at %s" % url),
+                           if_not_found = lambda url: neutral( "[-] User not found at %s" % url),
+                           if_neither   = lambda url: error(   "[!] Error. The check implementation is broken for %s" % url))
+            else:
+                non_existent = random_string(20)
 
-            check_site(site, non_existent,
-                       if_found     = lambda url: error(  "[!] False positive for %s" % url),
-                       if_not_found = lambda url: neutral("    As expected, no user found at %s" % url),
-                       if_neither   = lambda url: error(  "[!] Neither conditions matched for %s" % url))
-
-            for known_account in site['known_accounts']:
-                check_site(site, known_account,
-                           if_found     = lambda url: neutral("    As expected, profile found at %s" % url),
-                           if_not_found = lambda url: error(  "[!] Profile not found at %s" % url),
+                check_site(site, non_existent,
+                           if_found     = lambda url: error(  "[!] False positive for %s" % url),
+                           if_not_found = lambda url: neutral("    As expected, no user found at %s" % url),
                            if_neither   = lambda url: error(  "[!] Neither conditions matched for %s" % url))
+
+                for known_account in site['known_accounts']:
+                    check_site(site, known_account,
+                               if_found     = lambda url: neutral("    As expected, profile found at %s" % url),
+                               if_not_found = lambda url: error(  "[!] Profile not found at %s" % url),
+                               if_neither   = lambda url: error(  "[!] Neither conditions matched for %s" % url))
+    finally:
+        neutral("")
+        neutral("Processing completed")
+        if COUNTER["FOUND"]:
+           positive("%d sites found" % COUNTER["FOUND"])
+        if COUNTER["ERROR"]:
+           error("%d errors encountered" % COUNTER["ERROR"])
+           sys.exit(2)
 
 if __name__ == "__main__":
     # execute only if run as a script
