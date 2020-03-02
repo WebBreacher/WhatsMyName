@@ -107,3 +107,4 @@ dmypy.json
 
 .DS_Store
 .idea
+/Pipfile
