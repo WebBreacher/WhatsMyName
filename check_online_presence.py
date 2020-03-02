@@ -71,7 +71,7 @@ def random_string(length):
 
 def find_sites_to_check(args, data):
     if args.site:
-        # cut the list of sites down to only the requested ones
+        # cut the list of sites down to only the requested one
         args.site = [x.lower() for x in args.site]
         sites_to_check = [x for x in data['sites'] if x['name'].lower() in args.site]
         if sites_to_check == 0:
@@ -95,8 +95,8 @@ def check_site(site, username, if_found, if_not_found, if_neither):
         string_match = resp.text.find(site['account_existence_string']) > 0
 
         if DEBUG_MODE:
-            neutral("- HTTP status (match %s): %s " % (code_match, r.status_code))
-            neutral("- HTTP response (match: %s): %s" % (string_match, r.content))
+            neutral("- HTTP status (match %s): %s " % (code_match, resp.status_code))
+            neutral("- HTTP response (match: %s): %s" % (string_match, resp.content))
 
         if code_match and string_match:
             return if_found(url)
