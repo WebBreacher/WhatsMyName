@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/WebBreacher/WhatsMyName.svg?branch=master)](https://travis-ci.org/WebBreacher/WhatsMyName)
+
 # WhatsMyName
 This repository has the unified data required to perform user and username enumeration on various websites. Content is in a JSON file and can easily be used in other projects such as the ones below:
 * [Recon-ng](https://bitbucket.org/LaNMaSteR53/recon-ng) - The [Profiler Module](https://bitbucket.org/LaNMaSteR53/recon-ng/src/7723096ce2301092906838ef73564e7907886748/modules/recon/profiles-profiles/profiler.py?at=master&fileviewer=file-view-default) grabs this JSON file and uses it. See https://webbreacher.com/2014/12/11/recon-ng-profiler-module/ for details.
