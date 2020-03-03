@@ -1153,7 +1153,7 @@
       },
       {
          "name" : "MyAnimeList",
-         "check_uri" : "https://www.myanimelist.net/profile/{account}",
+         "check_uri" : "https://myanimelist.net/profile/{account}",
          "account_existence_code" : "200",
          "account_existence_string" : "Profile - MyAnimeList.net",
          "account_missing_string" : "<title>404 Not Found",
