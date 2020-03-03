@@ -263,7 +263,7 @@
       },
       {
          "name" : "cHEEZburger",
-         "check_uri" : "http://profile.cheezburger.com/{account}",
+         "check_uri" : "https://profile.cheezburger.com/{account}",
          "account_existence_code" : "200",
          "account_existence_string" : "profile-header",
          "account_missing_string" : "<title>Home - ",
@@ -307,7 +307,7 @@
       },
       {
          "name" : "COLOURlovers",
-         "check_uri" : "http://www.colourlovers.com/lover/{account}",
+         "check_uri" : "https://www.colourlovers.com/lover/{account}",
          "account_existence_code" : "200",
          "account_existence_string" : "Send A Love Note",
          "account_missing_string" : "",
@@ -506,7 +506,7 @@
       },
       {
          "name" : "EPORNER",
-         "check_uri" : "http://www.eporner.com/profile/{account}/",
+         "check_uri" : "https://www.eporner.com/profile/{account}/",
          "account_existence_code" : "200",
          "account_existence_string" : "Recently watched",
          "account_missing_string" : "Profile not found",
@@ -950,7 +950,7 @@
       },
       {
          "name" : "Kongregate",
-         "check_uri" : "http://www.kongregate.com/accounts/{account}",
+         "check_uri" : "https://www.kongregate.com/accounts/{account}",
          "account_existence_code" : "200",
          "account_existence_string" : "Member Since",
          "account_missing_string" : "Sorry, no account with that name was found",
@@ -983,8 +983,8 @@
       },
       {
          "name" : "LiveJasmin",
-         "check_uri" : "http://new.livejasmin.com/en/flash/get-performer-details/{account}",
-         "pretty_uri" : "http://new.livejasmin.com/en/chat/{account}",
+         "check_uri" : "https://new.livejasmin.com/en/flash/get-performer-details/{account}",
+         "pretty_uri" : "https://new.livejasmin.com/en/chat/{account}",
          "account_existence_code" : "200",
          "account_existence_string" : "performer_id",
          "account_missing_string" : "\"success\": false",
@@ -1053,7 +1053,7 @@
       },
       {
          "name" : "Meetzur",
-         "check_uri" : "http://www.meetzur.com/{account}",
+         "check_uri" : "https://www.meetzur.com/{account}",
          "account_existence_code" : "200",
          "account_existence_string" : "Last Login",
          "account_missing_string" : "The page you are looking for does not exist.",
@@ -1131,7 +1131,7 @@
       },
       {
          "name" : "Mod DB",
-         "check_uri" : "http://www.moddb.com/members/{account}",
+         "check_uri" : "https://www.moddb.com/members/{account}",
          "account_existence_code" : "200",
          "account_existence_string" : "joined",
          "account_missing_string" : "The member requested could not be found",
@@ -1142,7 +1142,7 @@
       },
       {
          "name" : "Muck Rack",
-         "check_uri" : "http://muckrack.com/{account}",
+         "check_uri" : "https://muckrack.com/{account}",
          "account_existence_code" : "200",
          "account_existence_string" : "on Muck Rack",
          "account_missing_string" : "Oh no! Page not found.",
@@ -1164,7 +1164,7 @@
       },
       {
          "name" : "MyBuilder.com",
-         "check_uri" : "http://www.mybuilder.com/profile/view/{account}",
+         "check_uri" : "https://www.mybuilder.com/profile/view/{account}",
          "account_existence_code" : "200",
          "account_existence_string" : "feedback",
          "account_missing_string" : "Whoops! You broke our site!",
@@ -1175,7 +1175,7 @@
       },
       {
          "name" : "MyFitnessPal",
-         "check_uri" : "http://www.myfitnesspal.com/user/{account}/status",
+         "check_uri" : "https://www.myfitnesspal.com/user/{account}/status",
          "account_existence_code" : "200",
          "account_existence_string" : "s profile | MyFitnessPal.com</title>",
          "account_missing_string" : "Page not found",
@@ -1186,7 +1186,7 @@
       },
       {
          "name" : "MyLot",
-         "check_uri" : "http://www.mylot.com/{account}",
+         "check_uri" : "https://www.mylot.com/{account}",
          "account_existence_code" : "200",
          "account_existence_string" : "on myLot</title>",
          "account_missing_string" : " / Whoops!",
@@ -1462,7 +1462,7 @@
       },
       {
          "name" : "redTube",
-         "check_uri" : "http://www.redtube.com/users/{account}",
+         "check_uri" : "https://www.redtube.com/users/{account}",
          "account_existence_code" : "200",
          "account_existence_string" : "s Profile - RedTube",
          "account_missing_string" : "Page Not Found",
@@ -1594,7 +1594,7 @@
       },
       {
          "name" : "SmiteGuru",
-         "check_uri" : "http://smite.guru/profile/pc/{account}",
+         "check_uri" : "https://smite.guru/profile/pc/{account}",
          "account_existence_code" : "200",
          "account_existence_string" : "Playtime</div>",
          "account_missing_string" : "",
@@ -1836,7 +1836,7 @@
       },
       {
          "name" : "tumblr",
-         "check_uri" : "http://{account}.tumblr.com",
+         "check_uri" : "https://{account}.tumblr.com",
          "account_existence_code" : "200",
          "account_existence_string" : "avatar",
          "account_missing_string" : "There's nothing here",
@@ -1902,7 +1902,7 @@
       },
       {
          "name" : "Vampire Freaks",
-         "check_uri" : "http://vampirefreaks.com/{account}",
+         "check_uri" : "https://vampirefreaks.com/{account}",
          "account_existence_code" : "200",
          "account_existence_string" : "Account Status",
          "account_missing_string" : "Page Not Found",
