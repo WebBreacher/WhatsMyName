@@ -2069,7 +2069,7 @@
       },
       {
          "name" : "wishlistr",
-         "check_uri" : "http://www.wishlistr.com/profile/{account}/",
+         "check_uri" : "https://www.wishlistr.com/profile/{account}/",
          "account_existence_code" : "200",
          "account_existence_string" : "s profile</title>",
          "account_missing_string" : "",
