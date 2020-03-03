@@ -1583,7 +1583,7 @@
       },
       {
          "name" : "SmashRun",
-         "check_uri" : "http://smashrun.com/{account}/",
+         "check_uri" : "https://smashrun.com/{account}/",
          "account_existence_code" : "200",
          "account_existence_string" : "Miles run overall",
          "account_missing_string" : "no Smashrunner with the username",
