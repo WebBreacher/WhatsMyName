@@ -960,17 +960,6 @@
          "valid" : true
       },
       {
-         "name" : "Kik",
-         "check_uri" : "https://kik.me/{account}",
-         "account_existence_code" : "200",
-         "account_existence_string" : "<meta property=\"og:image\"       content=\"http://profilepics.cf.kik.com",
-         "account_missing_string" : "<meta property=\"og:image\"       content=\"\"/>",
-         "account_missing_code" : "200",
-         "known_accounts" : ["alice","jake"],
-         "category" : "social",
-         "valid" : true
-      },
-      {
          "name" : "Kongregate",
          "check_uri" : "http://www.kongregate.com/accounts/{account}",
          "account_existence_code" : "200",
