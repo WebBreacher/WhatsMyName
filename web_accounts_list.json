@@ -1528,7 +1528,7 @@
       },
       {
          "name" : "setlist.fm",
-         "check_uri" : "http://www.setlist.fm/user/{account}",
+         "check_uri" : "https://www.setlist.fm/user/{account}",
          "account_existence_code" : "200",
          "account_existence_string" : "s setlist.fm | setlist.fm</title>",
          "account_missing_string" : "Sorry, the page you requested doesn't exist",
