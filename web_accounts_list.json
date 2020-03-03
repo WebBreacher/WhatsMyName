@@ -618,12 +618,12 @@
       },
       {
          "name" : "freesound",
-         "check_uri" : "http://www.freesound.org/people/{account}/",
+         "check_uri" : "https://freesound.org/people/{account}/",
          "account_existence_code" : "200",
          "account_existence_string" : "START of Content area",
          "account_missing_string" : "Page not found",
          "account_missing_code" : "404",
-         "known_accounts" : ["test","johndoe"],
+         "known_accounts" : ["test","JohnDoe"],
          "category" : "music",
          "valid" : true
       },
