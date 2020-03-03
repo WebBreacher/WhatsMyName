@@ -1784,8 +1784,8 @@
          "check_uri" : "https://www.tiktok.com/@{account}",
          "account_existence_code" : "200",
          "account_existence_string" : "| TikTok</title>",
-         "account_missing_string" : "Something is wrong on our end",
-         "account_missing_code" : "500",
+         "account_missing_string" : "Couldn't find this account",
+         "account_missing_code" : "200",
          "known_accounts" : ["jsmittyy", "maccurry"],
          "category" : "social",
          "valid" : true
