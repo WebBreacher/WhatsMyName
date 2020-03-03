@@ -891,7 +891,7 @@
          "account_missing_code" : "200",
          "known_accounts" : ["Inkbunny","test"],
          "category" : "XXX PORN XXX",
-         "valid" : true
+         "valid" : false
       },
       {
          "name" : "InsaneJournal",
@@ -1059,7 +1059,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["mrsparkzalot","valleyrec420"],
          "category" : "drugs",
-         "valid" : true
+         "valid" : false
       },
       {
          "name" : "Medium",

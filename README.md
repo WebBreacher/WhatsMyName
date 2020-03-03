@@ -30,6 +30,8 @@ To check username on sites using the Whatsmyname script run _Python 3_ script an
 python3 ./web_accounts_list_checker.py -u username
 ```
 
+> ⚠️ Some sites are drugs or pornography related, Consult you network admin before running this script or you can edit sites list file to remove any site.
+
 ![output_example](output_example.png)
 
 
@@ -63,7 +65,7 @@ The format of the JSON is simple. There are 3 main elements:
 
 Within the `"sites"` elements, the format is as follows (with several parameters being optional):
 
-```json
+```
  ...
   {
      "name" : "name of the site",
@@ -82,7 +84,7 @@ Within the `"sites"` elements, the format is as follows (with several parameters
 
 Here is an example of a site element:
 
-```json
+```
  ...
   {
      "name" : "GitHub",
