@@ -1362,10 +1362,10 @@
       },
       {
          "name" : "Plurk",
-         "check_uri" : "http://www.plurk.com/{account}",
+         "check_uri" : "https://www.plurk.com/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "] on Plurk - Plurk</title>",
-         "account_missing_string" : "User Not Found!",
+         "account_existence_string" : "Profile views",
+         "account_missing_string" : "Register your plurk account",
          "account_missing_code" : "200",
          "known_accounts" : ["test"],
          "category" : "social",
