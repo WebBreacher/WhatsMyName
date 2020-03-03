@@ -6,7 +6,7 @@ This repository has the unified data required to perform user and username enume
 
 [![Open Source](https://img.shields.io/badge/Open%20Source-100%25-green.svg)](https://shields.io/)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-Yes-green.svg)](https://github.com/GetStream/winds/graphs/commit-activity)
-[![Version](https://img.shields.io/badge/Version-1.1-orange)](https://github.com/GetStream/winds/graphs/commit-activity)
+[![Version](https://img.shields.io/badge/Version-1.6-orange)](https://github.com/GetStream/winds/graphs/commit-activity)
 
 
 ## Getting Started
@@ -139,6 +139,7 @@ Please reach to me `webbreacher@protonmail.com` if you are interested.
 [@janbinx](https://github.com/janbinx/)<br>
 [@bcoles](https://github.com/bcoles)<br>
 [@Sector035](https://github.com/sector035/)<br>
+[@Salaheldinaz](https://github.com/Salaheldinaz/)<br>
 
 ## License
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />
