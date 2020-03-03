@@ -178,7 +178,7 @@
          "account_existence_code" : "200",
          "account_existence_string" : "Blogger Template Style",
          "account_missing_string" : "Blog not found",
-         "account_missing_code" : "200",
+         "account_missing_code" : "404",
          "known_accounts" : ["test"],
          "category" : "blog",
          "valid" : true
