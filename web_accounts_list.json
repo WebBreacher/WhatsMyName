@@ -1649,7 +1649,7 @@
       },
       {
          "name" : "Soup",
-         "check_uri" : "http://{account}.soup.io/rss",
+         "check_uri" : "https://{account}.soup.io/rss",
          "account_existence_code" : "200",
          "account_existence_string" : "rss version",
          "account_missing_string" : "Blog not found",
