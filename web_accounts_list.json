@@ -276,7 +276,7 @@
          "name" : "Chess.com",
          "check_uri" : "https://www.chess.com/member/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "Last Login",
+         "account_existence_string" : "Last Online",
          "account_missing_string" : "<title>Missing Page?! - Chess.com</title>",
          "account_missing_code" : "404",
          "known_accounts" : ["john", "alice", "carol"],
