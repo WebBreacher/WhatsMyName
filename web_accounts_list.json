@@ -340,7 +340,7 @@
       },
       {
          "name" : "Delicious",
-         "check_uri" : "http://del.icio.us/{account}",
+         "check_uri" : "https://del.icio.us/{account}",
          "account_existence_code" : "200",
          "account_existence_string" : "Following:",
          "account_missing_string" : "An error occurred.",
