@@ -1605,7 +1605,7 @@
       },
       {
          "name" : "SmugMug",
-         "check_uri" : "http://{account}.smugmug.com",
+         "check_uri" : "https://{account}.smugmug.com",
          "account_existence_code" : "200",
          "account_existence_string" : "schema.org/Person",
          "account_missing_string" : "schema.org/Thing",
