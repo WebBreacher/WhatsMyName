@@ -58,7 +58,7 @@ def signal_handler(*_):
 def web_call(location):
     try:
         # Make web request for that URL, timeout in X secs and don't verify SSL/TLS certs
-        return requests.get(location, headers=HEADERS, timeout=60, verify=False)
+        return requests.get(location, headers=HEADERS, timeout=60, verify=False, allow_redirects=False)
     except requests.exceptions.Timeout as caught:
         raise Exception("Connection time out. Try increasing the timeout delay.") from caught
     except requests.exceptions.TooManyRedirects as caught:
