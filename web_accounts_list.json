@@ -2003,7 +2003,7 @@
       },
       {
          "name" : "Wanelo",
-         "check_uri" : "https://wanelo.com/{account}",
+         "check_uri" : "https://wanelo.co/{account}",
          "account_existence_code" : "200",
          "account_existence_string" : "on Wanelo</title>",
          "account_missing_string" : "Hmm, that's embarrassing",
