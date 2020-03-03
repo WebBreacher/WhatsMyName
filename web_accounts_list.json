@@ -1994,7 +1994,7 @@
          "name" : "Voices.com",
          "check_uri" : "https://www.voices.com/actors/{account}#bio",
          "account_existence_code" : "200",
-         "account_existence_string" : "Payment Terms</h2>",
+         "account_existence_string" : "Payment Terms</h3>",
          "account_missing_string" : "We're Sorry",
          "account_missing_code" : "404",
          "known_accounts" : ["briankirchoff","bryankopta"],
