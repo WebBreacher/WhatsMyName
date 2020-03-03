@@ -445,7 +445,7 @@
          "account_existence_string" : "#portfolio_images_tab",
          "account_missing_string" : "(404)</title>",
          "account_missing_code" : "302",
-         "known_accounts" : ["chriskahn","thisdoesnotexistyet"],
+         "known_accounts" : ["chriskahn","swilken"],
          "category" : "hobby",
          "valid" : true
       },
