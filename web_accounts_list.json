@@ -1063,7 +1063,7 @@
       },
       {
          "name" : "Medium",
-         "check_uri" : "https://medium.com/@{account}/latest",
+         "check_uri" : "https://medium.com/@{account}",
          "pretty_uri" : "https://medium.com/@{account}",
          "account_existence_code" : "200",
          "account_existence_string" : "username",
