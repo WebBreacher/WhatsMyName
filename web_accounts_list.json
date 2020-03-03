@@ -1296,7 +1296,7 @@
       },
       {
          "name" : "Pastebin",
-         "check_uri" : "http://pastebin.com/u/{account}",
+         "check_uri" : "https://pastebin.com/u/{account}",
          "account_existence_code" : "200",
          "account_existence_string" : "'s Pastebin",
          "account_missing_string" : "",
