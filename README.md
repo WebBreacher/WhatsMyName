@@ -1,5 +1,6 @@
 # WhatsMyName
 This repository has the unified data required to perform user and username enumeration on various websites.
+
 ![whatsmyname](whatsmyname.png)
 
 Content is in a JSON file and can easily be used in other projects such as the ones below:
