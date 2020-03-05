@@ -8,27 +8,30 @@ import signal
 import string
 import sys
 
+import threading
 import requests
-
 
 DEBUG_MODE = False
 
 # Set HTTP Header info.
 HEADERS = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:73.0) Gecko/20100101 Firefox/73.0',
-           'Accept' : 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-           'Accept-Language' : 'en-US,en;q=0.5',
-           'Accept-Encoding' : 'gzip, deflate'
-          }
+           'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+           'Accept-Language': 'en-US,en;q=0.5',
+           'Accept-Encoding': 'gzip, deflate'
+           }
 
 # Command line input
 parser = argparse.ArgumentParser(description="This standalone script will look up a single username using the JSON file"
-                                 " or will run a check of the JSON file for bad detection strings.")
+                                             " or will run a check of the JSON file for bad detection strings.")
 parser.add_argument('-u', '--username', help='[OPTIONAL] If this param is passed then this script will perform the '
-                    'lookups against the given user name instead of running checks against '
-                    'the JSON file.')
-parser.add_argument('-s', '--site', nargs='*', help='[OPTIONAL] If this parameter is passed the script will check only the named site or list of sites.')
+                                             'lookups against the given user name instead of running checks against '
+                                             'the JSON file.')
+parser.add_argument('-s', '--site', nargs='*',
+                    help='[OPTIONAL] If this parameter is passed the script will check only the named site or list of '
+                         'sites.')
 parser.add_argument('-d', '--debug', help="Enable debug output", action="store_true")
 
+# check operating system ot adjust output color formatting
 if os.name == "posix":
     class Colors:
         YELLOW = "\033[93m"
@@ -42,18 +45,30 @@ else:
         GREEN = ""
         ENDC = ""
 
+
 def warn(msg):
     print(Colors.YELLOW + msg + Colors.ENDC)
+
+
 def error(msg):
     print(Colors.RED + msg + Colors.ENDC)
+
+
 def positive(msg):
     print(Colors.GREEN + msg + Colors.ENDC)
+
+
 def neutral(msg):
     print(msg)
 
+
 def signal_handler(*_):
+    """
+    If user pressed Ctrl+C close all connections and exit
+    """
     error(' !!!  You pressed Ctrl+C. Exiting script.')
     sys.exit(0)
+
 
 def web_call(location):
     try:
@@ -66,8 +81,11 @@ def web_call(location):
     except Exception as caught:
         raise Exception("Critical error.") from caught
 
+
 def random_string(length):
-    return ''.join(random.choice(string.ascii_lowercase + string.ascii_uppercase + string.digits) for x in range(length))
+    return ''.join(
+        random.choice(string.ascii_lowercase + string.ascii_uppercase + string.digits) for x in range(length))
+
 
 def find_sites_to_check(args, data):
     if args.site:
@@ -86,7 +104,34 @@ def find_sites_to_check(args, data):
         neutral('%d sites found in file.' % len(data['sites']))
         return data['sites']
 
-def check_site(site, username, if_found, if_not_found, if_neither):
+
+def message_to_print(url, status, run_type):
+    if run_type == 'username':
+        if status == 'found':
+            return positive("[+] User found at %s" % url)
+        elif status == 'not found':
+            return neutral("[-] User not found at %s" % url)
+        elif status == 'neither':
+            return error("[!] Error. The check implementation is broken for %s" % url)
+
+    elif run_type == 'non_existent':
+        if status == 'found':
+            return error("[!] False positive for %s" % url)
+        elif status == 'not found':
+            return neutral("    As expected, no user found at %s" % url)
+        elif status == 'neither':
+            return error("[!] Neither conditions matched for %s" % url)
+
+    elif run_type == 'known_account':
+        if status == 'found':
+            return neutral("    As expected, profile found at %s" % url),
+        elif status == 'not found':
+            return error("[!] Profile not found at %s" % url),
+        elif status == 'neither':
+            return error("[!] Neither conditions matched for %s" % url)
+
+
+def check_site(site, username, run_type):
     url = site['check_uri'].replace("{account}", username)
     try:
         resp = web_call(url)
@@ -99,18 +144,19 @@ def check_site(site, username, if_found, if_not_found, if_neither):
             neutral("- HTTP response (match: %s): %s" % (string_match, resp.content))
 
         if code_match and string_match:
-            return if_found(url)
+            return message_to_print(url, 'found', run_type)
 
         code_missing_match = resp.status_code == int(site['account_missing_code'])
         string_missing_match = resp.text.find(site['account_missing_string']) > 0
 
         if code_missing_match or string_missing_match:
-            return if_not_found(url)
+            return message_to_print(url, 'not found', run_type)
 
-        return if_neither(url)
+        return message_to_print(url, 'neither', run_type)
 
     except Exception as caught:
         error("Error when looking up %s (%s)" % (url, str(caught)))
+
 
 ###################
 # Main
@@ -135,30 +181,35 @@ def main():
 
     sites_to_check = find_sites_to_check(args, data)
 
+    # Start threads
+    threads = list()
     for site in sites_to_check:
         if not site['valid']:
             warn("[!] Skipping %s - Marked as not valid." % site['name'])
             continue
 
         if args.username:
-            check_site(site, args.username,
-                       if_found     = lambda url: positive("[+] User found at %s" % url),
-                       if_not_found = lambda url: neutral( "[-] User not found at %s" % url),
-                       if_neither   = lambda url: error(   "[!] Error. The check implementation is broken for %s" % url))
+            run_type = 'username'
+            x = threading.Thread(target=check_site, args=(site, args.username, run_type), daemon=True)
+            threads.append(x)
+            x.start()
+
         else:
             non_existent = random_string(20)
-
-            check_site(site, non_existent,
-                       if_found     = lambda url: error(  "[!] False positive for %s" % url),
-                       if_not_found = lambda url: neutral("    As expected, no user found at %s" % url),
-                       if_neither   = lambda url: error(  "[!] Neither conditions matched for %s" % url))
+            n = threading.Thread(target=check_site, args=(site, non_existent, 'non_existent'), daemon=True)
+            threads.append(n)
+            n.start()
 
             for known_account in site['known_accounts']:
-                check_site(site, known_account,
-                           if_found     = lambda url: neutral("    As expected, profile found at %s" % url),
-                           if_not_found = lambda url: error(  "[!] Profile not found at %s" % url),
-                           if_neither   = lambda url: error(  "[!] Neither conditions matched for %s" % url))
+                k = threading.Thread(target=check_site, args=(site, known_account, 'known_account'), daemon=True)
+                threads.append(k)
+                k.start()
+
+    for thread in threads:
+        thread.join()
+
 
 if __name__ == "__main__":
     # execute only if run as a script
     main()
+
