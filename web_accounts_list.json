@@ -4,7 +4,8 @@
                 "4.0 International License. To view a copy of this license, visit",
                 "http://creativecommons.org/licenses/by-sa/4.0/ or send a letter to",
                 "Creative Commons, PO Box 1866, Mountain View, CA 94042, USA."],
-   "authors" : ["WebBreacher","Munchko","L0r3m1p5um","lehuff","janbinx","bcoles","Sector035","arnydo"],
+   "authors" : ["WebBreacher","Munchko","L0r3m1p5um","lehuff","janbinx","bcoles","Sector035",
+				"arnydo","mccartney","salaheldinaz"],
    "sites" : [
       {
          "name" : "500px",
@@ -17,7 +18,7 @@
          "category" : "images",
          "valid" : true
       },
-		  {
+	  {
          "name" : "9GAG",
          "check_uri" : "https://9gag.com/u/{account}",
          "account_existence_code" : "200",
