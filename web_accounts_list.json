@@ -896,7 +896,7 @@
       },
       {
          "name" : "Internet Archive Account",
-         "check_uri" : "http://archive.org/details/@{account}",
+         "check_uri" : "https://archive.org/details/@{account}",
          "account_existence_code" : "200",
          "account_existence_string" : "<title>User Account",
          "account_missing_string" : "<title>cannot find account",
@@ -907,9 +907,9 @@
       },
       {
          "name" : "Internet Archive User Search",
-         "check_uri" : "http://archive.org/search.php?query={account}",
+         "check_uri" : "https://archive.org/search.php?query={account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "item-ia",
+         "account_existence_string" : "<!--/.item-ia-->",
          "account_missing_string" : "",
          "account_missing_code" : "200",
          "known_accounts" : ["test","mubix"],
