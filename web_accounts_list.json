@@ -1418,6 +1418,17 @@
          "valid" : true
       },
       {
+         "name" : "ProtonMail",
+         "check_uri" : "https://api.protonmail.ch/pks/lookup?op=get&search={account}@protonmail.com",
+         "account_existence_code" : "200",
+         "account_existence_string" : "BEGIN PGP PUBLIC KEY",
+         "account_missing_string" : "No key found",
+         "account_missing_code" : "404",
+         "known_accounts" : ["admin","test"],
+         "category" : "email",
+         "valid" : true
+      },
+      {
          "name" : "PSNProfiles",
          "check_uri" : "https://psnprofiles.com/{account}",
          "account_existence_code" : "200",
