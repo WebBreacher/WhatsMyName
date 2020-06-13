@@ -484,6 +484,17 @@
          "valid" : true
       },
       {
+         "name" : "Elftown",
+         "check_uri" : "http://elftown.com/{account}", 
+         "account_existence_code" : "303",
+         "account_existence_string" : "",
+         "account_missing_string" : "is an unknown",
+         "account_missing_code" : "200",
+         "known_accounts" : ["marhiah", "adnama"],
+         "category" : "social",
+         "valid" : true
+      },
+      {
          "name" : "EightBit",
          "check_uri" : "http://eightbit.me/{account}",
          "account_existence_code" : "200",
