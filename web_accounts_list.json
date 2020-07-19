@@ -44,8 +44,8 @@
          "name" : "AngelList",
          "check_uri" : "https://angel.co/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "s profile on AngelList",
-         "account_missing_string" : "Page not found - 404",
+         "account_existence_string" : "s profile on AngelList, the startup and tech network",
+         "account_missing_string" : "<title>Page not found - 404",
          "account_missing_code" : "404",
          "known_accounts" : ["sacca","rudyadler"],
          "category" : "tech",
@@ -115,17 +115,6 @@
          "account_missing_code" : "404",
          "known_accounts" : ["alice", "bob"],
          "category" : "music",
-         "valid" : true
-      },
-      {
-         "name" : "Basecamp",
-         "check_uri" : "https://launchpad.37signals.com/session/profile?username={account}",
-         "account_existence_code" : "200",
-         "account_existence_string" : "strategies\":[\"password\"]}",
-         "account_missing_string" : ":[]}",
-         "account_missing_code" : "200",
-         "known_accounts" : ["test","john"],
-         "category" : "business",
          "valid" : true
       },
       {
@@ -243,10 +232,10 @@
          "name" : "cash.me",
          "check_uri" : "https://cash.me/${account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "<title>Pay",
-         "account_missing_string" : "",
+         "account_existence_string" : " on Cash App</title>",
+         "account_missing_string" : "The page you are looking for can't be found",
          "account_missing_code" : "404",
-         "known_accounts" : ["jill","john"],
+         "known_accounts" : ["Jill","john"],
          "category" : "business",
          "valid" : true
       },
@@ -325,18 +314,7 @@
          "account_missing_code" : "",
          "known_accounts" : ["test"],
          "category" : "hobby",
-         "valid" : true
-      },
-      {
-         "name" : "cruiseMates",
-         "check_uri" : "http://www.cruisemates.com/forum/members/{account}.html",
-         "account_existence_code" : "200",
-         "account_existence_string" : "Join Date:",
-         "account_missing_string" : "This user has not registered",
-         "account_missing_code" : "200",
-         "known_accounts" : ["test","john"],
-         "category" : "travel",
-         "valid" : true
+         "valid" : false
       },
       {
          "name" : "Dailymotion",
@@ -626,6 +604,17 @@
          "valid" : true
       },
       {
+         "name" : "Fodors Forum",
+         "check_uri" : "https://www.fodors.com/community/profile/{account}/forum-activity",
+         "account_existence_code" : "200",
+         "account_existence_string" : "Member since",
+         "account_missing_string" : "Plan Your Trip Online</title>",
+         "account_missing_code" : "302",
+         "known_accounts" : ["mms","gooster"],
+         "category" : "travel",
+         "valid" : true
+      },
+      {
          "name" : "Foursquare",
          "check_uri" : "https://foursquare.com/{account}",
          "account_existence_code" : "200",
@@ -735,17 +724,6 @@
          "account_missing_code" : "200",
          "known_accounts" : ["danielebarison","cderalow"],
          "category" : "health",
-         "valid" : true
-      },
-      {
-         "name" : "GeekGrade",
-         "check_uri" : "http://www.geekgrade.com/geeksheet/{account}/",
-         "account_existence_code" : "200",
-         "account_existence_string" : "geek_sheet",
-         "account_missing_string" : "404 - Missing Geekshee",
-         "account_missing_code" : "200",
-         "known_accounts" : ["WebBreacher","jcran"],
-         "category" : "coding",
          "valid" : true
       },
       {
@@ -869,7 +847,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["darksydephil"],
          "category" : "gaming",
-         "valid" : true
+         "valid" : false
       },
       {
          "name" : "ImageShack",
@@ -924,7 +902,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["test", "barackobama"],
          "category" : "social",
-         "valid" : true
+         "valid" : false
       },
       {
          "name" : "instructables",
@@ -1052,12 +1030,11 @@
       {
          "name" : "MassRoots",
          "check_uri" : "https://api.massroots.com/v1/accounts?singleUser=true&username={account}",
-         "pretty_uri" : "https://massroots.com/user/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "username",
-         "account_missing_string" : "NotFound",
+         "account_existence_string" : "createdAt",
+         "account_missing_string" : "The requested document does not exist",
          "account_missing_code" : "404",
-         "known_accounts" : ["mrsparkzalot","valleyrec420"],
+         "known_accounts" : ["morgaaan","wes19"],
          "category" : "drugs",
          "valid" : true
       },
@@ -1081,17 +1058,6 @@
          "account_missing_string" : "<title>MeetMe - Chat and Meet New People</title",
          "account_missing_code" : "200",
          "known_accounts" : ["john","marsha"],
-         "category" : "dating",
-         "valid" : true
-      },
-      {
-         "name" : "Meetzur",
-         "check_uri" : "https://www.meetzur.com/{account}",
-         "account_existence_code" : "200",
-         "account_existence_string" : "Last Login",
-         "account_missing_string" : "The page you are looking for does not exist.",
-         "account_missing_code" : "200",
-         "known_accounts" : ["john"],
          "category" : "dating",
          "valid" : true
       },
@@ -1137,7 +1103,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["test","john"],
          "category" : "music",
-         "valid" : true
+         "valid" : false
       },
       {
          "name" : "Mixer",
@@ -1185,24 +1151,13 @@
          "valid" : true
       },
       {
-         "name" : "MyAnimeList",
-         "check_uri" : "https://myanimelist.net/profile/{account}",
-         "account_existence_code" : "200",
-         "account_existence_string" : "Profile - MyAnimeList.net",
-         "account_missing_string" : "<title>404 Not Found",
-         "account_missing_code" : "404",
-         "known_accounts" : ["test", "admin"],
-         "category" : "movies",
-         "valid" : true
-      },
-      {
          "name" : "MyBuilder.com",
          "check_uri" : "https://www.mybuilder.com/profile/view/{account}",
          "account_existence_code" : "200",
          "account_existence_string" : "feedback",
          "account_missing_string" : "Whoops! You broke our site!",
          "account_missing_code" : "404",
-         "known_accounts" : ["clif", "john"],
+         "known_accounts" : ["blue", "john"],
          "category" : "business",
          "valid" : true
       },
@@ -1251,17 +1206,6 @@
          "valid" : true
       },
       {
-         "name" : "New Project 2",
-         "check_uri" : "https://newproject2.com/{account}",
-         "account_existence_code" : "200",
-         "account_existence_string" : "join-button",
-         "account_missing_string" : "error-404",
-         "account_missing_code" : "404",
-         "known_accounts" : ["rekietalaw","hampture"],
-         "category" : "finance",
-         "valid" : true
-      },
-      {
          "name" : "NotABug",
          "check_uri" : "https://notabug.org/{account}",
          "account_existence_code" : "200",
@@ -1271,17 +1215,6 @@
          "known_accounts" : ["notabug", "hp", "zPlus"],
          "known_missing_accounts" : ["doesnotexist", "example"],
          "category" : "coding",
-         "valid" : true
-      },
-      {
-         "name" : "OnlyFans",
-         "check_uri" : "https://onlyfans.com/{account}",
-         "account_existence_code" : "200",
-         "account_existence_string" : "Posts",
-         "account_missing_string" : "this page is not available",
-         "account_missing_code" : "404",
-         "known_accounts" : ["kyliesummers","draeaxtell"],
-         "category" : "social",
          "valid" : true
       },
       {
@@ -1417,28 +1350,6 @@
          "valid" : true
       },
       {
-         "name" : "Porn.com",
-         "check_uri" : "https://www.porn.com/profile/{account}",
-         "account_existence_code" : "200",
-         "account_existence_string" : "'s Profile. Videos",
-         "account_missing_string" : "404 - Page not found",
-         "account_missing_code" : "404",
-         "known_accounts" : ["HottieDiana94","romarandi"],
-         "category" : "XXX PORN XXX",
-         "valid" : true
-      },
-      {
-         "name" : "Pornhub Models",
-         "check_uri" : "https://www.pornhub.com/model/{account}",
-         "account_existence_code" : "200",
-         "account_existence_string" : " Porn Videos &#124; Pornhub",
-         "account_missing_string" : "Error Page Not Found",
-         "account_missing_code" : "404",
-         "known_accounts" : ["tinna-angel","lisa-ann"],
-         "category" : "XXX PORN XXX",
-         "valid" : true
-      },
-      {
          "name" : "Pornhub Porn Stars",
          "check_uri" : "https://www.pornhub.com/pornstar/{account}",
          "account_existence_code" : "200",
@@ -1492,17 +1403,6 @@
          "account_missing_code" : "200",
          "known_accounts" : ["FairyCal","jericho0420"],
          "category" : "gaming",
-         "valid" : true
-      },
-      {
-         "name" : "RapidAPI",
-         "check_uri" : "https://rapidapi.com/user/{account}",
-         "account_existence_code" : "200",
-         "account_existence_string" : "Developer Profile | RapidAPI</title>",
-         "account_missing_string" : "the page you're trying to reach doesn't exist",
-         "account_missing_code" : "200",
-         "known_accounts" : ["rapidapi", "test", "admin"],
-         "category" : "coding",
          "valid" : true
       },
       {
@@ -1734,7 +1634,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["john","blue"],
          "category" : "music",
-         "valid" : true
+         "valid" : false
       },
       {
          "name" : "Steam",
@@ -1836,17 +1736,6 @@
          "valid" : true
       },
       {
-         "name" : "Tik Tok",
-         "check_uri" : "https://www.tiktok.com/@{account}",
-         "account_existence_code" : "200",
-         "account_existence_string" : "s Newest TikTok Videos</title>",
-         "account_missing_string" : "Couldn't find this account",
-         "account_missing_code" : "200",
-         "known_accounts" : ["jsmittyy", "maccurry"],
-         "category" : "social",
-         "valid" : true
-      },
-      {
          "name" : "Tinder",
          "check_uri" : "https://www.gotinder.com/@{account}",
          "account_existence_code" : "200",
@@ -1855,7 +1744,7 @@
          "account_missing_code" : "200",
          "known_accounts" : ["Alexey","Marsha"],
          "category" : "dating",
-         "valid" : true
+         "valid" : false
       },
       {
          "name" : "tripadvisor",
@@ -1865,17 +1754,6 @@
          "account_missing_string" : "This page is on vacation",
          "account_missing_code" : "404",
          "known_accounts" : ["john","test"],
-         "category" : "travel",
-         "valid" : true
-      },
-      {
-         "name" : "Tripit",
-         "check_uri" : "https://www.tripit.com/people/{account}#/profile/basic-info",
-         "account_existence_code" : "200",
-         "account_existence_string" : "profile_modal_dialog",
-         "account_missing_string" : "url=https://www.tripit.com/home",
-         "account_missing_code" : "302",
-         "known_accounts" : ["Kristin444"],
          "category" : "travel",
          "valid" : true
       },
@@ -1910,7 +1788,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["WebBreacher","osintninja"],
          "category" : "social",
-         "valid" : true
+         "valid" : false
       },
       {
          "name" : "Udemy",
@@ -2142,7 +2020,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["grumdad","tonystark85"],
          "category" : "XXX PORN XXX",
-         "valid" : true
+         "valid" : false
       },
       {
          "name" : "XVIDEOS",
@@ -2153,7 +2031,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["chloe-foster","just-amber"],
          "category" : "XXX PORN XXX",
-         "valid" : true
+         "valid" : false
       },
       {
          "name" : "YouTube",
