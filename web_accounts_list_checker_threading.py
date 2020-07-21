@@ -118,12 +118,12 @@ def web_call(location):
         # Make web request for that URL, timeout in X secs and don't verify SSL/TLS certs
         resp = requests.get(location, headers=headers, timeout=60, verify=False, allow_redirects=False)
     except requests.exceptions.Timeout:
-        return Bcolors.RED + f'! ERROR: {location} CONNECTION TIME OUT. Try increasing the timeout delay.' \
+        return Bcolors.RED + f' !  ERROR: {location} CONNECTION TIME OUT. Try increasing the timeout delay.' \
                + Bcolors.ENDC
     except requests.exceptions.TooManyRedirects:
-        return Bcolors.RED + f'! ERROR: {location} TOO MANY REDIRECTS. Try changing the URL.' + Bcolors.ENDC
+        return Bcolors.RED + f' !  ERROR: {location} TOO MANY REDIRECTS. Try changing the URL.' + Bcolors.ENDC
     except requests.exceptions.RequestException as e:
-        return Bcolors.RED + f'! ERROR: CRITICAL ERROR. %s' % e + Bcolors.ENDC
+        return Bcolors.RED + f' !  ERROR: CRITICAL ERROR. %s' % e + Bcolors.ENDC
     else:
         return resp
 
@@ -134,14 +134,14 @@ def random_string(length):
 
 
 def finaloutput():
+    print('\n-------------------------------------------')
+
     if args.username:
-        print('------------------------------------')
         print(f'Searching for sites with username ({args.username}) > Found {len(username_results)} results:\n')
         for result in username_results:
             print(result)
     else:
         if len(overall_results) > 0:
-            print('------------------------------------')
             print('The following previously "valid" sites had errors:')
             for site_with_error, results in sorted(overall_results.items()):
                 print(Bcolors.YELLOW + '     %s --> %s' % (site_with_error, results) + Bcolors.ENDC)
@@ -233,8 +233,8 @@ def check_site(site, username=None):
                 if code_match and string_match:
                     print('      -  Code: %s; String: %s' % (code_match, string_match))
                     print(
-                        Bcolors.RED + '!  ERROR: FALSE POSITIVE DETECTED. Response code and Search Strings match ' \
-                                      'expected.' + Bcolors.ENDC + '\r')
+                        Bcolors.RED + f' !  ERROR: {site} FALSE POSITIVE DETECTED. Response code and Search '
+                                      f'Strings match expected.' + Bcolors.ENDC + '\r')
                     # TODO set site['valid'] = False
                     overall_results[site['name']] = 'False Positive'
                 else:
@@ -242,8 +242,8 @@ def check_site(site, username=None):
                     pass
             elif code_match and not string_match:
                 # TODO set site['valid'] = False
-                print(Bcolors.RED + '!  ERROR: BAD DETECTION STRING. "%s" was not found on resulting page.' \
-                      % site['account_existence_string'] + Bcolors.ENDC + '\r')
+                print(Bcolors.RED + f' !  ERROR: {site} BAD DETECTION STRING. "{site["account_existence_string"]}" '
+                                    f'was not found on resulting page.' + Bcolors.ENDC + '\r')
                 overall_results[site['name']] = 'Bad detection string.'
                 if args.stringerror:
                     file_name = 'se-' + site['name'] + '.' + uname
@@ -256,14 +256,15 @@ def check_site(site, username=None):
 
             elif not code_match and string_match:
                 # TODO set site['valid'] = False
-                print(Bcolors.RED + '!  ERROR: BAD DETECTION RESPONSE CODE. HTTP Response code different than ' \
-                                    'expected.' + Bcolors.ENDC + '\r')
+                print(Bcolors.RED + f' !  ERROR: {site} BAD DETECTION RESPONSE CODE. HTTP Response code different '
+                                    f'than expected.' + Bcolors.ENDC + '\r')
                 overall_results[site['name']] = 'Bad detection code. Received Code: %s; Expected Code: %s.' % \
                                                 (str(r.status_code), site['account_existence_code'])
             else:
                 # TODO set site['valid'] = False
-                print(Bcolors.RED + '!  ERROR: BAD CODE AND STRING. Neither the HTTP response code or detection ' \
-                                    'string worked.' + Bcolors.ENDC + '\r')
+                print(
+                    Bcolors.RED + f' !  ERROR: {site} BAD CODE AND STRING. Neither the HTTP response code or '
+                                  f'detection string worked.' + Bcolors.ENDC + '\r')
                 overall_results[site['name']] = 'Bad detection code and string. Received Code: %s; Expected Code: %s.' \
                                                 % (str(r.status_code), site['account_existence_code'])
 
