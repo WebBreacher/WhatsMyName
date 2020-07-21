@@ -286,7 +286,7 @@ if __name__ == "__main__":
 
     start_time = datetime.utcnow()
     for site_ in data['sites']:
-        x = threading.Thread(target=check_site, args=(site_, args.username))
+        x = threading.Thread(target=check_site, args=(site_, args.username), daemon=True)
         threads.append(x)
 
     for thread in threads:
