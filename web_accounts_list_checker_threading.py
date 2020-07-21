@@ -119,7 +119,7 @@ def signal_handler(*_):
     """
     If user pressed Ctrl+C close all connections and exit
     """
-    logging.warning(' !!!  You pressed Ctrl+C. Exiting script.')
+    logging.warning(Bcolors.RED + ' !!!  You pressed Ctrl+C. Exiting script.' + Bcolors.ENDC)
     finaloutput()
     sys.exit(0)
 
