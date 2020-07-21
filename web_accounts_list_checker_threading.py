@@ -33,6 +33,13 @@ import logging
 
 
 ##########################
+#        Logging        #
+##########################
+
+# Set logging formatting
+logging.basicConfig(level=logging.INFO, format='%(message)s')
+
+##########################
 # Variables && Functions #
 ##########################
 
