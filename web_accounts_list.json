@@ -6,9 +6,9 @@
                 "Creative Commons, PO Box 1866, Mountain View, CA 94042, USA."],
    "authors" : ["WebBreacher","Munchko","L0r3m1p5um","lehuff","janbinx","bcoles","Sector035",
                 "arnydo","mccartney","salaheldinaz","ch"],
-   "categories" : ["art","books","business","coding","dating","finance","food","gaming",
-                   "health","images","movies","music","news","photos","shopping","social",
-                   "sports","tech","travel"],
+   "categories" : ["art","blog","business","coding","dating","finance","gaming","health",
+                   "hobby","images","misc","music","news","search","shopping","social",
+                   "tech","video","XXXPORNXXX"],
    "sites" : [
       {
          "name" : "7cup",
@@ -63,7 +63,7 @@
          "account_missing_string" : "Sorry, we were unable to locate the content that you requested.",
          "account_missing_code" : "404",
          "known_accounts" : ["john", "bob"],
-         "category" : "books",
+         "category" : "hobby",
          "valid" : true
       },
       {
@@ -74,7 +74,7 @@
          "account_missing_string" : "It returned a 404 error.",
          "account_missing_code" : "404",
          "known_accounts" : ["john","bob"],
-         "category" : "food",
+         "category" : "finance",
          "valid" : true
       },
       {
@@ -85,7 +85,7 @@
          "account_missing_string" : "Извините, запрашиваемая страница не найдена",
          "account_missing_code" : "404",
          "known_accounts" : ["john", "bob"],
-         "category" : "sports",
+         "category" : "news",
          "valid" : true
       },
       {
@@ -118,7 +118,7 @@
          "account_missing_string" : "Looking for something?",
          "account_missing_code" : "404",
          "known_accounts" : ["john","blue"],
-         "category" : "social",
+         "category" : "art",
          "valid" : true
       },
       {
@@ -197,7 +197,8 @@
          "known_accounts" : ["john", "bob"],
          "category" : "art",
          "valid" : true
-      },   {
+      },
+      {
          "name" : "Eyeem",
          "check_uri" : "https://www.eyeem.com/u/{account}",
          "account_existence_code" : "200",
@@ -205,7 +206,7 @@
          "account_missing_string" : "Whoops! We can't find the user you're looking for...",
          "account_missing_code" : "404",
          "known_accounts" : ["john", "bob"],
-         "category" : "photos",
+         "category" : "art",
          "valid" : true
       },
       {
@@ -370,7 +371,7 @@
          "account_missing_string" : "<title>404 Not Found",
          "account_missing_code" : "404",
          "known_accounts" : ["test", "admin"],
-         "category" : "movies",
+         "category" : "social",
          "valid" : true
       },
       {
@@ -480,7 +481,7 @@
          "account_missing_string" : "Page not found :(",
          "account_missing_code" : "404",
          "known_accounts" : ["john", "bob"],
-         "category" : "travel",
+         "category" : "music",
          "valid" : true
       },
       {
@@ -580,7 +581,7 @@
          "account_missing_string" : "The page you were looking for doesn't exist (404) - Trakt.tv",
          "account_missing_code" : "404",
          "known_accounts" : ["john", "anne"],
-         "category" : "movies",
+         "category" : "video",
          "valid" : true
       },
       {
@@ -679,7 +680,7 @@
          "account_missing_string" : "Redirecting to",
          "account_missing_code" : "302",
          "known_accounts" : ["test", "john"],
-         "category" : "books",
+         "category" : "hobby",
          "valid" : true
       },
       {
@@ -712,7 +713,7 @@
          "account_missing_string" : "",
          "account_missing_code" : "404",
          "known_accounts" : ["test", "john"],
-         "category" : "presos",
+         "category" : "social",
          "valid" : true
       },
       {
@@ -778,7 +779,7 @@
          "account_missing_string" : "",
          "account_missing_code" : "200",
          "known_accounts" : ["test", "mike"],
-         "category" : "bookmarks",
+         "category" : "misc",
          "valid" : true
       },
       {
@@ -812,7 +813,7 @@
          "account_missing_string" : ">Bugcrowd | Error",
          "account_missing_code" : "404",
          "known_accounts" : ["bitquark"],
-         "category" : "hacker",
+         "category" : "tech",
          "valid" : true
       },
       {
@@ -845,7 +846,7 @@
          "account_missing_string" : "Sorry, the page you are",
          "account_missing_code" : "404",
          "known_accounts" : ["marketplacedesigners","john"],
-         "category" : "business",
+         "category" : "art",
          "valid" : false
       },
       {
@@ -856,7 +857,7 @@
          "account_missing_string" : "The page you are looking for can't be found",
          "account_missing_code" : "404",
          "known_accounts" : ["Jill","john"],
-         "category" : "business",
+         "category" : "finance",
          "valid" : false
       },
       {
@@ -900,7 +901,7 @@
          "account_missing_string" : "Oops! That page doesn’t exist",
          "account_missing_code" : "404",
          "known_accounts" : ["doctypeme","jon_morris"],
-         "category" : "education",
+         "category" : "coding",
          "valid" : true
       },
       {
@@ -911,7 +912,7 @@
          "account_missing_string" : "404/favicon.png",
          "account_missing_code" : "404",
          "known_accounts" : ["e4c5"],
-         "category" : "education",
+         "category" : "coding",
          "valid" : true
       },
       {
@@ -955,7 +956,7 @@
          "account_missing_string" : "An error occurred.",
          "account_missing_code" : "500",
          "known_accounts" : ["john","av2learner"],
-         "category" : "bookmarks",
+         "category" : "misc",
          "valid" : false
       },
       {
@@ -988,7 +989,7 @@
          "account_missing_string" : "<!-- row start signup -->",
          "account_missing_code" : "200",
          "known_accounts" : ["dfox", "trogus"],
-         "category" : "social",
+         "category" : "coding",
          "valid" : true
       },
       {
@@ -1022,7 +1023,7 @@
          "account_missing_string" : "Page not found (404) - Disqus",
          "account_missing_code" : "404",
          "known_accounts" : ["Aristotelian1","50calibercat"],
-         "category" : "discussion",
+         "category" : "social",
          "valid" : true
       },
       {
@@ -1044,7 +1045,7 @@
          "account_missing_string" : "(404)</title>",
          "account_missing_code" : "404",
          "known_accounts" : ["UI8","keeplegend"],
-         "category" : "business",
+         "category" : "art",
          "valid" : true
       },
       {
@@ -1066,7 +1067,7 @@
          "account_missing_string" : "<title>Page Not Found",
          "account_missing_code" : "404",
          "known_accounts" : ["organicannabis","jonny5"],
-         "category" : "drugs",
+         "category" : "health",
          "valid" : false
       },
       {
@@ -1187,7 +1188,7 @@
          "account_missing_string" : "",
          "account_missing_code" : "302",
          "known_accounts" : ["test","johndoe"],
-         "category" : "movies",
+         "category" : "social",
          "valid" : true
       },
       {
@@ -1231,7 +1232,7 @@
          "account_missing_string" : "Plan Your Trip Online</title>",
          "account_missing_code" : "302",
          "known_accounts" : ["mms","gooster"],
-         "category" : "travel",
+         "category" : "social",
          "valid" : true
       },
       {
@@ -1243,7 +1244,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["john"],
          "known_missing_accounts" : ["test"],
-         "category" : "location",
+         "category" : "social",
          "valid" : true
       },
       {
@@ -1422,7 +1423,7 @@
          "account_missing_string" : "No such user.",
          "account_missing_code" : "200",
          "known_accounts" : ["mubix","egypt"],
-         "category" : "hacker",
+         "category" : "tech",
          "valid" : true
       },
       {
@@ -1433,7 +1434,7 @@
          "account_missing_string" : "Page not found",
          "account_missing_code" : "404",
          "known_accounts" : ["yashrs","ameerpornillos"],
-         "category" : "hacker",
+         "category" : "tech",
          "valid" : true
       },
       {
@@ -1499,7 +1500,7 @@
          "account_missing_string" : "Пользователь не найден",
          "account_missing_code" : "200",
          "known_accounts" : ["red"],
-         "category" : "business",
+         "category" : "tech",
          "valid" : true
       },
       {
@@ -1543,7 +1544,7 @@
          "account_missing_string" : "<title>cannot find account",
          "account_missing_code" : "200",
          "known_accounts" : ["webbreacher","jason_scott"],
-         "category" : "search",
+         "category" : "misc",
          "valid" : true
       },
       {
@@ -1554,7 +1555,7 @@
          "account_missing_string" : "",
          "account_missing_code" : "200",
          "known_accounts" : ["test","mubix"],
-         "category" : "search",
+         "category" : "misc",
          "valid" : true
       },
       {
@@ -1576,7 +1577,7 @@
          "account_missing_string" : "sorry, not found",
          "account_missing_code" : "404",
          "known_accounts" : ["test","mubix"],
-         "category" : "business",
+         "category" : "social",
          "valid" : true
       },
       {
@@ -1609,7 +1610,7 @@
          "account_missing_string" : "Error: This user doesn't exist",
          "account_missing_code" : "200",
          "known_accounts" : ["test","john"],
-         "category" : "books",
+         "category" : "hobby",
          "valid" : true
       },
       {
@@ -1655,7 +1656,7 @@
          "account_missing_string" : "The requested document does not exist",
          "account_missing_code" : "404",
          "known_accounts" : ["morgaaan","wes19"],
-         "category" : "drugs",
+         "category" : "health",
          "valid" : true
       },
       {
@@ -1778,7 +1779,7 @@
          "account_missing_string" : "Whoops! You broke our site!",
          "account_missing_code" : "404",
          "known_accounts" : ["blue", "john"],
-         "category" : "business",
+         "category" : "social",
          "valid" : true
       },
       {
@@ -1867,7 +1868,7 @@
          "account_missing_string" : "",
          "account_missing_code" : "302",
          "known_accounts" : ["test","john"],
-         "category" : "sharing",
+         "category" : "tech",
          "valid" : true
       },
       {
@@ -2011,7 +2012,7 @@
          "account_missing_string" : "No key found",
          "account_missing_code" : "404",
          "known_accounts" : ["admin","test"],
-         "category" : "email",
+         "category" : "misc",
          "valid" : true
       },
       {
@@ -2066,7 +2067,7 @@
          "account_missing_string" : "Sorry, please try again later",
          "account_missing_code" : "404",
          "known_accounts" : ["guy-lodge","matthew-lickona"],
-         "category" : "movies",
+         "category" : "video",
          "valid" : true
       },
       {
@@ -2132,7 +2133,7 @@
          "account_missing_string" : "is still available. Why not",
          "account_missing_code" : "404",
          "known_accounts" : ["test"],
-         "category" : "presos",
+         "category" : "social",
          "valid" : true
       },
       {
@@ -2143,7 +2144,7 @@
          "account_missing_string" : "You may have mistyped the address",
          "account_missing_code" : "404",
          "known_accounts" : ["arunthomas"],
-         "category" : "presos",
+         "category" : "social",
          "valid" : true
       },
       {
@@ -2176,7 +2177,7 @@
          "account_missing_string" : ">Profiles on Snooth<",
          "account_missing_code" : "200",
          "known_accounts" : ["test123"],
-         "category" : "food",
+         "category" : "social",
          "valid" : true
       },
       {
@@ -2220,7 +2221,7 @@
          "account_missing_string" : "Oh, this is very sad",
          "account_missing_code" : "404",
          "known_accounts" : ["petecheslock"],
-         "category" : "presos",
+         "category" : "social",
          "valid" : true
       },
       {
@@ -2363,7 +2364,7 @@
          "account_missing_string" : "This page is on vacation",
          "account_missing_code" : "404",
          "known_accounts" : ["john","test"],
-         "category" : "travel",
+         "category" : "social",
          "valid" : true
       },
       {
@@ -2407,7 +2408,7 @@
          "account_missing_string" : "<title>Online Courses - Learn Anything, On Your Schedule | Udemy</title>",
          "account_missing_code" : "301",
          "known_accounts" : ["stephane-maarek","lizbrown3"],
-         "category" : "education",
+         "category" : "tech",
          "valid" : true
       },
       {
@@ -2418,7 +2419,7 @@
          "account_missing_string" : "Untappd | 404",
          "account_missing_code" : "404",
          "known_accounts" : ["test","phil"],
-         "category" : "drugs",
+         "category" : "social",
          "valid" : true
       },
       {
@@ -2672,18 +2673,6 @@
          "account_missing_string" : "<title>404 | Zomato</title>",
          "account_missing_code" : "404",
          "known_accounts" : ["john","jess"],
-         "category" : "food",
-         "valid" : false
-      },
-      {
-         "name" : "Zooppa",
-         "check_uri" : "https://api.zooppa.com/api/v3/users?filters[]=login+is+{account}",
-         "pretty_uri" : "http://community.zooppa.com/en-us/users/{account}",
-         "account_existence_code" : "200",
-         "account_existence_string" : "login",
-         "account_missing_string" : "avatar",
-         "account_missing_code" : "200",
-         "known_accounts" : ["test","hacker"],
          "category" : "social",
          "valid" : false
       }
