@@ -546,7 +546,7 @@
          "account_existence_string" : "’s Profile",
          "account_missing_string" : "Taskeris no longer avaliable to help with tasks. Please find another tasker.",
          "account_missing_code" : "302",
-         "known_accounts" : ["john","sam"],
+         "known_accounts" : ["sam"],
          "category" : "business",
          "valid" : true
       },
@@ -2217,7 +2217,7 @@
          "name" : "Speaker Deck",
          "check_uri" : "https://speakerdeck.com/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "<title>Presentations by",
+         "account_existence_string" : "on Speaker Deck",
          "account_missing_string" : "Oh, this is very sad",
          "account_missing_code" : "404",
          "known_accounts" : ["petecheslock"],
