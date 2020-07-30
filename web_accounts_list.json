@@ -232,6 +232,17 @@
          "valid" : true
       },
       {
+         "name" : "Gab",
+         "check_uri" : "https://gab.com/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "• gab.com - Gab Social",
+         "account_missing_string" : "The page you are looking for isn't here.",
+         "account_missing_code" : "404",
+         "known_accounts" : ["john","sam"],
+         "category" : "social",
+         "valid" : true
+      },
+      {
          "name" : "Gitlab",
          "check_uri" : "https://gitlab.com/{account}",
          "account_existence_code" : "200",
@@ -295,6 +306,17 @@
          "account_missing_code" : "404",
          "known_accounts" : ["john", "smith"],
          "category" : "shopping",
+         "valid" : true
+      },
+      {
+         "name" : "JSFiddle",
+         "check_uri" : "https://jsfiddle.net/user/{account}/",
+         "account_existence_code" : "200",
+         "account_existence_string" : "Settings - JSFiddle - Code Playground",
+         "account_missing_string" : "That page doesn't exist.",
+         "account_missing_code" : "404",
+         "known_accounts" : ["john","alex"],
+         "category" : "coding",
          "valid" : true
       },
       {
