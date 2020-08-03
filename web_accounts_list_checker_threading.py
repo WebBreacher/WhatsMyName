@@ -25,6 +25,7 @@ import random
 import signal
 import string
 import sys
+import time
 
 import requests
 import urllib3
@@ -50,20 +51,23 @@ headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gec
            'Accept-Encoding': 'gzip, deflate'
            }
 
+all_found_sites = []
+
 # Parse command line input
-parser = argparse.ArgumentParser(description="This standalone script will look up a single username using the JSON file"
-                                             " or will run a check of the JSON file for bad detection strings.")
-parser.add_argument('-u', '--username', help='[OPTIONAL] If this param is passed then this script will perform the '
-                                             'lookups against the given user name instead of running checks against '
-                                             'the JSON file.')
-parser.add_argument('-se', '--stringerror',
-                    help="Creates a site by site file for files that do not match strings. Filenames will be 'se-("
-                         "sitename).(username)",
-                    action="store_true", default=False)
-parser.add_argument('-s', '--site', nargs='*',
-                    help='[OPTIONAL] If this parameter is passed the script will check only the named site or list of '
-                         'sites.')
+parser = argparse.ArgumentParser(description="This standalone script will look up a single "
+                                             "username using the JSON file or will run a check"
+                                             "of the JSON file for bad detection strings.")
 parser.add_argument('-d', '--debug', help="Enable debug output", action="store_true")
+parser.add_argument('-o', '--output', help="Create text output file", action="store_true",
+                    default=False)
+parser.add_argument('-s', '--site', nargs='*', help='[OPTIONAL] If this parameter is passed'
+                    'the script will check only the named site or list of sites.')
+parser.add_argument('-se', '--stringerror', help="Creates a site by site file for files that do"
+                    "not match strings. Filenames will be 'se-(sitename).(username)",
+                    action="store_true", default=False)
+parser.add_argument('-u', '--username', help='[OPTIONAL] If this param is passed then this script'
+                    'will perform the lookups against the given user name instead of running'
+                    'checks against the JSON file.')
 
 args = parser.parse_args()
 
@@ -226,6 +230,7 @@ def check_site(site, username=None):
         if username:
             if code_match and string_match:
                 username_results.append(Bcolors.GREEN + '[+] Found user at %s' % url + Bcolors.ENDC)
+                all_found_sites.append(url)
                 return
         else:
             if code_match and string_match:
@@ -298,7 +303,15 @@ if __name__ == "__main__":
     # Print result
     finaloutput()
 
+    if args.username and all_found_sites:
+        if args.output:
+            outfile = '{}_{}.txt'.format(str(int(time.time())), args.username)
+            with open(outfile, 'w') as f:
+                for item in all_found_sites:
+                    f.write("%s\n" % item)
+            print('\nRaw data exported to file: ' + outfile)
+
     # Print how long it took
-    end_time = datetime.utcnow()
-    diff = end_time - start_time
-    logging.info(f'\nFinished in {diff}')
+    #end_time = datetime.utcnow()
+    #iff = end_time - start_time
+    #logging.info(f'\nFinished in {diff}')

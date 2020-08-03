@@ -23,6 +23,7 @@ import random
 import signal
 import string
 import sys
+import time
 
 import requests
 from requests.packages.urllib3.exceptions import InsecureRequestWarning
@@ -39,15 +40,20 @@ headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gec
           }
 
 # Parse command line input
-parser = argparse.ArgumentParser(description="This standalone script will look up a single username using the JSON file"
-                                 " or will run a check of the JSON file for bad detection strings.")
-parser.add_argument('-u', '--username', help='[OPTIONAL] If this param is passed then this script will perform the '
-                    'lookups against the given user name instead of running checks against '
-                    'the JSON file.')
-parser.add_argument('-se', '--stringerror', help="Creates a site by site file for files that do not match strings. Filenames will be 'se-(sitename).(username)",
-                    action="store_true", default=False)
-parser.add_argument('-s', '--site', nargs='*', help='[OPTIONAL] If this parameter is passed the script will check only the named site or list of sites.')
+parser = argparse.ArgumentParser(description="This standalone script will look up a single "
+                                             "username using the JSON file or will run a check"
+                                             "of the JSON file for bad detection strings.")
 parser.add_argument('-d', '--debug', help="Enable debug output", action="store_true")
+parser.add_argument('-o', '--output', help="Create text output file", action="store_true",
+                    default=False)
+parser.add_argument('-s', '--site', nargs='*', help='[OPTIONAL] If this parameter is passed'
+                    'the script will check only the named site or list of sites.')
+parser.add_argument('-se', '--stringerror', help="Creates a site by site file for files that do"
+                    "not match strings. Filenames will be 'se-(sitename).(username)",
+                    action="store_true", default=False)
+parser.add_argument('-u', '--username', help='[OPTIONAL] If this param is passed then this script'
+                    'will perform the lookups against the given user name instead of running'
+                    'checks against the JSON file.')
 
 args = parser.parse_args()
 
@@ -149,7 +155,6 @@ with open('web_accounts_list.json') as data_file:
     data = json.load(data_file)
 
 if args.site:
-
     # cut the list of sites down to only the requested ones
     args.site = [x.lower() for x in args.site]
     data['sites'] = [x for x in data['sites'] if x['name'].lower() in args.site]
@@ -160,13 +165,13 @@ if args.site:
     if sites_not_found:
         print(' -  WARNING: %d requested sites were not found in the list' % sites_not_found)
     print(' -  Checking %d sites' % len(data['sites']))
-
 else:
     print(' -  %s sites found in file.' % len(data['sites']))
 
 
 for site in data['sites']:
     code_match, string_match = False, False
+    all_found_sites = []
     # Examine the current validity of the entry
     if not site['valid']:
         print(bcolors.CYAN + ' *  Skipping %s - Marked as not valid.' % site['name'] + bcolors.ENDC)
@@ -207,6 +212,7 @@ for site in data['sites']:
         if args.username:
             if code_match and string_match:
                 print(bcolors.GREEN + '[+] Found user at %s' % each + bcolors.ENDC)
+                all_found_sites.append(each)
             continue
 
         if code_match and string_match:
@@ -260,3 +266,12 @@ for site in data['sites']:
 
 if not args.username:
     finaloutput()
+
+if args.username and all_found_sites:
+    if args.output:
+        outfile = '{}_{}.txt'.format(str(int(time.time())), args.username)
+        print(outfile)
+        fh = open(outfile, 'w')
+        fh.writelines(all_found_sites)
+        print('Raw data exported to file:' + outfile)
+        fh.close()
