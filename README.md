@@ -3,10 +3,6 @@ This repository has the unified data required to perform user and username enume
 
 ![whatsmyname](whatsmyname.png)
 
-[![Open Source](https://img.shields.io/badge/Open%20Source-100%25-green.svg)](https://shields.io/)
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-Yes-green.svg)](https://github.com/GetStream/winds/graphs/commit-activity)
-[![Version](https://img.shields.io/badge/Version-1.6-orange)](https://github.com/GetStream/winds/graphs/commit-activity)
-
 * https://whatsmyname.app/ - [Chris Poulter](https://twitter.com/osintcombine) created this site which draws the project's JSON file into a gorgeous and easy to use web interface.
   * There are no ads.
   * He does not collect what you search for
@@ -22,31 +18,37 @@ This repository has the unified data required to perform user and username enume
 
 See [CONTRIBUTING](CONTRIBUTING.md)
 
-# Standalone Checker
-If you just want to run this script to check user names on sites and don't wish to use it in combination with another tool (like Recon-NG and/or Spiderfoot), then you can use the included Python 3 script as shown below:
+# Standalone Checkers
+If you just want to run this script to check user names on sites and don't wish to use it in combination with another tool (like Recon-NG and/or Spiderfoot), then you can use the included Python 3 scripts as shown below. There is the `web_accounts_list_checker_threading.py` (preferred) and the `web_accounts_list_checker.py` which will take MUCH longer to cycle through all the sites. The threaded one is shown below.
 
 ```
- $  python3 ./web_accounts_list_checker.py -u sdfsfsdfsdfs
- -  161 sites found in file.
- -  Found user at http://www.break.com/user/sdfsfsdfsdfs
-      ! ERROR: CONNECTION TIME OUT. Try increasing the timeout delay.
- -  Found user at https://klout.com/sdfsfsdfsdfs
- -  Found user at https://social.technet.microsoft.com/profile/sdfsfsdfsdfs/
- -  Found user at https://www.pinterest.com/sdfsfsdfsdfs/
- -  Found user at https://www.reddit.com/user/sdfsfsdfsdfs
- -  Found user at http://scratch.mit.edu/users/sdfsfsdfsdfs/
- *  Skipping Slashdot - Marked as not valid.
- *  Skipping SmiteGuru - Marked as not valid.
- *  Skipping SoundCloud - Marked as not valid.
- -  Found user at http://steamcommunity.com/id/sdfsfsdfsdfs
- -  Found user at http://www.tf2items.com/id/sdfsfsdfsdfs/
- -  Found user at https://twitter.com/sdfsfsdfsdfs
- -  Found user at http://videolike.org/video/sdfsfsdfsdfs
-      ! ERROR: CONNECTION TIME OUT. Try increasing the timeout delay.
- -  Found user at http://www.xvideos.com/profiles/sdfsfsdfsdfs
-```
+ $  python3 ./web_accounts_list_checker_threading.py -u maxim
+ -  253 sites found in file.
+ >  Looking up https://www.7cups.com/@maxim
+ >  Looking up https://asciinema.org/~maxim
+ >  Looking up https://audiojungle.net/user/maxim
+ >  Looking up https://www.biggerpockets.com/users/maxim
+ >  Looking up https://www.bookcrossing.com/mybookshelf/maxim
+ >  Looking up https://www.buymeacoffee.com/maxim
+ >  Looking up https://www.championat.com/user/maxim/
+ >  Looking up https://community.cloudflare.com/u/maxim
+ >  Looking up https://www.cnet.com/profiles/maxim/
+ ... SNIP ...
+ >  Looking up https://www.blogger.com/profile/maxim
+ >  Looking up https://armorgames.com/user/maxim
 
-There is a bash script `whatsmyname.sh` in the repository that uses Zenity to run the Python standalone checker.
+-------------------------------------------
+Searching for sites with username (maxim) > Found 160 results:
+
+[+] Found user at https://www.codewars.com/users/maxim
+[+] Found user at https://about.me/maxim
+[+] Found user at https://community.cloudflare.com/u/maxim
+[+] Found user at https://www.designspiration.com/maxim/
+[+] Found user at https://www.wowhead.com/user=maxim
+[+] Found user at https://audiojungle.net/user/maxim
+[+] Found user at https://f3.cool/maxim
+[+] Found user at https://coderwall.com/maxim/
+```
 
 # Updates
 I update this project as I have time and would *LOVE* to have interested people help maintain and grow it. Please reach to me webbreacher {at} protonmail {dot} com if you are interested.
@@ -62,6 +64,7 @@ I update this project as I have time and would *LOVE* to have interested people 
 [@Sector035](https://github.com/sector035/)<br>
 [@mccartney](https://github.com/mccartney)<br>
 [@salaheldinaz](https://github.com/salaheldinaz)<br>
+[@camhoff](https://github.com/spotlightc)<br>
 
 # License
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
