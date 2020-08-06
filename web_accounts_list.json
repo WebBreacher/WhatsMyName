@@ -2151,7 +2151,7 @@
          "name" : "slideshare",
          "check_uri" : "https://www.slideshare.net/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "SlideShare Channel",
+         "account_existence_string" : "photo user-photo",
          "account_missing_string" : "is still available. Why not",
          "account_missing_code" : "404",
          "known_accounts" : ["test"],
