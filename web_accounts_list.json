@@ -1537,17 +1537,6 @@
          "valid" : true
       },
       {
-         "name" : "Instagram",
-         "check_uri" : "https://www.instagram.com/{account}/",
-         "account_existence_code" : "302",
-         "account_existence_string" : ") • Instagram photos and videos",
-         "account_missing_string" : "Sorry, this page isn't available.",
-         "account_missing_code" : "404",
-         "known_accounts" : ["john", "ian"],
-         "category" : "social",
-         "valid" : true
-      },
-      {
          "name" : "instructables",
          "check_uri" : "https://www.instructables.com/member/{account}/",
          "account_existence_code" : "200",
@@ -2413,17 +2402,6 @@
          "valid" : true
       },
       {
-         "name" : "Twitter",
-         "check_uri" : "https://twitter.com/{account}",
-         "account_existence_code" : "200",
-         "account_existence_string" : "/ Twitter</title>",
-         "account_missing_string" : "Sorry, that page doesn’t exist!",
-         "account_missing_code" : "200",
-         "known_accounts" : ["WebBreacher","osintninja"],
-         "category" : "social",
-         "valid" : false
-      },
-      {
          "name" : "Udemy",
          "check_uri" : "https://www.udemy.com/user/{account}/",
          "account_existence_code" : "200",
@@ -2808,6 +2786,28 @@
          "known_accounts" : ["john","sammy"],
          "category" : "gaming",
          "valid" : true
-      }
+      },
+      {
+         "name" : "Fandom",
+         "check_uri" : "https://www.fandom.com/u/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "| Profile | Fandom",
+         "account_missing_string" : "Not Found",
+         "account_missing_code" : "404",
+         "known_accounts" : ["EJacobs94","Drew_Dietsch"],
+         "category" : "gaming",
+         "valid" : true
+      },
+      {
+         "name" : "Zillow",
+         "check_uri" : "https://www.zillow.com/profile/{account}/",
+         "account_existence_code" : "200",
+         "account_existence_string" : "- Reviews | Zillow",
+         "account_missing_string" : " Real Estate Agent Reviews | Zillow",
+         "account_missing_code" : "200",
+         "known_accounts" : ["awhelgeson","coosbayrealestate"],
+         "category" : "shopping",
+         "valid" : true
+      },
    ]
 }
