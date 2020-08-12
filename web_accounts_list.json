@@ -2402,6 +2402,18 @@
          "valid" : true
       },
       {
+        "name" : "Twitter",
+        "check_uri" : "https://shadowban.eu/.api/{account}",
+        "pretty_uri" : "https://twitter.com/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "\"exists\": true",
+        "account_missing_string" : "\"exists\": false",
+        "account_missing_code" : "404",
+        "known_accounts" : ["webbreacher", "chrishemsworth"],
+        "category" : "social",
+        "valid" : true
+      },
+      {
          "name" : "Udemy",
          "check_uri" : "https://www.udemy.com/user/{account}/",
          "account_existence_code" : "200",
