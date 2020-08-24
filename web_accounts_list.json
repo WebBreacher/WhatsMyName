@@ -2821,7 +2821,7 @@
          "category" : "shopping",
          "valid" : true
       }
-            {
+      {
          "name" : "Poshmark",
          "check_uri" : "https:/poshmark.com/closet/{account}/",
          "account_existence_code" : "200",
