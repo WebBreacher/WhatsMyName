@@ -1,5 +1,4 @@
 requests==2.24.0
-argparse==1.4.0
 urllib3==1.25.10
 
 
