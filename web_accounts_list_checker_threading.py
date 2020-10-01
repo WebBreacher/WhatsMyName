@@ -81,7 +81,7 @@ username_results = []
 
 def check_os():
     """
-    # check operating system ot adjust output color formatting
+    # check operating system or adjust output color formatting
     :return: operating_system
     """
     # set default operating system to windows
