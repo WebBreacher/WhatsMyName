@@ -262,7 +262,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["john", "smith"],
          "category" : "shopping",
-         "valid" : true
+         "valid" : false
       },
       {
          "name" : "Hackernews",
@@ -438,7 +438,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["john", "bob"],
          "category" : "tech",
-         "valid" : true
+         "valid" : false
       },
       {
          "name" : "PCPartPicker",
@@ -504,7 +504,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["john", "bob"],
          "category" : "music",
-         "valid" : true
+         "valid" : false
       },
       {
          "name" : "redbubble",
@@ -659,7 +659,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["alice","bob"],
          "category" : "images",
-         "valid" : true
+         "valid" : false
       },
       {
          "name" : "9GAG",
@@ -836,7 +836,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["bitquark"],
          "category" : "tech",
-         "valid" : true
+         "valid" : false
       },
       {
          "name" : "BuzzFeed",
@@ -1079,7 +1079,7 @@
          "account_missing_code" : "302",
          "known_accounts" : ["chriskahn","swilken"],
          "category" : "hobby",
-         "valid" : true
+         "valid" : false
       },
       {
          "name" : "duby",
@@ -1112,7 +1112,7 @@
          "account_missing_code" : "200",
          "known_accounts" : ["wd"],
          "category" : "social",
-         "valid" : true
+         "valid" : false
       },
       {
          "name" : "eBay",
@@ -1167,7 +1167,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["john"],
          "category" : "XXX PORN XXX",
-         "valid" : true
+         "valid" : false
       },
       {
          "name" : "Etsy",
@@ -1189,7 +1189,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["nick","john"],
          "category" : "social",
-         "valid" : true
+         "valid" : false
       },
       {
          "name" : "Facebook",
@@ -1634,7 +1634,7 @@
          "account_missing_code" : "200",
          "known_accounts" : ["Aaryall","a1EnergeticJenny"],
          "category" : "XXX PORN XXX",
-         "valid" : true
+         "valid" : false
       },
       {
          "name" : "Livejournal",
@@ -2134,7 +2134,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["alice","bob"],
          "category" : "social",
-         "valid" : true
+         "valid" : false
       },
       {
          "name" : "slideshare",
@@ -2310,7 +2310,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["jocaxav","engendrometal"],
          "category" : "social",
-         "valid" : true
+         "valid" : false
       },
       {
          "name" : "Telegram",
@@ -2455,7 +2455,7 @@
          "account_missing_code" : "400",
          "known_accounts" : ["john", "doesnotexist"],
          "category" : "finance",
-         "valid" : true
+         "valid" : false
       },
       {
          "name" : "viddler",
@@ -2477,7 +2477,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["test"],
          "category" : "video",
-         "valid" : true
+         "valid" : false
       },
       {
          "name" : "Vine",
@@ -2753,7 +2753,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["alex","johnny"],
          "category" : "art",
-         "valid" : true
+         "valid" : false
       },
       {
          "name" : "TikTok",
