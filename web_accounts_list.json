@@ -22,6 +22,15 @@
          "valid" : true
       },
       {
+         "name" : "ACloudGuru",
+         "check_uri" : "https://learn.acloud.guru/profile/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "About Me",
+         "known_accounts" : ["admin", "acloudguru"],
+         "category" : "tech",
+         "valid" : true
+      },
+      {
          "name" : "asciinema",
          "check_uri" : "https://asciinema.org/~{account}",
          "account_existence_code" : "200",
