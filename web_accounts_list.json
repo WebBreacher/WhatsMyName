@@ -594,7 +594,7 @@
       },
 
       {
-         "name" : "themeforset",
+         "name" : "themeforest",
          "check_uri" : "https://themeforest.net/user/{account}",
          "account_existence_code" : "200",
          "account_existence_string" : "s profile on ThemeForest",
