@@ -235,7 +235,7 @@
          "name" : "Gab",
          "check_uri" : "https://gab.com/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "• gab.com - Gab Social",
+         "account_existence_string" : "• gab.com - Gab Free Speech Social Network</title>",
          "account_missing_string" : "The page you are looking for isn't here.",
          "account_missing_code" : "404",
          "known_accounts" : ["john","sam"],
@@ -328,17 +328,6 @@
          "account_missing_code" : "404",
          "known_accounts" : ["john", "bob"],
          "category" : "shopping",
-         "valid" : true
-      },
-      {
-         "name" : "Leetcode",
-         "check_uri" : "https://leetcode.com/{account}/",
-         "account_existence_code" : "200",
-         "account_existence_string" : "- Profile - LeetCode",
-         "account_missing_string" : "Page Not Found",
-         "account_missing_code" : "404",
-         "known_accounts" : ["john", "bob"],
-         "category" : "coding",
          "valid" : true
       },
       {
@@ -1149,12 +1138,12 @@
       },
       {
          "name" : "Facebook",
-         "check_uri" : "https://www.facebook.com/{account}",
+         "check_uri" : "https://mbasic.facebook.com/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "og:url",
-         "account_missing_string" : "This page isn't available",
+         "account_existence_string" : " is on Facebook. Join Facebook to connect with",
+         "account_missing_string" : "Facebook or log in to continue.",
          "account_missing_code" : "404",
-         "known_accounts" : ["zuck"],
+         "known_accounts" : ["zuck","phil"],
          "category" : "social",
          "valid" : true
       },
@@ -1720,10 +1709,10 @@
          "name" : "Mod DB",
          "check_uri" : "https://www.moddb.com/members/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "joined",
-         "account_missing_string" : "The member requested could not be found",
-         "account_missing_code" : "404",
-         "known_accounts" : ["test"],
+         "account_existence_string" : "joined <time",
+         "account_missing_string" : "Login is required to view the requested member profile",
+         "account_missing_code" : "403",
+         "known_accounts" : ["sprinklesoup","emargy"],
          "category" : "gaming",
          "valid" : true
       },
