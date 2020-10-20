@@ -2638,23 +2638,34 @@
          "name" : "xHamster",
          "check_uri" : "https://xhamster.com/users/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "s Profile</title>",
-         "account_missing_string" : ">User not found",
+         "account_existence_string" : "s profile</title>",
+         "account_missing_string" : "User not found</title>",
          "account_missing_code" : "404",
-         "known_accounts" : ["grumdad","tonystark85"],
+         "known_accounts" : ["john","tonystark85"],
          "category" : "XXX PORN XXX",
-         "valid" : false
+         "valid" : true
       },
       {
-         "name" : "XVIDEOS",
-         "check_uri" : "https://www.xvideos.com/pornstars/{account}",
+         "name" : "XVIDEOS-models",
+         "check_uri" : "https://www.xvideos.com/models/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "id_user",
+         "account_existence_string" : "Total video views",
          "account_missing_string" : "THIS PROFILE DOESN'T EXIST",
          "account_missing_code" : "404",
-         "known_accounts" : ["chloe-foster","just-amber"],
+         "known_accounts" : ["canela_skin", "tiffany-tyler"],
          "category" : "XXX PORN XXX",
-         "valid" : false
+         "valid" : true
+      },
+      {
+         "name" : "XVIDEOS-profiles",
+         "check_uri" : "https://www.xvideos.com/profiles/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "page - XVIDEOS.COM",
+         "account_missing_string" : "THIS PROFILE DOESN'T EXIST",
+         "account_missing_code" : "404",
+         "known_accounts" : ["nympho-nailer", "dpadicto","bkg"],
+         "category" : "XXX PORN XXX",
+         "valid" : true
       },
       {
          "name" : "YouTube",
