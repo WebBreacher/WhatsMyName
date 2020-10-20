@@ -2,18 +2,7 @@
 
 """
     Author : Micah Hoffman (@WebBreacher)
-    Description : Takes each username from the web_accounts_list.json file and performs the lookup to see if the discovery determinator is still valid
-
-    TODO -
-        1 - Make it so the script will toggle validity factor per entry and write to output file
-        2 - Make it so the script will append comment to the entry and output to file
-        3 - Make a stub file shows last time sites were checked and problems.
-
-    ISSUES -
-        1 - Had an issue with SSL handshakes and this script. Had to do the following to get it working
-            [From https://github.com/kennethreitz/requests/issues/2022]
-            # sudo apt-get install libffi-dev
-            # pip install pyOpenSSL ndg-httpsclient pyasn1 requests
+    Description : Takes each username from the web_accounts_list.json file and performs the lookup to see if the entry is still valid
 """
 import argparse
 import codecs
@@ -33,7 +22,7 @@ from requests.packages.urllib3.exceptions import InsecureRequestWarning
 # Variables && Functions
 ###################
 # Set HTTP Header info.
-headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36',
            'Accept' : 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
            'Accept-Language' : 'en-US,en;q=0.5',
            'Accept-Encoding' : 'gzip, deflate'
