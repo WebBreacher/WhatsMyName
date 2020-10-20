@@ -665,8 +665,8 @@
          "name" : "AngelList",
          "check_uri" : "https://angel.co/p/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "s profile on AngelList",
-         "account_missing_string" : "Page not found - 404 | AngelList",
+         "account_existence_string" : "s profile on AngelList,",
+         "account_missing_string" : "Page not found - 404",
          "account_missing_code" : "404",
          "known_accounts" : ["sacca","rudyadler"],
          "category" : "tech",
@@ -809,12 +809,12 @@
          "name" : "Bugcrowd",
          "check_uri" : "https://bugcrowd.com/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "ResearcherDashboard",
+         "account_existence_string" : "s researcher profile on Bugcrowd",
          "account_missing_string" : ">Bugcrowd | Error",
          "account_missing_code" : "404",
-         "known_accounts" : ["bitquark"],
+         "known_accounts" : ["bitquark", "mert"],
          "category" : "tech",
-         "valid" : false
+         "valid" : true
       },
       {
          "name" : "BuzzFeed",
@@ -837,17 +837,6 @@
          "known_accounts" : ["carolinegawlik"],
          "category" : "news",
          "valid" : true
-      },
-      {
-         "name" : "Canva",
-         "check_uri" : "https://www.canva.com/p/{account}/",
-         "account_existence_code" : "301",
-         "account_existence_string" : "This is a portfolio page for",
-         "account_missing_string" : "Sorry, the page you are looking for does not exist.",
-         "account_missing_code" : "404",
-         "known_accounts" : ["marketplacedesigners"],
-         "category" : "art",
-         "valid" : false
       },
       {
          "name" : "cash.app",
@@ -930,12 +919,12 @@
          "name" : "COLOURlovers",
          "check_uri" : "https://www.colourlovers.com/lover/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "Karma",
-         "account_missing_string" : "Content Removed :: COLOURlovers",
+         "account_existence_string" : "Color lovin' since",
+         "account_missing_string" : "Lover has gone missing",
          "account_missing_code" : "410",
-         "known_accounts" : ["Suzana_K","bezzalopoly"],
+         "known_accounts" : ["amorremanet","bezzalopoly"],
          "category" : "hobby",
-         "valid" : false
+         "valid" : true
       },
       {
          "name" : "Dailymotion",
@@ -947,17 +936,6 @@
          "known_accounts" : ["WeHappyKids","john"],
          "category" : "video",
          "valid" : true
-      },
-      {
-         "name" : "Delicious",
-         "check_uri" : "https://del.icio.us/{account}",
-         "account_existence_code" : "200",
-         "account_existence_string" : "Following:",
-         "account_missing_string" : "An error occurred.",
-         "account_missing_code" : "500",
-         "known_accounts" : ["john","av2learner"],
-         "category" : "misc",
-         "valid" : false
       },
       {
          "name" : "Destructoid",
