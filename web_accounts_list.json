@@ -244,7 +244,7 @@
          "name" : "Gab",
          "check_uri" : "https://gab.com/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "• gab.com - Gab Social",
+         "account_existence_string" : "• gab.com - Gab Free Speech Social Network</title>",
          "account_missing_string" : "The page you are looking for isn't here.",
          "account_missing_code" : "404",
          "known_accounts" : ["john","sam"],
@@ -264,14 +264,14 @@
       },
       {
          "name" : "gumroad",
-         "check_uri" : "https://gumroad.com/{account}",
+         "check_uri" : "https://gumroad.com/{account}/follow",
          "account_existence_code" : "200",
-         "account_existence_string" : "follow",
+         "account_existence_string" : "og:site_name",
          "account_missing_string" : "Page not found",
          "account_missing_code" : "404",
          "known_accounts" : ["john", "smith"],
          "category" : "shopping",
-         "valid" : false
+         "valid" : true
       },
       {
          "name" : "Hackernews",
@@ -337,17 +337,6 @@
          "account_missing_code" : "404",
          "known_accounts" : ["john", "bob"],
          "category" : "shopping",
-         "valid" : true
-      },
-      {
-         "name" : "Leetcode",
-         "check_uri" : "https://leetcode.com/{account}/",
-         "account_existence_code" : "200",
-         "account_existence_string" : "- Profile - LeetCode",
-         "account_missing_string" : "Page Not Found",
-         "account_missing_code" : "404",
-         "known_accounts" : ["john", "bob"],
-         "category" : "coding",
          "valid" : true
       },
       {
@@ -461,17 +450,6 @@
          "valid" : true
       },
       {
-         "name" : "Pixiv",
-         "check_uri" : "https://www.pixiv.net/en/users/{account}/",
-         "account_existence_code" : "302",
-         "account_existence_string" : "- pixiv</title>",
-         "account_missing_string" : "Empty spaces is a blank canvas.",
-         "account_missing_code" : "404",
-         "known_accounts" : ["18203", "756"],
-         "category" : "art",
-         "valid" : false
-      },
-      {
          "name" : "plug.dj",
          "check_uri" : "https://plug.dj/@/{account}",
          "account_existence_code" : "200",
@@ -506,14 +484,14 @@
       },
       {
          "name" : "promodj",
-         "check_uri" : "http://promodj.com/{account}",
+         "check_uri" : "https://promodj.com/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "Send message",
+         "account_existence_string" : "Favorite styles",
          "account_missing_string" : "Page not found :(",
          "account_missing_code" : "404",
          "known_accounts" : ["john", "bob"],
          "category" : "music",
-         "valid" : false
+         "valid" : true
       },
       {
          "name" : "redbubble",
@@ -660,26 +638,15 @@
          "valid" : true
       },
       {
-         "name" : "500px",
-         "check_uri" : "https://500px.com/{account}",
-         "account_existence_code" : "200",
-         "account_existence_string" : " is using 500px, the world&#39;s most passionate photo sharing community.",
-         "account_missing_string" : "Oops! This page doesn’t exist",
-         "account_missing_code" : "404",
-         "known_accounts" : ["alice","bob"],
-         "category" : "images",
-         "valid" : false
-      },
-      {
          "name" : "9GAG",
          "check_uri" : "https://9gag.com/u/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "Upload a Post",
-         "account_missing_string" : "- 404 Nothing here</title>",
+         "account_existence_string" : "- 9GAG</title>",
+         "account_missing_string" : "9GAG - 404 Nothing here",
          "account_missing_code" : "404",
          "known_accounts" : ["_fatbatman_","strangelove"],
          "category" : "social",
-         "valid" : false
+         "valid" : true
       },
       {
          "name" : "about.me",
@@ -694,14 +661,14 @@
       },
       {
          "name" : "AngelList",
-         "check_uri" : "https://angel.co/{account}",
+         "check_uri" : "https://angel.co/p/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "s profile on AngelList",
-         "account_missing_string" : "We couldn't find what you were looking for.",
+         "account_existence_string" : "s profile on AngelList,",
+         "account_missing_string" : "Page not found - 404",
          "account_missing_code" : "404",
          "known_accounts" : ["sacca","rudyadler"],
          "category" : "tech",
-         "valid" : false
+         "valid" : true
       },
       {
          "name" : "aNobii",
@@ -840,12 +807,12 @@
          "name" : "Bugcrowd",
          "check_uri" : "https://bugcrowd.com/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "ResearcherDashboard",
+         "account_existence_string" : "s researcher profile on Bugcrowd",
          "account_missing_string" : ">Bugcrowd | Error",
          "account_missing_code" : "404",
-         "known_accounts" : ["bitquark"],
+         "known_accounts" : ["bitquark", "mert"],
          "category" : "tech",
-         "valid" : false
+         "valid" : true
       },
       {
          "name" : "BuzzFeed",
@@ -868,17 +835,6 @@
          "known_accounts" : ["carolinegawlik"],
          "category" : "news",
          "valid" : true
-      },
-      {
-         "name" : "Canva",
-         "check_uri" : "https://www.canva.com/p/{account}/",
-         "account_existence_code" : "301",
-         "account_existence_string" : "This is a portfolio page for",
-         "account_missing_string" : "Sorry, the page you are looking for does not exist.",
-         "account_missing_code" : "404",
-         "known_accounts" : ["marketplacedesigners"],
-         "category" : "art",
-         "valid" : false
       },
       {
          "name" : "cash.app",
@@ -961,12 +917,12 @@
          "name" : "COLOURlovers",
          "check_uri" : "https://www.colourlovers.com/lover/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "Karma",
-         "account_missing_string" : "Content Removed :: COLOURlovers",
+         "account_existence_string" : "Color lovin' since",
+         "account_missing_string" : "Lover has gone missing",
          "account_missing_code" : "410",
-         "known_accounts" : ["Suzana_K","bezzalopoly"],
+         "known_accounts" : ["amorremanet","bezzalopoly"],
          "category" : "hobby",
-         "valid" : false
+         "valid" : true
       },
       {
          "name" : "Dailymotion",
@@ -978,17 +934,6 @@
          "known_accounts" : ["WeHappyKids","john"],
          "category" : "video",
          "valid" : true
-      },
-      {
-         "name" : "Delicious",
-         "check_uri" : "https://del.icio.us/{account}",
-         "account_existence_code" : "200",
-         "account_existence_string" : "Following:",
-         "account_missing_string" : "An error occurred.",
-         "account_missing_code" : "500",
-         "known_accounts" : ["john","av2learner"],
-         "category" : "misc",
-         "valid" : false
       },
       {
          "name" : "Destructoid",
@@ -1202,12 +1147,12 @@
       },
       {
          "name" : "Facebook",
-         "check_uri" : "https://www.facebook.com/{account}",
+         "check_uri" : "https://mbasic.facebook.com/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "og:url",
-         "account_missing_string" : "This page isn't available",
+         "account_existence_string" : " is on Facebook. Join Facebook to connect with",
+         "account_missing_string" : "Facebook or log in to continue.",
          "account_missing_code" : "404",
-         "known_accounts" : ["zuck"],
+         "known_accounts" : ["zuck","phil"],
          "category" : "social",
          "valid" : true
       },
@@ -1773,10 +1718,10 @@
          "name" : "Mod DB",
          "check_uri" : "https://www.moddb.com/members/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "joined",
-         "account_missing_string" : "The member requested could not be found",
-         "account_missing_code" : "404",
-         "known_accounts" : ["test"],
+         "account_existence_string" : "joined <time",
+         "account_missing_string" : "Login is required to view the requested member profile",
+         "account_missing_code" : "403",
+         "known_accounts" : ["sprinklesoup","emargy"],
          "category" : "gaming",
          "valid" : true
       },
@@ -2457,14 +2402,14 @@
       },
       {
          "name" : "Venmo",
-         "check_uri" : "https://api.venmo.com/v1/users/{account}",
+         "check_uri" : "https://venmo.com/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "\"data\":",
-         "account_missing_string" : "\"error\":",
-         "account_missing_code" : "400",
-         "known_accounts" : ["john", "doesnotexist"],
+         "account_existence_string" : "Venmoing since",
+         "account_missing_string" : "Sorry, the page you requested does not exist",
+         "account_missing_code" : "404",
+         "known_accounts" : ["john", "alice"],
          "category" : "finance",
-         "valid" : false
+         "valid" : true
       },
       {
          "name" : "viddler",
@@ -2481,12 +2426,12 @@
          "name" : "Vimeo",
          "check_uri" : "https://vimeo.com/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "on Vimeo</title>",
-         "account_missing_string" : "we couldn’t find that page",
+         "account_existence_string" : "is a member of Vimeo, the",
+         "account_missing_string" : "Make sure you’ve typed the URL correctly",
          "account_missing_code" : "404",
-         "known_accounts" : ["test"],
+         "known_accounts" : ["john","alice"],
          "category" : "video",
-         "valid" : false
+         "valid" : true
       },
       {
          "name" : "Vine",
@@ -2647,23 +2592,34 @@
          "name" : "xHamster",
          "check_uri" : "https://xhamster.com/users/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "s Profile</title>",
-         "account_missing_string" : ">User not found",
+         "account_existence_string" : "s profile</title>",
+         "account_missing_string" : "User not found</title>",
          "account_missing_code" : "404",
-         "known_accounts" : ["grumdad","tonystark85"],
+         "known_accounts" : ["john","tonystark85"],
          "category" : "XXX PORN XXX",
-         "valid" : false
+         "valid" : true
       },
       {
-         "name" : "XVIDEOS",
-         "check_uri" : "https://www.xvideos.com/pornstars/{account}",
+         "name" : "XVIDEOS-models",
+         "check_uri" : "https://www.xvideos.com/models/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "id_user",
+         "account_existence_string" : "Total video views",
          "account_missing_string" : "THIS PROFILE DOESN'T EXIST",
          "account_missing_code" : "404",
-         "known_accounts" : ["chloe-foster","just-amber"],
+         "known_accounts" : ["canela_skin", "tiffany-tyler"],
          "category" : "XXX PORN XXX",
-         "valid" : false
+         "valid" : true
+      },
+      {
+         "name" : "XVIDEOS-profiles",
+         "check_uri" : "https://www.xvideos.com/profiles/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "page - XVIDEOS.COM",
+         "account_missing_string" : "THIS PROFILE DOESN'T EXIST",
+         "account_missing_code" : "404",
+         "known_accounts" : ["nympho-nailer", "dpadicto","bkg"],
+         "category" : "XXX PORN XXX",
+         "valid" : true
       },
       {
          "name" : "YouTube",
@@ -2762,7 +2718,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["alex","johnny"],
          "category" : "art",
-         "valid" : false
+         "valid" : true
       },
       {
          "name" : "TikTok",
