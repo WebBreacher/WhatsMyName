@@ -2448,14 +2448,14 @@
       },
       {
          "name" : "Venmo",
-         "check_uri" : "https://api.venmo.com/v1/users/{account}",
+         "check_uri" : "https://venmo.com/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "\"data\":",
-         "account_missing_string" : "\"error\":",
-         "account_missing_code" : "400",
-         "known_accounts" : ["john", "doesnotexist"],
+         "account_existence_string" : "Venmoing since",
+         "account_missing_string" : "Sorry, the page you requested does not exist",
+         "account_missing_code" : "404",
+         "known_accounts" : ["john", "alice"],
          "category" : "finance",
-         "valid" : false
+         "valid" : true
       },
       {
          "name" : "viddler",
@@ -2472,12 +2472,12 @@
          "name" : "Vimeo",
          "check_uri" : "https://vimeo.com/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "on Vimeo</title>",
-         "account_missing_string" : "we couldn’t find that page",
+         "account_existence_string" : "is a member of Vimeo, the",
+         "account_missing_string" : "Make sure you’ve typed the URL correctly",
          "account_missing_code" : "404",
-         "known_accounts" : ["test"],
+         "known_accounts" : ["john","alice"],
          "category" : "video",
-         "valid" : false
+         "valid" : true
       },
       {
          "name" : "Vine",
