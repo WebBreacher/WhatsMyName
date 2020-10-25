@@ -1324,7 +1324,7 @@
          "valid" : false
       },
       {
-            "name" : "Geocaching",
+         "name" : "Geocaching",
          "check_uri" : "https://www.geocaching.com/profile/?u={account}",
          "account_existence_code" : "200",
          "account_existence_string" : "Profile for ",
@@ -1477,6 +1477,17 @@
          "account_missing_code" : "200",
          "known_accounts" : ["red"],
          "category" : "tech",
+         "valid" : true
+      },
+      {
+         "name" : "InkBunny",
+         "check_uri" : "https://inkbunny.net/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "Profile | Inkbunny, the Furry Art Community</title>",
+         "account_missing_string" : "<title>Members | Inkbunny, the Furry Art Community</title>",
+         "account_missing_code" : "302",
+         "known_accounts" : ["AdminBunny", "test"],
+         "category" : "XXX PORN XXX",
          "valid" : true
       },
       {
