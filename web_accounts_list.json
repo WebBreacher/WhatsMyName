@@ -2058,17 +2058,6 @@
          "valid" : true
       },
       {
-         "name" : "Scribd",
-         "check_uri" : "https://scratch.mit.edu/users/{account}/",
-         "account_existence_code" : "200",
-         "account_existence_string" : "on Scratch</title>",
-         "account_missing_string" : "We couldn't find the page you're looking for.",
-         "account_missing_code" : "404",
-         "known_accounts" : ["griffpatch"],
-         "category" : "coding",
-         "valid" : true
-      },
-      {
          "name" : "SEOClerks",
          "check_uri" : "https://www.seoclerks.com/user/{account}",
          "account_existence_code" : "200",
@@ -2817,6 +2806,28 @@
          "account_missing_code" : "200",
          "known_accounts" : ["naughty_nymphomaniac", "hellfireclub", "fabswingers.com"],
          "category" : "dating",
+         "valid" : true
+      },
+      {
+         "name" : "Magix",
+         "check_uri" : "https://www.magix.info/us/users/profile/{account}/",
+         "account_existence_code" : "200",
+         "account_existence_string" : "About me",
+         "account_missing_string" : "Page not found",
+         "account_missing_code" : "200",
+         "known_accounts" : ["baywolfmusic", "johnebaker"],
+         "category" : "music",
+         "valid" : true
+      },
+      {
+         "name" : "Tunefind",
+         "check_uri" : "https://www.tunefind.com/user/profile/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "Achievements",
+         "account_missing_string" : "Page not found",
+         "account_missing_code" : "200",
+         "known_accounts" : ["baywolfmusic", "mrcerny18"],
+         "category" : "music",
          "valid" : true
       }
    ]
