@@ -18,7 +18,7 @@ This repository has the unified data required to perform user and username enume
 
 * The https://github.com/WebBreacher/WhatsMyName/wiki/Problem-Removed-Sites page has websites that we have had in the project and are currently not working for some reason. We will retest those sites (in the future) and try to find detections.
 * If you would like to help with detections, we are happy to accept them via GitHub Pull Request or you can [create an issue](https://github.com/WebBreacher/WhatsMyName/issues) with the details of the site.
-* Want to suggest a site to be added? Use [this form](spotinfo.co/whatsmynameform).
+* Want to suggest a site to be added? Use [this form](https://spotinfo.co/whatsmynameform).
 
 # Format
 
