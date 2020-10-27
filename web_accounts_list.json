@@ -5,7 +5,7 @@
                 "http://creativecommons.org/licenses/by-sa/4.0/ or send a letter to",
                 "Creative Commons, PO Box 1866, Mountain View, CA 94042, USA."],
    "authors" : ["WebBreacher","Munchko","L0r3m1p5um","lehuff","janbinx","bcoles","Sector035",
-                "arnydo","mccartney","salaheldinaz","camhoff","jocephus"],
+                "arnydo","mccartney","salaheldinaz","camhoff","jocephus","swedishmike"],
    "categories" : ["art","blog","business","coding","dating","finance","gaming","health",
                    "hobby","images","misc","music","news","search","shopping","social",
                    "tech","video","XXXPORNXXX"],
@@ -2806,6 +2806,17 @@
          "account_missing_code" : "404",
          "known_accounts" : ["alice","bob"],
          "category" : "shopping",
+         "valid" : true
+      },
+      {
+         "name" : "Fabswingers",
+         "check_uri" : "https://www.fabswingers.com/profile/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "View Profile",
+         "account_missing_string" : "The user you tried to view doesn't seem to be on the site any more",
+         "account_missing_code" : "200",
+         "known_accounts" : ["naughty_nymphomaniac", "hellfireclub", "fabswingers.com"],
+         "category" : "dating",
          "valid" : true
       }
    ]
