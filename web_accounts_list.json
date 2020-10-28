@@ -1547,7 +1547,7 @@
       },
       {
          "name" : "Kaggle",
-         "check_uri" : "https://www.kaggle.net/{account}",
+         "check_uri" : "https://www.kaggle.com/{account}",
          "account_existence_code" : "200",
          "account_existence_string" : "ProfileContainerReact",
          "account_missing_string" : "NotFound",
