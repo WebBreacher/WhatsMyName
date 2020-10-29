@@ -340,6 +340,15 @@
          "valid" : true
       },
       {
+         "name" : "Ko-Fi",
+         "check_uri" : "https://ko-fi.com/{account}",
+         "account_existence_code" : "200",
+         "account_missing_code" : "302",
+         "known_accounts" : ["frank", "marcmakescomics"],
+         "category" : "social",
+         "valid" : true
+      },
+      {
          "name" : "Linktree",
          "check_uri" : "https://linktr.ee/{account}",
          "account_existence_code" : "200",
