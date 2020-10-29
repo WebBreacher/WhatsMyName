@@ -343,6 +343,8 @@
          "name" : "Ko-Fi",
          "check_uri" : "https://ko-fi.com/{account}",
          "account_existence_code" : "200",
+         "account_existence_string" : ">  Buy a Coffee for",
+         "account_missing_string" : "Object moved to",
          "account_missing_code" : "302",
          "known_accounts" : ["frank", "marcmakescomics"],
          "category" : "social",
