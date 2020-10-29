@@ -1321,7 +1321,7 @@
          "account_missing_code" : "200",
          "known_accounts" : ["danielebarison","cderalow"],
          "category" : "health",
-         "valid" : false
+         "valid" : true
       },
       {
          "name" : "Geocaching",
