@@ -1321,7 +1321,7 @@
          "account_missing_code" : "200",
          "known_accounts" : ["danielebarison","cderalow"],
          "category" : "health",
-         "valid" : false
+         "valid" : true
       },
       {
          "name" : "Geocaching",
@@ -2895,6 +2895,18 @@
          "known_accounts" : ["John-Galan-5", "Alex-Clay"],
          "category" : "social",
          "valid" : true
+      },
+      {
+         "name" : "Raidforums",
+         "check_uri" : "https://raidforums.com/User-{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "Forum Info",
+         "account_missing_string" : "The member you specified",
+         "account_missing_code" : "404",
+         "known_accounts" : ["redXXX", "turdburglar"],
+         "category" : "tech",
+         "valid" : true
       }
+
    ]
 }
