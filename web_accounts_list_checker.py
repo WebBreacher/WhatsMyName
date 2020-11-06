@@ -28,6 +28,9 @@ headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/
            'Accept-Encoding' : 'gzip, deflate'
           }
 
+# Create an empty list to hold the successful results
+all_found_sites = []
+
 # Parse command line input
 parser = argparse.ArgumentParser(description="This standalone script will look up a single "
                                              "username using the JSON file or will run a check"
@@ -160,7 +163,6 @@ else:
 
 for site in data['sites']:
     code_match, string_match = False, False
-    all_found_sites = []
     # Examine the current validity of the entry
     if not site['valid']:
         print(bcolors.CYAN + ' *  Skipping %s - Marked as not valid.' % site['name'] + bcolors.ENDC)
