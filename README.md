@@ -54,6 +54,12 @@ Searching for sites with username (maxim) > Found 160 results:
 [+] Found user at https://f3.cool/maxim
 [+] Found user at https://coderwall.com/maxim/
 ```
+# PoC - Checker that takes screenshots of found profiles
+There is a standalone Checker that will also take screenshots of found profiles and store them in a subdirectory. That script is `web_accounts_list_checker_screenshots.py`. The script is currently a rough proof-of-concept and relies on you having a working Selenium configuration, complete with the Python modules etc. You will also need to have the correct Chrome engine installed and available to the Python interpreter you run the script with.
+
+You run the script with python3 ./web_accounts_list_checker_screenshots.py -u maxim
+
+If the script finds at least a profile it will create a subdirectory with a name based on the current time and date plus the username you searched for. In that directory you should find a screenshot of each profile page it identified.
 
 # Contributors
 We would like to thank each of our contributors for their work. Whether it was adding sites, making our logo, fixing some broken code, or enhancing the project in many other ways! We appreciate the time you volunteered!
