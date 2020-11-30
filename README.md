@@ -9,6 +9,7 @@ This repository has the unified data required to perform user and username enume
   * Filters for category and in search results.
   * Exports to CSV and other formats.
   * Pulls the lastest version of the project's JSON file when run.
+  * Submit a username in the URL using `https://whatsmyname.app/?q=<%USERNAME%>` like https://whatsmyname.app/?q=john
 * [Recon-ng](https://github.com/lanmaster53/recon-ng) - The **Profiler Module** uses this project's JSON content.
 * [Spiderfoot](https://github.com/smicallef/spiderfoot) uses this in the **sfp_account** module. There is also [this video](https://asciinema.org/a/295923) showing how to use this project using the Spiderfoot Command Line Interface (CLI).
 * [sn0int](https://github.com/kpcyrd/sn0int) downloads and uses the JSON file in the [kpcyrd/whatsmyname](https://sn0int.com/r/kpcyrd/whatsmyname) module, see https://twitter.com/sn0int/status/1228046880459907073 for details and instructions.
