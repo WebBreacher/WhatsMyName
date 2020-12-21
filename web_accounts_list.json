@@ -2917,7 +2917,17 @@
          "known_accounts" : ["redXXX", "turdburglar"],
          "category" : "tech",
          "valid" : true
+      },
+      {
+         "name" : "Bentbox",
+         "check_uri" : "https://bentbox.co/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "Member since",
+         "account_missing_string" : "Moved permamently",
+         "account_missing_code" : "302",
+         "known_accounts" : ["sweetkitty", "witchhouse", "hotoptics"],
+         "category" : "XXXPORNXXX",
+         "valid" : true
       }
-
    ]
 }
