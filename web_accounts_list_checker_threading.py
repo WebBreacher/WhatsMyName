@@ -113,7 +113,7 @@ def signal_handler(*_):
     """
     logging.warning(Bcolors.RED + ' !!!  You pressed Ctrl+C. Exiting script.' + Bcolors.ENDC)
     finaloutput()
-    sys.exit(0)
+    sys.exit(130)
 
 
 def web_call(location):
@@ -171,7 +171,7 @@ if args.site:
     data['sites'] = [x for x in data['sites'] if x['name'].lower() in args.site]
     if len(data['sites']) == 0:
         logging.error(' -  Sorry, the requested site or sites were not found in the list')
-        sys.exit()
+        sys.exit(1)
     sites_not_found = len(args.site) - len(data['sites'])
     if sites_not_found:
         logging.warning(' -  WARNING: %d requested sites were not found in the list' % sites_not_found)
