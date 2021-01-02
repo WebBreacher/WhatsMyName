@@ -75,3 +75,9 @@ fabric.properties
 /Pipfile
 /Pipfile.lock
 /.idea/
+
+# VS Code
+.vscode/
+
+# Virtualenv
+venv/

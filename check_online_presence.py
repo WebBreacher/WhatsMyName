@@ -55,7 +55,7 @@ def neutral(msg):
 
 def signal_handler(*_):
     error(' !!!  You pressed Ctrl+C. Exiting script.')
-    sys.exit(0)
+    sys.exit(130)
 
 def web_call(location):
     try:
@@ -77,8 +77,8 @@ def find_sites_to_check(args, data):
         args.site = [x.lower() for x in args.site]
         sites_to_check = [x for x in data['sites'] if x['name'].lower() in args.site]
         if sites_to_check == 0:
-            error('Sorry, none of the requested site or sites were not found in the list')
-            sys.exit()
+            error('Sorry, none of the requested site or sites were found in the list')
+            sys.exit(1)
         sites_not_found = len(args.site) - len(sites_to_check)
         if sites_not_found:
             warn('WARNING: %d requested sites were not found in the list' % sites_not_found)
