@@ -3,14 +3,13 @@
 import argparse
 import collections
 import json
-import os
 import random
 import signal
 import string
 import sys
 
 import requests
-
+from rich import print
 
 DEBUG_MODE = False
 COUNTER = collections.Counter()
@@ -31,27 +30,15 @@ parser.add_argument('-u', '--username', help='[OPTIONAL] If this param is passed
 parser.add_argument('-s', '--site', nargs='*', help='[OPTIONAL] If this parameter is passed the script will check only the named site or list of sites.')
 parser.add_argument('-d', '--debug', help="Enable debug output", action="store_true")
 
-if os.name == "posix":
-    class Colors:
-        YELLOW = "\033[93m"
-        RED = "\033[91m"
-        GREEN = "\033[92m"
-        ENDC = "\033[0m"
-else:
-    class Colors:
-        YELLOW = ""
-        RED = ""
-        GREEN = ""
-        ENDC = ""
 
 def warn(msg):
-    print(Colors.YELLOW + msg + Colors.ENDC)
+    print("[bold yellow]" + msg + "[/bold yellow]")
 def error(msg):
-    print(Colors.RED + msg + Colors.ENDC)
+    print("[bold red]" + msg + "[/bold red]")
 def positive(msg):
-    print(Colors.GREEN + msg + Colors.ENDC)
+    print("[bold green]" + msg + "[/bold green]")
 def neutral(msg):
-    print(msg)
+    print("[bold cyan]" + msg + "[/bold cyan]")
 
 def signal_handler(*_):
     error(' !!!  You pressed Ctrl+C. Exiting script.')

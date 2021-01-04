@@ -7,7 +7,6 @@
 import argparse
 import codecs
 import json
-import os
 import random
 import signal
 import string
@@ -16,7 +15,7 @@ import time
 
 import requests
 from requests.packages.urllib3.exceptions import InsecureRequestWarning
-
+from rich import print
 
 ###################
 # Variables && Functions
@@ -56,51 +55,8 @@ if args.debug:
 overall_results = {}
 
 
-def check_os():
-    if os.name == "nt":
-        operating_system = "windows"
-    if os.name == "posix":
-        operating_system = "posix"
-    return operating_system
-
-
-#
-# Class for colors
-#
-if check_os() == "posix":
-    class bcolors:
-        CYAN = '\033[96m'
-        GREEN = '\033[92m'
-        YELLOW = '\033[93m'
-        RED = '\033[91m'
-        ENDC = '\033[0m'
-
-        def disable(self):
-            self.CYAN = ''
-            self.GREEN = ''
-            self.YELLOW = ''
-            self.RED = ''
-            self.ENDC = ''
-
-# if we are windows or something like that then define colors as nothing
-else:
-    class bcolors:
-        CYAN = ''
-        GREEN = ''
-        YELLOW = ''
-        RED = ''
-        ENDC = ''
-
-        def disable(self):
-            self.CYAN = ''
-            self.GREEN = ''
-            self.YELLOW = ''
-            self.RED = ''
-            self.ENDC = ''
-
-
 def signal_handler(*_):
-    print(bcolors.RED + ' !!!  You pressed Ctrl+C. Exiting script.' + bcolors.ENDC)
+    print('[bold red] !!!  You pressed Ctrl+C. Exiting script.[/bold red]')
     finaloutput()
     sys.exit(130)
 
@@ -110,11 +66,11 @@ def web_call(location):
         # Make web request for that URL, timeout in X secs and don't verify SSL/TLS certs
         resp = requests.get(location, headers=headers, timeout=60, verify=False, allow_redirects=False)
     except requests.exceptions.Timeout:
-        return bcolors.RED + '      ! ERROR: CONNECTION TIME OUT. Try increasing the timeout delay.' + bcolors.ENDC
+        return '[bold red]      ! ERROR: CONNECTION TIME OUT. Try increasing the timeout delay.[/bold red]'
     except requests.exceptions.TooManyRedirects:
-        return bcolors.RED + '      ! ERROR: TOO MANY REDIRECTS. Try changing the URL.' + bcolors.ENDC
+        return '[bold red]      ! ERROR: TOO MANY REDIRECTS. Try changing the URL.[/bold red]'
     except requests.exceptions.RequestException as e:
-        return bcolors.RED + '      ! ERROR: CRITICAL ERROR. %s' % e + bcolors.ENDC
+        return '[bold red]      ! ERROR: CRITICAL ERROR. %s[/bold red]' % e 
     else:
         return resp
 
@@ -127,7 +83,7 @@ def finaloutput():
         print('------------')
         print('The following previously "valid" sites had errors:')
         for site_with_error, results in sorted(overall_results.items()):
-            print(bcolors.YELLOW + '     %s --> %s' % (site_with_error, results) + bcolors.ENDC)
+            print('[bold yellow]     %s --> %s[/bold yellow]' % (site_with_error, results))
     else:
         print(':) No problems with the JSON file were found.')
 
@@ -151,24 +107,24 @@ if args.site:
     args.site = [x.lower() for x in args.site]
     data['sites'] = [x for x in data['sites'] if x['name'].lower() in args.site]
     if len(data['sites']) == 0:
-        print(' -  Sorry, the requested site or sites were not found in the list')
+        print('[bold red] -  Sorry, the requested site or sites were not found in the list[/bold red]')
         sys.exit(1)
     sites_not_found = len(args.site) - len(data['sites'])
     if sites_not_found:
-        print(' -  WARNING: %d requested sites were not found in the list' % sites_not_found)
-    print(' -  Checking %d sites' % len(data['sites']))
+        print('[bold yellow] -  WARNING: %d requested sites were not found in the list[/bold yellow]' % sites_not_found)
+    print('[bold cyan] -  Checking %d sites[/bold cyan]' % len(data['sites']))
 else:
-    print(' -  %s sites found in file.' % len(data['sites']))
+    print('[bold cyan] -  %s sites found in file.[/bold cyan]' % len(data['sites']))
 
 
 for site in data['sites']:
     code_match, string_match = False, False
     # Examine the current validity of the entry
     if not site['valid']:
-        print(bcolors.CYAN + ' *  Skipping %s - Marked as not valid.' % site['name'] + bcolors.ENDC)
+        print('[bold cyan] *  Skipping %s - Marked as not valid.[/bold cyan]' % site['name'])
         continue
     if not site['known_accounts'][0]:
-        print(bcolors.CYAN + ' *  Skipping %s - No valid user names to test.' % site['name'] + bcolors.ENDC)
+        print('[bold cyan] *  Skipping %s - No valid user names to test.[/bold cyan]' % site['name'])
         continue
 
     # Perform initial lookup
@@ -185,7 +141,7 @@ for site in data['sites']:
             url_list.append(url)
             uname = each
     for each in url_list:
-        print(' -  Looking up %s' % each)
+        print('[bold cyan] -  Looking up %s[/bold cyan]' % each)
         r = web_call(each)
         if isinstance(r, str):
             # We got an error on the web call
@@ -193,8 +149,8 @@ for site in data['sites']:
             continue
 
         if args.debug:
-            print("- HTTP status: %s" % r.status_code)
-            print("- HTTP response: %s" % r.content)
+            print("[bold cyan]- HTTP status: %s[/bold cyan]" % r.status_code)
+            print("[bold cyan]- HTTP response: %s[bold cyan]" % r.content)
 
         # Analyze the responses against what they should be
         code_match = r.status_code == int(site['account_existence_code'])
@@ -202,7 +158,7 @@ for site in data['sites']:
 
         if args.username:
             if code_match and string_match:
-                print(bcolors.GREEN + '[+] Found user at %s' % each + bcolors.ENDC)
+                print('[bold green][+] Found user at %s[/bold green]' % each)
                 all_found_sites.append(each)
             continue
 
@@ -221,8 +177,8 @@ for site in data['sites']:
 
             if code_match and string_match:
                 print('      -  Code: %s; String: %s' % (code_match, string_match))
-                print(bcolors.RED + '      !  ERROR: FALSE POSITIVE DETECTED. Response code and Search Strings match ' \
-                      'expected.' + bcolors.ENDC)
+                print('[bold red]      !  ERROR: FALSE POSITIVE DETECTED. Response code and Search Strings match ' \
+                      'expected.[/bold red]')
                 # TODO set site['valid'] = False
                 overall_results[site['name']] = 'False Positive'
             else:
@@ -230,8 +186,8 @@ for site in data['sites']:
                 pass
         elif code_match and not string_match:
             # TODO set site['valid'] = False
-            print(bcolors.RED + '      !  ERROR: BAD DETECTION STRING. "%s" was not found on resulting page.' \
-                  % site['account_existence_string'] + bcolors.ENDC)
+            print('[/bold red]      !  ERROR: BAD DETECTION STRING. "%s" was not found on resulting page.[/bold red]' \
+                  % site['account_existence_string'])
             overall_results[site['name']] = 'Bad detection string.'
             if args.stringerror:
                 file_name = 'se-' + site['name'] + '.' + uname
@@ -244,14 +200,14 @@ for site in data['sites']:
 
         elif not code_match and string_match:
             # TODO set site['valid'] = False
-            print(bcolors.RED + '      !  ERROR: BAD DETECTION RESPONSE CODE. HTTP Response code different than ' \
-                  'expected.' + bcolors.ENDC)
+            print('[bold red]      !  ERROR: BAD DETECTION RESPONSE CODE. HTTP Response code different than ' \
+                  'expected.[/bold red]')
             overall_results[site['name']] = 'Bad detection code. Received Code: %s; Expected Code: %s.' % \
                 (str(r.status_code), site['account_existence_code'])
         else:
             # TODO set site['valid'] = False
-            print(bcolors.RED + '      !  ERROR: BAD CODE AND STRING. Neither the HTTP response code or detection ' \
-                  'string worked.' + bcolors.ENDC)
+            print('[bold red]      !  ERROR: BAD CODE AND STRING. Neither the HTTP response code or detection ' \
+                  'string worked.[/bold red]')
             overall_results[site['name']] = 'Bad detection code and string. Received Code: %s; Expected Code: %s.' \
                 % (str(r.status_code), site['account_existence_code'])
 

@@ -8,7 +8,6 @@ import argparse
 import codecs
 from datetime import datetime
 import json
-import os
 import random
 import signal
 import string
@@ -18,15 +17,8 @@ import time
 import requests
 import urllib3
 import threading
-import logging
+from rich import print
 
-
-##########################
-#        Logging        #
-##########################
-
-# Set logging formatting
-logging.basicConfig(level=logging.INFO, format='%(message)s')
 
 ##########################
 # Variables && Functions #
@@ -67,51 +59,11 @@ overall_results = {}
 username_results = []
 
 
-def check_os():
-    """
-    # check operating system or adjust output color formatting
-    :return: operating_system
-    """
-    # set default operating system to windows
-    operating_system = "windows"
-
-    if os.name == "posix":
-        operating_system = "posix"
-    return operating_system
-
-
-#
-# Class for colors
-#
-class Bcolors:
-    # if os is windows or something like that then define colors as nothing
-    CYAN = ''
-    GREEN = ''
-    YELLOW = ''
-    RED = ''
-    ENDC = ''
-
-    # if os is linux or something like that then define colors as following
-    if check_os() == "posix":
-        CYAN = '\033[96m'
-        GREEN = '\033[92m'
-        YELLOW = '\033[93m'
-        RED = '\033[91m'
-        ENDC = '\033[0m'
-
-    def disable(self):
-        self.CYAN = ''
-        self.GREEN = ''
-        self.YELLOW = ''
-        self.RED = ''
-        self.ENDC = ''
-
-
 def signal_handler(*_):
     """
     If user pressed Ctrl+C close all connections and exit
     """
-    logging.warning(Bcolors.RED + ' !!!  You pressed Ctrl+C. Exiting script.' + Bcolors.ENDC)
+    print('[bold red] !!!  You pressed Ctrl+C. Exiting script.[/bold red]')
     finaloutput()
     sys.exit(130)
 
@@ -146,7 +98,7 @@ def finaloutput():
         if len(overall_results) > 0:
             print('The following previously "valid" sites had errors:')
             for site_with_error, results in sorted(overall_results.items()):
-                print(Bcolors.YELLOW + '     %s --> %s' % (site_with_error, results) + Bcolors.ENDC)
+                print('[bold yellow]     %s --> %s[/bold yellow]' % (site_with_error, results))
         else:
             print(':) No problems with the JSON file were found.')
 
@@ -170,24 +122,24 @@ if args.site:
     args.site = [x.lower() for x in args.site]
     data['sites'] = [x for x in data['sites'] if x['name'].lower() in args.site]
     if len(data['sites']) == 0:
-        logging.error(' -  Sorry, the requested site or sites were not found in the list')
+        print('[bold red] -  Sorry, the requested site or sites were not found in the list[/bold red]')
         sys.exit(1)
     sites_not_found = len(args.site) - len(data['sites'])
     if sites_not_found:
-        logging.warning(' -  WARNING: %d requested sites were not found in the list' % sites_not_found)
-    logging.info(' -  Checking %d sites' % len(data['sites']))
+        print('[bold yellow] -  WARNING: %d requested sites were not found in the list[/bold yellow]' % sites_not_found)
+    print('[bold cyan] -  Checking %d sites[/bold cyan]' % len(data['sites']))
 
 else:
-    logging.info(' -  %s sites found in file.' % len(data['sites']))
+    print('[bold cyan] -  %s sites found in file.[/bold cyan]' % len(data['sites']))
 
 
 def check_site(site, username=None):
     # Examine the current validity of the entry
     if not site['valid']:
-        return logging.info(f"{Bcolors.CYAN} *  Skipping {site['name']} - Marked as not valid.{Bcolors.ENDC}")
+        return print(f"[bold cyan] *  Skipping {site['name']} - Marked as not valid.[/bold cyan]")
 
     if not site['known_accounts'][0]:
-        return logging.info(f"{Bcolors.CYAN} *  Skipping {site['name']} - No valid user names to test.{Bcolors.ENDC}")
+        return print(f"[bold cyan] *  Skipping {site['name']} - No valid user names to test.[/bold cyan]")
 
     # Set the username
     if username:
@@ -200,16 +152,16 @@ def check_site(site, username=None):
     url = site['check_uri'].replace("{account}", uname)
 
     # Perform initial lookup
-    logging.info(f" >  Looking up {url}")
+    print(f"[bold cyan] >  Looking up {url}[/bold cyan]")
     r = web_call(url)
     if isinstance(r, str):
         # We got an error on the web call
-        return logging.error(Bcolors.RED + r + Bcolors.ENDC)
+        return print('[bold red]' + r + '[/bold red]')
     else:
         # Check debug mode and print error to console
         if args.debug:
-            logging.debug("- HTTP status: %s" % r.status_code)
-            logging.debug("- HTTP response: %s" % r.content)
+            print("[bold cyan]- HTTP status: %s[/bold cyan]" % r.status_code)
+            print("[bold cyan]- HTTP response: %s[/bold cyan]" % r.content)
 
         # Analyze the responses against what they should be
         code_match = r.status_code == int(site['account_existence_code'])
@@ -217,7 +169,7 @@ def check_site(site, username=None):
 
         if username:
             if code_match and string_match:
-                username_results.append(Bcolors.GREEN + '[+] Found user at %s' % url + Bcolors.ENDC)
+                username_results.append('[bold green][+] Found user at %s[/bold green]' % url)
                 all_found_sites.append(url)
                 return
         else:
@@ -228,16 +180,15 @@ def check_site(site, username=None):
                 r_fp = web_call(url_fp)
                 if isinstance(r_fp, str):
                     # If this is a string then web got an error
-                    return logging.error(r_fp)
+                    return print('[bold red]' + r_fp + '[/bold red]')
 
                 code_match = r_fp.status_code == int(site['account_existence_code'])
                 string_match = r_fp.text.find(site['account_existence_string']) > 0
 
                 if code_match and string_match:
-                    logging.info('      -  Code: %s; String: %s' % (code_match, string_match))
-                    logging.error(
-                        Bcolors.RED + f' !  ERROR: {site} FALSE POSITIVE DETECTED. Response code and Search '
-                                      f'Strings match expected.' + Bcolors.ENDC + '\r')
+                    print('[bold cyan]      -  Code: %s; String: %s[/bold cyan]' % (code_match, string_match))
+                    print(f'[bold red] !  ERROR: {site} FALSE POSITIVE DETECTED. Response code and Search '
+                                      f'Strings match expected.[/bold red]' + '\r')
                     # TODO set site['valid'] = False
                     overall_results[site['name']] = 'False Positive'
                 else:
@@ -245,9 +196,8 @@ def check_site(site, username=None):
                     pass
             elif code_match and not string_match:
                 # TODO set site['valid'] = False
-                logging.error(
-                    Bcolors.RED + f' !  ERROR: {site} BAD DETECTION STRING. "{site["account_existence_string"]}" '
-                                  f'was not found on resulting page.' + Bcolors.ENDC)
+                print(f'[bold red] !  ERROR: {site} BAD DETECTION STRING. "{site["account_existence_string"]}" '
+                                  f'was not found on resulting page.[/bold red]')
                 overall_results[site['name']] = 'Bad detection string.'
                 if args.stringerror:
                     file_name = 'se-' + site['name'] + '.' + uname
@@ -255,20 +205,19 @@ def check_site(site, username=None):
                     file_name = file_name.encode('ascii', 'ignore').decode('ascii')
                     error_file = codecs.open(file_name, 'w', 'utf-8')
                     error_file.write(r.text)
-                    logging.info('Raw data exported to file:' + file_name)
+                    print('[bold cyan]Raw data exported to file:[/bold cyan]' + file_name)
                     error_file.close()
 
             elif not code_match and string_match:
                 # TODO set site['valid'] = False
-                logging.error(Bcolors.RED + f' !  ERROR: {site} BAD DETECTION RESPONSE CODE. HTTP Response code '
-                                            f'different than expected.' + Bcolors.ENDC + '\r')
+                print(f'[bold red] !  ERROR: {site} BAD DETECTION RESPONSE CODE. HTTP Response code '
+                                            f'different than expected.[/bold red]' + '\r')
                 overall_results[site['name']] = 'Bad detection code. Received Code: %s; Expected Code: %s.' % \
                                                 (str(r.status_code), site['account_existence_code'])
             else:
                 # TODO set site['valid'] = False
-                logging.error(
-                    Bcolors.RED + f' !  ERROR: {site} BAD CODE AND STRING. Neither the HTTP response code or '
-                                  f'detection string worked.' + Bcolors.ENDC + '\r')
+                print('[bold red] !  ERROR: {site} BAD CODE AND STRING. Neither the HTTP response code or '
+                                  f'detection string worked.[/bold red]' + '\r')
                 overall_results[site['name']] = 'Bad detection code and string. Received Code: %s; Expected Code: %s.' \
                                                 % (str(r.status_code), site['account_existence_code'])
 
