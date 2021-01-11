@@ -49,6 +49,7 @@ parser.add_argument('-d', '--debug', help="Enable debug output", action="store_t
 parser.add_argument('-o', '--output', help="Create text output file", action="store_true",
                     default=False)
 parser.add_argument('-of', '--outputfile', nargs='?', help="[OPTIONAL] Create text output file")
+parser.add_argument('-in', '--inputfile', nargs='?', help="[OPTIONAL] Uses a specified file for checking the websites")
 parser.add_argument('-s', '--site', nargs='*', help='[OPTIONAL] If this parameter is passed'
                     'the script will check only the named site or list of sites.')
 parser.add_argument('-se', '--stringerror', help="Creates a site by site file for files that do"
@@ -165,7 +166,12 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 signal.signal(signal.SIGINT, signal_handler)
 
 # Read in the JSON file
-with open('web_accounts_list.json') as data_file:
+if (args.inputfile):
+    inputfile = args.inputfile
+else:
+    inputfile = 'web_accounts_list.json'
+    
+with open(inputfile) as data_file:
     data = json.load(data_file)
 
 if args.site:
