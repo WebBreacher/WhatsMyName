@@ -48,6 +48,7 @@ parser = argparse.ArgumentParser(description="This standalone script will look u
 parser.add_argument('-d', '--debug', help="Enable debug output", action="store_true")
 parser.add_argument('-o', '--output', help="Create text output file", action="store_true",
                     default=False)
+parser.add_argument('-of', '--outputfile', nargs='?', help="[OPTIONAL] Create text output file")
 parser.add_argument('-s', '--site', nargs='*', help='[OPTIONAL] If this parameter is passed'
                     'the script will check only the named site or list of sites.')
 parser.add_argument('-se', '--stringerror', help="Creates a site by site file for files that do"
@@ -57,7 +58,9 @@ parser.add_argument('-u', '--username', help='[OPTIONAL] If this param is passed
                     'will perform the lookups against the given user name instead of running'
                     'checks against the JSON file.')
 
+
 args = parser.parse_args()
+
 
 if args.debug:
     logging.debug('Debug output enabled')
@@ -292,8 +295,11 @@ if __name__ == "__main__":
     finaloutput()
 
     if args.username and all_found_sites:
-        if args.output:
-            outfile = '{}_{}.txt'.format(str(int(time.time())), args.username)
+        if (args.output or args.outputfile):
+            if (args.outputfile):
+                outfile = args.outputfile
+            else:
+                outfile = '{}_{}.txt'.format(str(int(time.time())), args.username)
             with open(outfile, 'w') as f:
                 for item in all_found_sites:
                     f.write("%s\n" % item)
