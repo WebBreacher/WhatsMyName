@@ -104,7 +104,7 @@
          "account_existence_string" : "- Cloudflare Community",
          "account_missing_string" : "Oops! That page doesn’t exist or is private.",
          "account_missing_code" : "404",
-         "known_accounts" : ["john", "red"],
+         "known_accounts" : ["bob", "john"],
          "category" : "tech",
          "valid" : true
       },
@@ -244,10 +244,10 @@
          "name" : "Gab",
          "check_uri" : "https://gab.com/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "• gab.com - Gab Free Speech Social Network</title>",
+         "account_existence_string" : "• gab.com - Gab Social</title>",
          "account_missing_string" : "The page you are looking for isn't here.",
          "account_missing_code" : "404",
-         "known_accounts" : ["john","sam"],
+         "known_accounts" : ["bob","john"],
          "category" : "social",
          "valid" : true
       },
@@ -458,7 +458,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["john", "bob"],
          "category" : "tech",
-         "valid" : true
+         "valid" : false
       },
       {
          "name" : "plug.dj",
@@ -633,7 +633,7 @@
          "account_existence_string" : "的微博 - 微博台灣站",
          "account_missing_string" : "抱歉，找不到您所查詢的網頁",
          "account_missing_code" : "404",
-         "known_accounts" : ["john", "blue"],
+         "known_accounts" : ["chentingni", "fbb0916"],
          "category" : "social",
          "valid" : true
       },
@@ -657,7 +657,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["_fatbatman_","strangelove"],
          "category" : "social",
-         "valid" : true
+         "valid" : false
       },
       {
          "name" : "about.me",
@@ -679,7 +679,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["sacca","rudyadler"],
          "category" : "tech",
-         "valid" : true
+         "valid" : false
       },
       {
          "name" : "aNobii",
@@ -734,7 +734,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["john", "whynot"],
          "category" : "social",
-         "valid" : true
+         "valid" : false
       },
       {
          "name" : "Bandcamp",
@@ -922,7 +922,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["blue", "red"],
          "category" : "tech",
-         "valid" : true
+         "valid" : false
       },
       {
          "name" : "COLOURlovers",
@@ -1055,7 +1055,7 @@
          "account_missing_code" : "503",
          "known_accounts" : ["organicannabis","jonny5"],
          "category" : "health",
-         "valid" : true
+         "valid" : false
       },
       {
          "name" : "e621",
@@ -1165,7 +1165,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["zuck","phil"],
          "category" : "social",
-         "valid" : true
+         "valid" : false
       },
       {
          "name" : "fanpop",
@@ -1264,7 +1264,7 @@
          "account_existence_string" : "Last Visit:",
          "account_missing_string" : "302 Found",
          "account_missing_code" : "302",
-         "known_accounts" : ["john"],
+         "known_accounts" : ["alex56","john"],
          "category" : "dating",
          "valid" : true
       },
@@ -1388,7 +1388,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["blue", "red"],
          "category" : "music",
-         "valid" : true
+         "valid" : false
       },
       {
          "name" : "Gravatar",
@@ -1662,10 +1662,10 @@
          "check_uri" : "https://medium.com/@{account}",
          "pretty_uri" : "https://medium.com/@{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "username",
+         "account_existence_string" : "<a aria-label=\"Author Homepage\"",
          "account_missing_string" : "No user found for username",
          "account_missing_code" : "404",
-         "known_accounts" : ["test123","johndoe"],
+         "known_accounts" : ["johndoe","test123"],
          "category" : "news",
          "valid" : true
       },
@@ -1856,7 +1856,7 @@
          "account_missing_code" : "302",
          "known_accounts" : ["beachman","msmary"],
          "category" : "health",
-         "valid" : true
+         "valid" : false
       },
       {
          "name" : "Pastebin",
@@ -1944,7 +1944,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["test123","frickcollection"],
          "category" : "social",
-         "valid" : true
+         "valid" : false
       },
       {
          "name" : "Playlists.net",
@@ -2515,10 +2515,10 @@
          "name" : "wattpad",
          "check_uri" : "https://www.wattpad.com/user/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "on-nav-item\">About",
+         "account_existence_string" : ">About</a>",
          "account_missing_string" : "this profile seems to be missing",
          "account_missing_code" : "404",
-         "known_accounts" : ["Test123","newadult"],
+         "known_accounts" : ["newadult","Test123"],
          "category" : "social",
          "valid" : true
       },
@@ -2586,7 +2586,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["test"],
          "category" : "blog",
-         "valid" : true
+         "valid" : false
       },
       {
          "name" : "Xanga",
@@ -2608,7 +2608,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["test"],
          "category" : "gaming",
-         "valid" : true
+         "valid" : false
       },
       {
          "name" : "xHamster",
@@ -2628,7 +2628,7 @@
          "account_existence_string" : "Total video views",
          "account_missing_string" : "THIS PROFILE DOESN'T EXIST",
          "account_missing_code" : "404",
-         "known_accounts" : ["canela_skin", "tiffany-tyler"],
+         "known_accounts" : ["vvalencourt3", "tiffany-tyler"],
          "category" : "XXX PORN XXX",
          "valid" : true
       },
@@ -2674,7 +2674,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["john","jess"],
          "category" : "social",
-         "valid" : true
+         "valid" : false
       },
       {
          "name" : "Tagged",
@@ -2707,7 +2707,7 @@
          "account_missing_code" : "200",
          "known_accounts" : ["bob","bobby"],
          "category" : "social",
-         "valid" : true
+         "valid" : false
       },
       {
          "name" : "FatSecret",
@@ -2768,7 +2768,7 @@
          "name" : "Blogger",
          "check_uri" : "https://www.blogger.com/profile/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "Blogger: User Profile:",
+         "account_existence_string" : ">On Blogger since",
          "account_missing_string" : "Sorry, the blog you were looking for does not exist.",
          "account_missing_code" : "404",
          "known_accounts" : ["07333944864481878697","05941544278367416980"],
@@ -2887,12 +2887,12 @@
       },
       {
          "name" : "Thetattooforum",
-         "check_uri" : "https://www.thetattooforum.com/members/{account}",
+         "check_uri" : "https://www.thetattooforum.com/members/{account}/",
          "account_existence_code" : "200",
          "account_existence_string" : "Insert This Gallery",
          "account_missing_string" : "We’re sorry",
          "account_missing_code" : "404",
-         "known_accounts" : ["nasescoba1985", "shellybelly"],
+         "known_accounts" : ["mixdop", "modifyielts"],
          "category" : "art",
          "valid" : true
       },
@@ -2927,6 +2927,28 @@
          "account_missing_code" : "302",
          "known_accounts" : ["sweetkitty", "witchhouse", "hotoptics"],
          "category" : "XXXPORNXXX",
+         "valid" : false
+      },
+      {
+         "name" : "Wireclub",
+         "check_uri" : "https://www.wireclub.com/users/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "Chat With",
+         "account_missing_string" : "That user has been deleted",
+         "account_missing_code" : "200",
+         "known_accounts" : ["deae", "cheerfulsarcasm", "braydenskiresort"],
+         "category" : "social",
+         "valid" : true
+      },
+      {
+         "name" : "Snapchat",
+         "check_uri" : "https://feelinsonice.appspot.com/web/deeplink/snapcode?username={account}&size=400&type=SVG",
+         "account_existence_code" : "200",
+         "account_existence_string" : "</clipPath>",
+         "account_missing_string" : "http://www.w3.org/1999/xlink",
+         "account_missing_code" : "404",
+         "known_accounts" : ["billy23", "mrbean", "alexis4"],
+         "category" : "social",
          "valid" : true
       }
    ]
