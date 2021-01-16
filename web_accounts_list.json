@@ -1025,6 +1025,17 @@
          "valid" : false
       },
       {
+         "name" : "DockerHub",
+         "check_uri" : "https://hub.docker.com/v2/users/{account}/",
+         "account_existence_code" : "200",
+         "account_existence_string" : "username",
+         "account_missing_string" : "Not Found",
+         "account_missing_code" : "404",
+         "known_accounts" : ["soxoj", "torvalds"],
+         "category" : "coding",
+         "valid" : true
+      },
+      {
          "name" : "Dribbble",
          "check_uri" : "https://dribbble.com/{account}",
          "account_existence_code" : "200",
