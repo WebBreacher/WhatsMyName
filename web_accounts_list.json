@@ -439,6 +439,17 @@
          "valid" : false
       },
       {
+         "name" : "Orbys",
+         "check_uri" : "https://orbys.net/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "profile_user_image",
+         "account_missing_string" : "The page you are looking for cannot be found.",
+         "account_missing_code" : "404",
+         "known_accounts" : ["txmustang302"],
+         "category" : "social",
+         "valid" : true
+      },
+      {
          "name" : "PCPartPicker",
          "check_uri" : "https://pcpartpicker.com/user/{account}/",
          "account_existence_code" : "200",
