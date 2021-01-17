@@ -252,17 +252,6 @@
          "valid" : true
       },
       {
-         "name" : "Gitlab",
-         "check_uri" : "https://gitlab.com/{account}",
-         "account_existence_code" : "200",
-         "account_existence_string" : "Member since",
-         "account_missing_string" : "Sign in · GitLab",
-         "account_missing_code" : "302",
-         "known_accounts" : ["alex", "bob"],
-         "category" : "coding",
-         "valid" : true
-      },
-      {
          "name" : "gumroad",
          "check_uri" : "https://gumroad.com/{account}/follow",
          "account_existence_code" : "200",
@@ -1386,7 +1375,18 @@
          "account_existence_string" : "Member since",
          "account_missing_string" : "GitLab.com offers free unlimited",
          "account_missing_code" : "302",
-         "known_accounts" : ["skennedy","KennBro"],
+         "known_accounts" : ["skennedy","KennBro", "alex", "bob"],
+         "category" : "coding",
+         "valid" : true
+      },
+      {
+         "name" : "gitee",
+         "check_uri" : "https://gitee.com/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "Commits, issues, and pull requests will appear",
+         "account_missing_string" : "Gitee is more than a development platform",
+         "account_missing_code" : "404",
+         "known_accounts" : ["maxim"],
          "category" : "coding",
          "valid" : true
       },
