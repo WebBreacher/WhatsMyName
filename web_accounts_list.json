@@ -2996,7 +2996,7 @@
          "valid" : true
       },
       {
-         "name" : "NatrualNews",
+         "name" : "NaturalNews",
          "check_uri" : "https://naturalnews.com/author/{account}/",
          "account_existence_code" : "200",
          "account_existence_string" : "All posts by",
