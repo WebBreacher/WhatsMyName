@@ -10,8 +10,8 @@ This repository has the unified data required to perform user and username enume
   * Exports to CSV and other formats.
   * Pulls the lastest version of the project's JSON file when run.
   * Submit a username in the URL using `https://whatsmyname.app/?q=<%USERNAME%>` like https://whatsmyname.app/?q=john
-* [Recon-ng](https://github.com/lanmaster53/recon-ng) - The **Profiler Module** uses this project's JSON content.
 * [Spiderfoot](https://github.com/smicallef/spiderfoot) uses this in the **sfp_account** module. There is also [this video](https://asciinema.org/a/295923) showing how to use this project using the Spiderfoot Command Line Interface (CLI).
+* [Recon-ng](https://github.com/lanmaster53/recon-ng) - The **Profiler Module** uses this project's JSON content.
 * [sn0int](https://github.com/kpcyrd/sn0int) downloads and uses the JSON file in the [kpcyrd/whatsmyname](https://sn0int.com/r/kpcyrd/whatsmyname) module, see https://twitter.com/sn0int/status/1228046880459907073 for details and instructions.
 * [WMN_screenshooter](https://github.com/swedishmike/WMN_screenshooter) a helper script that is based on `web_accounts_list_checker.py` and uses Selenium to try and grab screenshots of identified profile pages.
 
@@ -19,7 +19,7 @@ This repository has the unified data required to perform user and username enume
 
 * The https://github.com/WebBreacher/WhatsMyName/wiki/Problem-Removed-Sites page has websites that we have had in the project and are currently not working for some reason. We will retest those sites (in the future) and try to find detections.
 * If you would like to help with detections, we are happy to accept them via GitHub Pull Request or you can [create an issue](https://github.com/WebBreacher/WhatsMyName/issues) with the details of the site.
-* Want to suggest a site to be added? Use [this form](https://spotinfo.co/whatsmynameform).
+* Want to suggest a site to be added? Use [this form](https://spotinfo.co/whatsmynamefrm).
 
 # Format
 
