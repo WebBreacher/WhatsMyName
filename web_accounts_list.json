@@ -7,7 +7,7 @@
    "authors" : ["WebBreacher","Munchko","L0r3m1p5um","lehuff","janbinx","bcoles","Sector035",
                 "arnydo","mccartney","salaheldinaz","camhoff","jocephus","swedishmike"],
    "categories" : ["art","blog","business","coding","dating","finance","gaming","health",
-                   "hobby","images","misc","music","news","search","shopping","social",
+                   "hobby","images","misc","music","news","political","search","shopping","social",
                    "tech","video","XXXPORNXXX"],
    "sites" : [
       {
@@ -248,7 +248,7 @@
          "account_missing_string" : "The page you are looking for isn't here.",
          "account_missing_code" : "404",
          "known_accounts" : ["bob","john"],
-         "category" : "social",
+         "category" : "political",
          "valid" : true
       },
       {
@@ -2949,6 +2949,50 @@
          "account_missing_code" : "404",
          "known_accounts" : ["billy23", "mrbean", "alexis4"],
          "category" : "social",
+         "valid" : true
+      },
+      {
+         "name" : "AmericanThinker",
+         "check_uri" : "https://www.americanthinker.com/author/{account}/",
+         "account_existence_code" : "200",
+         "account_existence_string" : "Articles &amp;",
+         "account_missing_string" : "American Thinker</title>",
+         "account_missing_code" : "304",
+         "known_accounts" : ["terrypaulding", "monicashowalter"],
+         "category" : "political",
+         "valid" : true
+      },
+      {
+         "name" : "Minds",
+         "check_uri" : "https://www.minds.com/{account}/",
+         "account_existence_code" : "200",
+         "account_existence_string" : ") | Minds</title>",
+         "account_missing_string" : "Sorry, this channel doesn't appear to exist",
+         "account_missing_code" : "404",
+         "known_accounts" : ["Willieleev1971", "john"],
+         "category" : "political",
+         "valid" : true
+      },
+      {
+         "name" : "Mumblit",
+         "check_uri" : "https://www.mumblit.com/{account}?ref=se",
+         "account_existence_code" : "200",
+         "account_existence_string" : "<meta property=",
+         "account_missing_string" : "Sorry, page not found!",
+         "account_missing_code" : "302",
+         "known_accounts" : ["deHask", "John949"],
+         "category" : "political",
+         "valid" : true
+      },
+      {
+         "name" : "NatrualNews",
+         "check_uri" : "https://naturalnews.com/author/{account}/",
+         "account_existence_code" : "200",
+         "account_existence_string" : "All posts by",
+         "account_missing_string" : "The page you are looking for cannot be found or is no longer available.",
+         "account_missing_code" : "200",
+         "known_accounts" : ["jdheyes", "healthranger"],
+         "category" : "political",
          "valid" : true
       }
    ]
