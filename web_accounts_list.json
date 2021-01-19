@@ -3060,6 +3060,39 @@
          "known_accounts" : ["simon_parkes", "americafloats", "daindor"],
          "category" : "political",
          "valid" : true
+      },
+      {
+         "name" : "RumbleUser",
+         "check_uri" : "https://rumble.com/user/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : " href=https://rumble.com/user/",
+         "account_missing_string" : "404 - Not found",
+         "account_missing_code" : "404",
+         "known_accounts" : ["SimonParkes", "djmrmusic"],
+         "category" : "political",
+         "valid" : true
+      },
+      {
+         "name" : "RumbleChannel",
+         "check_uri" : "https://rumble.com/c/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "href=https://rumble.com/c/",
+         "account_missing_string" : "404 - Not found",
+         "account_missing_code" : "404",
+         "known_accounts" : ["HodgeTwins", "SeanHannity"],
+         "category" : "political",
+         "valid" : true
+      },
+      {
+         "name" : "Dissenter",
+         "check_uri" : "https://dissenter.com/user/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "Dissenter | The Comment Section of the Internet",
+         "account_missing_string" : "That user is not registered here.",
+         "account_missing_code" : "404",
+         "known_accounts" : ["pryerlee", "archdukeofevil"],
+         "category" : "political",
+         "valid" : true
       }
    ]
 }
