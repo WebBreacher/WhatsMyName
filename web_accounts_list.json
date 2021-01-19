@@ -2994,6 +2994,28 @@
          "known_accounts" : ["jdheyes", "healthranger"],
          "category" : "political",
          "valid" : true
+      }, 
+      {
+         "name" : "thegatewaypundit",
+         "check_uri" : "https://www.thegatewaypundit.com/author/{account}/",
+         "account_existence_code" : "200",
+         "account_existence_string" : "summary",
+         "account_missing_string" : "Not found, error 404",
+         "account_missing_code" : "404",
+         "known_accounts" : ["patti", "joehoft"],
+         "category" : "political",
+         "valid" : true
+      },
+      {
+         "name" : "Wimkin-PublicProfile",
+         "check_uri" : "https://wimkin.com/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "is on WIMKIN",
+         "account_missing_string" : " The page you are looking for cannot be found.",
+         "account_missing_code" : "404",
+         "known_accounts" : ["alex", "smith", "boomer"],
+         "category" : "political",
+         "valid" : true
       },
       {
          "name" : "SaraCarterShow",
@@ -3014,28 +3036,6 @@
          "account_missing_string" : "404 - Page not found",
          "account_missing_code" : "404",
          "known_accounts" : ["simon_parkes", "americafloats", "daindor"],
-         "category" : "political",
-         "valid" : true
-      },
-      {
-         "name" : "thegatewaypundit",
-         "check_uri" : "https://www.thegatewaypundit.com/author/{account}/",
-         "account_existence_code" : "200",
-         "account_existence_string" : "summary",
-         "account_missing_string" : "Not found, error 404",
-         "account_missing_code" : "404",
-         "known_accounts" : ["patti", "joehoft", "daindor"],
-         "category" : "political",
-         "valid" : true
-      },
-      {
-         "name" : "Wimkin",
-         "check_uri" : "https://wimkin.com/{account}",
-         "account_existence_code" : "200",
-         "account_existence_string" : "is on WIMKIN",
-         "account_missing_string" : " The page you are looking for cannot be found.",
-         "account_missing_code" : "404",
-         "known_accounts" : ["alex", "smith", "john"],
          "category" : "political",
          "valid" : true
       }
