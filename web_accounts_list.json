@@ -2994,7 +2994,7 @@
          "known_accounts" : ["jdheyes", "healthranger"],
          "category" : "political",
          "valid" : true
-      }, 
+      },
       {
          "name" : "thegatewaypundit",
          "check_uri" : "https://www.thegatewaypundit.com/author/{account}/",
