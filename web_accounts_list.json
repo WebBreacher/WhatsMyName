@@ -1050,12 +1050,12 @@
          "name": "Droners",
          "check_uri" : "https://droners.io/accounts/{account}/",
          "account_existence_code" : "200",
-         "account_existence_string" : "#portfolio_images_tab",
+         "account_existence_string" : "- Professional Drone Pilot",
          "account_missing_string" : "(404)</title>",
          "account_missing_code" : "302",
          "known_accounts" : ["chriskahn","swilken"],
          "category" : "hobby",
-         "valid" : false
+         "valid" : true
       },
       {
          "name" : "duby",
@@ -1088,7 +1088,7 @@
          "account_missing_code" : "200",
          "known_accounts" : ["wd"],
          "category" : "social",
-         "valid" : false
+         "valid" : true
       },
       {
          "name" : "eBay",
@@ -1747,17 +1747,6 @@
          "valid" : false
       },
       {
-         "name" : "Mixer",
-         "check_uri" : "https://mixer.com/api/v1/channels/{account}",
-         "account_existence_code" : "200",
-         "account_existence_string" : "token",
-         "account_missing_string" : "Channel not found",
-         "account_missing_code" : "404",
-         "known_accounts" : ["uni05","PaladinsGame"],
-         "category" : "gaming",
-         "valid" : false
-      },
-      {
          "name" : "Mixlr",
          "check_uri" : "http://api.mixlr.com/users/{account}",
          "pretty_uri" : "http://mixlr.com/{account}/",
@@ -1833,7 +1822,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["alice","bob"],
          "category" : "social",
-         "valid" : false
+         "valid" : true
       },
       {
          "name" : "netvibes",
@@ -1926,14 +1915,14 @@
       },
       {
          "name" : "PhotoBucket",
-         "check_uri" : "http://smg.photobucket.com/user/{account}/profile",
-         "account_existence_code" : "301",
-         "account_existence_string" : "follow",
+         "check_uri" : "https://app.photobucket.com/u/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "content=\"My Library\">",
          "account_missing_string" : "Error | Photobucket",
-         "account_missing_code" : "404",
-         "known_accounts" : ["test","Ggorps"],
+         "account_missing_code" : "302",
+         "known_accounts" : ["Sonorlite18","awelch"],
          "category" : "images",
-         "valid" : false
+         "valid" : true
       },
       {
          "name" : "PictureTrail",
@@ -1961,12 +1950,12 @@
          "name" : "Pinterest",
          "check_uri" : "https://www.pinterest.com/{account}/",
          "account_existence_code" : "200",
-         "account_existence_string" : "on Pinterest</title>",
+         "account_existence_string" : " - Profile | Pinterest",
          "account_missing_string" : "Whoops! We couldn't find that page",
          "account_missing_code" : "404",
          "known_accounts" : ["test123","frickcollection"],
          "category" : "social",
-         "valid" : false
+         "valid" : true
       },
       {
          "name" : "Playlists.net",
@@ -2125,14 +2114,14 @@
       },
       {
          "name" : "Skyrock",
-         "check_uri" : "https://{account}.skyrock.com/profil/",
+         "check_uri" : "https://{account}.skyrock.com/",
          "account_existence_code" : "200",
-         "account_existence_string" : "<title>Their Profile - ",
+         "account_existence_string" : "s blog",
          "account_missing_string" : "<title>Page not found - ",
          "account_missing_code" : "404",
          "known_accounts" : ["alice","bob"],
          "category" : "social",
-         "valid" : false
+         "valid" : true
       },
       {
          "name" : "slideshare",
@@ -2202,14 +2191,14 @@
       },
       {
          "name" : "Soup",
-         "check_uri" : "https://{account}.soup.io/rss",
+         "check_uri" : "https://www.soup.io/author/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "rss version",
-         "account_missing_string" : "Blog not found",
-         "account_missing_code" : "404",
-         "known_accounts" : ["test"],
+         "account_existence_string" : "Author at Soup.io",
+         "account_missing_string" : "Soup.io - News, Sports, Entertainment, TV, Tech, Gaming",
+         "account_missing_code" : "301",
+         "known_accounts" : ["john","cristina"],
          "category" : "blog",
-         "valid" : false
+         "valid" : true
       },
       {
          "name" : "Sourceforge",
@@ -2913,7 +2902,7 @@
          "account_existence_code" : "200",
          "account_existence_string" : "Insert This Gallery",
          "account_missing_string" : "We’re sorry",
-         "account_missing_code" : "404",
+         "account_missing_code" : "500",
          "known_accounts" : ["mixdop", "modifyielts"],
          "category" : "art",
          "valid" : true
@@ -2960,7 +2949,7 @@
          "account_missing_code" : "200",
          "known_accounts" : ["deae", "cheerfulsarcasm", "braydenskiresort"],
          "category" : "social",
-         "valid" : true
+         "valid" : false
       },
       {
          "name" : "Snapchat",
@@ -2979,7 +2968,7 @@
          "account_existence_code" : "200",
          "account_existence_string" : "Articles &amp;",
          "account_missing_string" : "American Thinker</title>",
-         "account_missing_code" : "304",
+         "account_missing_code" : "200",
          "known_accounts" : ["terrypaulding", "monicashowalter"],
          "category" : "political",
          "valid" : true
