@@ -2345,15 +2345,14 @@
       },
       {
          "name" : "Tinder",
-         "check_uri" : "https://www.gotinder.com/@{account}",
-         "account_existence_code" : "301",
-         "account_existence_string" : "| Tinder",
-         "account_missing_string" : "| Match. Chat. Date.",
+         "check_uri" : "https://tinder.com/@{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : ") | Tinder</title><meta",
+         "account_missing_string" : "Tinder | Dating, Make Friends &amp; Meet New People",
          "account_missing_code" : "200",
-         "known_accounts" : ["Alexey","Marsha"],
+         "known_accounts" : ["Alexey","john"],
          "category" : "dating",
-         "valid" : false
-
+         "valid" : true
       },
       {
          "name" : "tripadvisor",
@@ -2592,12 +2591,12 @@
          "name" : "WordPress Support",
          "check_uri" : "https://wordpress.org/support/users/{account}/",
          "account_existence_code" : "200",
-         "account_existence_string" : "Forum Role: ",
+         "account_existence_string" : "s Profile &#124; WordPress.org",
          "account_missing_string" : "User not found",
          "account_missing_code" : "404",
          "known_accounts" : ["test"],
          "category" : "blog",
-         "valid" : false
+         "valid" : true
       },
       {
          "name" : "Xanga",
@@ -2685,7 +2684,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["john","jess"],
          "category" : "social",
-         "valid" : false
+         "valid" : true
       },
       {
          "name" : "Tagged",
@@ -2718,7 +2717,7 @@
          "account_missing_code" : "200",
          "known_accounts" : ["bob","bobby"],
          "category" : "social",
-         "valid" : false
+         "valid" : true
       },
       {
          "name" : "FatSecret",
@@ -2933,12 +2932,12 @@
          "name" : "Bentbox",
          "check_uri" : "https://bentbox.co/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "Member since",
-         "account_missing_string" : "Moved permamently",
+         "account_existence_string" : "BentBox User Page",
+         "account_missing_string" : "This user page is currently not available.",
          "account_missing_code" : "302",
-         "known_accounts" : ["sweetkitty", "witchhouse", "hotoptics"],
+         "known_accounts" : ["brockdoom", "witchhouse", "hotoptics"],
          "category" : "XXXPORNXXX",
-         "valid" : false
+         "valid" : true
       },
       {
          "name" : "Wireclub",
