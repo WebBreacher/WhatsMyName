@@ -649,17 +649,6 @@
          "valid" : true
       },
       {
-         "name" : "9GAG",
-         "check_uri" : "https://9gag.com/u/{account}",
-         "account_existence_code" : "200",
-         "account_existence_string" : "- 9GAG</title>",
-         "account_missing_string" : "9GAG - 404 Nothing here",
-         "account_missing_code" : "404",
-         "known_accounts" : ["_fatbatman_","strangelove"],
-         "category" : "social",
-         "valid" : false
-      },
-      {
          "name" : "about.me",
          "check_uri" : "https://about.me/{account}",
          "account_existence_code" : "200",
@@ -669,17 +658,6 @@
          "known_accounts" : ["john","jill"],
          "category" : "social",
          "valid" : true
-      },
-      {
-         "name" : "AngelList",
-         "check_uri" : "https://angel.co/p/{account}",
-         "account_existence_code" : "200",
-         "account_existence_string" : "s profile on AngelList,",
-         "account_missing_string" : "Page not found - 404",
-         "account_missing_code" : "404",
-         "known_accounts" : ["sacca","rudyadler"],
-         "category" : "tech",
-         "valid" : false
       },
       {
          "name" : "aNobii",
@@ -1014,17 +992,6 @@
          "valid" : true
       },
       {
-         "name" : "DIY",
-         "check_uri" : "https://diy.org/{account}",
-         "account_existence_code" : "200",
-         "account_existence_string" : "Member since",
-         "account_missing_string" : "We couldn&#x27;t find that!",
-         "account_missing_code" : "404",
-         "known_accounts" : ["test", "john"],
-         "category" : "video",
-         "valid" : false
-      },
-      {
          "name" : "DockerHub",
          "check_uri" : "https://hub.docker.com/v2/users/{account}/",
          "account_existence_code" : "200",
@@ -1111,17 +1078,6 @@
          "known_accounts" : ["marhiah", "adnama"],
          "category" : "social",
          "valid" : true
-      },
-      {
-         "name" : "EightBit",
-         "check_uri" : "http://eightbit.me/{account}",
-         "account_existence_code" : "304",
-         "account_existence_string" : "on EightBit</title>",
-         "account_missing_string" : "EightBit: 404 Error",
-         "account_missing_code" : "404",
-         "known_accounts" : ["bomdiameucaro","alex"],
-         "category" : "gaming",
-         "valid" : false
       },
       {
          "name" : "Engadget",
@@ -1467,17 +1423,6 @@
          "known_accounts" : ["nr9992","sss90"],
          "category" : "misc",
          "valid" : true
-      },
-      {
-         "name" : "IGN",
-         "check_uri" : "https://www.ign.com/boards/members/{account}",
-         "account_existence_code" : "200",
-         "account_existence_string" : "| IGN Boards</title>",
-         "account_missing_string" : "Page Not Found",
-         "account_missing_code" : "404",
-         "known_accounts" : ["darksydephil"],
-         "category" : "gaming",
-         "valid" : false
       },
       {
          "name" : "ImageShack",
