@@ -1617,7 +1617,6 @@
       {
          "name" : "Medium",
          "check_uri" : "https://medium.com/@{account}",
-         "pretty_uri" : "https://medium.com/@{account}",
          "account_existence_code" : "200",
          "account_existence_string" : "<a aria-label=\"Author Homepage\"",
          "account_missing_string" : "No user found for username",
@@ -2866,6 +2865,7 @@
       {
          "name" : "Snapchat",
          "check_uri" : "https://feelinsonice.appspot.com/web/deeplink/snapcode?username={account}&size=400&type=SVG",
+         "pretty_uri" : "https://www.snapchat.com/add/{account}",
          "account_existence_code" : "200",
          "account_existence_string" : "</clipPath>",
          "account_missing_string" : "http://www.w3.org/1999/xlink",
