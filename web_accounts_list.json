@@ -1976,7 +1976,7 @@
          "account_existence_string" : "Cake day",
          "account_missing_string" : "page not found",
          "account_missing_code" : "404",
-         "known_accounts" : ["mayorpaco", "leafstar2"],
+         "known_accounts" : ["john", "leafstar2"],
          "category" : "news",
          "valid" : true
       },
@@ -2993,6 +2993,171 @@
          "account_missing_code" : "404",
          "known_accounts" : ["pryerlee", "archdukeofevil"],
          "category" : "political",
+         "valid" : true
+      },
+      {
+         "name" : "Rive",
+         "check_uri" : "https://rive.app/a/{account}/files/recent/all",
+         "account_existence_code" : "200",
+         "account_existence_string" : "Rive - ",
+         "account_missing_string" : "The page you were looking for doesn't exist.",
+         "account_missing_code" : "404",
+         "known_accounts" : ["bob", "john"],
+         "category" : "hobby",
+         "valid" : true
+      },
+      {
+         "name" : "TrackmaniaLadder",
+         "check_uri" : "http://en.tm-ladder.com/{account}_rech.php",
+         "account_existence_code" : "200",
+         "account_existence_string" : "Multiplayer Ladder",
+         "account_missing_string" : "player unknown or invalid 'idplayer' parameter.",
+         "account_missing_code" : "404",
+         "known_accounts" : ["bob", "john"],
+         "category" : "gaming",
+         "valid" : true
+      },
+      {
+         "name" : "3DNews",
+         "check_uri" : "http://forum.3dnews.ru/member.php?username={account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "<title>Форум 3DNews - Просмотр профиля:",
+         "account_missing_string" : "Пользователь не зарегистрирован и не имеет профиля для просмотра.",
+         "account_missing_code" : "200",
+         "known_accounts" : ["bob", "red"],
+         "category" : "social",
+         "valid" : true
+      },
+      {
+         "name" : "igromania",
+         "check_uri" : "http://forum.igromania.ru/member.php?username={account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "Форум Игромании - Просмотр профиля:",
+         "account_missing_string" : "Пользователь не зарегистрирован и не имеет профиля для просмотра.",
+         "account_missing_code" : "200",
+         "known_accounts" : ["bob", "blue"],
+         "category" : "social",
+         "valid" : true
+      },
+      {
+         "name" : "akniga",
+         "check_uri" : "https://akniga.org/profile/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : " - Аудиокниги Клуб</title",
+         "account_missing_string" : "К сожалению, такой страницы не существует. Вероятно, она была удалена с сервера, либо ее здесь никогда не было.",
+         "account_missing_code" : "200",
+         "known_accounts" : ["bob", "blue"],
+         "category" : "hobby",
+         "valid" : true
+      },
+      {
+         "name" : "allmylinks",
+         "check_uri" : "https://allmylinks.com/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "message",
+         "account_missing_string" : "Page not found",
+         "account_missing_code" : "404",
+         "known_accounts" : ["blue", "beccaturner"],
+         "category" : "social",
+         "valid" : true
+      },
+      {
+         "name" : "Archive.org",
+         "check_uri" : "https://archive.org/details/@{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "<title>User Account</title>",
+         "account_missing_string" : "cannot find account",
+         "account_missing_code" : "200",
+         "known_accounts" : ["john", "alex"],
+         "category" : "search",
+         "valid" : true
+      },
+      {
+         "name" : "Naver",
+         "check_uri" : "https://blog.naver.com/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : ": 네이버 블로그",
+         "account_missing_string" : "페이지를 찾을 수 없습니다",
+         "account_missing_code" : "404",
+         "known_accounts" : ["bob", "blue"],
+         "category" : "social",
+         "valid" : true
+      },
+      {
+         "name" : "Booth",
+         "check_uri" : "https://{account}.booth.pm/",
+         "account_existence_code" : "200",
+         "account_existence_string" : "- BOOTH</title>",
+         "account_missing_string" : "BOOTH - The International Indie Art Marketplace",
+         "account_missing_code" : "302",
+         "known_accounts" : ["monoliorder", "hasya"],
+         "category" : "shopping",
+         "valid" : true
+      },
+      {
+         "name" : "Carbonmade",
+         "check_uri" : "https://{account}.carbonmade.com/",
+         "account_existence_code" : "200",
+         "account_existence_string" : "s online portfolio",
+         "account_missing_string" : "site not found",
+         "account_missing_code" : "404",
+         "known_accounts" : ["jenny", "bob"],
+         "category" : "hobby",
+         "valid" : true
+      },
+      {
+         "name" : "Career.habr",
+         "check_uri" : "https://career.habr.com/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "— Хабр Карьера</title>",
+         "account_missing_string" : "Ошибка 404",
+         "account_missing_code" : "404",
+         "known_accounts" : ["alex", "bob"],
+         "category" : "business",
+         "valid" : true
+      },
+      {
+         "name" : "echo.msk",
+         "check_uri" : "https://echo.msk.ru/users/{account}/",
+         "account_existence_code" : "200",
+         "account_existence_string" : " — Пользователи — Эхо Москвы",
+         "account_missing_string" : "Страница не найдена",
+         "account_missing_code" : "404",
+         "known_accounts" : ["john", "blue"],
+         "category" : "news",
+         "valid" : true
+      },
+      {
+         "name" : "Facenama",
+         "check_uri" : "https://facenama.com/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "شبکه اجتماعی فیس نما</title>",
+         "account_missing_string" : "خطای 404",
+         "account_missing_code" : "302",
+         "known_accounts" : ["john", "blue"],
+         "category" : "social",
+         "valid" : true
+      },
+      {
+         "name" : "Hackaday",
+         "check_uri" : "https://hackaday.io/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "'s Profile | Hackaday.io",
+         "account_missing_string" : "The requested URL was not found on this server. That’s all we know.",
+         "account_missing_code" : "404",
+         "known_accounts" : ["john", "adam"],
+         "category" : "hobby",
+         "valid" : true
+      },
+      {
+         "name" : "Hubski",
+         "check_uri" : "https://hubski.com/user/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "'s profile",
+         "account_missing_string" : "No such user.",
+         "account_missing_code" : "200",
+         "known_accounts" : ["john", "blue"],
+         "category" : "social",
          "valid" : true
       }
    ]
