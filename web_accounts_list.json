@@ -3071,6 +3071,50 @@
          "known_accounts" : ["john", "alex"],
          "category" : "search",
          "valid" : true
+      },
+      {
+         "name" : "Naver",
+         "check_uri" : "https://blog.naver.com/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : ": 네이버 블로그",
+         "account_missing_string" : "페이지를 찾을 수 없습니다",
+         "account_missing_code" : "404",
+         "known_accounts" : ["bob", "blue"],
+         "category" : "social",
+         "valid" : true
+      },
+      {
+         "name" : "Booth",
+         "check_uri" : "https://{account}.booth.pm/",
+         "account_existence_code" : "200",
+         "account_existence_string" : "- BOOTH</title>",
+         "account_missing_string" : "BOOTH - The International Indie Art Marketplace",
+         "account_missing_code" : "302",
+         "known_accounts" : ["monoliorder", "hasya"],
+         "category" : "shopping",
+         "valid" : true
+      },
+      {
+         "name" : "Carbonmade",
+         "check_uri" : "https://{account}.carbonmade.com/",
+         "account_existence_code" : "200",
+         "account_existence_string" : "s online portfolio",
+         "account_missing_string" : "site not found",
+         "account_missing_code" : "404",
+         "known_accounts" : ["jenny", "bob"],
+         "category" : "hobby",
+         "valid" : true
+      },
+      {
+         "name" : "Career.habr",
+         "check_uri" : "https://career.habr.com/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "— Хабр Карьера</title>",
+         "account_missing_string" : "Ошибка 404",
+         "account_missing_code" : "404",
+         "known_accounts" : ["alex", "bob"],
+         "category" : "business",
+         "valid" : true
       }
    ]
 }
