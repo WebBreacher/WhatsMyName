@@ -26,10 +26,10 @@ This repository has the unified data required to perform user and username enume
 See [CONTRIBUTING](CONTRIBUTING.md)
 
 # Standalone Checkers
-If you just want to run this script to check user names on sites and don't wish to use it in combination with another tool (like Recon-NG and/or Spiderfoot), then you can use the included Python 3 scripts as shown below. There is the `web_accounts_list_checker_threading.py` (preferred) and the `web_accounts_list_checker.py` which will take MUCH longer to cycle through all the sites. The threaded one is shown below.
+If you just want to run this script to check user names on sites and don't wish to use it in combination with another tool (like https://whatsmyname.app and/or Spiderfoot), then you can use the included Python 3 scripts as shown below. There is the `web_accounts_list_checker.py` (preferred) and the `check_online_presence.py` which will take MUCH longer to cycle through all the sites and it works a bit differently than the first one.
 
 ```
- $  python3 ./web_accounts_list_checker_threading.py -u maxim
+ $  python3 ./web_accounts_list_checker.py -u maxim
  -  253 sites found in file.
  >  Looking up https://www.7cups.com/@maxim
  >  Looking up https://asciinema.org/~maxim
