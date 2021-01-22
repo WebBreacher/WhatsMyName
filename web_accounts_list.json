@@ -3115,6 +3115,50 @@
          "known_accounts" : ["alex", "bob"],
          "category" : "business",
          "valid" : true
+      },
+      {
+         "name" : "echo.msk",
+         "check_uri" : "https://echo.msk.ru/users/{account}/",
+         "account_existence_code" : "200",
+         "account_existence_string" : " — Пользователи — Эхо Москвы",
+         "account_missing_string" : "Страница не найдена",
+         "account_missing_code" : "404",
+         "known_accounts" : ["john", "blue"],
+         "category" : "news",
+         "valid" : true
+      },
+      {
+         "name" : "Facenama",
+         "check_uri" : "https://facenama.com/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "شبکه اجتماعی فیس نما</title>",
+         "account_missing_string" : "خطای 404",
+         "account_missing_code" : "302",
+         "known_accounts" : ["john", "blue"],
+         "category" : "social",
+         "valid" : true
+      },
+      {
+         "name" : "Hackaday",
+         "check_uri" : "https://hackaday.io/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "'s Profile | Hackaday.io",
+         "account_missing_string" : "The requested URL was not found on this server. That’s all we know.",
+         "account_missing_code" : "404",
+         "known_accounts" : ["john", "adam"],
+         "category" : "hobby",
+         "valid" : true
+      },
+      {
+         "name" : "Hubski",
+         "check_uri" : "https://hubski.com/user/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "'s profile",
+         "account_missing_string" : "No such user.",
+         "account_missing_code" : "200",
+         "known_accounts" : ["john", "blue"],
+         "category" : "social",
+         "valid" : true
       }
    ]
 }
