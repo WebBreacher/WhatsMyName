@@ -249,7 +249,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["bob","john"],
          "category" : "political",
-         "valid" : true
+         "valid" : false
       },
       {
          "name" : "gumroad",
@@ -721,7 +721,7 @@
          "account_existence_string" : "<title>Behance</title>",
          "account_missing_string" : "<title>Behance :: Oops! We can’t find that page.</title>",
          "account_missing_code" : "404",
-         "known_accounts" : ["alice", "bob"],
+         "known_accounts" : ["alice", "john"],
          "category" : "business",
          "valid" : true
       },
@@ -2838,7 +2838,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["redXXX", "turdburglar"],
          "category" : "tech",
-         "valid" : true
+         "valid" : false
       },
       {
          "name" : "Bentbox",
@@ -3059,17 +3059,6 @@
          "account_missing_code" : "404",
          "known_accounts" : ["blue", "beccaturner"],
          "category" : "social",
-         "valid" : true
-      },
-      {
-         "name" : "Archive.org",
-         "check_uri" : "https://archive.org/details/@{account}",
-         "account_existence_code" : "200",
-         "account_existence_string" : "<title>User Account</title>",
-         "account_missing_string" : "cannot find account",
-         "account_missing_code" : "200",
-         "known_accounts" : ["john", "alex"],
-         "category" : "search",
          "valid" : true
       },
       {
