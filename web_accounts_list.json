@@ -1976,7 +1976,7 @@
          "account_existence_string" : "Cake day",
          "account_missing_string" : "page not found",
          "account_missing_code" : "404",
-         "known_accounts" : ["mayorpaco", "leafstar2"],
+         "known_accounts" : ["john", "leafstar2"],
          "category" : "news",
          "valid" : true
       },
@@ -2993,6 +2993,50 @@
          "account_missing_code" : "404",
          "known_accounts" : ["pryerlee", "archdukeofevil"],
          "category" : "political",
+         "valid" : true
+      },
+      {
+         "name" : "Rive",
+         "check_uri" : "https://rive.app/a/{account}/files/recent/all",
+         "account_existence_code" : "200",
+         "account_existence_string" : "Rive - ",
+         "account_missing_string" : "The page you were looking for doesn't exist.",
+         "account_missing_code" : "404",
+         "known_accounts" : ["bob", "john"],
+         "category" : "hobby",
+         "valid" : true
+      },
+      {
+         "name" : "TrackmaniaLadder",
+         "check_uri" : "http://en.tm-ladder.com/{account}_rech.php",
+         "account_existence_code" : "200",
+         "account_existence_string" : "Multiplayer Ladder",
+         "account_missing_string" : "player unknown or invalid 'idplayer' parameter.",
+         "account_missing_code" : "404",
+         "known_accounts" : ["bob", "john"],
+         "category" : "gaming",
+         "valid" : true
+      },
+      {
+         "name" : "3DNews",
+         "check_uri" : "http://forum.3dnews.ru/member.php?username={account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "<title>Форум 3DNews - Просмотр профиля:",
+         "account_missing_string" : "Пользователь не зарегистрирован и не имеет профиля для просмотра.",
+         "account_missing_code" : "200",
+         "known_accounts" : ["bob", "red"],
+         "category" : "hobby",
+         "valid" : true
+      },
+      {
+         "name" : "igromania",
+         "check_uri" : "http://forum.igromania.ru/member.php?username={account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "Форум Игромании - Просмотр профиля:",
+         "account_missing_string" : "Пользователь не зарегистрирован и не имеет профиля для просмотра.",
+         "account_missing_code" : "200",
+         "known_accounts" : ["bob", "blue"],
+         "category" : "hobby",
          "valid" : true
       }
    ]
