@@ -142,7 +142,7 @@ def main():
     else:
         inputfile = 'web_accounts_list.json'
 
-    with open('web_accounts_list.json') as data_file:
+    with open(inputfile) as data_file:
         data = json.load(data_file)
 
     sites_to_check = find_sites_to_check(args, data)
