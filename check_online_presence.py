@@ -28,9 +28,6 @@ parser = argparse.ArgumentParser(description="This standalone script will look u
 parser.add_argument('-u', '--username', help='[OPTIONAL] If this param is passed then this script will perform the '
                     'lookups against the given user name instead of running checks against '
                     'the JSON file.')
-parser.add_argument('-o', '--output', help="Create text output file", action="store_true",
-                    default=False)
-parser.add_argument('-of', '--outputfile', nargs='?', help="[OPTIONAL] Create text output file")
 parser.add_argument('-in', '--inputfile', nargs='?', help="[OPTIONAL] Uses a specified file for checking the websites")
 parser.add_argument('-s', '--site', nargs='*', help='[OPTIONAL] If this parameter is passed the script will check only the named site or list of sites.')
 parser.add_argument('-d', '--debug', help="Enable debug output", action="store_true")
