@@ -3156,10 +3156,7 @@
          "account_existence_string": "Joined",
          "account_missing_string": "Looks like you got lost!.",
          "account_missing_code": "404",
-         "known_accounts": [
-            "eric",
-            "danielrivera10927"
-         ],
+         "known_accounts": ["eric", "danielrivera10927"],
          "category": "hobby",
          "valid": true
       }
