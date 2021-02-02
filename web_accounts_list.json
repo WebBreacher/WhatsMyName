@@ -3148,6 +3148,20 @@
          "known_accounts" : ["john", "blue"],
          "category" : "social",
          "valid" : true
+      },
+      {
+         "name": "Dojoverse",
+         "check_uri": "https://dojoverse.com/members/{account}/",
+         "account_existence_code": "200",
+         "account_existence_string": "Joined",
+         "account_missing_string": "Looks like you got lost!.",
+         "account_missing_code": "404",
+         "known_accounts": [
+            "eric",
+            "danielrivera10927"
+         ],
+         "category": "hobby",
+         "valid": true
       }
    ]
 }
