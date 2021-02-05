@@ -1648,13 +1648,13 @@
          "valid" : true
       },
       {
-         "name" : "Minecraft",
-         "check_uri" : "https://namemc.com/name/{account}",
+         "name" : "Minecraft List",
+         "check_uri" : "https://minecraftlist.com/players/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "<a href=\"/profile/",
-         "account_missing_string" : "Available*",
+         "account_existence_string" : "Minecraft player profile",
+         "account_missing_string" : "This page could not be found",
          "account_missing_code" : "404",
-         "known_accounts" : ["Alice","Bob"],
+         "known_accounts" : ["popbob","dream"],
          "category" : "gaming",
          "valid" : true
       },
@@ -1756,6 +1756,17 @@
          "account_missing_code" : "404",
          "known_accounts" : ["alice","bob"],
          "category" : "social",
+         "valid" : true
+      },
+      {
+         "name" : "NameMC",
+         "check_uri" : "https://namemc.com/name/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "<a href=\"/profile/",
+         "account_missing_string" : "Available*",
+         "account_missing_code" : "404",
+         "known_accounts" : ["Alice","Bob"],
+         "category" : "gaming",
          "valid" : true
       },
       {
