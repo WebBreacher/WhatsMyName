@@ -1,5 +1,5 @@
 {
-   "license" : ["Copyright (C) 2020 Micah Hoffman",
+   "license" : ["Copyright (C) 2021 Micah Hoffman",
                 "This work is licensed under the Creative Commons Attribution-ShareAlike",
                 "4.0 International License. To view a copy of this license, visit",
                 "http://creativecommons.org/licenses/by-sa/4.0/ or send a letter to",
@@ -2216,11 +2216,11 @@
          "check_uri" : "https://www.taringa.net/{account}",
          "account_existence_code" : "200",
          "account_existence_string" : " en Taringa!</title>",
-         "account_missing_string" : "Taringa! - Offline</title>",
-         "account_missing_code" : "404",
+         "account_missing_string" : "Colectiva en Taringa!</title>",
+         "account_missing_code" : "301",
          "known_accounts" : ["jocaxav","engendrometal"],
          "category" : "social",
-         "valid" : false
+         "valid" : true
       },
       {
          "name" : "Telegram",
