@@ -263,17 +263,6 @@
          "valid" : true
       },
       {
-         "name" : "Hackernews",
-         "check_uri" : "https://news.ycombinator.com/user?id={account}",
-         "account_existence_code" : "200",
-         "account_existence_string" : "| Hacker News",
-         "account_missing_string" : "No such user.",
-         "account_missing_code" : "200",
-         "known_accounts" : ["john", "bob"],
-         "category" : "news",
-         "valid" : true
-      },
-      {
          "name" : "Hackernoon",
          "check_uri" : "https://hackernoon.com/u/{account}",
          "account_existence_code" : "200",
