@@ -33,8 +33,7 @@ logging.basicConfig(level=logging.INFO, format='%(message)s')
 ##########################
 
 # Set HTTP Header info.
-headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36',
-           'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+headers = {'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
            'Accept-Language': 'en-US,en;q=0.5',
            'Accept-Encoding': 'gzip, deflate'
            }
@@ -170,7 +169,7 @@ if (args.inputfile):
     inputfile = args.inputfile
 else:
     inputfile = 'web_accounts_list.json'
-    
+
 with open(inputfile) as data_file:
     data = json.load(data_file)
 
