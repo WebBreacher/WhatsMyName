@@ -1104,14 +1104,14 @@
       },
       {
          "name" : "Facebook",
-         "check_uri" : "https://mbasic.facebook.com/{account}",
+         "check_uri" : "https://www.facebook.com/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : " is on Facebook. Join Facebook to connect with",
-         "account_missing_string" : "Facebook or log in to continue.",
+         "account_existence_string" : " is on Facebook. Join Facebook to connect with ",
+         "account_missing_string" : "The link you followed may be broken, or the page may have been rem",
          "account_missing_code" : "404",
-         "known_accounts" : ["zuck","phil"],
+         "known_accounts" : ["alex","phil","becca"],
          "category" : "social",
-         "valid" : false
+         "valid" : true
       },
       {
          "name" : "fanpop",
@@ -1304,11 +1304,10 @@
       },
       {
          "name" : "GitHub",
-         "check_uri" : "https://api.github.com/users/{account}",
-         "pretty_uri" : "https://github.com/{account}",
+         "check_uri" : "https://github.com/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "following_url",
-         "account_missing_string" : "Not Found",
+         "account_existence_string" : "p-nickname vcard-username d-block",
+         "account_missing_string" : "<title>Page not found ",
          "account_missing_code" : "404",
          "known_accounts" : ["test","WebBreacher"],
          "category" : "coding",
@@ -2673,7 +2672,7 @@
          "account_missing_code" : "200",
          "known_accounts" : ["willsmith","billnye"],
          "category" : "social",
-         "valid" : false
+         "valid" : true
       },
       {
          "name" : "Mixi",
