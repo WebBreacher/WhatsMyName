@@ -1078,7 +1078,7 @@
          "account_existence_string" : " on Etsy</title>",
          "account_missing_string" : "Sorry, the member you are looking for does not exist",
          "account_missing_code" : "404",
-         "known_accounts" : ["happiness"],
+         "known_accounts" : ["david", "happiness"],
          "category" : "shopping",
          "valid" : true
       },
@@ -1642,8 +1642,8 @@
          "name" : "Mix",
          "check_uri" : "https://mix.com/{account}/",
          "account_existence_code" : "200",
-         "account_existence_string" : " Posts</title>",
-         "account_missing_string" : "",
+         "account_existence_string" : "<title>@",
+         "account_missing_string" : "The best content from the open web, personalized.",
          "account_missing_code" : "302",
          "known_accounts" : ["test","mixpicks"],
          "category" : "social",
@@ -1850,17 +1850,6 @@
          "valid" : true
       },
       {
-         "name" : "PictureTrail",
-         "check_uri" : "http://picturetrail.com/homepage/{account}",
-         "account_existence_code" : "200",
-         "account_existence_string" : "<title>PictureTrail</title>",
-         "account_missing_string" : "",
-         "account_missing_code" : "302",
-         "known_accounts" : ["joanscreations","grunwalde"],
-         "category" : "images",
-         "valid" : true
-      },
-      {
          "name" : "PinkBike",
          "check_uri" : "https://www.pinkbike.com/u/{account}/",
          "account_existence_code" : "200",
@@ -1984,7 +1973,7 @@
       },
       {
          "name" : "Repl.it",
-         "check_uri" : "https://repl.it/@{account}",
+         "check_uri" : "https://replit.com/@{account}",
          "account_existence_code" : "200",
          "account_existence_string" : "isLoggedIn",
          "account_missing_string" : "<title>repl.it - online REPL",
@@ -2984,17 +2973,6 @@
          "account_missing_code" : "404",
          "known_accounts" : ["pryerlee", "archdukeofevil"],
          "category" : "political",
-         "valid" : true
-      },
-      {
-         "name" : "Rive",
-         "check_uri" : "https://rive.app/a/{account}/files/recent/all",
-         "account_existence_code" : "200",
-         "account_existence_string" : "Rive - ",
-         "account_missing_string" : "The page you were looking for doesn't exist.",
-         "account_missing_code" : "404",
-         "known_accounts" : ["bob", "john"],
-         "category" : "hobby",
          "valid" : true
       },
       {
