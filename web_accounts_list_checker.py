@@ -2,21 +2,11 @@
 
 """
     Author : Micah Hoffman (@WebBreacher)
-    Description : Takes each username from the web_accounts_list.json file and performs the lookup to see if the discovery determinator is still valid
-
-    TODO -
-        1 - Make it so the script will toggle validity factor per entry and write to output file
-        2 - Make it so the script will append comment to the entry and output to file
-        3 - Make a stub file shows last time sites were checked and problems.
-
-    ISSUES -
-        1 - Had an issue with SSL handshakes and this script. Had to do the following to get it working
-            [From https://github.com/kennethreitz/requests/issues/2022]
-            # sudo apt-get install libffi-dev
-            # pip install pyOpenSSL ndg-httpsclient pyasn1 requests
+    Description : Takes each username from the web_accounts_list.json file and performs the lookup to see if the discovery entry is still valid
 """
 import argparse
 import codecs
+from datetime import datetime
 import json
 import os
 import random
@@ -26,18 +16,30 @@ import sys
 import time
 
 import requests
-from requests.packages.urllib3.exceptions import InsecureRequestWarning
+import urllib3
+import threading
+import logging
 
 
-###################
-# Variables && Functions
-###################
+##########################
+#        Logging        #
+##########################
+
+# Set logging formatting
+logging.basicConfig(level=logging.INFO, format='%(message)s')
+
+##########################
+# Variables && Functions #
+##########################
+
 # Set HTTP Header info.
-headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
-           'Accept' : 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-           'Accept-Language' : 'en-US,en;q=0.5',
-           'Accept-Encoding' : 'gzip, deflate'
-          }
+headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36',
+           'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+           'Accept-Language': 'en-US,en;q=0.5',
+           'Accept-Encoding': 'gzip, deflate'
+           }
+
+all_found_sites = []
 
 # Parse command line input
 parser = argparse.ArgumentParser(description="This standalone script will look up a single "
@@ -46,6 +48,8 @@ parser = argparse.ArgumentParser(description="This standalone script will look u
 parser.add_argument('-d', '--debug', help="Enable debug output", action="store_true")
 parser.add_argument('-o', '--output', help="Create text output file", action="store_true",
                     default=False)
+parser.add_argument('-of', '--outputfile', nargs='?', help="[OPTIONAL] Create text output file")
+parser.add_argument('-in', '--inputfile', nargs='?', help="[OPTIONAL] Uses a specified file for checking the websites")
 parser.add_argument('-s', '--site', nargs='*', help='[OPTIONAL] If this parameter is passed'
                     'the script will check only the named site or list of sites.')
 parser.add_argument('-se', '--stringerror', help="Creates a site by site file for files that do"
@@ -55,18 +59,26 @@ parser.add_argument('-u', '--username', help='[OPTIONAL] If this param is passed
                     'will perform the lookups against the given user name instead of running'
                     'checks against the JSON file.')
 
+
 args = parser.parse_args()
 
+
 if args.debug:
-    print('Debug output enabled')
+    logging.debug('Debug output enabled')
 
 # Create the final results dictionary
 overall_results = {}
+username_results = []
 
 
 def check_os():
-    if os.name == "nt":
-        operating_system = "windows"
+    """
+    # check operating system or adjust output color formatting
+    :return: operating_system
+    """
+    # set default operating system to windows
+    operating_system = "windows"
+
     if os.name == "posix":
         operating_system = "posix"
     return operating_system
@@ -75,42 +87,37 @@ def check_os():
 #
 # Class for colors
 #
-if check_os() == "posix":
-    class bcolors:
+class Bcolors:
+    # if os is windows or something like that then define colors as nothing
+    CYAN = ''
+    GREEN = ''
+    YELLOW = ''
+    RED = ''
+    ENDC = ''
+
+    # if os is linux or something like that then define colors as following
+    if check_os() == "posix":
         CYAN = '\033[96m'
         GREEN = '\033[92m'
         YELLOW = '\033[93m'
         RED = '\033[91m'
         ENDC = '\033[0m'
 
-        def disable(self):
-            self.CYAN = ''
-            self.GREEN = ''
-            self.YELLOW = ''
-            self.RED = ''
-            self.ENDC = ''
-
-# if we are windows or something like that then define colors as nothing
-else:
-    class bcolors:
-        CYAN = ''
-        GREEN = ''
-        YELLOW = ''
-        RED = ''
-        ENDC = ''
-
-        def disable(self):
-            self.CYAN = ''
-            self.GREEN = ''
-            self.YELLOW = ''
-            self.RED = ''
-            self.ENDC = ''
+    def disable(self):
+        self.CYAN = ''
+        self.GREEN = ''
+        self.YELLOW = ''
+        self.RED = ''
+        self.ENDC = ''
 
 
 def signal_handler(*_):
-    print(bcolors.RED + ' !!!  You pressed Ctrl+C. Exiting script.' + bcolors.ENDC)
+    """
+    If user pressed Ctrl+C close all connections and exit
+    """
+    logging.warning(Bcolors.RED + ' !!!  You pressed Ctrl+C. Exiting script.' + Bcolors.ENDC)
     finaloutput()
-    sys.exit(0)
+    sys.exit(130)
 
 
 def web_call(location):
@@ -118,40 +125,53 @@ def web_call(location):
         # Make web request for that URL, timeout in X secs and don't verify SSL/TLS certs
         resp = requests.get(location, headers=headers, timeout=60, verify=False, allow_redirects=False)
     except requests.exceptions.Timeout:
-        return bcolors.RED + '      ! ERROR: CONNECTION TIME OUT. Try increasing the timeout delay.' + bcolors.ENDC
+        return f' !  ERROR: {location} CONNECTION TIME OUT. Try increasing the timeout delay.'
     except requests.exceptions.TooManyRedirects:
-        return bcolors.RED + '      ! ERROR: TOO MANY REDIRECTS. Try changing the URL.' + bcolors.ENDC
+        return f' !  ERROR: {location} TOO MANY REDIRECTS. Try changing the URL.'
     except requests.exceptions.RequestException as e:
-        return bcolors.RED + '      ! ERROR: CRITICAL ERROR. %s' % e + bcolors.ENDC
+        return f' !  ERROR: CRITICAL ERROR. {e}'
     else:
         return resp
 
 
 def random_string(length):
-    return ''.join(random.choice(string.ascii_lowercase + string.ascii_uppercase + string.digits) for x in range(length))
+    return ''.join(
+        random.choice(string.ascii_lowercase + string.ascii_uppercase + string.digits) for x in range(length))
+
 
 def finaloutput():
-    if len(overall_results) > 0:
-        print('------------')
-        print('The following previously "valid" sites had errors:')
-        for site_with_error, results in sorted(overall_results.items()):
-            print(bcolors.YELLOW + '     %s --> %s' % (site_with_error, results) + bcolors.ENDC)
-    else:
-        print(':) No problems with the JSON file were found.')
+    print('\n-------------------------------------------')
 
+    if args.username:
+        print(f'Searching for sites with username ({args.username}) > Found {len(username_results)} results:\n')
+        for result in username_results:
+            print(result)
+    else:
+        if len(overall_results) > 0:
+            print('The following previously "valid" sites had errors:')
+            for site_with_error, results in sorted(overall_results.items()):
+                print(Bcolors.YELLOW + '     %s --> %s' % (site_with_error, results) + Bcolors.ENDC)
+        else:
+            print(':) No problems with the JSON file were found.')
+
+
+# Suppress HTTPS warnings
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 ###################
-# Main
+#      Main       #
 ###################
 
 # Add this in case user presses CTRL-C
 signal.signal(signal.SIGINT, signal_handler)
 
-# Suppress HTTPS warnings
-requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
-
 # Read in the JSON file
-with open('web_accounts_list.json') as data_file:
+if (args.inputfile):
+    inputfile = args.inputfile
+else:
+    inputfile = 'web_accounts_list.json'
+    
+with open(inputfile) as data_file:
     data = json.load(data_file)
 
 if args.site:
@@ -159,119 +179,139 @@ if args.site:
     args.site = [x.lower() for x in args.site]
     data['sites'] = [x for x in data['sites'] if x['name'].lower() in args.site]
     if len(data['sites']) == 0:
-        print(' -  Sorry, the requested site or sites were not found in the list')
-        sys.exit()
+        logging.error(' -  Sorry, the requested site or sites were not found in the list')
+        sys.exit(1)
     sites_not_found = len(args.site) - len(data['sites'])
     if sites_not_found:
-        print(' -  WARNING: %d requested sites were not found in the list' % sites_not_found)
-    print(' -  Checking %d sites' % len(data['sites']))
+        logging.warning(' -  WARNING: %d requested sites were not found in the list' % sites_not_found)
+    logging.info(' -  Checking %d sites' % len(data['sites']))
+
 else:
-    print(' -  %s sites found in file.' % len(data['sites']))
+    logging.info(' -  %s sites found in file.' % len(data['sites']))
 
 
-for site in data['sites']:
-    code_match, string_match = False, False
-    all_found_sites = []
+def check_site(site, username=None):
     # Examine the current validity of the entry
     if not site['valid']:
-        print(bcolors.CYAN + ' *  Skipping %s - Marked as not valid.' % site['name'] + bcolors.ENDC)
-        continue
+        return logging.info(f"{Bcolors.CYAN} *  Skipping {site['name']} - Marked as not valid.{Bcolors.ENDC}")
+
     if not site['known_accounts'][0]:
-        print(bcolors.CYAN + ' *  Skipping %s - No valid user names to test.' % site['name'] + bcolors.ENDC)
-        continue
+        return logging.info(f"{Bcolors.CYAN} *  Skipping {site['name']} - No valid user names to test.{Bcolors.ENDC}")
+
+    # Set the username
+    if username:
+        uname = username
+    else:
+        # if no username specified Pull the first user from known_accounts and replace the {account} with it
+        known_account = site['known_accounts'][0]
+        uname = known_account
+
+    url = site['check_uri'].replace("{account}", uname)
 
     # Perform initial lookup
-    # Pull the first user from known_accounts and replace the {account} with it
-    url_list = []
-    if args.username:
-        url = site['check_uri'].replace("{account}", args.username)
-        url_list.append(url)
-        uname = args.username
+    logging.info(f" >  Looking up {url}")
+    r = web_call(url)
+    if isinstance(r, str):
+        # We got an error on the web call
+        return logging.error(Bcolors.RED + r + Bcolors.ENDC)
     else:
-        account_list = site['known_accounts']
-        for each in account_list:
-            url = site['check_uri'].replace("{account}", each)
-            url_list.append(url)
-            uname = each
-    for each in url_list:
-        print(' -  Looking up %s' % each)
-        r = web_call(each)
-        if isinstance(r, str):
-            # We got an error on the web call
-            print(r)
-            continue
-
+        # Check debug mode and print error to console
         if args.debug:
-            print("- HTTP status: %s" % r.status_code)
-            print("- HTTP response: %s" % r.content)
+            logging.debug("- HTTP status: %s" % r.status_code)
+            logging.debug("- HTTP response: %s" % r.content)
 
         # Analyze the responses against what they should be
         code_match = r.status_code == int(site['account_existence_code'])
         string_match = r.text.find(site['account_existence_string']) >= 0
 
-        if args.username:
+        if username:
             if code_match and string_match:
-                print(bcolors.GREEN + '[+] Found user at %s' % each + bcolors.ENDC)
-                all_found_sites.append(each)
-            continue
-
-        if code_match and string_match:
-            # print('     [+] Response code and Search Strings match expected.')
-            # Generate a random string to use in place of known_accounts
-            url_fp = site['check_uri'].replace("{account}", random_string(20))
-            r_fp = web_call(url_fp)
-            if isinstance(r_fp, str):
-                # If this is a string then web got an error
-                print(r_fp)
-                continue
-
-            code_match = r_fp.status_code == int(site['account_existence_code'])
-            string_match = r_fp.text.find(site['account_existence_string']) > 0
-
-            if code_match and string_match:
-                print('      -  Code: %s; String: %s' % (code_match, string_match))
-                print(bcolors.RED + '      !  ERROR: FALSE POSITIVE DETECTED. Response code and Search Strings match ' \
-                      'expected.' + bcolors.ENDC)
-                # TODO set site['valid'] = False
-                overall_results[site['name']] = 'False Positive'
-            else:
-                # print('     [+] Passed false positives test.')
-                pass
-        elif code_match and not string_match:
-            # TODO set site['valid'] = False
-            print(bcolors.RED + '      !  ERROR: BAD DETECTION STRING. "%s" was not found on resulting page.' \
-                  % site['account_existence_string'] + bcolors.ENDC)
-            overall_results[site['name']] = 'Bad detection string.'
-            if args.stringerror:
-                file_name = 'se-' + site['name'] + '.' + uname
-                # Unicode sucks
-                file_name = file_name.encode('ascii', 'ignore').decode('ascii')
-                error_file = codecs.open(file_name, 'w', 'utf-8')
-                error_file.write(r.text)
-                print('Raw data exported to file:' + file_name)
-                error_file.close()
-
-        elif not code_match and string_match:
-            # TODO set site['valid'] = False
-            print(bcolors.RED + '      !  ERROR: BAD DETECTION RESPONSE CODE. HTTP Response code different than ' \
-                  'expected.' + bcolors.ENDC)
-            overall_results[site['name']] = 'Bad detection code. Received Code: %s; Expected Code: %s.' % \
-                (str(r.status_code), site['account_existence_code'])
+                username_results.append(Bcolors.GREEN + '[+] Found user at %s' % url + Bcolors.ENDC)
+                all_found_sites.append(url)
+                return
         else:
-            # TODO set site['valid'] = False
-            print(bcolors.RED + '      !  ERROR: BAD CODE AND STRING. Neither the HTTP response code or detection ' \
-                  'string worked.' + bcolors.ENDC)
-            overall_results[site['name']] = 'Bad detection code and string. Received Code: %s; Expected Code: %s.' \
-                % (str(r.status_code), site['account_existence_code'])
+            if code_match and string_match:
+                # logging.info('     [+] Response code and Search Strings match expected.')
+                # Generate a random string to use in place of known_accounts
+                url_fp = site['check_uri'].replace("{account}", random_string(20))
+                r_fp = web_call(url_fp)
+                if isinstance(r_fp, str):
+                    # If this is a string then web got an error
+                    return logging.error(r_fp)
 
-if not args.username:
+                code_match = r_fp.status_code == int(site['account_existence_code'])
+                string_match = r_fp.text.find(site['account_existence_string']) > 0
+
+                if code_match and string_match:
+                    logging.info('      -  Code: %s; String: %s' % (code_match, string_match))
+                    logging.error(
+                        Bcolors.RED + f' !  ERROR: {site} FALSE POSITIVE DETECTED. Response code and Search '
+                                      f'Strings match expected.' + Bcolors.ENDC + '\r')
+                    # TODO set site['valid'] = False
+                    overall_results[site['name']] = 'False Positive'
+                else:
+                    # logging.info('     [+] Passed false positives test.')
+                    pass
+            elif code_match and not string_match:
+                # TODO set site['valid'] = False
+                logging.error(
+                    Bcolors.RED + f' !  ERROR: {site} BAD DETECTION STRING. "{site["account_existence_string"]}" '
+                                  f'was not found on resulting page.' + Bcolors.ENDC)
+                overall_results[site['name']] = 'Bad detection string.'
+                if args.stringerror:
+                    file_name = 'se-' + site['name'] + '.' + uname
+                    # Unicode sucks
+                    file_name = file_name.encode('ascii', 'ignore').decode('ascii')
+                    error_file = codecs.open(file_name, 'w', 'utf-8')
+                    error_file.write(r.text)
+                    logging.info('Raw data exported to file:' + file_name)
+                    error_file.close()
+
+            elif not code_match and string_match:
+                # TODO set site['valid'] = False
+                logging.error(Bcolors.RED + f' !  ERROR: {site} BAD DETECTION RESPONSE CODE. HTTP Response code '
+                                            f'different than expected.' + Bcolors.ENDC + '\r')
+                overall_results[site['name']] = 'Bad detection code. Received Code: %s; Expected Code: %s.' % \
+                                                (str(r.status_code), site['account_existence_code'])
+            else:
+                # TODO set site['valid'] = False
+                logging.error(
+                    Bcolors.RED + f' !  ERROR: {site} BAD CODE AND STRING. Neither the HTTP response code or '
+                                  f'detection string worked.' + Bcolors.ENDC + '\r')
+                overall_results[site['name']] = 'Bad detection code and string. Received Code: %s; Expected Code: %s.' \
+                                                % (str(r.status_code), site['account_existence_code'])
+
+
+if __name__ == "__main__":
+    # Start threads
+    threads = []
+
+    start_time = datetime.utcnow()
+    for site_ in data['sites']:
+        x = threading.Thread(target=check_site, args=(site_, args.username), daemon=True)
+        threads.append(x)
+
+    for thread in threads:
+        thread.start()
+
+    for thread in threads:
+        thread.join()
+
+    # Print result
     finaloutput()
 
-if args.username and all_found_sites:
-    if args.output:
-        outfile = '{}_{}.txt'.format(str(int(time.time())), args.username)
-        print(outfile)
-        fh = open(outfile, 'w')
-        fh.writelines(all_found_sites)
-        print('Raw data exported to file:' + outfile)
-        fh.close()
+    if args.username and all_found_sites:
+        if (args.output or args.outputfile):
+            if (args.outputfile):
+                outfile = args.outputfile
+            else:
+                outfile = '{}_{}.txt'.format(str(int(time.time())), args.username)
+            with open(outfile, 'w') as f:
+                for item in all_found_sites:
+                    f.write("%s\n" % item)
+            print('\nRaw data exported to file: ' + outfile)
+
+    # Print how long it took
+    #end_time = datetime.utcnow()
+    #iff = end_time - start_time
+    #logging.info(f'\nFinished in {diff}')

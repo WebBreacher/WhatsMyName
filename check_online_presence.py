@@ -16,7 +16,7 @@ DEBUG_MODE = False
 COUNTER = collections.Counter()
 
 # Set HTTP Header info.
-HEADERS = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0',
+HEADERS = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36',
            'Accept' : 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
            'Accept-Language' : 'en-US,en;q=0.5',
            'Accept-Encoding' : 'gzip, deflate'
@@ -28,6 +28,7 @@ parser = argparse.ArgumentParser(description="This standalone script will look u
 parser.add_argument('-u', '--username', help='[OPTIONAL] If this param is passed then this script will perform the '
                     'lookups against the given user name instead of running checks against '
                     'the JSON file.')
+parser.add_argument('-in', '--inputfile', nargs='?', help="[OPTIONAL] Uses a specified file for checking the websites")
 parser.add_argument('-s', '--site', nargs='*', help='[OPTIONAL] If this parameter is passed the script will check only the named site or list of sites.')
 parser.add_argument('-d', '--debug', help="Enable debug output", action="store_true")
 
@@ -55,7 +56,7 @@ def neutral(msg):
 
 def signal_handler(*_):
     error(' !!!  You pressed Ctrl+C. Exiting script.')
-    sys.exit(0)
+    sys.exit(130)
 
 def web_call(location):
     try:
@@ -77,8 +78,8 @@ def find_sites_to_check(args, data):
         args.site = [x.lower() for x in args.site]
         sites_to_check = [x for x in data['sites'] if x['name'].lower() in args.site]
         if sites_to_check == 0:
-            error('Sorry, none of the requested site or sites were not found in the list')
-            sys.exit()
+            error('Sorry, none of the requested site or sites were found in the list')
+            sys.exit(1)
         sites_not_found = len(args.site) - len(sites_to_check)
         if sites_not_found:
             warn('WARNING: %d requested sites were not found in the list' % sites_not_found)
@@ -135,8 +136,13 @@ def main():
 
     # Suppress HTTPS warnings
     requests.packages.urllib3.disable_warnings(requests.packages.urllib3.exceptions.InsecureRequestWarning)
+    # Read in the JSON file
+    if (args.inputfile):
+        inputfile = args.inputfile
+    else:
+        inputfile = 'web_accounts_list.json'
 
-    with open('web_accounts_list.json') as data_file:
+    with open(inputfile) as data_file:
         data = json.load(data_file)
 
     sites_to_check = find_sites_to_check(args, data)

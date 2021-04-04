@@ -8,7 +8,7 @@ How to do that:
 
 - Find the new site which has public profiles of people (with no authentication required)
 - Create a Github Issue and submit the link to an example profile. You can
-  do that by navigating to [Issues](https://github.com/ekalinin/github-markdown-toc/issues)
+  do that by navigating to [Issues](https://github.com/WebBreacher/WhatsMyName/issues)
   and clicking "New issue"
 
 
@@ -22,23 +22,23 @@ Implement support for a new site or fix an existing implementation for a site.
 
 How to do that:
 
-- Among existing [Issues](https://github.com/ekalinin/github-markdown-toc/issues)
+- Among existing [Issues](https://github.com/WebBreacher/WhatsMyName/issues)
   or from somewhere else, establish which site you want to add
 - Using a web client of your choice (preferred `curl` or `wget`) perform
   simple requests for two different scenarios: existing profile,
   non-existing profile, e.g.
   ```
   # existing
-  wget https://github.com/WebBreacher
+  curl https://twitter.com/WebBreacher
 
   # non-existing
-  wget https://github.com/ThisDoesNotExistForSure504
+  curl https://twitter.com/ThisDoesNotExistForSure504
   ```
 - Observe the outcome for non-existing profile. Some sites use 404 (error), some use 302
 (redirection), some confusingly use 200 (OK) for profiles which don't exist,
 e.g.
   ```
-  $ wget https://github.com/ThisDoesNotExistForSure504
+  $ curl https://github.com/ThisDoesNotExistForSure504
   [...]
   HTTP request sent, awaiting response... 404 Not Found 
   ```
