@@ -22,15 +22,6 @@
          "valid" : true
       },
       {
-         "name" : "ACloudGuru",
-         "check_uri" : "https://learn.acloud.guru/profile/{account}",
-         "account_existence_code" : "200",
-         "account_existence_string" : "About Me",
-         "known_accounts" : ["admin", "acloudguru"],
-         "category" : "tech",
-         "valid" : true
-      },
-      {
          "name" : "asciinema",
          "check_uri" : "https://asciinema.org/~{account}",
          "account_existence_code" : "200",
@@ -785,7 +776,7 @@
          "name" : "BuzzFeed",
          "check_uri" : "https://www.buzzfeed.com/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "on BuzzFeed</title>",
+         "account_existence_string" : "joined",
          "account_missing_string" : "We can't find the page you're looking for",
          "account_missing_code" : "404",
          "known_accounts" : ["talhaishaq2001","RobertK"],
@@ -1282,9 +1273,9 @@
       },
       {
          "name" : "Geocaching",
-         "check_uri" : "https://www.geocaching.com/profile/?u={account}",
+         "check_uri" : "https://www.geocaching.com/p/?u={account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "Profile for ",
+         "account_existence_string" : "Groundspeak - User Profile",
          "account_missing_string" : "Error 404: DNF",
          "account_missing_code" : "404",
          "known_accounts" : ["moun10bike","niraD"],
@@ -1640,9 +1631,9 @@
          "name" : "Minecraft List",
          "check_uri" : "https://minecraftlist.com/players/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "Minecraft player profile",
-         "account_missing_string" : "This page could not be found",
-         "account_missing_code" : "404",
+         "account_existence_string" : "-->was seen on<!--",
+         "account_missing_string" : "on 0 Minecraft servers recently.d",
+         "account_missing_code" : "200",
          "known_accounts" : ["popbob","dream"],
          "category" : "gaming",
          "valid" : true
