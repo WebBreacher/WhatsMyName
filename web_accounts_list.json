@@ -2138,12 +2138,12 @@
       },
       {
          "name" : "Speaker Deck",
-         "check_uri" : "https://speakerdeck.com/{account}",
+         "check_uri" : "https://speakerdeck.com/{account}/",
          "account_existence_code" : "200",
-         "account_existence_string" : "on Speaker Deck",
-         "account_missing_string" : "Oh, this is very sad",
+         "account_existence_string" : ") on Speaker Deck</title>",
+         "account_missing_string" : "<title>User Not Found - Speaker Deck</title>",
          "account_missing_code" : "404",
-         "known_accounts" : ["petecheslock"],
+         "known_accounts" : ["petecheslock","turbosmart45"],
          "category" : "social",
          "valid" : true
       },
@@ -2404,9 +2404,9 @@
       },
       {
          "name" : "Voices.com",
-         "check_uri" : "https://www.voices.com/actors/{account}#bio",
+         "check_uri" : "https://www.voices.com/profile/{account}/voice-over#bio",
          "account_existence_code" : "200",
-         "account_existence_string" : "- Professional Voice Actor | Voices.com",
+         "account_existence_string" : "Last Online</h3>",
          "account_missing_string" : "The page you are looking for was not found.",
          "account_missing_code" : "404",
          "known_accounts" : ["briankirchoff","bryankopta"],
@@ -2664,7 +2664,7 @@
          "account_missing_code" : "200",
          "known_accounts" : ["willsmith","billnye"],
          "category" : "social",
-         "valid" : true
+         "valid" : false
       },
       {
          "name" : "Mixi",
@@ -3150,6 +3150,17 @@
          "known_accounts": ["eric", "danielrivera10927"],
          "category": "hobby",
          "valid": true
+      },
+      {
+         "name" : "Massage Anywhere",
+         "check_uri" : "https://www.massageanywhere.com/profile/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "<title>MassageAnywhere.com Profile for ",
+         "account_missing_string" : "<title>MassageAnywhere.com: Search Results</title>",
+         "account_missing_code" : "200",
+         "known_accounts" : ["lorilmccluskey","LomiNYC"],
+         "category" : "health",
+         "valid" : true
       }
    ]
 }
