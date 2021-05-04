@@ -430,6 +430,17 @@
          "valid" : false
       },
       {
+         "name" : "Poll Everywhere",
+         "check_uri" : "https://pollev.com/proxy/api/users/{account}",
+         "account_existence_code" : "200",
+         "account_existence_string" : "name",
+         "account_missing_string" : "ResourceNotFound",
+         "account_missing_code" : "404",
+         "known_accounts" : ["testing", "jsmith"],
+         "category" : "tech",
+         "valid" : true
+      },
+      {
          "name" : "pokemonshowdown",
          "check_uri" : "https://pokemonshowdown.com/users/{account}",
          "account_existence_code" : "200",
