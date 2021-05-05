@@ -5,7 +5,7 @@
                 "http://creativecommons.org/licenses/by-sa/4.0/ or send a letter to",
                 "Creative Commons, PO Box 1866, Mountain View, CA 94042, USA."],
    "authors" : ["WebBreacher","Munchko","L0r3m1p5um","lehuff","janbinx","bcoles","Sector035",
-                "arnydo","mccartney","salaheldinaz","camhoff","jocephus","swedishmike","soxoj","jspinel"],
+                "arnydo","mccartney","salaheldinaz","camhoff","jocephus","swedishmike","soxoj","jspinel","ef1500"],
    "categories" : ["art","blog","business","coding","dating","finance","gaming","health",
                    "hobby","images","misc","music","news","political","search","shopping","social",
                    "tech","video","XXXPORNXXX"],
@@ -20,6 +20,50 @@
          "known_accounts" : ["john", "jbob"],
          "category" : "social",
          "valid" : true
+      },
+      {
+        "name": "Ameblo",
+        "check_uri": "https://ameblo.jp/{account}",
+        "account_existence_code": "304",
+        "account_existence_string": "画像一覧",
+        "account_missing_string": "削除された可能性がございます。",
+        "account_missing_code": "404",
+        "known_accounts": [ "ereko-blog", "senpai" ],
+        "category": "blog",
+        "valid": true
+      },
+      {
+        "name": "Anilist",
+        "check_uri": "https://anilist.co/user/{account}/",
+        "account_existence_code": "200",
+        "account_existence_string": "Anime List",
+        "account_missing_string": "",
+        "account_missing_code": "404",
+        "known_accounts": [ "fate299", "celeoste" ],
+        "category": "social",
+        "valid": true
+      },
+      {
+        "name": "AnimePlanet",
+        "check_uri": "https://www.anime-planet.com/users/{account}",
+        "account_existence_code": "200",
+        "account_existence_string": "Joined",
+        "account_missing_string": "Meet new friends, make reviews and recommendations.",
+        "account_missing_code": "302",
+        "known_accounts": [ "zala", "lindapearl" ],
+        "catergory": "social",
+        "valid": true
+      },
+      {
+        "name": "Apex Legends",
+        "check_uri": "https://apex.tracker.gg/apex/profile/origin/{account}/overview",
+        "account_existence_code": "200",
+        "account_existence_string": "Overview",
+        "account_missing_code": "404",
+        "account_missing_string": "PLAYER NOT FOUND",
+        "known_accounts": [ "KaguraMea", "Xspkxkenny" ],
+        "catergory": "gaming",
+        "valid": true
       },
       {
          "name" : "asciinema",
@@ -1549,6 +1593,17 @@
          "valid" : true
       },
       {
+        "name": "LINE",
+        "check_uri": "https://line.me/R/ti/p/@{account}?from=page",
+        "account_existence_code": "200",
+        "account_existence_string": "Add LINE Friends via QR Code",
+        "account_missing_code": "404",
+        "account_missing_string": "404 Not Found",
+        "known_accounts": [ "roseareal", "yoasobi" ],
+        "catergory": "social",
+        "valid": true
+      },
+      {
          "name" : "LiveJasmin",
          "check_uri" : "https://www.livejasmin.com/en/flash/get-performer-details/{account}",
          "pretty_uri" : "https://new.livejasmin.com/en/chat/{account}",
@@ -1760,6 +1815,17 @@
          "known_missing_accounts" : ["doesnotexist", "example"],
          "category" : "coding",
          "valid" : true
+      },
+      {
+         "name": "Nyaa.si",
+         "check_uri": "https://nyaa.si/user/{account}",
+         "account_existence_code": "200",
+         "account_existence_string": "'s torrents",
+         "account_missing_code": "404",
+         "account_missing_string": "404 Not Found",
+         "known_accounts": [ "supremesonic21", "Rektr0" ],
+         "catergory": "video",
+         "valid": true
       },
       {
          "name" : "OpenStreetMap",
@@ -2159,6 +2225,28 @@
          "valid" : true
       },
       {
+        "name": "sukebei.nyaa.si",
+        "check_uri": "https://sukebei.nyaa.si/user/{account}",
+        "account_existence_code": "200",
+        "account_existence_string": "'s torrents",
+        "account_missing_code": "404",
+        "account_missing_string": "404 Not Found",
+        "known_accounts": [ "kouhy76", "Rektr0" ],
+        "catergory": "video",
+        "valid": true
+      },
+      {
+        "name": "Suzuri",
+        "check_uri": "https://suzuri.jp/{account}",
+        "account_existence_code": "200",
+        "account_existence_string": "Items",
+        "account_missing_string": "Push Space-key",
+        "account_missing_code": "404",
+        "known_accounts": [ "itochanxxx", "senpai" ],
+        "catergory": "business",
+        "valid": true
+      },
+      {
          "name" : "TamTam",
          "check_uri" : "https://tamtam.chat/{account}",
          "account_existence_code" : "200",
@@ -2279,6 +2367,17 @@
         "known_accounts" : ["webbreacher", "chrishemsworth"],
         "category" : "social",
         "valid" : true
+      },
+      {
+        "name": "twpro",
+        "check_uri": "https://twpro.jp/{account}",
+        "account_existence_code": "200",
+        "account_existence_string": "おとなりさん",
+        "account_missing_code": "404",
+        "account_missing_string": "をご確認ください。",
+        "known_accounts": [ "wsise47", "tsukiusa630" ],
+        "catergory": "social",
+        "valid": true
       },
       {
          "name" : "Udemy",
