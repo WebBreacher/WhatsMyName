@@ -1579,9 +1579,9 @@
          "account_existence_string" : "performer_id",
          "account_missing_string" : "\"success\": false",
          "account_missing_code" : "200",
-         "known_accounts" : ["Aaryall","a1EnergeticJenny"],
+         "known_accounts" : ["ToriBanks","DorothyLake"],
          "category" : "XXX PORN XXX",
-         "valid" : false
+         "valid" : true
       },
       {
          "name" : "Livejournal",
