@@ -277,14 +277,15 @@
       },
       {
          "name" : "Gab",
-         "check_uri" : "https://gab.com/{account}",
+         "check_uri" : "https://gab.com/api/v1/account_by_username/{account}",
+         "pretty_uri" : "https://gab.com/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "• gab.com - Gab Social</title>",
-         "account_missing_string" : "The page you are looking for isn't here.",
+         "account_existence_string" : "followers_count",
+         "account_missing_string" : "Record not found",
          "account_missing_code" : "404",
-         "known_accounts" : ["bob","john"],
+         "known_accounts" : ["RealMarjorieGreene","LaurenBoebert"],
          "category" : "political",
-         "valid" : false
+         "valid" : true
       },
       {
          "name" : "gumroad",
