@@ -277,14 +277,15 @@
       },
       {
          "name" : "Gab",
-         "check_uri" : "https://gab.com/{account}",
+         "check_uri" : "https://gab.com/api/v1/account_by_username/{account}",
+         "pretty_uri" : "https://gab.com/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "• gab.com - Gab Social</title>",
-         "account_missing_string" : "The page you are looking for isn't here.",
+         "account_existence_string" : "followers_count",
+         "account_missing_string" : "Record not found",
          "account_missing_code" : "404",
-         "known_accounts" : ["bob","john"],
+         "known_accounts" : ["RealMarjorieGreene","LaurenBoebert"],
          "category" : "political",
-         "valid" : false
+         "valid" : true
       },
       {
          "name" : "gumroad",
@@ -697,17 +698,6 @@
          "valid" : true
       },
       {
-         "name" : "badoo",
-         "check_uri" : "https://badoo.com/{account}/",
-         "account_existence_code" : "301",
-         "account_existence_string" : "https://badoo.com/profile/",
-         "account_missing_string" : "",
-         "account_missing_code" : "404",
-         "known_accounts" : ["john", "whynot"],
-         "category" : "social",
-         "valid" : false
-      },
-      {
          "name" : "Bandcamp",
          "check_uri" : "https://bandcamp.com/{account}",
          "account_existence_code" : "200",
@@ -886,14 +876,14 @@
       },
       {
          "name" : "Codepen",
-         "check_uri" : "https://codepen.io/{account}",
+         "check_uri" : "https://codepen.io/{account}/followers/",
          "account_existence_code" : "200",
-         "account_existence_string" : "on CodePen</title>",
-         "account_missing_string" : "404 Error - CodePen</title>",
+         "account_existence_string" : " on CodePen</title>",
+         "account_missing_string" : "<title>404 on CodePen</title>",
          "account_missing_code" : "404",
-         "known_accounts" : ["blue", "red"],
+         "known_accounts" : ["danwilson", "loficodes","_niikhil"],
          "category" : "tech",
-         "valid" : false
+         "valid" : true
       },
       {
          "name" : "COLOURlovers",
@@ -1017,17 +1007,6 @@
          "known_accounts" : ["chriskahn","swilken"],
          "category" : "hobby",
          "valid" : true
-      },
-      {
-         "name" : "duby",
-         "check_uri" : "https://www.duby.co/{account}/",
-         "account_existence_code" : "503",
-         "account_existence_string" : "<title>@",
-         "account_missing_string" : "<title>Page Not Found",
-         "account_missing_code" : "503",
-         "known_accounts" : ["organicannabis","jonny5"],
-         "category" : "health",
-         "valid" : false
       },
       {
          "name" : "easyen",
