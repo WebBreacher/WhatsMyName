@@ -288,12 +288,12 @@
       },
       {
          "name" : "gumroad",
-         "check_uri" : "https://gumroad.com/{account}/follow",
+         "check_uri" : "https://gumroad.com/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "og:site_name",
+         "account_existence_string" : "s profile picture",
          "account_missing_string" : "Page not found",
          "account_missing_code" : "404",
-         "known_accounts" : ["john", "smith"],
+         "known_accounts" : ["ellietalksmoney", "reallyniceimages"],
          "category" : "shopping",
          "valid" : true
       },
@@ -306,17 +306,6 @@
          "account_missing_code" : "200",
          "known_accounts" : ["john", "alex"],
          "category" : "tech",
-         "valid" : true
-      },
-      {
-         "name" : "Indiegogo",
-         "check_uri" : "https://www.indiegogo.com/individuals/{account}",
-         "account_existence_code" : "200",
-         "account_existence_string" : "profile",
-         "account_missing_string" : "The page you are looking for is no longer available or has been moved.",
-         "account_missing_code" : "404",
-         "known_accounts" : ["92340", "14865"],
-         "category" : "shopping",
          "valid" : true
       },
       {
@@ -644,8 +633,8 @@
          "name" : "weibo",
          "check_uri" : "https://tw.weibo.com/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "的微博 - 微博台灣站",
-         "account_missing_string" : "抱歉，找不到您所查詢的網頁",
+         "account_existence_string" : "粉絲",
+         "account_missing_string" : "Oops!",
          "account_missing_code" : "404",
          "known_accounts" : ["chentingni", "fbb0916"],
          "category" : "social",
@@ -1187,10 +1176,10 @@
          "name" : "Flipboard",
          "check_uri" : "https://flipboard.com/@{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : " on Flipboard | ",
+         "account_existence_string" : ") on Flipboard",
          "account_missing_string" : "<title></title>",
          "account_missing_code" : "404",
-         "known_accounts" : ["flipboard"],
+         "known_accounts" : ["cosmopolitan","Mashable"],
          "category" : "tech",
          "valid" : true
       },
@@ -1677,7 +1666,7 @@
          "check_uri" : "https://minecraftlist.com/players/{account}",
          "account_existence_code" : "200",
          "account_existence_string" : "-->was seen on<!--",
-         "account_missing_string" : "on 0 Minecraft servers recently.d",
+         "account_missing_string" : "on 0 Minecraft servers recently",
          "account_missing_code" : "200",
          "known_accounts" : ["popbob","dream"],
          "category" : "gaming",
@@ -1787,7 +1776,7 @@
          "name" : "NameMC",
          "check_uri" : "https://namemc.com/name/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "<a href=\"/profile/",
+         "account_existence_string" : "Unavailable",
          "account_missing_string" : "Available*",
          "account_missing_code" : "404",
          "known_accounts" : ["Alice","Bob"],
@@ -2476,7 +2465,7 @@
          "account_existence_string" : " | VK</title>",
          "account_missing_string" : "404 Not Found",
          "account_missing_code" : "404",
-         "known_accounts" : ["mike.kidlazy","ches_ches"],
+         "known_accounts" : ["ches_ches","mike.kidlazy"],
          "category" : "social",
          "valid" : true
       },
@@ -3231,15 +3220,14 @@
       },
       {
          "name" : "instaphotomap",
-         "check_uri" : "https://instaphotomap.com/api/getPosts?id={account}",
-         "pretty_uri" : "https://instaphotomap.com/user/{account}/",
+         "check_uri" : "https://instaphotomap.com/user/{account}/",
          "account_existence_code" : "200",
-         "account_existence_string" : "display_url",
+         "account_existence_string" : "followers",
          "account_missing_string" : "USER_NOT_FOUND",
          "account_missing_code" : "500",
          "known_accounts" : ["snoopdogg","muradosmann"],
          "category" : "social",
-         "valid" : true
+         "valid" : false
       }
    ]
 }
