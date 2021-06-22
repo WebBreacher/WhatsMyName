@@ -1077,12 +1077,12 @@
          "name" : "EPORNER",
          "check_uri" : "https://www.eporner.com/profile/{account}/",
          "account_existence_code" : "200",
-         "account_existence_string" : "Recently watched",
+         "account_existence_string" : "Video/Pics views",
          "account_missing_string" : "Profile not found",
          "account_missing_code" : "404",
-         "known_accounts" : ["john"],
-         "category" : "XXX PORN XXX",
-         "valid" : false
+         "known_accounts" : ["enron456","Jomat999","hicnobu"],
+         "category" : "XXXPORNXXX",
+         "valid" : true
       },
       {
          "name" : "Etsy",
@@ -1099,12 +1099,12 @@
          "name" : "F3",
          "check_uri" : "https://f3.cool/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "/ Find new friends - F3",
+         "account_existence_string" : "<title>@",
          "account_missing_string" : "Page Not Found - F3",
          "account_missing_code" : "404",
          "known_accounts" : ["nick","john"],
          "category" : "social",
-         "valid" : false
+         "valid" : true
       },
       {
          "name" : "Facebook",
@@ -1237,7 +1237,7 @@
          "account_missing_string" : "user cannot be found",
          "account_missing_code" : "200",
          "known_accounts" : ["test"],
-         "category" : "XXX PORN XXX",
+         "category" : "XXXPORNXXX",
          "valid" : true
       },
       {
@@ -1259,7 +1259,7 @@
          "account_missing_string" : "<title>Whoops &middot; Furiffic</title>",
          "account_missing_code" : "404",
          "known_accounts" : ["furiffic","test","admin"],
-         "category" : "XXX PORN XXX",
+         "category" : "XXXPORNXXX",
          "valid" : true
       },
       {
@@ -1348,7 +1348,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["blue", "red"],
          "category" : "music",
-         "valid" : false
+         "valid" : true
       },
       {
          "name" : "Gravatar",
@@ -1419,14 +1419,15 @@
       },
       {
          "name" : "imgur",
-         "check_uri" : "https://imgur.com/user/{account}/about",
+         "check_uri" : "https://api.imgur.com/account/v1/accounts/{account}?client_id=546c25a59c58ad7&include=trophies%2Cmedallions",
+         "pretty_uri" : "https://imgur.com/user/{account}/about",
          "account_existence_code" : "200",
-         "account_existence_string" : "joined",
-         "account_missing_string" : "the simple 404 page",
-         "account_missing_code" : "200",
-         "known_accounts" : ["test","sillybilly0401"],
+         "account_existence_string" : "created_at",
+         "account_missing_string" : "unable to find account",
+         "account_missing_code" : "404",
+         "known_accounts" : ["OliverClothesoff70","DadOnTheInternet"],
          "category" : "images",
-         "valid" : false
+         "valid" : true
       },
       {
          "name" : "ingvarr.net.ru",
@@ -1447,7 +1448,7 @@
          "account_missing_string" : "<title>Members | Inkbunny, the Furry Art Community</title>",
          "account_missing_code" : "302",
          "known_accounts" : ["AdminBunny", "test"],
-         "category" : "XXX PORN XXX",
+         "category" : "XXXPORNXXX",
          "valid" : true
       },
       {
@@ -1579,9 +1580,9 @@
          "account_existence_string" : "performer_id",
          "account_missing_string" : "\"success\": false",
          "account_missing_code" : "200",
-         "known_accounts" : ["Aaryall","a1EnergeticJenny"],
-         "category" : "XXX PORN XXX",
-         "valid" : false
+         "known_accounts" : ["ToriBanks","DorothyLake"],
+         "category" : "XXXPORNXXX",
+         "valid" : true
       },
       {
          "name" : "Livejournal",
@@ -1660,17 +1661,6 @@
          "known_accounts" : ["test","mixpicks"],
          "category" : "social",
          "valid" : true
-      },
-      {
-         "name" : "Mixcloud",
-         "check_uri" : "https://www.mixcloud.com/{account}/",
-         "account_existence_code" : "200",
-         "account_existence_string" : "Followers",
-         "account_missing_string" : "Page Not Found",
-         "account_missing_code" : "200",
-         "known_accounts" : ["test","john"],
-         "category" : "music",
-         "valid" : false
       },
       {
          "name" : "Mixlr",
@@ -1810,10 +1800,10 @@
          "name" : "PatientsLikeMe",
          "check_uri" : "https://www.patientslikeme.com/members/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "s profile | PatientsLikeMe",
-         "account_missing_string" : ">You are being",
+         "account_existence_string" : "s profile | PatientsLikeMe</title>",
+         "account_missing_string" : "Username or Email",
          "account_missing_code" : "302",
-         "known_accounts" : ["beachman","msmary"],
+         "known_accounts" : ["thjuland","Pedro0703","Hydropioneer"],
          "category" : "health",
          "valid" : false
       },
@@ -1924,7 +1914,7 @@
          "account_missing_string" : "Error Page Not Found",
          "account_missing_code" : "404",
          "known_accounts" : ["riley-reid","alex-adams"],
-         "category" : "XXX PORN XXX",
+         "category" : "XXXPORNXXX",
          "valid" : true
       },
       {
@@ -1935,7 +1925,7 @@
          "account_missing_string" : "Error Page Not Found",
          "account_missing_code" : "404",
          "known_accounts" : ["test123"],
-         "category" : "XXX PORN XXX",
+         "category" : "XXXPORNXXX",
          "valid" : true
       },
       {
@@ -1991,7 +1981,7 @@
          "account_missing_string" : "Page Not Found",
          "account_missing_code" : "404",
          "known_accounts" : ["hollandhunter88"],
-         "category" : "XXX PORN XXX",
+         "category" : "XXXPORNXXX",
          "valid" : true
       },
       {
@@ -2562,12 +2552,12 @@
          "name" : "Xbox Gamertag",
          "check_uri" : "https://www.xboxgamertag.com/search/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : " - Xbox Gamertag</title>",
-         "account_missing_string" : "Gamertag data is broken",
+         "account_existence_string" : "Games Played",
+         "account_missing_string" : "Gamertag doesn't exist",
          "account_missing_code" : "404",
-         "known_accounts" : ["test"],
+         "known_accounts" : ["Coaxials","Blind-Zatoichi"],
          "category" : "gaming",
-         "valid" : false
+         "valid" : true
       },
       {
          "name" : "xHamster",
@@ -2577,7 +2567,7 @@
          "account_missing_string" : "User not found</title>",
          "account_missing_code" : "404",
          "known_accounts" : ["john","tonystark85"],
-         "category" : "XXX PORN XXX",
+         "category" : "XXXPORNXXX",
          "valid" : true
       },
       {
@@ -2588,7 +2578,7 @@
          "account_missing_string" : "THIS PROFILE DOESN'T EXIST",
          "account_missing_code" : "404",
          "known_accounts" : ["vvalencourt3", "tiffany-tyler"],
-         "category" : "XXX PORN XXX",
+         "category" : "XXXPORNXXX",
          "valid" : true
       },
       {
@@ -2599,7 +2589,7 @@
          "account_missing_string" : "THIS PROFILE DOESN'T EXIST",
          "account_missing_code" : "404",
          "known_accounts" : ["nympho-nailer", "dpadicto","bkg"],
-         "category" : "XXX PORN XXX",
+         "category" : "XXXPORNXXX",
          "valid" : true
       },
       {
@@ -2870,12 +2860,12 @@
          "name" : "Raidforums",
          "check_uri" : "https://raidforums.com/User-{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "Forum Info",
-         "account_missing_string" : "The member you specified",
+         "account_existence_string" : "'s Forum Info",
+         "account_missing_string" : "The member you specified is either invalid or doesn't exist",
          "account_missing_code" : "404",
-         "known_accounts" : ["redXXX", "turdburglar"],
+         "known_accounts" : ["Zeroxx", "blakereed"],
          "category" : "tech",
-         "valid" : false
+         "valid" : true
       },
       {
          "name" : "Bentbox",
