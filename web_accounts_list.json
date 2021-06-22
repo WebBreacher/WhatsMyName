@@ -1030,17 +1030,6 @@
          "valid" : false
       },
       {
-         "name" : "e621",
-         "check_uri" : "https://e621.net/users/{account}",
-         "account_existence_code" : "200",
-         "account_existence_string" : "<title>  User - ",
-         "account_missing_string" : "<title></title>",
-         "account_missing_code" : "404",
-         "known_accounts" : ["admin", "doesnotexist", "test"],
-         "category" : "XXX PORN XXX",
-         "valid" : true
-      },
-      {
          "name" : "easyen",
          "check_uri" : "https://easyen.ru/index/8-0-{account}",
          "account_existence_code" : "200",
