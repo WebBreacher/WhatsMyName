@@ -961,8 +961,7 @@
         "account_missing_code" : "404",
         "known_accounts" : ["whoami", "johndoe"],
         "category" : "tech",
-        "valid" : true,
-        "comments" : ["Verified 2019-04-12 Arnydo."]
+        "valid" : true
       },
       {
         "name" : "Disqus",
