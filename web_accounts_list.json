@@ -2742,7 +2742,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["lil_shirleys_boy","pookiebear73"],
          "category" : "social",
-         "valid" : false
+         "valid" : true
       },
       {
          "name" : "Mixi",
