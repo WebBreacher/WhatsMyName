@@ -309,17 +309,6 @@
          "valid" : true
       },
       {
-         "name" : "Indiegogo",
-         "check_uri" : "https://www.indiegogo.com/individuals/{account}",
-         "account_existence_code" : "200",
-         "account_existence_string" : "profile",
-         "account_missing_string" : "The page you are looking for is no longer available or has been moved.",
-         "account_missing_code" : "404",
-         "known_accounts" : ["92340", "14865"],
-         "category" : "shopping",
-         "valid" : true
-      },
-      {
          "name" : "issuu",
          "check_uri" : "https://issuu.com/{account}",
          "account_existence_code" : "200",
