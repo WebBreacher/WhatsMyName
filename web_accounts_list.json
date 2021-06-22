@@ -2562,12 +2562,12 @@
          "name" : "Xbox Gamertag",
          "check_uri" : "https://www.xboxgamertag.com/search/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : " - Xbox Gamertag</title>",
-         "account_missing_string" : "Gamertag data is broken",
+         "account_existence_string" : "Games Played",
+         "account_missing_string" : "Gamertag doesn't exist",
          "account_missing_code" : "404",
-         "known_accounts" : ["test"],
+         "known_accounts" : ["Coaxials","Blind-Zatoichi"],
          "category" : "gaming",
-         "valid" : false
+         "valid" : true
       },
       {
          "name" : "xHamster",
