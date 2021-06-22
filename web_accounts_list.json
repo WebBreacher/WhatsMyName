@@ -114,10 +114,10 @@
          "name" : "buymeacoffee",
          "check_uri" : "https://www.buymeacoffee.com/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "Share with your friends",
+         "account_existence_string" : "supporters",
          "account_missing_string" : "It returned a 404 error.",
          "account_missing_code" : "404",
-         "known_accounts" : ["john","bob"],
+         "known_accounts" : ["freebird","robinwong"],
          "category" : "finance",
          "valid" : true
       },
