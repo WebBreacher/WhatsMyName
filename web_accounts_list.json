@@ -1419,14 +1419,15 @@
       },
       {
          "name" : "imgur",
-         "check_uri" : "https://imgur.com/user/{account}/about",
+         "check_uri" : "https://api.imgur.com/account/v1/accounts/{account}?client_id=546c25a59c58ad7&include=trophies%2Cmedallions",
+         "pretty_uri" : "https://imgur.com/user/{account}/about",
          "account_existence_code" : "200",
-         "account_existence_string" : "joined",
-         "account_missing_string" : "the simple 404 page",
-         "account_missing_code" : "200",
-         "known_accounts" : ["test","sillybilly0401"],
+         "account_existence_string" : "created_at",
+         "account_missing_string" : "unable to find account",
+         "account_missing_code" : "404",
+         "known_accounts" : ["OliverClothesoff70","DadOnTheInternet"],
          "category" : "images",
-         "valid" : false
+         "valid" : true
       },
       {
          "name" : "ingvarr.net.ru",
