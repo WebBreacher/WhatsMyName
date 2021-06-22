@@ -1641,12 +1641,12 @@
       },
       {
          "name" : "Medium",
-         "check_uri" : "https://medium.com/@{account}",
+         "check_uri" : "https://{account}.medium.com/about",
          "account_existence_code" : "200",
-         "account_existence_string" : "<a aria-label=\"Author Homepage\"",
-         "account_missing_string" : "No user found for username",
+         "account_existence_string" : "Medium member since",
+         "account_missing_string" : "Out of nothing, something",
          "account_missing_code" : "404",
-         "known_accounts" : ["johndoe","test123"],
+         "known_accounts" : ["zulie","jessicalexicus"],
          "category" : "news",
          "valid" : true
       },
