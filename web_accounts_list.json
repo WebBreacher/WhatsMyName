@@ -1662,17 +1662,6 @@
          "valid" : true
       },
       {
-         "name" : "Mixcloud",
-         "check_uri" : "https://www.mixcloud.com/{account}/",
-         "account_existence_code" : "200",
-         "account_existence_string" : "Followers",
-         "account_missing_string" : "Page Not Found",
-         "account_missing_code" : "200",
-         "known_accounts" : ["test","john"],
-         "category" : "music",
-         "valid" : false
-      },
-      {
          "name" : "Mixlr",
          "check_uri" : "http://api.mixlr.com/users/{account}",
          "pretty_uri" : "http://mixlr.com/{account}/",
@@ -1810,10 +1799,10 @@
          "name" : "PatientsLikeMe",
          "check_uri" : "https://www.patientslikeme.com/members/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "s profile | PatientsLikeMe",
-         "account_missing_string" : ">You are being",
+         "account_existence_string" : "s profile | PatientsLikeMe</title>",
+         "account_missing_string" : "Username or Email",
          "account_missing_code" : "302",
-         "known_accounts" : ["beachman","msmary"],
+         "known_accounts" : ["thjuland","Pedro0703","Hydropioneer"],
          "category" : "health",
          "valid" : false
       },
@@ -2870,12 +2859,12 @@
          "name" : "Raidforums",
          "check_uri" : "https://raidforums.com/User-{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "Forum Info",
-         "account_missing_string" : "The member you specified",
+         "account_existence_string" : "'s Forum Info",
+         "account_missing_string" : "The member you specified is either invalid or doesn't exist",
          "account_missing_code" : "404",
-         "known_accounts" : ["redXXX", "turdburglar"],
+         "known_accounts" : ["Zeroxx", "blakereed"],
          "category" : "tech",
-         "valid" : false
+         "valid" : true
       },
       {
          "name" : "Bentbox",
