@@ -1176,10 +1176,10 @@
          "name" : "Flipboard",
          "check_uri" : "https://flipboard.com/@{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : " on Flipboard | ",
+         "account_existence_string" : ") on Flipboard",
          "account_missing_string" : "<title></title>",
          "account_missing_code" : "404",
-         "known_accounts" : ["flipboard"],
+         "known_accounts" : ["cosmopolitan","Mashable"],
          "category" : "tech",
          "valid" : true
       },
