@@ -886,14 +886,14 @@
       },
       {
          "name" : "Codepen",
-         "check_uri" : "https://codepen.io/{account}",
+         "check_uri" : "https://codepen.io/{account}/followers/",
          "account_existence_code" : "200",
-         "account_existence_string" : "on CodePen</title>",
-         "account_missing_string" : "404 Error - CodePen</title>",
+         "account_existence_string" : " on CodePen</title>",
+         "account_missing_string" : "<title>404 on CodePen</title>",
          "account_missing_code" : "404",
-         "known_accounts" : ["blue", "red"],
+         "known_accounts" : ["danwilson", "loficodes","_niikhil"],
          "category" : "tech",
-         "valid" : false
+         "valid" : true
       },
       {
          "name" : "COLOURlovers",
@@ -1017,17 +1017,6 @@
          "known_accounts" : ["chriskahn","swilken"],
          "category" : "hobby",
          "valid" : true
-      },
-      {
-         "name" : "duby",
-         "check_uri" : "https://www.duby.co/{account}/",
-         "account_existence_code" : "503",
-         "account_existence_string" : "<title>@",
-         "account_missing_string" : "<title>Page Not Found",
-         "account_missing_code" : "503",
-         "known_accounts" : ["organicannabis","jonny5"],
-         "category" : "health",
-         "valid" : false
       },
       {
          "name" : "easyen",
