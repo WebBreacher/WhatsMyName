@@ -24,7 +24,7 @@
       {
         "name": "Ameblo",
         "check_uri": "https://ameblo.jp/{account}",
-        "account_existence_code": "304",
+        "account_existence_code": "200",
         "account_existence_string": "画像一覧",
         "account_missing_string": "削除された可能性がございます。",
         "account_missing_code": "404",
@@ -37,9 +37,9 @@
         "check_uri": "https://anilist.co/user/{account}/",
         "account_existence_code": "200",
         "account_existence_string": "Anime List",
-        "account_missing_string": "",
-        "account_missing_code": "404",
-        "known_accounts": [ "fate299", "celeoste" ],
+        "account_missing_string": "not-found container",
+        "account_missing_code": "200",
+        "known_accounts": [ "APotato", "happysynthesis" ],
         "category": "social",
         "valid": true
       },
@@ -61,7 +61,7 @@
         "account_existence_string": "Overview",
         "account_missing_code": "404",
         "account_missing_string": "PLAYER NOT FOUND",
-        "known_accounts": [ "KaguraMea", "Xspkxkenny" ],
+        "known_accounts": [ "tttcheekyttt", "RollsRoyce_Dawn" ],
         "catergory": "gaming",
         "valid": true
       },
@@ -675,14 +675,15 @@
       },
       {
          "name" : "aNobii",
-         "check_uri" : "https://www.anobii.com/{account}/profile",
+         "check_uri" : "https://api.anobii.com/users/eid/{account}",
+         "pretty_uri" : "https://www.anobii.com/{account}/profile/activity",
          "account_existence_code" : "200",
-         "account_existence_string" : "Anobiian since",
-         "account_missing_string" : "Redirecting to",
-         "account_missing_code" : "302",
-         "known_accounts" : ["test", "john"],
+         "account_existence_string" : "Anobian since",
+         "account_missing_string" : "A user matching the specified criteria could not be found",
+         "account_missing_code" : "200",
+         "known_accounts" : ["albertoricci", "trynyty01"],
          "category" : "hobby",
-         "valid" : true
+         "valid" : false
       },
       {
          "name" : "appearoo",
@@ -824,7 +825,7 @@
          "account_existence_string" : "memberSince",
          "account_missing_string" : "We can't find the page you're looking for",
          "account_missing_code" : "404",
-         "known_accounts" : ["talhaishaq2001","RobertK"],
+         "known_accounts" : ["janelytvynenko","RobertK"],
          "category" : "social",
          "valid" : true
       },
@@ -1164,12 +1165,12 @@
          "name" : "Fiverr",
          "check_uri" : "https://www.fiverr.com/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : " | Fiverr</title>",
+         "account_existence_string" : "member-since",
          "account_missing_string" : "",
          "account_missing_code" : "302",
-         "known_accounts" : ["test","gabarnes"],
+         "known_accounts" : ["yellowdd","samanvay"],
          "category" : "shopping",
-         "valid" : true
+         "valid" : false
       },
       {
          "name" : "Flickr",
@@ -2736,12 +2737,12 @@
          "name" : "TikTok",
          "check_uri" : "https://www.tiktok.com/@{account}?lang=en",
          "account_existence_code" : "200",
-         "account_existence_string" : "s Newest TikTok Videos</title>",
+         "account_existence_string" : "'s Newest TikTok Videos</title>",
          "account_missing_string" : "Couldn't find this account",
-         "account_missing_code" : "200",
-         "known_accounts" : ["willsmith","billnye"],
+         "account_missing_code" : "404",
+         "known_accounts" : ["lil_shirleys_boy","pookiebear73"],
          "category" : "social",
-         "valid" : true
+         "valid" : false
       },
       {
          "name" : "Mixi",
