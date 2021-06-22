@@ -114,10 +114,10 @@
          "name" : "buymeacoffee",
          "check_uri" : "https://www.buymeacoffee.com/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "Share with your friends",
+         "account_existence_string" : "supporters",
          "account_missing_string" : "It returned a 404 error.",
          "account_missing_code" : "404",
-         "known_accounts" : ["john","bob"],
+         "known_accounts" : ["freebird","robinwong"],
          "category" : "finance",
          "valid" : true
       },
@@ -675,17 +675,6 @@
          "valid" : false
       },
       {
-         "name" : "appearoo",
-         "check_uri" : "https://appearoo.com/{account}",
-         "account_existence_code" : "200",
-         "account_existence_string" : "Your connection with",
-         "account_missing_string" : "Not Found</title>",
-         "account_missing_code" : "200",
-         "known_accounts" : ["yourname", "appearoo"],
-         "category" : "social",
-         "valid" : true
-      },
-      {
          "name" : "ask.fm",
          "check_uri" : "https://ask.fm/{account}",
          "account_existence_code" : "200",
@@ -1039,17 +1028,6 @@
          "known_accounts" : ["organicannabis","jonny5"],
          "category" : "health",
          "valid" : false
-      },
-      {
-         "name" : "e621",
-         "check_uri" : "https://e621.net/users/{account}",
-         "account_existence_code" : "200",
-         "account_existence_string" : "<title>  User - ",
-         "account_missing_string" : "<title></title>",
-         "account_missing_code" : "404",
-         "known_accounts" : ["admin", "doesnotexist", "test"],
-         "category" : "XXX PORN XXX",
-         "valid" : true
       },
       {
          "name" : "easyen",
@@ -1887,7 +1865,7 @@
          "name" : "PhotoBucket",
          "check_uri" : "https://app.photobucket.com/u/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "content=\"My Library\">",
+         "account_existence_string" : "content='My Library'>",
          "account_missing_string" : "Error | Photobucket",
          "account_missing_code" : "302",
          "known_accounts" : ["Sonorlite18","awelch"],
@@ -2471,11 +2449,11 @@
       },
       {
          "name" : "Voices.com",
-         "check_uri" : "https://www.voices.com/profile/{account}/voice-over#bio",
+         "check_uri" : "https://www.voices.com/profile/{account}/",
          "account_existence_code" : "200",
          "account_existence_string" : "Last Online</h3>",
-         "account_missing_string" : "The page you are looking for was not found.",
-         "account_missing_code" : "404",
+         "account_missing_string" : "Try going back to the previous page or see below for more options",
+         "account_missing_code" : "301",
          "known_accounts" : ["briankirchoff","bryankopta"],
          "category" : "business",
          "valid" : true
@@ -2902,7 +2880,7 @@
          "name" : "Bentbox",
          "check_uri" : "https://bentbox.co/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "BentBox User Page",
+         "account_existence_string" : "BentBox photos and videos",
          "account_missing_string" : "This user page is currently not available.",
          "account_missing_code" : "302",
          "known_accounts" : ["brockdoom", "witchhouse", "hotoptics"],
