@@ -2902,7 +2902,7 @@
          "name" : "Bentbox",
          "check_uri" : "https://bentbox.co/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "BentBox User Page",
+         "account_existence_string" : "BentBox photos and videos",
          "account_missing_string" : "This user page is currently not available.",
          "account_missing_code" : "302",
          "known_accounts" : ["brockdoom", "witchhouse", "hotoptics"],
