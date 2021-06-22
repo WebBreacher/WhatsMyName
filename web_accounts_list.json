@@ -3231,15 +3231,14 @@
       },
       {
          "name" : "instaphotomap",
-         "check_uri" : "https://instaphotomap.com/api/getPosts?id={account}",
-         "pretty_uri" : "https://instaphotomap.com/user/{account}/",
+         "check_uri" : "https://instaphotomap.com/user/{account}/",
          "account_existence_code" : "200",
-         "account_existence_string" : "display_url",
+         "account_existence_string" : "followers",
          "account_missing_string" : "USER_NOT_FOUND",
          "account_missing_code" : "500",
          "known_accounts" : ["snoopdogg","muradosmann"],
          "category" : "social",
-         "valid" : true
+         "valid" : false
       }
    ]
 }
