@@ -288,12 +288,12 @@
       },
       {
          "name" : "gumroad",
-         "check_uri" : "https://gumroad.com/{account}/follow",
+         "check_uri" : "https://gumroad.com/{account}",
          "account_existence_code" : "200",
-         "account_existence_string" : "og:site_name",
+         "account_existence_string" : "s profile picture",
          "account_missing_string" : "Page not found",
          "account_missing_code" : "404",
-         "known_accounts" : ["john", "smith"],
+         "known_accounts" : ["ellietalksmoney", "reallyniceimages"],
          "category" : "shopping",
          "valid" : true
       },
