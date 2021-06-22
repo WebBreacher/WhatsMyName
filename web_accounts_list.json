@@ -28,9 +28,9 @@
         "account_existence_string" : "画像一覧",
         "account_missing_string" : "削除された可能性がございます。",
         "account_missing_code" : "404",
-        "known_accounts": [ "ereko-blog", "senpai" ],
+        "known_accounts" : [ "ereko-blog", "senpai" ],
         "category" : "blog",
-        "valid": true
+        "valid" : true
       },
       {
         "name" : "Anilist",
@@ -39,9 +39,9 @@
         "account_existence_string" : "Anime List",
         "account_missing_string" : "not-found container",
         "account_missing_code" : "200",
-        "known_accounts": [ "APotato", "happysynthesis" ],
+        "known_accounts" : [ "APotato", "happysynthesis" ],
         "category" : "social",
-        "valid": true
+        "valid" : true
       },
       {
         "name" : "AnimePlanet",
@@ -50,9 +50,9 @@
         "account_existence_string" : "Joined",
         "account_missing_string" : "Meet new friends, make reviews and recommendations.",
         "account_missing_code" : "302",
-        "known_accounts": [ "zala", "lindapearl" ],
+        "known_accounts" : [ "zala", "lindapearl" ],
         "catergory" : "social",
-        "valid": true
+        "valid" : true
       },
       {
         "name" : "Apex Legends",
@@ -61,9 +61,9 @@
         "account_existence_string" : "Overview",
         "account_missing_code" : "404",
         "account_missing_string" : "PLAYER NOT FOUND",
-        "known_accounts": [ "tttcheekyttt", "RollsRoyce_Dawn" ],
+        "known_accounts" : [ "tttcheekyttt", "RollsRoyce_Dawn" ],
         "catergory" : "gaming",
-        "valid": true
+        "valid" : true
       },
       {
         "name" : "asciinema",
@@ -1547,9 +1547,9 @@
         "account_existence_string" : "Add LINE Friends via QR Code",
         "account_missing_code" : "404",
         "account_missing_string" : "404 Not Found",
-        "known_accounts": [ "roseareal", "yoasobi" ],
+        "known_accounts" : [ "roseareal", "yoasobi" ],
         "catergory" : "social",
-        "valid": true
+        "valid" : true
       },
       {
         "name" : "LiveJasmin",
@@ -1760,9 +1760,9 @@
         "account_existence_string" : "'s torrents",
         "account_missing_code" : "404",
         "account_missing_string" : "404 Not Found",
-        "known_accounts": [ "supremesonic21", "Rektr0" ],
+        "known_accounts" : [ "supremesonic21", "Rektr0" ],
         "catergory" : "video",
-        "valid": true
+        "valid" : true
       },
       {
         "name" : "OpenStreetMap",
@@ -2168,9 +2168,9 @@
         "account_existence_string" : "'s torrents",
         "account_missing_code" : "404",
         "account_missing_string" : "404 Not Found",
-        "known_accounts": [ "kouhy76", "Rektr0" ],
+        "known_accounts" : [ "kouhy76", "Rektr0" ],
         "catergory" : "video",
-        "valid": true
+        "valid" : true
       },
       {
         "name" : "Suzuri",
@@ -2179,9 +2179,9 @@
         "account_existence_string" : "Items",
         "account_missing_string" : "Push Space-key",
         "account_missing_code" : "404",
-        "known_accounts": [ "itochanxxx", "senpai" ],
+        "known_accounts" : [ "itochanxxx", "senpai" ],
         "catergory" : "business",
-        "valid": true
+        "valid" : true
       },
       {
         "name" : "TamTam",
@@ -2312,9 +2312,9 @@
         "account_existence_string" : "おとなりさん",
         "account_missing_code" : "404",
         "account_missing_string" : "をご確認ください。",
-        "known_accounts": [ "wsise47", "tsukiusa630" ],
+        "known_accounts" : [ "wsise47", "tsukiusa630" ],
         "catergory" : "social",
-        "valid": true
+        "valid" : true
       },
       {
         "name" : "Udemy",
@@ -3151,9 +3151,9 @@
         "account_existence_string" : "Joined",
         "account_missing_string" : "Looks like you got lost!.",
         "account_missing_code" : "404",
-        "known_accounts": ["eric", "danielrivera10927"],
+        "known_accounts" : ["eric", "danielrivera10927"],
         "category" : "hobby",
-        "valid": true
+        "valid" : true
       },
       {
         "name" : "Massage Anywhere",
