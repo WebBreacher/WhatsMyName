@@ -2471,11 +2471,12 @@
       },
       {
          "name" : "wattpad",
-         "check_uri" : "https://www.wattpad.com/user/{account}",
-         "account_existence_code" : "200",
-         "account_existence_string" : ">About</a>",
-         "account_missing_string" : "this profile seems to be missing",
-         "account_missing_code" : "404",
+         "check_uri" : "https://www.wattpad.com/api/v3/users/{account}?fields=username%2Cname%2Cdescription%2Cavatar%2CbackgroundUrl%2CcreateDate%2Clocation%2Cfollowing%2CfollowingRequest%2CnumFollowing%2Cfollower%2CfollowerRequest%2CnumFollowers%2CnumLists%2CnumStoriesPublished%2CvotesReceived%2Cfacebook%2Ctwitter%2Cwebsite%2Csmashwords%2Chighlight_colour%2Chtml_enabled%2Cverified%2Cambassador%2Cwattpad_squad%2Cis_staff%2Cprograms(wattpad_stars)%2CisPrivate%2CisMuted%2CexternalId%2Cnotes",
+         "pretty_uri" : "https://www.wattpad.com/user/{account}",
+         "account_existence_code" : "304",
+         "account_existence_string" : "createDate",
+         "account_missing_string" : "error_code",
+         "account_missing_code" : "400",
          "known_accounts" : ["newadult","Test123"],
          "category" : "social",
          "valid" : true
