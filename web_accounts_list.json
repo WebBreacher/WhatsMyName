@@ -1348,7 +1348,7 @@
          "account_missing_code" : "404",
          "known_accounts" : ["blue", "red"],
          "category" : "music",
-         "valid" : false
+         "valid" : true
       },
       {
          "name" : "Gravatar",
