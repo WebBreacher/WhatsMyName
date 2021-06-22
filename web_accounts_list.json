@@ -1987,9 +1987,9 @@
          "name" : "ProtonMail",
          "check_uri" : "https://api.protonmail.ch/pks/lookup?op=index&search={account}@protonmail.com",
          "account_existence_code" : "200",
-         "account_existence_string" : "BEGIN PGP PUBLIC KEY",
-         "account_missing_string" : "No key found",
-         "account_missing_code" : "404",
+         "account_existence_string" : "info:1:1",
+         "account_missing_string" : "info:1:0",
+         "account_missing_code" : "200",
          "known_accounts" : ["admin","test"],
          "category" : "misc",
          "valid" : true
