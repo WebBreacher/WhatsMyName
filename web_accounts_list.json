@@ -1720,9 +1720,9 @@
       },
       {
         "name" : "NameMC",
-        "check_uri" : "https://namemc.com/name/{account}",
+        "check_uri" : "https://namemc.com/search?q={account}",
         "account_existence_code" : "200",
-        "account_existence_string" : "Unavailable",
+        "account_existence_string" : "Status: Unavailable",
         "account_missing_string" : "Available*",
         "account_missing_code" : "404",
         "known_accounts" : ["Alice","Bob"],
