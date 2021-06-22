@@ -1170,7 +1170,7 @@
          "account_missing_code" : "302",
          "known_accounts" : ["yellowdd","samanvay"],
          "category" : "shopping",
-         "valid" : false
+         "valid" : true
       },
       {
          "name" : "Flickr",
