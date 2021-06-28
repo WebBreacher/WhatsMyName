@@ -2605,11 +2605,11 @@
       },
       {
         "name" : "Yahoo! JAPAN Auction",
-        "check_uri" : "https://auctions.yahoo.co.jp/seller/{account}",
+        "check_uri" : "https://auctions.yahoo.co.jp/follow/list/{account}",
         "account_existence_code" : "200",
-        "account_existence_string" : "さんの出品リスト",
-        "account_missing_code" : "200",
-        "account_missing_string" : "該当する商品はありません。",
+        "account_existence_string" : "出品者",
+        "account_missing_code" : "500",
+        "account_missing_string" : "Yahoo! JAPAN IDが無効です。",
         "known_accounts" : ["fltr14502003"],
         "category" : "shopping",
         "valid" : true
