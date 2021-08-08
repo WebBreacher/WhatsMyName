@@ -233,11 +233,12 @@
       },
       {
         "name" : "Duolingo",
-        "check_uri" : "https://www.duolingo.com/profile/{account}",
+        "check_uri" : "https://www.duolingo.com/2017-06-30/users?username={account}&_=1628308619574",
+        "pretty_uri" : "https://www.duolingo.com/profile/{account}",
         "account_existence_code" : "200",
-        "account_existence_string" : "Joined",
-        "account_missing_string" : "Error 404",
-        "account_missing_code" : "404",
+        "account_existence_string" : "joinedClassroomIds",
+        "account_missing_string" : "\"users\": []",
+        "account_missing_code" : "200",
         "known_accounts" : ["sdfsdf", "duolingo"],
         "category" : "hobby",
         "valid" : true
