@@ -37,7 +37,7 @@
         "check_uri" : "https://anilist.co/user/{account}/",
         "account_existence_code" : "200",
         "account_existence_string" : "Anime List",
-        "account_missing_string" : "not-found container",
+        "account_missing_string" : "<div data-v-6e8851fc=\"\" class=\"not-found container\">",
         "account_missing_code" : "200",
         "known_accounts" : [ "APotato", "happysynthesis" ],
         "category" : "social",
@@ -1598,6 +1598,17 @@
         "valid" : true
       },
       {
+        "name": "Marshmallow",
+        "check_uri": "https://marshmallow-qa.com/{account}",
+        "account_existence_code": "200",
+        "account_existence_string": "さんにメッセージをおくる",
+        "account_missing_code": "404",
+        "account_missing_string": "For compensation, here are cats for you.",
+        "known_accounts": ["yuino_fox", "momo"],
+        "category": "social",
+        "valid": true
+      },
+      {
         "name" : "Medium",
         "check_uri" : "https://{account}.medium.com/about",
         "account_existence_code" : "200",
@@ -2313,6 +2324,17 @@
         "account_missing_code" : "404",
         "known_accounts" : ["test","test1"],
         "category" : "images",
+        "valid" : true
+      },
+      {
+        "name" : "Twitcasting",
+        "check_uri" : "https://twitcasting.tv/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "Live History",
+        "account_missing_string" : "Not Found",
+        "account_missing_code" : "404",
+        "known_accounts" : ["yuno___nico", "2_t0_"],
+        "category" : "social",
         "valid" : true
       },
       {
