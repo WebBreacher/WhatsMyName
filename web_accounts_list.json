@@ -1599,7 +1599,7 @@
       },
       {
         "name": "Marshmallow",
-        "check_uri": "https://marshmallow-qa.com/{acccount}",
+        "check_uri": "https://marshmallow-qa.com/{account}",
         "account_existence_code": "200",
         "account_existence_string": "さんにメッセージをおくる",
         "account_missing_code": "404",
@@ -2170,17 +2170,6 @@
         "account_missing_code" : "404",
         "known_accounts" : ["petecheslock","turbosmart45"],
         "category" : "social",
-        "valid" : true
-      },
-      {
-        "name" : "Sploder",
-        "check_uri" : "https://www.sploder.com/games/members/{account}",
-        "account_existence_code" : "200",
-        "account_existence_string": "Awesomeness",
-        "account_missing_code": "404",
-        "account_missing_string": "The game you were looking for by",
-        "known_accounts": ["vaxen2", "geoff"],
-        "category": "gaming",
         "valid" : true
       },
       {
