@@ -1255,8 +1255,8 @@
         "name" : "Garmin connect",
         "check_uri" : "https://connect.garmin.com/modern/profile/{account}",
         "account_existence_code" : "200",
-        "account_existence_string" : "JSON.parse",
-        "account_missing_string" : "VIEWER_USERPREFERENCES = nul",
+        "account_existence_string" : "window.ERROR_VIEW = null",
+        "account_missing_string" : "resourceNotFoundRoute",
         "account_missing_code" : "200",
         "known_accounts" : ["danielebarison","cderalow"],
         "category" : "health",
@@ -1927,7 +1927,7 @@
         "account_missing_code" : "200",
         "known_accounts" : ["admin","test"],
         "category" : "misc",
-        "valid" : true
+        "valid" : false
       },
       {
         "name" : "PSNProfiles",
