@@ -57,10 +57,13 @@ def signal_handler(*_):
     error(' !!!  You pressed Ctrl+C. Exiting script.')
     sys.exit(130)
 
-def web_call(location):
+def web_call(location, additional_headers=None):
+    request_headers = HEADERS.copy()
+    if additional_headers:
+        request_headers = {**request_headers, **additional_headers}
     try:
         # Make web request for that URL, timeout in X secs and don't verify SSL/TLS certs
-        return requests.get(location, headers=HEADERS, timeout=60, verify=False, allow_redirects=False)
+        return requests.get(location, headers=request_headers, timeout=60, verify=False, allow_redirects=False)
     except requests.exceptions.Timeout as caught:
         raise Exception("Connection time out. Try increasing the timeout delay.") from caught
     except requests.exceptions.TooManyRedirects as caught:
@@ -90,8 +93,9 @@ def find_sites_to_check(args, data):
 
 def check_site(site, username, if_found, if_not_found, if_neither):
     url = site['check_uri'].replace("{account}", username)
+    http_headers = site.get("http_headers", None)
     try:
-        resp = web_call(url)
+        resp = web_call(url, http_headers)
 
         code_match = resp.status_code == int(site['account_existence_code'])
         string_match = resp.text.find(site['account_existence_string']) > 0

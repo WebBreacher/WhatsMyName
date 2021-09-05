@@ -119,10 +119,13 @@ def signal_handler(*_):
     sys.exit(130)
 
 
-def web_call(location):
+def web_call(location, additional_headers=None):
+    request_headers = headers.copy()
+    if additional_headers:
+        request_headers = {**request_headers, **additional_headers}
     try:
         # Make web request for that URL, timeout in X secs and don't verify SSL/TLS certs
-        resp = requests.get(location, headers=headers, timeout=60, verify=False, allow_redirects=False)
+        resp = requests.get(location, headers=request_headers, timeout=60, verify=False, allow_redirects=False)
     except requests.exceptions.Timeout:
         return f' !  ERROR: {location} CONNECTION TIME OUT. Try increasing the timeout delay.'
     except requests.exceptions.TooManyRedirects:
@@ -209,7 +212,8 @@ def check_site(site, username=None):
 
     # Perform initial lookup
     logging.info(f" >  Looking up {url}")
-    r = web_call(url)
+    http_headers = site.get("http_headers", None)
+    r = web_call(url, http_headers)
     if isinstance(r, str):
         # We got an error on the web call
         return logging.error(Bcolors.RED + r + Bcolors.ENDC)
@@ -233,7 +237,7 @@ def check_site(site, username=None):
                 # logging.info('     [+] Response code and Search Strings match expected.')
                 # Generate a random string to use in place of known_accounts
                 url_fp = site['check_uri'].replace("{account}", random_string(20))
-                r_fp = web_call(url_fp)
+                r_fp = web_call(url_fp, http_headers)
                 if isinstance(r_fp, str):
                     # If this is a string then web got an error
                     return logging.error(r_fp)
