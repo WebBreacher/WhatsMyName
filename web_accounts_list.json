@@ -1916,7 +1916,7 @@
         "account_missing_code" : "200",
         "known_accounts" : ["admin","test"],
         "category" : "misc",
-        "valid" : false
+        "valid" : true
       },
       {
         "name" : "PSNProfiles",
