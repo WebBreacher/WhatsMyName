@@ -468,12 +468,12 @@
         "name" : "PCPartPicker",
         "check_uri" : "https://pcpartpicker.com/user/{account}/",
         "account_existence_code" : "200",
-        "account_existence_string" : "- Profile - PCPartPicker",
+        "account_existence_string" : "class=\"active\"",
         "account_missing_string" : "The page you requested could not be found.",
         "account_missing_code" : "404",
         "known_accounts" : ["john", "bob"],
         "category" : "tech",
-        "valid" : false
+        "valid" : true
       },
       {
         "name" : "Poll Everywhere",
@@ -1356,9 +1356,9 @@
         "name" : "HubPages",
         "check_uri" : "https://hubpages.com/@{account}",
         "account_existence_code" : "200",
-        "account_existence_string" : "Joined ",
+        "account_existence_string" : "name\">Followers",
         "account_missing_string" : "Sorry, that user does not exist",
-        "account_missing_code" : "",
+        "account_missing_code" : "404",
         "known_accounts" : ["greeneyes1607","lmmartin"],
         "category" : "blog",
         "valid" : true
@@ -1538,18 +1538,6 @@
         "account_missing_string" : "404 Not Found",
         "known_accounts" : [ "roseareal", "yoasobi" ],
         "category" : "social",
-        "valid" : true
-      },
-      {
-        "name" : "LiveJasmin",
-        "check_uri" : "https://www.livejasmin.com/en/flash/get-performer-details/{account}",
-        "pretty_uri" : "https://new.livejasmin.com/en/chat/{account}",
-        "account_existence_code" : "200",
-        "account_existence_string" : "performer_id",
-        "account_missing_string" : "\"success\": false",
-        "account_missing_code" : "200",
-        "known_accounts" : ["ToriBanks","DorothyLake"],
-        "category" : "XXXPORNXXX",
         "valid" : true
       },
       {
@@ -1754,17 +1742,6 @@
         "valid" : true
       },
       {
-        "name" : "Nyaa.si",
-        "check_uri" : "https://nyaa.si/user/{account}",
-        "account_existence_code" : "200",
-        "account_existence_string" : "'s torrents",
-        "account_missing_code" : "404",
-        "account_missing_string" : "404 Not Found",
-        "known_accounts" : [ "supremesonic21", "Rektr0" ],
-        "category" : "video",
-        "valid" : true
-      },
-      {
         "name" : "Onlyfans",
         "check_uri" : "https://onlyfans.com/{account}",
         "account_existence_code" : "304",
@@ -1791,11 +1768,11 @@
         "check_uri" : "https://www.patientslikeme.com/members/{account}",
         "account_existence_code" : "200",
         "account_existence_string" : "s profile | PatientsLikeMe</title>",
-        "account_missing_string" : "Username or Email",
+        "account_missing_string" : "",
         "account_missing_code" : "302",
         "known_accounts" : ["thjuland","Pedro0703","Hydropioneer"],
         "category" : "health",
-        "valid" : false
+        "valid" : true
       },
       {
         "name" : "Pastebin",
@@ -2096,17 +2073,6 @@
         "valid" : true
       },
       {
-        "name" : "snooth",
-        "check_uri" : "http://www.snooth.com/profiles/{account}/",
-        "account_existence_code" : "200",
-        "account_existence_string" : "recent-activity",
-        "account_missing_string" : ">Profiles on Snooth<",
-        "account_missing_code" : "200",
-        "known_accounts" : ["test123"],
-        "category" : "social",
-        "valid" : true
-      },
-      {
         "name" : "SoundCloud",
         "check_uri" : "https://soundcloud.com/{account}",
         "account_existence_code" : "200",
@@ -2322,7 +2288,7 @@
         "account_existence_string" : "",
         "account_missing_string" : "",
         "account_missing_code" : "204",
-        "known_accounts" : ["test","cohhcarnage"],
+        "known_accounts" : ["summit1g","cohhcarnage"],
         "category" : "gaming",
         "valid" : true
       },
@@ -3049,7 +3015,7 @@
         "name" : "TrackmaniaLadder",
         "check_uri" : "https://en.tm-ladder.com/{account}_rech.php",
         "account_existence_code" : "200",
-        "account_existence_string" : "Multiplayer Ladder",
+        "account_existence_string" : "Login type :",
         "account_missing_string" : "player unknown or invalid 'idplayer' parameter.",
         "account_missing_code" : "404",
         "known_accounts" : ["bob", "jill"],
