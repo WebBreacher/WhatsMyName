@@ -3119,6 +3119,40 @@
         "known_accounts" : ["ulirad","CBSloan"],
         "category" : "health",
         "valid" : true
+      },
+      {
+        "name" : "21buttons",
+        "check_uri" : "https://www.21buttons.com/buttoner/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "profile_user_followers",
+        "account_missing_string" : "This is not the page you're looking for",
+        "account_missing_code" : "404",
+        "known_accounts" : ["teedawod","ginamariahoffmann"],
+        "category" : "social",
+        "valid" : true
+      },
+      {
+        "name" : "Picuki",
+        "pretty_uri" : "https://instagram.com/{account}",
+        "check_uri" : "https://www.picuki.com/profile/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "Instagram profile with posts and stories",
+        "account_missing_string" : "Nothing found!",
+        "account_missing_code" : "404",
+        "known_accounts" : ["katyperry","kirbstr"],
+        "category" : "social",
+        "valid" : true
+      },
+      {
+        "name" : "Skypli",
+        "check_uri" : "https://www.skypli.com/profile/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "Skype user profile - skypli.com",
+        "account_missing_string" : "Page not found.",
+        "account_missing_code" : "404",
+        "known_accounts" : ["toni.hung","hadi.awad"],
+        "category" : "social",
+        "valid" : true
       }
    ]
 }
