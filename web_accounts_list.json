@@ -1087,12 +1087,12 @@
       },
       {
         "name" : "Facebook",
-        "check_uri" : "https://www.facebook.com/{account}",
+        "check_uri" : "https://mbasic.facebook.com/{account}",
         "account_existence_code" : "200",
-        "account_existence_string" : " is on Facebook. Join Facebook to connect with ",
-        "account_missing_string" : "The link you followed may be broken, or the page may have been rem",
+        "account_existence_string" : " is on Facebook.",
+        "account_missing_string" : "",
         "account_missing_code" : "404",
-        "known_accounts" : ["alex","phil","becca"],
+        "known_accounts" : ["phil","becca"],
         "category" : "social",
         "valid" : true
       },
@@ -1217,17 +1217,6 @@
         "account_missing_code" : "200",
         "known_accounts" : ["test"],
         "category" : "XXXPORNXXX",
-        "valid" : true
-      },
-      {
-        "name" : "FunnyOrDie",
-        "check_uri" : "https://www.funnyordie.com/users/{account}",
-        "account_existence_code" : "200",
-        "account_existence_string" : "Last Login:",
-        "account_missing_string" : "404 Not Found",
-        "account_missing_code" : "404",
-        "known_accounts" : ["graciehughes_FOD"],
-        "category" : "video",
         "valid" : true
       },
       {
@@ -1576,10 +1565,10 @@
         "valid" : true
       },
       {
-        "name" : "Marketing Land",
-        "check_uri" : "https://marketingland.com/author/{account}",
+        "name" : "Martech",
+        "check_uri" : "https://martech.org/author/{account}/",
         "account_existence_code" : "200",
-        "account_existence_string" : "Send Email to Author",
+        "account_existence_string" : "twitter:site",
         "account_missing_string" : "Page not found",
         "account_missing_code" : "404",
         "known_accounts" : ["mani-karthik","james-green"],
@@ -3058,12 +3047,12 @@
       },
       {
         "name" : "TrackmaniaLadder",
-        "check_uri" : "http://en.tm-ladder.com/{account}_rech.php",
+        "check_uri" : "https://en.tm-ladder.com/{account}_rech.php",
         "account_existence_code" : "200",
         "account_existence_string" : "Multiplayer Ladder",
         "account_missing_string" : "player unknown or invalid 'idplayer' parameter.",
         "account_missing_code" : "404",
-        "known_accounts" : ["bob", "john"],
+        "known_accounts" : ["bob", "jill"],
         "category" : "gaming",
         "valid" : true
       },
@@ -3222,15 +3211,15 @@
         "valid" : true
       },
       {
-        "name" : "instaphotomap",
-        "check_uri" : "https://instaphotomap.com/user/{account}/",
+        "name" : "MapMyTracks",
+        "check_uri" : "https://www.mapmytracks.com/{account}",
         "account_existence_code" : "200",
-        "account_existence_string" : "followers",
-        "account_missing_string" : "USER_NOT_FOUND",
-        "account_missing_code" : "500",
-        "known_accounts" : ["snoopdogg","muradosmann"],
-        "category" : "social",
-        "valid" : false
+        "account_existence_string" : "Daily distance this week",
+        "account_missing_string" : "Outside together",
+        "account_missing_code" : "200",
+        "known_accounts" : ["ulirad","CBSloan"],
+        "category" : "health",
+        "valid" : true
       }
    ]
 }
