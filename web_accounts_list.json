@@ -1909,7 +1909,7 @@
       },
       {
         "check_uri" : "https://account.protonmail.com/api/users/available?Name={account}",
-        "http_headers" : {"x-pm-appversion": "Other"},
+        "http_header_key" : "{x-pm-appversion:Other}",
         "account_existence_code" : "409",
         "account_existence_string" : "\"Code\":12106",
         "account_missing_string" : "\"Code\":1000",
