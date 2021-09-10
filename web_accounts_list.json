@@ -3276,6 +3276,39 @@
         "known_accounts" : ["Kalsobbc","Boymariste"],
         "category" : "XXXPORNXXX",
         "valid" : true
+      },
+      {
+        "name" : "ilovegrowingmarijuana",
+        "check_uri" : "https://support.ilovegrowingmarijuana.com/u/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "<title>  Profile - ",
+        "account_missing_string" : "Oops! That page doesn’t exist or is private",
+        "account_missing_code" : "404",
+        "known_accounts" : ["ILGM.Stacy","Mosaicmind9x"],
+        "category" : "social",
+        "valid" : true
+      },
+      {
+        "name" : "Ruby Dating",
+        "check_uri" : "https://ruby.dating/en/users/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "Looks for:",
+        "account_missing_string" : "We can’t find that user",
+        "account_missing_code" : "410",
+        "known_accounts" : ["Ute1833","Jessika4922"],
+        "category" : "dating",
+        "valid" : true
+      },
+      {
+        "name" : "PCGamer",
+        "check_uri" : "https://forums.pcgamer.com/members/{account}/",
+        "account_existence_code" : "200",
+        "account_existence_string" : "Last seen:",
+        "account_missing_string" : "Oops! We ran into some problems",
+        "account_missing_code" : "404",
+        "known_accounts" : ["volley.302","cjmariani.94198","cholidsnake.2334"],
+        "category" : "gaming",
+        "valid" : true
       }
    ]
 }
