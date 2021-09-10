@@ -3309,6 +3309,28 @@
         "known_accounts" : ["volley.302","cjmariani.94198","cholidsnake.2334"],
         "category" : "gaming",
         "valid" : true
+      },
+      {
+        "name" : "Justforfans",
+        "check_uri" : "https://justfor.fans/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : " @ JustFor.Fans",
+        "account_missing_string" : "",
+        "account_missing_code" : "302",
+        "known_accounts" : ["devinfrancoxxx","RileyChaux"],
+        "category" : "XXXPORNXXX",
+        "valid" : true
+      },
+      {
+        "name" : "Stripchat",
+        "check_uri" : "https://stripchat.com/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "I Do in My Shows:",
+        "account_missing_string" : "Oops. The page you were looking for doesn't exist",
+        "account_missing_code" : "404",
+        "known_accounts" : ["DulcieRichard","Selenaneshy"],
+        "category" : "XXXPORNXXX",
+        "valid" : true
       }
    ]
 }
