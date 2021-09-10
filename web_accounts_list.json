@@ -1908,6 +1908,7 @@
         "valid" : true
       },
       {
+        "name" : "Protonmail",
         "check_uri" : "https://account.protonmail.com/api/users/available?Name={account}",
         "http_header_key" : "{x-pm-appversion:Other}",
         "account_existence_code" : "409",
