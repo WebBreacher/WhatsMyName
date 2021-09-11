@@ -3200,7 +3200,7 @@
         "valid" : true
       },
       {
-        "name" : "Picuki",
+        "name" : "Instagram",
         "pretty_uri" : "https://instagram.com/{account}",
         "check_uri" : "https://www.picuki.com/profile/{account}",
         "account_existence_code" : "200",
