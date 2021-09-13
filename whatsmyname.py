@@ -28,6 +28,7 @@ opts = Options()
 opts.headless = True
 
 debug_mode = False
+running_positives = []
 user_agent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/93.0.4577.63 Safari/537.36'
 
 # Set HTTP Header info.
@@ -80,6 +81,7 @@ def web_call_response_code(location):
     if debug_mode:
         print('- Requesting site for HTTP response code.')
     driver_wire = wdwire.Firefox(options=opts)
+    driver_wire.set_page_load_timeout(30)
     driver_wire.get(location)
     for request in driver_wire.requests:
         if location in request.url:
@@ -95,6 +97,7 @@ def web_call_html_source(location):
     if debug_mode:
         print('- Requesting site for HTML.')
     driver = wd.Firefox(options=opts)
+    driver.set_page_load_timeout(30)
     driver.get(location)
     source = driver.page_source
     driver.close()
@@ -114,7 +117,7 @@ def find_sites_to_check(args, data):
         neutral(' Checking %d sites' % len(sites_to_check))
         return sites_to_check
     else:
-        neutral('%d sites found in file.' % len(data['sites']))
+        neutral('[ ] %d sites found in file.' % len(data['sites']))
         return data['sites']
 
 def check_site(site, username, if_found, if_not_found, if_neither):
@@ -148,6 +151,10 @@ def check_site(site, username, if_found, if_not_found, if_neither):
         COUNTER["ERROR"] += 1
         error("Error when looking up %s (%s)" % (url, str(caught)))
 
+def positive_hit(url):
+    positive(f'[+] User found at {url}')
+    running_positives.append(url)
+
 ###################
 # Main
 ###################
@@ -158,11 +165,11 @@ def main():
     if args.debug:
         global debug_mode
         debug_mode = args.debug
-        print('Debug output enabled')
+        print('[!] Debug output enabled')
 
     if args.useragent:
         HEADERS['User-Agent'] = user_agent
-        print('Custom UserAgent enabled')
+        print('[!] Custom UserAgent enabled')
 
     # Add this in case user presses CTRL-C
     signal.signal(signal.SIGINT, signal_handler)
@@ -181,35 +188,37 @@ def main():
     try:
         for site in sites_to_check:
             if not site['valid']:
-                warn("[!] Skipping %s - Marked as not valid." % site['name'])
+                warn(f"[!] Skipping {site['name']} - Marked as not valid.")
                 continue
 
             if args.username:
                 check_site(site, args.username,
-                           if_found     = lambda url: positive("[+] User found at %s" % url),
-                           if_not_found = lambda url: neutral( "[-] User not found at %s" % url),
-                           if_neither   = lambda url: error(   "[! ] Error. The check implementation is broken for %s" % url))
+                           if_found     = lambda url: positive_hit(url),
+                           if_not_found = lambda url: neutral( f'[-] User not found at {url}'),
+                           if_neither   = lambda url: error(   f'[!] Error. The check implementation is broken for {url}'))
             else:
                 non_existent = ''.join(random.choice(string.ascii_lowercase + string.ascii_uppercase + string.digits) for x in range(10))
 
                 check_site(site, non_existent,
-                           if_found     = lambda url: error(  "[!] False positive for %s" % url),
-                           if_not_found = lambda url: neutral("    As expected, no user found at %s" % url),
-                           if_neither   = lambda url: error(  "[!] Neither conditions matched for %s" % url))
+                           if_found     = lambda url: error(  f'[!] False positive for {url}'),
+                           if_not_found = lambda url: neutral(f'    As expected, no user found at {url}'),
+                           if_neither   = lambda url: error(  f'[!] Neither conditions matched for {url}'))
 
                 for known_account in site['known_accounts']:
                     check_site(site, known_account,
-                               if_found     = lambda url: neutral("    As expected, profile found at %s" % url),
-                               if_not_found = lambda url: error(  "[!] Profile not found at %s" % url),
-                               if_neither   = lambda url: error(  "[!] Neither conditions matched for %s" % url))
+                               if_found     = lambda url: neutral(f'    As expected, profile found at {url}'),
+                               if_not_found = lambda url: error(  f'[!] Profile not found at {url}'),
+                               if_neither   = lambda url: error(  f'[!] Neither conditions matched for {url}'))
     finally:
-        neutral("")
-        neutral("Processing completed")
-        if COUNTER["FOUND"]:
-           positive("%d sites found" % COUNTER["FOUND"])
-        if COUNTER["ERROR"]:
-           error("%d errors encountered" % COUNTER["ERROR"])
-           sys.exit(2)
+        neutral('')
+        neutral('[ ] Processing completed')
+        if COUNTER['FOUND']:
+            positive("[+] %d sites found" % COUNTER["FOUND"])
+            for positive_url in sorted(running_positives):
+                positive(f'    {positive_url}')
+        if COUNTER['ERROR']:
+            error("[!] %d errors encountered" % COUNTER["ERROR"])
+            sys.exit(2)
 
 if __name__ == "__main__":
     # execute only if run as a script
