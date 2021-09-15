@@ -22,6 +22,17 @@
         "valid" : true
       },
       {
+        "name" : "Artists & Clients",
+        "check_uri" : "https://artistsnclients.com/people/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "Member Since",
+        "account_missing_code" : "404",
+        "account_missing_string" : "The page you requested wasn't there when we tried to get it for you. What a bother!",
+        "known_accounts" : ["luluc0", "MuraArts"],
+        "category" : "art",
+        "valid" : true
+      },
+      {
         "name" : "Ameblo",
         "check_uri" : "https://ameblo.jp/{account}",
         "account_existence_code" : "200",
@@ -29,6 +40,17 @@
         "account_missing_string" : "削除された可能性がございます。",
         "account_missing_code" : "404",
         "known_accounts" : [ "ereko-blog", "senpai" ],
+        "category" : "blog",
+        "valid" : true
+      },
+      {
+        "name" : "Aminoapps",
+        "check_uri" : "https://aminoapps.com/u/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "Stories",
+        "account_missing_code" : "404",
+        "account_missing_string" : "Ooops, this content does not exist.",
+        "known_accounts" : ["Ace143", "dottovuu"],
         "category" : "blog",
         "valid" : true
       },
@@ -133,6 +155,17 @@
         "valid" : true
       },
       {
+        "name" : "carrd.co",
+        "check_uri" : "https://{account}.carrd.co",
+        "account_existence_code" : "200",
+        "account_existence_string" : "( Made with Carrd )",
+        "account_missing_code" : "404",
+        "account_missing_string" : "Sorry, the requested page could not be found.",
+        "known_accounts" : ["miltia"],
+        "category" : "business",
+        "valid" : true
+      },
+      {
         "name" : "CastingCallClub",
         "check_uri" : "https://www.castingcall.club/m/{account}",
         "account_existence_code" : "200",
@@ -218,6 +251,17 @@
         "account_missing_code" : "404",
         "known_accounts" : ["john", "red"],
         "category" : "images",
+        "valid" : true
+      },
+      {
+        "name" : "Cytoid",
+        "check_uri" : "https://cytoid.io/profile/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "Joined",
+        "account_missing_code" : "404",
+        "account_missing_string" : "Profile not found",
+        "known_accounts" : ["nyla"],
+        "category" : "gaming",
         "valid" : true
       },
       {
@@ -2044,6 +2088,17 @@
         "valid" : true
       },
       {
+        "name" : "Roleplay.me",
+        "check_uri" : "https://www.roleplay.me/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "Last Visited:",
+        "account_missing_code" : "404",
+        "account_missing_string" : "The link you followed may be broken or the page may have been removed.",
+        "known_accounts" : ["adorealoi"],
+        "category" : "social",
+        "valid" : true
+      },
+      {
         "name" : "Rotten Tomatoes",
         "check_uri" : "https://www.rottentomatoes.com/critic/{account}/movies",
         "account_existence_code" : "200",
@@ -2085,6 +2140,17 @@
         "account_missing_code" : "404",
         "known_accounts" : ["bendobrin","michi"],
         "category" : "music",
+        "valid" : true
+      },
+      {
+        "name" : "skeb",
+        "check_uri" : "https://skeb.jp/@{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "Sent Requests",
+        "account_missing_code" : "404",
+        "account_missing_string" : "Not Found",
+        "known_accounts" : ["eipuru_"],
+        "category" : "art",
         "valid" : true
       },
       {
@@ -2317,6 +2383,18 @@
         "known_accounts" : ["Alexey","johnstoke","john"],
         "category" : "dating",
         "valid" : true
+      },
+      {
+        "name" : "Trello",
+        "check_uri" : "https://trello.com/1/Members/{account}?fields=activityBlocked%2CavatarUrl%2Cbio%2CbioData%2Cconfirmed%2CfullName%2CidEnterprise%2CidMemberReferrer%2Cinitials%2CmemberType%2CnonPublic%2Cproducts%2Curl%2Cusername",
+        "pretty_uri" : "https://trello.com/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "avatarUrl",
+        "account_missing_code" : "404",
+        "account_missing_string" : "Oh no! 404!",
+        "known_accounts" : ["naranjasan"],
+        "category" : "social",
+        "valid": true
       },
       {
         "name" : "tripadvisor",
