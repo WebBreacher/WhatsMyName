@@ -161,7 +161,7 @@
         "account_existence_string" : "( Made with Carrd )",
         "account_missing_code" : "404",
         "account_missing_string" : "Sorry, the requested page could not be found.",
-        "known_accounts" : ["miltia"],
+        "known_accounts" : ["miltia", "info"],
         "category" : "business",
         "valid" : true
       },
@@ -260,7 +260,7 @@
         "account_existence_string" : "Joined",
         "account_missing_code" : "404",
         "account_missing_string" : "Profile not found",
-        "known_accounts" : ["nyla"],
+        "known_accounts" : ["nyala", "speedymlg7"],
         "category" : "gaming",
         "valid" : true
       },
@@ -2094,7 +2094,7 @@
         "account_existence_string" : "Last Visited:",
         "account_missing_code" : "404",
         "account_missing_string" : "The link you followed may be broken or the page may have been removed.",
-        "known_accounts" : ["adorealoi"],
+        "known_accounts" : ["adorealoi", "starburst"],
         "category" : "social",
         "valid" : true
       },
@@ -2144,12 +2144,13 @@
       },
       {
         "name" : "skeb",
-        "check_uri" : "https://skeb.jp/@{account}",
+        "check_uri" : "https://skeb.jp/api/users/{account}",
+        "pretty_url" : "https://skeb.jp/@{account}",
         "account_existence_code" : "200",
-        "account_existence_string" : "Sent Requests",
+        "account_existence_string" : "avatar_url",
         "account_missing_code" : "404",
-        "account_missing_string" : "Not Found",
-        "known_accounts" : ["eipuru_"],
+        "account_missing_string" : "",
+        "known_accounts" : ["eipuru_", "sime064"],
         "category" : "art",
         "valid" : true
       },
@@ -2392,7 +2393,7 @@
         "account_existence_string" : "avatarUrl",
         "account_missing_code" : "404",
         "account_missing_string" : "Oh no! 404!",
-        "known_accounts" : ["naranjasan"],
+        "known_accounts" : ["naranjasan", "jane"],
         "category" : "social",
         "valid": true
       },
