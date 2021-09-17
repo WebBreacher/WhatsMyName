@@ -22,6 +22,17 @@
         "valid" : true
       },
       {
+        "name" : "Artists & Clients",
+        "check_uri" : "https://artistsnclients.com/people/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "Member Since",
+        "account_missing_code" : "404",
+        "account_missing_string" : "The page you requested wasn't there when we tried to get it for you. What a bother!",
+        "known_accounts" : ["luluc0", "MuraArts"],
+        "category" : "art",
+        "valid" : true
+      },
+      {
         "name" : "Ameblo",
         "check_uri" : "https://ameblo.jp/{account}",
         "account_existence_code" : "200",
@@ -29,6 +40,17 @@
         "account_missing_string" : "削除された可能性がございます。",
         "account_missing_code" : "404",
         "known_accounts" : [ "ereko-blog", "senpai" ],
+        "category" : "blog",
+        "valid" : true
+      },
+      {
+        "name" : "Aminoapps",
+        "check_uri" : "https://aminoapps.com/u/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "Stories",
+        "account_missing_code" : "404",
+        "account_missing_string" : "Ooops, this content does not exist.",
+        "known_accounts" : ["Ace143", "dottovuu"],
         "category" : "blog",
         "valid" : true
       },
@@ -88,6 +110,17 @@
         "valid" : true
       },
       {
+        "name" : "Avid Community",
+        "check_uri" : "https://community.avid.com/members/{account}/default.aspx",
+        "account_existence_code" : "200",
+        "account_existence_string" : "My Activity",
+        "account_missing_code" : "302",
+        "account_missing_string" : "The user you requested cannot be found.",
+        "known_accounts" : ["Thayne", "Admin"],
+        "category" : "music",
+        "valid" : true
+      },
+      {
         "name" : "BiggerPockets",
         "check_uri" : "https://www.biggerpockets.com/users/{account}",
         "account_existence_code" : "200",
@@ -119,6 +152,28 @@
         "account_missing_code" : "404",
         "known_accounts" : ["freebird","robinwong"],
         "category" : "finance",
+        "valid" : true
+      },
+      {
+        "name" : "carrd.co",
+        "check_uri" : "https://{account}.carrd.co",
+        "account_existence_code" : "200",
+        "account_existence_string" : "( Made with Carrd )",
+        "account_missing_code" : "404",
+        "account_missing_string" : "Sorry, the requested page could not be found.",
+        "known_accounts" : ["miltia", "info"],
+        "category" : "business",
+        "valid" : true
+      },
+      {
+        "name" : "CastingCallClub",
+        "check_uri" : "https://www.castingcall.club/m/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "Total Auditions",
+        "account_missing_code" : "302",
+        "account_missing_string" : "404: This is not the page you were looking for. In the future, our AI robot overlords will be able to better predict exactly what you were looking for.",
+        "known_accounts" : ["Lindz", "Danye"],
+        "category" : "hobby",
         "valid" : true
       },
       {
@@ -196,6 +251,17 @@
         "account_missing_code" : "404",
         "known_accounts" : ["john", "red"],
         "category" : "images",
+        "valid" : true
+      },
+      {
+        "name" : "Cytoid",
+        "check_uri" : "https://cytoid.io/profile/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "Joined",
+        "account_missing_code" : "404",
+        "account_missing_string" : "Profile not found",
+        "known_accounts" : ["nyala", "speedymlg7"],
+        "category" : "gaming",
         "valid" : true
       },
       {
@@ -532,6 +598,18 @@
         "valid" : true
       },
       {
+        "name" : "Shanii Writes",
+        "check_uri" : "https://forum.shanniiwrites.com/u/{account}/summary.json",
+        "pretty_uri" : "https://forum.shanniiwrites.com/u/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "topics",
+        "account_missing_code" : "404",
+        "account_missing_string" : "The requested URL or resource could not be found.",
+        "known_accounts" : ["chococarmela", "wolfgamergirl37"],
+        "category" : "social",
+        "valid" : true
+      },
+      {
         "name" : "shopify",
         "check_uri" : "https://{account}.myshopify.com",
         "account_existence_code" : "200",
@@ -717,6 +795,18 @@
         "account_missing_string" : "<h2>Sorry, that something isn’t here.</h2>",
         "account_missing_code" : "404",
         "known_accounts" : ["alice", "bob"],
+        "category" : "music",
+        "valid" : true
+      },
+      {
+        "name" : "Bandlab",
+        "check_uri" : "https://www.bandlab.com/api/v1.3/users/{account}",
+        "pretty_uri" : "https://www.bandlab.com/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "about",
+        "account_missing_code" : "404",
+        "account_missing_string" : "Couldn't find any matching element, it might be deleted",
+        "known_accounts" : ["rave_flawless", "delutaya"],
         "category" : "music",
         "valid" : true
       },
@@ -954,6 +1044,29 @@
         "valid" : true
       },
       {
+        "name" : "Discogs",
+        "check_uri" : "https://www.discogs.com/user/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "Joined on",
+        "account_missing_code" : "404",
+        "account_missing_string" : "We couldn't find that page.",
+        "known_accounts" : ["7jlong", "venetian-guy"],
+        "category" : "music",
+        "valid" : true
+      },
+      {
+        "name" : "Discourse",
+        "check_uri" : "https://meta.discourse.org/u/{account}/summary.json",
+        "pretty_uri" : "https://meta.discourse.org/u/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "topics",
+        "account_missing_code" : "404",
+        "account_missing_string" : "The requested URL or resource could not be found.",
+        "known_accounts" : ["ndalliard", "gerhard"],
+        "category" : "misc",
+        "valid" : true
+      },
+      {
         "name" : "discuss.elastic.co",
         "check_uri" : "https://discuss.elastic.co/u/{account}",
         "account_existence_code" : "200",
@@ -1082,17 +1195,6 @@
         "account_missing_string" : "Page Not Found - F3",
         "account_missing_code" : "404",
         "known_accounts" : ["nick","john"],
-        "category" : "social",
-        "valid" : true
-      },
-      {
-        "name" : "Facebook",
-        "check_uri" : "https://mbasic.facebook.com/{account}",
-        "account_existence_code" : "200",
-        "account_existence_string" : " is on Facebook.",
-        "account_missing_string" : "",
-        "account_missing_code" : "404",
-        "known_accounts" : ["phil","becca"],
         "category" : "social",
         "valid" : true
       },
@@ -1764,6 +1866,17 @@
         "valid" : true
       },
       {
+        "name" : "osu!",
+        "check_uri" : "https://osu.ppy.sh/users/{account}",
+        "account_existence_code" : "302",
+        "account_existence_string" : "",
+        "account_missing_string" : "User not found! ;_;",
+        "account_missing_code" : "404",
+        "known_accounts" : ["stretches", "spiken8"],
+        "category" : "gaming",
+        "valid" : true
+      },
+      {
         "name" : "PatientsLikeMe",
         "check_uri" : "https://www.patientslikeme.com/members/{account}",
         "account_existence_code" : "200",
@@ -1975,6 +2088,17 @@
         "valid" : true
       },
       {
+        "name" : "Roleplay.me",
+        "check_uri" : "https://www.roleplay.me/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "Last Visited:",
+        "account_missing_code" : "404",
+        "account_missing_string" : "The link you followed may be broken or the page may have been removed.",
+        "known_accounts" : ["adorealoi", "starburst"],
+        "category" : "social",
+        "valid" : true
+      },
+      {
         "name" : "Rotten Tomatoes",
         "check_uri" : "https://www.rottentomatoes.com/critic/{account}/movies",
         "account_existence_code" : "200",
@@ -2016,6 +2140,18 @@
         "account_missing_code" : "404",
         "known_accounts" : ["bendobrin","michi"],
         "category" : "music",
+        "valid" : true
+      },
+      {
+        "name" : "skeb",
+        "check_uri" : "https://skeb.jp/api/users/{account}",
+        "pretty_url" : "https://skeb.jp/@{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "avatar_url",
+        "account_missing_code" : "404",
+        "account_missing_string" : "",
+        "known_accounts" : ["eipuru_", "sime064"],
+        "category" : "art",
         "valid" : true
       },
       {
@@ -2250,6 +2386,18 @@
         "valid" : true
       },
       {
+        "name" : "Trello",
+        "check_uri" : "https://trello.com/1/Members/{account}?fields=activityBlocked%2CavatarUrl%2Cbio%2CbioData%2Cconfirmed%2CfullName%2CidEnterprise%2CidMemberReferrer%2Cinitials%2CmemberType%2CnonPublic%2Cproducts%2Curl%2Cusername",
+        "pretty_uri" : "https://trello.com/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "avatarUrl",
+        "account_missing_code" : "404",
+        "account_missing_string" : "Oh no! 404!",
+        "known_accounts" : ["naranjasan", "jane"],
+        "category" : "social",
+        "valid": true
+      },
+      {
         "name" : "tripadvisor",
         "check_uri" : "https://www.tripadvisor.com/Profile/{account}",
         "account_existence_code" : "200",
@@ -2414,6 +2562,18 @@
         "account_missing_code" : "404",
         "known_accounts" : ["ches_ches","mike.kidlazy"],
         "category" : "social",
+        "valid" : true
+      },
+      {
+        "name" : "Voice123",
+        "check_uri" : "https://voice123.com/api/providers/search/{account}",
+        "pretty_uri" : "https://voice123.com/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "user_id",
+        "account_missing_code" : "200",
+        "account_missing_string" : "[]",
+        "known_accounts" : ["dottovuu", "maheshsaha1992"],
+        "category" : "hobby",
         "valid" : true
       },
       {
@@ -3319,6 +3479,28 @@
         "account_missing_code" : "302",
         "known_accounts" : ["devinfrancoxxx","RileyChaux"],
         "category" : "XXXPORNXXX",
+        "valid" : true
+      },
+      {
+        "name" : "zhihu",
+        "check_uri" : "https://www.zhihu.com/people/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "zhihu:voteupCount",
+        "account_missing_string" : "ErrorPage-subtitle",
+        "account_missing_code" : "400",
+        "known_accounts" : ["lushnis","kan-shu-jiao-hua-shai-tai-yang"],
+        "category" : "social",
+        "valid" : true
+      },
+      {
+        "name" : "Roblox",
+        "check_uri" : "https://auth.roblox.com/v1/usernames/validate?username={account}&birthday=2019-12-31T23:00:00.000Z",
+        "account_existence_code" : "200",
+        "account_existence_string" : "Username is already in use",
+        "account_missing_string" : "Username is valid",
+        "account_missing_code" : "200",
+        "known_accounts" : ["LeetPawn","elephant459"],
+        "category" : "gaming",
         "valid" : true
       },
       {
