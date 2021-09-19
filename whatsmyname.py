@@ -8,20 +8,38 @@ This script does several things:
 
 '''
 
+# Todo:
+# 1. CSV output
+# 2. threading
+# 3. Output text file with positive reuslts
+# DONE 4. Change all strings to be quoted with ' not "
+# DONE 5. Change all formatted string to use f' not %
+# 6. Use logging instead of pos, neutral, error
+
 import argparse
+import codecs
 import collections
+from datetime import datetime
+#import csv
 import json
 import os
 import random
 import signal
 import string
 import sys
+import time
+
+import threading
+#import logging
 
 from selenium import webdriver as wd
 from seleniumwire import webdriver as wdwire
 from selenium.webdriver.firefox.options import Options
 
 COUNTER = collections.Counter()
+
+# Set logging formatting TODO
+#logging.basicConfig(level=logging.INFO, format='%(message)s')
 
 # Selenium Options
 opts = Options()
@@ -31,7 +49,7 @@ debug_mode = False
 running_positives = []
 user_agent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/93.0.4577.63 Safari/537.36'
 
-# Set HTTP Header info.
+# Set HTTP Header information
 HEADERS = {'Accept' : 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
            'Accept-Language' : 'en-US,en;q=0.5',
            'Accept-Encoding' : 'gzip, deflate'
@@ -39,47 +57,57 @@ HEADERS = {'Accept' : 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*
 
 # Command line input
 parser = argparse.ArgumentParser(description='This standalone script will look up a single username using the JSON file'
-                                 ' or, if no usernames are passed to it, will run a check of the JSON file for bad'
-                                 ' detection strings.')
-parser.add_argument('-a', '--useragent', help="Toggle using a custom UserAgent for web calls [Default = off]", action="store_true",
+                                 ' and output a text file with positive results. or, if no usernames are passed to it,'
+                                 ' will run a check of the JSON file for bad detection strings.')
+parser.add_argument('-a', '--useragent', help='Toggle using a custom UserAgent for web calls [Default = off]', action='store_true',
                     default=False)
-parser.add_argument('-d', '--debug', help="Enable debug output [Default = off]", action="store_true")
-parser.add_argument('-in', '--inputfile', nargs='?', help="[OPTIONAL] Uses a specified file for checking the websites")
+#parser.add_argument('-c', '--csv', help='Output results as CSV', action='store_true')
+parser.add_argument('-d', '--debug', help='Enable debug output [Default = off]', action='store_true')
+parser.add_argument('-i', '--inputfile', nargs='?', help='[OPTIONAL] If you want to use a JSON file other than the main one,'
+                    ' pass the file name here.')
 parser.add_argument('-s', '--site', nargs='*', help='If this parameter is passed the script will check only the named site'
                     ' or list of sites.')
 parser.add_argument('-u', '--username', help='If this param is passed then this script will perform the '
                     'lookups against the given user name instead of running checks against the JSON file.')
 
-if os.name == "posix":
+if os.name == 'posix':
     class Colors:
-        YELLOW = "\033[93m"
         RED = "\033[91m"
         GREEN = "\033[92m"
+        YELLOW = "\033[93m"
+        MAGENTA = "\033[95m"
+        CYAN = "\033[96m"
         ENDC = "\033[0m"
 else:
     class Colors:
-        YELLOW = ""
-        RED = ""
-        GREEN = ""
-        ENDC = ""
+        RED = ''
+        GREEN = ''
+        YELLOW = ''
+        MAGENTA = ''
+        CYAN = ''
+        ENDC = ''
 
-def warn(msg):
-    print(Colors.YELLOW + msg + Colors.ENDC)
 def error(msg):
-    print(Colors.RED + msg + Colors.ENDC)
+    print(Colors.RED + '[!] ERROR! ' + msg + Colors.ENDC)
 def positive(msg):
-    print(Colors.GREEN + msg + Colors.ENDC)
+    print(Colors.GREEN + '[+] ' +msg + Colors.ENDC)
+def warn(msg):
+    print(Colors.YELLOW + '[*] WARNING. ' + msg + Colors.ENDC)
+def startstop(msg):
+    print(Colors.CYAN + '    ' + msg + Colors.ENDC)
+def debug(msg):
+    print(Colors.MAGENTA + '[>] ' + msg + Colors.ENDC)
 def neutral(msg):
-    print(msg)
+    print('[ ] ' + msg)
 
 def signal_handler(*_):
-    error(' !!!  You pressed Ctrl+C. Exiting script.')
+    error('You pressed Ctrl+C. Exiting script.')
     sys.exit(130)
 
 def web_call_response_code(location):
     # Get HTTP Response Code using Selenium-wire
     if debug_mode:
-        print('- Requesting site for HTTP response code.')
+        debug('Requesting site for HTTP response code.')
     driver_wire = wdwire.Firefox(options=opts)
     driver_wire.set_page_load_timeout(30)
     driver_wire.get(location)
@@ -95,7 +123,7 @@ def web_call_response_code(location):
 def web_call_html_source(location):
     # Get HTML source using Selenium for JS bypassing
     if debug_mode:
-        print('- Requesting site for HTML.')
+        debug('Requesting site for HTML.')
     driver = wd.Firefox(options=opts)
     driver.set_page_load_timeout(30)
     driver.get(location)
@@ -113,11 +141,11 @@ def find_sites_to_check(args, data):
             sys.exit(1)
         sites_not_found = len(args.site) - len(sites_to_check)
         if sites_not_found:
-            warn('WARNING: %d requested sites were not found in the list' % sites_not_found)
-        neutral(' Checking %d sites' % len(sites_to_check))
+            warn(f'{sites_not_found} requested sites were not found in the list')
+        neutral('Checking %d sites' % len(sites_to_check))
         return sites_to_check
     else:
-        neutral('[ ] %d sites found in file.' % len(data['sites']))
+        neutral(f'{len(data["sites"])} sites found in file.')
         return data['sites']
 
 def check_site(site, username, if_found, if_not_found, if_neither):
@@ -130,29 +158,29 @@ def check_site(site, username, if_found, if_not_found, if_neither):
         string_match = resp_html_source.find(site['account_existence_string']) > 0
 
         if debug_mode:
-            neutral("- HTTP status (match %s): %s " % (code_match, resp_code))
-            neutral("- HTTP response (match: %s): %s" % (string_match, resp_html_source))
+            neutral(f'HTTP status (match {code_match}): {resp_code}')
+            neutral(f'HTTP response (match: {string_match}): {resp_html_source}')
 
         if code_match and string_match:
-            COUNTER["FOUND"] += 1
+            COUNTER['FOUND'] += 1
             return if_found(url)
 
         code_missing_match = resp_code == int(site['account_missing_code'])
         string_missing_match = resp_html_source.find(site['account_missing_string']) > 0
 
         if code_missing_match or string_missing_match:
-            COUNTER["NOT_FOUND"] += 1
+            COUNTER['NOT_FOUND'] += 1
             return if_not_found(url)
 
-        COUNTER["ERROR"] += 1
+        COUNTER['ERROR'] += 1
         return if_neither(url)
 
     except Exception as caught:
-        COUNTER["ERROR"] += 1
-        error("Error when looking up %s (%s)" % (url, str(caught)))
+        COUNTER['ERROR'] += 1
+        error(f'Error when looking up {url} ({str(caught)})')
 
 def positive_hit(url):
-    positive(f'[+] User found at {url}')
+    positive(f'User found at {url}')
     running_positives.append(url)
 
 ###################
@@ -160,27 +188,32 @@ def positive_hit(url):
 ###################
 
 def main():
+    startstop('--------------------------------')
+    startstop('')
+    startstop('Starting the whatsmyname script')
+    startstop('')
+
     args = parser.parse_args()
 
     if args.debug:
         global debug_mode
         debug_mode = args.debug
-        print('[!] Debug output enabled')
+        neutral('Debug output enabled')
 
     if args.useragent:
         HEADERS['User-Agent'] = user_agent
-        print('[!] Custom UserAgent enabled')
+        neutral(f'Custom UserAgent enabled. Using {user_agent}')
 
     # Add this in case user presses CTRL-C
     signal.signal(signal.SIGINT, signal_handler)
 
     # Read in the JSON file
     if (args.inputfile):
-        inputfile = args.inputfile
+        input_file = args.inputfile
     else:
-        inputfile = 'web_accounts_list.json'
+        input_file = 'web_accounts_list.json'
 
-    with open(inputfile) as data_file:
+    with open(input_file) as data_file:
         data = json.load(data_file)
 
     sites_to_check = find_sites_to_check(args, data)
@@ -188,38 +221,72 @@ def main():
     try:
         for site in sites_to_check:
             if not site['valid']:
-                warn(f"[!] Skipping {site['name']} - Marked as not valid.")
+                warn(f'Skipping {site["name"]} - Marked as not valid.')
                 continue
 
             if args.username:
                 check_site(site, args.username,
                            if_found     = lambda url: positive_hit(url),
-                           if_not_found = lambda url: neutral( f'[-] User not found at {url}'),
-                           if_neither   = lambda url: error(   f'[!] Error. The check implementation is broken for {url}'))
+                           if_not_found = lambda url: neutral( f'User not found at {url}'),
+                           if_neither   = lambda url: error(f'The check implementation is broken for {url}'))
             else:
+                # Create a random string to be used for the "nonexistent" user
                 non_existent = ''.join(random.choice(string.ascii_lowercase + string.ascii_uppercase + string.digits) for x in range(10))
 
                 check_site(site, non_existent,
-                           if_found     = lambda url: error(  f'[!] False positive for {url}'),
+                           if_found     = lambda url: error(  f'False positive for {url}'),
                            if_not_found = lambda url: neutral(f'    As expected, no user found at {url}'),
-                           if_neither   = lambda url: error(  f'[!] Neither conditions matched for {url}'))
+                           if_neither   = lambda url: error(  f'Neither conditions matched for {url}'))
 
                 for known_account in site['known_accounts']:
                     check_site(site, known_account,
                                if_found     = lambda url: neutral(f'    As expected, profile found at {url}'),
-                               if_not_found = lambda url: error(  f'[!] Profile not found at {url}'),
-                               if_neither   = lambda url: error(  f'[!] Neither conditions matched for {url}'))
+                               if_not_found = lambda url: error(  f'Profile not found at {url}'),
+                               if_neither   = lambda url: error(  f'Neither conditions matched for {url}'))
     finally:
         neutral('')
-        neutral('[ ] Processing completed')
+        neutral('Processing completed')
         if COUNTER['FOUND']:
-            positive("[+] %d sites found" % COUNTER["FOUND"])
-            for positive_url in sorted(running_positives):
-                positive(f'    {positive_url}')
+            positive(f'{COUNTER["FOUND"]} sites found')
+            timestamp = time.strftime('%Y%m%d_%H%M%S', time.localtime())
+            outputfile = f'{timestamp}_{args.username}.txt'
+            with open(outputfile, 'w') as f:
+                for positive_url in sorted(running_positives):
+                    positive(f'    {positive_url}')
+                    f.write(f'{positive_url}\n')
+            neutral(f'The URLs where the username was found were exported to file: {outputfile}')
         if COUNTER['ERROR']:
-            error("[!] %d errors encountered" % COUNTER["ERROR"])
+            error(f'{COUNTER["ERROR"]} errors encountered')
+            startstop('')
+            startstop('Script completed')
+            startstop('')
+            startstop('--------------------------------')
+            startstop('')
             sys.exit(2)
+
+    neutral('')
+    if COUNTER['FOUND'] == 0:
+        warn('Script completed and no positive results were found.')
+    else:
+        startstop('Script completed')
+    startstop('')
+    startstop('--------------------------------')
+    startstop('')
 
 if __name__ == "__main__":
     # execute only if run as a script
     main()
+
+    '''# Start threads
+    threads = []
+
+    start_time = datetime.utcnow()
+    for site_ in data['sites']:
+        x = threading.Thread(target=check_site, args=(site_, args.username), daemon=True)
+        threads.append(x)
+
+    for thread in threads:
+        thread.start()
+
+    for thread in threads:
+        thread.join()'''
