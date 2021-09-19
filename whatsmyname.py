@@ -12,9 +12,11 @@ This script does several things:
 # 1. CSV output
 # 2. threading
 # 3. Output text file with positive reuslts
-# DONE 4. Change all strings to be quoted with ' not "
-# DONE 5. Change all formatted string to use f' not %
 # 6. Use logging instead of pos, neutral, error
+
+#
+# Import Libraries
+#
 
 import argparse
 import codecs
@@ -36,14 +38,14 @@ from selenium import webdriver as wd
 from seleniumwire import webdriver as wdwire
 from selenium.webdriver.firefox.options import Options
 
+#
+# Variables and Setup
+#
+
 COUNTER = collections.Counter()
 
 # Set logging formatting TODO
 #logging.basicConfig(level=logging.INFO, format='%(message)s')
-
-# Selenium Options
-opts = Options()
-opts.headless = True
 
 debug_mode = False
 running_positives = []
@@ -87,16 +89,33 @@ else:
         CYAN = ''
         ENDC = ''
 
+# Selenium Options
+opts = Options()
+opts.headless = True
+
+#
+# Functions
+#
+
+# Colorization
 def error(msg):
     print(Colors.RED + '[!] ERROR! ' + msg + Colors.ENDC)
+
 def positive(msg):
     print(Colors.GREEN + '[+] ' +msg + Colors.ENDC)
+
 def warn(msg):
     print(Colors.YELLOW + '[*] WARNING. ' + msg + Colors.ENDC)
+
 def startstop(msg):
-    print(Colors.CYAN + '    ' + msg + Colors.ENDC)
+    print(Colors.CYAN + msg + Colors.ENDC)
+
 def debug(msg):
     print(Colors.MAGENTA + '[>] ' + msg + Colors.ENDC)
+
+def negative(msg):
+    print('[-] ' + msg)
+
 def neutral(msg):
     print('[ ] ' + msg)
 
@@ -145,6 +164,7 @@ def find_sites_to_check(args, data):
         neutral('Checking %d sites' % len(sites_to_check))
         return sites_to_check
     else:
+        startstop('')
         neutral(f'{len(data["sites"])} sites found in file.')
         return data['sites']
 
@@ -227,7 +247,7 @@ def main():
             if args.username:
                 check_site(site, args.username,
                            if_found     = lambda url: positive_hit(url),
-                           if_not_found = lambda url: neutral( f'User not found at {url}'),
+                           if_not_found = lambda url: negative( f'User not found at {url}'),
                            if_neither   = lambda url: error(f'The check implementation is broken for {url}'))
             else:
                 # Create a random string to be used for the "nonexistent" user
@@ -244,8 +264,8 @@ def main():
                                if_not_found = lambda url: error(  f'Profile not found at {url}'),
                                if_neither   = lambda url: error(  f'Neither conditions matched for {url}'))
     finally:
-        neutral('')
-        neutral('Processing completed')
+        startstop('')
+        startstop('Processing completed')
         if COUNTER['FOUND']:
             positive(f'{COUNTER["FOUND"]} sites found')
             timestamp = time.strftime('%Y%m%d_%H%M%S', time.localtime())
@@ -254,7 +274,7 @@ def main():
                 for positive_url in sorted(running_positives):
                     positive(f'    {positive_url}')
                     f.write(f'{positive_url}\n')
-            neutral(f'The URLs where the username was found were exported to file: {outputfile}')
+            positive(f'    The URLs where the username was found were exported to file: {outputfile}')
         if COUNTER['ERROR']:
             error(f'{COUNTER["ERROR"]} errors encountered')
             startstop('')
@@ -264,11 +284,16 @@ def main():
             startstop('')
             sys.exit(2)
 
-    neutral('')
+    startstop('')
     if COUNTER['FOUND'] == 0:
         warn('Script completed and no positive results were found.')
     else:
         startstop('Script completed')
+    
+    # Cleanup Gecko log
+    if os.path.isfile('geckodriver.log'):
+        os.remove('geckodriver.log')
+
     startstop('')
     startstop('--------------------------------')
     startstop('')
