@@ -11,28 +11,26 @@ This script does several things:
 # Todo:
 # 1. CSV output
 # 2. threading
-# 3. Output text file with positive reuslts
-# 6. Use logging instead of pos, neutral, error
+# 7. Detect if username has non-url-friendly characters and would be used as subdomain
+    # and not run tests on sites that don't make sense
+# 8. Ctrl-C chould generate output of already-checked sites both to file and to screen
 
 #
 # Import Libraries
 #
 
 import argparse
-import codecs
+#import codecs
 import collections
 from datetime import datetime
-#import csv
 import json
 import os
 import random
 import signal
 import string
 import sys
-import time
-
 import threading
-#import logging
+import time
 
 from selenium import webdriver as wd
 from seleniumwire import webdriver as wdwire
@@ -43,9 +41,6 @@ from selenium.webdriver.firefox.options import Options
 #
 
 COUNTER = collections.Counter()
-
-# Set logging formatting TODO
-#logging.basicConfig(level=logging.INFO, format='%(message)s')
 
 debug_mode = False
 running_positives = []
@@ -63,7 +58,6 @@ parser = argparse.ArgumentParser(description='This standalone script will look u
                                  ' will run a check of the JSON file for bad detection strings.')
 parser.add_argument('-a', '--useragent', help='Toggle using a custom UserAgent for web calls [Default = off]', action='store_true',
                     default=False)
-#parser.add_argument('-c', '--csv', help='Output results as CSV', action='store_true')
 parser.add_argument('-d', '--debug', help='Enable debug output [Default = off]', action='store_true')
 parser.add_argument('-i', '--inputfile', nargs='?', help='[OPTIONAL] If you want to use a JSON file other than the main one,'
                     ' pass the file name here.')
@@ -125,8 +119,6 @@ def signal_handler(*_):
 
 def web_call_response_code(location):
     # Get HTTP Response Code using Selenium-wire
-    if debug_mode:
-        debug('Requesting site for HTTP response code.')
     driver_wire = wdwire.Firefox(options=opts)
     driver_wire.set_page_load_timeout(30)
     driver_wire.get(location)
@@ -134,15 +126,13 @@ def web_call_response_code(location):
         if location in request.url:
             if request.response:
                 if debug_mode:
-                    print(request.url,request.response.status_code)
+                    debug(f'URL: {request.url}, HTTP Response Code: {request.response.status_code}')
                 code = request.response.status_code
     driver_wire.close()
     return code
 
 def web_call_html_source(location):
     # Get HTML source using Selenium for JS bypassing
-    if debug_mode:
-        debug('Requesting site for HTML.')
     driver = wd.Firefox(options=opts)
     driver.set_page_load_timeout(30)
     driver.get(location)
@@ -178,8 +168,14 @@ def check_site(site, username, if_found, if_not_found, if_neither):
         string_match = resp_html_source.find(site['account_existence_string']) > 0
 
         if debug_mode:
-            neutral(f'HTTP status (match {code_match}): {resp_code}')
-            neutral(f'HTTP response (match: {string_match}): {resp_html_source}')
+            if code_match:
+                positive(f'HTTP status (match {code_match}): {resp_code}')
+            else:
+                negative(f'HTTP status (match {code_match}): {resp_code}')
+            if string_match:
+                positive(f'HTTP response (match: {string_match}). HTML source suppressed.')
+            else:
+                negative(f'HTTP response (match: {string_match}): {resp_html_source}')
 
         if code_match and string_match:
             COUNTER['FOUND'] += 1
@@ -210,8 +206,7 @@ def positive_hit(url):
 def main():
     startstop('--------------------------------')
     startstop('')
-    startstop('Starting the whatsmyname script')
-    startstop('')
+    startstop('Starting the WhatsMyName Checking Script')
 
     args = parser.parse_args()
 
@@ -244,29 +239,43 @@ def main():
                 warn(f'Skipping {site["name"]} - Marked as not valid.')
                 continue
 
+                # INSERT THREADING HERE?
+                '''    x = threading.Thread(target=check_site, args=(site_, args.username), daemon=True)
+                    threads.append(x)
+
+                for thread in threads:
+                    thread.start()
+
+                for thread in threads:
+                    thread.join()'''
+
             if args.username:
                 check_site(site, args.username,
                            if_found     = lambda url: positive_hit(url),
                            if_not_found = lambda url: negative( f'User not found at {url}'),
                            if_neither   = lambda url: error(f'The check implementation is broken for {url}'))
             else:
-                # Create a random string to be used for the "nonexistent" user
-                non_existent = ''.join(random.choice(string.ascii_lowercase + string.ascii_uppercase + string.digits) for x in range(10))
-
-                check_site(site, non_existent,
-                           if_found     = lambda url: error(  f'False positive for {url}'),
-                           if_not_found = lambda url: neutral(f'    As expected, no user found at {url}'),
-                           if_neither   = lambda url: error(  f'Neither conditions matched for {url}'))
-
+                if args.debug:
+                    debug(f'Checking {site["name"]}')
+                    
+                # Run through known accounts from the JSON
                 for known_account in site['known_accounts']:
                     check_site(site, known_account,
-                               if_found     = lambda url: neutral(f'    As expected, profile found at {url}'),
-                               if_not_found = lambda url: error(  f'Profile not found at {url}'),
+                               if_found     = lambda url: positive(f'    As expected, profile found at {url}'),
+                               if_not_found = lambda url: warn(  f'Profile not found at {url}'),
                                if_neither   = lambda url: error(  f'Neither conditions matched for {url}'))
+                
+                # Create a random string to be used for the "nonexistent" user and see what the site does
+                non_existent = ''.join(random.choice(string.ascii_lowercase + string.ascii_uppercase + string.digits) for x in range(10))
+                check_site(site, non_existent,
+                           if_found     = lambda url: warn(  f'False positive for {url} from non-existent check'),
+                           if_not_found = lambda url: positive(f'    As expected, no user found at {url} from non-existent check'),
+                           if_neither   = lambda url: error(  f'Neither conditions matched for {url} from non-existent check'))
+
     finally:
-        startstop('')
-        startstop('Processing completed')
-        if COUNTER['FOUND']:
+        if COUNTER['FOUND'] and args.username:
+            startstop('')
+            startstop('Processing completed')
             positive(f'{COUNTER["FOUND"]} sites found')
             timestamp = time.strftime('%Y%m%d_%H%M%S', time.localtime())
             outputfile = f'{timestamp}_{args.username}.txt'
@@ -275,6 +284,7 @@ def main():
                     positive(f'    {positive_url}')
                     f.write(f'{positive_url}\n')
             positive(f'    The URLs where the username was found were exported to file: {outputfile}')
+
         if COUNTER['ERROR']:
             error(f'{COUNTER["ERROR"]} errors encountered')
             startstop('')
@@ -290,28 +300,13 @@ def main():
     else:
         startstop('Script completed')
     
-    # Cleanup Gecko log
+    # Remove Gecko log
     if os.path.isfile('geckodriver.log'):
         os.remove('geckodriver.log')
 
-    startstop('')
     startstop('--------------------------------')
     startstop('')
 
 if __name__ == "__main__":
     # execute only if run as a script
     main()
-
-    '''# Start threads
-    threads = []
-
-    start_time = datetime.utcnow()
-    for site_ in data['sites']:
-        x = threading.Thread(target=check_site, args=(site_, args.username), daemon=True)
-        threads.append(x)
-
-    for thread in threads:
-        thread.start()
-
-    for thread in threads:
-        thread.join()'''
