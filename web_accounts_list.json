@@ -3504,6 +3504,17 @@
         "valid" : true
       },
       {
+        "name" : "Gettr",
+        "check_uri" : "https://api.gettr.com/s/user/{account}/exist",
+        "account_existence_code" : "200",
+        "account_existence_string" : "success\":true",
+        "account_missing_string" : "success\":false",
+        "account_missing_code" : "200",
+        "known_accounts" : ["qellyanon","djerod"],
+        "category" : "social",
+        "valid" : true
+      },
+      {
         "name" : "Stripchat",
         "check_uri" : "https://stripchat.com/{account}",
         "account_existence_code" : "200",
