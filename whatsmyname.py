@@ -14,6 +14,8 @@ This script does several things:
 # 7. Detect if username has non-url-friendly characters and would be used as subdomain
     # and not run tests on sites that don't make sense
 # 8. Ctrl-C chould generate output of already-checked sites both to file and to screen
+# 9. Switch to Chromedriver
+
 
 #
 # Import Libraries
@@ -34,7 +36,8 @@ import time
 
 from selenium import webdriver as wd
 from seleniumwire import webdriver as wdwire
-from selenium.webdriver.firefox.options import Options
+#from selenium.webdriver.firefox.options import Options
+from selenium.webdriver.chrome.options import Options
 
 #
 # Variables and Setup
@@ -83,9 +86,16 @@ else:
         CYAN = ''
         ENDC = ''
 
-# Selenium Options
-opts = Options()
-opts.headless = True
+# Selenium Options for Firefox driver
+#opts = Options()
+#opts.headless = True
+
+# Selenium Chrome Driver options
+chrome_options = Options()
+chrome_options.add_argument("--disable-extensions")
+chrome_options.add_argument("--disable-gpu")
+chrome_options.add_argument("--headless")
+chrome_options.add_argument("--window-size=1920x1080")
 
 #
 # Functions
@@ -119,7 +129,8 @@ def signal_handler(*_):
 
 def web_call_response_code(location):
     # Get HTTP Response Code using Selenium-wire
-    driver_wire = wdwire.Firefox(options=opts)
+    #driver_wire = wdwire.Firefox(options=opts)
+    driver_wire = wdwire.Chrome(options=chrome_options)
     driver_wire.set_page_load_timeout(30)
     driver_wire.get(location)
     for request in driver_wire.requests:
@@ -133,7 +144,8 @@ def web_call_response_code(location):
 
 def web_call_html_source(location):
     # Get HTML source using Selenium for JS bypassing
-    driver = wd.Firefox(options=opts)
+    #driver = wd.Firefox(options=opts)
+    driver = wd.Chrome(options=chrome_options)
     driver.set_page_load_timeout(30)
     driver.get(location)
     source = driver.page_source
