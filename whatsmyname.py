@@ -10,11 +10,14 @@ This script does several things:
 
 # Todo:
 # 1. CSV output
-# 2. threading
+# 2. threading - https://python.tutorialink.com/selenium-threads-how-to-run-multi-threaded-browser-with-proxy-python/
 # 7. Detect if username has non-url-friendly characters and would be used as subdomain
     # and not run tests on sites that don't make sense
 # 8. Ctrl-C chould generate output of already-checked sites both to file and to screen
 # 9. Switch to Chromedriver
+    #- ask ff or chromedriver
+    #- ask for path to file
+# 10. Since we are using a real browser, remove the useragent option
 
 
 #
@@ -36,8 +39,6 @@ import time
 
 from selenium import webdriver as wd
 from seleniumwire import webdriver as wdwire
-#from selenium.webdriver.firefox.options import Options
-from selenium.webdriver.chrome.options import Options
 
 #
 # Variables and Setup
@@ -47,8 +48,7 @@ COUNTER = collections.Counter()
 
 debug_mode = False
 running_positives = []
-user_agent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/93.0.4577.63 Safari/537.36'
-chromedriver_loc = '../../chromedriver-v94.exe' # Where is the chromedriver located?
+#user_agent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/93.0.4577.63 Safari/537.36'
 
 # Set HTTP Header information
 HEADERS = {'Accept' : 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
@@ -62,9 +62,12 @@ parser = argparse.ArgumentParser(description='This standalone script will look u
                                  ' will run a check of the JSON file for bad detection strings.')
 parser.add_argument('-a', '--useragent', help='Toggle using a custom UserAgent for web calls [Default = off]', action='store_true',
                     default=False)
-parser.add_argument('-d', '--debug', help='Enable debug output [Default = off]', action='store_true')
+parser.add_argument('-d', '--debug', help='Enable debug output [Default = off]', action='store_true', default=False)
+parser.add_argument('-f', '--firefoxdriver', help='Use the Firefox web driver instead of the Chrome one. Omit this and Chrome is used.',
+                     action='store_true', default=False)
 parser.add_argument('-i', '--inputfile', nargs='?', help='[OPTIONAL] If you want to use a JSON file other than the main one,'
                     ' pass the file name here.')
+parser.add_argument('-l', '--driverlocation', nargs='?', help='Specify the path to the Firefox or Chrome web driver binary.')
 parser.add_argument('-s', '--site', nargs='*', help='If this parameter is passed the script will check only the named site'
                     ' or list of sites.')
 parser.add_argument('-u', '--username', help='If this param is passed then this script will perform the '
@@ -87,17 +90,6 @@ else:
         CYAN = ''
         ENDC = ''
 
-# Selenium Options for Firefox driver
-#opts = Options()
-#opts.headless = True
-
-# Selenium Chrome Driver options
-chrome_options = Options()
-chrome_options.add_argument("--disable-extensions")
-chrome_options.add_argument("--disable-gpu")
-chrome_options.add_argument("--headless")
-chrome_options.add_argument("--window-size=1920x1080")
-chrome_options.add_experimental_option('excludeSwitches', ['enable-logging'])
 
 #
 # Functions
@@ -131,8 +123,10 @@ def signal_handler(*_):
 
 def web_call_response_code(location):
     # Get HTTP Response Code using Selenium-wire
-    #driver_wire = wdwire.Firefox(options=opts)
-    driver_wire = wdwire.Chrome(chromedriver_loc, options=chrome_options)
+    if firefox_driver:
+        driver_wire = wdwire.Firefox(driver_loc, options=driver_options)
+    else:
+        driver_wire = wdwire.Chrome(driver_loc, options=driver_options)
     driver_wire.set_page_load_timeout(30)
     driver_wire.get(location)
     for request in driver_wire.requests:
@@ -146,8 +140,10 @@ def web_call_response_code(location):
 
 def web_call_html_source(location):
     # Get HTML source using Selenium for JS bypassing
-    #driver = wd.Firefox(options=opts)
-    driver = wd.Chrome(chromedriver_loc, options=chrome_options)
+    if firefox_driver:
+        driver = wd.Firefox(driver_loc, options=driver_options)
+    else:
+        driver = wd.Chrome(driver_loc, options=driver_options)
     driver.set_page_load_timeout(30)
     driver.get(location)
     source = driver.page_source
@@ -165,7 +161,7 @@ def find_sites_to_check(args, data):
         sites_not_found = len(args.site) - len(sites_to_check)
         if sites_not_found:
             warn(f'{sites_not_found} requested sites were not found in the list')
-        neutral('Checking %d sites' % len(sites_to_check))
+        neutral('Checking %d site(s)' % len(sites_to_check))
         return sites_to_check
     else:
         startstop('')
@@ -221,17 +217,52 @@ def main():
     startstop('--------------------------------')
     startstop('')
     startstop('Starting the WhatsMyName Checking Script')
+    startstop('')
 
     args = parser.parse_args()
 
     if args.debug:
         global debug_mode
-        debug_mode = args.debug
+        debug_mode = True
         neutral('Debug output enabled')
 
     if args.useragent:
         HEADERS['User-Agent'] = user_agent
         neutral(f'Custom UserAgent enabled. Using {user_agent}')
+
+    global firefox_driver
+    global driver_options
+    if args.firefoxdriver:
+        firefox_driver = True
+        neutral('Using the Firefox web driver')
+        from selenium.webdriver.firefox.options import Options
+        driver_options = Options()
+        driver_options.headless = True
+    else:
+        firefox_driver = False
+        neutral('Using the Chrome web driver')
+        from selenium.webdriver.chrome.options import Options
+        driver_options = Options()
+        driver_options.add_argument("--disable-extensions")
+        driver_options.add_argument("--disable-gpu")
+        driver_options.add_argument("--headless")
+        driver_options.add_argument("--window-size=1920x1080")
+        driver_options.add_experimental_option('excludeSwitches', ['enable-logging'])
+
+    global driver_loc
+    if args.driverlocation:
+        if os.path.exists(args.driverlocation):
+            neutral(f'Using the driver at {args.driverlocation}')
+            driver_loc = args.driverlocation
+        else:
+            error(f'There is no file at {args.driverlocation} or we do not have permission to read/execute it.')
+            error('This version of the checker script requires either the Firefox or Chrome driver.')
+            error('Please see the documentation at https://github.com/WebBreacher/WhatsMyName')
+            sys.exit(1)
+    else:
+        error('This version of the checker script requires either the Firefox or Chrome driver.')
+        error('Please see the documentation at https://github.com/WebBreacher/WhatsMyName')
+        sys.exit(1)
 
     # Add this in case user presses CTRL-C
     signal.signal(signal.SIGINT, signal_handler)
