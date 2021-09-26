@@ -48,6 +48,7 @@ COUNTER = collections.Counter()
 debug_mode = False
 running_positives = []
 user_agent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko)  Chrome/93.0.4577.63 Safari/537.36'
+chromedriver_loc = '../../chromedriver-v94.exe' # Where is the chromedriver located?
 
 # Set HTTP Header information
 HEADERS = {'Accept' : 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
@@ -96,6 +97,7 @@ chrome_options.add_argument("--disable-extensions")
 chrome_options.add_argument("--disable-gpu")
 chrome_options.add_argument("--headless")
 chrome_options.add_argument("--window-size=1920x1080")
+chrome_options.add_experimental_option('excludeSwitches', ['enable-logging'])
 
 #
 # Functions
@@ -130,7 +132,7 @@ def signal_handler(*_):
 def web_call_response_code(location):
     # Get HTTP Response Code using Selenium-wire
     #driver_wire = wdwire.Firefox(options=opts)
-    driver_wire = wdwire.Chrome(options=chrome_options)
+    driver_wire = wdwire.Chrome(chromedriver_loc, options=chrome_options)
     driver_wire.set_page_load_timeout(30)
     driver_wire.get(location)
     for request in driver_wire.requests:
@@ -145,7 +147,7 @@ def web_call_response_code(location):
 def web_call_html_source(location):
     # Get HTML source using Selenium for JS bypassing
     #driver = wd.Firefox(options=opts)
-    driver = wd.Chrome(options=chrome_options)
+    driver = wd.Chrome(chromedriver_loc, options=chrome_options)
     driver.set_page_load_timeout(30)
     driver.get(location)
     source = driver.page_source
@@ -313,8 +315,8 @@ def main():
         startstop('Script completed')
     
     # Remove Gecko log
-    if os.path.isfile('geckodriver.log'):
-        os.remove('geckodriver.log')
+    #if os.path.isfile('geckodriver.log'):
+     #   os.remove('geckodriver.log')
 
     startstop('--------------------------------')
     startstop('')
