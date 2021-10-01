@@ -3526,15 +3526,15 @@
         "valid" : true
       },
       {
-      "name": "Cults3D",
-      "check_uri": "https://cults3d.com/en/users/{account}/creations",
-      "account_existence_code": "200",
-      "account_existence_string": "The 3D models of",
-      "account_missing_string": "Oh dear, this page is not working! ・ Cults",
-      "account_missing_code": "200",
-      "known_accounts": ["Bstar3Dart","Kimbolt"],
-      "category": "tech",
-      "valid": true
-    }
+        "name": "Cults3D",
+        "check_uri": "https://cults3d.com/en/users/{account}/creations",
+        "account_existence_code": "200",
+        "account_existence_string": "The 3D models of",
+        "account_missing_string": "Oh dear, this page is not working! ・ Cults",
+        "account_missing_code": "404",
+        "known_accounts": ["Bstar3Dart","Kimbolt"],
+        "category": "hobby",
+        "valid": true
+      }
    ]
 }
