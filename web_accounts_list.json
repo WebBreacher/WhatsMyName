@@ -3535,6 +3535,54 @@
         "known_accounts": ["Bstar3Dart","Kimbolt"],
         "category": "hobby",
         "valid": true
+      },
+      {
+        "name" : "Parler Profile in Wayback",
+        "check_uri" : "http://archive.org/wayback/available?url=https://parler.com/profile/{account}",
+        "pretty_uri" : "https://web.archive.org/web/2/https://parler.com/profile/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "\"archived_snapshots\": {\"closest\"",
+        "account_missing_string" : "\"archived_snapshots\": {}",
+        "account_missing_code" : "200",
+        "known_accounts" : ["JoePags","dineshdsouza"],
+        "category" : "social",
+        "valid" : true
+      },
+      {
+        "name" : "Parler Posts in Wayback",
+        "check_uri" : "http://archive.org/wayback/available?url=https://parler.com/profile/{account}/posts",
+        "pretty_uri" : "https://web.archive.org/web/2/https://parler.com/profile/{account}/posts",
+        "account_existence_code" : "200",
+        "account_existence_string" : "\"archived_snapshots\": {\"closest\"",
+        "account_missing_string" : "\"archived_snapshots\": {}",
+        "account_missing_code" : "200",
+        "known_accounts" : ["JoePags","dineshdsouza"],
+        "category" : "social",
+        "valid" : true
+      },
+      {
+        "name" : "Twitter Profile in Wayback",
+        "check_uri" : "http://archive.org/wayback/available?url=https://twitter.com/{account}",
+        "pretty_uri" : "https://web.archive.org/web/2/https://twitter.com/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "\"archived_snapshots\": {\"closest\"",
+        "account_missing_string" : "\"archived_snapshots\": {}",
+        "account_missing_code" : "200",
+        "known_accounts" : ["jack","dineshdsouza"],
+        "category" : "social",
+        "valid" : true
+      },
+      {
+        "name" : "Twitter Tweets in Wayback",
+        "check_uri" : "http://archive.org/wayback/available?url=https://twitter.com/{account}/status/*",
+        "pretty_uri" : "https://web.archive.org/web/*/https://twitter.com/{account}/status/*",
+        "account_existence_code" : "200",
+        "account_existence_string" : "\"archived_snapshots\": {\"closest\"",
+        "account_missing_string" : "\"archived_snapshots\": {}",
+        "account_missing_code" : "200",
+        "known_accounts" : ["jack","dineshdsouza"],
+        "category" : "social",
+        "valid" : true
       }
    ]
 }
