@@ -5,7 +5,8 @@
                "http://creativecommons.org/licenses/by-sa/4.0/ or send a letter to",
                "Creative Commons, PO Box 1866, Mountain View, CA 94042, USA."],
    "authors" : ["WebBreacher","Munchko","L0r3m1p5um","lehuff","janbinx","bcoles","Sector035",
-               "arnydo","mccartney","salaheldinaz","camhoff","jocephus","swedishmike","soxoj","jspinel","ef1500","zewen"],
+               "arnydo","mccartney","salaheldinaz","camhoff","jocephus","swedishmike","soxoj",
+               "jspinel","ef1500","zewen","jocejocejoe"],
    "categories" : ["art","blog","business","coding","dating","finance","gaming","health",
                  "hobby","images","misc","music","news","political","search","shopping","social",
                  "tech","video","XXXPORNXXX"],
@@ -1261,7 +1262,6 @@
         "account_missing_string" : "Foursquare - Independent Location Data Platform",
         "account_missing_code" : "302",
         "known_accounts" : ["john","ncyp23"],
-        "known_missing_accounts" : ["test"],
         "category" : "social",
         "valid" : true
       },
@@ -3516,6 +3516,17 @@
         "valid" : true
       },
       {
+        "name" : "Gettr",
+        "check_uri" : "https://api.gettr.com/s/user/{account}/exist",
+        "account_existence_code" : "200",
+        "account_existence_string" : "success\":true",
+        "account_missing_string" : "success\":false",
+        "account_missing_code" : "200",
+        "known_accounts" : ["qellyanon","djerod"],
+        "category" : "social",
+        "valid" : true
+      },
+      {
         "name" : "Stripchat",
         "check_uri" : "https://stripchat.com/{account}",
         "account_existence_code" : "200",
@@ -3524,6 +3535,83 @@
         "account_missing_code" : "404",
         "known_accounts" : ["DulcieRichard","Selenaneshy"],
         "category" : "XXXPORNXXX",
+        "valid" : true
+      },
+      {
+        "name": "Cults3D",
+        "check_uri": "https://cults3d.com/en/users/{account}/creations",
+        "account_existence_code": "200",
+        "account_existence_string": "The 3D models of",
+        "account_missing_string": "Oh dear, this page is not working! ・ Cults",
+        "account_missing_code": "404",
+        "known_accounts": ["Bstar3Dart","Kimbolt"],
+        "category": "hobby",
+        "valid": true
+      },
+      {
+        "name" : "USA Life",
+        "check_uri" : "https://usa.life/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "Please log in to like, share and comment",
+        "account_missing_string" : "Sorry, page not found",
+        "account_missing_code" : "302",
+        "known_accounts" : ["abaynes79","not1face"],
+        "category" : "social",
+        "valid" : true
+      },
+      {
+        "name" : "MAGA-CHAT",
+        "check_uri" : "https://maga-chat.com/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "Recent Updates",
+        "account_missing_string" : "Page Not Be Found",
+        "account_missing_code" : "200",
+        "known_accounts" : ["Rich","RjosephJr"],
+        "category" : "social",
+        "valid" : true
+      },
+      {
+        "name" : "Our Freedom Book",
+        "check_uri" : "https://www.ourfreedombook.com/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "meta property=\"og:",
+        "account_missing_string" : "Sorry, page not found",
+        "account_missing_code" : "302",
+        "known_accounts" : ["DaveLipsky","StarlaJene"],
+        "category" : "social",
+        "valid" : true
+      },
+      {
+        "name" : "MAGABOOK",
+        "check_uri" : "https://magabook.com/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "Recent Updates",
+        "account_missing_string" : "Page Not Be Found",
+        "account_missing_code" : "200",
+        "known_accounts" : ["PamelaElliott62","eric"],
+        "category" : "social",
+        "valid" : true
+      },
+      {
+        "name" : "SoliKick",
+        "check_uri" : "https://solikick.com/-{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "page_guest_users-view",
+        "account_missing_string" : "This item has been removed or is no longer available",
+        "account_missing_code" : "302",
+        "known_accounts" : ["milehighed","Edmundus"],
+        "category" : "social",
+        "valid" : true
+      },
+      {
+        "name" : "Parler",
+        "check_uri" : "https://parler.com/user/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "People to Follow",
+        "account_missing_string" : "join Parler today",
+        "account_missing_code" : "302",
+        "known_accounts" : ["DineshDsouza","SeanHannity"],
+        "category" : "social",
         "valid" : true
       }
    ]
