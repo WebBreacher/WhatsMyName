@@ -1677,6 +1677,18 @@
         "valid": true
       },
       {
+        "name" : "MCUUID (Minecraft)",
+        "check_uri" : "https://playerdb.co/api/player/minecraft/{account}",
+        "pretty_uri" : "https://mcuuid.net/?q={account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "Successfully found player by given ID.",
+        "account_missing_string" : "minecraft.api_failure",
+        "account_missing_code" : "200",
+        "known_accounts" : ["smithy","bob"],
+        "category" : "gaming",
+        "valid" : true
+      },
+      {
         "name" : "Medium",
         "check_uri" : "https://{account}.medium.com/about",
         "account_existence_code" : "200",
