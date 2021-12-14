@@ -175,7 +175,10 @@ def check_site(site, username, if_found, if_not_found, if_neither):
         code_match = resp_code == int(site['account_existence_code'])
 
         resp_html_source = web_call_html_source(url)
-        string_match = resp_html_source.find(site['account_existence_string']) > 0
+        if site['account_existence_string']:
+            string_match = resp_html_source.find(site['account_existence_string']) > 0
+        else:
+            string_match = 0
 
         if debug_mode:
             if code_match:
@@ -302,14 +305,14 @@ def main():
             else:
                 if args.debug:
                     debug(f'Checking {site["name"]}')
-                    
+
                 # Run through known accounts from the JSON
                 for known_account in site['known_accounts']:
                     check_site(site, known_account,
                                if_found     = lambda url: positive(f'    As expected, profile found at {url}'),
                                if_not_found = lambda url: warn(  f'Profile not found at {url}'),
                                if_neither   = lambda url: error(  f'Neither conditions matched for {url}'))
-                
+
                 # Create a random string to be used for the "nonexistent" user and see what the site does
                 non_existent = ''.join(random.choice(string.ascii_lowercase + string.ascii_uppercase + string.digits) for x in range(10))
                 check_site(site, non_existent,
@@ -344,7 +347,7 @@ def main():
         warn('Script completed and no positive results were found.')
     else:
         startstop('Script completed')
-    
+
     # Remove Gecko log
     #if os.path.isfile('geckodriver.log'):
      #   os.remove('geckodriver.log')

@@ -221,7 +221,10 @@ def check_site(site, username=None):
 
         # Analyze the responses against what they should be
         code_match = r.status_code == int(site['account_existence_code'])
-        string_match = r.text.find(site['account_existence_string']) >= 0
+        if site['account_existence_string']:
+            string_match = r.text.find(site['account_existence_string']) >= 0
+        else:
+            string_match = 0
 
         if username:
             if code_match and string_match:
