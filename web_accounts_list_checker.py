@@ -57,6 +57,8 @@ parser.add_argument('-se', '--stringerror', help="Creates a site by site file fo
 parser.add_argument('-u', '--username', help='[OPTIONAL] If this param is passed then this script'
                     'will perform the lookups against the given user name instead of running'
                     'checks against the JSON file.')
+parser.add_argument('-f', '--followredirects', help='[OPTIONAL] If this param is passed then the script '
+                    'will follow HTTP 30x redirects.', action='store_true')
 
 
 args = parser.parse_args()
@@ -122,7 +124,7 @@ def signal_handler(*_):
 def web_call(location):
     try:
         # Make web request for that URL, timeout in X secs and don't verify SSL/TLS certs
-        resp = requests.get(location, headers=headers, timeout=60, verify=False, allow_redirects=False)
+        resp = requests.get(location, headers=headers, timeout=60, verify=False, allow_redirects=args.followredirects)
     except requests.exceptions.Timeout:
         return f' !  ERROR: {location} CONNECTION TIME OUT. Try increasing the timeout delay.'
     except requests.exceptions.TooManyRedirects:
