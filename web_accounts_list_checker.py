@@ -228,6 +228,9 @@ def check_site(site, username=None):
 
         if username:
             if code_match and string_match:
+                if 'pretty_uri' in site:
+                    url = site['pretty_uri'].replace("{account}", uname)
+                    
                 username_results.append(Bcolors.GREEN + '[+] Found user at %s' % url + Bcolors.ENDC)
                 all_found_sites.append(url)
                 return
