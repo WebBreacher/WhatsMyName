@@ -123,7 +123,7 @@ def signal_handler(*_):
     sys.exit(130)
 
 
-def web_call(location):
+def web_call(location, cookies={}):
     try:
         # Make web request for that URL, timeout in X secs and don't verify SSL/TLS certs
         resp = requests.get(location, headers=headers, timeout=60, verify=False, allow_redirects=args.followredirects)
@@ -219,7 +219,12 @@ def check_site(site, username=None):
 
     # Perform initial lookup
     logging.info(f" >  Looking up {url}")
-    r = web_call(url)
+
+    if ("cookies" in site):
+        r = web_call(url, site["cookies"])
+    else:
+        r = web_call(url)
+
     if isinstance(r, str):
         # We got an error on the web call
         return logging.error(Bcolors.RED + r + Bcolors.ENDC)
@@ -249,7 +254,12 @@ def check_site(site, username=None):
                 # logging.info('     [+] Response code and Search Strings match expected.')
                 # Generate a random string to use in place of known_accounts
                 url_fp = site['check_uri'].replace("{account}", random_string(20))
-                r_fp = web_call(url_fp)
+
+                if ("cookies" in site):
+                    r_fp = web_call(url_fp, site["cookies"])
+                else:
+                    r_fp = web_call(url_fp)
+
                 if isinstance(r_fp, str):
                     # If this is a string then web got an error
                     return logging.error(r_fp)
