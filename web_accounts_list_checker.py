@@ -51,6 +51,8 @@ parser.add_argument('-of', '--outputfile', nargs='?', help="[OPTIONAL] Create te
 parser.add_argument('-in', '--inputfile', nargs='?', help="[OPTIONAL] Uses a specified file for checking the websites")
 parser.add_argument('-s', '--site', nargs='*', help='[OPTIONAL] If this parameter is passed'
                     'the script will check only the named site or list of sites.')
+parser.add_argument('-c', '--category', nargs='*', help='[OPTIONAL] If this parameter is passed'
+                    'the script will check only the category or list of categories.')
 parser.add_argument('-se', '--stringerror', help="Creates a site by site file for files that do"
                     "not match strings. Filenames will be 'se-(sitename).(username)",
                     action="store_true", default=False)
@@ -184,10 +186,16 @@ if args.site:
     if sites_not_found:
         logging.warning(' -  WARNING: %d requested sites were not found in the list' % sites_not_found)
     logging.info(' -  Checking %d sites' % len(data['sites']))
-
+elif args.category:
+    # cut the list of sites down by category
+    args.category = [x.lower() for x in args.category]
+    data['sites'] = [x for x in data['sites'] if x['category'].lower() in args.category]
+    if len(data['sites']) == 0:
+        logging.error(' -  Sorry, no sites were found for the requested category or categories')
+        sys.exit(1)
+    logging.info(' -  Checking %d sites' % len(data['sites']))
 else:
     logging.info(' -  %s sites found in file.' % len(data['sites']))
-
 
 def check_site(site, username=None):
     # Examine the current validity of the entry
