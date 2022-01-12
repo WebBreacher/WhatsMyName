@@ -1999,6 +1999,18 @@
        "valid" : true
      },
      {
+       "name" : "Reddit",
+       "check_uri" : "https://www.reddit.com/user/{account}/about/.json",
+       "pretty_uri" : "https://www.reddit.com/user/{account}",
+       "account_existence_code" : "200",
+       "account_existence_string" : "total_karma",
+       "account_missing_string" : "Not Found",
+       "account_missing_code" : "404",
+       "known_accounts" : ["koavf", "alabasterheart"],
+       "category" : "social",
+       "valid" : true
+     },
+     {
        "name" : "scratch",
        "check_uri" : "https://scratch.mit.edu/users/{account}/",
        "account_existence_code" : "200",
