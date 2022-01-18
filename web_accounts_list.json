@@ -344,17 +344,6 @@
        "valid" : true
      },
      {
-       "name" : "Gamepedia",
-       "check_uri" : "https://www.gamepedia.com/members/{account}",
-       "account_existence_code" : "200",
-       "account_existence_string" : "s Profile - Member List - Gamepedia",
-       "account_missing_string" : "We were unable to find the page or file you were looking for.",
-       "account_missing_code" : "404",
-       "known_accounts" : ["john", "bob"],
-       "category" : "shopping",
-       "valid" : true
-     },
-     {
        "name" : "Gab",
        "check_uri" : "https://gab.com/api/v1/account_by_username/{account}",
        "pretty_uri" : "https://gab.com/{account}",
@@ -1489,17 +1478,6 @@
        "valid" : true
      },
      {
-       "name" : "ingvarr.net.ru",
-       "check_uri" : "http://ingvarr.net.ru/index/8-0-{account}",
-       "account_existence_code" : "200",
-       "account_existence_string" : "Информация о пользователе</title>",
-       "account_missing_string" : "Пользователь не найден",
-       "account_missing_code" : "200",
-       "known_accounts" : ["red"],
-       "category" : "tech",
-       "valid" : true
-     },
-     {
        "name" : "InkBunny",
        "check_uri" : "https://inkbunny.net/{account}",
        "account_existence_code" : "200",
@@ -1996,6 +1974,18 @@
        "account_missing_code" : "404",
        "known_accounts" : ["test123"],
        "category" : "XXXPORNXXX",
+       "valid" : true
+     },
+     {
+       "name" : "Reddit",
+       "check_uri" : "https://www.reddit.com/user/{account}/about/.json",
+       "pretty_uri" : "https://www.reddit.com/user/{account}",
+       "account_existence_code" : "200",
+       "account_existence_string" : "total_karma",
+       "account_missing_string" : "Not Found",
+       "account_missing_code" : "404",
+       "known_accounts" : ["koavf", "alabasterheart"],
+       "category" : "social",
        "valid" : true
      },
      {
@@ -2572,7 +2562,7 @@
        "account_existence_string" : "Games Played",
        "account_missing_string" : "Gamertag doesn't exist",
        "account_missing_code" : "404",
-       "known_accounts" : ["Coaxials","Blind-Zatoichi"],
+       "known_accounts" : ["Spiken8","john"],
        "category" : "gaming",
        "valid" : true
      },
@@ -2948,17 +2938,6 @@
        "account_missing_string" : "Sorry, this channel doesn't appear to exist",
        "account_missing_code" : "404",
        "known_accounts" : ["Willieleev1971", "john"],
-       "category" : "political",
-       "valid" : true
-     },
-     {
-       "name" : "Mumblit",
-       "check_uri" : "https://www.mumblit.com/{account}?ref=se",
-       "account_existence_code" : "200",
-       "account_existence_string" : "<meta property=",
-       "account_missing_string" : "Sorry, page not found!",
-       "account_missing_code" : "302",
-       "known_accounts" : ["deHask", "John949"],
        "category" : "political",
        "valid" : true
      },
@@ -3478,17 +3457,6 @@
        "account_missing_code" : "302",
        "known_accounts" : ["DineshDsouza","SeanHannity"],
        "category" : "social",
-       "valid" : true
-     },
-     {
-       "name" : "Twitch.tv",
-       "check_uri" : "https://passport.twitch.tv/usernames/{account}",
-       "account_existence_code" : "200",
-       "account_existence_string" : "",
-       "account_missing_string" : "",
-       "account_missing_code" : "204",
-       "known_accounts" : ["summit1g","cohhcarnage"],
-       "category" : "gaming",
        "valid" : true
      },
      {
@@ -4284,6 +4252,17 @@
       ],
       "category": "gaming",
       "valid": true
-    }
+    },
+    {
+      "name" : "Twitch.tv",
+      "check_uri" : "https://passport.twitch.tv/usernames/{account}",
+      "account_existence_code" : "200",
+      "account_existence_string" : "",
+      "account_missing_string" : "",
+      "account_missing_code" : "204",
+      "known_accounts" : ["summit1g","cohhcarnage"],
+      "category" : "gaming",
+      "valid" : false
+      }
   ]
 }
