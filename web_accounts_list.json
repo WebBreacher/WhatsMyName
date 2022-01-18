@@ -1478,17 +1478,6 @@
        "valid" : true
      },
      {
-       "name" : "ingvarr.net.ru",
-       "check_uri" : "http://ingvarr.net.ru/index/8-0-{account}",
-       "account_existence_code" : "200",
-       "account_existence_string" : "Информация о пользователе</title>",
-       "account_missing_string" : "Пользователь не найден",
-       "account_missing_code" : "200",
-       "known_accounts" : ["red"],
-       "category" : "tech",
-       "valid" : true
-     },
-     {
        "name" : "InkBunny",
        "check_uri" : "https://inkbunny.net/{account}",
        "account_existence_code" : "200",
@@ -2573,7 +2562,7 @@
        "account_existence_string" : "Games Played",
        "account_missing_string" : "Gamertag doesn't exist",
        "account_missing_code" : "404",
-       "known_accounts" : ["Coaxials","Blind-Zatoichi"],
+       "known_accounts" : ["Spiken8","john"],
        "category" : "gaming",
        "valid" : true
      },
