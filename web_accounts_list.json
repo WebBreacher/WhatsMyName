@@ -344,17 +344,6 @@
        "valid" : true
      },
      {
-       "name" : "Gamepedia",
-       "check_uri" : "https://www.gamepedia.com/members/{account}",
-       "account_existence_code" : "200",
-       "account_existence_string" : "s Profile - Member List - Gamepedia",
-       "account_missing_string" : "We were unable to find the page or file you were looking for.",
-       "account_missing_code" : "404",
-       "known_accounts" : ["john", "bob"],
-       "category" : "shopping",
-       "valid" : true
-     },
-     {
        "name" : "Gab",
        "check_uri" : "https://gab.com/api/v1/account_by_username/{account}",
        "pretty_uri" : "https://gab.com/{account}",
@@ -2960,17 +2949,6 @@
        "account_missing_string" : "Sorry, this channel doesn't appear to exist",
        "account_missing_code" : "404",
        "known_accounts" : ["Willieleev1971", "john"],
-       "category" : "political",
-       "valid" : true
-     },
-     {
-       "name" : "Mumblit",
-       "check_uri" : "https://www.mumblit.com/{account}?ref=se",
-       "account_existence_code" : "200",
-       "account_existence_string" : "<meta property=",
-       "account_missing_string" : "Sorry, page not found!",
-       "account_missing_code" : "302",
-       "known_accounts" : ["deHask", "John949"],
        "category" : "political",
        "valid" : true
      },
