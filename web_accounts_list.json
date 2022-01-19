@@ -167,16 +167,16 @@
        "valid" : true
      },
      {
-       "name" : "CastingCallClub",
-       "check_uri" : "https://www.castingcall.club/m/{account}",
-       "account_existence_code" : "200",
-       "account_existence_string" : "Total Auditions",
-       "account_missing_code" : "302",
-       "account_missing_string" : "404: This is not the page you were looking for. In the future, our AI robot overlords will be able to better predict exactly what you were looking for.",
-       "known_accounts" : ["Lindz", "Danye"],
-       "category" : "hobby",
-       "valid" : true
-     },
+      "name" : "CastingCallClub",
+      "check_uri" : "https://www.castingcall.club/{account}",
+      "account_existence_code" : "200",
+      "account_existence_string" : "| Casting Call Club",
+      "account_missing_code" : "302",
+      "account_missing_string" : "404: This is not the page you were looking for. In the future, our AI robot overlords will be able to better predict exactly what you were looking for.",
+      "known_accounts" : ["Lindz", "Danye"],
+      "category" : "hobby",
+      "valid" : true
+    },
      {
        "name" : "championat",
        "check_uri" : "https://www.championat.com/user/{account}/",
