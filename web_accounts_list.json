@@ -2024,7 +2024,7 @@
      {
        "name" : "skeb",
        "check_uri" : "https://skeb.jp/api/users/{account}",
-       "pretty_url" : "https://skeb.jp/@{account}",
+       "pretty_uri" : "https://skeb.jp/@{account}",
        "account_existence_code" : "200",
        "account_existence_string" : "avatar_url",
        "account_missing_code" : "404",
