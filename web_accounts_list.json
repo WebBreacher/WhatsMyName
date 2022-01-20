@@ -668,7 +668,7 @@
        "name" : "trakt",
        "check_uri" : "https://trakt.tv/users/{account}",
        "account_existence_code" : "200",
-       "account_existence_string" : "s profile - Trakt.tv",
+       "account_existence_string" : "s profile - Trakt",
        "account_missing_string" : "The page you were looking for doesn't exist (404) - Trakt.tv",
        "account_missing_code" : "404",
        "known_accounts" : ["john", "anne"],
