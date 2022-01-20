@@ -1658,7 +1658,7 @@
        "account_existence_code" : "200",
        "account_existence_string" : "<title>Meet people like ",
        "account_missing_string" : "<title>MeetMe - Chat and Meet New People</title",
-       "account_missing_code" : "200",
+       "account_missing_code" : "302",
        "known_accounts" : ["john", "marsha"],
        "category" : "dating",
        "valid" : true
