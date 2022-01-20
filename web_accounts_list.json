@@ -315,7 +315,7 @@
        "account_existence_code" : "200",
        "account_existence_string" : "| Ello",
        "account_missing_string" : "We couldn't find the page you're looking for.",
-       "account_missing_code" : "404",
+       "account_missing_code" : "301",
        "known_accounts" : ["john", "bob"],
        "category" : "art",
        "valid" : true
@@ -658,8 +658,8 @@
        "check_uri" : "https://themeforest.net/user/{account}",
        "account_existence_code" : "200",
        "account_existence_string" : "s profile on ThemeForest",
-       "account_missing_string" : "404 - Nothing to see here",
-       "account_missing_code" : "404",
+       "account_missing_string" : "Page Not Found | ThemeForest",
+       "account_missing_code" : "301",
        "known_accounts" : ["john", "bob"],
        "category" : "art",
        "valid" : true
@@ -1658,7 +1658,7 @@
        "account_existence_code" : "200",
        "account_existence_string" : "<title>Meet people like ",
        "account_missing_string" : "<title>MeetMe - Chat and Meet New People</title",
-       "account_missing_code" : "200",
+       "account_missing_code" : "302",
        "known_accounts" : ["john", "marsha"],
        "category" : "dating",
        "valid" : true
@@ -3075,7 +3075,7 @@
        "account_existence_code" : "200",
        "account_existence_string" : ": 네이버 블로그",
        "account_missing_string" : "페이지를 찾을 수 없습니다",
-       "account_missing_code" : "404",
+       "account_missing_code" : "500",
        "known_accounts" : ["bob", "blue"],
        "category" : "social",
        "valid" : true
