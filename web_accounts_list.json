@@ -333,17 +333,6 @@
        "valid" : true
      },
      {
-       "name" : "fancy.com",
-       "check_uri" : "https://fancy.com/{account}",
-       "account_existence_code" : "200",
-       "account_existence_string" : "follow",
-       "account_missing_string" : "Page not found",
-       "account_missing_code" : "404",
-       "known_accounts" : ["john", "smith"],
-       "category" : "shopping",
-       "valid" : true
-     },
-     {
        "name" : "Gab",
        "check_uri" : "https://gab.com/api/v1/account_by_username/{account}",
        "pretty_uri" : "https://gab.com/{account}",
@@ -1016,7 +1005,7 @@
        "account_existence_code" : "200",
        "account_existence_string" : "Joined devRant on",
        "account_missing_string" : "<!-- row start signup -->",
-       "account_missing_code" : "200",
+       "account_missing_code" : "302",
        "known_accounts" : ["dfox", "trogus"],
        "category" : "coding",
        "valid" : true
@@ -1427,7 +1416,7 @@
        "account_existence_code" : "200",
        "account_existence_string" : "profile that highlights",
        "account_missing_string" : "Page not found",
-       "account_missing_code" : "404",
+       "account_missing_code" : "301",
        "known_accounts" : ["yashrs","ameerpornillos"],
        "category" : "tech",
        "valid" : true
@@ -1861,7 +1850,7 @@
        "account_existence_code" : "200",
        "account_existence_string" : "'s Pastebin",
        "account_missing_string" : "",
-       "account_missing_code" : "302",
+       "account_missing_code" : "404",
        "known_accounts" : ["test","john"],
        "category" : "tech",
        "valid" : true
