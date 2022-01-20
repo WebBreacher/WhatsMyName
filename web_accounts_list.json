@@ -2283,7 +2283,7 @@
        "account_existence_string" : "Contributions",
        "account_missing_string" : "This page is on vacation",
        "account_missing_code" : "404",
-       "known_accounts" : ["john","test"],
+       "known_accounts" : ["john","peter"],
        "category" : "social",
        "valid" : true
      },
