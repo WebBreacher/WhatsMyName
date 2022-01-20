@@ -101,7 +101,7 @@ Here is an example of a site element:
          "account_existence_string" : "login:",
          "account_missing_string" : ["Not Found"],
          "account_missing_code" : "404",
-         "known_accounts" : ["test","webbreacher"],
+         "known_accounts" : ["test", "webbreacher"],
          "category" : "coding",
          "valid" : true
       },
