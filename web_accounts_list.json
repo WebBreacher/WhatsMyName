@@ -292,7 +292,7 @@
        "account_existence_code" : "200",
        "account_existence_string" : "- DEV",
        "account_missing_string" : "This page does not exist",
-       "account_missing_code" : "200",
+       "account_missing_code" : "301",
        "known_accounts" : ["john", "bob"],
        "category" : "coding",
        "valid" : true
@@ -2111,7 +2111,7 @@
        "check_uri" : "https://speakerdeck.com/{account}/",
        "account_existence_code" : "200",
        "account_existence_string" : ") on Speaker Deck</title>",
-       "account_missing_string" : "<title>User Not Found - Speaker Deck</title>",
+       "account_missing_string" : "User Not Found - Speaker Deck",
        "account_missing_code" : "404",
        "known_accounts" : ["petecheslock", "turbosmart45"],
        "category" : "social",
@@ -3133,7 +3133,7 @@
        "account_missing_code" : "302",
        "known_accounts" : ["john", "blue"],
        "category" : "social",
-       "valid" : true
+       "valid" : false
      },
      {
        "name" : "Hackaday",
@@ -3453,7 +3453,7 @@
        "account_missing_code" : "200",
        "known_accounts" : ["marhiah", "adnama"],
        "category" : "social",
-       "valid" : true
+       "valid" : false
      },
      {
        "name" : "osu!",
