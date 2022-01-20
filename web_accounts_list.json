@@ -325,8 +325,8 @@
        "check_uri" : "https://www.eyeem.com/u/{account}",
        "account_existence_code" : "200",
        "account_existence_string" : "| EyeEm Photographer",
-       "account_missing_string" : "Whoops! We can't find the user you're looking for...",
-       "account_missing_code" : "404",
+       "account_missing_string" : "Not Found (404) | EyeEm",
+       "account_missing_code" : "301",
        "known_accounts" : ["john", "bob"],
        "category" : "art",
        "valid" : true
