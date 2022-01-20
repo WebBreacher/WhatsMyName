@@ -668,7 +668,7 @@
        "name" : "trakt",
        "check_uri" : "https://trakt.tv/users/{account}",
        "account_existence_code" : "200",
-       "account_existence_string" : "s profile - Trakt.tv",
+       "account_existence_string" : "s profile - Trakt",
        "account_missing_string" : "The page you were looking for doesn't exist (404) - Trakt.tv",
        "account_missing_code" : "404",
        "known_accounts" : ["john", "anne"],
@@ -1872,17 +1872,17 @@
        "known_accounts" : ["john", "test"],
        "category" : "video",
        "valid" : true
-     },
+     },     
      {
-       "name" : "Photoblog",
-       "check_uri" : "https://www.photoblog.com/{account}/",
-       "account_existence_code" : "200",
-       "account_existence_string" : "/following/",
-       "account_missing_string" : "Page Not found",
-       "account_missing_code" : "404",
-       "known_accounts" : ["hatsumi", "pdsdville"],
-       "category" : "images",
-       "valid" : true
+      "name" : "Photoblog",
+      "check_uri" : "https://www.photoblog.com/{account}/",
+      "account_existence_code" : "200",
+      "account_existence_string" : "/following/",
+      "account_missing_string" : "Page Not found",
+      "account_missing_code" : "404",
+      "known_accounts" : ["hatsumi", "pdsdville"],
+      "category" : "images",
+      "valid" : false
      },
      {
        "name" : "PhotoBucket",
@@ -1990,7 +1990,7 @@
        "account_existence_code" : "200",
        "account_existence_string" : "<div class=\"user-info container\">",
        "account_missing_string" : "<title>SEO Marketplace",
-       "account_missing_code" : "200",
+       "account_missing_code" : "302",
        "known_accounts" : ["Vfmseo", "gokudadon"],
        "category" : "social",
        "valid" : true
@@ -2357,7 +2357,7 @@
        "account_existence_string" : "Venmoing since",
        "account_missing_string" : "Sorry, the page you requested does not exist",
        "account_missing_code" : "404",
-       "known_accounts" : ["john", "alice"],
+       "known_accounts" : ["john", "liam"],
        "category" : "finance",
        "valid" : true
      },
