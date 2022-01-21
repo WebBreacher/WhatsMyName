@@ -4138,6 +4138,17 @@
           "known_accounts" : ["alex", "boss"],
           "category" : "finance",
           "valid" : true
+        },
+        {
+          "name" : "Fortnite Tracker",
+          "check_uri" : "https://fortnitetracker.com/profile/all/{account}",
+          "account_existence_code" : "200",
+          "account_existence_string" : "s Fortnite Stats - Fortnite Tracker",
+          "account_missing_string" : "Fortnite Player Stats -",
+          "account_missing_code" : "404",
+          "known_accounts" : ["steph", "sam"],
+          "category" : "gaming",
+          "valid" : true
         }
   ]
 }
