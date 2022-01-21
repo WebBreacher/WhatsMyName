@@ -1996,16 +1996,15 @@
        "valid" : true
      },
      {
-       "name" : "skeb",
-       "check_uri" : "https://skeb.jp/api/users/{account}",
-       "pretty_uri" : "https://skeb.jp/@{account}",
-       "account_existence_code" : "200",
-       "account_existence_string" : "avatar_url",
-       "account_missing_code" : "404",
-       "account_missing_string" : "",
-       "known_accounts" : ["eipuru_",  "sime064"],
-       "category" : "art",
-       "valid" : true
+      "name" : "skeb",
+      "check_uri" : "https://skeb.jp/@{account}",
+      "account_existence_code" : "200",
+      "account_existence_string" : ") | Skeb",
+      "account_missing_code" : "503",
+      "account_missing_string" : "Skeb - Request Box",
+      "known_accounts" : ["eipuru_", "sime064"],
+      "category" : "art",
+      "valid" : true
      },
      {
        "name" : "Skyrock",
@@ -2188,7 +2187,7 @@
        "check_uri" : "https://t.me/{account}",
        "account_existence_code" : "200",
        "account_existence_string" : "tgme_page_title",
-       "account_missing_string" : " <meta name=\"robots\" content=\"noindex, nofollow\">",
+       "account_missing_string" : "noindex, nofollow",
        "account_missing_code" : "200",
        "known_accounts" : ["alice", "giovanni"],
        "category" : "social",
