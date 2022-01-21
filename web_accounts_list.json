@@ -492,7 +492,7 @@
        "account_existence_code" : "200",
        "account_existence_string" : "- Open Collective",
        "account_missing_string" : "Not Found",
-       "account_missing_code" : "404",
+       "account_missing_code" : "200",
        "known_accounts" : ["john", "bob"],
        "category" : "finance",
        "valid" : true
@@ -2963,9 +2963,9 @@
        "name" : "SaraCarterShow",
        "check_uri" : "https://saraacarter.com/author/{account}/",
        "account_existence_code" : "200",
-       "account_existence_string" : ", Author at Sara A. Carter</title>",
+       "account_existence_string" : "| Sara A. Carter",
        "account_missing_string" : "<title>Page not found - Sara A. Carter</title>",
-       "account_missing_code" : "404",
+       "account_missing_code" : "301",
        "known_accounts" : ["douglasbraff", "annaliese"],
        "category" : "political",
        "valid" : true
@@ -3252,7 +3252,7 @@
        "account_existence_code" : "200",
        "account_existence_string" : "NewPP limit report",
        "account_missing_string" : "is not registered",
-       "account_missing_code" : "404",
+       "account_missing_code" : "301",
        "known_accounts" : ["Mlh_nl", "Benjism89"],
        "category" : "social",
        "valid" : true
@@ -3371,10 +3371,10 @@
        "name" : "Cults3D",
        "check_uri" : "https://cults3d.com/en/users/{account}/creations",
        "account_existence_code" : "200",
-       "account_existence_string" : "The 3D models of",
-       "account_missing_string" : "Oh dear, this page is not working! ・ Cults",
+       "account_existence_string" : "All the 3D models of",
+       "account_missing_string" : "Oh dear, this page is not working!",
        "account_missing_code" : "404",
-       "known_accounts" : ["Bstar3Dart", "Kimbolt"],
+       "known_accounts" : ["Bstar3Dart", "john"],
        "category" : "hobby",
        "valid" : true
      },
