@@ -527,7 +527,7 @@
        "account_existence_string" : "name",
        "account_missing_string" : "ResourceNotFound",
        "account_missing_code" : "404",
-       "known_accounts" : ["testing", "jsmith"],
+       "known_accounts" : ["josh", "jsmith"],
        "category" : "tech",
        "valid" : true
      },
@@ -2156,7 +2156,7 @@
        "account_existence_string" : "Items",
        "account_missing_string" : "Push Space-key",
        "account_missing_code" : "404",
-       "known_accounts" : ["itochanxxx", "senpai"],
+       "known_accounts" : ["itochanxxx", "alex"],
        "category" : "business",
        "valid" : true
      },
@@ -2233,7 +2233,7 @@
        "account_existence_string" : ") | Tinder</title><meta",
        "account_missing_string" : "Tinder | Dating, Make Friends &amp; Meet New People",
        "account_missing_code" : "200",
-       "known_accounts" : ["Alexey", "johnstoke", "john"],
+       "known_accounts" : ["Alexey", "peter", "john"],
        "category" : "dating",
        "valid" : true
      },
@@ -2898,7 +2898,7 @@
        "account_existence_code" : "200",
        "account_existence_string" : "Articles &amp;",
        "account_missing_string" : "American Thinker</title>",
-       "account_missing_code" : "200",
+       "account_missing_code" : "301",
        "known_accounts" : ["terrypaulding", "monicashowalter"],
        "category" : "political",
        "valid" : true
