@@ -3252,7 +3252,7 @@
        "account_existence_code" : "200",
        "account_existence_string" : "NewPP limit report",
        "account_missing_string" : "is not registered",
-       "account_missing_code" : "404",
+       "account_missing_code" : "301",
        "known_accounts" : ["Mlh_nl", "Benjism89"],
        "category" : "social",
        "valid" : true
