@@ -625,8 +625,8 @@
        "check_uri" : "https://steemit.com/@{account}",
        "account_existence_code" : "200",
        "account_existence_string" : "blog",
-       "account_missing_string" : "Sorry! This page doesn't exist.",
-       "account_missing_code" : "404",
+       "account_missing_string" : "Page Not Found - Steemit",
+       "account_missing_code" : "301",
        "known_accounts" : ["petlover", "zalat"],
        "category" : "social",
        "valid" : true
