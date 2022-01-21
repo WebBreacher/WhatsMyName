@@ -482,7 +482,7 @@
        "account_existence_string" : "| OK",
        "account_missing_string" : "This page does not exist on OK",
        "account_missing_code" : "404",
-       "known_accounts" : ["john", "test"],
+       "known_accounts" : ["john", "aleksandrvasillev"],
        "category" : "social",
        "valid" : true
      },
@@ -2601,7 +2601,7 @@
        "account_existence_code" : "200",
        "account_existence_string" : " | XING</title>",
        "account_missing_string" : "Es tut uns leid",
-       "account_missing_code" : "410",
+       "account_missing_code" : "404",
        "known_accounts" : ["Andy_Hausmann", "Ramona_Hapke"],
        "category" : "social",
        "valid" : true
