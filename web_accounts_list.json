@@ -3996,17 +3996,6 @@
       "valid": true
     },
     {
-      "name": "samosia.pl",
-      "check_uri": "http://www.samosia.pl/uzytkownik/{account}",
-      "account_existence_code": "200",
-      "account_existence_string": "Krótko o mnie",
-      "account_missing_string": "Najnowsze pytania",
-      "account_missing_code": "200",
-      "known_accounts": ["janek", "test"],
-      "category": "social",
-      "valid": true
-    },
-    {
       "name": "ulub.pl",
       "check_uri": "http://ulub.pl/profil/{account}",
       "account_existence_code": "200",
