@@ -4149,6 +4149,17 @@
           "known_accounts" : ["steph", "sam"],
           "category" : "gaming",
           "valid" : true
+        },
+        {
+          "name" : "Tellonym",
+          "check_uri" : "https://tellonym.me/{account}",
+          "account_existence_code" : "200",
+          "account_existence_string" : "on Tellonym",
+          "account_missing_string" : "- Honest & Anonymous Feedback",
+          "account_missing_code" : "404",
+          "known_accounts" : ["jane", "jimmy"],
+          "category" : "social",
+          "valid" : true
         }
   ]
 }
