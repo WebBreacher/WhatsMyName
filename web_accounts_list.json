@@ -4215,6 +4215,39 @@
           "known_accounts" : ["peter", "liam"],
           "category" : "coding",
           "valid" : true
+        },
+        {
+          "name" : "Independent academia",
+          "check_uri" : "https://independent.academia.edu/{account}",
+          "account_existence_code" : "200",
+          "account_existence_string" : "- Academia.edu",
+          "account_missing_string" : "Academia.edu",
+          "account_missing_code" : "404",
+          "known_accounts" : ["peter", "LiamM"],
+          "category" : "hobby",
+          "valid" : true
+        },
+        {
+          "name" : "Houzz",
+          "check_uri" : "https://www.houzz.com/user/{account}",
+          "account_existence_code" : "200",
+          "account_existence_string" : "Followers",
+          "account_missing_string" : "Page Not Found",
+          "account_missing_code" : "404",
+          "known_accounts" : ["liam", "alex"],
+          "category" : "hobby",
+          "valid" : true
+        },
+        {
+          "name" : "Hubski",
+          "check_uri" : "https://hubski.com/user/{account}",
+          "account_existence_code" : "200",
+          "account_existence_string" : "'s profile",
+          "account_missing_string" : "No such user.",
+          "account_missing_code" : "200",
+          "known_accounts" : ["kleinbl00", "peter"],
+          "category" : "hobby",
+          "valid" : true
         }
   ]
 }
