@@ -4248,6 +4248,17 @@
           "known_accounts" : ["kleinbl00", "peter"],
           "category" : "hobby",
           "valid" : true
+        },
+        {
+          "name" : "crowdin",
+          "check_uri" : "https://crowdin.com/profile/{account}",
+          "account_existence_code" : "200",
+          "account_existence_string" : ") – Crowdin",
+          "account_missing_string" : "Page Not Found - Crowdin",
+          "account_missing_code" : "404",
+          "known_accounts" : ["alex", "peter"],
+          "category" : "hobby",
+          "valid" : true
         }
   ]
 }
