@@ -4193,6 +4193,39 @@
           "known_accounts" : ["jack", "allen"],
           "category" : "social",
           "valid" : true
+        },
+        {
+          "name" : "Chaos",
+          "check_uri" : "https://chaos.social/@{account}",
+          "account_existence_code" : "200",
+          "account_existence_string" : "- chaos.social",
+          "account_missing_string" : "The page you are looking for isn&#39;t here.",
+          "account_missing_code" : "404",
+          "known_accounts" : ["alice", "sam"],
+          "category" : "social",
+          "valid" : true
+        },
+        {
+          "name" : "Arduino",
+          "check_uri" : "https://create.arduino.cc/projecthub/{account}",
+          "account_existence_code" : "200",
+          "account_existence_string" : "- Arduino Project Hub",
+          "account_missing_string" : "Arduino Project Hub",
+          "account_missing_code" : "404",
+          "known_accounts" : ["peter", "john"],
+          "category" : "tech",
+          "valid" : true
+        },
+        {
+          "name" : "hackerearth",
+          "check_uri" : "https://www.hackerearth.com/@{account}",
+          "account_existence_code" : "200",
+          "account_existence_string" : "| Developer Profile on HackerEarth",
+          "account_missing_string" : "404 | HackerEarth",
+          "account_missing_code" : "200",
+          "known_accounts" : ["peter", "liam"],
+          "category" : "coding",
+          "valid" : true
         }
   ]
 }
