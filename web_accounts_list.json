@@ -1,5 +1,5 @@
 {
-  "license" : ["Copyright (C) 2021 Micah Hoffman",
+  "license" : ["Copyright (C) 2022 Micah Hoffman",
               "This work is licensed under the Creative Commons Attribution-ShareAlike",
               "4.0 International License. To view a copy of this license, visit",
               "http://creativecommons.org/licenses/by-sa/4.0/ or send a letter to",
@@ -9,7 +9,7 @@
               "jspinel","ef1500","zewen","jocejocejoe", "P3run"],
   "categories" : ["art","blog","business","coding","dating","finance","gaming","health",
                 "hobby","images","misc","music","news","political","search","shopping","social",
-                "tech","video","XXXPORNXXX"],
+                "tech","video","XXXPORNXXX", "archived"],
   "sites" : [
      {
        "name" : "7cup",
@@ -4283,6 +4283,54 @@
           "valid" : true
         },
         {
+        "name" : "Parler archived profile",
+        "check_uri" : "http://archive.org/wayback/available?url=https://parler.com/profile/{account}",
+        "pretty_uri" : "https://web.archive.org/web/2/https://parler.com/profile/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "\"archived_snapshots\": {\"closest\"",
+        "account_missing_string" : "\"archived_snapshots\": {}",
+        "account_missing_code" : "200",
+        "known_accounts" : ["JoePags","dineshdsouza"],
+        "category" : "archived",
+        "valid" : true
+      },
+      {
+        "name" : "Parler archived posts",
+        "check_uri" : "http://archive.org/wayback/available?url=https://parler.com/profile/{account}/posts",
+        "pretty_uri" : "https://web.archive.org/web/2/https://parler.com/profile/{account}/posts",
+        "account_existence_code" : "200",
+        "account_existence_string" : "\"archived_snapshots\": {\"closest\"",
+        "account_missing_string" : "\"archived_snapshots\": {}",
+        "account_missing_code" : "200",
+        "known_accounts" : ["JoePags","dineshdsouza"],
+        "category" : "archived",
+        "valid" : true
+      },
+      {
+        "name" : "Twitter archived profile",
+        "check_uri" : "http://archive.org/wayback/available?url=https://twitter.com/{account}",
+        "pretty_uri" : "https://web.archive.org/web/2/https://twitter.com/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" : "\"archived_snapshots\": {\"closest\"",
+        "account_missing_string" : "\"archived_snapshots\": {}",
+        "account_missing_code" : "200",
+        "known_accounts" : ["jack","dineshdsouza"],
+        "category" : "archived",
+        "valid" : true
+      },
+      {
+        "name" : "Twitter archived tweets",
+        "check_uri" : "http://archive.org/wayback/available?url=https://twitter.com/{account}/status/*",
+        "pretty_uri" : "https://web.archive.org/web/*/https://twitter.com/{account}/status/*",
+        "account_existence_code" : "200",
+        "account_existence_string" : "\"archived_snapshots\": {\"closest\"",
+        "account_missing_string" : "\"archived_snapshots\": {}",
+        "account_missing_code" : "200",
+        "known_accounts" : ["jack","dineshdsouza"],
+        "category" : "archived",
+        "valid" : true
+      },
+      {
           "name" : "Pinkbike",
           "check_uri" : "https://www.pinkbike.com/u/{account}/",
           "account_existence_code" : "200",
