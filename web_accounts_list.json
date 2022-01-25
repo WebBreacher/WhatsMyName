@@ -7,9 +7,9 @@
   "authors" : ["WebBreacher","Munchko","L0r3m1p5um","lehuff","janbinx","bcoles","Sector035",
               "arnydo","mccartney","salaheldinaz","camhoff","jocephus","swedishmike","soxoj",
               "jspinel","ef1500","zewen","jocejocejoe", "P3run"],
-  "categories" : ["art","blog","business","coding","dating","finance","gaming","health",
+  "categories" : ["archived","art","blog","business","coding","dating","finance","gaming","health",
                 "hobby","images","misc","music","news","political","search","shopping","social",
-                "tech","video","XXXPORNXXX", "archived"],
+                "tech","video","XXXPORNXXX"],
   "sites" : [
      {
        "name" : "7cup",
@@ -1872,7 +1872,7 @@
        "known_accounts" : ["john", "test"],
        "category" : "video",
        "valid" : true
-     },     
+     },
      {
       "name" : "Photoblog",
       "check_uri" : "https://www.photoblog.com/{account}/",
