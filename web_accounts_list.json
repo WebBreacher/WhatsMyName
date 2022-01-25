@@ -4290,7 +4290,7 @@
         "account_existence_string" : "\"archived_snapshots\": {\"closest\"",
         "account_missing_string" : "\"archived_snapshots\": {}",
         "account_missing_code" : "200",
-        "known_accounts" : ["JoePags","dineshdsouza"],
+        "known_accounts" : ["JoePags", "dineshdsouza"],
         "category" : "archived",
         "valid" : true
       },
@@ -4302,7 +4302,7 @@
         "account_existence_string" : "\"archived_snapshots\": {\"closest\"",
         "account_missing_string" : "\"archived_snapshots\": {}",
         "account_missing_code" : "200",
-        "known_accounts" : ["JoePags","dineshdsouza"],
+        "known_accounts" : ["JoePags", "dineshdsouza"],
         "category" : "archived",
         "valid" : true
       },
@@ -4314,7 +4314,7 @@
         "account_existence_string" : "\"archived_snapshots\": {\"closest\"",
         "account_missing_string" : "\"archived_snapshots\": {}",
         "account_missing_code" : "200",
-        "known_accounts" : ["jack","dineshdsouza"],
+        "known_accounts" : ["jack", "dineshdsouza"],
         "category" : "archived",
         "valid" : true
       },
@@ -4326,7 +4326,7 @@
         "account_existence_string" : "\"archived_snapshots\": {\"closest\"",
         "account_missing_string" : "\"archived_snapshots\": {}",
         "account_missing_code" : "200",
-        "known_accounts" : ["jack","dineshdsouza"],
+        "known_accounts" : ["jack", "dineshdsouza"],
         "category" : "archived",
         "valid" : true
       },
@@ -4339,6 +4339,39 @@
           "account_missing_code" : "404",
           "known_accounts" : ["dani", "annie"],
           "category" : "health",
+          "valid" : true
+        },
+        {
+          "name" : "Researchgate",
+          "check_uri" : "https://www.researchgate.net/profile/{account}",
+          "account_existence_code" : "200",
+          "account_existence_string" : " | ",
+          "account_missing_string" : "20+ million researchers on ResearchGate",
+          "account_missing_code" : "301",
+          "known_accounts" : ["Tafara-Mwareya", "Jose-Roberto-Rasi"],
+          "category" : "hobby",
+          "valid" : true
+        },
+        {
+          "name" : "polygon",
+          "check_uri" : "https://www.polygon.com/users/{account}",
+          "account_existence_code" : "200",
+          "account_existence_string" : "- Polygon",
+          "account_missing_string" : "404 Not found",
+          "account_missing_code" : "404",
+          "known_accounts" : ["nicodeyo", "Nicole_Clark"],
+          "category" : "gaming",
+          "valid" : true
+        },
+        {
+          "name" : "nairaland",
+          "check_uri" : "https://www.nairaland.com/{account}",
+          "account_existence_code" : "200",
+          "account_existence_string" : "s Profile",
+          "account_missing_string" : "404: Page Not Found",
+          "account_missing_code" : "301",
+          "known_accounts" : ["amakaone", "seun"],
+          "category" : "news",
           "valid" : true
         }
   ]
