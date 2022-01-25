@@ -4430,14 +4430,14 @@
           "valid" : true
         },
         {
-          "name" : "gumroad",
-          "check_uri" : "https://{account}.gumroad.com/",
+          "name" : "hackster",
+          "check_uri" : "https://www.hackster.io/{account}",
           "account_existence_code" : "200",
-          "account_existence_string" : "s profile picture",
-          "account_missing_string" : "Gumroad - 404",
+          "account_existence_string" : "- Hackster.io",
+          "account_missing_string" : "Hackster.io - The community dedi",
           "account_missing_code" : "404",
-          "known_accounts" : ["owen", "bob"],
-          "category" : "art",
+          "known_accounts" : ["ian", "bob"],
+          "category" : "coding",
           "valid" : true
         }
   ]
