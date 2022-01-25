@@ -4417,6 +4417,17 @@
           "known_accounts" : ["alice", "john"],
           "category" : "hobby",
           "valid" : true
+        },
+        {
+          "name" : "kaggle",
+          "check_uri" : "https://www.kaggle.com/{account}",
+          "account_existence_code" : "200",
+          "account_existence_string" : "| Kaggle",
+          "account_missing_string" : "Kaggle: Your Home for Data Science",
+          "account_missing_code" : "404",
+          "known_accounts" : ["babyoda", "residentmario"],
+          "category" : "coding",
+          "valid" : true
         }
   ]
 }
