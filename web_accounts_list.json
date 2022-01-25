@@ -4373,6 +4373,72 @@
           "known_accounts" : ["amakaone", "seun"],
           "category" : "news",
           "valid" : true
+        },
+        {
+          "name" : "tradingview",
+          "check_uri" : "https://www.tradingview.com/u/{account}/",
+          "account_existence_code" : "200",
+          "account_existence_string" : "— Trading Ideas &amp;",
+          "account_missing_string" : "Page not found — TradingView",
+          "account_missing_code" : "404",
+          "known_accounts" : ["liam", "john"],
+          "category" : "finance",
+          "valid" : true
+        },
+        {
+          "name" : "wordnik",
+          "check_uri" : "https://www.wordnik.com/users/{account}",
+          "account_existence_code" : "200",
+          "account_existence_string" : "Welcome,",
+          "account_missing_string" : "Wordnik: Page Not Found",
+          "account_missing_code" : "404",
+          "known_accounts" : ["elle", "john"],
+          "category" : "gaming",
+          "valid" : true
+        },
+        {
+          "name" : "slant",
+          "check_uri" : "https://www.slant.co/users/{account}",
+          "account_existence_code" : "200",
+          "account_existence_string" : "s Profile - Slant",
+          "account_missing_string" : "404 - Page Not Found - Slant",
+          "account_missing_code" : "404",
+          "known_accounts" : ["bob", "john"],
+          "category" : "shopping",
+          "valid" : true
+        },
+        {
+          "name" : "memrise",
+          "check_uri" : "https://app.memrise.com/user/{account}/",
+          "account_existence_code" : "200",
+          "account_existence_string" : "followers",
+          "account_missing_string" : "Memrise - Error",
+          "account_missing_code" : "404",
+          "known_accounts" : ["alice", "john"],
+          "category" : "hobby",
+          "valid" : true
+        },
+        {
+          "name" : "kaggle",
+          "check_uri" : "https://www.kaggle.com/{account}",
+          "account_existence_code" : "200",
+          "account_existence_string" : "| Kaggle",
+          "account_missing_string" : "Kaggle: Your Home for Data Science",
+          "account_missing_code" : "404",
+          "known_accounts" : ["babyoda", "residentmario"],
+          "category" : "coding",
+          "valid" : true
+        },
+        {
+          "name" : "gumroad",
+          "check_uri" : "https://{account}.gumroad.com/",
+          "account_existence_code" : "200",
+          "account_existence_string" : "s profile picture",
+          "account_missing_string" : "Gumroad - 404",
+          "account_missing_code" : "404",
+          "known_accounts" : ["owen", "bob"],
+          "category" : "art",
+          "valid" : true
         }
   ]
 }
