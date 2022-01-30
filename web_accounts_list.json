@@ -4461,6 +4461,17 @@
           "known_accounts" : ["mmish2", "Lisa_M_S"],
           "category" : "political",
           "valid" : true
+        },
+        {
+          "name" : "kik",
+          "check_uri" : "https://ws2.kik.com/user/{account}",
+          "account_existence_code" : "200",
+          "account_existence_string" : "firstName",
+          "account_missing_string" : "The page you requested was not found",
+          "account_missing_code" : "200",
+          "known_accounts" : ["adam", "smith", "jones"],
+          "category" : "social",
+          "valid" : true
         }
   ]
 }
