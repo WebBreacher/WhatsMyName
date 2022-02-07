@@ -4461,6 +4461,20 @@
           "known_accounts" : ["adam", "smith", "jones"],
           "category" : "social",
           "valid" : true
+        },
+        {
+          "name": "Patronite",
+          "check_uri": "https://patronite.pl/{account}",
+          "account_existence_code": "200",
+          "account_existence_string": "Zostań Patronem",
+          "account_missing_string": "Nie znaleźliśmy strony której szukasz.",
+          "account_missing_code": "404",
+          "known_accounts": [
+            "radio357",
+            "radionowyswiat"
+          ],
+          "category": "finance",
+          "valid": true
         }
   ]
 }
