@@ -6,7 +6,7 @@
               "Creative Commons, PO Box 1866, Mountain View, CA 94042, USA."],
   "authors" : ["WebBreacher","Munchko","L0r3m1p5um","lehuff","janbinx","bcoles","Sector035",
               "arnydo","mccartney","salaheldinaz","camhoff","jocephus","swedishmike","soxoj",
-              "jspinel","ef1500","zewen","jocejocejoe", "P3run"],
+              "jspinel","ef1500","zewen","jocejocejoe", "P3run", "seintpl"],
   "categories" : ["archived","art","blog","business","coding","dating","finance","gaming","health",
                 "hobby","images","misc","music","news","political","search","shopping","social",
                 "tech","video","XXXPORNXXX"],
@@ -4485,6 +4485,17 @@
           "account_missing_code" : "404",
           "known_accounts" : ["StopAdMedia", "jokervendetti"],
           "category" : "social",
+          "valid" : true
+        },
+        {
+          "name" : "Iconfinder",
+          "check_uri" : "https://www.iconfinder.com/{account}",
+          "account_existence_code" : "200",
+          "account_existence_string" : "iconsets",
+          "account_missing_string" : "Page not found",
+          "account_missing_code" : "404",
+          "known_accounts" : ["roundicons", "iconfinder"],
+          "category" : "images",
           "valid" : true
         }    
   ]
