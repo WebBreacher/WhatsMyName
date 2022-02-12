@@ -4475,6 +4475,17 @@
           ],
           "category": "finance",
           "valid": true
-        }
+        },
+        {
+          "name" : "ow.ly",
+          "check_uri" : "http://ow.ly/user/{account}",
+          "account_existence_code" : "200",
+          "account_existence_string" : "Images",
+          "account_missing_string" : "404 error",
+          "account_missing_code" : "404",
+          "known_accounts" : ["StopAdMedia", "jokervendetti"],
+          "category" : "social",
+          "valid" : true
+        }    
   ]
 }
