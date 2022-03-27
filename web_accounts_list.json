@@ -4488,6 +4488,17 @@
           "valid" : true
         },
         {
+          "name" : "Playstation Network",
+          "check_uri" : "https://psnprofiles.com/xhr/search/users?q={account}",
+          "account_existence_code" : "200",
+          "account_existence_string" : "<div class=\"progress-bar small level\">",
+          "account_missing_string" : "We couldn't find anything ",
+          "account_missing_code" : "200",
+          "known_accounts" : ["SlimShaggy18", "ikemenzi"],
+          "category" : "gaming",
+          "valid" : true
+        },
+        {
           "name" : "Iconfinder",
           "check_uri" : "https://www.iconfinder.com/{account}",
           "account_existence_code" : "200",
