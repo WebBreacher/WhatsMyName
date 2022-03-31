@@ -2329,10 +2329,10 @@
      },
      {
        "name" : "Venmo",
-       "check_uri" : "https://venmo.com/{account}",
+       "check_uri" : "https://account.venmo.com/u/{account}",
        "account_existence_code" : "200",
-       "account_existence_string" : "Venmoing since",
-       "account_missing_string" : "Sorry, the page you requested does not exist",
+       "account_existence_string" : "\"profileInfo_username__",
+       "account_missing_string" : "Sorry, the page you requested does not exist!",
        "account_missing_code" : "404",
        "known_accounts" : ["john", "liam"],
        "category" : "finance",
