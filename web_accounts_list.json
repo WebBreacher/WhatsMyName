@@ -1900,8 +1900,8 @@
        "check_uri" : "https://www.pornhub.com/pornstar/{account}",
        "account_existence_code" : "200",
        "account_existence_string" : "Pornstar Rank",
-       "account_missing_string" : "Error Page Not Found",
-       "account_missing_code" : "404",
+       "account_missing_string" : "",
+       "account_missing_code" : "301",
        "known_accounts" : ["riley-reid", "alex-adams"],
        "category" : "XXXPORNXXX",
        "valid" : true
