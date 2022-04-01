@@ -148,7 +148,7 @@
        "check_uri" : "https://www.buymeacoffee.com/{account}",
        "account_existence_code" : "200",
        "account_existence_string" : "supporters",
-       "account_missing_string" : "It returned a 404 error.",
+       "account_missing_string" : "The page you’re looking for doesn’t exist.",
        "account_missing_code" : "404",
        "known_accounts" : ["freebird", "robinwong"],
        "category" : "finance",
@@ -4508,6 +4508,6 @@
           "known_accounts" : ["roundicons", "iconfinder"],
           "category" : "images",
           "valid" : true
-        }    
+        }
   ]
 }
