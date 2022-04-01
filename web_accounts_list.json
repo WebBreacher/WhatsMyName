@@ -932,17 +932,6 @@
        "valid" : true
      },
      {
-       "name" : "Codepen",
-       "check_uri" : "https://codepen.io/{account}/",
-       "account_existence_code" : "200",
-       "account_existence_string" : "twitter:title\" content",
-       "account_missing_string" : "<title>404 on CodePen</title>",
-       "account_missing_code" : "404",
-       "known_accounts" : ["danwilson", "loficodes", "_niikhil"],
-       "category" : "tech",
-       "valid" : true
-     },
-     {
        "name" : "COLOURlovers",
        "check_uri" : "https://www.colourlovers.com/lover/{account}",
        "account_existence_code" : "200",
