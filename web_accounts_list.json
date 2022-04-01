@@ -1756,10 +1756,10 @@
        "name" : "netvibes",
        "check_uri" : "https://www.netvibes.com/{account}",
        "account_existence_code" : "200",
-       "account_existence_string" : "topbar-profile-name",
-       "account_missing_string" : "Sorry, the page you are looking for doesn't exist.",
+       "account_existence_string" : "userId",
+       "account_missing_string" : "Page not found",
        "account_missing_code" : "404",
-       "known_accounts" : ["nebkacrea#Createur_site_internet", "cdiljda#AP_2nde"],
+       "known_accounts" : ["nebkacrea", "cdiljda"],
        "category" : "social",
        "valid" : true
      },
@@ -1772,17 +1772,6 @@
        "account_missing_code" : "404",
        "known_accounts" : ["notabug", "hp", "zPlus"],
        "category" : "coding",
-       "valid" : true
-     },
-     {
-       "name" : "Onlyfans",
-       "check_uri" : "https://onlyfans.com/{account}",
-       "account_existence_code" : "304",
-       "account_existence_string" : "Last seen",
-       "account_missing_code" : "200",
-       "account_missing_string" : "this page is not available",
-       "known_accounts" : ["madmaxx", "katie123"],
-       "category" : "XXXPORNXXX",
        "valid" : true
      },
      {
@@ -1900,8 +1889,8 @@
        "check_uri" : "https://www.pornhub.com/pornstar/{account}",
        "account_existence_code" : "200",
        "account_existence_string" : "Pornstar Rank",
-       "account_missing_string" : "Error Page Not Found",
-       "account_missing_code" : "404",
+       "account_missing_string" : "",
+       "account_missing_code" : "301",
        "known_accounts" : ["riley-reid", "alex-adams"],
        "category" : "XXXPORNXXX",
        "valid" : true
@@ -4463,6 +4452,17 @@
           "account_missing_code" : "404",
           "known_accounts" : ["roundicons", "iconfinder"],
           "category" : "images",
+          "valid" : true
+        },
+        {
+          "name" : "Shesfreaky",
+          "check_uri" : "https://www.shesfreaky.com/profile/{account}/",
+          "account_existence_code" : "200",
+          "account_existence_string" : "s Profile - ShesFreaky</title>",
+          "account_missing_code" : "302",
+          "account_missing_string" : "",
+          "known_accounts" : ["tata23", "fitzsta"],
+          "category" : "XXXPORNXXX",
           "valid" : true
         }
   ]
