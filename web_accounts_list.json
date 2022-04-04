@@ -3047,17 +3047,6 @@
        "valid" : true
      },
      {
-       "name" : "echo.msk",
-       "check_uri" : "https://echo.msk.ru/users/{account}/",
-       "account_existence_code" : "200",
-       "account_existence_string" : " — Пользователи — Эхо Москвы",
-       "account_missing_string" : "Страница не найдена",
-       "account_missing_code" : "404",
-       "known_accounts" : ["john", "blue"],
-       "category" : "news",
-       "valid" : true
-     },
-     {
        "name" : "Facenama",
        "check_uri" : "https://facenama.com/{account}",
        "account_existence_code" : "200",
