@@ -2284,17 +2284,6 @@
        "valid" : true
      },
      {
-       "name" : "uSTREAM",
-       "check_uri" : "http://www.ustream.tv/channel/{account}",
-       "account_existence_code" : "200",
-       "account_existence_string" : "viewer_total",
-       "account_missing_string" : "Sorry, the page you requested cannot be found",
-       "account_missing_code" : "404",
-       "known_accounts" : ["wukf", "johndoe"],
-       "category" : "video",
-       "valid" : true
-     },
-     {
        "name" : "Venmo",
        "check_uri" : "https://account.venmo.com/u/{account}",
        "account_existence_code" : "200",
