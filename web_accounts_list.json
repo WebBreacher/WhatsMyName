@@ -3988,12 +3988,13 @@
         },
         {
           "name" : "SpankPay",
-          "check_uri" : "https://spankpay.me/{account}",
+          "check_uri" : "https://pay-api.spankchain.com/profiles/{account}?allowBlank=",
+          "pretty_uri" : "https://spankpay.me/{account}",
           "account_existence_code" : "200",
-          "account_existence_string" : "Pay Me",
-          "account_missing_string" : "Error: Bad response status: 404",
-          "account_missing_code" : "200",
-          "known_accounts" : ["Medroxy","Anna"],
+          "account_existence_string" : "spankpayApiKey",
+          "account_missing_string" : "Profile not found:",
+          "account_missing_code" : "404",
+          "known_accounts" : ["Medroxy","brittanyandrews"],
           "category" : "finance",
           "valid" : true
         },
