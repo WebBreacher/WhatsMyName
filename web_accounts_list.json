@@ -3853,17 +3853,6 @@
       "valid": true
     },
     {
-      "name": "Szeroki Kadr",
-      "check_uri": "https://www.szerokikadr.pl/profil,{account}",
-      "account_existence_code": "200",
-      "account_existence_string": "Profil użytkownika",
-      "account_missing_string": "Nie masz jeszcze konta?",
-      "account_missing_code": "200",
-      "known_accounts": ["kowal", "janek"],
-      "category": "hobby",
-      "valid": true
-    },
-    {
       "name": "oglaszamy24h.pl",
       "check_uri": "https://oglaszamy24h.pl/profil,{account}",
       "account_existence_code": "200",
