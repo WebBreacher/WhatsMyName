@@ -3910,12 +3910,13 @@
     },
     {
       "name": "watchmemore.com",
-      "check_uri": "https://watchmemore.com/{account}/",
+      "check_uri": "https://api.watchmemore.com/api3/profile/{account}/",
+      "pretty_uri" : "https://watchmemore.com/{account}/",
       "account_existence_code": "200",
-      "account_existence_string": "Click here to find more profiles...",
-      "account_missing_string": "Might be interested in those profiles:",
-      "account_missing_code": "200",
-      "known_accounts": ["medroxy", "arax123"],
+      "account_existence_string": "displayName",
+      "account_missing_string": "notExists",
+      "account_missing_code": "400",
+      "known_accounts": ["medroxy", "nodjev"],
       "category": "XXXPORNXXX",
       "valid": true
     },
