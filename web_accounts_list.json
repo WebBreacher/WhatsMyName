@@ -3954,15 +3954,16 @@
       "valid": true
     },
     {
-      "name" : "Twitch.tv",
-      "check_uri" : "https://passport.twitch.tv/usernames/{account}",
+      "name" : "Twitch",
+      "check_uri" : "https://twitchtracker.com/search?q={account}",
+      "pretty_uri" : "https://twitch.tv/{account}/",
       "account_existence_code" : "200",
-      "account_existence_string" : "",
-      "account_missing_string" : "",
-      "account_missing_code" : "204",
+      "account_existence_string" : "Found Exact Match",
+      "account_missing_string" : "nothing found",
+      "account_missing_code" : "200",
       "known_accounts" : ["summit1g", "cohhcarnage"],
       "category" : "gaming",
-      "valid" : false
+      "valid" : true
       },
       {
         "name" : "fansly",
