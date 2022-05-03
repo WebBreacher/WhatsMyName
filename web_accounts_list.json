@@ -2432,11 +2432,12 @@
      },
      {
        "name" : "Wikipedia",
-       "check_uri" : "https://en.wikipedia.org/wiki/User:{account}",
+       "check_uri" : "https://en.wikipedia.org/w/api.php?action=query&format=json&list=users&ususers={account}&usprop=cancreate",
+       "pretty_uri" : "https://en.wikipedia.org/wiki/User:{account}",
        "account_existence_code" : "200",
-       "account_existence_string" : "Edit this page",
-       "account_missing_string" : "",
-       "account_missing_code" : "404",
+       "account_existence_string" : "userid",
+       "account_missing_string" : "cancreate",
+       "account_missing_code" : "200",
        "known_accounts" : ["Mcd51", "W._Frank"],
        "category" : "news",
        "valid" : true
