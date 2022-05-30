@@ -4438,7 +4438,7 @@
           "valid" : true
         },
         {
-          "name" : "Snapchat",
+          "name" : "Snapchat Stories",
           "check_uri" : "https://story.snapchat.com/s/{account}",
           "account_existence_code" : "200",
           "account_existence_string" : "is on Snapchat!",
@@ -4477,7 +4477,7 @@
            "account_existence_string" : "This blog contains adult content",
            "account_missing_string" : "This blog doesn't exist.",
            "account_missing_code" : "200",
-           "known_accounts" : ["themunch", "coffeemeandporn"],
+           "known_accounts" : ["themunch", "shibari4all"],
            "category" : "XXXPORNXXX",
            "valid" : true
           },
