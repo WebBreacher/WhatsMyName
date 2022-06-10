@@ -2443,7 +2443,17 @@
        "valid" : true
      },
      {
-       "name" : "WordPress",
+       "name" : "WordPress Blog",
+       "check_uri" : "https://{account}.wordpress.com",
+       "account_existence_code" : "200",
+       "account_existence_string" : "html",
+       "account_missing_string" : "Do you want to register",
+       "known_accounts" : ["test", "unknown31"],
+       "category" : "blog",
+       "valid" : true
+     },
+     {
+       "name" : "WordPress Profile",
        "check_uri" : "https://profiles.wordpress.org/{account}/",
        "account_existence_code" : "200",
        "account_existence_string" : "user-member-since",
