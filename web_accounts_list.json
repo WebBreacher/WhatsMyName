@@ -6,7 +6,7 @@
               "Creative Commons, PO Box 1866, Mountain View, CA 94042, USA."],
   "authors" : ["WebBreacher","Munchko","L0r3m1p5um","lehuff","janbinx","bcoles","Sector035",
               "arnydo","mccartney","salaheldinaz","camhoff","jocephus","swedishmike","soxoj",
-              "jspinel","ef1500","zewen","jocejocejoe", "P3run", "seintpl"],
+              "jspinel","ef1500","zewen","jocejocejoe", "P3run", "seintpl", "djahren"],
   "categories" : ["archived","art","blog","business","coding","dating","finance","gaming","health",
                 "hobby","images","misc","music","news","political","search","shopping","social",
                 "tech","video","XXXPORNXXX"],
@@ -4015,6 +4015,7 @@
         {
           "name" : "FanCentro",
           "check_uri" : "https://fancentro.com/api/profile.get?profileAlias={account}&limit=1",
+          "pretty_uri" : "https://fancentro.com/{account}/",
           "account_existence_code" : "200",
           "account_existence_string" : "\"status\":true",
           "account_missing_string" : "\"status\":false",
@@ -4436,6 +4437,72 @@
           "known_accounts" : ["tata23", "fitzsta"],
           "category" : "XXXPORNXXX",
           "valid" : true
-        }
+        },
+        {
+          "name" : "Snapchat Stories",
+          "check_uri" : "https://story.snapchat.com/s/{account}",
+          "account_existence_code" : "200",
+          "account_existence_string" : "is on Snapchat!",
+          "account_missing_string" : "Not_Found",
+          "account_missing_code" : "404",
+          "known_accounts" : ["djkhaled305", "mileycyrus"],
+          "category" : "social",
+          "valid" : true
+        },
+        {
+          "name" : "Spotify",
+          "check_uri" : "https://open.spotify.com/user/{account}",
+          "account_existence_code" : "200",
+          "account_existence_string" : "on Spotify</title>",
+          "account_missing_string" : "Spotify - Web Player</title>",
+          "account_missing_code" : "200",
+          "known_accounts" : ["kexp_official", "mkbhd"],
+          "category" : "music",
+          "valid" : true
+        }, 
+        {
+          "name" : "ArtBreeder",
+          "check_uri" : "https://www.artbreeder.com/{account}",
+          "account_existence_code" : "200",
+          "account_existence_string" : "<title>",
+          "account_missing_string" : "Not found:",
+          "account_missing_code" : "404",
+          "known_accounts" : ["dolores", "cyborghyena"],
+          "category" : "art",
+          "valid" : true
+          },
+          {
+           "name" : "BDSMLR",
+           "check_uri" : "https://{account}.bdsmlr.com",
+           "account_existence_code" : "200",
+           "account_existence_string" : "login",
+           "account_missing_string" : "This blog doesn't exist.",
+           "account_missing_code" : "200",
+           "known_accounts" : ["themunch", "shibari4all"],
+           "category" : "XXXPORNXXX",
+           "valid" : true
+          },
+          {
+           "name" : "ReblogMe",
+           "check_uri" : "https://{account}.reblogme.com",
+           "account_existence_code" : "200",
+           "account_existence_string" : "blogbody",
+           "account_missing_string" : "Sorry, seems that blog doesn't exist",
+           "account_missing_code" : "200",
+           "known_accounts" : ["staff", "chicken"],
+           "category" : "XXXPORNXXX",
+           "valid" : true
+          },
+          {
+           "name" : "SpiceWorks",
+           "check_uri" : "https://community.spiceworks.com/people/{account}",
+           "account_existence_code" : "200",
+           "account_existence_string" : "Portfolio of IT Projects - Spiceworks",
+           "account_missing_string" : "Page Not Found",
+           "account_missing_code" : "404",
+           "known_accounts" : ["spicerex", "rod-it"],
+           "category" : "tech",
+           "valid" : true
+          }
   ]
 }
