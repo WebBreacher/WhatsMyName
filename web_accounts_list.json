@@ -1897,6 +1897,17 @@
        "valid" : true
      },
      {
+       "name" : "popl",
+       "check_uri" : "https://poplme.co/{account}",
+       "account_existence_code" : "200",
+       "account_existence_string" : "MuiTypography-root MuiTypography-body1 css-kj7pvm",
+       "account_missing_string" : "Profile not found",
+       "account_missing_code" : "200",
+       "known_accounts" : ["rpelite","Ee0af3d822","ashleymetzger"],
+       "category" : "business",
+       "valid" : true
+     },
+     {
        "name" : "Pornhub Porn Stars",
        "check_uri" : "https://www.pornhub.com/pornstar/{account}",
        "account_existence_code" : "200",
