@@ -1431,6 +1431,17 @@
        "valid" : true
      },
      {
+      "name" : "iMGSRC.RU",
+      "check_uri" : "https://imgsrc.ru/main/user.php?lang=ru&user={account}",
+      "account_existence_code" : "200",
+      "account_existence_string" : "Присоединился",
+      "account_missing_string" : "",
+      "account_missing_code" : "302",
+      "known_accounts" : ["natalisn","andydiamond","natalyck"],
+      "category" : "images",
+      "valid" : true
+    },
+     {
        "name" : "imgur",
        "check_uri" : "https://api.imgur.com/account/v1/accounts/{account}?client_id=546c25a59c58ad7&include=trophies%2Cmedallions",
        "pretty_uri" : "https://imgur.com/user/{account}/about",
@@ -4459,7 +4470,7 @@
           "known_accounts" : ["kexp_official", "mkbhd"],
           "category" : "music",
           "valid" : true
-        }, 
+        },
         {
           "name" : "ArtBreeder",
           "check_uri" : "https://www.artbreeder.com/{account}",
