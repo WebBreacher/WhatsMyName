@@ -4525,6 +4525,39 @@
            "known_accounts" : ["spicerex", "rod-it"],
            "category" : "tech",
            "valid" : true
+          },
+          {
+           "name" : "Friendweb",
+           "check_uri" : "https://friendweb.nl/{account}",
+           "account_existence_code" : "200",
+           "account_existence_string" : "friendweb.nl",
+           "account_missing_string" : "Page Not Found",
+           "account_missing_code" : "404",
+           "known_accounts" : ["HoogtePiet", "JeePee"],
+           "category" : "social",
+           "valid" : true
+          },
+          {
+           "name" : "TotalWar",
+           "check_uri" : "https://forums.totalwar.com/profile/{account}",
+           "account_existence_code" : "200",
+           "account_existence_string" : "Total War Forums",
+           "account_missing_string" : "Not Found",
+           "account_missing_code" : "404",
+           "known_accounts" : ["iamnotarobot", "passthechips"],
+           "category" : "gaming",
+           "valid" : true
+          },
+          {
+           "name" : "Mmorpg",
+           "check_uri" : "https://forums.mmorpg.com/profile/{account}",
+           "account_existence_code" : "200",
+           "account_existence_string" : "MMORPG.com Forums",
+           "account_missing_string" : "404 Not Not_Found",
+           "account_missing_code" : "404",
+           "known_accounts" : ["TheDalaiBomba", "MadLovin"],
+           "category" : "gaming",
+           "valid" : true
           }
   ]
 }
