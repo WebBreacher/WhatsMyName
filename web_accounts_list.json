@@ -4620,7 +4620,7 @@
            "account_existence_code" : "200",
            "account_existence_string" : "أنا",
            "account_missing_string" : "الصفحة المطلوبة غير موجودة",
-           "account_missing_code" : "404",
+           "account_missing_code" : "302",
            "known_accounts" : ["monya14555d", "LordMohy"],
            "category" : "dating",
            "valid" : true
@@ -4642,7 +4642,7 @@
            "account_existence_code" : "200",
            "account_existence_string" : "Información Personal",
            "account_missing_string" : "Desde 2001 conectando gente!",
-           "account_missing_code" : "200",
+           "account_missing_code" : "302",
            "known_accounts" : ["danijak", "darkfox"],
            "category" : "XXXPORNXXX",
            "valid" : true
