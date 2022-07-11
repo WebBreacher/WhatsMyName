@@ -4604,10 +4604,10 @@
            "valid" : true
           },
           {
-           "name" : "HeyLink.me",
+           "name" : "Heylink",
            "check_uri" : "https://heylink.me/{account}/",
            "account_existence_code" : "200",
-           "account_existence_string" : "Heylink.me",
+           "account_existence_string" : "HeyLink.me |",
            "account_missing_string" : "We can't find the page that you're looking for :(",
            "account_missing_code" : "404",
            "known_accounts" : ["mohammed13", "johnny"],
