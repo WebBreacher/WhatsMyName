@@ -3215,17 +3215,6 @@
        "valid" : true
      },
      {
-       "name" : "Ruby Dating",
-       "check_uri" : "https://ruby.dating/en/users/{account}",
-       "account_existence_code" : "200",
-       "account_existence_string" : "Looks for:",
-       "account_missing_string" : "We can’t find that user",
-       "account_missing_code" : "410",
-       "known_accounts" : ["Ute1833", "Jessika4922"],
-       "category" : "dating",
-       "valid" : true
-     },
-     {
        "name" : "PCGamer",
        "check_uri" : "https://forums.pcgamer.com/members/{account}/",
        "account_existence_code" : "200",
