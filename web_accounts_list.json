@@ -4724,16 +4724,5 @@
            "category" : "social",
            "valid" : true
           },
-          {
-           "name" : "mastodon.social",
-           "check_uri" : "https://mastodon.social/@{account}",
-           "account_existence_code" : "200",
-           "account_existence_string" : "mastodon.social",
-           "account_missing_string" : "The page you are looking for isn&#39;t here.",
-           "account_missing_code" : "404",
-           "known_accounts" : ["kubesploit", "DavidBlue"],
-           "category" : "social",
-           "valid" : true
-          }
   ]
 }
