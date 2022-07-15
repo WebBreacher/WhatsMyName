@@ -4701,6 +4701,17 @@
            "known_accounts" : ["mohamed01", "ahmed"],
            "category" : "misc",
            "valid" : true
-          }                        
+          },
+          {
+           "name" : "footeo",
+           "check_uri" : "https://www.footeo.com/fr/users/{account}",
+           "account_existence_code" : "200",
+           "account_existence_string" : "- Footeo",
+           "account_missing_string" : "VOTRE FRAPPE N'A PAS TROUVÉ LE CADRE !",
+           "account_missing_code" : "404",
+           "known_accounts" : ["rachid3", "mike"],
+           "category" : "hobby",
+           "valid" : true
+          }       
   ]
 }
