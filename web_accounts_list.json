@@ -4711,6 +4711,17 @@
            "known_accounts" : ["amiw", "turbolove"],
            "category" : "social",
            "valid" : true
+          },
+          {
+           "name" : "entrepreneurship-campus",
+           "check_uri" : "https://www.entrepreneurship-campus.org/members/{account}/",
+           "account_existence_code" : "200",
+           "account_existence_string" : "| Entrepreneurship Campus",
+           "account_missing_string" : "Page Not Found -",
+           "account_missing_code" : "404",
+           "known_accounts" : ["sanjay01", "mohammed"],
+           "category" : "social",
+           "valid" : true
           }
   ]
 }
