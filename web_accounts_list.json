@@ -4720,7 +4720,7 @@
            "account_missing_string" : "Page Not Found -",
            "account_missing_code" : "404",
            "known_accounts" : ["sanjay01", "mohammed"],
-           "category" : "social",
+           "category" : "misc",
            "valid" : true
           }
   ]
