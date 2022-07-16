@@ -40,7 +40,7 @@ e.g.
   ```
   $ curl https://github.com/ThisDoesNotExistForSure504
   [...]
-  HTTP request sent, awaiting response... 404 Not Found 
+  HTTP request sent, awaiting response... 404 Not Found
   ```
 - Observe the outcome for existing profile. The response code should be 200.
 And among the downloaded source code find a text expected to be observed in
@@ -70,7 +70,7 @@ The format of the JSON is simple. There are 3 main elements:
 2. Authors - The people that have contributed to this project
 3. Sites - This is the main data
 
-Within the "sites" elements, the format is as follows (with several parameters being optional):
+Within the `sites` elements, the format is as follows (with several parameters being optional):
 
 ```json
      ...
@@ -82,8 +82,8 @@ Within the "sites" elements, the format is as follows (with several parameters b
          "account_existence_string" : "the string in the response that we look for for a good response",
          "account_missing_string" : "this OPTIONAL string will only be in the response if there is no account found ",
          "account_missing_code" : "the HTTP response code for a bad 'account is not there' response",
-         "known_accounts" : ["a list of user accounts that can be used to test","for user enumeration"],
-         "category" : "a category for what the site is mainly used for",
+         "known_accounts" : ["a list of user accounts that can be used to test", "for user enumeration"],
+         "category" : "a category for what the site is mainly used for. These are found at the top of the JSON",
          "valid" : "this true or false boolean field is used to enable or disable this site element"
       },
       ...
