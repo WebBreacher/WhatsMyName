@@ -4782,7 +4782,7 @@
            "name" : "ubisoft.com",
            "check_uri" : "https://discussions.ubisoft.com/user/{account}",
            "account_existence_code" : "200",
-           "account_existence_string" : "Ubisoft Discussion Forums",
+           "account_existence_string" : "Joined",
            "account_missing_string" : "<title>Not Found | Ubisoft",
            "account_missing_code" : "404",
            "known_accounts" : ["rizkonnez", "gegg22"],
