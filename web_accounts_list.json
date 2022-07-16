@@ -345,13 +345,12 @@
      },
      {
        "name" : "Hackernoon",
-       "check_uri" : "https://hackernoon.com/_next/data/foL6JC7ro2FEEMD-gMKgQ/u/{account}.json",
-       "pretty_uri" : "https://hackernoon.com/u/{account}",
+       "check_uri" : "https://hackernoon.com/u/{account}",
        "account_existence_code" : "200",
-       "account_existence_string" : "\"profile\"",
-       "account_missing_string" : "__N_REDIRECT",
+       "account_existence_string" : "displayName",
+       "account_missing_string" : "Looks like we’re in the ether.",
        "account_missing_code" : "200",
-       "known_accounts" : ["john", "alex"],
+       "known_accounts" : ["swedeyburr", "brbs"],
        "category" : "tech",
        "valid" : true
      },
@@ -494,7 +493,7 @@
        "account_existence_string" : "profile_user_image",
        "account_missing_string" : "The page you are looking for cannot be found.",
        "account_missing_code" : "404",
-       "known_accounts" : ["txmustang302"],
+       "known_accounts" : ["txmustang302","RealWillJohnson"],
        "category" : "social",
        "valid" : true
      },
@@ -507,7 +506,7 @@
        "account_missing_code" : "404",
        "known_accounts" : ["john", "bob"],
        "category" : "tech",
-       "valid" : true
+       "valid" : false
      },
      {
        "name" : "Poll Everywhere",
@@ -1117,18 +1116,18 @@
        "account_existence_string" : "Video/Pics views",
        "account_missing_string" : "Profile not found",
        "account_missing_code" : "404",
-       "known_accounts" : ["enron456", "Jomat999", "hicnobu"],
+       "known_accounts" : ["mrbreezy90", "JAVCollectionHD", "P2K2KK"],
        "category" : "XXXPORNXXX",
        "valid" : true
      },
      {
        "name" : "Etsy",
-       "check_uri" : "https://www.etsy.com/people/{account}",
+       "check_uri" : "https://www.etsy.com/people/{account}/favorite-items",
        "account_existence_code" : "200",
-       "account_existence_string" : " on Etsy</title>",
+       "account_existence_string" : "'s favorite items - Etsy</title>",
        "account_missing_string" : "Sorry, the member you are looking for does not exist",
        "account_missing_code" : "404",
-       "known_accounts" : ["david", "happiness"],
+       "known_accounts" : ["bluefireinc", "jb8hyxtg"],
        "category" : "shopping",
        "valid" : true
      },
@@ -1261,17 +1260,6 @@
        "account_missing_string" : "user cannot be found",
        "account_missing_code" : "200",
        "known_accounts" : ["test"],
-       "category" : "XXXPORNXXX",
-       "valid" : true
-     },
-     {
-       "name" : "Furiffic",
-       "check_uri" : "https://www.furiffic.com/{account}",
-       "account_existence_code" : "200",
-       "account_existence_string" : "Registered Since",
-       "account_missing_string" : "<title>Whoops &middot; Furiffic</title>",
-       "account_missing_code" : "404",
-       "known_accounts" : ["furiffic", "test", "admin"],
        "category" : "XXXPORNXXX",
        "valid" : true
      },
@@ -1722,12 +1710,12 @@
      },
      {
        "name" : "MyFitnessPal",
-       "check_uri" : "https://www.myfitnesspal.com/user/{account}/status",
+       "check_uri" : "https://www.myfitnesspal.com/profile/{account}",
        "account_existence_code" : "200",
-       "account_existence_string" : "s profile | MyFitnessPal.com</title>",
-       "account_missing_string" : "Page not found",
-       "account_missing_code" : "404",
-       "known_accounts" : ["mike"],
+       "account_existence_string" : "created_at",
+       "account_missing_string" : "The page you were looking for could not be found",
+       "account_missing_code" : "200",
+       "known_accounts" : ["mike","titaniumclicks"],
        "category" : "health",
        "valid" : true
      },
@@ -1773,7 +1761,7 @@
        "account_missing_code" : "404",
        "known_accounts" : ["nebkacrea", "cdiljda"],
        "category" : "social",
-       "valid" : true
+       "valid" : false
      },
      {
        "name" : "NotABug",
@@ -2266,8 +2254,8 @@
        "check_uri" : "https://nitter.net/{account}",
        "pretty_uri" : "https://twitter.com/{account}",
        "account_existence_code" : "200",
-       "account_existence_string" : ") | nitter</title>",
-       "account_missing_string" : "Error | nitter</title>",
+       "account_existence_string" : ")|nitter</title>",
+       "account_missing_string" : "Error|nitter</title>",
        "account_missing_code" : "404",
        "known_accounts" : ["webbreacher", "chrishemsworth"],
        "category" : "social",
@@ -2310,10 +2298,10 @@
        "name" : "Venmo",
        "check_uri" : "https://account.venmo.com/u/{account}",
        "account_existence_code" : "200",
-       "account_existence_string" : "\"profileInfo_username__",
+       "account_existence_string" : "profileInfo_username",
        "account_missing_string" : "Sorry, the page you requested does not exist!",
        "account_missing_code" : "404",
-       "known_accounts" : ["john", "liam"],
+       "known_accounts" : ["John-Goudie-1", "John-Nebiolo"],
        "category" : "finance",
        "valid" : true
      },
@@ -2423,7 +2411,7 @@
        "name" : "Weasyl",
        "check_uri" : "https://www.weasyl.com/~{account}",
        "account_existence_code" : "200",
-       "account_existence_string" : "&#39;s profile — Weasyl</title>",
+       "account_existence_string" : "’s profile — Weasyl</title>",
        "account_missing_string" : "This user doesn't seem to be in our database.",
        "account_missing_code" : "404",
        "known_accounts" : ["weasyl", "test"],
@@ -3215,17 +3203,6 @@
        "valid" : true
      },
      {
-       "name" : "Ruby Dating",
-       "check_uri" : "https://ruby.dating/en/users/{account}",
-       "account_existence_code" : "200",
-       "account_existence_string" : "Looks for:",
-       "account_missing_string" : "We can’t find that user",
-       "account_missing_code" : "410",
-       "known_accounts" : ["Ute1833", "Jessika4922"],
-       "category" : "dating",
-       "valid" : true
-     },
-     {
        "name" : "PCGamer",
        "check_uri" : "https://forums.pcgamer.com/members/{account}/",
        "account_existence_code" : "200",
@@ -3273,8 +3250,8 @@
        "name" : "Gettr",
        "check_uri" : "https://api.gettr.com/s/user/{account}/exist",
        "account_existence_code" : "200",
-       "account_existence_string" : "success\":true",
-       "account_missing_string" : "success\":false",
+       "account_existence_string" : "cdate",
+       "account_missing_string" : "success\": false",
        "account_missing_code" : "200",
        "known_accounts" : ["qellyanon", "djerod"],
        "category" : "social",
@@ -3359,11 +3336,11 @@
      },
      {
        "name" : "Parler",
-       "check_uri" : "https://parler.com/user/{account}",
+       "check_uri" : "https://parler.com/{account}",
        "account_existence_code" : "200",
-       "account_existence_string" : "People to Follow",
-       "account_missing_string" : "join Parler today",
-       "account_missing_code" : "302",
+       "account_existence_string" : " is on Parler. See what they're sharing.</title>",
+       "account_missing_string" : "<title>Parler - Where Free Speech Thrives",
+       "account_missing_code" : "200",
        "known_accounts" : ["DineshDsouza", "SeanHannity"],
        "category" : "social",
        "valid" : true
@@ -4712,6 +4689,28 @@
            "known_accounts" : ["rachid3", "mike"],
            "category" : "hobby",
            "valid" : true
-          }       
+          },
+          {
+           "name" : "mstdn.social",
+           "check_uri" : "https://mstdn.social/@{account}",
+           "account_existence_code" : "200",
+           "account_existence_string" : "mstdn.social",
+           "account_missing_string" : "The page you are looking for isn&#39;t here.",
+           "account_missing_code" : "404",
+           "known_accounts" : ["catboy", "esther"],
+           "category" : "social",
+           "valid" : true
+          },
+          {
+           "name" : "mastodon.online",
+           "check_uri" : "https://mastodon.online/@{account}",
+           "account_existence_code" : "200",
+           "account_existence_string" : "mastodon.online",
+           "account_missing_string" : "The page you are looking for isn&#39;t here.",
+           "account_missing_code" : "404",
+           "known_accounts" : ["amiw", "turbolove"],
+           "category" : "social",
+           "valid" : true
+          }
   ]
 }
