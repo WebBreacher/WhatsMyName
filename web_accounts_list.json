@@ -4722,6 +4722,50 @@
            "known_accounts" : ["sanjay01", "mohammed"],
            "category" : "misc",
            "valid" : true
+          },
+          {
+           "name" : "stratege",
+           "check_uri" : "https://www.stratege.ru/users/{account}#args:ajax=1",
+           "account_existence_code" : "200",
+           "account_existence_string" : "| Stratege",
+           "account_missing_string" : "Такого пользователя на сайте не существует",
+           "account_missing_code" : "200",
+           "known_accounts" : ["oleg3", "oleg"],
+           "category" : "gaming",
+           "valid" : true
+          },
+          {
+           "name" : "xcraft",
+           "check_uri" : "https://vk.xcraft.ru/user/{account}",
+           "account_existence_code" : "200",
+           "account_existence_string" : "- User Profile",
+           "account_missing_string" : "Page not found.",
+           "account_missing_code" : "404",
+           "known_accounts" : ["oleg3", "nastya"],
+           "category" : "gaming",
+           "valid" : true
+          },
+          {
+           "name" : "999md",
+           "check_uri" : "https://999.md/ru/profile/{account}",
+           "account_existence_code" : "200",
+           "account_existence_string" : "профиль пользователя на",
+           "account_missing_string" : "Ничего не найдено",
+           "account_missing_code" : "404",
+           "known_accounts" : ["serguei", "olga"],
+           "category" : "misc",
+           "valid" : true
+          },
+          {
+           "name" : "stereo_ru",
+           "check_uri" : "https://stereo.ru/users/@{account}/",
+           "account_existence_code" : "200",
+           "account_existence_string" : "Профиль пользователя",
+           "account_missing_string" : "error-page",
+           "account_missing_code" : "404",
+           "known_accounts" : ["oleg33", "igor"],
+           "category" : "music",
+           "valid" : true
           }
   ]
 }
