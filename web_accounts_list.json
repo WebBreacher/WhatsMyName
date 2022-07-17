@@ -4768,6 +4768,17 @@
            "valid" : true
           },
           {
+           "name" : "castingfr",
+           "check_uri" : "https://www.casting.fr/{account}",
+           "account_existence_code" : "200",
+           "account_existence_string" : ", artiste sur Casting.fr -",
+           "account_missing_string" : "Page introuvable",
+           "account_missing_code" : "404",
+           "known_accounts" : ["mamadou01", "serge"],
+           "category" : "misc",
+           "valid" : true
+          },
+          {
            "name" : "virustotal",
            "check_uri" : "https://www.virustotal.com/gui/user/{account}",
            "account_existence_code" : "200",
