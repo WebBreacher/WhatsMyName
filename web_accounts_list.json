@@ -620,6 +620,17 @@
        "valid" : true
      },
      {
+      "name" : "clusterdafrica",
+      "check_uri" : "https://clusterdafrica.com/@{account}",
+      "account_existence_code" : "200",
+      "account_existence_string" : "Membre depuis -",
+      "account_missing_string" : "- Page non trouvée!",
+      "account_missing_code" : "302",
+      "known_accounts" : ["mamadou", "konate"],
+      "category" : "social",
+      "valid" : true
+      },
+     {
       "name" : "cnet",
       "check_uri" : "https://www.cnet.com/profiles/{account}/",
       "account_existence_code" : "200",
