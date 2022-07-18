@@ -4779,6 +4779,17 @@
            "valid" : true
           },
           {
+           "name" : "pokemonvortex",
+           "check_uri" : "https://www.pokemon-vortex.com/user/{account}",
+           "account_existence_code" : "200",
+           "account_existence_string" : "s Profile",
+           "account_missing_string" : "- Member List",
+           "account_missing_code" : "200",
+           "known_accounts" : ["mamadou2", "dog"],
+           "category" : "gaming",
+           "valid" : true
+          },
+          {
            "name" : "vinted",
            "check_uri" : "https://www.vinted.nl/member/general/search?search_text={account}",
            "account_existence_code" : "200",
