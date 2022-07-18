@@ -1906,26 +1906,71 @@
       "valid" : true
      },
      {
-       "name" : "Linktree",
-       "check_uri" : "https://linktr.ee/{account}",
-       "account_existence_code" : "200",
-       "account_existence_string" : "| Linktree",
-       "account_missing_string" : "The page you’re looking for doesn’t exist.",
-       "account_missing_code" : "404",
-       "known_accounts" : ["anne", "alex"],
-       "category" : "social",
-       "valid" : true
+      "name" : "LibraryThing",
+      "check_uri" : "https://www.librarything.com/profile/{account}",
+      "account_existence_code" : "200",
+      "account_existence_string" : "Collections",
+      "account_missing_string" : "Error: This user doesn't exist",
+      "account_missing_code" : "200",
+      "known_accounts" : ["test", "john"],
+      "category" : "hobby",
+      "valid" : true
      },
      {
-       "name" : "linux.org.ru",
-       "check_uri" : "https://www.linux.org.ru/people/{account}/profile",
-       "account_existence_code" : "200",
-       "account_existence_string" : "Дата регистрации",
-       "account_missing_string" : "Пользователя не существует",
-       "account_missing_code" : "404",
-       "known_accounts" : ["john", "bob"],
-       "category" : "tech",
-       "valid" : true
+      "name" : "lichess",
+      "check_uri" : "https://lichess.org/@/{account}",
+      "account_existence_code" : "200",
+      "account_existence_string" : "Activity",
+      "account_missing_string" : "Page not found",
+      "account_missing_code" : "404",
+      "known_accounts" : ["mohammed01", "mohammed03"],
+      "category" : "gaming",
+      "valid" : true
+     },
+     {
+      "name" : "LINE",
+      "check_uri" : "https://line.me/R/ti/p/@{account}?from=page",
+      "account_existence_code" : "200",
+      "account_existence_string" : "Add LINE Friends via QR Code",
+      "account_missing_code" : "404",
+      "account_missing_string" : "404 Not Found",
+      "known_accounts" : [ "roseareal", "yoasobi" ],
+      "category" : "social",
+      "valid" : true
+     },
+     {
+      "name" : "Linktree",
+      "check_uri" : "https://linktr.ee/{account}",
+      "account_existence_code" : "200",
+      "account_existence_string" : "| Linktree",
+      "account_missing_string" : "The page you’re looking for doesn’t exist.",
+      "account_missing_code" : "404",
+      "known_accounts" : ["anne", "alex"],
+      "category" : "social",
+      "valid" : true
+     },
+     {
+      "name" : "linux.org.ru",
+      "check_uri" : "https://www.linux.org.ru/people/{account}/profile",
+      "account_existence_code" : "200",
+      "account_existence_string" : "Дата регистрации",
+      "account_missing_string" : "Пользователя не существует",
+      "account_missing_code" : "404",
+      "known_accounts" : ["john", "bob"],
+      "category" : "tech",
+      "valid" : true
+     },
+     {
+      "name" : "Livejournal",
+      "check_uri" : "https://{account}.livejournal.com",
+      "account_existence_code" : "200",
+      "account_existence_string" : "<link rel=\"canonical\" href=\"",
+      "account_missing_string" : "<title>Unknown Journal",
+      "account_missing_code" : "404",
+      "known_accounts" : ["jill", "john"],
+      "allowed_types" : ["String","Person","WebAccount","Username"],
+      "category" : "blog",
+      "valid" : true
      },
      {
        "name" : "lobste.rs",
@@ -1939,27 +1984,315 @@
        "valid" : true
      },
      {
-       "name" : "mastodon",
-       "check_uri" : "https://mastodon.social/@{account}",
-       "account_existence_code" : "200",
-       "account_existence_string" : "profile:username",
-       "account_missing_string" : "The page you are looking for isn't here.",
-       "account_missing_code" : "404",
-       "known_accounts" : ["john", "alex"],
-       "category" : "social",
-       "valid" : true
+      "name" : "MAGABOOK",
+      "check_uri" : "https://magabook.com/{account}",
+      "account_existence_code" : "200",
+      "account_existence_string" : "Recent Updates",
+      "account_missing_string" : "Page Not Be Found",
+      "account_missing_code" : "200",
+      "known_accounts" : ["PamelaElliott62", "eric"],
+      "category" : "social",
+      "valid" : true
      },
      {
-       "name" : "MyAnimeList",
-       "check_uri" : "https://myanimelist.net/profile/{account}",
-       "account_existence_code" : "200",
-       "account_existence_string" : "Profile - MyAnimeList.net",
-       "account_missing_string" : "<title>404 Not Found",
-       "account_missing_code" : "404",
-       "known_accounts" : ["test", "admin"],
-       "category" : "social",
-       "valid" : true
+      "name" : "MAGA-CHAT",
+      "check_uri" : "https://maga-chat.com/{account}",
+      "account_existence_code" : "200",
+      "account_existence_string" : "Recent Updates",
+      "account_missing_string" : "Page Not Be Found",
+      "account_missing_code" : "200",
+      "known_accounts" : ["Rich", "RjosephJr"],
+      "category" : "social",
+      "valid" : true
      },
+     {
+      "name" : "Magix",
+      "check_uri" : "https://www.magix.info/us/users/profile/{account}/",
+      "account_existence_code" : "200",
+      "account_existence_string" : "About me",
+      "account_missing_string" : "Page not found",
+      "account_missing_code" : "200",
+      "known_accounts" : ["baywolfmusic", "johnebaker"],
+      "category" : "music",
+      "valid" : true
+     },    
+     {
+      "name" : "MapMyTracks",
+      "check_uri" : "https://www.mapmytracks.com/{account}",
+      "account_existence_code" : "200",
+      "account_existence_string" : "Daily distance this week",
+      "account_missing_string" : "Outside together",
+      "account_missing_code" : "302",
+      "known_accounts" : ["ulirad", "CBSloan"],
+      "category" : "health",
+      "valid" : true
+     },
+     {
+      "name" : "Marshmallow",
+      "check_uri" : "https://marshmallow-qa.com/{account}",
+      "account_existence_code" : "200",
+      "account_existence_string" : "さんにメッセージをおくる",
+      "account_missing_code" : "404",
+      "account_missing_string" : "For compensation, here are cats for you.",
+      "known_accounts" : ["yuino_fox", "momo"],
+      "category" : "social",
+      "valid" : true
+     },
+     {
+      "name" : "Martech",
+      "check_uri" : "https://martech.org/author/{account}/",
+      "account_existence_code" : "200",
+      "account_existence_string" : "twitter:site",
+      "account_missing_string" : "Page not found",
+      "account_missing_code" : "404",
+      "known_accounts" : ["mani-karthik", "james-green"],
+      "category" : "business",
+      "valid" : true
+     },     
+     {
+      "name" : "Massage Anywhere",
+      "check_uri" : "https://www.massageanywhere.com/profile/{account}",
+      "account_existence_code" : "200",
+      "account_existence_string" : "<title>MassageAnywhere.com Profile for ",
+      "account_missing_string" : "<title>MassageAnywhere.com: Search Results</title>",
+      "account_missing_code" : "200",
+      "known_accounts" : ["lorilmccluskey", "LomiNYC"],
+      "category" : "health",
+      "valid" : true
+     },
+     {
+      "name" : "mastodon",
+      "check_uri" : "https://mastodon.social/@{account}",
+      "account_existence_code" : "200",
+      "account_existence_string" : "profile:username",
+      "account_missing_string" : "The page you are looking for isn't here.",
+      "account_missing_code" : "404",
+      "known_accounts" : ["john", "alex"],
+      "category" : "social",
+      "valid" : true
+     },
+     {
+      "name" : "MCUUID (Minecraft)",
+      "check_uri" : "https://playerdb.co/api/player/minecraft/{account}",
+      "pretty_uri" : "https://mcuuid.net/?q={account}",
+      "account_existence_code" : "200",
+      "account_existence_string" : "Successfully found player by given ID.",
+      "account_missing_string" : "minecraft.api_failure",
+      "account_missing_code" : "200",
+      "known_accounts" : ["smithy", "bob"],
+      "category" : "gaming",
+      "valid" : true
+     },
+     {
+      "name" : "Medium",
+      "check_uri" : "https://{account}.medium.com/about",
+      "account_existence_code" : "200",
+      "account_existence_string" : "Medium member since",
+      "account_missing_string" : "Out of nothing, something",
+      "account_missing_code" : "404",
+      "known_accounts" : ["zulie", "jessicalexicus"],
+      "category" : "news",
+      "valid" : true
+     },
+     {
+      "name" : "meet me",
+      "check_uri" : "https://www.meetme.com/{account}",
+      "account_existence_code" : "200",
+      "account_existence_string" : "<title>Meet people like ",
+      "account_missing_string" : "<title>MeetMe - Chat and Meet New People</title",
+      "account_missing_code" : "302",
+      "known_accounts" : ["john", "marsha"],
+      "category" : "dating",
+      "valid" : true
+     },
+     {
+      "name" : "memrise",
+      "check_uri" : "https://app.memrise.com/user/{account}/",
+      "account_existence_code" : "200",
+      "account_existence_string" : "followers",
+      "account_missing_string" : "Memrise - Error",
+      "account_missing_code" : "404",
+      "known_accounts" : ["alice", "john"],
+      "category" : "hobby",
+      "valid" : true
+     },
+     {
+      "name" : "Microsoft Technet Community",
+      "check_uri" : "https://social.technet.microsoft.com/profile/{account}/",
+      "account_existence_code" : "200",
+      "account_existence_string" : "s Profile</title>",
+      "account_missing_string" : "The resource you are looking for has been removed",
+      "account_missing_code" : "404",
+      "known_accounts" : ["john", "test"],
+      "category" : "tech",
+      "valid" : true
+     },
+     {
+      "name" : "Minds",
+      "check_uri" : "https://www.minds.com/{account}/",
+      "account_existence_code" : "200",
+      "account_existence_string" : ") | Minds</title>",
+      "account_missing_string" : "Sorry, this channel doesn't appear to exist",
+      "account_missing_code" : "404",
+      "known_accounts" : ["Willieleev1971", "john"],
+      "category" : "political",
+      "valid" : true
+     },
+     {
+      "name" : "Minecraft List",
+      "check_uri" : "https://minecraftlist.com/players/{account}",
+      "account_existence_code" : "200",
+      "account_existence_string" : "-->was seen on<!--",
+      "account_missing_string" : "0 Minecraft servers recently",
+      "account_missing_code" : "200",
+      "known_accounts" : ["fear837", "dream"],
+      "category" : "gaming",
+      "valid" : true
+     },
+     {
+      "name" : "Mix",
+      "check_uri" : "https://mix.com/{account}/",
+      "account_existence_code" : "200",
+      "account_existence_string" : "<title>@",
+      "account_missing_string" : "The best content from the open web, personalized.",
+      "account_missing_code" : "302",
+      "known_accounts" : ["test", "mixpicks"],
+      "category" : "social",
+      "valid" : true
+     },
+     {
+      "name" : "Mixi",
+      "check_uri" : "https://mixi.jp/view_community.pl?id={account}",
+      "account_existence_code" : "200",
+      "account_existence_string" : "| mixiコミュニティ</title>",
+      "account_missing_string" : "データがありません",
+      "account_missing_code" : "200",
+      "known_accounts" : ["2854333", "19123"],
+      "category" : "social",
+      "valid" : true
+     },
+     {
+      "name" : "Mixlr",
+      "check_uri" : "http://api.mixlr.com/users/{account}",
+      "pretty_uri" : "http://mixlr.com/{account}/",
+      "account_existence_code" : "200",
+      "account_existence_string" : "username",
+      "account_missing_string" : "Resource not found",
+      "account_missing_code" : "404",
+      "known_accounts" : ["test", "john"],
+      "category" : "music",
+      "valid" : true
+     },
+     {
+      "name" : "Mmorpg",
+      "check_uri" : "https://forums.mmorpg.com/profile/{account}",
+      "account_existence_code" : "200",
+      "account_existence_string" : "MMORPG.com Forums",
+      "account_missing_string" : "404 Not Not_Found",
+      "account_missing_code" : "404",
+      "known_accounts" : ["TheDalaiBomba", "MadLovin"],
+      "category" : "gaming",
+      "valid" : true
+     },
+     {
+      "name" : "Mod DB",
+      "check_uri" : "https://www.moddb.com/members/{account}",
+      "account_existence_code" : "200",
+      "account_existence_string" : "joined <time",
+      "account_missing_string" : "Login is required to view the requested member profile",
+      "account_missing_code" : "403",
+      "known_accounts" : ["sprinklesoup", "emargy"],
+      "category" : "gaming",
+      "valid" : true
+     },
+     {
+      "name" : "Moneysavingexpert",
+      "check_uri" : "https://forums.moneysavingexpert.com/profile/{account}",
+      "account_existence_code" : "200",
+      "account_existence_string" : "Profile",
+      "account_missing_string" : "User Not Found",
+      "account_missing_code" : "404",
+      "known_accounts" : ["Heathermck", "MallyGirl"],
+      "category" : "finance",
+      "valid" : true
+     },
+     {
+      "name" : "Muck Rack",
+      "check_uri" : "https://muckrack.com/{account}",
+      "account_existence_code" : "200",
+      "account_existence_string" : "on Muck Rack",
+      "account_missing_string" : "Oh no! Page not found.",
+      "account_missing_code" : "404",
+      "known_accounts" : ["john"],
+      "category" : "news",
+      "valid" : true
+     },
+     {
+      "name" : "MyAnimeList",
+      "check_uri" : "https://myanimelist.net/profile/{account}",
+      "account_existence_code" : "200",
+      "account_existence_string" : "Profile - MyAnimeList.net",
+      "account_missing_string" : "<title>404 Not Found",
+      "account_missing_code" : "404",
+      "known_accounts" : ["test", "admin"],
+      "category" : "social",
+      "valid" : true
+     },
+     {
+      "name" : "MyBuilder.com",
+      "check_uri" : "https://www.mybuilder.com/profile/view/{account}",
+      "account_existence_code" : "200",
+      "account_existence_string" : "feedback",
+      "account_missing_string" : "Whoops! You broke our site!",
+      "account_missing_code" : "404",
+      "known_accounts" : ["blue", "john"],
+      "category" : "social",
+      "valid" : true
+     },
+     {
+      "name" : "MyFitnessPal",
+      "check_uri" : "https://www.myfitnesspal.com/user/{account}/status",
+      "account_existence_code" : "200",
+      "account_existence_string" : "s profile | MyFitnessPal.com</title>",
+      "account_missing_string" : "Page not found",
+      "account_missing_code" : "404",
+      "known_accounts" : ["mike"],
+      "category" : "health",
+      "valid" : true
+     },
+     {
+      "name" : "MyLot",
+      "check_uri" : "https://www.mylot.com/{account}",
+      "account_existence_code" : "200",
+      "account_existence_string" : "on myLot</title>",
+      "account_missing_string" : " / Whoops!",
+      "account_missing_code" : "404",
+      "known_accounts" : ["Tampa_girl7"],
+      "category" : "social",
+      "valid" : true
+     },
+     {
+      "name" : "mym.fans",
+      "check_uri" : "https://mym.fans/{account}",
+      "account_existence_code" : "200",
+      "account_existence_string" : "posts",
+      "account_missing_string" : "Il n’y a rien ici…",
+      "account_missing_code" : "404",
+      "known_accounts" : ["Djelizamay","Andysparkles"],
+      "category" : "social",
+      "valid" : true
+     },
+     {
+      "name" : "MySpace",
+      "check_uri" : "https://myspace.com/{account}",
+      "account_existence_code" : "200",
+      "account_existence_string" : "<!-- Profile -->",
+      "account_missing_string" : "<!-- 404 -->",
+      "account_missing_code" : "404",
+      "known_accounts" : ["alice", "bob"],
+      "category" : "social",
+      "valid" : true
+    },
      {
        "name" : "Newgrounds",
        "check_uri" : "https://{account}.newgrounds.com/",
@@ -2358,173 +2691,6 @@
        "known_accounts" : ["jill", "john"],
        "allowed_types" : ["String","Person","WebAccount","Username"],
        "category" : "blog",
-       "valid" : true
-     },
-     {
-       "name" : "Martech",
-       "check_uri" : "https://martech.org/author/{account}/",
-       "account_existence_code" : "200",
-       "account_existence_string" : "twitter:site",
-       "account_missing_string" : "Page not found",
-       "account_missing_code" : "404",
-       "known_accounts" : ["mani-karthik", "james-green"],
-       "category" : "business",
-       "valid" : true
-     },
-     {
-       "name" : "Marshmallow",
-       "check_uri" : "https://marshmallow-qa.com/{account}",
-       "account_existence_code" : "200",
-       "account_existence_string" : "さんにメッセージをおくる",
-       "account_missing_code" : "404",
-       "account_missing_string" : "For compensation, here are cats for you.",
-       "known_accounts" : ["yuino_fox", "momo"],
-       "category" : "social",
-       "valid" : true
-     },
-     {
-       "name" : "MCUUID (Minecraft)",
-       "check_uri" : "https://playerdb.co/api/player/minecraft/{account}",
-       "pretty_uri" : "https://mcuuid.net/?q={account}",
-       "account_existence_code" : "200",
-       "account_existence_string" : "Successfully found player by given ID.",
-       "account_missing_string" : "minecraft.api_failure",
-       "account_missing_code" : "200",
-       "known_accounts" : ["smithy", "bob"],
-       "category" : "gaming",
-       "valid" : true
-     },
-     {
-       "name" : "Medium",
-       "check_uri" : "https://{account}.medium.com/about",
-       "account_existence_code" : "200",
-       "account_existence_string" : "Medium member since",
-       "account_missing_string" : "Out of nothing, something",
-       "account_missing_code" : "404",
-       "known_accounts" : ["zulie", "jessicalexicus"],
-       "category" : "news",
-       "valid" : true
-     },
-     {
-       "name" : "meet me",
-       "check_uri" : "https://www.meetme.com/{account}",
-       "account_existence_code" : "200",
-       "account_existence_string" : "<title>Meet people like ",
-       "account_missing_string" : "<title>MeetMe - Chat and Meet New People</title",
-       "account_missing_code" : "302",
-       "known_accounts" : ["john", "marsha"],
-       "category" : "dating",
-       "valid" : true
-     },
-     {
-       "name" : "Microsoft Technet Community",
-       "check_uri" : "https://social.technet.microsoft.com/profile/{account}/",
-       "account_existence_code" : "200",
-       "account_existence_string" : "s Profile</title>",
-       "account_missing_string" : "The resource you are looking for has been removed",
-       "account_missing_code" : "404",
-       "known_accounts" : ["john", "test"],
-       "category" : "tech",
-       "valid" : true
-     },
-     {
-       "name" : "Minecraft List",
-       "check_uri" : "https://minecraftlist.com/players/{account}",
-       "account_existence_code" : "200",
-       "account_existence_string" : "-->was seen on<!--",
-       "account_missing_string" : "0 Minecraft servers recently",
-       "account_missing_code" : "200",
-       "known_accounts" : ["fear837", "dream"],
-       "category" : "gaming",
-       "valid" : true
-     },
-     {
-       "name" : "Mix",
-       "check_uri" : "https://mix.com/{account}/",
-       "account_existence_code" : "200",
-       "account_existence_string" : "<title>@",
-       "account_missing_string" : "The best content from the open web, personalized.",
-       "account_missing_code" : "302",
-       "known_accounts" : ["test", "mixpicks"],
-       "category" : "social",
-       "valid" : true
-     },
-     {
-       "name" : "Mixlr",
-       "check_uri" : "http://api.mixlr.com/users/{account}",
-       "pretty_uri" : "http://mixlr.com/{account}/",
-       "account_existence_code" : "200",
-       "account_existence_string" : "username",
-       "account_missing_string" : "Resource not found",
-       "account_missing_code" : "404",
-       "known_accounts" : ["test", "john"],
-       "category" : "music",
-       "valid" : true
-     },
-     {
-       "name" : "Mod DB",
-       "check_uri" : "https://www.moddb.com/members/{account}",
-       "account_existence_code" : "200",
-       "account_existence_string" : "joined <time",
-       "account_missing_string" : "Login is required to view the requested member profile",
-       "account_missing_code" : "403",
-       "known_accounts" : ["sprinklesoup", "emargy"],
-       "category" : "gaming",
-       "valid" : true
-     },
-     {
-       "name" : "Muck Rack",
-       "check_uri" : "https://muckrack.com/{account}",
-       "account_existence_code" : "200",
-       "account_existence_string" : "on Muck Rack",
-       "account_missing_string" : "Oh no! Page not found.",
-       "account_missing_code" : "404",
-       "known_accounts" : ["john"],
-       "category" : "news",
-       "valid" : true
-     },
-     {
-       "name" : "MyBuilder.com",
-       "check_uri" : "https://www.mybuilder.com/profile/view/{account}",
-       "account_existence_code" : "200",
-       "account_existence_string" : "feedback",
-       "account_missing_string" : "Whoops! You broke our site!",
-       "account_missing_code" : "404",
-       "known_accounts" : ["blue", "john"],
-       "category" : "social",
-       "valid" : true
-     },
-     {
-       "name" : "MyFitnessPal",
-       "check_uri" : "https://www.myfitnesspal.com/user/{account}/status",
-       "account_existence_code" : "200",
-       "account_existence_string" : "s profile | MyFitnessPal.com</title>",
-       "account_missing_string" : "Page not found",
-       "account_missing_code" : "404",
-       "known_accounts" : ["mike"],
-       "category" : "health",
-       "valid" : true
-     },
-     {
-       "name" : "MyLot",
-       "check_uri" : "https://www.mylot.com/{account}",
-       "account_existence_code" : "200",
-       "account_existence_string" : "on myLot</title>",
-       "account_missing_string" : " / Whoops!",
-       "account_missing_code" : "404",
-       "known_accounts" : ["Tampa_girl7"],
-       "category" : "social",
-       "valid" : true
-     },
-     {
-       "name" : "MySpace",
-       "check_uri" : "https://myspace.com/{account}",
-       "account_existence_code" : "200",
-       "account_existence_string" : "<!-- Profile -->",
-       "account_missing_string" : "<!-- 404 -->",
-       "account_missing_code" : "404",
-       "known_accounts" : ["alice", "bob"],
-       "category" : "social",
        "valid" : true
      },
      {
@@ -3404,17 +3570,6 @@
        "valid" : true
      },
      {
-       "name" : "Mixi",
-       "check_uri" : "https://mixi.jp/view_community.pl?id={account}",
-       "account_existence_code" : "200",
-       "account_existence_string" : "| mixiコミュニティ</title>",
-       "account_missing_string" : "データがありません",
-       "account_missing_code" : "200",
-       "known_accounts" : ["2854333", "19123"],
-       "category" : "social",
-       "valid" : true
-     },
-     {
        "name" : "Zillow",
        "check_uri" : "https://www.zillow.com/profile/{account}/",
        "account_existence_code" : "200",
@@ -3437,17 +3592,6 @@
        "valid" : true
      },
      {
-       "name" : "Magix",
-       "check_uri" : "https://www.magix.info/us/users/profile/{account}/",
-       "account_existence_code" : "200",
-       "account_existence_string" : "About me",
-       "account_missing_string" : "Page not found",
-       "account_missing_code" : "200",
-       "known_accounts" : ["baywolfmusic", "johnebaker"],
-       "category" : "music",
-       "valid" : true
-     },
-     {
        "name" : "Tunefind",
        "check_uri" : "https://www.tunefind.com/user/profile/{account}",
        "account_existence_code" : "200",
@@ -3456,17 +3600,6 @@
        "account_missing_code" : "404",
        "known_accounts" : ["baywolfmusic", "mrcerny18"],
        "category" : "music",
-       "valid" : true
-     },
-     {
-       "name" : "Moneysavingexpert",
-       "check_uri" : "https://forums.moneysavingexpert.com/profile/{account}",
-       "account_existence_code" : "200",
-       "account_existence_string" : "Profile",
-       "account_missing_string" : "User Not Found",
-       "account_missing_code" : "404",
-       "known_accounts" : ["Heathermck", "MallyGirl"],
-       "category" : "finance",
        "valid" : true
      },
      {
@@ -3512,17 +3645,6 @@
        "account_missing_code" : "404",
        "known_accounts" : ["billy23", "mrbean", "alexis4"],
        "category" : "social",
-       "valid" : true
-     },
-     {
-       "name" : "Minds",
-       "check_uri" : "https://www.minds.com/{account}/",
-       "account_existence_code" : "200",
-       "account_existence_string" : ") | Minds</title>",
-       "account_missing_string" : "Sorry, this channel doesn't appear to exist",
-       "account_missing_code" : "404",
-       "known_accounts" : ["Willieleev1971", "john"],
-       "category" : "political",
        "valid" : true
      },
      {
@@ -3622,28 +3744,6 @@
        "account_missing_code" : "500",
        "known_accounts" : ["bob", "blue"],
        "category" : "social",
-       "valid" : true
-     },
-     {
-       "name" : "Massage Anywhere",
-       "check_uri" : "https://www.massageanywhere.com/profile/{account}",
-       "account_existence_code" : "200",
-       "account_existence_string" : "<title>MassageAnywhere.com Profile for ",
-       "account_missing_string" : "<title>MassageAnywhere.com: Search Results</title>",
-       "account_missing_code" : "200",
-       "known_accounts" : ["lorilmccluskey", "LomiNYC"],
-       "category" : "health",
-       "valid" : true
-     },
-     {
-       "name" : "MapMyTracks",
-       "check_uri" : "https://www.mapmytracks.com/{account}",
-       "account_existence_code" : "200",
-       "account_existence_string" : "Daily distance this week",
-       "account_missing_string" : "Outside together",
-       "account_missing_code" : "302",
-       "known_accounts" : ["ulirad", "CBSloan"],
-       "category" : "health",
        "valid" : true
      },
      {
@@ -3757,17 +3857,6 @@
        "valid" : true
      },
      {
-       "name" : "MAGA-CHAT",
-       "check_uri" : "https://maga-chat.com/{account}",
-       "account_existence_code" : "200",
-       "account_existence_string" : "Recent Updates",
-       "account_missing_string" : "Page Not Be Found",
-       "account_missing_code" : "200",
-       "known_accounts" : ["Rich", "RjosephJr"],
-       "category" : "social",
-       "valid" : true
-     },
-     {
        "name" : "Our Freedom Book",
        "check_uri" : "https://www.ourfreedombook.com/{account}",
        "account_existence_code" : "200",
@@ -3775,17 +3864,6 @@
        "account_missing_string" : "Sorry, page not found",
        "account_missing_code" : "302",
        "known_accounts" : ["DaveLipsky", "StarlaJene"],
-       "category" : "social",
-       "valid" : true
-     },
-     {
-       "name" : "MAGABOOK",
-       "check_uri" : "https://magabook.com/{account}",
-       "account_existence_code" : "200",
-       "account_existence_string" : "Recent Updates",
-       "account_missing_string" : "Page Not Be Found",
-       "account_missing_code" : "200",
-       "known_accounts" : ["PamelaElliott62", "eric"],
        "category" : "social",
        "valid" : true
      },
@@ -4421,17 +4499,6 @@
       "valid" : true
       },
       {
-          "name" : "mym.fans",
-          "check_uri" : "https://mym.fans/{account}",
-          "account_existence_code" : "200",
-          "account_existence_string" : "posts",
-          "account_missing_string" : "Il n’y a rien ici…",
-          "account_missing_code" : "404",
-          "known_accounts" : ["Djelizamay","Andysparkles"],
-          "category" : "social",
-          "valid" : true
-        },
-        {
           "name" : "SpankPay",
           "check_uri" : "https://pay-api.spankchain.com/profiles/{account}?allowBlank=",
           "pretty_uri" : "https://spankpay.me/{account}",
@@ -4624,17 +4691,6 @@
           "valid" : true
         },
         {
-          "name" : "memrise",
-          "check_uri" : "https://app.memrise.com/user/{account}/",
-          "account_existence_code" : "200",
-          "account_existence_string" : "followers",
-          "account_missing_string" : "Memrise - Error",
-          "account_missing_code" : "404",
-          "known_accounts" : ["alice", "john"],
-          "category" : "hobby",
-          "valid" : true
-        },
-        {
           "name" : "wego",
           "check_uri" : "https://wego.social/{account}",
           "account_existence_code" : "200",
@@ -4748,17 +4804,6 @@
            "valid" : true
           },
           {
-           "name" : "Mmorpg",
-           "check_uri" : "https://forums.mmorpg.com/profile/{account}",
-           "account_existence_code" : "200",
-           "account_existence_string" : "MMORPG.com Forums",
-           "account_missing_string" : "404 Not Not_Found",
-           "account_missing_code" : "404",
-           "known_accounts" : ["TheDalaiBomba", "MadLovin"],
-           "category" : "gaming",
-           "valid" : true
-          },
-          {
            "name" : "Yazawaj",
            "check_uri" : "https://www.yazawaj.com/profile/{account}",
            "account_existence_code" : "200",
@@ -4777,17 +4822,6 @@
            "account_missing_string" : "404 NAVIGATING UNCHARTED TERRITORY",
            "account_missing_code" : "404",
            "known_accounts" : ["alpHackeronee", "Quantum_Physicist"],
-           "category" : "gaming",
-           "valid" : true
-          },
-          {
-           "name" : "lichess",
-           "check_uri" : "https://lichess.org/@/{account}",
-           "account_existence_code" : "200",
-           "account_existence_string" : "Activity",
-           "account_missing_string" : "Page not found",
-           "account_missing_code" : "404",
-           "known_accounts" : ["mohammed01", "mohammed03"],
            "category" : "gaming",
            "valid" : true
           },
