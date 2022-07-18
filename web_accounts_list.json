@@ -4790,6 +4790,17 @@
            "valid" : true
           },
           {
+           "name" : "jecontacte",
+           "check_uri" : "https://www.jecontacte.com/profil/{account}",
+           "account_existence_code" : "200",
+           "account_existence_string" : "Envoyer un message",
+           "account_missing_string" : "Votre Menu",
+           "account_missing_code" : "404",
+           "known_accounts" : ["moussa6", "Alya6788"],
+           "category" : "dating",
+           "valid" : true
+          },
+          {
            "name" : "vinted",
            "check_uri" : "https://www.vinted.nl/member/general/search?search_text={account}",
            "account_existence_code" : "200",
