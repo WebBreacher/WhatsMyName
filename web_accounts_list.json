@@ -2425,7 +2425,7 @@
        "known_accounts" : ["igor1", "david2"],
        "category" : "finance",
        "valid" : true
-      },
+     },
      {
        "name" : "redbubble",
        "check_uri" : "https://www.redbubble.com/people/{account}/shop?ref=artist_title_name%2F",
