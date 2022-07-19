@@ -2438,7 +2438,7 @@
        "valid" : true
      },
      {
-       "name" : "risk",
+       "name" : "risk.ru",
        "check_uri" : "https://risk.ru/people/{account}",
        "account_existence_code" : "200",
        "account_existence_string" : "— Люди — Risk.ru",
