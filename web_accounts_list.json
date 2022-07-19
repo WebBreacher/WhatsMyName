@@ -2360,6 +2360,17 @@
        "valid" : true
      },
      {
+       "name" : "pikabu",
+       "check_uri" : "https://pikabu.ru/@{account}",
+       "account_existence_code" : "200",
+       "account_existence_string" : "— все посты пользователя",
+       "account_missing_string" : "404. Страница не найдена",
+       "account_missing_code" : "404",
+       "known_accounts" : ["igor01", "serguei"],
+       "category" : "social",
+       "valid" : true
+     },
+     {
        "name" : "Poll Everywhere",
        "check_uri" : "https://pollev.com/proxy/api/users/{account}",
        "pretty_uri" : "https://pollev.com/{account}",
