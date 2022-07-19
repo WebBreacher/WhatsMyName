@@ -2405,6 +2405,17 @@
        "valid" : true
      },
      {
+       "name" : "postcrossing",
+       "check_uri" : "https://www.postcrossing.com/user/{account}",
+       "account_existence_code" : "200",
+       "account_existence_string" : ", from",
+       "account_missing_string" : "- Postcrossing",
+       "account_missing_code" : "404",
+       "known_accounts" : ["Vladimir", "olga3"],
+       "category" : "social",
+       "valid" : true
+     },
+     {
        "name" : "promodj",
        "check_uri" : "https://promodj.com/{account}",
        "account_existence_code" : "200",
