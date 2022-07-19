@@ -2438,6 +2438,17 @@
        "valid" : true
      },
      {
+       "name" : "risk",
+       "check_uri" : "https://risk.ru/people/{account}",
+       "account_existence_code" : "200",
+       "account_existence_string" : "— Люди — Risk.ru",
+       "account_missing_string" : "404 — Risk.ru",
+       "account_missing_code" : "404",
+       "known_accounts" : ["igor1", "olga"],
+       "category" : "hobby",
+       "valid" : true
+     },
+     {
        "name" : "Shanii Writes",
        "check_uri" : "https://forum.shanniiwrites.com/u/{account}/summary.json",
        "pretty_uri" : "https://forum.shanniiwrites.com/u/{account}",
