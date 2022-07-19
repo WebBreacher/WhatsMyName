@@ -1,0 +1,70 @@
+// 20220719183637
+// https://raw.githubusercontent.com/myresearch-acct1/WhatsMyName/master/schema.json
+
+{
+  "type": "object",
+  "required": [
+    
+  ],
+  "properties": {
+    "license": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "authors": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "categories": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "sites": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          
+        ],
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "check_uri": {
+            "type": "string"
+          },
+          "account_existence_code": {
+            "type": "string"
+          },
+          "account_existence_string": {
+            "type": "string"
+          },
+          "account_missing_string": {
+            "type": "string"
+          },
+          "account_missing_code": {
+            "type": "string"
+          },
+          "known_accounts": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "category": {
+            "type": "string"
+          },
+          "valid": {
+            "type": "boolean"
+          }
+        }
+      }
+    }
+  }
+}
