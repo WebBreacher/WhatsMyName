@@ -2326,16 +2326,82 @@
       "category" : "social",
       "valid" : true
     },
-     {
-       "name" : "Newgrounds",
-       "check_uri" : "https://{account}.newgrounds.com/",
-       "account_existence_code" : "200",
-       "account_existence_string" : "fans",
-       "account_missing_string" : "Whoops, that's a swing and a miss!",
-       "account_missing_code" : "404",
-       "known_accounts" : ["john", "bob"],
-       "category" : "gaming",
-       "valid" : true
+    {
+      "name" : "NameMC",
+      "check_uri" : "https://namemc.com/search?q={account}",
+      "account_existence_code" : "200",
+      "account_existence_string" : "Status: Unavailable",
+      "account_missing_string" : "Status: Available*",
+      "account_missing_code" : "200",
+      "known_accounts" : ["alice", "bob"],
+      "category" : "gaming",
+      "valid" : true
+    },
+    {
+      "name" : "nairaland",
+      "check_uri" : "https://www.nairaland.com/{account}",
+      "account_existence_code" : "200",
+      "account_existence_string" : "s Profile",
+      "account_missing_string" : "404: Page Not Found",
+      "account_missing_code" : "301",
+      "known_accounts" : ["amakaone", "seun"],
+      "category" : "news",
+      "valid" : true
+    },
+    {
+      "name" : "NaturalNews",
+      "check_uri" : "https://naturalnews.com/author/{account}/",
+      "account_existence_code" : "200",
+      "account_existence_string" : "All posts by",
+      "account_missing_string" : "The page you are looking for cannot be found or is no longer available.",
+      "account_missing_code" : "200",
+      "known_accounts" : ["jdheyes", "healthranger"],
+      "category" : "political",
+      "valid" : true
+    },
+    {
+      "name" : "Naver",
+      "check_uri" : "https://blog.naver.com/{account}",
+      "account_existence_code" : "200",
+      "account_existence_string" : ": 네이버 블로그",
+      "account_missing_string" : "페이지를 찾을 수 없습니다",
+      "account_missing_code" : "500",
+      "known_accounts" : ["bob", "blue"],
+      "category" : "social",
+      "valid" : true
+    },
+    {
+      "name" : "netvibes",
+      "check_uri" : "https://www.netvibes.com/{account}",
+      "account_existence_code" : "200",
+      "account_existence_string" : "userId",
+      "account_missing_string" : "Page not found",
+      "account_missing_code" : "404",
+      "known_accounts" : ["nebkacrea", "cdiljda"],
+      "category" : "social",
+      "valid" : true
+    },
+    {
+      "name" : "Newgrounds",
+      "check_uri" : "https://{account}.newgrounds.com/",
+      "account_existence_code" : "200",
+      "account_existence_string" : "fans",
+      "account_missing_string" : "Whoops, that's a swing and a miss!",
+      "account_missing_code" : "404",
+      "known_accounts" : ["john", "bob"],
+      "category" : "gaming",
+      "valid" : true
+    },
+    {
+      "name" : "NotABug",
+      "check_uri" : "https://notabug.org/{account}",
+      "account_existence_code" : "200",
+      "account_existence_string" : "followers and is following",
+      "account_missing_string" : "Not Found",
+      "account_missing_code" : "404",
+      "known_accounts" : ["notabug", "hp", "zPlus"],
+      "category" : "coding",
+      "valid" : true
      },
      {
        "name" : "ok.ru",
@@ -2623,184 +2689,6 @@
        "account_missing_code" : "404",
        "known_accounts" : ["Ashelia", "Zizarz"],
        "category" : "gaming",
-       "valid" : true
-     },
-     {
-       "name" : "ImageShack",
-       "check_uri" : "https://imageshack.com/user/{account}",
-       "account_existence_code" : "200",
-       "account_existence_string" : "s Images</title>",
-       "account_missing_string" : "",
-       "account_missing_code" : "302",
-       "known_accounts" : ["test"],
-       "category" : "images",
-       "valid" : true
-     },
-     {
-      "name" : "iMGSRC.RU",
-      "check_uri" : "https://imgsrc.ru/main/user.php?lang=ru&user={account}",
-      "account_existence_code" : "200",
-      "account_existence_string" : "Присоединился",
-      "account_missing_string" : "",
-      "account_missing_code" : "302",
-      "known_accounts" : ["natalisn","andydiamond","natalyck"],
-      "category" : "images",
-      "valid" : true
-    },
-     {
-       "name" : "imgur",
-       "check_uri" : "https://api.imgur.com/account/v1/accounts/{account}?client_id=546c25a59c58ad7&include=trophies%2Cmedallions",
-       "pretty_uri" : "https://imgur.com/user/{account}/about",
-       "account_existence_code" : "200",
-       "account_existence_string" : "created_at",
-       "account_missing_string" : "unable to find account",
-       "account_missing_code" : "404",
-       "known_accounts" : ["OliverClothesoff70", "DadOnTheInternet"],
-       "category" : "images",
-       "valid" : true
-     },
-     {
-       "name" : "InkBunny",
-       "check_uri" : "https://inkbunny.net/{account}",
-       "account_existence_code" : "200",
-       "account_existence_string" : "Profile | Inkbunny, the Furry Art Community</title>",
-       "account_missing_string" : "<title>Members | Inkbunny, the Furry Art Community</title>",
-       "account_missing_code" : "302",
-       "known_accounts" : ["AdminBunny", "test"],
-       "category" : "XXXPORNXXX",
-       "valid" : true
-     },
-     {
-       "name" : "InsaneJournal",
-       "check_uri" : "https://{account}.insanejournal.com/profile",
-       "account_existence_code" : "200",
-       "account_existence_string" : "User:",
-       "account_missing_string" : "The requested URL /profile was not found on this server",
-       "account_missing_code" : "200",
-       "known_accounts" : ["test", "pint-sized", "acroamatica"],
-       "category" : "social",
-       "valid" : true
-     },
-     {
-       "name" : "instructables",
-       "check_uri" : "https://www.instructables.com/member/{account}/",
-       "account_existence_code" : "200",
-       "account_existence_string" : ">Joined",
-       "account_missing_string" : "",
-       "account_missing_code" : "404",
-       "known_accounts" : ["davidandora", "test"],
-       "category" : "hobby",
-       "valid" : true
-     },
-     {
-       "name" : "Internet Archive Account",
-       "check_uri" : "https://archive.org/details/@{account}",
-       "account_existence_code" : "200",
-       "account_existence_string" : "<title>User Account",
-       "account_missing_string" : "<title>cannot find account",
-       "account_missing_code" : "200",
-       "known_accounts" : ["webbreacher", "jason_scott"],
-       "category" : "misc",
-       "valid" : true
-     },
-     {
-       "name" : "Internet Archive User Search",
-       "check_uri" : "https://archive.org/search.php?query={account}",
-       "account_existence_code" : "200",
-       "account_existence_string" : "<!--/.item-ia-->",
-       "account_missing_string" : "",
-       "account_missing_code" : "200",
-       "known_accounts" : ["test", "mubix"],
-       "category" : "misc",
-       "valid" : true
-     },
-     {
-       "name" : "interpals",
-       "check_uri" : "https://www.interpals.net/{account}",
-       "account_existence_code" : "200",
-       "account_existence_string" : "Looking for",
-       "account_missing_string" : "User not found",
-       "account_missing_code" : "200",
-       "known_accounts" : ["test"],
-       "category" : "dating",
-       "valid" : true
-     },
-     {
-       "name" : "Last.fm",
-       "check_uri" : "https://www.last.fm/user/{account}",
-       "account_existence_code" : "200",
-       "account_existence_string" : "scrobbling since",
-       "account_missing_string" : "Whoops! Sorry, but this page doesn't exist.",
-       "account_missing_code" : "404",
-       "known_accounts" : ["test"],
-       "category" : "music",
-       "valid" : true
-     },
-     {
-       "name" : "LibraryThing",
-       "check_uri" : "https://www.librarything.com/profile/{account}",
-       "account_existence_code" : "200",
-       "account_existence_string" : "Collections",
-       "account_missing_string" : "Error: This user doesn't exist",
-       "account_missing_code" : "200",
-       "known_accounts" : ["test", "john"],
-       "category" : "hobby",
-       "valid" : true
-     },
-     {
-       "name" : "LINE",
-       "check_uri" : "https://line.me/R/ti/p/@{account}?from=page",
-       "account_existence_code" : "200",
-       "account_existence_string" : "Add LINE Friends via QR Code",
-       "account_missing_code" : "404",
-       "account_missing_string" : "404 Not Found",
-       "known_accounts" : [ "roseareal", "yoasobi" ],
-       "category" : "social",
-       "valid" : true
-     },
-     {
-       "name" : "Livejournal",
-       "check_uri" : "https://{account}.livejournal.com",
-       "account_existence_code" : "200",
-       "account_existence_string" : "<link rel=\"canonical\" href=\"",
-       "account_missing_string" : "<title>Unknown Journal",
-       "account_missing_code" : "404",
-       "known_accounts" : ["jill", "john"],
-       "allowed_types" : ["String","Person","WebAccount","Username"],
-       "category" : "blog",
-       "valid" : true
-     },
-     {
-       "name" : "NameMC",
-       "check_uri" : "https://namemc.com/search?q={account}",
-       "account_existence_code" : "200",
-       "account_existence_string" : "Status: Unavailable",
-       "account_missing_string" : "Status: Available*",
-       "account_missing_code" : "200",
-       "known_accounts" : ["alice", "bob"],
-       "category" : "gaming",
-       "valid" : true
-     },
-     {
-       "name" : "netvibes",
-       "check_uri" : "https://www.netvibes.com/{account}",
-       "account_existence_code" : "200",
-       "account_existence_string" : "userId",
-       "account_missing_string" : "Page not found",
-       "account_missing_code" : "404",
-       "known_accounts" : ["nebkacrea", "cdiljda"],
-       "category" : "social",
-       "valid" : true
-     },
-     {
-       "name" : "NotABug",
-       "check_uri" : "https://notabug.org/{account}",
-       "account_existence_code" : "200",
-       "account_existence_string" : "followers and is following",
-       "account_missing_string" : "Not Found",
-       "account_missing_code" : "404",
-       "known_accounts" : ["notabug", "hp", "zPlus"],
-       "category" : "coding",
        "valid" : true
      },
      {
@@ -3725,17 +3613,6 @@
        "valid" : true
      },
      {
-       "name" : "NaturalNews",
-       "check_uri" : "https://naturalnews.com/author/{account}/",
-       "account_existence_code" : "200",
-       "account_existence_string" : "All posts by",
-       "account_missing_string" : "The page you are looking for cannot be found or is no longer available.",
-       "account_missing_code" : "200",
-       "known_accounts" : ["jdheyes", "healthranger"],
-       "category" : "political",
-       "valid" : true
-     },
-     {
        "name" : "thegatewaypundit",
        "check_uri" : "https://www.thegatewaypundit.com/author/{account}/",
        "account_existence_code" : "200",
@@ -3809,17 +3686,6 @@
        "account_missing_string" : "Пользователь не зарегистрирован и не имеет профиля для просмотра.",
        "account_missing_code" : "200",
        "known_accounts" : ["bob", "red"],
-       "category" : "social",
-       "valid" : true
-     },
-     {
-       "name" : "Naver",
-       "check_uri" : "https://blog.naver.com/{account}",
-       "account_existence_code" : "200",
-       "account_existence_string" : ": 네이버 블로그",
-       "account_missing_string" : "페이지를 찾을 수 없습니다",
-       "account_missing_code" : "500",
-       "known_accounts" : ["bob", "blue"],
        "category" : "social",
        "valid" : true
      },
@@ -4721,17 +4587,6 @@
           "account_missing_code" : "404",
           "known_accounts" : ["nicodeyo", "Nicole_Clark"],
           "category" : "gaming",
-          "valid" : true
-        },
-        {
-          "name" : "nairaland",
-          "check_uri" : "https://www.nairaland.com/{account}",
-          "account_existence_code" : "200",
-          "account_existence_string" : "s Profile",
-          "account_missing_string" : "404: Page Not Found",
-          "account_missing_code" : "301",
-          "known_accounts" : ["amakaone", "seun"],
-          "category" : "news",
           "valid" : true
         },
         {
