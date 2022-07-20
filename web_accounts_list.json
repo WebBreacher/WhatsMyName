@@ -2415,6 +2415,17 @@
        "valid" : true
      },
      {
+       "name" : "okidoki",
+       "check_uri" : "https://m.okidoki.ee/ru/users/{account}/",
+       "account_existence_code" : "200",
+       "account_existence_string" : "Пользователь",
+       "account_missing_string" : "Страница не найдена",
+       "account_missing_code" : "404",
+       "known_accounts" : ["nastya3", "nastya"],
+       "category" : "misc",
+       "valid" : true
+     },
+     {
        "name" : "Opencollective",
        "check_uri" : "https://opencollective.com/{account}",
        "account_existence_code" : "200",
