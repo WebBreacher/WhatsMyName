@@ -796,6 +796,17 @@
       "valid" : true
      },
      {
+      "name" : "darudar",
+      "check_uri" : "https://darudar.org/users/{account}/",
+      "account_existence_code" : "200",
+      "account_existence_string" : ". Дарудар",
+      "account_missing_string" : "404. Дару~дар: миру~мир!",
+      "account_missing_code" : "404",
+      "known_accounts" : ["svetlana7", "igor"],
+      "category" : "misc",
+      "valid" : true
+     },
+     {
       "name" : "datezone",
       "check_uri" : "https://www.datezone.com/users/{account}/",
       "account_existence_code" : "200",
