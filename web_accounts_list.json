@@ -233,6 +233,17 @@
       "valid" : true
      },
      {
+       "name" : "au.ru",
+       "check_uri" : "https://au.ru/user/{account}/",
+       "account_existence_code" : "200",
+       "account_existence_string" : "Лоты пользователя ",
+       "account_missing_string" : "Пользователь не найден",
+       "account_missing_code" : "404",
+       "known_accounts" : ["Svetlana7", "nastya"],
+       "category" : "misc",
+       "valid" : true
+     },
+     {
        "name" : "Audiojungle",
        "check_uri" : "https://audiojungle.net/user/{account}",
        "account_existence_code" : "200",
