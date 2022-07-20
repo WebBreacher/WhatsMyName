@@ -2426,6 +2426,17 @@
        "valid" : true
      },
      {
+      "name" : "OpenStreetMap",
+      "check_uri" : "https://www.openstreetmap.org/user/{account}",
+      "account_existence_code" : "200",
+      "account_existence_string" : "Mapper since:",
+      "account_missing_string" : "does not exist",
+      "account_missing_code" : "404",
+      "known_accounts" : ["kemkim"],
+      "category" : "social",
+      "valid" : true
+     },
+     {
        "name" : "Orbys",
        "check_uri" : "https://orbys.net/{account}",
        "account_existence_code" : "200",
@@ -2437,71 +2448,337 @@
        "valid" : true
      },
      {
-       "name" : "PCPartPicker",
-       "check_uri" : "https://pcpartpicker.com/user/{account}/",
-       "account_existence_code" : "200",
-       "account_existence_string" : "class=\"active\"",
-       "account_missing_string" : "The page you requested could not be found.",
-       "account_missing_code" : "404",
-       "known_accounts" : ["john", "bob"],
-       "category" : "tech",
-       "valid" : true
+      "name" : "osu!",
+      "check_uri" : "https://osu.ppy.sh/users/{account}",
+      "account_existence_code" : "302",
+      "account_existence_string" : "",
+      "account_missing_string" : "User not found! ;_;",
+      "account_missing_code" : "404",
+      "known_accounts" : ["stretches", "spiken8"],
+      "category" : "gaming",
+      "valid" : true
      },
      {
-       "name" : "pikabu",
-       "check_uri" : "https://pikabu.ru/@{account}",
-       "account_existence_code" : "200",
-       "account_existence_string" : "— все посты пользователя",
-       "account_missing_string" : "404. Страница не найдена",
-       "account_missing_code" : "404",
-       "known_accounts" : ["igor01", "serguei"],
-       "category" : "social",
-       "valid" : true
+      "name" : "Our Freedom Book",
+      "check_uri" : "https://www.ourfreedombook.com/{account}",
+      "account_existence_code" : "200",
+      "account_existence_string" : "meta property=\"og:",
+      "account_missing_string" : "Sorry, page not found",
+      "account_missing_code" : "302",
+      "known_accounts" : ["DaveLipsky", "StarlaJene"],
+      "category" : "social",
+      "valid" : true
      },
      {
-       "name" : "Poll Everywhere",
-       "check_uri" : "https://pollev.com/proxy/api/users/{account}",
-       "pretty_uri" : "https://pollev.com/{account}",
-       "account_existence_code" : "200",
-       "account_existence_string" : "name",
-       "account_missing_string" : "ResourceNotFound",
-       "account_missing_code" : "404",
-       "known_accounts" : ["josh", "jsmith"],
-       "category" : "tech",
-       "valid" : true
+      "name" : "ow.ly",
+      "check_uri" : "http://ow.ly/user/{account}",
+      "account_existence_code" : "200",
+      "account_existence_string" : "Images",
+      "account_missing_string" : "404 error",
+      "account_missing_code" : "404",
+      "known_accounts" : ["StopAdMedia", "jokervendetti"],
+      "category" : "social",
+      "valid" : true
      },
      {
-       "name" : "pokemonshowdown",
-       "check_uri" : "https://pokemonshowdown.com/users/{account}",
-       "account_existence_code" : "200",
-       "account_existence_string" : "Official ladder",
-       "account_missing_string" : " (Unregistered)",
-       "account_missing_code" : "404",
-       "known_accounts" : ["red", "blue"],
-       "category" : "gaming",
-       "valid" : true
+      "name" : "Parler",
+      "check_uri" : "https://parler.com/user/{account}",
+      "account_existence_code" : "200",
+      "account_existence_string" : "People to Follow",
+      "account_missing_string" : "join Parler today",
+      "account_missing_code" : "302",
+      "known_accounts" : ["DineshDsouza", "SeanHannity"],
+      "category" : "social",
+      "valid" : true
      },
      {
-       "name" : "Pokerstrategy",
-       "check_uri" : "http://www.pokerstrategy.net/user/{account}/profile/",
-       "account_existence_code" : "200",
-       "account_existence_string" : "User profile for",
-       "account_missing_string" : "Sorry, the requested page couldn't be found!",
-       "account_missing_code" : "404",
-       "known_accounts" : ["john", "bob"],
-       "category" : "gaming",
-       "valid" : true
+      "name" : "Parler archived profile",
+      "check_uri" : "http://archive.org/wayback/available?url=https://parler.com/profile/{account}",
+      "pretty_uri" : "https://web.archive.org/web/2/https://parler.com/profile/{account}",
+      "account_existence_code" : "200",
+      "account_existence_string" : "\"archived_snapshots\": {\"closest\"",
+      "account_missing_string" : "\"archived_snapshots\": {}",
+      "account_missing_code" : "200",
+      "known_accounts" : ["JoePags", "dineshdsouza"],
+      "category" : "archived",
+      "valid" : true
+    },
+    {
+      "name" : "Parler archived posts",
+      "check_uri" : "http://archive.org/wayback/available?url=https://parler.com/profile/{account}/posts",
+      "pretty_uri" : "https://web.archive.org/web/2/https://parler.com/profile/{account}/posts",
+      "account_existence_code" : "200",
+      "account_existence_string" : "\"archived_snapshots\": {\"closest\"",
+      "account_missing_string" : "\"archived_snapshots\": {}",
+      "account_missing_code" : "200",
+      "known_accounts" : ["JoePags", "dineshdsouza"],
+      "category" : "archived",
+      "valid" : true
      },
      {
-       "name" : "postcrossing",
-       "check_uri" : "https://www.postcrossing.com/user/{account}",
-       "account_existence_code" : "200",
-       "account_existence_string" : ", from",
-       "account_missing_string" : "- Postcrossing",
-       "account_missing_code" : "404",
-       "known_accounts" : ["Vladimir", "olga3"],
-       "category" : "social",
-       "valid" : true
+      "name" : "Pastebin",
+      "check_uri" : "https://pastebin.com/u/{account}",
+      "account_existence_code" : "200",
+      "account_existence_string" : "'s Pastebin",
+      "account_missing_string" : "",
+      "account_missing_code" : "404",
+      "known_accounts" : ["test", "john"],
+      "category" : "tech",
+      "valid" : true
+     },
+     {
+      "name" : "PatientsLikeMe",
+      "check_uri" : "https://www.patientslikeme.com/members/{account}",
+      "account_existence_code" : "200",
+      "account_existence_string" : "s profile | PatientsLikeMe</title>",
+      "account_missing_string" : "",
+      "account_missing_code" : "302",
+      "known_accounts" : ["thjuland", "Pedro0703", "Hydropioneer"],
+      "category" : "health",
+      "valid" : true
+     },
+     {
+      "name" : "Patreon",
+      "check_uri" : "https://www.patreon.com/{account}",
+      "account_existence_code" : "200",
+      "account_existence_string" : "Become a patron of",
+      "account_missing_string" : "Oh no! Looks like you got lost.",
+      "account_missing_code" : "404",
+      "known_accounts" : ["mubix", "doughboys"],
+      "category" : "finance",
+      "valid" : true
+     },
+     {
+      "name": "Patronite",
+      "check_uri": "https://patronite.pl/{account}",
+      "account_existence_code": "200",
+      "account_existence_string": "Zostań Patronem",
+      "account_missing_string": "Nie znaleźliśmy strony której szukasz.",
+      "account_missing_code": "404",
+      "known_accounts": ["radio357", "radionowyswiat"],
+      "category": "finance",
+      "valid": true
+     },
+     {
+      "name" : "PCGamer",
+      "check_uri" : "https://forums.pcgamer.com/members/{account}/",
+      "account_existence_code" : "200",
+      "account_existence_string" : "Joined",
+      "account_missing_string" : "Oops! We ran into some problems",
+      "account_missing_code" : "404",
+      "known_accounts" : ["volley.302", "cjmariani.94198", "cholidsnake.2334"],
+      "category" : "gaming",
+      "valid" : true
+     },
+     {
+      "name" : "PCPartPicker",
+      "check_uri" : "https://pcpartpicker.com/user/{account}/",
+      "account_existence_code" : "200",
+      "account_existence_string" : "class=\"active\"",
+      "account_missing_string" : "The page you requested could not be found.",
+      "account_missing_code" : "404",
+      "known_accounts" : ["john", "bob"],
+      "category" : "tech",
+      "valid" : true
+     },
+     {
+      "name" : "Periscope",
+      "check_uri" : "https://www.periscope.tv/{account}",
+      "account_existence_code" : "200",
+      "account_existence_string" : "<label>Followers",
+      "account_missing_string" : "Sorry, this page doesn’t exist",
+      "account_missing_code" : "404",
+      "known_accounts" : ["john", "test"],
+      "category" : "video",
+      "valid" : true
+     },
+     {
+     "name" : "Photoblog",
+     "check_uri" : "https://www.photoblog.com/{account}/",
+     "account_existence_code" : "200",
+     "account_existence_string" : "/following/",
+     "account_missing_string" : "Page Not found",
+     "account_missing_code" : "404",
+     "known_accounts" : ["hatsumi", "pdsdville"],
+     "category" : "images",
+     "valid" : false
+     },
+     {
+      "name" : "PhotoBucket",
+      "check_uri" : "https://app.photobucket.com/u/{account}",
+      "account_existence_code" : "200",
+      "account_existence_string" : "content='My Library'>",
+      "account_missing_string" : "Error | Photobucket",
+      "account_missing_code" : "302",
+      "known_accounts" : ["Sonorlite18", "awelch"],
+      "category" : "images",
+      "valid" : true
+     },
+     {
+      "name" : "pikabu",
+      "check_uri" : "https://pikabu.ru/@{account}",
+      "account_existence_code" : "200",
+      "account_existence_string" : "— все посты пользователя",
+      "account_missing_string" : "404. Страница не найдена",
+      "account_missing_code" : "404",
+      "known_accounts" : ["igor01", "serguei"],
+      "category" : "social",
+      "valid" : true
+     },
+     {
+      "name" : "PinkBike",
+      "check_uri" : "https://www.pinkbike.com/u/{account}/",
+      "account_existence_code" : "200",
+      "account_existence_string" : "on Pinkbike</title>",
+      "account_missing_string" : "I couldn't find the page you were looking for",
+      "account_missing_code" : "404",
+      "known_accounts" : ["whistlermountainbikepark", "paulhanson"],
+      "category" : "hobby",
+      "valid" : true
+     },
+     {
+      "name" : "Pinterest",
+      "check_uri" : "https://www.pinterest.com/{account}/",
+      "account_existence_code" : "200",
+      "account_existence_string" : " - Profile | Pinterest",
+      "account_missing_string" : "Whoops! We couldn't find that page",
+      "account_missing_code" : "404",
+      "known_accounts" : ["test123", "frickcollection"],
+      "category" : "social",
+      "valid" : true
+     },
+     {
+      "name" : "Playstation Network",
+      "check_uri" : "https://psnprofiles.com/xhr/search/users?q={account}",
+      "account_existence_code" : "200",
+      "account_existence_string" : "<div class=\"progress-bar small level\">",
+      "account_missing_string" : "We couldn't find anything ",
+      "account_missing_code" : "200",
+      "known_accounts" : ["SlimShaggy18", "ikemenzi"],
+      "category" : "gaming",
+      "valid" : true
+     },
+     {
+      "name" : "Plurk",
+      "check_uri" : "https://www.plurk.com/{account}",
+      "account_existence_code" : "200",
+      "account_existence_string" : "Profile views",
+      "account_missing_string" : "Register your plurk account",
+      "account_missing_code" : "200",
+      "known_accounts" : ["test"],
+      "category" : "social",
+      "valid" : true
+     },
+     {
+      "name" : "pokemonshowdown",
+      "check_uri" : "https://pokemonshowdown.com/users/{account}",
+      "account_existence_code" : "200",
+      "account_existence_string" : "Official ladder",
+      "account_missing_string" : " (Unregistered)",
+      "account_missing_code" : "404",
+      "known_accounts" : ["red", "blue"],
+      "category" : "gaming",
+      "valid" : true
+     },
+     {
+      "name" : "Pokerstrategy",
+      "check_uri" : "http://www.pokerstrategy.net/user/{account}/profile/",
+      "account_existence_code" : "200",
+      "account_existence_string" : "User profile for",
+      "account_missing_string" : "Sorry, the requested page couldn't be found!",
+      "account_missing_code" : "404",
+      "known_accounts" : ["john", "bob"],
+      "category" : "gaming",
+      "valid" : true
+     },
+     {
+      "name" : "Poll Everywhere",
+      "check_uri" : "https://pollev.com/proxy/api/users/{account}",
+      "pretty_uri" : "https://pollev.com/{account}",
+      "account_existence_code" : "200",
+      "account_existence_string" : "name",
+      "account_missing_string" : "ResourceNotFound",
+      "account_missing_code" : "404",
+      "known_accounts" : ["josh", "jsmith"],
+      "category" : "tech",
+      "valid" : true
+     },
+     {
+      "name" : "polygon",
+      "check_uri" : "https://www.polygon.com/users/{account}",
+      "account_existence_code" : "200",
+      "account_existence_string" : "- Polygon",
+      "account_missing_string" : "404 Not found",
+      "account_missing_code" : "404",
+      "known_accounts" : ["nicodeyo", "Nicole_Clark"],
+      "category" : "gaming",
+      "valid" : true
+     },
+     {
+      "name" : "popl",
+      "check_uri" : "https://poplme.co/{account}",
+      "account_existence_code" : "200",
+      "account_existence_string" : "MuiTypography-root MuiTypography-body1 css-kj7pvm",
+      "account_missing_string" : "Profile not found",
+      "account_missing_code" : "200",
+      "known_accounts" : ["rpelite","Ee0af3d822","ashleymetzger"],
+      "category" : "business",
+      "valid" : true
+     },
+     {
+      "name" : "Pornhub Porn Stars",
+      "check_uri" : "https://www.pornhub.com/pornstar/{account}",
+      "account_existence_code" : "200",
+      "account_existence_string" : "Pornstar Rank",
+      "account_missing_string" : "",
+      "account_missing_code" : "301",
+      "known_accounts" : ["riley-reid", "alex-adams"],
+      "category" : "XXXPORNXXX",
+      "valid" : true
+     },
+     {
+      "name" : "Pornhub Users",
+      "check_uri" : "https://www.pornhub.com/users/{account}",
+      "account_existence_code" : "200",
+      "account_existence_string" : "s Profile - Pornhub.com</title>",
+      "account_missing_string" : "Error Page Not Found",
+      "account_missing_code" : "404",
+      "known_accounts" : ["test123"],
+      "category" : "XXXPORNXXX",
+      "valid" : true
+     },
+     {
+      "name" : "Poshmark",
+      "check_uri" : "https://poshmark.com/closet/{account}",
+      "account_existence_code" : "200",
+      "account_existence_string" : " is using Poshmark to sell items from their closet.",
+      "account_missing_string" : "Page not found - Poshmark",
+      "account_missing_code" : "404",
+      "known_accounts" : ["alice", "bob"],
+      "category" : "shopping",
+      "valid" : true
+     },
+     {
+      "name" : "postcrossing",
+      "check_uri" : "https://www.postcrossing.com/user/{account}",
+      "account_existence_code" : "200",
+      "account_existence_string" : ", from",
+      "account_missing_string" : "- Postcrossing",
+      "account_missing_code" : "404",
+      "known_accounts" : ["Vladimir", "olga3"],
+      "category" : "social",
+      "valid" : true
+     },
+     {
+      "name" : "Producthunt",
+      "check_uri" : "https://www.producthunt.com/@{account}",
+      "account_existence_code" : "200",
+      "account_existence_string" : "s profile on Product Hunt",
+      "account_missing_string" : "Product Hunt - All newest Products",
+      "account_missing_code" : "404",
+      "known_accounts" : ["alex", "jack"],
+      "category" : "business",
+      "valid" : true
      },
      {
        "name" : "promodj",
@@ -2689,149 +2966,6 @@
        "account_missing_code" : "404",
        "known_accounts" : ["Ashelia", "Zizarz"],
        "category" : "gaming",
-       "valid" : true
-     },
-     {
-       "name" : "OpenStreetMap",
-       "check_uri" : "https://www.openstreetmap.org/user/{account}",
-       "account_existence_code" : "200",
-       "account_existence_string" : "Mapper since:",
-       "account_missing_string" : "does not exist",
-       "account_missing_code" : "404",
-       "known_accounts" : ["kemkim"],
-       "category" : "social",
-       "valid" : true
-     },
-     {
-       "name" : "PatientsLikeMe",
-       "check_uri" : "https://www.patientslikeme.com/members/{account}",
-       "account_existence_code" : "200",
-       "account_existence_string" : "s profile | PatientsLikeMe</title>",
-       "account_missing_string" : "",
-       "account_missing_code" : "302",
-       "known_accounts" : ["thjuland", "Pedro0703", "Hydropioneer"],
-       "category" : "health",
-       "valid" : true
-     },
-     {
-       "name" : "Pastebin",
-       "check_uri" : "https://pastebin.com/u/{account}",
-       "account_existence_code" : "200",
-       "account_existence_string" : "'s Pastebin",
-       "account_missing_string" : "",
-       "account_missing_code" : "404",
-       "known_accounts" : ["test", "john"],
-       "category" : "tech",
-       "valid" : true
-     },
-     {
-       "name" : "Patreon",
-       "check_uri" : "https://www.patreon.com/{account}",
-       "account_existence_code" : "200",
-       "account_existence_string" : "Become a patron of",
-       "account_missing_string" : "Oh no! Looks like you got lost.",
-       "account_missing_code" : "404",
-       "known_accounts" : ["mubix", "doughboys"],
-       "category" : "finance",
-       "valid" : true
-     },
-     {
-       "name" : "Periscope",
-       "check_uri" : "https://www.periscope.tv/{account}",
-       "account_existence_code" : "200",
-       "account_existence_string" : "<label>Followers",
-       "account_missing_string" : "Sorry, this page doesn’t exist",
-       "account_missing_code" : "404",
-       "known_accounts" : ["john", "test"],
-       "category" : "video",
-       "valid" : true
-     },
-     {
-      "name" : "Photoblog",
-      "check_uri" : "https://www.photoblog.com/{account}/",
-      "account_existence_code" : "200",
-      "account_existence_string" : "/following/",
-      "account_missing_string" : "Page Not found",
-      "account_missing_code" : "404",
-      "known_accounts" : ["hatsumi", "pdsdville"],
-      "category" : "images",
-      "valid" : false
-     },
-     {
-       "name" : "PhotoBucket",
-       "check_uri" : "https://app.photobucket.com/u/{account}",
-       "account_existence_code" : "200",
-       "account_existence_string" : "content='My Library'>",
-       "account_missing_string" : "Error | Photobucket",
-       "account_missing_code" : "302",
-       "known_accounts" : ["Sonorlite18", "awelch"],
-       "category" : "images",
-       "valid" : true
-     },
-     {
-       "name" : "PinkBike",
-       "check_uri" : "https://www.pinkbike.com/u/{account}/",
-       "account_existence_code" : "200",
-       "account_existence_string" : "on Pinkbike</title>",
-       "account_missing_string" : "I couldn't find the page you were looking for",
-       "account_missing_code" : "404",
-       "known_accounts" : ["whistlermountainbikepark", "paulhanson"],
-       "category" : "hobby",
-       "valid" : true
-     },
-     {
-       "name" : "Pinterest",
-       "check_uri" : "https://www.pinterest.com/{account}/",
-       "account_existence_code" : "200",
-       "account_existence_string" : " - Profile | Pinterest",
-       "account_missing_string" : "Whoops! We couldn't find that page",
-       "account_missing_code" : "404",
-       "known_accounts" : ["test123", "frickcollection"],
-       "category" : "social",
-       "valid" : true
-     },
-     {
-       "name" : "Plurk",
-       "check_uri" : "https://www.plurk.com/{account}",
-       "account_existence_code" : "200",
-       "account_existence_string" : "Profile views",
-       "account_missing_string" : "Register your plurk account",
-       "account_missing_code" : "200",
-       "known_accounts" : ["test"],
-       "category" : "social",
-       "valid" : true
-     },
-     {
-       "name" : "popl",
-       "check_uri" : "https://poplme.co/{account}",
-       "account_existence_code" : "200",
-       "account_existence_string" : "MuiTypography-root MuiTypography-body1 css-kj7pvm",
-       "account_missing_string" : "Profile not found",
-       "account_missing_code" : "200",
-       "known_accounts" : ["rpelite","Ee0af3d822","ashleymetzger"],
-       "category" : "business",
-       "valid" : true
-     },
-     {
-       "name" : "Pornhub Porn Stars",
-       "check_uri" : "https://www.pornhub.com/pornstar/{account}",
-       "account_existence_code" : "200",
-       "account_existence_string" : "Pornstar Rank",
-       "account_missing_string" : "",
-       "account_missing_code" : "301",
-       "known_accounts" : ["riley-reid", "alex-adams"],
-       "category" : "XXXPORNXXX",
-       "valid" : true
-     },
-     {
-       "name" : "Pornhub Users",
-       "check_uri" : "https://www.pornhub.com/users/{account}",
-       "account_existence_code" : "200",
-       "account_existence_string" : "s Profile - Pornhub.com</title>",
-       "account_missing_string" : "Error Page Not Found",
-       "account_missing_code" : "404",
-       "known_accounts" : ["test123"],
-       "category" : "XXXPORNXXX",
        "valid" : true
      },
      {
@@ -3546,17 +3680,6 @@
        "valid" : true
      },
      {
-       "name" : "Poshmark",
-       "check_uri" : "https://poshmark.com/closet/{account}",
-       "account_existence_code" : "200",
-       "account_existence_string" : " is using Poshmark to sell items from their closet.",
-       "account_missing_string" : "Page not found - Poshmark",
-       "account_missing_code" : "404",
-       "known_accounts" : ["alice", "bob"],
-       "category" : "shopping",
-       "valid" : true
-     },
-     {
        "name" : "Tunefind",
        "check_uri" : "https://www.tunefind.com/user/profile/{account}",
        "account_existence_code" : "200",
@@ -3745,17 +3868,6 @@
        "valid" : true
      },
      {
-       "name" : "PCGamer",
-       "check_uri" : "https://forums.pcgamer.com/members/{account}/",
-       "account_existence_code" : "200",
-       "account_existence_string" : "Joined",
-       "account_missing_string" : "Oops! We ran into some problems",
-       "account_missing_code" : "404",
-       "known_accounts" : ["volley.302", "cjmariani.94198", "cholidsnake.2334"],
-       "category" : "gaming",
-       "valid" : true
-     },
-     {
        "name" : "zhihu",
        "check_uri" : "https://www.zhihu.com/people/{account}",
        "account_existence_code" : "200",
@@ -3800,17 +3912,6 @@
        "valid" : true
      },
      {
-       "name" : "Our Freedom Book",
-       "check_uri" : "https://www.ourfreedombook.com/{account}",
-       "account_existence_code" : "200",
-       "account_existence_string" : "meta property=\"og:",
-       "account_missing_string" : "Sorry, page not found",
-       "account_missing_code" : "302",
-       "known_accounts" : ["DaveLipsky", "StarlaJene"],
-       "category" : "social",
-       "valid" : true
-     },
-     {
        "name" : "SoliKick",
        "check_uri" : "https://solikick.com/-{account}",
        "account_existence_code" : "200",
@@ -3819,28 +3920,6 @@
        "account_missing_code" : "302",
        "known_accounts" : ["milehighed", "Edmundus"],
        "category" : "social",
-       "valid" : true
-     },
-     {
-       "name" : "Parler",
-       "check_uri" : "https://parler.com/user/{account}",
-       "account_existence_code" : "200",
-       "account_existence_string" : "People to Follow",
-       "account_missing_string" : "join Parler today",
-       "account_missing_code" : "302",
-       "known_accounts" : ["DineshDsouza", "SeanHannity"],
-       "category" : "social",
-       "valid" : true
-     },
-     {
-       "name" : "osu!",
-       "check_uri" : "https://osu.ppy.sh/users/{account}",
-       "account_existence_code" : "302",
-       "account_existence_string" : "",
-       "account_missing_string" : "User not found! ;_;",
-       "account_missing_code" : "404",
-       "known_accounts" : ["stretches", "spiken8"],
-       "category" : "gaming",
        "valid" : true
      },
      {
@@ -4497,41 +4576,6 @@
           "category" : "hobby",
           "valid" : true
         },
-        {
-          "name" : "Producthunt",
-          "check_uri" : "https://www.producthunt.com/@{account}",
-          "account_existence_code" : "200",
-          "account_existence_string" : "s profile on Product Hunt",
-          "account_missing_string" : "Product Hunt - All newest Products",
-          "account_missing_code" : "404",
-          "known_accounts" : ["alex", "jack"],
-          "category" : "business",
-          "valid" : true
-        },
-        {
-        "name" : "Parler archived profile",
-        "check_uri" : "http://archive.org/wayback/available?url=https://parler.com/profile/{account}",
-        "pretty_uri" : "https://web.archive.org/web/2/https://parler.com/profile/{account}",
-        "account_existence_code" : "200",
-        "account_existence_string" : "\"archived_snapshots\": {\"closest\"",
-        "account_missing_string" : "\"archived_snapshots\": {}",
-        "account_missing_code" : "200",
-        "known_accounts" : ["JoePags", "dineshdsouza"],
-        "category" : "archived",
-        "valid" : true
-      },
-      {
-        "name" : "Parler archived posts",
-        "check_uri" : "http://archive.org/wayback/available?url=https://parler.com/profile/{account}/posts",
-        "pretty_uri" : "https://web.archive.org/web/2/https://parler.com/profile/{account}/posts",
-        "account_existence_code" : "200",
-        "account_existence_string" : "\"archived_snapshots\": {\"closest\"",
-        "account_missing_string" : "\"archived_snapshots\": {}",
-        "account_missing_code" : "200",
-        "known_accounts" : ["JoePags", "dineshdsouza"],
-        "category" : "archived",
-        "valid" : true
-      },
       {
         "name" : "Twitter archived profile",
         "check_uri" : "http://archive.org/wayback/available?url=https://twitter.com/{account}",
@@ -4556,17 +4600,6 @@
         "category" : "archived",
         "valid" : true
       },
-      {
-          "name" : "Pinkbike",
-          "check_uri" : "https://www.pinkbike.com/u/{account}/",
-          "account_existence_code" : "200",
-          "account_existence_string" : "on Pinkbike",
-          "account_missing_string" : "Profile - Pinkbike",
-          "account_missing_code" : "404",
-          "known_accounts" : ["dani", "annie"],
-          "category" : "health",
-          "valid" : true
-        },
         {
           "name" : "Researchgate",
           "check_uri" : "https://www.researchgate.net/profile/{account}",
@@ -4576,17 +4609,6 @@
           "account_missing_code" : "301",
           "known_accounts" : ["Tafara-Mwareya", "Jose-Roberto-Rasi"],
           "category" : "hobby",
-          "valid" : true
-        },
-        {
-          "name" : "polygon",
-          "check_uri" : "https://www.polygon.com/users/{account}",
-          "account_existence_code" : "200",
-          "account_existence_string" : "- Polygon",
-          "account_missing_string" : "404 Not found",
-          "account_missing_code" : "404",
-          "known_accounts" : ["nicodeyo", "Nicole_Clark"],
-          "category" : "gaming",
           "valid" : true
         },
         {
@@ -4631,42 +4653,6 @@
           "account_missing_code" : "302",
           "known_accounts" : ["mmish2", "Lisa_M_S"],
           "category" : "political",
-          "valid" : true
-        },
-        {
-          "name": "Patronite",
-          "check_uri": "https://patronite.pl/{account}",
-          "account_existence_code": "200",
-          "account_existence_string": "Zostań Patronem",
-          "account_missing_string": "Nie znaleźliśmy strony której szukasz.",
-          "account_missing_code": "404",
-          "known_accounts": [
-            "radio357",
-            "radionowyswiat"
-          ],
-          "category": "finance",
-          "valid": true
-        },
-        {
-          "name" : "ow.ly",
-          "check_uri" : "http://ow.ly/user/{account}",
-          "account_existence_code" : "200",
-          "account_existence_string" : "Images",
-          "account_missing_string" : "404 error",
-          "account_missing_code" : "404",
-          "known_accounts" : ["StopAdMedia", "jokervendetti"],
-          "category" : "social",
-          "valid" : true
-        },
-        {
-          "name" : "Playstation Network",
-          "check_uri" : "https://psnprofiles.com/xhr/search/users?q={account}",
-          "account_existence_code" : "200",
-          "account_existence_string" : "<div class=\"progress-bar small level\">",
-          "account_missing_string" : "We couldn't find anything ",
-          "account_missing_code" : "200",
-          "known_accounts" : ["SlimShaggy18", "ikemenzi"],
-          "category" : "gaming",
           "valid" : true
         },
         {
