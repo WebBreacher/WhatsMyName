@@ -1,7 +1,7 @@
-// 20220719183637
-// https://raw.githubusercontent.com/myresearch-acct1/WhatsMyName/master/schema.json
-
 {
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "WhatsMyName JSON File",
+  "description": "A site that should be checked for usernames.",
   "type": "object",
   "required": [
     
