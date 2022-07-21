@@ -2,12 +2,14 @@ name: Check for Duplicate check_uri
 on: push
 
 jobs:
-  name-of-job:
+  name-of-job: dupe-checker
     runs-on: ubuntu-latest
     defaults:
       run:
         shell: bash
     steps:
       - name: Display the path
+        run: echo $PATH
+      - name: Check for duplicate
         run: grep "check_uri" /web_accounts_list.json | cut -f4 -d'"' | uniq -D
         shell: bash
