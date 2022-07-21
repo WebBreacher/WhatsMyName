@@ -1,0 +1,13 @@
+name: Check for Duplicate check_uri
+on: push
+
+jobs:
+  name-of-job:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - name: Display the path
+        run: grep "check_uri" web_accounts_list.json | cut -f4 -d'"' | uniq -D
+        shell: bash
