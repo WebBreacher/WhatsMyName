@@ -54,7 +54,7 @@
       "known_accounts" : ["teedawod", "ginamariahoffmann"],
       "category" : "social",
       "valid" : true
-     }, 
+     },
      {
       "name" : "about.me",
       "check_uri" : "https://about.me/{account}",
@@ -654,21 +654,10 @@
        "valid" : true
      },
      {
-      "name" : "Chaos",
-      "check_uri" : "https://chaos.social/@{account}",
-      "account_existence_code" : "200",
-      "account_existence_string" : "- chaos.social",
-      "account_missing_string" : "The page you are looking for isn&#39;t here.",
-      "account_missing_code" : "404",
-      "known_accounts" : ["alice", "sam"],
-      "category" : "social",
-      "valid" : true
-    },
-    {
       "name" : "Chaos.social",
       "check_uri" : "https://chaos.social/@{account}",
       "account_existence_code" : "200",
-      "account_existence_string" : "chaos.social",
+      "account_existence_string" : "- chaos.social",
       "account_missing_string" : "The page you are looking for isn&#39;t here.",
       "account_missing_code" : "404",
       "known_accounts" : ["dictvm", "sml"],
@@ -1768,17 +1757,6 @@
       "account_existence_string" : "'s profile",
       "account_missing_string" : "No such user.",
       "account_missing_code" : "200",
-      "known_accounts" : ["kleinbl00", "peter"],
-      "category" : "hobby",
-      "valid" : true
-     },
-     {
-      "name" : "Hubski",
-      "check_uri" : "https://hubski.com/user/{account}",
-      "account_existence_code" : "200",
-      "account_existence_string" : "'s profile",
-      "account_missing_string" : "No such user.",
-      "account_missing_code" : "200",
       "known_accounts" : ["john", "blue"],
       "category" : "social",
       "valid" : true
@@ -2247,7 +2225,7 @@
       "known_accounts" : ["baywolfmusic", "johnebaker"],
       "category" : "music",
       "valid" : true
-     },    
+     },
      {
       "name" : "MapMyTracks",
       "check_uri" : "https://www.mapmytracks.com/{account}",
@@ -2280,7 +2258,7 @@
       "known_accounts" : ["mani-karthik", "james-green"],
       "category" : "business",
       "valid" : true
-     },     
+     },
      {
       "name" : "Massage Anywhere",
       "check_uri" : "https://www.massageanywhere.com/profile/{account}",
@@ -3453,7 +3431,7 @@
       "known_accounts" : ["mohamed01", "ahmed"],
       "category" : "misc",
       "valid" : true
-     },   
+     },
      {
       "name" : "SmugMug",
       "check_uri" : "https://{account}.smugmug.com",
@@ -4490,17 +4468,6 @@
       "name": "Joe Monster",
       "check_uri": "https://joemonster.org/bojownik/{account}",
       "account_existence_code": "200",
-      "account_existence_string": "Aktywność bojownicza",
-      "account_missing_string": "Nie wiem jak ci to powiedzieć",
-      "account_missing_code": "200",
-      "known_accounts": ["bober", "coldseed"],
-      "category": "misc",
-      "valid": true
-    },
-    {
-      "name": "Joe Monster",
-      "check_uri": "https://joemonster.org/bojownik/{account}",
-      "account_existence_code": "200",
       "account_existence_string": "jest prywatny",
       "account_missing_string": "Nie wiem jak ci to powiedzieć",
       "account_missing_code": "200",
@@ -4786,6 +4753,6 @@
            "known_accounts" : ["monya14555d", "LordMohy"],
            "category" : "dating",
            "valid" : true
-          }                        
+          }
   ]
 }
