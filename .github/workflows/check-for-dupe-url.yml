@@ -8,8 +8,10 @@ jobs:
       run:
         shell: bash
     steps:
-      - name: Display the path
-        run: echo $PATH
+      - name: Display the current directory
+        run: pwd
+      - name: ls
+        run: ls -l
       - name: Check for duplicate
         run: grep "check_uri" /web_accounts_list.json | cut -f4 -d'"' | uniq -D
         shell: bash
