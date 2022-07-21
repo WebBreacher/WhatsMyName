@@ -1718,6 +1718,17 @@
       "valid" : true
      },
      {
+      "name" : "hamaha",
+      "check_uri" : "https://hamaha.net/{account}",
+      "account_existence_code" : "200",
+      "account_existence_string" : "- трейдинг форекс фьючерсы акции фондовый рынок ",
+      "account_missing_string" : "HAMAHA Биткоин форум.",
+      "account_missing_code" : "200",
+      "known_accounts" : ["oleg", "misha"],
+      "category" : "finance",
+      "valid" : true
+     },
+     {
       "name" : "Heylink",
       "check_uri" : "https://heylink.me/{account}/",
       "account_existence_code" : "200",
