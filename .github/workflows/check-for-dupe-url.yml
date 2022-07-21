@@ -9,5 +9,5 @@ jobs:
         shell: bash
     steps:
       - name: Display the path
-        run: grep "check_uri" web_accounts_list.json | cut -f4 -d'"' | uniq -D
+        run: grep "check_uri" /web_accounts_list.json | cut -f4 -d'"' | uniq -D
         shell: bash
