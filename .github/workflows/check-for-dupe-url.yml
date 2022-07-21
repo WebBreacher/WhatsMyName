@@ -10,8 +10,8 @@ jobs:
     steps:
       - name: Display the current directory
         run: pwd
-      - name: ls
-        run: ls -l
       - name: Check for duplicate
-        run: grep "check_uri" /web_accounts_list.json | cut -f4 -d'"' | uniq -D
+        run: grep "check_uri" ./web_accounts_list.json | cut -f4 -d'"' | uniq -D
+      - name: Check for duplicate 2
+        run: grep "check_uri" web_accounts_list.json | cut -f4 -d'"' | uniq -D
         shell: bash
