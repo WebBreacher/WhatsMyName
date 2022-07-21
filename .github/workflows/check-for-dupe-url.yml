@@ -2,7 +2,7 @@ name: Check for Duplicate check_uri
 on: push
 
 jobs:
-  name-of-job: dupe-checker
+  name-of-job:
     runs-on: ubuntu-latest
     defaults:
       run:
