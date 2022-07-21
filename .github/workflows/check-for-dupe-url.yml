@@ -6,8 +6,12 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        shell: sh
+        shell: bash
     steps:
       - name: Check for duplicate
-        run: grep "check_uri" web_accounts_list.json | cut -f4 -d'"' | uniq -D
-        shell: sh
+        run: grep "check_uri" ../web_accounts_list.json | cut -f4 -d'"' | uniq -D
+      - name: Check for duplicate2
+        run: grep "check_uri" ../../web_accounts_list.json | cut -f4 -d'"' | uniq -D
+      - name: Check for duplicate3
+        run: grep "check_uri" ../../../web_accounts_list.json | cut -f4 -d'"' | uniq -D
+        shell: bash
