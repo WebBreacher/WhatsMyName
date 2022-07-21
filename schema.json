@@ -1,7 +1,7 @@
 {
 	"definitions": {},
 	"$schema": "http://json-schema.org/draft-07/schema#", 
-	"$id": "https://example.com/object1658363494.json", 
+	"$id": "https://raw.githubusercontent.com/WebBreacher/WhatsMyName/master/schema.json", 
 	"title": "Root", 
 	"type": "object",
 	"required": [
