@@ -367,6 +367,17 @@
       "valid" : true
      },
      {
+      "name" : "bdsmsingles",
+      "check_uri" : "https://www.bdsmsingles.com/members/{account}/",
+      "account_existence_code" : "200",
+      "account_existence_string" : "<title>Profile",
+      "account_missing_string" : "BDSM Singles",
+      "account_missing_code" : "200",
+      "known_accounts" : ["GoddessBlueDiamo", "aalama"],
+      "category" : "XXXPORNXXX",
+      "valid" : true
+     },
+     {
       "name" : "Behance",
       "check_uri" : "https://www.behance.net/{account}",
       "account_existence_code" : "200",
@@ -1182,6 +1193,17 @@
       "account_missing_code" : "404",
       "known_accounts" : ["EC_DIGIT", "EUSPA"],
       "category" : "social",
+      "valid" : true
+     },
+     {
+      "name" : "ExtraLunchMoney",
+      "check_uri" : "https://extralunchmoney.com/user/{account}",
+      "account_existence_code" : "200",
+      "account_existence_string" : "Public Profile Page",
+      "account_missing_string" : "Closed Profile Page",
+      "account_missing_code" : "404",
+      "known_accounts" : ["ThatWitchMaeve", "Nudekiki"],
+      "category" : "XXXPORNXXX",
       "valid" : true
      },
      {
