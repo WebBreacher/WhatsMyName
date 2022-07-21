@@ -753,6 +753,17 @@
       "valid" : true
      },
      {
+      "name" : "codeforces",
+      "check_uri" : "https://codeforces.com/profile/{account}",
+      "account_existence_code" : "200",
+      "account_existence_string" : "- Codeforces",
+      "account_missing_string" : "Codeforces",
+      "account_missing_code" : "302",
+      "known_accounts" : ["Abdul01", "Abdullah"],
+      "category" : "coding",
+      "valid" : true
+     },
+     {
       "name" : "codementor",
       "check_uri" : "https://www.codementor.io/@{account}",
       "account_existence_code" : "200",
