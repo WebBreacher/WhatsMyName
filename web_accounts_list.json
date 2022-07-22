@@ -101,6 +101,17 @@
       "valid": true
      },
      {
+      "name": "allesovercrypto",
+      "check_uri": "https://allesovercrypto.nl/user/{account}",
+      "account_existence_code": "200",
+      "account_existence_string": "Favoriete coins",
+      "account_missing_string": "De opgevraagde pagina kon niet gevonden worden.",
+      "account_missing_code": "200",
+      "known_accounts": ["gijsv", "patrick-suiker"],
+      "category": "finance",
+      "valid": true
+     },
+     {
       "name" : "allmylinks",
       "check_uri" : "https://allmylinks.com/{account}",
       "account_existence_code" : "200",
