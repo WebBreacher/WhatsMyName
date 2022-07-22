@@ -4,7 +4,7 @@ jobs:
   verify-json-validation:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v3
       - name: Validate Old JSON
         uses: docker://orrosenblatt/validate-json-action:latest
         env:
