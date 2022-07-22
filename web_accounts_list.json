@@ -2891,6 +2891,17 @@
       "valid" : true
      },
      {
+      "name" : "PinkBike",
+      "check_uri" : "https://www.pinkbike.com/u/{account}/",
+      "account_existence_code" : "200",
+      "account_existence_string" : "on Pinkbike</title>",
+      "account_missing_string" : "I couldn't find the page you were looking for",
+      "account_missing_code" : "404",
+      "known_accounts" : ["whistlermountainbikepark", "paulhanson"],
+      "category" : "hobby",
+      "valid" : true
+     },
+     {
       "name" : "Pinterest",
       "check_uri" : "https://www.pinterest.com/{account}/",
       "account_existence_code" : "200",
