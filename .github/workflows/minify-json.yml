@@ -2,7 +2,7 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
-name: Deploy
+name: Minify JSON
 jobs:
   web-deploy:
     name: Deploy
