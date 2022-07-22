@@ -8,7 +8,7 @@ jobs:
       run:
         shell: bash
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Check for duplicate
         run: if [ -n $(grep "check_uri" web_accounts_list.json | cut -f4 -d'"' | uniq -D | head -1) ]; then echo "Found duplicate!"; exit 1; else echo "No duplicates found"; fi
         shell: bash
