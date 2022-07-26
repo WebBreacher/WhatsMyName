@@ -520,6 +520,18 @@
         "valid" : true
        },
        {
+        "name": "blogi.pl",
+        "uri_check": "https://www.blogi.pl/osoba,{account}.html",
+        "post_body" : "",
+        "e_code": "200",
+        "e_string": "Informacje ogólne",
+        "m_string": "Niepoprawny adres.",
+        "m_code": "200",
+        "known": ["naukowa", "izkpaw"],
+        "cat": "blog",
+        "valid": true
+       },
+       {
         "name" : "Blogmarks",
         "uri_check" : "http://blogmarks.net/user/{account}",
         "post_body" : "",
@@ -785,6 +797,18 @@
         "valid" : true
        },
        {
+        "name": "Chomikuj.pl",
+        "uri_check": "https://chomikuj.pl/{account}/",
+        "post_body" : "",
+        "e_code": "200",
+        "e_string": "Foldery",
+        "m_string": "Chomik o takiej nazwie nie istnieje",
+        "m_code": "404",
+        "known": ["test", "test2"],
+        "cat": "misc",
+        "valid": true
+       },
+       {
         "name" : "Cloudflare",
         "uri_check" : "https://community.cloudflare.com/u/{account}",
         "post_body" : "",
@@ -1023,6 +1047,18 @@
         "known" : ["john", "blue"],
         "cat" : "dating",
         "valid" : true
+       },
+       {
+        "name": "Demotywatory",
+        "uri_check": "https://demotywatory.pl/user/{account}",
+        "post_body" : "",
+        "e_code": "200",
+        "e_string": "Z nami od:",
+        "m_string": "Użytkownik o podanym pseudonimie nie istnieje.",
+        "m_code": "200",
+        "known": ["test", "test2"],
+        "cat": "images",
+        "valid": true
        },
        {
         "name" : "Designspriation",
@@ -1486,6 +1522,18 @@
         "valid": true
        },
        {
+        "name": "Filmweb",
+        "uri_check": "https://www.filmweb.pl/user/{account}",
+        "post_body" : "",
+        "e_code": "200",
+        "e_string": "Na filmwebie od",
+        "m_string": "Przepraszamy. Strona, której szukasz nie została odnaleziona.",
+        "m_code": "200",
+        "known": ["test", "test2"],
+        "cat": "hobby",
+        "valid": true
+       },
+       {
         "name" : "Fiverr",
         "uri_check" : "https://www.fiverr.com/{account}",
         "post_body" : "",
@@ -1555,6 +1603,19 @@
         "m_code": "500",
         "known": ["test", "test2"],
         "cat": "misc",
+        "valid": true
+       },
+       {
+        "name": "fotka",
+        "uri_check": "https://api.fotka.com/v2/user/dataStatic?login={account}",
+        "uri_pretty": "https://fotka.com/profil/{account}",
+        "post_body" : "",
+        "e_code": "200",
+        "e_string": "profil",
+        "m_string": "ERROR",
+        "m_code": "200",
+        "known": ["test", "test2"],
+        "cat": "social",
         "valid": true
        },
        {
@@ -2211,6 +2272,18 @@
         "valid": true
        },
        {
+        "name": "JBZD",
+        "uri_check": "https://jbzd.com.pl/uzytkownik/{account}",
+        "post_body" : "",
+        "e_code": "200",
+        "e_string": "Dzidy użytkownika",
+        "m_string": "Błąd 404",
+        "m_code": "404",
+        "known": ["test", "janek"],
+        "cat": "images",
+        "valid": true
+       },
+       {
         "name" : "Jeuxvideo",
         "uri_check" : "https://www.jeuxvideo.com/profil/{account}?mode=infos",
         "post_body" : "",
@@ -2221,6 +2294,18 @@
         "known" : ["jane", "alex"],
         "cat" : "gaming",
         "valid" : true
+       },
+       {
+        "name": "Joe Monster",
+        "uri_check": "https://joemonster.org/bojownik/{account}",
+        "post_body" : "",
+        "e_code": "200",
+        "e_string": "jest prywatny",
+        "m_string": "Nie wiem jak ci to powiedzieć",
+        "m_code": "200",
+        "known": ["dandris", "lasior"],
+        "cat": "misc",
+        "valid": true
        },
        {
         "name" : "JSFiddle",
@@ -2339,6 +2424,18 @@
         "m_string": "Nie znaleziono użytkownika o podanym loginie.",
         "m_code": "200",
         "known": ["ania", "janek"],
+        "cat": "images",
+        "valid": true
+       },
+       {
+        "name": "kwejk.pl",
+        "uri_check": "https://kwejk.pl/uzytkownik/{account}#/tablica/",
+        "post_body" : "",
+        "e_code": "200",
+        "e_string": "Kwejki użytkownika",
+        "m_string": "404 - strona nie została znaleziona - KWEJK.pl",
+        "m_code": "404",
+        "known": ["test", "janek"],
         "cat": "images",
         "valid": true
        },
@@ -2643,6 +2740,18 @@
         "known" : ["fear837", "dream"],
         "cat" : "gaming",
         "valid" : true
+       },
+       {
+        "name": "Mistrzowie",
+        "uri_check": "https://mistrzowie.org/user/{account}",
+        "post_body" : "",
+        "e_code": "200",
+        "e_string": "Profil użytkownika",
+        "m_string": "Nie znaleziono użytkownika o podanym loginie.",
+        "m_code": "200",
+        "known": ["test", "janek"],
+        "cat": "images",
+        "valid": true
        },
        {
         "name" : "Mix",
@@ -3284,6 +3393,18 @@
         "valid" : true
        },
        {
+        "name": "Polchat.pl",
+        "uri_check": "https://polczat.pl/forum/profile/{account}/",
+        "post_body" : "",
+        "e_code": "200",
+        "e_string": "Historia wpisów",
+        "m_string": "Wybrany użytkownik nie istnieje.",
+        "m_code": "200",
+        "known": ["test","admin"],
+        "cat": "social",
+        "valid": true
+       },
+       {
         "name": "policja2009",
         "uri_check": "http://www.policja2009.fora.pl/search.php?search_author={account}",
         "post_body" : "",
@@ -3307,6 +3428,18 @@
         "known" : ["josh", "jsmith"],
         "cat" : "tech",
         "valid" : true
+       },
+       {
+        "name": "pol.social",
+        "uri_check": "https://pol.social/@{account}",
+        "post_body" : "",
+        "e_code": "200",
+        "e_string": "@pol.social",
+        "m_string": "The page you are looking for isn't here.",
+        "m_code": "404",
+        "known": ["ftdl", "ducensor"],
+        "cat": "social",
+        "valid": true
        },
        {
         "name" : "polygon",
@@ -3403,6 +3536,18 @@
         "known" : ["john", "bob"],
         "cat" : "music",
         "valid" : true
+       },
+       {
+        "name": "prv.pl",
+        "uri_check": "https://www.prv.pl/osoba/{account}",
+        "post_body" : "",
+        "e_code": "200",
+        "e_string": "LOGIN",
+        "m_string": "Użytkownik nie istnieje.",
+        "m_code": "200",
+        "known": ["test", "test2"],
+        "cat": "tech",
+        "valid": true
        },
        {
         "name" : "public",
@@ -3584,6 +3729,18 @@
         "known" : ["SimonParkes", "djmrmusic"],
         "cat" : "political",
         "valid" : true
+       },
+       {
+        "name": "Salon24",
+        "uri_check": "https://www.salon24.pl/u/{account}/",
+        "post_body" : "",
+        "e_code": "200",
+        "e_string": "Strona główna",
+        "m_string": "Salon24 - blogi, newsy, opinie i komentarze",
+        "m_code": "200",
+        "known": ["test", "test2"],
+        "cat": "blog",
+        "valid": true
        },
        {
         "name" : "SaraCarterShow",
@@ -4067,101 +4224,16 @@
         "known": ["przeczzpreczem", "Xavier"],
         "cat": "social",
         "valid": true
-       },
-       {
-        "name" : "taskrabbit",
-        "uri_check" : "https://www.taskrabbit.com/profile/{account}/about",
+       },       {
+        "name" : "Tagged",
+        "uri_check" : "https://secure.tagged.com/{account}",
         "post_body" : "",
         "e_code" : "200",
-        "e_string" : "’s Profile",
-        "m_string" : "",
+        "e_string" : "s Profile</title>",
+        "m_string" : "Tagged - The social network for meeting new people",
         "m_code" : "302",
-        "known" : ["john", "sam"],
-        "cat" : "business",
-        "valid" : true
-       },
-       {
-        "name" : "Teamtreehouse",
-        "uri_check" : "https://teamtreehouse.com/{account}",
-        "post_body" : "",
-        "e_code" : "200",
-        "e_string" : "Member Since",
-        "m_string" : "Oops, Something went missing",
-        "m_code" : "404",
-        "known" : ["john"],
-        "cat" : "coding",
-        "valid" : true
-       },
-       {
-        "name" : "themeforest",
-        "uri_check" : "https://themeforest.net/user/{account}",
-        "post_body" : "",
-        "e_code" : "200",
-        "e_string" : "s profile on ThemeForest",
-        "m_string" : "Page Not Found | ThemeForest",
-        "m_code" : "301",
-        "known" : ["john", "bob"],
-        "cat" : "art",
-        "valid" : true
-       },
-       {
-        "name" : "trakt",
-        "uri_check" : "https://trakt.tv/users/{account}",
-        "post_body" : "",
-        "e_code" : "200",
-        "e_string" : "s profile - Trakt",
-        "m_string" : "The page you were looking for doesn't exist (404) - Trakt.tv",
-        "m_code" : "404",
-        "known" : ["john", "anne"],
-        "cat" : "video",
-        "valid" : true
-       },
-       {
-        "name" : "unsplash",
-        "uri_check" : "https://unsplash.com/@{account}",
-        "post_body" : "",
-        "e_code" : "200",
-        "e_string" : "| Unsplash Photo Community",
-        "m_string" : "Hm, the page you were looking for doesn't seem to exist anymore.",
-        "m_code" : "404",
-        "known" : ["john", "alex"],
-        "cat" : "images",
-        "valid" : true
-       },
-       {
-        "name" : "vsco",
-        "uri_check" : "https://vsco.co/{account}/gallery",
-        "post_body" : "",
-        "e_code" : "200",
-        "e_string" : "| VSCO",
-        "m_string" : "This page does not exist",
-        "m_code" : "404",
-        "known" : ["sam", "becca"],
+        "known" : ["Samantha", "Robert"],
         "cat" : "social",
-        "valid" : true
-       },
-       {
-        "name" : "weibo",
-        "uri_check" : "https://tw.weibo.com/{account}",
-        "post_body" : "",
-        "e_code" : "200",
-        "e_string" : "粉絲",
-        "m_string" : "Oops!",
-        "m_code" : "404",
-        "known" : ["chentingni", "fbb0916"],
-        "cat" : "social",
-        "valid" : true
-       },
-       {
-        "name" : "Wowhead",
-        "uri_check" : "https://www.wowhead.com/user={account}",
-        "post_body" : "",
-        "e_code" : "200",
-        "e_string" : " Profile - Wowhead",
-        "m_string" : "Error - Wowhead",
-        "m_code" : "404",
-        "known" : ["Ashelia", "Zizarz"],
-        "cat" : "gaming",
         "valid" : true
        },
        {
@@ -4189,6 +4261,42 @@
         "valid" : true
        },
        {
+        "name" : "taskrabbit",
+        "uri_check" : "https://www.taskrabbit.com/profile/{account}/about",
+        "post_body" : "",
+        "e_code" : "200",
+        "e_string" : "’s Profile",
+        "m_string" : "",
+        "m_code" : "302",
+        "known" : ["john", "sam"],
+        "cat" : "business",
+        "valid" : true
+       },
+       {
+        "name" : "Teamtreehouse",
+        "uri_check" : "https://teamtreehouse.com/{account}",
+        "post_body" : "",
+        "e_code" : "200",
+        "e_string" : "Member Since",
+        "m_string" : "Oops, Something went missing",
+        "m_code" : "404",
+        "known" : ["john"],
+        "cat" : "coding",
+        "valid" : true
+       },
+       {
+        "name" : "Teknik",
+        "uri_check" : "https://user.teknik.io/{account}",
+        "post_body" : "",
+        "e_code" : "200",
+        "e_string" : "Public Key",
+        "m_string" : "The user does not exist",
+        "m_code" : "200",
+        "known" : ["red", "bob"],
+        "cat" : "tech",
+        "valid" : true
+       },
+       {
         "name" : "Telegram",
         "uri_check" : "https://t.me/{account}",
         "post_body" : "",
@@ -4197,6 +4305,18 @@
         "m_string" : "noindex, nofollow",
         "m_code" : "200",
         "known" : ["alice", "giovanni"],
+        "cat" : "social",
+        "valid" : true
+       },
+       {
+        "name" : "Tellonym",
+        "uri_check" : "https://tellonym.me/{account}",
+        "post_body" : "",
+        "e_code" : "200",
+        "e_string" : "on Tellonym",
+        "m_string" : "- Honest & Anonymous Feedback",
+        "m_code" : "404",
+        "known" : ["jane", "jimmy"],
         "cat" : "social",
         "valid" : true
        },
@@ -4213,6 +4333,30 @@
         "valid" : true
        },
        {
+        "name" : "themeforest",
+        "uri_check" : "https://themeforest.net/user/{account}",
+        "post_body" : "",
+        "e_code" : "200",
+        "e_string" : "s profile on ThemeForest",
+        "m_string" : "Page Not Found | ThemeForest",
+        "m_code" : "301",
+        "known" : ["john", "bob"],
+        "cat" : "art",
+        "valid" : true
+       },
+       {
+        "name" : "thegatewaypundit",
+        "uri_check" : "https://www.thegatewaypundit.com/author/{account}/",
+        "post_body" : "",
+        "e_code" : "200",
+        "e_string" : "summary",
+        "m_string" : "Not found, error 404",
+        "m_code" : "404",
+        "known" : ["patti", "joehoft"],
+        "cat" : "political",
+        "valid" : true
+       },
+       {
         "name" : "theguardian",
         "uri_check" : "https://www.theguardian.com/profile/{account}",
         "post_body" : "",
@@ -4225,15 +4369,27 @@
         "valid" : true
        },
        {
-        "name" : "Teknik",
-        "uri_check" : "https://user.teknik.io/{account}",
+        "name" : "Thetattooforum",
+        "uri_check" : "https://www.thetattooforum.com/members/{account}/",
         "post_body" : "",
         "e_code" : "200",
-        "e_string" : "Public Key",
-        "m_string" : "The user does not exist",
-        "m_code" : "200",
-        "known" : ["red", "bob"],
-        "cat" : "tech",
+        "e_string" : "Insert This Gallery",
+        "m_string" : "We’re sorry",
+        "m_code" : "500",
+        "known" : ["mixdop", "modifyielts"],
+        "cat" : "art",
+        "valid" : true
+       },
+       {
+        "name" : "TikTok",
+        "uri_check" : "https://www.tiktok.com/@{account}?lang=en",
+        "post_body" : "",
+        "e_code" : "200",
+        "e_string" : "title=\"Following\"",
+        "m_string" : "Couldn't find this account",
+        "m_code" : "404",
+        "known" : ["gordonramsayofficial", "pookiebear73"],
+        "cat" : "social",
         "valid" : true
        },
        {
@@ -4246,6 +4402,30 @@
         "m_code" : "200",
         "known" : ["Alexey", "peter", "john"],
         "cat" : "dating",
+        "valid" : true
+       },
+       {
+        "name" : "TrackmaniaLadder",
+        "uri_check" : "https://en.tm-ladder.com/{account}_rech.php",
+        "post_body" : "",
+        "e_code" : "200",
+        "e_string" : "Login type :",
+        "m_string" : "player unknown or invalid 'idplayer' parameter.",
+        "m_code" : "404",
+        "known" : ["bob", "jill"],
+        "cat" : "gaming",
+        "valid" : true
+       },
+       {
+        "name" : "trakt",
+        "uri_check" : "https://trakt.tv/users/{account}",
+        "post_body" : "",
+        "e_code" : "200",
+        "e_string" : "s profile - Trakt",
+        "m_string" : "The page you were looking for doesn't exist (404) - Trakt.tv",
+        "m_code" : "404",
+        "known" : ["john", "anne"],
+        "cat" : "video",
         "valid" : true
        },
        {
@@ -4286,6 +4466,18 @@
         "valid" : true
        },
        {
+        "name" : "Tunefind",
+        "uri_check" : "https://www.tunefind.com/user/profile/{account}",
+        "post_body" : "",
+        "e_code" : "200",
+        "e_string" : "Achievements",
+        "m_string" : "Page not found",
+        "m_code" : "404",
+        "known" : ["baywolfmusic", "mrcerny18"],
+        "cat" : "music",
+        "valid" : true
+       },
+       {
         "name" : "Twitcasting",
         "uri_check" : "https://twitcasting.tv/{account}",
         "post_body" : "",
@@ -4295,6 +4487,19 @@
         "m_code" : "302",
         "known" : ["yuno___nico", "2_t0_"],
         "cat" : "social",
+        "valid" : true
+       },
+       {
+        "name" : "Twitch",
+        "uri_check" : "https://twitchtracker.com/search?q={account}",
+        "uri_pretty" : "https://twitch.tv/{account}/",
+        "post_body" : "",
+        "e_code" : "200",
+        "e_string" : "Found Exact Match",
+        "m_string" : "nothing found",
+        "m_code" : "200",
+        "known" : ["summit1g", "cohhcarnage"],
+        "cat" : "gaming",
         "valid" : true
        },
        {
@@ -4308,6 +4513,32 @@
         "m_code" : "404",
         "known" : ["webbreacher", "chrishemsworth"],
         "cat" : "social",
+        "valid" : true
+       },
+       {
+        "name" : "Twitter archived profile",
+        "uri_check" : "http://archive.org/wayback/available?url=https://twitter.com/{account}",
+        "uri_pretty" : "https://web.archive.org/web/2/https://twitter.com/{account}",
+        "post_body" : "",
+        "e_code" : "200",
+        "e_string" : "\"archived_snapshots\": {\"closest\"",
+        "m_string" : "\"archived_snapshots\": {}",
+        "m_code" : "200",
+        "known" : ["jack", "dineshdsouza"],
+        "cat" : "archived",
+        "valid" : true
+       },
+       {
+        "name" : "Twitter archived tweets",
+        "uri_check" : "http://archive.org/wayback/available?url=https://twitter.com/{account}/status/*",
+        "uri_pretty" : "https://web.archive.org/web/*/https://twitter.com/{account}/status/*",
+        "post_body" : "",
+        "e_code" : "200",
+        "e_string" : "\"archived_snapshots\": {\"closest\"",
+        "m_string" : "\"archived_snapshots\": {}",
+        "m_code" : "200",
+        "known" : ["jack", "dineshdsouza"],
+        "cat" : "archived",
         "valid" : true
        },
        {
@@ -4335,6 +4566,42 @@
         "valid" : true
        },
        {
+        "name" : "uid",
+        "uri_check" : "http://uid.me/{account}",
+        "post_body" : "",
+        "e_code" : "200",
+        "e_string" : "- uID.me",
+        "m_string" : "Page not found",
+        "m_code" : "404",
+        "known" : ["john", "peter"],
+        "cat" : "social",
+        "valid" : true
+       },
+       {
+        "name": "Ultras Diary",
+        "uri_check": "http://ultrasdiary.pl/u/{account}/",
+        "post_body" : "",
+        "e_code": "200",
+        "e_string": "Mecze wyjazdowe:",
+        "m_string": "Ile masz wyjazdów?",
+        "m_code": "404",
+        "known": ["janek", "kowal"],
+        "cat": "hobby",
+        "valid": true
+       },
+       {
+        "name" : "unsplash",
+        "uri_check" : "https://unsplash.com/@{account}",
+        "post_body" : "",
+        "e_code" : "200",
+        "e_string" : "| Unsplash Photo Community",
+        "m_string" : "Hm, the page you were looking for doesn't seem to exist anymore.",
+        "m_code" : "404",
+        "known" : ["john", "alex"],
+        "cat" : "images",
+        "valid" : true
+       },
+       {
         "name" : "untappd",
         "uri_check" : "https://untappd.com/user/{account}/",
         "post_body" : "",
@@ -4343,6 +4610,30 @@
         "m_string" : "Untappd | 404",
         "m_code" : "404",
         "known" : ["test", "phil"],
+        "cat" : "social",
+        "valid" : true
+       },
+       {
+        "name" : "USA Life",
+        "uri_check" : "https://usa.life/{account}",
+        "post_body" : "",
+        "e_code" : "200",
+        "e_string" : "Please log in to like, share and comment",
+        "m_string" : "Sorry, page not found",
+        "m_code" : "302",
+        "known" : ["abaynes79", "not1face"],
+        "cat" : "social",
+        "valid" : true
+       },
+       {
+        "name" : "vsco",
+        "uri_check" : "https://vsco.co/{account}/gallery",
+        "post_body" : "",
+        "e_code" : "200",
+        "e_string" : "| VSCO",
+        "m_string" : "This page does not exist",
+        "m_code" : "404",
+        "known" : ["sam", "becca"],
         "cat" : "social",
         "valid" : true
        },
@@ -4356,6 +4647,18 @@
         "m_code" : "404",
         "known" : ["john", "liam"],
         "cat" : "finance",
+        "valid" : true
+       },
+       {
+        "name" : "Vero",
+        "uri_check" : "https://vero.co/{account}",
+        "post_body" : "",
+        "e_code" : "200",
+        "e_string" : "on VERO™</title>",
+        "m_string" : "The page you are looking for doesn't exist.",
+        "m_code" : "404",
+        "known" : ["alex", "johnny"],
+        "cat" : "art",
         "valid" : true
        },
        {
@@ -4406,6 +4709,18 @@
         "known" : ["test", "admin"],
         "cat" : "video",
         "valid" : true
+       },
+       {
+        "name": "vizjer.pl",
+        "uri_check": "https://vizjer.pl/uzytkownik/{account}",
+        "post_body" : "",
+        "e_code": "200",
+        "e_string": "Profil użytkownika",
+        "m_string": "Ostatnie komentarze",
+        "m_code": "200",
+        "known": ["janek", "tomek"],
+        "cat": "video",
+        "valid": false
        },
        {
         "name" : "VK",
@@ -4494,15 +4809,15 @@
         "valid" : true
        },
        {
-        "name" : "wishlistr",
-        "uri_check" : "https://www.wishlistr.com/profile/{account}/",
+        "name" : "weibo",
+        "uri_check" : "https://tw.weibo.com/{account}",
         "post_body" : "",
         "e_code" : "200",
-        "e_string" : "s profile</title>",
-        "m_string" : "",
-        "m_code" : "302",
-        "known" : ["test"],
-        "cat" : "shopping",
+        "e_string" : "粉絲",
+        "m_string" : "Oops!",
+        "m_code" : "404",
+        "known" : ["chentingni", "fbb0916"],
+        "cat" : "social",
         "valid" : true
        },
        {
@@ -4516,6 +4831,42 @@
         "m_code" : "200",
         "known" : ["Mcd51", "W._Frank"],
         "cat" : "news",
+        "valid" : true
+       },
+       {
+        "name" : "Wimkin-PublicProfile",
+        "uri_check" : "https://wimkin.com/{account}",
+        "post_body" : "",
+        "e_code" : "200",
+        "e_string" : "is on WIMKIN",
+        "m_string" : " The page you are looking for cannot be found.",
+        "m_code" : "404",
+        "known" : ["alex", "smith", "boomer"],
+        "cat" : "political",
+        "valid" : true
+       },
+       {
+        "name" : "Wireclub",
+        "uri_check" : "https://www.wireclub.com/users/{account}",
+        "post_body" : "",
+        "e_code" : "200",
+        "e_string" : "Chat With",
+        "m_string" : "People - Wireclub",
+        "m_code" : "301",
+        "known" : ["deae", "cheerfulsarcasm", "braydenskiresort"],
+        "cat" : "social",
+        "valid" : true
+       },
+       {
+        "name" : "wishlistr",
+        "uri_check" : "https://www.wishlistr.com/profile/{account}/",
+        "post_body" : "",
+        "e_code" : "200",
+        "e_string" : "s profile</title>",
+        "m_string" : "",
+        "m_code" : "302",
+        "known" : ["test"],
+        "cat" : "shopping",
         "valid" : true
        },
        {
@@ -4540,6 +4891,18 @@
         "m_code" : "404",
         "known" : ["test"],
         "cat" : "blog",
+        "valid" : true
+       },
+       {
+        "name" : "Wowhead",
+        "uri_check" : "https://www.wowhead.com/user={account}",
+        "post_body" : "",
+        "e_code" : "200",
+        "e_string" : " Profile - Wowhead",
+        "m_string" : "Error - Wowhead",
+        "m_code" : "404",
+        "known" : ["Ashelia", "Zizarz"],
+        "cat" : "gaming",
         "valid" : true
        },
        {
@@ -4579,6 +4942,18 @@
         "valid" : true
        },
        {
+        "name" : "Xing",
+        "uri_check" : "https://www.xing.com/profile/{account}",
+        "post_body" : "",
+        "e_code" : "200",
+        "e_string" : " | XING</title>",
+        "m_string" : "Es tut uns leid",
+        "m_code" : "404",
+        "known" : ["Andy_Hausmann", "Ramona_Hapke"],
+        "cat" : "social",
+        "valid" : true
+       },
+       {
         "name" : "XVIDEOS-models",
         "uri_check" : "https://www.xvideos.com/models/{account}",
         "post_body" : "",
@@ -4615,54 +4990,6 @@
         "valid" : true
        },
        {
-        "name" : "YouTube",
-        "uri_check" : "https://www.youtube.com/user/{account}/videos",
-        "post_body" : "",
-        "e_code" : "200",
-        "e_string" : "name\" content=",
-        "m_string" : "This channel does not exist",
-        "m_code" : "404",
-        "known" : ["test"],
-        "cat" : "video",
-        "valid" : true
-       },
-       {
-        "name" : "Xing",
-        "uri_check" : "https://www.xing.com/profile/{account}",
-        "post_body" : "",
-        "e_code" : "200",
-        "e_string" : " | XING</title>",
-        "m_string" : "Es tut uns leid",
-        "m_code" : "404",
-        "known" : ["Andy_Hausmann", "Ramona_Hapke"],
-        "cat" : "social",
-        "valid" : true
-       },
-       {
-        "name" : "Zomato",
-        "uri_check" : "https://www.zomato.com/{account}/foodjourney",
-        "post_body" : "",
-        "e_code" : "200",
-        "e_string" : "| Zomato",
-        "m_string" : "404 | Zomato",
-        "m_code" : "404",
-        "known" : ["john", "jess"],
-        "cat" : "social",
-        "valid" : true
-       },
-       {
-        "name" : "Tagged",
-        "uri_check" : "https://secure.tagged.com/{account}",
-        "post_body" : "",
-        "e_code" : "200",
-        "e_string" : "s Profile</title>",
-        "m_string" : "Tagged - The social network for meeting new people",
-        "m_code" : "302",
-        "known" : ["Samantha", "Robert"],
-        "cat" : "social",
-        "valid" : true
-       },
-       {
         "name" : "Yelp",
         "uri_check" : "https://www.yelp.com/user_details?userid={account}",
         "post_body" : "",
@@ -4675,27 +5002,15 @@
         "valid" : true
        },
        {
-        "name" : "Vero",
-        "uri_check" : "https://vero.co/{account}",
+        "name" : "YouTube",
+        "uri_check" : "https://www.youtube.com/user/{account}/videos",
         "post_body" : "",
         "e_code" : "200",
-        "e_string" : "on VERO™</title>",
-        "m_string" : "The page you are looking for doesn't exist.",
+        "e_string" : "name\" content=",
+        "m_string" : "This channel does not exist",
         "m_code" : "404",
-        "known" : ["alex", "johnny"],
-        "cat" : "art",
-        "valid" : true
-       },
-       {
-        "name" : "TikTok",
-        "uri_check" : "https://www.tiktok.com/@{account}?lang=en",
-        "post_body" : "",
-        "e_code" : "200",
-        "e_string" : "title=\"Following\"",
-        "m_string" : "Couldn't find this account",
-        "m_code" : "404",
-        "known" : ["gordonramsayofficial", "pookiebear73"],
-        "cat" : "social",
+        "known" : ["test"],
+        "cat" : "video",
         "valid" : true
        },
        {
@@ -4711,75 +5026,15 @@
         "valid" : true
        },
        {
-        "name" : "Tunefind",
-        "uri_check" : "https://www.tunefind.com/user/profile/{account}",
+        "name" : "Zomato",
+        "uri_check" : "https://www.zomato.com/{account}/foodjourney",
         "post_body" : "",
         "e_code" : "200",
-        "e_string" : "Achievements",
-        "m_string" : "Page not found",
+        "e_string" : "| Zomato",
+        "m_string" : "404 | Zomato",
         "m_code" : "404",
-        "known" : ["baywolfmusic", "mrcerny18"],
-        "cat" : "music",
-        "valid" : true
-       },
-       {
-        "name" : "Thetattooforum",
-        "uri_check" : "https://www.thetattooforum.com/members/{account}/",
-        "post_body" : "",
-        "e_code" : "200",
-        "e_string" : "Insert This Gallery",
-        "m_string" : "We’re sorry",
-        "m_code" : "500",
-        "known" : ["mixdop", "modifyielts"],
-        "cat" : "art",
-        "valid" : true
-       },
-       {
-        "name" : "Wireclub",
-        "uri_check" : "https://www.wireclub.com/users/{account}",
-        "post_body" : "",
-        "e_code" : "200",
-        "e_string" : "Chat With",
-        "m_string" : "People - Wireclub",
-        "m_code" : "301",
-        "known" : ["deae", "cheerfulsarcasm", "braydenskiresort"],
+        "known" : ["john", "jess"],
         "cat" : "social",
-        "valid" : true
-       },
-       {
-        "name" : "thegatewaypundit",
-        "uri_check" : "https://www.thegatewaypundit.com/author/{account}/",
-        "post_body" : "",
-        "e_code" : "200",
-        "e_string" : "summary",
-        "m_string" : "Not found, error 404",
-        "m_code" : "404",
-        "known" : ["patti", "joehoft"],
-        "cat" : "political",
-        "valid" : true
-       },
-       {
-        "name" : "Wimkin-PublicProfile",
-        "uri_check" : "https://wimkin.com/{account}",
-        "post_body" : "",
-        "e_code" : "200",
-        "e_string" : "is on WIMKIN",
-        "m_string" : " The page you are looking for cannot be found.",
-        "m_code" : "404",
-        "known" : ["alex", "smith", "boomer"],
-        "cat" : "political",
-        "valid" : true
-       },
-       {
-        "name" : "TrackmaniaLadder",
-        "uri_check" : "https://en.tm-ladder.com/{account}_rech.php",
-        "post_body" : "",
-        "e_code" : "200",
-        "e_string" : "Login type :",
-        "m_string" : "player unknown or invalid 'idplayer' parameter.",
-        "m_code" : "404",
-        "known" : ["bob", "jill"],
-        "cat" : "gaming",
         "valid" : true
        },
        {
@@ -4793,43 +5048,6 @@
         "known" : ["lushnis", "kan-shu-jiao-hua-shai-tai-yang"],
         "cat" : "social",
         "valid" : true
-       },
-       {
-        "name" : "USA Life",
-        "uri_check" : "https://usa.life/{account}",
-        "post_body" : "",
-        "e_code" : "200",
-        "e_string" : "Please log in to like, share and comment",
-        "m_string" : "Sorry, page not found",
-        "m_code" : "302",
-        "known" : ["abaynes79", "not1face"],
-        "cat" : "social",
-        "valid" : true
-       },
-       {
-        "name": "fotka",
-        "uri_check": "https://api.fotka.com/v2/user/dataStatic?login={account}",
-        "uri_pretty": "https://fotka.com/profil/{account}",
-        "post_body" : "",
-        "e_code": "200",
-        "e_string": "profil",
-        "m_string": "ERROR",
-        "m_code": "200",
-        "known": ["test", "test2"],
-        "cat": "social",
-        "valid": true
-       },
-       {
-        "name": "Ultras Diary",
-        "uri_check": "http://ultrasdiary.pl/u/{account}/",
-        "post_body" : "",
-        "e_code": "200",
-        "e_string": "Mecze wyjazdowe:",
-        "m_string": "Ile masz wyjazdów?",
-        "m_code": "404",
-        "known": ["janek", "kowal"],
-        "cat": "hobby",
-        "valid": true
        },
        {
         "name": "Wolni Słowianie",
@@ -4853,54 +5071,6 @@
         "m_code": "404",
         "known": ["test", "test2"],
         "cat": "social",
-        "valid": true
-       },
-       {
-        "name": "Chomikuj.pl",
-        "uri_check": "https://chomikuj.pl/{account}/",
-        "post_body" : "",
-        "e_code": "200",
-        "e_string": "Foldery",
-        "m_string": "Chomik o takiej nazwie nie istnieje",
-        "m_code": "404",
-        "known": ["test", "test2"],
-        "cat": "misc",
-        "valid": true
-       },
-       {
-        "name": "Filmweb",
-        "uri_check": "https://www.filmweb.pl/user/{account}",
-        "post_body" : "",
-        "e_code": "200",
-        "e_string": "Na filmwebie od",
-        "m_string": "Przepraszamy. Strona, której szukasz nie została odnaleziona.",
-        "m_code": "200",
-        "known": ["test", "test2"],
-        "cat": "hobby",
-        "valid": true
-       },
-       {
-        "name": "Salon24",
-        "uri_check": "https://www.salon24.pl/u/{account}/",
-        "post_body" : "",
-        "e_code": "200",
-        "e_string": "Strona główna",
-        "m_string": "Salon24 - blogi, newsy, opinie i komentarze",
-        "m_code": "200",
-        "known": ["test", "test2"],
-        "cat": "blog",
-        "valid": true
-       },
-       {
-        "name": "blogi.pl",
-        "uri_check": "https://www.blogi.pl/osoba,{account}.html",
-        "post_body" : "",
-        "e_code": "200",
-        "e_string": "Informacje ogólne",
-        "m_string": "Niepoprawny adres.",
-        "m_code": "200",
-        "known": ["naukowa", "izkpaw"],
-        "cat": "blog",
         "valid": true
        },
        {
@@ -4940,66 +5110,6 @@
         "valid": true
        },
        {
-        "name": "Joe Monster",
-        "uri_check": "https://joemonster.org/bojownik/{account}",
-        "post_body" : "",
-        "e_code": "200",
-        "e_string": "jest prywatny",
-        "m_string": "Nie wiem jak ci to powiedzieć",
-        "m_code": "200",
-        "known": ["dandris", "lasior"],
-        "cat": "misc",
-        "valid": true
-       },
-       {
-        "name": "kwejk.pl",
-        "uri_check": "https://kwejk.pl/uzytkownik/{account}#/tablica/",
-        "post_body" : "",
-        "e_code": "200",
-        "e_string": "Kwejki użytkownika",
-        "m_string": "404 - strona nie została znaleziona - KWEJK.pl",
-        "m_code": "404",
-        "known": ["test", "janek"],
-        "cat": "images",
-        "valid": true
-       },
-       {
-        "name": "JBZD",
-        "uri_check": "https://jbzd.com.pl/uzytkownik/{account}",
-        "post_body" : "",
-        "e_code": "200",
-        "e_string": "Dzidy użytkownika",
-        "m_string": "Błąd 404",
-        "m_code": "404",
-        "known": ["test", "janek"],
-        "cat": "images",
-        "valid": true
-       },
-       {
-        "name": "Mistrzowie",
-        "uri_check": "https://mistrzowie.org/user/{account}",
-        "post_body" : "",
-        "e_code": "200",
-        "e_string": "Profil użytkownika",
-        "m_string": "Nie znaleziono użytkownika o podanym loginie.",
-        "m_code": "200",
-        "known": ["test", "janek"],
-        "cat": "images",
-        "valid": true
-       },
-       {
-        "name": "Demotywatory",
-        "uri_check": "https://demotywatory.pl/user/{account}",
-        "post_body" : "",
-        "e_code": "200",
-        "e_string": "Z nami od:",
-        "m_string": "Użytkownik o podanym pseudonimie nie istnieje.",
-        "m_code": "200",
-        "known": ["test", "test2"],
-        "cat": "images",
-        "valid": true
-       },
-       {
         "name": "Tanuki.pl",
         "uri_check": "https://tanuki.pl/profil/{account}",
         "post_body" : "",
@@ -5009,42 +5119,6 @@
         "m_code": "404",
         "known": ["ania", "avellana"],
         "cat": "hobby",
-        "valid": true
-       },
-       {
-        "name": "Polchat.pl",
-        "uri_check": "https://polczat.pl/forum/profile/{account}/",
-        "post_body" : "",
-        "e_code": "200",
-        "e_string": "Historia wpisów",
-        "m_string": "Wybrany użytkownik nie istnieje.",
-        "m_code": "200",
-        "known": ["test","admin"],
-        "cat": "social",
-        "valid": true
-       },
-       {
-        "name": "prv.pl",
-        "uri_check": "https://www.prv.pl/osoba/{account}",
-        "post_body" : "",
-        "e_code": "200",
-        "e_string": "LOGIN",
-        "m_string": "Użytkownik nie istnieje.",
-        "m_code": "200",
-        "known": ["test", "test2"],
-        "cat": "tech",
-        "valid": true
-       },
-       {
-        "name": "pol.social",
-        "uri_check": "https://pol.social/@{account}",
-        "post_body" : "",
-        "e_code": "200",
-        "e_string": "@pol.social",
-        "m_string": "The page you are looking for isn't here.",
-        "m_code": "404",
-        "known": ["ftdl", "ducensor"],
-        "cat": "social",
         "valid": true
        },
        {
@@ -5072,18 +5146,6 @@
         "valid": true
        },
        {
-        "name": "vizjer.pl",
-        "uri_check": "https://vizjer.pl/uzytkownik/{account}",
-        "post_body" : "",
-        "e_code": "200",
-        "e_string": "Profil użytkownika",
-        "m_string": "Ostatnie komentarze",
-        "m_code": "200",
-        "known": ["janek", "tomek"],
-        "cat": "video",
-        "valid": false
-       },
-       {
         "name": "ulub.pl",
         "uri_check": "http://ulub.pl/profil/{account}",
         "post_body" : "",
@@ -5109,43 +5171,6 @@
         "valid": true
        },
        {
-        "name" : "Twitch",
-        "uri_check" : "https://twitchtracker.com/search?q={account}",
-        "uri_pretty" : "https://twitch.tv/{account}/",
-        "post_body" : "",
-        "e_code" : "200",
-        "e_string" : "Found Exact Match",
-        "m_string" : "nothing found",
-        "m_code" : "200",
-        "known" : ["summit1g", "cohhcarnage"],
-        "cat" : "gaming",
-        "valid" : true
-       },
-       {
-        "name" : "Tellonym",
-        "uri_check" : "https://tellonym.me/{account}",
-        "post_body" : "",
-        "e_code" : "200",
-        "e_string" : "on Tellonym",
-        "m_string" : "- Honest & Anonymous Feedback",
-        "m_code" : "404",
-        "known" : ["jane", "jimmy"],
-        "cat" : "social",
-        "valid" : true
-       },
-       {
-        "name" : "uid",
-        "uri_check" : "http://uid.me/{account}",
-        "post_body" : "",
-        "e_code" : "200",
-        "e_string" : "- uID.me",
-        "m_string" : "Page not found",
-        "m_code" : "404",
-        "known" : ["john", "peter"],
-        "cat" : "social",
-        "valid" : true
-       },
-       {
         "name" : "Wikidot",
         "uri_check" : "http://www.wikidot.com/user:info/{account}",
         "post_body" : "",
@@ -5167,32 +5192,6 @@
         "m_code" : "400",
         "known" : ["alex", "peter"],
         "cat" : "hobby",
-        "valid" : true
-       },
-       {
-        "name" : "Twitter archived profile",
-        "uri_check" : "http://archive.org/wayback/available?url=https://twitter.com/{account}",
-        "uri_pretty" : "https://web.archive.org/web/2/https://twitter.com/{account}",
-        "post_body" : "",
-        "e_code" : "200",
-        "e_string" : "\"archived_snapshots\": {\"closest\"",
-        "m_string" : "\"archived_snapshots\": {}",
-        "m_code" : "200",
-        "known" : ["jack", "dineshdsouza"],
-        "cat" : "archived",
-        "valid" : true
-       },
-       {
-        "name" : "Twitter archived tweets",
-        "uri_check" : "http://archive.org/wayback/available?url=https://twitter.com/{account}/status/*",
-        "uri_pretty" : "https://web.archive.org/web/*/https://twitter.com/{account}/status/*",
-        "post_body" : "",
-        "e_code" : "200",
-        "e_string" : "\"archived_snapshots\": {\"closest\"",
-        "m_string" : "\"archived_snapshots\": {}",
-        "m_code" : "200",
-        "known" : ["jack", "dineshdsouza"],
-        "cat" : "archived",
         "valid" : true
        },
        {
