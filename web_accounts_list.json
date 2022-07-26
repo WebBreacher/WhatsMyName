@@ -477,6 +477,17 @@
       "valid" : true
      },
      {
+      "name": "blogi.pl",
+      "check_uri": "https://www.blogi.pl/osoba,{account}.html",
+      "account_existence_code": "200",
+      "account_existence_string": "Informacje ogólne",
+      "account_missing_string": "Niepoprawny adres.",
+      "account_missing_code": "200",
+      "known_accounts": ["naukowa", "izkpaw"],
+      "category": "blog",
+      "valid": true
+     },
+     {
       "name" : "Blogmarks",
       "check_uri" : "http://blogmarks.net/user/{account}",
       "account_existence_code" : "200",
@@ -720,6 +731,17 @@
       "valid" : true
      },
      {
+      "name": "Chomikuj.pl",
+      "check_uri": "https://chomikuj.pl/{account}/",
+      "account_existence_code": "200",
+      "account_existence_string": "Foldery",
+      "account_missing_string": "Chomik o takiej nazwie nie istnieje",
+      "account_missing_code": "404",
+      "known_accounts": ["test", "test2"],
+      "category": "misc",
+      "valid": true
+     },
+     {
        "name" : "Cloudflare",
        "check_uri" : "https://community.cloudflare.com/u/{account}",
        "account_existence_code" : "200",
@@ -938,6 +960,17 @@
       "known_accounts" : ["john", "blue"],
       "category" : "dating",
       "valid" : true
+     },
+     {
+      "name": "Demotywatory",
+      "check_uri": "https://demotywatory.pl/user/{account}",
+      "account_existence_code": "200",
+      "account_existence_string": "Z nami od:",
+      "account_missing_string": "Użytkownik o podanym pseudonimie nie istnieje.",
+      "account_missing_code": "200",
+      "known_accounts": ["test", "test2"],
+      "category": "images",
+      "valid": true
      },
      {
       "name" : "Designspriation",
@@ -1363,6 +1396,17 @@
       "valid": true
      },
      {
+      "name": "Filmweb",
+      "check_uri": "https://www.filmweb.pl/user/{account}",
+      "account_existence_code": "200",
+      "account_existence_string": "Na filmwebie od",
+      "account_missing_string": "Przepraszamy. Strona, której szukasz nie została odnaleziona.",
+      "account_missing_code": "200",
+      "known_accounts": ["test", "test2"],
+      "category": "hobby",
+      "valid": true
+     },
+     {
       "name" : "Fiverr",
       "check_uri" : "https://www.fiverr.com/{account}",
       "account_existence_code" : "200",
@@ -1426,6 +1470,18 @@
       "account_missing_code": "500",
       "known_accounts": ["test", "test2"],
       "category": "misc",
+      "valid": true
+     },
+     {
+      "name": "fotka",
+      "check_uri": "https://api.fotka.com/v2/user/dataStatic?login={account}",
+      "pretty_uri": "https://fotka.com/profil/{account}",
+      "account_existence_code": "200",
+      "account_existence_string": "profil",
+      "account_missing_string": "ERROR",
+      "account_missing_code": "200",
+      "known_accounts": ["test", "test2"],
+      "category": "social",
       "valid": true
      },
      {
@@ -2017,6 +2073,17 @@
        "valid" : true
      },
      {
+      "name": "JBZD",
+      "check_uri": "https://jbzd.com.pl/uzytkownik/{account}",
+      "account_existence_code": "200",
+      "account_existence_string": "Dzidy użytkownika",
+      "account_missing_string": "Błąd 404",
+      "account_missing_code": "404",
+      "known_accounts": ["test", "janek"],
+      "category": "images",
+      "valid": true
+     },
+     {
       "name": "jeja.pl",
       "check_uri": "https://www.jeja.pl/user,{account}",
       "account_existence_code": "200",
@@ -2037,6 +2104,17 @@
       "known_accounts" : ["jane", "alex"],
       "category" : "gaming",
       "valid" : true
+     },
+     {
+      "name": "Joe Monster",
+      "check_uri": "https://joemonster.org/bojownik/{account}",
+      "account_existence_code": "200",
+      "account_existence_string": "jest prywatny",
+      "account_missing_string": "Nie wiem jak ci to powiedzieć",
+      "account_missing_code": "200",
+      "known_accounts": ["dandris", "lasior"],
+      "category": "misc",
+      "valid": true
      },
      {
        "name" : "JSFiddle",
@@ -2145,6 +2223,17 @@
       "account_missing_string": "Nie znaleziono użytkownika o podanym loginie.",
       "account_missing_code": "200",
       "known_accounts": ["ania", "janek"],
+      "category": "images",
+      "valid": true
+     },
+     {
+      "name": "kwejk.pl",
+      "check_uri": "https://kwejk.pl/uzytkownik/{account}#/tablica/",
+      "account_existence_code": "200",
+      "account_existence_string": "Kwejki użytkownika",
+      "account_missing_string": "404 - strona nie została znaleziona - KWEJK.pl",
+      "account_missing_code": "404",
+      "known_accounts": ["test", "janek"],
       "category": "images",
       "valid": true
      },
@@ -2426,6 +2515,17 @@
       "valid" : true
      },
      {
+      "name": "Mistrzowie",
+      "check_uri": "https://mistrzowie.org/user/{account}",
+      "account_existence_code": "200",
+      "account_existence_string": "Profil użytkownika",
+      "account_missing_string": "Nie znaleziono użytkownika o podanym loginie.",
+      "account_missing_code": "200",
+      "known_accounts": ["test", "janek"],
+      "category": "images",
+      "valid": true
+     },
+     {
       "name" : "Mix",
       "check_uri" : "https://mix.com/{account}/",
       "account_existence_code" : "200",
@@ -2700,6 +2800,17 @@
        "known_accounts" : ["nastya3", "nastya"],
        "category" : "misc",
        "valid" : true
+     },
+     {
+      "name": "olx",
+      "check_uri": "https://www.olx.pl/oferty/uzytkownik/{account}/",
+      "account_existence_code": "200",
+      "account_existence_string": "Obserwuj wyszukiwanie",
+      "account_missing_string": "Przepraszamy, ale nie możemy znaleźć takiej strony...",
+      "account_missing_code": "200",
+      "known_accounts": ["janek", "test"],
+      "category": "shopping",
+      "valid": true
      },
      {
        "name" : "Opencollective",
@@ -3289,6 +3400,17 @@
       "valid" : true
      },
      {
+      "name": "Salon24",
+      "check_uri": "https://www.salon24.pl/u/{account}/",
+      "account_existence_code": "200",
+      "account_existence_string": "Strona główna",
+      "account_missing_string": "Salon24 - blogi, newsy, opinie i komentarze",
+      "account_missing_code": "200",
+      "known_accounts": ["test", "test2"],
+      "category": "blog",
+      "valid": true
+     },
+     {
       "name" : "SaraCarterShow",
       "check_uri" : "https://saraacarter.com/author/{account}/",
       "account_existence_code" : "200",
@@ -3732,48 +3854,259 @@
       "valid": true
      },
      {
-       "name" : "taskrabbit",
-       "check_uri" : "https://www.taskrabbit.com/profile/{account}/about",
-       "account_existence_code" : "200",
-       "account_existence_string" : "’s Profile",
-       "account_missing_string" : "",
-       "account_missing_code" : "302",
-       "known_accounts" : ["john", "sam"],
-       "category" : "business",
-       "valid" : true
+      "name" : "Tagged",
+      "check_uri" : "https://secure.tagged.com/{account}",
+      "account_existence_code" : "200",
+      "account_existence_string" : "s Profile</title>",
+      "account_missing_string" : "Tagged - The social network for meeting new people",
+      "account_missing_code" : "302",
+      "known_accounts" : ["Samantha", "Robert"],
+      "category" : "social",
+      "valid" : true
      },
      {
-       "name" : "Teamtreehouse",
-       "check_uri" : "https://teamtreehouse.com/{account}",
-       "account_existence_code" : "200",
-       "account_existence_string" : "Member Since",
-       "account_missing_string" : "Oops, Something went missing",
-       "account_missing_code" : "404",
-       "known_accounts" : ["john"],
-       "category" : "coding",
-       "valid" : true
+      "name" : "TamTam",
+      "check_uri" : "https://tamtam.chat/{account}",
+      "account_existence_code" : "200",
+      "account_existence_string" : "deeplink=tamtam://chat/",
+      "account_missing_string" : "ТамТам</title>",
+      "account_missing_code" : "302",
+      "known_accounts" : ["blue", "John"],
+      "category" : "social",
+      "valid" : true
      },
      {
-       "name" : "themeforest",
-       "check_uri" : "https://themeforest.net/user/{account}",
-       "account_existence_code" : "200",
-       "account_existence_string" : "s profile on ThemeForest",
-       "account_missing_string" : "Page Not Found | ThemeForest",
-       "account_missing_code" : "301",
-       "known_accounts" : ["john", "bob"],
-       "category" : "art",
-       "valid" : true
+      "name" : "Taringa",
+      "check_uri" : "https://www.taringa.net/{account}",
+      "account_existence_code" : "200",
+      "account_existence_string" : " en Taringa!</title>",
+      "account_missing_string" : "Colectiva en Taringa!</title>",
+      "account_missing_code" : "301",
+      "known_accounts" : ["jocaxav", "engendrometal"],
+      "category" : "social",
+      "valid" : true
      },
      {
-       "name" : "trakt",
-       "check_uri" : "https://trakt.tv/users/{account}",
-       "account_existence_code" : "200",
-       "account_existence_string" : "s profile - Trakt",
-       "account_missing_string" : "The page you were looking for doesn't exist (404) - Trakt.tv",
-       "account_missing_code" : "404",
-       "known_accounts" : ["john", "anne"],
-       "category" : "video",
-       "valid" : true
+      "name" : "taskrabbit",
+      "check_uri" : "https://www.taskrabbit.com/profile/{account}/about",
+      "account_existence_code" : "200",
+      "account_existence_string" : "’s Profile",
+      "account_missing_string" : "",
+      "account_missing_code" : "302",
+      "known_accounts" : ["john", "sam"],
+      "category" : "business",
+      "valid" : true
+     },
+     {
+      "name" : "Telegram",
+      "check_uri" : "https://t.me/{account}",
+      "account_existence_code" : "200",
+      "account_existence_string" : "tgme_page_title",
+      "account_missing_string" : "noindex, nofollow",
+      "account_missing_code" : "200",
+      "known_accounts" : ["alice", "giovanni"],
+      "category" : "social",
+      "valid" : true
+     },
+     {
+      "name" : "Teamtreehouse",
+      "check_uri" : "https://teamtreehouse.com/{account}",
+      "account_existence_code" : "200",
+      "account_existence_string" : "Member Since",
+      "account_missing_string" : "Oops, Something went missing",
+      "account_missing_code" : "404",
+      "known_accounts" : ["john"],
+      "category" : "coding",
+      "valid" : true
+     },
+     {
+      "name" : "Teknik",
+      "check_uri" : "https://user.teknik.io/{account}",
+      "account_existence_code" : "200",
+      "account_existence_string" : "Public Key",
+      "account_missing_string" : "The user does not exist",
+      "account_missing_code" : "200",
+      "known_accounts" : ["red", "bob"],
+      "category" : "tech",
+      "valid" : true
+     },
+     {
+      "name" : "TF2 Backpack Examiner",
+      "check_uri" : "http://www.tf2items.com/id/{account}/",
+      "account_existence_code" : "200",
+      "account_existence_string" : "<title>TF2 Backpack -",
+      "account_missing_string" : "",
+      "account_missing_code" : "302",
+      "known_accounts" : ["test"],
+      "category" : "gaming",
+      "valid" : true
+     },
+     {
+      "name" : "thegatewaypundit",
+      "check_uri" : "https://www.thegatewaypundit.com/author/{account}/",
+      "account_existence_code" : "200",
+      "account_existence_string" : "summary",
+      "account_missing_string" : "Not found, error 404",
+      "account_missing_code" : "404",
+      "known_accounts" : ["patti", "joehoft"],
+      "category" : "political",
+      "valid" : true
+     },
+     {
+      "name" : "theguardian",
+      "check_uri" : "https://www.theguardian.com/profile/{account}",
+      "account_existence_code" : "200",
+      "account_existence_string" : "https://www.theguardian.com/profile/",
+      "account_missing_string" : "Page not found | The Guardian",
+      "account_missing_code" : "404",
+      "known_accounts" : ["minna-salami", "johnnaughton"],
+      "category" : "news",
+      "valid" : true
+     },
+     {
+      "name" : "themeforest",
+      "check_uri" : "https://themeforest.net/user/{account}",
+      "account_existence_code" : "200",
+      "account_existence_string" : "s profile on ThemeForest",
+      "account_missing_string" : "Page Not Found | ThemeForest",
+      "account_missing_code" : "301",
+      "known_accounts" : ["john", "bob"],
+      "category" : "art",
+      "valid" : true
+     },
+     {
+      "name" : "Thetattooforum",
+      "check_uri" : "https://www.thetattooforum.com/members/{account}/",
+      "account_existence_code" : "200",
+      "account_existence_string" : "Insert This Gallery",
+      "account_missing_string" : "We’re sorry",
+      "account_missing_code" : "500",
+      "known_accounts" : ["mixdop", "modifyielts"],
+      "category" : "art",
+      "valid" : true
+     },
+     {
+      "name" : "TikTok",
+      "check_uri" : "https://www.tiktok.com/@{account}?lang=en",
+      "account_existence_code" : "200",
+      "account_existence_string" : "title=\"Following\"",
+      "account_missing_string" : "Couldn't find this account",
+      "account_missing_code" : "404",
+      "known_accounts" : ["gordonramsayofficial", "pookiebear73"],
+      "category" : "social",
+      "valid" : true
+     },
+     {
+      "name" : "Tinder",
+      "check_uri" : "https://tinder.com/@{account}",
+      "account_existence_code" : "200",
+      "account_existence_string" : ") | Tinder</title><meta",
+      "account_missing_string" : "Tinder | Dating, Make Friends &amp; Meet New People",
+      "account_missing_code" : "200",
+      "known_accounts" : ["Alexey", "peter", "john"],
+      "category" : "dating",
+      "valid" : true
+     },
+     {
+      "name" : "TrackmaniaLadder",
+      "check_uri" : "https://en.tm-ladder.com/{account}_rech.php",
+      "account_existence_code" : "200",
+      "account_existence_string" : "Login type :",
+      "account_missing_string" : "player unknown or invalid 'idplayer' parameter.",
+      "account_missing_code" : "404",
+      "known_accounts" : ["bob", "jill"],
+      "category" : "gaming",
+      "valid" : true
+     },
+     {
+      "name" : "trakt",
+      "check_uri" : "https://trakt.tv/users/{account}",
+      "account_existence_code" : "200",
+      "account_existence_string" : "s profile - Trakt",
+      "account_missing_string" : "The page you were looking for doesn't exist (404) - Trakt.tv",
+      "account_missing_code" : "404",
+      "known_accounts" : ["john", "anne"],
+      "category" : "video",
+      "valid" : true
+     },
+     {
+      "name" : "Trello",
+      "check_uri" : "https://trello.com/1/Members/{account}?fields=activityBlocked%2CavatarUrl%2Cbio%2CbioData%2Cconfirmed%2CfullName%2CidEnterprise%2CidMemberReferrer%2Cinitials%2CmemberType%2CnonPublic%2Cproducts%2Curl%2Cusername",
+      "pretty_uri" : "https://trello.com/{account}",
+      "account_existence_code" : "200",
+      "account_existence_string" : "avatarUrl",
+      "account_missing_code" : "404",
+      "account_missing_string" : "Oh no! 404!",
+      "known_accounts" : ["naranjasan", "jane"],
+      "category" : "social",
+      "valid": true
+     },
+     {
+      "name" : "tripadvisor",
+      "check_uri" : "https://www.tripadvisor.com/Profile/{account}",
+      "account_existence_code" : "200",
+      "account_existence_string" : "Contributions",
+      "account_missing_string" : "This page is on vacation",
+      "account_missing_code" : "404",
+      "known_accounts" : ["john", "peter"],
+      "category" : "social",
+      "valid" : true
+     },
+     {
+      "name" : "tumblr",
+      "check_uri" : "https://{account}.tumblr.com",
+      "account_existence_code" : "200",
+      "account_existence_string" : "avatar",
+      "account_missing_string" : "There's nothing here",
+      "account_missing_code" : "404",
+      "known_accounts" : ["test", "test1"],
+      "category" : "images",
+      "valid" : true
+     },
+     {
+      "name" : "Tunefind",
+      "check_uri" : "https://www.tunefind.com/user/profile/{account}",
+      "account_existence_code" : "200",
+      "account_existence_string" : "Achievements",
+      "account_missing_string" : "Page not found",
+      "account_missing_code" : "404",
+      "known_accounts" : ["baywolfmusic", "mrcerny18"],
+      "category" : "music",
+      "valid" : true
+     },
+     {
+      "name" : "Twitcasting",
+      "check_uri" : "https://twitcasting.tv/{account}",
+      "account_existence_code" : "200",
+      "account_existence_string" : "Live History",
+      "account_missing_string" : "Not Found",
+      "account_missing_code" : "302",
+      "known_accounts" : ["yuno___nico", "2_t0_"],
+      "category" : "social",
+      "valid" : true
+     },
+     {
+      "name" : "Twitter",
+      "check_uri" : "https://nitter.net/{account}",
+      "pretty_uri" : "https://twitter.com/{account}",
+      "account_existence_code" : "200",
+      "account_existence_string" : ") | nitter</title>",
+      "account_missing_string" : "Error | nitter</title>",
+      "account_missing_code" : "404",
+      "known_accounts" : ["webbreacher", "chrishemsworth"],
+      "category" : "social",
+      "valid" : true
+     },
+     {
+      "name" : "twpro",
+      "check_uri" : "https://twpro.jp/{account}",
+      "account_existence_code" : "200",
+      "account_existence_string" : "おとなりさん",
+      "account_missing_code" : "404",
+      "account_missing_string" : "をご確認ください。",
+      "known_accounts" : ["wsise47", "tsukiusa630"],
+      "category" : "social",
+      "valid" : true
      },
      {
        "name" : "unsplash",
@@ -3817,151 +4150,6 @@
        "account_missing_code" : "404",
        "known_accounts" : ["Ashelia", "Zizarz"],
        "category" : "gaming",
-       "valid" : true
-     },
-     {
-       "name" : "TamTam",
-       "check_uri" : "https://tamtam.chat/{account}",
-       "account_existence_code" : "200",
-       "account_existence_string" : "deeplink=tamtam://chat/",
-       "account_missing_string" : "ТамТам</title>",
-       "account_missing_code" : "302",
-       "known_accounts" : ["blue", "John"],
-       "category" : "social",
-       "valid" : true
-     },
-     {
-       "name" : "Taringa",
-       "check_uri" : "https://www.taringa.net/{account}",
-       "account_existence_code" : "200",
-       "account_existence_string" : " en Taringa!</title>",
-       "account_missing_string" : "Colectiva en Taringa!</title>",
-       "account_missing_code" : "301",
-       "known_accounts" : ["jocaxav", "engendrometal"],
-       "category" : "social",
-       "valid" : true
-     },
-     {
-       "name" : "Telegram",
-       "check_uri" : "https://t.me/{account}",
-       "account_existence_code" : "200",
-       "account_existence_string" : "tgme_page_title",
-       "account_missing_string" : "noindex, nofollow",
-       "account_missing_code" : "200",
-       "known_accounts" : ["alice", "giovanni"],
-       "category" : "social",
-       "valid" : true
-     },
-     {
-       "name" : "TF2 Backpack Examiner",
-       "check_uri" : "http://www.tf2items.com/id/{account}/",
-       "account_existence_code" : "200",
-       "account_existence_string" : "<title>TF2 Backpack -",
-       "account_missing_string" : "",
-       "account_missing_code" : "302",
-       "known_accounts" : ["test"],
-       "category" : "gaming",
-       "valid" : true
-     },
-     {
-       "name" : "theguardian",
-       "check_uri" : "https://www.theguardian.com/profile/{account}",
-       "account_existence_code" : "200",
-       "account_existence_string" : "https://www.theguardian.com/profile/",
-       "account_missing_string" : "Page not found | The Guardian",
-       "account_missing_code" : "404",
-       "known_accounts" : ["minna-salami", "johnnaughton"],
-       "category" : "news",
-       "valid" : true
-     },
-     {
-       "name" : "Teknik",
-       "check_uri" : "https://user.teknik.io/{account}",
-       "account_existence_code" : "200",
-       "account_existence_string" : "Public Key",
-       "account_missing_string" : "The user does not exist",
-       "account_missing_code" : "200",
-       "known_accounts" : ["red", "bob"],
-       "category" : "tech",
-       "valid" : true
-     },
-     {
-       "name" : "Tinder",
-       "check_uri" : "https://tinder.com/@{account}",
-       "account_existence_code" : "200",
-       "account_existence_string" : ") | Tinder</title><meta",
-       "account_missing_string" : "Tinder | Dating, Make Friends &amp; Meet New People",
-       "account_missing_code" : "200",
-       "known_accounts" : ["Alexey", "peter", "john"],
-       "category" : "dating",
-       "valid" : true
-     },
-     {
-       "name" : "Trello",
-       "check_uri" : "https://trello.com/1/Members/{account}?fields=activityBlocked%2CavatarUrl%2Cbio%2CbioData%2Cconfirmed%2CfullName%2CidEnterprise%2CidMemberReferrer%2Cinitials%2CmemberType%2CnonPublic%2Cproducts%2Curl%2Cusername",
-       "pretty_uri" : "https://trello.com/{account}",
-       "account_existence_code" : "200",
-       "account_existence_string" : "avatarUrl",
-       "account_missing_code" : "404",
-       "account_missing_string" : "Oh no! 404!",
-       "known_accounts" : ["naranjasan", "jane"],
-       "category" : "social",
-       "valid": true
-     },
-     {
-       "name" : "tripadvisor",
-       "check_uri" : "https://www.tripadvisor.com/Profile/{account}",
-       "account_existence_code" : "200",
-       "account_existence_string" : "Contributions",
-       "account_missing_string" : "This page is on vacation",
-       "account_missing_code" : "404",
-       "known_accounts" : ["john", "peter"],
-       "category" : "social",
-       "valid" : true
-     },
-     {
-       "name" : "tumblr",
-       "check_uri" : "https://{account}.tumblr.com",
-       "account_existence_code" : "200",
-       "account_existence_string" : "avatar",
-       "account_missing_string" : "There's nothing here",
-       "account_missing_code" : "404",
-       "known_accounts" : ["test", "test1"],
-       "category" : "images",
-       "valid" : true
-     },
-     {
-       "name" : "Twitcasting",
-       "check_uri" : "https://twitcasting.tv/{account}",
-       "account_existence_code" : "200",
-       "account_existence_string" : "Live History",
-       "account_missing_string" : "Not Found",
-       "account_missing_code" : "302",
-       "known_accounts" : ["yuno___nico", "2_t0_"],
-       "category" : "social",
-       "valid" : true
-     },
-     {
-       "name" : "Twitter",
-       "check_uri" : "https://nitter.net/{account}",
-       "pretty_uri" : "https://twitter.com/{account}",
-       "account_existence_code" : "200",
-       "account_existence_string" : ") | nitter</title>",
-       "account_missing_string" : "Error | nitter</title>",
-       "account_missing_code" : "404",
-       "known_accounts" : ["webbreacher", "chrishemsworth"],
-       "category" : "social",
-       "valid" : true
-     },
-     {
-       "name" : "twpro",
-       "check_uri" : "https://twpro.jp/{account}",
-       "account_existence_code" : "200",
-       "account_existence_string" : "おとなりさん",
-       "account_missing_code" : "404",
-       "account_missing_string" : "をご確認ください。",
-       "known_accounts" : ["wsise47", "tsukiusa630"],
-       "category" : "social",
        "valid" : true
      },
      {
@@ -4266,17 +4454,6 @@
        "valid" : true
      },
      {
-       "name" : "Tagged",
-       "check_uri" : "https://secure.tagged.com/{account}",
-       "account_existence_code" : "200",
-       "account_existence_string" : "s Profile</title>",
-       "account_missing_string" : "Tagged - The social network for meeting new people",
-       "account_missing_code" : "302",
-       "known_accounts" : ["Samantha", "Robert"],
-       "category" : "social",
-       "valid" : true
-     },
-     {
        "name" : "Yelp",
        "check_uri" : "https://www.yelp.com/user_details?userid={account}",
        "account_existence_code" : "200",
@@ -4299,17 +4476,6 @@
        "valid" : true
      },
      {
-       "name" : "TikTok",
-       "check_uri" : "https://www.tiktok.com/@{account}?lang=en",
-       "account_existence_code" : "200",
-       "account_existence_string" : "title=\"Following\"",
-       "account_missing_string" : "Couldn't find this account",
-       "account_missing_code" : "404",
-       "known_accounts" : ["gordonramsayofficial", "pookiebear73"],
-       "category" : "social",
-       "valid" : true
-     },
-     {
        "name" : "Zillow",
        "check_uri" : "https://www.zillow.com/profile/{account}/",
        "account_existence_code" : "200",
@@ -4318,28 +4484,6 @@
        "account_missing_code" : "302",
        "known_accounts" : ["JOHN-L-SULLIVAN", "Maggie-Alegria"],
        "category" : "shopping",
-       "valid" : true
-     },
-     {
-       "name" : "Tunefind",
-       "check_uri" : "https://www.tunefind.com/user/profile/{account}",
-       "account_existence_code" : "200",
-       "account_existence_string" : "Achievements",
-       "account_missing_string" : "Page not found",
-       "account_missing_code" : "404",
-       "known_accounts" : ["baywolfmusic", "mrcerny18"],
-       "category" : "music",
-       "valid" : true
-     },
-     {
-       "name" : "Thetattooforum",
-       "check_uri" : "https://www.thetattooforum.com/members/{account}/",
-       "account_existence_code" : "200",
-       "account_existence_string" : "Insert This Gallery",
-       "account_missing_string" : "We’re sorry",
-       "account_missing_code" : "500",
-       "known_accounts" : ["mixdop", "modifyielts"],
-       "category" : "art",
        "valid" : true
      },
      {
@@ -4354,17 +4498,6 @@
        "valid" : true
      },
      {
-       "name" : "thegatewaypundit",
-       "check_uri" : "https://www.thegatewaypundit.com/author/{account}/",
-       "account_existence_code" : "200",
-       "account_existence_string" : "summary",
-       "account_missing_string" : "Not found, error 404",
-       "account_missing_code" : "404",
-       "known_accounts" : ["patti", "joehoft"],
-       "category" : "political",
-       "valid" : true
-     },
-     {
        "name" : "Wimkin-PublicProfile",
        "check_uri" : "https://wimkin.com/{account}",
        "account_existence_code" : "200",
@@ -4373,17 +4506,6 @@
        "account_missing_code" : "404",
        "known_accounts" : ["alex", "smith", "boomer"],
        "category" : "political",
-       "valid" : true
-     },
-     {
-       "name" : "TrackmaniaLadder",
-       "check_uri" : "https://en.tm-ladder.com/{account}_rech.php",
-       "account_existence_code" : "200",
-       "account_existence_string" : "Login type :",
-       "account_missing_string" : "player unknown or invalid 'idplayer' parameter.",
-       "account_missing_code" : "404",
-       "known_accounts" : ["bob", "jill"],
-       "category" : "gaming",
        "valid" : true
      },
      {
@@ -4409,18 +4531,6 @@
        "valid" : true
      },
      {
-      "name": "fotka",
-      "check_uri": "https://api.fotka.com/v2/user/dataStatic?login={account}",
-      "pretty_uri": "https://fotka.com/profil/{account}",
-      "account_existence_code": "200",
-      "account_existence_string": "profil",
-      "account_missing_string": "ERROR",
-      "account_missing_code": "200",
-      "known_accounts": ["test", "test2"],
-      "category": "social",
-      "valid": true
-    },
-    {
       "name": "Ultras Diary",
       "check_uri": "http://ultrasdiary.pl/u/{account}/",
       "account_existence_code": "200",
@@ -4454,50 +4564,6 @@
       "valid": true
     },
     {
-      "name": "Chomikuj.pl",
-      "check_uri": "https://chomikuj.pl/{account}/",
-      "account_existence_code": "200",
-      "account_existence_string": "Foldery",
-      "account_missing_string": "Chomik o takiej nazwie nie istnieje",
-      "account_missing_code": "404",
-      "known_accounts": ["test", "test2"],
-      "category": "misc",
-      "valid": true
-    },
-    {
-      "name": "Filmweb",
-      "check_uri": "https://www.filmweb.pl/user/{account}",
-      "account_existence_code": "200",
-      "account_existence_string": "Na filmwebie od",
-      "account_missing_string": "Przepraszamy. Strona, której szukasz nie została odnaleziona.",
-      "account_missing_code": "200",
-      "known_accounts": ["test", "test2"],
-      "category": "hobby",
-      "valid": true
-    },
-    {
-      "name": "Salon24",
-      "check_uri": "https://www.salon24.pl/u/{account}/",
-      "account_existence_code": "200",
-      "account_existence_string": "Strona główna",
-      "account_missing_string": "Salon24 - blogi, newsy, opinie i komentarze",
-      "account_missing_code": "200",
-      "known_accounts": ["test", "test2"],
-      "category": "blog",
-      "valid": true
-    },
-    {
-      "name": "blogi.pl",
-      "check_uri": "https://www.blogi.pl/osoba,{account}.html",
-      "account_existence_code": "200",
-      "account_existence_string": "Informacje ogólne",
-      "account_missing_string": "Niepoprawny adres.",
-      "account_missing_code": "200",
-      "known_accounts": ["naukowa", "izkpaw"],
-      "category": "blog",
-      "valid": true
-    },
-    {
       "name": "Zbiornik",
       "check_uri": "https://mini.zbiornik.com/{account}",
       "account_existence_code": "200",
@@ -4517,72 +4583,6 @@
       "account_missing_code": "500",
       "known_accounts": ["janek", "test"],
       "category": "XXXPORNXXX",
-      "valid": true
-    },
-    {
-      "name": "olx",
-      "check_uri": "https://www.olx.pl/oferty/uzytkownik/{account}/",
-      "account_existence_code": "200",
-      "account_existence_string": "Obserwuj wyszukiwanie",
-      "account_missing_string": "Przepraszamy, ale nie możemy znaleźć takiej strony...",
-      "account_missing_code": "200",
-      "known_accounts": ["janek", "test"],
-      "category": "shopping",
-      "valid": true
-    },
-    {
-      "name": "Joe Monster",
-      "check_uri": "https://joemonster.org/bojownik/{account}",
-      "account_existence_code": "200",
-      "account_existence_string": "jest prywatny",
-      "account_missing_string": "Nie wiem jak ci to powiedzieć",
-      "account_missing_code": "200",
-      "known_accounts": ["dandris", "lasior"],
-      "category": "misc",
-      "valid": true
-    },
-    {
-      "name": "kwejk.pl",
-      "check_uri": "https://kwejk.pl/uzytkownik/{account}#/tablica/",
-      "account_existence_code": "200",
-      "account_existence_string": "Kwejki użytkownika",
-      "account_missing_string": "404 - strona nie została znaleziona - KWEJK.pl",
-      "account_missing_code": "404",
-      "known_accounts": ["test", "janek"],
-      "category": "images",
-      "valid": true
-    },
-    {
-      "name": "JBZD",
-      "check_uri": "https://jbzd.com.pl/uzytkownik/{account}",
-      "account_existence_code": "200",
-      "account_existence_string": "Dzidy użytkownika",
-      "account_missing_string": "Błąd 404",
-      "account_missing_code": "404",
-      "known_accounts": ["test", "janek"],
-      "category": "images",
-      "valid": true
-    },
-    {
-      "name": "Mistrzowie",
-      "check_uri": "https://mistrzowie.org/user/{account}",
-      "account_existence_code": "200",
-      "account_existence_string": "Profil użytkownika",
-      "account_missing_string": "Nie znaleziono użytkownika o podanym loginie.",
-      "account_missing_code": "200",
-      "known_accounts": ["test", "janek"],
-      "category": "images",
-      "valid": true
-    },
-    {
-      "name": "Demotywatory",
-      "check_uri": "https://demotywatory.pl/user/{account}",
-      "account_existence_code": "200",
-      "account_existence_string": "Z nami od:",
-      "account_missing_string": "Użytkownik o podanym pseudonimie nie istnieje.",
-      "account_missing_code": "200",
-      "known_accounts": ["test", "test2"],
-      "category": "images",
       "valid": true
     },
     {
