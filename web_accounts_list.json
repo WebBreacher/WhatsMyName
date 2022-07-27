@@ -544,6 +544,17 @@
       "valid" : true
      },
      {
+      "name" : "Brickset",
+      "check_uri" : "https://forum.brickset.com/profile/{account}",
+      "account_existence_code" : "200",
+      "account_existence_string" : "Activity</h2>",
+      "account_missing_string" : "User Not Found",
+      "account_missing_code" : "404",
+      "known_accounts" : ["lowlead", "vwong19"],
+      "category" : "hobby",
+      "valid" : true
+     },
+     {
       "name" : "Bugcrowd",
       "check_uri" : "https://bugcrowd.com/{account}",
       "account_existence_code" : "200",

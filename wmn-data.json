@@ -593,6 +593,18 @@
         "valid" : true
        },
        {
+        "name" : "Brickset",
+        "uri_check" : "https://forum.brickset.com/profile/{account}",
+        "post_body" : "",
+        "e_code" : "200",
+        "e_string" : "Activity</h2>",
+        "m_string" : "User Not Found",
+        "m_code" : "404",
+        "known" : ["lowlead", "vwong19"],
+        "cat" : "hobby",
+        "valid" : true
+       },
+       {
         "name" : "Bugcrowd",
         "uri_check" : "https://bugcrowd.com/{account}",
         "post_body" : "",
