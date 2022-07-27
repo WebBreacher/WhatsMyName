@@ -907,17 +907,6 @@
       "valid" : true
      },
      {
-      "name" : "crunchyroll",
-      "check_uri" : "https://crunchyroll.com/user/{account}",
-      "account_existence_code" : "301",
-      "account_existence_string" : "Statistics</H3>",
-      "account_missing_string" : "We have over 404 pages",
-      "account_missing_code" : "404",
-      "known_accounts" : ["lorreen", "hatysa"],
-      "category" : "hobby",
-      "valid" : true
-     },
-     {
       "name" : "Cults3D",
       "check_uri" : "https://cults3d.com/en/users/{account}/creations",
       "account_existence_code" : "200",
