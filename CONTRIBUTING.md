@@ -1,5 +1,8 @@
 You can contribute to the project in at least three different ways.
 
+# Warning: These notes are currently out of date
+Our project is undergoing a few changes (See #414) that impact this document. After we have completed those changes, this will be revised.
+
 ## Method 1. Non-technical
 
 Suggest a new site to be covered by the tool.
