@@ -102,7 +102,7 @@ Here is an example of a site element:
          "pretty_uri" : "https://github.com/{account}",
          "account_existence_code" : "200",
          "account_existence_string" : "login:",
-         "account_missing_string" : ["Not Found"],
+         "account_missing_string" : "Not Found",
          "account_missing_code" : "404",
          "known_accounts" : ["test", "webbreacher"],
          "category" : "coding",
