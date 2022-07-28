@@ -262,8 +262,8 @@
         "e_string" : ">Profile<",
         "m_string" : ">redirected<",
         "m_code" : "302",
-        "known" : ["test"],
-        "cat" : "misc",
+        "known" : ["test", "john"],
+        "cat" : "hobby",
         "valid" : true
        },
        {

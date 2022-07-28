@@ -241,8 +241,8 @@
       "account_existence_string" : ">Profile<",
       "account_missing_string" : ">redirected<",
       "account_missing_code" : "302",
-      "known_accounts" : ["test"],
-      "category" : "misc",
+      "known_accounts" : ["test", "john"],
+      "category" : "hobby",
       "valid" : true
      },
      {
