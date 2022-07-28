@@ -255,6 +255,18 @@
         "valid" : true
        },
        {
+        "name" : "Archive Of Our Own Account",
+        "uri_check" : "https://archiveofourown.org/users/{account}",
+        "post_body" : "",
+        "e_code" : "200",
+        "e_string" : ">Profile<",
+        "m_string" : ">redirected<",
+        "m_code" : "302",
+        "known" : ["test"],
+        "cat" : "misc",
+        "valid" : true
+       },
+       {
         "name" : "Arduino",
         "uri_check" : "https://create.arduino.cc/projecthub/{account}",
         "post_body" : "",
