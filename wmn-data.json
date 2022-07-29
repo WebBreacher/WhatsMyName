@@ -3345,6 +3345,18 @@
         "valid" : true
        },
        {
+      "name": "Picsart",
+      "uri_check": "https://picsart.com/u/{account}",
+      "post_body" : " ",
+      "e_code": "200",
+      "e_string": "Profiles on Picsart",
+      "m_string": "User not found",
+      "m_code": "404",
+      "known": ["john", "john404"],
+      "cat": "art",
+      "valid": true
+       },
+       {
         "name": "Piekielni",
         "uri_check": "https://piekielni.pl/user/{account}",
         "post_body" : "",
