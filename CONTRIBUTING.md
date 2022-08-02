@@ -1,5 +1,8 @@
 You can contribute to the project in at least three different ways.
 
+# Warning: These notes are currently out of date
+Our project is undergoing a few changes (See #414) that impact this document. After we have completed those changes, this will be revised.
+
 ## Method 1. Non-technical
 
 Suggest a new site to be covered by the tool.
@@ -99,7 +102,7 @@ Here is an example of a site element:
          "pretty_uri" : "https://github.com/{account}",
          "account_existence_code" : "200",
          "account_existence_string" : "login:",
-         "account_missing_string" : ["Not Found"],
+         "account_missing_string" : "Not Found",
          "account_missing_code" : "404",
          "known_accounts" : ["test", "webbreacher"],
          "category" : "coding",
