@@ -1,0 +1,29 @@
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+name: Minify JSON
+jobs:
+  web-deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout files
+      uses: actions/checkout@v3
+    
+    - name: Minify old JSON
+      uses: StefanEnsmann/Minify-JSON-Action@1.1.0
+      with:
+        input_file: web_accounts_list.json
+        output_file: web_accounts_list-min.json
+    
+    - name: Minify new JSON
+      uses: StefanEnsmann/Minify-JSON-Action@1.1.0
+      with:
+        input_file: wmn-data.json
+        output_file: wmn-data-min.json
+    
+    - name: Auto-commit to repository
+      uses: stefanzweifel/git-auto-commit-action@v4
+      with:
+        commit_message: Minify source code

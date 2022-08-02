@@ -1,0 +1,183 @@
+{
+	"definitions": {},
+	"$schema": "http://json-schema.org/draft-07/schema#", 
+	"$id": "https://raw.githubusercontent.com/WebBreacher/WhatsMyName/master/schema.json", 
+	"title": "Root", 
+	"type": "object",
+	"required": [
+		"license",
+		"authors",
+		"categories",
+		"sites"
+	],
+	"properties": {
+		"license": {
+			"$id": "#root/license", 
+			"title": "License", 
+			"type": "array",
+			"default": [],
+			"items":{
+				"$id": "#root/license/items", 
+				"title": "Items", 
+				"type": "string",
+				"default": "",
+				"examples": [
+					"Copyright (C) 2022 Micah Hoffman"
+				],
+				"pattern": "^.*$"
+			}
+		},
+		"authors": {
+			"$id": "#root/authors", 
+			"title": "Authors", 
+			"type": "array",
+			"default": [],
+			"items":{
+				"$id": "#root/authors/items", 
+				"title": "Items", 
+				"type": "string",
+				"default": "",
+				"examples": [
+					"WebBreacher"
+				],
+				"pattern": "^.*$"
+			}
+		},
+		"categories": {
+			"$id": "#root/categories", 
+			"title": "Categories", 
+			"type": "array",
+			"default": [],
+			"items":{
+				"$id": "#root/categories/items", 
+				"title": "Items", 
+				"type": "string",
+				"default": "",
+				"examples": [
+					"archived"
+				],
+				"pattern": "^.*$"
+			}
+		},
+		"sites": {
+			"$id": "#root/sites", 
+			"title": "Sites", 
+			"type": "array",
+			"default": [],
+			"items":{
+				"$id": "#root/sites/items", 
+				"title": "Items", 
+				"type": "object",
+				"required": [
+					"name",
+					"check_uri",
+					"account_existence_code",
+					"account_existence_string",
+					"account_missing_string",
+					"account_missing_code",
+					"known_accounts",
+					"category",
+					"valid"
+				],
+				"properties": {
+					"name": {
+						"$id": "#root/sites/items/name", 
+						"title": "Name", 
+						"type": "string",
+						"default": "",
+						"examples": [
+							"101010.pl"
+						],
+						"pattern": "^.*$"
+					},
+					"check_uri": {
+						"$id": "#root/sites/items/check_uri", 
+						"title": "Check_uri", 
+						"type": "string",
+						"default": "",
+						"examples": [
+							"https://101010.pl/@{account}"
+						],
+						"pattern": "^.*$"
+					},
+					"account_existence_code": {
+						"$id": "#root/sites/items/account_existence_code", 
+						"title": "Account_existence_code", 
+						"type": "string",
+						"default": "",
+						"examples": [
+							"200"
+						],
+						"pattern": "^.*$"
+					},
+					"account_existence_string": {
+						"$id": "#root/sites/items/account_existence_string", 
+						"title": "Account_existence_string", 
+						"type": "string",
+						"default": "",
+						"examples": [
+							"@101010.pl"
+						],
+						"pattern": "^.*$"
+					},
+					"account_missing_string": {
+						"$id": "#root/sites/items/account_missing_string", 
+						"title": "Account_missing_string", 
+						"type": "string",
+						"default": "",
+						"examples": [
+							"The page you are looking for isn't here."
+						],
+						"pattern": "^.*$"
+					},
+					"account_missing_code": {
+						"$id": "#root/sites/items/account_missing_code", 
+						"title": "Account_missing_code", 
+						"type": "string",
+						"default": "",
+						"examples": [
+							"404"
+						],
+						"pattern": "^.*$"
+					},
+					"known_accounts": {
+						"$id": "#root/sites/items/known_accounts", 
+						"title": "Known_accounts", 
+						"type": "array",
+						"default": [],
+						"items":{
+							"$id": "#root/sites/items/known_accounts/items", 
+							"title": "Items", 
+							"type": "string",
+							"default": "",
+							"examples": [
+								"szekspir"
+							],
+							"pattern": "^.*$"
+						}
+					},
+					"category": {
+						"$id": "#root/sites/items/category", 
+						"title": "Category", 
+						"type": "string",
+						"default": "",
+						"examples": [
+							"social"
+						],
+						"pattern": "^.*$"
+					},
+					"valid": {
+						"$id": "#root/sites/items/valid", 
+						"title": "Valid", 
+						"type": "boolean",
+						"examples": [
+							true
+						],
+						"default": true
+					}
+				}
+			}
+
+		}
+	}
+}

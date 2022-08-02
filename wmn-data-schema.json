@@ -1,0 +1,194 @@
+{
+	"definitions": {},
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://example.com/object1658520065.json",
+	"title": "Root",
+	"type": "object",
+	"required": [
+		"license",
+		"authors",
+		"categories",
+		"sites"
+	],
+	"properties": {
+		"license": {
+			"$id": "#root/license",
+			"title": "License",
+			"type": "array",
+			"default": [],
+			"items":{
+				"$id": "#root/license/items",
+				"title": "Items",
+				"type": "string",
+				"default": "",
+				"examples": [
+					"Copyright (C) 2022 Micah Hoffman"
+				],
+				"pattern": "^.*$"
+			}
+		},
+		"authors": {
+			"$id": "#root/authors",
+			"title": "Authors",
+			"type": "array",
+			"default": [],
+			"items":{
+				"$id": "#root/authors/items",
+				"title": "Items",
+				"type": "string",
+				"default": "",
+				"examples": [
+					"WebBreacher"
+				],
+				"pattern": "^.*$"
+			}
+		},
+		"categories": {
+			"$id": "#root/categories",
+			"title": "Categories",
+			"type": "array",
+			"default": [],
+			"items":{
+				"$id": "#root/categories/items",
+				"title": "Items",
+				"type": "string",
+				"default": "",
+				"examples": [
+					"archived"
+				],
+				"pattern": "^.*$"
+			}
+		},
+		"sites": {
+			"$id": "#root/sites",
+			"title": "Sites",
+			"type": "array",
+			"default": [],
+			"items":{
+				"$id": "#root/sites/items",
+				"title": "Items",
+				"type": "object",
+				"required": [
+					"name",
+					"uri_check",
+					"post_body",
+					"e_code",
+					"e_string",
+					"m_string",
+					"m_code",
+					"known",
+					"cat",
+					"valid"
+				],
+				"properties": {
+					"name": {
+						"$id": "#root/sites/items/name",
+						"title": "Name",
+						"type": "string",
+						"default": "",
+						"examples": [
+							"101010.pl"
+						],
+						"pattern": "^.*$"
+					},
+					"uri_check": {
+						"$id": "#root/sites/items/uri_check",
+						"title": "Uri_check",
+						"type": "string",
+						"default": "",
+						"examples": [
+							"https://101010.pl/@{account}"
+						],
+						"pattern": "^.*$"
+					},
+					"post_body": {
+						"$id": "#root/sites/items/post_body",
+						"title": "Post_body",
+						"type": "string",
+						"default": "",
+						"examples": [
+							""
+						],
+						"pattern": "^.*$"
+					},
+					"e_code": {
+						"$id": "#root/sites/items/e_code",
+						"title": "E_code",
+						"type": "string",
+						"default": "",
+						"examples": [
+							"200"
+						],
+						"pattern": "^.*$"
+					},
+					"e_string": {
+						"$id": "#root/sites/items/e_string",
+						"title": "E_string",
+						"type": "string",
+						"default": "",
+						"examples": [
+							"@101010.pl"
+						],
+						"pattern": "^.*$"
+					},
+					"m_string": {
+						"$id": "#root/sites/items/m_string",
+						"title": "M_string",
+						"type": "string",
+						"default": "",
+						"examples": [
+							"The page you are looking for isn't here."
+						],
+						"pattern": "^.*$"
+					},
+					"m_code": {
+						"$id": "#root/sites/items/m_code",
+						"title": "M_code",
+						"type": "string",
+						"default": "",
+						"examples": [
+							"404"
+						],
+						"pattern": "^.*$"
+					},
+					"known": {
+						"$id": "#root/sites/items/known",
+						"title": "Known",
+						"type": "array",
+						"default": [],
+						"items":{
+							"$id": "#root/sites/items/known/items",
+							"title": "Items",
+							"type": "string",
+							"default": "",
+							"examples": [
+								"szekspir"
+							],
+							"pattern": "^.*$"
+						}
+					},
+					"cat": {
+						"$id": "#root/sites/items/cat",
+						"title": "Cat",
+						"type": "string",
+						"default": "",
+						"examples": [
+							"social"
+						],
+						"pattern": "^.*$"
+					},
+					"valid": {
+						"$id": "#root/sites/items/valid",
+						"title": "Valid",
+						"type": "boolean",
+						"examples": [
+							true
+						],
+						"default": true
+					}
+				}
+			}
+
+		}
+	}
+}

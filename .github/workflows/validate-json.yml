@@ -1,0 +1,18 @@
+name: Validate JSON
+on: [pull_request]
+jobs:
+  verify-json-validation:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Validate Old JSON
+        uses: docker://orrosenblatt/validate-json-action:latest
+        env:
+          INPUT_SCHEMA: /schema.json
+          INPUT_JSONS: /web_accounts_list.json
+
+      - name: Validate New JSON
+        uses: docker://orrosenblatt/validate-json-action:latest
+        env:
+          INPUT_SCHEMA: /wmn-data-schema.json
+          INPUT_JSONS: /wmn-data.json
