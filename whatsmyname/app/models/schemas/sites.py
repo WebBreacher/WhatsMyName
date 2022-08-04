@@ -5,10 +5,10 @@ from pydantic import BaseModel, root_validator
 
 class SiteSchema(BaseModel):
     name: str
-    e_code: str
+    e_code: int
     e_string: str
     m_string: str
-    m_code: str
+    m_code: int
     known: List[str]
     cat: str
     valid: bool

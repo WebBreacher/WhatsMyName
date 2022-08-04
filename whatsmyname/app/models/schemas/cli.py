@@ -1,3 +1,5 @@
+""" Holds the schema for all the command line options """
+
 from typing import Optional, List
 
 from pydantic import BaseModel
@@ -14,9 +16,12 @@ class CliOptionsSchema(BaseModel):
     string_error: bool = False
     usernames: List[str] = []
     follow_redirects: bool = True
-    timeout: Optional[int] = 30
+    timeout: int = 30
     format: OutputFormat = OutputFormat.JSON
     output_file: Optional[str] = None
     output_stdout: bool = True
+    per_request_timeout: int = 5
+    not_found: bool = False
+    found: bool = False
 
 

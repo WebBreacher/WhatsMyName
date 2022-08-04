@@ -1,3 +1,4 @@
+""" Provides url fetching and data splitting functionality """
 import logging
 from asyncio import gather, ensure_future
 from typing import List, Dict
@@ -16,7 +17,7 @@ def get_sites_list(cli_options: CliOptionsSchema) -> List[SiteSchema]:
     """
     Returns all the sites, or some of the sites
     :param cli_options:
-    :return:
+    :return: List[Schema]
     """
     sites: List[SiteSchema] = json_file_extractor(cli_options.input_file)
     if cli_options.sites:
@@ -65,26 +66,39 @@ async def process_cli(cli_options: CliOptionsSchema) -> List[SiteSchema]:
     return await request_controller(cli_options, sites)
 
 
+def filter_list_by(cli_options: CliOptionsSchema, sites: SiteSchema) -> List[SiteSchema]:
+
+    if cli_options.found:
+        site: SiteSchema
+        sites = filter(lambda site: site.http_status_code == site.e_code, sites)
+
+    if cli_options.not_found:
+        site: SiteSchema
+        sites = filter(lambda site: site.http_status_code == site.m_code, sites)
+
+    return sites
+
+
 async def request_controller(cli_options: CliOptionsSchema, sites: List[SiteSchema]) -> List[SiteSchema]:
+    """"""
     connector: TCPConnector = aiohttp.TCPConnector(verify_ssl=False)
     client_timeout = ClientTimeout(total=None, sock_connect=cli_options.timeout, sock_read=cli_options.timeout)
     async with aiohttp.ClientSession(connector=connector, timeout=client_timeout) as session:
         site: SiteSchema
-        tasks = [ensure_future(request_worker(session, site)) for site in sites]
+        tasks = [ensure_future(request_worker(session, cli_options, site)) for site in sites]
         results = await gather(*tasks)
 
     return results
 
 
-async def request_worker(session: ClientSession, site: SiteSchema):
+async def request_worker(session: ClientSession, cli_options: CliOptionsSchema, site: SiteSchema):
     try:
-        async with session.get(site.generated_uri, timeout=5, allow_redirects=False) as response:
+        async with session.get(site.generated_uri, timeout=cli_options.per_request_timeout, allow_redirects=False) as response:
             site.http_status_code = response.status
             return site
 
     except ClientConnectionError as cce:
-        logger.error('Site Connection Error', site.name)
-        logger.exception(cce)
+        logger.error('Site Connection Error %s', site.name, exc_info=False)
         site.http_status_code = -1
     finally:
         return site

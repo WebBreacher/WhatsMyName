@@ -12,6 +12,10 @@ logger = logging.getLogger()
 
 
 def get_default_args() -> ArgumentParser:
+    """
+    Returns an argument parser with a set of defaults
+    :return:
+    """
     parser = ArgumentParser(
         description="This standalone script will look up a single username using the JSON file"
                     " or will run a check of the JSON file for bad detection strings.")
@@ -22,11 +26,13 @@ def get_default_args() -> ArgumentParser:
                         help="[OPTIONAL] Uses a specified file for checking the websites")
     parser.add_argument('-s', '--sites', nargs='*',
                         help='[OPTIONAL] If this parameter is passed the script will check only the named site or list of sites.')
-    parser.add_argument('-f', '--found', help="Display only found results.", action="store_true")
-    parser.add_argument('-n', '--notfound', help="Display not found results", action="store_true")
-    parser.add_argument('-d', '--debug', help="Enable debug output", action="store_true")
+    parser.add_argument('-f', '--found', help="Display found results.", action="store_true", default=False)
+    parser.add_argument('-n', '--not_found', help="Display not found results", action="store_true", default=False)
+    parser.add_argument('-d', '--debug', help="Enable debug output", action="store_true", default=False)
     parser.add_argument('-o', '--output_file', nargs='?', help="[OPTIONAL] Uses a specified output file ")
-    parser.add_argument('-t', '--timeout', nargs='?', help='[OPTIONAL] Timeout per connection, default is 5 seconds.')
+    parser.add_argument('-t', '--timeout', nargs='?', help='[OPTIONAL] Timeout per connection, default is 60 seconds.', default=60)
+    parser.add_argument('-prt', '--per_request_time', nargs='?', help='[Optional] Timeout per request, default is 5 seconds', default=5)
+    parser.add_argument('-fmt', '--format', nargs='?', help='[Optional] Format options are json, csv, or table', default='json')
 
     return parser
 
