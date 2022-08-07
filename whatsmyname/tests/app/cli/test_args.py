@@ -24,9 +24,7 @@ def test_arg_parse_sites() -> None:
     assert schema.usernames == ['yooper']
 
 
-@pytest.mark.asyncio
-async def test_arg_parse_all() -> None:
+def test_bad_input_file() -> None:
     args: ArgumentParser = get_default_args()
-    schema: CliOptionsSchema = arg_parser(args.parse_args(['-u', 'yooper', '--sites', 'allesovercrypto']))
-    results: Dict[str, int] = await process_cli(schema)
-    assert len(results) == 1
+    with pytest.raises(Exception):
+        schema: CliOptionsSchema = arg_parser(args.parse_args(['-u', 'yooper', '--sites', 'allesovercrypto', '--input_file','nope.txt']))

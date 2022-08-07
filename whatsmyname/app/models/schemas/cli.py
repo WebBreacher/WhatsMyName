@@ -1,13 +1,12 @@
 """ Holds the schema for all the command line options """
 
 from typing import Optional, List
-
 from pydantic import BaseModel
-
 from whatsmyname.app.models.enums.common import OutputFormat
 
 
 class CliOptionsSchema(BaseModel):
+    all: bool = False
     input_file: Optional[str] = None
     debug: bool = False
     output: bool = False
@@ -22,6 +21,6 @@ class CliOptionsSchema(BaseModel):
     output_stdout: bool = True
     per_request_timeout: int = 5
     not_found: bool = False
-    found: bool = False
+    verbose: bool = False
 
 

@@ -60,6 +60,11 @@ def generate_username_sites(usernames: List[str], sites: List[SiteSchema]) -> Li
 
 
 async def process_cli(cli_options: CliOptionsSchema) -> List[SiteSchema]:
+    """
+    Main function for fetching and processing the website requests
+    :param cli_options:
+    :return:
+    """
 
     # check the number of usernames we must validate
     sites = generate_username_sites(cli_options.usernames, get_sites_list(cli_options))
@@ -67,21 +72,26 @@ async def process_cli(cli_options: CliOptionsSchema) -> List[SiteSchema]:
 
 
 def filter_list_by(cli_options: CliOptionsSchema, sites: SiteSchema) -> List[SiteSchema]:
+    """
+    By default, only return sites that had a successful hit.
+    :param cli_options:
+    :param sites:
+    :return:
+    """
 
-    if cli_options.found:
-        site: SiteSchema
-        sites = filter(lambda site: site.http_status_code == site.e_code, sites)
+    if cli_options.all:
+        return sites
 
+    site: SiteSchema
     if cli_options.not_found:
-        site: SiteSchema
-        sites = filter(lambda site: site.http_status_code == site.m_code, sites)
+        return filter(lambda site: site.http_status_code == site.m_code, sites)
 
-    return sites
+    return filter(lambda site: site.http_status_code == site.e_code, sites)
 
 
 async def request_controller(cli_options: CliOptionsSchema, sites: List[SiteSchema]) -> List[SiteSchema]:
     """"""
-    connector: TCPConnector = aiohttp.TCPConnector(verify_ssl=False)
+    connector: TCPConnector = aiohttp.TCPConnector(ssl=False)
     client_timeout = ClientTimeout(total=None, sock_connect=cli_options.timeout, sock_read=cli_options.timeout)
     async with aiohttp.ClientSession(connector=connector, timeout=client_timeout) as session:
         site: SiteSchema
@@ -91,10 +101,19 @@ async def request_controller(cli_options: CliOptionsSchema, sites: List[SiteSche
     return results
 
 
-async def request_worker(session: ClientSession, cli_options: CliOptionsSchema, site: SiteSchema):
+async def request_worker(session: ClientSession, cli_options: CliOptionsSchema, site: SiteSchema) -> SiteSchema:
+    """
+    Makes the individual requests to web servers
+    :param session:
+    :param cli_options:
+    :param site:
+    :return:
+    """
     try:
         async with session.get(site.generated_uri, timeout=cli_options.per_request_timeout, allow_redirects=False) as response:
             site.http_status_code = response.status
+            if cli_options.verbose:
+                site.raw_response_data = await response.text()
             return site
 
     except ClientConnectionError as cce:

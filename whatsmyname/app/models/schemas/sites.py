@@ -1,5 +1,5 @@
-import datetime
-from typing import List
+from datetime import datetime
+from typing import List, Optional
 from pydantic import BaseModel, root_validator
 
 
@@ -18,7 +18,10 @@ class SiteSchema(BaseModel):
     username: str = None
     generated_uri: str = None
     http_status_code: int = -1
-
+    last_checked_on: Optional[datetime] = None
+    comment: Optional[str] = None
+    raw_response_data: Optional[str] = None
+    cloudflare_enabled: bool = False
 
     @root_validator
     def set_request_method(cls, values):
@@ -34,8 +37,3 @@ class SitesConfigurationSchema(BaseModel):
     authors: List[str] = []
     categories: List[str] = []
     sites: List[SiteSchema] = []
-
-
-
-
-

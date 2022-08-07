@@ -9,7 +9,7 @@ from whatsmyname.app.tasks.process import process_cli, filter_list_by
 from whatsmyname.app.utilities.formatters import to_json, to_csv, to_table
 
 
-async def main():
+async def start_check_for_presence():
 
     argparse = get_default_args()
     cli_options: CliOptionsSchema = arg_parser(argparse.parse_args())
@@ -32,5 +32,5 @@ async def main():
                 print('{}'.format(line.strip()))
 
 
-if __name__ == "__main__":
-    asyncio.run(main())
+def start_check_for_presence() -> None:
+    asyncio.run(start_check_for_presence())
