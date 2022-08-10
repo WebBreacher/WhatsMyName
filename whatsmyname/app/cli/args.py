@@ -36,6 +36,8 @@ def get_default_args() -> ArgumentParser:
     parser.add_argument('-v', '--verbose', help="Enable verbose output", action="store_true", default=False)
     parser.add_argument('-fr', '--follow_redirects', help="Follow redirects", action="store_true", default=False)
     parser.add_argument('-mr', '--max_redirects', nargs='?', help='[OPTIONAL] Max Redirects, default is 10 ', default=10)
+    parser.add_argument('-c', '--category', nargs='?', help='[OPTIONAL] Filter by site category ', default=None)
+
 
     return parser
 
