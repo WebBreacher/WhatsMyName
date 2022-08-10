@@ -19,11 +19,11 @@ async def start_check_for_presence():
     sites = filter_list_by(cli_options, sites)
 
     if cli_options.format == OutputFormat.JSON:
-        to_json(sites, cli_options.output_file)
+        to_json(cli_options, sites)
     elif cli_options.format == OutputFormat.CSV:
-        to_csv(sites, cli_options.output_file)
+        to_csv(cli_options, sites)
     elif cli_options.format == OutputFormat.TABLE:
-        to_table(sites, cli_options.output_file)
+        to_table(cli_options, sites)
 
     if cli_options.output_stdout:
         with open(cli_options.output_file, 'r') as fp:
@@ -32,5 +32,5 @@ async def start_check_for_presence():
                 print('{}'.format(line.strip()))
 
 
-def start_check_for_presence() -> None:
+def check_for_presence() -> None:
     asyncio.run(start_check_for_presence())

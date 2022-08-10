@@ -20,6 +20,13 @@ def get_sites_list(cli_options: CliOptionsSchema) -> List[SiteSchema]:
     :return: List[Schema]
     """
     sites: List[SiteSchema] = json_file_extractor(cli_options.input_file)
+
+    if cli_options.category:
+        sites = list(filter(lambda site: site.valid, sites))
+
+    if cli_options.category:
+        sites = list(filter(lambda site: site.category.lower() == cli_options.category.lower(), sites))
+
     if cli_options.sites:
         filtered_sites: List[SiteSchema] = []
         site_name: str
@@ -43,8 +50,14 @@ def generate_username_sites(usernames: List[str], sites: List[SiteSchema]) -> Li
     username: str
     user_site_map: Dict[str, List[SiteSchema]] = {}
     for username in usernames:
+        username_has_dot: bool = '.' in username
         site: SiteSchema
         for site in sites:
+            # addresses github issue #55
+            if (site.uri_check.startswith('http://{account}') or site.uri_check.startswith('https://{account}')) and username_has_dot:
+                logger.debug('Skipping site %s, with username %s', site.uri_check, username)
+                continue
+
             site_clone: SiteSchema = site.copy(deep=True)
             site_clone.username = username
             site_clone.generated_uri = site_clone.uri_check.replace('{account}', username)
@@ -84,9 +97,9 @@ def filter_list_by(cli_options: CliOptionsSchema, sites: SiteSchema) -> List[Sit
 
     site: SiteSchema
     if cli_options.not_found:
-        return filter(lambda site: site.http_status_code == site.m_code, sites)
+        return list(filter(lambda site: site.http_status_code == site.m_code, sites))
 
-    return filter(lambda site: site.http_status_code == site.e_code, sites)
+    return list(filter(lambda site: site.http_status_code == site.e_code, sites))
 
 
 async def request_controller(cli_options: CliOptionsSchema, sites: List[SiteSchema]) -> List[SiteSchema]:
@@ -110,7 +123,10 @@ async def request_worker(session: ClientSession, cli_options: CliOptionsSchema, 
     :return:
     """
     try:
-        async with session.get(site.generated_uri, timeout=cli_options.per_request_timeout, allow_redirects=False) as response:
+        async with session.get(site.generated_uri,
+                               timeout=cli_options.per_request_timeout,
+                               allow_redirects=cli_options.follow_redirects
+                               ) as response:
             site.http_status_code = response.status
             if cli_options.verbose:
                 site.raw_response_data = await response.text()

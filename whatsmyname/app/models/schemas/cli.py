@@ -14,7 +14,7 @@ class CliOptionsSchema(BaseModel):
     category: Optional[str] = None
     string_error: bool = False
     usernames: List[str] = []
-    follow_redirects: bool = True
+    follow_redirects: bool = False
     timeout: int = 30
     format: OutputFormat = OutputFormat.JSON
     output_file: Optional[str] = None
@@ -22,5 +22,5 @@ class CliOptionsSchema(BaseModel):
     per_request_timeout: int = 5
     not_found: bool = False
     verbose: bool = False
-
+    max_redirects: int = 10
 

@@ -22,6 +22,4 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [tool.poetry.scripts]
-check_online_presence = "whatsmyname.main:start_check_for_presence"
-other_tool = "other_tool.function:main"
-all_the_tools = "other_tool.function:all"
+check_for_presence = "whatsmyname.main:check_for_presence"

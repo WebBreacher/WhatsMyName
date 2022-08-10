@@ -34,6 +34,8 @@ def get_default_args() -> ArgumentParser:
     parser.add_argument('-prt', '--per_request_time', nargs='?', help='[Optional] Timeout per request, default is 15 seconds', default=15)
     parser.add_argument('-fmt', '--format', nargs='?', help='[Optional] Format options are json, csv, or table', default='json')
     parser.add_argument('-v', '--verbose', help="Enable verbose output", action="store_true", default=False)
+    parser.add_argument('-fr', '--follow_redirects', help="Follow redirects", action="store_true", default=False)
+    parser.add_argument('-mr', '--max_redirects', nargs='?', help='[OPTIONAL] Max Redirects, default is 10 ', default=10)
 
     return parser
 

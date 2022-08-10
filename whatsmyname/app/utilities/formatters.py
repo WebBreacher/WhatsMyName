@@ -1,42 +1,41 @@
+"""Format the data and write it to a temporary file."""
 from typing import List
 import csv
 
+from whatsmyname.app.models.schemas.cli import CliOptionsSchema
+from whatsmyname.app.models.schemas.sites import SiteSchema, SiteOutputSchema
 
-from whatsmyname.app.models.schemas.sites import SiteSchema
 
+def to_csv(cli_options: CliOptionsSchema, sites: List[SiteSchema]) -> None:
 
-def to_csv(sites: List[SiteSchema], file_path: str) -> None:
-    """
-    Write out the data to a csv file format
-    :param sites:
-    :param file_path:
-    :return:
-    """
-    field_names: List[str] = list(SiteSchema.schema()["properties"].keys())
-    with open(file_path, "w") as fp:
+    field_names: List[str] = ['http_status_code', 'generated_uri']
+    if cli_options.verbose:
+        field_names.append('raw_response_data')
+
+    with open(cli_options.output_file, "w") as fp:
         writer = csv.DictWriter(fp, fieldnames=field_names)
         writer.writeheader()
         site: SiteSchema
         for site in sites:
-            writer.writerow(site.dict())
+            site_output: SiteOutputSchema = SiteOutputSchema(**site.dict())
+            writer.writerow(site_output.dict())
 
 
-def to_json(sites: List[SiteSchema], file_path: str) -> None:
-    """
-    Write the sites to json file
-    :param sites:
-    :param file_path:
-    :return:
-    """
-    with open(file_path, "w") as fp:
+def to_json(cli_options: CliOptionsSchema, sites: List[SiteSchema]) -> None:
+    field_names = {'http_status_code': True, 'generated_uri': True}
+    if cli_options.verbose:
+        field_names['raw_response_data'] = True
+
+    with open(cli_options.output_file, "w") as fp:
         fp.write("[")
         site: SiteSchema
         for site in sites:
-            fp.write(site.json())
+            site_output: SiteOutputSchema = SiteOutputSchema(**site.dict())
+            fp.write(site_output.json(include=field_names))
         fp.write("]")
 
 
-def to_table(sites: List[SiteSchema], file_path: str) -> None:
+def to_table(cli_options: CliOptionsSchema, sites: List[SiteSchema]) -> None:
     pass
 
 

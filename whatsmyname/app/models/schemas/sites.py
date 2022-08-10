@@ -3,6 +3,13 @@ from typing import List, Optional
 from pydantic import BaseModel, root_validator
 
 
+class SiteOutputSchema(BaseModel):
+    """For exporting to csv, json"""
+    raw_response_data: Optional[str] = None
+    http_status_code: int
+    generated_uri: str
+
+
 class SiteSchema(BaseModel):
     name: str
     e_code: int
@@ -10,7 +17,7 @@ class SiteSchema(BaseModel):
     m_string: str
     m_code: int
     known: List[str]
-    cat: str
+    category: str
     valid: bool
     post_body: str
     uri_check: str
