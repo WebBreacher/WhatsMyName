@@ -23,4 +23,6 @@ class CliOptionsSchema(BaseModel):
     not_found: bool = False
     verbose: bool = False
     max_redirects: int = 10
+    random_validate: bool = False
+    random_username: Optional[str] = None
 

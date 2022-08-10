@@ -18,6 +18,10 @@ async def start_check_for_presence():
     # filter the sites
     sites = filter_list_by(cli_options, sites)
 
+    if cli_options.random_validate:
+        cli_options.usernames = [cli_options.random_username]
+        sites = await process_cli(cli_options)
+
     if cli_options.format == OutputFormat.JSON:
         to_json(cli_options, sites)
     elif cli_options.format == OutputFormat.CSV:
