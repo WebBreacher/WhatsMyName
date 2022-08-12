@@ -6,7 +6,7 @@ from typing import List, Dict
 import aiohttp
 from aiohttp import ClientSession, ClientConnectionError, TCPConnector, ClientTimeout
 
-from whatsmyname.app.extractors.file_extractors import json_file_extractor
+from whatsmyname.app.extractors.file_extractors import site_file_extractor
 from whatsmyname.app.models.schemas.cli import CliOptionsSchema
 from whatsmyname.app.models.schemas.sites import SiteSchema
 
@@ -19,7 +19,7 @@ def get_sites_list(cli_options: CliOptionsSchema) -> List[SiteSchema]:
     :param cli_options:
     :return: List[Schema]
     """
-    sites: List[SiteSchema] = json_file_extractor(cli_options.input_file)
+    sites: List[SiteSchema] = site_file_extractor(cli_options.input_file)
 
     if cli_options.category:
         sites = list(filter(lambda site: site.valid, sites))
@@ -122,10 +122,16 @@ async def request_worker(session: ClientSession, cli_options: CliOptionsSchema, 
     :param site:
     :return:
     """
+
+    headers = {
+        'User-Agent': cli_options.user_agent
+    }
+
     try:
         async with session.get(site.generated_uri,
                                timeout=cli_options.per_request_timeout,
-                               allow_redirects=cli_options.follow_redirects
+                               allow_redirects=cli_options.follow_redirects,
+                               headers=headers
                                ) as response:
             site.http_status_code = response.status
             if cli_options.verbose:

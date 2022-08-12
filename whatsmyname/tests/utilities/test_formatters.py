@@ -23,6 +23,8 @@ def test_to_json() -> None:
     site: SiteSchema = sites_list[0]
     site.http_status_code = 200
     site.generated_uri = 'test_url'
+    site.user_agent = 'test'
+    site.username = 'test username'
     to_json(cli_options, [site])
 
     with open(cli_options.output_file) as fp:
@@ -39,6 +41,8 @@ def test_to_csv() -> None:
     site.http_status_code = 200
     site.generated_uri = 'test_url'
     site.raw_response_data = '<html>'
+    site.user_agent = 'test'
+    site.username = 'test username'
     to_csv(cli_options, [site])
 
     with open(cli_options.output_file) as csvfile:

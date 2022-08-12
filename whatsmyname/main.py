@@ -1,5 +1,5 @@
 import asyncio
-from typing import Dict, List
+from typing import List
 
 from whatsmyname.app.cli.args import get_default_args, arg_parser
 from whatsmyname.app.models.enums.common import OutputFormat

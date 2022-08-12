@@ -8,7 +8,7 @@ from whatsmyname.app.models.schemas.sites import SiteSchema, SiteOutputSchema
 
 def to_csv(cli_options: CliOptionsSchema, sites: List[SiteSchema]) -> None:
 
-    field_names: List[str] = ['http_status_code', 'generated_uri']
+    field_names: List[str] = ['http_status_code', 'generated_uri', 'user_agent', 'username']
     if cli_options.verbose:
         field_names.append('raw_response_data')
 
@@ -22,7 +22,7 @@ def to_csv(cli_options: CliOptionsSchema, sites: List[SiteSchema]) -> None:
 
 
 def to_json(cli_options: CliOptionsSchema, sites: List[SiteSchema]) -> None:
-    field_names = {'http_status_code': True, 'generated_uri': True}
+    field_names = {'http_status_code': True, 'generated_uri': True, 'user_agent': True, 'username': True}
     if cli_options.verbose:
         field_names['raw_response_data'] = True
 

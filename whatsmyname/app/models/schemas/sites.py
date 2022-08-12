@@ -1,3 +1,5 @@
+"""Site Schemas"""
+
 from datetime import datetime
 from typing import List, Optional
 from pydantic import BaseModel, root_validator
@@ -8,6 +10,8 @@ class SiteOutputSchema(BaseModel):
     raw_response_data: Optional[str] = None
     http_status_code: int
     generated_uri: str
+    username: str
+    user_agent: str
 
 
 class SiteSchema(BaseModel):
@@ -29,6 +33,7 @@ class SiteSchema(BaseModel):
     comment: Optional[str] = None
     raw_response_data: Optional[str] = None
     cloudflare_enabled: bool = False
+    user_agent: Optional[str] = None
 
     @root_validator
     def set_request_method(cls, values):

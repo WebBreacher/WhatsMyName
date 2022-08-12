@@ -4,9 +4,12 @@ import string
 import tempfile
 from argparse import ArgumentParser
 from random import choice
+from typing import List
 
-from whatsmyname.app.config import project_path
+from whatsmyname.app.config import project_path, resource_dir
+from whatsmyname.app.extractors.file_extractors import user_agent_extractor
 from whatsmyname.app.models.schemas.cli import CliOptionsSchema
+from whatsmyname.app.models.schemas.user_agent import UserAgentSchema
 
 logger = logging.getLogger()
 
@@ -38,6 +41,7 @@ def get_default_args() -> ArgumentParser:
     parser.add_argument('-mr', '--max_redirects', nargs='?', help='[OPTIONAL] Max Redirects, default is 10 ', default=10)
     parser.add_argument('-c', '--category', nargs='?', help='[OPTIONAL] Filter by site category ', default=None)
     parser.add_argument('-rv', '--random_validate', action="store_true", help='[OPTIONAL] Upon success, validate using random username', default=False)
+    parser.add_argument('-uap', '--user_agent_platform', nargs='?', help='[OPTIONAL] Select the user agent platform to use. ', default='Chrome on Windows 1')
 
     return parser
 
@@ -80,6 +84,8 @@ def arg_parser(arguments: ArgumentParser) -> CliOptionsSchema:
         schema.random_username = random_string(10)
         logger.debug('Randomly generated username is %s', schema.random_username)
 
+    user_agents: List[UserAgentSchema] = user_agent_extractor(os.path.join(resource_dir, 'user-agents.json'))
+    schema.user_agent = next(obj.user_agent for obj in user_agents if obj.platform == schema.user_agent_platform)
 
     return schema
 

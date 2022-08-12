@@ -24,5 +24,7 @@ class CliOptionsSchema(BaseModel):
     verbose: bool = False
     max_redirects: int = 10
     random_validate: bool = False
-    random_username: Optional[str] = None
+    random_username: Optional[str] = None,
+    user_agent_platform: str
+    user_agent: Optional[str] = None
 
