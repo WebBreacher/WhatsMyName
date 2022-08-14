@@ -3932,6 +3932,17 @@
       "valid" : true
      },
      {
+      "name" : "Swalifnet",
+      "check_uri" : "https://www.swalifnet.net/user/{account}",
+      "account_existence_code" : "200",
+      "account_existence_string" : " - ",
+      "account_missing_string" : "لم يتم إيجاد الصفحة ",
+      "account_missing_code" : "404",
+      "known_accounts" : ["ibrahim02", "ibrahim03"],
+      "category" : "misc",
+      "valid" : true
+     },
+     {
       "name": "szmer.info",
       "check_uri": "https://szmer.info/u/{account}",
       "account_existence_code": "200",
