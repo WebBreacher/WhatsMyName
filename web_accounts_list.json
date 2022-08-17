@@ -4442,7 +4442,7 @@
        "known_accounts" : ["sarah", "brahim01"],
        "category" : "blog",
        "valid" : true
-     }
+     },
      {
        "name" : "Vivino",
        "check_uri" : "https://www.vivino.com/users/{account}",
