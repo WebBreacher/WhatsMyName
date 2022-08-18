@@ -4854,13 +4854,13 @@
       },
       {
         "name" : "VIP-blog",
-        "check_uri" : "http://{account}.vip-blog.com",
-        "account_existence_code" : "200",
-        "account_existence_string" : "blog : ",
-        "account_missing_string" : "Blog inexistant",
-        "account_missing_code" : "200",
-        "known_accounts" : ["sarah", "brahim01"],
-        "category" : "blog",
+        "uri_check" : "http://{account}.vip-blog.com",
+        "e_code" : 200,
+        "e_string" : "blog : ",
+        "m_string" : "Blog inexistant",
+        "m_code" : 200,
+        "known" : ["sarah", "brahim01"],
+        "cat" : "blog",
         "valid" : true  
        },
        {
