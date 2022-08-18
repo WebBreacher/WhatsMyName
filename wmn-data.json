@@ -3443,7 +3443,7 @@
        "name" : "Pokec",
        "uri_check" : "https://pokec.azet.sk/{account}",
        "e_code" : "200",
-       "e_string" :"nick",
+       "e_string" :"idReportedUser",
        "m_string" : "Neexistujúci používateľ",
        "m_code" : 404,
        "known" : ["tobias", "brahim1"],
