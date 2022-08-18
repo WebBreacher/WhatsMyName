@@ -83,6 +83,18 @@
         "known" : ["nastya3", "ekaterina"],
         "cat" : "XXXPORNXXX",
         "valid" : true
+      },
+      {
+       "name" : "aflam",
+       "uri_check" : "https://www.aflam4you.net/profile.html?u={account}",
+       "post_body" : "", 
+       "e_code" : 200,
+       "e_string" : ") on بث حي و مباشر",
+       "m_string" : "Plz Visit",
+       "m_code" : 302,
+       "known" : ["ahmed", "brahim01"],
+       "cat" : "misc",
+       "valid" : true
        },
        {
         "name" : "akniga",
@@ -3426,7 +3438,19 @@
         "m_code" : 200,
         "known" : ["test"],
         "cat" : "social",
-        "valid" : true
+        "valid" : true       
+       },
+       {
+       "name" : "Pokec",
+       "uri_check" : "https://pokec.azet.sk/{account}",
+       "post_body" : "",
+       "e_code" : 200,
+       "e_string" :"idReportedUser",
+       "m_string" : "Neexistujúci používateľ",
+       "m_code" : 404,
+       "known" : ["tobias", "brahim1"],
+       "cat" : "social",
+       "valid" : true   
        },
        {
         "name" : "pokemonshowdown",
@@ -4829,6 +4853,18 @@
         "known" : ["test", "admin"],
         "cat" : "video",
         "valid" : true
+      },
+      {
+        "name" : "VIP-blog",
+        "uri_check" : "http://{account}.vip-blog.com",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "blog : ",
+        "m_string" : "Blog inexistant",
+        "m_code" : 200,
+        "known" : ["sarah", "brahim01"],
+        "cat" : "blog",
+        "valid" : true  
        },
        {
         "name": "vizjer.pl",
