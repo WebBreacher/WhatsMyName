@@ -3437,7 +3437,18 @@
         "m_code" : 200,
         "known" : ["test"],
         "cat" : "social",
-        "valid" : true
+        "valid" : true       
+       },
+       {
+       "name" : "Pokec",
+       "check_uri" : "https://pokec.azet.sk/{account}",
+       "account_existence_code" : "200",
+       "account_existence_string" :"nick",
+       "account_missing_string" : "Neexistujúci používateľ",
+       "account_missing_code" : "404",
+       "known_accounts" : ["tobias", "brahim1"],
+       "category" : "social",
+       "valid" : true   
        },
        {
         "name" : "pokemonshowdown",
