@@ -3444,7 +3444,7 @@
        "name" : "Pokec",
        "uri_check" : "https://pokec.azet.sk/{account}",
        "post_body" : "",
-       "e_code" : "200",
+       "e_code" : 200,
        "e_string" :"idReportedUser",
        "m_string" : "Neexistujúci používateľ",
        "m_code" : 404,
