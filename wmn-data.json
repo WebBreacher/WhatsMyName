@@ -91,7 +91,7 @@
        "e_string" : ") on بث حي و مباشر",
        "m_string" : "Plz Visit",
        "m_code" : 302,
-       "known_accounts" : ["ahmed", "brahim01"],
+       "known" : ["ahmed", "brahim01"],
        "cat" : "misc",
        "valid" : true
        },
