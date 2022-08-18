@@ -4829,6 +4829,17 @@
         "known" : ["test", "admin"],
         "cat" : "video",
         "valid" : true
+      },
+      {
+        "name" : "VIP-blog",
+        "check_uri" : "http://{account}.vip-blog.com",
+        "account_existence_code" : "200",
+        "account_existence_string" : "blog : ",
+        "account_missing_string" : "Blog inexistant",
+        "account_missing_code" : "200",
+        "known_accounts" : ["sarah", "brahim01"],
+        "category" : "blog",
+        "valid" : true  
        },
        {
         "name": "vizjer.pl",
