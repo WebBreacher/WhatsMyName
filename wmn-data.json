@@ -86,13 +86,13 @@
       },
       {
        "name" : "aflam",
-       "check_uri" : "https://www.aflam4you.net/profile.html?u={account}",
-       "account_existence_code" : "200",
-       "account_existence_string" : ") on بث حي و مباشر",
-       "account_missing_string" : "Plz Visit",
-       "account_missing_code" : "302",
+       "uri_check" : "https://www.aflam4you.net/profile.html?u={account}",
+       "e_code" : 200,
+       "e_string" : ") on بث حي و مباشر",
+       "m_string" : "Plz Visit",
+       "m_code" : 302,
        "known_accounts" : ["ahmed", "brahim01"],
-       "category" : "misc",
+       "cat" : "misc",
        "valid" : true
        },
        {
