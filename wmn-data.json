@@ -4857,6 +4857,7 @@
       {
         "name" : "VIP-blog",
         "uri_check" : "http://{account}.vip-blog.com",
+        "post_body" : "",
         "e_code" : 200,
         "e_string" : "blog : ",
         "m_string" : "Blog inexistant",
