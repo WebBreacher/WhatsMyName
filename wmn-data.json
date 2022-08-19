@@ -3887,6 +3887,18 @@
         "valid" : true
        },
        {
+        "name" : "sentimente",
+        "uri_check" : "https://www.sentimente.com/amp/{account}.html",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" :"Chat online with",
+        "m_string" : "HTTP Error code: 404. Resource not found",
+        "m_code" : 404,
+        "known" : ["david01", "brahim01"],
+        "cat" : "dating",
+        "valid" : true
+       },
+       {
         "name" : "SEOClerks",
         "uri_check" : "https://www.seoclerks.com/user/{account}",
         "post_body" : "",
