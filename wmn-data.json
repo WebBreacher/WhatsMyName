@@ -2650,8 +2650,8 @@
         "post_body" : "",
         "e_code" : 200,
         "e_string" : "さんにメッセージをおくる",
-        "m_code" : 404,
         "m_string" : "For compensation, here are cats for you.",
+        "m_code" : 404,
         "known" : ["yuino_fox", "momo"],
         "cat" : "social",
         "valid" : true
