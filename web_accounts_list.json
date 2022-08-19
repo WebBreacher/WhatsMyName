@@ -2427,6 +2427,17 @@
       "valid" : true
      },
      {
+       "name" : "Maroc_nl",
+       "check_uri" : "https://www.maroc.nl/forums/members/{account}.html",
+       "account_existence_code" : "200",
+       "account_existence_string" :"Bekijk Profiel:",
+       "account_missing_string" : "Deze gebruiker is niet geregistreerd",
+       "account_missing_code" : "200",
+       "known_accounts" : ["brahim", "brahim01"],
+       "category" : "social",
+       "valid" : true
+     },
+     {
       "name" : "Marshmallow",
       "check_uri" : "https://marshmallow-qa.com/{account}",
       "account_existence_code" : "200",
