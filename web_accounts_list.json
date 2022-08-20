@@ -1084,6 +1084,17 @@
       "valid" : true
      },
      {
+      "name" : "Diablo",
+      "check_uri" : "https://diablo2.io/member/{account}/",
+      "account_existence_code" : "200",
+      "account_existence_string" :"Viewing profile - ",
+      "account_missing_string" : "The requested user does not exist",
+      "account_missing_code" : "404",
+      "known_accounts" : ["Mike01", "John"],
+      "category" : "gaming",
+      "valid" : true
+     },
+     {
       "name" : "diigo",
       "check_uri" : "https://www.diigo.com/interact_api/load_profile_info?name={account}",
       "pretty_uri" : "https://www.diigo.com/profile/{account}",
