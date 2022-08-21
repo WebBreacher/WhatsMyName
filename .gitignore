@@ -81,3 +81,6 @@ fabric.properties
 
 # Virtualenv
 venv/
+
+# Apple
+.DS_Store
