@@ -1824,6 +1824,18 @@
         "valid" : true
        },
        {
+        "name" : "getmonero",
+        "uri_check" : "https://forum.getmonero.org/user/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" :"Monero | User",
+        "m_string" : "Monero | Page not found. Error: 404",
+        "m_code" : 200,
+        "known" : ["silverfox", "monero"],
+        "cat" : "misc",
+        "valid" : true
+       },
+       {
         "name" : "Gettr",
         "uri_check" : "https://api.gettr.com/s/user/{account}/exist",
         "post_body" : "",
