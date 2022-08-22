@@ -1973,6 +1973,17 @@
       "valid" : true
      },
      {
+      "name" : "ifunny",
+      "check_uri" : "https://ifunny.co/user/{account}",
+      "account_existence_code" : "200",
+      "account_existence_string" :"subscribers",
+      "account_missing_string" : "404 - page not found",
+      "account_missing_code" : "404",
+      "known_accounts" : ["hacker", "john"],
+      "category" : "misc",
+      "valid" : true
+      },
+      {
       "name" : "igromania",
       "check_uri" : "http://forum.igromania.ru/member.php?username={account}",
       "account_existence_code" : "200",

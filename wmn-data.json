@@ -2138,6 +2138,18 @@
         "valid" : true
        },
        {
+        "name" : "ifunny",
+        "uri_check" : "https://ifunny.co/user/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" :"subscribers",
+        "m_string" : "404 - page not found",
+        "m_code" : 404,
+        "known" : ["hacker", "john"],
+        "cat" : "misc",
+        "valid" : true
+       },
+       {
         "name" : "igromania",
         "uri_check" : "http://forum.igromania.ru/member.php?username={account}",
         "post_body" : "",
