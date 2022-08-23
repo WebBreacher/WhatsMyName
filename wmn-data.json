@@ -2078,6 +2078,18 @@
         "valid" : true
        },
        {
+        "name" : "HomeDesign3D",
+        "uri_check" : "https://en.homedesign3d.net/user/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" :"userspace",
+        "m_string" : "An Error Occurred: Internal Server Error",
+        "m_code" : 500,
+        "known" : ["carlos01", "paul"],
+        "cat" : "misc",
+        "valid" : true
+       },
+       {
         "name" : "Houzz",
         "uri_check" : "https://www.houzz.com/user/{account}",
         "post_body" : "",
