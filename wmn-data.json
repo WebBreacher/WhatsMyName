@@ -3211,6 +3211,18 @@
         "valid" : true
        },
        {
+        "name" : "OPGG",
+        "uri_check" : "https://eune.op.gg/summoners/eune/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "- Summoner Stats - League of Legends",
+        "m_string" : "Guide - OP.GG",
+        "m_code" : 200,
+        "known" : ["xin", "carlos01"],
+        "cat" : "gaming",
+        "valid" : true
+       },
+       {
         "name" : "Orbys",
         "uri_check" : "https://orbys.net/{account}",
         "post_body" : "",
