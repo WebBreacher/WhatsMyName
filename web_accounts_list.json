@@ -1925,7 +1925,7 @@
       "account_missing_string" : "An Error Occurred: Internal Server Error",
       "account_missing_code" : "500",
       "known_accounts" : ["carlos01", "paul"],
-      "category" : "misc",
+      "category" : "hobby",
       "valid" : true
      },
      {
@@ -2954,6 +2954,17 @@
       "account_missing_code" : "404",
       "known_accounts" : ["kemkim"],
       "category" : "social",
+      "valid" : true
+     },
+     {
+      "name" : "OPGG",
+      "check_uri" : "https://eune.op.gg/summoners/eune/{account}",
+      "account_existence_code" : "200",
+      "account_existence_string" : "- Summoner Stats - League of Legends",
+      "account_missing_string" : "Guide - OP.GG",
+      "account_missing_code" : "200",
+      "known_accounts" : ["xin", "carlos01"],
+      "category" : "gaming",
       "valid" : true
      },
      {

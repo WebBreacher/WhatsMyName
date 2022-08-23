@@ -2086,7 +2086,7 @@
         "m_string" : "An Error Occurred: Internal Server Error",
         "m_code" : 500,
         "known" : ["carlos01", "paul"],
-        "cat" : "misc",
+        "cat" : "hobby",
         "valid" : true
        },
        {
