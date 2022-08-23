@@ -79,6 +79,17 @@
       "valid" : true
     },
     {
+      "name" : "ADVFN",
+      "check_uri" : "https://uk.advfn.com/forum/profile/{account}",
+      "account_existence_code" : "200",
+      "account_existence_string" :"Profile | ADVFN",
+      "account_missing_string" : "ADVFN ERROR - Page Not Found",
+      "account_missing_code" : "404",
+      "known_accounts" : ["crypto", "crypto1"],
+      "category" : "finance",
+      "valid" : true
+    },
+    {
       "name" : "aflam",
       "check_uri" : "https://www.aflam4you.net/profile.html?u={account}",
       "account_existence_code" : "200",
