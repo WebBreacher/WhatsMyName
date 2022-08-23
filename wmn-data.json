@@ -4924,7 +4924,19 @@
         "m_code" : 200,
         "known" : ["sarah", "brahim01"],
         "cat" : "blog",
-        "valid" : true  
+        "valid" : true 
+      },
+      {
+        "name" : "Virustotal",
+        "uri_check" : "https://www.virustotal.com/gui/user/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" :"USER PROFILE",
+        "m_string" : "User not found",
+        "m_code" : 200,
+        "known" : ["cyber", "cybersecstu"],
+        "cat" : "misc",
+        "valid" : true
        },
        {
         "name": "vizjer.pl",
