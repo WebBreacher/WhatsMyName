@@ -4521,6 +4521,17 @@
        "valid" : true
      },
      {
+       "name" : "Virustotal",
+        "check_uri" : "https://www.virustotal.com/gui/user/{account}",
+        "account_existence_code" : "200",
+        "account_existence_string" :"USER PROFILE",
+        "account_missing_string" : "User not found",
+        "account_missing_code" : "200",
+        "known_accounts" : ["cyber", "cybersecstu"],
+        "category" : "misc",
+        "valid" : true
+     },
+     {
        "name" : "Vivino",
        "check_uri" : "https://www.vivino.com/users/{account}",
        "account_existence_code" : "200",
