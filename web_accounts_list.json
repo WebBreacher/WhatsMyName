@@ -1918,6 +1918,17 @@
       "valid" : true
      },
      {
+      "name" : "HomeDesign3D",
+      "check_uri" : "https://en.homedesign3d.net/user/{account}",
+      "account_existence_code" : "200",
+      "account_existence_string" : "userspace",
+      "account_missing_string" : "An Error Occurred: Internal Server Error",
+      "account_missing_code" : "500",
+      "known_accounts" : ["carlos01", "paul"],
+      "category" : "misc",
+      "valid" : true
+     },
+     {
       "name" : "Houzz",
       "check_uri" : "https://www.houzz.com/user/{account}",
       "account_existence_code" : "200",
