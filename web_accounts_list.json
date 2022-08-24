@@ -817,7 +817,7 @@
       "account_missing_code" : "404",
       "known_accounts" : ["joe", "carlos01"],
       "category" : "XXXPORNXXX",
-       "valid" : true
+      "valid" : true
      },
      {
        "name" : "Cloudflare",
@@ -1081,6 +1081,17 @@
       "account_missing_code" : "404",
       "known_accounts" : ["test", "john"],
       "category" : "images",
+      "valid" : true
+     },
+     {
+      "name" : "dfgames",
+      "check_uri" : "https://www.dfgames.com.br/user/{account}",
+      "account_existence_code" : "200",
+      "account_existence_string" : "Reputa",
+      "account_missing_string" : "404 Not Found",
+      "account_missing_code" : "404",
+      "known_accounts" : ["carlos01", "eduardo"],
+      "category" : "gaming",
       "valid" : true
      },
      {
@@ -1929,6 +1940,17 @@
       "valid" : true
      },
      {
+      "name" : "hiberworld",
+      "check_uri" : "https://hiberworld.com/u/{account}",
+      "account_existence_code" : "200",
+      "account_existence_string" : "Creations by ",
+      "account_missing_string" : "Looks like you got lost ",
+      "account_missing_code" : "200",
+      "known_accounts" : ["Axeman", "Silver01"],
+      "category" : "gaming",
+      "valid" : true
+     },
+     {
       "name" : "HomeDesign3D",
       "check_uri" : "https://en.homedesign3d.net/user/{account}",
       "account_existence_code" : "200",
@@ -2735,6 +2757,17 @@
       "known_accounts": ["test", "janek"],
       "category": "images",
       "valid": true
+     },
+     {
+      "name" : "moxfield",
+      "check_uri" : "https://www.moxfield.com/users/{account}",
+      "account_existence_code" : "200",
+      "account_existence_string" : "Moxfield Profile",
+      "account_missing_string" : "No user found ",
+      "account_missing_code" : "200",
+      "known_accounts" : ["gamer", "Carlos01"],
+      "category" : "gaming",
+      "valid" : true
      },
      {
       "name" : "Muck Rack",
