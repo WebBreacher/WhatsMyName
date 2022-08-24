@@ -806,7 +806,9 @@
       "account_missing_code": "404",
       "known_accounts": ["test", "test2"],
       "category": "misc",
-      "valid": true     },
+      "valid": true
+       
+     },
      {
       "name" : "Chyoa",
       "check_uri" : "https://chyoa.com/user/{account}",
