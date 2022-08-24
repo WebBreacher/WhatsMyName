@@ -2737,6 +2737,17 @@
       "valid": true
      },
      {
+      "name" : "moxfield",
+      "check_uri" : "https://www.moxfield.com/users/{account}",
+      "account_existence_code" : "200",
+      "account_existence_string" : "Moxfield Profile",
+      "account_missing_string" : "No user found ",
+      "account_missing_code" : "200",
+      "known_accounts" : ["gamer", "Carlos01"],
+      "category" : "misc",
+      "valid" : true
+     },
+     {
       "name" : "Muck Rack",
       "check_uri" : "https://muckrack.com/{account}",
       "account_existence_code" : "200",
