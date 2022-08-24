@@ -2971,6 +2971,18 @@
         "valid": true
        },
        {
+        "name" : "moxfield",
+        "uri_check" : "https://www.moxfield.com/users/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "Moxfield Profile",
+        "m_string" : "No user found ",
+        "m_code" : 200,
+        "known" : ["gamer", "Carlos01"],
+        "cat" : "misc",
+        "valid" : true
+       },
+       {
         "name" : "Muck Rack",
         "uri_check" : "https://muckrack.com/{account}",
         "post_body" : "",
