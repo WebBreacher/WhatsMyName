@@ -4452,7 +4452,8 @@
         "known": ["przeczzpreczem", "Xavier"],
         "cat": "social",
         "valid": true
-       },       {
+       },       
+       {
         "name" : "Tagged",
         "uri_check" : "https://secure.tagged.com/{account}",
         "post_body" : "",
