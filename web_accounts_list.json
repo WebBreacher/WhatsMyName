@@ -1015,7 +1015,8 @@
       "account_missing_code" : "404",
       "known_accounts" : ["svetlana7", "igor"],
       "category" : "misc",
-      "valid" : true     },
+      "valid" : true
+     },
      {
       "name" : "dateinasia",
       "check_uri" : "https://www.dateinasia.com/{account}",
