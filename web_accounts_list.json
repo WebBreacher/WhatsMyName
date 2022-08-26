@@ -1018,6 +1018,17 @@
       "valid" : true
      },
      {
+      "name" : "dateinasia",
+      "check_uri" : "https://www.dateinasia.com/{account}",
+      "account_existence_code" : "200",
+      "account_existence_string" : "About me",
+      "account_missing_string" : "The page you are looking for does not exist",
+      "account_missing_code" : "404",
+      "known_accounts" : ["Lars01", "janeferater"],
+      "category" : "dating",
+      "valid" : true
+     },
+     {
       "name" : "datezone",
       "check_uri" : "https://www.datezone.com/users/{account}/",
       "account_existence_code" : "200",
@@ -4108,6 +4119,17 @@
       "valid": true
      },
      {
+      "name" : "tabletoptournament",
+      "check_uri" : "https://www.tabletoptournaments.net/eu/player/{account}",
+      "account_existence_code" : "200",
+      "account_existence_string" : "- Player Profile | T³ - TableTop Tournaments",
+      "account_missing_string" : "No player with the nickname",
+      "account_missing_code" : "200",
+      "known_accounts" : ["Lars01", "john"],
+      "category" : "misc",
+      "valid" : true
+     },
+     {
       "name" : "Tagged",
       "check_uri" : "https://secure.tagged.com/{account}",
       "account_existence_code" : "200",
@@ -4550,6 +4572,17 @@
       "account_missing_code" : "404",
       "known_accounts" : ["alex", "johnny"],
       "category" : "art",
+      "valid" : true
+     },
+     {
+      "name" : "vibilagare",
+      "check_uri" : "https://www.vibilagare.se/users/{account}",
+      "account_existence_code" : "200",
+      "account_existence_string" : "Profil på vibilagare.se",
+      "account_missing_string" : "Sidan hittades inte |",
+      "account_missing_code" : "404",
+      "known_accounts" : ["lars01", "sven"],
+      "category" : "misc",
       "valid" : true
      },
      {
