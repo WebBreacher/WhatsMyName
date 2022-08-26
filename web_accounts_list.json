@@ -4553,6 +4553,17 @@
       "valid" : true
      },
      {
+      "name" : "vibilagare",
+      "check_uri" : "https://www.vibilagare.se/users/{account}",
+      "account_existence_code" : "200",
+      "account_existence_string" : "Profil på vibilagare.se",
+      "account_missing_string" : "Sidan hittades inte |",
+      "account_missing_code" : "404",
+      "known_accounts" : ["lars01", "sven"],
+      "category" : "misc",
+      "valid" : true
+     },
+     {
        "name" : "viddler",
        "check_uri" : "https://www.viddler.com/channel/{account}/",
        "account_existence_code" : "200",
