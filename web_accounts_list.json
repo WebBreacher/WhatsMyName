@@ -1015,6 +1015,16 @@
       "account_missing_code" : "404",
       "known_accounts" : ["svetlana7", "igor"],
       "category" : "misc",
+      "valid" : true     },
+     {
+      "name" : "dateinasia",
+      "check_uri" : "https://www.dateinasia.com/{account}",
+      "account_existence_code" : "200",
+      "account_existence_string" : "About me",
+      "account_missing_string" : "The page you are looking for does not exist",
+      "account_missing_code" : "404",
+      "known_accounts" : ["Lars01", "janeferater"],
+      "category" : "dating",
       "valid" : true
      },
      {
