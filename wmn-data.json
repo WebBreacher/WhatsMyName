@@ -3139,6 +3139,18 @@
         "valid" : true
        },
        {
+        "name" : "naija_planet",
+        "uri_check" : "https://naijaplanet.com/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "dating Profile, ",
+        "m_string" : "- NaijaPlanet!",
+        "m_code" : 200,
+        "known" : ["daniel01", "wales73"],
+        "cat" : "dating",
+        "valid" : true
+       },
+       {
         "name" : "nairaland",
         "uri_check" : "https://www.nairaland.com/{account}",
         "post_body" : "",
