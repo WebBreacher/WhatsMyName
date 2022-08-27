@@ -121,19 +121,20 @@ def capture_errors(cli_options: CliOptionsSchema, sites: List[SiteSchema]) -> No
 
     not_found_sites = filter_list_by(cloned_cli_options, sites)
     for site in not_found_sites:
-        username_dir: str = os.path.join(cli_options.capture_error_directory, site.username)
+        username_dir: str = os.path.join(cli_options.capture_error_directory, 'whatsmyname', site.username)
         if not os.path.exists(username_dir):
-            os.mkdir(username_dir)
+            os.makedirs(username_dir)
         cloned_cli_options.output_file = os.path.join(username_dir, f'{site.name}.json')
         if os.path.exists(cloned_cli_options.output_file):
             logger.info('Removing stall capture error file %s', cloned_cli_options.output_file)
             os.remove(cloned_cli_options.output_file)
         logger.info('Writing capture error file %s', cloned_cli_options.output_file)
+        print('Writing capture error file ', cloned_cli_options.output_file)
         to_json(cloned_cli_options, [site])
 
 
 async def request_controller(cli_options: CliOptionsSchema, sites: List[SiteSchema]) -> List[SiteSchema]:
-    """"""
+    """Initiates all the web requests"""
     connector: TCPConnector = aiohttp.TCPConnector(ssl=False)
     client_timeout = ClientTimeout(total=None, sock_connect=cli_options.timeout, sock_read=cli_options.timeout)
     async with aiohttp.ClientSession(connector=connector, timeout=client_timeout) as session:

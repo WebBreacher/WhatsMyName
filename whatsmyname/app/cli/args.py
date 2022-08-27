@@ -43,8 +43,6 @@ def get_default_args() -> ArgumentParser:
     parser.add_argument('-rv', '--random_validate', action="store_true", help='[OPTIONAL] Upon success, validate using random username', default=False)
     parser.add_argument('-uap', '--user_agent_platform', nargs='?', help='[OPTIONAL] Select the user agent platform to use. ', default='Chrome on Windows 1')
     parser.add_argument('-ce', '--capture_errors', action="store_true", help='[OPTIONAL] Capture errors per site for a user name', default=False)
-
-
     return parser
 
 
