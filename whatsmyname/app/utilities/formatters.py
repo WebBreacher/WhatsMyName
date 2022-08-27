@@ -7,7 +7,6 @@ from whatsmyname.app.models.schemas.sites import SiteSchema, SiteOutputSchema
 from terminaltables import AsciiTable
 
 
-
 def to_csv(cli_options: CliOptionsSchema, sites: List[SiteSchema]) -> None:
 
     field_names: List[str] = ['http_status_code', 'generated_uri', 'username']
@@ -21,7 +20,7 @@ def to_csv(cli_options: CliOptionsSchema, sites: List[SiteSchema]) -> None:
         site: SiteSchema
         for site in sites:
             site_output: SiteOutputSchema = SiteOutputSchema(**site.dict())
-            writer.writerow(site_output.dict())
+            writer.writerow(site_output.dict(include=dict.fromkeys(field_names, True)))
 
 
 def to_json(cli_options: CliOptionsSchema, sites: List[SiteSchema]) -> None:

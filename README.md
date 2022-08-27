@@ -30,20 +30,31 @@ See [CONTRIBUTING](CONTRIBUTING.md)
 There are quite a few command line options available
 
 `Check for the users yooper and maxim, defaults to outputing json to stdout, only returns the found results.`
-```python check_online_presence.py -u yooper maxim```
+```python whats_my_name.py -u yooper maxim```
 
 `Check for the users yooper and maxim, defaults to outputing json to stdout, returns the not found and found results.`
-```python check_online_presence.py -u yooper maxim -a```
+```python whats_my_name.py -u yooper maxim -a```
 
 `Check for the users yooper and maxim, defaults to outputing json to stdout, returns the sites where no matches were found.`
-```python check_online_presence.py -u yooper maxim -n```
+```python whats_my_name.py -u yooper maxim -n```
 
 `Check for the user yooper, on social sites`
-```python check_online_presence.py -u yooper -c social```
+```python whats_my_name.py -u yooper -c social```
 
 `Check for the user yooper, on social sites, using a different web browser agent`
-```python check_online_presence.py -u yooper -c social --user_agent_platform 'Firefox on macOS' ```
+```python whats_my_name.py -u yooper -c social --user_agent_platform 'Firefox on macOS' ```
 
+`Check for the user yooper, print out in a table format into console`
+```python whats_my_name.py -u yooper -c social --format table```
+
+`Check for the user yooper, print out in a csv format into console`
+```python whats_my_name.py -u yooper -c social --format csv```
+
+`Check for the user yooper, print out in a json (default) format into console`
+```python whats_my_name.py -u yooper -c social --format json```
+
+`Check for the user yooper, capture errors for debugging purposes`
+```python whats_my_name.py -u yooper -c social --capture_errors```
 
 
 
