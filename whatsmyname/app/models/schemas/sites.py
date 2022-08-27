@@ -43,6 +43,9 @@ class SiteSchema(BaseModel):
             values['request_method'] = 'GET'
         return values
 
+    class Config:
+        fields = {'category': 'cat'}
+
 
 class SitesConfigurationSchema(BaseModel):
     license: List[str] = []

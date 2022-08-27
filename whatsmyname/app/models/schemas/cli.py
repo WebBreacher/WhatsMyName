@@ -1,7 +1,7 @@
 """ Holds the schema for all the command line options """
 
 from typing import Optional, List
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 from whatsmyname.app.models.enums.common import OutputFormat
 
 
@@ -25,6 +25,10 @@ class CliOptionsSchema(BaseModel):
     max_redirects: int = 10
     random_validate: bool = False
     random_username: Optional[str] = None,
-    user_agent_platform: str
+    user_agent_platform: str = 'Chrome on Windows 1'
     user_agent: Optional[str] = None
+    capture_errors: bool = False
+    capture_error_directory: Optional[str] = None
+
+
 

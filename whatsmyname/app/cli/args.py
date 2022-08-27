@@ -42,13 +42,10 @@ def get_default_args() -> ArgumentParser:
     parser.add_argument('-c', '--category', nargs='?', help='[OPTIONAL] Filter by site category ', default=None)
     parser.add_argument('-rv', '--random_validate', action="store_true", help='[OPTIONAL] Upon success, validate using random username', default=False)
     parser.add_argument('-uap', '--user_agent_platform', nargs='?', help='[OPTIONAL] Select the user agent platform to use. ', default='Chrome on Windows 1')
+    parser.add_argument('-ce', '--capture_errors', action="store_true", help='[OPTIONAL] Capture errors per site for a user name', default=False)
+
 
     return parser
-
-
-def random_string(length) -> str:
-    return ''.join(
-        choice(string.ascii_lowercase + string.ascii_uppercase + string.digits) for x in range(length))
 
 
 def arg_parser(arguments: ArgumentParser) -> CliOptionsSchema:
@@ -81,11 +78,13 @@ def arg_parser(arguments: ArgumentParser) -> CliOptionsSchema:
         schema.output_stdout = True
 
     if schema.random_validate:
-        schema.random_username = random_string(10)
         logger.debug('Randomly generated username is %s', schema.random_username)
 
     user_agents: List[UserAgentSchema] = user_agent_extractor(os.path.join(resource_dir, 'user-agents.json'))
     schema.user_agent = next(obj.user_agent for obj in user_agents if obj.platform == schema.user_agent_platform)
+
+    if not schema.user_agent:
+        raise Exception('User agent platform %s does not exist', schema.user_agent_platform)
 
     return schema
 

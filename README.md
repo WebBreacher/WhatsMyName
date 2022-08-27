@@ -41,6 +41,9 @@ There are quite a few command line options available
 `Check for the user yooper, on social sites`
 ```python check_online_presence.py -u yooper -c social```
 
+`Check for the user yooper, on social sites, using a different web browser agent`
+```python check_online_presence.py -u yooper -c social --user_agent_platform 'Firefox on macOS' ```
+
 
 
 

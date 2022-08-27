@@ -38,7 +38,7 @@ def test_generate_username_has_dot() -> None:
     cli_options: CliOptionsSchema = get_default_cli_options()
     sites_list: List[SiteSchema] = get_sites_list(cli_options)
     new_sites: List[SiteSchema] = generate_username_sites(['yoo.per'], sites_list)
-    assert 421 == len(new_sites)
+    assert 413 == len(new_sites)
 
 
 def test_filter_list_all() -> None:
