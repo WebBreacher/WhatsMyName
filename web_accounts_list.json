@@ -5139,6 +5139,17 @@
        "known_accounts" : ["john", "jess"],
        "category" : "social",
        "valid" : true
+     },
+     {
+       "name" : "zoomitir",
+       "check_uri" : "https://www.zoomit.ir/user/{account}/",
+       "account_existence_code" : "200",
+       "account_existence_string" : "پروفایل - زومیت",
+       "account_missing_string" : "404 Not found",
+       "account_missing_code" : "404",
+       "known_accounts" : ["rezaghezi", "hosssssein"],
+       "category" : "tech",
+       "valid" : true        
      }
   ]
 }
