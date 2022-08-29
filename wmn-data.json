@@ -1025,6 +1025,18 @@
         "valid" : true
        },
        {
+        "name" : "cracked_io",
+        "uri_check" : "https://cracked.io/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "Cracked.io - Profile of",
+        "m_string" : "The member you specified is either invalid or doesn't exist",
+        "m_code" : 404,
+        "known" : ["RealPsycho", "SamWinchester"],
+        "cat" : "social",
+        "valid" : true
+       },
+       {
         "name" : "Cracked",
         "uri_check" : "https://www.cracked.com/members/{account}",
         "post_body" : "",
