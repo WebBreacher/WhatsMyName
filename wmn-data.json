@@ -1908,6 +1908,18 @@
         "valid" : true
        },
        {
+        "name" : "Gigapan",
+        "uri_check" : "https://www.gigapan.com/profiles/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "width=\"100\"",
+        "m_string" : "<a href=\"/gigapans\">View Gigapans</a>",
+        "m_code" : 404,
+        "known" : ["test", "lucahammer"],
+        "cat" : "hobby",
+        "valid" : true
+       },
+       {
         "name" : "Giphy",
         "uri_check" : "https://giphy.com/channel/{account}",
         "post_body" : "",
@@ -3539,7 +3551,7 @@
        {
       "name": "Picsart",
       "uri_check": "https://picsart.com/u/{account}",
-      "post_body" : " ",
+      "post_body" : "",
       "e_code" : 200,
       "e_string": "Profiles on Picsart",
       "m_string": "User not found",
