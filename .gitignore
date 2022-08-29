@@ -84,7 +84,3 @@ venv/
 
 # Apple
 .DS_Store
-
-# WhatsMyName 
-.wmn-data-min.json
-.web_accounts_list-min.json
