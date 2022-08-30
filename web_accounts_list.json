@@ -952,6 +952,17 @@
        "valid" : true
      },
      {
+      "name" : "cracked_io",
+      "check_uri" : "https://cracked.io/{account}",
+      "account_existence_code" : "200",
+      "account_existence_string" : "Cracked.io - Profile of",
+      "account_missing_string" : "The member you specified is either invalid or doesn't exist",
+      "account_missing_code" : "404",
+      "known_accounts" : ["RealPsycho", "SamWinchester"],
+      "category" : "social",
+      "valid" : true
+     },
+     {
       "name" : "Cracked",
       "check_uri" : "https://www.cracked.com/members/{account}",
       "account_existence_code" : "200",
@@ -1715,6 +1726,17 @@
        "account_missing_code" : "404",
        "known_accounts" : ["RealMarjorieGreene", "LaurenBoebert"],
        "category" : "political",
+       "valid" : true
+      },
+      {
+       "name" : "game_debate",
+       "check_uri" : "https://www.game-debate.com/profile/{account}",
+       "account_existence_code" : "200",
+       "account_existence_string" : "| , , GB pc game performance",
+       "account_missing_string" : "Not Found",
+       "account_missing_code" : "404",
+       "known_accounts" : ["Johnboy", "Crazy"],
+       "category" : "gaming",
        "valid" : true
      },
      {
