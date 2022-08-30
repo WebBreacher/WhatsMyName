@@ -1980,6 +1980,18 @@
         "valid" : true
        },
        {
+        "name" : "gitea",
+        "uri_check" : "https://gitea.com/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "(Git with a cup of tea)",
+        "m_string" : "Not found.",
+        "m_code" : 404,
+        "known" : ["xin", "dev"],
+        "cat" : "coding",
+        "valid" : true
+       },
+       {
         "name" : "GitHub",
         "uri_check" : "https://github.com/{account}",
         "post_body" : "",

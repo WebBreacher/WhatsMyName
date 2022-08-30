@@ -1828,6 +1828,17 @@
       "valid" : true
      },
      {
+      "name" : "gitea",
+      "check_uri" : "https://gitea.com/{account}",
+      "account_existence_code" : "200",
+      "account_existence_string" : "(Git with a cup of tea)",
+      "account_missing_string" : "Not found.",
+      "account_missing_code" : "404",
+      "known_accounts" : ["xin", "dev"],
+      "category" : "coding",
+      "valid" : true
+     },
+     {
       "name" : "GitHub",
       "check_uri" : "https://github.com/{account}",
       "account_existence_code" : "200",
