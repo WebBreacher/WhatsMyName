@@ -2252,7 +2252,7 @@
         "e_code" : 200,
         "e_string" : "thumbnails.huggingface.co/social-thumbnails/",
         "m_string" : "Sorry, we can't find the page you are looking for.",
-        "m_code" : "404",
+        "m_code" : 404,
         "known" : ["hack", "dev"],
         "cat" : "tech",
         "valid" : true
