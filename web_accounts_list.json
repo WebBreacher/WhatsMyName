@@ -2072,6 +2072,17 @@
       "valid" : true
      },
      {
+      "name" : "hugging_face",
+      "check_uri" : "https://huggingface.co/{account}",
+      "account_existence_code" : "200",
+      "account_existence_string" : "thumbnails.huggingface.co/social-thumbnails/",
+      "account_missing_string" : "Sorry, we can't find the page you are looking for.",
+      "account_missing_code" : "404",
+      "known_accounts" : ["hack", "dev"],
+      "category" : "tech",
+      "valid" : true
+     },
+     {
       "name" : "Iconfinder",
       "check_uri" : "https://www.iconfinder.com/{account}",
       "account_existence_code" : "200",
