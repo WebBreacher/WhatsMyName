@@ -1872,6 +1872,18 @@
         "valid" : true
        },
        {
+        "name" : "game_debate",
+        "uri_check" : "https://www.game-debate.com/profile/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "| , , GB pc game performance",
+        "m_string" : "Not Found",
+        "m_code" : 404,
+        "known" : ["Johnboy", "Crazy"],
+        "cat" : "gaming",
+        "valid" : true
+       },
+       {
         "name" : "Gamespot",
         "uri_check" : "https://www.gamespot.com/profile/{account}/",
         "post_body" : "",
