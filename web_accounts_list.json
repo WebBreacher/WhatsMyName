@@ -1879,7 +1879,7 @@
       "account_missing_string" : "Uh oh...",
       "account_missing_code" : "400",
       "known_accounts" : ["johnny", "dev"],
-      "category" : "gaming",
+      "category" : "coding",
       "valid" : true
      },
      {
