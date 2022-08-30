@@ -1727,6 +1727,17 @@
        "known_accounts" : ["RealMarjorieGreene", "LaurenBoebert"],
        "category" : "political",
        "valid" : true
+      },
+      {
+       "name" : "game_debate",
+       "check_uri" : "https://www.game-debate.com/profile/{account}",
+       "account_existence_code" : "200",
+       "account_existence_string" : "| , , GB pc game performance",
+       "account_missing_string" : "Not Found",
+       "account_missing_code" : "404",
+       "known_accounts" : ["Johnboy", "Crazy"],
+       "category" : "gaming",
+       "valid" : true
      },
      {
       "name" : "Gamespot",
