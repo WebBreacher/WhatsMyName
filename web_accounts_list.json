@@ -1872,6 +1872,17 @@
       "valid": true
      },
      {
+      "name" : "gnome_extensions",
+      "check_uri" : "https://extensions.gnome.org/accounts/profile/{account}",
+      "account_existence_code" : "200",
+      "account_existence_string" : "s Profile - GNOME Shell Extensions",
+      "account_missing_string" : "Uh oh...",
+      "account_missing_code" : "400",
+      "known_accounts" : ["johnny", "dev"],
+      "category" : "coding",
+      "valid" : true
+     },
+     {
       "name" : "gpodder.net",
       "check_uri" : "https://gpodder.net/user/{account}/",
       "account_existence_code" : "200",
@@ -2058,6 +2069,17 @@
       "account_missing_code" : "200",
       "known_accounts" : ["john", "blue"],
       "category" : "social",
+      "valid" : true
+     },
+     {
+      "name" : "hugging_face",
+      "check_uri" : "https://huggingface.co/{account}",
+      "account_existence_code" : "200",
+      "account_existence_string" : "thumbnails.huggingface.co/social-thumbnails/",
+      "account_missing_string" : "Sorry, we can't find the page you are looking for.",
+      "account_missing_code" : "404",
+      "known_accounts" : ["hack", "dev"],
+      "category" : "tech",
       "valid" : true
      },
      {

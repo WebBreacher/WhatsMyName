@@ -2028,6 +2028,18 @@
         "valid": true
        },
        {
+        "name" : "gnome_extensions",
+        "uri_check" : "https://extensions.gnome.org/accounts/profile/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "s Profile - GNOME Shell Extensions",
+        "m_string" : "Uh oh...",
+        "m_code" : 400,
+        "known" : ["johnny", "dev"],
+        "cat" : "coding",
+        "valid" : true
+       },
+       {
         "name" : "gpodder.net",
         "uri_check" : "https://gpodder.net/user/{account}/",
         "post_body" : "",
@@ -2231,6 +2243,18 @@
         "m_code" : 200,
         "known" : ["john", "blue"],
         "cat" : "social",
+        "valid" : true
+       },
+       {
+        "name" : "hugging_face",
+        "uri_check" : "https://huggingface.co/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "thumbnails.huggingface.co/social-thumbnails/",
+        "m_string" : "Sorry, we can't find the page you are looking for.",
+        "m_code" : 404,
+        "known" : ["hack", "dev"],
+        "cat" : "tech",
         "valid" : true
        },
        {
