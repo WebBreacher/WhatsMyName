@@ -2246,6 +2246,18 @@
         "valid" : true
        },
        {
+        "name" : "hugging_face",
+        "uri_check" : "https://huggingface.co/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "thumbnails.huggingface.co/social-thumbnails/",
+        "m_string" : "Sorry, we can't find the page you are looking for.",
+        "m_code" : "404",
+        "known" : ["hack", "dev"],
+        "cat" : "tech",
+        "valid" : true
+       },
+       {
         "name" : "Iconfinder",
         "uri_check" : "https://www.iconfinder.com/{account}",
         "post_body" : "",
