@@ -12,6 +12,7 @@ class SiteOutputSchema(BaseModel):
     generated_uri: str
     username: str
     user_agent: str
+    uri_pretty: Optional[str] = None
 
 
 class SiteSchema(BaseModel):
@@ -34,6 +35,8 @@ class SiteSchema(BaseModel):
     raw_response_data: Optional[str] = None
     cloudflare_enabled: bool = False
     user_agent: Optional[str] = None
+    uri_pretty: Optional[str] = None
+
 
     @root_validator
     def set_request_method(cls, values):

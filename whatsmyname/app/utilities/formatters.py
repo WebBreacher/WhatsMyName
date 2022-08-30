@@ -49,7 +49,8 @@ def to_table(cli_options: CliOptionsSchema, sites: List[SiteSchema]) -> None:
     ]
 
     for site in sites:
-        table_data.append([site.name, site.generated_uri, site.category, site.http_status_code])
+        pretty_url = site.uri_pretty.replace("{account}", site.username) if site.uri_pretty else site.generated_uri
+        table_data.append([site.name, pretty_url, site.category, site.http_status_code])
 
     table = AsciiTable(table_data)
     print(table.table)
