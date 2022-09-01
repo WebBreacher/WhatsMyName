@@ -135,3 +135,6 @@ coverage.xml
 docs/_build/
 
 /.env
+
+# Apple
+.DS_Store

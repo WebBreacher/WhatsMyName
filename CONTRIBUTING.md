@@ -1,8 +1,5 @@
 You can contribute to the project in at least three different ways.
 
-# Warning: These notes are currently out of date
-Our project is undergoing a few changes (See #414) that impact this document. After we have completed those changes, this will be revised.
-
 ## Method 1. Non-technical
 
 Suggest a new site to be covered by the tool.
@@ -65,9 +62,78 @@ python3 ./web_accounts_list_checker.py -s my.new.site.Ive.added
 - Submit a pull request with that change
 - There is also the `sample.json` file that you can use for testing. Simply replace the existing content with new data and test.
 
-## Format of the JSON file
+## Format of the JSON File
 
-The format of the JSON is simple. There are 3 main elements:
+### Format of the New/Current JSON file
+
+The format of the `wmn-data.json` JSON was altered due to Issue #414. There are still 3 main elements:
+
+1. License - The license for this project and its data
+2. Authors - The people that have contributed to this project
+3. Sites - This is the main data
+
+Within the `sites` elements, the format is as follows (with several parameters being optional):
+
+```json
+     ...
+      {
+         "name" : "name of the site",
+         "uri_check" : "URI to check the site with the {account} string replaced by a username",
+         "uri_pretty" : "if the check_uri is for an API, this OPTIONAL element can show a human-readable page",
+         "post_body" : "if non-empty, then this entry is an HTTP POST and the content of this field are the data",
+         "e_code" : "the HTTP response code for a good 'account is there' response as an integer",
+         "e_string" : "the string in the response that we look for for a good response",
+         "m_string" : "this OPTIONAL string will only be in the response if there is no account found ",
+         "m_code" : "the HTTP response code for a bad 'account is not there' response as an integer",
+         "known" : ["a list of user accounts that can be used to test", "for user enumeration"],
+         "cat" : "a category for what the site is mainly used for. These are found at the top of the JSON",
+         "valid" : "this true or false boolean field is used to enable or disable this site element"
+      },
+      ...
+```
+
+Here are examples of the site elements for both HTTP GET and HTTP POST entries:
+
+**HTTP GET entry:**
+
+```json
+     {
+       "name" : "Example GET",
+       "uri_check" : "https://www.example.com/load_profile_info.php?name={account}",
+       "uri_pretty" : "https://www.test.com/profile/{account}",
+       "post_body" : "",
+       "e_code" : 200,
+       "e_string" : "regist_at",
+       "m_code" : 200,
+       "m_string" : "Account not found",
+       "known" : ["whoami", "johndoe"],
+       "cat" : "images",
+       "valid" : true
+     },
+```
+
+**HTTP POST entry:**
+
+```json
+     {
+       "name" : "Example POST",
+       "uri_check" : "https://www.example.com/interact_api/load_profile_info.php",
+       "post_body" : "Name=Gareth+Wylie&Age=24&Formula=a%2Bb+%3D%3D+21",
+       "e_code" : 200,
+       "e_string" : "regist_at",
+       "m_code" : 200,
+       "m_string" : "Account not found",
+       "known" : ["whoami", "johndoe"],
+       "cat" : "images",
+       "valid" : true
+     },
+```
+
+### Format of the Old JSON file
+
+**WARNING:** ==THIS FILE IS DEPRICATED, NO LONGER MAINTAINED, AND WILL BE REMOVED FROM THE PROJECT SOON. PLEASE MIGRATE TO USE THE NEW JSON FILE==
+
+The format of the old `web_accounts_list.json` JSON file is simple. There are 3 main elements:
 
 1. License - The license for this project and its data
 2. Authors - The people that have contributed to this project

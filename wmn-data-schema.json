@@ -114,10 +114,10 @@
 					"e_code": {
 						"$id": "#root/sites/items/e_code",
 						"title": "E_code",
-						"type": "string",
+						"type": "integer",
 						"default": "",
 						"examples": [
-							"200"
+							200
 						],
 						"pattern": "^.*$"
 					},
@@ -144,10 +144,10 @@
 					"m_code": {
 						"$id": "#root/sites/items/m_code",
 						"title": "M_code",
-						"type": "string",
+						"type": "integer",
 						"default": "",
 						"examples": [
-							"404"
+							404
 						],
 						"pattern": "^.*$"
 					},
