@@ -4429,6 +4429,18 @@
         "valid" : true
        },
        {
+        "name" : "soloby",
+        "uri_check" : "http://www.soloby.ru/user/{account}",
+        "e_code" : 200,
+        "post_body" : "",
+        "e_string" : "- Универ soloBY",
+        "m_string" : "Универ soloBY",
+        "m_code" : 404,
+        "known" : ["igor", "dana"],
+        "cat" : "social",
+        "valid" : true
+       },
+       {
         "name" : "SoundCloud",
         "uri_check" : "https://soundcloud.com/{account}",
         "post_body" : "",
