@@ -6,7 +6,7 @@ This repository has the unified data required to perform user and username enume
 
 ## Tools/Web Sites Using WhatsMyName
 
-* https://whatsmyname.app/ - [Chris Poulter](https://twitter.com/osintcombine) created this site which draws the project's JSON file into a gorgeous and easy to use web interface.
+* https://whatsmyname.app/ - [Chris Poulter](https://twitter.com/osintcombine) created this site which draws the project's JSON file into an easy to use web interface.
   * Filters for category and in search results.
   * Exports to CSV and other formats.
   * Pulls the latest version of the project's JSON file when run.
