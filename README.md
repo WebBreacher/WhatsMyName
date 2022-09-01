@@ -126,7 +126,6 @@ or
 ```
 python3 whats_my_name.py -u yooper --format table
 ```
-
 # Contributors
 We would like to thank our contributors for their work. Whether it was adding sites, making our logo, fixing some broken code, or enhancing the project in many other ways! We appreciate the time you volunteered!
 
