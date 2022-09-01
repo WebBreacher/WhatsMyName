@@ -51,16 +51,12 @@ parser.add_argument('-of', '--outputfile', nargs='?', help="[OPTIONAL] Create te
 parser.add_argument('-in', '--inputfile', nargs='?', help="[OPTIONAL] Uses a specified file for checking the websites")
 parser.add_argument('-s', '--site', nargs='*', help='[OPTIONAL] If this parameter is passed'
                     'the script will check only the named site or list of sites.')
-parser.add_argument('-c', '--category', nargs='*', help='[OPTIONAL] If this parameter is passed'
-                    'the script will check only the category or list of categories.')
 parser.add_argument('-se', '--stringerror', help="Creates a site by site file for files that do"
                     "not match strings. Filenames will be 'se-(sitename).(username)",
                     action="store_true", default=False)
 parser.add_argument('-u', '--username', help='[OPTIONAL] If this param is passed then this script'
                     'will perform the lookups against the given user name instead of running'
                     'checks against the JSON file.')
-parser.add_argument('-f', '--followredirects', help='[OPTIONAL] If this param is passed then the script '
-                    'will follow HTTP 30x redirects.', action='store_true')
 
 
 args = parser.parse_args()
@@ -126,7 +122,7 @@ def signal_handler(*_):
 def web_call(location):
     try:
         # Make web request for that URL, timeout in X secs and don't verify SSL/TLS certs
-        resp = requests.get(location, headers=headers, timeout=60, verify=False, allow_redirects=args.followredirects)
+        resp = requests.get(location, headers=headers, timeout=60, verify=False, allow_redirects=False)
     except requests.exceptions.Timeout:
         return f' !  ERROR: {location} CONNECTION TIME OUT. Try increasing the timeout delay.'
     except requests.exceptions.TooManyRedirects:
@@ -174,7 +170,7 @@ if (args.inputfile):
 else:
     inputfile = 'web_accounts_list.json'
 
-with open(inputfile, 'r', errors='ignore') as data_file:
+with open(inputfile) as data_file:
     data = json.load(data_file)
 
 if args.site:
@@ -188,16 +184,10 @@ if args.site:
     if sites_not_found:
         logging.warning(' -  WARNING: %d requested sites were not found in the list' % sites_not_found)
     logging.info(' -  Checking %d sites' % len(data['sites']))
-elif args.category:
-    # cut the list of sites down by category
-    args.category = [x.lower() for x in args.category]
-    data['sites'] = [x for x in data['sites'] if x['category'].lower() in args.category]
-    if len(data['sites']) == 0:
-        logging.error(' -  Sorry, no sites were found for the requested category or categories')
-        sys.exit(1)
-    logging.info(' -  Checking %d sites' % len(data['sites']))
+
 else:
     logging.info(' -  %s sites found in file.' % len(data['sites']))
+
 
 def check_site(site, username=None):
     # Examine the current validity of the entry
@@ -231,16 +221,10 @@ def check_site(site, username=None):
 
         # Analyze the responses against what they should be
         code_match = r.status_code == int(site['account_existence_code'])
-        if site['account_existence_string']:
-            string_match = r.text.find(site['account_existence_string']) >= 0
-        else:
-            string_match = 0
+        string_match = r.text.find(site['account_existence_string']) >= 0
 
         if username:
             if code_match and string_match:
-                if 'pretty_uri' in site:
-                    url = site['pretty_uri'].replace("{account}", uname)
-                    
                 username_results.append(Bcolors.GREEN + '[+] Found user at %s' % url + Bcolors.ENDC)
                 all_found_sites.append(url)
                 return
