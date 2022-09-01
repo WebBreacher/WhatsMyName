@@ -4935,6 +4935,18 @@
         "valid" : true
        },
        {
+        "name" : "truth_social",
+        "uri_check" : "https://truthsocial.com/@{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "(@",
+        "missing_string" : "This resource could not be found",
+        "m_code" : 200,
+        "known" : ["Kash", "realDonaldTrump"],
+        "cat" : "social",
+        "valid" : true
+       },
+       {
         "name" : "tumblr",
         "uri_check" : "https://{account}.tumblr.com",
         "post_body" : "",
