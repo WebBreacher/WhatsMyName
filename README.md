@@ -70,6 +70,62 @@ There are quite a few command line options available
 
 `python whats_my_name.py -u yooper -c social --capture_errors`
 
+# Installation
+If you prefer to use a virtual environment to isolate the script:
+
+```
+mkdir myvirtualenv
+```
+
+```
+cd myvirtualenv
+```
+<br>
+
+example if you want to use Python 3.9:
+
+```
+python3.9 -m venv myvirtualenv
+```
+<br>
+
+This command will activate your virtual environment:
+
+```
+source myvirtualenv/bin/activate
+```
+<br>
+
+Once your virtual environment is activated:
+
+```
+git clone https://github.com/WebBreacher/WhatsMyName
+
+```
+```
+cd whatsmyname
+```
+
+```
+pip3 install /Users/xxxxxxxx/myvirtualenv/WhatsMyName/whatsmyname/requirements.txt
+```
+*You can just drag the file into your terminal.*
+
+**Without installation of the the requirements.txt file (the Py libs), the script won't work.** 
+
+<br>
+
+You are now ready to go for your first command, example below, and see above in the **Command Line Arguments section**:
+
+```
+python whats_my_name.py -u yooper --format table
+```
+
+or
+
+```
+python3 whats_my_name.py -u yooper --format table
+```
 # Contributors
 We would like to thank our contributors for their work. Whether it was adding sites, making our logo, fixing some broken code, or enhancing the project in many other ways! We appreciate the time you volunteered!
 
