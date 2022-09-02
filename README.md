@@ -71,7 +71,7 @@ There are quite a few command line options available
 `python whats_my_name.py -u yooper -c social --capture_errors`
 
 # Installation
-Check the `installation.md` file [here](https://github.com/WebBreacher/WhatsMyName/blob/main/LICENSE.md)
+Check the `INSTALLATION.md` file [here](https://github.com/WebBreacher/WhatsMyName/blob/main/LICENSE.md)
 
 
 # Contributors
