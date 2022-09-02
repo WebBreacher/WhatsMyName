@@ -94,7 +94,7 @@ Once your virtual environment is activated:
 
 ```
 git clone https://github.com/WebBreacher/WhatsMyName
-cd whatsmyname
+cd WhatsMyName
 pip3 install -r requirements.txt
 ```
 
