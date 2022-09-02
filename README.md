@@ -30,9 +30,13 @@ This repository has the unified data required to perform user and username enume
 See [CONTRIBUTING](CONTRIBUTING.md)
 
 ## Command Line Arguments
-If you just want to run this script to check user names on sites and don't wish to use it in combination with another tool (like https://whatsmyname.app and/or Spiderfoot), then you can use the included Python 3 script, `what-is-my-name.py` as shown below.
+If you just want to run this script to check user names on sites and don't wish to use it in combination with another tool (like https://whatsmyname.app or one noted above), then you can use the Python script [@yooper](https://github.com/yooper/) made for us, `what-is-my-name.py` as shown below.
 
-There are quite a few command line options available
+There are quite a few command line options available:
+
+- Check for the user yooper, print out in a table format into console
+
+`python whats_my_name.py -u yooper -c social --format table`
 
 - Check for the users yooper and maxim, defaults to outputing json to stdout, only returns the found results.
 
@@ -54,10 +58,6 @@ There are quite a few command line options available
 
 `python whats_my_name.py -u yooper -c social --user_agent_platform 'Firefox on macOS' `
 
-- Check for the user yooper, print out in a table format into console
-
-`python whats_my_name.py -u yooper -c social --format table`
-
 - Check for the user yooper, print out in a csv format into console
 
 `python whats_my_name.py -u yooper -c social --format csv`
@@ -71,7 +71,7 @@ There are quite a few command line options available
 `python whats_my_name.py -u yooper -c social --capture_errors`
 
 # Installation
-Check the `INSTALLATION.md` file [here](https://github.com/WebBreacher/WhatsMyName/blob/main/LICENSE.md)
+Check the [INSTALLATION.md file](https://github.com/WebBreacher/WhatsMyName/blob/main/INSTALLATION.md)
 
 
 # Contributors
