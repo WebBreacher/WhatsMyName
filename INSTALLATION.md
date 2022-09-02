@@ -1,11 +1,8 @@
-# WhatsMyName Python Script installation 
+# Installation
 If you prefer to use a virtual environment to isolate the script:
 
 ```
 mkdir myvirtualenv
-```
-
-```
 cd myvirtualenv
 ```
 
@@ -25,23 +22,13 @@ Once your virtual environment is activated:
 
 ```
 git clone https://github.com/WebBreacher/WhatsMyName
-```
-
-```
 cd WhatsMyName
-```
-
-```
 pip3 install -r requirements.txt
 ```
 
-**Without installation of the the requirements.txt file (Py libs), the script won't work.** 
+**Without installation of the the requirements.txt file (the Py libs), the script won't work.** 
 
-You are now ready to go for your first command using the WMN script.
-
-<br>
-
-Example below, and see also: [**Command Line Arguments**](https://github.com/WebBreacher/WhatsMyName#command-line-arguments)
+You are now ready to go for your first command, example below, and see above in the **Command Line Arguments section**:
 
 ```
 python whats_my_name.py -u yooper --format table
