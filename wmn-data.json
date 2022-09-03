@@ -5052,7 +5052,7 @@
         "post_body" : "",
         "e_code" : 200,
         "e_string" : "| Ubisoft Discussion Forums",
-        "m_string" : "404 Not Found",
+        "m_string" : "You seem to have stumbled upon a page that does not exist.",
         "m_code" : 404,
         "known" : ["fizzle_fuze", "th05324"],
         "cat" : "gaming",
