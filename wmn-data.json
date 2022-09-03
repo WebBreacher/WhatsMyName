@@ -5047,6 +5047,18 @@
         "valid" : true
        },
        {
+        "name" : "Ubisoft",
+        "uri_check" : "https://discussions.ubisoft.com/user/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "| Ubisoft Discussion Forums",
+        "m_string" : "404 Not Found",
+        "m_code" : 404,
+        "known" : ["fizzle_fuze", "th05324"],
+        "cat" : "gaming",
+        "valid" : true
+       },
+       {
         "name" : "Udemy",
         "uri_check" : "https://www.udemy.com/user/{account}/",
         "post_body" : "",
