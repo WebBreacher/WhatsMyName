@@ -6,7 +6,7 @@ from argparse import ArgumentParser
 from random import choice
 from typing import List
 
-from whatsmyname.app.config import project_path, resource_dir
+from whatsmyname.app.config import project_path, resource_dir, main_dir
 from whatsmyname.app.extractors.file_extractors import user_agent_extractor
 from whatsmyname.app.models.schemas.cli import CliOptionsSchema
 from whatsmyname.app.models.schemas.user_agent import UserAgentSchema
@@ -35,7 +35,7 @@ def get_default_args() -> ArgumentParser:
     parser.add_argument('-o', '--output_file', nargs='?', help="[OPTIONAL] Uses a specified output file ")
     parser.add_argument('-t', '--timeout', nargs='?', help='[OPTIONAL] Timeout per connection, default is 60 seconds.', default=60)
     parser.add_argument('-prt', '--per_request_time', nargs='?', help='[Optional] Timeout per request, default is 15 seconds', default=15)
-    parser.add_argument('-fmt', '--format', nargs='?', help='[Optional] Format options are json, csv, or table', default='json')
+    parser.add_argument('-fmt', '--format', nargs='?', help='[Optional] Format options are json, csv, or table', default='table')
     parser.add_argument('-v', '--verbose', help="Enable verbose output", action="store_true", default=False)
     parser.add_argument('-fr', '--follow_redirects', help="Follow redirects", action="store_true", default=False)
     parser.add_argument('-mr', '--max_redirects', nargs='?', help='[OPTIONAL] Max Redirects, default is 10 ', default=10)
@@ -66,7 +66,7 @@ def arg_parser(arguments: ArgumentParser) -> CliOptionsSchema:
         raise Exception(f'Input file does not exist ${schema.input_file}.')
 
     if not schema.input_file:
-        input_file: str = os.path.join(project_path, 'resources', 'wmn-data.json')
+        input_file: str = os.path.join(main_dir, 'wmn-data.json')
         schema.input_file = input_file
         logger.debug('Loading default input file %s', input_file)
 
