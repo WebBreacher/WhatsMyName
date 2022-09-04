@@ -49,6 +49,18 @@
         "valid" : true
        },
        {
+        "name" : "3dtoday",
+        "uri_check" : "https://3dtoday.ru/blogs/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "Блог владельца 3d-принтера",
+        "m_string" : "404 Not Found",
+        "m_code" : 302,
+        "known" : ["sergei", "vlad"],
+        "cat" : "hobby",
+        "valid" : true
+       },
+       {
         "name" : "7cup",
         "uri_check" : "https://www.7cups.com/@{account}",
         "post_body" : "",
