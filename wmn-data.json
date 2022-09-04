@@ -25,6 +25,18 @@
         "valid": true
        },
        {
+        "name" : "1001mem",
+        "uri_check" : "http://1001mem.ru/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "| Новости - Приколы - Комиксы - Мемы",
+        "m_string" : "Этот пользователь не существует, или заблокирован.",
+        "m_code" : 200,
+        "known" : ["ruslan", "dima"],
+        "cat" : "social",
+        "valid" : true
+       },
+       {
         "name" : "3DNews",
         "uri_check" : "http://forum.3dnews.ru/member.php?username={account}",
         "post_body" : "",
@@ -4091,6 +4103,18 @@
         "valid" : true
        },
        {
+        "name" : "ru_123rf",
+        "uri_check" : "https://ru.123rf.com/profile_{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "- 123RF",
+        "m_string" : "Векторы, Видеоролики. Подписка",
+        "m_code" : 302,
+        "known" : ["ruslan", "olga"],
+        "cat" : "hobby",
+        "valid" : true
+       },
+       {
         "name" : "RumbleChannel",
         "uri_check" : "https://rumble.com/c/{account}",
         "post_body" : "",
@@ -5044,6 +5068,18 @@
         "m_string" : "をご確認ください。",
         "known" : ["wsise47", "tsukiusa630"],
         "cat" : "social",
+        "valid" : true
+       },
+       {
+        "name" : "Ubisoft",
+        "uri_check" : "https://discussions.ubisoft.com/user/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "| Ubisoft Discussion Forums",
+        "m_string" : "You seem to have stumbled upon a page that does not exist.",
+        "m_code" : 404,
+        "known" : ["fizzle_fuze", "th05324"],
+        "cat" : "gaming",
         "valid" : true
        },
        {
