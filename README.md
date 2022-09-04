@@ -25,15 +25,21 @@ This repository has the unified data required to perform user and username enume
 * If you would like to help with detections, we are happy to accept them via GitHub Pull Request or you can [create an issue](https://github.com/WebBreacher/WhatsMyName/issues) with the details of the site.
 * Want to suggest a site to be added? Use [this form](https://spotinfo.co/535y).
 
-# Format
+## Format
 
 See [CONTRIBUTING](CONTRIBUTING.md)
 
-# Command Line Arguments
-There are quite a few command line options available
+## Command Line Arguments
+If you just want to run this script to check user names on sites and don't wish to use it in combination with another tool (like https://whatsmyname.app or one noted above), then you can use the Python script [@yooper](https://github.com/yooper/) made for us, `what-is-my-name.py` as shown below.
 
-- Check for the users yooper and maxim, defaults to outputing json to stdout, only returns the found results. 
- 
+There are quite a few command line options available:
+
+- Check for the user yooper, print out in a table format into console
+
+`python whats_my_name.py -u yooper -c social --format table`
+
+- Check for the users yooper and maxim, defaults to outputing json to stdout, only returns the found results.
+
 `python whats_my_name.py -u yooper maxim`
 
 - Check for the users yooper and maxim, defaults to outputing json to stdout, returns the not found and found results.
@@ -48,14 +54,9 @@ There are quite a few command line options available
 
 `python whats_my_name.py -u yooper -c social`
 
-
 - Check for the user yooper, on social sites, using a different web browser agent
 
 `python whats_my_name.py -u yooper -c social --user_agent_platform 'Firefox on macOS' `
-
-- Check for the user yooper, print out in a table format into console
-
-`python whats_my_name.py -u yooper -c social --format table`
 
 - Check for the user yooper, print out in a csv format into console
 
@@ -69,36 +70,9 @@ There are quite a few command line options available
 
 `python whats_my_name.py -u yooper -c social --capture_errors`
 
-# Standalone Checkers
-If you just want to run this script to check user names on sites and don't wish to use it in combination with another tool (like https://whatsmyname.app and/or Spiderfoot), then you can use the included Python 3 scripts as shown below. There is the `web_accounts_list_checker.py` (preferred) and the `check_online_presence.py` which will take MUCH longer to cycle through all the sites and it works a bit differently than the first one.
+# Installation
+Check the [INSTALLATION.md file](https://github.com/WebBreacher/WhatsMyName/blob/main/INSTALLATION.md)
 
-```
- $  python3 ./web_accounts_list_checker.py -u maxim
- -  424 sites found in file.
- >  Looking up https://www.7cups.com/@maxim
- >  Looking up https://artistsnclients.com/people/maxim
- >  Looking up https://ameblo.jp/maxim
- >  Looking up https://aminoapps.com/u/maxim
- >  Looking up https://www.anime-planet.com/users/maxim
- >  Looking up https://apex.tracker.gg/apex/profile/origin/maxim/overview
- >  Looking up https://asciinema.org/~maxim
- >  Looking up https://audiojungle.net/user/maxim
- >  Looking up https://community.avid.com/members/maxim/default.aspx
- *  Skipping BiggerPockets - Marked as not valid.
-...
-[SNIPPED for brevity]
-...
--------------------------------------------
-Searching for sites with username (maxim) > Found 159 results:
-
-[+] Found user at https://coderwall.com/maxim/
-[+] Found user at https://dev.to/maxim
-[+] Found user at https://www.designspiration.com/maxim/
-[+] Found user at https://community.cloudflare.com/u/maxim
-[+] Found user at https://maxim.carrd.co
-[+] Found user at https://maxim.gumroad.com/
-...
-```
 
 # Contributors
 We would like to thank our contributors for their work. Whether it was adding sites, making our logo, fixing some broken code, or enhancing the project in many other ways! We appreciate the time you volunteered!
