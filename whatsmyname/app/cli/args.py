@@ -29,7 +29,7 @@ def get_default_args() -> ArgumentParser:
                         help="[OPTIONAL] Uses a specified file for checking the websites")
     parser.add_argument('-s', '--sites', nargs='*',
                         help='[OPTIONAL] If this parameter is passed the script will check only the named site or list of sites.')
-    parser.add_argument('-a', '--all', help="Display all results.", action="store_true", default=True)
+    parser.add_argument('-a', '--all', help="Display all results.", action="store_true", default=False)
     parser.add_argument('-n', '--not_found', help="Display not found results", action="store_true", default=False)
     parser.add_argument('-d', '--debug', help="Enable debug output", action="store_true", default=False)
     parser.add_argument('-o', '--output_file', nargs='?', help="[OPTIONAL] Uses a specified output file ")
