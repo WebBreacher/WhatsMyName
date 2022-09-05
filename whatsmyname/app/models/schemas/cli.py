@@ -13,7 +13,7 @@ class CliOptionsSchema(BaseModel):
     sites: Optional[List[str]] = []
     category: Optional[str] = None
     string_error: bool = False
-    usernames: List[str] = []
+    usernames: Optional[List[str]] = []
     follow_redirects: bool = False
     timeout: int = 30
     format: OutputFormat = OutputFormat.JSON
@@ -29,6 +29,7 @@ class CliOptionsSchema(BaseModel):
     user_agent: Optional[str] = None
     capture_errors: bool = False
     capture_error_directory: Optional[str] = None
+    validate_knowns: bool = False
 
 
 

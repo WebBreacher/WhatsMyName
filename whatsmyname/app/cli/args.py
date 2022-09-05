@@ -78,6 +78,9 @@ def arg_parser(arguments: ArgumentParser) -> CliOptionsSchema:
     if schema.random_validate:
         logger.debug('Randomly generated username is %s', schema.random_username)
 
+    if not schema.usernames:
+        schema.validate_knowns = True
+
     user_agents: List[UserAgentSchema] = user_agent_extractor(os.path.join(resource_dir, 'user-agents.json'))
     schema.user_agent = next(obj.user_agent for obj in user_agents if obj.platform == schema.user_agent_platform)
 
