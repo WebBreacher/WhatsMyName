@@ -99,7 +99,7 @@ async def process_cli(cli_options: CliOptionsSchema) -> List[SiteSchema]:
     :return:
     """
     sites: List[SiteSchema]
-    if cli_options.validate:
+    if cli_options.validate_knowns:
         sites = get_validated_site_list(cli_options, get_sites_list(cli_options))
     else:
         # check the number of usernames we must validate
