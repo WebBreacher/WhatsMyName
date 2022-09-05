@@ -47,6 +47,19 @@ def get_sites_list(cli_options: CliOptionsSchema) -> List[SiteSchema]:
         return sites
 
 
+def get_validated_site_list(cli_options: CliOptionsSchema, sites: List[SiteSchema]) -> List[SiteSchema]:
+    """
+    Return the list of sites using the known usernames
+    :param sites:
+    :param cli_options:
+    :return:
+    """
+    valid_username_site_list: List[SiteSchema] = []
+    for site in sites:
+        valid_username_site_list.extend(generate_username_sites(site.known, [site]))
+    return valid_username_site_list
+
+
 def generate_username_sites(usernames: List[str], sites: List[SiteSchema]) -> List[SiteSchema]:
     """
     Generate sites schemas from the usernames list
@@ -85,9 +98,12 @@ async def process_cli(cli_options: CliOptionsSchema) -> List[SiteSchema]:
     :param cli_options:
     :return:
     """
-
-    # check the number of usernames we must validate
-    sites = generate_username_sites(cli_options.usernames, get_sites_list(cli_options))
+    sites: List[SiteSchema]
+    if cli_options.validate_knowns:
+        sites = get_validated_site_list(cli_options, get_sites_list(cli_options))
+    else:
+        # check the number of usernames we must validate
+        sites = generate_username_sites(cli_options.usernames, get_sites_list(cli_options))
     return await request_controller(cli_options, sites)
 
 
