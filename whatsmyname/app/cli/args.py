@@ -6,7 +6,7 @@ from argparse import ArgumentParser
 from random import choice
 from typing import List
 
-from whatsmyname.app.config import project_path, resource_dir
+from whatsmyname.app.config import project_path, resource_dir, main_dir
 from whatsmyname.app.extractors.file_extractors import user_agent_extractor
 from whatsmyname.app.models.schemas.cli import CliOptionsSchema
 from whatsmyname.app.models.schemas.user_agent import UserAgentSchema
@@ -66,7 +66,7 @@ def arg_parser(arguments: ArgumentParser) -> CliOptionsSchema:
         raise Exception(f'Input file does not exist ${schema.input_file}.')
 
     if not schema.input_file:
-        input_file: str = os.path.join(project_path, 'resources', 'wmn-data.json')
+        input_file: str = os.path.join(main_dir, 'wmn-data.json')
         schema.input_file = input_file
         logger.debug('Loading default input file %s', input_file)
 
