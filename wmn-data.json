@@ -1164,8 +1164,8 @@
         "e_string" : "profile_status",
         "m_string" : "Błąd wczytywania",
         "m_code" : 200,
-        "known_accounts" : ["gpower550","tgoat2022"],
-        "category" : "XXXPORNXXX",
+        "known" : ["gpower550","tgoat2022"],
+        "cat" : "XXXPORNXXX",
         "valid" : true
        },
        {
