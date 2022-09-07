@@ -4574,6 +4574,18 @@
         "valid" : true
        },
        {
+        "name" : "speedrun",
+        "uri_check" : "https://www.speedrun.com/user/{account}/",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "Runs - ",
+        "m_string" : "<title>speedrun.com",
+        "m_code" : 404,
+        "known" : ["mike", "chris"],
+        "cat" : "gaming",
+        "valid" : true
+       },
+       {
         "name" : "SpiceWorks",
         "uri_check" : "https://community.spiceworks.com/people/{account}",
         "post_body" : "",
