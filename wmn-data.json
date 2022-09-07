@@ -5724,6 +5724,17 @@
         "valid" : true
        },
        {
+        "name" : "youpic",
+        "uri_check" : "https://youpic.com/photographer/{account}",
+        "e_code" : 200,
+        "e_string" : "- Photographer - YouPic",
+        "m_string" : "Welcome to the infamous 404 page - YouPic",
+        "m_code" : 404,
+        "known" : ["photodude", "mike"],
+        "cat" : "hobby",
+        "valid" : true
+       },
+       {
         "name" : "YouTube",
         "uri_check" : "https://www.youtube.com/user/{account}/videos",
         "post_body" : "",
