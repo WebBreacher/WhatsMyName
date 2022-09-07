@@ -24,12 +24,12 @@ def get_sites_list(cli_options: CliOptionsSchema) -> List[SiteSchema]:
     """
     sites: List[SiteSchema] = site_file_extractor(cli_options.input_file)
 
+    # filter invalid sites
+    sites = list(filter(lambda site: site.valid, sites))
+
     # assign the user agent
     for site in sites:
         site.user_agent = cli_options.user_agent
-
-    # filter invalid sites
-    sites = list(filter(lambda site: site.valid, sites))
 
     if cli_options.category:
         sites = list(filter(lambda site: site.category.lower() == cli_options.category.lower(), sites))
@@ -42,6 +42,9 @@ def get_sites_list(cli_options: CliOptionsSchema) -> List[SiteSchema]:
             for site in sites:
                 if site.name.lower() == site_name.lower():
                     filtered_sites.append(site)
+        if not filtered_sites:
+            raise Exception('No sites with id(s) ' + ' '.join(cli_options.sites) + ' used input file ' + cli_options.input_file)
+
         return filtered_sites
     else:
         return sites
