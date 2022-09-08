@@ -3175,6 +3175,18 @@
         "valid" : true
        },
        {
+        "name" : "mstdn",
+        "uri_check" : "https://mstdn.io/@{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "@mstdn.io) - Mastodon",
+        "m_string" : "The page you are looking for isn&#39;t here.",
+        "m_code" : 404,
+        "known" : ["mike", "greg"],
+        "cat" : "social",
+        "valid" : true
+       },
+       {
         "name" : "Muck Rack",
         "uri_check" : "https://muckrack.com/{account}",
         "post_body" : "",
@@ -5709,6 +5721,18 @@
         "m_code" : 404,
         "known" : ["j5CYhsvD2yrunyyoZvSvKA", "GHoG4X4FY8D8L563zzPX5w"],
         "cat" : "shopping",
+        "valid" : true
+       },
+       {
+        "name" : "youpic",
+        "uri_check" : "https://youpic.com/photographer/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "- Photographer - YouPic",
+        "m_string" : "Welcome to the infamous 404 page - YouPic",
+        "m_code" : 404,
+        "known" : ["photodude", "mike"],
+        "cat" : "hobby",
         "valid" : true
        },
        {
