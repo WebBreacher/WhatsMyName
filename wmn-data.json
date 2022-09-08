@@ -73,16 +73,16 @@
         "valid" : true
        },
        {
-       "name" : "7dach",
-       "uri_check" : "https://7dach.ru/profile/{account}",
-       "post_body" : "",
-       "e_code" : 200,
-       "e_string" : "Информация / Профиль",
-       "m_string" : "<title>Ошибка / 7dach.ru",
-       "m_code" : 200,
-       "known" : ["lana", "svetlana"],
-       "cat" : "social",
-       "valid" : true
+        "name" : "7dach",
+        "uri_check" : "https://7dach.ru/profile/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "Информация / Профиль",
+        "m_string" : "<title>Ошибка / 7dach.ru",
+        "m_code" : 200,
+        "known" : ["lana", "svetlana"],
+        "cat" : "social",
+        "valid" : true
        },
        {
         "name" : "21buttons",
