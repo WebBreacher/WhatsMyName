@@ -5748,6 +5748,18 @@
         "valid" : true
        },
        {
+       "name" : "yapishu",
+       "check_uri" : "https://yapishu.net/user/{account}",
+       "post_body" : "",
+       "e_code" : 200,
+       "e_string" : "for_profile",
+       "m_string" : "Not Found (#404)",
+       "m_code" : 404,
+       "known" : ["roman", "semion"],
+       "cat" : "hobby",
+       "valid" : true
+       },
+       {
         "name" : "Yazawaj",
         "uri_check" : "https://www.yazawaj.com/profile/{account}",
         "post_body" : "",
