@@ -97,6 +97,18 @@
         "valid" : true
        },
        {
+        "name" : "aaha_chat",
+        "uri_check" : "https://www.aahachat.org/profile/{account}/",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "og:title",
+        "m_string" : "<title>Aaha Chat Rooms - ",
+        "m_code" : 301,
+        "known" : ["crazy", "dog"],
+        "cat" : "social",
+        "valid" : true
+       },
+       {
         "name" : "about.me",
         "uri_check" : "https://about.me/{account}",
         "post_body" : "",
