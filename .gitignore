@@ -142,4 +142,4 @@ docs/_build/
 
 # Workflow
 .sync_upstream_wmn.yml
-.github/workflows/sync_upstream_wmn.yml
+*.yml
