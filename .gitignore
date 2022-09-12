@@ -144,3 +144,4 @@ docs/_build/
 .sync_upstream_wmn.yml
 *.yml
 *.yaml
+.yml
