@@ -22,7 +22,7 @@
         "m_code" : 404,
         "known": ["szekspir", "xaphanpl"],
         "cat": "social",
-        "valid": true
+        "valid": true 
        },
        {
         "name" : "1001mem",
@@ -130,7 +130,8 @@
         "m_code" : 200,
         "known" : ["mike", "greg"],
         "cat" : "coding",
-        "valid" : true       },
+        "valid" : true
+       },
        {
         "name" : "admire_me",
         "uri_check" : "https://admireme.vip/{account}/",
