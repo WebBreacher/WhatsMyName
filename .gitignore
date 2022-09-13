@@ -138,10 +138,3 @@ docs/_build/
 
 # Apple
 .DS_Store
-
-
-# Workflow
-.sync_upstream_wmn.yml
-*.yml
-*.yaml
-.yml
