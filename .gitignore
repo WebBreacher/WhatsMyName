@@ -138,3 +138,6 @@ docs/_build/
 
 # Apple
 .DS_Store
+
+# Automation 
+sync_wmn.yml
