@@ -4,10 +4,10 @@
                 "4.0 International License. To view a copy of this license, visit",
                 "http://creativecommons.org/licenses/by-sa/4.0/ or send a letter to",
                 "Creative Commons, PO Box 1866, Mountain View, CA 94042, USA."],
-    "authors" : ["WebBreacher","Munchko","L0r3m1p5um","lehuff","janbinx","bcoles","Sector035",
+    "authors" : ["WebBreacher","C3n7ral051nt4g3ncy","Munchko","L0r3m1p5um","lehuff","janbinx","bcoles",
                 "arnydo","mccartney","salaheldinaz","camhoff","jocephus","swedishmike","soxoj",
                 "jspinel","ef1500","zewen","jocejocejoe", "P3run", "seintpl", "djahren",
-                "K2SOsint", "C3n7ral051nt4g3ncy", "AccentuSoft"],
+                "K2SOsint","Sector035","AccentuSoft"],
     "categories" : ["archived","art","blog","business","coding","dating","finance","gaming","health",
                    "hobby","images","misc","music","news","political","search","shopping","social",
                    "tech","video","XXXPORNXXX"],
@@ -22,7 +22,7 @@
         "m_code" : 404,
         "known": ["szekspir", "xaphanpl"],
         "cat": "social",
-        "valid": true
+        "valid": true 
        },
        {
         "name" : "1001mem",
@@ -73,6 +73,18 @@
         "valid" : true
        },
        {
+        "name" : "7dach",
+        "uri_check" : "https://7dach.ru/profile/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "Информация / Профиль",
+        "m_string" : "<title>Ошибка / 7dach.ru",
+        "m_code" : 200,
+        "known" : ["lana", "svetlana"],
+        "cat" : "social",
+        "valid" : true
+       },
+       {
         "name" : "21buttons",
         "uri_check" : "https://www.21buttons.com/buttoner/{account}",
         "post_body" : "",
@@ -81,6 +93,18 @@
         "m_string" : "This is not the page you're looking for",
         "m_code" : 404,
         "known" : ["teedawod", "ginamariahoffmann"],
+        "cat" : "social",
+        "valid" : true
+       },
+       {
+        "name" : "aaha_chat",
+        "uri_check" : "https://www.aahachat.org/profile/{account}/",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "og:title",
+        "m_string" : "<title>Aaha Chat Rooms - ",
+        "m_code" : 301,
+        "known" : ["crazy", "dog"],
         "cat" : "social",
         "valid" : true
        },
@@ -94,6 +118,30 @@
         "m_code" : 404,
         "known" : ["john", "jill"],
         "cat" : "social",
+        "valid" : true
+       },
+       {
+        "name" : "ACF",
+        "uri_check" : "https://support.advancedcustomfields.com/forums/users/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "<title>ACF Support",
+        "m_string" : "Page Not Found",
+        "m_code" : 200,
+        "known" : ["mike", "greg"],
+        "cat" : "coding",
+        "valid" : true
+       },
+       {
+        "name" : "admire_me",
+        "uri_check" : "https://admireme.vip/{account}/",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "<div id=",
+        "m_string" : "<title>Page Not Found |",
+        "m_code" : 404,
+        "known" : ["justjessicarabbit", "savannah250xo"],
+        "cat" : "XXXPORNXXX",
         "valid" : true
        },
        {
@@ -981,8 +1029,8 @@
         "uri_check" : "https://codeforces.com/profile/{account}",
         "post_body" : "",
         "e_code" : 200,
-        "e_string" : "- Codeforces",
-        "m_string" : "Codeforces",
+        "e_string" : " - Codeforces</title>",
+        "m_string" : "<title>Codeforces</title>",
         "m_code" : 302,
         "known" : ["Abdul01", "Abdullah"],
         "cat" : "coding",
@@ -1161,10 +1209,10 @@
         "uri_check" : "https://www.datezone.com/users/{account}/",
         "post_body" : "",
         "e_code" : 200,
-        "e_string" : "Profile",
-        "m_string" : "There is an error",
-        "m_code" : 404,
-        "known" : ["xkarola","zorro3330"],
+        "e_string" : "profile_status",
+        "m_string" : "Błąd wczytywania",
+        "m_code" : 200,
+        "known" : ["gpower550","tgoat2022"],
         "cat" : "XXXPORNXXX",
         "valid" : true
        },
@@ -3030,6 +3078,30 @@
         "valid" : true
        },
        {
+        "name" : "message_me",
+        "uri_check" : "https://mssg.me/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "_id",
+        "m_string" : "<title>404</title>",
+        "m_code" : 404,
+        "known" : ["sue", "david"],
+        "cat" : "social",
+        "valid" : true
+       },
+       {
+        "name" : "metacritic",
+        "uri_check" : "https://www.metacritic.com/user/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "'s Profile - Metacritic",
+        "m_string" : "<title>Sign up to get your own profile - Metacritic</",
+        "m_code" : 200,
+        "known" : ["dev", "matt"],
+        "cat" : "hobby",
+        "valid" : true
+       },
+       {
         "name" : "Microsoft Technet Community",
         "uri_check" : "https://social.technet.microsoft.com/profile/{account}/",
         "post_body" : "",
@@ -3172,6 +3244,18 @@
         "m_code" : 200,
         "known" : ["gamer", "Carlos01"],
         "cat" : "misc",
+        "valid" : true
+       },
+       {
+        "name" : "mstdn",
+        "uri_check" : "https://mstdn.io/@{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "@mstdn.io) - Mastodon",
+        "m_string" : "The page you are looking for isn&#39;t here.",
+        "m_code" : 404,
+        "known" : ["mike", "greg"],
+        "cat" : "social",
         "valid" : true
        },
        {
@@ -3982,6 +4066,18 @@
         "valid" : true
        },
        {
+        "name" : "pypi",
+        "uri_check" : "https://pypi.org/user/{account}/",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "Profile of",
+        "m_string" : "Page Not Found (404) · PyPI",
+        "m_code" : 404,
+        "known" : ["dev", "pydude"],
+        "cat" : "coding",
+        "valid" : true
+       },
+       {
         "name": "QUEER",
         "uri_check": "https://queer.pl/user/{account}",
         "post_body" : "",
@@ -4574,6 +4670,18 @@
         "valid" : true
        },
        {
+        "name" : "speedrun",
+        "uri_check" : "https://www.speedrun.com/user/{account}/",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "Runs - ",
+        "m_string" : "<title>speedrun.com",
+        "m_code" : 404,
+        "known" : ["mike", "chris"],
+        "cat" : "gaming",
+        "valid" : true
+       },
+       {
         "name" : "SpiceWorks",
         "uri_check" : "https://community.spiceworks.com/people/{account}",
         "post_body" : "",
@@ -5116,6 +5224,18 @@
         "m_code" : 301,
         "known" : ["stephane-maarek", "lizbrown3"],
         "cat" : "tech",
+        "valid" : true
+       },
+       {
+        "name" : "uefconnect",
+        "uri_check" : "https://uefconnect.uef.fi/en/person/{account}/",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "- UEFConnect</title>",
+        "m_string" : "<title>Page not found - UEFConnect</title>",
+        "m_code" : 404,
+        "known" : ["heli.mutanen", "mette.heiskanen"],
+        "cat" : "business",
         "valid" : true
        },
        {
@@ -5676,6 +5796,18 @@
         "valid" : true
        },
        {
+       "name" : "yapishu",
+       "uri_check" : "https://yapishu.net/user/{account}",
+       "post_body" : "",
+       "e_code" : 200,
+       "e_string" : "for_profile",
+       "m_string" : "Not Found (#404)",
+       "m_code" : 404,
+       "known" : ["roman", "semion"],
+       "cat" : "hobby",
+       "valid" : true
+       },
+       {
         "name" : "Yazawaj",
         "uri_check" : "https://www.yazawaj.com/profile/{account}",
         "post_body" : "",
@@ -5697,6 +5829,18 @@
         "m_code" : 404,
         "known" : ["j5CYhsvD2yrunyyoZvSvKA", "GHoG4X4FY8D8L563zzPX5w"],
         "cat" : "shopping",
+        "valid" : true
+       },
+       {
+        "name" : "youpic",
+        "uri_check" : "https://youpic.com/photographer/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "- Photographer - YouPic",
+        "m_string" : "Welcome to the infamous 404 page - YouPic",
+        "m_code" : 404,
+        "known" : ["photodude", "mike"],
+        "cat" : "hobby",
         "valid" : true
        },
        {
