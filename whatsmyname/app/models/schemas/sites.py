@@ -13,6 +13,7 @@ class SiteOutputSchema(BaseModel):
     username: str
     user_agent: str
     uri_pretty: Optional[str] = None
+    error_hint: Optional[str] = None
 
 
 class SiteSchema(BaseModel):
@@ -36,6 +37,7 @@ class SiteSchema(BaseModel):
     cloudflare_enabled: bool = False
     user_agent: Optional[str] = None
     uri_pretty: Optional[str] = None
+    error_hint: Optional[str] = None
 
 
     @root_validator
