@@ -31,11 +31,11 @@ pip3 install -r requirements.txt
 You are now ready to go for your first command, example below, and see above in the **Command Line Arguments section**:
 
 ```
-python whats_my_name.py -u yooper --format table
+python whats_my_name.py -u yooper
 ```
 
 or
 
 ```
-python3 whats_my_name.py -u yooper --format table
+python3 whats_my_name.py -u yooper
 ```
