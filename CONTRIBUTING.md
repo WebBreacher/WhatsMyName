@@ -131,7 +131,7 @@ Here are examples of the site elements for both HTTP GET and HTTP POST entries:
 
 ### Format of the Old JSON file
 
-**WARNING:** ==THIS FILE IS DEPRICATED, NO LONGER MAINTAINED, AND WILL BE REMOVED FROM THE PROJECT SOON. PLEASE MIGRATE TO USE THE NEW JSON FILE==
+**WARNING: THIS FILE IS DEPRICATED, NO LONGER MAINTAINED, AND WILL BE REMOVED FROM THE PROJECT SOON. PLEASE MIGRATE TO USE THE NEW JSON FILE**
 
 The format of the old `web_accounts_list.json` JSON file is simple. There are 3 main elements:
 
