@@ -821,6 +821,18 @@
         "valid" : true
        },
        {
+        "name" : "Cameo",
+        "uri_check" : "https://www.cameo.com/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "aggregateRating",
+        "m_string" : "",
+        "m_code" : 301,
+        "known" : ["ryansandes", "sarahall3"],
+        "cat" : "shopping",
+        "valid" : true
+       },
+       {
         "name" : "Carbonmade",
         "uri_check" : "https://{account}.carbonmade.com/",
         "post_body" : "",
@@ -4522,6 +4534,18 @@
         "m_code" : 404,
         "known" : ["alice", "bob"],
         "cat" : "social",
+        "valid" : true
+       },
+       {
+        "name" : "SlackHoles",
+        "uri_check" : "https://slackholes.com/actor/{account}/",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "Pussy and Ass Sizes",
+        "m_string" : "It looks like nothing was found at this location",
+        "m_code" : 404,
+        "known" : ["alexbreecooper", "roxy-raye"],
+        "cat" : "XXXPORNXXX",
         "valid" : true
        },
        {
