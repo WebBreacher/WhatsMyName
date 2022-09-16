@@ -205,6 +205,18 @@
         "valid" : true
        },
        {
+        "name" : "Airliners",
+        "uri_check" : "https://www.airliners.net/user/{account}/profile",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "'s Profile | Airliners Members | Airliners.net",
+        "m_string" : "An Error Occurred",
+        "m_code" : 404,
+        "known" : ["pilot", "pilota"],
+        "cat" : "social",
+        "valid" : true
+       },
+       {
         "name" : "akniga",
         "uri_check" : "https://akniga.org/profile/{account}",
         "post_body" : "",
