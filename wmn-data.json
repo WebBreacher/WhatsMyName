@@ -4935,6 +4935,18 @@
         "valid" : true
        },
        {
+        "name" : "steller",
+        "uri_check" : "https://steller.co/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : " on Steller</title>",
+        "m_string" : "LOOKS LIKE THIS PAGE DOES NOT EXIST.",
+        "m_code" : 404,
+        "known" : ["hacker", "traveller"],
+        "cat" : "hobby",
+        "valid" : true
+       },
+       {
         "name" : "StoryCorps",
         "uri_check" : "https://archive.storycorps.org/user/{account}/",
         "post_body" : "",
