@@ -30,13 +30,13 @@ This repository has the unified data required to perform user and username enume
 See [CONTRIBUTING](CONTRIBUTING.md)
 
 ## Command Line Arguments
-If you just want to run this script to check user names on sites and don't wish to use it in combination with another tool (like https://whatsmyname.app or one noted above), then you can use the Python script [@yooper](https://github.com/yooper/) made for us, `what-is-my-name.py` as shown below.
+If you just want to run this script to check user names on sites and don't wish to use it in combination with another tool (like https://whatsmyname.app or one noted above), then you can use the Python script [@yooper](https://github.com/yooper/) made for us, `whats_my_name.py` as shown below.
 
 There are quite a few command line options available:
 
 - Check for the user yooper, print out in a table format into console
 
-`python whats_my_name.py -u yooper -c social --format table`
+`python whats_my_name.py -u yooper -c social`
 
 - Check for the users yooper and maxim, defaults to outputing json to stdout, only returns the found results.
 
@@ -72,12 +72,6 @@ There are quite a few command line options available:
 
 # Installation
 Check the [INSTALLATION.md file](https://github.com/WebBreacher/WhatsMyName/blob/main/INSTALLATION.md)
-
-
-# Contributors
-We would like to thank our contributors for their work. Whether it was adding sites, making our logo, fixing some broken code, or enhancing the project in many other ways! We appreciate the time you volunteered!
-
-[@WebBreacher](https://github.com/WebBreacher/), [@yooper](https://github.com/yooper/), [@C3n7ral051nt4g3ncy](https://github.com/C3n7ral051nt4g3ncy), [@Munchko](https://github.com/Munchko/), [@L0r3m1p5um](https://github.com/L0r3m1p5um/), [@lehuff](https://github.com/lehuff/), [@arnydo](https://github.com/arnydo), [@janbinx](https://github.com/janbinx/), [@bcoles](https://github.com/bcoles), [@Sector035](https://github.com/sector035/), [@mccartney](https://github.com/mccartney), [@salaheldinaz](https://github.com/salaheldinaz), [@camhoff](https://github.com/spotlightc), [@BerndDasByte](https://github.com/BerndDasByte/), [@jocephus](https://github.com/jocephus/), [@swedishmike](https://github.com/swedishmike/), [@soxoj](https://github.com/soxoj/), [@jspinel](https://github.com/jspinel), [@ef1500](https://github.com/ef1500), [@iamzewen](https://github.com/iamzewen), [@jocejocejoe](https://github.com/jocejocejoe), [@K2SOsint](https://github.com/k2sosint)
 
 # License
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
