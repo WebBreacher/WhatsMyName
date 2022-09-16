@@ -2,7 +2,7 @@
 name = "what-is-my-name"
 version = "0.0.5"
 authors = [
-  { name="Micah Hoffman", email="author@example.com" },
+  { name="Micah Hoffman", email="micah@spotlight-infosec.com" },
   { name="Dan Cardin", email="dcardin2007@gmail.com" },
 ]
 description = "Enumerate over a list of websites and check for registered users by username."
