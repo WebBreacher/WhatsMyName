@@ -1544,6 +1544,18 @@
         "valid" : true
        },
        {
+        "name" : "ebay_stores",
+        "uri_check" : "https://www.ebay.com/str/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "| eBay Stores</title>",
+        "m_string" : "Sorry, this store was not found.",
+        "m_code" : 410,
+        "known" : ["tactical", "tactical-security"],
+        "cat" : "shopping",
+        "valid" : true
+       },
+       {
         "name" : "Elftown",
         "uri_check" : "http://elftown.com/{account}",
         "post_body" : "",
