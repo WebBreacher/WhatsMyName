@@ -1858,6 +1858,18 @@
         "valid" : true
        },
        {
+        "name" : "flowcode",
+        "uri_check" : "https://www.flowcode.com/page/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : ";s Flowpage",
+        "m_string" : "Nobody's reserved this Flowpage yet.",
+        "m_code" : 404,
+        "known" : ["evdokia", "irina"],
+        "cat" : "social",
+        "valid" : true
+       },
+       {
         "name" : "Fodors Forum",
         "uri_check" : "https://www.fodors.com/community/profile/{account}/forum-activity",
         "post_body" : "",
