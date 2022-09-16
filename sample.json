@@ -1,36 +1,35 @@
 {
-  "_comment1": "Use this file to test sites. Each Python checker as a '-in FILENAME' option",
-  "_comment2": "you can use like: python3 web_account_list_checker.py -in sample.json",
-  "_comment3": "When you have the site configured the way you want, add it to the",
-  "_comment4": "web_accounts_list.json file and do a pull request.",
-  "_comment5": "Do not submit your changes in this sample.json file as it is only for testing!",
+  "_comment1": "Do not submit your changes in this sample.json file as it is only for testing!",
 
+  "categories" : ["archived","art","blog","business","coding","dating","finance","gaming","health",
+  "hobby","images","misc","music","news","political","search","shopping","social",
+  "tech","video","XXXPORNXXX"],
 
-  "categories" : ["art","blog","business","coding","dating","finance","gaming","health",
-                "hobby","images","misc","music","news","political","search","shopping","social",
-                "tech","video","XXXPORNXXX"],
   "sites" : [
-     {
-       "name" : "example",
-       "check_uri" : "https://www.example.com/user/{account}",
-       "account_existence_code" : "200",
-       "account_existence_string" : " is on Example.com</title>",
-       "account_missing_string" : "Oops! No such user.",
-       "account_missing_code" : "404",
-       "known_accounts" : ["john", "maria"],
-       "category" : "social",
-       "valid" : true
-     },
-     {
-       "name" : "test site name",
-       "check_uri" : "https://test.com/{account}/",
-       "account_existence_code" : "200",
-       "account_existence_string" : "Last logged in: ",
-       "account_missing_string" : "User not found!",
-       "account_missing_code" : "404",
-       "known_accounts" : ["user1", "user2"],
-       "category" : "business",
-       "valid" : true
-     }
+    {
+      "name" : "Example GET",
+      "uri_check" : "https://www.example.com/load_profile_info.php?name={account}",
+      "uri_pretty" : "https://www.test.com/profile/{account}",
+      "post_body" : "",
+      "e_code" : 200,
+      "e_string" : "regist_at",
+      "m_code" : 404,
+      "m_string" : "Account not found",
+      "known" : ["whoami", "johndoe"],
+      "cat" : "images",
+      "valid" : true
+    },
+    {
+      "name" : "Example POST",
+      "uri_check" : "https://www.example.com/interact_api/load_profile_info.php",
+      "post_body" : "Name=Gareth+Wylie&Age=24&Formula=a%2Bb+%3D%3D+21",
+      "e_code" : 200,
+      "e_string" : "regist_at",
+      "m_code" : 404,
+      "m_string" : "Account not found",
+      "known" : ["whoami", "johndoe"],
+      "cat" : "images",
+      "valid" : true
+    }
   ]
 }
