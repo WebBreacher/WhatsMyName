@@ -13,16 +13,16 @@
                    "tech","video","XXXPORNXXX"],
     "sites" : [
        {
-        "name": "101010.pl",
-        "uri_check": "https://101010.pl/@{account}",
+        "name" : "101010.pl",
+        "uri_check" : "https://101010.pl/@{account}",
         "post_body" : "",
         "e_code" : 200,
-        "e_string": "@101010.pl",
-        "m_string": "The page you are looking for isn't here.",
+        "e_string" : "@101010.pl",
+        "m_string" : "The page you are looking for isn't here.",
         "m_code" : 404,
-        "known": ["szekspir", "xaphanpl"],
-        "cat": "social",
-        "valid": true
+        "known" : ["szekspir", "xaphanpl"],
+        "cat" : "social",
+        "valid" : true
        },
        {
         "name" : "1001mem",
@@ -217,29 +217,29 @@
         "valid" : true
        },
        {
-        "name": "Albicla",
-        "uri_check": "https://albicla.com/{account}/post/1",
-        "uri_pretty": "https://albicla.com/{account}",
+        "name" : "Albicla",
+        "uri_check" : "https://albicla.com/{account}/post/1",
+        "uri_pretty" : "https://albicla.com/{account}",
         "post_body" : "",
         "e_code" : 500,
-        "e_string": "500 Post tymczasowo niedostępny",
-        "m_string": "404 Nie znaleziono użytkownika",
+        "e_string" : "500 Post tymczasowo niedostępny",
+        "m_string" : "404 Nie znaleziono użytkownika",
         "m_code" : 200,
-        "known": ["GazetaPolska", "GPCodziennie"],
-        "cat": "social",
-        "valid": true
+        "known" : ["GazetaPolska", "GPCodziennie"],
+        "cat" : "social",
+        "valid" : true
        },
        {
-        "name": "allesovercrypto",
-        "uri_check": "https://allesovercrypto.nl/user/{account}",
+        "name" : "allesovercrypto",
+        "uri_check" : "https://allesovercrypto.nl/user/{account}",
         "post_body" : "",
         "e_code" : 200,
-        "e_string": "Favoriete coins",
-        "m_string": "De opgevraagde pagina kon niet gevonden worden.",
+        "e_string" : "Favoriete coins",
+        "m_string" : "De opgevraagde pagina kon niet gevonden worden.",
         "m_code" : 200,
-        "known": ["gijsv", "patrick-suiker"],
-        "cat": "finance",
-        "valid": true
+        "known" : ["gijsv", "patrick-suiker"],
+        "cat" : "finance",
+        "valid" : true
        },
        {
         "name" : "allmylinks",
@@ -688,16 +688,16 @@
         "valid" : true
        },
        {
-        "name": "blogi.pl",
-        "uri_check": "https://www.blogi.pl/osoba,{account}.html",
+        "name" : "blogi.pl",
+        "uri_check" : "https://www.blogi.pl/osoba,{account}.html",
         "post_body" : "",
         "e_code" : 200,
-        "e_string": "Informacje ogólne",
-        "m_string": "Niepoprawny adres.",
+        "e_string" : "Informacje ogólne",
+        "m_string" : "Niepoprawny adres.",
         "m_code" : 200,
-        "known": ["naukowa", "izkpaw"],
-        "cat": "blog",
-        "valid": true
+        "known" : ["naukowa", "izkpaw"],
+        "cat" : "blog",
+        "valid" : true
        },
        {
         "name" : "Blogmarks",
@@ -730,7 +730,7 @@
         "post_body" : "",
         "e_code" : 200,
         "e_string" : "username",
-        "m_string" : "data\":\"\"",
+        "m_string" : "data\" :\"\"",
         "m_code" : 200,
         "known" : ["mike"],
         "cat" : "health",
@@ -929,28 +929,28 @@
         "valid" : true
        },
        {
-        "name": "CD-Action",
-        "uri_check": "https://cdaction.pl/uzytkownicy/{account}",
+        "name" : "CD-Action",
+        "uri_check" : "https://cdaction.pl/uzytkownicy/{account}",
         "post_body" : "",
         "e_code" : 200,
-        "e_string": "Lista gier:",
-        "m_string": "Coś się popsuło...",
+        "e_string" : "Lista gier:",
+        "m_string" : "Coś się popsuło...",
         "m_code" : 404,
-        "known": ["saczuan", "cormac"],
-        "cat": "gaming",
-        "valid": true
+        "known" : ["saczuan", "cormac"],
+        "cat" : "gaming",
+        "valid" : true
        },
        {
-        "name": "cda.pl",
-        "uri_check": "https://www.cda.pl/{account}",
+        "name" : "cda.pl",
+        "uri_check" : "https://www.cda.pl/{account}",
         "post_body" : "",
         "e_code" : 200,
-        "e_string": "Foldery",
-        "m_string": "Strona na którą chcesz wejść nie istnieje",
+        "e_string" : "Foldery",
+        "m_string" : "Strona na którą chcesz wejść nie istnieje",
         "m_code" : 200,
-        "known": ["test2", "janek"],
-        "cat": "video",
-        "valid": true
+        "known" : ["test2", "janek"],
+        "cat" : "video",
+        "valid" : true
        },
        {
         "name" : "championat",
@@ -989,16 +989,16 @@
         "valid" : true
        },
        {
-        "name": "Chamsko",
-        "uri_check": "https://www.chamsko.pl/profil/{account}",
+        "name" : "Chamsko",
+        "uri_check" : "https://www.chamsko.pl/profil/{account}",
         "post_body" : "",
         "e_code" : 200,
-        "e_string": "W serwisie od",
-        "m_string": "Strona nie istnieje.",
+        "e_string" : "W serwisie od",
+        "m_string" : "Strona nie istnieje.",
         "m_code" : 404,
-        "known": ["test", "janek"],
-        "cat": "images",
-        "valid": true
+        "known" : ["test", "janek"],
+        "cat" : "images",
+        "valid" : true
        },
        {
         "name" : "Chess.com",
@@ -1013,16 +1013,16 @@
         "valid" : true
        },
        {
-        "name": "Chomikuj.pl",
-        "uri_check": "https://chomikuj.pl/{account}/",
+        "name" : "Chomikuj.pl",
+        "uri_check" : "https://chomikuj.pl/{account}/",
         "post_body" : "",
         "e_code" : 200,
-        "e_string": "Foldery",
-        "m_string": "Chomik o takiej nazwie nie istnieje",
+        "e_string" : "Foldery",
+        "m_string" : "Chomik o takiej nazwie nie istnieje",
         "m_code" : 404,
-        "known": ["test", "test2"],
-        "cat": "misc",
-        "valid": true
+        "known" : ["test", "test2"],
+        "cat" : "misc",
+        "valid" : true
        },
        {
         "name" : "Chyoa",
@@ -1301,16 +1301,16 @@
         "valid" : true
        },
        {
-        "name": "Demotywatory",
-        "uri_check": "https://demotywatory.pl/user/{account}",
+        "name" : "Demotywatory",
+        "uri_check" : "https://demotywatory.pl/user/{account}",
         "post_body" : "",
         "e_code" : 200,
-        "e_string": "Z nami od:",
-        "m_string": "Użytkownik o podanym pseudonimie nie istnieje.",
+        "e_string" : "Z nami od:",
+        "m_string" : "Użytkownik o podanym pseudonimie nie istnieje.",
         "m_code" : 200,
-        "known": ["test", "test2"],
-        "cat": "images",
-        "valid": true
+        "known" : ["test", "test2"],
+        "cat" : "images",
+        "valid" : true
        },
        {
         "name" : "depop",
@@ -1549,7 +1549,7 @@
         "post_body" : "",
         "e_code" : 200,
         "e_string" : "joinedClassroomIds",
-        "m_string" : "\"users\": []",
+        "m_string" : "\"users\" : []",
         "m_code" : 200,
         "known" : ["sdfsdf", "duolingo"],
         "cat" : "hobby",
@@ -1724,16 +1724,16 @@
         "valid" : false
        },
        {
-        "name": "Faktopedia",
-        "uri_check": "https://faktopedia.pl/user/{account}",
+        "name" : "Faktopedia",
+        "uri_check" : "https://faktopedia.pl/user/{account}",
         "post_body" : "",
         "e_code" : 200,
-        "e_string": "Zamieszcza fakty od:",
-        "m_string": "Nie znaleziono użytkownika o podanym loginie.",
+        "e_string" : "Zamieszcza fakty od:",
+        "m_string" : "Nie znaleziono użytkownika o podanym loginie.",
         "m_code" : 200,
-        "known": ["janek", "ania"],
-        "cat": "images",
-        "valid": true
+        "known" : ["janek", "ania"],
+        "cat" : "images",
+        "valid" : true
        },
        {
         "name" : "FanCentro",
@@ -1741,8 +1741,8 @@
         "uri_pretty" : "https://fancentro.com/{account}/",
         "post_body" : "",
         "e_code" : 200,
-        "e_string" : "\"status\":true",
-        "m_string" : "\"status\":false",
+        "e_string" : "\"status\" :true",
+        "m_string" : "\"status\" :false",
         "m_code" : 200,
         "known" : ["medroxy","miaaamador"],
         "cat" : "XXXPORNXXX",
@@ -1787,7 +1787,7 @@
        {
         "name" : "fansly",
         "uri_check" : "https://apiv2.fansly.com/api/v1/account?usernames={account}",
-        "uri_pretty": "https://fansly.com/{account}/posts",
+        "uri_pretty" : "https://fansly.com/{account}/posts",
         "post_body" : "",
         "e_code" : 200,
         "e_string" : "username",
@@ -1822,16 +1822,16 @@
         "valid" : true
        },
        {
-        "name": "fedi.lewactwo.pl",
-        "uri_check": "https://fedi.lewactwo.pl/@{account}",
+        "name" : "fedi.lewactwo.pl",
+        "uri_check" : "https://fedi.lewactwo.pl/@{account}",
         "post_body" : "",
         "e_code" : 200,
-        "e_string": "@lewactwo.pl",
-        "m_string": "The page you are looking for isn't here.",
+        "e_string" : "@lewactwo.pl",
+        "m_string" : "The page you are looking for isn't here.",
         "m_code" : 404,
-        "known": ["lewactwo", "queereen"],
-        "cat": "social",
-        "valid": true
+        "known" : ["lewactwo", "queereen"],
+        "cat" : "social",
+        "valid" : true
        },
        {
         "name" : "figma",
@@ -1846,16 +1846,16 @@
         "valid" : true
        },
        {
-        "name": "Filmweb",
-        "uri_check": "https://www.filmweb.pl/user/{account}",
+        "name" : "Filmweb",
+        "uri_check" : "https://www.filmweb.pl/user/{account}",
         "post_body" : "",
         "e_code" : 200,
-        "e_string": "Na filmwebie od",
-        "m_string": "Przepraszamy. Strona, której szukasz nie została odnaleziona.",
+        "e_string" : "Na filmwebie od",
+        "m_string" : "Przepraszamy. Strona, której szukasz nie została odnaleziona.",
         "m_code" : 200,
-        "known": ["test", "test2"],
-        "cat": "hobby",
-        "valid": true
+        "known" : ["test", "test2"],
+        "cat" : "hobby",
+        "valid" : true
        },
        {
         "name" : "Fiverr",
@@ -1930,29 +1930,29 @@
         "valid" : true
        },
        {
-        "name": "forumprawne.org",
-        "uri_check": "https://forumprawne.org/members/{account}.html",
+        "name" : "forumprawne.org",
+        "uri_check" : "https://forumprawne.org/members/{account}.html",
         "post_body" : "",
         "e_code" : 200,
-        "e_string": "Wiadomość",
-        "m_string": "",
+        "e_string" : "Wiadomość",
+        "m_string" : "",
         "m_code" : 500,
-        "known": ["test", "test2"],
-        "cat": "misc",
-        "valid": true
+        "known" : ["test", "test2"],
+        "cat" : "misc",
+        "valid" : true
        },
        {
-        "name": "fotka",
-        "uri_check": "https://api.fotka.com/v2/user/dataStatic?login={account}",
-        "uri_pretty": "https://fotka.com/profil/{account}",
+        "name" : "fotka",
+        "uri_check" : "https://api.fotka.com/v2/user/dataStatic?login={account}",
+        "uri_pretty" : "https://fotka.com/profil/{account}",
         "post_body" : "",
         "e_code" : 200,
-        "e_string": "profil",
-        "m_string": "ERROR",
+        "e_string" : "profil",
+        "m_string" : "ERROR",
         "m_code" : 200,
-        "known": ["test", "test2"],
-        "cat": "social",
-        "valid": true
+        "known" : ["test", "test2"],
+        "cat" : "social",
+        "valid" : true
        },
        {
        "name" : "Foursquare",
@@ -2128,8 +2128,8 @@
         "uri_check" : "https://api.gettr.com/s/user/{account}/exist",
         "post_body" : "",
         "e_code" : 200,
-        "e_string" : "success\":true",
-        "m_string" : "success\":false",
+        "e_string" : "success\" :true",
+        "m_string" : "success\" :false",
         "m_code" : 200,
         "known" : ["qellyanon", "djerod"],
         "cat" : "social",
@@ -2220,16 +2220,16 @@
         "valid" : true
        },
        {
-        "name": "gloria.tv",
-        "uri_check": "https://gloria.tv/{account}",
+        "name" : "gloria.tv",
+        "uri_check" : "https://gloria.tv/{account}",
         "post_body" : "",
         "e_code" : 200,
-        "e_string": "Last online",
-        "m_string": "Page unavailable",
+        "e_string" : "Last online",
+        "m_string" : "Page unavailable",
         "m_code" : 404,
-        "known": ["test", "test2"],
-        "cat": "social",
-        "valid": true
+        "known" : ["test", "test2"],
+        "cat" : "social",
+        "valid" : true
        },
        {
         "name" : "gnome_extensions",
@@ -2680,16 +2680,16 @@
         "valid" : true
        },
        {
-        "name": "ipolska.pl",
-        "uri_check": "https://ipolska.pl/@{account}",
+        "name" : "ipolska.pl",
+        "uri_check" : "https://ipolska.pl/@{account}",
         "post_body" : "",
         "e_code" : 200,
-        "e_string": "@ipolska.pl",
-        "m_string": "The page you are looking for isn't here.",
+        "e_string" : "@ipolska.pl",
+        "m_string" : "The page you are looking for isn't here.",
         "m_code" : 404,
-        "known": ["maciek", "varden"],
-        "cat": "social",
-        "valid": true
+        "known" : ["maciek", "varden"],
+        "cat" : "social",
+        "valid" : true
        },
        {
         "name" : "issuu",
@@ -2704,28 +2704,28 @@
         "valid" : true
        },
        {
-        "name": "jeja.pl",
-        "uri_check": "https://www.jeja.pl/user,{account}",
+        "name" : "jeja.pl",
+        "uri_check" : "https://www.jeja.pl/user,{account}",
         "post_body" : "",
         "e_code" : 200,
-        "e_string": "Profil użytkownika",
-        "m_string": "Niepoprawny login",
+        "e_string" : "Profil użytkownika",
+        "m_string" : "Niepoprawny login",
         "m_code" : 200,
-        "known": ["kowal", "janek"],
-        "cat": "misc",
-        "valid": true
+        "known" : ["kowal", "janek"],
+        "cat" : "misc",
+        "valid" : true
        },
        {
-        "name": "JBZD",
-        "uri_check": "https://jbzd.com.pl/uzytkownik/{account}",
+        "name" : "JBZD",
+        "uri_check" : "https://jbzd.com.pl/uzytkownik/{account}",
         "post_body" : "",
         "e_code" : 200,
-        "e_string": "Dzidy użytkownika",
-        "m_string": "Błąd 404",
+        "e_string" : "Dzidy użytkownika",
+        "m_string" : "Błąd 404",
         "m_code" : 404,
-        "known": ["test", "janek"],
-        "cat": "images",
-        "valid": true
+        "known" : ["test", "janek"],
+        "cat" : "images",
+        "valid" : true
        },
        {
         "name" : "Jeuxvideo",
@@ -2740,16 +2740,16 @@
         "valid" : true
        },
        {
-        "name": "Joe Monster",
-        "uri_check": "https://joemonster.org/bojownik/{account}",
+        "name" : "Joe Monster",
+        "uri_check" : "https://joemonster.org/bojownik/{account}",
         "post_body" : "",
         "e_code" : 200,
-        "e_string": "jest prywatny",
-        "m_string": "Nie wiem jak ci to powiedzieć",
+        "e_string" : "jest prywatny",
+        "m_string" : "Nie wiem jak ci to powiedzieć",
         "m_code" : 200,
-        "known": ["dandris", "lasior"],
-        "cat": "misc",
-        "valid": true
+        "known" : ["dandris", "lasior"],
+        "cat" : "misc",
+        "valid" : true
        },
        {
         "name" : "JSFiddle",
@@ -2788,16 +2788,16 @@
         "valid" : true
        },
        {
-        "name": "karab.in",
-        "uri_check": "https://karab.in/u/{account}",
+        "name" : "karab.in",
+        "uri_check" : "https://karab.in/u/{account}",
         "post_body" : "",
         "e_code" : 200,
-        "e_string": "Dołączył:",
-        "m_string": "Błąd 404",
+        "e_string" : "Dołączył:",
+        "m_string" : "Błąd 404",
         "m_code" : 404,
-        "known": ["ernest", "puszkapandory"],
-        "cat": "social",
-        "valid": true
+        "known" : ["ernest", "puszkapandory"],
+        "cat" : "social",
+        "valid" : true
        },
        {
         "name" : "Keybase",
@@ -2860,28 +2860,28 @@
         "valid" : true
        },
        {
-        "name": "Kotburger",
-        "uri_check": "https://kotburger.pl/user/{account}",
+        "name" : "Kotburger",
+        "uri_check" : "https://kotburger.pl/user/{account}",
         "post_body" : "",
         "e_code" : 200,
-        "e_string": "Zamieszcza kotburgery od:",
-        "m_string": "Nie znaleziono użytkownika o podanym loginie.",
+        "e_string" : "Zamieszcza kotburgery od:",
+        "m_string" : "Nie znaleziono użytkownika o podanym loginie.",
         "m_code" : 200,
-        "known": ["ania", "janek"],
-        "cat": "images",
-        "valid": true
+        "known" : ["ania", "janek"],
+        "cat" : "images",
+        "valid" : true
        },
        {
-        "name": "kwejk.pl",
-        "uri_check": "https://kwejk.pl/uzytkownik/{account}#/tablica/",
+        "name" : "kwejk.pl",
+        "uri_check" : "https://kwejk.pl/uzytkownik/{account}#/tablica/",
         "post_body" : "",
         "e_code" : 200,
-        "e_string": "Kwejki użytkownika",
-        "m_string": "404 - strona nie została znaleziona - KWEJK.pl",
+        "e_string" : "Kwejki użytkownika",
+        "m_string" : "404 - strona nie została znaleziona - KWEJK.pl",
         "m_code" : 404,
-        "known": ["test", "janek"],
-        "cat": "images",
-        "valid": true
+        "known" : ["test", "janek"],
+        "cat" : "images",
+        "valid" : true
        },
        {
         "name" : "LibraryThing",
@@ -2969,16 +2969,16 @@
         "valid" : true
        },
        {
-        "name": "lowcygier.pl",
-        "uri_check": "https://bazar.lowcygier.pl/user/{account}",
+        "name" : "lowcygier.pl",
+        "uri_check" : "https://bazar.lowcygier.pl/user/{account}",
         "post_body" : "",
         "e_code" : 200,
-        "e_string": "Zarejestrowany",
-        "m_string": "Błąd 404 - Podana strona nie istnieje",
+        "e_string" : "Zarejestrowany",
+        "m_string" : "Błąd 404 - Podana strona nie istnieje",
         "m_code" : 404,
-        "known": ["armin", "janek"],
-        "cat": "gaming",
-        "valid": true
+        "known" : ["armin", "janek"],
+        "cat" : "gaming",
+        "valid" : true
        },
        {
         "name" : "MAGABOOK",
@@ -3126,16 +3126,16 @@
         "valid" : true
        },
        {
-        "name": "medyczka.pl",
-        "uri_check": "http://medyczka.pl/user/{account}",
+        "name" : "medyczka.pl",
+        "uri_check" : "http://medyczka.pl/user/{account}",
         "post_body" : "",
         "e_code" : 200,
-        "e_string": "Lista uzytkownikow",
-        "m_string": "This user has not registered and therefore does not have a profile to view.",
+        "e_string" : "Lista uzytkownikow",
+        "m_string" : "This user has not registered and therefore does not have a profile to view.",
         "m_code" : 200,
-        "known": ["test", "janek"],
-        "cat": "health",
-        "valid": true
+        "known" : ["test", "janek"],
+        "cat" : "health",
+        "valid" : true
        },
        {
         "name" : "meet me",
@@ -3150,16 +3150,16 @@
         "valid" : true
        },
        {
-        "name": "megamodels.pl",
-        "uri_check": "http://megamodels.pl/{account}",
+        "name" : "megamodels.pl",
+        "uri_check" : "http://megamodels.pl/{account}",
         "post_body" : "",
         "e_code" : 200,
-        "e_string": "Portfolio",
-        "m_string": "OSTATNIO AKTYWNE PROFILE",
+        "e_string" : "Portfolio",
+        "m_string" : "OSTATNIO AKTYWNE PROFILE",
         "m_code" : 200,
-        "known": ["ania", "janek"],
-        "cat": "social",
-        "valid": true
+        "known" : ["ania", "janek"],
+        "cat" : "social",
+        "valid" : true
        },
        {
         "name" : "memrise",
@@ -3234,16 +3234,16 @@
         "valid" : true
        },
        {
-        "name": "Mistrzowie",
-        "uri_check": "https://mistrzowie.org/user/{account}",
+        "name" : "Mistrzowie",
+        "uri_check" : "https://mistrzowie.org/user/{account}",
         "post_body" : "",
         "e_code" : 200,
-        "e_string": "Profil użytkownika",
-        "m_string": "Nie znaleziono użytkownika o podanym loginie.",
+        "e_string" : "Profil użytkownika",
+        "m_string" : "Nie znaleziono użytkownika o podanym loginie.",
         "m_code" : 200,
-        "known": ["test", "janek"],
-        "cat": "images",
-        "valid": true
+        "known" : ["test", "janek"],
+        "cat" : "images",
+        "valid" : true
        },
        {
         "name" : "Mix",
@@ -3319,16 +3319,16 @@
         "valid" : true
        },
        {
-        "name": "Motokiller",
-        "uri_check": "https://mklr.pl/user/{account}",
+        "name" : "Motokiller",
+        "uri_check" : "https://mklr.pl/user/{account}",
         "post_body" : "",
         "e_code" : 200,
-        "e_string": "Zamieszcza materiały od:",
-        "m_string": "Nie znaleziono użytkownika o podanym loginie.",
+        "e_string" : "Zamieszcza materiały od:",
+        "m_string" : "Nie znaleziono użytkownika o podanym loginie.",
         "m_code" : 200,
-        "known": ["test", "janek"],
-        "cat": "images",
-        "valid": true
+        "known" : ["test", "janek"],
+        "cat" : "images",
+        "valid" : true
        },
        {
         "name" : "moxfield",
@@ -3503,7 +3503,7 @@
         "uri_check" : "https://blog.naver.com/{account}",
         "post_body" : "",
         "e_code" : 200,
-        "e_string" : ": 네이버 블로그",
+        "e_string" : " : 네이버 블로그",
         "m_string" : "페이지를 찾을 수 없습니다",
         "m_code" : 500,
         "known" : ["bob", "blue"],
@@ -3559,16 +3559,16 @@
         "valid" : true
        },
        {
-        "name": "oglaszamy24h.pl",
-        "uri_check": "https://oglaszamy24h.pl/profil,{account}",
+        "name" : "oglaszamy24h.pl",
+        "uri_check" : "https://oglaszamy24h.pl/profil,{account}",
         "post_body" : "",
         "e_code" : 200,
-        "e_string": "Profil użytkownika:",
-        "m_string": "Nieprawidłowy link, w bazie danych nie istnieje użytkownik o podanym loginie",
+        "e_string" : "Profil użytkownika:",
+        "m_string" : "Nieprawidłowy link, w bazie danych nie istnieje użytkownik o podanym loginie",
         "m_code" : 404,
-        "known": ["kowal", "janek"],
-        "cat": "shopping",
-        "valid": true
+        "known" : ["kowal", "janek"],
+        "cat" : "shopping",
+        "valid" : true
        },
        {
         "name" : "ok.ru",
@@ -3595,16 +3595,16 @@
         "valid" : true
        },
        {
-        "name": "olx",
-        "uri_check": "https://www.olx.pl/oferty/uzytkownik/{account}/",
+        "name" : "olx",
+        "uri_check" : "https://www.olx.pl/oferty/uzytkownik/{account}/",
         "post_body" : "",
         "e_code" : 200,
-        "e_string": "Obserwuj wyszukiwanie",
-        "m_string": "Przepraszamy, ale nie możemy znaleźć takiej strony...",
+        "e_string" : "Obserwuj wyszukiwanie",
+        "m_string" : "Przepraszamy, ale nie możemy znaleźć takiej strony...",
         "m_code" : 200,
-        "known": ["janek", "test"],
-        "cat": "shopping",
-        "valid": true
+        "known" : ["janek", "test"],
+        "cat" : "shopping",
+        "valid" : true
        },
        {
         "name" : "Opencollective",
@@ -3732,8 +3732,8 @@
         "uri_pretty" : "https://web.archive.org/web/2/https://parler.com/profile/{account}",
         "post_body" : "",
         "e_code" : 200,
-        "e_string" : "\"archived_snapshots\": {\"closest\"",
-        "m_string" : "\"archived_snapshots\": {}",
+        "e_string" : "\"archived_snapshots\" : {\"closest\"",
+        "m_string" : "\"archived_snapshots\" : {}",
         "m_code" : 200,
         "known" : ["JoePags", "dineshdsouza"],
         "cat" : "archived",
@@ -3745,8 +3745,8 @@
         "uri_pretty" : "https://web.archive.org/web/2/https://parler.com/profile/{account}/posts",
         "post_body" : "",
         "e_code" : 200,
-        "e_string" : "\"archived_snapshots\": {\"closest\"",
-        "m_string" : "\"archived_snapshots\": {}",
+        "e_string" : "\"archived_snapshots\" : {\"closest\"",
+        "m_string" : "\"archived_snapshots\" : {}",
         "m_code" : 200,
         "known" : ["JoePags", "dineshdsouza"],
         "cat" : "archived",
@@ -3789,16 +3789,16 @@
         "valid" : true
        },
        {
-        "name": "Patronite",
-        "uri_check": "https://patronite.pl/{account}",
+        "name" : "Patronite",
+        "uri_check" : "https://patronite.pl/{account}",
         "post_body" : "",
         "e_code" : 200,
-        "e_string": "Zostań Patronem",
-        "m_string": "Nie znaleźliśmy strony której szukasz.",
+        "e_string" : "Zostań Patronem",
+        "m_string" : "Nie znaleźliśmy strony której szukasz.",
         "m_code" : 404,
-        "known": ["radio357", "radionowyswiat"],
-        "cat": "finance",
-        "valid": true
+        "known" : ["radio357", "radionowyswiat"],
+        "cat" : "finance",
+        "valid" : true
        },
        {
         "name" : "PCGamer",
@@ -3837,16 +3837,16 @@
         "valid" : true
        },
        {
-        "name": "Pewex",
-        "uri_check": "https://retro.pewex.pl/user/{account}",
+        "name" : "Pewex",
+        "uri_check" : "https://retro.pewex.pl/user/{account}",
         "post_body" : "",
         "e_code" : 200,
-        "e_string": "Zamieszcza eksponaty od:",
-        "m_string": "Nie znaleziono użytkownika o podanym loginie.",
+        "e_string" : "Zamieszcza eksponaty od:",
+        "m_string" : "Nie znaleziono użytkownika o podanym loginie.",
         "m_code" : 200,
-        "known": ["test", "ania"],
-        "cat": "misc",
-        "valid": true
+        "known" : ["test", "ania"],
+        "cat" : "misc",
+        "valid" : true
        },
        {
         "name" : "Photoblog",
@@ -3873,28 +3873,28 @@
         "valid" : true
        },
        {
-      "name": "Picsart",
-      "uri_check": "https://picsart.com/u/{account}",
+      "name" : "Picsart",
+      "uri_check" : "https://picsart.com/u/{account}",
       "post_body" : "",
       "e_code" : 200,
-      "e_string": "Profiles on Picsart",
-      "m_string": "User not found",
+      "e_string" : "Profiles on Picsart",
+      "m_string" : "User not found",
       "m_code" : 404,
-      "known": ["john", "john404"],
-      "cat": "art",
-      "valid": true
+      "known" : ["john", "john404"],
+      "cat" : "art",
+      "valid" : true
        },
        {
-        "name": "Piekielni",
-        "uri_check": "https://piekielni.pl/user/{account}",
+        "name" : "Piekielni",
+        "uri_check" : "https://piekielni.pl/user/{account}",
         "post_body" : "",
         "e_code" : 200,
-        "e_string": "Zamieszcza historie od:",
-        "m_string": "Nie znaleziono użytkownika o podanym loginie.",
+        "e_string" : "Zamieszcza historie od:",
+        "m_string" : "Nie znaleziono użytkownika o podanym loginie.",
         "m_code" : 200,
-        "known": ["test", "janek"],
-        "cat": "misc",
-        "valid": true
+        "known" : ["test", "janek"],
+        "cat" : "misc",
+        "valid" : true
        },
        {
         "name" : "pikabu",
@@ -3993,28 +3993,28 @@
         "valid" : true
        },
        {
-        "name": "Polchat.pl",
-        "uri_check": "https://polczat.pl/forum/profile/{account}/",
+        "name" : "Polchat.pl",
+        "uri_check" : "https://polczat.pl/forum/profile/{account}/",
         "post_body" : "",
         "e_code" : 200,
-        "e_string": "Historia wpisów",
-        "m_string": "Wybrany użytkownik nie istnieje.",
+        "e_string" : "Historia wpisów",
+        "m_string" : "Wybrany użytkownik nie istnieje.",
         "m_code" : 200,
-        "known": ["test","admin"],
-        "cat": "social",
-        "valid": true
+        "known" : ["test","admin"],
+        "cat" : "social",
+        "valid" : true
        },
        {
-        "name": "policja2009",
-        "uri_check": "http://www.policja2009.fora.pl/search.php?search_author={account}",
+        "name" : "policja2009",
+        "uri_check" : "http://www.policja2009.fora.pl/search.php?search_author={account}",
         "post_body" : "",
         "e_code" : 200,
-        "e_string": "Znaleziono",
-        "m_string": "Nie znaleziono tematów ani postów pasujących do Twoich kryteriów",
+        "e_string" : "Znaleziono",
+        "m_string" : "Nie znaleziono tematów ani postów pasujących do Twoich kryteriów",
         "m_code" : 200,
-        "known": ["Pvwel", "janek"],
-        "cat": "misc",
-        "valid": true
+        "known" : ["Pvwel", "janek"],
+        "cat" : "misc",
+        "valid" : true
        },
        {
         "name" : "Poll Everywhere",
@@ -4030,16 +4030,16 @@
         "valid" : true
        },
        {
-        "name": "pol.social",
-        "uri_check": "https://pol.social/@{account}",
+        "name" : "pol.social",
+        "uri_check" : "https://pol.social/@{account}",
         "post_body" : "",
         "e_code" : 200,
-        "e_string": "@pol.social",
-        "m_string": "The page you are looking for isn't here.",
+        "e_string" : "@pol.social",
+        "m_string" : "The page you are looking for isn't here.",
         "m_code" : 404,
-        "known": ["ftdl", "ducensor"],
-        "cat": "social",
-        "valid": true
+        "known" : ["ftdl", "ducensor"],
+        "cat" : "social",
+        "valid" : true
        },
        {
         "name" : "polygon",
@@ -4138,16 +4138,16 @@
         "valid" : true
        },
        {
-        "name": "prv.pl",
-        "uri_check": "https://www.prv.pl/osoba/{account}",
+        "name" : "prv.pl",
+        "uri_check" : "https://www.prv.pl/osoba/{account}",
         "post_body" : "",
         "e_code" : 200,
-        "e_string": "LOGIN",
-        "m_string": "Użytkownik nie istnieje.",
+        "e_string" : "LOGIN",
+        "m_string" : "Użytkownik nie istnieje.",
         "m_code" : 200,
-        "known": ["test", "test2"],
-        "cat": "tech",
-        "valid": true
+        "known" : ["test", "test2"],
+        "cat" : "tech",
+        "valid" : true
        },
        {
         "name" : "public",
@@ -4174,28 +4174,28 @@
         "valid" : true
        },
        {
-        "name": "QUEER",
-        "uri_check": "https://queer.pl/user/{account}",
+        "name" : "QUEER",
+        "uri_check" : "https://queer.pl/user/{account}",
         "post_body" : "",
         "e_code" : 200,
-        "e_string": "Społeczność",
-        "m_string": "Strona nie została znaleziona",
+        "e_string" : "Społeczność",
+        "m_string" : "Strona nie została znaleziona",
         "m_code" : 404,
-        "known": ["test", "kowalski"],
-        "cat": "social",
-        "valid": true
+        "known" : ["test", "kowalski"],
+        "cat" : "social",
+        "valid" : true
        },
        {
-        "name": "quitter.pl",
-        "uri_check": "https://quitter.pl/profile/{account}",
+        "name" : "quitter.pl",
+        "uri_check" : "https://quitter.pl/profile/{account}",
         "post_body" : "",
         "e_code" : 200,
-        "e_string": "@quitter.pl",
-        "m_string": "Nie znaleziono",
+        "e_string" : "@quitter.pl",
+        "m_string" : "Nie znaleziono",
         "m_code" : 404,
-        "known": ["divmod", "panoptykon"],
-        "cat": "social",
-        "valid": true
+        "known" : ["divmod", "panoptykon"],
+        "cat" : "social",
+        "valid" : true
        },
        {
         "name" : "Quora",
@@ -4272,16 +4272,16 @@
         "valid" : true
        },
        {
-        "name": "rigcz.club",
-        "uri_check": "https://rigcz.club/@{account}",
+        "name" : "rigcz.club",
+        "uri_check" : "https://rigcz.club/@{account}",
         "post_body" : "",
         "e_code" : 200,
-        "e_string": "@rigcz.club",
-        "m_string": "The page you are looking for isn't here.",
+        "e_string" : "@rigcz.club",
+        "m_string" : "The page you are looking for isn't here.",
         "m_code" : 404,
-        "known": ["blazej", "adam"],
-        "cat": "social",
-        "valid": true
+        "known" : ["blazej", "adam"],
+        "cat" : "social",
+        "valid" : true
        },
        {
         "name" : "risk.ru",
@@ -4368,16 +4368,16 @@
         "valid" : true
        },
        {
-        "name": "Salon24",
-        "uri_check": "https://www.salon24.pl/u/{account}/",
+        "name" : "Salon24",
+        "uri_check" : "https://www.salon24.pl/u/{account}/",
         "post_body" : "",
         "e_code" : 200,
-        "e_string": "Strona główna",
-        "m_string": "Salon24 - blogi, newsy, opinie i komentarze",
+        "e_string" : "Strona główna",
+        "m_string" : "Salon24 - blogi, newsy, opinie i komentarze",
         "m_code" : 200,
-        "known": ["test", "test2"],
-        "cat": "blog",
-        "valid": true
+        "known" : ["test", "test2"],
+        "cat" : "blog",
+        "valid" : true
        },
        {
         "name" : "SaraCarterShow",
@@ -4464,16 +4464,16 @@
         "valid" : true
        },
        {
-        "name": "SFD",
-        "uri_check": "https://www.sfd.pl/profile/{account}",
+        "name" : "SFD",
+        "uri_check" : "https://www.sfd.pl/profile/{account}",
         "post_body" : "",
         "e_code" : 200,
-        "e_string": "Tematy użytkownika",
-        "m_string": "Brak aktywnego profilu na forum",
+        "e_string" : "Tematy użytkownika",
+        "m_string" : "Brak aktywnego profilu na forum",
         "m_code" : 404,
-        "known": ["janek", "admin"],
-        "cat": "health",
-        "valid": true
+        "known" : ["janek", "admin"],
+        "cat" : "health",
+        "valid" : true
        },
        {
         "name" : "Shanii Writes",
@@ -4682,16 +4682,16 @@
         "valid" : true
        },
        {
-        "name": "soc.citizen4.eu",
-        "uri_check": "https://soc.citizen4.eu/profile/{account}/profile",
+        "name" : "soc.citizen4.eu",
+        "uri_check" : "https://soc.citizen4.eu/profile/{account}/profile",
         "post_body" : "",
         "e_code" : 200,
-        "e_string": "@soc.citizen4.eu",
-        "m_string": "Nie znaleziono",
+        "e_string" : "@soc.citizen4.eu",
+        "m_string" : "Nie znaleziono",
         "m_code" : 404,
-        "known": ["admin", "miklo"],
-        "cat": "social",
-        "valid": true
+        "known" : ["admin", "miklo"],
+        "cat" : "social",
+        "valid" : true
        },
        {
         "name" : "social_msdn",
@@ -4911,16 +4911,16 @@
         "valid" : true
        },
        {
-        "name": "szmer.info",
-        "uri_check": "https://szmer.info/u/{account}",
+        "name" : "szmer.info",
+        "uri_check" : "https://szmer.info/u/{account}",
         "post_body" : "",
         "e_code" : 200,
-        "e_string": "Joined",
-        "m_string": "Code: Couldn't find that username or email.",
+        "e_string" : "Joined",
+        "m_string" : "Code: Couldn't find that username or email.",
         "m_code" : 200,
-        "known": ["przeczzpreczem", "Xavier"],
-        "cat": "social",
-        "valid": true
+        "known" : ["przeczzpreczem", "Xavier"],
+        "cat" : "social",
+        "valid" : true
        },
        {
         "name" : "tabletoptournament",
@@ -4959,16 +4959,16 @@
         "valid" : true
        },
        {
-        "name": "Tanuki.pl",
-        "uri_check": "https://tanuki.pl/profil/{account}",
+        "name" : "Tanuki.pl",
+        "uri_check" : "https://tanuki.pl/profil/{account}",
         "post_body" : "",
         "e_code" : 200,
-        "e_string": "Dołączył",
-        "m_string": "Nie ma takiego użytkownika",
+        "e_string" : "Dołączył",
+        "m_string" : "Nie ma takiego użytkownika",
         "m_code" : 404,
-        "known": ["ania", "avellana"],
-        "cat": "hobby",
-        "valid": true
+        "known" : ["ania", "avellana"],
+        "cat" : "hobby",
+        "valid" : true
        },
        {
         "name" : "Taringa",
@@ -5055,16 +5055,16 @@
         "valid" : true
        },
        {
-        "name": "tfl.net.pl",
-        "uri_check": "https://tfl.net.pl/@{account}",
+        "name" : "tfl.net.pl",
+        "uri_check" : "https://tfl.net.pl/@{account}",
         "post_body" : "",
         "e_code" : 200,
-        "e_string": "@tfl.net.pl",
-        "m_string": "The page you are looking for isn't here.",
+        "e_string" : "@tfl.net.pl",
+        "m_string" : "The page you are looking for isn't here.",
         "m_code" : 404,
-        "known": ["jaczad", "manies"],
-        "cat": "social",
-        "valid": true
+        "known" : ["jaczad", "manies"],
+        "cat" : "social",
+        "valid" : true
        },
        {
         "name" : "themeforest",
@@ -5197,7 +5197,7 @@
         "m_string" : "Oh no! 404!",
         "known" : ["naranjasan", "jane"],
         "cat" : "social",
-        "valid": true
+        "valid" : true
        },
        {
         "name" : "tripadvisor",
@@ -5291,8 +5291,8 @@
         "uri_pretty" : "https://web.archive.org/web/2/https://twitter.com/{account}",
         "post_body" : "",
         "e_code" : 200,
-        "e_string" : "\"archived_snapshots\": {\"closest\"",
-        "m_string" : "\"archived_snapshots\": {}",
+        "e_string" : "\"archived_snapshots\" : {\"closest\"",
+        "m_string" : "\"archived_snapshots\" : {}",
         "m_code" : 200,
         "known" : ["jack", "dineshdsouza"],
         "cat" : "archived",
@@ -5304,8 +5304,8 @@
         "uri_pretty" : "https://web.archive.org/web/*/https://twitter.com/{account}/status/*",
         "post_body" : "",
         "e_code" : 200,
-        "e_string" : "\"archived_snapshots\": {\"closest\"",
-        "m_string" : "\"archived_snapshots\": {}",
+        "e_string" : "\"archived_snapshots\" : {\"closest\"",
+        "m_string" : "\"archived_snapshots\" : {}",
         "m_code" : 200,
         "known" : ["jack", "dineshdsouza"],
         "cat" : "archived",
@@ -5385,28 +5385,28 @@
         "valid" : true
        },
        {
-        "name": "Ultras Diary",
-        "uri_check": "http://ultrasdiary.pl/u/{account}/",
+        "name" : "Ultras Diary",
+        "uri_check" : "http://ultrasdiary.pl/u/{account}/",
         "post_body" : "",
         "e_code" : 200,
-        "e_string": "Mecze wyjazdowe:",
-        "m_string": "Ile masz wyjazdów?",
+        "e_string" : "Mecze wyjazdowe:",
+        "m_string" : "Ile masz wyjazdów?",
         "m_code" : 404,
-        "known": ["janek", "kowal"],
-        "cat": "hobby",
-        "valid": true
+        "known" : ["janek", "kowal"],
+        "cat" : "hobby",
+        "valid" : true
        },
        {
-        "name": "ulub.pl",
-        "uri_check": "http://ulub.pl/profil/{account}",
+        "name" : "ulub.pl",
+        "uri_check" : "http://ulub.pl/profil/{account}",
         "post_body" : "",
         "e_code" : 200,
-        "e_string": "Muzyka (",
-        "m_string": "Strona nie istnieje.",
+        "e_string" : "Muzyka (",
+        "m_string" : "Strona nie istnieje.",
         "m_code" : 404,
-        "known": ["janek", "test"],
-        "cat": "misc",
-        "valid": true
+        "known" : ["janek", "test"],
+        "cat" : "misc",
+        "valid" : true
        },
        {
         "name" : "unsplash",
@@ -5566,16 +5566,16 @@
         "valid" : true
        },
        {
-        "name": "vizjer.pl",
-        "uri_check": "https://vizjer.pl/uzytkownik/{account}",
+        "name" : "vizjer.pl",
+        "uri_check" : "https://vizjer.pl/uzytkownik/{account}",
         "post_body" : "",
         "e_code" : 200,
-        "e_string": "Profil użytkownika",
-        "m_string": "Ostatnie komentarze",
+        "e_string" : "Profil użytkownika",
+        "m_string" : "Ostatnie komentarze",
         "m_code" : 200,
-        "known": ["janek", "tomek"],
-        "cat": "video",
-        "valid": false
+        "known" : ["janek", "tomek"],
+        "cat" : "video",
+        "valid" : false
        },
        {
         "name" : "VK",
@@ -5627,17 +5627,17 @@
         "valid" : true
        },
        {
-        "name": "watchmemore.com",
-        "uri_check": "https://api.watchmemore.com/api3/profile/{account}/",
+        "name" : "watchmemore.com",
+        "uri_check" : "https://api.watchmemore.com/api3/profile/{account}/",
         "uri_pretty" : "https://watchmemore.com/{account}/",
         "post_body" : "",
         "e_code" : 200,
-        "e_string": "displayName",
-        "m_string": "notExists",
+        "e_string" : "displayName",
+        "m_string" : "notExists",
         "m_code" : 400,
-        "known": ["medroxy", "nodjev"],
-        "cat": "XXXPORNXXX",
-        "valid": true
+        "known" : ["medroxy", "nodjev"],
+        "cat" : "XXXPORNXXX",
+        "valid" : true
        },
        {
         "name" : "warriorforum",
@@ -5774,16 +5774,16 @@
         "valid" : true
        },
        {
-        "name": "Wolni Słowianie",
-        "uri_check": "https://wolnislowianie.pl/{account}",
+        "name" : "Wolni Słowianie",
+        "uri_check" : "https://wolnislowianie.pl/{account}",
         "post_body" : "",
         "e_code" : 200,
-        "e_string": "Oś czasu",
-        "m_string": "Nie znaleziono strony, której szukasz.",
+        "e_string" : "Oś czasu",
+        "m_string" : "Nie znaleziono strony, której szukasz.",
         "m_code" : 404,
-        "known": ["janek", "kowal"],
-        "cat": "social",
-        "valid": true
+        "known" : ["janek", "kowal"],
+        "cat" : "social",
+        "valid" : true
        },
        {
         "name" : "wordnik",
@@ -5834,16 +5834,16 @@
         "valid" : true
        },
        {
-        "name": "Wykop",
-        "uri_check": "https://www.wykop.pl/ludzie/{account}/",
+        "name" : "Wykop",
+        "uri_check" : "https://www.wykop.pl/ludzie/{account}/",
         "post_body" : "",
         "e_code" : 200,
-        "e_string": "Aktywność użytkownika",
-        "m_string": "Czy na pewno tego szukałeś? Taka strona nie istnieje.",
+        "e_string" : "Aktywność użytkownika",
+        "m_string" : "Czy na pewno tego szukałeś? Taka strona nie istnieje.",
         "m_code" : 404,
-        "known": ["test", "test2"],
-        "cat": "social",
-        "valid": true
+        "known" : ["test", "test2"],
+        "cat" : "social",
+        "valid" : true
        },
        {
         "name" : "Xanga",
@@ -5990,28 +5990,28 @@
         "valid" : true
        },
        {
-        "name": "zatrybi.pl",
-        "uri_check": "https://zatrybi.pl/user/{account}",
+        "name" : "zatrybi.pl",
+        "uri_check" : "https://zatrybi.pl/user/{account}",
         "post_body" : "",
         "e_code" : 200,
-        "e_string": "Zarejestrowany od:",
-        "m_string": "Nie znaleziono strony",
+        "e_string" : "Zarejestrowany od:",
+        "m_string" : "Nie znaleziono strony",
         "m_code" : 404,
-        "known": ["Berlinek", "fenrek"],
-        "cat": "tech",
-        "valid": true
+        "known" : ["Berlinek", "fenrek"],
+        "cat" : "tech",
+        "valid" : true
        },
        {
-        "name": "Zbiornik",
-        "uri_check": "https://mini.zbiornik.com/{account}",
+        "name" : "Zbiornik",
+        "uri_check" : "https://mini.zbiornik.com/{account}",
         "post_body" : "",
         "e_code" : 200,
-        "e_string": "INFO",
-        "m_string": "Szukaj",
+        "e_string" : "INFO",
+        "m_string" : "Szukaj",
         "m_code" : 200,
-        "known": ["69uzytkownik69", "Soif"],
-        "cat": "XXXPORNXXX",
-        "valid": true
+        "known" : ["69uzytkownik69", "Soif"],
+        "cat" : "XXXPORNXXX",
+        "valid" : true
        },
        {
         "name" : "zhihu",
@@ -6038,16 +6038,16 @@
         "valid" : true
        },
        {
-        "name": "zmarsa.com",
-        "uri_check": "https://zmarsa.com/uzytkownik/{account}/glowna/",
+        "name" : "zmarsa.com",
+        "uri_check" : "https://zmarsa.com/uzytkownik/{account}/glowna/",
         "post_body" : "",
         "e_code" : 200,
-        "e_string": "Galeria użytkownika",
-        "m_string": "Błąd na stronie",
+        "e_string" : "Galeria użytkownika",
+        "m_string" : "Błąd na stronie",
         "m_code" : 500,
-        "known": ["janek", "test"],
-        "cat": "XXXPORNXXX",
-        "valid": true
+        "known" : ["janek", "test"],
+        "cat" : "XXXPORNXXX",
+        "valid" : true
        },
        {
         "name" : "Zomato",
