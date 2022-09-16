@@ -2644,7 +2644,7 @@
        },
        {
         "name" : "inaturalist",
-        "check_uri" : "https://inaturalist.nz/people/{account}",
+        "uri_check" : "https://inaturalist.nz/people/{account}",
         "post_body" : "",
         "e_code" : 200,
         "e_string" : "s Profile",
@@ -4779,7 +4779,7 @@
        },
        {
         "name" : "social_tchncs",
-        "check_uri" : "https://social.tchncs.de/@{account}",
+        "uri_check" : "https://social.tchncs.de/@{account}",
         "post_body" : "",
         "e_code" : 200,
         "e_string" : "profile:username",
