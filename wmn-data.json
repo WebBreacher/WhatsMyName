@@ -640,6 +640,18 @@
         "valid" : true
        },
        {
+        "name" : "biolink",
+        "uri_check" : "https://bio.link/{account}",
+        "e_code" : 200,
+        "post_body" : "", 
+        "e_string" : "profile:username",
+        "m_string" : "The page you’re looking for doesn’t exist",
+        "m_code" : 404,
+        "known" : ["adli_hm", "jake"],
+        "cat" : "misc",
+        "valid" : true
+       },
+       {
         "name" : "Bitbucket",
         "uri_check" : "https://bitbucket.org/{account}/",
         "post_body" : "",
