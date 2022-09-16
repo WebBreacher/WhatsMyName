@@ -1882,6 +1882,18 @@
         "valid" : true
        },
        {
+        "name" : "fine_art_america",
+        "uri_check" : "https://fineartamerica.com/profiles/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "Shop for artwork by",
+        "m_string" : "Browse through millions of independent artists in our extensive",
+        "m_code" : 301,
+        "known" : ["scott-norris", "mary-helmreich"],
+        "cat" : "shopping",
+        "valid" : true
+       },
+       {
         "name" : "Fiverr",
         "uri_check" : "https://www.fiverr.com/{account}",
         "post_body" : "",
