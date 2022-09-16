@@ -1761,6 +1761,18 @@
         "valid" : true
        },
        {
+        "name" : "fandalism",
+        "uri_check" : "https://fandalism.com/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "fandalism_:user",
+        "m_string" : "404 - File or directory not found",
+        "m_code" : 404,
+        "known" : ["mike", "ted"],
+        "cat" : "hobby",
+        "valid" : true
+       },
+       {
         "name" : "Fandom",
         "uri_check" : "https://www.fandom.com/u/{account}",
         "post_body" : "",
