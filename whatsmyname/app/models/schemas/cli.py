@@ -31,6 +31,7 @@ class CliOptionsSchema(BaseModel):
     capture_error_directory: Optional[str] = None
     validate_knowns: bool = False
     add_error_hints: bool = False
+    word_wrap_length: int = 50
 
 
 
