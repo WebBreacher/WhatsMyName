@@ -121,11 +121,16 @@ def filter_list_by(cli_options: CliOptionsSchema, sites: List[SiteSchema]) -> Li
     if cli_options.all:
         return sites
 
+    filtered_sites = []
+    for site in sites:
+        if site.raw_response_data:
+            filtered_sites.append(site)
+
     site: SiteSchema
     if cli_options.not_found:
-        return list(filter(lambda site: site.http_status_code == site.m_code, sites))
+        return list(filter(lambda site: site.http_status_code == site.m_code and site.m_string in site.raw_response_data, filtered_sites))
 
-    return list(filter(lambda site: site.http_status_code == site.e_code, sites))
+    return list(filter(lambda site: site.http_status_code == site.e_code and site.e_string in site.raw_response_data, filtered_sites))
 
 
 def capture_errors(cli_options: CliOptionsSchema, sites: List[SiteSchema]) -> None:
@@ -184,8 +189,7 @@ async def request_worker(session: ClientSession, cli_options: CliOptionsSchema, 
                                headers=headers
                                ) as response:
             site.http_status_code = response.status
-            if cli_options.verbose or cli_options.capture_errors:
-                site.raw_response_data = await response.text()
+            site.raw_response_data = await response.text()
             return site
 
     except ClientConnectionError as cce:
