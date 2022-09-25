@@ -1,6 +1,4 @@
 import asyncio
-import os
-import tempfile
 from typing import List
 
 from whatsmyname.app.cli.args import get_default_args, arg_parser
@@ -8,8 +6,8 @@ from whatsmyname.app.config import random_username
 from whatsmyname.app.models.enums.common import OutputFormat
 from whatsmyname.app.models.schemas.cli import CliOptionsSchema
 from whatsmyname.app.models.schemas.sites import SiteSchema
-from whatsmyname.app.tasks.process import process_cli, filter_list_by, capture_errors, generate_username_sites, \
-    request_controller
+from whatsmyname.app.tasks.process import process_cli, filter_list_by, generate_username_sites, \
+    request_controller, get_sites_list
 from whatsmyname.app.utilities.formatters import to_json, to_csv, to_table
 
 
@@ -35,14 +33,11 @@ async def start_check_for_presence():
         # further processing is not required for the table format
         exit(1)
 
-    if cli_options.output_stdout and not cli_options.capture_errors:
+    if cli_options.output_stdout:
         with open(cli_options.output_file, 'r') as fp:
             lines: List[str] = fp.readlines()
             for line in lines:
                 print('{}'.format(line.strip()))
-
-    if cli_options.capture_errors:
-        capture_errors(cli_options, sites)
 
 
 def check_for_presence() -> None:
@@ -68,44 +63,35 @@ def _validate_site(site: SiteSchema) -> None:
 
 
 async def start_validate_whats_my_name() -> None:
+    """Validates if a site is returning a correct set of values for an unknown and a known user."""
     argparse = get_default_args()
     cli_options: CliOptionsSchema = arg_parser(argparse.parse_args())
     cli_options.add_error_hints = True
     cli_options.debug = True
     cli_options.verbose = True
-    cli_options.capture_errors = True
-    sites: List[SiteSchema] = await process_cli(cli_options)
+
+    # for the first pass, we use a random user name
+    cli_options.usernames = [random_username()]
+
+    sites: List[SiteSchema] = \
+        await request_controller(cli_options, generate_username_sites(cli_options.usernames, get_sites_list(cli_options)))
+
+    # this is the set of sites that did match the expected criteria
+    invalid_sites = list(filter(lambda site: site.http_status_code != site.m_code or site.m_string not in (site.raw_response_data or ''), sites))
+
+    # retest these sites with a known user
+    cli_options.sites = [site.name for site in invalid_sites]
+
+    sites_with_known: List[SiteSchema] = []
+    for site in invalid_sites:
+        sites_with_known.extend(generate_username_sites([site.known[0]], [site]))
 
     # filter the sites
-    sites = filter_list_by(cli_options, sites)
+    sites = await request_controller(cli_options, sites_with_known)
+    sites = list(filter(lambda site: site.http_status_code != site.e_code or site.e_string not in (site.raw_response_data or ''), sites))
 
     for site in sites:
         _validate_site(site)
-
-    revalidate_sites: List[SiteSchema] = list(filter(lambda site: site.error_hint is None, sites))
-    errored_sites: List[SiteSchema] = list(filter(lambda site: site.error_hint, sites))
-
-    # reset site fields
-    for site in revalidate_sites:
-        site.http_status_code = -1
-        site.username = None
-        site.raw_response_data = None
-        site.generated_uri = None
-
-    # unique the revalidate list
-    seen = set()
-    unique_sites: List[SiteSchema] = []
-    for site in revalidate_sites:
-        if site.name not in seen:
-            unique_sites.append(site)
-            seen.add(site.name)
-
-    validated_sites = await request_controller(cli_options, generate_username_sites([random_username()], unique_sites))
-    for site in validated_sites:
-        _validate_site(site)
-
-    sites = errored_sites
-    sites.extend(validated_sites)
 
     if cli_options.format == OutputFormat.JSON:
         to_json(cli_options, sites)
@@ -116,7 +102,7 @@ async def start_validate_whats_my_name() -> None:
         # further processing is not required for the table format
         exit(1)
 
-    if cli_options.output_stdout and not cli_options.capture_errors:
+    if cli_options.output_stdout:
         with open(cli_options.output_file, 'r') as fp:
             lines: List[str] = fp.readlines()
             for line in lines:

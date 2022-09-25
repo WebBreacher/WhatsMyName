@@ -66,9 +66,13 @@ There are quite a few command line options available:
 
 `python whats_my_name.py -u yooper -c social --format json`
 
-- Check for the user yooper, capture errors for debugging purposes
+- Check for the user yooper, dump out response content and response headers, used for debugging purposes
 
-`python whats_my_name.py -u yooper -c social --capture_errors`
+`python whats_my_name.py -u yooper -s zhihu --verbose --format csv`
+
+- Check for the user whether they exist or not and get the response from the server, used for debugging
+ 
+`python whats_my_name.py -u yooper -a -s zillow --verbose --format csv` 
 
 # Installation
 Check the [INSTALLATION.md file](https://github.com/WebBreacher/WhatsMyName/blob/main/INSTALLATION.md)
