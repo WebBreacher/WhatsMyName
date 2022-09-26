@@ -1,4 +1,28 @@
 # Installation
+
+## Without Virtual Environment
+
+```
+git clone https://github.com/WebBreacher/WhatsMyName
+cd whatsmyname
+pip3 install -r requirements.txt
+```
+
+You are now ready to go for your first command, example below, and see above in the **Command Line Arguments section**:
+
+```
+python whats_my_name.py -u yooper
+```
+
+or
+
+```
+python3 whats_my_name.py -u yooper
+```
+
+
+## With Virtual Environment
+
 If you prefer to use a virtual environment to isolate the script:
 
 ```
@@ -22,7 +46,7 @@ Once your virtual environment is activated:
 
 ```
 git clone https://github.com/WebBreacher/WhatsMyName
-cd WhatsMyName
+cd whatsmyname
 pip3 install -r requirements.txt
 ```
 
@@ -39,3 +63,4 @@ or
 ```
 python3 whats_my_name.py -u yooper
 ```
+
