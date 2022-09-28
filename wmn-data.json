@@ -1392,7 +1392,7 @@
         "e_string" : " | DeviantArt</title>",
         "m_string" : "DeviantArt: 404",
         "m_code" : 404,
-        "known" : ["test", "john"],
+        "known" : ["rattybike", "john"],
         "cat" : "images",
         "valid" : true
        },
@@ -2094,8 +2094,8 @@
         "e_string" : "<title>Userpage of",
         "m_string" : "user cannot be found",
         "m_code" : 200,
-        "known" : ["test"],
-        "cat" : "XXXPORNXXX",
+        "known" : ["karintina", "mikrogoat"],
+        "cat" : "images",
         "valid" : true
        },
        {
