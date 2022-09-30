@@ -2186,10 +2186,11 @@
        {
         "name" : "Gettr",
         "uri_check" : "https://api.gettr.com/s/user/{account}/exist",
+        "uri_pretty" : "https://gettr.com/user/{account}",
         "post_body" : "",
         "e_code" : 200,
-        "e_string" : "claimable\":false",
-        "m_string" : "claimable\":true",
+        "e_string" : "success\":{",
+        "m_string" : "success\":false",
         "m_code" : 200,
         "known" : ["gettr", "support"],
         "cat" : "social",
