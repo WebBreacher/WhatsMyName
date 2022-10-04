@@ -1458,6 +1458,18 @@
         "valid" : true
        },
        {
+       "name" : "DIBIZ",
+        "uri_check" : "https://www.dibiz.com/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "mailto:?subject=",
+        "m_string" : "An Error Has Occurred",
+        "m_code" : 404,
+        "known" : ["fractalhue", "rid"],
+        "cat" : "business",
+        "valid" : true
+       },
+       {
         "name" : "Digitalspy",
         "uri_check" : "https://forums.digitalspy.com/profile/discussions/{account}",
         "post_body" : "",
