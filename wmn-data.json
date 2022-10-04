@@ -5130,6 +5130,19 @@
         "valid" : true
        },
        {
+        "name" : "Tappy",
+        "uri_check" : "https://api.tappy.tech/api/profile/username/{account}",
+        "uri_pretty" : "https://www.tappy.tech/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "user_id",
+        "m_string" : "Profile of username Not Found",
+        "m_code" : 200,
+        "known" : ["alexborrelli", "domocann"],
+        "cat" : "business",
+        "valid" : true
+       },
+       {
         "name" : "Taringa",
         "uri_check" : "https://www.taringa.net/{account}",
         "post_body" : "",
