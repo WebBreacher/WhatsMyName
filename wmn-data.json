@@ -3753,7 +3753,7 @@
        },
        {
         "name" : "OSINTelligence",
-        "url_check" : "https://osintelligence.discourse.group/u/{account}/summary.json",
+        "uri_check" : "https://osintelligence.discourse.group/u/{account}/summary.json",
         "uri_pretty" : "https://osintelligence.discourse.group/u/{account}",
         "post_body" : "",
         "e_code" : 200,
