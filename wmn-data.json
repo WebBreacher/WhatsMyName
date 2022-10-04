@@ -1555,6 +1555,18 @@
         "valid" : true
        },
        {
+        "name" : "dot.cards",
+        "uri_check" : "https://dot.cards/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "&#x27;s dot.Profile</title>",
+        "m_string" : "Username does not exist.</title>",
+        "m_code" : 404,
+        "known" : ["dakmusic", "seattlevoiceactor"],
+        "cat" : "business",
+        "valid" : true
+       },
+       {
         "name" : "Dojoverse",
         "uri_check" : "https://dojoverse.com/members/{account}/",
         "post_body" : "",
