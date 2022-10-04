@@ -1,7 +1,9 @@
 """Site Schemas"""
 
 from datetime import datetime
-from typing import List, Optional
+from typing import List, Optional, Dict, Any
+
+from multidict import CIMultiDictProxy
 from pydantic import BaseModel, root_validator
 
 
@@ -14,6 +16,7 @@ class SiteOutputSchema(BaseModel):
     user_agent: str
     uri_pretty: Optional[str] = None
     error_hint: Optional[str] = None
+    response_headers: Optional[str] = None
 
 
 class SiteSchema(BaseModel):
@@ -38,6 +41,7 @@ class SiteSchema(BaseModel):
     user_agent: Optional[str] = None
     uri_pretty: Optional[str] = None
     error_hint: Optional[str] = None
+    response_headers: Optional[str] = None
 
 
     @root_validator

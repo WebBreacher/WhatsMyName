@@ -193,6 +193,30 @@
        "valid" : true
        },
        {
+        "name" : "Airline_Pilot_Life",
+        "uri_check" : "https://airlinepilot.life/u/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "<title> Profile -",
+        "m_string" : "Page Not Found - Airline Pilot Life</title>",
+        "m_code" : 404,
+        "known" : ["hannah", "addison"],
+        "cat" : "social",
+        "valid" : true
+       },
+       {
+        "name" : "Airliners",
+        "uri_check" : "https://www.airliners.net/user/{account}/profile",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "'s Profile | Airliners Members | Airliners.net",
+        "m_string" : "An Error Occurred",
+        "m_code" : 404,
+        "known" : ["pilot", "pilota"],
+        "cat" : "social",
+        "valid" : true
+       },
+       {
         "name" : "akniga",
         "uri_check" : "https://akniga.org/profile/{account}",
         "post_body" : "",
@@ -616,6 +640,18 @@
         "valid" : true
        },
        {
+        "name" : "biolink",
+        "uri_check" : "https://bio.link/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "profile:username",
+        "m_string" : "The page you’re looking for doesn’t exist",
+        "m_code" : 404,
+        "known" : ["adli_hm", "jake"],
+        "cat" : "misc",
+        "valid" : true
+       },
+       {
         "name" : "Bitbucket",
         "uri_check" : "https://bitbucket.org/{account}/",
         "post_body" : "",
@@ -749,6 +785,18 @@
         "valid" : true
        },
        {
+        "name" : "boosty",
+        "uri_check" : "https://boosty.to/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "- exclusive content on Boosty</title>",
+        "m_string" : "Blog not found",
+        "m_code" : 200,
+        "known" : ["evdokia", "lana"],
+        "cat" : "social",
+        "valid" : true
+       },
+       {
         "name" : "Booth",
         "uri_check" : "https://{account}.booth.pm/",
         "post_body" : "",
@@ -818,6 +866,18 @@
         "m_code" : 404,
         "known" : ["carolinegawlik"],
         "cat" : "news",
+        "valid" : true
+       },
+       {
+        "name" : "cafecito",
+        "uri_check" : "https://cafecito.app/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : " | Cafecito</title>",
+        "m_string" : "Es posible que el enlace que seleccionaste esté roto o que se haya eliminado la página",
+        "m_code" : 404,
+        "known" : ["braftty", "guillermo"],
+        "cat" : "misc",
         "valid" : true
        },
        {
@@ -1332,7 +1392,7 @@
         "e_string" : " | DeviantArt</title>",
         "m_string" : "DeviantArt: 404",
         "m_code" : 404,
-        "known" : ["test", "john"],
+        "known" : ["rattybike", "john"],
         "cat" : "images",
         "valid" : true
        },
@@ -1725,6 +1785,18 @@
         "valid" : true
        },
        {
+        "name" : "fandalism",
+        "uri_check" : "https://fandalism.com/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "fandalism_:user",
+        "m_string" : "404 - File or directory not found",
+        "m_code" : 404,
+        "known" : ["mike", "ted"],
+        "cat" : "hobby",
+        "valid" : true
+       },
+       {
         "name" : "Fandom",
         "uri_check" : "https://www.fandom.com/u/{account}",
         "post_body" : "",
@@ -1831,6 +1903,18 @@
         "m_code" : 200,
         "known" : ["test", "test2"],
         "cat" : "hobby",
+        "valid" : true
+       },
+       {
+        "name" : "fine_art_america",
+        "uri_check" : "https://fineartamerica.com/profiles/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "Shop for artwork by",
+        "m_string" : "Browse through millions of independent artists in our extensive",
+        "m_code" : 301,
+        "known" : ["scott-norris", "mary-helmreich"],
+        "cat" : "shopping",
         "valid" : true
        },
        {
@@ -2010,8 +2094,8 @@
         "e_string" : "<title>Userpage of",
         "m_string" : "user cannot be found",
         "m_code" : 200,
-        "known" : ["test"],
-        "cat" : "XXXPORNXXX",
+        "known" : ["karintina", "mikrogoat"],
+        "cat" : "images",
         "valid" : true
        },
        {
@@ -2102,12 +2186,13 @@
        {
         "name" : "Gettr",
         "uri_check" : "https://api.gettr.com/s/user/{account}/exist",
+        "uri_pretty" : "https://gettr.com/user/{account}",
         "post_body" : "",
         "e_code" : 200,
-        "e_string" : "success\" :true",
-        "m_string" : "success\" :false",
+        "e_string" : "success\":{",
+        "m_string" : "success\":false",
         "m_code" : 200,
-        "known" : ["qellyanon", "djerod"],
+        "known" : ["gettr", "support"],
         "cat" : "social",
         "valid" : true
        },
@@ -2568,6 +2653,18 @@
         "m_code" : 404,
         "known" : ["OliverClothesoff70", "DadOnTheInternet"],
         "cat" : "images",
+        "valid" : true
+       },
+       {
+        "name" : "inaturalist",
+        "uri_check" : "https://inaturalist.nz/people/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "s Profile",
+        "m_string" : "404 Not Found",
+        "m_code" : 404,
+        "known" : ["greg", "tom"],
+        "cat" : "hobby",
         "valid" : true
        },
        {
@@ -3720,8 +3817,8 @@
         "uri_pretty" : "https://web.archive.org/web/2/https://parler.com/profile/{account}",
         "post_body" : "",
         "e_code" : 200,
-        "e_string" : "\"archived_snapshots\" : {\"closest\"",
-        "m_string" : "\"archived_snapshots\" : {}",
+        "e_string" : "\"archived_snapshots\": {\"closest\"",
+        "m_string" : "\"archived_snapshots\": {}",
         "m_code" : 200,
         "known" : ["JoePags", "dineshdsouza"],
         "cat" : "archived",
@@ -3733,8 +3830,8 @@
         "uri_pretty" : "https://web.archive.org/web/2/https://parler.com/profile/{account}/posts",
         "post_body" : "",
         "e_code" : 200,
-        "e_string" : "\"archived_snapshots\" : {\"closest\"",
-        "m_string" : "\"archived_snapshots\" : {}",
+        "e_string" : "\"archived_snapshots\": {\"closest\"",
+        "m_string" : "\"archived_snapshots\": {}",
         "m_code" : 200,
         "known" : ["JoePags", "dineshdsouza"],
         "cat" : "archived",
@@ -4694,6 +4791,18 @@
         "valid" : true
        },
        {
+        "name" : "social_tchncs",
+        "uri_check" : "https://social.tchncs.de/@{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "profile:username",
+        "m_string" : "The page you are looking for isn&#39;t here",
+        "m_code" : 301,
+        "known" : ["michael", "frank"],
+        "cat" : "social",
+        "valid" : true
+       },
+       {
         "name" : "SoliKick",
         "uri_check" : "https://solikick.com/-{account}",
         "post_body" : "",
@@ -4848,6 +4957,18 @@
         "m_code" : 301,
         "known" : ["petlover", "zalat"],
         "cat" : "social",
+        "valid" : true
+       },
+       {
+        "name" : "steller",
+        "uri_check" : "https://steller.co/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : " on Steller</title>",
+        "m_string" : "<title></title>",
+        "m_code" : 404,
+        "known" : ["jeannnn", "havwoods"],
+        "cat" : "shopping",
         "valid" : true
        },
        {
@@ -5279,8 +5400,8 @@
         "uri_pretty" : "https://web.archive.org/web/2/https://twitter.com/{account}",
         "post_body" : "",
         "e_code" : 200,
-        "e_string" : "\"archived_snapshots\" : {\"closest\"",
-        "m_string" : "\"archived_snapshots\" : {}",
+        "e_string" : "\"archived_snapshots\": {\"closest\"",
+        "m_string" : "\"archived_snapshots\": {}",
         "m_code" : 200,
         "known" : ["jack", "dineshdsouza"],
         "cat" : "archived",
@@ -5292,8 +5413,8 @@
         "uri_pretty" : "https://web.archive.org/web/*/https://twitter.com/{account}/status/*",
         "post_body" : "",
         "e_code" : 200,
-        "e_string" : "\"archived_snapshots\" : {\"closest\"",
-        "m_string" : "\"archived_snapshots\" : {}",
+        "e_string" : "\"archived_snapshots\": {\"closest\"",
+        "m_string" : "\"archived_snapshots\": {}",
         "m_code" : 200,
         "known" : ["jack", "dineshdsouza"],
         "cat" : "archived",

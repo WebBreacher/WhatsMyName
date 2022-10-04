@@ -4,9 +4,11 @@ import os
 import tempfile
 from asyncio import gather, ensure_future
 from typing import List, Dict
+import json
 
 import aiohttp
 from aiohttp import ClientSession, ClientConnectionError, TCPConnector, ClientTimeout
+from multidict import CIMultiDictProxy
 
 from whatsmyname.app.extractors.file_extractors import site_file_extractor
 from whatsmyname.app.models.schemas.cli import CliOptionsSchema
@@ -121,35 +123,16 @@ def filter_list_by(cli_options: CliOptionsSchema, sites: List[SiteSchema]) -> Li
     if cli_options.all:
         return sites
 
+    filtered_sites = []
+    for site in sites:
+        if site.raw_response_data:
+            filtered_sites.append(site)
+
     site: SiteSchema
     if cli_options.not_found:
-        return list(filter(lambda site: site.http_status_code == site.m_code, sites))
+        return list(filter(lambda site: site.http_status_code == site.m_code and site.m_string in site.raw_response_data, filtered_sites))
 
-    return list(filter(lambda site: site.http_status_code == site.e_code, sites))
-
-
-def capture_errors(cli_options: CliOptionsSchema, sites: List[SiteSchema]) -> None:
-    """Export not found results to a captured error file. """
-
-    cli_options.capture_error_directory = tempfile.gettempdir()
-
-    # clone the options
-    cloned_cli_options: CliOptionsSchema = CliOptionsSchema(**{**cli_options.dict(), **dict(random_username=None)})
-    cloned_cli_options.not_found = True
-    cloned_cli_options.verbose = True
-
-    not_found_sites = filter_list_by(cloned_cli_options, sites)
-    for site in not_found_sites:
-        username_dir: str = os.path.join(cli_options.capture_error_directory, 'whatsmyname', site.username)
-        if not os.path.exists(username_dir):
-            os.makedirs(username_dir)
-        cloned_cli_options.output_file = os.path.join(username_dir, f'{site.name}.json')
-        if os.path.exists(cloned_cli_options.output_file):
-            logger.info('Removing stall capture error file %s', cloned_cli_options.output_file)
-            os.remove(cloned_cli_options.output_file)
-        logger.info('Writing capture error file %s', cloned_cli_options.output_file)
-        print('Writing capture error file ', cloned_cli_options.output_file)
-        to_json(cloned_cli_options, [site])
+    return list(filter(lambda site: site.http_status_code == site.e_code and site.e_string in site.raw_response_data, filtered_sites))
 
 
 async def request_controller(cli_options: CliOptionsSchema, sites: List[SiteSchema]) -> List[SiteSchema]:
@@ -184,8 +167,8 @@ async def request_worker(session: ClientSession, cli_options: CliOptionsSchema, 
                                headers=headers
                                ) as response:
             site.http_status_code = response.status
-            if cli_options.verbose or cli_options.capture_errors:
-                site.raw_response_data = await response.text()
+            site.raw_response_data = await response.text()
+            site.response_headers = json.dumps({str(key): value for key, value in response.headers.items()})
             return site
 
     except ClientConnectionError as cce:

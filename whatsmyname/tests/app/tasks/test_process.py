@@ -65,9 +65,10 @@ def test_filter_found() -> None:
     site: SiteSchema
     for site in sites_list:
         site.http_status_code = site.e_code
+        site.raw_response_data = site.e_string
 
     results: List[SiteSchema] = filter_list_by(cli_options, sites_list)
-    assert len(results) == len(sites_list)
+    assert len(results) < len(sites_list)
 
 
 def test_filter_not_found() -> None:
@@ -78,7 +79,8 @@ def test_filter_not_found() -> None:
     site: SiteSchema
     for site in sites_list:
         site.http_status_code = site.m_code
+        site.raw_response_data = site.m_string
 
     results: List[SiteSchema] = filter_list_by(cli_options, sites_list)
-    assert len(results) == len(sites_list)
+    assert len(results) < len(sites_list)
 
