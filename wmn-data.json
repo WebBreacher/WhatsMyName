@@ -2957,6 +2957,18 @@
         "valid" : true
        },
        {
+        "name" : "kipin",
+        "uri_check" : "https://kipin.app/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "kipin.app/data/photos/resized2/",
+        "m_string" : "Page not found. Link expired, broken or wrong.",
+        "m_code" : 302,
+        "known" : ["monethica", "asd_fca"],
+        "cat" : "business",
+        "valid" : true
+       },
+       {
         "name" : "Ko-Fi",
         "uri_check" : "https://ko-fi.com/{account}",
         "post_body" : "",
