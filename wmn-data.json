@@ -2511,6 +2511,18 @@
         "valid" : true
        },
        {
+        "name" : "HiHello",
+        "uri_check" : "https://www.hihello.me/author/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "<title>HiHello Blog Author: ",
+        "m_string" : "Well, this is awkward",
+        "m_code" : 404,
+        "known" : ["pascal-theriault", "kortnee-paiha"],
+        "cat" : "business",
+        "valid" : true
+       },
+       {
         "name" : "HomeDesign3D",
         "uri_check" : "https://en.homedesign3d.net/user/{account}",
         "post_body" : "",
