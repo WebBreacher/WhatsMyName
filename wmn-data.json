@@ -1458,6 +1458,18 @@
         "valid" : true
        },
        {
+       "name" : "DIBIZ",
+        "uri_check" : "https://www.dibiz.com/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "mailto:?subject=",
+        "m_string" : "An Error Has Occurred",
+        "m_code" : 404,
+        "known" : ["fractalhue", "rid"],
+        "cat" : "business",
+        "valid" : true
+       },
+       {
         "name" : "Digitalspy",
         "uri_check" : "https://forums.digitalspy.com/profile/discussions/{account}",
         "post_body" : "",
@@ -1543,6 +1555,18 @@
         "valid" : true
        },
        {
+        "name" : "dot.cards",
+        "uri_check" : "https://dot.cards/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "&#x27;s dot.Profile</title>",
+        "m_string" : "Username does not exist.</title>",
+        "m_code" : 404,
+        "known" : ["dakmusic", "seattlevoiceactor"],
+        "cat" : "business",
+        "valid" : true
+       },
+       {
         "name" : "Dojoverse",
         "uri_check" : "https://dojoverse.com/members/{account}/",
         "post_body" : "",
@@ -1575,6 +1599,18 @@
         "m_string" : "(404)</title>",
         "m_code" : 302,
         "known" : ["chriskahn", "swilken"],
+        "cat" : "hobby",
+        "valid" : true
+       },
+       {
+        "name" : "Drum",
+        "uri_check" : "https://drum.io/{account}/",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "firstName",
+        "m_string" : "Page not found",
+        "m_code" : 302,
+        "known" : ["kingdirtdig", "oscarqbdrums"],
         "cat" : "hobby",
         "valid" : true
        },
@@ -2475,6 +2511,18 @@
         "valid" : true
        },
        {
+        "name" : "HiHello",
+        "uri_check" : "https://www.hihello.me/author/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "<title>HiHello Blog Author: ",
+        "m_string" : "Well, this is awkward",
+        "m_code" : 404,
+        "known" : ["pascal-theriault", "kortnee-paiha"],
+        "cat" : "business",
+        "valid" : true
+       },
+       {
         "name" : "HomeDesign3D",
         "uri_check" : "https://en.homedesign3d.net/user/{account}",
         "post_body" : "",
@@ -2918,6 +2966,18 @@
         "m_code" : 200,
         "known" : ["adam", "smith", "jones"],
         "cat" : "social",
+        "valid" : true
+       },
+       {
+        "name" : "kipin",
+        "uri_check" : "https://kipin.app/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "kipin.app/data/photos/resized2/",
+        "m_string" : "Page not found. Link expired, broken or wrong.",
+        "m_code" : 302,
+        "known" : ["monethica", "asd_fca"],
+        "cat" : "business",
         "valid" : true
        },
        {
@@ -5093,6 +5153,32 @@
         "valid" : true
        },
        {
+        "name" : "TAPiTAG",
+        "uri_check" : "https://account.tapitag.co/tapitag/api/v1/{account}",
+        "uri_pretty" : "https://account.tapitag.co/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "User details are Showing",
+        "m_string" : "The rf number is not valid",
+        "m_code" : 200,
+        "known" : ["JonathanWallace", "gearoidconsidine"],
+        "cat" : "business",
+        "valid" : true
+       },
+       {
+        "name" : "Tappy",
+        "uri_check" : "https://api.tappy.tech/api/profile/username/{account}",
+        "uri_pretty" : "https://www.tappy.tech/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "user_id",
+        "m_string" : "Profile of username Not Found",
+        "m_code" : 200,
+        "known" : ["alexborrelli", "domocann"],
+        "cat" : "business",
+        "valid" : true
+       },
+       {
         "name" : "Taringa",
         "uri_check" : "https://www.taringa.net/{account}",
         "post_body" : "",
@@ -5649,6 +5735,19 @@
         "m_code" : 404,
         "known" : ["TomHarlock", "Seks"],
         "cat" : "video",
+        "valid" : true
+       },
+       {
+        "name" : "visnesscard",
+        "uri_check" : "https://my.visnesscard.com/Home/GetCard/{account}",
+        "uri_pretty" : "https://my.visnesscard.com/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "end_point",
+        "m_string" : "card_id\": 0",
+        "m_code" : 200,
+        "known" : ["Lisa-Gordon", "Bill-Schaeffer"],
+        "cat" : "business",
         "valid" : true
        },
        {
