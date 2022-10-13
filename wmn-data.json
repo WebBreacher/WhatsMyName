@@ -3524,14 +3524,26 @@
         "valid" : true
        },
        {
-        "name" : "MyFitnessPal",
-        "uri_check" : "https://www.myfitnesspal.com/user/{account}",
+        "name" : "MyFitnessPal Author",
+        "uri_check" : "https://blog.myfitnesspal.com/author/{account}/",
         "post_body" : "",
         "e_code" : 200,
-        "e_string" : "{user}'s profile",
-        "m_string" : "The page you were looking for could not be found",
+        "e_string" : "About the Author",
+        "m_string" : "<title>Page not found ",
         "m_code" : 404,
-        "known" : ["titaniumclicks", "jgoldie", "mike"],
+        "known" : ["lauren-krouse", "julia-malacoff"],
+        "cat" : "health",
+        "valid" : true
+       },
+       {
+        "name" : "MyFitnessPal Community",
+        "uri_check" : "https://community.myfitnesspal.com/en/profile/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : ">Last Active<",
+        "m_string" : "User Not Found",
+        "m_code" : 404,
+        "known" : ["malibu927", "L1zardQueen"],
         "cat" : "health",
         "valid" : true
        },
