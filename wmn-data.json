@@ -2523,6 +2523,18 @@
         "valid" : true
        },
        {
+        "name" : "hoo.be",
+        "uri_check" : "https://hoo.be/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "--profile-name-color",
+        "m_string" : "Page Not Found</h3>",
+        "m_code" : 404,
+        "known" : ["chrishemsworth", "alextackie"],
+        "cat" : "business",
+        "valid" : true
+       },
+       {
         "name" : "Houzz",
         "uri_check" : "https://www.houzz.com/user/{account}",
         "post_body" : "",
@@ -5475,8 +5487,8 @@
         "uri_pretty" : "https://twitter.com/{account}",
         "post_body" : "",
         "e_code" : 200,
-        "e_string" : ") | nitter</title>",
-        "m_string" : "Error | nitter</title>",
+        "e_string" : ")|nitter</title>",
+        "m_string" : "<title>Error|nitter</title>",
         "m_code" : 404,
         "known" : ["webbreacher", "chrishemsworth"],
         "cat" : "social",
