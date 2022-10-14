@@ -1849,7 +1849,7 @@
         "uri_check" : "https://www.fark.com/users/{account}",
         "post_body" : "",
         "e_code" : 200,
-        "e_string" : "bio",
+        "e_string" : "Fark account number",
         "m_string" : "Tastes like chicken.",
         "m_code" : 200,
         "known" : ["bob", "bobby"],
@@ -4444,6 +4444,7 @@
        {
         "name" : "Roblox",
         "uri_check" : "https://auth.roblox.com/v1/usernames/validate?username={account}&birthday=2019-12-31T23:00:00.000Z",
+        "uri_pretty" : "https://www.roblox.com/search/users?keyword={account}",
         "post_body" : "",
         "e_code" : 200,
         "e_string" : "Username is already in use",
