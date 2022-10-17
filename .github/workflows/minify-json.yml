@@ -1,11 +1,14 @@
 on:
-  push:
-    branches: [main]
-  workflow_dispatch:
+  pull_request_target:
+    types:
+      - closed
+    branches:
+      - 'main'
+
 name: Minify JSON
 jobs:
-  web-deploy:
-    name: Deploy
+  if_merged:
+    if: github.event.pull_request.merged == true    
     runs-on: ubuntu-latest
     steps:
     - name: Checkout files
