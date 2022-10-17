@@ -999,6 +999,18 @@
         "known" : ["dictvm", "sml"],
         "cat" : "social",
         "valid" : true
+       },        
+       {
+        "name" : "chaturbate",
+        "uri_check" : "https://chaturbate.com/{account}/",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "'s Bio and Free Webcam",
+        "m_string" : "It's probably just a broken link",
+        "m_code" : 302,
+        "known" : ["pussylovekate", "kemii"],
+        "cat" : "XXXPORNXXX",
+        "valid" : true
        },
        {
         "name" : "cHEEZburger",
