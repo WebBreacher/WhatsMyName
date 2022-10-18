@@ -327,16 +327,15 @@
        },
        {
         "name" : "aNobii",
-        "uri_check" : "https://api.anobii.com/users/eid/{account}",
-        "uri_pretty" : "https://www.anobii.com/{account}/profile/activity",
+        "uri_check" : "https://www.anobii.com/{account}/profile/activity",
         "post_body" : "",
         "e_code" : 200,
-        "e_string" : "Anobian since",
+        "e_string" : ">Anobian since",
         "m_string" : "A user matching the specified criteria could not be found",
         "m_code" : 200,
         "known" : ["albertoricci", "trynyty01"],
         "cat" : "hobby",
-        "valid" : false
+        "valid" : true
        },
        {
         "name" : "anonup",
@@ -1701,18 +1700,6 @@
         "valid" : true
        },
        {
-        "name" : "Elftown",
-        "uri_check" : "http://elftown.com/{account}",
-        "post_body" : "",
-        "e_code" : 303,
-        "e_string" : "",
-        "m_string" : "is an unknown",
-        "m_code" : 200,
-        "known" : ["marhiah", "adnama"],
-        "cat" : "social",
-        "valid" : false
-       },
-       {
         "name" : "Ello.co",
         "uri_check" : "https://ello.co/{account}",
         "post_body" : "",
@@ -1819,18 +1806,6 @@
         "known" : ["naughty_nymphomaniac", "hellfireclub", "fabswingers.com"],
         "cat" : "dating",
         "valid" : true
-       },
-       {
-        "name" : "Facenama",
-        "uri_check" : "https://facenama.com/{account}",
-        "post_body" : "",
-        "e_code" : 200,
-        "e_string" : "شبکه اجتماعی فیس نما</title>",
-        "m_string" : "خطای 404",
-        "m_code" : 302,
-        "known" : ["john", "blue"],
-        "cat" : "social",
-        "valid" : false
        },
        {
         "name" : "Faktopedia",
@@ -4068,18 +4043,6 @@
         "valid" : true
        },
        {
-        "name" : "Photoblog",
-        "uri_check" : "https://www.photoblog.com/{account}/",
-        "post_body" : "",
-        "e_code" : 200,
-        "e_string" : "/following/",
-        "m_string" : "Page Not found",
-        "m_code" : 404,
-        "known" : ["hatsumi", "pdsdville"],
-        "cat" : "images",
-        "valid" : false
-       },
-       {
       "name" : "Picsart",
       "uri_check" : "https://picsart.com/u/{account}",
       "post_body" : "",
@@ -4743,18 +4706,6 @@
         "known" : ["eipuru_", "sime064"],
         "cat" : "art",
         "valid" : true
-       },
-       {
-        "name" : "Skypli",
-        "uri_check" : "https://www.skypli.com/profile/{account}",
-        "post_body" : "",
-        "e_code" : 200,
-        "e_string" : "Skype user profile - skypli.com",
-        "m_string" : "Page not found.",
-        "m_code" : 404,
-        "known" : ["toni.hung", "hadi.awad"],
-        "cat" : "social",
-        "valid" : false
        },
        {
         "name" : "Skyrock",
@@ -5482,18 +5433,6 @@
         "valid" : true
        },
        {
-        "name" : "truth_social",
-        "uri_check" : "https://truthsocial.com/@{account}",
-        "post_body" : "",
-        "e_code" : 200,
-        "e_string" : "(@",
-        "m_string" : "This resource could not be found",
-        "m_code" : 200,
-        "known" : ["Kash", "realDonaldTrump"],
-        "cat" : "social",
-        "valid" : false
-       },
-       {
         "name" : "tumblr",
         "uri_check" : "https://{account}.tumblr.com",
         "post_body" : "",
@@ -5847,18 +5786,6 @@
         "known" : ["cyber", "cybersecstu"],
         "cat" : "misc",
         "valid" : true
-       },
-       {
-        "name" : "vizjer.pl",
-        "uri_check" : "https://vizjer.pl/uzytkownik/{account}",
-        "post_body" : "",
-        "e_code" : 200,
-        "e_string" : "Profil użytkownika",
-        "m_string" : "Ostatnie komentarze",
-        "m_code" : 200,
-        "known" : ["janek", "tomek"],
-        "cat" : "video",
-        "valid" : false
        },
        {
         "name" : "VK",
