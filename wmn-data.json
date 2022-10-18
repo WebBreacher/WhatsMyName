@@ -1676,18 +1676,6 @@
         "valid" : true
        },
        {
-        "name" : "Elftown",
-        "uri_check" : "http://elftown.com/{account}",
-        "post_body" : "",
-        "e_code" : 303,
-        "e_string" : "",
-        "m_string" : "is an unknown",
-        "m_code" : 200,
-        "known" : ["marhiah", "adnama"],
-        "cat" : "social",
-        "valid" : false
-       },
-       {
         "name" : "Ello.co",
         "uri_check" : "https://ello.co/{account}",
         "post_body" : "",
@@ -1794,18 +1782,6 @@
         "known" : ["naughty_nymphomaniac", "hellfireclub", "fabswingers.com"],
         "cat" : "dating",
         "valid" : true
-       },
-       {
-        "name" : "Facenama",
-        "uri_check" : "https://facenama.com/{account}",
-        "post_body" : "",
-        "e_code" : 200,
-        "e_string" : "شبکه اجتماعی فیس نما</title>",
-        "m_string" : "خطای 404",
-        "m_code" : 302,
-        "known" : ["john", "blue"],
-        "cat" : "social",
-        "valid" : false
        },
        {
         "name" : "Faktopedia",
