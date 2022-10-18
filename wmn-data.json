@@ -5238,6 +5238,18 @@
         "known" : ["john"],
         "cat" : "coding",
         "valid" : true
+       },        
+       {
+        "name" : "Teddygirls",
+        "uri_check" : "https://teddysgirls.net/models/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : ";s exclusive page to subscribe to her",
+        "m_string" : "The page you were looking for doesn't exist",
+        "m_code" : 404,
+        "known" : ["jaycee-starr", "chubbychick94"],
+        "cat" : "XXXPORNXXX",
+        "valid" : true
        },
        {
         "name" : "Teknik",
