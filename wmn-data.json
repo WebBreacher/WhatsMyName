@@ -4941,7 +4941,7 @@
         "name" : "SpankPay",
         "uri_check" : "https://api.spankpay.com/graphql",
         "uri_pretty" : "https://spankpay.me/{account}",
-        "post_body" : "{'operationName':'GetPublicAccount','variables':{'username':'medroxy'},'query':'query GetPublicAccount($username: String!) {\n  getPublicAccount(username: $username) {\n    username\n    headerPhoto\n    profilePhoto\n    displayName\n    socialLinks {\n      link\n      name\n      __typename\n    }\n    apiKey\n    __typename\n  }\n}\n'}",
+        "post_body" : "NEED TO FIX THIS",
         "e_code" : 200,
         "e_string" : "headerPhoto",
         "m_string" : "User not found",
