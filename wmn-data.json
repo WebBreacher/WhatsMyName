@@ -3987,8 +3987,8 @@
         "uri_check" : "https://www.patreon.com/{account}",
         "post_body" : "",
         "e_code" : 200,
-        "e_string" : "Become a patron of",
-        "m_string" : "Oh no! Looks like you got lost.",
+        "e_string" : "full_name\":",
+        "m_string" : "errorCode\": 404,",
         "m_code" : 404,
         "known" : ["mubix", "doughboys"],
         "cat" : "finance",
@@ -4405,7 +4405,7 @@
        },
        {
         "name" : "redbubble",
-        "uri_check" : "https://www.redbubble.com/people/{account}/shop?ref=artist_title_name%2F",
+        "uri_check" : "https://www.redbubble.com/people/{account}/shop",
         "post_body" : "",
         "e_code" : 200,
         "e_string" : "Shop | Redbubble",
@@ -4500,18 +4500,6 @@
         "m_code" : 404,
         "known" : ["alpHackeronee", "Quantum_Physicist"],
         "cat" : "gaming",
-        "valid" : true
-       },
-       {
-        "name" : "Ruby Dating",
-        "uri_check" : "https://ruby.dating/en/users/{account}",
-        "post_body" : "",
-        "e_code" : 200,
-        "e_string" : "Looks for:",
-        "m_string" : "We can’t find that user",
-        "m_code" : 410,
-        "known" : ["Ute1833", "Jessika4922"],
-        "cat" : "dating",
         "valid" : true
        },
        {
@@ -4724,7 +4712,7 @@
         "uri_check" : "https://{account}.skyrock.com/",
         "post_body" : "",
         "e_code" : 200,
-        "e_string" : "s blog",
+        "e_string" : "&#039;s blog",
         "m_string" : "<title>Page not found - ",
         "m_code" : 404,
         "known" : ["alice", "bob"],
@@ -4951,16 +4939,16 @@
        },
        {
         "name" : "SpankPay",
-        "uri_check" : "https://pay-api.spankchain.com/profiles/{account}?allowBlank=",
+        "uri_check" : "https://api.spankpay.com/graphql",
         "uri_pretty" : "https://spankpay.me/{account}",
-        "post_body" : "",
+        "post_body" : "NEED TO FIX THIS",
         "e_code" : 200,
-        "e_string" : "spankpayApiKey",
-        "m_string" : "Profile not found:",
+        "e_string" : "headerPhoto",
+        "m_string" : "User not found",
         "m_code" : 404,
         "known" : ["Medroxy","brittanyandrews"],
         "cat" : "finance",
-        "valid" : true
+        "valid" : false
        },
        {
         "name" : "Speaker Deck",
@@ -5683,10 +5671,10 @@
         "uri_check" : "https://account.venmo.com/u/{account}",
         "post_body" : "",
         "e_code" : 200,
-        "e_string" : "\"profileInfo_username__",
+        "e_string" : "profileInfo_username__",
         "m_string" : "Sorry, the page you requested does not exist!",
         "m_code" : 404,
-        "known" : ["john", "liam"],
+        "known" : ["John-Goolsby-8", "kate-mura"],
         "cat" : "finance",
         "valid" : true
        },
