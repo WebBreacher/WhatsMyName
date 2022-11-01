@@ -4524,6 +4524,18 @@
         "known" : ["Tafara-Mwareya", "Jose-Roberto-Rasi"],
         "cat" : "hobby",
         "valid" : true
+       },        
+       {
+        "name" : "resumes_actorsaccess",
+        "uri_check" : "https://resumes.actorsaccess.com/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "- Resume | Actors Access</title>",
+        "m_string" : "File was not found on this SERVER",
+        "m_code" : 200,
+        "known" : ["veronicashelby", "sarahstipe"],
+        "cat" : "social",
+        "valid" : true
        },
        {
         "name" : "rigcz.club",
