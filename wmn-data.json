@@ -2267,8 +2267,8 @@
         "known" : ["gettr", "support"],
         "cat" : "social",
         "valid" : true
-        },        
-        {
+       },        
+       {
         "name" : "gfycat",
         "uri_check" : "https://gfycat.com/@{account}",
         "post_body" : "",
