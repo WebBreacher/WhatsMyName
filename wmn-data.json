@@ -2270,13 +2270,14 @@
         },        
         {
         "name" : "gfycat",
-        "check_uri" : "https://gfycat.com/@{account}",
-        "account_existence_code" : "200",
-        "account_existence_string" : "(@",
-        "account_missing_string" : "<h1>Page not found</h1>",
-        "account_missing_code" : "404",
-        "known_accounts" : ["timviechanoi", "sannahparker"],
-        "category" : "misc",
+        "uri_check" : "https://gfycat.com/@{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "(@",
+        "m_string" : "<h1>Page not found</h1>",
+        "m_code" : 404,
+        "known" : ["timviechanoi", "sannahparker"],
+        "cat" : "misc",
         "valid" : true
        },
        {
