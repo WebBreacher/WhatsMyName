@@ -3634,6 +3634,7 @@
        {
         "name" : "mymfans",
         "uri_check" : "https://mym.fans/{account}",
+        "post_body" : "",
         "e_code" : 200,
         "e_string" : " • MYM</title>",
         "m_string" : "Il n’y a rien ici…",
