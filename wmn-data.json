@@ -1241,6 +1241,18 @@
         "valid" : true
        },        
        {
+        "name" : "counter_social",
+        "uri_check" : "https://counter.social/@{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "@counter.social) - CounterSocial</title>",
+        "m_string" : "The page you are looking for isn&#39;t here.",
+        "m_code" : 404,
+        "known" : ["ericconrad", "webbreacher"],
+        "cat" : "social",
+        "valid" : true
+       },        
+       {
         "name" : "cowboys4angels",
         "uri_check" : "https://cowboys4angels.com/cowboy/{account}/",
         "post_body" : "",
@@ -3630,6 +3642,18 @@
         "known" : ["Djelizamay","Andysparkles"],
         "cat" : "social",
         "valid" : true
+       },        
+       {
+        "name" : "myportfolio",
+        "uri_check" : "https://{account}.myportfolio.com/work",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "class=\"page-title",
+        "m_string" : "<title>Adobe Portfolio | Build your own personalized website</title>",
+        "m_code" : 302,
+        "known" : ["artkonina", "fox"],
+        "cat" : "misc",
+        "valid" : true
        },
        {
         "name" : "MySpace",
@@ -4003,6 +4027,18 @@
         "m_string" : "Nie znaleźliśmy strony której szukasz.",
         "m_code" : 404,
         "known" : ["radio357", "radionowyswiat"],
+        "cat" : "finance",
+        "valid" : true
+        },        
+        {
+        "name" : "Paypal",
+        "uri_check" : "https://www.paypal.com/paypalme/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "userInfo",
+        "m_string" : "<title>PayPal.Me</title><meta",
+        "m_code" : 200,
+        "known" : ["OCMermaid", "blackrock"],
         "cat" : "finance",
         "valid" : true
        },
@@ -4875,6 +4911,18 @@
         "m_code" : 301,
         "known" : ["michael", "frank"],
         "cat" : "social",
+        "valid" : true
+       },        
+       {
+        "name" : "sofurry",
+        "uri_check" : "https://{account}.sofurry.com",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "'s Profile | SoFurry",
+        "m_string" : "SoFurry - Error | SoFurry",
+        "m_code" : 404,
+        "known" : ["reeden-landshey", "tigerzero"],
+        "cat" : "art",
         "valid" : true
        },
        {
