@@ -3121,7 +3121,7 @@
         "m_string" : "Unable to find user",
         "m_code" : 404,
         "known" : ["owlthorns", "Severkosh"],
-        "category" : "social",
+        "cat" : "social",
         "valid" : true
        },
        {
