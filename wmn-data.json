@@ -3648,7 +3648,7 @@
         "uri_check" : "https://{account}.myportfolio.com/work",
         "post_body" : "",
         "e_code" : 200,
-        "e_string" : "digital artist, illustrator, game art",
+        "e_string" : "class="page-title",
         "m_string" : "<title>Adobe Portfolio | Build your own personalized website</title>",
         "m_code" : 302,
         "known" : ["artkonina", "fox"],
