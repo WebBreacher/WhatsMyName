@@ -3630,6 +3630,17 @@
         "known" : ["malibu927", "L1zardQueen"],
         "cat" : "health",
         "valid" : true
+       },        
+       {
+        "name" : "mymfans",
+        "uri_check" : "https://mym.fans/{account}",
+        "e_code" : 200,
+        "e_string" : " • MYM</title>",
+        "m_string" : "Il n’y a rien ici…",
+        "m_code" : 404,
+        "known" : ["Unmissabl", "Lalogebeaute"],
+        "cat" : "social",
+        "valid" : true
        },
        {
         "name" : "my_instants",
