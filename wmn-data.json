@@ -2267,6 +2267,18 @@
         "known" : ["gettr", "support"],
         "cat" : "social",
         "valid" : true
+       },        
+       {
+        "name" : "gfycat",
+        "uri_check" : "https://gfycat.com/@{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "gfycat-username",
+        "m_string" : "<h1>Page not found</h1>",
+        "m_code" : 404,
+        "known" : ["timviechanoi", "sannahparker"],
+        "cat" : "misc",
+        "valid" : true
        },
        {
         "name" : "Gigapan",
@@ -3099,6 +3111,18 @@
         "known" : ["mohammed01", "mohammed03"],
         "cat" : "gaming",
         "valid" : true
+       },        
+       {
+        "name" : "likeevideo",
+        "uri_check" : "https://likee.video/@{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "https://img.like.video/",
+        "m_string" : " </h1>",
+        "m_code" : 404,
+        "known" : ["owlthorns", "Severkosh"],
+        "cat" : "social",
+        "valid" : true
        },
        {
         "name" : "LINE",
@@ -3605,6 +3629,18 @@
         "m_code" : 404,
         "known" : ["malibu927", "L1zardQueen"],
         "cat" : "health",
+        "valid" : true
+       },        
+       {
+        "name" : "mymfans",
+        "uri_check" : "https://mym.fans/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : " • MYM</title>",
+        "m_string" : "• MYM • Exclusive social network for creators &amp; fans</title>",
+        "m_code" : 404,
+        "known" : ["Unmissabl", "Lalogebeaute"],
+        "cat" : "social",
         "valid" : true
        },
        {
@@ -4487,6 +4523,18 @@
         "m_code" : 301,
         "known" : ["Tafara-Mwareya", "Jose-Roberto-Rasi"],
         "cat" : "hobby",
+        "valid" : true
+       },        
+       {
+        "name" : "resumes_actorsaccess",
+        "uri_check" : "https://resumes.actorsaccess.com/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "- Resume | Actors Access</title>",
+        "m_string" : "File was not found on this SERVER",
+        "m_code" : 200,
+        "known" : ["veronicashelby", "sarahstipe"],
+        "cat" : "social",
         "valid" : true
        },
        {
