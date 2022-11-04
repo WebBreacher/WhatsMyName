@@ -3342,6 +3342,18 @@
         "valid" : true
        },
        {
+        "name" : "MCName (Minecraft)",
+        "uri_check" : "https://mcname.info/en/search?q={account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "card mb-3 text-monospace",
+        "m_string" : "alert alert-success px-0 py-1",
+        "m_code" : 200,
+        "known" : ["unrevive", "nxtuny"],
+        "cat" : "gaming",
+        "valid" : true
+       },
+       {
         "name" : "MCUUID (Minecraft)",
         "uri_check" : "https://playerdb.co/api/player/minecraft/{account}",
         "uri_pretty" : "https://mcuuid.net/?q={account}",
@@ -5749,18 +5761,6 @@
         "m_code" : 404,
         "known" : ["janek", "test"],
         "cat" : "misc",
-        "valid" : true
-       },
-       {
-        "name" : "unrevive",
-        "uri_check" : "https://mcname.info/en/search?q={account}",
-        "post_body" : "",
-        "e_code" : 200,
-        "e_string" : "card mb-3 text-monospace",
-        "m_string" : "alert alert-success px-0 py-1",
-        "m_code" : 200,
-        "known" : ["unrevive", "nxtuny"],
-        "cat" : "gaming",
         "valid" : true
        },
        {
