@@ -372,6 +372,17 @@
         "known" : ["mikec", "varunkumarb0001"],
         "cat" : "tech",
         "valid" : true
+       },        
+       {
+        "name" : "apteka",
+        "check_uri" : "https://apteka.ee/user/id/{account}",
+        "e_code" : 200,
+        "e_string" : "/gifts/user_id/",
+        "m_string" : "account-data-error",
+        "m_code" : 200,
+        "known" : ["lana", "oleg"],
+        "cat" : "social",
+        "valid" : true
        },
        {
         "name" : "Archive Of Our Own Account",
