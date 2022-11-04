@@ -372,7 +372,7 @@
         "known" : ["mikec", "varunkumarb0001"],
         "cat" : "tech",
         "valid" : true
-       },        
+       },
        {
         "name" : "apteka",
         "uri_check" : "https://apteka.ee/user/id/{account}",
@@ -1035,7 +1035,7 @@
         "known" : ["dictvm", "sml"],
         "cat" : "social",
         "valid" : true
-       },        
+       },
        {
         "name" : "chaturbate",
         "uri_check" : "https://chaturbate.com/{account}/",
@@ -1215,7 +1215,7 @@
         "known" : ["john", "test"],
         "cat" : "coding",
         "valid" : true
-       },        
+       },
        {
         "name" : "cohost",
         "uri_check" : "https://cohost.org/{account}",
@@ -1263,7 +1263,7 @@
         "known" : ["john", "blue"],
         "cat" : "art",
         "valid" : true
-       },        
+       },
        {
         "name" : "counter_social",
         "uri_check" : "https://counter.social/@{account}",
@@ -1275,7 +1275,7 @@
         "known" : ["ericconrad", "webbreacher"],
         "cat" : "social",
         "valid" : true
-       },        
+       },
        {
         "name" : "cowboys4angels",
         "uri_check" : "https://cowboys4angels.com/cowboy/{account}/",
@@ -2291,7 +2291,7 @@
         "known" : ["gettr", "support"],
         "cat" : "social",
         "valid" : true
-       },        
+       },
        {
         "name" : "gfycat",
         "uri_check" : "https://gfycat.com/@{account}",
@@ -3135,7 +3135,7 @@
         "known" : ["mohammed01", "mohammed03"],
         "cat" : "gaming",
         "valid" : true
-       },        
+       },
        {
         "name" : "likeevideo",
         "uri_check" : "https://likee.video/@{account}",
@@ -3654,7 +3654,7 @@
         "known" : ["malibu927", "L1zardQueen"],
         "cat" : "health",
         "valid" : true
-       },        
+       },
        {
         "name" : "mymfans",
         "uri_check" : "https://mym.fans/{account}",
@@ -3702,7 +3702,7 @@
         "known" : ["Djelizamay","Andysparkles"],
         "cat" : "social",
         "valid" : true
-       },        
+       },
        {
         "name" : "myportfolio",
         "uri_check" : "https://{account}.myportfolio.com/work",
@@ -3725,18 +3725,6 @@
         "m_code" : 404,
         "known" : ["alice", "bob"],
         "cat" : "social",
-        "valid" : true
-       },
-       {
-        "name" : "NameMC",
-        "uri_check" : "https://namemc.com/search?q={account}",
-        "post_body" : "",
-        "e_code" : 200,
-        "e_string" : "Status: Unavailable",
-        "m_string" : "Status: Available*",
-        "m_code" : 200,
-        "known" : ["alice", "bob"],
-        "cat" : "gaming",
         "valid" : true
        },
        {
@@ -3823,7 +3811,7 @@
         "known" : ["mamadou1", "wade"],
         "cat" : "dating",
         "valid" : true
-       },        
+       },
        {
         "name" : "nihbuatjajan",
         "uri_check" : "https://www.nihbuatjajan.com/{account}",
@@ -4102,7 +4090,7 @@
         "known" : ["radio357", "radionowyswiat"],
         "cat" : "finance",
         "valid" : true
-        },        
+        },
         {
         "name" : "Paypal",
         "uri_check" : "https://www.paypal.com/paypalme/{account}",
@@ -4561,7 +4549,7 @@
         "known" : ["Tafara-Mwareya", "Jose-Roberto-Rasi"],
         "cat" : "hobby",
         "valid" : true
-       },        
+       },
        {
         "name" : "resumes_actorsaccess",
         "uri_check" : "https://resumes.actorsaccess.com/{account}",
@@ -4706,7 +4694,7 @@
         "known" : ["griffpatch"],
         "cat" : "coding",
         "valid" : true
-       },        
+       },
        {
         "name" : "secure_donation",
         "uri_check" : "https://secure.donationpay.org/{account}/",
@@ -5009,7 +4997,7 @@
         "known" : ["michael", "frank"],
         "cat" : "social",
         "valid" : true
-       },        
+       },
        {
         "name" : "sofurry",
         "uri_check" : "https://{account}.sofurry.com",
@@ -5360,7 +5348,7 @@
         "known" : ["john"],
         "cat" : "coding",
         "valid" : true
-       },        
+       },
        {
         "name" : "Teddygirls",
         "uri_check" : "https://teddysgirls.net/models/{account}",
@@ -5764,6 +5752,18 @@
         "valid" : true
        },
        {
+        "name" : "unrevive",
+        "uri_check" : "https://mcname.info/en/search?q={account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "card mb-3 text-monospace",
+        "m_string" : "alert alert-success px-0 py-1",
+        "m_code" : 200,
+        "known" : ["unrevive", "nxtuny"],
+        "cat" : "gaming",
+        "valid" : true
+       },
+       {
         "name" : "unsplash",
         "uri_check" : "https://unsplash.com/@{account}",
         "post_body" : "",
@@ -6006,7 +6006,7 @@
         "known" : ["alex", "peter"],
         "cat" : "hobby",
         "valid" : true
-       },        
+       },
        {
         "name" : "Watchmyfeed",
         "uri_check" : "https://watchmyfeed.com/{account}",
