@@ -3666,15 +3666,15 @@
         "known" : ["john"],
         "cat" : "news",
         "valid" : true
-        },        
-        {
+       },        
+       {
         "name" : "musictraveler",
         "uri_check" : "https://www.musictraveler.com/en/users/{account}/",
         "post_body" : "",        
         "e_code" : 200,
         "e_string" : "on Music Traveler</title>",
         "m_string" : "<title>Page Not found</title>",
-        "m_code" : "404",
+        "m_code" : 404,
         "known" : ["dave", "sarah"],
         "cat" : "music",
         "valid" : true
