@@ -6130,7 +6130,8 @@
        },        
        {
         "name" : "weebly",
-        "uri_check" : "https://{account}.weebly.com/",        
+        "uri_check" : "https://{account}.weebly.com/",
+        "post_body" : "",        
         "e_code" : 200,
         "e_string" : "<div id=\"navigation\">",
         "m_string" : "<title>404 - Page Not Found",
