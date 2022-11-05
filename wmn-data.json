@@ -6127,6 +6127,17 @@
         "known" : ["weasyl", "test"],
         "cat" : "images",
         "valid" : true
+       },        
+       {
+        "name" : "weebly",
+        "uri_check" : "https://{account}.weebly.com/",        
+        "e_code" : 200,
+        "e_string" : "<div id=\"navigation\">",
+        "m_string" : "<title>404 - Page Not Found",
+        "m_code" : 404,
+        "known" : ["dave", "john"],
+        "cat" : "misc",
+        "valid" : true
        },
        {
         "name" : "weheartit",
