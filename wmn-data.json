@@ -252,6 +252,17 @@
         "known" : ["GazetaPolska", "GPCodziennie"],
         "cat" : "social",
         "valid" : true
+       },        
+       {
+        "name" : "alik",
+        "uri_check" : "https://www.alik.cz/u/{account}",        
+        "e_code" : 200,
+        "e_string" : "Vizitka – Alík.cz</title>",
+        "m_string" : "<title>Vizitka nenalezena",
+        "m_code" : 404,
+        "known" : ["igor", "pavel"],
+        "cat" : "social",
+        "valid" : true
        },
        {
         "name" : "allesovercrypto",
