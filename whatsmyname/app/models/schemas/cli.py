@@ -18,7 +18,7 @@ class CliOptionsSchema(BaseModel):
     timeout: int = 30
     format: OutputFormat = OutputFormat.JSON
     output_file: Optional[str] = None
-    output_stdout: bool = True
+    output_stdout: bool = False
     per_request_timeout: int = 5
     not_found: bool = False
     verbose: bool = False
