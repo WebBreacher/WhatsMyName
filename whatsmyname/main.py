@@ -30,8 +30,6 @@ async def start_check_for_presence():
         to_csv(cli_options, sites)
     elif cli_options.format == OutputFormat.TABLE:
         to_table(cli_options, sites)
-        # further processing is not required for the table format
-        exit(1)
 
     if cli_options.output_stdout:
         with open(cli_options.output_file, 'r') as fp:
@@ -99,8 +97,6 @@ async def start_validate_whats_my_name() -> None:
         to_csv(cli_options, sites)
     elif cli_options.format == OutputFormat.TABLE:
         to_table(cli_options, sites)
-        # further processing is not required for the table format
-        exit(1)
 
     if cli_options.output_stdout:
         with open(cli_options.output_file, 'r') as fp:

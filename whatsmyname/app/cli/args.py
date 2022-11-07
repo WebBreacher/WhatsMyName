@@ -69,6 +69,9 @@ def arg_parser(arguments: ArgumentParser) -> CliOptionsSchema:
         schema.input_file = input_file
         logger.debug('Loading default input file %s', input_file)
 
+    if schema.output_file:
+        schema.output_stdout = False
+
     if not schema.output_file:
         letters = string.ascii_lowercase
         schema.output_file = os.path.join(tempfile.gettempdir(), ''.join(choice(letters) for _ in range(10)))
