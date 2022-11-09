@@ -3388,6 +3388,18 @@
         "known" : ["john", "alex"],
         "cat" : "social",
         "valid" : true
+       },        
+       {
+        "name" : "mastodon_api",
+        "uri_check" : "https://mastodon.social/api/v2/search?q={account}", 
+        "post_body" : "",       
+        "e_code" : 200,
+        "e_string" : "display_name",
+        "m_string" : "accounts\":[],\"statuses\":[],\"hashtags\":",
+        "m_code" : 404,
+        "known" : ["Richard_Littler", "webbreacher"],
+        "cat" : "social",
+        "valid" : true
        },
        {
         "name" : "MCName (Minecraft)",
