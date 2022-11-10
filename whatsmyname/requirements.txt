@@ -14,7 +14,7 @@ clikit==0.6.2
 commonmark==0.9.1
 coverage==6.4.3
 crashtest==0.3.1
-cryptography==37.0.4
+cryptography==38.0.3
 distlib==0.3.5
 docutils==0.19
 filelock==3.8.0
