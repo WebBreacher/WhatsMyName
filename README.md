@@ -57,7 +57,7 @@ There are quite a few command line options available:
 
 - Check for the user yooper, on social sites, using a different web browser agent
 
-`python whats_my_name.py -u yooper -c social --user_agent_platform 'Firefox on macOS' `
+`python whats_my_name.py -u yooper -c social --ua 1 `
 
 - Check for the user yooper, print out in a csv format into console
 

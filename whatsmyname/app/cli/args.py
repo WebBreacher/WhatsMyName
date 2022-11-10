@@ -41,7 +41,7 @@ def get_default_args() -> ArgumentParser:
     parser.add_argument('-mr', '--max_redirects', nargs='?', help='[OPTIONAL] Max Redirects, default is 10 ', default=10)
     parser.add_argument('-c', '--category', nargs='?', help='[OPTIONAL] Filter by site category ', default=None)
     parser.add_argument('-rv', '--random_validate', action="store_true", help='[OPTIONAL] Upon success, validate using random username', default=False)
-    parser.add_argument('-uap', '--user_agent_platform', nargs='?', help='[OPTIONAL] Select the user agent platform to use. ', default='Chrome on Windows 1')
+    parser.add_argument('-ua', '--user_agent_id', nargs='?', help='[OPTIONAL] Select the user agent platform to use. ', default=1)
     return parser
 
 
@@ -84,10 +84,10 @@ def arg_parser(arguments: ArgumentParser) -> CliOptionsSchema:
         schema.validate_knowns = True
 
     user_agents: List[UserAgentSchema] = user_agent_extractor(os.path.join(resource_dir, 'user-agents.json'))
-    schema.user_agent = next(obj.user_agent for obj in user_agents if obj.platform == schema.user_agent_platform)
+    schema.user_agent = next(obj.user_agent for obj in user_agents if obj.id == schema.user_agent_id)
 
     if not schema.user_agent:
-        raise Exception('User agent platform %s does not exist', schema.user_agent_platform)
+        raise Exception('User agent platform %s does not exist', schema.user_agent)
 
     return schema
 
