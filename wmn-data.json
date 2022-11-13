@@ -1065,7 +1065,7 @@
         "uri_check" : "https://chaos.social/@{account}",
         "post_body" : "",
         "e_code" : 200,
-        "e_string" : "- chaos.social",
+        "e_string" : "@chaos.social) - chaos.social</title>",
         "m_string" : "The page you are looking for isn&#39;t here.",
         "m_code" : 404,
         "known" : ["dictvm", "sml"],
@@ -3484,6 +3484,18 @@
         "m_code" : 404,
         "known" : ["alice", "john"],
         "cat" : "hobby",
+        "valid" : true
+       },
+       {
+        "name" : "meow.social",
+        "uri_check" : "https://meow.social/@{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "- the mastodon instances for creatures</title>",
+        "m_string" : "The page you are looking for isn&#39;t here.",
+        "m_code" : 404,
+        "known" : ["meow", "novra"],
+        "cat" : "social",
         "valid" : true
        },
        {
