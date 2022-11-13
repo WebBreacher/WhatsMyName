@@ -68,7 +68,9 @@ def to_table(cli_options: CliOptionsSchema, sites: List[SiteSchema]) -> None:
         table_data.append(row)
 
     table = AsciiTable(table_data)
-    print(table.table)
+    with open(fix_file_name(cli_options.output_file), "w") as fp:
+        fp.write(table.table)
+        fp.write("\n")
 
 
 

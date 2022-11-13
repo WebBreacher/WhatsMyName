@@ -18,14 +18,14 @@ class CliOptionsSchema(BaseModel):
     timeout: int = 30
     format: OutputFormat = OutputFormat.JSON
     output_file: Optional[str] = None
-    output_stdout: bool = True
+    output_stdout: bool = False
     per_request_timeout: int = 5
     not_found: bool = False
     verbose: bool = False
     max_redirects: int = 10
     random_validate: bool = False
     random_username: Optional[str] = None,
-    user_agent_platform: str = 'Chrome on Windows 1'
+    user_agent_id: int = 1
     user_agent: Optional[str] = None
     capture_errors: bool = False
     capture_error_directory: Optional[str] = None
