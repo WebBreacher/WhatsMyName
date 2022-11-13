@@ -13,7 +13,7 @@
                    "tech","video","XXXPORNXXX"],
     "sites" : [
        {
-        "name" : "101010.pl",
+        "name" : "Mastodon-101010.pl",
         "uri_check" : "https://101010.pl/@{account}",
         "post_body" : "",
         "e_code" : 200,
@@ -47,7 +47,7 @@
         "known" : ["bob", "red"],
         "cat" : "social",
         "valid" : true
-       },        
+       },
        {
         "name" : "247sports",
         "uri_check" : "https://247sports.com/User/{account}/",
@@ -252,11 +252,11 @@
         "known" : ["GazetaPolska", "GPCodziennie"],
         "cat" : "social",
         "valid" : true
-       },        
+       },
        {
         "name" : "alik",
         "uri_check" : "https://www.alik.cz/u/{account}",
-        "post_body" : "",        
+        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Vizitka – Alík.cz</title>",
         "m_string" : "<title>Vizitka nenalezena",
@@ -734,11 +734,11 @@
         "known" : ["alex", "boss"],
         "cat" : "finance",
         "valid" : true
-       },        
+       },
        {
         "name" : "bittube",
-        "uri_check" : "https://bittube.video/c/{account}/videos",  
-        "post_body" : "",      
+        "uri_check" : "https://bittube.video/c/{account}/videos",
+        "post_body" : "",
         "e_code" : 200,
         "e_string" : "- BitTube</title>",
         "m_string" : "<p>We are sorry but it seems",
@@ -1061,7 +1061,7 @@
         "valid" : true
        },
        {
-        "name" : "Chaos.social",
+        "name" : "Mastodon-Chaos.social",
         "uri_check" : "https://chaos.social/@{account}",
         "post_body" : "",
         "e_code" : 200,
@@ -1301,7 +1301,7 @@
         "valid" : true
        },
        {
-        "name" : "counter_social",
+        "name" : "Mastodon-counter.social",
         "uri_check" : "https://counter.social/@{account}",
         "post_body" : "",
         "e_code" : 200,
@@ -1832,7 +1832,7 @@
         "valid" : true
        },
        {
-        "name" : "EU_Voice",
+        "name" : "Mastodon-EU_Voice",
         "uri_check" : "https://social.network.europa.eu/@{account}",
         "post_body" : "",
         "e_code" : 200,
@@ -1999,18 +1999,6 @@
         "m_code" : 200,
         "known" : ["Ruslan", "oleg"],
         "cat" : "hobby",
-        "valid" : true
-       },
-       {
-        "name" : "fedi.lewactwo.pl",
-        "uri_check" : "https://fedi.lewactwo.pl/@{account}",
-        "post_body" : "",
-        "e_code" : 200,
-        "e_string" : "@lewactwo.pl",
-        "m_string" : "The page you are looking for isn't here.",
-        "m_code" : 404,
-        "known" : ["lewactwo", "queereen"],
-        "cat" : "social",
         "valid" : true
        },
        {
@@ -2933,18 +2921,6 @@
         "valid" : true
        },
        {
-        "name" : "ipolska.pl",
-        "uri_check" : "https://ipolska.pl/@{account}",
-        "post_body" : "",
-        "e_code" : 200,
-        "e_string" : "@ipolska.pl",
-        "m_string" : "The page you are looking for isn't here.",
-        "m_code" : 404,
-        "known" : ["maciek", "varden"],
-        "cat" : "social",
-        "valid" : true
-       },
-       {
         "name" : "issuu",
         "uri_check" : "https://issuu.com/{account}",
         "post_body" : "",
@@ -3244,11 +3220,11 @@
         "known" : ["john", "bob"],
         "cat" : "tech",
         "valid" : true
-       },        
+       },
        {
         "name" : "love_ru",
-        "uri_check" : "https://love.ru/{account}", 
-        "post_body" : "",       
+        "uri_check" : "https://love.ru/{account}",
+        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Love.ru</title>",
         "m_string" : "<title>404",
@@ -3378,7 +3354,7 @@
         "valid" : true
        },
        {
-        "name" : "mastodon",
+        "name" : "Mastodon-mastodon",
         "uri_check" : "https://mastodon.social/@{account}",
         "post_body" : "",
         "e_code" : 200,
@@ -3388,11 +3364,11 @@
         "known" : ["john", "alex"],
         "cat" : "social",
         "valid" : true
-       },        
+       },
        {
-        "name" : "mastodon_api",
-        "uri_check" : "https://mastodon.social/api/v2/search?q={account}", 
-        "post_body" : "",       
+        "name" : "Mastodon-API",
+        "uri_check" : "https://mastodon.social/api/v2/search?q={account}",
+        "post_body" : "",
         "e_code" : 200,
         "e_string" : "display_name",
         "m_string" : "accounts\":[],\"statuses\":[],\"hashtags\":",
@@ -3487,7 +3463,7 @@
         "valid" : true
        },
        {
-        "name" : "meow.social",
+        "name" : "Mastodon-meow.social",
         "uri_check" : "https://meow.social/@{account}",
         "post_body" : "",
         "e_code" : 200,
@@ -3557,11 +3533,11 @@
         "known" : ["fear837", "dream"],
         "cat" : "gaming",
         "valid" : true
-       },        
+       },
        {
         "name" : "mintme",
         "uri_check" : "https://www.mintme.com/token/{account}",
-        "post_body" : "",        
+        "post_body" : "",
         "e_code" : 200,
         "e_string" : "token | mintMe",
         "m_string" : "Page not found",
@@ -3680,7 +3656,7 @@
         "valid" : true
        },
        {
-        "name" : "mstdn",
+        "name" : "Mastodon-mstdn.io",
         "uri_check" : "https://mstdn.io/@{account}",
         "post_body" : "",
         "e_code" : 200,
@@ -3702,11 +3678,11 @@
         "known" : ["john"],
         "cat" : "news",
         "valid" : true
-       },        
+       },
        {
         "name" : "musictraveler",
         "uri_check" : "https://www.musictraveler.com/en/users/{account}/",
-        "post_body" : "",        
+        "post_body" : "",
         "e_code" : 200,
         "e_string" : "on Music Traveler</title>",
         "m_string" : "<title>Page Not found</title>",
@@ -3931,11 +3907,11 @@
         "known" : ["banyusadewa", "danirachmat"],
         "cat" : "social",
         "valid" : true
-       },        
+       },
        {
         "name" : "nnru",
         "uri_check" : "https://{account}.www.nn.ru",
-        "post_body" : "",       
+        "post_body" : "",
         "e_code" : 200,
         "e_string" : "<title> ",
         "m_string" : "<title>Ошибка 404 -",
@@ -4003,11 +3979,11 @@
         "known" : ["janek", "test"],
         "cat" : "shopping",
         "valid" : true
-       },        
+       },
        {
         "name" : "omlet",
         "uri_check" : "https://omlet.gg/profile/{account}",
-        "post_body" : "",        
+        "post_body" : "",
         "e_code" : 200,
         "e_string" : "<title>Omlet Arcade -",
         "m_string" : "Omlet Arcade</title>",
@@ -4441,7 +4417,7 @@
         "valid" : true
        },
        {
-        "name" : "pol.social",
+        "name" : "Mastodon-pol.social",
         "uri_check" : "https://pol.social/@{account}",
         "post_body" : "",
         "e_code" : 200,
@@ -4695,7 +4671,7 @@
         "valid" : true
        },
        {
-        "name" : "rigcz.club",
+        "name" : "Mastodon-rigcz.club",
         "uri_check" : "https://rigcz.club/@{account}",
         "post_body" : "",
         "e_code" : 200,
@@ -5119,7 +5095,7 @@
         "valid" : true
        },
        {
-        "name" : "social_tchncs",
+        "name" : "Mastodon-social_tchncs",
         "uri_check" : "https://social.tchncs.de/@{account}",
         "post_body" : "",
         "e_code" : 200,
@@ -5542,7 +5518,7 @@
         "valid" : true
        },
        {
-        "name" : "tfl.net.pl",
+        "name" : "Mastodon-tfl.net.pl",
         "uri_check" : "https://tfl.net.pl/@{account}",
         "post_body" : "",
         "e_code" : 200,
@@ -6163,11 +6139,11 @@
         "known" : ["weasyl", "test"],
         "cat" : "images",
         "valid" : true
-       },        
+       },
        {
         "name" : "weebly",
         "uri_check" : "https://{account}.weebly.com/",
-        "post_body" : "",        
+        "post_body" : "",
         "e_code" : 200,
         "e_string" : "<div id=\"navigation\">",
         "m_string" : "<title>404 - Page Not Found",
