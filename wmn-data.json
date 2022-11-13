@@ -1065,7 +1065,7 @@
         "uri_check" : "https://chaos.social/@{account}",
         "post_body" : "",
         "e_code" : 200,
-        "e_string" : "- chaos.social",
+        "e_string" : "@chaos.social) - chaos.social</title>",
         "m_string" : "The page you are looking for isn&#39;t here.",
         "m_code" : 404,
         "known" : ["dictvm", "sml"],
