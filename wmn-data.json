@@ -4330,6 +4330,18 @@
         "known" : ["test123", "frickcollection"],
         "cat" : "social",
         "valid" : true
+       },        
+       {
+        "name" : "pixelfed.social",
+        "uri_check" : "https://pixelfed.social/{account}",
+        "post_body" : "",       
+        "e_code" : 200,
+        "e_string" : "on pixelfed</title>",
+        "m_string" : "<title>pixelfed</title>",
+        "m_code" : 404,
+        "known" : ["sarah", "john"],
+        "cat" : "social",
+        "valid" : true
        },
        {
         "name" : "Playstation Network",
