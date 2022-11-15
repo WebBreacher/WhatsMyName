@@ -5095,6 +5095,18 @@
         "valid" : true
        },
        {
+        "name" : "social.bund.de",
+        "uri_check" : "https://social.bund.de/@{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "@social.bund.de) - social.bund.de</title>",
+        "m_string" : "<title>The page you are looking for isn&#39;t here.",
+        "m_code" : 404,
+        "known" : ["bfdi", "bmdv"],
+        "cat" : "social",
+        "valid" : true
+       },
+       {
         "name" : "soc.citizen4.eu",
         "uri_check" : "https://soc.citizen4.eu/profile/{account}/profile",
         "post_body" : "",
