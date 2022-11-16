@@ -5131,6 +5131,18 @@
         "valid" : true
        },
        {
+        "name" : "spotify",
+        "uri_check" : "https://open.spotify.com/user/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "on Spotify",
+        "m_string" : "",
+        "m_code" : 404,
+        "known" : ["spotify"],
+        "cat" : "social",
+        "valid" : true
+       },
+       {
         "name" : "Mastodon-social_tchncs",
         "uri_check" : "https://social.tchncs.de/@{account}",
         "post_body" : "",
