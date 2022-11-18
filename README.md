@@ -75,7 +75,7 @@ There are quite a few command line options available:
 `python whats_my_name.py -u yooper -a -s zillow --verbose --format csv` 
 
 # Social Media
-We are on Mastodon at https://infosec.exchange/@whatsmyname. Come follow us for updates.
+We are on Mastodon at https://infosec.exchange/@whatsmyname. Come follow us for updates. <a rel="me" href="https://infosec.exchange/@whatsmyname"></a>
 
 # Installation
 Check the [INSTALLATION.md file](https://github.com/WebBreacher/WhatsMyName/blob/main/INSTALLATION.md)
