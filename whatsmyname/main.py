@@ -11,10 +11,13 @@ from whatsmyname.app.tasks.process import process_cli, filter_list_by, generate_
 from whatsmyname.app.utilities.formatters import to_json, to_csv, to_table
 
 
-async def start_check_for_presence():
+async def start_check_for_presence(provided_args=None):
 
     argparse = get_default_args()
-    cli_options: CliOptionsSchema = arg_parser(argparse.parse_args())
+    if provided_args is None:
+        cli_options: CliOptionsSchema = arg_parser(argparse.parse_args())
+    else:
+        cli_options: CliOptionsSchema = arg_parser(argparse.parse_args(provided_args))
     sites: List[SiteSchema] = await process_cli(cli_options)
 
     # filter the sites
