@@ -40,9 +40,11 @@ def to_json(cli_options: CliOptionsSchema, sites: List[SiteSchema]) -> None:
     with open(fix_file_name(cli_options.output_file), "w") as fp:
         fp.write("[")
         site: SiteSchema
-        for site in sites:
+        for idx, site in enumerate(sites):
             site_output: SiteOutputSchema = SiteOutputSchema(**site.dict())
             fp.write(site_output.json(include=field_names))
+            if idx < len(sites) - 1:
+                fp.write(",")
         fp.write("]")
 
 
