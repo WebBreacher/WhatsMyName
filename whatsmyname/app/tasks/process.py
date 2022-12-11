@@ -159,20 +159,41 @@ async def request_worker(session: ClientSession, cli_options: CliOptionsSchema, 
     headers = {
         'User-Agent': site.user_agent
     }
+    if site.post_body:
+        try:
+            post_body_altered: str = site.post_body.replace('{account}', site.username)
+            form_data = {x[0] : x[1] for x in [x.split("=") for x in post_body_altered[1:].split("&") ]}
+            async with session.post(site.generated_uri,
+                                   data=form_data,
+                                   timeout=cli_options.per_request_timeout,
+                                   allow_redirects=cli_options.follow_redirects,
+                                   headers=headers
+                                   ) as response:
+                site.http_status_code = response.status
+                site.raw_response_data = await response.text()
+                site.response_headers = json.dumps({str(key): value for key, value in response.headers.items()})
+                return site
 
-    try:
-        async with session.get(site.generated_uri,
-                               timeout=cli_options.per_request_timeout,
-                               allow_redirects=cli_options.follow_redirects,
-                               headers=headers
-                               ) as response:
-            site.http_status_code = response.status
-            site.raw_response_data = await response.text()
-            site.response_headers = json.dumps({str(key): value for key, value in response.headers.items()})
+        except ClientConnectionError as cce:
+            logger.error('Site Connection Error %s', site.name, exc_info=False)
+            site.http_status_code = -1
+        finally:
             return site
 
-    except ClientConnectionError as cce:
-        logger.error('Site Connection Error %s', site.name, exc_info=False)
-        site.http_status_code = -1
-    finally:
-        return site
+    else:
+        try:
+            async with session.get(site.generated_uri,
+                                   timeout=cli_options.per_request_timeout,
+                                   allow_redirects=cli_options.follow_redirects,
+                                   headers=headers
+                                   ) as response:
+                site.http_status_code = response.status
+                site.raw_response_data = await response.text()
+                site.response_headers = json.dumps({str(key): value for key, value in response.headers.items()})
+                return site
+
+        except ClientConnectionError as cce:
+            logger.error('Site Connection Error %s', site.name, exc_info=False)
+            site.http_status_code = -1
+        finally:
+            return site
