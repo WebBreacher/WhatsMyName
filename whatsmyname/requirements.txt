@@ -9,7 +9,7 @@ cachy==0.3.0
 certifi==2022.12.7
 cffi==1.15.1
 charset-normalizer==2.1.0
-cleo==2.0.0
+cleo>=0.8.1
 clikit==0.6.2
 commonmark==0.9.1
 coverage==6.4.3
