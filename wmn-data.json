@@ -2631,6 +2631,18 @@
         "valid" : true
        },
        {
+        "name" : "Hanime",
+        "uri_check" : "https://hanime.tv/channels/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "Channel Views",
+        "m_code" : 302,
+        "m_string" : "DYNAMIC",
+        "known" : ["z", "god"],
+        "cat" : "XXXPORNXXX",
+        "valid": true
+       },
+       {
         "name" : "Heylink",
         "uri_check" : "https://heylink.me/{account}/",
         "post_body" : "",
@@ -4029,6 +4041,18 @@
         "valid" : true
        },
        {
+        "name" : "Note",
+        "uri_check" : "https://note.com/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "フォロワー",
+        "m_code" : 404,
+        "m_string" : "お探しのページが見つかりません。",
+        "known" : ["honey", "yui"],
+        "cat" : "social",
+        "valid" : true
+       },
+       {
         "name" : "oglaszamy24h.pl",
         "uri_check" : "https://oglaszamy24h.pl/profil,{account}",
         "post_body" : "",
@@ -4038,6 +4062,18 @@
         "m_code" : 404,
         "known" : ["kowal", "janek"],
         "cat" : "shopping",
+        "valid" : true
+       },
+       {
+        "name" : "ogu.gg",
+        "uri_check" : "https://ogu.gg/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "Message",
+        "m_code" : 404,
+        "m_string" : "The member you specified is either invalid or doesn't exist.",
+        "known" : ["input", "maxwell"],
+        "cat" : "social",
         "valid" : true
        },
        {
@@ -4344,6 +4380,18 @@
         "valid" : true
        },
        {
+        "name" : "Peing",
+        "uri_check" : "https://peing.net/api/v2/items/?type=answered&account={account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "items",
+        "m_code" : 404,
+        "m_string" : "Not Found",
+        "known" : ["honey", "blink"],
+        "cat" : "social",
+        "valid" : true
+       },
+       {
         "name" : "Periscope",
         "uri_check" : "https://www.periscope.tv/{account}",
         "post_body" : "",
@@ -4400,6 +4448,18 @@
         "m_string" : "404. Страница не найдена",
         "m_code" : 404,
         "known" : ["igor01", "serguei"],
+        "cat" : "social",
+        "valid" : true
+       },
+       {
+        "name" : "Pillowfort",
+        "uri_check" : "https://www.pillowfort.social/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "<meta property=\"og:site_name\" content=\"Pillowfort\">",
+        "m_code" : 404,
+        "m_string" : "That page does not exist, or you do not have the proper permissions to view it.",
+        "known" : ["MissMoonified", "honey"],
         "cat" : "social",
         "valid" : true
        },
@@ -5299,6 +5359,18 @@
         "valid" : true
        },
        {
+        "name" : "solo.to",
+        "uri_check" : "https://solo.to/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "create your own page",
+        "m_code" : 404,
+        "m_string" : "The page you're looking for isn't here.",
+        "known" : ["saruei", "yui"],
+        "cat" : "social",
+        "valid" : true
+       },
+       {
         "name" : "SoundCloud",
         "uri_check" : "https://soundcloud.com/{account}",
         "post_body" : "",
@@ -5456,6 +5528,30 @@
         "valid" : true
        },
        {
+        "name" : "StreamElements",
+        "uri_check" : "https://api.streamelements.com/kappa/v2/channels/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "username",
+        "m_code" : 404,
+        "m_string" : "error",
+        "known" : ["honey", "dude"],
+        "cat" : "finance",
+        "valid" : true
+       },
+       {
+        "name" : "StreamLabs",
+        "uri_check" : "https://streamlabs.com/api/v6/site/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "layout",
+        "m_code" : 401,
+        "m_string" : "UNAUTHORIZED",
+        "known" : ["veibae", "cutie_cori"],
+        "cat" : "finance",
+        "valid" : true
+       },
+       {
         "name" : "Stripchat",
         "uri_check" : "https://stripchat.com/{account}",
         "post_body" : "",
@@ -5464,6 +5560,18 @@
         "m_string" : "Oops. The page you were looking for doesn't exist",
         "m_code" : 404,
         "known" : ["DulcieRichard", "Katie-Mili"],
+        "cat" : "XXXPORNXXX",
+        "valid" : true
+       },
+       {
+        "name" : "Subscribestar",
+        "uri_check" : "https://subscribestar.adult/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "SUBSCRIPTION TIERS",
+        "m_code" : 404,
+        "m_string" : "WE ARE SORRY, THE PAGE YOU REQUESTED CANNOT BE FOUND",
+        "known" : ["missmoonified", "honey"],
         "cat" : "XXXPORNXXX",
         "valid" : true
        },
@@ -5626,6 +5734,18 @@
         "valid" : true
        },
        {
+        "name" : "Teespring",
+        "uri_check" : "https://commerce.teespring.com/v1/stores?slug={account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "sellerToken",
+        "m_code" : 404,
+        "m_string" : "errors",
+        "known" : ["missmoonified", "honey"],
+        "cat" : "business",
+        "valid" : true
+       },
+       {
         "name" : "Teknik",
         "uri_check" : "https://user.teknik.io/{account}",
         "post_body" : "",
@@ -5779,6 +5899,18 @@
         "m_code" : 404,
         "known" : ["iamnotarobot", "passthechips"],
         "cat" : "gaming",
+        "valid" : true
+       },
+       {
+        "name" : "toyhou.se",
+        "uri_check" : "https://toyhou.se/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "bulletins",
+        "m_code" : 404,
+        "m_string" : "We can't find that page!",
+        "known" : ["22RII", "honey"],
+        "cat" : "hobby",
         "valid" : true
        },
        {
