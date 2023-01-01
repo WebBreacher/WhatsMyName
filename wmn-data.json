@@ -5531,7 +5531,7 @@
        {
         "name" : "StreamElements",
         "uri_check" : "https://api.streamelements.com/kappa/v2/channels/{account}",
-        "uri_pretty" : "https://streamlabs.com/{account}",
+        "uri_pretty" : "https://streamelements.com/{account}",
         "post_body" : "",
         "e_code" : 200,
         "e_string" : "\"providerId\"",
