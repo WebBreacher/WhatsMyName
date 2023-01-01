@@ -470,6 +470,18 @@
         "valid" : true
        },
        {
+        "name" : "ArtStation",
+        "uri_check" : "https://www.artstation.com/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "Portfolio",
+        "m_code" : 404,
+        "m_string" : "Page not found",
+        "known" : ["kongaxl_design", "alex_pi"],
+        "cat" : "art",
+        "valid" : true
+       },
+       {
         "name" : "asciinema",
         "uri_check" : "https://asciinema.org/~{account}",
         "post_body" : "",
@@ -869,6 +881,18 @@
         "valid" : true
        },
        {
+        "name" : "Breach Forums",
+        "uri_check" : "https://breached.vc/User-{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "Time Spent Online",
+        "m_code" : 404,
+        "m_string" : "The member you specified is either invalid or doesn't exist.",
+        "known" : ["dubudubw", "pompompurin"],
+        "cat" : "tech",
+        "valid" : true
+       },
+       {
         "name" : "Brickset",
         "uri_check" : "https://forum.brickset.com/profile/{account}",
         "post_body" : "",
@@ -890,6 +914,18 @@
         "m_code" : 404,
         "known" : ["bitquark", "mert"],
         "cat" : "tech",
+        "valid" : true
+       },
+       {
+        "name" : "Bunpro",
+        "uri_check" : "https://community.bunpro.jp/u/{account}.json",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "username",
+        "m_code" : 404,
+        "m_string" : "The requested URL or resource could not be found.",
+        "known" : ["blacktide", "honey"],
+        "cat" : "social",
         "valid" : true
        },
        {
@@ -2595,6 +2631,18 @@
         "valid" : true
        },
        {
+        "name" : "Hanime",
+        "uri_check" : "https://hanime.tv/channels/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "Channel Views",
+        "m_code" : 302,
+        "m_string" : "DYNAMIC",
+        "known" : ["z", "god"],
+        "cat" : "XXXPORNXXX",
+        "valid": true
+       },
+       {
         "name" : "Heylink",
         "uri_check" : "https://heylink.me/{account}/",
         "post_body" : "",
@@ -2945,6 +2993,30 @@
         "valid" : true
        },
        {
+        "name" : "itch.io",
+        "uri_check" : "https://itch.io/profile/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "A member registered",
+        "m_code" : 404,
+        "m_string" : "We couldn't find your page",
+        "known" : ["prestent", "finch"],
+        "cat" : "gaming",
+        "valid" : true
+       },
+       {
+        "name" : "Japandict",
+        "uri_check" : "https://forum.japandict.com/u/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "Mentions",
+        "m_code" : 404,
+        "m_string" : "The page you requested could not be found.",
+        "known" : ["Yan", "Happy"],
+        "cat" : "social",
+        "valid" : true
+       },
+       {
         "name" : "jeja.pl",
         "uri_check" : "https://www.jeja.pl/user,{account}",
         "post_body" : "",
@@ -3086,6 +3158,18 @@
         "m_code" : 302,
         "known" : ["monethica", "asd_fca"],
         "cat" : "business",
+        "valid" : true
+       },
+       {
+        "name" : "KnowYourMeme",
+        "uri_check" : "https://knowyourmeme.com/users/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "Contributions",
+        "m_code" : 400,
+        "m_string" : "404, File Not Found!",
+        "known" : ["ayumukasuga", "butterin-yobread"],
+        "cat" : "social",
         "valid" : true
        },
        {
@@ -3957,6 +4041,18 @@
         "valid" : true
        },
        {
+        "name" : "Note",
+        "uri_check" : "https://note.com/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "フォロワー",
+        "m_code" : 404,
+        "m_string" : "お探しのページが見つかりません。",
+        "known" : ["honey", "yui"],
+        "cat" : "social",
+        "valid" : true
+       },
+       {
         "name" : "oglaszamy24h.pl",
         "uri_check" : "https://oglaszamy24h.pl/profil,{account}",
         "post_body" : "",
@@ -3966,6 +4062,18 @@
         "m_code" : 404,
         "known" : ["kowal", "janek"],
         "cat" : "shopping",
+        "valid" : true
+       },
+       {
+        "name" : "ogu.gg",
+        "uri_check" : "https://ogu.gg/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "Username History",
+        "m_code" : 404,
+        "m_string" : "The member you specified is either invalid or doesn't exist.",
+        "known" : ["input", "maxwell"],
+        "cat" : "social",
         "valid" : true
        },
        {
@@ -4272,6 +4380,19 @@
         "valid" : true
        },
        {
+        "name" : "Peing",
+        "uri_check" : "https://peing.net/api/v2/items/?type=answered&account={account}",
+        "uri_pretty" : "https://peing.net/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "items",
+        "m_code" : 404,
+        "m_string" : "Not Found",
+        "known" : ["honey", "blink"],
+        "cat" : "social",
+        "valid" : true
+       },
+       {
         "name" : "Periscope",
         "uri_check" : "https://www.periscope.tv/{account}",
         "post_body" : "",
@@ -4328,6 +4449,18 @@
         "m_string" : "404. Страница не найдена",
         "m_code" : 404,
         "known" : ["igor01", "serguei"],
+        "cat" : "social",
+        "valid" : true
+       },
+       {
+        "name" : "Pillowfort",
+        "uri_check" : "https://www.pillowfort.social/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "<meta property=\"og:site_name\" content=\"Pillowfort\">",
+        "m_code" : 404,
+        "m_string" : "That page does not exist, or you do not have the proper permissions to view it.",
+        "known" : ["MissMoonified", "honey"],
         "cat" : "social",
         "valid" : true
        },
@@ -4570,6 +4703,30 @@
         "m_code" : 404,
         "known" : ["john", "bob"],
         "cat" : "music",
+        "valid" : true
+       },
+       {
+        "name" : "Pronouns.Page",
+        "uri_check" : "https://pronouns.page/api/profile/get/{account}?version=2",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "username",
+        "m_string" : "\"profiles\": {}",
+        "m_code" : 304,
+        "known" : ["cannabis_cervi", "user"],
+        "cat": "social",
+        "valid" : true
+       },
+       {
+        "name" : "Pronouny",
+        "uri_check" : "https://pronouny.xyz/api/users/profile/username/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "username",
+        "m_code" : 400,
+        "m_string" : "That user doesn't exist",
+        "known" : ["test", "honey"],
+        "cat" : "social",
         "valid" : true
        },
        {
@@ -5203,6 +5360,18 @@
         "valid" : true
        },
        {
+        "name" : "solo.to",
+        "uri_check" : "https://solo.to/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "create your own page",
+        "m_code" : 404,
+        "m_string" : "The page you're looking for isn't here.",
+        "known" : ["saruei", "yui"],
+        "cat" : "social",
+        "valid" : true
+       },
+       {
         "name" : "SoundCloud",
         "uri_check" : "https://soundcloud.com/{account}",
         "post_body" : "",
@@ -5360,6 +5529,32 @@
         "valid" : true
        },
        {
+        "name" : "StreamElements",
+        "uri_check" : "https://api.streamelements.com/kappa/v2/channels/{account}",
+        "uri_pretty" : "https://streamelements.com/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "\"providerId\"",
+        "m_code" : 404,
+        "m_string" : "error",
+        "known" : ["honey", "dude"],
+        "cat" : "finance",
+        "valid" : true
+       },
+       {
+        "name" : "StreamLabs",
+        "uri_check" : "https://streamlabs.com/api/v6/user/{account}",
+        "uri_pretty" : "https://streamlabs.com/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "layout",
+        "m_code" : 401,
+        "m_string" : "UNAUTHORIZED",
+        "known" : ["veibae", "cutie_cori"],
+        "cat" : "finance",
+        "valid" : true
+       },
+       {
         "name" : "Stripchat",
         "uri_check" : "https://stripchat.com/{account}",
         "post_body" : "",
@@ -5368,6 +5563,18 @@
         "m_string" : "Oops. The page you were looking for doesn't exist",
         "m_code" : 404,
         "known" : ["DulcieRichard", "Katie-Mili"],
+        "cat" : "XXXPORNXXX",
+        "valid" : true
+       },
+       {
+        "name" : "Subscribestar",
+        "uri_check" : "https://subscribestar.adult/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "CREATOR STATS",
+        "m_code" : 404,
+        "m_string" : "WE ARE SORRY, THE PAGE YOU REQUESTED CANNOT BE FOUND",
+        "known" : ["missmoonified", "honey"],
         "cat" : "XXXPORNXXX",
         "valid" : true
        },
@@ -5530,6 +5737,19 @@
         "valid" : true
        },
        {
+        "name" : "Teespring",
+        "uri_check" : "https://commerce.teespring.com/v1/stores?slug={account}",
+        "uri_pretty" : "https://{account}.creator-spring.com",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "sellerToken",
+        "m_code" : 404,
+        "m_string" : "{\"errors\":{\"store\":[\"not found\"]}}",
+        "known" : ["missmoonified", "honey"],
+        "cat" : "business",
+        "valid" : true
+       },
+       {
         "name" : "Teknik",
         "uri_check" : "https://user.teknik.io/{account}",
         "post_body" : "",
@@ -5563,6 +5783,18 @@
         "m_code" : 404,
         "known" : ["jane", "jimmy"],
         "cat" : "social",
+        "valid" : true
+       },
+       {
+        "name" : "Tenor",
+        "uri_check" : "https://tenor.com/users/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "<div class=\"tagline\">",
+        "m_code" : 404,
+        "m_string" : "We could not find the page you were looking for.",
+        "known" : ["gnutv", "d33jay23"],
+        "cat" : "images",
         "valid" : true
        },
        {
@@ -5671,6 +5903,18 @@
         "m_code" : 404,
         "known" : ["iamnotarobot", "passthechips"],
         "cat" : "gaming",
+        "valid" : true
+       },
+       {
+        "name" : "toyhou.se",
+        "uri_check" : "https://toyhou.se/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "display-user",
+        "m_code" : 404,
+        "m_string" : "We can't find that page!",
+        "known" : ["22RII", "honey"],
+        "cat" : "hobby",
         "valid" : true
        },
        {
