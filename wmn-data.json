@@ -2981,6 +2981,19 @@
         "valid" : true
        },
        {
+        "name" : "isMyGirl",
+        "uri_check" : "https://api.fxcservices.com/pub/user/{account}",
+        "uri_pretty" : "https://ismygirl.com/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "display_name",
+        "m_code" : 404,
+        "m_string" : "User does not exist",
+        "known" : ["kasumineechan", "blinky"],
+        "cat" : "finance",
+        "valid" : true
+       },
+       {
         "name" : "issuu",
         "uri_check" : "https://issuu.com/{account}",
         "post_body" : "",
@@ -3511,6 +3524,19 @@
         "valid" : true
        },
        {
+        "name" : "Mediakits",
+        "uri_check" : "https://restapi.mediakits.com/mediakits/{account}",
+        "uri_pretty" : "https://app.mediakits.com/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "displayName",
+        "m_code" : 404,
+        "m_string" : "\"message\":\"The requested media kit does not exist.\"",
+        "known" : ["kasuminee", "honey"],
+        "cat" : "social",
+        "valid" : true
+       },
+       {
         "name" : "Medium",
         "uri_check" : "https://{account}.medium.com/about",
         "post_body" : "",
@@ -3920,6 +3946,18 @@
         "valid" : true
        },
        {
+        "name" : "Myspreadshop",
+        "uri_check" : "https://{account}.myspreadshop.de",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "sprd-startpage-teaser",
+        "m_code" : 404,
+        "m_string" : "Shop nicht gefunden",
+        "known" : ["arukori", "honey"],
+        "cat" : "business",
+        "valid" : true
+       },
+       {
         "name" : "naija_planet",
         "uri_check" : "https://naijaplanet.com/{account}",
         "post_body" : "",
@@ -4013,6 +4051,18 @@
         "m_string" : "<title>Nih Buat Jajan</title>",
         "m_code" : 302,
         "known" : ["banyusadewa", "danirachmat"],
+        "cat" : "social",
+        "valid" : true
+       },
+       {
+        "name" : "nitecrew",
+        "uri_check" : "https://nitecrew.rip/@{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "profile_page_avatar",
+        "m_code" : 404,
+        "m_string" : "The page you are looking for isn't here.",
+        "known" : ["Myxx", "honey"],
         "cat" : "social",
         "valid" : true
        },
@@ -4181,19 +4231,6 @@
         "m_string" : "The page you are looking for cannot be found.",
         "m_code" : 404,
         "known" : ["txmustang302"],
-        "cat" : "social",
-        "valid" : true
-       },
-       {
-        "name" : "OSINTelligence",
-        "uri_check" : "https://osintelligence.discourse.group/u/{account}/summary.json",
-        "uri_pretty" : "https://osintelligence.discourse.group/u/{account}",
-        "post_body" : "",
-        "e_code" : 200,
-        "e_string" : "created_at",
-        "m_string" : "The requested URL or resource could not be found",
-        "m_code" : 404,
-        "known" : ["JKistner", "er_tapan_jatakia"],
         "cat" : "social",
         "valid" : true
        },
@@ -4742,6 +4779,18 @@
         "valid" : true
        },
        {
+        "name" : "Psstaudio",
+        "uri_check" : "https://psstaudio.com/u/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "id=\"profile_picture\"",
+        "m_code" : 404,
+        "m_string" : "We know you were looking for something, but it is not here",
+        "known" : ["JayeWilde", "baxter"],
+        "cat" : "XXXPORNXXX",
+        "valid" : true
+       },
+       {
         "name" : "public",
         "uri_check" : "https://public.com/@{account}",
         "post_body" : "",
@@ -4873,6 +4922,19 @@
         "m_code" : 200,
         "known" : ["veronicashelby", "sarahstipe"],
         "cat" : "social",
+        "valid" : true
+       },
+       {
+        "name" : "Revolut",
+        "uri_check" : "https://revolut.me/api/web-profile/{account}",
+        "uri_pretty" : "https://revolut.me/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "\"firstName\"",
+        "m_code" : 404,
+        "m_string" : "\"User not found\"",
+        "known" : ["theaswdc", "honey"],
+        "cat" : "finance",
         "valid" : true
        },
        {
@@ -5066,6 +5128,19 @@
         "m_code" : 404,
         "known" : ["bendobrin", "michi"],
         "cat" : "music",
+        "valid" : true
+       },
+       {
+        "name" : "Sexworker",
+        "uri_check" : "https://sexworker.com/api/profile/{account}",
+        "uri_pretty" : "https://sexworker.com/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "profilePictureUrl",
+        "m_code" : 404,
+        "m_string" : "\"message\":\"This user does not exist.\"",
+        "known" : ["sakii_nightshade", "annajean2319"],
+        "cat" : "XXXPORNXXX",
         "valid" : true
        },
        {
@@ -5273,6 +5348,19 @@
         "m_code" : 404,
         "known" : ["djkhaled305", "mileycyrus"],
         "cat" : "social",
+        "valid" : true
+       },
+       {
+        "name" : "Snipfeed",
+        "uri_check" : "https://snipfeed.co/_next/data/_nkp07JjuKmCjnLbuoi9i/{account}.json",
+        "uri_pretty" : "https://snipfeed.co/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "creatorId",
+        "m_code" : 404,
+        "m_string" : "{\"notFound\":true}",
+        "known" : ["mycherrycrush", "honey"],
+        "cat" : "misc",
         "valid" : true
        },
        {
@@ -5531,7 +5619,7 @@
        {
         "name" : "StreamElements",
         "uri_check" : "https://api.streamelements.com/kappa/v2/channels/{account}",
-        "uri_pretty" : "https://streamlabs.com/{account}",
+        "uri_pretty" : "https://streamelements.com/{account}",
         "post_body" : "",
         "e_code" : 200,
         "e_string" : "\"providerId\"",
@@ -5547,7 +5635,7 @@
         "uri_pretty" : "https://streamlabs.com/{account}",
         "post_body" : "",
         "e_code" : 200,
-        "e_string" : "layout",
+        "e_string" : "display_name",
         "m_code" : 401,
         "m_string" : "UNAUTHORIZED",
         "known" : ["veibae", "cutie_cori"],
@@ -6197,6 +6285,19 @@
         "m_code" : 302,
         "known" : ["abaynes79", "not1face"],
         "cat" : "social",
+        "valid" : true
+       },
+       {
+        "name" : "utip.io",
+        "uri_check" : "https://utip.io/creator/profile/{account}",
+        "uri_pretty" : "http://utip.io/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "\"userName\"",
+        "m_code" : 404,
+        "m_string" : "Not a valid web service key",
+        "known" : ["honey", "chloe"],
+        "cat" : "finance",
         "valid" : true
        },
        {
