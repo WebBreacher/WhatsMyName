@@ -1723,6 +1723,18 @@
         "valid" : true
        },
        {
+        "name" : "Donation Alerts",
+        "uri_check" : "https://www.donationalerts.com/r/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "channel-info",
+        "m_code" : 404,
+        "m_string" : "If you're certain that this page should exist, please",
+        "known" : ["gorou", "saku"],
+        "cat" : "business",
+        "valid" : true
+       },
+       {
         "name" : "dot.cards",
         "uri_check" : "https://dot.cards/{account}",
         "post_body" : "",
@@ -4875,6 +4887,18 @@
         "valid" : true
        },
        {
+        "name" : "Refsheet",
+        "uri_check" : "https://refsheet.net/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "user-avatar",
+        "m_code" : 404,
+        "m_string" : "That's unfortunate. Where did it go?",
+        "known" : ["razzyaurealis", "saki"],
+        "cat" : "hobby",
+        "valid" : true
+       },
+       {
         "name" : "redbubble",
         "uri_check" : "https://www.redbubble.com/people/{account}/shop",
         "post_body" : "",
@@ -6310,6 +6334,18 @@
         "m_string" : "Not a valid web service key",
         "known" : ["honey", "chloe"],
         "cat" : "finance",
+        "valid" : true
+       },
+       {
+        "name" : "Uwumarket",
+        "uri_check" : "https://uwumarket.us/collections/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "collection-hero__text-wrapper",
+        "m_code" : 404,
+        "m_string" : "Page not found",
+        "known" : ["saki", "aicandii"],
+        "cat" : "business",
         "valid" : true
        },
        {
