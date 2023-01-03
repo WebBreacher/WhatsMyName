@@ -1421,6 +1421,19 @@
         "valid" : true
        },
        {
+        "name" : "Curiouscat",
+        "uri_check" : "https://curiouscat.live/api/v2.1/profile?username={account}",
+        "uri_pretty" : "https://curiouscat.live/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "is_followed_by_me",
+        "m_code" : 200,
+        "m_string" : "\"error\": 404",
+        "known" : ["kindokja9158", "saki"],
+        "cat" : "social",
+        "valid" : true
+       },
+       {
         "name" : "Cytoid",
         "uri_check" : "https://cytoid.io/profile/{account}",
         "post_body" : "",
