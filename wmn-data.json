@@ -977,6 +977,18 @@
         "valid" : true
        },
        {
+        "name" : "Calendy",
+        "uri_check" : "https://calendly.com/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "booking-container",
+        "m_code" : 404,
+        "m_string" : "Sorry, but the page you were looking for could not be found.",
+        "known" : ["honey", "roger"],
+        "cat" : "misc",
+        "valid" : true
+       },
+       {
         "name" : "Cameo",
         "uri_check" : "https://www.cameo.com/{account}",
         "post_body" : "",
