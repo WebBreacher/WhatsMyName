@@ -3498,6 +3498,18 @@
         "valid" : true
        },
        {
+        "name" : "Mastodon-climatejustice.rocks",
+        "uri_check" : "https://climatejustice.rocks/@{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "@climatejustice.rocks) - Mastodon</title>",
+        "m_string" : "The page you are looking for isn&#39;t here.",
+        "m_code" : 404,
+        "known" : ["paula", "ahmed76farag"],
+        "cat" : "social",
+        "valid" : true
+       },
+       {
         "name" : "MCName (Minecraft)",
         "uri_check" : "https://mcname.info/en/search?q={account}",
         "post_body" : "",
