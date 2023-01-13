@@ -5765,7 +5765,7 @@
         "uri_check" : "https://snipfeed.co/{account}",
         "post_body" : "",
         "e_code" : 200,
-        "e_string" : "__NEXT_DATA__",
+        "e_string" : "creatorLink",
         "m_code" : 404,
         "m_string" : "Oops, you hit a dead end!",
         "known" : ["mycherrycrush", "honey"],
