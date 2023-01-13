@@ -977,6 +977,18 @@
         "valid" : true
        },
        {
+        "name" : "Calendy",
+        "uri_check" : "https://calendly.com/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "og:author",
+        "m_code" : 404,
+        "m_string" : "Sorry, but the page you were looking for could not be found.",
+        "known" : ["honey", "roger"],
+        "cat" : "misc",
+        "valid" : true
+       },
+       {
         "name" : "Cameo",
         "uri_check" : "https://www.cameo.com/{account}",
         "post_body" : "",
@@ -1181,6 +1193,19 @@
         "valid" : true
        },
        {
+        "name" : "Climatejustice.rocks (Mastodon Instance)",
+        "uri_check" : "https://climatejustice.rocks/api/v1/accounts/lookup?acct={account}",
+        "uri_pretty" : "https://climatejustice.rocks/@{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "display_name",
+        "m_code" : 404,
+        "m_string" : "Record not found",
+        "known" : ["paula", "ClimbitJustice"],
+        "cat" : "social",
+        "valid" : true
+       },
+       {
         "name" : "Cloudflare",
         "uri_check" : "https://community.cloudflare.com/u/{account}",
         "post_body" : "",
@@ -1226,6 +1251,18 @@
         "m_code" : 301,
         "known" : ["john", "bob"],
         "cat" : "news",
+        "valid" : true
+       },
+       {
+        "name" : "Codeberg",
+        "uri_check" : "https://codeberg.org/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "ui avatar vm",
+        "m_code" : 404,
+        "m_string" : "The page you are trying to reach either",
+        "known" : ["dachary", "happy"],
+        "cat" : "coding",
         "valid" : true
        },
        {
@@ -1418,6 +1455,19 @@
         "m_code" : 404,
         "known" : ["Bstar3Dart", "john"],
         "cat" : "hobby",
+        "valid" : true
+       },
+       {
+        "name" : "Curiouscat",
+        "uri_check" : "https://curiouscat.live/api/v2.1/profile?username={account}",
+        "uri_pretty" : "https://curiouscat.live/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "is_followed_by_me",
+        "m_code" : 200,
+        "m_string" : "\"error\": 404",
+        "known" : ["kindokja9158", "saki"],
+        "cat" : "social",
         "valid" : true
        },
        {
@@ -1650,6 +1700,19 @@
         "valid" : true
        },
        {
+        "name" : "Disabled.rocks (Mastodon Instance)",
+        "uri_check" : "https://disabled.rocks/api/v1/accounts/lookup?acct={account}",
+        "uri_pretty" : "https://disabled.rocks/@{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "display_name",
+        "m_code" : 404,
+        "m_string" : "Record not found",
+        "known" : ["McCullohMD", "empressofcheer"],
+        "cat" : "social",
+        "valid" : true
+       },
+       {
         "name" : "Discogs",
         "uri_check" : "https://www.discogs.com/user/{account}",
         "post_body" : "",
@@ -1687,6 +1750,19 @@
         "valid" : true
        },
        {
+        "name" : "Discuss.social (Mastodon Instance)",
+        "uri_check" : "https://discuss.social/api/v1/accounts/lookup?acct={account}",
+        "uri_pretty" : "https://discuss.social/@{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "display_name",
+        "m_code" : 404,
+        "m_string" : "Record not found",
+        "known" : ["dan", "itepe18"],
+        "cat" : "social",
+        "valid" : true
+       },
+       {
         "name" : "Dissenter",
         "uri_check" : "https://dissenter.com/user/{account}",
         "post_body" : "",
@@ -1720,6 +1796,19 @@
         "m_code" : 404,
         "known" : ["soxoj", "torvalds"],
         "cat" : "coding",
+        "valid" : true
+       },
+       {
+        "name" : "Donation Alerts",
+        "uri_check" : "https://www.donationalerts.com/api/v1/user/{account}/donationpagesettings",
+        "uri_pretty" : "https://www.donationalerts.com/r/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "background_image_url",
+        "m_code" : 202,
+        "m_string" : "does not exist",
+        "known" : ["gorou", "saku"],
+        "cat" : "business",
         "valid" : true
        },
        {
@@ -1892,6 +1981,19 @@
         "valid" : true
        },
        {
+        "name" : "Expressional.social (Mastodon Instance)",
+        "uri_check" : "https://expressional.social/api/v1/accounts/lookup?acct={account}",
+        "uri_pretty" : "https://expressional.social/@{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "display_name",
+        "m_code" : 404,
+        "m_string" : "Record not found",
+        "known" : ["jippi", "poolesen"],
+        "cat" : "social",
+        "valid" : true
+       },
+       {
         "name" : "ExtraLunchMoney",
         "uri_check" : "https://extralunchmoney.com/user/{account}",
         "post_body" : "",
@@ -2013,6 +2115,18 @@
         "valid" : true
        },
        {
+        "name" : "Farkascity",
+        "uri_check" : "https://farkascity.org/{account}/",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "blog-title",
+        "m_code" : 404,
+        "m_string" : "Are you sure it was ever here?",
+        "known" : ["gutimet", "nlowell"],
+        "cat" : "blog",
+        "valid" : true
+       },
+       {
         "name" : "fansly",
         "uri_check" : "https://apiv2.fansly.com/api/v1/account?usernames={account}",
         "uri_pretty" : "https://fansly.com/{account}/posts",
@@ -2035,6 +2149,19 @@
         "m_code" : 302,
         "known" : ["bob", "bobby"],
         "cat" : "health",
+        "valid" : true
+       },
+       {
+        "name" : "Federated.press (Mastodon Instance)",
+        "uri_check" : "https://federated.press/api/v1/accounts/lookup?acct={account}",
+        "uri_pretty" : "https://federated.press/@{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "display_name",
+        "m_code" : 404,
+        "m_string" : "Record not found",
+        "known" : ["wood", "cliffcheney"],
+        "cat" : "social",
         "valid" : true
        },
        {
@@ -2167,6 +2294,19 @@
         "m_code" : 500,
         "known" : ["test", "test2"],
         "cat" : "misc",
+        "valid" : true
+       },
+       {
+        "name" : "Fosstodon.org (Mastodon Instance)",
+        "uri_check" : "https://fosstodon.org/api/v1/accounts/lookup?acct={account}",
+        "uri_pretty" : "https://fosstodon.org/@{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "display_name",
+        "m_code" : 404,
+        "m_string" : "Record not found",
+        "known" : ["linux", "Phil35"],
+        "cat" : "social",
         "valid" : true
        },
        {
@@ -2522,6 +2662,19 @@
         "valid" : true
        },
        {
+        "name" : "Graphics.social (Mastodon Instance)",
+        "uri_check" : "https://graphics.social/api/v1/accounts/lookup?acct={account}",
+        "uri_pretty" : "https://graphics.social/@{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "display_name",
+        "m_code" : 404,
+        "m_string" : "Record not found",
+        "known" : ["brian", "moonpotato"],
+        "cat" : "social",
+        "valid" : true
+       },
+       {
         "name" : "gumroad",
         "uri_check" : "https://{account}.gumroad.com/",
         "post_body" : "",
@@ -2643,6 +2796,19 @@
         "valid": true
        },
        {
+        "name" : "Hcommons.social (Mastodon Instance)",
+        "uri_check" : "https://hcommons.social/api/v1/accounts/lookup?acct={account}",
+        "uri_pretty" : "https://hcommons.social/@{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "display_name",
+        "m_code" : 404,
+        "m_string" : "Record not found",
+        "known" : ["hello", "iuulaio"],
+        "cat" : "social",
+        "valid" : true
+       },       
+       {
         "name" : "Heylink",
         "uri_check" : "https://heylink.me/{account}/",
         "post_body" : "",
@@ -2679,6 +2845,19 @@
         "valid" : true
        },
        {
+        "name" : "Historians.social (Mastodon Instance)",
+        "uri_check" : "https://historians.social/api/v1/accounts/lookup?acct={account}",
+        "uri_pretty" : "https://historians.social/@{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "display_name",
+        "m_code" : 404,
+        "m_string" : "Record not found",
+        "known" : ["lizcovart", "Ejoiner"],
+        "cat" : "social",
+        "valid" : true
+       },
+       {
         "name" : "HomeDesign3D",
         "uri_check" : "https://en.homedesign3d.net/user/{account}",
         "post_body" : "",
@@ -2691,6 +2870,19 @@
         "valid" : true
        },
        {
+        "name" : "Hometech.social (Mastodon Instance)",
+        "uri_check" : "https://hometech.social/api/v1/accounts/lookup?acct={account}",
+        "uri_pretty" : "https://hometech.social/@{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "display_name",
+        "m_code" : 404,
+        "m_string" : "Record not found",
+        "known" : ["one4ll", "seth"],
+        "cat" : "social",
+        "valid" : true
+       },
+       {
         "name" : "hoo.be",
         "uri_check" : "https://hoo.be/{account}",
         "post_body" : "",
@@ -2700,6 +2892,19 @@
         "m_code" : 404,
         "known" : ["chrishemsworth", "alextackie"],
         "cat" : "business",
+        "valid" : true
+       },
+       {
+        "name" : "Hostux.social (Mastodon Instance)",
+        "uri_check" : "https://hostux.social/api/v1/accounts/lookup?acct={account}",
+        "uri_pretty" : "https://hostux.social/@{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "display_name",
+        "m_code" : 404,
+        "m_string" : "Record not found",
+        "known" : ["alarig", "rsmela"],
+        "cat" : "social",
         "valid" : true
        },
        {
@@ -2981,6 +3186,19 @@
         "valid" : true
        },
        {
+        "name" : "isMyGirl",
+        "uri_check" : "https://api.fxcservices.com/pub/user/{account}",
+        "uri_pretty" : "https://ismygirl.com/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "display_name",
+        "m_code" : 404,
+        "m_string" : "User does not exist",
+        "known" : ["kasumineechan", "blinky"],
+        "cat" : "finance",
+        "valid" : true
+       },
+       {
         "name" : "issuu",
         "uri_check" : "https://issuu.com/{account}",
         "post_body" : "",
@@ -3233,6 +3451,19 @@
         "valid" : true
        },
        {
+        "name" : "Libretooth.gr (Mastodon Instance)",
+        "uri_check" : "https://libretooth.gr/api/v1/accounts/lookup?acct={account}",
+        "uri_pretty" : "https://libretooth.gr/@{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "display_name",
+        "m_code" : 404,
+        "m_string" : "Record not found",
+        "known" : ["infolibre", "tzinalilik"],
+        "cat" : "social",
+        "valid" : true
+       },
+       {
         "name" : "lichess",
         "uri_check" : "https://lichess.org/@/{account}",
         "post_body" : "",
@@ -3293,6 +3524,19 @@
         "valid" : true
        },
        {
+        "name" : "Litmind.club (Mastodon Instance)",
+        "uri_check" : "https://litmind.club/api/v1/accounts/lookup?acct={account}",
+        "uri_pretty" : "https://litmind.club/@{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "display_name",
+        "m_code" : 404,
+        "m_string" : "Record not found",
+        "known" : ["litmind", "aperture"],
+        "cat" : "social",
+        "valid" : true
+       },
+       {
         "name" : "Livejournal",
         "uri_check" : "https://{account}.livejournal.com",
         "post_body" : "",
@@ -3315,6 +3559,19 @@
         "m_code" : 404,
         "known" : ["john", "bob"],
         "cat" : "tech",
+        "valid" : true
+       },
+       {
+        "name" : "Lor.sh (Mastodon Instance)",
+        "uri_check" : "https://lor.sh/api/v1/accounts/lookup?acct={account}",
+        "uri_pretty" : "https://lor.sh/@{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "display_name",
+        "m_code" : 404,
+        "m_string" : "Record not found",
+        "known" : ["dump_stack", "lamountain"],
+        "cat" : "social",
         "valid" : true
        },
        {
@@ -3402,6 +3659,19 @@
         "valid" : true
        },
        {
+        "name" : "Mapstodon.space (Mastodon Instance)",
+        "uri_check" : "https://mapstodon.space/api/v1/accounts/lookup?acct={account}",
+        "uri_pretty" : "https://mapstodon.space/@{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "display_name",
+        "m_code" : 404,
+        "m_string" : "Record not found",
+        "known" : ["Autumnhussar", "jeremy"],
+        "cat" : "social",
+        "valid" : true
+       },
+       {
         "name" : "Maroc_nl",
         "uri_check" : "https://www.maroc.nl/forums/members/{account}.html",
         "post_body" : "",
@@ -3450,6 +3720,45 @@
         "valid" : true
        },
        {
+        "name" : "Mas.town (Mastodon Instance)",
+        "uri_check" : "https://mas.town/api/v1/accounts/lookup?acct={account}",
+        "uri_pretty" : "https://mas.town/@{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "display_name",
+        "m_code" : 404,
+        "m_string" : "Record not found",
+        "known" : ["brett", "cheng"],
+        "cat" : "social",
+        "valid" : true
+       },
+       {
+        "name" : "Masto.nyc (Mastodon Instance)",
+        "uri_check" : "https://masto.nyc/api/v1/accounts/lookup?acct={account}",
+        "uri_pretty" : "https://masto.nyc/@{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "display_name",
+        "m_code" : 404,
+        "m_string" : "Record not found",
+        "known" : ["seano", "jayjay718"],
+        "cat" : "social",
+        "valid" : true
+       },
+       {
+        "name" : "Mastodonbooks.net (Mastodon Instance)",
+        "uri_check" : "https://mastodonbooks.net/api/v1/accounts/lookup?acct={account}",
+        "uri_pretty" : "https://mastodonbooks.net/@{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "display_name",
+        "m_code" : 404,
+        "m_string" : "Record not found",
+        "known" : ["RogerRemacle", "eugnick"],
+        "cat" : "social",
+        "valid" : true
+       },
+       {
         "name" : "Mastodon-mastodon",
         "uri_check" : "https://mastodon.social/@{account}",
         "post_body" : "",
@@ -3458,6 +3767,19 @@
         "m_string" : "The page you are looking for isn't here.",
         "m_code" : 404,
         "known" : ["john", "alex"],
+        "cat" : "social",
+        "valid" : true
+       },
+       {
+        "name" : "Mastodon.chasedem.dev (Mastodon Instance)",
+        "uri_check" : "https://mastodon.chasem.dev/api/v1/accounts/lookup?acct={account}",
+        "uri_pretty" : "https://mastodon.chasem.dev/@{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "display_name",
+        "m_code" : 404,
+        "m_string" : "Record not found",
+        "known" : ["chase", "George"],
         "cat" : "social",
         "valid" : true
        },
@@ -3532,6 +3854,19 @@
         "m_code" : 200,
         "known" : ["smithy", "bob"],
         "cat" : "gaming",
+        "valid" : true
+       },
+       {
+        "name" : "Mediakits",
+        "uri_check" : "https://restapi.mediakits.com/mediakits/{account}",
+        "uri_pretty" : "https://app.mediakits.com/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "displayName",
+        "m_code" : 404,
+        "m_string" : "The requested media kit does not exist.",
+        "known" : ["kasuminee", "honey"],
+        "cat" : "social",
         "valid" : true
        },
        {
@@ -3812,6 +4147,19 @@
         "valid" : true
        },
        {
+        "name" : "Musician.social (Mastodon Instance)",
+        "uri_check" : "https://musician.social/api/v1/accounts/lookup?acct={account}",
+        "uri_pretty" : "https://musician.social/@{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "display_name",
+        "m_code" : 404,
+        "m_string" : "Record not found",
+        "known" : ["Alizar", "weisjohan"],
+        "cat" : "social",
+        "valid" : true
+       },
+       {
         "name" : "musictraveler",
         "uri_check" : "https://www.musictraveler.com/en/users/{account}/",
         "post_body" : "",
@@ -3944,6 +4292,19 @@
         "valid" : true
        },
        {
+        "name" : "Myspreadshop",
+        "uri_check" : "https://myspreadshop.de/{account}/shopData/list",
+        "uri_pretty" : "https://{account}.myspreadshop.com",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "siteName",
+        "m_code" : 404,
+        "m_string" : "not found",
+        "known" : ["arukori", "honey"],
+        "cat" : "business",
+        "valid" : true
+       },
+       {
         "name" : "naija_planet",
         "uri_check" : "https://naijaplanet.com/{account}",
         "post_body" : "",
@@ -4037,6 +4398,19 @@
         "m_string" : "<title>Nih Buat Jajan</title>",
         "m_code" : 302,
         "known" : ["banyusadewa", "danirachmat"],
+        "cat" : "social",
+        "valid" : true
+       },
+       {
+        "name" : "Nitecrew (Mastodon Instance)",
+        "uri_check" : "https://nitecrew.rip/api/v1/accounts/lookup?acct={account}",
+        "uri_pretty" : "https://nitecrew.rip/@{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "display_name",
+        "m_code" : 404,
+        "m_string" : "Record not found",
+        "known" : ["Myxx", "honey"],
         "cat" : "social",
         "valid" : true
        },
@@ -4416,6 +4790,19 @@
         "valid" : true
        },
        {
+        "name" : "Pettingzoo.co (Mastodon Instance)",
+        "uri_check" : "https://pettingzoo.co/api/v1/accounts/lookup?acct={account}",
+        "uri_pretty" : "https://pettingzoo.co/@{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "display_name",
+        "m_code" : 404,
+        "m_string" : "Record not found",
+        "known" : ["tyr", "Disbear"],
+        "cat" : "social",
+        "valid" : true
+       },
+       {
         "name" : "Pewex",
         "uri_check" : "https://retro.pewex.pl/user/{account}",
         "post_body" : "",
@@ -4693,6 +5080,19 @@
         "valid" : true
        },
        {
+        "name" : "Poweredbygay.social (Mastodon Instance)",
+        "uri_check" : "https://poweredbygay.social/api/v1/accounts/lookup?acct={account}",
+        "uri_pretty" : "https://poweredbygay.social/@{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "display_name",
+        "m_code" : 404,
+        "m_string" : "Record not found",
+        "known" : ["aggiepm", "eplumley1976"],
+        "cat" : "social",
+        "valid" : true
+       },
+       {
         "name" : "Producthunt",
         "uri_check" : "https://www.producthunt.com/@{account}",
         "post_body" : "",
@@ -4741,6 +5141,18 @@
         "valid" : true
        },
        {
+        "name" : "Prose",
+        "uri_check" : "https://prose.astral.camp/{account}/",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "blog-title",
+        "m_code" : 404,
+        "m_string" : "Are you sure it was ever here?",
+        "known" : ["endeavorance", "overthinkification"],
+        "cat" : "blog",
+        "valid" : true
+       },
+       {
         "name" : "prv.pl",
         "uri_check" : "https://www.prv.pl/osoba/{account}",
         "post_body" : "",
@@ -4750,6 +5162,18 @@
         "m_code" : 200,
         "known" : ["test", "test2"],
         "cat" : "tech",
+        "valid" : true
+       },
+       {
+        "name" : "Psstaudio",
+        "uri_check" : "https://psstaudio.com/u/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "id=\"profile_picture\"",
+        "m_code" : 404,
+        "m_string" : "We know you were looking for something, but it is not here",
+        "known" : ["JayeWilde", "baxter"],
+        "cat" : "XXXPORNXXX",
         "valid" : true
        },
        {
@@ -4813,6 +5237,30 @@
         "valid" : true
        },
        {
+        "name" : "Raddle.me",
+        "uri_check" : "https://raddle.me/user/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "sidebar__title",
+        "m_code" : 404,
+        "m_string" : "404 Not Found",
+        "known" : ["zephyr", "Archaplain"],
+        "cat" : "social",
+        "valid" : true
+       },
+       {
+        "name" : "Rant.li",
+        "uri_check" : "https://www.rant.li/{account}/",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "blog-title",
+        "m_code" : 404,
+        "m_string" : "Are you sure it was ever here?",
+        "known" : ["baretri", "arinbasu"],
+        "cat" : "blog",
+        "valid" : true
+       },
+       {
         "name" : "ReblogMe",
         "uri_check" : "https://{account}.reblogme.com",
         "post_body" : "",
@@ -4822,6 +5270,18 @@
         "m_code" : 200,
         "known" : ["staff", "chicken"],
         "cat" : "XXXPORNXXX",
+        "valid" : true
+       },
+       {
+        "name" : "Refsheet",
+        "uri_check" : "https://refsheet.net/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "og:title",
+        "m_code" : 404,
+        "m_string" : "That's unfortunate. Where did it go?",
+        "known" : ["razzyaurealis", "saki"],
+        "cat" : "hobby",
         "valid" : true
        },
        {
@@ -4884,6 +5344,19 @@
         "m_code" : 200,
         "known" : ["veronicashelby", "sarahstipe"],
         "cat" : "social",
+        "valid" : true
+       },
+       {
+        "name" : "Revolut",
+        "uri_check" : "https://revolut.me/api/web-profile/{account}",
+        "uri_pretty" : "https://revolut.me/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "\"firstName\"",
+        "m_code" : 404,
+        "m_string" : "\"User not found\"",
+        "known" : ["theaswdc", "honey"],
+        "cat" : "finance",
         "valid" : true
        },
        {
@@ -5077,6 +5550,19 @@
         "m_code" : 404,
         "known" : ["bendobrin", "michi"],
         "cat" : "music",
+        "valid" : true
+       },
+       {
+        "name" : "Sexworker",
+        "uri_check" : "https://sexworker.com/api/profile/{account}",
+        "uri_pretty" : "https://sexworker.com/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "profilePictureUrl",
+        "m_code" : 404,
+        "m_string" : "This user does not exist.",
+        "known" : ["sakii_nightshade", "annajean2319"],
+        "cat" : "XXXPORNXXX",
         "valid" : true
        },
        {
@@ -5284,6 +5770,18 @@
         "m_code" : 404,
         "known" : ["djkhaled305", "mileycyrus"],
         "cat" : "social",
+        "valid" : true
+       },
+       {
+        "name" : "Snipfeed",
+        "uri_check" : "https://snipfeed.co/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "creatorLink",
+        "m_code" : 404,
+        "m_string" : "Oops, you hit a dead end!",
+        "known" : ["mycherrycrush", "honey"],
+        "cat" : "misc",
         "valid" : true
        },
        {
@@ -5528,6 +6026,19 @@
         "valid" : true
        },
        {
+        "name" : "Stoners.social (Mastodon Instance)",
+        "uri_check" : "https://stoners.social/api/v1/accounts/lookup?acct={account}",
+        "uri_pretty" : "https://stoners.social/@{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "display_name",
+        "m_code" : 404,
+        "m_string" : "Record not found",
+        "known" : ["Tony", "slothmagic"],
+        "cat" : "social",
+        "valid" : true
+       },
+       {
         "name" : "StoryCorps",
         "uri_check" : "https://archive.storycorps.org/user/{account}/",
         "post_body" : "",
@@ -5555,10 +6066,10 @@
        {
         "name" : "StreamLabs",
         "uri_check" : "https://streamlabs.com/api/v6/user/{account}",
-        "uri_pretty" : "https://streamlabs.com/{account}",
+        "uri_pretty" : "https://streamlabs.com/{account}/tip",
         "post_body" : "",
         "e_code" : 200,
-        "e_string" : "layout",
+        "e_string" : "display_name",
         "m_code" : 401,
         "m_string" : "UNAUTHORIZED",
         "known" : ["veibae", "cutie_cori"],
@@ -5893,6 +6404,19 @@
         "valid" : true
        },
        {
+        "name" : "Tilde.zone (Mastodon Instance)",
+        "uri_check" : "https://tilde.zone/api/v1/accounts/lookup?acct={account}",
+        "uri_pretty" : "https://tilde.zone/@{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "display_name",
+        "m_code" : 404,
+        "m_string" : "Record not found",
+        "known" : ["ben", "lunatic"],
+        "cat" : "social",
+        "valid" : true
+       },
+       {
         "name" : "Tinder",
         "uri_check" : "https://tinder.com/@{account}",
         "post_body" : "",
@@ -5902,6 +6426,19 @@
         "m_code" : 200,
         "known" : ["Alexey", "peter", "john"],
         "cat" : "dating",
+        "valid" : true
+       },
+       {
+        "name" : "Tooting.ch (Mastodon Instance)",
+        "uri_check" : "https://tooting.ch/api/v1/accounts/lookup?acct={account}",
+        "uri_pretty" : "https://tooting.ch/@{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "display_name",
+        "m_code" : 404,
+        "m_string" : "Record not found",
+        "known" : ["mikebeganyi", "Zugi"],
+        "cat" : "social",
         "valid" : true
        },
        {
@@ -6151,6 +6688,19 @@
         "valid" : true
        },
        {
+        "name" : "Uiuxdev.social (Mastodon Instance)",
+        "uri_check" : "https://uiuxdev.social/api/v1/accounts/lookup?acct={account}",
+        "uri_pretty" : "https://uiuxdev.social/@{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "display_name",
+        "m_code" : 404,
+        "m_string" : "Record not found",
+        "known" : ["msr", "GravelLegend"],
+        "cat" : "social",
+        "valid" : true
+       },
+       {
         "name" : "Ultras Diary",
         "uri_check" : "http://ultrasdiary.pl/u/{account}/",
         "post_body" : "",
@@ -6207,6 +6757,43 @@
         "m_string" : "Sorry, page not found",
         "m_code" : 302,
         "known" : ["abaynes79", "not1face"],
+        "cat" : "social",
+        "valid" : true
+       },
+       {
+        "name" : "utip.io",
+        "uri_check" : "https://utip.io/creator/profile/{account}",
+        "uri_pretty" : "https://utip.io/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "\"userName\"",
+        "m_code" : 404,
+        "m_string" : "Not a valid web service key",
+        "known" : ["honey", "chloe"],
+        "cat" : "finance",
+        "valid" : true
+       },
+       {
+        "name" : "Uwumarket",
+        "uri_check" : "https://uwumarket.us/collections/{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "collection-hero__text-wrapper",
+        "m_code" : 404,
+        "m_string" : "Page not found",
+        "known" : ["saki", "aicandii"],
+        "cat" : "business",
+        "valid" : true
+       },
+       {
+        "name" : "uwu.ai",
+        "uri_check" : "https://{account}.uwu.ai/",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "property=\"twitter:card\"",
+        "m_code" : 404,
+        "m_string" : "Sorry, the requested page could not be found.",
+        "known" : ["spooky", "citruciel"],
         "cat" : "social",
         "valid" : true
        },
@@ -6356,6 +6943,32 @@
         "cat" : "social",
         "valid" : true
        },
+       {
+        "name" : "Vkl.world (Mastodon Instance)",
+        "uri_check" : "https://vkl.world/api/v1/accounts/lookup?acct={account}",
+        "uri_pretty" : "https://vkl.world/@{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "display_name",
+        "m_code" : 404,
+        "m_string" : "Record not found",
+        "known" : ["king", "aniver"],
+        "cat" : "social",
+        "valid" : true
+       },
+       {
+        "name" : "Vmst.io (Mastodon Instance)",
+        "uri_check" : "https://vmst.io/api/v1/accounts/lookup?acct={account}",
+        "uri_pretty" : "https://vmst.io/@{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "display_name",
+        "m_code" : 404,
+        "m_string" : "Record not found",
+        "known" : ["vmstan", "honestdave"],
+        "cat" : "social",
+        "valid" : true
+       },       
        {
         "name" : "Voice123",
         "uri_check" : "https://voice123.com/api/providers/search/{account}",
