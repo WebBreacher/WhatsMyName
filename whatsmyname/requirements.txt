@@ -90,7 +90,6 @@ tomli==2.0.1
 tomlkit==0.11.6
 trove-classifiers==2022.12.22
 twine==4.0.2
-twint @ file:///home/dcardin/Projects/twint
 typing_extensions==4.4.0
 urllib3==1.26.13
 virtualenv==20.17.1
