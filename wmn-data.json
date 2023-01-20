@@ -6405,6 +6405,19 @@
         "valid" : true
        },
        {
+        "name" : "TikTok",
+        "uri_check" : "https://www.tiktok.com/oembed?url=https://www.tiktok.com/@{account}",
+        "uri_pretty" : "https://www.tiktok.com/@{account}?lang=en",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "author_url",
+        "m_string" : "Something went wrong",
+        "m_code" : 400,
+        "known" : ["gordonramsayofficial", "pookiebear73"],
+        "cat" : "social",
+        "valid" : true
+       },
+       {
         "name" : "Tilde.zone (Mastodon Instance)",
         "uri_check" : "https://tilde.zone/api/v1/accounts/lookup?acct={account}",
         "uri_pretty" : "https://tilde.zone/@{account}",
