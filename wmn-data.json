@@ -1970,7 +1970,7 @@
        },
        {
         "name" : "eToro",
-        "uri_check" : "https://www.etoro.com/people/{account}",
+        "uri_check" : "https://www.etoro.com/api/logininfo/v1.1/users/{account}",
         "post_body" : "",
         "e_code" : 200,
         "e_string" : "– eToro</title>",
