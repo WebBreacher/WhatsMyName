@@ -657,8 +657,8 @@
         "post_body" : "",
         "e_code" : 200,
         "e_string" : "BentBox photos and videos",
-        "m_string" : "This user page is currently not available.",
-        "m_code" : 302,
+        "m_string" : "This user is currently not available",
+        "m_code" : 200,
         "known" : ["brockdoom", "witchhouse", "hotoptics"],
         "cat" : "XXXPORNXXX",
         "valid" : true
@@ -1980,8 +1980,6 @@
         "known" : ["nelexlian", "amitkup"],
         "cat" : "finance",
         "valid" : true
-
-
        },
        {
         "name" : "Mastodon-EU_Voice",
@@ -2578,11 +2576,10 @@
         "known" : ["xin", "dev"],
         "cat" : "coding",
         "valid" : true
-       },        
+       },
        {
         "name" : "giters",
         "uri_check" : "https://giters.com/{account}", 
-        "post_body" : "",
         "post_body" : "",
         "e_code" : 200,
         "e_string" : " - Giters</title>",
