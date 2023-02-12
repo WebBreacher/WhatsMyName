@@ -4754,6 +4754,18 @@
         "valid" : true
        },
        {
+        "name" : "Patriots Win",
+        "uri_check" : "https://patriots.win/u/{account}/",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "nav-user active register",
+        "m_string" : "An error occurred",
+        "m_code" : 500,
+        "known" : ["r3deleven", "MemeFactory"],
+        "cat" : "political",
+        "valid" : true
+       },
+       {
         "name" : "Patronite",
         "uri_check" : "https://patronite.pl/{account}",
         "post_body" : "",
@@ -6561,6 +6573,19 @@
         "m_string" : "This page is on vacation",
         "m_code" : 404,
         "known" : ["john", "peter"],
+        "cat" : "social",
+        "valid" : true
+       },
+       {
+        "name" : "Truth Social",
+        "uri_check" : "https://truthsocial.com/api/v1/accounts/lookup?acct={account}",
+        "uri_pretty" : "https://www.truthsocial.com/@{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "display_name",
+        "m_string" : "Record not found",
+        "m_code" : 404,
+        "known" : ["realdonaldtrump", "ScottAdamsTruth"],
         "cat" : "social",
         "valid" : true
        },
