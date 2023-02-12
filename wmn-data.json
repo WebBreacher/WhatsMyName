@@ -366,7 +366,7 @@
         "uri_check" : "https://anonup.com/@{account}",
         "post_body" : "",
         "e_code" : 200,
-        "e_string" : "Following</span>",
+        "e_string" : "Show followings",
         "m_string" : "Page not found!",
         "m_code" : 302,
         "known" : ["john", "peter"],
