@@ -17,6 +17,7 @@ This repository has the unified data required to perform user and username enume
 * [LinkScope](https://github.com/AccentuSoft/LinkScope_Client) uses this in the **Whats My Name** resolution under the **Online Identity** category.
 * [Blackbird](https://github.com/p1ngul1n0/blackbird) uses the **Whats My Name** list in its search.
 * [WhatsMyName-Python](https://github.com/C3n7ral051nt4g3ncy/WhatsMyName-Python) **Whats My Name** simple Python script made by [@C3n7ral051nt4g3ncy](https://github.com/C3n7ral051nt4g3ncy)
+* [K2OSINT Bookmarklet](https://github.com/K2SOsint/Bookmarklets/blob/main/WhatsMyName.js) - Bookmarklet that lets you enter a username in a popup and then opens a new tab with the WMN results.
 
 
 ## Content
@@ -75,7 +76,9 @@ There are quite a few command line options available:
 `python whats_my_name.py -u yooper -a -s zillow --verbose --format csv` 
 
 # Social Media
-We are on Mastodon at https://infosec.exchange/@whatsmyname. Come follow us for updates. <a rel="me" href="https://infosec.exchange/@whatsmyname"></a>
+Come follow us for updates. We are on:
+* Mastodon at https://infosec.exchange/@whatsmyname <a rel="me" href="https://infosec.exchange/@whatsmyname"></a>
+* Twitter at https://twitter.com/whatsmynameproj
 
 # Installation
 Check the [INSTALLATION.md file](https://github.com/WebBreacher/WhatsMyName/blob/main/INSTALLATION.md)
