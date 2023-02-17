@@ -366,7 +366,7 @@
         "uri_check" : "https://anonup.com/@{account}",
         "post_body" : "",
         "e_code" : 200,
-        "e_string" : "Following</span>",
+        "e_string" : "Show followings",
         "m_string" : "Page not found!",
         "m_code" : 302,
         "known" : ["john", "peter"],
@@ -657,8 +657,8 @@
         "post_body" : "",
         "e_code" : 200,
         "e_string" : "BentBox photos and videos",
-        "m_string" : "This user page is currently not available.",
-        "m_code" : 302,
+        "m_string" : "This user is currently not available",
+        "m_code" : 200,
         "known" : ["brockdoom", "witchhouse", "hotoptics"],
         "cat" : "XXXPORNXXX",
         "valid" : true
@@ -1992,12 +1992,11 @@
         "known" : ["nelexlian", "amitkup"],
         "cat" : "finance",
         "valid" : true
-
-
        },
        {
         "name" : "Mastodon-EU_Voice",
-        "uri_check" : "https://social.network.europa.eu/@{account}",
+        "uri_pretty" : "https://social.network.europa.eu/@{account}",
+        "uri_check" : "https://social.network.europa.eu/api/v1/accounts/lookup?acct={account}",
         "post_body" : "",
         "e_code" : 200,
         "e_string" : "social.network.europa.eu",
@@ -2590,11 +2589,10 @@
         "known" : ["xin", "dev"],
         "cat" : "coding",
         "valid" : true
-       },        
+       },
        {
         "name" : "giters",
         "uri_check" : "https://giters.com/{account}", 
-        "post_body" : "",
         "post_body" : "",
         "e_code" : 200,
         "e_string" : " - Giters</title>",
@@ -4769,6 +4767,18 @@
         "valid" : true
        },
        {
+        "name" : "Patriots Win",
+        "uri_check" : "https://patriots.win/u/{account}/",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "nav-user active register",
+        "m_string" : "An error occurred",
+        "m_code" : 500,
+        "known" : ["r3deleven", "MemeFactory"],
+        "cat" : "political",
+        "valid" : true
+       },
+       {
         "name" : "Patronite",
         "uri_check" : "https://patronite.pl/{account}",
         "post_body" : "",
@@ -6576,6 +6586,19 @@
         "m_string" : "This page is on vacation",
         "m_code" : 404,
         "known" : ["john", "peter"],
+        "cat" : "social",
+        "valid" : true
+       },
+       {
+        "name" : "Truth Social",
+        "uri_check" : "https://truthsocial.com/api/v1/accounts/lookup?acct={account}",
+        "uri_pretty" : "https://www.truthsocial.com/@{account}",
+        "post_body" : "",
+        "e_code" : 200,
+        "e_string" : "display_name",
+        "m_string" : "Record not found",
+        "m_code" : 404,
+        "known" : ["realdonaldtrump", "ScottAdamsTruth"],
         "cat" : "social",
         "valid" : true
        },
