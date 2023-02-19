@@ -656,7 +656,7 @@
         "uri_check" : "https://bentbox.co/{account}",
         "post_body" : "",
         "e_code" : 200,
-        "e_string" : "BentBox photos and videos",
+        "e_string" : "<div id=\"user_bar\">",
         "m_string" : "This user is currently not available",
         "m_code" : 200,
         "known" : ["brockdoom", "witchhouse", "hotoptics"],
