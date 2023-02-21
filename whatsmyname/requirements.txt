@@ -13,11 +13,11 @@ cchardet==2.1.7
 certifi==2022.12.7
 cffi==1.15.1
 charset-normalizer==2.1.1
-cleo==2.0.1
-clikit==0.6.2
+cleo
+clikit
 commonmark==0.9.1
 coverage==7.0.4
-crashtest==0.4.1
+crashtest
 cryptography==39.0.0
 dataclasses==0.6
 distlib==0.3.6
