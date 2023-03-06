@@ -42,6 +42,7 @@ class SiteSchema(BaseModel):
     uri_pretty: Optional[str] = None
     error_hint: Optional[str] = None
     response_headers: Optional[str] = None
+    invalid_chars: Optional[str]
 
 
     @root_validator
