@@ -656,7 +656,7 @@
         "uri_check" : "https://bentbox.co/{account}",
         "post_body" : "",
         "e_code" : 200,
-        "e_string" : "BentBox photos and videos",
+        "e_string" : "<div id=\"user_bar\">",
         "m_string" : "This user is currently not available",
         "m_code" : 200,
         "known" : ["brockdoom", "witchhouse", "hotoptics"],
@@ -2592,7 +2592,7 @@
        },
        {
         "name" : "giters",
-        "uri_check" : "https://giters.com/{account}", 
+        "uri_check" : "https://giters.com/{account}",
         "post_body" : "",
         "e_code" : 200,
         "e_string" : " - Giters</title>",
@@ -2845,7 +2845,7 @@
         "known" : ["hello", "iuulaio"],
         "cat" : "social",
         "valid" : true
-       },       
+       },
        {
         "name" : "Heylink",
         "uri_check" : "https://heylink.me/{account}/",
@@ -4570,7 +4570,7 @@
         "m_code" : 200,
         "known" : ["janek", "test"],
         "cat" : "shopping",
-        "valid" : true
+        "valid" : false
        },
        {
         "name" : "omlet",
@@ -4741,11 +4741,11 @@
         "known" : ["test", "john"],
         "cat" : "tech",
         "valid" : true
-       },        
+       },
        {
         "name" : "patch",
         "uri_check" : "https://patch.com/users/{account}",
-        "post_body" : "",        
+        "post_body" : "",
         "e_code" : 200,
         "e_string" : "<title>Patch User Profile",
         "m_string" : "<title>Page not found</title>",
@@ -4959,11 +4959,11 @@
         "known" : ["test123", "frickcollection"],
         "cat" : "social",
         "valid" : true
-       },        
+       },
        {
         "name" : "pixelfed.social",
         "uri_check" : "https://pixelfed.social/{account}",
-        "post_body" : "",       
+        "post_body" : "",
         "e_code" : 200,
         "e_string" : "on pixelfed</title>",
         "m_string" : "<title>pixelfed</title>",
@@ -7056,7 +7056,7 @@
         "known" : ["vmstan", "honestdave"],
         "cat" : "social",
         "valid" : true
-       },       
+       },
        {
         "name" : "Voice123",
         "uri_check" : "https://voice123.com/api/providers/search/{account}",
