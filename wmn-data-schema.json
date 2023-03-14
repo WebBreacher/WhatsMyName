@@ -71,7 +71,6 @@
 				"required": [
 					"name",
 					"uri_check",
-					"post_body",
 					"e_code",
 					"e_string",
 					"m_string",
@@ -108,6 +107,16 @@
 						"default": "",
 						"examples": [
 							""
+						],
+						"pattern": "^.*$"
+					},
+					"invalid_chars": {
+						"$id": "#root/sites/items/invalid_chars",
+						"title": "Invalid_chars",
+						"type": "string",
+						"default": "",
+						"examples": [
+							"."
 						],
 						"pattern": "^.*$"
 					},
