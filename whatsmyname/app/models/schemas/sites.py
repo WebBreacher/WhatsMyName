@@ -28,7 +28,7 @@ class SiteSchema(BaseModel):
     known: List[str]
     category: str
     valid: bool
-    post_body: str
+    post_body: Optional[str]
     uri_check: str
     request_method: str = None
     username: str = None

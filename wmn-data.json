@@ -15,7 +15,6 @@
        {
         "name" : "Mastodon-101010.pl",
         "uri_check" : "https://101010.pl/@{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "@101010.pl",
         "m_string" : "The page you are looking for isn't here.",
@@ -27,7 +26,6 @@
        {
         "name" : "1001mem",
         "uri_check" : "http://1001mem.ru/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "| Новости - Приколы - Комиксы - Мемы",
         "m_string" : "Этот пользователь не существует, или заблокирован.",
@@ -39,7 +37,6 @@
        {
         "name" : "3DNews",
         "uri_check" : "http://forum.3dnews.ru/member.php?username={account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "<title>Форум 3DNews - Просмотр профиля:",
         "m_string" : "Пользователь не зарегистрирован и не имеет профиля для просмотра.",
@@ -51,7 +48,6 @@
        {
         "name" : "247sports",
         "uri_check" : "https://247sports.com/User/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "<meta property=",
         "m_string" : "<title>247Sports</title>",
@@ -63,7 +59,6 @@
        {
         "name" : "3dtoday",
         "uri_check" : "https://3dtoday.ru/blogs/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Блог владельца 3d-принтера",
         "m_string" : "404 Not Found",
@@ -75,7 +70,6 @@
        {
         "name" : "7cup",
         "uri_check" : "https://www.7cups.com/@{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Profile - 7 Cups",
         "m_string" : "Oops! The content you're attempting to access could not be found.",
@@ -87,7 +81,6 @@
        {
         "name" : "7dach",
         "uri_check" : "https://7dach.ru/profile/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Информация / Профиль",
         "m_string" : "<title>Ошибка / 7dach.ru",
@@ -99,7 +92,6 @@
        {
         "name" : "21buttons",
         "uri_check" : "https://www.21buttons.com/buttoner/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "profile_user_followers",
         "m_string" : "This is not the page you're looking for",
@@ -111,7 +103,6 @@
        {
         "name" : "aaha_chat",
         "uri_check" : "https://www.aahachat.org/profile/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "og:title",
         "m_string" : "<title>Aaha Chat Rooms - ",
@@ -123,7 +114,6 @@
        {
         "name" : "about.me",
         "uri_check" : "https://about.me/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : " | about.me",
         "m_string" : "<title>about.me</title>",
@@ -135,7 +125,6 @@
        {
         "name" : "ACF",
         "uri_check" : "https://support.advancedcustomfields.com/forums/users/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "<title>ACF Support",
         "m_string" : "Page Not Found",
@@ -147,7 +136,6 @@
        {
         "name" : "admire_me",
         "uri_check" : "https://admireme.vip/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "<div id=",
         "m_string" : "<title>Page Not Found |",
@@ -159,7 +147,6 @@
        {
         "name" : "Adult_Forum",
         "uri_check" : "https://adultforum.gr/{account}-glamour-escorts/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Glamour Escorts ",
         "m_string" : "Page not found - Adult Forum Gr",
@@ -171,7 +158,6 @@
        {
         "name" : "adultism",
         "uri_check" : "https://www.adultism.com/profile/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "static/r-1OqQ4o/css/www/main.css",
         "m_string" : "<title> Not Found",
@@ -183,7 +169,6 @@
        {
         "name" : "ADVFN",
         "uri_check" : "https://uk.advfn.com/forum/profile/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" :"Profile | ADVFN",
         "m_string" : "ADVFN ERROR - Page Not Found",
@@ -207,7 +192,6 @@
        {
         "name" : "Airline_Pilot_Life",
         "uri_check" : "https://airlinepilot.life/u/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "<title> Profile -",
         "m_string" : "Page Not Found - Airline Pilot Life</title>",
@@ -219,7 +203,6 @@
        {
         "name" : "Airliners",
         "uri_check" : "https://www.airliners.net/user/{account}/profile",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "'s Profile | Airliners Members | Airliners.net",
         "m_string" : "An Error Occurred",
@@ -231,7 +214,6 @@
        {
         "name" : "akniga",
         "uri_check" : "https://akniga.org/profile/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : " - Аудиокниги Клуб</title",
         "m_string" : "К сожалению, такой страницы не существует. Вероятно, она была удалена с сервера, либо ее здесь никогда не было.",
@@ -244,7 +226,6 @@
         "name" : "Albicla",
         "uri_check" : "https://albicla.com/{account}/post/1",
         "uri_pretty" : "https://albicla.com/{account}",
-        "post_body" : "",
         "e_code" : 500,
         "e_string" : "500 Post tymczasowo niedostępny",
         "m_string" : "404 Nie znaleziono użytkownika",
@@ -256,7 +237,6 @@
        {
         "name" : "alik",
         "uri_check" : "https://www.alik.cz/u/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Vizitka – Alík.cz</title>",
         "m_string" : "<title>Vizitka nenalezena",
@@ -268,7 +248,6 @@
        {
         "name" : "allesovercrypto",
         "uri_check" : "https://allesovercrypto.nl/user/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Favoriete coins",
         "m_string" : "De opgevraagde pagina kon niet gevonden worden.",
@@ -280,7 +259,6 @@
        {
         "name" : "allmylinks",
         "uri_check" : "https://allmylinks.com/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "message",
         "m_string" : "Page not found",
@@ -292,7 +270,6 @@
        {
         "name" : "Alloannonces",
         "uri_check" : "https://www.alloannonces.ma/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Vendeurs/Agents",
         "m_string" : "Page non defini",
@@ -304,7 +281,6 @@
        {
         "name" : "AllTrails",
         "uri_check" : "https://www.alltrails.com/members/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "'s Profile | ",
         "m_string" : "User could not be found.",
@@ -316,7 +292,6 @@
        {
         "name" : "Ameblo",
         "uri_check" : "https://ameblo.jp/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "画像一覧",
         "m_string" : "削除された可能性がございます。",
@@ -328,7 +303,6 @@
        {
         "name" : "AmericanThinker",
         "uri_check" : "https://www.americanthinker.com/author/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Articles &amp;",
         "m_string" : "American Thinker</title>",
@@ -340,7 +314,6 @@
        {
         "name" : "AnimePlanet",
         "uri_check" : "https://www.anime-planet.com/users/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Joined",
         "m_string" : "Meet new friends, make reviews and recommendations.",
@@ -352,7 +325,6 @@
        {
         "name" : "aNobii",
         "uri_check" : "https://www.anobii.com/{account}/profile/activity",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : ">Anobian since",
         "m_string" : "A user matching the specified criteria could not be found",
@@ -364,7 +336,6 @@
        {
         "name" : "anonup",
         "uri_check" : "https://anonup.com/@{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Show followings",
         "m_string" : "Page not found!",
@@ -376,7 +347,6 @@
        {
         "name" : "Apex Legends",
         "uri_check" : "https://apex.tracker.gg/apex/profile/origin/{account}/overview",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Overview",
         "m_code" : 404,
@@ -388,7 +358,6 @@
        {
         "name" : "Appian",
         "uri_check" : "https://community.appian.com/members/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "User Profile",
         "m_string" : "Go back to our",
@@ -400,7 +369,6 @@
        {
         "name" : "apteka",
         "uri_check" : "https://apteka.ee/user/id/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "/gifts/user_id/",
         "m_string" : "account-data-error",
@@ -412,7 +380,6 @@
        {
         "name" : "Archive Of Our Own Account",
         "uri_check" : "https://archiveofourown.org/users/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : ">Profile<",
         "m_string" : ">redirected<",
@@ -424,7 +391,6 @@
        {
         "name" : "Arduino",
         "uri_check" : "https://create.arduino.cc/projecthub/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "- Arduino Project Hub",
         "m_string" : "Arduino Project Hub",
@@ -436,7 +402,6 @@
        {
         "name" : "ArmorGames",
         "uri_check" : "https://armorgames.com/user/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "about",
         "m_string" : "404: Oh Noes!",
@@ -448,7 +413,6 @@
        {
         "name" : "ArtBreeder",
         "uri_check" : "https://www.artbreeder.com/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "<title>",
         "m_string" : "Not found:",
@@ -460,7 +424,6 @@
        {
         "name" : "Artists & Clients",
         "uri_check" : "https://artistsnclients.com/people/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Member Since",
         "m_code" : 404,
@@ -472,7 +435,6 @@
        {
         "name" : "ArtStation",
         "uri_check" : "https://www.artstation.com/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Portfolio",
         "m_code" : 404,
@@ -484,7 +446,6 @@
        {
         "name" : "asciinema",
         "uri_check" : "https://asciinema.org/~{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "s profile - asciinema",
         "m_string" : "This page doesn't exist. Sorry!",
@@ -496,7 +457,6 @@
        {
         "name" : "ask.fm",
         "uri_check" : "https://ask.fm/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "answers,",
         "m_string" : "Well, apparently not anymore.",
@@ -508,7 +468,6 @@
        {
         "name" : "au.ru",
         "uri_check" : "https://au.ru/user/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Лоты пользователя ",
         "m_string" : "Пользователь не найден",
@@ -520,7 +479,6 @@
        {
         "name" : "Audiojungle",
         "uri_check" : "https://audiojungle.net/user/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "s profile on AudioJungle",
         "m_string" : "404 - Nothing to see here",
@@ -532,7 +490,6 @@
        {
         "name" : "authorSTREAM",
         "uri_check" : "http://www.authorstream.com/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Presentations on authorSTREAM",
         "m_string" : "",
@@ -544,7 +501,6 @@
        {
         "name" : "Avid Community",
         "uri_check" : "https://community.avid.com/members/{account}/default.aspx",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "My Activity",
         "m_code" : 302,
@@ -556,7 +512,6 @@
        {
         "name" : "babepedia",
         "uri_check" : "https://www.babepedia.com/user/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "'s Page</title>",
         "m_string" : "Profile not found",
@@ -569,7 +524,6 @@
         "name" : "BabyPips",
         "uri_check" : "https://forums.babypips.com/u/{account}.json",
         "uri_pretty" : "https://forums.babypips.com/u/{account}/summary",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "user_badges",
         "m_string" : "The requested URL or resource could not be found",
@@ -581,7 +535,6 @@
        {
         "name" : "Bandcamp",
         "uri_check" : "https://bandcamp.com/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : " collection | Bandcamp</title>",
         "m_string" : "<h2>Sorry, that something isn’t here.</h2>",
@@ -594,7 +547,6 @@
         "name" : "Bandlab",
         "uri_check" : "https://www.bandlab.com/api/v1.3/users/{account}",
         "uri_pretty" : "https://www.bandlab.com/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "about",
         "m_string" : "Couldn't find any matching element, it might be deleted",
@@ -606,7 +558,6 @@
        {
         "name" : "bblog_ru",
         "uri_check" : "https://www.babyblog.ru/user/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "@",
         "m_string" : "БэбиБлог - беременность, календарь беременности, дневники",
@@ -618,7 +569,7 @@
        {
         "name" : "BDSMLR",
         "uri_check" : "https://{account}.bdsmlr.com",
-        "post_body" : "",
+        "invalid_chars" : ".",
         "e_code" : 200,
         "e_string" : "login",
         "m_string" : "This blog doesn't exist.",
@@ -630,7 +581,6 @@
        {
         "name" : "bdsmsingles",
         "uri_check" : "https://www.bdsmsingles.com/members/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "<title>Profile",
         "m_string" : "BDSM Singles",
@@ -642,7 +592,6 @@
        {
         "name" : "Behance",
         "uri_check" : "https://www.behance.net/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "<title>Behance</title>",
         "m_string" : "<title>Behance :: Oops! We can’t find that page.</title>",
@@ -654,7 +603,6 @@
        {
         "name" : "Bentbox",
         "uri_check" : "https://bentbox.co/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "<div id=\"user_bar\">",
         "m_string" : "This user is currently not available",
@@ -666,7 +614,6 @@
        {
         "name" : "BiggerPockets",
         "uri_check" : "https://www.biggerpockets.com/users/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "| BiggerPockets</title>",
         "m_string" : "Page not found",
@@ -678,7 +625,6 @@
        {
         "name" : "BIGO Live",
         "uri_check" : "https://www.bigo.tv/user/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "userInfo:{nickName",
         "m_string" : "userInfo:{}",
@@ -690,7 +636,6 @@
        {
         "name" : "Bikemap",
         "uri_check" : "https://www.bikemap.net/en/u/{account}/routes/created/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "- 🚲 Bikemap</title>",
         "m_string" : "<title>Page not found - Error 404 ",
@@ -702,7 +647,6 @@
        {
         "name" : "Bimpos",
         "uri_check" : "https://ask.bimpos.com/user/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "<title>User ",
         "m_string" : "Page not found",
@@ -714,7 +658,6 @@
        {
         "name" : "biolink",
         "uri_check" : "https://bio.link/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "profile:username",
         "m_string" : "The page you’re looking for doesn’t exist",
@@ -726,7 +669,6 @@
        {
         "name" : "Bitbucket",
         "uri_check" : "https://bitbucket.org/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Repositories",
         "m_string" : "That link has no power here",
@@ -738,7 +680,6 @@
        {
         "name" : "Bitchute",
         "uri_check" : "https://www.bitchute.com/channel/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "subscribers",
         "m_string" : "404 - Page not found",
@@ -750,7 +691,6 @@
        {
         "name" : "bitcoin forum",
         "uri_check" : "https://bitcoinforum.com/profile/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Profile of",
         "m_string" : "An Error Has Occurred!",
@@ -762,7 +702,6 @@
        {
         "name" : "bittube",
         "uri_check" : "https://bittube.video/c/{account}/videos",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "- BitTube</title>",
         "m_string" : "<p>We are sorry but it seems",
@@ -774,7 +713,6 @@
        {
         "name" : "BLIP.fm",
         "uri_check" : "https://blip.fm/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "recommended",
         "m_string" : "",
@@ -786,7 +724,6 @@
        {
         "name" : "Blogger",
         "uri_check" : "https://www.blogger.com/profile/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : ">On Blogger since",
         "m_string" : "Sorry, the blog you were looking for does not exist.",
@@ -798,7 +735,6 @@
        {
         "name" : "blogi.pl",
         "uri_check" : "https://www.blogi.pl/osoba,{account}.html",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Informacje ogólne",
         "m_string" : "Niepoprawny adres.",
@@ -810,7 +746,6 @@
        {
         "name" : "Blogmarks",
         "uri_check" : "http://blogmarks.net/user/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "class=\"mark\"",
         "m_string" : "",
@@ -822,7 +757,7 @@
        {
         "name" : "Blogspot",
         "uri_check" : "http://{account}.blogspot.com",
-        "post_body" : "",
+        "invalid_chars" : ".",
         "e_code" : 200,
         "e_string" : "Blogger Template Style",
         "m_string" : "Blog not found",
@@ -835,7 +770,6 @@
         "name" : "BodyBuilding.com",
         "uri_check" : "http://api.bodybuilding.com/api-proxy/bbc/get?slug={account}",
         "uri_pretty" : "http://bodyspace.bodybuilding.com/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "username",
         "m_string" : "data\" :\"\"",
@@ -847,7 +781,6 @@
        {
         "name" : "bonga_cams",
         "uri_check" : "https://pt.bongacams.com/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Chat público ao vivo de",
         "m_string" : "Câmaras de sexo free: chat pornô ao vivo",
@@ -859,7 +792,6 @@
        {
         "name" : "Bookcrossing",
         "uri_check" : "https://www.bookcrossing.com/mybookshelf/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Recent Book Activity",
         "m_string" : "Sorry, we were unable to locate the content that you requested.",
@@ -871,7 +803,6 @@
        {
         "name" : "boosty",
         "uri_check" : "https://boosty.to/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "- exclusive content on Boosty</title>",
         "m_string" : "Blog not found",
@@ -883,7 +814,7 @@
        {
         "name" : "Booth",
         "uri_check" : "https://{account}.booth.pm/",
-        "post_body" : "",
+        "invalid_chars" : ".",
         "e_code" : 200,
         "e_string" : "- BOOTH</title>",
         "m_string" : "BOOTH - The International Indie Art Marketplace",
@@ -895,7 +826,6 @@
        {
         "name" : "Breach Forums",
         "uri_check" : "https://breached.vc/User-{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Time Spent Online",
         "m_code" : 404,
@@ -907,7 +837,6 @@
        {
         "name" : "Brickset",
         "uri_check" : "https://forum.brickset.com/profile/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Activity</h2>",
         "m_string" : "User Not Found",
@@ -919,7 +848,6 @@
        {
         "name" : "Bugcrowd",
         "uri_check" : "https://bugcrowd.com/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "s researcher profile on Bugcrowd",
         "m_string" : ">Bugcrowd | Error",
@@ -931,7 +859,6 @@
        {
         "name" : "Bunpro",
         "uri_check" : "https://community.bunpro.jp/u/{account}.json",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "username",
         "m_code" : 404,
@@ -943,7 +870,6 @@
        {
         "name" : "buymeacoffee",
         "uri_check" : "https://www.buymeacoffee.com/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "supporters",
         "m_string" : "The page you’re looking for doesn’t exist.",
@@ -955,7 +881,6 @@
        {
         "name" : "BuzzFeed",
         "uri_check" : "https://www.buzzfeed.com/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "memberSince",
         "m_string" : "We can't find the page you're looking for",
@@ -967,7 +892,6 @@
        {
         "name" : "Buzznet",
         "uri_check" : "https://www.buzznet.com/author/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "<title>Author:",
         "m_string" : "The page you are looking for can't be found.",
@@ -979,7 +903,6 @@
        {
         "name" : "cafecito",
         "uri_check" : "https://cafecito.app/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : " | Cafecito</title>",
         "m_string" : "Es posible que el enlace que seleccionaste esté roto o que se haya eliminado la página",
@@ -991,7 +914,6 @@
        {
         "name" : "Calendy",
         "uri_check" : "https://calendly.com/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "og:author",
         "m_code" : 404,
@@ -1003,7 +925,6 @@
        {
         "name" : "Cameo",
         "uri_check" : "https://www.cameo.com/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "aggregateRating",
         "m_string" : "",
@@ -1015,7 +936,7 @@
        {
         "name" : "Carbonmade",
         "uri_check" : "https://{account}.carbonmade.com/",
-        "post_body" : "",
+        "invalid_chars" : ".",
         "e_code" : 200,
         "e_string" : "s online portfolio",
         "m_string" : "site not found",
@@ -1027,7 +948,6 @@
        {
         "name" : "Career.habr",
         "uri_check" : "https://career.habr.com/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "— Хабр Карьера</title>",
         "m_string" : "Ошибка 404",
@@ -1039,7 +959,6 @@
        {
         "name" : "CaringBridge",
         "uri_check" : "https://www.caringbridge.org/visit/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "| CaringBridge",
         "m_string" : "Sorry, we can’t find that site",
@@ -1051,7 +970,7 @@
        {
         "name" : "carrd.co",
         "uri_check" : "https://{account}.carrd.co",
-        "post_body" : "",
+        "invalid_chars" : ".",
         "e_code" : 200,
         "e_string" : "( Made with Carrd )",
         "m_code" : 404,
@@ -1063,7 +982,6 @@
        {
         "name" : "cash.app",
         "uri_check" : "https://cash.app/${account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : " on Cash App</title>",
         "m_string" : "The page you are looking for can't be found",
@@ -1075,7 +993,6 @@
        {
         "name" : "CastingCallClub",
         "uri_check" : "https://www.castingcall.club/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "| Casting Call Club",
         "m_code" : 302,
@@ -1087,7 +1004,6 @@
        {
         "name" : "CD-Action",
         "uri_check" : "https://cdaction.pl/uzytkownicy/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Lista gier:",
         "m_string" : "Coś się popsuło...",
@@ -1099,7 +1015,6 @@
        {
         "name" : "cda.pl",
         "uri_check" : "https://www.cda.pl/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Foldery",
         "m_string" : "Strona na którą chcesz wejść nie istnieje",
@@ -1111,7 +1026,6 @@
        {
         "name" : "championat",
         "uri_check" : "https://www.championat.com/user/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Личный профил",
         "m_string" : "Извините, запрашиваемая страница не найдена",
@@ -1123,7 +1037,6 @@
        {
         "name" : "Mastodon-Chaos.social",
         "uri_check" : "https://chaos.social/@{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "@chaos.social) - chaos.social</title>",
         "m_string" : "The page you are looking for isn&#39;t here.",
@@ -1135,7 +1048,6 @@
        {
         "name" : "chaturbate",
         "uri_check" : "https://chaturbate.com/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "'s Bio and Free Webcam",
         "m_string" : "It's probably just a broken link",
@@ -1147,7 +1059,6 @@
        {
         "name" : "cHEEZburger",
         "uri_check" : "https://profile.cheezburger.com/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "profile-header",
         "m_string" : "<title>Home - ",
@@ -1159,7 +1070,6 @@
        {
         "name" : "Chamsko",
         "uri_check" : "https://www.chamsko.pl/profil/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "W serwisie od",
         "m_string" : "Strona nie istnieje.",
@@ -1171,7 +1081,6 @@
        {
         "name" : "Chess.com",
         "uri_check" : "https://www.chess.com/member/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Last Online",
         "m_string" : "<title>Missing Page?! - Chess.com</title>",
@@ -1183,7 +1092,6 @@
        {
         "name" : "Chomikuj.pl",
         "uri_check" : "https://chomikuj.pl/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Foldery",
         "m_string" : "Chomik o takiej nazwie nie istnieje",
@@ -1195,7 +1103,6 @@
        {
         "name" : "Chyoa",
         "uri_check" : "https://chyoa.com/user/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "When I'm not reading erotica I like to read",
         "m_string" : "Sorry, I got distracted...",
@@ -1208,7 +1115,6 @@
         "name" : "Climatejustice.rocks (Mastodon Instance)",
         "uri_check" : "https://climatejustice.rocks/api/v1/accounts/lookup?acct={account}",
         "uri_pretty" : "https://climatejustice.rocks/@{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "display_name",
         "m_code" : 404,
@@ -1220,7 +1126,6 @@
        {
         "name" : "Cloudflare",
         "uri_check" : "https://community.cloudflare.com/u/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "- Cloudflare Community",
         "m_string" : "Oops! That page doesn’t exist or is private.",
@@ -1232,7 +1137,6 @@
        {
         "name" : "Clubhouse",
         "uri_check" : "https://www.clubhouse.com/@{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : ">followers</div>",
         "m_string" : "t find what you were looking for",
@@ -1244,7 +1148,6 @@
        {
         "name" : "clusterdafrica",
         "uri_check" : "https://clusterdafrica.com/@{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Membre depuis -",
         "m_string" : "- Page non trouvée!",
@@ -1256,7 +1159,6 @@
        {
         "name" : "cnet",
         "uri_check" : "https://www.cnet.com/profiles/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Member Since:",
         "m_string" : "Page Not Found (404) - CNET",
@@ -1268,7 +1170,6 @@
        {
         "name" : "Codeberg",
         "uri_check" : "https://codeberg.org/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "ui avatar vm",
         "m_code" : 404,
@@ -1280,7 +1181,6 @@
        {
         "name" : "Codecademy",
         "uri_check" : "https://discuss.codecademy.com/u/{account}/summary",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "<title>  Profile - ",
         "m_string" : "Oops! That page doesn’t exist",
@@ -1292,7 +1192,6 @@
        {
         "name" : "codeforces",
         "uri_check" : "https://codeforces.com/profile/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : " - Codeforces</title>",
         "m_string" : "<title>Codeforces</title>",
@@ -1304,19 +1203,28 @@
        {
         "name" : "codementor",
         "uri_check" : "https://www.codementor.io/@{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "ABOUT ME",
         "m_string" : "404/favicon.png",
         "m_code" : 404,
-        "known" : ["e4c5"],
+        "known" : ["e4c5", "juanelfers"],
+        "cat" : "coding",
+        "valid" : true
+       },
+       {
+        "name" : "Code Project",
+        "uri_check" : "https://www.codeproject.com/Members/{account}",
+        "e_code" : 200,
+        "e_string" : "member since",
+        "m_string" : "Unable to load the requested member's information",
+        "m_code" : 200,
+        "known" : ["WmCraig", "Rick-York"],
         "cat" : "coding",
         "valid" : true
        },
        {
         "name" : "Codewars",
         "uri_check" : "https://www.codewars.com/users/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "| Codewars",
         "m_string" : "Whoops! The page you were looking for doesn't seem to exist.",
@@ -1328,7 +1236,6 @@
        {
         "name" : "Coderwall",
         "uri_check" : "https://coderwall.com/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "s profile |",
         "m_string" : "404! Our feels when that url is used",
@@ -1340,7 +1247,6 @@
        {
         "name" : "cohost",
         "uri_check" : "https://cohost.org/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "cohost! - @",
         "m_string" : "Something went wrong",
@@ -1352,7 +1258,6 @@
        {
         "name" : "COLOURlovers",
         "uri_check" : "https://www.colourlovers.com/lover/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Color lovin' since",
         "m_string" : "Lover has gone missing",
@@ -1364,7 +1269,6 @@
        {
         "name" : "contactos.sex",
         "uri_check" : "https://www.contactossex.com/profile/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Información Personal",
         "m_string" : "Desde 2001 conectando gente!",
@@ -1376,7 +1280,6 @@
        {
         "name" : "coroflot",
         "uri_check" : "https://www.coroflot.com/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "portfolio",
         "m_string" : "Looking for something?",
@@ -1388,7 +1291,6 @@
        {
         "name" : "Mastodon-counter.social",
         "uri_check" : "https://counter.social/@{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "@counter.social) - CounterSocial</title>",
         "m_string" : "The page you are looking for isn&#39;t here.",
@@ -1400,7 +1302,6 @@
        {
         "name" : "cowboys4angels",
         "uri_check" : "https://cowboys4angels.com/cowboy/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : " | Cowboys 4 Angels |",
         "m_string" : "<title>Elite Male Escorts",
@@ -1412,7 +1313,6 @@
        {
         "name" : "cracked_io",
         "uri_check" : "https://cracked.io/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Cracked.io - Profile of",
         "m_string" : "The member you specified is either invalid or doesn't exist",
@@ -1424,7 +1324,6 @@
        {
         "name" : "Cracked",
         "uri_check" : "https://www.cracked.com/members/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Member Since",
         "m_string" : "",
@@ -1436,7 +1335,7 @@
        {
         "name" : "crevado",
         "uri_check" : "https://{account}.crevado.com/",
-        "post_body" : "",
+        "invalid_chars" : ".",
         "e_code" : 200,
         "e_string" : "Portfolio",
         "m_string" : "Site not found :-(",
@@ -1448,7 +1347,6 @@
        {
         "name" : "crowdin",
         "uri_check" : "https://crowdin.com/profile/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : ") – Crowdin",
         "m_string" : "Page Not Found - Crowdin",
@@ -1460,7 +1358,6 @@
        {
         "name" : "Cults3D",
         "uri_check" : "https://cults3d.com/en/users/{account}/creations",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "All the 3D models of",
         "m_string" : "Oh dear, this page is not working!",
@@ -1473,7 +1370,6 @@
         "name" : "Curiouscat",
         "uri_check" : "https://curiouscat.live/api/v2.1/profile?username={account}",
         "uri_pretty" : "https://curiouscat.live/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "is_followed_by_me",
         "m_code" : 200,
@@ -1485,7 +1381,6 @@
        {
         "name" : "Cytoid",
         "uri_check" : "https://cytoid.io/profile/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Joined",
         "m_code" : 404,
@@ -1497,7 +1392,6 @@
        {
         "name" : "Dailymotion",
         "uri_check" : "https://www.dailymotion.com/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "og:url",
         "m_string" : "404 Page not found",
@@ -1509,7 +1403,6 @@
        {
         "name" : "darudar",
         "uri_check" : "https://darudar.org/users/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : ". Дарудар",
         "m_string" : "404. Дару~дар: миру~мир!",
@@ -1521,7 +1414,6 @@
        {
         "name" : "datezone",
         "uri_check" : "https://www.datezone.com/users/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "profile_status",
         "m_string" : "Błąd wczytywania",
@@ -1533,7 +1425,6 @@
        {
         "name" : "dateinasia",
         "uri_check" : "https://www.dateinasia.com/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "About me",
         "m_string" : "The page you are looking for does not exist",
@@ -1545,7 +1436,6 @@
        {
         "name" : "Dating.ru",
         "uri_check" : "https://dating.ru/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "| dating.ru",
         "m_string" : "Такой страницы не существует.",
@@ -1557,7 +1447,6 @@
        {
         "name" : "Mastodon-Defcon",
         "uri_check" : "https://defcon.social/@{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "- DEF CON Social</title>",
         "m_string" : "The page you are looking for isn&#39;t here.",
@@ -1569,7 +1458,6 @@
        {
         "name" : "Demotywatory",
         "uri_check" : "https://demotywatory.pl/user/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Z nami od:",
         "m_string" : "Użytkownik o podanym pseudonimie nie istnieje.",
@@ -1581,7 +1469,6 @@
        {
         "name" : "depop",
         "uri_check" : "https://www.depop.com/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "s Shop - Depop",
         "m_string" : "Sorry, that page doesn't exist",
@@ -1593,7 +1480,6 @@
        {
         "name" : "Designspriation",
         "uri_check" : "https://www.designspiration.com/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "has discovered on Designspiration",
         "m_string" : "Content Not Found",
@@ -1605,7 +1491,6 @@
        {
         "name" : "Destructoid",
         "uri_check" : "https://www.destructoid.com/?name={account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Follow",
         "m_string" : "Error in query",
@@ -1617,7 +1502,6 @@
        {
         "name" : "DeviantArt",
         "uri_check" : "https://www.deviantart.com/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : " | DeviantArt</title>",
         "m_string" : "DeviantArt: 404",
@@ -1629,7 +1513,6 @@
        {
         "name" : "dev.to",
         "uri_check" : "https://dev.to/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "- DEV",
         "m_string" : "This page does not exist",
@@ -1641,7 +1524,6 @@
        {
         "name" : "devRant",
         "uri_check" : "https://devrant.com/users/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Joined devRant on",
         "m_string" : "<!-- row start signup -->",
@@ -1653,7 +1535,6 @@
        {
         "name" : "dfgames",
         "uri_check" : "https://www.dfgames.com.br/user/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Reputa",
         "m_string" : "404 Not Found",
@@ -1665,7 +1546,6 @@
        {
         "name" : "Diablo",
         "uri_check" : "https://diablo2.io/member/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" :"Viewing profile - ",
         "m_string" : "The requested user does not exist",
@@ -1678,7 +1558,6 @@
         "name" : "diigo",
         "uri_check" : "https://www.diigo.com/interact_api/load_profile_info?name={account}",
         "uri_pretty" : "https://www.diigo.com/profile/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "regist_at",
         "m_string" : "{}",
@@ -1690,7 +1569,6 @@
        {
        "name" : "DIBIZ",
         "uri_check" : "https://www.dibiz.com/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "mailto:?subject=",
         "m_string" : "An Error Has Occurred",
@@ -1702,7 +1580,6 @@
        {
         "name" : "Digitalspy",
         "uri_check" : "https://forums.digitalspy.com/profile/discussions/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "About",
         "m_string" : "User not found",
@@ -1715,7 +1592,6 @@
         "name" : "Disabled.rocks (Mastodon Instance)",
         "uri_check" : "https://disabled.rocks/api/v1/accounts/lookup?acct={account}",
         "uri_pretty" : "https://disabled.rocks/@{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "display_name",
         "m_code" : 404,
@@ -1727,7 +1603,6 @@
        {
         "name" : "Discogs",
         "uri_check" : "https://www.discogs.com/user/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Joined on",
         "m_code" : 404,
@@ -1740,7 +1615,6 @@
         "name" : "Discourse",
         "uri_check" : "https://meta.discourse.org/u/{account}/summary.json",
         "uri_pretty" : "https://meta.discourse.org/u/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "topics",
         "m_code" : 404,
@@ -1752,7 +1626,6 @@
        {
         "name" : "discuss.elastic.co",
         "uri_check" : "https://discuss.elastic.co/u/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "<title>  Profile",
         "m_string" : "Oops!",
@@ -1765,7 +1638,6 @@
         "name" : "Discuss.social (Mastodon Instance)",
         "uri_check" : "https://discuss.social/api/v1/accounts/lookup?acct={account}",
         "uri_pretty" : "https://discuss.social/@{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "display_name",
         "m_code" : 404,
@@ -1777,7 +1649,6 @@
        {
         "name" : "Dissenter",
         "uri_check" : "https://dissenter.com/user/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Dissenter | The Comment Section of the Internet",
         "m_string" : "That user is not registered here.",
@@ -1789,7 +1660,6 @@
        {
         "name" : "Disqus",
         "uri_check" : "https://disqus.com/by/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "<title>Disqus Profile",
         "m_string" : "Page not found (404) - Disqus",
@@ -1801,7 +1671,6 @@
        {
         "name" : "DockerHub",
         "uri_check" : "https://hub.docker.com/v2/users/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "username",
         "m_string" : "Not Found",
@@ -1814,7 +1683,6 @@
         "name" : "Donation Alerts",
         "uri_check" : "https://www.donationalerts.com/api/v1/user/{account}/donationpagesettings",
         "uri_pretty" : "https://www.donationalerts.com/r/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "background_image_url",
         "m_code" : 202,
@@ -1826,7 +1694,6 @@
        {
         "name" : "dot.cards",
         "uri_check" : "https://dot.cards/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "&#x27;s dot.Profile</title>",
         "m_string" : "Username does not exist.</title>",
@@ -1838,7 +1705,6 @@
        {
         "name" : "Dojoverse",
         "uri_check" : "https://dojoverse.com/members/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Joined",
         "m_string" : "Looks like you got lost!.",
@@ -1850,7 +1716,6 @@
        {
         "name" : "Dribbble",
         "uri_check" : "https://dribbble.com/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : " | Dribbble",
         "m_string" : "(404)</title>",
@@ -1862,7 +1727,6 @@
        {
         "name" : "Droners",
         "uri_check" : "https://droners.io/accounts/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "- Professional Drone Pilot",
         "m_string" : "(404)</title>",
@@ -1874,7 +1738,6 @@
        {
         "name" : "Drum",
         "uri_check" : "https://drum.io/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "firstName",
         "m_string" : "Page not found",
@@ -1887,7 +1750,6 @@
         "name" : "Duolingo",
         "uri_check" : "https://www.duolingo.com/2017-06-30/users?username={account}&_=1628308619574",
         "uri_pretty" : "https://www.duolingo.com/profile/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "joinedClassroomIds",
         "m_string" : "\"users\" : []",
@@ -1899,7 +1761,6 @@
        {
         "name" : "easyen",
         "uri_check" : "https://easyen.ru/index/8-0-{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "День рождения",
         "m_string" : "Пользователь не найден",
@@ -1911,7 +1772,6 @@
        {
         "name" : "eBay",
         "uri_check" : "https://www.ebay.com/usr/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "on eBay</title>",
         "m_string" : "The User ID you entered was not found",
@@ -1923,7 +1783,6 @@
        {
         "name" : "ebay_stores",
         "uri_check" : "https://www.ebay.com/str/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "| eBay Stores</title>",
         "m_string" : "Sorry, this store was not found.",
@@ -1935,7 +1794,6 @@
        {
         "name" : "Ello.co",
         "uri_check" : "https://ello.co/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "| Ello",
         "m_string" : "| [404] Not Found",
@@ -1947,7 +1805,6 @@
        {
         "name" : "Engadget",
         "uri_check" : "https://www.engadget.com/about/editors/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "- Engadget</title>",
         "m_string" : "<title>,  -",
@@ -1959,7 +1816,6 @@
        {
         "name" : "EPORNER",
         "uri_check" : "https://www.eporner.com/profile/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Video/Pics views",
         "m_string" : "Profile not found",
@@ -1971,7 +1827,6 @@
        {
         "name" : "Etsy",
         "uri_check" : "https://www.etsy.com/people/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : " on Etsy</title>",
         "m_string" : "Sorry, the member you are looking for does not exist",
@@ -1981,23 +1836,9 @@
         "valid" : true
        },
        {
-        "name" : "eToro",
-        "uri_check" : "https://www.etoro.com/api/logininfo/v1.1/users/{account}",
-        "uri_pretty" : "https://www.etoro.com/people/{account}",
-        "post_body" : "",
-        "e_code" : 200,
-        "e_string" : "– eToro</title>",
-        "m_string" : "Sign Into Your Account</title>",
-        "m_code" : 200,
-        "known" : ["nelexlian", "amitkup"],
-        "cat" : "finance",
-        "valid" : true
-       },
-       {
         "name" : "Mastodon-EU_Voice",
         "uri_pretty" : "https://social.network.europa.eu/@{account}",
         "uri_check" : "https://social.network.europa.eu/api/v1/accounts/lookup?acct={account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "social.network.europa.eu",
         "m_string" : "The page you are looking for isn&#39;t here.",
@@ -2010,7 +1851,6 @@
         "name" : "Expressional.social (Mastodon Instance)",
         "uri_check" : "https://expressional.social/api/v1/accounts/lookup?acct={account}",
         "uri_pretty" : "https://expressional.social/@{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "display_name",
         "m_code" : 404,
@@ -2022,7 +1862,6 @@
        {
         "name" : "ExtraLunchMoney",
         "uri_check" : "https://extralunchmoney.com/user/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Public Profile Page",
         "m_string" : "Closed Profile Page",
@@ -2034,7 +1873,6 @@
        {
         "name" : "Eyeem",
         "uri_check" : "https://www.eyeem.com/u/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "| EyeEm Photographer",
         "m_string" : "Not Found (404) | EyeEm",
@@ -2046,7 +1884,6 @@
        {
         "name" : "F3",
         "uri_check" : "https://f3.cool/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "<title>@",
         "m_string" : "Page Not Found - F3",
@@ -2058,7 +1895,6 @@
        {
         "name" : "Fabswingers",
         "uri_check" : "https://www.fabswingers.com/profile/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "View Profile",
         "m_string" : "The user you tried to view doesn't seem to be on the site any more",
@@ -2070,7 +1906,6 @@
        {
         "name" : "Faktopedia",
         "uri_check" : "https://faktopedia.pl/user/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Zamieszcza fakty od:",
         "m_string" : "Nie znaleziono użytkownika o podanym loginie.",
@@ -2083,7 +1918,6 @@
         "name" : "FanCentro",
         "uri_check" : "https://fancentro.com/api/profile.get?profileAlias={account}&limit=1",
         "uri_pretty" : "https://fancentro.com/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "\"status\" :true",
         "m_string" : "\"status\" :false",
@@ -2095,7 +1929,6 @@
        {
         "name" : "fandalism",
         "uri_check" : "https://fandalism.com/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "fandalism_:user",
         "m_string" : "404 - File or directory not found",
@@ -2107,7 +1940,6 @@
        {
         "name" : "Fandom",
         "uri_check" : "https://www.fandom.com/u/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "| Profile | Fandom",
         "m_string" : "Not Found",
@@ -2119,7 +1951,6 @@
        {
         "name" : "fanpop",
         "uri_check" : "https://www.fanpop.com/fans/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Fanpopping since",
         "m_string" : "",
@@ -2131,7 +1962,6 @@
        {
         "name" : "Fark",
         "uri_check" : "https://www.fark.com/users/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Fark account number",
         "m_string" : "Tastes like chicken.",
@@ -2143,7 +1973,6 @@
        {
         "name" : "Farkascity",
         "uri_check" : "https://farkascity.org/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "blog-title",
         "m_code" : 404,
@@ -2156,7 +1985,6 @@
         "name" : "fansly",
         "uri_check" : "https://apiv2.fansly.com/api/v1/account?usernames={account}",
         "uri_pretty" : "https://fansly.com/{account}/posts",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "username",
         "m_string" : "response: []",
@@ -2168,7 +1996,6 @@
        {
         "name" : "FatSecret",
         "uri_check" : "https://www.fatsecret.com/member/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "- Member</title>",
         "m_string" : "Your Key to Success",
@@ -2181,7 +2008,6 @@
         "name" : "Federated.press (Mastodon Instance)",
         "uri_check" : "https://federated.press/api/v1/accounts/lookup?acct={account}",
         "uri_pretty" : "https://federated.press/@{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "display_name",
         "m_code" : 404,
@@ -2193,7 +2019,6 @@
        {
         "name" : "fcv",
         "uri_check" : "https://fcv.if.ua/index.php/component/comprofiler/userprofile/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "сторінка профілю",
         "m_string" : "Цей профіль або більше не існує або більше не доступний",
@@ -2205,7 +2030,6 @@
        {
         "name" : "figma",
         "uri_check" : "https://www.figma.com/@{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : ") on Figma Community",
         "m_string" : "The page you are looking for can't be found.",
@@ -2217,7 +2041,6 @@
        {
         "name" : "Filmweb",
         "uri_check" : "https://www.filmweb.pl/user/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Na filmwebie od",
         "m_string" : "Przepraszamy. Strona, której szukasz nie została odnaleziona.",
@@ -2229,7 +2052,6 @@
        {
         "name" : "fine_art_america",
         "uri_check" : "https://fineartamerica.com/profiles/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Shop for artwork by",
         "m_string" : "Browse through millions of independent artists in our extensive",
@@ -2241,7 +2063,6 @@
        {
         "name" : "Fiverr",
         "uri_check" : "https://www.fiverr.com/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "member-since",
         "m_string" : "",
@@ -2253,7 +2074,6 @@
        {
         "name" : "Flickr",
         "uri_check" : "https://www.flickr.com/photos/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "| Flickr",
         "m_string" : "",
@@ -2265,7 +2085,6 @@
        {
         "name" : "Flipboard",
         "uri_check" : "https://flipboard.com/@{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : ") on Flipboard",
         "m_string" : "<title></title>",
@@ -2277,7 +2096,6 @@
        {
         "name" : "flowcode",
         "uri_check" : "https://www.flowcode.com/page/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : ";s Flowpage",
         "m_string" : "Nobody's reserved this Flowpage yet.",
@@ -2289,7 +2107,6 @@
        {
         "name" : "Fodors Forum",
         "uri_check" : "https://www.fodors.com/community/profile/{account}/forum-activity",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Member since",
         "m_string" : "Plan Your Trip Online</title>",
@@ -2301,7 +2118,6 @@
        {
         "name" : "Fortnite Tracker",
         "uri_check" : "https://fortnitetracker.com/profile/all/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "s Fortnite Stats - Fortnite Tracker",
         "m_string" : "Fortnite Player Stats -",
@@ -2313,7 +2129,6 @@
        {
         "name" : "forumprawne.org",
         "uri_check" : "https://forumprawne.org/members/{account}.html",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Wiadomość",
         "m_string" : "",
@@ -2326,7 +2141,6 @@
         "name" : "Fosstodon.org (Mastodon Instance)",
         "uri_check" : "https://fosstodon.org/api/v1/accounts/lookup?acct={account}",
         "uri_pretty" : "https://fosstodon.org/@{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "display_name",
         "m_code" : 404,
@@ -2339,7 +2153,6 @@
         "name" : "fotka",
         "uri_check" : "https://api.fotka.com/v2/user/dataStatic?login={account}",
         "uri_pretty" : "https://fotka.com/profil/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "profil",
         "m_string" : "ERROR",
@@ -2351,7 +2164,6 @@
        {
        "name" : "Foursquare",
         "uri_check" : "https://foursquare.com/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "on Foursquare</title>",
         "m_string" : "Foursquare - Independent Location Data Platform",
@@ -2363,7 +2175,6 @@
        {
         "name" : "freelancer",
         "uri_check" : "https://www.freelancer.com/u/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "> joined",
         "m_string" : "Looks like the page you are looking for doesn't exist.",
@@ -2375,7 +2186,6 @@
        {
         "name" : "freesound",
         "uri_check" : "https://freesound.org/people/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "START of Content area",
         "m_string" : "Page not found",
@@ -2387,7 +2197,6 @@
        {
         "name" : "FriendFinder",
         "uri_check" : "https://friendfinder.com/profile/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Last Visit:",
         "m_string" : "302 Found",
@@ -2399,7 +2208,6 @@
        {
         "name" : "FriendFinder-X",
         "uri_check" : "https://www.friendfinder-x.com/profile/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "'s Dating Profile on FriendFinder-x",
         "m_string" : "The document has moved",
@@ -2411,7 +2219,6 @@
        {
         "name" : "Friendweb",
         "uri_check" : "https://friendweb.nl/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "friendweb.nl",
         "m_string" : "Page Not Found",
@@ -2423,7 +2230,6 @@
        {
         "name" : "FurAffinity",
         "uri_check" : "https://www.furaffinity.net/user/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "<title>Userpage of",
         "m_string" : "user cannot be found",
@@ -2435,7 +2241,6 @@
        {
         "name" : "Furiffic",
         "uri_check" : "https://www.furiffic.com/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Registered Since",
         "m_string" : "<title>Whoops &middot; Furiffic</title>",
@@ -2448,7 +2253,6 @@
         "name" : "Gab",
         "uri_check" : "https://gab.com/api/v1/account_by_username/{account}",
         "uri_pretty" : "https://gab.com/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "followers_count",
         "m_string" : "Record not found",
@@ -2460,7 +2264,6 @@
        {
         "name" : "game_debate",
         "uri_check" : "https://www.game-debate.com/profile/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "| , , GB pc game performance",
         "m_string" : "Not Found",
@@ -2470,9 +2273,20 @@
         "valid" : true
        },
        {
+        "name" : "Game Jolt",
+        "uri_check" : "https://gamejolt.com/site-api/web/profile/@{account}/",
+        "uri_pretty" : "https://gamejolt.com/@{account}",
+        "e_code" : 200,
+        "e_string" : "created_on",
+        "m_string" : "null,",
+        "m_code" : 404,
+        "known" : ["nilllzz", "KorbloxTeams"],
+        "cat" : "gaming",
+        "valid" : true
+       },
+       {
         "name" : "Gamespot",
         "uri_check" : "https://www.gamespot.com/profile/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "'s Profile - GameSpot</title>",
         "m_string" : "404: Not Found - GameSpot</title>",
@@ -2484,7 +2298,6 @@
        {
         "name" : "Garmin connect",
         "uri_check" : "https://connect.garmin.com/modern/profile/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "window.ERROR_VIEW = null",
         "m_string" : "resourceNotFoundRoute",
@@ -2496,7 +2309,6 @@
        {
         "name" : "Geocaching",
         "uri_check" : "https://www.geocaching.com/p/?u={account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Groundspeak - User Profile",
         "m_string" : "Error 404: DNF",
@@ -2508,7 +2320,6 @@
        {
         "name" : "getmonero",
         "uri_check" : "https://forum.getmonero.org/user/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" :"Monero | User",
         "m_string" : "Monero | Page not found. Error: 404",
@@ -2521,7 +2332,6 @@
         "name" : "Gettr",
         "uri_check" : "https://api.gettr.com/s/user/{account}/exist",
         "uri_pretty" : "https://gettr.com/user/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "success\":{",
         "m_string" : "success\":false",
@@ -2533,7 +2343,6 @@
        {
         "name" : "gfycat",
         "uri_check" : "https://gfycat.com/@{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "gfycat-username",
         "m_string" : "<h1>Page not found</h1>",
@@ -2545,7 +2354,6 @@
        {
         "name" : "Gigapan",
         "uri_check" : "https://www.gigapan.com/profiles/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "width=\"100\"",
         "m_string" : "<a href=\"/gigapans\">View Gigapans</a>",
@@ -2557,7 +2365,6 @@
        {
         "name" : "Giphy",
         "uri_check" : "https://giphy.com/channel/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Share on GIPHY</title>",
         "m_string" : "<title>404 Not Found</title>",
@@ -2569,7 +2376,6 @@
        {
         "name" : "Girlfriendsmeet",
         "uri_check" : "http://www.girlfriendsmeet.com/profile/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "online dating profile",
         "m_string" : "Page not found",
@@ -2581,7 +2387,6 @@
        {
         "name" : "gitea",
         "uri_check" : "https://gitea.com/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "(Git with a cup of tea)",
         "m_string" : "Not found.",
@@ -2593,7 +2398,6 @@
        {
         "name" : "giters",
         "uri_check" : "https://giters.com/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : " - Giters</title>",
         "m_string" : "This page could not be found</title>",
@@ -2605,7 +2409,6 @@
        {
         "name" : "GitHub",
         "uri_check" : "https://github.com/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "p-nickname vcard-username d-block",
         "m_string" : "<title>Page not found ",
@@ -2617,7 +2420,6 @@
        {
         "name" : "GitLab",
         "uri_check" : "https://gitlab.com/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Member since",
         "m_string" : "GitLab.com offers free unlimited",
@@ -2629,7 +2431,6 @@
        {
         "name" : "gitee",
         "uri_check" : "https://gitee.com/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Commits, issues, and pull requests will appear",
         "m_string" : "Gitee is more than a development platform",
@@ -2641,7 +2442,6 @@
        {
         "name" : "gloria.tv",
         "uri_check" : "https://gloria.tv/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Last online",
         "m_string" : "Page unavailable",
@@ -2653,7 +2453,6 @@
        {
         "name" : "gnome_extensions",
         "uri_check" : "https://extensions.gnome.org/accounts/profile/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "s Profile - GNOME Shell Extensions",
         "m_string" : "Uh oh...",
@@ -2665,7 +2464,6 @@
        {
         "name" : "gpodder.net",
         "uri_check" : "https://gpodder.net/user/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "mdash; gpodder.net",
         "m_string" : "404 - Not found",
@@ -2677,7 +2475,6 @@
        {
         "name" : "grandprof",
         "uri_check" : "https://grandprof.org/communaute/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "s Profile",
         "m_string" : "Mauvaise pioche",
@@ -2690,7 +2487,6 @@
         "name" : "Gravatar",
         "uri_check" : "http://en.gravatar.com/profiles/{account}.json",
         "uri_pretty" : "http://en.gravatar.com/profiles/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "entry",
         "m_string" : "User not found",
@@ -2703,7 +2499,6 @@
         "name" : "Graphics.social (Mastodon Instance)",
         "uri_check" : "https://graphics.social/api/v1/accounts/lookup?acct={account}",
         "uri_pretty" : "https://graphics.social/@{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "display_name",
         "m_code" : 404,
@@ -2715,7 +2510,7 @@
        {
         "name" : "gumroad",
         "uri_check" : "https://{account}.gumroad.com/",
-        "post_body" : "",
+        "invalid_chars" : ".",
         "e_code" : 200,
         "e_string" : "s profile picture",
         "m_string" : "Page not found",
@@ -2727,7 +2522,6 @@
        {
         "name" : "Hackaday",
         "uri_check" : "https://hackaday.io/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "'s Profile | Hackaday.io",
         "m_string" : "The requested URL was not found on this server. That’s all we know.",
@@ -2739,7 +2533,6 @@
        {
         "name" : "Hacker News",
         "uri_check" : "https://news.ycombinator.com/user?id={account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "created:",
         "m_string" : "No such user.",
@@ -2752,7 +2545,6 @@
         "name" : "Hackernoon",
         "uri_check" : "https://hackernoon.com/_next/data/foL6JC7ro2FEEMD-gMKgQ/u/{account}.json",
         "uri_pretty" : "https://hackernoon.com/u/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "\"profile\"",
         "m_string" : "__N_REDIRECT",
@@ -2764,7 +2556,6 @@
        {
         "name" : "hackerearth",
         "uri_check" : "https://www.hackerearth.com/@{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "| Developer Profile on HackerEarth",
         "m_string" : "404 | HackerEarth",
@@ -2776,7 +2567,6 @@
        {
         "name" : "HackerOne",
         "uri_check" : "https://hackerone.com/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "profile that highlights",
         "m_string" : "Page not found",
@@ -2788,7 +2578,6 @@
        {
         "name" : "HackerRank",
         "uri_check" : "https://www.hackerrank.com/profile/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : " | HackerRank</title>",
         "m_string" : ":: HackerRank</title>",
@@ -2800,7 +2589,6 @@
        {
         "name" : "hackster",
         "uri_check" : "https://www.hackster.io/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "- Hackster.io",
         "m_string" : "Hackster.io - The community dedi",
@@ -2812,7 +2600,6 @@
        {
         "name" : "hamaha",
         "uri_check" : "https://hamaha.net/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "- трейдинг форекс фьючерсы акции фондовый рынок ",
         "m_string" : "HAMAHA Биткоин форум.",
@@ -2824,7 +2611,6 @@
        {
         "name" : "Hanime",
         "uri_check" : "https://hanime.tv/channels/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Channel Views",
         "m_code" : 302,
@@ -2837,7 +2623,6 @@
         "name" : "Hcommons.social (Mastodon Instance)",
         "uri_check" : "https://hcommons.social/api/v1/accounts/lookup?acct={account}",
         "uri_pretty" : "https://hcommons.social/@{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "display_name",
         "m_code" : 404,
@@ -2849,7 +2634,6 @@
        {
         "name" : "Heylink",
         "uri_check" : "https://heylink.me/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "HeyLink.me |",
         "m_string" : "We can't find the page that you're looking for :(",
@@ -2861,7 +2645,6 @@
        {
         "name" : "hiberworld",
         "uri_check" : "https://hiberworld.com/u/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Creations by ",
         "m_string" : "Looks like you got lost ",
@@ -2873,7 +2656,6 @@
        {
         "name" : "HiHello",
         "uri_check" : "https://www.hihello.me/author/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "<title>HiHello Blog Author: ",
         "m_string" : "Well, this is awkward",
@@ -2886,7 +2668,6 @@
         "name" : "Historians.social (Mastodon Instance)",
         "uri_check" : "https://historians.social/api/v1/accounts/lookup?acct={account}",
         "uri_pretty" : "https://historians.social/@{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "display_name",
         "m_code" : 404,
@@ -2898,7 +2679,6 @@
        {
         "name" : "HomeDesign3D",
         "uri_check" : "https://en.homedesign3d.net/user/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "userspace",
         "m_string" : "An Error Occurred: Internal Server Error",
@@ -2911,7 +2691,6 @@
         "name" : "Hometech.social (Mastodon Instance)",
         "uri_check" : "https://hometech.social/api/v1/accounts/lookup?acct={account}",
         "uri_pretty" : "https://hometech.social/@{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "display_name",
         "m_code" : 404,
@@ -2923,7 +2702,6 @@
        {
         "name" : "hoo.be",
         "uri_check" : "https://hoo.be/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "--profile-name-color",
         "m_string" : "Page Not Found</h3>",
@@ -2936,7 +2714,6 @@
         "name" : "Hostux.social (Mastodon Instance)",
         "uri_check" : "https://hostux.social/api/v1/accounts/lookup?acct={account}",
         "uri_pretty" : "https://hostux.social/@{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "display_name",
         "m_code" : 404,
@@ -2948,7 +2725,6 @@
        {
         "name" : "Houzz",
         "uri_check" : "https://www.houzz.com/user/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Followers",
         "m_string" : "Page Not Found",
@@ -2960,7 +2736,6 @@
        {
         "name" : "HubPages",
         "uri_check" : "https://hubpages.com/@{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "name\">Followers",
         "m_string" : "Sorry, that user does not exist",
@@ -2972,7 +2747,6 @@
        {
         "name" : "Hubski",
         "uri_check" : "https://hubski.com/user/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "'s profile",
         "m_string" : "No such user.",
@@ -2984,7 +2758,6 @@
        {
         "name" : "hugging_face",
         "uri_check" : "https://huggingface.co/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "thumbnails.huggingface.co/social-thumbnails/",
         "m_string" : "Sorry, we can't find the page you are looking for.",
@@ -2996,7 +2769,6 @@
        {
         "name" : "Iconfinder",
         "uri_check" : "https://www.iconfinder.com/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "iconsets",
         "m_string" : "Page not found",
@@ -3008,7 +2780,6 @@
        {
         "name" : "icq-chat",
         "uri_check" : "https://icq.icqchat.co/members/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "ICQ chat",
         "m_string" : "Oops! We ran into some problems",
@@ -3020,7 +2791,6 @@
        {
         "name" : "IFTTT",
         "uri_check" : "https://ifttt.com/p/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Joined",
         "m_string" : "The requested page or file does not exist",
@@ -3032,7 +2802,6 @@
        {
         "name" : "ifunny",
         "uri_check" : "https://ifunny.co/user/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" :"subscribers",
         "m_string" : "404 - page not found",
@@ -3044,7 +2813,6 @@
        {
         "name" : "igromania",
         "uri_check" : "http://forum.igromania.ru/member.php?username={account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Форум Игромании - Просмотр профиля:",
         "m_string" : "Пользователь не зарегистрирован и не имеет профиля для просмотра.",
@@ -3056,7 +2824,6 @@
        {
         "name" : "ilovegrowingmarijuana",
         "uri_check" : "https://support.ilovegrowingmarijuana.com/u/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "<title>  Profile - ",
         "m_string" : "Oops! That page doesn’t exist or is private",
@@ -3068,7 +2835,6 @@
        {
         "name" : "imagefap",
         "uri_check" : "https://www.imagefap.com/profile/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "s Profile",
         "m_string" : "Invalid uid",
@@ -3080,7 +2846,6 @@
        {
         "name" : "ImageShack",
         "uri_check" : "https://imageshack.com/user/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "s Images</title>",
         "m_string" : "",
@@ -3092,7 +2857,6 @@
        {
         "name" : "iMGSRC.RU",
         "uri_check" : "https://imgsrc.ru/main/user.php?lang=ru&user={account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Присоединился",
         "m_string" : "",
@@ -3105,7 +2869,6 @@
         "name" : "imgur",
         "uri_check" : "https://api.imgur.com/account/v1/accounts/{account}?client_id=546c25a59c58ad7&include=trophies%2Cmedallions",
         "uri_pretty" : "https://imgur.com/user/{account}/about",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "created_at",
         "m_string" : "unable to find account",
@@ -3117,7 +2880,6 @@
        {
         "name" : "inaturalist",
         "uri_check" : "https://inaturalist.nz/people/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "s Profile",
         "m_string" : "404 Not Found",
@@ -3129,7 +2891,6 @@
        {
         "name" : "Independent academia",
         "uri_check" : "https://independent.academia.edu/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "- Academia.edu",
         "m_string" : "Academia.edu",
@@ -3141,7 +2902,6 @@
        {
         "name" : "InkBunny",
         "uri_check" : "https://inkbunny.net/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Profile | Inkbunny, the Furry Art Community</title>",
         "m_string" : "<title>Members | Inkbunny, the Furry Art Community</title>",
@@ -3153,7 +2913,7 @@
        {
         "name" : "InsaneJournal",
         "uri_check" : "https://{account}.insanejournal.com/profile",
-        "post_body" : "",
+        "invalid_chars" : ".",
         "e_code" : 200,
         "e_string" : "User:",
         "m_string" : "The requested URL /profile was not found on this server",
@@ -3166,7 +2926,6 @@
         "name" : "Instagram",
         "uri_pretty" : "https://instagram.com/{account}",
         "uri_check" : "https://www.picuki.com/profile/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Instagram profile with posts and stories",
         "m_string" : "Nothing found!",
@@ -3178,7 +2937,6 @@
        {
         "name" : "instructables",
         "uri_check" : "https://www.instructables.com/member/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : ">Joined",
         "m_string" : "",
@@ -3190,7 +2948,6 @@
        {
         "name" : "Internet Archive Account",
         "uri_check" : "https://archive.org/details/@{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "<title>User Account",
         "m_string" : "<title>cannot find account",
@@ -3202,7 +2959,6 @@
        {
         "name" : "Internet Archive User Search",
         "uri_check" : "https://archive.org/search.php?query={account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "<!--/.item-ia-->",
         "m_string" : "",
@@ -3214,7 +2970,6 @@
        {
         "name" : "interpals",
         "uri_check" : "https://www.interpals.net/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Looking for",
         "m_string" : "User not found",
@@ -3227,7 +2982,6 @@
         "name" : "isMyGirl",
         "uri_check" : "https://api.fxcservices.com/pub/user/{account}",
         "uri_pretty" : "https://ismygirl.com/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "display_name",
         "m_code" : 404,
@@ -3239,7 +2993,6 @@
        {
         "name" : "issuu",
         "uri_check" : "https://issuu.com/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "- Issuu",
         "m_string" : "Oops — we can’t seem to find the page you’re looking for.",
@@ -3251,7 +3004,6 @@
        {
         "name" : "itch.io",
         "uri_check" : "https://itch.io/profile/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "A member registered",
         "m_code" : 404,
@@ -3263,7 +3015,6 @@
        {
         "name" : "Japandict",
         "uri_check" : "https://forum.japandict.com/u/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Mentions",
         "m_code" : 404,
@@ -3275,7 +3026,6 @@
        {
         "name" : "jeja.pl",
         "uri_check" : "https://www.jeja.pl/user,{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Profil użytkownika",
         "m_string" : "Niepoprawny login",
@@ -3287,7 +3037,6 @@
        {
         "name" : "JBZD",
         "uri_check" : "https://jbzd.com.pl/uzytkownik/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Dzidy użytkownika",
         "m_string" : "Błąd 404",
@@ -3299,7 +3048,6 @@
        {
         "name" : "Jeuxvideo",
         "uri_check" : "https://www.jeuxvideo.com/profil/{account}?mode=infos",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "- jeuxvideo.com",
         "m_string" : "rence des gamers",
@@ -3311,7 +3059,6 @@
        {
         "name" : "Joe Monster",
         "uri_check" : "https://joemonster.org/bojownik/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "jest prywatny",
         "m_string" : "Nie wiem jak ci to powiedzieć",
@@ -3323,7 +3070,6 @@
        {
         "name" : "JSFiddle",
         "uri_check" : "https://jsfiddle.net/user/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Settings - JSFiddle - Code Playground",
         "m_string" : "That page doesn't exist.",
@@ -3335,7 +3081,6 @@
        {
         "name" : "Justforfans",
         "uri_check" : "https://justfor.fans/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : " @ JustFor.Fans",
         "m_string" : "",
@@ -3347,7 +3092,6 @@
        {
         "name" : "kaggle",
         "uri_check" : "https://www.kaggle.com/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "| Kaggle",
         "m_string" : "Kaggle: Your Home for Data Science",
@@ -3359,7 +3103,6 @@
        {
         "name" : "karab.in",
         "uri_check" : "https://karab.in/u/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Dołączył:",
         "m_string" : "Błąd 404",
@@ -3371,7 +3114,6 @@
        {
         "name" : "Keybase",
         "uri_check" : "https://keybase.io/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "username",
         "m_string" : "sorry, not found",
@@ -3383,7 +3125,6 @@
        {
         "name" : "Kickstarter",
         "uri_check" : "https://www.kickstarter.com/profile/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "projects",
         "m_string" : "Oops, Something went missing",
@@ -3395,7 +3136,6 @@
        {
         "name" : "kik",
         "uri_check" : "https://ws2.kik.com/user/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "firstName",
         "m_string" : "The page you requested was not found",
@@ -3407,7 +3147,6 @@
        {
         "name" : "kipin",
         "uri_check" : "https://kipin.app/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "kipin.app/data/photos/resized2/",
         "m_string" : "Page not found. Link expired, broken or wrong.",
@@ -3419,7 +3158,6 @@
        {
         "name" : "KnowYourMeme",
         "uri_check" : "https://knowyourmeme.com/users/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Contributions",
         "m_code" : 400,
@@ -3431,7 +3169,6 @@
        {
         "name" : "Ko-Fi",
         "uri_check" : "https://ko-fi.com/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : ">  Buy a Coffee for",
         "m_string" : "Object moved to",
@@ -3443,7 +3180,6 @@
        {
         "name" : "Kongregate",
         "uri_check" : "https://www.kongregate.com/accounts/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Member Since",
         "m_string" : "Sorry, no account with that name was found",
@@ -3455,7 +3191,6 @@
        {
         "name" : "Kotburger",
         "uri_check" : "https://kotburger.pl/user/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Zamieszcza kotburgery od:",
         "m_string" : "Nie znaleziono użytkownika o podanym loginie.",
@@ -3467,7 +3202,6 @@
        {
         "name" : "kwejk.pl",
         "uri_check" : "https://kwejk.pl/uzytkownik/{account}#/tablica/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Kwejki użytkownika",
         "m_string" : "404 - strona nie została znaleziona - KWEJK.pl",
@@ -3479,7 +3213,6 @@
        {
         "name" : "LibraryThing",
         "uri_check" : "https://www.librarything.com/profile/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Collections",
         "m_string" : "Error: This user doesn't exist",
@@ -3492,7 +3225,6 @@
         "name" : "Libretooth.gr (Mastodon Instance)",
         "uri_check" : "https://libretooth.gr/api/v1/accounts/lookup?acct={account}",
         "uri_pretty" : "https://libretooth.gr/@{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "display_name",
         "m_code" : 404,
@@ -3504,7 +3236,6 @@
        {
         "name" : "lichess",
         "uri_check" : "https://lichess.org/@/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Activity",
         "m_string" : "Page not found",
@@ -3516,7 +3247,6 @@
        {
         "name" : "likeevideo",
         "uri_check" : "https://likee.video/@{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "https://img.like.video/",
         "m_string" : " </h1>",
@@ -3528,7 +3258,6 @@
        {
         "name" : "LINE",
         "uri_check" : "https://line.me/R/ti/p/@{account}?from=page",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Add LINE Friends via QR Code",
         "m_code" : 404,
@@ -3540,7 +3269,6 @@
        {
         "name" : "Linktree",
         "uri_check" : "https://linktr.ee/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "| Linktree",
         "m_string" : "The page you’re looking for doesn’t exist.",
@@ -3552,7 +3280,6 @@
        {
         "name" : "linux.org.ru",
         "uri_check" : "https://www.linux.org.ru/people/{account}/profile",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Дата регистрации",
         "m_string" : "Пользователя не существует",
@@ -3565,7 +3292,6 @@
         "name" : "Litmind.club (Mastodon Instance)",
         "uri_check" : "https://litmind.club/api/v1/accounts/lookup?acct={account}",
         "uri_pretty" : "https://litmind.club/@{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "display_name",
         "m_code" : 404,
@@ -3577,20 +3303,18 @@
        {
         "name" : "Livejournal",
         "uri_check" : "https://{account}.livejournal.com",
-        "post_body" : "",
+        "invalid_chars" : ".",
         "e_code" : 200,
         "e_string" : "<link rel=\"canonical\" href=\"",
         "m_string" : "<title>Unknown Journal",
         "m_code" : 404,
         "known" : ["jill", "john"],
-        "allowed_types" : ["String","Person","WebAccount","Username"],
         "cat" : "blog",
         "valid" : true
        },
        {
         "name" : "livemaster.ru",
         "uri_check" : "https://www.livemaster.ru/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "<title>Магазин мастера",
         "m_string" : "<title>Вы попали на несуществующую страницу",
@@ -3602,7 +3326,6 @@
        {
         "name" : "lobste.rs",
         "uri_check" : "https://lobste.rs/u/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Joined",
         "m_string" : "The resource you requested was not found, or the story has been deleted.",
@@ -3615,7 +3338,6 @@
         "name" : "Lor.sh (Mastodon Instance)",
         "uri_check" : "https://lor.sh/api/v1/accounts/lookup?acct={account}",
         "uri_pretty" : "https://lor.sh/@{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "display_name",
         "m_code" : 404,
@@ -3627,7 +3349,6 @@
        {
         "name" : "love_ru",
         "uri_check" : "https://love.ru/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Love.ru</title>",
         "m_string" : "<title>404",
@@ -3639,7 +3360,6 @@
        {
         "name" : "lowcygier.pl",
         "uri_check" : "https://bazar.lowcygier.pl/user/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Zarejestrowany",
         "m_string" : "Błąd 404 - Podana strona nie istnieje",
@@ -3651,7 +3371,6 @@
        {
         "name" : "MAGABOOK",
         "uri_check" : "https://magabook.com/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Recent Updates",
         "m_string" : "Page Not Be Found",
@@ -3663,7 +3382,6 @@
        {
         "name" : "MAGA-CHAT",
         "uri_check" : "https://maga-chat.com/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Recent Updates",
         "m_string" : "Page Not Be Found",
@@ -3675,7 +3393,6 @@
        {
         "name" : "Magix",
         "uri_check" : "https://www.magix.info/us/users/profile/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "About me",
         "m_string" : "Page not found",
@@ -3687,7 +3404,6 @@
        {
         "name" : "MANYVIDS",
         "uri_check" : "https://www.manyvids.com/results.php?keywords={account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : " Vids</h3>",
         "m_string" : "did not return any results",
@@ -3699,7 +3415,6 @@
        {
         "name" : "MapMyTracks",
         "uri_check" : "https://www.mapmytracks.com/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Daily distance this week",
         "m_string" : "Outside together",
@@ -3712,7 +3427,6 @@
         "name" : "Mapstodon.space (Mastodon Instance)",
         "uri_check" : "https://mapstodon.space/api/v1/accounts/lookup?acct={account}",
         "uri_pretty" : "https://mapstodon.space/@{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "display_name",
         "m_code" : 404,
@@ -3724,7 +3438,6 @@
        {
         "name" : "Maroc_nl",
         "uri_check" : "https://www.maroc.nl/forums/members/{account}.html",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" :"Bekijk Profiel:",
         "m_string" : "Deze gebruiker is niet geregistreerd",
@@ -3736,7 +3449,6 @@
        {
         "name" : "Marshmallow",
         "uri_check" : "https://marshmallow-qa.com/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "さんにメッセージをおくる",
         "m_string" : "For compensation, here are cats for you.",
@@ -3748,7 +3460,6 @@
        {
         "name" : "Martech",
         "uri_check" : "https://martech.org/author/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "twitter:site",
         "m_string" : "Page not found",
@@ -3760,7 +3471,6 @@
        {
         "name" : "Massage Anywhere",
         "uri_check" : "https://www.massageanywhere.com/profile/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "<title>MassageAnywhere.com Profile for ",
         "m_string" : "<title>MassageAnywhere.com: Search Results</title>",
@@ -3773,7 +3483,6 @@
         "name" : "Mas.town (Mastodon Instance)",
         "uri_check" : "https://mas.town/api/v1/accounts/lookup?acct={account}",
         "uri_pretty" : "https://mas.town/@{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "display_name",
         "m_code" : 404,
@@ -3785,7 +3494,6 @@
        {
         "name" : "masto.ai",
         "uri_check" : "https://masto.ai/@{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "@masto.ai) - Mastodon</title>",
         "m_string" : "The page you are looking for isn&#39;t here.",
@@ -3798,7 +3506,6 @@
         "name" : "Masto.nyc (Mastodon Instance)",
         "uri_check" : "https://masto.nyc/api/v1/accounts/lookup?acct={account}",
         "uri_pretty" : "https://masto.nyc/@{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "display_name",
         "m_code" : 404,
@@ -3811,7 +3518,6 @@
         "name" : "Mastodonbooks.net (Mastodon Instance)",
         "uri_check" : "https://mastodonbooks.net/api/v1/accounts/lookup?acct={account}",
         "uri_pretty" : "https://mastodonbooks.net/@{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "display_name",
         "m_code" : 404,
@@ -3823,7 +3529,6 @@
        {
         "name" : "Mastodon-mastodon",
         "uri_check" : "https://mastodon.social/@{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "profile:username",
         "m_string" : "The page you are looking for isn't here.",
@@ -3836,7 +3541,6 @@
         "name" : "Mastodon.chasedem.dev (Mastodon Instance)",
         "uri_check" : "https://mastodon.chasem.dev/api/v1/accounts/lookup?acct={account}",
         "uri_pretty" : "https://mastodon.chasem.dev/@{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "display_name",
         "m_code" : 404,
@@ -3848,7 +3552,6 @@
        {
         "name" : "Mastodon-API",
         "uri_check" : "https://mastodon.social/api/v2/search?q={account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "display_name",
         "m_string" : "accounts\":[],\"statuses\":[],\"hashtags\":",
@@ -3860,7 +3563,6 @@
        {
         "name" : "Mastodon.online",
         "uri_check" : "https://mastodon.online/@{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "@mastodon.online) - Mastodon</title>",
         "m_string" : "<title>The page you are looking for isn&#39;t here.",
@@ -3872,7 +3574,6 @@
        {
         "name" : "Mastodon-Toot.Community",
         "uri_check" : "https://toot.community/@{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "@toot.community) - toot.community</title>",
         "m_string" : "The page you are looking for isn&#39;t here.",
@@ -3884,7 +3585,6 @@
        {
         "name" : "Mastodon-climatejustice.rocks",
         "uri_check" : "https://climatejustice.rocks/@{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "@climatejustice.rocks) - Mastodon</title>",
         "m_string" : "The page you are looking for isn&#39;t here.",
@@ -3896,7 +3596,6 @@
        {
         "name" : "MCName (Minecraft)",
         "uri_check" : "https://mcname.info/en/search?q={account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "card mb-3 text-monospace",
         "m_string" : "alert alert-success px-0 py-1",
@@ -3909,7 +3608,6 @@
         "name" : "MCUUID (Minecraft)",
         "uri_check" : "https://playerdb.co/api/player/minecraft/{account}",
         "uri_pretty" : "https://mcuuid.net/?q={account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Successfully found player by given ID.",
         "m_string" : "minecraft.api_failure",
@@ -3922,7 +3620,6 @@
         "name" : "Mediakits",
         "uri_check" : "https://restapi.mediakits.com/mediakits/{account}",
         "uri_pretty" : "https://app.mediakits.com/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "displayName",
         "m_code" : 404,
@@ -3934,7 +3631,7 @@
        {
         "name" : "Medium",
         "uri_check" : "https://{account}.medium.com/about",
-        "post_body" : "",
+        "invalid_chars" : ".",
         "e_code" : 200,
         "e_string" : "Medium member since",
         "m_string" : "Out of nothing, something",
@@ -3946,7 +3643,6 @@
        {
         "name" : "medyczka.pl",
         "uri_check" : "http://medyczka.pl/user/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Lista uzytkownikow",
         "m_string" : "This user has not registered and therefore does not have a profile to view.",
@@ -3958,7 +3654,6 @@
        {
         "name" : "meet me",
         "uri_check" : "https://www.meetme.com/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "<title>Meet people like ",
         "m_string" : "<title>MeetMe - Chat and Meet New People</title",
@@ -3970,7 +3665,6 @@
        {
         "name" : "megamodels.pl",
         "uri_check" : "http://megamodels.pl/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Portfolio",
         "m_string" : "OSTATNIO AKTYWNE PROFILE",
@@ -3982,7 +3676,6 @@
        {
         "name" : "memrise",
         "uri_check" : "https://app.memrise.com/user/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "followers",
         "m_string" : "Memrise - Error",
@@ -3994,7 +3687,6 @@
        {
         "name" : "Mastodon-meow.social",
         "uri_check" : "https://meow.social/@{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "- the mastodon instances for creatures</title>",
         "m_string" : "The page you are looking for isn&#39;t here.",
@@ -4006,7 +3698,6 @@
        {
         "name" : "message_me",
         "uri_check" : "https://mssg.me/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "_id",
         "m_string" : "<title>404</title>",
@@ -4018,7 +3709,6 @@
        {
         "name" : "metacritic",
         "uri_check" : "https://www.metacritic.com/user/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "'s Profile - Metacritic",
         "m_string" : "<title>Sign up to get your own profile - Metacritic</",
@@ -4030,7 +3720,6 @@
        {
         "name" : "Microsoft Technet Community",
         "uri_check" : "https://social.technet.microsoft.com/profile/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "s Profile</title>",
         "m_string" : "The resource you are looking for has been removed",
@@ -4042,7 +3731,6 @@
        {
         "name" : "Minds",
         "uri_check" : "https://www.minds.com/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : ") | Minds</title>",
         "m_string" : "Sorry, this channel doesn't appear to exist",
@@ -4054,7 +3742,6 @@
        {
         "name" : "Minecraft List",
         "uri_check" : "https://minecraftlist.com/players/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "-->was seen on<!--",
         "m_string" : "0 Minecraft servers recently",
@@ -4066,7 +3753,6 @@
        {
         "name" : "mintme",
         "uri_check" : "https://www.mintme.com/token/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "token | mintMe",
         "m_string" : "Page not found",
@@ -4078,7 +3764,6 @@
        {
         "name" : "Mistrzowie",
         "uri_check" : "https://mistrzowie.org/user/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Profil użytkownika",
         "m_string" : "Nie znaleziono użytkownika o podanym loginie.",
@@ -4090,7 +3775,6 @@
        {
         "name" : "Mix",
         "uri_check" : "https://mix.com/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "<title>@",
         "m_string" : "The best content from the open web, personalized.",
@@ -4102,7 +3786,6 @@
        {
         "name" : "Mixi",
         "uri_check" : "https://mixi.jp/view_community.pl?id={account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "| mixiコミュニティ</title>",
         "m_string" : "データがありません",
@@ -4115,7 +3798,6 @@
         "name" : "Mixlr",
         "uri_check" : "http://api.mixlr.com/users/{account}",
         "uri_pretty" : "http://mixlr.com/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "username",
         "m_string" : "Resource not found",
@@ -4127,7 +3809,6 @@
        {
         "name" : "Mmorpg",
         "uri_check" : "https://forums.mmorpg.com/profile/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "MMORPG.com Forums",
         "m_string" : "404 Not Not_Found",
@@ -4139,7 +3820,6 @@
        {
         "name" : "Mod DB",
         "uri_check" : "https://www.moddb.com/members/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "joined <time",
         "m_string" : "Login is required to view the requested member profile",
@@ -4151,7 +3831,6 @@
        {
         "name" : "Moneysavingexpert",
         "uri_check" : "https://forums.moneysavingexpert.com/profile/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Profile",
         "m_string" : "User Not Found",
@@ -4163,7 +3842,6 @@
        {
         "name" : "Motokiller",
         "uri_check" : "https://mklr.pl/user/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Zamieszcza materiały od:",
         "m_string" : "Nie znaleziono użytkownika o podanym loginie.",
@@ -4175,7 +3853,6 @@
        {
         "name" : "moxfield",
         "uri_check" : "https://www.moxfield.com/users/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Moxfield Profile",
         "m_string" : "No user found ",
@@ -4187,7 +3864,6 @@
        {
         "name" : "Mastodon-mstdn.io",
         "uri_check" : "https://mstdn.io/@{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "@mstdn.io) - Mastodon",
         "m_string" : "The page you are looking for isn&#39;t here.",
@@ -4199,7 +3875,6 @@
        {
         "name" : "Muck Rack",
         "uri_check" : "https://muckrack.com/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "on Muck Rack",
         "m_string" : "Oh no! Page not found.",
@@ -4212,7 +3887,6 @@
         "name" : "Musician.social (Mastodon Instance)",
         "uri_check" : "https://musician.social/api/v1/accounts/lookup?acct={account}",
         "uri_pretty" : "https://musician.social/@{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "display_name",
         "m_code" : 404,
@@ -4224,7 +3898,6 @@
        {
         "name" : "musictraveler",
         "uri_check" : "https://www.musictraveler.com/en/users/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "on Music Traveler</title>",
         "m_string" : "<title>Page Not found</title>",
@@ -4236,7 +3909,6 @@
        {
         "name" : "MyAnimeList",
         "uri_check" : "https://myanimelist.net/profile/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Profile - MyAnimeList.net",
         "m_string" : "<title>404 Not Found",
@@ -4248,7 +3920,6 @@
        {
         "name" : "MyBuilder.com",
         "uri_check" : "https://www.mybuilder.com/profile/view/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "feedback",
         "m_string" : "Whoops! You broke our site!",
@@ -4260,7 +3931,6 @@
        {
         "name" : "MyFitnessPal Author",
         "uri_check" : "https://blog.myfitnesspal.com/author/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "About the Author",
         "m_string" : "<title>Page not found ",
@@ -4272,7 +3942,6 @@
        {
         "name" : "MyFitnessPal Community",
         "uri_check" : "https://community.myfitnesspal.com/en/profile/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : ">Last Active<",
         "m_string" : "User Not Found",
@@ -4284,7 +3953,6 @@
        {
         "name" : "mymfans",
         "uri_check" : "https://mym.fans/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : " • MYM</title>",
         "m_string" : "• MYM • Exclusive social network for creators &amp; fans</title>",
@@ -4296,7 +3964,6 @@
        {
         "name" : "my_instants",
         "uri_check" : "https://www.myinstants.com/en/profile/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : " | Myinstants</title>",
         "m_string" : "Page not found",
@@ -4308,7 +3975,6 @@
        {
         "name" : "MyLot",
         "uri_check" : "https://www.mylot.com/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "on myLot</title>",
         "m_string" : " / Whoops!",
@@ -4320,7 +3986,6 @@
        {
         "name" : "mym.fans",
         "uri_check" : "https://mym.fans/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "posts",
         "m_string" : "Il n’y a rien ici…",
@@ -4332,7 +3997,7 @@
        {
         "name" : "myportfolio",
         "uri_check" : "https://{account}.myportfolio.com/work",
-        "post_body" : "",
+        "invalid_chars" : ".",
         "e_code" : 200,
         "e_string" : "class=\"page-title",
         "m_string" : "<title>Adobe Portfolio | Build your own personalized website</title>",
@@ -4344,7 +4009,6 @@
        {
         "name" : "MySpace",
         "uri_check" : "https://myspace.com/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "<!-- Profile -->",
         "m_string" : "<!-- 404 -->",
@@ -4357,7 +4021,6 @@
         "name" : "Myspreadshop",
         "uri_check" : "https://myspreadshop.de/{account}/shopData/list",
         "uri_pretty" : "https://{account}.myspreadshop.com",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "siteName",
         "m_code" : 404,
@@ -4369,7 +4032,6 @@
        {
         "name" : "naija_planet",
         "uri_check" : "https://naijaplanet.com/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "dating Profile, ",
         "m_string" : "- NaijaPlanet!",
@@ -4381,7 +4043,6 @@
        {
         "name" : "nairaland",
         "uri_check" : "https://www.nairaland.com/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "s Profile",
         "m_string" : "404: Page Not Found",
@@ -4394,7 +4055,6 @@
        {
         "name" : "NaturalNews",
         "uri_check" : "https://naturalnews.com/author/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "All posts by",
         "m_string" : "The page you are looking for cannot be found or is no longer available.",
@@ -4406,7 +4066,6 @@
        {
         "name" : "Naver",
         "uri_check" : "https://blog.naver.com/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : " : 네이버 블로그",
         "m_string" : "페이지를 찾을 수 없습니다",
@@ -4416,9 +4075,19 @@
         "valid" : true
        },
        {
+        "name" : "Neocities",
+        "uri_check" : "https://neocities.org/site/{account}",
+        "e_code" : 200,
+        "e_string" : "noindex, follow",
+        "m_string" : "- Not Found</title>",
+        "m_code" : 404,
+        "known" : ["fauux", "sadgrl"],
+        "cat" : "social",
+        "valid" : true
+       },
+       {
         "name" : "netvibes",
         "uri_check" : "https://www.netvibes.com/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "userId",
         "m_string" : "Page not found",
@@ -4430,7 +4099,7 @@
        {
         "name" : "Newgrounds",
         "uri_check" : "https://{account}.newgrounds.com/",
-        "post_body" : "",
+        "invalid_chars" : ".",
         "e_code" : 200,
         "e_string" : "fans",
         "m_string" : "Whoops, that's a swing and a miss!",
@@ -4442,7 +4111,6 @@
        {
         "name" : "newmeet",
         "uri_check" : "https://www.newmeet.com/en/profile/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "The profile of",
         "m_string" : ", , , - |",
@@ -4454,7 +4122,6 @@
        {
         "name" : "nihbuatjajan",
         "uri_check" : "https://www.nihbuatjajan.com/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : ") | Nih buat jajan</title>",
         "m_string" : "<title>Nih Buat Jajan</title>",
@@ -4467,7 +4134,6 @@
         "name" : "Nitecrew (Mastodon Instance)",
         "uri_check" : "https://nitecrew.rip/api/v1/accounts/lookup?acct={account}",
         "uri_pretty" : "https://nitecrew.rip/@{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "display_name",
         "m_code" : 404,
@@ -4479,7 +4145,7 @@
        {
         "name" : "nnru",
         "uri_check" : "https://{account}.www.nn.ru",
-        "post_body" : "",
+        "invalid_chars" : ".",
         "e_code" : 200,
         "e_string" : "<title> ",
         "m_string" : "<title>Ошибка 404 -",
@@ -4491,7 +4157,6 @@
        {
         "name" : "NotABug",
         "uri_check" : "https://notabug.org/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "followers and is following",
         "m_string" : "Not Found",
@@ -4503,7 +4168,6 @@
        {
         "name" : "Note",
         "uri_check" : "https://note.com/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "フォロワー",
         "m_code" : 404,
@@ -4515,7 +4179,6 @@
        {
         "name" : "oglaszamy24h.pl",
         "uri_check" : "https://oglaszamy24h.pl/profil,{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Profil użytkownika:",
         "m_string" : "Nieprawidłowy link, w bazie danych nie istnieje użytkownik o podanym loginie",
@@ -4527,7 +4190,6 @@
        {
         "name" : "ogu.gg",
         "uri_check" : "https://ogu.gg/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Username History",
         "m_code" : 404,
@@ -4539,7 +4201,6 @@
        {
         "name" : "ok.ru",
         "uri_check" : "https://ok.ru/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "| OK",
         "m_string" : "This page does not exist on OK",
@@ -4551,7 +4212,6 @@
        {
         "name" : "okidoki",
         "uri_check" : "https://m.okidoki.ee/ru/users/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Пользователь",
         "m_string" : "Страница не найдена",
@@ -4563,7 +4223,6 @@
        {
         "name" : "olx",
         "uri_check" : "https://www.olx.pl/oferty/uzytkownik/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Obserwuj wyszukiwanie",
         "m_string" : "Przepraszamy, ale nie możemy znaleźć takiej strony...",
@@ -4575,7 +4234,6 @@
        {
         "name" : "omlet",
         "uri_check" : "https://omlet.gg/profile/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "<title>Omlet Arcade -",
         "m_string" : "Omlet Arcade</title>",
@@ -4587,7 +4245,6 @@
        {
         "name" : "Opencollective",
         "uri_check" : "https://opencollective.com/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "- Open Collective",
         "m_string" : "Not Found",
@@ -4599,7 +4256,6 @@
        {
         "name" : "opensource",
         "uri_check" : "https://opensource.com/users/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "| Opensource.com",
         "m_string" : "Page not found",
@@ -4611,7 +4267,6 @@
        {
         "name" : "OpenStreetMap",
         "uri_check" : "https://www.openstreetmap.org/user/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Mapper since:",
         "m_string" : "does not exist",
@@ -4623,7 +4278,6 @@
        {
         "name" : "OPGG",
         "uri_check" : "https://eune.op.gg/summoners/eune/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "- Summoner Stats - League of Legends",
         "m_string" : "Guide - OP.GG",
@@ -4635,7 +4289,6 @@
        {
         "name" : "Orbys",
         "uri_check" : "https://orbys.net/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "profile_user_image",
         "m_string" : "The page you are looking for cannot be found.",
@@ -4647,7 +4300,6 @@
        {
         "name" : "osu!",
         "uri_check" : "https://osu.ppy.sh/users/{account}",
-        "post_body" : "",
         "e_code" : 302,
         "e_string" : "",
         "m_string" : "User not found! ;_;",
@@ -4659,7 +4311,6 @@
        {
         "name" : "Our Freedom Book",
         "uri_check" : "https://www.ourfreedombook.com/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "meta property=\"og:",
         "m_string" : "Sorry, page not found",
@@ -4671,7 +4322,6 @@
        {
         "name" : "ow.ly",
         "uri_check" : "http://ow.ly/user/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Images",
         "m_string" : "404 error",
@@ -4683,7 +4333,6 @@
        {
         "name" : "palnet",
         "uri_check" : "https://www.palnet.io/@{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : " - PALnet",
         "m_string" : "Unknown user account!",
@@ -4695,7 +4344,6 @@
        {
         "name" : "Parler",
         "uri_check" : "https://parler.com/user/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "People to Follow",
         "m_string" : "join Parler today",
@@ -4708,7 +4356,6 @@
         "name" : "Parler archived profile",
         "uri_check" : "http://archive.org/wayback/available?url=https://parler.com/profile/{account}",
         "uri_pretty" : "https://web.archive.org/web/2/https://parler.com/profile/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "\"archived_snapshots\": {\"closest\"",
         "m_string" : "\"archived_snapshots\": {}",
@@ -4721,7 +4368,6 @@
         "name" : "Parler archived posts",
         "uri_check" : "http://archive.org/wayback/available?url=https://parler.com/profile/{account}/posts",
         "uri_pretty" : "https://web.archive.org/web/2/https://parler.com/profile/{account}/posts",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "\"archived_snapshots\": {\"closest\"",
         "m_string" : "\"archived_snapshots\": {}",
@@ -4733,7 +4379,6 @@
        {
         "name" : "Pastebin",
         "uri_check" : "https://pastebin.com/u/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "'s Pastebin",
         "m_string" : "",
@@ -4745,7 +4390,6 @@
        {
         "name" : "patch",
         "uri_check" : "https://patch.com/users/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "<title>Patch User Profile",
         "m_string" : "<title>Page not found</title>",
@@ -4757,7 +4401,6 @@
        {
         "name" : "PatientsLikeMe",
         "uri_check" : "https://www.patientslikeme.com/members/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "s profile | PatientsLikeMe</title>",
         "m_string" : "",
@@ -4769,7 +4412,6 @@
        {
         "name" : "Patreon",
         "uri_check" : "https://www.patreon.com/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "full_name\":",
         "m_string" : "errorCode\": 404,",
@@ -4781,7 +4423,6 @@
        {
         "name" : "Patriots Win",
         "uri_check" : "https://patriots.win/u/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "nav-user active register",
         "m_string" : "An error occurred",
@@ -4793,7 +4434,6 @@
        {
         "name" : "Patronite",
         "uri_check" : "https://patronite.pl/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Zostań Patronem",
         "m_string" : "Nie znaleźliśmy strony której szukasz.",
@@ -4805,7 +4445,6 @@
         {
         "name" : "Paypal",
         "uri_check" : "https://www.paypal.com/paypalme/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "userInfo",
         "m_string" : "<title>PayPal.Me</title><meta",
@@ -4817,7 +4456,6 @@
        {
         "name" : "PCGamer",
         "uri_check" : "https://forums.pcgamer.com/members/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Joined",
         "m_string" : "Oops! We ran into some problems",
@@ -4829,7 +4467,6 @@
        {
         "name" : "PCPartPicker",
         "uri_check" : "https://pcpartpicker.com/user/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "class=\"active\"",
         "m_string" : "The page you requested could not be found.",
@@ -4842,7 +4479,6 @@
         "name" : "Peing",
         "uri_check" : "https://peing.net/api/v2/items/?type=answered&account={account}",
         "uri_pretty" : "https://peing.net/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "items",
         "m_code" : 404,
@@ -4854,7 +4490,6 @@
        {
         "name" : "Periscope",
         "uri_check" : "https://www.periscope.tv/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "<label>Followers",
         "m_string" : "Sorry, this page doesn’t exist",
@@ -4867,7 +4502,6 @@
         "name" : "Pettingzoo.co (Mastodon Instance)",
         "uri_check" : "https://pettingzoo.co/api/v1/accounts/lookup?acct={account}",
         "uri_pretty" : "https://pettingzoo.co/@{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "display_name",
         "m_code" : 404,
@@ -4879,7 +4513,6 @@
        {
         "name" : "Pewex",
         "uri_check" : "https://retro.pewex.pl/user/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Zamieszcza eksponaty od:",
         "m_string" : "Nie znaleziono użytkownika o podanym loginie.",
@@ -4903,7 +4536,6 @@
        {
         "name" : "Piekielni",
         "uri_check" : "https://piekielni.pl/user/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Zamieszcza historie od:",
         "m_string" : "Nie znaleziono użytkownika o podanym loginie.",
@@ -4915,7 +4547,6 @@
        {
         "name" : "pikabu",
         "uri_check" : "https://pikabu.ru/@{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "— все посты пользователя",
         "m_string" : "404. Страница не найдена",
@@ -4927,7 +4558,6 @@
        {
         "name" : "Pillowfort",
         "uri_check" : "https://www.pillowfort.social/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "<meta property=\"og:site_name\" content=\"Pillowfort\">",
         "m_code" : 404,
@@ -4939,7 +4569,6 @@
        {
         "name" : "PinkBike",
         "uri_check" : "https://www.pinkbike.com/u/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "on Pinkbike</title>",
         "m_string" : "I couldn't find the page you were looking for",
@@ -4951,7 +4580,6 @@
        {
         "name" : "Pinterest",
         "uri_check" : "https://www.pinterest.com/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : " - Profile | Pinterest",
         "m_string" : "Whoops! We couldn't find that page",
@@ -4963,7 +4591,6 @@
        {
         "name" : "pixelfed.social",
         "uri_check" : "https://pixelfed.social/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "on pixelfed</title>",
         "m_string" : "<title>pixelfed</title>",
@@ -4975,7 +4602,6 @@
        {
         "name" : "Playstation Network",
         "uri_check" : "https://psnprofiles.com/xhr/search/users?q={account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "<div class=\"progress-bar small level\">",
         "m_string" : "We couldn't find anything ",
@@ -4987,7 +4613,6 @@
        {
         "name" : "Plurk",
         "uri_check" : "https://www.plurk.com/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Profile views",
         "m_string" : "Register your plurk account",
@@ -5011,7 +4636,6 @@
        {
         "name" : "pokemonshowdown",
         "uri_check" : "https://pokemonshowdown.com/users/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Official ladder",
         "m_string" : " (Unregistered)",
@@ -5023,7 +4647,6 @@
        {
         "name" : "Pokerstrategy",
         "uri_check" : "http://www.pokerstrategy.net/user/{account}/profile/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "User profile for",
         "m_string" : "Sorry, the requested page couldn't be found!",
@@ -5035,7 +4658,6 @@
        {
         "name" : "Polchat.pl",
         "uri_check" : "https://polczat.pl/forum/profile/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Historia wpisów",
         "m_string" : "Wybrany użytkownik nie istnieje.",
@@ -5047,7 +4669,6 @@
        {
         "name" : "policja2009",
         "uri_check" : "http://www.policja2009.fora.pl/search.php?search_author={account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Znaleziono",
         "m_string" : "Nie znaleziono tematów ani postów pasujących do Twoich kryteriów",
@@ -5060,7 +4681,6 @@
         "name" : "Poll Everywhere",
         "uri_check" : "https://pollev.com/proxy/api/users/{account}",
         "uri_pretty" : "https://pollev.com/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "name",
         "m_string" : "ResourceNotFound",
@@ -5072,7 +4692,6 @@
        {
         "name" : "Mastodon-pol.social",
         "uri_check" : "https://pol.social/@{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "@pol.social",
         "m_string" : "The page you are looking for isn't here.",
@@ -5084,7 +4703,6 @@
        {
         "name" : "polygon",
         "uri_check" : "https://www.polygon.com/users/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "- Polygon",
         "m_string" : "404 Not found",
@@ -5096,7 +4714,6 @@
        {
         "name" : "popl",
         "uri_check" : "https://poplme.co/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "MuiTypography-root MuiTypography-body1 css-kj7pvm",
         "m_string" : "Profile not found",
@@ -5108,7 +4725,6 @@
        {
         "name" : "Pornhub Porn Stars",
         "uri_check" : "https://www.pornhub.com/pornstar/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Pornstar Rank",
         "m_string" : "",
@@ -5120,7 +4736,6 @@
        {
         "name" : "Pornhub Users",
         "uri_check" : "https://www.pornhub.com/users/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "s Profile - Pornhub.com</title>",
         "m_string" : "Error Page Not Found",
@@ -5132,7 +4747,6 @@
        {
         "name" : "Poshmark",
         "uri_check" : "https://poshmark.com/closet/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : " is using Poshmark to sell items from their closet.",
         "m_string" : "Page not found - Poshmark",
@@ -5144,7 +4758,6 @@
        {
         "name" : "postcrossing",
         "uri_check" : "https://www.postcrossing.com/user/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : ", from",
         "m_string" : "- Postcrossing",
@@ -5157,7 +4770,6 @@
         "name" : "Poweredbygay.social (Mastodon Instance)",
         "uri_check" : "https://poweredbygay.social/api/v1/accounts/lookup?acct={account}",
         "uri_pretty" : "https://poweredbygay.social/@{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "display_name",
         "m_code" : 404,
@@ -5169,7 +4781,6 @@
        {
         "name" : "Producthunt",
         "uri_check" : "https://www.producthunt.com/@{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "s profile on Product Hunt",
         "m_string" : "Product Hunt - All newest Products",
@@ -5181,7 +4792,6 @@
        {
         "name" : "promodj",
         "uri_check" : "https://promodj.com/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Favorite styles",
         "m_string" : "Page not found :(",
@@ -5193,19 +4803,17 @@
        {
         "name" : "Pronouns.Page",
         "uri_check" : "https://pronouns.page/api/profile/get/{account}?version=2",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "username",
         "m_string" : "\"profiles\": {}",
         "m_code" : 304,
         "known" : ["cannabis_cervi", "user"],
-        "cat": "social",
+        "cat" : "social",
         "valid" : true
        },
        {
         "name" : "Pronouny",
         "uri_check" : "https://pronouny.xyz/api/users/profile/username/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "username",
         "m_code" : 400,
@@ -5217,7 +4825,6 @@
        {
         "name" : "Prose",
         "uri_check" : "https://prose.astral.camp/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "blog-title",
         "m_code" : 404,
@@ -5229,7 +4836,6 @@
        {
         "name" : "prv.pl",
         "uri_check" : "https://www.prv.pl/osoba/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "LOGIN",
         "m_string" : "Użytkownik nie istnieje.",
@@ -5241,7 +4847,6 @@
        {
         "name" : "Psstaudio",
         "uri_check" : "https://psstaudio.com/u/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "id=\"profile_picture\"",
         "m_code" : 404,
@@ -5253,7 +4858,6 @@
        {
         "name" : "public",
         "uri_check" : "https://public.com/@{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : ") Investment Portfolio on Public",
         "m_string" : "04 - Page Not Found - Public ",
@@ -5265,7 +4869,6 @@
        {
         "name" : "pypi",
         "uri_check" : "https://pypi.org/user/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Profile of",
         "m_string" : "Page Not Found (404) · PyPI",
@@ -5277,7 +4880,6 @@
        {
         "name" : "QUEER",
         "uri_check" : "https://queer.pl/user/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Społeczność",
         "m_string" : "Strona nie została znaleziona",
@@ -5289,7 +4891,6 @@
        {
         "name" : "quitter.pl",
         "uri_check" : "https://quitter.pl/profile/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "@quitter.pl",
         "m_string" : "Nie znaleziono",
@@ -5301,7 +4902,6 @@
        {
         "name" : "Quora",
         "uri_check" : "https://www.quora.com/profile/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Credentials",
         "m_string" : "Page Not Found",
@@ -5313,7 +4913,6 @@
        {
         "name" : "Raddle.me",
         "uri_check" : "https://raddle.me/user/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "sidebar__title",
         "m_code" : 404,
@@ -5325,7 +4924,6 @@
        {
         "name" : "Rant.li",
         "uri_check" : "https://www.rant.li/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "blog-title",
         "m_code" : 404,
@@ -5337,7 +4935,7 @@
        {
         "name" : "ReblogMe",
         "uri_check" : "https://{account}.reblogme.com",
-        "post_body" : "",
+        "invalid_chars" : ".",
         "e_code" : 200,
         "e_string" : "blogbody",
         "m_string" : "Sorry, seems that blog doesn't exist",
@@ -5349,7 +4947,6 @@
        {
         "name" : "Refsheet",
         "uri_check" : "https://refsheet.net/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "og:title",
         "m_code" : 404,
@@ -5361,7 +4958,6 @@
        {
         "name" : "redbubble",
         "uri_check" : "https://www.redbubble.com/people/{account}/shop",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Shop | Redbubble",
         "m_string" : "This is a lost cause.",
@@ -5374,7 +4970,6 @@
         "name" : "Reddit",
         "uri_check" : "https://www.reddit.com/user/{account}/about/.json",
         "uri_pretty" : "https://www.reddit.com/user/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "total_karma",
         "m_string" : "Not Found",
@@ -5387,7 +4982,6 @@
         "name" : "REDGIFS",
         "uri_check" : "https://api.redgifs.com/v1/users/{account}",
         "uri_pretty" : "https://www.redgifs.com/users/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "followers",
         "m_string" : "user account not found for ",
@@ -5399,7 +4993,6 @@
        {
         "name" : "Researchgate",
         "uri_check" : "https://www.researchgate.net/profile/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : " | ",
         "m_string" : "20+ million researchers on ResearchGate",
@@ -5411,7 +5004,6 @@
        {
         "name" : "resumes_actorsaccess",
         "uri_check" : "https://resumes.actorsaccess.com/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "- Resume | Actors Access</title>",
         "m_string" : "File was not found on this SERVER",
@@ -5424,7 +5016,6 @@
         "name" : "Revolut",
         "uri_check" : "https://revolut.me/api/web-profile/{account}",
         "uri_pretty" : "https://revolut.me/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "\"firstName\"",
         "m_code" : 404,
@@ -5436,7 +5027,6 @@
        {
         "name" : "Mastodon-rigcz.club",
         "uri_check" : "https://rigcz.club/@{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "@rigcz.club",
         "m_string" : "The page you are looking for isn't here.",
@@ -5448,7 +5038,6 @@
        {
         "name" : "risk.ru",
         "uri_check" : "https://risk.ru/people/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "— Люди — Risk.ru",
         "m_string" : "404 — Risk.ru",
@@ -5461,7 +5050,6 @@
         "name" : "Roblox",
         "uri_check" : "https://auth.roblox.com/v1/usernames/validate?username={account}&birthday=2019-12-31T23:00:00.000Z",
         "uri_pretty" : "https://www.roblox.com/search/users?keyword={account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Username is already in use",
         "m_string" : "Username is valid",
@@ -5471,9 +5059,19 @@
         "valid" : true
        },
        {
+        "name" : "RoutineHub",
+        "uri_check" : "https://routinehub.co/user/{account}",
+        "e_code" : 200,
+        "e_string" : "Downloads: ",
+        "m_string" : "A community for Apple Shortcuts</title>",
+        "m_code" : 200,
+        "known" : ["zachary7829", "JonathanSetzer"],
+        "cat" : "social",
+        "valid" : true
+       },
+       {
         "name" : "rsi",
         "uri_check" : "https://robertsspaceindustries.com/citizens/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "CITIZEN DOSSIER",
         "m_string" : "404 NAVIGATING UNCHARTED TERRITORY",
@@ -5485,7 +5083,6 @@
        {
         "name" : "ru_123rf",
         "uri_check" : "https://ru.123rf.com/profile_{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "- 123RF",
         "m_string" : "Векторы, Видеоролики. Подписка",
@@ -5497,7 +5094,6 @@
        {
         "name" : "RumbleChannel",
         "uri_check" : "https://rumble.com/c/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "href=https://rumble.com/c/",
         "m_string" : "404 - Not found",
@@ -5509,7 +5105,6 @@
        {
         "name" : "RumbleUser",
         "uri_check" : "https://rumble.com/user/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : " href=https://rumble.com/user/",
         "m_string" : "404 - Not found",
@@ -5521,7 +5116,6 @@
        {
         "name" : "Salon24",
         "uri_check" : "https://www.salon24.pl/u/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Strona główna",
         "m_string" : "Salon24 - blogi, newsy, opinie i komentarze",
@@ -5533,7 +5127,6 @@
        {
         "name" : "SaraCarterShow",
         "uri_check" : "https://saraacarter.com/author/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "| Sara A. Carter",
         "m_string" : "<title>Page not found - Sara A. Carter</title>",
@@ -5545,7 +5138,6 @@
        {
         "name" : "ScoutWiki",
         "uri_check" : "https://en.scoutwiki.org/User:{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "NewPP limit report",
         "m_string" : "is not registered",
@@ -5557,7 +5149,6 @@
        {
         "name" : "scratch",
         "uri_check" : "https://scratch.mit.edu/users/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "on Scratch</title>",
         "m_string" : "We couldn't find the page you're looking for.",
@@ -5569,7 +5160,6 @@
        {
         "name" : "secure_donation",
         "uri_check" : "https://secure.donationpay.org/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "| DonationPay</title>",
         "m_string" : "<title>secure.donationpay.org</title>",
@@ -5581,7 +5171,6 @@
        {
         "name" : "Seneporno",
         "uri_check" : "https://seneporno.com/user/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Dernier Login",
         "m_string" : "Unexpected error! Please contact us and tell us more how you got to this page!",
@@ -5593,7 +5182,6 @@
        {
         "name" : "sentimente",
         "uri_check" : "https://www.sentimente.com/amp/{account}.html",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" :"Chat online with",
         "m_string" : "HTTP Error code: 404. Resource not found",
@@ -5605,7 +5193,6 @@
        {
         "name" : "SEOClerks",
         "uri_check" : "https://www.seoclerks.com/user/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "<div class=\"user-info container\">",
         "m_string" : "<title>SEO Marketplace",
@@ -5617,7 +5204,6 @@
        {
         "name" : "setlist.fm",
         "uri_check" : "https://www.setlist.fm/user/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "s setlist.fm | setlist.fm</title>",
         "m_string" : "Sorry, the page you requested doesn't exist",
@@ -5630,7 +5216,6 @@
         "name" : "Sexworker",
         "uri_check" : "https://sexworker.com/api/profile/{account}",
         "uri_pretty" : "https://sexworker.com/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "profilePictureUrl",
         "m_code" : 404,
@@ -5642,7 +5227,6 @@
        {
         "name" : "SFD",
         "uri_check" : "https://www.sfd.pl/profile/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Tematy użytkownika",
         "m_string" : "Brak aktywnego profilu na forum",
@@ -5655,7 +5239,6 @@
         "name" : "Shanii Writes",
         "uri_check" : "https://forum.shanniiwrites.com/u/{account}/summary.json",
         "uri_pretty" : "https://forum.shanniiwrites.com/u/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "topics",
         "m_code" : 404,
@@ -5667,7 +5250,6 @@
        {
         "name" : "Shesfreaky",
         "uri_check" : "https://www.shesfreaky.com/profile/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "s Profile - ShesFreaky</title>",
         "m_code" : 302,
@@ -5679,7 +5261,7 @@
        {
         "name" : "shopify",
         "uri_check" : "https://{account}.myshopify.com",
-        "post_body" : "",
+        "invalid_chars" : ".",
         "e_code" : 200,
         "e_string" : "home",
         "m_string" : "Sorry, this shop is currently unavailable.",
@@ -5691,7 +5273,6 @@
        {
         "name" : "shutterstock",
         "uri_check" : "https://www.shutterstock.com/g/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "| Shutterstock",
         "m_string" : "Well, this is unexpected...",
@@ -5703,7 +5284,6 @@
        {
         "name" : "skeb",
         "uri_check" : "https://skeb.jp/@{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : ") | Skeb",
         "m_code" : 503,
@@ -5715,7 +5295,7 @@
        {
         "name" : "Skyrock",
         "uri_check" : "https://{account}.skyrock.com/",
-        "post_body" : "",
+        "invalid_chars" : ".",
         "e_code" : 200,
         "e_string" : "&#039;s blog",
         "m_string" : "<title>Page not found - ",
@@ -5727,7 +5307,6 @@
        {
         "name" : "SlackHoles",
         "uri_check" : "https://slackholes.com/actor/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Pussy and Ass Sizes",
         "m_string" : "It looks like nothing was found at this location",
@@ -5739,7 +5318,6 @@
        {
         "name" : "slant",
         "uri_check" : "https://www.slant.co/users/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "s Profile - Slant",
         "m_string" : "404 - Page Not Found - Slant",
@@ -5751,7 +5329,6 @@
        {
         "name" : "slideshare",
         "uri_check" : "https://www.slideshare.net/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "photo user-photo",
         "m_string" : "is still available. Why not",
@@ -5763,7 +5340,6 @@
        {
         "name" : "slides",
         "uri_check" : "https://slides.com/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Presentations by",
         "m_string" : "You may have mistyped the address",
@@ -5775,7 +5351,6 @@
        {
         "name" : "SmashRun",
         "uri_check" : "https://smashrun.com/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Miles run overall",
         "m_string" : "no Smashrunner with the username",
@@ -5787,7 +5362,6 @@
        {
         "name" : "smelsy",
         "uri_check" : "https://www.smelsy.com/profile/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Smelsy -",
         "m_string" : "Server Error",
@@ -5799,7 +5373,7 @@
        {
         "name" : "SmugMug",
         "uri_check" : "https://{account}.smugmug.com",
-        "post_body" : "",
+        "invalid_chars" : ".",
         "e_code" : 200,
         "e_string" : "schema.org/Person",
         "m_string" : "schema.org/Thing",
@@ -5812,7 +5386,6 @@
         "name" : "smule",
         "uri_check" : "https://www.smule.com/api/profile/?handle={account}",
         "uri_pretty" : "https://www.smule.com/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "account_id",
         "m_string" : "code\": 65",
@@ -5825,7 +5398,6 @@
         "name" : "Snapchat",
         "uri_check" : "https://feelinsonice.appspot.com/web/deeplink/snapcode?username={account}&size=400&type=SVG",
         "uri_pretty" : "https://www.snapchat.com/add/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "</clipPath>",
         "m_string" : "http://www.w3.org/1999/xlink",
@@ -5837,7 +5409,6 @@
        {
         "name" : "Snapchat Stories",
         "uri_check" : "https://story.snapchat.com/s/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "is on Snapchat!",
         "m_string" : "Not_Found",
@@ -5849,7 +5420,6 @@
        {
         "name" : "Snipfeed",
         "uri_check" : "https://snipfeed.co/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "creatorLink",
         "m_code" : 404,
@@ -5861,7 +5431,6 @@
        {
         "name" : "social.bund.de",
         "uri_check" : "https://social.bund.de/@{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "@social.bund.de) - social.bund.de</title>",
         "m_string" : "<title>The page you are looking for isn&#39;t here.",
@@ -5873,7 +5442,6 @@
        {
         "name" : "soc.citizen4.eu",
         "uri_check" : "https://soc.citizen4.eu/profile/{account}/profile",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "@soc.citizen4.eu",
         "m_string" : "Nie znaleziono",
@@ -5885,7 +5453,6 @@
        {
         "name" : "social_msdn",
         "uri_check" : "https://social.msdn.microsoft.com/profile/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Member Since",
         "m_string" : "The resource you are looking for has been removed, had its name changed, or is temporarily unavailable.",
@@ -5897,7 +5464,6 @@
        {
         "name" : "Mastodon-social_tchncs",
         "uri_check" : "https://social.tchncs.de/@{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "profile:username",
         "m_string" : "The page you are looking for isn&#39;t here",
@@ -5909,7 +5475,7 @@
        {
         "name" : "sofurry",
         "uri_check" : "https://{account}.sofurry.com",
-        "post_body" : "",
+        "invalid_chars" : ".",
         "e_code" : 200,
         "e_string" : "'s Profile | SoFurry",
         "m_string" : "SoFurry - Error | SoFurry",
@@ -5921,7 +5487,6 @@
        {
         "name" : "SoliKick",
         "uri_check" : "https://solikick.com/-{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "page_guest_users-view",
         "m_string" : "This item has been removed or is no longer available",
@@ -5934,7 +5499,6 @@
         "name" : "soloby",
         "uri_check" : "http://www.soloby.ru/user/{account}",
         "e_code" : 200,
-        "post_body" : "",
         "e_string" : "- Универ soloBY",
         "m_string" : "Универ soloBY",
         "m_code" : 404,
@@ -5945,7 +5509,6 @@
        {
         "name" : "solo.to",
         "uri_check" : "https://solo.to/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "create your own page",
         "m_code" : 404,
@@ -5957,7 +5520,6 @@
        {
         "name" : "SoundCloud",
         "uri_check" : "https://soundcloud.com/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "SoundCloud</title>",
         "m_string" : "sounds</title>",
@@ -5969,7 +5531,6 @@
        {
         "name" : "Soup",
         "uri_check" : "https://www.soup.io/author/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Author at Soup.io",
         "m_string" : "Soup.io - News, Sports, Entertainment, TV, Tech, Gaming",
@@ -5981,7 +5542,6 @@
        {
         "name" : "Sourceforge",
         "uri_check" : "https://sourceforge.net/u/{account}/profile",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : " / Profile</title>",
         "m_string" : "<title>Page not found",
@@ -6006,7 +5566,6 @@
        {
         "name" : "Speaker Deck",
         "uri_check" : "https://speakerdeck.com/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : ") on Speaker Deck</title>",
         "m_string" : "User Not Found - Speaker Deck",
@@ -6018,7 +5577,6 @@
        {
         "name" : "speedrun",
         "uri_check" : "https://www.speedrun.com/user/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Runs - ",
         "m_string" : "<title>speedrun.com",
@@ -6030,7 +5588,6 @@
        {
         "name" : "SpiceWorks",
         "uri_check" : "https://community.spiceworks.com/people/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Portfolio of IT Projects - Spiceworks",
         "m_string" : "Page Not Found",
@@ -6042,7 +5599,6 @@
        {
         "name" : "sporcle",
         "uri_check" : "https://www.sporcle.com/user/{account}/people/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "'s Sporcle Friends",
         "m_string" : "This Sporcle user cannot be found.",
@@ -6054,7 +5610,6 @@
        {
         "name" : "Spotify",
         "uri_check" : "https://open.spotify.com/user/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "on Spotify</title>",
         "m_string" : "Spotify - Web Player</title>",
@@ -6066,7 +5621,6 @@
        {
         "name" : "Steam",
         "uri_check" : "https://steamcommunity.com/id/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "g_rgProfileData =",
         "m_string" : "Steam Community :: Error",
@@ -6078,7 +5632,6 @@
        {
         "name" : "steemit",
         "uri_check" : "https://steemit.com/@{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "blog",
         "m_string" : "Page Not Found - Steemit",
@@ -6090,7 +5643,6 @@
        {
         "name" : "steller",
         "uri_check" : "https://steller.co/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : " on Steller</title>",
         "m_string" : "<title></title>",
@@ -6103,7 +5655,6 @@
         "name" : "Stoners.social (Mastodon Instance)",
         "uri_check" : "https://stoners.social/api/v1/accounts/lookup?acct={account}",
         "uri_pretty" : "https://stoners.social/@{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "display_name",
         "m_code" : 404,
@@ -6115,7 +5666,6 @@
        {
         "name" : "StoryCorps",
         "uri_check" : "https://archive.storycorps.org/user/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "archive author",
         "m_string" : "We're sorry, but the page",
@@ -6128,7 +5678,6 @@
         "name" : "StreamElements",
         "uri_check" : "https://api.streamelements.com/kappa/v2/channels/{account}",
         "uri_pretty" : "https://streamelements.com/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "\"providerId\"",
         "m_code" : 404,
@@ -6141,7 +5690,6 @@
         "name" : "StreamLabs",
         "uri_check" : "https://streamlabs.com/api/v6/user/{account}",
         "uri_pretty" : "https://streamlabs.com/{account}/tip",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "display_name",
         "m_code" : 401,
@@ -6153,7 +5701,6 @@
        {
         "name" : "Stripchat",
         "uri_check" : "https://stripchat.com/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "I Do in My Shows:",
         "m_string" : "Oops. The page you were looking for doesn't exist",
@@ -6165,7 +5712,6 @@
        {
         "name" : "Subscribestar",
         "uri_check" : "https://subscribestar.adult/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "CREATOR STATS",
         "m_code" : 404,
@@ -6177,7 +5723,6 @@
        {
         "name" : "sukebei.nyaa.si",
         "uri_check" : "https://sukebei.nyaa.si/user/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "'s torrents",
         "m_code" : 404,
@@ -6189,7 +5734,6 @@
        {
         "name" : "Suzuri",
         "uri_check" : "https://suzuri.jp/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Items",
         "m_string" : "Push Space-key",
@@ -6201,7 +5745,6 @@
        {
         "name" : "szmer.info",
         "uri_check" : "https://szmer.info/u/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Joined",
         "m_string" : "Code: Couldn't find that username or email.",
@@ -6213,7 +5756,6 @@
        {
         "name" : "tabletoptournament",
         "uri_check" : "https://www.tabletoptournaments.net/eu/player/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "- Player Profile | T³ - TableTop Tournaments",
         "m_string" : "No player with the nickname",
@@ -6225,7 +5767,6 @@
        {
         "name" : "Tagged",
         "uri_check" : "https://secure.tagged.com/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "s Profile</title>",
         "m_string" : "Tagged - The social network for meeting new people",
@@ -6237,7 +5778,6 @@
        {
         "name" : "TamTam",
         "uri_check" : "https://tamtam.chat/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "deeplink=tamtam://chat/",
         "m_string" : "ТамТам</title>",
@@ -6249,7 +5789,6 @@
        {
         "name" : "Tanuki.pl",
         "uri_check" : "https://tanuki.pl/profil/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Dołączył",
         "m_string" : "Nie ma takiego użytkownika",
@@ -6262,7 +5801,6 @@
         "name" : "TAPiTAG",
         "uri_check" : "https://account.tapitag.co/tapitag/api/v1/{account}",
         "uri_pretty" : "https://account.tapitag.co/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "User details are Showing",
         "m_string" : "The rf number is not valid",
@@ -6275,7 +5813,6 @@
         "name" : "Tappy",
         "uri_check" : "https://api.tappy.tech/api/profile/username/{account}",
         "uri_pretty" : "https://www.tappy.tech/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "user_id",
         "m_string" : "Profile of username Not Found",
@@ -6287,7 +5824,6 @@
        {
         "name" : "Taringa",
         "uri_check" : "https://www.taringa.net/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : " en Taringa!</title>",
         "m_string" : "Colectiva en Taringa!</title>",
@@ -6299,7 +5835,6 @@
        {
         "name" : "taskrabbit",
         "uri_check" : "https://www.taskrabbit.com/profile/{account}/about",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "’s Profile",
         "m_string" : "",
@@ -6311,7 +5846,6 @@
        {
         "name" : "Teamtreehouse",
         "uri_check" : "https://teamtreehouse.com/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Member Since",
         "m_string" : "Oops, Something went missing",
@@ -6323,7 +5857,6 @@
        {
         "name" : "Teddygirls",
         "uri_check" : "https://teddysgirls.net/models/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : ";s exclusive page to subscribe to her",
         "m_string" : "The page you were looking for doesn't exist",
@@ -6336,7 +5869,6 @@
         "name" : "Teespring",
         "uri_check" : "https://commerce.teespring.com/v1/stores?slug={account}",
         "uri_pretty" : "https://{account}.creator-spring.com",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "sellerToken",
         "m_code" : 404,
@@ -6348,7 +5880,6 @@
        {
         "name" : "Teknik",
         "uri_check" : "https://user.teknik.io/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Public Key",
         "m_string" : "The user does not exist",
@@ -6360,7 +5891,6 @@
        {
         "name" : "Telegram",
         "uri_check" : "https://t.me/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "tgme_page_title",
         "m_string" : "noindex, nofollow",
@@ -6372,7 +5902,6 @@
        {
         "name" : "Tellonym",
         "uri_check" : "https://tellonym.me/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "on Tellonym",
         "m_string" : "- Honest & Anonymous Feedback",
@@ -6384,7 +5913,6 @@
        {
         "name" : "Tenor",
         "uri_check" : "https://tenor.com/users/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "<div class=\"tagline\">",
         "m_code" : 404,
@@ -6396,7 +5924,6 @@
        {
         "name" : "TF2 Backpack Examiner",
         "uri_check" : "http://www.tf2items.com/id/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "<title>TF2 Backpack -",
         "m_string" : "",
@@ -6408,7 +5935,6 @@
        {
         "name" : "Mastodon-tfl.net.pl",
         "uri_check" : "https://tfl.net.pl/@{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "@tfl.net.pl",
         "m_string" : "The page you are looking for isn't here.",
@@ -6420,7 +5946,6 @@
        {
         "name" : "themeforest",
         "uri_check" : "https://themeforest.net/user/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "s profile on ThemeForest",
         "m_string" : "Page Not Found | ThemeForest",
@@ -6432,7 +5957,6 @@
        {
         "name" : "thegatewaypundit",
         "uri_check" : "https://www.thegatewaypundit.com/author/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "summary",
         "m_string" : "Not found, error 404",
@@ -6444,7 +5968,6 @@
        {
         "name" : "theguardian",
         "uri_check" : "https://www.theguardian.com/profile/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "https://www.theguardian.com/profile/",
         "m_string" : "Page not found | The Guardian",
@@ -6456,7 +5979,6 @@
        {
         "name" : "Thetattooforum",
         "uri_check" : "https://www.thetattooforum.com/members/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Insert This Gallery",
         "m_string" : "We’re sorry",
@@ -6469,7 +5991,6 @@
         "name" : "TikTok",
         "uri_check" : "https://www.tiktok.com/oembed?url=https://www.tiktok.com/@{account}",
         "uri_pretty" : "https://www.tiktok.com/@{account}?lang=en",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "author_url",
         "m_string" : "Something went wrong",
@@ -6482,7 +6003,6 @@
         "name" : "Tilde.zone (Mastodon Instance)",
         "uri_check" : "https://tilde.zone/api/v1/accounts/lookup?acct={account}",
         "uri_pretty" : "https://tilde.zone/@{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "display_name",
         "m_code" : 404,
@@ -6494,7 +6014,6 @@
        {
         "name" : "Tinder",
         "uri_check" : "https://tinder.com/@{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : ") | Tinder</title><meta",
         "m_string" : "Tinder | Dating, Make Friends &amp; Meet New People",
@@ -6507,7 +6026,6 @@
         "name" : "Tooting.ch (Mastodon Instance)",
         "uri_check" : "https://tooting.ch/api/v1/accounts/lookup?acct={account}",
         "uri_pretty" : "https://tooting.ch/@{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "display_name",
         "m_code" : 404,
@@ -6519,7 +6037,6 @@
        {
         "name" : "TotalWar",
         "uri_check" : "https://forums.totalwar.com/profile/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Total War Forums",
         "m_string" : "Not Found",
@@ -6531,7 +6048,6 @@
        {
         "name" : "toyhou.se",
         "uri_check" : "https://toyhou.se/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "display-user",
         "m_code" : 404,
@@ -6543,7 +6059,6 @@
        {
         "name" : "TrackmaniaLadder",
         "uri_check" : "https://en.tm-ladder.com/{account}_rech.php",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Login type :",
         "m_string" : "player unknown or invalid 'idplayer' parameter.",
@@ -6555,7 +6070,6 @@
        {
         "name" : "tradingview",
         "uri_check" : "https://www.tradingview.com/u/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "— Trading Ideas &amp;",
         "m_string" : "Page not found — TradingView",
@@ -6567,7 +6081,6 @@
        {
         "name" : "trakt",
         "uri_check" : "https://trakt.tv/users/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "s profile - Trakt",
         "m_string" : "The page you were looking for doesn't exist (404) - Trakt.tv",
@@ -6580,7 +6093,6 @@
         "name" : "Trello",
         "uri_check" : "https://trello.com/1/Members/{account}?fields=activityBlocked%2CavatarUrl%2Cbio%2CbioData%2Cconfirmed%2CfullName%2CidEnterprise%2CidMemberReferrer%2Cinitials%2CmemberType%2CnonPublic%2Cproducts%2Curl%2Cusername",
         "uri_pretty" : "https://trello.com/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "avatarUrl",
         "m_code" : 404,
@@ -6592,7 +6104,6 @@
        {
         "name" : "tripadvisor",
         "uri_check" : "https://www.tripadvisor.com/Profile/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Contributions",
         "m_string" : "This page is on vacation",
@@ -6605,7 +6116,6 @@
         "name" : "Truth Social",
         "uri_check" : "https://truthsocial.com/api/v1/accounts/lookup?acct={account}",
         "uri_pretty" : "https://www.truthsocial.com/@{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "display_name",
         "m_string" : "Record not found",
@@ -6617,7 +6127,7 @@
        {
         "name" : "tumblr",
         "uri_check" : "https://{account}.tumblr.com",
-        "post_body" : "",
+        "invalid_chars" : ".",
         "e_code" : 200,
         "e_string" : "avatar",
         "m_string" : "There's nothing here",
@@ -6629,7 +6139,6 @@
        {
         "name" : "Tunefind",
         "uri_check" : "https://www.tunefind.com/user/profile/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Achievements",
         "m_string" : "Page not found",
@@ -6641,7 +6150,6 @@
        {
         "name" : "Twitcasting",
         "uri_check" : "https://twitcasting.tv/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Live History",
         "m_string" : "Not Found",
@@ -6654,7 +6162,6 @@
         "name" : "Twitch",
         "uri_check" : "https://twitchtracker.com/search?q={account}",
         "uri_pretty" : "https://twitch.tv/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Found Exact Match",
         "m_string" : "nothing found",
@@ -6667,7 +6174,6 @@
         "name" : "Twitter",
         "uri_check" : "https://nitter.net/{account}",
         "uri_pretty" : "https://twitter.com/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "| nitter</title>",
         "m_string" : "<title>Error |",
@@ -6680,7 +6186,6 @@
         "name" : "Twitter archived profile",
         "uri_check" : "http://archive.org/wayback/available?url=https://twitter.com/{account}",
         "uri_pretty" : "https://web.archive.org/web/2/https://twitter.com/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "\"archived_snapshots\": {\"closest\"",
         "m_string" : "\"archived_snapshots\": {}",
@@ -6693,7 +6198,6 @@
         "name" : "Twitter archived tweets",
         "uri_check" : "http://archive.org/wayback/available?url=https://twitter.com/{account}/status/*",
         "uri_pretty" : "https://web.archive.org/web/*/https://twitter.com/{account}/status/*",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "\"archived_snapshots\": {\"closest\"",
         "m_string" : "\"archived_snapshots\": {}",
@@ -6718,7 +6222,6 @@
        {
         "name" : "twpro",
         "uri_check" : "https://twpro.jp/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "おとなりさん",
         "m_code" : 404,
@@ -6730,7 +6233,6 @@
        {
         "name" : "Ubisoft",
         "uri_check" : "https://discussions.ubisoft.com/user/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "| Ubisoft Discussion Forums",
         "m_string" : "You seem to have stumbled upon a page that does not exist.",
@@ -6742,7 +6244,6 @@
        {
         "name" : "Udemy",
         "uri_check" : "https://www.udemy.com/user/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "| Udemy</title>",
         "m_string" : "<title>Online Courses - Learn Anything, On Your Schedule | Udemy</title>",
@@ -6754,7 +6255,6 @@
        {
         "name" : "uefconnect",
         "uri_check" : "https://uefconnect.uef.fi/en/person/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "- UEFConnect</title>",
         "m_string" : "<title>Page not found - UEFConnect</title>",
@@ -6766,7 +6266,6 @@
        {
         "name" : "uid",
         "uri_check" : "http://uid.me/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "- uID.me",
         "m_string" : "Page not found",
@@ -6779,7 +6278,6 @@
         "name" : "Uiuxdev.social (Mastodon Instance)",
         "uri_check" : "https://uiuxdev.social/api/v1/accounts/lookup?acct={account}",
         "uri_pretty" : "https://uiuxdev.social/@{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "display_name",
         "m_code" : 404,
@@ -6791,7 +6289,6 @@
        {
         "name" : "Ultras Diary",
         "uri_check" : "http://ultrasdiary.pl/u/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Mecze wyjazdowe:",
         "m_string" : "Ile masz wyjazdów?",
@@ -6803,7 +6300,6 @@
        {
         "name" : "ulub.pl",
         "uri_check" : "http://ulub.pl/profil/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Muzyka (",
         "m_string" : "Strona nie istnieje.",
@@ -6815,7 +6311,6 @@
        {
         "name" : "unsplash",
         "uri_check" : "https://unsplash.com/@{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "| Unsplash Photo Community",
         "m_string" : "Hm, the page you were looking for doesn't seem to exist anymore.",
@@ -6827,7 +6322,6 @@
        {
         "name" : "untappd",
         "uri_check" : "https://untappd.com/user/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "on Untappd</title>",
         "m_string" : "Untappd | 404",
@@ -6839,7 +6333,6 @@
        {
         "name" : "USA Life",
         "uri_check" : "https://usa.life/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Please log in to like, share and comment",
         "m_string" : "Sorry, page not found",
@@ -6852,7 +6345,6 @@
         "name" : "utip.io",
         "uri_check" : "https://utip.io/creator/profile/{account}",
         "uri_pretty" : "https://utip.io/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "\"userName\"",
         "m_code" : 404,
@@ -6864,7 +6356,6 @@
        {
         "name" : "Uwumarket",
         "uri_check" : "https://uwumarket.us/collections/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "collection-hero__text-wrapper",
         "m_code" : 404,
@@ -6876,7 +6367,7 @@
        {
         "name" : "uwu.ai",
         "uri_check" : "https://{account}.uwu.ai/",
-        "post_body" : "",
+        "invalid_chars" : ".",
         "e_code" : 200,
         "e_string" : "property=\"twitter:card\"",
         "m_code" : 404,
@@ -6888,7 +6379,6 @@
        {
         "name" : "vsco",
         "uri_check" : "https://vsco.co/{account}/gallery",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "| VSCO",
         "m_string" : "This page does not exist",
@@ -6900,7 +6390,6 @@
        {
         "name" : "Venmo",
         "uri_check" : "https://account.venmo.com/u/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "profileInfo_username__",
         "m_string" : "Sorry, the page you requested does not exist!",
@@ -6912,7 +6401,6 @@
        {
         "name" : "Vero",
         "uri_check" : "https://vero.co/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "on VERO™</title>",
         "m_string" : "The page you are looking for doesn't exist.",
@@ -6924,7 +6412,6 @@
        {
         "name" : "vibilagare",
         "uri_check" : "https://www.vibilagare.se/users/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Profil på vibilagare.se",
         "m_string" : "Sidan hittades inte |",
@@ -6936,7 +6423,6 @@
        {
         "name" : "viddler",
         "uri_check" : "https://www.viddler.com/channel/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "profile-details",
         "m_string" : "User not found",
@@ -6948,7 +6434,6 @@
        {
         "name" : "Vimeo",
         "uri_check" : "https://vimeo.com/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "is a member of Vimeo, the",
         "m_string" : "Make sure you’ve typed the URL correctly",
@@ -6961,7 +6446,6 @@
         "name" : "Vine",
         "uri_check" : "https://vine.co/api/users/profiles/vanity/{account}",
         "uri_pretty" : "https://vine.co/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "userId",
         "m_string" : "That record does not exist",
@@ -6974,7 +6458,6 @@
         "name" : "visnesscard",
         "uri_check" : "https://my.visnesscard.com/Home/GetCard/{account}",
         "uri_pretty" : "https://my.visnesscard.com/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "end_point",
         "m_string" : "card_id\": 0",
@@ -6986,7 +6469,6 @@
        {
         "name" : "Vivino",
         "uri_check" : "https://www.vivino.com/users/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "<!-- User details -->",
         "m_string" : "Page not found",
@@ -6998,7 +6480,7 @@
       {
         "name" : "VIP-blog",
         "uri_check" : "http://{account}.vip-blog.com",
-        "post_body" : "",
+        "invalid_chars" : ".",
         "e_code" : 200,
         "e_string" : "blog : ",
         "m_string" : "Blog inexistant",
@@ -7010,7 +6492,6 @@
       {
         "name" : "Virustotal",
         "uri_check" : "https://www.virustotal.com/gui/user/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" :"USER PROFILE",
         "m_string" : "User not found",
@@ -7022,7 +6503,6 @@
        {
         "name" : "VK",
         "uri_check" : "https://vk.com/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "id=\"profile\"",
         "m_string" : "404 Not Found",
@@ -7035,7 +6515,6 @@
         "name" : "Vkl.world (Mastodon Instance)",
         "uri_check" : "https://vkl.world/api/v1/accounts/lookup?acct={account}",
         "uri_pretty" : "https://vkl.world/@{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "display_name",
         "m_code" : 404,
@@ -7048,7 +6527,6 @@
         "name" : "Vmst.io (Mastodon Instance)",
         "uri_check" : "https://vmst.io/api/v1/accounts/lookup?acct={account}",
         "uri_pretty" : "https://vmst.io/@{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "display_name",
         "m_code" : 404,
@@ -7061,7 +6539,6 @@
         "name" : "Voice123",
         "uri_check" : "https://voice123.com/api/providers/search/{account}",
         "uri_pretty" : "https://voice123.com/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "user_id",
         "m_code" : 200,
@@ -7073,7 +6550,6 @@
        {
         "name" : "Voices.com",
         "uri_check" : "https://www.voices.com/profile/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Last Online</h3>",
         "m_string" : "Try going back to the previous page or see below for more options",
@@ -7085,21 +6561,19 @@
        {
         "name" : "Wanelo",
         "uri_check" : "https://wanelo.co/{account}",
-        "invalid_chars": ".",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "on Wanelo</title>",
         "m_string" : "Hmm, that's embarrassing",
         "m_code" : 404,
         "known" : ["lisandrareyes"],
         "cat" : "shopping",
-        "valid" : true
+        "valid" : true,
+        "invalid_chars" : "."
        },
        {
         "name" : "watchmemore.com",
         "uri_check" : "https://api.watchmemore.com/api3/profile/{account}/",
         "uri_pretty" : "https://watchmemore.com/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "displayName",
         "m_string" : "notExists",
@@ -7111,7 +6585,6 @@
        {
         "name" : "warriorforum",
         "uri_check" : "https://www.warriorforum.com/members/{account}.html",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "| Warrior Forum",
         "m_string" : "Oops | Warrior Forum -",
@@ -7123,7 +6596,6 @@
        {
         "name" : "Watchmyfeed",
         "uri_check" : "https://watchmyfeed.com/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "SEND ME A TIP",
         "m_string" : "<html lang=",
@@ -7136,7 +6608,6 @@
         "name" : "wattpad",
         "uri_check" : "https://www.wattpad.com/api/v3/users/{account}?fields=username%2Cname%2Cdescription%2Cavatar%2CbackgroundUrl%2CcreateDate%2Clocation%2Cfollowing%2CfollowingRequest%2CnumFollowing%2Cfollower%2CfollowerRequest%2CnumFollowers%2CnumLists%2CnumStoriesPublished%2CvotesReceived%2Cfacebook%2Ctwitter%2Cwebsite%2Csmashwords%2Chighlight_colour%2Chtml_enabled%2Cverified%2Cambassador%2Cwattpad_squad%2Cis_staff%2Cprograms(wattpad_stars)%2CisPrivate%2CisMuted%2CexternalId%2Cnotes",
         "uri_pretty" : "https://www.wattpad.com/user/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "createDate",
         "m_string" : "error_code",
@@ -7148,7 +6619,6 @@
        {
         "name" : "Weasyl",
         "uri_check" : "https://www.weasyl.com/~{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "&#39;s profile — Weasyl</title>",
         "m_string" : "This user doesn't seem to be in our database.",
@@ -7160,7 +6630,7 @@
        {
         "name" : "weebly",
         "uri_check" : "https://{account}.weebly.com/",
-        "post_body" : "",
+        "invalid_chars" : ".",
         "e_code" : 200,
         "e_string" : "<div id=\"navigation\">",
         "m_string" : "<title>404 - Page Not Found",
@@ -7172,7 +6642,6 @@
        {
         "name" : "weheartit",
         "uri_check" : "https://weheartit.com/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : " on We Heart It</title>",
         "m_string" : " (404)</title>",
@@ -7184,7 +6653,6 @@
        {
         "name" : "wego",
         "uri_check" : "https://wego.social/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Following</span>",
         "m_string" : "Sorry, page not found!",
@@ -7196,7 +6664,6 @@
        {
         "name" : "weibo",
         "uri_check" : "https://tw.weibo.com/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "粉絲",
         "m_string" : "Oops!",
@@ -7208,7 +6675,7 @@
        {
         "name" : "WeTransfer",
         "uri_check" : "https://{account}.wetransfer.com",
-        "post_body" : "",
+        "invalid_chars" : ".",
         "e_code" : 200,
         "e_string" : "default_recipient_email",
         "m_string" : "",
@@ -7220,7 +6687,6 @@
        {
         "name" : "Wikidot",
         "uri_check" : "http://www.wikidot.com/user:info/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Wikidot.com:",
         "m_string" : "Free and Pro Wiki Hosting",
@@ -7233,7 +6699,6 @@
         "name" : "Wikipedia",
         "uri_check" : "https://en.wikipedia.org/w/api.php?action=query&format=json&list=users&ususers={account}",
         "uri_pretty" : "https://en.wikipedia.org/wiki/User:{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "userid",
         "m_string" : "missing:",
@@ -7245,7 +6710,6 @@
        {
         "name" : "Wimkin-PublicProfile",
         "uri_check" : "https://wimkin.com/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "is on WIMKIN",
         "m_string" : " The page you are looking for cannot be found.",
@@ -7257,7 +6721,6 @@
        {
         "name" : "Wireclub",
         "uri_check" : "https://www.wireclub.com/users/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Chat With",
         "m_string" : "People - Wireclub",
@@ -7269,7 +6732,6 @@
        {
         "name" : "wishlistr",
         "uri_check" : "https://www.wishlistr.com/profile/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "s profile</title>",
         "m_string" : "",
@@ -7281,7 +6743,6 @@
        {
         "name" : "Wolni Słowianie",
         "uri_check" : "https://wolnislowianie.pl/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Oś czasu",
         "m_string" : "Nie znaleziono strony, której szukasz.",
@@ -7293,7 +6754,6 @@
        {
         "name" : "wordnik",
         "uri_check" : "https://www.wordnik.com/users/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Welcome,",
         "m_string" : "Wordnik: Page Not Found",
@@ -7305,7 +6765,6 @@
        {
         "name" : "WordPress",
         "uri_check" : "https://profiles.wordpress.org/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "user-member-since",
         "m_string" : "",
@@ -7317,7 +6776,6 @@
        {
         "name" : "WordPress Support",
         "uri_check" : "https://wordpress.org/support/users/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "s Profile &#124; WordPress.org",
         "m_string" : "User not found",
@@ -7329,7 +6787,6 @@
        {
         "name" : "Wowhead",
         "uri_check" : "https://www.wowhead.com/user={account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : " Profile - Wowhead",
         "m_string" : "Error - Wowhead",
@@ -7341,7 +6798,6 @@
        {
         "name" : "Wykop",
         "uri_check" : "https://www.wykop.pl/ludzie/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Aktywność użytkownika",
         "m_string" : "Czy na pewno tego szukałeś? Taka strona nie istnieje.",
@@ -7353,7 +6809,7 @@
        {
         "name" : "Xanga",
         "uri_check" : "http://{account}.xanga.com/",
-        "post_body" : "",
+        "invalid_chars" : ".",
         "e_code" : 200,
         "e_string" : "s Xanga Site | Just",
         "m_string" : "",
@@ -7365,7 +6821,6 @@
        {
         "name" : "Xbox Gamertag",
         "uri_check" : "https://www.xboxgamertag.com/search/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Games Played",
         "m_string" : "Gamertag doesn't exist",
@@ -7377,7 +6832,6 @@
        {
         "name" : "xHamster",
         "uri_check" : "https://xhamster.com/users/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "s profile | xHamster</title>",
         "m_string" : "User not found</title>",
@@ -7389,7 +6843,6 @@
        {
         "name" : "Xing",
         "uri_check" : "https://www.xing.com/profile/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : " | XING</title>",
         "m_string" : "Es tut uns leid",
@@ -7401,7 +6854,6 @@
        {
         "name" : "XVIDEOS-models",
         "uri_check" : "https://www.xvideos.com/models/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Total video views",
         "m_string" : "THIS PROFILE DOESN'T EXIST",
@@ -7413,7 +6865,6 @@
        {
         "name" : "XVIDEOS-profiles",
         "uri_check" : "https://www.xvideos.com/profiles/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "page - XVIDEOS.COM",
         "m_string" : "THIS PROFILE DOESN'T EXIST",
@@ -7425,7 +6876,6 @@
        {
         "name" : "Yahoo! JAPAN Auction",
         "uri_check" : "https://auctions.yahoo.co.jp/follow/list/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "出品者",
         "m_code" : 500,
@@ -7449,7 +6899,6 @@
        {
         "name" : "Yazawaj",
         "uri_check" : "https://www.yazawaj.com/profile/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "أنا",
         "m_string" : "الصفحة المطلوبة غير موجودة",
@@ -7461,7 +6910,6 @@
        {
         "name" : "Yelp",
         "uri_check" : "https://www.yelp.com/user_details?userid={account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "'s Reviews |",
         "m_string" : "Doggone it! The page you’re looking for cannot be found.",
@@ -7473,7 +6921,6 @@
        {
         "name" : "youpic",
         "uri_check" : "https://youpic.com/photographer/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "- Photographer - YouPic",
         "m_string" : "Welcome to the infamous 404 page - YouPic",
@@ -7485,7 +6932,6 @@
        {
         "name" : "YouTube Channel",
         "uri_check" : "https://www.youtube.com/c/{account}/about",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "joinedDateText",
         "m_string" : "<title>404 Not Found",
@@ -7497,7 +6943,6 @@
        {
         "name" : "YouTube User",
         "uri_check" : "https://www.youtube.com/user/{account}/about",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "joinedDateText",
         "m_string" : "<title>404 Not Found",
@@ -7509,7 +6954,6 @@
        {
         "name" : "YouTube User2",
         "uri_check" : "https://www.youtube.com/@{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "canonicalBaseUrl",
         "m_string" : "<title>404 Not Found</title>",
@@ -7521,7 +6965,6 @@
        {
         "name" : "zatrybi.pl",
         "uri_check" : "https://zatrybi.pl/user/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Zarejestrowany od:",
         "m_string" : "Nie znaleziono strony",
@@ -7533,7 +6976,6 @@
        {
         "name" : "Zbiornik",
         "uri_check" : "https://mini.zbiornik.com/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "INFO",
         "m_string" : "Szukaj",
@@ -7545,7 +6987,6 @@
        {
         "name" : "zhihu",
         "uri_check" : "https://www.zhihu.com/people/{account}",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "zhihu:voteupCount",
         "m_string" : "ErrorPage-subtitle",
@@ -7557,7 +6998,6 @@
        {
         "name" : "Zillow",
         "uri_check" : "https://www.zillow.com/profile/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "- Real Estate Agent",
         "m_string" : "",
@@ -7569,7 +7009,6 @@
        {
         "name" : "zmarsa.com",
         "uri_check" : "https://zmarsa.com/uzytkownik/{account}/glowna/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Galeria użytkownika",
         "m_string" : "Błąd na stronie",
@@ -7581,7 +7020,6 @@
        {
         "name" : "Zomato",
         "uri_check" : "https://www.zomato.com/{account}/foodjourney",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "| Zomato",
         "m_string" : "404 | Zomato",
@@ -7593,7 +7031,6 @@
        {
         "name" : "zoomitir",
         "uri_check" : "https://www.zoomit.ir/user/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "پروفایل - زومیت",
         "m_string" : "404 Not found",
