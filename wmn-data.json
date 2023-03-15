@@ -5059,6 +5059,17 @@
         "valid" : true
        },
        {
+        "name" : "RoutineHub",
+        "uri_check" : "https://routinehub.co/user/{account}",
+        "e_code" : 200,
+        "e_string" : "Downloads: ",
+        "m_string" : "A community for Apple Shortcuts</title>",
+        "m_code" : 200,
+        "known" : ["zachary7829", "JonathanSetzer"],
+        "cat" : "social",
+        "valid" : true
+       },
+       {
         "name" : "rsi",
         "uri_check" : "https://robertsspaceindustries.com/citizens/{account}",
         "e_code" : 200,
