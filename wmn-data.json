@@ -6567,7 +6567,8 @@
         "m_code" : 404,
         "known" : ["lisandrareyes"],
         "cat" : "shopping",
-        "valid" : true
+        "valid" : true,
+        "invalid_chars" : "."
        },
        {
         "name" : "watchmemore.com",

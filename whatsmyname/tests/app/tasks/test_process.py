@@ -41,6 +41,12 @@ def test_generate_username_has_dot() -> None:
     assert len(new_sites) > 400
 
 
+def test_generate_username_has_invalid_chars() -> None:
+    cli_options: CliOptionsSchema = get_default_cli_options()
+    sites_list: List[SiteSchema] = [s for s in get_sites_list(cli_options) if s.name == 'Wanelo']
+    new_sites: List[SiteSchema] = generate_username_sites(['john.doe'], sites_list)
+    assert new_sites[0].username == 'johndoe'
+
 def test_filter_list_all() -> None:
     cli_options: CliOptionsSchema = get_default_cli_options()
     sites_list: List[SiteSchema] = get_sites_list(cli_options)

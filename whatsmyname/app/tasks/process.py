@@ -85,7 +85,15 @@ def generate_username_sites(usernames: List[str], sites: List[SiteSchema]) -> Li
 
             site_clone: SiteSchema = site.copy(deep=True)
             site_clone.username = username
+
+            # Fixes issue #673
+            if site_clone.invalid_chars:
+                for remove_char in site_clone.invalid_chars:
+                    username = username.replace(remove_char, '')
+                    site_clone.username = username.replace(remove_char, '')
+
             site_clone.generated_uri = site_clone.uri_check.replace('{account}', username)
+
             if not user_site_map.get(username):
                 user_site_map[username] = []
             user_site_map[username].append(site_clone)

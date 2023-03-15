@@ -28,7 +28,7 @@ class SiteSchema(BaseModel):
     known: List[str]
     category: str
     valid: bool
-    post_body: str
+    post_body: Optional[str]
     uri_check: str
     request_method: str = None
     username: str = None
@@ -42,6 +42,7 @@ class SiteSchema(BaseModel):
     uri_pretty: Optional[str] = None
     error_hint: Optional[str] = None
     response_headers: Optional[str] = None
+    invalid_chars: Optional[str]
 
 
     @root_validator
