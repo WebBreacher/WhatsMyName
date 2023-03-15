@@ -1207,7 +1207,18 @@
         "e_string" : "ABOUT ME",
         "m_string" : "404/favicon.png",
         "m_code" : 404,
-        "known" : ["e4c5"],
+        "known" : ["e4c5", "juanelfers"],
+        "cat" : "coding",
+        "valid" : true
+       },
+       {
+        "name" : "Code Project",
+        "uri_check" : "https://www.codeproject.com/Members/{account}",
+        "e_code" : 200,
+        "e_string" : "member since",
+        "m_string" : "Unable to load the requested member's information",
+        "m_code" : 200,
+        "known" : ["WmCraig", "Rick-York"],
         "cat" : "coding",
         "valid" : true
        },
@@ -2258,6 +2269,18 @@
         "m_string" : "Not Found",
         "m_code" : 404,
         "known" : ["Johnboy", "Crazy"],
+        "cat" : "gaming",
+        "valid" : true
+       },
+       {
+        "name" : "Game Jolt",
+        "uri_check" : "https://gamejolt.com/site-api/web/profile/@{account}/",
+        "uri_pretty" : "https://gamejolt.com/@{account}",
+        "e_code" : 200,
+        "e_string" : "created_on",
+        "m_string" : "null,",
+        "m_code" : 404,
+        "known" : ["nilllzz", "KorbloxTeams"],
         "cat" : "gaming",
         "valid" : true
        },
@@ -4052,6 +4075,17 @@
         "valid" : true
        },
        {
+        "name" : "Neocities",
+        "uri_check" : "https://neocities.org/site/{account}",
+        "e_code" : 200,
+        "e_string" : "noindex, follow",
+        "m_string" : "- Not Found</title>",
+        "m_code" : 404,
+        "known" : ["fauux", "sadgrl"],
+        "cat" : "social",
+        "valid" : true
+       },
+       {
         "name" : "netvibes",
         "uri_check" : "https://www.netvibes.com/{account}",
         "e_code" : 200,
@@ -5022,6 +5056,17 @@
         "m_code" : 200,
         "known" : ["LeetPawn", "elephant459"],
         "cat" : "gaming",
+        "valid" : true
+       },
+       {
+        "name" : "RoutineHub",
+        "uri_check" : "https://routinehub.co/user/{account}",
+        "e_code" : 200,
+        "e_string" : "Downloads: ",
+        "m_string" : "A community for Apple Shortcuts</title>",
+        "m_code" : 200,
+        "known" : ["zachary7829", "JonathanSetzer"],
+        "cat" : "social",
         "valid" : true
        },
        {
