@@ -1207,7 +1207,18 @@
         "e_string" : "ABOUT ME",
         "m_string" : "404/favicon.png",
         "m_code" : 404,
-        "known" : ["e4c5"],
+        "known" : ["e4c5", "juanelfers"],
+        "cat" : "coding",
+        "valid" : true
+       },
+       {
+        "name" : "Code Project",
+        "uri_check" : "https://www.codeproject.com/Members/{account}",
+        "e_code" : 200,
+        "e_string" : "member since",
+        "m_string" : "Unable to load the requested member's information",
+        "m_code" : 200,
+        "known" : ["WmCraig", "Rick-York"],
         "cat" : "coding",
         "valid" : true
        },
