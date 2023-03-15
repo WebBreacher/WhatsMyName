@@ -4064,6 +4064,17 @@
         "valid" : true
        },
        {
+        "name" : "Neocities",
+        "uri_check" : "https://neocities.org/site/{account}",
+        "e_code" : 200,
+        "e_string" : "noindex, follow",
+        "m_string" : "- Not Found</title>",
+        "m_code" : 404,
+        "known" : ["fauux", "sadgrl"],
+        "cat" : "social",
+        "valid" : true
+       },
+       {
         "name" : "netvibes",
         "uri_check" : "https://www.netvibes.com/{account}",
         "e_code" : 200,
