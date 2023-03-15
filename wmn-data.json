@@ -2262,6 +2262,18 @@
         "valid" : true
        },
        {
+        "name" : "Game Jolt",
+        "uri_check" : "https://gamejolt.com/site-api/web/profile/@{account}/",
+        "uri_pretty" : "https://gamejolt.com/@{account}",
+        "e_code" : 200,
+        "e_string" : "created_on",
+        "m_string" : "null,",
+        "m_code" : 404,
+        "known" : ["nilllzz", "KorbloxTeams"],
+        "cat" : "gaming",
+        "valid" : true
+       },
+       {
         "name" : "Gamespot",
         "uri_check" : "https://www.gamespot.com/profile/{account}/",
         "e_code" : 200,
