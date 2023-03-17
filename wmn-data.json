@@ -2464,7 +2464,6 @@
        {
         "name" : "Goodgame_Russia",
         "uri_check" : "https://goodgame.ru/channel/{account}/",
-        "post_body" : "",
         "e_code" : 200,
         "e_string" : "Онлайн-трансляция</title>",
         "m_string" : "Такой страницы не существует",
