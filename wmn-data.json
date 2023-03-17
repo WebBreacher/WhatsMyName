@@ -2462,6 +2462,17 @@
         "valid" : true
        },
        {
+        "name" : "Goodgame_Russia",
+        "uri_check" : "https://goodgame.ru/channel/{account}/",
+        "e_code" : 200,
+        "e_string" : "Онлайн-трансляция</title>",
+        "m_string" : "Такой страницы не существует",
+        "m_code" : 400,
+        "known" : ["ejysarmat", "gegeboyz"],
+        "cat" : "gaming",
+        "valid" : true
+       },
+       {
         "name" : "gpodder.net",
         "uri_check" : "https://gpodder.net/user/{account}/",
         "e_code" : 200,
