@@ -4790,6 +4790,17 @@
         "valid" : true
        },
        {
+        "name" : "Pravda.me",
+        "uri_check" : "https://pravda.me/@{account}",
+        "e_code" : 200,
+        "e_string" : "Российская социальная сеть (by mastodon)</title>",
+        "m_string" : "<title>The page you are looking for isn&#39;t here.",
+        "m_code" : 404,
+        "known" : ["tass", "rt_russian"],
+        "cat" : "social",
+        "valid" : true
+       },
+       {
         "name" : "Producthunt",
         "uri_check" : "https://www.producthunt.com/@{account}",
         "e_code" : 200,
