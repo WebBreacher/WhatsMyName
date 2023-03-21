@@ -6752,6 +6752,17 @@
         "valid" : true
        },
        {
+        "name" : "Wakatime",
+        "uri_check" : "https://wakatime.com/@{account}",
+        "e_code" : 200,
+        "e_string" : ") - WakaTime</title>",
+        "m_string" : "<title>404: Not Found",
+        "m_code" : 404,
+        "known" : ["jake", "alimirzayev"],
+        "cat" : "coding",
+        "valid" : true
+       },
+       {
         "name" : "wishlistr",
         "uri_check" : "https://www.wishlistr.com/profile/{account}/",
         "e_code" : 200,
