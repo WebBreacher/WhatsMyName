@@ -9,6 +9,8 @@ from pydantic import BaseModel, root_validator
 
 class SiteOutputSchema(BaseModel):
     """For exporting to csv, json"""
+    name: str
+    category: str
     raw_response_data: Optional[str] = None
     http_status_code: int
     generated_uri: str
