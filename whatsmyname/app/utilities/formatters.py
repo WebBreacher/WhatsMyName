@@ -9,7 +9,7 @@ from terminaltables import AsciiTable
 
 def to_csv(cli_options: CliOptionsSchema, sites: List[SiteSchema]) -> None:
 
-    field_names: List[str] = ['http_status_code', 'generated_uri', 'username']
+    field_names: List[str] = ['name', 'category', 'http_status_code', 'generated_uri', 'username']
     if cli_options.verbose:
         field_names.append('raw_response_data')
         field_names.append('user_agent')
@@ -28,7 +28,7 @@ def to_csv(cli_options: CliOptionsSchema, sites: List[SiteSchema]) -> None:
 
 
 def to_json(cli_options: CliOptionsSchema, sites: List[SiteSchema]) -> None:
-    field_names = {'http_status_code': True, 'generated_uri': True, 'username': True}
+    field_names = {'name': True, 'category': True, 'http_status_code': True, 'generated_uri': True, 'username': True}
     if cli_options.verbose:
         field_names['raw_response_data'] = True
         field_names['user_agent'] = True
