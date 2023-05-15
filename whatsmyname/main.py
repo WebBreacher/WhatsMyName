@@ -35,7 +35,7 @@ async def start_check_for_presence(provided_args=None):
         to_table(cli_options, sites)
 
     if cli_options.output_stdout:
-        with open(cli_options.output_file, 'r') as fp:
+        with open(cli_options.output_file, 'r', encoding='utf-8') as fp:
             lines: List[str] = fp.readlines()
             for line in lines:
                 print('{}'.format(line.strip()))
@@ -102,7 +102,7 @@ async def start_validate_whats_my_name() -> None:
         to_table(cli_options, sites)
 
     if cli_options.output_stdout:
-        with open(cli_options.output_file, 'r') as fp:
+        with open(cli_options.output_file, 'r', encoding='utf-8') as fp:
             lines: List[str] = fp.readlines()
             for line in lines:
                 print('{}'.format(line.strip()))
