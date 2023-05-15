@@ -18,7 +18,7 @@ def to_csv(cli_options: CliOptionsSchema, sites: List[SiteSchema]) -> None:
     if cli_options.add_error_hints:
         field_names.append('error_hint')
 
-    with open(cli_options.output_file, "w") as fp:
+    with open(cli_options.output_file, "w", encoding="utf-8") as fp:
         writer = csv.DictWriter(fp, fieldnames=field_names)
         writer.writeheader()
         site: SiteSchema
@@ -37,7 +37,7 @@ def to_json(cli_options: CliOptionsSchema, sites: List[SiteSchema]) -> None:
     if cli_options.add_error_hints:
         field_names['error_hint'] = True
 
-    with open(fix_file_name(cli_options.output_file), "w") as fp:
+    with open(fix_file_name(cli_options.output_file), "w", encoding="utf-8") as fp:
         fp.write("[")
         site: SiteSchema
         for idx, site in enumerate(sites):
