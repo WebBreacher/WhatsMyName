@@ -13,7 +13,7 @@ def site_file_extractor(file_path: str) -> List[SiteSchema]:
     :param file_path: str
     :return: List[Site]
     """
-    with open(file_path) as json_file:
+    with open(file_path, "r", encoding="utf-8") as json_file:
         json_data = json.load(json_file)
         sites_configuration = SitesConfigurationSchema(**json_data)
         return sites_configuration.sites
@@ -25,6 +25,6 @@ def user_agent_extractor(file_path: str) -> List[UserAgentSchema]:
     :param file_path: str
     :return: List[UserAgent]
     """
-    with open(file_path) as json_file:
+    with open(file_path, "r", encoding="utf-8") as json_file:
         json_data = json.load(json_file)
         return parse_obj_as(List[UserAgentSchema], json_data)
