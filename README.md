@@ -2,7 +2,9 @@
 
 This repository has the data required to perform username enumeration on various websites. Content is in a JSON file and can easily be used in other projects such as the ones below:
 
-<center><img src="https://github.com/WebBreacher/WhatsMyName/blob/main/whatsmyname.png" width="300"></center>
+<p align="center">
+  <img src="https://github.com/WebBreacher/WhatsMyName/blob/main/whatsmyname.png" width="300">
+</p>
 
 ## Tools/Web Sites Using WhatsMyName
 
