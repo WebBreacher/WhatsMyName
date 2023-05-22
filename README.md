@@ -1,10 +1,26 @@
+<p align="center">
+  <img src="https://github.com/WebBreacher/WhatsMyName/blob/main/whatsmyname.png" width="400">
+</p>
+
 # WhatsMyName
 
-This repository has the data required to perform username enumeration on various websites. Content is in a JSON file and can easily be used in other projects such as the ones below:
+What is WhatsMyName? It is a project that [Micah "WebBreacher" Hoffman](https://webbreacher.com) created in 2015 with the goal of discovering if usernames were used on a given website. He was frustrated with the false positives that were present in the username checkers of that time and so he made his own. Fast forward to today and many people have helped this open-source project evolve into what it is today.
 
-<p align="center">
-  <img src="https://github.com/WebBreacher/WhatsMyName/blob/main/whatsmyname.png" width="300">
-</p>
+If you are an OSINT person that has come here to run the tool, well, you are probably a bit disappointed right now. In May 2023, we decided to remove all checker scripts from the project and just focus on the project's core; its data file (`wmn-dat.json`).
+
+So, we will keep finding sites and adding them and you can feel free to try any of the checker sites and scripts below that use our data.
+
+
+## How Does It Work?
+
+WhatsMyName (WMN) consists of a JSON file with detections in it. Submissions from people all over the world are included. When a request is made to one of those sites from a tool like the ones in the next section, the server replies with data that will match one of our detections. It'll tell the checker script whether there a valid user account with the name we specified on their site or not.
+
+For a site to be included in WMN it has to:
+
+1. **Be accessible.** _We cannot check sites behind paywalls or user authentication._
+2. **Put the username in the URL.** _If the URL to view a user's profile does not have that username in it, this tool won't work._
+3. **Not modify the username in the URL.** _URLs that have added user ID numbers to the username will not work in WMN. Also, sites that take your username and map it to a user ID number and then put that in the URL will not work._
+
 
 ## Tools/Web Sites Using WhatsMyName
 
