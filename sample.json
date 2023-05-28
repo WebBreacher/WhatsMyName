@@ -22,7 +22,7 @@
       "name" : "Example POST",
       "uri_check" : "https://www.example.com/interact_api/load_profile_info.php",
       "post_body" : "Name=Gareth+Wylie&Age=24&Formula=a%2Bb+%3D%3D+21",
-      "invalid_char" : ".",
+      "invalid_chars" : ".",
       "e_code" : 200,
       "e_string" : "regist_at",
       "m_code" : 404,

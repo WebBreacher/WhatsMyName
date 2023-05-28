@@ -1,13 +1,13 @@
 {
-    "license" : ["Copyright (C) 2022 Micah Hoffman",
+    "license" : ["Copyright (C) 2023 Micah Hoffman",
                 "This work is licensed under the Creative Commons Attribution-ShareAlike",
                 "4.0 International License. To view a copy of this license, visit",
                 "http://creativecommons.org/licenses/by-sa/4.0/ or send a letter to",
                 "Creative Commons, PO Box 1866, Mountain View, CA 94042, USA."],
-    "authors" : ["WebBreacher","C3n7ral051nt4g3ncy","Munchko","L0r3m1p5um","lehuff","janbinx","bcoles",
-                "arnydo","mccartney","salaheldinaz","camhoff","jocephus","swedishmike","soxoj",
-                "jspinel","ef1500","zewen","jocejocejoe", "P3run", "seintpl", "djahren",
-                "K2SOsint","Sector035","AccentuSoft"],
+    "authors" : ["Micah 'WebBreacher' Hoffman","C3n7ral051nt4g3ncy","Munchko","L0r3m1p5um","lehuff",
+                "janbinx","bcoles","arnydo","mccartney","salaheldinaz","camhoff","jocephus",
+                "swedishmike","soxoj","jspinel","ef1500","zewen","jocejocejoe","P3run","seintpl",
+                "djahren","K2SOsint","Sector035","AccentuSoft"],
     "categories" : ["archived","art","blog","business","coding","dating","finance","gaming","health",
                    "hobby","images","misc","music","news","political","search","shopping","social",
                    "tech","video","XXXPORNXXX"],
@@ -2462,6 +2462,17 @@
         "valid" : true
        },
        {
+        "name" : "Goodgame_Russia",
+        "uri_check" : "https://goodgame.ru/channel/{account}/",
+        "e_code" : 200,
+        "e_string" : "Онлайн-трансляция</title>",
+        "m_string" : "Такой страницы не существует",
+        "m_code" : 400,
+        "known" : ["ejysarmat", "gegeboyz"],
+        "cat" : "gaming",
+        "valid" : true
+       },
+       {
         "name" : "gpodder.net",
         "uri_check" : "https://gpodder.net/user/{account}/",
         "e_code" : 200,
@@ -4779,6 +4790,17 @@
         "valid" : true
        },
        {
+        "name" : "Pravda.me",
+        "uri_check" : "https://pravda.me/@{account}",
+        "e_code" : 200,
+        "e_string" : "Российская социальная сеть (by mastodon)</title>",
+        "m_string" : "<title>The page you are looking for isn&#39;t here.",
+        "m_code" : 404,
+        "known" : ["tass", "rt_russian"],
+        "cat" : "social",
+        "valid" : true
+       },
+       {
         "name" : "Producthunt",
         "uri_check" : "https://www.producthunt.com/@{account}",
         "e_code" : 200,
@@ -6567,7 +6589,8 @@
         "m_code" : 404,
         "known" : ["lisandrareyes"],
         "cat" : "shopping",
-        "valid" : true
+        "valid" : true,
+        "invalid_chars" : "."
        },
        {
         "name" : "watchmemore.com",
@@ -6726,6 +6749,17 @@
         "m_code" : 301,
         "known" : ["deae", "cheerfulsarcasm", "braydenskiresort"],
         "cat" : "social",
+        "valid" : true
+       },
+       {
+        "name" : "Wakatime",
+        "uri_check" : "https://wakatime.com/@{account}",
+        "e_code" : 200,
+        "e_string" : ") - WakaTime</title>",
+        "m_string" : "<title>404: Not Found",
+        "m_code" : 404,
+        "known" : ["jake", "alimirzayev"],
+        "cat" : "coding",
         "valid" : true
        },
        {
