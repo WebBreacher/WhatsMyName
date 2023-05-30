@@ -1024,6 +1024,18 @@
         "valid" : true
        },
        {
+        "name" : "cfx.re",
+        "uri_check" : "https://forum.cfx.re/u/{account}.json",
+        "uri_pretty" : "https://forum.cfx.re/{account}/summary",
+        "e_code" : 200,
+        "e_string" : "created_at",
+        "m_string" : "The requested URL or resource could not be found.",
+        "m_code" : 404,
+        "known" : ["masiball", "anel_hadzyc", "kiminaze"],
+        "cat" : "gaming",
+        "valid" : true
+       },
+       {
         "name" : "championat",
         "uri_check" : "https://www.championat.com/user/{account}/",
         "e_code" : 200,
