@@ -1026,7 +1026,7 @@
        {
         "name" : "cfx.re",
         "uri_check" : "https://forum.cfx.re/u/{account}.json",
-        "uri_pretty" : "https://forum.cfx.re/{account}/summary",
+        "uri_pretty" : "https://forum.cfx.re/u/{account}/summary",
         "e_code" : 200,
         "e_string" : "created_at",
         "m_string" : "The requested URL or resource could not be found.",
