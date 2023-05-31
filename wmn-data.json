@@ -124,7 +124,7 @@
        },
        {
         "name" : "ACF",
-        "uri_check" : "https://support.advancedcustomfields.com/forums/users/{account}",
+        "uri_check" : "https://support.advancedcustomfields.com/forums/users/{account}/",
         "e_code" : 200,
         "e_string" : "<title>ACF Support",
         "m_string" : "Page Not Found",
