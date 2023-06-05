@@ -2670,7 +2670,7 @@
         "name" : "hiberworld",
         "uri_check" : "https://hiberworld.com/u/{account}",
         "e_code" : 200,
-        "e_string" : "Creations by ",
+        "e_string" : "Member since ",
         "m_string" : "Looks like you got lost ",
         "m_code" : 200,
         "known" : ["Axeman", "Silver01"],
