@@ -5900,17 +5900,6 @@
         "valid" : true
        },
        {
-        "name" : "Mastodon-tfl.net.pl",
-        "uri_check" : "https://tfl.net.pl/@{account}",
-        "e_code" : 200,
-        "e_string" : "@tfl.net.pl",
-        "m_string" : "The page you are looking for isn't here.",
-        "m_code" : 404,
-        "known" : ["jaczad", "manies"],
-        "cat" : "social",
-        "valid" : true
-       },
-       {
         "name" : "themeforest",
         "uri_check" : "https://themeforest.net/user/{account}",
         "e_code" : 200,
