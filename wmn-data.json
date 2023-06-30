@@ -1637,18 +1637,6 @@
         "valid" : true
        },
        {
-        "name" : "Discuss.social (Mastodon Instance)",
-        "uri_check" : "https://discuss.social/api/v1/accounts/lookup?acct={account}",
-        "uri_pretty" : "https://discuss.social/@{account}",
-        "e_code" : 200,
-        "e_string" : "display_name",
-        "m_code" : 404,
-        "m_string" : "Record not found",
-        "known" : ["dan", "itepe18"],
-        "cat" : "social",
-        "valid" : true
-       },
-       {
         "name" : "Dissenter",
         "uri_check" : "https://dissenter.com/user/{account}",
         "e_code" : 200,
