@@ -4210,17 +4210,6 @@
         "valid" : false
        },
        {
-        "name" : "omlet",
-        "uri_check" : "https://omlet.gg/profile/{account}",
-        "e_code" : 200,
-        "e_string" : "<title>Omlet Arcade -",
-        "m_string" : "Omlet Arcade</title>",
-        "m_code" : 404,
-        "known" : ["hacker", "crypt0"],
-        "cat" : "gaming",
-        "valid" : true
-       },
-       {
         "name" : "Opencollective",
         "uri_check" : "https://opencollective.com/{account}",
         "e_code" : 200,
