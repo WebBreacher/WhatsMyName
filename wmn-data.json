@@ -701,17 +701,6 @@
         "valid" : true
        },
        {
-        "name" : "bittube",
-        "uri_check" : "https://bittube.video/c/{account}/videos",
-        "e_code" : 200,
-        "e_string" : "- BitTube</title>",
-        "m_string" : "<p>We are sorry but it seems",
-        "m_code" : 404,
-        "known" : ["nmt0", "sashaponce"],
-        "cat" : "video",
-        "valid" : true
-       },
-       {
         "name" : "BLIP.fm",
         "uri_check" : "https://blip.fm/{account}",
         "e_code" : 200,
@@ -1648,18 +1637,6 @@
         "valid" : true
        },
        {
-        "name" : "Discuss.social (Mastodon Instance)",
-        "uri_check" : "https://discuss.social/api/v1/accounts/lookup?acct={account}",
-        "uri_pretty" : "https://discuss.social/@{account}",
-        "e_code" : 200,
-        "e_string" : "display_name",
-        "m_code" : 404,
-        "m_string" : "Record not found",
-        "known" : ["dan", "itepe18"],
-        "cat" : "social",
-        "valid" : true
-       },
-       {
         "name" : "Dissenter",
         "uri_check" : "https://dissenter.com/user/{account}",
         "e_code" : 200,
@@ -2249,17 +2226,6 @@
         "m_code" : 200,
         "known" : ["karintina", "mikrogoat"],
         "cat" : "images",
-        "valid" : true
-       },
-       {
-        "name" : "Furiffic",
-        "uri_check" : "https://www.furiffic.com/{account}",
-        "e_code" : 200,
-        "e_string" : "Registered Since",
-        "m_string" : "<title>Whoops &middot; Furiffic</title>",
-        "m_code" : 404,
-        "known" : ["furiffic", "test", "admin"],
-        "cat" : "XXXPORNXXX",
         "valid" : true
        },
        {
@@ -3313,18 +3279,6 @@
         "valid" : true
        },
        {
-        "name" : "Litmind.club (Mastodon Instance)",
-        "uri_check" : "https://litmind.club/api/v1/accounts/lookup?acct={account}",
-        "uri_pretty" : "https://litmind.club/@{account}",
-        "e_code" : 200,
-        "e_string" : "display_name",
-        "m_code" : 404,
-        "m_string" : "Record not found",
-        "known" : ["litmind", "aperture"],
-        "cat" : "social",
-        "valid" : true
-       },
-       {
         "name" : "Livejournal",
         "uri_check" : "https://{account}.livejournal.com",
         "invalid_chars" : ".",
@@ -4212,17 +4166,6 @@
         "valid" : true
        },
        {
-        "name" : "ogu.gg",
-        "uri_check" : "https://ogu.gg/{account}",
-        "e_code" : 200,
-        "e_string" : "Username History",
-        "m_code" : 404,
-        "m_string" : "The member you specified is either invalid or doesn't exist.",
-        "known" : ["input", "maxwell"],
-        "cat" : "social",
-        "valid" : true
-       },
-       {
         "name" : "ok.ru",
         "uri_check" : "https://ok.ru/{account}",
         "e_code" : 200,
@@ -4254,17 +4197,6 @@
         "known" : ["janek", "test"],
         "cat" : "shopping",
         "valid" : false
-       },
-       {
-        "name" : "omlet",
-        "uri_check" : "https://omlet.gg/profile/{account}",
-        "e_code" : 200,
-        "e_string" : "<title>Omlet Arcade -",
-        "m_string" : "Omlet Arcade</title>",
-        "m_code" : 404,
-        "known" : ["hacker", "crypt0"],
-        "cat" : "gaming",
-        "valid" : true
        },
        {
         "name" : "Opencollective",
@@ -5687,18 +5619,6 @@
         "valid" : true
        },
        {
-        "name" : "Stoners.social (Mastodon Instance)",
-        "uri_check" : "https://stoners.social/api/v1/accounts/lookup?acct={account}",
-        "uri_pretty" : "https://stoners.social/@{account}",
-        "e_code" : 200,
-        "e_string" : "display_name",
-        "m_code" : 404,
-        "m_string" : "Record not found",
-        "known" : ["Tony", "slothmagic"],
-        "cat" : "social",
-        "valid" : true
-       },
-       {
         "name" : "StoryCorps",
         "uri_check" : "https://archive.storycorps.org/user/{account}/",
         "e_code" : 200,
@@ -5965,17 +5885,6 @@
         "m_code" : 302,
         "known" : ["test"],
         "cat" : "gaming",
-        "valid" : true
-       },
-       {
-        "name" : "Mastodon-tfl.net.pl",
-        "uri_check" : "https://tfl.net.pl/@{account}",
-        "e_code" : 200,
-        "e_string" : "@tfl.net.pl",
-        "m_string" : "The page you are looking for isn't here.",
-        "m_code" : 404,
-        "known" : ["jaczad", "manies"],
-        "cat" : "social",
         "valid" : true
        },
        {
@@ -6772,17 +6681,6 @@
         "m_code" : 302,
         "known" : ["test"],
         "cat" : "shopping",
-        "valid" : true
-       },
-       {
-        "name" : "Wolni Słowianie",
-        "uri_check" : "https://wolnislowianie.pl/{account}",
-        "e_code" : 200,
-        "e_string" : "Oś czasu",
-        "m_string" : "Nie znaleziono strony, której szukasz.",
-        "m_code" : 404,
-        "known" : ["janek", "kowal"],
-        "cat" : "social",
         "valid" : true
        },
        {
