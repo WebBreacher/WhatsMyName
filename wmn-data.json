@@ -6696,17 +6696,6 @@
         "valid" : true
        },
        {
-        "name" : "Wolni Słowianie",
-        "uri_check" : "https://wolnislowianie.pl/{account}",
-        "e_code" : 200,
-        "e_string" : "Oś czasu",
-        "m_string" : "Nie znaleziono strony, której szukasz.",
-        "m_code" : 404,
-        "known" : ["janek", "kowal"],
-        "cat" : "social",
-        "valid" : true
-       },
-       {
         "name" : "wordnik",
         "uri_check" : "https://www.wordnik.com/users/{account}",
         "e_code" : 200,
