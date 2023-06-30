@@ -5619,18 +5619,6 @@
         "valid" : true
        },
        {
-        "name" : "Stoners.social (Mastodon Instance)",
-        "uri_check" : "https://stoners.social/api/v1/accounts/lookup?acct={account}",
-        "uri_pretty" : "https://stoners.social/@{account}",
-        "e_code" : 200,
-        "e_string" : "display_name",
-        "m_code" : 404,
-        "m_string" : "Record not found",
-        "known" : ["Tony", "slothmagic"],
-        "cat" : "social",
-        "valid" : true
-       },
-       {
         "name" : "StoryCorps",
         "uri_check" : "https://archive.storycorps.org/user/{account}/",
         "e_code" : 200,
