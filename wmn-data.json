@@ -180,7 +180,6 @@
        {
        "name" : "aflam",
        "uri_check" : "https://www.aflam4you.net/profile.html?u={account}",
-       "post_body" : "",
        "e_code" : 200,
        "e_string" : ") on بث حي و مباشر",
        "m_string" : "Plz Visit",
@@ -4491,7 +4490,6 @@
        {
       "name" : "Picsart",
       "uri_check" : "https://picsart.com/u/{account}",
-      "post_body" : "",
       "e_code" : 200,
       "e_string" : "Profiles on Picsart",
       "m_string" : "User not found",
@@ -4591,7 +4589,6 @@
        {
        "name" : "Pokec",
        "uri_check" : "https://pokec.azet.sk/{account}",
-       "post_body" : "",
        "e_code" : 200,
        "e_string" :"idReportedUser",
        "m_string" : "Neexistujúci používateľ",
@@ -6830,7 +6827,6 @@
        {
        "name" : "yapishu",
        "uri_check" : "https://yapishu.net/user/{account}",
-       "post_body" : "",
        "e_code" : 200,
        "e_string" : "for_profile",
        "m_string" : "Not Found (#404)",
