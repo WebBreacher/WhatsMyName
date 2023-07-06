@@ -4898,7 +4898,7 @@
        },
        {
         "name" : "Rant.li",
-        "uri_check" : "https://www.rant.li/{account}/",
+        "uri_check" : "https://rant.li/{account}/",
         "e_code" : 200,
         "e_string" : "blog-title",
         "m_code" : 404,
