@@ -390,9 +390,9 @@
        },
        {
         "name" : "Arduino",
-        "uri_check" : "https://create.arduino.cc/projecthub/{account}",
+        "uri_check" : "https://projecthub.arduino.cc/{account}",
         "e_code" : 200,
-        "e_string" : "- Arduino Project Hub",
+        "e_string" : "| Arduino Project Hub",
         "m_string" : "Arduino Project Hub",
         "m_code" : 404,
         "known" : ["peter", "john"],
