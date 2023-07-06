@@ -3005,7 +3005,7 @@
         "name" : "Japandict",
         "uri_check" : "https://forum.japandict.com/u/{account}",
         "e_code" : 200,
-        "e_string" : "Mentions",
+        "e_string" : "modern browser",
         "m_code" : 404,
         "m_string" : "The page you requested could not be found.",
         "known" : ["Yan", "Happy"],
