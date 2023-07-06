@@ -813,17 +813,6 @@
         "valid" : true
        },
        {
-        "name" : "Breach Forums",
-        "uri_check" : "https://breached.vc/User-{account}",
-        "e_code" : 200,
-        "e_string" : "Time Spent Online",
-        "m_code" : 404,
-        "m_string" : "The member you specified is either invalid or doesn't exist.",
-        "known" : ["dubudubw", "pompompurin"],
-        "cat" : "tech",
-        "valid" : true
-       },
-       {
         "name" : "Brickset",
         "uri_check" : "https://forum.brickset.com/profile/{account}",
         "e_code" : 200,
