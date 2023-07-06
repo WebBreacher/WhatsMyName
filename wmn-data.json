@@ -488,17 +488,6 @@
         "valid" : true
        },
        {
-        "name" : "authorSTREAM",
-        "uri_check" : "http://www.authorstream.com/{account}/",
-        "e_code" : 200,
-        "e_string" : "Presentations on authorSTREAM",
-        "m_string" : "",
-        "m_code" : 404,
-        "known" : ["test", "john"],
-        "cat" : "social",
-        "valid" : true
-       },
-       {
         "name" : "Avid Community",
         "uri_check" : "https://community.avid.com/members/{account}/default.aspx",
         "e_code" : 200,
