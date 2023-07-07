@@ -390,9 +390,9 @@
        },
        {
         "name" : "Arduino",
-        "uri_check" : "https://create.arduino.cc/projecthub/{account}",
+        "uri_check" : "https://projecthub.arduino.cc/{account}",
         "e_code" : 200,
-        "e_string" : "- Arduino Project Hub",
+        "e_string" : "| Arduino Project Hub",
         "m_string" : "Arduino Project Hub",
         "m_code" : 404,
         "known" : ["peter", "john"],
@@ -485,17 +485,6 @@
         "m_code" : 404,
         "known" : ["john", "reds"],
         "cat" : "music",
-        "valid" : true
-       },
-       {
-        "name" : "authorSTREAM",
-        "uri_check" : "http://www.authorstream.com/{account}/",
-        "e_code" : 200,
-        "e_string" : "Presentations on authorSTREAM",
-        "m_string" : "",
-        "m_code" : 404,
-        "known" : ["test", "john"],
-        "cat" : "social",
         "valid" : true
        },
        {
@@ -810,17 +799,6 @@
         "m_code" : 302,
         "known" : ["monoliorder", "hasya"],
         "cat" : "shopping",
-        "valid" : true
-       },
-       {
-        "name" : "Breach Forums",
-        "uri_check" : "https://breached.vc/User-{account}",
-        "e_code" : 200,
-        "e_string" : "Time Spent Online",
-        "m_code" : 404,
-        "m_string" : "The member you specified is either invalid or doesn't exist.",
-        "known" : ["dubudubw", "pompompurin"],
-        "cat" : "tech",
         "valid" : true
        },
        {
@@ -1172,7 +1150,7 @@
         "name" : "Codeberg",
         "uri_check" : "https://codeberg.org/{account}",
         "e_code" : 200,
-        "e_string" : "ui avatar vm",
+        "e_string" : "better with JavaScript",
         "m_code" : 404,
         "m_string" : "The page you are trying to reach either",
         "known" : ["dachary", "happy"],
@@ -3005,7 +2983,7 @@
         "name" : "Japandict",
         "uri_check" : "https://forum.japandict.com/u/{account}",
         "e_code" : 200,
-        "e_string" : "Mentions",
+        "e_string" : "modern browser",
         "m_code" : 404,
         "m_string" : "The page you requested could not be found.",
         "known" : ["Yan", "Happy"],
@@ -4898,7 +4876,7 @@
        },
        {
         "name" : "Rant.li",
-        "uri_check" : "https://www.rant.li/{account}/",
+        "uri_check" : "https://rant.li/{account}/",
         "e_code" : 200,
         "e_string" : "blog-title",
         "m_code" : 404,
