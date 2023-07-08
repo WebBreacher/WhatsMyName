@@ -279,17 +279,6 @@
         "valid" : true
        },
        {
-        "name" : "AllTrails",
-        "uri_check" : "https://www.alltrails.com/members/{account}",
-        "e_code" : 200,
-        "e_string" : "'s Profile | ",
-        "m_string" : "User could not be found.",
-        "m_code" : 302,
-        "known" : ["breckt", "rdoghartwig"],
-        "cat" : "health",
-        "valid" : true
-       },
-       {
         "name" : "Ameblo",
         "uri_check" : "https://ameblo.jp/{account}",
         "e_code" : 200,
