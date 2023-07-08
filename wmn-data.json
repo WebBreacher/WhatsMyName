@@ -645,17 +645,6 @@
         "valid" : true
        },
        {
-        "name" : "Bitbucket",
-        "uri_check" : "https://bitbucket.org/{account}/",
-        "e_code" : 200,
-        "e_string" : "Repositories",
-        "m_string" : "That link has no power here",
-        "m_code" : 404,
-        "known" : ["test", "WebBreacher"],
-        "cat" : "coding",
-        "valid" : true
-       },
-       {
         "name" : "Bitchute",
         "uri_check" : "https://www.bitchute.com/channel/{account}/",
         "e_code" : 200,
