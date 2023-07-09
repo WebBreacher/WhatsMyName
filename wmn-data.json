@@ -741,7 +741,7 @@
         "e_string" : "Chat público ao vivo de",
         "m_string" : "Câmaras de sexo free: chat pornô ao vivo",
         "m_code" : 404,
-        "known" : ["PrettyKatea", "milaowens"],
+        "known" : ["prettykatea", "milaowens"],
         "cat" : "XXXPORNXXX",
         "valid" : true
        },
@@ -849,7 +849,7 @@
         "name" : "cafecito",
         "uri_check" : "https://cafecito.app/{account}",
         "e_code" : 200,
-        "e_string" : " | Cafecito</title>",
+        "e_string" : " | Cafecito</title>",
         "m_string" : "Es posible que el enlace que seleccionaste esté roto o que se haya eliminado la página",
         "m_code" : 404,
         "known" : ["braftty", "guillermo"],
@@ -874,7 +874,7 @@
         "e_string" : "aggregateRating",
         "m_string" : "",
         "m_code" : 301,
-        "known" : ["ryansandes", "sarahall3"],
+        "known" : ["michael_owen10", "sarahall3"],
         "cat" : "shopping",
         "valid" : true
        },
@@ -1081,21 +1081,10 @@
         "valid" : true
        },
        {
-        "name" : "Cloudflare",
-        "uri_check" : "https://community.cloudflare.com/u/{account}",
-        "e_code" : 200,
-        "e_string" : "- Cloudflare Community",
-        "m_string" : "Oops! That page doesn’t exist or is private.",
-        "m_code" : 404,
-        "known" : ["bob", "john"],
-        "cat" : "tech",
-        "valid" : true
-       },
-       {
         "name" : "Clubhouse",
         "uri_check" : "https://www.clubhouse.com/@{account}",
         "e_code" : 200,
-        "e_string" : ">followers</div>",
+        "e_string" : "- Clubhouse</title>",
         "m_string" : "t find what you were looking for",
         "m_code" : 404,
         "known" : ["kirbyplessas", "rohan"],
@@ -1131,7 +1120,7 @@
         "e_string" : "<title>  Profile - ",
         "m_string" : "Oops! That page doesn’t exist",
         "m_code" : 404,
-        "known" : ["doctypeme", "jon_morris"],
+        "known" : ["doctypeme", "ocean.war"],
         "cat" : "coding",
         "valid" : true
        },
@@ -1232,17 +1221,6 @@
         "m_code" : 404,
         "known" : ["john", "blue"],
         "cat" : "art",
-        "valid" : true
-       },
-       {
-        "name" : "Mastodon-counter.social",
-        "uri_check" : "https://counter.social/@{account}",
-        "e_code" : 200,
-        "e_string" : "@counter.social) - CounterSocial</title>",
-        "m_string" : "The page you are looking for isn&#39;t here.",
-        "m_code" : 404,
-        "known" : ["ericconrad", "webbreacher"],
-        "cat" : "social",
         "valid" : true
        },
        {
@@ -1375,7 +1353,7 @@
         "e_string" : "About me",
         "m_string" : "The page you are looking for does not exist",
         "m_code" : 404,
-        "known" : ["Lars01", "janeferater"],
+        "known" : ["shime", "janeferater"],
         "cat" : "dating",
         "valid" : true
        },
@@ -1833,7 +1811,7 @@
         "e_string" : "View Profile",
         "m_string" : "The user you tried to view doesn't seem to be on the site any more",
         "m_code" : 200,
-        "known" : ["naughty_nymphomaniac", "hellfireclub", "fabswingers.com"],
+        "known" : ["justusboth2013", "hellfireclub", "fabswingers.com"],
         "cat" : "dating",
         "valid" : true
        },
