@@ -1235,17 +1235,6 @@
         "valid" : true
        },
        {
-        "name" : "Mastodon-counter.social",
-        "uri_check" : "https://counter.social/@{account}",
-        "e_code" : 200,
-        "e_string" : "@counter.social) - CounterSocial</title>",
-        "m_string" : "The page you are looking for isn&#39;t here.",
-        "m_code" : 404,
-        "known" : ["ericconrad", "webbreacher"],
-        "cat" : "social",
-        "valid" : true
-       },
-       {
         "name" : "cowboys4angels",
         "uri_check" : "https://cowboys4angels.com/cowboy/{account}/",
         "e_code" : 200,
