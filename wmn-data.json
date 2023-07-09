@@ -849,7 +849,7 @@
         "name" : "cafecito",
         "uri_check" : "https://cafecito.app/{account}",
         "e_code" : 200,
-        "e_string" : " | Cafecito</title>",
+        "e_string" : " | Cafecito</title>",
         "m_string" : "Es posible que el enlace que seleccionaste esté roto o que se haya eliminado la página",
         "m_code" : 404,
         "known" : ["braftty", "guillermo"],
