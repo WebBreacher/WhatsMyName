@@ -1095,7 +1095,7 @@
         "name" : "Clubhouse",
         "uri_check" : "https://www.clubhouse.com/@{account}",
         "e_code" : 200,
-        "e_string" : ">followers</div>",
+        "e_string" : "- Clubhouse</title>",
         "m_string" : "t find what you were looking for",
         "m_code" : 404,
         "known" : ["kirbyplessas", "rohan"],
