@@ -1131,7 +1131,7 @@
         "e_string" : "<title>  Profile - ",
         "m_string" : "Oops! That page doesn’t exist",
         "m_code" : 404,
-        "known" : ["doctypeme", "jon_morris"],
+        "known" : ["doctypeme", "ocean.war"],
         "cat" : "coding",
         "valid" : true
        },
