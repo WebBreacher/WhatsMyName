@@ -4151,7 +4151,7 @@
         "known" : ["kpise", "a_guy"],
         "cat" : "tech",
         "valid" : true
-       }, 
+       },
        {
         "name" : "OPGG",
         "uri_check" : "https://eune.op.gg/summoners/eune/{account}",
@@ -5859,6 +5859,17 @@
         "m_code" : 500,
         "known" : ["mixdop", "modifyielts"],
         "cat" : "art",
+        "valid" : true
+       },
+       {
+        "name" : "Threads.net",
+        "uri_check" : "https://www.threads.net/@{account}/",
+        "e_code" : 200,
+        "e_string" : ") on Threads</title>",
+        "m_string" : "<title>Threads</title>",
+        "m_code" : 200,
+        "known" : ["s_novoselov", "oliveralexanderdk"],
+        "cat" : "social",
         "valid" : true
        },
        {
