@@ -17,7 +17,7 @@
         "uri_check" : "https://101010.pl/@{account}",
         "e_code" : 200,
         "e_string" : "@101010.pl",
-        "m_string" : "The page you are looking for isn't here.",
+        "m_string" : "The page you are looking for isn&#39;t here.",
         "m_code" : 404,
         "known" : ["szekspir", "xaphanpl"],
         "cat" : "social",
@@ -84,7 +84,7 @@
         "e_code" : 200,
         "e_string" : "Информация / Профиль",
         "m_string" : "<title>Ошибка / 7dach.ru",
-        "m_code" : 200,
+        "m_code" : 404,
         "known" : ["lana", "svetlana"],
         "cat" : "social",
         "valid" : true
@@ -449,7 +449,7 @@
         "e_code" : 200,
         "e_string" : "answers,",
         "m_string" : "Well, apparently not anymore.",
-        "m_code" : 200,
+        "m_code" : 410,
         "known" : ["test", "bob"],
         "cat" : "social",
         "valid" : true
@@ -683,7 +683,7 @@
         "e_code" : 200,
         "e_string" : "shadow-light user-stats",
         "m_string" : "Sorry, the blog you were looking for does not exist.",
-        "m_code" : 404,
+        "m_code" : 405,
         "known" : ["07333944864481878697", "05941544278367416980"],
         "cat" : "blog",
         "valid" : true
@@ -1513,18 +1513,6 @@
         "valid" : true
        },
        {
-        "name" : "Disabled.rocks (Mastodon Instance)",
-        "uri_check" : "https://disabled.rocks/api/v1/accounts/lookup?acct={account}",
-        "uri_pretty" : "https://disabled.rocks/@{account}",
-        "e_code" : 200,
-        "e_string" : "display_name",
-        "m_code" : 404,
-        "m_string" : "Record not found",
-        "known" : ["McCullohMD", "empressofcheer"],
-        "cat" : "social",
-        "valid" : true
-       },
-       {
         "name" : "Discogs",
         "uri_check" : "https://www.discogs.com/user/{account}",
         "e_code" : 200,
@@ -1585,7 +1573,7 @@
         "uri_check" : "https://hub.docker.com/v2/users/{account}/",
         "e_code" : 200,
         "e_string" : "username",
-        "m_string" : "Not Found",
+        "m_string" : "User not found",
         "m_code" : 404,
         "known" : ["soxoj", "torvalds"],
         "cat" : "coding",
