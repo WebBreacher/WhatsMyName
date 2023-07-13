@@ -5863,7 +5863,7 @@
        },
        {
         "name" : "Threads.net",
-        "uri_check" : "https://www.threads.net/@{account}/",
+        "uri_check" : "https://www.threads.net/@{account}",
         "e_code" : 200,
         "e_string" : ") on Threads</title>",
         "m_string" : "<title>Threads</title>",
