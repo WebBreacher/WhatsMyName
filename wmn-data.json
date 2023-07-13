@@ -449,7 +449,7 @@
         "e_code" : 200,
         "e_string" : "answers,",
         "m_string" : "Well, apparently not anymore.",
-        "m_code" : 200,
+        "m_code" : 410,
         "known" : ["test", "bob"],
         "cat" : "social",
         "valid" : true
