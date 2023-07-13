@@ -5067,6 +5067,17 @@
         "valid" : true
        },
        {
+        "name" : "sedisp@ce",
+        "uri_check" : "https://sedispace.com/@{account}",
+        "e_code" : 200,
+        "e_string" : "Membre depuis -",
+        "m_string" : "- Page non trouvée!",
+        "m_code" : 302,
+        "known" : ["mamadou", "konate"],
+        "cat" : "social",
+        "valid" : true
+       },
+       {
         "name" : "Seneporno",
         "uri_check" : "https://seneporno.com/user/{account}",
         "e_code" : 200,
