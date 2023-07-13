@@ -2311,7 +2311,7 @@
         "uri_check" : "https://gitlab.com/{account}",
         "e_code" : 200,
         "e_string" : "Member since",
-        "m_string" : "You are being <a href="https://gitlab.com/users/sign_in">redirected</a>",
+        "m_string" : 'You are being <a href="https://gitlab.com/users/sign_in">redirected</a>',
         "m_code" : 302,
         "known" : ["skennedy", "KennBro", "alex", "bob"],
         "cat" : "coding",
