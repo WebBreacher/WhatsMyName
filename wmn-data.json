@@ -84,7 +84,7 @@
         "e_code" : 200,
         "e_string" : "Информация / Профиль",
         "m_string" : "<title>Ошибка / 7dach.ru",
-        "m_code" : 200,
+        "m_code" : 404,
         "known" : ["lana", "svetlana"],
         "cat" : "social",
         "valid" : true
