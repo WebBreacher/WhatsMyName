@@ -683,7 +683,7 @@
         "e_code" : 200,
         "e_string" : "shadow-light user-stats",
         "m_string" : "Sorry, the blog you were looking for does not exist.",
-        "m_code" : 404,
+        "m_code" : 405,
         "known" : ["07333944864481878697", "05941544278367416980"],
         "cat" : "blog",
         "valid" : true
