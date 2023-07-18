@@ -57,6 +57,17 @@
         "valid" : true
        },
        {
+        "name" : "35photo",
+        "uri_check" : "https://35photo.pro/@{account}/",
+        "e_code" : 200,
+        "e_string" : "<span title=\"Total photos",
+        "m_string" : "Catalogs of professional author",
+        "m_code" : 302,
+        "known" : ["mike007", "derbal"],
+        "cat" : "hobby",
+        "valid" : true
+       },
+       {
         "name" : "3dtoday",
         "uri_check" : "https://3dtoday.ru/blogs/{account}",
         "e_code" : 200,
