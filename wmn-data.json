@@ -6323,7 +6323,7 @@
         "m_string" : "<title>Missing Page - VIEWBUG.com",
         "m_code" : 404,
         "known" : ["joe", "evgeniyflor"],
-        "category" : "hobby",
+        "cat" : "hobby",
         "valid" : true
        },
        {
