@@ -6316,6 +6316,17 @@
         "valid" : true
        },
        {
+        "name" : "Viewbug",
+        "uri_check" : "https://www.viewbug.com/member/{account}",        
+        "e_code" : 200,
+        "e_string" : "s Photos - VIEWBUG.com </title>",
+        "m_string" : "<title>Missing Page - VIEWBUG.com",
+        "m_code" : 404,
+        "known" : ["joe", "evgeniyflor"],
+        "category" : "hobby",
+        "valid" : true
+       },
+       {
         "name" : "Vimeo",
         "uri_check" : "https://vimeo.com/{account}",
         "e_code" : 200,
