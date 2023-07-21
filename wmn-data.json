@@ -6879,6 +6879,17 @@
         "valid" : true
        },
        {
+        "name" : "Zepeto",
+        "uri_check" : "https://user.zepeto.me/{account}?language=en",        
+        "e_code" : 200,
+        "e_string" : "content=\"How would you look as an avatar? Look at mine!",
+        "m_string" : "<title>ZEPETO</title>",
+        "m_code" : 200,
+        "known" : ["joe", "james"],
+        "cat" : "social",
+        "valid" : true
+       },
+       {
         "name" : "zhihu",
         "uri_check" : "https://www.zhihu.com/people/{account}",
         "e_code" : 200,
