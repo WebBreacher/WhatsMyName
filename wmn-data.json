@@ -3493,6 +3493,17 @@
         "valid" : true
        },
        {
+        "name" : "Mastodon-C.IM",
+        "uri_check" : "https://c.im/@{account}",
+        "e_code" : 200,
+        "e_string" : "@c.im) - C.IM</title>",
+        "m_string" : "<title>The page you are looking for isn&#39;t here",
+        "m_code" : 404,
+        "known" : ["admin", "paidugroup"],
+        "cat" : "social",
+        "valid" : true
+       },
+       {
         "name" : "MCName (Minecraft)",
         "uri_check" : "https://mcname.info/en/search?q={account}",
         "e_code" : 200,
