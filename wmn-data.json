@@ -2318,6 +2318,17 @@
         "valid" : true
        },
        {
+        "name" : "GitHubPlus",
+        "uri_check" : "https://githubplus.com/{account}",        
+        "e_code" : 200,
+        "e_string" : ": - Github Plus</title>",
+        "m_string" : "<title>Not Found</title>",
+        "_code" : 404,
+        "known" : ["webbreacher", "C3n7ral051nt4g3ncy"],
+        "cat" : "coding",
+        "valid" : true
+       },
+       {
         "name" : "GitLab",
         "uri_check" : "https://gitlab.com/{account}",
         "e_code" : 200,
