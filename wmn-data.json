@@ -5895,6 +5895,17 @@
         "valid" : true
        },
        {
+        "name" : "thoughts",
+        "uri_check" : "https://thoughts.com/members/{account}/",        
+        "account_existence_code" : "200",
+        "account_existence_string" : "<span class=\"activity",
+        "account_missing_string" : "<title>Page not found",
+        "account_missing_code" : "404",
+        "known_accounts" : ["myownpersonalthoughts", "danwions"],
+        "category" : "hobby",
+        "valid" : true
+       },
+       {
         "name" : "Threads.net",
         "uri_check" : "https://www.threads.net/@{account}",
         "e_code" : 200,
