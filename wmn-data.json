@@ -6272,6 +6272,17 @@
         "valid" : true
        },
        {
+        "name" : "vapenews",
+        "uri_check" : "https://vapenews.ru/profile/{account}",        
+        "e_code" : 200,
+        "e_string" : "<title inertia>Профиль</title></head>",
+        "m_string" : "<title>404</title>",
+        "m_code" : 404,
+        "known" : ["igor", "vladimir"],
+        "cat" : "hobby",
+        "valid" : true
+       },
+       {
         "name" : "vsco",
         "uri_check" : "https://vsco.co/{account}/gallery",
         "e_code" : 200,
