@@ -5902,7 +5902,7 @@
         "m_string" : "<title>Page not found",
         "m_code" : 404,
         "known" : ["myownpersonalthoughts", "danwions"],
-        "category" : "hobby",
+        "cat" : "hobby",
         "valid" : true
        },
        {
