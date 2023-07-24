@@ -2857,6 +2857,17 @@
         "valid" : true
        },
        {
+        "name" : "Instagram_archives",
+        "uri_check" : "https://archive.org/wayback/available?url=https://instagram.com/{account}/",        
+        "e_code" : 200,
+        "e_string" : "\"archived_snapshots\": {\"closest\"",
+        "m_string" : "\"archived_snapshots\": {}}",
+        "m_code" : 200,
+        "known" : ["zuck", "jack"],
+        "cat" : "hobby",
+        "valid" : true
+       },
+       {
         "name" : "instructables",
         "uri_check" : "https://www.instructables.com/member/{account}/",
         "e_code" : 200,
