@@ -4142,17 +4142,6 @@
         "valid" : true
        },
        {
-        "name" : "olx",
-        "uri_check" : "https://www.olx.pl/oferty/uzytkownik/{account}/",
-        "e_code" : 200,
-        "e_string" : "Obserwuj wyszukiwanie",
-        "m_string" : "Przepraszamy, ale nie możemy znaleźć takiej strony...",
-        "m_code" : 200,
-        "known" : ["janek", "test"],
-        "cat" : "shopping",
-        "valid" : false
-       },
-       {
         "name" : "Opencollective",
         "uri_check" : "https://opencollective.com/{account}",
         "e_code" : 200,
@@ -5490,19 +5479,6 @@
         "known" : ["alice", "bob"],
         "cat" : "coding",
         "valid" : true
-       },
-       {
-        "name" : "SpankPay",
-        "uri_check" : "https://api.spankpay.com/graphql",
-        "uri_pretty" : "https://spankpay.me/{account}",
-        "post_body" : "NEED TO FIX THIS",
-        "e_code" : 200,
-        "e_string" : "headerPhoto",
-        "m_string" : "User not found",
-        "m_code" : 404,
-        "known" : ["Medroxy","brittanyandrews"],
-        "cat" : "finance",
-        "valid" : false
        },
        {
         "name" : "Speaker Deck",
