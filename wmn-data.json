@@ -57,6 +57,17 @@
         "valid" : true
        },
        {
+        "name" : "35photo",
+        "uri_check" : "https://35photo.pro/@{account}/",
+        "e_code" : 200,
+        "e_string" : "<span title=\"Total photos",
+        "m_string" : "Catalogs of professional author",
+        "m_code" : 302,
+        "known" : ["mike007", "derbal"],
+        "cat" : "social",
+        "valid" : true
+       },
+       {
         "name" : "3dtoday",
         "uri_check" : "https://3dtoday.ru/blogs/{account}",
         "e_code" : 200,
@@ -2307,6 +2318,17 @@
         "valid" : true
        },
        {
+        "name" : "GitHubPlus",
+        "uri_check" : "https://githubplus.com/{account}",
+        "e_code" : 200,
+        "e_string" : ": - Github Plus</title>",
+        "m_string" : "<title>Not Found</title>",
+        "m_code" : 404,
+        "known" : ["webbreacher", "C3n7ral051nt4g3ncy"],
+        "cat" : "coding",
+        "valid" : true
+       },
+       {
         "name" : "GitLab",
         "uri_check" : "https://gitlab.com/{account}",
         "e_code" : 200,
@@ -2831,6 +2853,17 @@
         "m_string" : "Nothing found!",
         "m_code" : 404,
         "known" : ["katyperry", "kirbstr"],
+        "cat" : "social",
+        "valid" : true
+       },
+       {
+        "name" : "Instagram_archives",
+        "uri_check" : "https://archive.org/wayback/available?url=https://instagram.com/{account}/",
+        "e_code" : 200,
+        "e_string" : "\"archived_snapshots\": {\"closest\"",
+        "m_string" : "\"archived_snapshots\": {}}",
+        "m_code" : 200,
+        "known" : ["zuck", "jack"],
         "cat" : "social",
         "valid" : true
        },
@@ -3478,6 +3511,17 @@
         "m_string" : "The page you are looking for isn&#39;t here.",
         "m_code" : 404,
         "known" : ["paula", "ahmed76farag"],
+        "cat" : "social",
+        "valid" : true
+       },
+       {
+        "name" : "Mastodon-C.IM",
+        "uri_check" : "https://c.im/@{account}",
+        "e_code" : 200,
+        "e_string" : "@c.im) - C.IM</title>",
+        "m_string" : "<title>The page you are looking for isn&#39;t here",
+        "m_code" : 404,
+        "known" : ["admin", "paidugroup"],
         "cat" : "social",
         "valid" : true
        },
@@ -5862,6 +5906,17 @@
         "valid" : true
        },
        {
+        "name" : "thoughts",
+        "uri_check" : "https://thoughts.com/members/{account}/",
+        "e_code" : 200,
+        "e_string" : "<span class=\"activity",
+        "m_string" : "<title>Page not found",
+        "m_code" : 404,
+        "known" : ["myownpersonalthoughts", "danwions"],
+        "cat" : "hobby",
+        "valid" : true
+       },
+       {
         "name" : "Threads.net",
         "uri_check" : "https://www.threads.net/@{account}",
         "e_code" : 200,
@@ -6000,7 +6055,6 @@
        {
         "name" : "Truth Social",
         "uri_check" : "https://truthsocial.com/api/v1/accounts/lookup?acct={account}",
-        "uri_pretty" : "https://www.truthsocial.com/@{account}",
         "e_code" : 200,
         "e_string" : "display_name",
         "m_string" : "Record not found",
@@ -6250,6 +6304,17 @@
         "valid" : true
        },
        {
+        "name" : "vapenews",
+        "uri_check" : "https://vapenews.ru/profile/{account}",
+        "e_code" : 200,
+        "e_string" : "<title inertia>Профиль</title></head>",
+        "m_string" : "<title>404</title>",
+        "m_code" : 404,
+        "known" : ["igor", "vladimir"],
+        "cat" : "hobby",
+        "valid" : true
+       },
+       {
         "name" : "vsco",
         "uri_check" : "https://vsco.co/{account}/gallery",
         "e_code" : 200,
@@ -6302,6 +6367,17 @@
         "m_code" : 404,
         "known" : ["GamingParodies", "planphilly"],
         "cat" : "video",
+        "valid" : true
+       },
+       {
+        "name" : "Viewbug",
+        "uri_check" : "https://www.viewbug.com/member/{account}",
+        "e_code" : 200,
+        "e_string" : "s Photos - VIEWBUG.com </title>",
+        "m_string" : "<title>Missing Page - VIEWBUG.com",
+        "m_code" : 404,
+        "known" : ["joe", "evgeniyflor"],
+        "cat" : "hobby",
         "valid" : true
        },
        {
@@ -6854,6 +6930,17 @@
         "m_code" : 200,
         "known" : ["69uzytkownik69", "Soif"],
         "cat" : "XXXPORNXXX",
+        "valid" : true
+       },
+       {
+        "name" : "Zepeto",
+        "uri_check" : "https://user.zepeto.me/{account}?language=en",
+        "e_code" : 200,
+        "e_string" : "content=\"How would you look as an avatar? Look at mine!",
+        "m_string" : "<title>ZEPETO</title>",
+        "m_code" : 200,
+        "known" : ["joe", "james"],
+        "cat" : "social",
         "valid" : true
        },
        {
