@@ -2319,7 +2319,7 @@
        },
        {
         "name" : "GitHubPlus",
-        "uri_check" : "https://githubplus.com/{account}",        
+        "uri_check" : "https://githubplus.com/{account}",
         "e_code" : 200,
         "e_string" : ": - Github Plus</title>",
         "m_string" : "<title>Not Found</title>",
@@ -2858,7 +2858,7 @@
        },
        {
         "name" : "Instagram_archives",
-        "uri_check" : "https://archive.org/wayback/available?url=https://instagram.com/{account}/",        
+        "uri_check" : "https://archive.org/wayback/available?url=https://instagram.com/{account}/",
         "e_code" : 200,
         "e_string" : "\"archived_snapshots\": {\"closest\"",
         "m_string" : "\"archived_snapshots\": {}}",
@@ -5907,7 +5907,7 @@
        },
        {
         "name" : "thoughts",
-        "uri_check" : "https://thoughts.com/members/{account}/",        
+        "uri_check" : "https://thoughts.com/members/{account}/",
         "e_code" : 200,
         "e_string" : "<span class=\"activity",
         "m_string" : "<title>Page not found",
@@ -6055,7 +6055,6 @@
        {
         "name" : "Truth Social",
         "uri_check" : "https://truthsocial.com/api/v1/accounts/lookup?acct={account}",
-        "uri_pretty" : "https://www.truthsocial.com/@{account}",
         "e_code" : 200,
         "e_string" : "display_name",
         "m_string" : "Record not found",
@@ -6306,7 +6305,7 @@
        },
        {
         "name" : "vapenews",
-        "uri_check" : "https://vapenews.ru/profile/{account}",        
+        "uri_check" : "https://vapenews.ru/profile/{account}",
         "e_code" : 200,
         "e_string" : "<title inertia>Профиль</title></head>",
         "m_string" : "<title>404</title>",
@@ -6372,7 +6371,7 @@
        },
        {
         "name" : "Viewbug",
-        "uri_check" : "https://www.viewbug.com/member/{account}",        
+        "uri_check" : "https://www.viewbug.com/member/{account}",
         "e_code" : 200,
         "e_string" : "s Photos - VIEWBUG.com </title>",
         "m_string" : "<title>Missing Page - VIEWBUG.com",
@@ -6935,7 +6934,7 @@
        },
        {
         "name" : "Zepeto",
-        "uri_check" : "https://user.zepeto.me/{account}?language=en",        
+        "uri_check" : "https://user.zepeto.me/{account}?language=en",
         "e_code" : 200,
         "e_string" : "content=\"How would you look as an avatar? Look at mine!",
         "m_string" : "<title>ZEPETO</title>",
