@@ -1069,6 +1069,17 @@
         "valid" : true
        },
        {
+        "name" : "CHERRY.TV",
+        "uri_check" : "https://cherry.tv/{account}",
+        "e_code" : 200,
+        "e_string" : "\"username",
+        "m_string" : "This isn’t the page you’re looking for",
+        "m_code" : 404,
+        "known" : ["leebaby", "lillythompson"],
+        "cat" : "XXXPORNXXX",
+        "valid" : true
+       },
+       {
         "name" : "Chess.com",
         "uri_check" : "https://www.chess.com/member/{account}",
         "e_code" : 200,
