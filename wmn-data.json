@@ -2005,6 +2005,17 @@
         "valid" : true
        },
        {
+        "name" : "Flirt4Free",
+        "uri_check" : "https://www.flirt4free.com/models/bios/{account}/about.php",
+        "e_code" : 200,
+        "e_string" : "Customers rated",
+        "m_string" : "<title>Webcam Model Directory | Flirt4Free</title>",
+        "m_code" : 200,
+        "known" : ["ava-dangelo", "emma-lawrennce"],
+        "cat" : "XXXPORNXXX",
+        "valid" : true
+       },
+       {
         "name" : "flowcode",
         "uri_check" : "https://www.flowcode.com/page/{account}",
         "e_code" : 200,
