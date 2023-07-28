@@ -1017,10 +1017,10 @@
         "name" : "chaturbate",
         "uri_check" : "https://chaturbate.com/{account}/",
         "e_code" : 200,
-        "e_string" : "'s Bio and Free Webcam",
+        "e_string" : "Last Broadcast",
         "m_string" : "It's probably just a broken link",
         "m_code" : 404,
-        "known" : ["pussylovekate", "kemii"],
+        "known" : ["katestone_again", "kemii"],
         "cat" : "XXXPORNXXX",
         "valid" : true
        },
