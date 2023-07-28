@@ -3761,6 +3761,17 @@
         "valid" : true
        },
        {
+        "name" : "Model hub",
+        "uri_check" : "https://www.modelhub.com/{account}/videos",
+        "e_code" : 200,
+        "e_string" : "<span>Modelhub Rank",
+        "m_string" : "Oops, the page you are looking for doesn't exist or another error occurred",
+        "m_code" : 404,
+        "known" : ["missbnasty", "indigo-white"],
+        "cat" : "XXXPORNXXX",
+        "valid" : true
+       },
+       {
         "name" : "Moneysavingexpert",
         "uri_check" : "https://forums.moneysavingexpert.com/profile/{account}",
         "e_code" : 200,
