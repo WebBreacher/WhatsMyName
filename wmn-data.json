@@ -3233,6 +3233,18 @@
         "valid" : true
        },
        {
+        "name" : "LIVEJASMIN",
+        "uri_check" : "https://www.livejasmin.com/en/my-content/wall/get/all/{account}/0",
+        "uri_pretty" : "https://www.livejasmin.com/en/girls#!chat/{account}",
+        "e_code" : 200,
+        "e_string" : "success",
+        "m_string" : "",
+        "m_code" : 301,
+        "known" : ["MilyThomas", "ChantelClark"],
+        "cat" : "XXXPORNXXX",
+        "valid" : true
+       },
+       {
         "name" : "Livejournal",
         "uri_check" : "https://{account}.livejournal.com",
         "invalid_chars" : ".",
