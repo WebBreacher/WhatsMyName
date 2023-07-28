@@ -6553,6 +6553,17 @@
         "valid" : true
        },
        {
+        "name" : "WECAMGIRLS",
+        "uri_check" : "https://www.wecamgirls.com/includes/ajax/coolautosuggest.php?chars={account}",
+        "e_code" : 200,
+        "e_string" : "\"id\":",
+        "m_string" : "[]",
+        "m_code" : 404,
+        "known" : ["sherrybaby", "megansweet"],
+        "cat" : "XXXPORNXXX",
+        "valid" : true
+       },
+       {
         "name" : "weebly",
         "uri_check" : "https://{account}.weebly.com/",
         "invalid_chars" : ".",
