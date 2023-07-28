@@ -890,6 +890,17 @@
         "valid" : true
        },
        {
+        "name" : "Cams.com",
+        "uri_check" : "https://cams.com/{account}",
+        "e_code" : 200,
+        "e_string" : "screen_name",
+        "m_string" : "isModelNotFound\":true",
+        "m_code" : 404,
+        "known" : ["AishaDean", "julylopez27"],
+        "cat" : "XXXPORNXXX",
+        "valid" : true
+       },
+       {
         "name" : "Carbonmade",
         "uri_check" : "https://{account}.carbonmade.com/",
         "invalid_chars" : ".",
@@ -1017,10 +1028,10 @@
         "name" : "chaturbate",
         "uri_check" : "https://chaturbate.com/{account}/",
         "e_code" : 200,
-        "e_string" : "'s Bio and Free Webcam",
+        "e_string" : "Last Broadcast",
         "m_string" : "It's probably just a broken link",
         "m_code" : 404,
-        "known" : ["pussylovekate", "kemii"],
+        "known" : ["katestone_again", "kemii"],
         "cat" : "XXXPORNXXX",
         "valid" : true
        },
@@ -2002,6 +2013,17 @@
         "m_code" : 404,
         "known" : ["cosmopolitan", "Mashable"],
         "cat" : "tech",
+        "valid" : true
+       },
+       {
+        "name" : "Flirt4Free",
+        "uri_check" : "https://www.flirt4free.com/models/bios/{account}/about.php",
+        "e_code" : 200,
+        "e_string" : "Customers rated",
+        "m_string" : "<title>Webcam Model Directory | Flirt4Free</title>",
+        "m_code" : 200,
+        "known" : ["ava-dangelo", "emma-lawrennce"],
+        "cat" : "XXXPORNXXX",
         "valid" : true
        },
        {
@@ -3222,6 +3244,18 @@
         "valid" : true
        },
        {
+        "name" : "LIVEJASMIN",
+        "uri_check" : "https://www.livejasmin.com/en/my-content/wall/get/all/{account}/0",
+        "uri_pretty" : "https://www.livejasmin.com/en/girls#!chat/{account}",
+        "e_code" : 200,
+        "e_string" : "success",
+        "m_string" : "",
+        "m_code" : 301,
+        "known" : ["MilyThomas", "ChantelClark"],
+        "cat" : "XXXPORNXXX",
+        "valid" : true
+       },
+       {
         "name" : "Livejournal",
         "uri_check" : "https://{account}.livejournal.com",
         "invalid_chars" : ".",
@@ -3758,6 +3792,17 @@
         "m_code" : 403,
         "known" : ["sprinklesoup", "emargy"],
         "cat" : "gaming",
+        "valid" : true
+       },
+       {
+        "name" : "Model hub",
+        "uri_check" : "https://www.modelhub.com/{account}/videos",
+        "e_code" : 200,
+        "e_string" : "<span>Modelhub Rank",
+        "m_string" : "Oops, the page you are looking for doesn't exist or another error occurred",
+        "m_code" : 404,
+        "known" : ["missbnasty", "indigo-white"],
+        "cat" : "XXXPORNXXX",
         "valid" : true
        },
        {
@@ -6550,6 +6595,17 @@
         "m_code" : 404,
         "known" : ["weasyl", "test"],
         "cat" : "images",
+        "valid" : true
+       },
+       {
+        "name" : "WECAMGIRLS",
+        "uri_check" : "https://www.wecamgirls.com/includes/ajax/coolautosuggest.php?chars={account}",
+        "e_code" : 200,
+        "e_string" : "\"id\":",
+        "m_string" : "[]",
+        "m_code" : 200,
+        "known" : ["sherrybaby", "megansweet"],
+        "cat" : "XXXPORNXXX",
         "valid" : true
        },
        {
