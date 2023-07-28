@@ -746,11 +746,11 @@
         "valid" : true
        },
        {
-        "name" : "bonga_cams",
-        "uri_check" : "https://pt.bongacams.com/{account}",
+        "name" : "Bonga Cams",
+        "uri_check" : "https://bongacams.com/{account}",
         "e_code" : 200,
-        "e_string" : "Chat público ao vivo de",
-        "m_string" : "Câmaras de sexo free: chat pornô ao vivo",
+        "e_string" : "Last Broadcast",
+        "m_string" : "THE PAGE CANNOT BE FOUND",
         "m_code" : 404,
         "known" : ["prettykatea", "milaowens"],
         "cat" : "XXXPORNXXX",
@@ -897,6 +897,17 @@
         "m_string" : "isModelNotFound\":true",
         "m_code" : 404,
         "known" : ["AishaDean", "julylopez27"],
+        "cat" : "XXXPORNXXX",
+        "valid" : true
+       },
+       {
+        "name" : "CamSoda",
+        "uri_check" : "https://www.camsoda.com/{account}",
+        "e_code" : 200,
+        "e_string" : "avatarUrl",
+        "m_string" : "Error, page not found",
+        "m_code" : 404,
+        "known" : ["miaandmarkk", "mariannefox1"],
         "cat" : "XXXPORNXXX",
         "valid" : true
        },
@@ -1055,6 +1066,17 @@
         "m_code" : 404,
         "known" : ["test", "janek"],
         "cat" : "images",
+        "valid" : true
+       },
+       {
+        "name" : "CHERRY.TV",
+        "uri_check" : "https://cherry.tv/{account}",
+        "e_code" : 200,
+        "e_string" : "\"username",
+        "m_string" : "This isn’t the page you’re looking for",
+        "m_code" : 404,
+        "known" : ["leebaby", "lillythompson"],
+        "cat" : "XXXPORNXXX",
         "valid" : true
        },
        {
@@ -2819,6 +2841,17 @@
         "m_code" : 404,
         "known" : ["OliverClothesoff70", "DadOnTheInternet"],
         "cat" : "images",
+        "valid" : true
+       },
+       {
+        "name" : "ImLive",
+        "uri_check" : "https://imlive.com/live-sex-chat/cam-girls/sexcamvideos-{account}/",
+        "e_code" : 200,
+        "e_string" : "About Me</span>",
+        "m_string" : "<title>ImLive.com - Page Not Found</title>",
+        "m_code" : 404,
+        "known" : ["XTheBrunetteX", "candyfeng18"],
+        "cat" : "XXXPORNXXX",
         "valid" : true
        },
        {
