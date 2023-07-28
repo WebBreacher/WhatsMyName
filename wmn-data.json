@@ -6844,6 +6844,17 @@
         "valid" : true
        },
        {
+        "name" : "xcams",
+        "uri_check" : "https://www.xcams.com/chatfs/{account}/?btnFree=1",
+        "e_code" : 200,
+        "e_string" : "cammerModelData",
+        "m_string" : "<title>xcams - Not Found</title>",
+        "m_code" : 404,
+        "known" : ["TatianaWild", "Isacris"],
+        "cat" : "XXXPORNXXX",
+        "valid" : true
+       },
+       {
         "name" : "xHamster",
         "uri_check" : "https://xhamster.com/users/{account}",
         "e_code" : 200,
