@@ -5688,7 +5688,7 @@
         "e_string" : "I Do in My Shows:",
         "m_string" : "Oops. The page you were looking for doesn't exist",
         "m_code" : 404,
-        "known" : ["DulcieRichard", "Katie-Mili"],
+        "known" : ["Eva-Lung", "katyaaxo"],
         "cat" : "XXXPORNXXX",
         "valid" : true
        },
@@ -6841,6 +6841,17 @@
         "m_code" : 404,
         "known" : ["Spiken8", "john"],
         "cat" : "gaming",
+        "valid" : true
+       },
+       {
+        "name" : "xcams",
+        "uri_check" : "https://www.xcams.com/chatfs/{account}/?btnFree=1",
+        "e_code" : 200,
+        "e_string" : "cammerModelData",
+        "m_string" : "<title>xcams - Not Found</title>",
+        "m_code" : 404,
+        "known" : ["TatianaWild", "Isacris"],
+        "cat" : "XXXPORNXXX",
         "valid" : true
        },
        {
