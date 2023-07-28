@@ -901,6 +901,17 @@
         "valid" : true
        },
        {
+        "name" : "CamSoda",
+        "uri_check" : "https://www.camsoda.com/{account}",
+        "e_code" : 200,
+        "e_string" : "avatarUrl",
+        "m_string" : "Error, page not found",
+        "m_code" : 404,
+        "known" : ["miaandmarkk", "mariannefox1"],
+        "cat" : "XXXPORNXXX",
+        "valid" : true
+       },
+       {
         "name" : "Carbonmade",
         "uri_check" : "https://{account}.carbonmade.com/",
         "invalid_chars" : ".",
