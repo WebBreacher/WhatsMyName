@@ -746,11 +746,11 @@
         "valid" : true
        },
        {
-        "name" : "bonga_cams",
-        "uri_check" : "https://pt.bongacams.com/{account}",
+        "name" : "Bonga Cams",
+        "uri_check" : "https://bongacams.com/{account}",
         "e_code" : 200,
-        "e_string" : "Chat público ao vivo de",
-        "m_string" : "Câmaras de sexo free: chat pornô ao vivo",
+        "e_string" : "Last Broadcast",
+        "m_string" : "THE PAGE CANNOT BE FOUND",
         "m_code" : 404,
         "known" : ["prettykatea", "milaowens"],
         "cat" : "XXXPORNXXX",
