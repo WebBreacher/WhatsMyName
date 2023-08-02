@@ -393,8 +393,8 @@
         "uri_check" : "https://projecthub.arduino.cc/{account}",
         "e_code" : 200,
         "e_string" : "| Arduino Project Hub",
-        "m_string" : "Arduino Project Hub",
-        "m_code" : 404,
+        "m_string" : "Oh no! Nothing to discover here.",
+        "m_code" : 200,
         "known" : ["peter", "john"],
         "cat" : "tech",
         "valid" : true
