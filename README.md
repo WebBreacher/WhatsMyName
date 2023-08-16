@@ -6,20 +6,7 @@
 
 What is WhatsMyName? It is a project that [Micah "WebBreacher" Hoffman](https://webbreacher.com) created in 2015 with the goal of discovering if usernames were used on a given website. He was frustrated with the false positives that were present in the username checkers of that time and so he made his own. Fast forward to today and many people have helped this open-source project evolve into what it is today.
 
-If you are an OSINT person that has come here to run the tool, well, you are probably a bit disappointed right now. In May 2023, we decided to remove all checker scripts from the project and just focus on the project's core; its data file (`wmn-dat.json`).
-
-So, we will keep finding sites and adding them and you can feel free to try any of the checker sites and scripts below that use our data.
-
-
-## How Does It Work?
-
-WhatsMyName (WMN) consists of a JSON file with detections in it. Submissions from people all over the world are included. When a request is made to one of those sites from a tool like the ones in the next section, the server replies with data that will match one of our detections. It'll tell the checker script whether there a valid user account with the name we specified on their site or not.
-
-For a site to be included in WMN it has to:
-
-1. **Be accessible.** _We cannot check sites behind paywalls or user authentication._
-2. **Put the username in the URL.** _If the URL to view a user's profile does not have that username in it, this tool won't work._
-3. **Not modify the username in the URL.** _URLs that have added user ID numbers to the username will not work in WMN. Also, sites that take your username and map it to a user ID number and then put that in the URL will not work._
+If you are an OSINT person that has come here to run "the tool", try any of the checker sites and scripts [below](https://github.com/WebBreacher/WhatsMyName/blob/main/README.md#toolsweb-sites-using-whatsmyname) that use our data.
 
 
 ## Tools/Web Sites Using WhatsMyName
@@ -40,6 +27,17 @@ For a site to be included in WMN it has to:
 * [Maltego WhatsMyName Transforms](https://github.com/TURROKS/Maltego_WhatsMyName) - **Maltego Local Transforms** that leverage the JSON file and check for usernames in real time.
 
 
+## How Does It Work?
+
+WhatsMyName (WMN) consists of a JSON file with detections in it. Submissions from people all over the world are included. When a request is made to one of those sites from a tool like the ones in the [previous section](https://github.com/WebBreacher/WhatsMyName/blob/main/README.md#toolsweb-sites-using-whatsmyname), the server replies with data that should match one of our detections. It'll tell the checker script whether there a valid user account with the name we specified on their site or not.
+
+For a site to be included in WMN it has to:
+
+1. **Be accessible.** _We cannot check sites behind paywalls or user authentication._
+2. **Put the username in the URL.** _If the URL to view a user's profile does not have that username in it, this tool won't work._
+3. **Not modify the username in the URL.** _URLs that have added user ID numbers to the username will not work in WMN. Also, sites that take your username and map it to a user ID number and then put that in the URL will not work._
+   
+
 ## Content
 
 * The https://github.com/WebBreacher/WhatsMyName/wiki/Problem-Removed-Sites page has websites that we have had in the project and are currently not working for some reason. We will retest those sites (in the future) and try to find detections.
@@ -55,11 +53,6 @@ See [CONTRIBUTING](CONTRIBUTING.md)
 # Social Media
 Come follow us for updates. We are on:
 * Mastodon at https://infosec.exchange/@whatsmyname <a rel="me" href="https://infosec.exchange/@whatsmyname"></a>
-* Twitter at https://twitter.com/whatsmynameproj
-
-
-# Installation (Not applicable anymore)
-Since our decision to remove all checker scripts from the project in May 2023 so we can focus on the detection JSON file, you will need to use WhatsMyName through a third party tool like those linked on https://github.com/WebBreacher/WhatsMyName/blob/main/README.md#toolsweb-sites-using-whatsmyname
 
 
 # License
