@@ -7,7 +7,7 @@
     "authors" : ["Micah 'WebBreacher' Hoffman","C3n7ral051nt4g3ncy","Munchko","L0r3m1p5um","lehuff",
                 "janbinx","bcoles","arnydo","mccartney","salaheldinaz","camhoff","jocephus",
                 "swedishmike","soxoj","jspinel","ef1500","zewen","jocejocejoe","P3run","seintpl",
-                "djahren","K2SOsint","Sector035","AccentuSoft"],
+                "djahren","K2SOsint","Sector035","AccentuSoft", "Bellingcat"],
     "categories" : ["archived","art","blog","business","coding","dating","finance","gaming","health",
                    "hobby","images","misc","music","news","political","search","shopping","social",
                    "tech","video","XXXPORNXXX"],
@@ -4985,6 +4985,17 @@
         "m_code" : 404,
         "known" : ["alexbreecooper", "Jose-Roberto-Rasi"],
         "cat" : "XXXPORNXXX",
+        "valid" : true
+       },
+       {
+        "name" : "Replit",
+        "uri_check" : "https://replit.com/@{account}",
+        "e_code" : 200,
+        "e_string" : "Copy profile link",
+        "m_code" : 404,
+        "m_string" : "404 Not Found",
+        "known" : ["david", "torcado"],
+        "cat" : "coding",
         "valid" : true
        },
        {
