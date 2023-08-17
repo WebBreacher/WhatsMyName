@@ -1,13 +1,13 @@
 {
-    "license" : ["Copyright (C) 2022 Micah Hoffman",
+    "license" : ["Copyright (C) 2023 Micah Hoffman",
                 "This work is licensed under the Creative Commons Attribution-ShareAlike",
                 "4.0 International License. To view a copy of this license, visit",
                 "http://creativecommons.org/licenses/by-sa/4.0/ or send a letter to",
                 "Creative Commons, PO Box 1866, Mountain View, CA 94042, USA."],
-    "authors" : ["WebBreacher","C3n7ral051nt4g3ncy","Munchko","L0r3m1p5um","lehuff","janbinx","bcoles",
-                "arnydo","mccartney","salaheldinaz","camhoff","jocephus","swedishmike","soxoj",
-                "jspinel","ef1500","zewen","jocejocejoe", "P3run", "seintpl", "djahren",
-                "K2SOsint","Sector035","AccentuSoft"],
+    "authors" : ["Micah 'WebBreacher' Hoffman","C3n7ral051nt4g3ncy","Munchko","L0r3m1p5um","lehuff",
+                "janbinx","bcoles","arnydo","mccartney","salaheldinaz","camhoff","jocephus",
+                "swedishmike","soxoj","jspinel","ef1500","zewen","jocejocejoe","P3run","seintpl",
+                "djahren","K2SOsint","Sector035","AccentuSoft"],
     "categories" : ["archived","art","blog","business","coding","dating","finance","gaming","health",
                    "hobby","images","misc","music","news","political","search","shopping","social",
                    "tech","video","XXXPORNXXX"],
@@ -17,7 +17,7 @@
         "uri_check" : "https://101010.pl/@{account}",
         "e_code" : 200,
         "e_string" : "@101010.pl",
-        "m_string" : "The page you are looking for isn't here.",
+        "m_string" : "The page you are looking for isn&#39;t here.",
         "m_code" : 404,
         "known" : ["szekspir", "xaphanpl"],
         "cat" : "social",
@@ -36,9 +36,9 @@
        },
        {
         "name" : "3DNews",
-        "uri_check" : "http://forum.3dnews.ru/member.php?username={account}",
+        "uri_check" : "https://forum.3dnews.tech/member.php?username={account}",
         "e_code" : 200,
-        "e_string" : "<title>Форум 3DNews - Просмотр профиля:",
+        "e_string" : "<title>Форум 3Dn Tech - Просмотр профиля:",
         "m_string" : "Пользователь не зарегистрирован и не имеет профиля для просмотра.",
         "m_code" : 200,
         "known" : ["bob", "red"],
@@ -54,6 +54,17 @@
         "m_code" : 404,
         "known" : ["bob", "john"],
         "cat" : "hobby",
+        "valid" : true
+       },
+       {
+        "name" : "35photo",
+        "uri_check" : "https://35photo.pro/@{account}/",
+        "e_code" : 200,
+        "e_string" : "<span title=\"Total photos",
+        "m_string" : "Catalogs of professional author",
+        "m_code" : 302,
+        "known" : ["mike007", "derbal"],
+        "cat" : "social",
         "valid" : true
        },
        {
@@ -84,7 +95,7 @@
         "e_code" : 200,
         "e_string" : "Информация / Профиль",
         "m_string" : "<title>Ошибка / 7dach.ru",
-        "m_code" : 200,
+        "m_code" : 404,
         "known" : ["lana", "svetlana"],
         "cat" : "social",
         "valid" : true
@@ -124,7 +135,7 @@
        },
        {
         "name" : "ACF",
-        "uri_check" : "https://support.advancedcustomfields.com/forums/users/{account}",
+        "uri_check" : "https://support.advancedcustomfields.com/forums/users/{account}/",
         "e_code" : 200,
         "e_string" : "<title>ACF Support",
         "m_string" : "Page Not Found",
@@ -159,7 +170,7 @@
         "name" : "adultism",
         "uri_check" : "https://www.adultism.com/profile/{account}",
         "e_code" : 200,
-        "e_string" : "static/r-1OqQ4o/css/www/main.css",
+        "e_string" : "Last login:",
         "m_string" : "<title> Not Found",
         "m_code" : 404,
         "known" : ["laura", "sara"],
@@ -180,7 +191,6 @@
        {
        "name" : "aflam",
        "uri_check" : "https://www.aflam4you.net/profile.html?u={account}",
-       "post_body" : "",
        "e_code" : 200,
        "e_string" : ") on بث حي و مباشر",
        "m_string" : "Plz Visit",
@@ -191,10 +201,11 @@
        },
        {
         "name" : "Airline_Pilot_Life",
-        "uri_check" : "https://airlinepilot.life/u/{account}",
+        "uri_check" : "https://airlinepilot.life/u/{account}.json",
+        "uri_pretty" : "https://airlinepilot.life/u/{account}",
         "e_code" : 200,
-        "e_string" : "<title> Profile -",
-        "m_string" : "Page Not Found - Airline Pilot Life</title>",
+        "e_string" : "primary_group_name",
+        "m_string" : "he requested URL or resource could not be found.",
         "m_code" : 404,
         "known" : ["hannah", "addison"],
         "cat" : "social",
@@ -263,7 +274,7 @@
         "e_string" : "message",
         "m_string" : "Page not found",
         "m_code" : 404,
-        "known" : ["blue", "beccaturner"],
+        "known" : ["blue", "goddessbecca"],
         "cat" : "social",
         "valid" : true
        },
@@ -276,17 +287,6 @@
         "m_code" : 404,
         "known" : ["Rachid13", "Ayoub"],
         "cat" : "social",
-        "valid" : true
-       },
-       {
-        "name" : "AllTrails",
-        "uri_check" : "https://www.alltrails.com/members/{account}",
-        "e_code" : 200,
-        "e_string" : "'s Profile | ",
-        "m_string" : "User could not be found.",
-        "m_code" : 302,
-        "known" : ["breckt", "rdoghartwig"],
-        "cat" : "health",
         "valid" : true
        },
        {
@@ -390,11 +390,11 @@
        },
        {
         "name" : "Arduino",
-        "uri_check" : "https://create.arduino.cc/projecthub/{account}",
+        "uri_check" : "https://projecthub.arduino.cc/{account}",
         "e_code" : 200,
-        "e_string" : "- Arduino Project Hub",
-        "m_string" : "Arduino Project Hub",
-        "m_code" : 404,
+        "e_string" : "| Arduino Project Hub",
+        "m_string" : "Oh no! Nothing to discover here.",
+        "m_code" : 200,
         "known" : ["peter", "john"],
         "cat" : "tech",
         "valid" : true
@@ -460,7 +460,7 @@
         "e_code" : 200,
         "e_string" : "answers,",
         "m_string" : "Well, apparently not anymore.",
-        "m_code" : 200,
+        "m_code" : 410,
         "known" : ["test", "bob"],
         "cat" : "social",
         "valid" : true
@@ -485,17 +485,6 @@
         "m_code" : 404,
         "known" : ["john", "reds"],
         "cat" : "music",
-        "valid" : true
-       },
-       {
-        "name" : "authorSTREAM",
-        "uri_check" : "http://www.authorstream.com/{account}/",
-        "e_code" : 200,
-        "e_string" : "Presentations on authorSTREAM",
-        "m_string" : "",
-        "m_code" : 404,
-        "known" : ["test", "john"],
-        "cat" : "social",
         "valid" : true
        },
        {
@@ -667,17 +656,6 @@
         "valid" : true
        },
        {
-        "name" : "Bitbucket",
-        "uri_check" : "https://bitbucket.org/{account}/",
-        "e_code" : 200,
-        "e_string" : "Repositories",
-        "m_string" : "That link has no power here",
-        "m_code" : 404,
-        "known" : ["test", "WebBreacher"],
-        "cat" : "coding",
-        "valid" : true
-       },
-       {
         "name" : "Bitchute",
         "uri_check" : "https://www.bitchute.com/channel/{account}/",
         "e_code" : 200,
@@ -700,17 +678,6 @@
         "valid" : true
        },
        {
-        "name" : "bittube",
-        "uri_check" : "https://bittube.video/c/{account}/videos",
-        "e_code" : 200,
-        "e_string" : "- BitTube</title>",
-        "m_string" : "<p>We are sorry but it seems",
-        "m_code" : 404,
-        "known" : ["nmt0", "sashaponce"],
-        "cat" : "video",
-        "valid" : true
-       },
-       {
         "name" : "BLIP.fm",
         "uri_check" : "https://blip.fm/{account}",
         "e_code" : 200,
@@ -725,9 +692,9 @@
         "name" : "Blogger",
         "uri_check" : "https://www.blogger.com/profile/{account}",
         "e_code" : 200,
-        "e_string" : ">On Blogger since",
+        "e_string" : "shadow-light user-stats",
         "m_string" : "Sorry, the blog you were looking for does not exist.",
-        "m_code" : 404,
+        "m_code" : 405,
         "known" : ["07333944864481878697", "05941544278367416980"],
         "cat" : "blog",
         "valid" : true
@@ -779,13 +746,13 @@
         "valid" : true
        },
        {
-        "name" : "bonga_cams",
-        "uri_check" : "https://pt.bongacams.com/{account}",
+        "name" : "Bonga Cams",
+        "uri_check" : "https://bongacams.com/{account}",
         "e_code" : 200,
-        "e_string" : "Chat público ao vivo de",
-        "m_string" : "Câmaras de sexo free: chat pornô ao vivo",
+        "e_string" : "Last Broadcast",
+        "m_string" : "THE PAGE CANNOT BE FOUND",
         "m_code" : 404,
-        "known" : ["PrettyKatea", "milaowens"],
+        "known" : ["prettykatea", "milaowens"],
         "cat" : "XXXPORNXXX",
         "valid" : true
        },
@@ -821,17 +788,6 @@
         "m_code" : 302,
         "known" : ["monoliorder", "hasya"],
         "cat" : "shopping",
-        "valid" : true
-       },
-       {
-        "name" : "Breach Forums",
-        "uri_check" : "https://breached.vc/User-{account}",
-        "e_code" : 200,
-        "e_string" : "Time Spent Online",
-        "m_code" : 404,
-        "m_string" : "The member you specified is either invalid or doesn't exist.",
-        "known" : ["dubudubw", "pompompurin"],
-        "cat" : "tech",
         "valid" : true
        },
        {
@@ -904,7 +860,7 @@
         "name" : "cafecito",
         "uri_check" : "https://cafecito.app/{account}",
         "e_code" : 200,
-        "e_string" : " | Cafecito</title>",
+        "e_string" : " | Cafecito</title>",
         "m_string" : "Es posible que el enlace que seleccionaste esté roto o que se haya eliminado la página",
         "m_code" : 404,
         "known" : ["braftty", "guillermo"],
@@ -929,8 +885,30 @@
         "e_string" : "aggregateRating",
         "m_string" : "",
         "m_code" : 301,
-        "known" : ["ryansandes", "sarahall3"],
+        "known" : ["michael_owen10", "sarahall3"],
         "cat" : "shopping",
+        "valid" : true
+       },
+       {
+        "name" : "Cams.com",
+        "uri_check" : "https://cams.com/{account}",
+        "e_code" : 200,
+        "e_string" : "screen_name",
+        "m_string" : "isModelNotFound\":true",
+        "m_code" : 404,
+        "known" : ["AishaDean", "julylopez27"],
+        "cat" : "XXXPORNXXX",
+        "valid" : true
+       },
+       {
+        "name" : "CamSoda",
+        "uri_check" : "https://www.camsoda.com/{account}",
+        "e_code" : 200,
+        "e_string" : "avatarUrl",
+        "m_string" : "Error, page not found",
+        "m_code" : 404,
+        "known" : ["miaandmarkk", "mariannefox1"],
+        "cat" : "XXXPORNXXX",
         "valid" : true
        },
        {
@@ -1024,6 +1002,18 @@
         "valid" : true
        },
        {
+        "name" : "cfx.re",
+        "uri_check" : "https://forum.cfx.re/u/{account}.json",
+        "uri_pretty" : "https://forum.cfx.re/u/{account}/summary",
+        "e_code" : 200,
+        "e_string" : "created_at",
+        "m_string" : "The requested URL or resource could not be found.",
+        "m_code" : 404,
+        "known" : ["masiball", "anel_hadzyc", "kiminaze"],
+        "cat" : "gaming",
+        "valid" : true
+       },
+       {
         "name" : "championat",
         "uri_check" : "https://www.championat.com/user/{account}/",
         "e_code" : 200,
@@ -1049,10 +1039,10 @@
         "name" : "chaturbate",
         "uri_check" : "https://chaturbate.com/{account}/",
         "e_code" : 200,
-        "e_string" : "'s Bio and Free Webcam",
+        "e_string" : "Last Broadcast",
         "m_string" : "It's probably just a broken link",
         "m_code" : 404,
-        "known" : ["pussylovekate", "kemii"],
+        "known" : ["katestone_again", "kemii"],
         "cat" : "XXXPORNXXX",
         "valid" : true
        },
@@ -1076,6 +1066,17 @@
         "m_code" : 404,
         "known" : ["test", "janek"],
         "cat" : "images",
+        "valid" : true
+       },
+       {
+        "name" : "CHERRY.TV",
+        "uri_check" : "https://cherry.tv/{account}",
+        "e_code" : 200,
+        "e_string" : "\"username",
+        "m_string" : "This isn’t the page you’re looking for",
+        "m_code" : 404,
+        "known" : ["leebaby", "lillythompson"],
+        "cat" : "XXXPORNXXX",
         "valid" : true
        },
        {
@@ -1124,35 +1125,13 @@
         "valid" : true
        },
        {
-        "name" : "Cloudflare",
-        "uri_check" : "https://community.cloudflare.com/u/{account}",
-        "e_code" : 200,
-        "e_string" : "- Cloudflare Community",
-        "m_string" : "Oops! That page doesn’t exist or is private.",
-        "m_code" : 404,
-        "known" : ["bob", "john"],
-        "cat" : "tech",
-        "valid" : true
-       },
-       {
         "name" : "Clubhouse",
         "uri_check" : "https://www.clubhouse.com/@{account}",
         "e_code" : 200,
-        "e_string" : ">followers</div>",
+        "e_string" : "- Clubhouse</title>",
         "m_string" : "t find what you were looking for",
         "m_code" : 404,
         "known" : ["kirbyplessas", "rohan"],
-        "cat" : "social",
-        "valid" : true
-       },
-       {
-        "name" : "clusterdafrica",
-        "uri_check" : "https://clusterdafrica.com/@{account}",
-        "e_code" : 200,
-        "e_string" : "Membre depuis -",
-        "m_string" : "- Page non trouvée!",
-        "m_code" : 302,
-        "known" : ["mamadou", "konate"],
         "cat" : "social",
         "valid" : true
        },
@@ -1171,7 +1150,7 @@
         "name" : "Codeberg",
         "uri_check" : "https://codeberg.org/{account}",
         "e_code" : 200,
-        "e_string" : "ui avatar vm",
+        "e_string" : "better with JavaScript",
         "m_code" : 404,
         "m_string" : "The page you are trying to reach either",
         "known" : ["dachary", "happy"],
@@ -1185,7 +1164,7 @@
         "e_string" : "<title>  Profile - ",
         "m_string" : "Oops! That page doesn’t exist",
         "m_code" : 404,
-        "known" : ["doctypeme", "jon_morris"],
+        "known" : ["doctypeme", "ocean.war"],
         "cat" : "coding",
         "valid" : true
        },
@@ -1207,7 +1186,18 @@
         "e_string" : "ABOUT ME",
         "m_string" : "404/favicon.png",
         "m_code" : 404,
-        "known" : ["e4c5"],
+        "known" : ["e4c5", "juanelfers"],
+        "cat" : "coding",
+        "valid" : true
+       },
+       {
+        "name" : "Code Project",
+        "uri_check" : "https://www.codeproject.com/Members/{account}",
+        "e_code" : 200,
+        "e_string" : "member since",
+        "m_string" : "Unable to load the requested member's information",
+        "m_code" : 200,
+        "known" : ["WmCraig", "Rick-York"],
         "cat" : "coding",
         "valid" : true
        },
@@ -1275,17 +1265,6 @@
         "m_code" : 404,
         "known" : ["john", "blue"],
         "cat" : "art",
-        "valid" : true
-       },
-       {
-        "name" : "Mastodon-counter.social",
-        "uri_check" : "https://counter.social/@{account}",
-        "e_code" : 200,
-        "e_string" : "@counter.social) - CounterSocial</title>",
-        "m_string" : "The page you are looking for isn&#39;t here.",
-        "m_code" : 404,
-        "known" : ["ericconrad", "webbreacher"],
-        "cat" : "social",
         "valid" : true
        },
        {
@@ -1418,7 +1397,7 @@
         "e_string" : "About me",
         "m_string" : "The page you are looking for does not exist",
         "m_code" : 404,
-        "known" : ["Lars01", "janeferater"],
+        "known" : ["shime", "janeferater"],
         "cat" : "dating",
         "valid" : true
        },
@@ -1578,18 +1557,6 @@
         "valid" : true
        },
        {
-        "name" : "Disabled.rocks (Mastodon Instance)",
-        "uri_check" : "https://disabled.rocks/api/v1/accounts/lookup?acct={account}",
-        "uri_pretty" : "https://disabled.rocks/@{account}",
-        "e_code" : 200,
-        "e_string" : "display_name",
-        "m_code" : 404,
-        "m_string" : "Record not found",
-        "known" : ["McCullohMD", "empressofcheer"],
-        "cat" : "social",
-        "valid" : true
-       },
-       {
         "name" : "Discogs",
         "uri_check" : "https://www.discogs.com/user/{account}",
         "e_code" : 200,
@@ -1624,18 +1591,6 @@
         "valid" : true
        },
        {
-        "name" : "Discuss.social (Mastodon Instance)",
-        "uri_check" : "https://discuss.social/api/v1/accounts/lookup?acct={account}",
-        "uri_pretty" : "https://discuss.social/@{account}",
-        "e_code" : 200,
-        "e_string" : "display_name",
-        "m_code" : 404,
-        "m_string" : "Record not found",
-        "known" : ["dan", "itepe18"],
-        "cat" : "social",
-        "valid" : true
-       },
-       {
         "name" : "Dissenter",
         "uri_check" : "https://dissenter.com/user/{account}",
         "e_code" : 200,
@@ -1662,7 +1617,7 @@
         "uri_check" : "https://hub.docker.com/v2/users/{account}/",
         "e_code" : 200,
         "e_string" : "username",
-        "m_string" : "Not Found",
+        "m_string" : "User not found",
         "m_code" : 404,
         "known" : ["soxoj", "torvalds"],
         "cat" : "coding",
@@ -1684,10 +1639,10 @@
         "name" : "dot.cards",
         "uri_check" : "https://dot.cards/{account}",
         "e_code" : 200,
-        "e_string" : "&#x27;s dot.Profile</title>",
-        "m_string" : "Username does not exist.</title>",
-        "m_code" : 404,
-        "known" : ["dakmusic", "seattlevoiceactor"],
+        "e_string" : "profileID",
+        "m_string" : "The username does not exist",
+        "m_code" : 200,
+        "known" : ["dakmusic", "jhartwell"],
         "cat" : "business",
         "valid" : true
        },
@@ -1888,7 +1843,7 @@
         "e_string" : "View Profile",
         "m_string" : "The user you tried to view doesn't seem to be on the site any more",
         "m_code" : 200,
-        "known" : ["naughty_nymphomaniac", "hellfireclub", "fabswingers.com"],
+        "known" : ["justusboth2013", "hellfireclub", "fabswingers.com"],
         "cat" : "dating",
         "valid" : true
        },
@@ -2083,6 +2038,17 @@
         "valid" : true
        },
        {
+        "name" : "Flirt4Free",
+        "uri_check" : "https://www.flirt4free.com/models/bios/{account}/about.php",
+        "e_code" : 200,
+        "e_string" : "Customers rated",
+        "m_string" : "<title>Webcam Model Directory | Flirt4Free</title>",
+        "m_code" : 200,
+        "known" : ["ava-dangelo", "emma-lawrennce"],
+        "cat" : "XXXPORNXXX",
+        "valid" : true
+       },
+       {
         "name" : "flowcode",
         "uri_check" : "https://www.flowcode.com/page/{account}",
         "e_code" : 200,
@@ -2228,17 +2194,6 @@
         "valid" : true
        },
        {
-        "name" : "Furiffic",
-        "uri_check" : "https://www.furiffic.com/{account}",
-        "e_code" : 200,
-        "e_string" : "Registered Since",
-        "m_string" : "<title>Whoops &middot; Furiffic</title>",
-        "m_code" : 404,
-        "known" : ["furiffic", "test", "admin"],
-        "cat" : "XXXPORNXXX",
-        "valid" : true
-       },
-       {
         "name" : "Gab",
         "uri_check" : "https://gab.com/api/v1/account_by_username/{account}",
         "uri_pretty" : "https://gab.com/{account}",
@@ -2258,6 +2213,18 @@
         "m_string" : "Not Found",
         "m_code" : 404,
         "known" : ["Johnboy", "Crazy"],
+        "cat" : "gaming",
+        "valid" : true
+       },
+       {
+        "name" : "Game Jolt",
+        "uri_check" : "https://gamejolt.com/site-api/web/profile/@{account}/",
+        "uri_pretty" : "https://gamejolt.com/@{account}",
+        "e_code" : 200,
+        "e_string" : "created_on",
+        "m_string" : "null,",
+        "m_code" : 404,
+        "known" : ["nilllzz", "KorbloxTeams"],
         "cat" : "gaming",
         "valid" : true
        },
@@ -2395,6 +2362,17 @@
         "valid" : true
        },
        {
+        "name" : "GitHubPlus",
+        "uri_check" : "https://githubplus.com/{account}",
+        "e_code" : 200,
+        "e_string" : ": - Github Plus</title>",
+        "m_string" : "<title>Not Found</title>",
+        "m_code" : 404,
+        "known" : ["webbreacher", "C3n7ral051nt4g3ncy"],
+        "cat" : "coding",
+        "valid" : true
+       },
+       {
         "name" : "GitLab",
         "uri_check" : "https://gitlab.com/{account}",
         "e_code" : 200,
@@ -2439,6 +2417,17 @@
         "valid" : true
        },
        {
+        "name" : "Goodgame_Russia",
+        "uri_check" : "https://goodgame.ru/channel/{account}/",
+        "e_code" : 200,
+        "e_string" : "Онлайн-трансляция</title>",
+        "m_string" : "Такой страницы не существует",
+        "m_code" : 400,
+        "known" : ["ejysarmat", "gegeboyz"],
+        "cat" : "gaming",
+        "valid" : true
+       },
+       {
         "name" : "gpodder.net",
         "uri_check" : "https://gpodder.net/user/{account}/",
         "e_code" : 200,
@@ -2462,8 +2451,8 @@
        },
        {
         "name" : "Gravatar",
-        "uri_check" : "http://en.gravatar.com/profiles/{account}.json",
-        "uri_pretty" : "http://en.gravatar.com/profiles/{account}",
+        "uri_check" : "http://en.gravatar.com/{account}.json",
+        "uri_pretty" : "http://en.gravatar.com/{account}",
         "e_code" : 200,
         "e_string" : "entry",
         "m_string" : "User not found",
@@ -2621,9 +2610,9 @@
        },
        {
         "name" : "hiberworld",
-        "uri_check" : "https://hiberworld.com/u/{account}",
+        "uri_check" : "https://hiberworld.com/user/{account}",
         "e_code" : 200,
-        "e_string" : "Creations by ",
+        "e_string" : "Member since ",
         "m_string" : "Looks like you got lost ",
         "m_code" : 200,
         "known" : ["Axeman", "Silver01"],
@@ -2855,6 +2844,17 @@
         "valid" : true
        },
        {
+        "name" : "ImLive",
+        "uri_check" : "https://imlive.com/live-sex-chat/cam-girls/sexcamvideos-{account}/",
+        "e_code" : 200,
+        "e_string" : "About Me</span>",
+        "m_string" : "<title>ImLive.com - Page Not Found</title>",
+        "m_code" : 404,
+        "known" : ["XTheBrunetteX", "candyfeng18"],
+        "cat" : "XXXPORNXXX",
+        "valid" : true
+       },
+       {
         "name" : "inaturalist",
         "uri_check" : "https://inaturalist.nz/people/{account}",
         "e_code" : 200,
@@ -2908,6 +2908,17 @@
         "m_string" : "Nothing found!",
         "m_code" : 404,
         "known" : ["katyperry", "kirbstr"],
+        "cat" : "social",
+        "valid" : true
+       },
+       {
+        "name" : "Instagram_archives",
+        "uri_check" : "https://archive.org/wayback/available?url=https://instagram.com/{account}/",
+        "e_code" : 200,
+        "e_string" : "\"archived_snapshots\": {\"closest\"",
+        "m_string" : "\"archived_snapshots\": {}}",
+        "m_code" : 200,
+        "known" : ["zuck", "jack"],
         "cat" : "social",
         "valid" : true
        },
@@ -2993,7 +3004,7 @@
         "name" : "Japandict",
         "uri_check" : "https://forum.japandict.com/u/{account}",
         "e_code" : 200,
-        "e_string" : "Mentions",
+        "e_string" : "modern browser",
         "m_code" : 404,
         "m_string" : "The page you requested could not be found.",
         "known" : ["Yan", "Happy"],
@@ -3266,15 +3277,15 @@
         "valid" : true
        },
        {
-        "name" : "Litmind.club (Mastodon Instance)",
-        "uri_check" : "https://litmind.club/api/v1/accounts/lookup?acct={account}",
-        "uri_pretty" : "https://litmind.club/@{account}",
+        "name" : "LIVEJASMIN",
+        "uri_check" : "https://www.livejasmin.com/en/my-content/wall/get/all/{account}/0",
+        "uri_pretty" : "https://www.livejasmin.com/en/girls#!chat/{account}",
         "e_code" : 200,
-        "e_string" : "display_name",
-        "m_code" : 404,
-        "m_string" : "Record not found",
-        "known" : ["litmind", "aperture"],
-        "cat" : "social",
+        "e_string" : "success",
+        "m_string" : "",
+        "m_code" : 301,
+        "known" : ["MilyThomas", "ChantelClark"],
+        "cat" : "XXXPORNXXX",
         "valid" : true
        },
        {
@@ -3571,6 +3582,17 @@
         "valid" : true
        },
        {
+        "name" : "Mastodon-C.IM",
+        "uri_check" : "https://c.im/@{account}",
+        "e_code" : 200,
+        "e_string" : "@c.im) - C.IM</title>",
+        "m_string" : "<title>The page you are looking for isn&#39;t here",
+        "m_code" : 404,
+        "known" : ["admin", "paidugroup"],
+        "cat" : "social",
+        "valid" : true
+       },
+       {
         "name" : "MCName (Minecraft)",
         "uri_check" : "https://mcname.info/en/search?q={account}",
         "e_code" : 200,
@@ -3803,6 +3825,17 @@
         "m_code" : 403,
         "known" : ["sprinklesoup", "emargy"],
         "cat" : "gaming",
+        "valid" : true
+       },
+       {
+        "name" : "Model hub",
+        "uri_check" : "https://www.modelhub.com/{account}/videos",
+        "e_code" : 200,
+        "e_string" : "<span>Modelhub Rank",
+        "m_string" : "Oops, the page you are looking for doesn't exist or another error occurred",
+        "m_code" : 404,
+        "known" : ["missbnasty", "indigo-white"],
+        "cat" : "XXXPORNXXX",
         "valid" : true
        },
        {
@@ -4052,6 +4085,17 @@
         "valid" : true
        },
        {
+        "name" : "Neocities",
+        "uri_check" : "https://neocities.org/site/{account}",
+        "e_code" : 200,
+        "e_string" : "noindex, follow",
+        "m_string" : "- Not Found</title>",
+        "m_code" : 404,
+        "known" : ["fauux", "sadgrl"],
+        "cat" : "social",
+        "valid" : true
+       },
+       {
         "name" : "netvibes",
         "uri_check" : "https://www.netvibes.com/{account}",
         "e_code" : 200,
@@ -4154,17 +4198,6 @@
         "valid" : true
        },
        {
-        "name" : "ogu.gg",
-        "uri_check" : "https://ogu.gg/{account}",
-        "e_code" : 200,
-        "e_string" : "Username History",
-        "m_code" : 404,
-        "m_string" : "The member you specified is either invalid or doesn't exist.",
-        "known" : ["input", "maxwell"],
-        "cat" : "social",
-        "valid" : true
-       },
-       {
         "name" : "ok.ru",
         "uri_check" : "https://ok.ru/{account}",
         "e_code" : 200,
@@ -4184,28 +4217,6 @@
         "m_code" : 404,
         "known" : ["nastya3", "nastya"],
         "cat" : "misc",
-        "valid" : true
-       },
-       {
-        "name" : "olx",
-        "uri_check" : "https://www.olx.pl/oferty/uzytkownik/{account}/",
-        "e_code" : 200,
-        "e_string" : "Obserwuj wyszukiwanie",
-        "m_string" : "Przepraszamy, ale nie możemy znaleźć takiej strony...",
-        "m_code" : 200,
-        "known" : ["janek", "test"],
-        "cat" : "shopping",
-        "valid" : false
-       },
-       {
-        "name" : "omlet",
-        "uri_check" : "https://omlet.gg/profile/{account}",
-        "e_code" : 200,
-        "e_string" : "<title>Omlet Arcade -",
-        "m_string" : "Omlet Arcade</title>",
-        "m_code" : 404,
-        "known" : ["hacker", "crypt0"],
-        "cat" : "gaming",
         "valid" : true
        },
        {
@@ -4239,6 +4250,17 @@
         "m_code" : 404,
         "known" : ["kemkim"],
         "cat" : "social",
+        "valid" : true
+       },
+       {
+        "name" : "OpenWRT Forums",
+        "uri_check" : "https://forum.openwrt.org/u/{account}/summary",
+        "e_code" : 200,
+        "e_string" : "Profile",
+        "m_string" : "doesn't exist",
+        "m_code" : 404,
+        "known" : ["kpise", "a_guy"],
+        "cat" : "tech",
         "valid" : true
        },
        {
@@ -4490,7 +4512,6 @@
        {
       "name" : "Picsart",
       "uri_check" : "https://picsart.com/u/{account}",
-      "post_body" : "",
       "e_code" : 200,
       "e_string" : "Profiles on Picsart",
       "m_string" : "User not found",
@@ -4590,7 +4611,6 @@
        {
        "name" : "Pokec",
        "uri_check" : "https://pokec.azet.sk/{account}",
-       "post_body" : "",
        "e_code" : 200,
        "e_string" :"idReportedUser",
        "m_string" : "Neexistujúci používateľ",
@@ -4745,6 +4765,17 @@
         "valid" : true
        },
        {
+        "name" : "Pravda.me",
+        "uri_check" : "https://pravda.me/@{account}",
+        "e_code" : 200,
+        "e_string" : "Российская социальная сеть (by mastodon)</title>",
+        "m_string" : "<title>The page you are looking for isn&#39;t here.",
+        "m_code" : 404,
+        "known" : ["tass", "rt_russian"],
+        "cat" : "social",
+        "valid" : true
+       },
+       {
         "name" : "Producthunt",
         "uri_check" : "https://www.producthunt.com/@{account}",
         "e_code" : 200,
@@ -4889,7 +4920,7 @@
        },
        {
         "name" : "Rant.li",
-        "uri_check" : "https://www.rant.li/{account}/",
+        "uri_check" : "https://rant.li/{account}/",
         "e_code" : 200,
         "e_string" : "blog-title",
         "m_code" : 404,
@@ -5025,6 +5056,17 @@
         "valid" : true
        },
        {
+        "name" : "RoutineHub",
+        "uri_check" : "https://routinehub.co/user/{account}",
+        "e_code" : 200,
+        "e_string" : "Downloads: ",
+        "m_string" : "A community for Apple Shortcuts</title>",
+        "m_code" : 200,
+        "known" : ["zachary7829", "JonathanSetzer"],
+        "cat" : "social",
+        "valid" : true
+       },
+       {
         "name" : "rsi",
         "uri_check" : "https://robertsspaceindustries.com/citizens/{account}",
         "e_code" : 200,
@@ -5121,6 +5163,17 @@
         "m_code" : 404,
         "known" : ["rareimpact", "safc"],
         "cat" : "finance",
+        "valid" : true
+       },
+       {
+        "name" : "sedisp@ce",
+        "uri_check" : "https://sedispace.com/@{account}",
+        "e_code" : 200,
+        "e_string" : "Membre depuis -",
+        "m_string" : "- Page non trouvée!",
+        "m_code" : 302,
+        "known" : ["mamadou", "konate"],
+        "cat" : "social",
         "valid" : true
        },
        {
@@ -5506,19 +5559,6 @@
         "valid" : true
        },
        {
-        "name" : "SpankPay",
-        "uri_check" : "https://api.spankpay.com/graphql",
-        "uri_pretty" : "https://spankpay.me/{account}",
-        "post_body" : "NEED TO FIX THIS",
-        "e_code" : 200,
-        "e_string" : "headerPhoto",
-        "m_string" : "User not found",
-        "m_code" : 404,
-        "known" : ["Medroxy","brittanyandrews"],
-        "cat" : "finance",
-        "valid" : false
-       },
-       {
         "name" : "Speaker Deck",
         "uri_check" : "https://speakerdeck.com/{account}/",
         "e_code" : 200,
@@ -5607,18 +5647,6 @@
         "valid" : true
        },
        {
-        "name" : "Stoners.social (Mastodon Instance)",
-        "uri_check" : "https://stoners.social/api/v1/accounts/lookup?acct={account}",
-        "uri_pretty" : "https://stoners.social/@{account}",
-        "e_code" : 200,
-        "e_string" : "display_name",
-        "m_code" : 404,
-        "m_string" : "Record not found",
-        "known" : ["Tony", "slothmagic"],
-        "cat" : "social",
-        "valid" : true
-       },
-       {
         "name" : "StoryCorps",
         "uri_check" : "https://archive.storycorps.org/user/{account}/",
         "e_code" : 200,
@@ -5660,7 +5688,7 @@
         "e_string" : "I Do in My Shows:",
         "m_string" : "Oops. The page you were looking for doesn't exist",
         "m_code" : 404,
-        "known" : ["DulcieRichard", "Katie-Mili"],
+        "known" : ["Eva-Lung", "katyaaxo"],
         "cat" : "XXXPORNXXX",
         "valid" : true
        },
@@ -5683,7 +5711,7 @@
         "m_code" : 404,
         "m_string" : "404 Not Found",
         "known" : ["kouhy76", "Rektr0"],
-        "cat" : "video",
+        "cat" : "XXXPORNXXX",
         "valid" : true
        },
        {
@@ -5888,17 +5916,6 @@
         "valid" : true
        },
        {
-        "name" : "Mastodon-tfl.net.pl",
-        "uri_check" : "https://tfl.net.pl/@{account}",
-        "e_code" : 200,
-        "e_string" : "@tfl.net.pl",
-        "m_string" : "The page you are looking for isn't here.",
-        "m_code" : 404,
-        "known" : ["jaczad", "manies"],
-        "cat" : "social",
-        "valid" : true
-       },
-       {
         "name" : "themeforest",
         "uri_check" : "https://themeforest.net/user/{account}",
         "e_code" : 200,
@@ -5940,6 +5957,28 @@
         "m_code" : 500,
         "known" : ["mixdop", "modifyielts"],
         "cat" : "art",
+        "valid" : true
+       },
+       {
+        "name" : "thoughts",
+        "uri_check" : "https://thoughts.com/members/{account}/",
+        "e_code" : 200,
+        "e_string" : "<span class=\"activity",
+        "m_string" : "<title>Page not found",
+        "m_code" : 404,
+        "known" : ["myownpersonalthoughts", "danwions"],
+        "cat" : "hobby",
+        "valid" : true
+       },
+       {
+        "name" : "Threads.net",
+        "uri_check" : "https://www.threads.net/@{account}",
+        "e_code" : 200,
+        "e_string" : ") on Threads</title>",
+        "m_string" : "<title>Threads</title>",
+        "m_code" : 200,
+        "known" : ["s_novoselov", "oliveralexanderdk"],
+        "cat" : "social",
         "valid" : true
        },
        {
@@ -6070,7 +6109,6 @@
        {
         "name" : "Truth Social",
         "uri_check" : "https://truthsocial.com/api/v1/accounts/lookup?acct={account}",
-        "uri_pretty" : "https://www.truthsocial.com/@{account}",
         "e_code" : 200,
         "e_string" : "display_name",
         "m_string" : "Record not found",
@@ -6115,12 +6153,12 @@
        },
        {
         "name" : "Twitch",
-        "uri_check" : "https://twitchtracker.com/search?q={account}",
+        "uri_check" : "https://streamscharts.com/channels/{account}",
         "uri_pretty" : "https://twitch.tv/{account}/",
         "e_code" : 200,
-        "e_string" : "Found Exact Match",
-        "m_string" : "nothing found",
-        "m_code" : 200,
+        "e_string" : "- Twitch Stats, Analytics and Channel Overview</title>",
+        "m_string" : "<title>Page not Found (404)",
+        "m_code" : 404,
         "known" : ["summit1g", "cohhcarnage"],
         "cat" : "gaming",
         "valid" : true
@@ -6230,18 +6268,6 @@
         "valid" : true
        },
        {
-        "name" : "Uiuxdev.social (Mastodon Instance)",
-        "uri_check" : "https://uiuxdev.social/api/v1/accounts/lookup?acct={account}",
-        "uri_pretty" : "https://uiuxdev.social/@{account}",
-        "e_code" : 200,
-        "e_string" : "display_name",
-        "m_code" : 404,
-        "m_string" : "Record not found",
-        "known" : ["msr", "GravelLegend"],
-        "cat" : "social",
-        "valid" : true
-       },
-       {
         "name" : "Ultras Diary",
         "uri_check" : "http://ultrasdiary.pl/u/{account}/",
         "e_code" : 200,
@@ -6332,6 +6358,17 @@
         "valid" : true
        },
        {
+        "name" : "vapenews",
+        "uri_check" : "https://vapenews.ru/profile/{account}",
+        "e_code" : 200,
+        "e_string" : "<title inertia>Профиль</title></head>",
+        "m_string" : "<title>404</title>",
+        "m_code" : 404,
+        "known" : ["igor", "vladimir"],
+        "cat" : "hobby",
+        "valid" : true
+       },
+       {
         "name" : "vsco",
         "uri_check" : "https://vsco.co/{account}/gallery",
         "e_code" : 200,
@@ -6384,6 +6421,17 @@
         "m_code" : 404,
         "known" : ["GamingParodies", "planphilly"],
         "cat" : "video",
+        "valid" : true
+       },
+       {
+        "name" : "Viewbug",
+        "uri_check" : "https://www.viewbug.com/member/{account}",
+        "e_code" : 200,
+        "e_string" : "s Photos - VIEWBUG.com </title>",
+        "m_string" : "<title>Missing Page - VIEWBUG.com",
+        "m_code" : 404,
+        "known" : ["joe", "evgeniyflor"],
+        "cat" : "hobby",
         "valid" : true
        },
        {
@@ -6522,7 +6570,8 @@
         "m_code" : 404,
         "known" : ["lisandrareyes"],
         "cat" : "shopping",
-        "valid" : true
+        "valid" : true,
+        "invalid_chars" : "."
        },
        {
         "name" : "watchmemore.com",
@@ -6579,6 +6628,17 @@
         "m_code" : 404,
         "known" : ["weasyl", "test"],
         "cat" : "images",
+        "valid" : true
+       },
+       {
+        "name" : "WECAMGIRLS",
+        "uri_check" : "https://www.wecamgirls.com/includes/ajax/coolautosuggest.php?chars={account}",
+        "e_code" : 200,
+        "e_string" : "\"id\":",
+        "m_string" : "[]",
+        "m_code" : 200,
+        "known" : ["sherrybaby", "megansweet"],
+        "cat" : "XXXPORNXXX",
         "valid" : true
        },
        {
@@ -6651,13 +6711,13 @@
        },
        {
         "name" : "Wikipedia",
-        "uri_check" : "https://en.wikipedia.org/w/api.php?action=query&format=json&list=users&ususers={account}",
+        "uri_check" : "https://meta.wikimedia.org/w/api.php?action=query&format=json&list=globalallusers&aguprefix={account}&agulimit=100",
         "uri_pretty" : "https://en.wikipedia.org/wiki/User:{account}",
         "e_code" : 200,
-        "e_string" : "userid",
-        "m_string" : "missing:",
+        "e_string" : "{\"id\":",
+        "m_string" : ":[]}}",
         "m_code" : 200,
-        "known" : ["Mcd51", "W._Frank"],
+        "known" : ["sector051", "webbreacher"],
         "cat" : "news",
         "valid" : true
        },
@@ -6684,6 +6744,17 @@
         "valid" : true
        },
        {
+        "name" : "Wakatime",
+        "uri_check" : "https://wakatime.com/@{account}",
+        "e_code" : 200,
+        "e_string" : ") - WakaTime</title>",
+        "m_string" : "<title>404: Not Found",
+        "m_code" : 404,
+        "known" : ["jake", "alimirzayev"],
+        "cat" : "coding",
+        "valid" : true
+       },
+       {
         "name" : "wishlistr",
         "uri_check" : "https://www.wishlistr.com/profile/{account}/",
         "e_code" : 200,
@@ -6692,17 +6763,6 @@
         "m_code" : 302,
         "known" : ["test"],
         "cat" : "shopping",
-        "valid" : true
-       },
-       {
-        "name" : "Wolni Słowianie",
-        "uri_check" : "https://wolnislowianie.pl/{account}",
-        "e_code" : 200,
-        "e_string" : "Oś czasu",
-        "m_string" : "Nie znaleziono strony, której szukasz.",
-        "m_code" : 404,
-        "known" : ["janek", "kowal"],
-        "cat" : "social",
         "valid" : true
        },
        {
@@ -6784,6 +6844,17 @@
         "valid" : true
        },
        {
+        "name" : "xcams",
+        "uri_check" : "https://www.xcams.com/chatfs/{account}/?btnFree=1",
+        "e_code" : 200,
+        "e_string" : "cammerModelData",
+        "m_string" : "<title>xcams - Not Found</title>",
+        "m_code" : 404,
+        "known" : ["TatianaWild", "Isacris"],
+        "cat" : "XXXPORNXXX",
+        "valid" : true
+       },
+       {
         "name" : "xHamster",
         "uri_check" : "https://xhamster.com/users/{account}",
         "e_code" : 200,
@@ -6841,7 +6912,6 @@
        {
        "name" : "yapishu",
        "uri_check" : "https://yapishu.net/user/{account}",
-       "post_body" : "",
        "e_code" : 200,
        "e_string" : "for_profile",
        "m_string" : "Not Found (#404)",
@@ -6936,6 +7006,17 @@
         "m_code" : 200,
         "known" : ["69uzytkownik69", "Soif"],
         "cat" : "XXXPORNXXX",
+        "valid" : true
+       },
+       {
+        "name" : "Zepeto",
+        "uri_check" : "https://user.zepeto.me/{account}?language=en",
+        "e_code" : 200,
+        "e_string" : "content=\"How would you look as an avatar? Look at mine!",
+        "m_string" : "<title>ZEPETO</title>",
+        "m_code" : 200,
+        "known" : ["joe", "james"],
+        "cat" : "social",
         "valid" : true
        },
        {

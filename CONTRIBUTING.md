@@ -1,4 +1,4 @@
-You can contribute to the project in at least three different ways.
+You can contribute to the project in at least a couple ways.
 
 ## Method 1. Non-technical
 
@@ -7,6 +7,7 @@ Suggest a new site to be covered by the tool.
 How to do that:
 
 - Find the new site which has public profiles of people (with no authentication required)
+- Use [this form](https://spotinfo.co/535y) to tell us about it.... OR....
 - Create a Github Issue and submit the link to an example profile. You can
   do that by navigating to [Issues](https://github.com/WebBreacher/WhatsMyName/issues)
   and clicking "New issue"
@@ -54,11 +55,8 @@ This is too specific:
 ```
 <h2>You are browsing the profile of WebBreacher</h2>
 ```
-- Add a section to `web_accounts_list.json`
-- Test your configuration by running the tool for a given site, e.g.
-```
-python3 ./web_accounts_list_checker.py -s my.new.site.Ive.added
-```
+- Add a section to `wmn-data.json`
+- Test your configuration by running the tool for a given site
 - Submit a pull request with that change
 - There is also the `sample.json` file that you can use for testing. Simply replace the existing content with new data and test.
 
@@ -128,8 +126,3 @@ Here are examples of the site elements for both HTTP GET and HTTP POST entries:
        "valid" : true
      },
 ```
-
-## Method 3. Programming, enhancing the tool itself
-
-Basic python programming skills required.
-
