@@ -79,14 +79,14 @@ Within the `sites` elements, the format is as follows (with several parameters b
          "uri_check" : "URI to check the site with the {account} string replaced by a username",
          "uri_pretty" : "if the check_uri is for an API, this OPTIONAL element can show a human-readable page",
          "post_body" : "[OPTIONAL] if non-empty, then this entry is an HTTP POST and the content of this field are the data",
-         "invalid_chars" : "[OPTIONAL] if non-empty then checking apps should ignore or strip these characters from usernames",
+         "strip_bad_char" : "[OPTIONAL] checking apps should ignore or strip these characters from usernames",
          "e_code" : "the HTTP response code for a good 'account is there' response as an integer",
          "e_string" : "the string in the response that we look for for a good response",
          "m_string" : "this OPTIONAL string will only be in the response if there is no account found ",
          "m_code" : "the HTTP response code for a bad 'account is not there' response as an integer",
          "known" : ["a list of user accounts that can be used to test", "for user enumeration"],
-         "cat" : "a category for what the site is mainly used for. These are found at the top of the JSON",
-         "valid" : "this true or false boolean field is used to enable or disable this site element"
+         "cat" : "a category for what the site is mainly used for. The current categories are found at the top of the JSON",
+         "valid" : "this OPTIONAL parameter has a single value of True. If it is present and True, then checkers should skip this site"
       },
       ...
 ```
@@ -105,8 +105,7 @@ Here are examples of the site elements for both HTTP GET and HTTP POST entries:
        "m_code" : 404,
        "m_string" : "Account not found",
        "known" : ["whoami", "johndoe"],
-       "cat" : "images",
-       "valid" : true
+       "cat" : "images"
      },
 ```
 
@@ -122,7 +121,6 @@ Here are examples of the site elements for both HTTP GET and HTTP POST entries:
        "m_code" : 404,
        "m_string" : "Account not found",
        "known" : ["whoami", "johndoe"],
-       "cat" : "images",
-       "valid" : true
+       "cat" : "images"
      },
 ```

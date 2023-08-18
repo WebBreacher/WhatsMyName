@@ -4,13 +4,12 @@
                 "4.0 International License. To view a copy of this license, visit",
                 "http://creativecommons.org/licenses/by-sa/4.0/ or send a letter to",
                 "Creative Commons, PO Box 1866, Mountain View, CA 94042, USA."],
-    "authors" : ["Micah 'WebBreacher' Hoffman","C3n7ral051nt4g3ncy","Munchko","L0r3m1p5um","lehuff",
-                "janbinx","bcoles","arnydo","mccartney","salaheldinaz","camhoff","jocephus",
-                "swedishmike","soxoj","jspinel","ef1500","zewen","jocejocejoe","P3run","seintpl",
-                "djahren","K2SOsint","Sector035","AccentuSoft", "Bellingcat"],
+    "authors" : ["Micah 'WebBreacher' Hoffman","C3n7ral051nt4g3ncy","L0r3m1p5um","janbinx",
+                "bcoles","swedishmike","ef1500","zewen","jocejocejoe","P3run","seintpl",
+                "djahren","K2SOsint","AccentuSoft","Bellingcat","*Contributions since 2022*"],
     "categories" : ["archived","art","blog","business","coding","dating","finance","gaming","health",
                    "hobby","images","misc","music","news","political","search","shopping","social",
-                   "tech","video","XXXPORNXXX"],
+                   "tech","video","xx NSFW xx"],
     "sites" : [
        {
         "name" : "Mastodon-101010.pl",
@@ -20,8 +19,7 @@
         "m_string" : "The page you are looking for isn&#39;t here.",
         "m_code" : 404,
         "known" : ["szekspir", "xaphanpl"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "1001mem",
@@ -31,8 +29,7 @@
         "m_string" : "Этот пользователь не существует, или заблокирован.",
         "m_code" : 200,
         "known" : ["ruslan", "dima"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "3DNews",
@@ -42,8 +39,7 @@
         "m_string" : "Пользователь не зарегистрирован и не имеет профиля для просмотра.",
         "m_code" : 200,
         "known" : ["bob", "red"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "247sports",
@@ -53,8 +49,7 @@
         "m_string" : "<title>247Sports</title>",
         "m_code" : 404,
         "known" : ["bob", "john"],
-        "cat" : "hobby",
-        "valid" : true
+        "cat" : "hobby"
        },
        {
         "name" : "35photo",
@@ -64,8 +59,7 @@
         "m_string" : "Catalogs of professional author",
         "m_code" : 302,
         "known" : ["mike007", "derbal"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "3dtoday",
@@ -75,8 +69,7 @@
         "m_string" : "404 Not Found",
         "m_code" : 302,
         "known" : ["sergei", "vlad"],
-        "cat" : "hobby",
-        "valid" : true
+        "cat" : "hobby"
        },
        {
         "name" : "7cup",
@@ -86,8 +79,7 @@
         "m_string" : "Oops! The content you're attempting to access could not be found.",
         "m_code" : 404,
         "known" : [ "john", "jbob"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "7dach",
@@ -97,8 +89,7 @@
         "m_string" : "<title>Ошибка / 7dach.ru",
         "m_code" : 404,
         "known" : ["lana", "svetlana"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "21buttons",
@@ -108,8 +99,7 @@
         "m_string" : "This is not the page you're looking for",
         "m_code" : 404,
         "known" : ["teedawod", "ginamariahoffmann"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "aaha_chat",
@@ -119,8 +109,7 @@
         "m_string" : "<title>Aaha Chat Rooms - ",
         "m_code" : 301,
         "known" : ["crazy", "dog"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "about.me",
@@ -130,8 +119,7 @@
         "m_string" : "<title>about.me</title>",
         "m_code" : 404,
         "known" : ["john", "jill"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "ACF",
@@ -141,8 +129,7 @@
         "m_string" : "Page Not Found",
         "m_code" : 200,
         "known" : ["mike", "greg"],
-        "cat" : "coding",
-        "valid" : true
+        "cat" : "coding"
        },
        {
         "name" : "admire_me",
@@ -152,8 +139,7 @@
         "m_string" : "<title>Page Not Found |",
         "m_code" : 404,
         "known" : ["justjessicarabbit", "savannah250xo"],
-        "cat" : "XXXPORNXXX",
-        "valid" : true
+        "cat" : "xx NSFW xx"
        },
        {
         "name" : "Adult_Forum",
@@ -163,8 +149,7 @@
         "m_string" : "Page not found - Adult Forum Gr",
         "m_code" : 404,
         "known" : ["nastya3", "ekaterina"],
-        "cat" : "XXXPORNXXX",
-        "valid" : true
+        "cat" : "xx NSFW xx"
        },
        {
         "name" : "adultism",
@@ -174,8 +159,7 @@
         "m_string" : "<title> Not Found",
         "m_code" : 404,
         "known" : ["laura", "sara"],
-        "cat" : "XXXPORNXXX",
-        "valid" : true
+        "cat" : "xx NSFW xx"
        },
        {
         "name" : "ADVFN",
@@ -185,8 +169,7 @@
         "m_string" : "ADVFN ERROR - Page Not Found",
         "m_code" : 404,
         "known" : ["crypto", "crypto1"],
-        "cat" : "finance",
-        "valid" : true
+        "cat" : "finance"
        },
        {
        "name" : "aflam",
@@ -196,8 +179,7 @@
        "m_string" : "Plz Visit",
        "m_code" : 302,
        "known" : ["ahmed", "brahim01"],
-       "cat" : "misc",
-       "valid" : true
+       "cat" : "misc"
        },
        {
         "name" : "Airline_Pilot_Life",
@@ -208,8 +190,7 @@
         "m_string" : "he requested URL or resource could not be found.",
         "m_code" : 404,
         "known" : ["hannah", "addison"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "Airliners",
@@ -219,8 +200,7 @@
         "m_string" : "An Error Occurred",
         "m_code" : 404,
         "known" : ["pilot", "pilota"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "akniga",
@@ -230,8 +210,7 @@
         "m_string" : "К сожалению, такой страницы не существует. Вероятно, она была удалена с сервера, либо ее здесь никогда не было.",
         "m_code" : 200,
         "known" : ["bob", "blue"],
-        "cat" : "hobby",
-        "valid" : true
+        "cat" : "hobby"
        },
        {
         "name" : "Albicla",
@@ -242,8 +221,7 @@
         "m_string" : "404 Nie znaleziono użytkownika",
         "m_code" : 200,
         "known" : ["GazetaPolska", "GPCodziennie"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "alik",
@@ -253,8 +231,7 @@
         "m_string" : "<title>Vizitka nenalezena",
         "m_code" : 404,
         "known" : ["igor", "pavel"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "allesovercrypto",
@@ -264,8 +241,7 @@
         "m_string" : "De opgevraagde pagina kon niet gevonden worden.",
         "m_code" : 200,
         "known" : ["gijsv", "patrick-suiker"],
-        "cat" : "finance",
-        "valid" : true
+        "cat" : "finance"
        },
        {
         "name" : "allmylinks",
@@ -275,8 +251,7 @@
         "m_string" : "Page not found",
         "m_code" : 404,
         "known" : ["blue", "goddessbecca"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "Alloannonces",
@@ -286,8 +261,7 @@
         "m_string" : "Page non defini",
         "m_code" : 404,
         "known" : ["Rachid13", "Ayoub"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "Ameblo",
@@ -297,8 +271,7 @@
         "m_string" : "削除された可能性がございます。",
         "m_code" : 404,
         "known" : ["ereko-blog", "senpai"],
-        "cat" : "blog",
-        "valid" : true
+        "cat" : "blog"
        },
        {
         "name" : "AmericanThinker",
@@ -308,8 +281,7 @@
         "m_string" : "American Thinker</title>",
         "m_code" : 301,
         "known" : ["terrypaulding", "monicashowalter"],
-        "cat" : "political",
-        "valid" : true
+        "cat" : "political"
        },
        {
         "name" : "AnimePlanet",
@@ -319,8 +291,7 @@
         "m_string" : "Meet new friends, make reviews and recommendations.",
         "m_code" : 302,
         "known" : ["zala", "lindapearl"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "aNobii",
@@ -330,8 +301,7 @@
         "m_string" : "A user matching the specified criteria could not be found",
         "m_code" : 200,
         "known" : ["albertoricci", "trynyty01"],
-        "cat" : "hobby",
-        "valid" : true
+        "cat" : "hobby"
        },
        {
         "name" : "anonup",
@@ -341,8 +311,7 @@
         "m_string" : "Page not found!",
         "m_code" : 302,
         "known" : ["john", "peter"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "Apex Legends",
@@ -352,8 +321,7 @@
         "m_code" : 404,
         "m_string" : "PLAYER NOT FOUND",
         "known" : ["tttcheekyttt", "RollsRoyce_Dawn"],
-        "cat" : "gaming",
-        "valid" : true
+        "cat" : "gaming"
        },
        {
         "name" : "Appian",
@@ -363,8 +331,7 @@
         "m_string" : "Go back to our",
         "m_code" : 301,
         "known" : ["mikec", "varunkumarb0001"],
-        "cat" : "tech",
-        "valid" : true
+        "cat" : "tech"
        },
        {
         "name" : "apteka",
@@ -374,8 +341,7 @@
         "m_string" : "account-data-error",
         "m_code" : 200,
         "known" : ["lana", "oleg"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "Archive Of Our Own Account",
@@ -385,19 +351,17 @@
         "m_string" : ">redirected<",
         "m_code" : 302,
         "known" : ["test", "john"],
-        "cat" : "hobby",
-        "valid" : true
+        "cat" : "hobby"
        },
        {
         "name" : "Arduino",
         "uri_check" : "https://projecthub.arduino.cc/{account}",
         "e_code" : 200,
         "e_string" : "| Arduino Project Hub",
-        "m_string" : "Oh no! Nothing to discover here.",
-        "m_code" : 200,
+        "m_string" : "Arduino Project Hub",
+        "m_code" : 404,
         "known" : ["peter", "john"],
-        "cat" : "tech",
-        "valid" : true
+        "cat" : "tech"
        },
        {
         "name" : "ArmorGames",
@@ -407,8 +371,7 @@
         "m_string" : "404: Oh Noes!",
         "m_code" : 302,
         "known" : ["john", "sammy"],
-        "cat" : "gaming",
-        "valid" : true
+        "cat" : "gaming"
        },
        {
         "name" : "ArtBreeder",
@@ -418,8 +381,7 @@
         "m_string" : "Not found:",
         "m_code" : 404,
         "known" : ["dolores", "cyborghyena"],
-        "cat" : "art",
-        "valid" : true
+        "cat" : "art"
        },
        {
         "name" : "Artists & Clients",
@@ -429,8 +391,7 @@
         "m_code" : 404,
         "m_string" : "The page you requested wasn't there when we tried to get it for you. What a bother!",
         "known" : ["luluc0", "MuraArts"],
-        "cat" : "art",
-        "valid" : true
+        "cat" : "art"
        },
        {
         "name" : "ArtStation",
@@ -440,8 +401,7 @@
         "m_code" : 404,
         "m_string" : "Page not found",
         "known" : ["kongaxl_design", "alex_pi"],
-        "cat" : "art",
-        "valid" : true
+        "cat" : "art"
        },
        {
         "name" : "asciinema",
@@ -451,8 +411,7 @@
         "m_string" : "This page doesn't exist. Sorry!",
         "m_code" : 404,
         "known" : ["john", "red"],
-        "cat" : "coding",
-        "valid" : true
+        "cat" : "coding"
        },
        {
         "name" : "ask.fm",
@@ -462,8 +421,7 @@
         "m_string" : "Well, apparently not anymore.",
         "m_code" : 410,
         "known" : ["test", "bob"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "au.ru",
@@ -473,8 +431,7 @@
         "m_string" : "Пользователь не найден",
         "m_code" : 404,
         "known" : ["Svetlana7", "nastya"],
-        "cat" : "misc",
-        "valid" : true
+        "cat" : "misc"
        },
        {
         "name" : "Audiojungle",
@@ -484,8 +441,7 @@
         "m_string" : "404 - Nothing to see here",
         "m_code" : 404,
         "known" : ["john", "reds"],
-        "cat" : "music",
-        "valid" : true
+        "cat" : "music"
        },
        {
         "name" : "Avid Community",
@@ -495,8 +451,7 @@
         "m_code" : 302,
         "m_string" : "The user you requested cannot be found.",
         "known" : ["Thayne", "Admin"],
-        "cat" : "music",
-        "valid" : true
+        "cat" : "music"
        },
        {
         "name" : "babepedia",
@@ -506,8 +461,7 @@
         "m_string" : "Profile not found",
         "m_code" : 404,
         "known" : ["cherry", "betty"],
-        "cat" : "XXXPORNXXX",
-        "valid" : true
+        "cat" : "xx NSFW xx"
        },
        {
         "name" : "BabyPips",
@@ -518,8 +472,7 @@
         "m_string" : "The requested URL or resource could not be found",
         "m_code" : 404,
         "known" : ["baemax023", "scottycarsonmvp"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "Bandcamp",
@@ -529,8 +482,7 @@
         "m_string" : "<h2>Sorry, that something isn’t here.</h2>",
         "m_code" : 404,
         "known" : ["alice", "bob"],
-        "cat" : "music",
-        "valid" : true
+        "cat" : "music"
        },
        {
         "name" : "Bandlab",
@@ -541,8 +493,7 @@
         "m_string" : "Couldn't find any matching element, it might be deleted",
         "m_code" : 404,
         "known" : ["rave_flawless", "delutaya"],
-        "cat" : "music",
-        "valid" : true
+        "cat" : "music"
        },
        {
         "name" : "bblog_ru",
@@ -552,20 +503,18 @@
         "m_string" : "БэбиБлог - беременность, календарь беременности, дневники",
         "m_code" : 301,
         "known" : ["igor", "olga"],
-        "cat" : "misc",
-        "valid" : true
+        "cat" : "misc"
        },
        {
         "name" : "BDSMLR",
         "uri_check" : "https://{account}.bdsmlr.com",
-        "invalid_chars" : ".",
+        "strip_bad_char" : ".",
         "e_code" : 200,
         "e_string" : "login",
         "m_string" : "This blog doesn't exist.",
         "m_code" : 200,
         "known" : ["themunch", "shibari4all"],
-        "cat" : "XXXPORNXXX",
-        "valid" : true
+        "cat" : "xx NSFW xx"
        },
        {
         "name" : "bdsmsingles",
@@ -575,8 +524,7 @@
         "m_string" : "BDSM Singles",
         "m_code" : 302,
         "known" : ["GoddessBlueDiamo", "aalama"],
-        "cat" : "XXXPORNXXX",
-        "valid" : true
+        "cat" : "xx NSFW xx"
        },
        {
         "name" : "Behance",
@@ -586,8 +534,7 @@
         "m_string" : "<title>Behance :: Oops! We can’t find that page.</title>",
         "m_code" : 404,
         "known" : ["alice", "john"],
-        "cat" : "business",
-        "valid" : true
+        "cat" : "business"
        },
        {
         "name" : "Bentbox",
@@ -597,8 +544,7 @@
         "m_string" : "This user is currently not available",
         "m_code" : 200,
         "known" : ["brockdoom", "witchhouse", "hotoptics"],
-        "cat" : "XXXPORNXXX",
-        "valid" : true
+        "cat" : "xx NSFW xx"
        },
        {
         "name" : "BiggerPockets",
@@ -608,8 +554,7 @@
         "m_string" : "Page not found",
         "m_code" : 404,
         "known" : ["trustgreene", "chasel9"],
-        "cat" : "finance",
-        "valid" : true
+        "cat" : "finance"
        },
        {
         "name" : "BIGO Live",
@@ -619,8 +564,7 @@
         "m_string" : "userInfo:{}",
         "m_code" : 200,
         "known" : ["treasdior", "Jacin19"],
-        "cat" : "gaming",
-        "valid" : true
+        "cat" : "gaming"
        },
        {
         "name" : "Bikemap",
@@ -630,8 +574,7 @@
         "m_string" : "<title>Page not found - Error 404 ",
         "m_code" : 404,
         "known" : ["mike", "greg"],
-        "cat" : "health",
-        "valid" : true
+        "cat" : "health"
        },
        {
         "name" : "Bimpos",
@@ -641,8 +584,7 @@
         "m_string" : "Page not found",
         "m_code" : 404,
         "known" : ["john", "db"],
-        "cat" : "tech",
-        "valid" : true
+        "cat" : "tech"
        },
        {
         "name" : "biolink",
@@ -652,8 +594,7 @@
         "m_string" : "The page you’re looking for doesn’t exist",
         "m_code" : 404,
         "known" : ["adli_hm", "jake"],
-        "cat" : "misc",
-        "valid" : true
+        "cat" : "misc"
        },
        {
         "name" : "Bitchute",
@@ -663,8 +604,7 @@
         "m_string" : "404 - Page not found",
         "m_code" : 404,
         "known" : ["simon_parkes", "americafloats", "daindor"],
-        "cat" : "political",
-        "valid" : true
+        "cat" : "political"
        },
        {
         "name" : "bitcoin forum",
@@ -674,8 +614,7 @@
         "m_string" : "An Error Has Occurred!",
         "m_code" : 200,
         "known" : ["alex", "boss"],
-        "cat" : "finance",
-        "valid" : true
+        "cat" : "finance"
        },
        {
         "name" : "BLIP.fm",
@@ -685,8 +624,7 @@
         "m_string" : "",
         "m_code" : 404,
         "known" : ["john", "walnuts"],
-        "cat" : "music",
-        "valid" : true
+        "cat" : "music"
        },
        {
         "name" : "Blogger",
@@ -696,8 +634,7 @@
         "m_string" : "Sorry, the blog you were looking for does not exist.",
         "m_code" : 405,
         "known" : ["07333944864481878697", "05941544278367416980"],
-        "cat" : "blog",
-        "valid" : true
+        "cat" : "blog"
        },
        {
         "name" : "blogi.pl",
@@ -707,8 +644,7 @@
         "m_string" : "Niepoprawny adres.",
         "m_code" : 200,
         "known" : ["naukowa", "izkpaw"],
-        "cat" : "blog",
-        "valid" : true
+        "cat" : "blog"
        },
        {
         "name" : "Blogmarks",
@@ -718,20 +654,18 @@
         "m_string" : "",
         "m_code" : 200,
         "known" : ["test", "mike"],
-        "cat" : "misc",
-        "valid" : true
+        "cat" : "misc"
        },
        {
         "name" : "Blogspot",
         "uri_check" : "http://{account}.blogspot.com",
-        "invalid_chars" : ".",
+        "strip_bad_char" : ".",
         "e_code" : 200,
         "e_string" : "Blogger Template Style",
         "m_string" : "Blog not found",
         "m_code" : 404,
         "known" : ["test"],
-        "cat" : "blog",
-        "valid" : true
+        "cat" : "blog"
        },
        {
         "name" : "BodyBuilding.com",
@@ -742,19 +676,17 @@
         "m_string" : "data\" :\"\"",
         "m_code" : 200,
         "known" : ["mike"],
-        "cat" : "health",
-        "valid" : true
+        "cat" : "health"
        },
        {
-        "name" : "Bonga Cams",
-        "uri_check" : "https://bongacams.com/{account}",
+        "name" : "bonga_cams",
+        "uri_check" : "https://pt.bongacams.com/{account}",
         "e_code" : 200,
-        "e_string" : "Last Broadcast",
-        "m_string" : "THE PAGE CANNOT BE FOUND",
+        "e_string" : "Chat público ao vivo de",
+        "m_string" : "Câmaras de sexo free: chat pornô ao vivo",
         "m_code" : 404,
         "known" : ["prettykatea", "milaowens"],
-        "cat" : "XXXPORNXXX",
-        "valid" : true
+        "cat" : "xx NSFW xx"
        },
        {
         "name" : "Bookcrossing",
@@ -764,8 +696,7 @@
         "m_string" : "Sorry, we were unable to locate the content that you requested.",
         "m_code" : 404,
         "known" : ["john", "bob"],
-        "cat" : "hobby",
-        "valid" : true
+        "cat" : "hobby"
        },
        {
         "name" : "boosty",
@@ -775,20 +706,18 @@
         "m_string" : "Blog not found",
         "m_code" : 200,
         "known" : ["evdokia", "lana"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "Booth",
         "uri_check" : "https://{account}.booth.pm/",
-        "invalid_chars" : ".",
+        "strip_bad_char" : ".",
         "e_code" : 200,
         "e_string" : "- BOOTH</title>",
         "m_string" : "BOOTH - The International Indie Art Marketplace",
         "m_code" : 302,
         "known" : ["monoliorder", "hasya"],
-        "cat" : "shopping",
-        "valid" : true
+        "cat" : "shopping"
        },
        {
         "name" : "Brickset",
@@ -798,8 +727,7 @@
         "m_string" : "User Not Found",
         "m_code" : 404,
         "known" : ["lowlead", "vwong19"],
-        "cat" : "hobby",
-        "valid" : true
+        "cat" : "hobby"
        },
        {
         "name" : "Bugcrowd",
@@ -809,8 +737,7 @@
         "m_string" : ">Bugcrowd | Error",
         "m_code" : 404,
         "known" : ["bitquark", "mert"],
-        "cat" : "tech",
-        "valid" : true
+        "cat" : "tech"
        },
        {
         "name" : "Bunpro",
@@ -820,8 +747,7 @@
         "m_code" : 404,
         "m_string" : "The requested URL or resource could not be found.",
         "known" : ["blacktide", "honey"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "buymeacoffee",
@@ -831,8 +757,7 @@
         "m_string" : "The page you’re looking for doesn’t exist.",
         "m_code" : 404,
         "known" : ["freebird", "robinwong"],
-        "cat" : "finance",
-        "valid" : true
+        "cat" : "finance"
        },
        {
         "name" : "BuzzFeed",
@@ -842,8 +767,7 @@
         "m_string" : "We can't find the page you're looking for",
         "m_code" : 404,
         "known" : ["janelytvynenko", "RobertK"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "Buzznet",
@@ -853,8 +777,7 @@
         "m_string" : "The page you are looking for can't be found.",
         "m_code" : 404,
         "known" : ["carolinegawlik"],
-        "cat" : "news",
-        "valid" : true
+        "cat" : "news"
        },
        {
         "name" : "cafecito",
@@ -864,8 +787,7 @@
         "m_string" : "Es posible que el enlace que seleccionaste esté roto o que se haya eliminado la página",
         "m_code" : 404,
         "known" : ["braftty", "guillermo"],
-        "cat" : "misc",
-        "valid" : true
+        "cat" : "misc"
        },
        {
         "name" : "Calendy",
@@ -875,8 +797,7 @@
         "m_code" : 404,
         "m_string" : "Sorry, but the page you were looking for could not be found.",
         "known" : ["honey", "roger"],
-        "cat" : "misc",
-        "valid" : true
+        "cat" : "misc"
        },
        {
         "name" : "Cameo",
@@ -886,42 +807,18 @@
         "m_string" : "",
         "m_code" : 301,
         "known" : ["michael_owen10", "sarahall3"],
-        "cat" : "shopping",
-        "valid" : true
-       },
-       {
-        "name" : "Cams.com",
-        "uri_check" : "https://cams.com/{account}",
-        "e_code" : 200,
-        "e_string" : "screen_name",
-        "m_string" : "isModelNotFound\":true",
-        "m_code" : 404,
-        "known" : ["AishaDean", "julylopez27"],
-        "cat" : "XXXPORNXXX",
-        "valid" : true
-       },
-       {
-        "name" : "CamSoda",
-        "uri_check" : "https://www.camsoda.com/{account}",
-        "e_code" : 200,
-        "e_string" : "avatarUrl",
-        "m_string" : "Error, page not found",
-        "m_code" : 404,
-        "known" : ["miaandmarkk", "mariannefox1"],
-        "cat" : "XXXPORNXXX",
-        "valid" : true
+        "cat" : "shopping"
        },
        {
         "name" : "Carbonmade",
         "uri_check" : "https://{account}.carbonmade.com/",
-        "invalid_chars" : ".",
+        "strip_bad_char" : ".",
         "e_code" : 200,
         "e_string" : "s online portfolio",
         "m_string" : "site not found",
         "m_code" : 404,
         "known" : ["jenny", "bob"],
-        "cat" : "hobby",
-        "valid" : true
+        "cat" : "hobby"
        },
        {
         "name" : "Career.habr",
@@ -931,8 +828,7 @@
         "m_string" : "Ошибка 404",
         "m_code" : 404,
         "known" : ["alex", "bob"],
-        "cat" : "business",
-        "valid" : true
+        "cat" : "business"
        },
        {
         "name" : "CaringBridge",
@@ -942,20 +838,18 @@
         "m_string" : "Sorry, we can’t find that site",
         "m_code" : 404,
         "known" : ["robertherring"],
-        "cat" : "health",
-        "valid" : true
+        "cat" : "health"
        },
        {
         "name" : "carrd.co",
         "uri_check" : "https://{account}.carrd.co",
-        "invalid_chars" : ".",
+        "strip_bad_char" : ".",
         "e_code" : 200,
         "e_string" : "( Made with Carrd )",
         "m_code" : 404,
         "m_string" : "Sorry, the requested page could not be found.",
         "known" : ["liam", "peter"],
-        "cat" : "business",
-        "valid" : true
+        "cat" : "business"
        },
        {
         "name" : "cash.app",
@@ -965,8 +859,7 @@
         "m_string" : "The page you are looking for can't be found",
         "m_code" : 404,
         "known" : ["Jill", "john"],
-        "cat" : "finance",
-        "valid" : true
+        "cat" : "finance"
        },
        {
         "name" : "CastingCallClub",
@@ -976,8 +869,7 @@
         "m_code" : 302,
         "m_string" : "404: This is not the page you were looking for. In the future, our AI robot overlords will be able to better predict exactly what you were looking for.",
         "known" : ["Lindz", "Danye"],
-        "cat" : "hobby",
-        "valid" : true
+        "cat" : "hobby"
        },
        {
         "name" : "CD-Action",
@@ -987,8 +879,7 @@
         "m_string" : "Coś się popsuło...",
         "m_code" : 404,
         "known" : ["saczuan", "cormac"],
-        "cat" : "gaming",
-        "valid" : true
+        "cat" : "gaming"
        },
        {
         "name" : "cda.pl",
@@ -998,8 +889,7 @@
         "m_string" : "Strona na którą chcesz wejść nie istnieje",
         "m_code" : 200,
         "known" : ["test2", "janek"],
-        "cat" : "video",
-        "valid" : true
+        "cat" : "video"
        },
        {
         "name" : "cfx.re",
@@ -1010,8 +900,7 @@
         "m_string" : "The requested URL or resource could not be found.",
         "m_code" : 404,
         "known" : ["masiball", "anel_hadzyc", "kiminaze"],
-        "cat" : "gaming",
-        "valid" : true
+        "cat" : "gaming"
        },
        {
         "name" : "championat",
@@ -1021,8 +910,7 @@
         "m_string" : "Извините, запрашиваемая страница не найдена",
         "m_code" : 404,
         "known" : ["john", "bob"],
-        "cat" : "news",
-        "valid" : true
+        "cat" : "news"
        },
        {
         "name" : "Mastodon-Chaos.social",
@@ -1032,19 +920,17 @@
         "m_string" : "The page you are looking for isn&#39;t here.",
         "m_code" : 404,
         "known" : ["dictvm", "sml"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "chaturbate",
         "uri_check" : "https://chaturbate.com/{account}/",
         "e_code" : 200,
-        "e_string" : "Last Broadcast",
+        "e_string" : "'s Bio and Free Webcam",
         "m_string" : "It's probably just a broken link",
         "m_code" : 404,
-        "known" : ["katestone_again", "kemii"],
-        "cat" : "XXXPORNXXX",
-        "valid" : true
+        "known" : ["pussylovekate", "kemii"],
+        "cat" : "xx NSFW xx"
        },
        {
         "name" : "cHEEZburger",
@@ -1054,8 +940,7 @@
         "m_string" : "<title>Home - ",
         "m_code" : 302,
         "known" : ["john"],
-        "cat" : "hobby",
-        "valid" : true
+        "cat" : "hobby"
        },
        {
         "name" : "Chamsko",
@@ -1065,19 +950,7 @@
         "m_string" : "Strona nie istnieje.",
         "m_code" : 404,
         "known" : ["test", "janek"],
-        "cat" : "images",
-        "valid" : true
-       },
-       {
-        "name" : "CHERRY.TV",
-        "uri_check" : "https://cherry.tv/{account}",
-        "e_code" : 200,
-        "e_string" : "\"username",
-        "m_string" : "This isn’t the page you’re looking for",
-        "m_code" : 404,
-        "known" : ["leebaby", "lillythompson"],
-        "cat" : "XXXPORNXXX",
-        "valid" : true
+        "cat" : "images"
        },
        {
         "name" : "Chess.com",
@@ -1087,8 +960,7 @@
         "m_string" : "<title>Missing Page?! - Chess.com</title>",
         "m_code" : 404,
         "known" : ["john", "peter", "josh"],
-        "cat" : "gaming",
-        "valid" : true
+        "cat" : "gaming"
        },
        {
         "name" : "Chomikuj.pl",
@@ -1098,8 +970,7 @@
         "m_string" : "Chomik o takiej nazwie nie istnieje",
         "m_code" : 404,
         "known" : ["test", "test2"],
-        "cat" : "misc",
-        "valid" : true
+        "cat" : "misc"
        },
        {
         "name" : "Chyoa",
@@ -1109,8 +980,7 @@
         "m_string" : "Sorry, I got distracted...",
         "m_code" : 404,
         "known" : ["joe", "carlos01"],
-        "cat" : "XXXPORNXXX",
-        "valid" : true
+        "cat" : "xx NSFW xx"
        },
        {
         "name" : "Climatejustice.rocks (Mastodon Instance)",
@@ -1121,8 +991,7 @@
         "m_code" : 404,
         "m_string" : "Record not found",
         "known" : ["paula", "ClimbitJustice"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "Clubhouse",
@@ -1132,8 +1001,7 @@
         "m_string" : "t find what you were looking for",
         "m_code" : 404,
         "known" : ["kirbyplessas", "rohan"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "cnet",
@@ -1143,8 +1011,7 @@
         "m_string" : "Page Not Found (404) - CNET",
         "m_code" : 301,
         "known" : ["john", "bob"],
-        "cat" : "news",
-        "valid" : true
+        "cat" : "news"
        },
        {
         "name" : "Codeberg",
@@ -1154,8 +1021,7 @@
         "m_code" : 404,
         "m_string" : "The page you are trying to reach either",
         "known" : ["dachary", "happy"],
-        "cat" : "coding",
-        "valid" : true
+        "cat" : "coding"
        },
        {
         "name" : "Codecademy",
@@ -1165,8 +1031,7 @@
         "m_string" : "Oops! That page doesn’t exist",
         "m_code" : 404,
         "known" : ["doctypeme", "ocean.war"],
-        "cat" : "coding",
-        "valid" : true
+        "cat" : "coding"
        },
        {
         "name" : "codeforces",
@@ -1176,8 +1041,7 @@
         "m_string" : "<title>Codeforces</title>",
         "m_code" : 302,
         "known" : ["Abdul01", "Abdullah"],
-        "cat" : "coding",
-        "valid" : true
+        "cat" : "coding"
        },
        {
         "name" : "codementor",
@@ -1187,8 +1051,7 @@
         "m_string" : "404/favicon.png",
         "m_code" : 404,
         "known" : ["e4c5", "juanelfers"],
-        "cat" : "coding",
-        "valid" : true
+        "cat" : "coding"
        },
        {
         "name" : "Code Project",
@@ -1198,8 +1061,7 @@
         "m_string" : "Unable to load the requested member's information",
         "m_code" : 200,
         "known" : ["WmCraig", "Rick-York"],
-        "cat" : "coding",
-        "valid" : true
+        "cat" : "coding"
        },
        {
         "name" : "Codewars",
@@ -1209,8 +1071,7 @@
         "m_string" : "Whoops! The page you were looking for doesn't seem to exist.",
         "m_code" : 404,
         "known" : ["john", "reds"],
-        "cat" : "coding",
-        "valid" : true
+        "cat" : "coding"
        },
        {
         "name" : "Coderwall",
@@ -1220,8 +1081,7 @@
         "m_string" : "404! Our feels when that url is used",
         "m_code" : 404,
         "known" : ["john", "test"],
-        "cat" : "coding",
-        "valid" : true
+        "cat" : "coding"
        },
        {
         "name" : "cohost",
@@ -1231,8 +1091,7 @@
         "m_string" : "Something went wrong",
         "m_code" : 404,
         "known" : ["vogon", "jkap"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "COLOURlovers",
@@ -1242,8 +1101,7 @@
         "m_string" : "Lover has gone missing",
         "m_code" : 410,
         "known" : ["amorremanet", "bezzalopoly"],
-        "cat" : "hobby",
-        "valid" : true
+        "cat" : "hobby"
        },
        {
         "name" : "contactos.sex",
@@ -1253,8 +1111,7 @@
         "m_string" : "Desde 2001 conectando gente!",
         "m_code" : 302,
         "known" : ["danijak", "darkfox"],
-        "cat" : "XXXPORNXXX",
-        "valid" : true
+        "cat" : "xx NSFW xx"
        },
        {
         "name" : "coroflot",
@@ -1264,8 +1121,7 @@
         "m_string" : "Looking for something?",
         "m_code" : 404,
         "known" : ["john", "blue"],
-        "cat" : "art",
-        "valid" : true
+        "cat" : "art"
        },
        {
         "name" : "cowboys4angels",
@@ -1275,8 +1131,7 @@
         "m_string" : "<title>Elite Male Escorts",
         "m_code" : 301,
         "known" : ["jaxjames", "mike"],
-        "cat" : "XXXPORNXXX",
-        "valid" : true
+        "cat" : "xx NSFW xx"
        },
        {
         "name" : "cracked_io",
@@ -1286,8 +1141,7 @@
         "m_string" : "The member you specified is either invalid or doesn't exist",
         "m_code" : 404,
         "known" : ["RealPsycho", "SamWinchester"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "Cracked",
@@ -1297,20 +1151,18 @@
         "m_string" : "",
         "m_code" : 302,
         "known" : ["mbattagl","Hatchback"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "crevado",
         "uri_check" : "https://{account}.crevado.com/",
-        "invalid_chars" : ".",
+        "strip_bad_char" : ".",
         "e_code" : 200,
         "e_string" : "Portfolio",
         "m_string" : "Site not found :-(",
         "m_code" : 404,
         "known" : ["john", "red"],
-        "cat" : "images",
-        "valid" : true
+        "cat" : "images"
        },
        {
         "name" : "crowdin",
@@ -1320,8 +1172,7 @@
         "m_string" : "Page Not Found - Crowdin",
         "m_code" : 404,
         "known" : ["alex", "peter"],
-        "cat" : "hobby",
-        "valid" : true
+        "cat" : "hobby"
        },
        {
         "name" : "Cults3D",
@@ -1331,8 +1182,7 @@
         "m_string" : "Oh dear, this page is not working!",
         "m_code" : 404,
         "known" : ["Bstar3Dart", "john"],
-        "cat" : "hobby",
-        "valid" : true
+        "cat" : "hobby"
        },
        {
         "name" : "Curiouscat",
@@ -1343,8 +1193,7 @@
         "m_code" : 200,
         "m_string" : "\"error\": 404",
         "known" : ["kindokja9158", "saki"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "Cytoid",
@@ -1354,8 +1203,7 @@
         "m_code" : 404,
         "m_string" : "Profile not found",
         "known" : ["nyala", "speedymlg7"],
-        "cat" : "gaming",
-        "valid" : true
+        "cat" : "gaming"
        },
        {
         "name" : "Dailymotion",
@@ -1365,8 +1213,7 @@
         "m_string" : "404 Page not found",
         "m_code" : 404,
         "known" : ["WeHappyKids", "john"],
-        "cat" : "video",
-        "valid" : true
+        "cat" : "video"
        },
        {
         "name" : "darudar",
@@ -1376,8 +1223,7 @@
         "m_string" : "404. Дару~дар: миру~мир!",
         "m_code" : 404,
         "known" : ["svetlana7", "igor"],
-        "cat" : "misc",
-        "valid" : true
+        "cat" : "misc"
        },
        {
         "name" : "datezone",
@@ -1387,8 +1233,7 @@
         "m_string" : "Błąd wczytywania",
         "m_code" : 200,
         "known" : ["gpower550","tgoat2022"],
-        "cat" : "XXXPORNXXX",
-        "valid" : true
+        "cat" : "xx NSFW xx"
        },
        {
         "name" : "dateinasia",
@@ -1398,8 +1243,7 @@
         "m_string" : "The page you are looking for does not exist",
         "m_code" : 404,
         "known" : ["shime", "janeferater"],
-        "cat" : "dating",
-        "valid" : true
+        "cat" : "dating"
        },
        {
         "name" : "Dating.ru",
@@ -1409,8 +1253,7 @@
         "m_string" : "Такой страницы не существует.",
         "m_code" : 404,
         "known" : ["john", "blue"],
-        "cat" : "dating",
-        "valid" : true
+        "cat" : "dating"
        },
        {
         "name" : "Mastodon-Defcon",
@@ -1420,8 +1263,7 @@
         "m_string" : "The page you are looking for isn&#39;t here.",
         "m_code" : 404,
         "known" : ["defcon", "buttersnatcher"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "Demotywatory",
@@ -1431,8 +1273,7 @@
         "m_string" : "Użytkownik o podanym pseudonimie nie istnieje.",
         "m_code" : 200,
         "known" : ["test", "test2"],
-        "cat" : "images",
-        "valid" : true
+        "cat" : "images"
        },
        {
         "name" : "depop",
@@ -1442,8 +1283,7 @@
         "m_string" : "Sorry, that page doesn't exist",
         "m_code" : 404,
         "known" : ["sara", "susan"],
-        "cat" : "shopping",
-        "valid" : true
+        "cat" : "shopping"
        },
        {
         "name" : "Designspriation",
@@ -1453,8 +1293,7 @@
         "m_string" : "Content Not Found",
         "m_code" : 404,
         "known" : ["sam", "smith"],
-        "cat" : "art",
-        "valid" : true
+        "cat" : "art"
        },
        {
         "name" : "Destructoid",
@@ -1464,8 +1303,7 @@
         "m_string" : "Error in query",
         "m_code" : 200,
         "known" : ["john", "alice", "bob"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "DeviantArt",
@@ -1475,8 +1313,7 @@
         "m_string" : "DeviantArt: 404",
         "m_code" : 404,
         "known" : ["rattybike", "john"],
-        "cat" : "images",
-        "valid" : true
+        "cat" : "images"
        },
        {
         "name" : "dev.to",
@@ -1486,8 +1323,7 @@
         "m_string" : "This page does not exist",
         "m_code" : 301,
         "known" : ["john", "bob"],
-        "cat" : "coding",
-        "valid" : true
+        "cat" : "coding"
        },
        {
         "name" : "devRant",
@@ -1497,8 +1333,7 @@
         "m_string" : "<!-- row start signup -->",
         "m_code" : 302,
         "known" : ["dfox", "trogus"],
-        "cat" : "coding",
-        "valid" : true
+        "cat" : "coding"
        },
        {
         "name" : "dfgames",
@@ -1508,8 +1343,7 @@
         "m_string" : "404 Not Found",
         "m_code" : 404,
         "known" : ["carlos01", "eduardo"],
-        "cat" : "gaming",
-        "valid" : true
+        "cat" : "gaming"
        },
        {
         "name" : "Diablo",
@@ -1519,8 +1353,7 @@
         "m_string" : "The requested user does not exist",
         "m_code" : 404,
         "known" : ["Mike01", "John"],
-        "cat" : "gaming",
-        "valid" : true
+        "cat" : "gaming"
        },
        {
         "name" : "diigo",
@@ -1531,8 +1364,7 @@
         "m_string" : "{}",
         "m_code" : 200,
         "known" : ["whoami", "johndoe"],
-        "cat" : "images",
-        "valid" : true
+        "cat" : "images"
        },
        {
        "name" : "DIBIZ",
@@ -1542,8 +1374,7 @@
         "m_string" : "An Error Has Occurred",
         "m_code" : 404,
         "known" : ["fractalhue", "rid"],
-        "cat" : "business",
-        "valid" : true
+        "cat" : "business"
        },
        {
         "name" : "Digitalspy",
@@ -1553,8 +1384,7 @@
         "m_string" : "User not found",
         "m_code" : 404,
         "known" : ["JeffG1", "Maxatoria"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "Discogs",
@@ -1564,8 +1394,7 @@
         "m_code" : 404,
         "m_string" : "We couldn't find that page.",
         "known" : ["7jlong", "venetian-guy"],
-        "cat" : "music",
-        "valid" : true
+        "cat" : "music"
        },
        {
         "name" : "Discourse",
@@ -1576,8 +1405,7 @@
         "m_code" : 404,
         "m_string" : "The requested URL or resource could not be found.",
         "known" : ["ndalliard", "gerhard"],
-        "cat" : "misc",
-        "valid" : true
+        "cat" : "misc"
        },
        {
         "name" : "discuss.elastic.co",
@@ -1587,8 +1415,7 @@
         "m_string" : "Oops!",
         "m_code" : 404,
         "known" : ["whoami", "johndoe"],
-        "cat" : "tech",
-        "valid" : true
+        "cat" : "tech"
        },
        {
         "name" : "Dissenter",
@@ -1598,8 +1425,7 @@
         "m_string" : "That user is not registered here.",
         "m_code" : 404,
         "known" : ["pryerlee", "archdukeofevil"],
-        "cat" : "political",
-        "valid" : true
+        "cat" : "political"
        },
        {
         "name" : "Disqus",
@@ -1609,8 +1435,7 @@
         "m_string" : "Page not found (404) - Disqus",
         "m_code" : 404,
         "known" : ["Aristotelian1", "50calibercat"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "DockerHub",
@@ -1620,8 +1445,7 @@
         "m_string" : "User not found",
         "m_code" : 404,
         "known" : ["soxoj", "torvalds"],
-        "cat" : "coding",
-        "valid" : true
+        "cat" : "coding"
        },
        {
         "name" : "Donation Alerts",
@@ -1632,8 +1456,7 @@
         "m_code" : 202,
         "m_string" : "does not exist",
         "known" : ["gorou", "saku"],
-        "cat" : "business",
-        "valid" : true
+        "cat" : "business"
        },
        {
         "name" : "dot.cards",
@@ -1643,8 +1466,7 @@
         "m_string" : "The username does not exist",
         "m_code" : 200,
         "known" : ["dakmusic", "jhartwell"],
-        "cat" : "business",
-        "valid" : true
+        "cat" : "business"
        },
        {
         "name" : "Dojoverse",
@@ -1654,8 +1476,7 @@
         "m_string" : "Looks like you got lost!.",
         "m_code" : 404,
         "known" : ["eric", "danielrivera10927"],
-        "cat" : "hobby",
-        "valid" : true
+        "cat" : "hobby"
        },
        {
         "name" : "Dribbble",
@@ -1665,8 +1486,7 @@
         "m_string" : "(404)</title>",
         "m_code" : 404,
         "known" : ["UI8", "keeplegend"],
-        "cat" : "art",
-        "valid" : true
+        "cat" : "art"
        },
        {
         "name" : "Droners",
@@ -1676,8 +1496,7 @@
         "m_string" : "(404)</title>",
         "m_code" : 302,
         "known" : ["chriskahn", "swilken"],
-        "cat" : "hobby",
-        "valid" : true
+        "cat" : "hobby"
        },
        {
         "name" : "Drum",
@@ -1687,8 +1506,7 @@
         "m_string" : "Page not found",
         "m_code" : 302,
         "known" : ["kingdirtdig", "oscarqbdrums"],
-        "cat" : "hobby",
-        "valid" : true
+        "cat" : "hobby"
        },
        {
         "name" : "Duolingo",
@@ -1699,8 +1517,7 @@
         "m_string" : "\"users\" : []",
         "m_code" : 200,
         "known" : ["sdfsdf", "duolingo"],
-        "cat" : "hobby",
-        "valid" : true
+        "cat" : "hobby"
        },
        {
         "name" : "easyen",
@@ -1710,8 +1527,7 @@
         "m_string" : "Пользователь не найден",
         "m_code" : 200,
         "known" : ["wd"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "eBay",
@@ -1721,8 +1537,7 @@
         "m_string" : "The User ID you entered was not found",
         "m_code" : 200,
         "known" : ["the_gqs", "johnny"],
-        "cat" : "shopping",
-        "valid" : true
+        "cat" : "shopping"
        },
        {
         "name" : "ebay_stores",
@@ -1732,8 +1547,7 @@
         "m_string" : "Sorry, this store was not found.",
         "m_code" : 410,
         "known" : ["tactical", "tactical-security"],
-        "cat" : "shopping",
-        "valid" : true
+        "cat" : "shopping"
        },
        {
         "name" : "Ello.co",
@@ -1743,8 +1557,7 @@
         "m_string" : "| [404] Not Found",
         "m_code" : 404,
         "known" : ["john", "franalvez"],
-        "cat" : "art",
-        "valid" : true
+        "cat" : "art"
        },
        {
         "name" : "Engadget",
@@ -1754,8 +1567,7 @@
         "m_string" : "<title>,  -",
         "m_code" : 404,
         "known" : ["devindra-hardawar", "kris-holt"],
-        "cat" : "tech",
-        "valid" : true
+        "cat" : "tech"
        },
        {
         "name" : "EPORNER",
@@ -1765,8 +1577,7 @@
         "m_string" : "Profile not found",
         "m_code" : 404,
         "known" : ["enron456", "Jomat999", "hicnobu"],
-        "cat" : "XXXPORNXXX",
-        "valid" : true
+        "cat" : "xx NSFW xx"
        },
        {
         "name" : "Etsy",
@@ -1776,8 +1587,7 @@
         "m_string" : "Sorry, the member you are looking for does not exist",
         "m_code" : 404,
         "known" : ["david", "happiness"],
-        "cat" : "shopping",
-        "valid" : true
+        "cat" : "shopping"
        },
        {
         "name" : "Mastodon-EU_Voice",
@@ -1788,8 +1598,7 @@
         "m_string" : "The page you are looking for isn&#39;t here.",
         "m_code" : 404,
         "known" : ["EC_DIGIT", "EUSPA"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "Expressional.social (Mastodon Instance)",
@@ -1800,8 +1609,7 @@
         "m_code" : 404,
         "m_string" : "Record not found",
         "known" : ["jippi", "poolesen"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "ExtraLunchMoney",
@@ -1811,8 +1619,7 @@
         "m_string" : "Closed Profile Page",
         "m_code" : 404,
         "known" : ["ThatWitchMaeve", "Nudekiki"],
-        "cat" : "XXXPORNXXX",
-        "valid" : true
+        "cat" : "xx NSFW xx"
        },
        {
         "name" : "Eyeem",
@@ -1822,8 +1629,7 @@
         "m_string" : "Not Found (404) | EyeEm",
         "m_code" : 301,
         "known" : ["john", "bob"],
-        "cat" : "art",
-        "valid" : true
+        "cat" : "art"
        },
        {
         "name" : "F3",
@@ -1833,8 +1639,7 @@
         "m_string" : "Page Not Found - F3",
         "m_code" : 404,
         "known" : ["nick", "john"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "Fabswingers",
@@ -1844,8 +1649,7 @@
         "m_string" : "The user you tried to view doesn't seem to be on the site any more",
         "m_code" : 200,
         "known" : ["justusboth2013", "hellfireclub", "fabswingers.com"],
-        "cat" : "dating",
-        "valid" : true
+        "cat" : "dating"
        },
        {
         "name" : "Faktopedia",
@@ -1855,8 +1659,7 @@
         "m_string" : "Nie znaleziono użytkownika o podanym loginie.",
         "m_code" : 200,
         "known" : ["janek", "ania"],
-        "cat" : "images",
-        "valid" : true
+        "cat" : "images"
        },
        {
         "name" : "FanCentro",
@@ -1867,8 +1670,7 @@
         "m_string" : "\"status\" :false",
         "m_code" : 200,
         "known" : ["medroxy","miaaamador"],
-        "cat" : "XXXPORNXXX",
-        "valid" : true
+        "cat" : "xx NSFW xx"
        },
        {
         "name" : "fandalism",
@@ -1878,8 +1680,7 @@
         "m_string" : "404 - File or directory not found",
         "m_code" : 404,
         "known" : ["mike", "ted"],
-        "cat" : "hobby",
-        "valid" : true
+        "cat" : "hobby"
        },
        {
         "name" : "Fandom",
@@ -1889,8 +1690,7 @@
         "m_string" : "Not Found",
         "m_code" : 404,
         "known" : ["EJacobs94", "Drew_Dietsch"],
-        "cat" : "gaming",
-        "valid" : true
+        "cat" : "gaming"
        },
        {
         "name" : "fanpop",
@@ -1900,8 +1700,7 @@
         "m_string" : "",
         "m_code" : 302,
         "known" : ["test", "johndoe"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "Fark",
@@ -1911,8 +1710,7 @@
         "m_string" : "Tastes like chicken.",
         "m_code" : 200,
         "known" : ["bob", "bobby"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "Farkascity",
@@ -1922,8 +1720,7 @@
         "m_code" : 404,
         "m_string" : "Are you sure it was ever here?",
         "known" : ["gutimet", "nlowell"],
-        "cat" : "blog",
-        "valid" : true
+        "cat" : "blog"
        },
        {
         "name" : "fansly",
@@ -1934,8 +1731,7 @@
         "m_string" : "response: []",
         "m_code" : 200,
         "known" : ["Mikomin","test"],
-        "cat" : "XXXPORNXXX",
-        "valid" : true
+        "cat" : "xx NSFW xx"
        },
        {
         "name" : "FatSecret",
@@ -1945,8 +1741,7 @@
         "m_string" : "Your Key to Success",
         "m_code" : 302,
         "known" : ["bob", "bobby"],
-        "cat" : "health",
-        "valid" : true
+        "cat" : "health"
        },
        {
         "name" : "Federated.press (Mastodon Instance)",
@@ -1957,8 +1752,7 @@
         "m_code" : 404,
         "m_string" : "Record not found",
         "known" : ["wood", "cliffcheney"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "fcv",
@@ -1968,8 +1762,7 @@
         "m_string" : "Цей профіль або більше не існує або більше не доступний",
         "m_code" : 200,
         "known" : ["Ruslan", "oleg"],
-        "cat" : "hobby",
-        "valid" : true
+        "cat" : "hobby"
        },
        {
         "name" : "figma",
@@ -1979,8 +1772,7 @@
         "m_string" : "The page you are looking for can't be found.",
         "m_code" : 404,
         "known" : ["bob", "mike"],
-        "cat" : "tech",
-        "valid" : true
+        "cat" : "tech"
        },
        {
         "name" : "Filmweb",
@@ -1990,8 +1782,7 @@
         "m_string" : "Przepraszamy. Strona, której szukasz nie została odnaleziona.",
         "m_code" : 200,
         "known" : ["test", "test2"],
-        "cat" : "hobby",
-        "valid" : true
+        "cat" : "hobby"
        },
        {
         "name" : "fine_art_america",
@@ -2001,8 +1792,7 @@
         "m_string" : "Browse through millions of independent artists in our extensive",
         "m_code" : 301,
         "known" : ["scott-norris", "mary-helmreich"],
-        "cat" : "shopping",
-        "valid" : true
+        "cat" : "shopping"
        },
        {
         "name" : "Fiverr",
@@ -2012,8 +1802,7 @@
         "m_string" : "",
         "m_code" : 302,
         "known" : ["yellowdd", "samanvay"],
-        "cat" : "shopping",
-        "valid" : true
+        "cat" : "shopping"
        },
        {
         "name" : "Flickr",
@@ -2023,8 +1812,7 @@
         "m_string" : "",
         "m_code" : 404,
         "known" : ["glaciernps", "test"],
-        "cat" : "images",
-        "valid" : true
+        "cat" : "images"
        },
        {
         "name" : "Flipboard",
@@ -2034,19 +1822,7 @@
         "m_string" : "<title></title>",
         "m_code" : 404,
         "known" : ["cosmopolitan", "Mashable"],
-        "cat" : "tech",
-        "valid" : true
-       },
-       {
-        "name" : "Flirt4Free",
-        "uri_check" : "https://www.flirt4free.com/models/bios/{account}/about.php",
-        "e_code" : 200,
-        "e_string" : "Customers rated",
-        "m_string" : "<title>Webcam Model Directory | Flirt4Free</title>",
-        "m_code" : 200,
-        "known" : ["ava-dangelo", "emma-lawrennce"],
-        "cat" : "XXXPORNXXX",
-        "valid" : true
+        "cat" : "tech"
        },
        {
         "name" : "flowcode",
@@ -2056,8 +1832,7 @@
         "m_string" : "Nobody's reserved this Flowpage yet.",
         "m_code" : 404,
         "known" : ["evdokia", "irina"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "Fodors Forum",
@@ -2067,8 +1842,7 @@
         "m_string" : "Plan Your Trip Online</title>",
         "m_code" : 302,
         "known" : ["mms", "gooster"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "Fortnite Tracker",
@@ -2078,8 +1852,7 @@
         "m_string" : "Fortnite Player Stats -",
         "m_code" : 404,
         "known" : ["steph", "sam"],
-        "cat" : "gaming",
-        "valid" : true
+        "cat" : "gaming"
        },
        {
         "name" : "forumprawne.org",
@@ -2089,8 +1862,7 @@
         "m_string" : "",
         "m_code" : 500,
         "known" : ["test", "test2"],
-        "cat" : "misc",
-        "valid" : true
+        "cat" : "misc"
        },
        {
         "name" : "Fosstodon.org (Mastodon Instance)",
@@ -2101,8 +1873,7 @@
         "m_code" : 404,
         "m_string" : "Record not found",
         "known" : ["linux", "Phil35"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "fotka",
@@ -2113,8 +1884,7 @@
         "m_string" : "ERROR",
         "m_code" : 200,
         "known" : ["test", "test2"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
        "name" : "Foursquare",
@@ -2124,8 +1894,7 @@
         "m_string" : "Foursquare - Independent Location Data Platform",
         "m_code" : 302,
         "known" : ["john", "ncyp23"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "freelancer",
@@ -2135,8 +1904,7 @@
         "m_string" : "Looks like the page you are looking for doesn't exist.",
         "m_code" : 404,
         "known" : ["desiaunty", "creatvmind"],
-        "cat" : "business",
-        "valid" : true
+        "cat" : "business"
        },
        {
         "name" : "freesound",
@@ -2146,8 +1914,7 @@
         "m_string" : "Page not found",
         "m_code" : 404,
         "known" : ["test", "JohnDoe"],
-        "cat" : "music",
-        "valid" : true
+        "cat" : "music"
        },
        {
         "name" : "FriendFinder",
@@ -2157,8 +1924,7 @@
         "m_string" : "302 Found",
         "m_code" : 302,
         "known" : ["alex56", "john"],
-        "cat" : "dating",
-        "valid" : true
+        "cat" : "dating"
        },
        {
         "name" : "FriendFinder-X",
@@ -2168,8 +1934,7 @@
         "m_string" : "The document has moved",
         "m_code" : 302,
         "known" : ["john"],
-        "cat" : "dating",
-        "valid" : true
+        "cat" : "dating"
        },
        {
         "name" : "Friendweb",
@@ -2179,8 +1944,7 @@
         "m_string" : "Page Not Found",
         "m_code" : 404,
         "known" : ["HoogtePiet", "JeePee"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "FurAffinity",
@@ -2190,8 +1954,7 @@
         "m_string" : "user cannot be found",
         "m_code" : 200,
         "known" : ["karintina", "mikrogoat"],
-        "cat" : "images",
-        "valid" : true
+        "cat" : "images"
        },
        {
         "name" : "Gab",
@@ -2202,8 +1965,7 @@
         "m_string" : "Record not found",
         "m_code" : 404,
         "known" : ["RealMarjorieGreene", "LaurenBoebert"],
-        "cat" : "political",
-        "valid" : true
+        "cat" : "political"
        },
        {
         "name" : "game_debate",
@@ -2213,8 +1975,7 @@
         "m_string" : "Not Found",
         "m_code" : 404,
         "known" : ["Johnboy", "Crazy"],
-        "cat" : "gaming",
-        "valid" : true
+        "cat" : "gaming"
        },
        {
         "name" : "Game Jolt",
@@ -2225,8 +1986,7 @@
         "m_string" : "null,",
         "m_code" : 404,
         "known" : ["nilllzz", "KorbloxTeams"],
-        "cat" : "gaming",
-        "valid" : true
+        "cat" : "gaming"
        },
        {
         "name" : "Gamespot",
@@ -2236,8 +1996,7 @@
         "m_string" : "404: Not Found - GameSpot</title>",
         "m_code" : 200,
         "known" : ["alice", "bob"],
-        "cat" : "gaming",
-        "valid" : true
+        "cat" : "gaming"
        },
        {
         "name" : "Garmin connect",
@@ -2247,8 +2006,7 @@
         "m_string" : "resourceNotFoundRoute",
         "m_code" : 200,
         "known" : ["danielebarison", "cderalow"],
-        "cat" : "health",
-        "valid" : true
+        "cat" : "health"
        },
        {
         "name" : "Geocaching",
@@ -2258,8 +2016,7 @@
         "m_string" : "Error 404: DNF",
         "m_code" : 404,
         "known" : ["moun10bike", "niraD"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "getmonero",
@@ -2269,8 +2026,7 @@
         "m_string" : "Monero | Page not found. Error: 404",
         "m_code" : 200,
         "known" : ["silverfox", "monero"],
-        "cat" : "misc",
-        "valid" : true
+        "cat" : "misc"
        },
        {
         "name" : "Gettr",
@@ -2281,8 +2037,7 @@
         "m_string" : "success\":false",
         "m_code" : 200,
         "known" : ["gettr", "support"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "gfycat",
@@ -2292,8 +2047,7 @@
         "m_string" : "<h1>Page not found</h1>",
         "m_code" : 404,
         "known" : ["timviechanoi", "sannahparker"],
-        "cat" : "misc",
-        "valid" : true
+        "cat" : "misc"
        },
        {
         "name" : "Gigapan",
@@ -2303,8 +2057,7 @@
         "m_string" : "<a href=\"/gigapans\">View Gigapans</a>",
         "m_code" : 404,
         "known" : ["test", "lucahammer"],
-        "cat" : "hobby",
-        "valid" : true
+        "cat" : "hobby"
        },
        {
         "name" : "Giphy",
@@ -2314,8 +2067,7 @@
         "m_string" : "<title>404 Not Found</title>",
         "m_code" : 404,
         "known" : ["buzz", "test"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "Girlfriendsmeet",
@@ -2325,8 +2077,7 @@
         "m_string" : "Page not found",
         "m_code" : 404,
         "known" : ["john", "junech"],
-        "cat" : "dating",
-        "valid" : true
+        "cat" : "dating"
        },
        {
         "name" : "gitea",
@@ -2336,8 +2087,7 @@
         "m_string" : "Not found.",
         "m_code" : 404,
         "known" : ["xin", "dev"],
-        "cat" : "coding",
-        "valid" : true
+        "cat" : "coding"
        },
        {
         "name" : "giters",
@@ -2347,8 +2097,7 @@
         "m_string" : "This page could not be found</title>",
         "m_code" : 404,
         "known" : ["WebBreacher", "C3n7ral051nt4g3ncy"],
-        "cat" : "coding",
-        "valid" : true
+        "cat" : "coding"
        },
        {
         "name" : "GitHub",
@@ -2358,8 +2107,7 @@
         "m_string" : "<title>Page not found ",
         "m_code" : 404,
         "known" : ["test", "WebBreacher"],
-        "cat" : "coding",
-        "valid" : true
+        "cat" : "coding"
        },
        {
         "name" : "GitHubPlus",
@@ -2369,8 +2117,7 @@
         "m_string" : "<title>Not Found</title>",
         "m_code" : 404,
         "known" : ["webbreacher", "C3n7ral051nt4g3ncy"],
-        "cat" : "coding",
-        "valid" : true
+        "cat" : "coding"
        },
        {
         "name" : "GitLab",
@@ -2380,8 +2127,7 @@
         "m_string" : "GitLab.com offers free unlimited",
         "m_code" : 302,
         "known" : ["skennedy", "KennBro", "alex", "bob"],
-        "cat" : "coding",
-        "valid" : true
+        "cat" : "coding"
        },
        {
         "name" : "gitee",
@@ -2391,8 +2137,7 @@
         "m_string" : "Gitee is more than a development platform",
         "m_code" : 404,
         "known" : ["maxim"],
-        "cat" : "coding",
-        "valid" : true
+        "cat" : "coding"
        },
        {
         "name" : "gloria.tv",
@@ -2402,8 +2147,7 @@
         "m_string" : "Page unavailable",
         "m_code" : 404,
         "known" : ["test", "test2"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "gnome_extensions",
@@ -2413,8 +2157,7 @@
         "m_string" : "Uh oh...",
         "m_code" : 400,
         "known" : ["johnny", "dev"],
-        "cat" : "coding",
-        "valid" : true
+        "cat" : "coding"
        },
        {
         "name" : "Goodgame_Russia",
@@ -2424,8 +2167,7 @@
         "m_string" : "Такой страницы не существует",
         "m_code" : 400,
         "known" : ["ejysarmat", "gegeboyz"],
-        "cat" : "gaming",
-        "valid" : true
+        "cat" : "gaming"
        },
        {
         "name" : "gpodder.net",
@@ -2435,8 +2177,7 @@
         "m_string" : "404 - Not found",
         "m_code" : 404,
         "known" : ["blue", "red"],
-        "cat" : "music",
-        "valid" : true
+        "cat" : "music"
        },
        {
         "name" : "grandprof",
@@ -2446,8 +2187,7 @@
         "m_string" : "Mauvaise pioche",
         "m_code" : 404,
         "known" : ["mohamed01", "amine"],
-        "cat" : "misc",
-        "valid" : true
+        "cat" : "misc"
        },
        {
         "name" : "Gravatar",
@@ -2458,8 +2198,7 @@
         "m_string" : "User not found",
         "m_code" : 404,
         "known" : ["test"],
-        "cat" : "images",
-        "valid" : true
+        "cat" : "images"
        },
        {
         "name" : "Graphics.social (Mastodon Instance)",
@@ -2470,20 +2209,18 @@
         "m_code" : 404,
         "m_string" : "Record not found",
         "known" : ["brian", "moonpotato"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "gumroad",
         "uri_check" : "https://{account}.gumroad.com/",
-        "invalid_chars" : ".",
+        "strip_bad_char" : ".",
         "e_code" : 200,
         "e_string" : "s profile picture",
         "m_string" : "Page not found",
         "m_code" : 404,
         "known" : ["ellietalksmoney", "reallyniceimages"],
-        "cat" : "shopping",
-        "valid" : true
+        "cat" : "shopping"
        },
        {
         "name" : "Hackaday",
@@ -2493,8 +2230,7 @@
         "m_string" : "The requested URL was not found on this server. That’s all we know.",
         "m_code" : 404,
         "known" : ["john", "adam"],
-        "cat" : "hobby",
-        "valid" : true
+        "cat" : "hobby"
        },
        {
         "name" : "Hacker News",
@@ -2504,8 +2240,7 @@
         "m_string" : "No such user.",
         "m_code" : 200,
         "known" : ["mubix", "egypt"],
-        "cat" : "tech",
-        "valid" : true
+        "cat" : "tech"
        },
        {
         "name" : "Hackernoon",
@@ -2516,8 +2251,7 @@
         "m_string" : "__N_REDIRECT",
         "m_code" : 200,
         "known" : ["john", "alex"],
-        "cat" : "tech",
-        "valid" : true
+        "cat" : "tech"
        },
        {
         "name" : "hackerearth",
@@ -2527,8 +2261,7 @@
         "m_string" : "404 | HackerEarth",
         "m_code" : 200,
         "known" : ["peter", "liam"],
-        "cat" : "coding",
-        "valid" : true
+        "cat" : "coding"
        },
        {
         "name" : "HackerOne",
@@ -2538,8 +2271,7 @@
         "m_string" : "Page not found",
         "m_code" : 301,
         "known" : ["yashrs", "ameerpornillos"],
-        "cat" : "tech",
-        "valid" : true
+        "cat" : "tech"
        },
        {
         "name" : "HackerRank",
@@ -2549,8 +2281,7 @@
         "m_string" : ":: HackerRank</title>",
         "m_code" : 302,
         "known" : ["johnsmith", "FMota"],
-        "cat" : "tech",
-        "valid" : true
+        "cat" : "tech"
        },
        {
         "name" : "hackster",
@@ -2560,8 +2291,7 @@
         "m_string" : "Hackster.io - The community dedi",
         "m_code" : 404,
         "known" : ["ian", "bob"],
-        "cat" : "coding",
-        "valid" : true
+        "cat" : "coding"
        },
        {
         "name" : "hamaha",
@@ -2571,8 +2301,7 @@
         "m_string" : "HAMAHA Биткоин форум.",
         "m_code" : 200,
         "known" : ["oleg", "misha"],
-        "cat" : "finance",
-        "valid" : true
+        "cat" : "finance"
        },
        {
         "name" : "Hanime",
@@ -2582,8 +2311,7 @@
         "m_code" : 302,
         "m_string" : "DYNAMIC",
         "known" : ["z", "god"],
-        "cat" : "XXXPORNXXX",
-        "valid": true
+        "cat" : "xx NSFW xx"
        },
        {
         "name" : "Hcommons.social (Mastodon Instance)",
@@ -2594,8 +2322,7 @@
         "m_code" : 404,
         "m_string" : "Record not found",
         "known" : ["hello", "iuulaio"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "Heylink",
@@ -2605,8 +2332,7 @@
         "m_string" : "We can't find the page that you're looking for :(",
         "m_code" : 404,
         "known" : ["mohammed13", "johnny"],
-        "cat" : "misc",
-        "valid" : true
+        "cat" : "misc"
        },
        {
         "name" : "hiberworld",
@@ -2616,8 +2342,7 @@
         "m_string" : "Looks like you got lost ",
         "m_code" : 200,
         "known" : ["Axeman", "Silver01"],
-        "cat" : "gaming",
-        "valid" : true
+        "cat" : "gaming"
        },
        {
         "name" : "HiHello",
@@ -2627,8 +2352,7 @@
         "m_string" : "Well, this is awkward",
         "m_code" : 404,
         "known" : ["pascal-theriault", "kortnee-paiha"],
-        "cat" : "business",
-        "valid" : true
+        "cat" : "business"
        },
        {
         "name" : "Historians.social (Mastodon Instance)",
@@ -2639,8 +2363,7 @@
         "m_code" : 404,
         "m_string" : "Record not found",
         "known" : ["lizcovart", "Ejoiner"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "HomeDesign3D",
@@ -2650,8 +2373,7 @@
         "m_string" : "An Error Occurred: Internal Server Error",
         "m_code" : 500,
         "known" : ["carlos01", "paul"],
-        "cat" : "hobby",
-        "valid" : true
+        "cat" : "hobby"
        },
        {
         "name" : "Hometech.social (Mastodon Instance)",
@@ -2662,8 +2384,7 @@
         "m_code" : 404,
         "m_string" : "Record not found",
         "known" : ["one4ll", "seth"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "hoo.be",
@@ -2673,8 +2394,7 @@
         "m_string" : "Page Not Found</h3>",
         "m_code" : 404,
         "known" : ["chrishemsworth", "alextackie"],
-        "cat" : "business",
-        "valid" : true
+        "cat" : "business"
        },
        {
         "name" : "Hostux.social (Mastodon Instance)",
@@ -2685,8 +2405,7 @@
         "m_code" : 404,
         "m_string" : "Record not found",
         "known" : ["alarig", "rsmela"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "Houzz",
@@ -2696,8 +2415,7 @@
         "m_string" : "Page Not Found",
         "m_code" : 404,
         "known" : ["liam", "alex"],
-        "cat" : "hobby",
-        "valid" : true
+        "cat" : "hobby"
        },
        {
         "name" : "HubPages",
@@ -2707,8 +2425,7 @@
         "m_string" : "Sorry, that user does not exist",
         "m_code" : 404,
         "known" : ["greeneyes1607", "lmmartin"],
-        "cat" : "blog",
-        "valid" : true
+        "cat" : "blog"
        },
        {
         "name" : "Hubski",
@@ -2718,8 +2435,7 @@
         "m_string" : "No such user.",
         "m_code" : 200,
         "known" : ["john", "blue"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "hugging_face",
@@ -2729,8 +2445,7 @@
         "m_string" : "Sorry, we can't find the page you are looking for.",
         "m_code" : 404,
         "known" : ["hack", "dev"],
-        "cat" : "tech",
-        "valid" : true
+        "cat" : "tech"
        },
        {
         "name" : "Iconfinder",
@@ -2740,8 +2455,7 @@
         "m_string" : "Page not found",
         "m_code" : 404,
         "known" : ["roundicons", "iconfinder"],
-        "cat" : "images",
-        "valid" : true
+        "cat" : "images"
        },
        {
         "name" : "icq-chat",
@@ -2751,8 +2465,7 @@
         "m_string" : "Oops! We ran into some problems",
         "m_code" : 404,
         "known" : ["brookenora.54", "bigdaddy.77"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "IFTTT",
@@ -2762,8 +2475,7 @@
         "m_string" : "The requested page or file does not exist",
         "m_code" : 404,
         "known" : ["nr9992", "sss90"],
-        "cat" : "misc",
-        "valid" : true
+        "cat" : "misc"
        },
        {
         "name" : "ifunny",
@@ -2773,8 +2485,7 @@
         "m_string" : "404 - page not found",
         "m_code" : 404,
         "known" : ["hacker", "john"],
-        "cat" : "misc",
-        "valid" : true
+        "cat" : "misc"
        },
        {
         "name" : "igromania",
@@ -2784,8 +2495,7 @@
         "m_string" : "Пользователь не зарегистрирован и не имеет профиля для просмотра.",
         "m_code" : 200,
         "known" : ["bob", "blue"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "ilovegrowingmarijuana",
@@ -2795,8 +2505,7 @@
         "m_string" : "Oops! That page doesn’t exist or is private",
         "m_code" : 404,
         "known" : ["ILGM.Stacy", "Mosaicmind9x"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "imagefap",
@@ -2806,8 +2515,7 @@
         "m_string" : "Invalid uid",
         "m_code" : 200,
         "known" : ["lover03", "SecretSide15"],
-        "cat" : "XXXPORNXXX",
-        "valid" : true
+        "cat" : "xx NSFW xx"
        },
        {
         "name" : "ImageShack",
@@ -2817,8 +2525,7 @@
         "m_string" : "",
         "m_code" : 302,
         "known" : ["test"],
-        "cat" : "images",
-        "valid" : true
+        "cat" : "images"
        },
        {
         "name" : "iMGSRC.RU",
@@ -2828,8 +2535,7 @@
         "m_string" : "",
         "m_code" : 302,
         "known" : ["natalisn","andydiamond","natalyck"],
-        "cat" : "images",
-        "valid" : true
+        "cat" : "images"
        },
        {
         "name" : "imgur",
@@ -2840,19 +2546,7 @@
         "m_string" : "unable to find account",
         "m_code" : 404,
         "known" : ["OliverClothesoff70", "DadOnTheInternet"],
-        "cat" : "images",
-        "valid" : true
-       },
-       {
-        "name" : "ImLive",
-        "uri_check" : "https://imlive.com/live-sex-chat/cam-girls/sexcamvideos-{account}/",
-        "e_code" : 200,
-        "e_string" : "About Me</span>",
-        "m_string" : "<title>ImLive.com - Page Not Found</title>",
-        "m_code" : 404,
-        "known" : ["XTheBrunetteX", "candyfeng18"],
-        "cat" : "XXXPORNXXX",
-        "valid" : true
+        "cat" : "images"
        },
        {
         "name" : "inaturalist",
@@ -2862,8 +2556,7 @@
         "m_string" : "404 Not Found",
         "m_code" : 404,
         "known" : ["greg", "tom"],
-        "cat" : "hobby",
-        "valid" : true
+        "cat" : "hobby"
        },
        {
         "name" : "Independent academia",
@@ -2873,8 +2566,7 @@
         "m_string" : "Academia.edu",
         "m_code" : 404,
         "known" : ["peter", "LiamM"],
-        "cat" : "hobby",
-        "valid" : true
+        "cat" : "hobby"
        },
        {
         "name" : "InkBunny",
@@ -2884,20 +2576,18 @@
         "m_string" : "<title>Members | Inkbunny, the Furry Art Community</title>",
         "m_code" : 302,
         "known" : ["AdminBunny", "test"],
-        "cat" : "XXXPORNXXX",
-        "valid" : true
+        "cat" : "xx NSFW xx"
        },
        {
         "name" : "InsaneJournal",
         "uri_check" : "https://{account}.insanejournal.com/profile",
-        "invalid_chars" : ".",
+        "strip_bad_char" : ".",
         "e_code" : 200,
         "e_string" : "User:",
         "m_string" : "The requested URL /profile was not found on this server",
         "m_code" : 200,
         "known" : ["test", "pint-sized", "acroamatica"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "Instagram",
@@ -2908,8 +2598,7 @@
         "m_string" : "Nothing found!",
         "m_code" : 404,
         "known" : ["katyperry", "kirbstr"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "Instagram_archives",
@@ -2919,8 +2608,7 @@
         "m_string" : "\"archived_snapshots\": {}}",
         "m_code" : 200,
         "known" : ["zuck", "jack"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "instructables",
@@ -2930,8 +2618,7 @@
         "m_string" : "",
         "m_code" : 404,
         "known" : ["davidandora", "test"],
-        "cat" : "hobby",
-        "valid" : true
+        "cat" : "hobby"
        },
        {
         "name" : "Internet Archive Account",
@@ -2941,8 +2628,7 @@
         "m_string" : "<title>cannot find account",
         "m_code" : 200,
         "known" : ["webbreacher", "jason_scott"],
-        "cat" : "misc",
-        "valid" : true
+        "cat" : "misc"
        },
        {
         "name" : "Internet Archive User Search",
@@ -2952,8 +2638,7 @@
         "m_string" : "",
         "m_code" : 200,
         "known" : ["test", "mubix"],
-        "cat" : "misc",
-        "valid" : true
+        "cat" : "misc"
        },
        {
         "name" : "interpals",
@@ -2963,8 +2648,7 @@
         "m_string" : "User not found",
         "m_code" : 200,
         "known" : ["test"],
-        "cat" : "dating",
-        "valid" : true
+        "cat" : "dating"
        },
        {
         "name" : "isMyGirl",
@@ -2975,8 +2659,7 @@
         "m_code" : 404,
         "m_string" : "User does not exist",
         "known" : ["kasumineechan", "blinky"],
-        "cat" : "finance",
-        "valid" : true
+        "cat" : "finance"
        },
        {
         "name" : "issuu",
@@ -2986,8 +2669,7 @@
         "m_string" : "Oops — we can’t seem to find the page you’re looking for.",
         "m_code" : 404,
         "known" : ["john", "smith"],
-        "cat" : "shopping",
-        "valid" : true
+        "cat" : "shopping"
        },
        {
         "name" : "itch.io",
@@ -2997,8 +2679,7 @@
         "m_code" : 404,
         "m_string" : "We couldn't find your page",
         "known" : ["prestent", "finch"],
-        "cat" : "gaming",
-        "valid" : true
+        "cat" : "gaming"
        },
        {
         "name" : "Japandict",
@@ -3008,8 +2689,7 @@
         "m_code" : 404,
         "m_string" : "The page you requested could not be found.",
         "known" : ["Yan", "Happy"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "jeja.pl",
@@ -3019,8 +2699,7 @@
         "m_string" : "Niepoprawny login",
         "m_code" : 200,
         "known" : ["kowal", "janek"],
-        "cat" : "misc",
-        "valid" : true
+        "cat" : "misc"
        },
        {
         "name" : "JBZD",
@@ -3030,8 +2709,7 @@
         "m_string" : "Błąd 404",
         "m_code" : 404,
         "known" : ["test", "janek"],
-        "cat" : "images",
-        "valid" : true
+        "cat" : "images"
        },
        {
         "name" : "Jeuxvideo",
@@ -3041,8 +2719,7 @@
         "m_string" : "rence des gamers",
         "m_code" : 404,
         "known" : ["jane", "alex"],
-        "cat" : "gaming",
-        "valid" : true
+        "cat" : "gaming"
        },
        {
         "name" : "Joe Monster",
@@ -3052,8 +2729,7 @@
         "m_string" : "Nie wiem jak ci to powiedzieć",
         "m_code" : 200,
         "known" : ["dandris", "lasior"],
-        "cat" : "misc",
-        "valid" : true
+        "cat" : "misc"
        },
        {
         "name" : "JSFiddle",
@@ -3063,8 +2739,7 @@
         "m_string" : "That page doesn't exist.",
         "m_code" : 404,
         "known" : ["john", "alex"],
-        "cat" : "coding",
-        "valid" : true
+        "cat" : "coding"
        },
        {
         "name" : "Justforfans",
@@ -3074,8 +2749,7 @@
         "m_string" : "",
         "m_code" : 302,
         "known" : ["devinfrancoxxx", "RileyChaux"],
-        "cat" : "XXXPORNXXX",
-        "valid" : true
+        "cat" : "xx NSFW xx"
        },
        {
         "name" : "kaggle",
@@ -3085,8 +2759,7 @@
         "m_string" : "Kaggle: Your Home for Data Science",
         "m_code" : 404,
         "known" : ["babyoda", "residentmario"],
-        "cat" : "coding",
-        "valid" : true
+        "cat" : "coding"
        },
        {
         "name" : "karab.in",
@@ -3096,8 +2769,7 @@
         "m_string" : "Błąd 404",
         "m_code" : 404,
         "known" : ["ernest", "puszkapandory"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "Keybase",
@@ -3107,8 +2779,7 @@
         "m_string" : "sorry, not found",
         "m_code" : 404,
         "known" : ["test", "mubix"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "Kickstarter",
@@ -3118,8 +2789,7 @@
         "m_string" : "Oops, Something went missing",
         "m_code" : 404,
         "known" : ["john", "bob"],
-        "cat" : "shopping",
-        "valid" : true
+        "cat" : "shopping"
        },
        {
         "name" : "kik",
@@ -3129,8 +2799,7 @@
         "m_string" : "The page you requested was not found",
         "m_code" : 200,
         "known" : ["adam", "smith", "jones"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "kipin",
@@ -3140,8 +2809,7 @@
         "m_string" : "Page not found. Link expired, broken or wrong.",
         "m_code" : 302,
         "known" : ["monethica", "asd_fca"],
-        "cat" : "business",
-        "valid" : true
+        "cat" : "business"
        },
        {
         "name" : "KnowYourMeme",
@@ -3151,8 +2819,7 @@
         "m_code" : 400,
         "m_string" : "404, File Not Found!",
         "known" : ["ayumukasuga", "butterin-yobread"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "Ko-Fi",
@@ -3162,8 +2829,7 @@
         "m_string" : "Object moved to",
         "m_code" : 302,
         "known" : ["frank", "marcmakescomics"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "Kongregate",
@@ -3173,8 +2839,7 @@
         "m_string" : "Sorry, no account with that name was found",
         "m_code" : 404,
         "known" : ["test"],
-        "cat" : "gaming",
-        "valid" : true
+        "cat" : "gaming"
        },
        {
         "name" : "Kotburger",
@@ -3184,8 +2849,7 @@
         "m_string" : "Nie znaleziono użytkownika o podanym loginie.",
         "m_code" : 200,
         "known" : ["ania", "janek"],
-        "cat" : "images",
-        "valid" : true
+        "cat" : "images"
        },
        {
         "name" : "kwejk.pl",
@@ -3195,8 +2859,7 @@
         "m_string" : "404 - strona nie została znaleziona - KWEJK.pl",
         "m_code" : 404,
         "known" : ["test", "janek"],
-        "cat" : "images",
-        "valid" : true
+        "cat" : "images"
        },
        {
         "name" : "LibraryThing",
@@ -3206,8 +2869,7 @@
         "m_string" : "Error: This user doesn't exist",
         "m_code" : 200,
         "known" : ["test", "john"],
-        "cat" : "hobby",
-        "valid" : true
+        "cat" : "hobby"
        },
        {
         "name" : "Libretooth.gr (Mastodon Instance)",
@@ -3218,8 +2880,7 @@
         "m_code" : 404,
         "m_string" : "Record not found",
         "known" : ["infolibre", "tzinalilik"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "lichess",
@@ -3229,8 +2890,7 @@
         "m_string" : "Page not found",
         "m_code" : 404,
         "known" : ["mohammed01", "mohammed03"],
-        "cat" : "gaming",
-        "valid" : true
+        "cat" : "gaming"
        },
        {
         "name" : "likeevideo",
@@ -3240,8 +2900,7 @@
         "m_string" : " </h1>",
         "m_code" : 404,
         "known" : ["owlthorns", "Severkosh"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "LINE",
@@ -3251,8 +2910,7 @@
         "m_code" : 404,
         "m_string" : "404 Not Found",
         "known" : [ "roseareal", "yoasobi" ],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "Linktree",
@@ -3262,8 +2920,7 @@
         "m_string" : "The page you’re looking for doesn’t exist.",
         "m_code" : 404,
         "known" : ["anne", "alex"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "linux.org.ru",
@@ -3273,32 +2930,18 @@
         "m_string" : "Пользователя не существует",
         "m_code" : 404,
         "known" : ["john", "bob"],
-        "cat" : "tech",
-        "valid" : true
-       },
-       {
-        "name" : "LIVEJASMIN",
-        "uri_check" : "https://www.livejasmin.com/en/my-content/wall/get/all/{account}/0",
-        "uri_pretty" : "https://www.livejasmin.com/en/girls#!chat/{account}",
-        "e_code" : 200,
-        "e_string" : "success",
-        "m_string" : "",
-        "m_code" : 301,
-        "known" : ["MilyThomas", "ChantelClark"],
-        "cat" : "XXXPORNXXX",
-        "valid" : true
+        "cat" : "tech"
        },
        {
         "name" : "Livejournal",
         "uri_check" : "https://{account}.livejournal.com",
-        "invalid_chars" : ".",
+        "strip_bad_char" : ".",
         "e_code" : 200,
         "e_string" : "<link rel=\"canonical\" href=\"",
         "m_string" : "<title>Unknown Journal",
         "m_code" : 404,
         "known" : ["jill", "john"],
-        "cat" : "blog",
-        "valid" : true
+        "cat" : "blog"
        },
        {
         "name" : "livemaster.ru",
@@ -3308,8 +2951,7 @@
         "m_string" : "<title>Вы попали на несуществующую страницу",
         "m_code" : 404,
         "known" : ["redart", "ellentoy"],
-        "cat" : "shopping",
-        "valid" : true
+        "cat" : "shopping"
        },
        {
         "name" : "lobste.rs",
@@ -3319,8 +2961,7 @@
         "m_string" : "The resource you requested was not found, or the story has been deleted.",
         "m_code" : 404,
         "known" : ["john", "bob"],
-        "cat" : "tech",
-        "valid" : true
+        "cat" : "tech"
        },
        {
         "name" : "Lor.sh (Mastodon Instance)",
@@ -3331,8 +2972,7 @@
         "m_code" : 404,
         "m_string" : "Record not found",
         "known" : ["dump_stack", "lamountain"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "love_ru",
@@ -3342,8 +2982,7 @@
         "m_string" : "<title>404",
         "m_code" : 404,
         "known" : ["igor", "anna"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "lowcygier.pl",
@@ -3353,8 +2992,7 @@
         "m_string" : "Błąd 404 - Podana strona nie istnieje",
         "m_code" : 404,
         "known" : ["armin", "janek"],
-        "cat" : "gaming",
-        "valid" : true
+        "cat" : "gaming"
        },
        {
         "name" : "MAGABOOK",
@@ -3364,8 +3002,7 @@
         "m_string" : "Page Not Be Found",
         "m_code" : 200,
         "known" : ["PamelaElliott62", "eric"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "MAGA-CHAT",
@@ -3375,8 +3012,7 @@
         "m_string" : "Page Not Be Found",
         "m_code" : 200,
         "known" : ["Rich", "RjosephJr"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "Magix",
@@ -3386,8 +3022,7 @@
         "m_string" : "Page not found",
         "m_code" : 200,
         "known" : ["baywolfmusic", "johnebaker"],
-        "cat" : "music",
-        "valid" : true
+        "cat" : "music"
        },
        {
         "name" : "MANYVIDS",
@@ -3397,8 +3032,7 @@
         "m_string" : "did not return any results",
         "m_code" : 200,
         "known" : ["alexbreecooper", "sweetkiss_69"],
-        "cat" : "XXXPORNXXX",
-        "valid" : true
+        "cat" : "xx NSFW xx"
        },
        {
         "name" : "MapMyTracks",
@@ -3408,8 +3042,7 @@
         "m_string" : "Outside together",
         "m_code" : 302,
         "known" : ["ulirad", "CBSloan"],
-        "cat" : "health",
-        "valid" : true
+        "cat" : "health"
        },
        {
         "name" : "Mapstodon.space (Mastodon Instance)",
@@ -3420,8 +3053,7 @@
         "m_code" : 404,
         "m_string" : "Record not found",
         "known" : ["Autumnhussar", "jeremy"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "Maroc_nl",
@@ -3431,8 +3063,7 @@
         "m_string" : "Deze gebruiker is niet geregistreerd",
         "m_code" : 200,
         "known" : ["brahim", "brahim01"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "Marshmallow",
@@ -3442,8 +3073,7 @@
         "m_string" : "For compensation, here are cats for you.",
         "m_code" : 404,
         "known" : ["yuino_fox", "momo"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "Martech",
@@ -3453,8 +3083,7 @@
         "m_string" : "Page not found",
         "m_code" : 404,
         "known" : ["mani-karthik", "james-green"],
-        "cat" : "business",
-        "valid" : true
+        "cat" : "business"
        },
        {
         "name" : "Massage Anywhere",
@@ -3464,8 +3093,7 @@
         "m_string" : "<title>MassageAnywhere.com: Search Results</title>",
         "m_code" : 200,
         "known" : ["lorilmccluskey", "LomiNYC"],
-        "cat" : "health",
-        "valid" : true
+        "cat" : "health"
        },
        {
         "name" : "Mas.town (Mastodon Instance)",
@@ -3476,8 +3104,7 @@
         "m_code" : 404,
         "m_string" : "Record not found",
         "known" : ["brett", "cheng"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "masto.ai",
@@ -3487,8 +3114,7 @@
         "m_string" : "The page you are looking for isn&#39;t here.",
         "m_code" : 404,
         "known" : ["rbreich", "stux"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "Masto.nyc (Mastodon Instance)",
@@ -3499,8 +3125,7 @@
         "m_code" : 404,
         "m_string" : "Record not found",
         "known" : ["seano", "jayjay718"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "Mastodonbooks.net (Mastodon Instance)",
@@ -3511,8 +3136,7 @@
         "m_code" : 404,
         "m_string" : "Record not found",
         "known" : ["RogerRemacle", "eugnick"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "Mastodon-mastodon",
@@ -3522,8 +3146,7 @@
         "m_string" : "The page you are looking for isn't here.",
         "m_code" : 404,
         "known" : ["john", "alex"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "Mastodon.chasedem.dev (Mastodon Instance)",
@@ -3534,8 +3157,7 @@
         "m_code" : 404,
         "m_string" : "Record not found",
         "known" : ["chase", "George"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "Mastodon-API",
@@ -3545,8 +3167,7 @@
         "m_string" : "accounts\":[],\"statuses\":[],\"hashtags\":",
         "m_code" : 404,
         "known" : ["Richard_Littler", "webbreacher"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "Mastodon.online",
@@ -3556,8 +3177,7 @@
         "m_string" : "<title>The page you are looking for isn&#39;t here.",
         "m_code" : 404,
         "known" : ["Gargron", "RDHale"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "Mastodon-Toot.Community",
@@ -3567,8 +3187,7 @@
         "m_string" : "The page you are looking for isn&#39;t here.",
         "m_code" : 404,
         "known" : ["Johnny", "jorijn"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "Mastodon-climatejustice.rocks",
@@ -3578,8 +3197,7 @@
         "m_string" : "The page you are looking for isn&#39;t here.",
         "m_code" : 404,
         "known" : ["paula", "ahmed76farag"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "Mastodon-C.IM",
@@ -3589,8 +3207,7 @@
         "m_string" : "<title>The page you are looking for isn&#39;t here",
         "m_code" : 404,
         "known" : ["admin", "paidugroup"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "MCName (Minecraft)",
@@ -3600,8 +3217,7 @@
         "m_string" : "alert alert-success px-0 py-1",
         "m_code" : 200,
         "known" : ["unrevive", "nxtuny"],
-        "cat" : "gaming",
-        "valid" : true
+        "cat" : "gaming"
        },
        {
         "name" : "MCUUID (Minecraft)",
@@ -3612,8 +3228,7 @@
         "m_string" : "minecraft.api_failure",
         "m_code" : 200,
         "known" : ["smithy", "bob"],
-        "cat" : "gaming",
-        "valid" : true
+        "cat" : "gaming"
        },
        {
         "name" : "Mediakits",
@@ -3624,20 +3239,18 @@
         "m_code" : 404,
         "m_string" : "The requested media kit does not exist.",
         "known" : ["kasuminee", "honey"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "Medium",
         "uri_check" : "https://{account}.medium.com/about",
-        "invalid_chars" : ".",
+        "strip_bad_char" : ".",
         "e_code" : 200,
         "e_string" : "Medium member since",
         "m_string" : "Out of nothing, something",
         "m_code" : 404,
         "known" : ["zulie", "jessicalexicus"],
-        "cat" : "news",
-        "valid" : true
+        "cat" : "news"
        },
        {
         "name" : "medyczka.pl",
@@ -3647,8 +3260,7 @@
         "m_string" : "This user has not registered and therefore does not have a profile to view.",
         "m_code" : 200,
         "known" : ["test", "janek"],
-        "cat" : "health",
-        "valid" : true
+        "cat" : "health"
        },
        {
         "name" : "meet me",
@@ -3658,8 +3270,7 @@
         "m_string" : "<title>MeetMe - Chat and Meet New People</title",
         "m_code" : 302,
         "known" : ["john", "marsha"],
-        "cat" : "dating",
-        "valid" : true
+        "cat" : "dating"
        },
        {
         "name" : "megamodels.pl",
@@ -3669,8 +3280,7 @@
         "m_string" : "OSTATNIO AKTYWNE PROFILE",
         "m_code" : 200,
         "known" : ["ania", "janek"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "memrise",
@@ -3680,8 +3290,7 @@
         "m_string" : "Memrise - Error",
         "m_code" : 404,
         "known" : ["alice", "john"],
-        "cat" : "hobby",
-        "valid" : true
+        "cat" : "hobby"
        },
        {
         "name" : "Mastodon-meow.social",
@@ -3691,8 +3300,7 @@
         "m_string" : "The page you are looking for isn&#39;t here.",
         "m_code" : 404,
         "known" : ["meow", "novra"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "message_me",
@@ -3702,8 +3310,7 @@
         "m_string" : "<title>404</title>",
         "m_code" : 404,
         "known" : ["sue", "david"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "metacritic",
@@ -3713,8 +3320,7 @@
         "m_string" : "<title>Sign up to get your own profile - Metacritic</",
         "m_code" : 200,
         "known" : ["dev", "matt"],
-        "cat" : "hobby",
-        "valid" : true
+        "cat" : "hobby"
        },
        {
         "name" : "Microsoft Technet Community",
@@ -3724,8 +3330,7 @@
         "m_string" : "The resource you are looking for has been removed",
         "m_code" : 404,
         "known" : ["john", "test"],
-        "cat" : "tech",
-        "valid" : true
+        "cat" : "tech"
        },
        {
         "name" : "Minds",
@@ -3735,8 +3340,7 @@
         "m_string" : "Sorry, this channel doesn't appear to exist",
         "m_code" : 404,
         "known" : ["Willieleev1971", "john"],
-        "cat" : "political",
-        "valid" : true
+        "cat" : "political"
        },
        {
         "name" : "Minecraft List",
@@ -3746,8 +3350,7 @@
         "m_string" : "0 Minecraft servers recently",
         "m_code" : 200,
         "known" : ["fear837", "dream"],
-        "cat" : "gaming",
-        "valid" : true
+        "cat" : "gaming"
        },
        {
         "name" : "mintme",
@@ -3757,8 +3360,7 @@
         "m_string" : "Page not found",
         "m_code" : 404,
         "known" : ["john", "crypto"],
-        "cat" : "finance",
-        "valid" : true
+        "cat" : "finance"
        },
        {
         "name" : "Mistrzowie",
@@ -3768,8 +3370,7 @@
         "m_string" : "Nie znaleziono użytkownika o podanym loginie.",
         "m_code" : 200,
         "known" : ["test", "janek"],
-        "cat" : "images",
-        "valid" : true
+        "cat" : "images"
        },
        {
         "name" : "Mix",
@@ -3779,8 +3380,7 @@
         "m_string" : "The best content from the open web, personalized.",
         "m_code" : 302,
         "known" : ["test", "mixpicks"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "Mixi",
@@ -3790,8 +3390,7 @@
         "m_string" : "データがありません",
         "m_code" : 200,
         "known" : ["2854333", "19123"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "Mixlr",
@@ -3802,8 +3401,7 @@
         "m_string" : "Resource not found",
         "m_code" : 404,
         "known" : ["test", "john"],
-        "cat" : "music",
-        "valid" : true
+        "cat" : "music"
        },
        {
         "name" : "Mmorpg",
@@ -3813,8 +3411,7 @@
         "m_string" : "404 Not Not_Found",
         "m_code" : 404,
         "known" : ["TheDalaiBomba", "MadLovin"],
-        "cat" : "gaming",
-        "valid" : true
+        "cat" : "gaming"
        },
        {
         "name" : "Mod DB",
@@ -3824,19 +3421,7 @@
         "m_string" : "Login is required to view the requested member profile",
         "m_code" : 403,
         "known" : ["sprinklesoup", "emargy"],
-        "cat" : "gaming",
-        "valid" : true
-       },
-       {
-        "name" : "Model hub",
-        "uri_check" : "https://www.modelhub.com/{account}/videos",
-        "e_code" : 200,
-        "e_string" : "<span>Modelhub Rank",
-        "m_string" : "Oops, the page you are looking for doesn't exist or another error occurred",
-        "m_code" : 404,
-        "known" : ["missbnasty", "indigo-white"],
-        "cat" : "XXXPORNXXX",
-        "valid" : true
+        "cat" : "gaming"
        },
        {
         "name" : "Moneysavingexpert",
@@ -3846,8 +3431,7 @@
         "m_string" : "User Not Found",
         "m_code" : 404,
         "known" : ["Heathermck", "MallyGirl"],
-        "cat" : "finance",
-        "valid" : true
+        "cat" : "finance"
        },
        {
         "name" : "Motokiller",
@@ -3857,8 +3441,7 @@
         "m_string" : "Nie znaleziono użytkownika o podanym loginie.",
         "m_code" : 200,
         "known" : ["test", "janek"],
-        "cat" : "images",
-        "valid" : true
+        "cat" : "images"
        },
        {
         "name" : "moxfield",
@@ -3868,8 +3451,7 @@
         "m_string" : "No user found ",
         "m_code" : 200,
         "known" : ["gamer", "Carlos01"],
-        "cat" : "misc",
-        "valid" : true
+        "cat" : "misc"
        },
        {
         "name" : "Mastodon-mstdn.io",
@@ -3879,8 +3461,7 @@
         "m_string" : "The page you are looking for isn&#39;t here.",
         "m_code" : 404,
         "known" : ["mike", "greg"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "Muck Rack",
@@ -3890,8 +3471,7 @@
         "m_string" : "Oh no! Page not found.",
         "m_code" : 404,
         "known" : ["john"],
-        "cat" : "news",
-        "valid" : true
+        "cat" : "news"
        },
        {
         "name" : "Musician.social (Mastodon Instance)",
@@ -3902,8 +3482,7 @@
         "m_code" : 404,
         "m_string" : "Record not found",
         "known" : ["Alizar", "weisjohan"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "musictraveler",
@@ -3913,8 +3492,7 @@
         "m_string" : "<title>Page Not found</title>",
         "m_code" : 404,
         "known" : ["dave", "sarah"],
-        "cat" : "music",
-        "valid" : true
+        "cat" : "music"
        },
        {
         "name" : "MyAnimeList",
@@ -3924,8 +3502,7 @@
         "m_string" : "<title>404 Not Found",
         "m_code" : 404,
         "known" : ["test", "admin"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "MyBuilder.com",
@@ -3935,8 +3512,7 @@
         "m_string" : "Whoops! You broke our site!",
         "m_code" : 404,
         "known" : ["blue", "john"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "MyFitnessPal Author",
@@ -3946,8 +3522,7 @@
         "m_string" : "<title>Page not found ",
         "m_code" : 404,
         "known" : ["lauren-krouse", "julia-malacoff"],
-        "cat" : "health",
-        "valid" : true
+        "cat" : "health"
        },
        {
         "name" : "MyFitnessPal Community",
@@ -3957,8 +3532,7 @@
         "m_string" : "User Not Found",
         "m_code" : 404,
         "known" : ["malibu927", "L1zardQueen"],
-        "cat" : "health",
-        "valid" : true
+        "cat" : "health"
        },
        {
         "name" : "mymfans",
@@ -3968,8 +3542,7 @@
         "m_string" : "• MYM • Exclusive social network for creators &amp; fans</title>",
         "m_code" : 404,
         "known" : ["Unmissabl", "Lalogebeaute"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "my_instants",
@@ -3979,8 +3552,7 @@
         "m_string" : "Page not found",
         "m_code" : 404,
         "known" : ["daniel01", "dave"],
-        "cat" : "music",
-        "valid" : true
+        "cat" : "music"
        },
        {
         "name" : "MyLot",
@@ -3990,8 +3562,7 @@
         "m_string" : " / Whoops!",
         "m_code" : 404,
         "known" : ["Tampa_girl7"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "mym.fans",
@@ -4001,20 +3572,18 @@
         "m_string" : "Il n’y a rien ici…",
         "m_code" : 404,
         "known" : ["Djelizamay","Andysparkles"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "myportfolio",
         "uri_check" : "https://{account}.myportfolio.com/work",
-        "invalid_chars" : ".",
+        "strip_bad_char" : ".",
         "e_code" : 200,
         "e_string" : "class=\"page-title",
         "m_string" : "<title>Adobe Portfolio | Build your own personalized website</title>",
         "m_code" : 302,
         "known" : ["artkonina", "fox"],
-        "cat" : "misc",
-        "valid" : true
+        "cat" : "misc"
        },
        {
         "name" : "MySpace",
@@ -4024,8 +3593,7 @@
         "m_string" : "<!-- 404 -->",
         "m_code" : 404,
         "known" : ["alice", "bob"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "Myspreadshop",
@@ -4036,8 +3604,7 @@
         "m_code" : 404,
         "m_string" : "not found",
         "known" : ["arukori", "honey"],
-        "cat" : "business",
-        "valid" : true
+        "cat" : "business"
        },
        {
         "name" : "naija_planet",
@@ -4047,8 +3614,7 @@
         "m_string" : "- NaijaPlanet!",
         "m_code" : 200,
         "known" : ["daniel01", "wales73"],
-        "cat" : "dating",
-        "valid" : true
+        "cat" : "dating"
        },
        {
         "name" : "nairaland",
@@ -4058,8 +3624,7 @@
         "m_string" : "404: Page Not Found",
         "m_code" : 301,
         "known" : ["amakaone", "seun"],
-        "cat" : "news",
-        "valid" : true
+        "cat" : "news"
 
        },
        {
@@ -4070,8 +3635,7 @@
         "m_string" : "The page you are looking for cannot be found or is no longer available.",
         "m_code" : 200,
         "known" : ["jdheyes", "healthranger"],
-        "cat" : "political",
-        "valid" : true
+        "cat" : "political"
        },
        {
         "name" : "Naver",
@@ -4081,8 +3645,7 @@
         "m_string" : "페이지를 찾을 수 없습니다",
         "m_code" : 500,
         "known" : ["bob", "blue"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "Neocities",
@@ -4092,8 +3655,7 @@
         "m_string" : "- Not Found</title>",
         "m_code" : 404,
         "known" : ["fauux", "sadgrl"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "netvibes",
@@ -4103,20 +3665,18 @@
         "m_string" : "Page not found",
         "m_code" : 404,
         "known" : ["nebkacrea", "cdiljda"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "Newgrounds",
         "uri_check" : "https://{account}.newgrounds.com/",
-        "invalid_chars" : ".",
+        "strip_bad_char" : ".",
         "e_code" : 200,
         "e_string" : "fans",
         "m_string" : "Whoops, that's a swing and a miss!",
         "m_code" : 404,
         "known" : ["john", "bob"],
-        "cat" : "gaming",
-        "valid" : true
+        "cat" : "gaming"
        },
        {
         "name" : "newmeet",
@@ -4126,8 +3686,7 @@
         "m_string" : ", , , - |",
         "m_code" : 200,
         "known" : ["mamadou1", "wade"],
-        "cat" : "dating",
-        "valid" : true
+        "cat" : "dating"
        },
        {
         "name" : "nihbuatjajan",
@@ -4137,8 +3696,7 @@
         "m_string" : "<title>Nih Buat Jajan</title>",
         "m_code" : 302,
         "known" : ["banyusadewa", "danirachmat"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "Nitecrew (Mastodon Instance)",
@@ -4149,20 +3707,18 @@
         "m_code" : 404,
         "m_string" : "Record not found",
         "known" : ["Myxx", "honey"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "nnru",
         "uri_check" : "https://{account}.www.nn.ru",
-        "invalid_chars" : ".",
+        "strip_bad_char" : ".",
         "e_code" : 200,
         "e_string" : "<title> ",
         "m_string" : "<title>Ошибка 404 -",
         "m_code" : 404,
         "known" : ["lena", "slava"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "NotABug",
@@ -4172,8 +3728,7 @@
         "m_string" : "Not Found",
         "m_code" : 404,
         "known" : ["notabug", "hp", "zPlus"],
-        "cat" : "coding",
-        "valid" : true
+        "cat" : "coding"
        },
        {
         "name" : "Note",
@@ -4183,8 +3738,7 @@
         "m_code" : 404,
         "m_string" : "お探しのページが見つかりません。",
         "known" : ["honey", "yui"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "oglaszamy24h.pl",
@@ -4194,8 +3748,7 @@
         "m_string" : "Nieprawidłowy link, w bazie danych nie istnieje użytkownik o podanym loginie",
         "m_code" : 404,
         "known" : ["kowal", "janek"],
-        "cat" : "shopping",
-        "valid" : true
+        "cat" : "shopping"
        },
        {
         "name" : "ok.ru",
@@ -4205,8 +3758,7 @@
         "m_string" : "This page does not exist on OK",
         "m_code" : 404,
         "known" : ["john", "aleksandrvasillev"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "okidoki",
@@ -4216,8 +3768,18 @@
         "m_string" : "Страница не найдена",
         "m_code" : 404,
         "known" : ["nastya3", "nastya"],
-        "cat" : "misc",
-        "valid" : true
+        "cat" : "misc"
+       },
+       {
+        "name" : "olx",
+        "uri_check" : "https://www.olx.pl/oferty/uzytkownik/{account}/",
+        "e_code" : 200,
+        "e_string" : "Obserwuj wyszukiwanie",
+        "m_string" : "Przepraszamy, ale nie możemy znaleźć takiej strony...",
+        "m_code" : 200,
+        "known" : ["janek", "test"],
+        "cat" : "shopping",
+        "valid" : false
        },
        {
         "name" : "Opencollective",
@@ -4227,8 +3789,7 @@
         "m_string" : "Not Found",
         "m_code" : 200,
         "known" : ["john", "bob"],
-        "cat" : "finance",
-        "valid" : true
+        "cat" : "finance"
        },
        {
         "name" : "opensource",
@@ -4238,8 +3799,7 @@
         "m_string" : "Page not found",
         "m_code" : 404,
         "known" : ["dave", "mike"],
-        "cat" : "tech",
-        "valid" : true
+        "cat" : "tech"
        },
        {
         "name" : "OpenStreetMap",
@@ -4249,8 +3809,7 @@
         "m_string" : "does not exist",
         "m_code" : 404,
         "known" : ["kemkim"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "OpenWRT Forums",
@@ -4260,8 +3819,7 @@
         "m_string" : "doesn't exist",
         "m_code" : 404,
         "known" : ["kpise", "a_guy"],
-        "cat" : "tech",
-        "valid" : true
+        "cat" : "tech"
        },
        {
         "name" : "OPGG",
@@ -4271,8 +3829,7 @@
         "m_string" : "Guide - OP.GG",
         "m_code" : 200,
         "known" : ["xin", "carlos01"],
-        "cat" : "gaming",
-        "valid" : true
+        "cat" : "gaming"
        },
        {
         "name" : "Orbys",
@@ -4282,8 +3839,7 @@
         "m_string" : "The page you are looking for cannot be found.",
         "m_code" : 404,
         "known" : ["txmustang302"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "osu!",
@@ -4293,8 +3849,7 @@
         "m_string" : "User not found! ;_;",
         "m_code" : 404,
         "known" : ["stretches", "spiken8"],
-        "cat" : "gaming",
-        "valid" : true
+        "cat" : "gaming"
        },
        {
         "name" : "Our Freedom Book",
@@ -4304,8 +3859,7 @@
         "m_string" : "Sorry, page not found",
         "m_code" : 302,
         "known" : ["DaveLipsky", "StarlaJene"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "ow.ly",
@@ -4315,8 +3869,7 @@
         "m_string" : "404 error",
         "m_code" : 404,
         "known" : ["StopAdMedia", "jokervendetti"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "palnet",
@@ -4326,8 +3879,7 @@
         "m_string" : "Unknown user account!",
         "m_code" : 404,
         "known" : ["abdul01", "hakim"],
-        "cat" : "finance",
-        "valid" : true
+        "cat" : "finance"
        },
        {
         "name" : "Parler",
@@ -4337,8 +3889,7 @@
         "m_string" : "join Parler today",
         "m_code" : 302,
         "known" : ["DineshDsouza", "SeanHannity"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "Parler archived profile",
@@ -4349,8 +3900,7 @@
         "m_string" : "\"archived_snapshots\": {}",
         "m_code" : 200,
         "known" : ["JoePags", "dineshdsouza"],
-        "cat" : "archived",
-        "valid" : true
+        "cat" : "archived"
        },
        {
         "name" : "Parler archived posts",
@@ -4361,8 +3911,7 @@
         "m_string" : "\"archived_snapshots\": {}",
         "m_code" : 200,
         "known" : ["JoePags", "dineshdsouza"],
-        "cat" : "archived",
-        "valid" : true
+        "cat" : "archived"
        },
        {
         "name" : "Pastebin",
@@ -4372,8 +3921,7 @@
         "m_string" : "",
         "m_code" : 404,
         "known" : ["test", "john"],
-        "cat" : "tech",
-        "valid" : true
+        "cat" : "tech"
        },
        {
         "name" : "patch",
@@ -4383,8 +3931,7 @@
         "m_string" : "<title>Page not found</title>",
         "m_code" : 404,
         "known" : ["dave", "bob"],
-        "cat" : "news",
-        "valid" : true
+        "cat" : "news"
        },
        {
         "name" : "PatientsLikeMe",
@@ -4394,8 +3941,7 @@
         "m_string" : "",
         "m_code" : 302,
         "known" : ["thjuland", "Pedro0703", "Hydropioneer"],
-        "cat" : "health",
-        "valid" : true
+        "cat" : "health"
        },
        {
         "name" : "Patreon",
@@ -4405,8 +3951,7 @@
         "m_string" : "errorCode\": 404,",
         "m_code" : 404,
         "known" : ["mubix", "doughboys"],
-        "cat" : "finance",
-        "valid" : true
+        "cat" : "finance"
        },
        {
         "name" : "Patriots Win",
@@ -4416,8 +3961,7 @@
         "m_string" : "An error occurred",
         "m_code" : 500,
         "known" : ["r3deleven", "MemeFactory"],
-        "cat" : "political",
-        "valid" : true
+        "cat" : "political"
        },
        {
         "name" : "Patronite",
@@ -4427,8 +3971,7 @@
         "m_string" : "Nie znaleźliśmy strony której szukasz.",
         "m_code" : 404,
         "known" : ["radio357", "radionowyswiat"],
-        "cat" : "finance",
-        "valid" : true
+        "cat" : "finance"
         },
         {
         "name" : "Paypal",
@@ -4438,8 +3981,7 @@
         "m_string" : "<title>PayPal.Me</title><meta",
         "m_code" : 200,
         "known" : ["OCMermaid", "blackrock"],
-        "cat" : "finance",
-        "valid" : true
+        "cat" : "finance"
        },
        {
         "name" : "PCGamer",
@@ -4449,8 +3991,7 @@
         "m_string" : "Oops! We ran into some problems",
         "m_code" : 404,
         "known" : ["volley.302", "cjmariani.94198", "cholidsnake.2334"],
-        "cat" : "gaming",
-        "valid" : true
+        "cat" : "gaming"
        },
        {
         "name" : "PCPartPicker",
@@ -4460,8 +4001,7 @@
         "m_string" : "The page you requested could not be found.",
         "m_code" : 404,
         "known" : ["john", "bob"],
-        "cat" : "tech",
-        "valid" : true
+        "cat" : "tech"
        },
        {
         "name" : "Peing",
@@ -4472,8 +4012,7 @@
         "m_code" : 404,
         "m_string" : "Not Found",
         "known" : ["honey", "blink"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "Periscope",
@@ -4483,8 +4022,7 @@
         "m_string" : "Sorry, this page doesn’t exist",
         "m_code" : 404,
         "known" : ["john", "test"],
-        "cat" : "video",
-        "valid" : true
+        "cat" : "video"
        },
        {
         "name" : "Pettingzoo.co (Mastodon Instance)",
@@ -4495,8 +4033,7 @@
         "m_code" : 404,
         "m_string" : "Record not found",
         "known" : ["tyr", "Disbear"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "Pewex",
@@ -4506,19 +4043,17 @@
         "m_string" : "Nie znaleziono użytkownika o podanym loginie.",
         "m_code" : 200,
         "known" : ["test", "ania"],
-        "cat" : "misc",
-        "valid" : true
+        "cat" : "misc"
        },
        {
-      "name" : "Picsart",
-      "uri_check" : "https://picsart.com/u/{account}",
-      "e_code" : 200,
-      "e_string" : "Profiles on Picsart",
-      "m_string" : "User not found",
-      "m_code" : 404,
-      "known" : ["john", "john404"],
-      "cat" : "art",
-      "valid" : true
+        "name" : "Picsart",
+        "uri_check" : "https://picsart.com/u/{account}",
+        "e_code" : 200,
+        "e_string" : "Profiles on Picsart",
+        "m_string" : "User not found",
+        "m_code" : 404,
+        "known" : ["john", "john404"],
+        "cat" : "art"
        },
        {
         "name" : "Piekielni",
@@ -4528,8 +4063,7 @@
         "m_string" : "Nie znaleziono użytkownika o podanym loginie.",
         "m_code" : 200,
         "known" : ["test", "janek"],
-        "cat" : "misc",
-        "valid" : true
+        "cat" : "misc"
        },
        {
         "name" : "pikabu",
@@ -4539,8 +4073,7 @@
         "m_string" : "404. Страница не найдена",
         "m_code" : 404,
         "known" : ["igor01", "serguei"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "Pillowfort",
@@ -4550,8 +4083,7 @@
         "m_code" : 404,
         "m_string" : "That page does not exist, or you do not have the proper permissions to view it.",
         "known" : ["MissMoonified", "honey"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "PinkBike",
@@ -4561,8 +4093,7 @@
         "m_string" : "I couldn't find the page you were looking for",
         "m_code" : 404,
         "known" : ["whistlermountainbikepark", "paulhanson"],
-        "cat" : "hobby",
-        "valid" : true
+        "cat" : "hobby"
        },
        {
         "name" : "Pinterest",
@@ -4572,8 +4103,7 @@
         "m_string" : "Whoops! We couldn't find that page",
         "m_code" : 404,
         "known" : ["test123", "frickcollection"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "pixelfed.social",
@@ -4583,8 +4113,7 @@
         "m_string" : "<title>pixelfed</title>",
         "m_code" : 404,
         "known" : ["sarah", "john"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "Playstation Network",
@@ -4594,8 +4123,7 @@
         "m_string" : "We couldn't find anything ",
         "m_code" : 200,
         "known" : ["SlimShaggy18", "ikemenzi"],
-        "cat" : "gaming",
-        "valid" : true
+        "cat" : "gaming"
        },
        {
         "name" : "Plurk",
@@ -4605,8 +4133,7 @@
         "m_string" : "Register your plurk account",
         "m_code" : 200,
         "known" : ["test"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
        "name" : "Pokec",
@@ -4616,8 +4143,7 @@
        "m_string" : "Neexistujúci používateľ",
        "m_code" : 404,
        "known" : ["tobias", "brahim1"],
-       "cat" : "social",
-       "valid" : true
+       "cat" : "social"
        },
        {
         "name" : "pokemonshowdown",
@@ -4627,8 +4153,7 @@
         "m_string" : " (Unregistered)",
         "m_code" : 404,
         "known" : ["red", "blue"],
-        "cat" : "gaming",
-        "valid" : true
+        "cat" : "gaming"
        },
        {
         "name" : "Pokerstrategy",
@@ -4638,8 +4163,7 @@
         "m_string" : "Sorry, the requested page couldn't be found!",
         "m_code" : 404,
         "known" : ["john", "bob"],
-        "cat" : "gaming",
-        "valid" : true
+        "cat" : "gaming"
        },
        {
         "name" : "Polchat.pl",
@@ -4649,8 +4173,7 @@
         "m_string" : "Wybrany użytkownik nie istnieje.",
         "m_code" : 200,
         "known" : ["test","admin"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "policja2009",
@@ -4660,8 +4183,7 @@
         "m_string" : "Nie znaleziono tematów ani postów pasujących do Twoich kryteriów",
         "m_code" : 200,
         "known" : ["Pvwel", "janek"],
-        "cat" : "misc",
-        "valid" : true
+        "cat" : "misc"
        },
        {
         "name" : "Poll Everywhere",
@@ -4672,8 +4194,7 @@
         "m_string" : "ResourceNotFound",
         "m_code" : 404,
         "known" : ["josh", "jsmith"],
-        "cat" : "tech",
-        "valid" : true
+        "cat" : "tech"
        },
        {
         "name" : "Mastodon-pol.social",
@@ -4683,8 +4204,7 @@
         "m_string" : "The page you are looking for isn't here.",
         "m_code" : 404,
         "known" : ["ftdl", "ducensor"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "polygon",
@@ -4694,8 +4214,7 @@
         "m_string" : "404 Not found",
         "m_code" : 404,
         "known" : ["nicodeyo", "Nicole_Clark"],
-        "cat" : "gaming",
-        "valid" : true
+        "cat" : "gaming"
        },
        {
         "name" : "popl",
@@ -4705,8 +4224,7 @@
         "m_string" : "Profile not found",
         "m_code" : 200,
         "known" : ["rpelite","Ee0af3d822","ashleymetzger"],
-        "cat" : "business",
-        "valid" : true
+        "cat" : "business"
        },
        {
         "name" : "Pornhub Porn Stars",
@@ -4716,8 +4234,7 @@
         "m_string" : "",
         "m_code" : 301,
         "known" : ["riley-reid", "alex-adams"],
-        "cat" : "XXXPORNXXX",
-        "valid" : true
+        "cat" : "xx NSFW xx"
        },
        {
         "name" : "Pornhub Users",
@@ -4727,8 +4244,7 @@
         "m_string" : "Error Page Not Found",
         "m_code" : 404,
         "known" : ["test123"],
-        "cat" : "XXXPORNXXX",
-        "valid" : true
+        "cat" : "xx NSFW xx"
        },
        {
         "name" : "Poshmark",
@@ -4738,8 +4254,7 @@
         "m_string" : "Page not found - Poshmark",
         "m_code" : 404,
         "known" : ["alice", "bob"],
-        "cat" : "shopping",
-        "valid" : true
+        "cat" : "shopping"
        },
        {
         "name" : "postcrossing",
@@ -4749,8 +4264,7 @@
         "m_string" : "- Postcrossing",
         "m_code" : 404,
         "known" : ["Vladimir", "olga3"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "Poweredbygay.social (Mastodon Instance)",
@@ -4761,8 +4275,7 @@
         "m_code" : 404,
         "m_string" : "Record not found",
         "known" : ["aggiepm", "eplumley1976"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "Pravda.me",
@@ -4772,8 +4285,7 @@
         "m_string" : "<title>The page you are looking for isn&#39;t here.",
         "m_code" : 404,
         "known" : ["tass", "rt_russian"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "Producthunt",
@@ -4783,8 +4295,7 @@
         "m_string" : "Product Hunt - All newest Products",
         "m_code" : 404,
         "known" : ["alex", "jack"],
-        "cat" : "business",
-        "valid" : true
+        "cat" : "business"
        },
        {
         "name" : "promodj",
@@ -4794,8 +4305,7 @@
         "m_string" : "Page not found :(",
         "m_code" : 404,
         "known" : ["john", "bob"],
-        "cat" : "music",
-        "valid" : true
+        "cat" : "music"
        },
        {
         "name" : "Pronouns.Page",
@@ -4805,8 +4315,7 @@
         "m_string" : "\"profiles\": {}",
         "m_code" : 304,
         "known" : ["cannabis_cervi", "user"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "Pronouny",
@@ -4816,8 +4325,7 @@
         "m_code" : 400,
         "m_string" : "That user doesn't exist",
         "known" : ["test", "honey"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "Prose",
@@ -4827,8 +4335,7 @@
         "m_code" : 404,
         "m_string" : "Are you sure it was ever here?",
         "known" : ["endeavorance", "overthinkification"],
-        "cat" : "blog",
-        "valid" : true
+        "cat" : "blog"
        },
        {
         "name" : "prv.pl",
@@ -4838,8 +4345,7 @@
         "m_string" : "Użytkownik nie istnieje.",
         "m_code" : 200,
         "known" : ["test", "test2"],
-        "cat" : "tech",
-        "valid" : true
+        "cat" : "tech"
        },
        {
         "name" : "Psstaudio",
@@ -4849,8 +4355,7 @@
         "m_code" : 404,
         "m_string" : "We know you were looking for something, but it is not here",
         "known" : ["JayeWilde", "baxter"],
-        "cat" : "XXXPORNXXX",
-        "valid" : true
+        "cat" : "xx NSFW xx"
        },
        {
         "name" : "public",
@@ -4860,8 +4365,7 @@
         "m_string" : "04 - Page Not Found - Public ",
         "m_code" : 404,
         "known" : ["igor1", "david2"],
-        "cat" : "finance",
-        "valid" : true
+        "cat" : "finance"
        },
        {
         "name" : "pypi",
@@ -4871,8 +4375,7 @@
         "m_string" : "Page Not Found (404) · PyPI",
         "m_code" : 404,
         "known" : ["dev", "pydude"],
-        "cat" : "coding",
-        "valid" : true
+        "cat" : "coding"
        },
        {
         "name" : "QUEER",
@@ -4882,8 +4385,7 @@
         "m_string" : "Strona nie została znaleziona",
         "m_code" : 404,
         "known" : ["test", "kowalski"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "quitter.pl",
@@ -4893,8 +4395,7 @@
         "m_string" : "Nie znaleziono",
         "m_code" : 404,
         "known" : ["divmod", "panoptykon"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "Quora",
@@ -4904,8 +4405,7 @@
         "m_string" : "Page Not Found",
         "m_code" : 301,
         "known" : ["John-Galan-5", "Alex-Clay"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "Raddle.me",
@@ -4915,8 +4415,7 @@
         "m_code" : 404,
         "m_string" : "404 Not Found",
         "known" : ["zephyr", "Archaplain"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "Rant.li",
@@ -4926,20 +4425,18 @@
         "m_code" : 404,
         "m_string" : "Are you sure it was ever here?",
         "known" : ["baretri", "arinbasu"],
-        "cat" : "blog",
-        "valid" : true
+        "cat" : "blog"
        },
        {
         "name" : "ReblogMe",
         "uri_check" : "https://{account}.reblogme.com",
-        "invalid_chars" : ".",
+        "in_chars" : ".",
         "e_code" : 200,
         "e_string" : "blogbody",
         "m_string" : "Sorry, seems that blog doesn't exist",
         "m_code" : 200,
         "known" : ["staff", "chicken"],
-        "cat" : "XXXPORNXXX",
-        "valid" : true
+        "cat" : "xx NSFW xx"
        },
        {
         "name" : "Refsheet",
@@ -4949,8 +4446,7 @@
         "m_code" : 404,
         "m_string" : "That's unfortunate. Where did it go?",
         "known" : ["razzyaurealis", "saki"],
-        "cat" : "hobby",
-        "valid" : true
+        "cat" : "hobby"
        },
        {
         "name" : "redbubble",
@@ -4960,8 +4456,7 @@
         "m_string" : "This is a lost cause.",
         "m_code" : 404,
         "known" : ["john", "blue"],
-        "cat" : "shopping",
-        "valid" : true
+        "cat" : "shopping"
        },
        {
         "name" : "Reddit",
@@ -4972,8 +4467,7 @@
         "m_string" : "Not Found",
         "m_code" : 404,
         "known" : ["koavf", "alabasterheart"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "REDGIFS",
@@ -4984,8 +4478,7 @@
         "m_string" : "user account not found for ",
         "m_code" : 404,
         "known" : ["alexbreecooper", "Jose-Roberto-Rasi"],
-        "cat" : "XXXPORNXXX",
-        "valid" : true
+        "cat" : "xx NSFW xx"
        },
        {
         "name" : "Replit",
@@ -5006,8 +4499,7 @@
         "m_string" : "20+ million researchers on ResearchGate",
         "m_code" : 301,
         "known" : ["Tafara-Mwareya", "Jose-Roberto-Rasi"],
-        "cat" : "hobby",
-        "valid" : true
+        "cat" : "hobby"
        },
        {
         "name" : "resumes_actorsaccess",
@@ -5017,8 +4509,7 @@
         "m_string" : "File was not found on this SERVER",
         "m_code" : 200,
         "known" : ["veronicashelby", "sarahstipe"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "Revolut",
@@ -5029,8 +4520,7 @@
         "m_code" : 404,
         "m_string" : "\"User not found\"",
         "known" : ["theaswdc", "honey"],
-        "cat" : "finance",
-        "valid" : true
+        "cat" : "finance"
        },
        {
         "name" : "Mastodon-rigcz.club",
@@ -5040,8 +4530,7 @@
         "m_string" : "The page you are looking for isn't here.",
         "m_code" : 404,
         "known" : ["blazej", "adam"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "risk.ru",
@@ -5051,8 +4540,7 @@
         "m_string" : "404 — Risk.ru",
         "m_code" : 404,
         "known" : ["igor1", "olga"],
-        "cat" : "hobby",
-        "valid" : true
+        "cat" : "hobby"
        },
        {
         "name" : "Roblox",
@@ -5063,8 +4551,7 @@
         "m_string" : "Username is valid",
         "m_code" : 200,
         "known" : ["LeetPawn", "elephant459"],
-        "cat" : "gaming",
-        "valid" : true
+        "cat" : "gaming"
        },
        {
         "name" : "RoutineHub",
@@ -5074,8 +4561,7 @@
         "m_string" : "A community for Apple Shortcuts</title>",
         "m_code" : 200,
         "known" : ["zachary7829", "JonathanSetzer"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "rsi",
@@ -5085,8 +4571,7 @@
         "m_string" : "404 NAVIGATING UNCHARTED TERRITORY",
         "m_code" : 404,
         "known" : ["alpHackeronee", "Quantum_Physicist"],
-        "cat" : "gaming",
-        "valid" : true
+        "cat" : "gaming"
        },
        {
         "name" : "ru_123rf",
@@ -5096,8 +4581,7 @@
         "m_string" : "Векторы, Видеоролики. Подписка",
         "m_code" : 302,
         "known" : ["ruslan", "olga"],
-        "cat" : "hobby",
-        "valid" : true
+        "cat" : "hobby"
        },
        {
         "name" : "RumbleChannel",
@@ -5107,8 +4591,7 @@
         "m_string" : "404 - Not found",
         "m_code" : 404,
         "known" : ["HodgeTwins", "SeanHannity"],
-        "cat" : "political",
-        "valid" : true
+        "cat" : "political"
        },
        {
         "name" : "RumbleUser",
@@ -5118,8 +4601,7 @@
         "m_string" : "404 - Not found",
         "m_code" : 404,
         "known" : ["SimonParkes", "djmrmusic"],
-        "cat" : "political",
-        "valid" : true
+        "cat" : "political"
        },
        {
         "name" : "Salon24",
@@ -5129,8 +4611,7 @@
         "m_string" : "Salon24 - blogi, newsy, opinie i komentarze",
         "m_code" : 200,
         "known" : ["test", "test2"],
-        "cat" : "blog",
-        "valid" : true
+        "cat" : "blog"
        },
        {
         "name" : "SaraCarterShow",
@@ -5140,8 +4621,7 @@
         "m_string" : "<title>Page not found - Sara A. Carter</title>",
         "m_code" : 301,
         "known" : ["douglasbraff", "annaliese"],
-        "cat" : "political",
-        "valid" : true
+        "cat" : "political"
        },
        {
         "name" : "ScoutWiki",
@@ -5151,8 +4631,7 @@
         "m_string" : "is not registered",
         "m_code" : 301,
         "known" : ["Mlh_nl", "Benjism89"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "scratch",
@@ -5162,8 +4641,7 @@
         "m_string" : "We couldn't find the page you're looking for.",
         "m_code" : 404,
         "known" : ["griffpatch"],
-        "cat" : "coding",
-        "valid" : true
+        "cat" : "coding"
        },
        {
         "name" : "secure_donation",
@@ -5173,8 +4651,7 @@
         "m_string" : "<title>secure.donationpay.org</title>",
         "m_code" : 404,
         "known" : ["rareimpact", "safc"],
-        "cat" : "finance",
-        "valid" : true
+        "cat" : "finance"
        },
        {
         "name" : "sedisp@ce",
@@ -5184,8 +4661,7 @@
         "m_string" : "- Page non trouvée!",
         "m_code" : 302,
         "known" : ["mamadou", "konate"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "Seneporno",
@@ -5195,8 +4671,7 @@
         "m_string" : "Unexpected error! Please contact us and tell us more how you got to this page!",
         "m_code" : 301,
         "known" : ["Kalsobbc", "Boymariste"],
-        "cat" : "XXXPORNXXX",
-        "valid" : true
+        "cat" : "xx NSFW xx"
        },
        {
         "name" : "sentimente",
@@ -5206,8 +4681,7 @@
         "m_string" : "HTTP Error code: 404. Resource not found",
         "m_code" : 404,
         "known" : ["david01", "brahim01"],
-        "cat" : "dating",
-        "valid" : true
+        "cat" : "dating"
        },
        {
         "name" : "SEOClerks",
@@ -5217,8 +4691,7 @@
         "m_string" : "<title>SEO Marketplace",
         "m_code" : 302,
         "known" : ["Vfmseo", "gokudadon"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "setlist.fm",
@@ -5228,8 +4701,7 @@
         "m_string" : "Sorry, the page you requested doesn't exist",
         "m_code" : 404,
         "known" : ["bendobrin", "michi"],
-        "cat" : "music",
-        "valid" : true
+        "cat" : "music"
        },
        {
         "name" : "Sexworker",
@@ -5240,8 +4712,7 @@
         "m_code" : 404,
         "m_string" : "This user does not exist.",
         "known" : ["sakii_nightshade", "annajean2319"],
-        "cat" : "XXXPORNXXX",
-        "valid" : true
+        "cat" : "xx NSFW xx"
        },
        {
         "name" : "SFD",
@@ -5251,8 +4722,7 @@
         "m_string" : "Brak aktywnego profilu na forum",
         "m_code" : 404,
         "known" : ["janek", "admin"],
-        "cat" : "health",
-        "valid" : true
+        "cat" : "health"
        },
        {
         "name" : "Shanii Writes",
@@ -5263,8 +4733,7 @@
         "m_code" : 404,
         "m_string" : "The requested URL or resource could not be found.",
         "known" : ["chococarmela", "wolfgamergirl37"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "Shesfreaky",
@@ -5274,20 +4743,18 @@
         "m_code" : 302,
         "m_string" : "",
         "known" : ["tata23", "fitzsta"],
-        "cat" : "XXXPORNXXX",
-        "valid" : true
+        "cat" : "xx NSFW xx"
        },
        {
         "name" : "shopify",
         "uri_check" : "https://{account}.myshopify.com",
-        "invalid_chars" : ".",
+        "strip_bad_char" : ".",
         "e_code" : 200,
         "e_string" : "home",
         "m_string" : "Sorry, this shop is currently unavailable.",
         "m_code" : 404,
         "known" : ["john", "daniel"],
-        "cat" : "shopping",
-        "valid" : true
+        "cat" : "shopping"
        },
        {
         "name" : "shutterstock",
@@ -5297,8 +4764,7 @@
         "m_string" : "Well, this is unexpected...",
         "m_code" : 404,
         "known" : ["john", "bob"],
-        "cat" : "images",
-        "valid" : true
+        "cat" : "images"
        },
        {
         "name" : "skeb",
@@ -5308,20 +4774,18 @@
         "m_code" : 503,
         "m_string" : "Skeb - Request Box",
         "known" : ["eipuru_", "sime064"],
-        "cat" : "art",
-        "valid" : true
+        "cat" : "art"
        },
        {
         "name" : "Skyrock",
         "uri_check" : "https://{account}.skyrock.com/",
-        "invalid_chars" : ".",
+        "strip_bad_char" : ".",
         "e_code" : 200,
         "e_string" : "&#039;s blog",
         "m_string" : "<title>Page not found - ",
         "m_code" : 404,
         "known" : ["alice", "bob"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "SlackHoles",
@@ -5331,8 +4795,7 @@
         "m_string" : "It looks like nothing was found at this location",
         "m_code" : 404,
         "known" : ["alexbreecooper", "roxy-raye"],
-        "cat" : "XXXPORNXXX",
-        "valid" : true
+        "cat" : "xx NSFW xx"
        },
        {
         "name" : "slant",
@@ -5342,8 +4805,7 @@
         "m_string" : "404 - Page Not Found - Slant",
         "m_code" : 404,
         "known" : ["bob", "john"],
-        "cat" : "shopping",
-        "valid" : true
+        "cat" : "shopping"
        },
        {
         "name" : "slideshare",
@@ -5353,8 +4815,7 @@
         "m_string" : "is still available. Why not",
         "m_code" : 404,
         "known" : ["test"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "slides",
@@ -5364,8 +4825,7 @@
         "m_string" : "You may have mistyped the address",
         "m_code" : 404,
         "known" : ["arunthomas"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "SmashRun",
@@ -5375,8 +4835,7 @@
         "m_string" : "no Smashrunner with the username",
         "m_code" : 404,
         "known" : ["john.young"],
-        "cat" : "health",
-        "valid" : true
+        "cat" : "health"
        },
        {
         "name" : "smelsy",
@@ -5386,20 +4845,18 @@
         "m_string" : "Server Error",
         "m_code" : 500,
         "known" : ["mohamed01", "ahmed"],
-        "cat" : "misc",
-        "valid" : true
+        "cat" : "misc"
        },
        {
         "name" : "SmugMug",
         "uri_check" : "https://{account}.smugmug.com",
-        "invalid_chars" : ".",
+        "strip_bad_char" : ".",
         "e_code" : 200,
         "e_string" : "schema.org/Person",
         "m_string" : "schema.org/Thing",
         "m_code" : 404,
         "known" : ["wow", "jill"],
-        "cat" : "images",
-        "valid" : true
+        "cat" : "images"
        },
        {
         "name" : "smule",
@@ -5410,8 +4867,7 @@
         "m_string" : "code\": 65",
         "m_code" : 400,
         "known" : ["cgrrose", "John___Anish"],
-        "cat" : "music",
-        "valid" : true
+        "cat" : "music"
        },
        {
         "name" : "Snapchat",
@@ -5422,8 +4878,7 @@
         "m_string" : "http://www.w3.org/1999/xlink",
         "m_code" : 404,
         "known" : ["billy23", "mrbean", "alexis4"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "Snapchat Stories",
@@ -5433,8 +4888,7 @@
         "m_string" : "Not_Found",
         "m_code" : 404,
         "known" : ["djkhaled305", "mileycyrus"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "Snipfeed",
@@ -5444,8 +4898,7 @@
         "m_code" : 404,
         "m_string" : "Oops, you hit a dead end!",
         "known" : ["mycherrycrush", "honey"],
-        "cat" : "misc",
-        "valid" : true
+        "cat" : "misc"
        },
        {
         "name" : "social.bund.de",
@@ -5455,8 +4908,7 @@
         "m_string" : "<title>The page you are looking for isn&#39;t here.",
         "m_code" : 404,
         "known" : ["bfdi", "bmdv"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "soc.citizen4.eu",
@@ -5466,8 +4918,7 @@
         "m_string" : "Nie znaleziono",
         "m_code" : 404,
         "known" : ["admin", "miklo"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "social_msdn",
@@ -5477,8 +4928,7 @@
         "m_string" : "The resource you are looking for has been removed, had its name changed, or is temporarily unavailable.",
         "m_code" : 404,
         "known" : ["edoardo", "microsoftfan"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "Mastodon-social_tchncs",
@@ -5488,20 +4938,18 @@
         "m_string" : "The page you are looking for isn&#39;t here",
         "m_code" : 301,
         "known" : ["michael", "frank"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "sofurry",
         "uri_check" : "https://{account}.sofurry.com",
-        "invalid_chars" : ".",
+        "strip_bad_char" : ".",
         "e_code" : 200,
         "e_string" : "'s Profile | SoFurry",
         "m_string" : "SoFurry - Error | SoFurry",
         "m_code" : 404,
         "known" : ["reeden-landshey", "tigerzero"],
-        "cat" : "art",
-        "valid" : true
+        "cat" : "art"
        },
        {
         "name" : "SoliKick",
@@ -5511,8 +4959,7 @@
         "m_string" : "This item has been removed or is no longer available",
         "m_code" : 302,
         "known" : ["milehighed", "Edmundus"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "soloby",
@@ -5522,8 +4969,7 @@
         "m_string" : "Универ soloBY",
         "m_code" : 404,
         "known" : ["igor", "dana"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "solo.to",
@@ -5533,8 +4979,7 @@
         "m_code" : 404,
         "m_string" : "The page you're looking for isn't here.",
         "known" : ["saruei", "yui"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "SoundCloud",
@@ -5544,8 +4989,7 @@
         "m_string" : "sounds</title>",
         "m_code" : 404,
         "known" : ["test123"],
-        "cat" : "music",
-        "valid" : true
+        "cat" : "music"
        },
        {
         "name" : "Soup",
@@ -5555,8 +4999,7 @@
         "m_string" : "Soup.io - News, Sports, Entertainment, TV, Tech, Gaming",
         "m_code" : 301,
         "known" : ["john", "cristina"],
-        "cat" : "blog",
-        "valid" : true
+        "cat" : "blog"
        },
        {
         "name" : "Sourceforge",
@@ -5566,8 +5009,7 @@
         "m_string" : "<title>Page not found",
         "m_code" : 404,
         "known" : ["alice", "bob"],
-        "cat" : "coding",
-        "valid" : true
+        "cat" : "coding"
        },
        {
         "name" : "Speaker Deck",
@@ -5577,8 +5019,7 @@
         "m_string" : "User Not Found - Speaker Deck",
         "m_code" : 404,
         "known" : ["petecheslock", "turbosmart45"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "speedrun",
@@ -5588,8 +5029,7 @@
         "m_string" : "<title>speedrun.com",
         "m_code" : 404,
         "known" : ["mike", "chris"],
-        "cat" : "gaming",
-        "valid" : true
+        "cat" : "gaming"
        },
        {
         "name" : "SpiceWorks",
@@ -5599,8 +5039,7 @@
         "m_string" : "Page Not Found",
         "m_code" : 404,
         "known" : ["spicerex", "rod-it"],
-        "cat" : "tech",
-        "valid" : true
+        "cat" : "tech"
        },
        {
         "name" : "sporcle",
@@ -5610,8 +5049,7 @@
         "m_string" : "This Sporcle user cannot be found.",
         "m_code" : 301,
         "known" : ["Test", "lolshortee"],
-        "cat" : "gaming",
-        "valid" : true
+        "cat" : "gaming"
        },
        {
         "name" : "Spotify",
@@ -5621,8 +5059,7 @@
         "m_string" : "Spotify - Web Player</title>",
         "m_code" : 200,
         "known" : ["kexp_official", "mkbhd"],
-        "cat" : "music",
-        "valid" : true
+        "cat" : "music"
        },
        {
         "name" : "Steam",
@@ -5632,8 +5069,7 @@
         "m_string" : "Steam Community :: Error",
         "m_code" : 200,
         "known" : ["test"],
-        "cat" : "gaming",
-        "valid" : true
+        "cat" : "gaming"
        },
        {
         "name" : "steemit",
@@ -5643,8 +5079,7 @@
         "m_string" : "Page Not Found - Steemit",
         "m_code" : 301,
         "known" : ["petlover", "zalat"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "steller",
@@ -5654,8 +5089,7 @@
         "m_string" : "<title></title>",
         "m_code" : 404,
         "known" : ["jeannnn", "havwoods"],
-        "cat" : "shopping",
-        "valid" : true
+        "cat" : "shopping"
        },
        {
         "name" : "StoryCorps",
@@ -5665,8 +5099,7 @@
         "m_string" : "We're sorry, but the page",
         "m_code" : 404,
         "known" : ["jthorstad", "paul-swider"],
-        "cat" : "blog",
-        "valid" : true
+        "cat" : "blog"
        },
        {
         "name" : "StreamElements",
@@ -5677,8 +5110,7 @@
         "m_code" : 404,
         "m_string" : "error",
         "known" : ["honey", "dude"],
-        "cat" : "finance",
-        "valid" : true
+        "cat" : "finance"
        },
        {
         "name" : "StreamLabs",
@@ -5689,8 +5121,7 @@
         "m_code" : 401,
         "m_string" : "UNAUTHORIZED",
         "known" : ["veibae", "cutie_cori"],
-        "cat" : "finance",
-        "valid" : true
+        "cat" : "finance"
        },
        {
         "name" : "Stripchat",
@@ -5699,9 +5130,8 @@
         "e_string" : "I Do in My Shows:",
         "m_string" : "Oops. The page you were looking for doesn't exist",
         "m_code" : 404,
-        "known" : ["Eva-Lung", "katyaaxo"],
-        "cat" : "XXXPORNXXX",
-        "valid" : true
+        "known" : ["DulcieRichard", "Katie-Mili"],
+        "cat" : "xx NSFW xx"
        },
        {
         "name" : "Subscribestar",
@@ -5711,8 +5141,7 @@
         "m_code" : 404,
         "m_string" : "WE ARE SORRY, THE PAGE YOU REQUESTED CANNOT BE FOUND",
         "known" : ["missmoonified", "honey"],
-        "cat" : "XXXPORNXXX",
-        "valid" : true
+        "cat" : "xx NSFW xx"
        },
        {
         "name" : "sukebei.nyaa.si",
@@ -5722,8 +5151,7 @@
         "m_code" : 404,
         "m_string" : "404 Not Found",
         "known" : ["kouhy76", "Rektr0"],
-        "cat" : "XXXPORNXXX",
-        "valid" : true
+        "cat" : "xx NSFW xx"
        },
        {
         "name" : "Suzuri",
@@ -5733,8 +5161,7 @@
         "m_string" : "Push Space-key",
         "m_code" : 404,
         "known" : ["itochanxxx", "alex"],
-        "cat" : "business",
-        "valid" : true
+        "cat" : "business"
        },
        {
         "name" : "szmer.info",
@@ -5744,8 +5171,7 @@
         "m_string" : "Code: Couldn't find that username or email.",
         "m_code" : 200,
         "known" : ["przeczzpreczem", "Xavier"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "tabletoptournament",
@@ -5755,8 +5181,7 @@
         "m_string" : "No player with the nickname",
         "m_code" : 200,
         "known" : ["Lars01", "john"],
-        "cat" : "misc",
-        "valid" : true
+        "cat" : "misc"
        },
        {
         "name" : "Tagged",
@@ -5766,8 +5191,7 @@
         "m_string" : "Tagged - The social network for meeting new people",
         "m_code" : 302,
         "known" : ["Samantha", "Robert"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "TamTam",
@@ -5777,8 +5201,7 @@
         "m_string" : "ТамТам</title>",
         "m_code" : 302,
         "known" : ["blue", "John"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "Tanuki.pl",
@@ -5788,8 +5211,7 @@
         "m_string" : "Nie ma takiego użytkownika",
         "m_code" : 404,
         "known" : ["ania", "avellana"],
-        "cat" : "hobby",
-        "valid" : true
+        "cat" : "hobby"
        },
        {
         "name" : "TAPiTAG",
@@ -5800,8 +5222,7 @@
         "m_string" : "The rf number is not valid",
         "m_code" : 200,
         "known" : ["JonathanWallace", "gearoidconsidine"],
-        "cat" : "business",
-        "valid" : true
+        "cat" : "business"
        },
        {
         "name" : "Tappy",
@@ -5812,8 +5233,7 @@
         "m_string" : "Profile of username Not Found",
         "m_code" : 200,
         "known" : ["alexborrelli", "domocann"],
-        "cat" : "business",
-        "valid" : true
+        "cat" : "business"
        },
        {
         "name" : "Taringa",
@@ -5823,8 +5243,7 @@
         "m_string" : "Colectiva en Taringa!</title>",
         "m_code" : 301,
         "known" : ["jocaxav", "engendrometal"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "taskrabbit",
@@ -5834,8 +5253,7 @@
         "m_string" : "",
         "m_code" : 302,
         "known" : ["john", "sam"],
-        "cat" : "business",
-        "valid" : true
+        "cat" : "business"
        },
        {
         "name" : "Teamtreehouse",
@@ -5845,8 +5263,7 @@
         "m_string" : "Oops, Something went missing",
         "m_code" : 404,
         "known" : ["john"],
-        "cat" : "coding",
-        "valid" : true
+        "cat" : "coding"
        },
        {
         "name" : "Teddygirls",
@@ -5856,8 +5273,7 @@
         "m_string" : "The page you were looking for doesn't exist",
         "m_code" : 404,
         "known" : ["jaycee-starr", "chubbychick94"],
-        "cat" : "XXXPORNXXX",
-        "valid" : true
+        "cat" : "xx NSFW xx"
        },
        {
         "name" : "Teespring",
@@ -5868,8 +5284,7 @@
         "m_code" : 404,
         "m_string" : "{\"errors\":{\"store\":[\"not found\"]}}",
         "known" : ["missmoonified", "honey"],
-        "cat" : "business",
-        "valid" : true
+        "cat" : "business"
        },
        {
         "name" : "Teknik",
@@ -5879,8 +5294,7 @@
         "m_string" : "The user does not exist",
         "m_code" : 200,
         "known" : ["red", "bob"],
-        "cat" : "tech",
-        "valid" : true
+        "cat" : "tech"
        },
        {
         "name" : "Telegram",
@@ -5890,8 +5304,7 @@
         "m_string" : "noindex, nofollow",
         "m_code" : 200,
         "known" : ["alice", "giovanni"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "Tellonym",
@@ -5901,8 +5314,7 @@
         "m_string" : "- Honest & Anonymous Feedback",
         "m_code" : 404,
         "known" : ["jane", "jimmy"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "Tenor",
@@ -5912,8 +5324,7 @@
         "m_code" : 404,
         "m_string" : "We could not find the page you were looking for.",
         "known" : ["gnutv", "d33jay23"],
-        "cat" : "images",
-        "valid" : true
+        "cat" : "images"
        },
        {
         "name" : "TF2 Backpack Examiner",
@@ -5923,8 +5334,7 @@
         "m_string" : "",
         "m_code" : 302,
         "known" : ["test"],
-        "cat" : "gaming",
-        "valid" : true
+        "cat" : "gaming"
        },
        {
         "name" : "themeforest",
@@ -5934,8 +5344,7 @@
         "m_string" : "Page Not Found | ThemeForest",
         "m_code" : 301,
         "known" : ["john", "bob"],
-        "cat" : "art",
-        "valid" : true
+        "cat" : "art"
        },
        {
         "name" : "thegatewaypundit",
@@ -5945,8 +5354,7 @@
         "m_string" : "Not found, error 404",
         "m_code" : 404,
         "known" : ["patti", "joehoft"],
-        "cat" : "political",
-        "valid" : true
+        "cat" : "political"
        },
        {
         "name" : "theguardian",
@@ -5956,8 +5364,7 @@
         "m_string" : "Page not found | The Guardian",
         "m_code" : 404,
         "known" : ["minna-salami", "johnnaughton"],
-        "cat" : "news",
-        "valid" : true
+        "cat" : "news"
        },
        {
         "name" : "Thetattooforum",
@@ -5967,8 +5374,7 @@
         "m_string" : "We’re sorry",
         "m_code" : 500,
         "known" : ["mixdop", "modifyielts"],
-        "cat" : "art",
-        "valid" : true
+        "cat" : "art"
        },
        {
         "name" : "thoughts",
@@ -5978,8 +5384,7 @@
         "m_string" : "<title>Page not found",
         "m_code" : 404,
         "known" : ["myownpersonalthoughts", "danwions"],
-        "cat" : "hobby",
-        "valid" : true
+        "cat" : "hobby"
        },
        {
         "name" : "Threads.net",
@@ -5989,8 +5394,7 @@
         "m_string" : "<title>Threads</title>",
         "m_code" : 200,
         "known" : ["s_novoselov", "oliveralexanderdk"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "TikTok",
@@ -6001,8 +5405,7 @@
         "m_string" : "Something went wrong",
         "m_code" : 400,
         "known" : ["gordonramsayofficial", "pookiebear73"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "Tilde.zone (Mastodon Instance)",
@@ -6013,8 +5416,7 @@
         "m_code" : 404,
         "m_string" : "Record not found",
         "known" : ["ben", "lunatic"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "Tinder",
@@ -6024,8 +5426,7 @@
         "m_string" : "Tinder | Dating, Make Friends &amp; Meet New People",
         "m_code" : 200,
         "known" : ["Alexey", "peter", "john"],
-        "cat" : "dating",
-        "valid" : true
+        "cat" : "dating"
        },
        {
         "name" : "Tooting.ch (Mastodon Instance)",
@@ -6036,8 +5437,7 @@
         "m_code" : 404,
         "m_string" : "Record not found",
         "known" : ["mikebeganyi", "Zugi"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "TotalWar",
@@ -6047,8 +5447,7 @@
         "m_string" : "Not Found",
         "m_code" : 404,
         "known" : ["iamnotarobot", "passthechips"],
-        "cat" : "gaming",
-        "valid" : true
+        "cat" : "gaming"
        },
        {
         "name" : "toyhou.se",
@@ -6058,8 +5457,7 @@
         "m_code" : 404,
         "m_string" : "We can't find that page!",
         "known" : ["22RII", "honey"],
-        "cat" : "hobby",
-        "valid" : true
+        "cat" : "hobby"
        },
        {
         "name" : "TrackmaniaLadder",
@@ -6069,8 +5467,7 @@
         "m_string" : "player unknown or invalid 'idplayer' parameter.",
         "m_code" : 404,
         "known" : ["bob", "jill"],
-        "cat" : "gaming",
-        "valid" : true
+        "cat" : "gaming"
        },
        {
         "name" : "tradingview",
@@ -6080,8 +5477,7 @@
         "m_string" : "Page not found — TradingView",
         "m_code" : 404,
         "known" : ["liam", "john"],
-        "cat" : "finance",
-        "valid" : true
+        "cat" : "finance"
        },
        {
         "name" : "trakt",
@@ -6091,8 +5487,7 @@
         "m_string" : "The page you were looking for doesn't exist (404) - Trakt.tv",
         "m_code" : 404,
         "known" : ["john", "anne"],
-        "cat" : "video",
-        "valid" : true
+        "cat" : "video"
        },
        {
         "name" : "Trello",
@@ -6103,8 +5498,7 @@
         "m_code" : 404,
         "m_string" : "Oh no! 404!",
         "known" : ["naranjasan", "jane"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "tripadvisor",
@@ -6114,8 +5508,7 @@
         "m_string" : "This page is on vacation",
         "m_code" : 404,
         "known" : ["john", "peter"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "Truth Social",
@@ -6125,20 +5518,18 @@
         "m_string" : "Record not found",
         "m_code" : 404,
         "known" : ["realdonaldtrump", "ScottAdamsTruth"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "tumblr",
         "uri_check" : "https://{account}.tumblr.com",
-        "invalid_chars" : ".",
+        "strip_bad_char" : ".",
         "e_code" : 200,
         "e_string" : "avatar",
         "m_string" : "There's nothing here",
         "m_code" : 404,
         "known" : ["test", "test1"],
-        "cat" : "images",
-        "valid" : true
+        "cat" : "images"
        },
        {
         "name" : "Tunefind",
@@ -6148,8 +5539,7 @@
         "m_string" : "Page not found",
         "m_code" : 404,
         "known" : ["baywolfmusic", "mrcerny18"],
-        "cat" : "music",
-        "valid" : true
+        "cat" : "music"
        },
        {
         "name" : "Twitcasting",
@@ -6159,8 +5549,7 @@
         "m_string" : "Not Found",
         "m_code" : 302,
         "known" : ["yuno___nico", "2_t0_"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "Twitch",
@@ -6171,8 +5560,7 @@
         "m_string" : "<title>Page not Found (404)",
         "m_code" : 404,
         "known" : ["summit1g", "cohhcarnage"],
-        "cat" : "gaming",
-        "valid" : true
+        "cat" : "gaming"
        },
        {
         "name" : "Twitter",
@@ -6183,8 +5571,7 @@
         "m_string" : "<title>Error |",
         "m_code" : 404,
         "known" : ["WebBreacher", "OSINT_Tactical"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "Twitter archived profile",
@@ -6195,8 +5582,7 @@
         "m_string" : "\"archived_snapshots\": {}",
         "m_code" : 200,
         "known" : ["jack", "dineshdsouza"],
-        "cat" : "archived",
-        "valid" : true
+        "cat" : "archived"
        },
        {
         "name" : "Twitter archived tweets",
@@ -6207,8 +5593,7 @@
         "m_string" : "\"archived_snapshots\": {}",
         "m_code" : 200,
         "known" : ["jack", "dineshdsouza"],
-        "cat" : "archived",
-        "valid" : true
+        "cat" : "archived"
        },
        {
         "name" : "twoplustwo",
@@ -6220,8 +5605,7 @@
         "m_string" : "",
         "m_code" : 404,
         "known" : ["redsox", "adam"],
-        "cat" : "hobby",
-        "valid" : true
+        "cat" : "hobby"
        },
        {
         "name" : "twpro",
@@ -6231,8 +5615,7 @@
         "m_code" : 404,
         "m_string" : "をご確認ください。",
         "known" : ["wsise47", "tsukiusa630"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "Ubisoft",
@@ -6242,8 +5625,7 @@
         "m_string" : "You seem to have stumbled upon a page that does not exist.",
         "m_code" : 404,
         "known" : ["fizzle_fuze", "th05324"],
-        "cat" : "gaming",
-        "valid" : true
+        "cat" : "gaming"
        },
        {
         "name" : "Udemy",
@@ -6253,8 +5635,7 @@
         "m_string" : "<title>Online Courses - Learn Anything, On Your Schedule | Udemy</title>",
         "m_code" : 301,
         "known" : ["stephane-maarek", "lizbrown3"],
-        "cat" : "tech",
-        "valid" : true
+        "cat" : "tech"
        },
        {
         "name" : "uefconnect",
@@ -6264,8 +5645,7 @@
         "m_string" : "<title>Page not found - UEFConnect</title>",
         "m_code" : 404,
         "known" : ["heli.mutanen", "mette.heiskanen"],
-        "cat" : "business",
-        "valid" : true
+        "cat" : "business"
        },
        {
         "name" : "uid",
@@ -6275,8 +5655,7 @@
         "m_string" : "Page not found",
         "m_code" : 404,
         "known" : ["john", "peter"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "Ultras Diary",
@@ -6286,8 +5665,7 @@
         "m_string" : "Ile masz wyjazdów?",
         "m_code" : 404,
         "known" : ["janek", "kowal"],
-        "cat" : "hobby",
-        "valid" : true
+        "cat" : "hobby"
        },
        {
         "name" : "ulub.pl",
@@ -6297,8 +5675,7 @@
         "m_string" : "Strona nie istnieje.",
         "m_code" : 404,
         "known" : ["janek", "test"],
-        "cat" : "misc",
-        "valid" : true
+        "cat" : "misc"
        },
        {
         "name" : "unsplash",
@@ -6308,8 +5685,7 @@
         "m_string" : "Hm, the page you were looking for doesn't seem to exist anymore.",
         "m_code" : 404,
         "known" : ["john", "alex"],
-        "cat" : "images",
-        "valid" : true
+        "cat" : "images"
        },
        {
         "name" : "untappd",
@@ -6319,8 +5695,7 @@
         "m_string" : "Untappd | 404",
         "m_code" : 404,
         "known" : ["test", "phil"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "USA Life",
@@ -6330,8 +5705,7 @@
         "m_string" : "Sorry, page not found",
         "m_code" : 302,
         "known" : ["abaynes79", "not1face"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "utip.io",
@@ -6342,8 +5716,7 @@
         "m_code" : 404,
         "m_string" : "Not a valid web service key",
         "known" : ["honey", "chloe"],
-        "cat" : "finance",
-        "valid" : true
+        "cat" : "finance"
        },
        {
         "name" : "Uwumarket",
@@ -6353,20 +5726,18 @@
         "m_code" : 404,
         "m_string" : "Page not found",
         "known" : ["saki", "aicandii"],
-        "cat" : "business",
-        "valid" : true
+        "cat" : "business"
        },
        {
         "name" : "uwu.ai",
         "uri_check" : "https://{account}.uwu.ai/",
-        "invalid_chars" : ".",
+        "strip_bad_char" : ".",
         "e_code" : 200,
         "e_string" : "property=\"twitter:card\"",
         "m_code" : 404,
         "m_string" : "Sorry, the requested page could not be found.",
         "known" : ["spooky", "citruciel"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "vapenews",
@@ -6376,8 +5747,7 @@
         "m_string" : "<title>404</title>",
         "m_code" : 404,
         "known" : ["igor", "vladimir"],
-        "cat" : "hobby",
-        "valid" : true
+        "cat" : "hobby"
        },
        {
         "name" : "vsco",
@@ -6387,8 +5757,7 @@
         "m_string" : "This page does not exist",
         "m_code" : 404,
         "known" : ["sam", "becca"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "Venmo",
@@ -6398,8 +5767,7 @@
         "m_string" : "Sorry, the page you requested does not exist!",
         "m_code" : 404,
         "known" : ["John-Goolsby-8", "kate-mura"],
-        "cat" : "finance",
-        "valid" : true
+        "cat" : "finance"
        },
        {
         "name" : "Vero",
@@ -6409,8 +5777,7 @@
         "m_string" : "The page you are looking for doesn't exist.",
         "m_code" : 404,
         "known" : ["alex", "johnny"],
-        "cat" : "art",
-        "valid" : true
+        "cat" : "art"
        },
        {
         "name" : "vibilagare",
@@ -6420,8 +5787,7 @@
         "m_string" : "Sidan hittades inte |",
         "m_code" : 404,
         "known" : ["lars01", "sven"],
-        "cat" : "misc",
-        "valid" : true
+        "cat" : "misc"
        },
        {
         "name" : "viddler",
@@ -6431,8 +5797,7 @@
         "m_string" : "User not found",
         "m_code" : 404,
         "known" : ["GamingParodies", "planphilly"],
-        "cat" : "video",
-        "valid" : true
+        "cat" : "video"
        },
        {
         "name" : "Viewbug",
@@ -6442,8 +5807,7 @@
         "m_string" : "<title>Missing Page - VIEWBUG.com",
         "m_code" : 404,
         "known" : ["joe", "evgeniyflor"],
-        "cat" : "hobby",
-        "valid" : true
+        "cat" : "hobby"
        },
        {
         "name" : "Vimeo",
@@ -6453,8 +5817,7 @@
         "m_string" : "Make sure you’ve typed the URL correctly",
         "m_code" : 404,
         "known" : ["john", "alice"],
-        "cat" : "video",
-        "valid" : true
+        "cat" : "video"
        },
        {
         "name" : "Vine",
@@ -6465,8 +5828,7 @@
         "m_string" : "That record does not exist",
         "m_code" : 404,
         "known" : ["TomHarlock", "Seks"],
-        "cat" : "video",
-        "valid" : true
+        "cat" : "video"
        },
        {
         "name" : "visnesscard",
@@ -6477,8 +5839,7 @@
         "m_string" : "card_id\": 0",
         "m_code" : 200,
         "known" : ["Lisa-Gordon", "Bill-Schaeffer"],
-        "cat" : "business",
-        "valid" : true
+        "cat" : "business"
        },
        {
         "name" : "Vivino",
@@ -6488,20 +5849,18 @@
         "m_string" : "Page not found",
         "m_code" : 404,
         "known" : ["test", "admin"],
-        "cat" : "video",
-        "valid" : true
+        "cat" : "video"
       },
       {
         "name" : "VIP-blog",
         "uri_check" : "http://{account}.vip-blog.com",
-        "invalid_chars" : ".",
+        "strip_bad_char" : ".",
         "e_code" : 200,
         "e_string" : "blog : ",
         "m_string" : "Blog inexistant",
         "m_code" : 200,
         "known" : ["sarah", "brahim01"],
-        "cat" : "blog",
-        "valid" : true
+        "cat" : "blog"
       },
       {
         "name" : "Virustotal",
@@ -6511,8 +5870,7 @@
         "m_string" : "User not found",
         "m_code" : 200,
         "known" : ["cyber", "cybersecstu"],
-        "cat" : "misc",
-        "valid" : true
+        "cat" : "misc"
        },
        {
         "name" : "VK",
@@ -6522,8 +5880,7 @@
         "m_string" : "404 Not Found",
         "m_code" : 404,
         "known" : ["ches_ches", "mike.kidlazy"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "Vkl.world (Mastodon Instance)",
@@ -6534,8 +5891,7 @@
         "m_code" : 404,
         "m_string" : "Record not found",
         "known" : ["king", "aniver"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "Vmst.io (Mastodon Instance)",
@@ -6546,8 +5902,7 @@
         "m_code" : 404,
         "m_string" : "Record not found",
         "known" : ["vmstan", "honestdave"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "Voice123",
@@ -6558,8 +5913,7 @@
         "m_code" : 200,
         "m_string" : "[]",
         "known" : ["dottovuu", "maheshsaha1992"],
-        "cat" : "hobby",
-        "valid" : true
+        "cat" : "hobby"
        },
        {
         "name" : "Voices.com",
@@ -6569,8 +5923,7 @@
         "m_string" : "Try going back to the previous page or see below for more options",
         "m_code" : 301,
         "known" : ["briankirchoff", "bryankopta"],
-        "cat" : "business",
-        "valid" : true
+        "cat" : "business"
        },
        {
         "name" : "Wanelo",
@@ -6581,8 +5934,7 @@
         "m_code" : 404,
         "known" : ["lisandrareyes"],
         "cat" : "shopping",
-        "valid" : true,
-        "invalid_chars" : "."
+        "strip_bad_char" : "."
        },
        {
         "name" : "watchmemore.com",
@@ -6593,8 +5945,7 @@
         "m_string" : "notExists",
         "m_code" : 400,
         "known" : ["medroxy", "nodjev"],
-        "cat" : "XXXPORNXXX",
-        "valid" : true
+        "cat" : "xx NSFW xx"
        },
        {
         "name" : "warriorforum",
@@ -6604,8 +5955,7 @@
         "m_string" : "Oops | Warrior Forum -",
         "m_code" : 400,
         "known" : ["alex", "peter"],
-        "cat" : "hobby",
-        "valid" : true
+        "cat" : "hobby"
        },
        {
         "name" : "Watchmyfeed",
@@ -6615,8 +5965,7 @@
         "m_string" : "<html lang=",
         "m_code" : 302,
         "known" : ["zoe-marie", "shay-loveless"],
-        "cat" : "XXXPORNXXX",
-        "valid" : true
+        "cat" : "xx NSFW xx"
        },
        {
         "name" : "wattpad",
@@ -6627,8 +5976,7 @@
         "m_string" : "error_code",
         "m_code" : 400,
         "known" : ["newadult", "Test123"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "Weasyl",
@@ -6638,31 +5986,18 @@
         "m_string" : "This user doesn't seem to be in our database.",
         "m_code" : 404,
         "known" : ["weasyl", "test"],
-        "cat" : "images",
-        "valid" : true
-       },
-       {
-        "name" : "WECAMGIRLS",
-        "uri_check" : "https://www.wecamgirls.com/includes/ajax/coolautosuggest.php?chars={account}",
-        "e_code" : 200,
-        "e_string" : "\"id\":",
-        "m_string" : "[]",
-        "m_code" : 200,
-        "known" : ["sherrybaby", "megansweet"],
-        "cat" : "XXXPORNXXX",
-        "valid" : true
+        "cat" : "images"
        },
        {
         "name" : "weebly",
         "uri_check" : "https://{account}.weebly.com/",
-        "invalid_chars" : ".",
+        "strip_bad_char" : ".",
         "e_code" : 200,
         "e_string" : "<div id=\"navigation\">",
         "m_string" : "<title>404 - Page Not Found",
         "m_code" : 404,
         "known" : ["dave", "john"],
-        "cat" : "misc",
-        "valid" : true
+        "cat" : "misc"
        },
        {
         "name" : "weheartit",
@@ -6672,8 +6007,7 @@
         "m_string" : " (404)</title>",
         "m_code" : 404,
         "known" : ["alice", "bob"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "wego",
@@ -6683,8 +6017,7 @@
         "m_string" : "Sorry, page not found!",
         "m_code" : 302,
         "known" : ["mmish2", "Lisa_M_S"],
-        "cat" : "political",
-        "valid" : true
+        "cat" : "political"
        },
        {
         "name" : "weibo",
@@ -6694,20 +6027,18 @@
         "m_string" : "Oops!",
         "m_code" : 404,
         "known" : ["chentingni", "fbb0916"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "WeTransfer",
         "uri_check" : "https://{account}.wetransfer.com",
-        "invalid_chars" : ".",
+        "strip_bad_char" : ".",
         "e_code" : 200,
         "e_string" : "default_recipient_email",
         "m_string" : "",
         "m_code" : 302,
         "known" : ["mark", "joe"],
-        "cat" : "misc",
-        "valid" : true
+        "cat" : "misc"
        },
        {
         "name" : "Wikidot",
@@ -6717,8 +6048,7 @@
         "m_string" : "Free and Pro Wiki Hosting",
         "m_code" : 404,
         "known" : ["jack", "allen"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "Wikipedia",
@@ -6729,8 +6059,7 @@
         "m_string" : ":[]}}",
         "m_code" : 200,
         "known" : ["sector051", "webbreacher"],
-        "cat" : "news",
-        "valid" : true
+        "cat" : "news"
        },
        {
         "name" : "Wimkin-PublicProfile",
@@ -6740,8 +6069,7 @@
         "m_string" : " The page you are looking for cannot be found.",
         "m_code" : 404,
         "known" : ["alex", "smith", "boomer"],
-        "cat" : "political",
-        "valid" : true
+        "cat" : "political"
        },
        {
         "name" : "Wireclub",
@@ -6751,8 +6079,7 @@
         "m_string" : "People - Wireclub",
         "m_code" : 301,
         "known" : ["deae", "cheerfulsarcasm", "braydenskiresort"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "Wakatime",
@@ -6762,8 +6089,7 @@
         "m_string" : "<title>404: Not Found",
         "m_code" : 404,
         "known" : ["jake", "alimirzayev"],
-        "cat" : "coding",
-        "valid" : true
+        "cat" : "coding"
        },
        {
         "name" : "wishlistr",
@@ -6773,8 +6099,7 @@
         "m_string" : "",
         "m_code" : 302,
         "known" : ["test"],
-        "cat" : "shopping",
-        "valid" : true
+        "cat" : "shopping"
        },
        {
         "name" : "wordnik",
@@ -6784,8 +6109,7 @@
         "m_string" : "Wordnik: Page Not Found",
         "m_code" : 404,
         "known" : ["elle", "john"],
-        "cat" : "gaming",
-        "valid" : true
+        "cat" : "gaming"
        },
        {
         "name" : "WordPress",
@@ -6795,8 +6119,7 @@
         "m_string" : "",
         "m_code" : 404,
         "known" : ["test"],
-        "cat" : "blog",
-        "valid" : true
+        "cat" : "blog"
        },
        {
         "name" : "WordPress Support",
@@ -6806,8 +6129,7 @@
         "m_string" : "User not found",
         "m_code" : 404,
         "known" : ["test"],
-        "cat" : "blog",
-        "valid" : true
+        "cat" : "blog"
        },
        {
         "name" : "Wowhead",
@@ -6817,8 +6139,7 @@
         "m_string" : "Error - Wowhead",
         "m_code" : 404,
         "known" : ["Ashelia", "Zizarz"],
-        "cat" : "gaming",
-        "valid" : true
+        "cat" : "gaming"
        },
        {
         "name" : "Wykop",
@@ -6828,20 +6149,18 @@
         "m_string" : "Czy na pewno tego szukałeś? Taka strona nie istnieje.",
         "m_code" : 404,
         "known" : ["test", "test2"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "Xanga",
         "uri_check" : "http://{account}.xanga.com/",
-        "invalid_chars" : ".",
+        "strip_bad_char" : ".",
         "e_code" : 200,
         "e_string" : "s Xanga Site | Just",
         "m_string" : "",
         "m_code" : 302,
         "known" : ["john"],
-        "cat" : "blog",
-        "valid" : true
+        "cat" : "blog"
        },
        {
         "name" : "Xbox Gamertag",
@@ -6851,19 +6170,7 @@
         "m_string" : "Gamertag doesn't exist",
         "m_code" : 404,
         "known" : ["Spiken8", "john"],
-        "cat" : "gaming",
-        "valid" : true
-       },
-       {
-        "name" : "xcams",
-        "uri_check" : "https://www.xcams.com/chatfs/{account}/?btnFree=1",
-        "e_code" : 200,
-        "e_string" : "cammerModelData",
-        "m_string" : "<title>xcams - Not Found</title>",
-        "m_code" : 404,
-        "known" : ["TatianaWild", "Isacris"],
-        "cat" : "XXXPORNXXX",
-        "valid" : true
+        "cat" : "gaming"
        },
        {
         "name" : "xHamster",
@@ -6873,8 +6180,7 @@
         "m_string" : "User not found</title>",
         "m_code" : 404,
         "known" : ["john", "tonystark85"],
-        "cat" : "XXXPORNXXX",
-        "valid" : true
+        "cat" : "xx NSFW xx"
        },
        {
         "name" : "Xing",
@@ -6884,8 +6190,7 @@
         "m_string" : "Es tut uns leid",
         "m_code" : 404,
         "known" : ["Andy_Hausmann", "Ramona_Hapke"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "XVIDEOS-models",
@@ -6895,8 +6200,7 @@
         "m_string" : "THIS PROFILE DOESN'T EXIST",
         "m_code" : 404,
         "known" : ["vvalencourt3", "tiffany-tyler"],
-        "cat" : "XXXPORNXXX",
-        "valid" : true
+        "cat" : "xx NSFW xx"
        },
        {
         "name" : "XVIDEOS-profiles",
@@ -6906,8 +6210,7 @@
         "m_string" : "THIS PROFILE DOESN'T EXIST",
         "m_code" : 404,
         "known" : ["nympho-nailer", "dpadicto", "bkg"],
-        "cat" : "XXXPORNXXX",
-        "valid" : true
+        "cat" : "xx NSFW xx"
        },
        {
         "name" : "Yahoo! JAPAN Auction",
@@ -6917,8 +6220,7 @@
         "m_code" : 500,
         "m_string" : "Yahoo! JAPAN IDが無効です。",
         "known" : ["fltr14502003"],
-        "cat" : "shopping",
-        "valid" : true
+        "cat" : "shopping"
        },
        {
        "name" : "yapishu",
@@ -6928,8 +6230,7 @@
        "m_string" : "Not Found (#404)",
        "m_code" : 404,
        "known" : ["roman", "semion"],
-       "cat" : "hobby",
-       "valid" : true
+       "cat" : "hobby"
        },
        {
         "name" : "Yazawaj",
@@ -6939,8 +6240,7 @@
         "m_string" : "الصفحة المطلوبة غير موجودة",
         "m_code" : 302,
         "known" : ["monya14555d", "LordMohy"],
-        "cat" : "dating",
-        "valid" : true
+        "cat" : "dating"
        },
        {
         "name" : "Yelp",
@@ -6950,8 +6250,7 @@
         "m_string" : "Doggone it! The page you’re looking for cannot be found.",
         "m_code" : 404,
         "known" : ["j5CYhsvD2yrunyyoZvSvKA", "GHoG4X4FY8D8L563zzPX5w"],
-        "cat" : "shopping",
-        "valid" : true
+        "cat" : "shopping"
        },
        {
         "name" : "youpic",
@@ -6961,8 +6260,7 @@
         "m_string" : "Welcome to the infamous 404 page - YouPic",
         "m_code" : 404,
         "known" : ["photodude", "mike"],
-        "cat" : "hobby",
-        "valid" : true
+        "cat" : "hobby"
        },
        {
         "name" : "YouTube Channel",
@@ -6972,8 +6270,7 @@
         "m_string" : "<title>404 Not Found",
         "m_code" : 404,
         "known" : ["OvylarockTHR","OSINTDojo"],
-        "cat" : "video",
-        "valid" : true
+        "cat" : "video"
        },
        {
         "name" : "YouTube User",
@@ -6983,8 +6280,7 @@
         "m_string" : "<title>404 Not Found",
         "m_code" : 404,
         "known" : ["MicahHoffman","theosintcuriousproject"],
-        "cat" : "video",
-        "valid" : true
+        "cat" : "video"
        },
        {
         "name" : "YouTube User2",
@@ -6994,8 +6290,7 @@
         "m_string" : "<title>404 Not Found</title>",
         "m_code" : 404,
         "known" : ["tactical-systems","CybersecurityMeg"],
-        "cat" : "video",
-        "valid" : true
+        "cat" : "video"
        },
        {
         "name" : "zatrybi.pl",
@@ -7005,8 +6300,7 @@
         "m_string" : "Nie znaleziono strony",
         "m_code" : 404,
         "known" : ["Berlinek", "fenrek"],
-        "cat" : "tech",
-        "valid" : true
+        "cat" : "tech"
        },
        {
         "name" : "Zbiornik",
@@ -7016,8 +6310,7 @@
         "m_string" : "Szukaj",
         "m_code" : 200,
         "known" : ["69uzytkownik69", "Soif"],
-        "cat" : "XXXPORNXXX",
-        "valid" : true
+        "cat" : "xx NSFW xx"
        },
        {
         "name" : "Zepeto",
@@ -7027,8 +6320,7 @@
         "m_string" : "<title>ZEPETO</title>",
         "m_code" : 200,
         "known" : ["joe", "james"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "zhihu",
@@ -7038,8 +6330,7 @@
         "m_string" : "ErrorPage-subtitle",
         "m_code" : 400,
         "known" : ["lushnis", "kan-shu-jiao-hua-shai-tai-yang"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "Zillow",
@@ -7049,8 +6340,7 @@
         "m_string" : "",
         "m_code" : 302,
         "known" : ["JOHN-L-SULLIVAN", "Maggie-Alegria"],
-        "cat" : "shopping",
-        "valid" : true
+        "cat" : "shopping"
        },
        {
         "name" : "zmarsa.com",
@@ -7060,8 +6350,7 @@
         "m_string" : "Błąd na stronie",
         "m_code" : 500,
         "known" : ["janek", "test"],
-        "cat" : "XXXPORNXXX",
-        "valid" : true
+        "cat" : "xx NSFW xx"
        },
        {
         "name" : "Zomato",
@@ -7071,8 +6360,7 @@
         "m_string" : "404 | Zomato",
         "m_code" : 404,
         "known" : ["john", "jess"],
-        "cat" : "social",
-        "valid" : true
+        "cat" : "social"
        },
        {
         "name" : "zoomitir",
@@ -7082,8 +6370,7 @@
         "m_string" : "404 Not found",
         "m_code" : 404,
         "known" : ["rezaghezi", "hosssssein"],
-        "cat" : "tech",
-        "valid" : true
+        "cat" : "tech"
        }
     ]
   }
