@@ -4481,15 +4481,24 @@
         "cat" : "xx NSFW xx"
        },
        {
-        "name" : "Replit",
+        "name" : "Replit web",
         "uri_check" : "https://replit.com/@{account}",
         "e_code" : 200,
         "e_string" : "Copy profile link",
         "m_code" : 404,
         "m_string" : "<title>Replit - 404 - Replit</title>",
         "known" : ["david", "torcado"],
-        "cat" : "coding",
-        "valid" : true
+        "cat" : "coding"
+       },
+       {
+        "name" : "Replit cli",
+        "uri_check" : "https://replit.com/@{account}",
+        "e_code" : 200,
+        "e_string" : "Copy profile link",
+        "m_code" : 404,
+        "m_string" : "User not found",
+        "known" : ["david", "torcado"],
+        "cat" : "coding"
        },
        {
         "name" : "Researchgate",
