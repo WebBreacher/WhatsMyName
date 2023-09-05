@@ -5530,6 +5530,16 @@
         "cat" : "social"
        },
        {
+        "name" : "Tryst",
+        "uri_check" : "https://tryst.link/escort/{account}",
+        "e_code" : 200,
+        "e_string" : "Caters to</div>",
+        "m_string" : "<title>Page not found",
+        "m_code" : 404,
+        "known" : ["lpatterson32", "kansasgirl69"],
+        "cat" : "xx NSFW xx"
+       },
+       {
         "name" : "tumblr",
         "uri_check" : "https://{account}.tumblr.com",
         "strip_bad_char" : ".",
