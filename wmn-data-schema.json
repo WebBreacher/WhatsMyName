@@ -193,6 +193,22 @@
 							true
 						],
 						"default": ""
+					},
+					"headers": {
+						"$id": "#root/sites/items/headers",
+						"title": "Headers",
+						"type": "array",
+						"default": [],
+						"items":{
+							"$id": "#root/sites/items/headers/items",
+							"title": "Items",
+							"type": "string",
+							"default": "",
+							"examples": [
+								{"accept": "text/html"}
+							],
+							"pattern": "^.*$"
+						}
 					}
 				}
 			}

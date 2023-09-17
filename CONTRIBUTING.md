@@ -30,10 +30,10 @@ How to do that:
   non-existing profile, e.g.
   ```
   # existing
-  curl https://twitter.com/WebBreacher
+  curl https://infosec.exchange/WebBreacher
 
   # non-existing
-  curl https://twitter.com/ThisDoesNotExistForSure504
+  curl https://infosec.exchange/ThisDoesNotExistForSure504
   ```
 - Observe the outcome for non-existing profile. Some sites use 404 (error), some use 302
 (redirection), some confusingly use 200 (OK) for profiles which don't exist,
@@ -67,7 +67,7 @@ This is too specific:
 The format of the `wmn-data.json` JSON was altered due to Issue #414. There are still 3 main elements:
 
 1. License - The license for this project and its data
-2. Authors - The people that have contributed to this project
+2. Authors - The people that have recently contributed to this project
 3. Sites - This is the main data
 
 Within the `sites` elements, the format is as follows (with several parameters being optional):
@@ -86,7 +86,8 @@ Within the `sites` elements, the format is as follows (with several parameters b
          "m_code" : "the HTTP response code for a bad 'account is not there' response as an integer",
          "known" : ["a list of user accounts that can be used to test", "for user enumeration"],
          "cat" : "a category for what the site is mainly used for. The current categories are found at the top of the JSON",
-         "valid" : "this OPTIONAL parameter has a single value of True. If it is present and True, then checkers should skip this site"
+         "valid" : "[OPTIONAL] single value of True. If it is present and True, then checkers should skip this site",
+         "headers": {"[OPTIONAL] a dictionary of headers that should be passed to a site"}
       },
       ...
 ```
@@ -105,7 +106,10 @@ Here are examples of the site elements for both HTTP GET and HTTP POST entries:
        "m_code" : 404,
        "m_string" : "Account not found",
        "known" : ["whoami", "johndoe"],
-       "cat" : "images"
+       "cat" : "images",
+       "headers": {
+                "accept": "text/html"
+        }
      },
 ```
 
