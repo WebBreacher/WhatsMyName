@@ -13,7 +13,7 @@ So, we will keep finding sites and adding them and you can feel free to try any 
 
 ## How Does It Work?
 
-WhatsMyName (WMN) consists of a JSON file with detections in it. Submissions from people all over the world are included. When a request is made to one of those sites from a tool like the ones in the next section, the server replies with data that will match one of our detections. It'll tell the checker script whether there a valid user account with the name we specified on their site or not.
+WhatsMyName (WMN) consists of a JSON file with detections in it. Submissions from people all over the world are included. When a request is made to one of those sites from a tool like the ones in the next section, the server replies with data that will match one of our detections. It'll tell the checker script whether there is a valid user account with the name we specified on their site or not.
 
 For a site to be included in WMN it has to:
 

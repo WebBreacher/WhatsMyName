@@ -6,7 +6,7 @@
                 "Creative Commons, PO Box 1866, Mountain View, CA 94042, USA."],
     "authors" : ["Micah 'WebBreacher' Hoffman","C3n7ral051nt4g3ncy","L0r3m1p5um","janbinx",
                 "bcoles","swedishmike","ef1500","zewen","jocejocejoe","P3run","seintpl",
-                "djahren","K2SOsint","AccentuSoft","*Contributions since 2022*"],
+                "djahren","K2SOsint","AccentuSoft","Bellingcat","*Contributions since 2022*"],
     "categories" : ["archived","art","blog","business","coding","dating","finance","gaming","health",
                    "hobby","images","misc","music","news","political","search","shopping","social",
                    "tech","video","xx NSFW xx"],
@@ -3771,17 +3771,6 @@
         "cat" : "misc"
        },
        {
-        "name" : "olx",
-        "uri_check" : "https://www.olx.pl/oferty/uzytkownik/{account}/",
-        "e_code" : 200,
-        "e_string" : "Obserwuj wyszukiwanie",
-        "m_string" : "Przepraszamy, ale nie możemy znaleźć takiej strony...",
-        "m_code" : 200,
-        "known" : ["janek", "test"],
-        "cat" : "shopping",
-        "valid" : false
-       },
-       {
         "name" : "Opencollective",
         "uri_check" : "https://opencollective.com/{account}",
         "e_code" : 200,
@@ -4288,6 +4277,17 @@
         "cat" : "social"
        },
        {
+        "name" : "Privacy Guides",
+        "uri_check" : "https://discuss.privacyguides.net/u/{account}.json",
+        "uri_pretty" : "https://discuss.privacyguides.net/u/{account}/summary",
+        "e_code" : 200,
+        "e_string" : "assign_path",
+        "m_string" : "The requested URL or resource could not be found.",
+        "m_code" : 404,
+        "known" : ["jonah", "dngray"],
+        "cat" : "tech"
+       },
+       {
         "name" : "Producthunt",
         "uri_check" : "https://www.producthunt.com/@{account}",
         "e_code" : 200,
@@ -4479,6 +4479,26 @@
         "m_code" : 404,
         "known" : ["alexbreecooper", "Jose-Roberto-Rasi"],
         "cat" : "xx NSFW xx"
+       },
+       {
+        "name" : "Replit web",
+        "uri_check" : "https://replit.com/@{account}",
+        "e_code" : 200,
+        "e_string" : "Copy profile link",
+        "m_code" : 404,
+        "m_string" : "<title>Replit - 404 - Replit</title>",
+        "known" : ["david", "torcado"],
+        "cat" : "coding"
+       },
+       {
+        "name" : "Replit cli",
+        "uri_check" : "https://replit.com/@{account}",
+        "e_code" : 200,
+        "e_string" : "Copy profile link",
+        "m_code" : 404,
+        "m_string" : "User not found",
+        "known" : ["david", "torcado"],
+        "cat" : "coding"
        },
        {
         "name" : "Researchgate",
@@ -5508,6 +5528,16 @@
         "m_code" : 404,
         "known" : ["realdonaldtrump", "ScottAdamsTruth"],
         "cat" : "social"
+       },
+       {
+        "name" : "Tryst",
+        "uri_check" : "https://tryst.link/escort/{account}",
+        "e_code" : 200,
+        "e_string" : "Caters to</div>",
+        "m_string" : "<title>Page not found",
+        "m_code" : 404,
+        "known" : ["lpatterson32", "kansasgirl69"],
+        "cat" : "xx NSFW xx"
        },
        {
         "name" : "tumblr",
