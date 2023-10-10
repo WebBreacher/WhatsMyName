@@ -22,7 +22,7 @@
 				"type": "string",
 				"default": "",
 				"examples": [
-					"Copyright (C) 2022 Micah Hoffman"
+					"Copyright (C) 2023 Micah Hoffman"
 				],
 				"pattern": "^.*$"
 			}
@@ -76,8 +76,7 @@
 					"m_string",
 					"m_code",
 					"known",
-					"cat",
-					"valid"
+					"cat"
 				],
 				"properties": {
 					"name": {
@@ -110,9 +109,9 @@
 						],
 						"pattern": "^.*$"
 					},
-					"invalid_chars": {
-						"$id": "#root/sites/items/invalid_chars",
-						"title": "Invalid_chars",
+					"strip_bad_char": {
+						"$id": "#root/sites/items/strip_bad_char",
+						"title": "Strip_bad_char",
 						"type": "string",
 						"default": "",
 						"examples": [
@@ -193,7 +192,23 @@
 						"examples": [
 							true
 						],
-						"default": true
+						"default": ""
+					},
+					"headers": {
+						"$id": "#root/sites/items/headers",
+						"title": "Headers",
+						"type": "array",
+						"default": [],
+						"items":{
+							"$id": "#root/sites/items/headers/items",
+							"title": "Items",
+							"type": "string",
+							"default": "",
+							"examples": [
+								{"accept": "text/html"}
+							],
+							"pattern": "^.*$"
+						}
 					}
 				}
 			}
