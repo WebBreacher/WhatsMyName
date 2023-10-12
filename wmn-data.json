@@ -668,6 +668,16 @@
         "cat" : "blog"
        },
        {
+        "name" : "Blue Sky",
+        "uri_check" : "https://bsky.app/profile/{account}",
+        "e_code" : 200,
+        "e_string" : "on Bluesky",
+        "m_code" : 200,
+        "m_string" : "<p id=\"bsky_did\"></p>",
+        "known" : ["bsky.app", "safety.bsky.app"],
+        "cat" : "social"
+       },
+       {
         "name" : "BodyBuilding.com",
         "uri_check" : "http://api.bodybuilding.com/api-proxy/bbc/get?slug={account}",
         "uri_pretty" : "http://bodyspace.bodybuilding.com/{account}/",
