@@ -1891,7 +1891,7 @@
         "uri_check" : "https://foursquare.com/{account}",
         "e_code" : 200,
         "e_string" : "on Foursquare</title>",
-        "m_string" : "Foursquare - Independent Location Data Platform",
+        "m_string" : "302 Found</title>",
         "m_code" : 302,
         "known" : ["john", "ncyp23"],
         "cat" : "social"
@@ -2104,10 +2104,13 @@
         "uri_check" : "https://github.com/{account}",
         "e_code" : 200,
         "e_string" : "p-nickname vcard-username d-block",
-        "m_string" : "<title>Page not found ",
+        "m_string" : "Not Found",
         "m_code" : 404,
         "known" : ["test", "WebBreacher"],
-        "cat" : "coding"
+        "cat" : "coding",
+        "headers": {
+            "accept": "text/html"
+        }
        },
        {
         "name" : "GitHubPlus",
@@ -2124,7 +2127,7 @@
         "uri_check" : "https://gitlab.com/{account}",
         "e_code" : 200,
         "e_string" : "Member since",
-        "m_string" : "GitLab.com offers free unlimited",
+        "m_string" : "You are being <a href=\"https://gitlab.com/users/sign_in\">redirected</a>",
         "m_code" : 302,
         "known" : ["skennedy", "KennBro", "alex", "bob"],
         "cat" : "coding"
