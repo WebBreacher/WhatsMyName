@@ -197,7 +197,7 @@
 					"headers": {
 						"$id": "#root/sites/items/headers",
 						"title": "Headers",
-						"type": "array",
+						"type": "object",
 						"default": [],
 						"items":{
 							"$id": "#root/sites/items/headers/items",
