@@ -5543,6 +5543,16 @@
         "cat" : "social"
        },
        {
+        "name" : "TryHackMe",
+        "uri_check" : "https://tryhackme.com/api/user/exist/{account}",
+        "e_code" : 200,
+        "e_string" : "true",
+        "m_string" : "false",
+        "m_code" : 200,
+        "known" : ["user", "goyalyuval15"],
+        "cat" : "tech"
+       },
+       {
         "name" : "Tryst",
         "uri_check" : "https://tryst.link/escort/{account}",
         "e_code" : 200,
