@@ -5166,6 +5166,16 @@
         "cat" : "xx NSFW xx"
        },
        {
+        "name": "Substack",
+        "uri_check": "https://substack.com/@{account}",
+        "e_code" : 200,
+        "e_string" : "Subscribe",
+        "m_code" : 404,
+        "m_string" : "404",
+        "known_accounts": ["janellehardacre", "janeclairebradley"],
+        "cat": "social"
+       },
+       {
         "name" : "sukebei.nyaa.si",
         "uri_check" : "https://sukebei.nyaa.si/user/{account}",
         "e_code" : 200,
