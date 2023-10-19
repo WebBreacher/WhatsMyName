@@ -5169,9 +5169,9 @@
         "name": "Substack",
         "uri_check": "https://substack.com/@{account}",
         "e_code" : 200,
-        "e_string" : "Subscribe",
-        "m_code" : 404,
-        "m_string" : "404",
+        "e_string" : "| Substack</title>",
+        "m_code" : 200,
+        "m_string" : "&quot; on Substack</title>",
         "known": ["janellehardacre", "janeclairebradley"],
         "cat": "social"
        },
