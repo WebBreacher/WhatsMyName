@@ -4779,6 +4779,19 @@
         "cat" : "shopping"
        },
        {
+        "name" : "Showup.tv",
+        "uri_check" : "https://showup.tv/profile/{account}",
+        "e_code" : 200,
+        "e_string" : "O mnie",
+        "m_string" : "<title>Darmowe",
+        "m_code" : 404,
+        "known" : ["LunaVee", "Jane_Frou"],
+        "cat" : "xx NSFW xx",
+        "headers": {
+          "Cookie": "accept_rules=true;"
+        }
+       },
+       {
         "name" : "shutterstock",
         "uri_check" : "https://www.shutterstock.com/g/{account}",
         "e_code" : 200,
