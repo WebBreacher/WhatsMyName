@@ -38,7 +38,7 @@ For a site to be included in WMN it has to:
 * [Spiderfoot](https://github.com/smicallef/spiderfoot) uses this in the **sfp_account** module. There is also [this video](https://asciinema.org/a/295923) showing how to use this project using the Spiderfoot Command Line Interface (CLI).
 * [WhatsMyName-Python](https://github.com/C3n7ral051nt4g3ncy/WhatsMyName-Python) **Whats My Name** simple Python script made by [@C3n7ral051nt4g3ncy](https://github.com/C3n7ral051nt4g3ncy)
 * [WMN_screenshooter](https://github.com/swedishmike/WMN_screenshooter) a helper script that uses Selenium to try and grab screenshots of identified profile pages.
-
+* [WhatsMyName-Client](https://github.com/grabowskiadrian/WhatsMyName-Client) a simple Python script with 'request headers' and 'POST requests' support made by [@grabowskiadrian](https://github.com/grabowskiadrian). The script also allows you to test the configuration of the wmn-data.json file.
 
 ## Content
 
