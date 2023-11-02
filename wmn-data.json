@@ -597,6 +597,16 @@
         "cat" : "misc"
        },
        {
+        "name" : "Bitbucket",
+        "uri_check" : "https://bitbucket.org/{account}/workspace/projects/",
+        "e_code" : 200,
+        "e_string" : "Projects",
+        "m_string" : "Resource not found",
+        "m_code" : 404,
+        "known" : ["adriangrabowski4", "devsunleashed"],
+        "cat" : "coding"
+       },
+       {
         "name" : "Bitchute",
         "uri_check" : "https://www.bitchute.com/channel/{account}/",
         "e_code" : 200,
