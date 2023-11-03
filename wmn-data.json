@@ -975,6 +975,7 @@
        {
         "name" : "Chess.com",
         "uri_check" : "https://api.chess.com/pub/player/{account}",
+        "uri_pretty" : "https://www.chess.com/member/{account}",
         "e_code" : 200,
         "e_string" : "player_id",
         "m_string" : "not found",
