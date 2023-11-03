@@ -974,10 +974,11 @@
        },
        {
         "name" : "Chess.com",
-        "uri_check" : "https://www.chess.com/member/{account}",
+        "uri_check" : "https://api.chess.com/pub/player/{account}",
+        "uri_pretty" : "https://www.chess.com/member/{account}",
         "e_code" : 200,
-        "e_string" : "Last Online",
-        "m_string" : "<title>Missing Page?! - Chess.com</title>",
+        "e_string" : "player_id",
+        "m_string" : "not found",
         "m_code" : 404,
         "known" : ["john", "peter", "josh"],
         "cat" : "gaming"
