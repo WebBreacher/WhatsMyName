@@ -4185,7 +4185,7 @@
         "e_string" : "Historia wpisów",
         "m_string" : "Wybrany użytkownik nie istnieje.",
         "m_code" : 200,
-        "known" : ["test","admin"],
+        "known" : ["admin", "Lesik"],
         "cat" : "social"
        },
        {
