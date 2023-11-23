@@ -5744,16 +5744,6 @@
         "cat" : "hobby"
        },
        {
-        "name" : "ulub.pl",
-        "uri_check" : "http://ulub.pl/profil/{account}",
-        "e_code" : 200,
-        "e_string" : "Muzyka (",
-        "m_string" : "Strona nie istnieje.",
-        "m_code" : 404,
-        "known" : ["janek", "test"],
-        "cat" : "misc"
-       },
-       {
         "name" : "unsplash",
         "uri_check" : "https://unsplash.com/@{account}",
         "e_code" : 200,
