@@ -6221,8 +6221,8 @@
         "name" : "Wykop",
         "uri_check" : "https://www.wykop.pl/ludzie/{account}/",
         "e_code" : 200,
-        "e_string" : "Aktywność użytkownika",
-        "m_string" : "Czy na pewno tego szukałeś? Taka strona nie istnieje.",
+        "e_string" : "<title>Profil:",
+        "m_string" : "Wystąpił błąd 404.",
         "m_code" : 404,
         "known" : ["test", "test2"],
         "cat" : "social"
