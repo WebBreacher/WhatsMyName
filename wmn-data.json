@@ -1799,10 +1799,10 @@
         "name" : "Filmweb",
         "uri_check" : "https://www.filmweb.pl/user/{account}",
         "e_code" : 200,
-        "e_string" : "Na filmwebie od",
-        "m_string" : "Przepraszamy. Strona, której szukasz nie została odnaleziona.",
+        "e_string" : "profil w Filmweb</title>",
+        "m_string" : "Varnish 404",
         "m_code" : 200,
-        "known" : ["test", "test2"],
+        "known" : ["test", "Marcin_P"],
         "cat" : "hobby"
        },
        {
