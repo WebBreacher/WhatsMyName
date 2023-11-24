@@ -4185,7 +4185,7 @@
         "e_string" : "Historia wpisów",
         "m_string" : "Wybrany użytkownik nie istnieje.",
         "m_code" : 200,
-        "known" : ["test","admin"],
+        "known" : ["admin", "Lesik"],
         "cat" : "social"
        },
        {
@@ -5744,16 +5744,6 @@
         "cat" : "hobby"
        },
        {
-        "name" : "ulub.pl",
-        "uri_check" : "http://ulub.pl/profil/{account}",
-        "e_code" : 200,
-        "e_string" : "Muzyka (",
-        "m_string" : "Strona nie istnieje.",
-        "m_code" : 404,
-        "known" : ["janek", "test"],
-        "cat" : "misc"
-       },
-       {
         "name" : "unsplash",
         "uri_check" : "https://unsplash.com/@{account}",
         "e_code" : 200,
@@ -6221,8 +6211,8 @@
         "name" : "Wykop",
         "uri_check" : "https://www.wykop.pl/ludzie/{account}/",
         "e_code" : 200,
-        "e_string" : "Aktywność użytkownika",
-        "m_string" : "Czy na pewno tego szukałeś? Taka strona nie istnieje.",
+        "e_string" : "<title>Profil:",
+        "m_string" : "Wystąpił błąd 404.",
         "m_code" : 404,
         "known" : ["test", "test2"],
         "cat" : "social"
