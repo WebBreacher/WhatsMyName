@@ -933,6 +933,16 @@
         "cat" : "news"
        },
        {
+        "name" : "chatango.com",
+        "uri_check" : "https://{account}.chatango.com",
+        "e_code" : 200,
+        "e_string" : "<title>Chatango!",
+        "m_string" : "<title>Unknown User!",
+        "m_code" : 200,
+        "known" : ["7nights", "merbailey", "steakomura", "equicentric"],
+        "cat" : "social"
+       },
+       {
         "name" : "Mastodon-Chaos.social",
         "uri_check" : "https://chaos.social/@{account}",
         "e_code" : 200,
