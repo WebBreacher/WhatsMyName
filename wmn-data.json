@@ -2154,16 +2154,6 @@
         }
        },
        {
-        "name" : "GitHubPlus",
-        "uri_check" : "https://githubplus.com/{account}",
-        "e_code" : 200,
-        "e_string" : ": - Github Plus</title>",
-        "m_string" : "<title>Not Found</title>",
-        "m_code" : 404,
-        "known" : ["webbreacher", "C3n7ral051nt4g3ncy"],
-        "cat" : "coding"
-       },
-       {
         "name" : "GitLab",
         "uri_check" : "https://gitlab.com/{account}",
         "e_code" : 200,
@@ -3046,16 +3036,6 @@
         "m_string" : "Page Not Be Found",
         "m_code" : 200,
         "known" : ["PamelaElliott62", "eric"],
-        "cat" : "social"
-       },
-       {
-        "name" : "MAGA-CHAT",
-        "uri_check" : "https://maga-chat.com/{account}",
-        "e_code" : 200,
-        "e_string" : "Recent Updates",
-        "m_string" : "Page Not Be Found",
-        "m_code" : 200,
-        "known" : ["Rich", "RjosephJr"],
         "cat" : "social"
        },
        {
@@ -5016,16 +4996,6 @@
         "m_code" : 404,
         "known" : ["reeden-landshey", "tigerzero"],
         "cat" : "art"
-       },
-       {
-        "name" : "SoliKick",
-        "uri_check" : "https://solikick.com/-{account}",
-        "e_code" : 200,
-        "e_string" : "page_guest_users-view",
-        "m_string" : "This item has been removed or is no longer available",
-        "m_code" : 302,
-        "known" : ["milehighed", "Edmundus"],
-        "cat" : "social"
        },
        {
         "name" : "soloby",
