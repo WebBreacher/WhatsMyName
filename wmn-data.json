@@ -2081,16 +2081,6 @@
         "cat" : "social"
        },
        {
-        "name" : "gfycat",
-        "uri_check" : "https://gfycat.com/@{account}",
-        "e_code" : 200,
-        "e_string" : "gfycat-username",
-        "m_string" : "<h1>Page not found</h1>",
-        "m_code" : 404,
-        "known" : ["timviechanoi", "sannahparker"],
-        "cat" : "misc"
-       },
-       {
         "name" : "Gigapan",
         "uri_check" : "https://www.gigapan.com/profiles/{account}",
         "e_code" : 200,
