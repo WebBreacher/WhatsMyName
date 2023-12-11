@@ -1401,7 +1401,7 @@
        "name" : "DIBIZ",
         "uri_check" : "https://www.dibiz.com/{account}",
         "e_code" : 200,
-        "e_string" : "mailto:?subject=",
+        "e_string" : "Add to contacts</span>",
         "m_string" : "An Error Has Occurred",
         "m_code" : 404,
         "known" : ["fractalhue", "rid"],
