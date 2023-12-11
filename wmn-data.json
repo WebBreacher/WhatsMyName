@@ -1088,7 +1088,7 @@
         "name" : "Code Project",
         "uri_check" : "https://www.codeproject.com/Members/{account}",
         "e_code" : 200,
-        "e_string" : "member since",
+        "e_string" : "Member since",
         "m_string" : "Unable to load the requested member's information",
         "m_code" : 200,
         "known" : ["WmCraig", "Rick-York"],
