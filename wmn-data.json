@@ -1707,8 +1707,8 @@
         "uri_check" : "https://fancentro.com/api/profile.get?profileAlias={account}&limit=1",
         "uri_pretty" : "https://fancentro.com/{account}/",
         "e_code" : 200,
-        "e_string" : "\"status\" :true",
-        "m_string" : "\"status\" :false",
+        "e_string" : "\"status\":true",
+        "m_string" : "\"status\":false",
         "m_code" : 200,
         "known" : ["medroxy","miaaamador"],
         "cat" : "xx NSFW xx"
