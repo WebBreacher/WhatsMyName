@@ -2999,12 +2999,12 @@
         "cat" : "social"
        },
        {
-        "name" : "love_ru",
-        "uri_check" : "https://love.ru/{account}",
+        "name" : "waytohey",
+        "uri_check" : "https://waytohey.com/{account}",
         "e_code" : 200,
-        "e_string" : "Love.ru</title>",
-        "m_string" : "<title>404",
+        "e_string" : "Send message</span>",
         "m_code" : 404,
+        "m_string" : "Unfortunately, this page doesn&#039;t exist.",
         "known" : ["igor", "anna"],
         "cat" : "social"
        },
