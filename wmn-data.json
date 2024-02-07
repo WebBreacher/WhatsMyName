@@ -5932,17 +5932,6 @@
         "cat" : "business"
        },
        {
-        "name" : "Wanelo",
-        "uri_check" : "https://wanelo.co/{account}",
-        "e_code" : 200,
-        "e_string" : "on Wanelo</title>",
-        "m_string" : "Hmm, that's embarrassing",
-        "m_code" : 404,
-        "known" : ["lisandrareyes"],
-        "cat" : "shopping",
-        "strip_bad_char" : "."
-       },
-       {
         "name" : "watchmemore.com",
         "uri_check" : "https://api.watchmemore.com/api3/profile/{account}/",
         "uri_pretty" : "https://watchmemore.com/{account}/",
