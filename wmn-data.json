@@ -4332,16 +4332,6 @@
         "cat" : "tech"
        },
        {
-        "name" : "Psstaudio",
-        "uri_check" : "https://psstaudio.com/u/{account}",
-        "e_code" : 200,
-        "e_string" : "id=\"profile_picture\"",
-        "m_code" : 404,
-        "m_string" : "We know you were looking for something, but it is not here",
-        "known" : ["JayeWilde", "baxter"],
-        "cat" : "xx NSFW xx"
-       },
-       {
         "name" : "public",
         "uri_check" : "https://public.com/@{account}",
         "e_code" : 200,
