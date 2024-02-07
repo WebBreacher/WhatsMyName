@@ -1048,7 +1048,7 @@
         "name" : "Codeberg",
         "uri_check" : "https://codeberg.org/{account}",
         "e_code" : 200,
-        "e_string" : "better with JavaScript",
+        "e_string" : "Joined on",
         "m_code" : 404,
         "m_string" : "The page you are trying to reach either",
         "known" : ["dachary", "happy"],
@@ -1401,7 +1401,7 @@
        "name" : "DIBIZ",
         "uri_check" : "https://www.dibiz.com/{account}",
         "e_code" : 200,
-        "e_string" : "mailto:?subject=",
+        "e_string" : "Add to contacts</span>",
         "m_string" : "An Error Has Occurred",
         "m_code" : 404,
         "known" : ["fractalhue", "rid"],
@@ -1614,7 +1614,7 @@
         "name" : "Etsy",
         "uri_check" : "https://www.etsy.com/people/{account}",
         "e_code" : 200,
-        "e_string" : " on Etsy</title>",
+        "e_string" : " favorite items - Etsy</title>",
         "m_string" : "Sorry, the member you are looking for does not exist",
         "m_code" : 404,
         "known" : ["david", "happiness"],
@@ -1707,8 +1707,8 @@
         "uri_check" : "https://fancentro.com/api/profile.get?profileAlias={account}&limit=1",
         "uri_pretty" : "https://fancentro.com/{account}/",
         "e_code" : 200,
-        "e_string" : "\"status\" :true",
-        "m_string" : "\"status\" :false",
+        "e_string" : "\"status\":true",
+        "m_string" : "\"status\":false",
         "m_code" : 200,
         "known" : ["medroxy","miaaamador"],
         "cat" : "xx NSFW xx"
@@ -2046,7 +2046,7 @@
         "e_string" : "window.ERROR_VIEW = null",
         "m_string" : "resourceNotFoundRoute",
         "m_code" : 200,
-        "known" : ["danielebarison", "cderalow"],
+        "known" : ["tommy", "cderalow"],
         "cat" : "health"
        },
        {
@@ -2999,12 +2999,12 @@
         "cat" : "social"
        },
        {
-        "name" : "love_ru",
-        "uri_check" : "https://love.ru/{account}",
+        "name" : "waytohey",
+        "uri_check" : "https://waytohey.com/{account}",
         "e_code" : 200,
-        "e_string" : "Love.ru</title>",
-        "m_string" : "<title>404",
+        "e_string" : "Send message</span>",
         "m_code" : 404,
+        "m_string" : "Unfortunately, this page doesn&#039;t exist.",
         "known" : ["igor", "anna"],
         "cat" : "social"
        },
@@ -4324,6 +4324,7 @@
        {
         "name" : "Pronouns.Page",
         "uri_check" : "https://pronouns.page/api/profile/get/{account}?version=2",
+        "uri_pretty" : "https://pronouns.page/@{account}",
         "e_code" : 200,
         "e_string" : "username",
         "m_string" : "\"profiles\": {}",
