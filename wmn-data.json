@@ -22,16 +22,6 @@
         "cat" : "social"
        },
        {
-        "name" : "1001mem",
-        "uri_check" : "http://1001mem.ru/{account}",
-        "e_code" : 200,
-        "e_string" : "| Новости - Приколы - Комиксы - Мемы",
-        "m_string" : "Этот пользователь не существует, или заблокирован.",
-        "m_code" : 200,
-        "known" : ["ruslan", "dima"],
-        "cat" : "social"
-       },
-       {
         "name" : "3DNews",
         "uri_check" : "https://forum.3dnews.tech/member.php?username={account}",
         "e_code" : 200,
@@ -251,16 +241,6 @@
         "m_string" : "Page not found",
         "m_code" : 404,
         "known" : ["blue", "goddessbecca"],
-        "cat" : "social"
-       },
-       {
-        "name" : "Alloannonces",
-        "uri_check" : "https://www.alloannonces.ma/{account}/",
-        "e_code" : 200,
-        "e_string" : "Vendeurs/Agents",
-        "m_string" : "Page non defini",
-        "m_code" : 404,
-        "known" : ["Rachid13", "Ayoub"],
         "cat" : "social"
        },
        {
@@ -1712,16 +1692,6 @@
         "m_code" : 200,
         "known" : ["medroxy","miaaamador"],
         "cat" : "xx NSFW xx"
-       },
-       {
-        "name" : "fandalism",
-        "uri_check" : "https://fandalism.com/{account}",
-        "e_code" : 200,
-        "e_string" : "fandalism_:user",
-        "m_string" : "404 - File or directory not found",
-        "m_code" : 404,
-        "known" : ["mike", "ted"],
-        "cat" : "hobby"
        },
        {
         "name" : "Fandom",
@@ -4028,17 +3998,6 @@
         "cat" : "video"
        },
        {
-        "name" : "Pettingzoo.co (Mastodon Instance)",
-        "uri_check" : "https://pettingzoo.co/api/v1/accounts/lookup?acct={account}",
-        "uri_pretty" : "https://pettingzoo.co/@{account}",
-        "e_code" : 200,
-        "e_string" : "display_name",
-        "m_code" : 404,
-        "m_string" : "Record not found",
-        "known" : ["tyr", "Disbear"],
-        "cat" : "social"
-       },
-       {
         "name" : "Pewex",
         "uri_check" : "https://retro.pewex.pl/user/{account}",
         "e_code" : 200,
@@ -4361,16 +4320,6 @@
         "m_code" : 200,
         "known" : ["test", "test2"],
         "cat" : "tech"
-       },
-       {
-        "name" : "Psstaudio",
-        "uri_check" : "https://psstaudio.com/u/{account}",
-        "e_code" : 200,
-        "e_string" : "id=\"profile_picture\"",
-        "m_code" : 404,
-        "m_string" : "We know you were looking for something, but it is not here",
-        "known" : ["JayeWilde", "baxter"],
-        "cat" : "xx NSFW xx"
        },
        {
         "name" : "public",
@@ -5971,17 +5920,6 @@
         "m_code" : 301,
         "known" : ["briankirchoff", "bryankopta"],
         "cat" : "business"
-       },
-       {
-        "name" : "Wanelo",
-        "uri_check" : "https://wanelo.co/{account}",
-        "e_code" : 200,
-        "e_string" : "on Wanelo</title>",
-        "m_string" : "Hmm, that's embarrassing",
-        "m_code" : 404,
-        "known" : ["lisandrareyes"],
-        "cat" : "shopping",
-        "strip_bad_char" : "."
        },
        {
         "name" : "watchmemore.com",
