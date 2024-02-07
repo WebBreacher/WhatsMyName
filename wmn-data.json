@@ -6408,6 +6408,17 @@
         "m_code" : 404,
         "known" : ["rezaghezi", "hosssssein"],
         "cat" : "tech"
-       }
+       },
+       {
+        "name": "Cloudflare",
+        "uri_check": "https://community.cloudflare.com/u/{account}/card.json",
+        "uri_pretty": "https://community.cloudflare.com/u/{account}",
+        "e_code": 200,
+        "e_string": "user_avatar",
+        "m_string": "The requested URL or resource could not be found",
+        "m_code": 404,
+        "known": ["carl", "morten"],
+        "cat": "tech"
+    }
     ]
   }
