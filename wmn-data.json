@@ -22,16 +22,6 @@
         "cat" : "social"
        },
        {
-        "name" : "1001mem",
-        "uri_check" : "http://1001mem.ru/{account}",
-        "e_code" : 200,
-        "e_string" : "| Новости - Приколы - Комиксы - Мемы",
-        "m_string" : "Этот пользователь не существует, или заблокирован.",
-        "m_code" : 200,
-        "known" : ["ruslan", "dima"],
-        "cat" : "social"
-       },
-       {
         "name" : "3DNews",
         "uri_check" : "https://forum.3dnews.tech/member.php?username={account}",
         "e_code" : 200,
