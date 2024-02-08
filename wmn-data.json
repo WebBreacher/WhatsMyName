@@ -1849,10 +1849,10 @@
         "name" : "Fodors Forum",
         "uri_check" : "https://www.fodors.com/community/profile/{account}/forum-activity",
         "e_code" : 200,
-        "e_string" : "Member since",
+        "e_string" : "User Profile | Fodor’s Travel</title>",
         "m_string" : "Plan Your Trip Online</title>",
-        "m_code" : 302,
-        "known" : ["mms", "gooster"],
+        "m_code" : 200,
+        "known" : ["jdstraveler", "gooster"],
         "cat" : "social"
        },
        {
