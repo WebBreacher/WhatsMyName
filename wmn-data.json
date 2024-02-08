@@ -1636,9 +1636,9 @@
         "name" : "Eyeem",
         "uri_check" : "https://www.eyeem.com/u/{account}",
         "e_code" : 200,
-        "e_string" : "| EyeEm Photographer",
+        "e_string" : "Marketplace</title>",
         "m_string" : "Not Found (404) | EyeEm",
-        "m_code" : 301,
+        "m_code" : 404,
         "known" : ["john", "bob"],
         "cat" : "art"
        },
