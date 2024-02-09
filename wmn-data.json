@@ -1638,7 +1638,7 @@
         "e_code" : 200,
         "e_string" : "Marketplace</title>",
         "m_string" : "Not Found (404) | EyeEm",
-        "m_code" : 404,
+        "m_code" : 301,
         "known" : ["john", "bob"],
         "cat" : "art"
        },
@@ -1851,7 +1851,7 @@
         "e_code" : 200,
         "e_string" : "User Profile | Fodor’s Travel</title>",
         "m_string" : "Plan Your Trip Online</title>",
-        "m_code" : 200,
+        "m_code" : 302,
         "known" : ["jdstraveler", "gooster"],
         "cat" : "social"
        },
