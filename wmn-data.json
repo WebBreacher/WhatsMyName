@@ -2992,10 +2992,10 @@
         "name" : "MAGABOOK",
         "uri_check" : "https://magabook.com/{account}",
         "e_code" : 200,
-        "e_string" : "Recent Updates",
-        "m_string" : "Page Not Be Found",
-        "m_code" : 200,
-        "known" : ["PamelaElliott62", "eric"],
+        "e_string" : "Timeline",
+        "m_string" : "",
+        "m_code" : 302,
+        "known" : ["KristenSuzanne", "mikeflbmer"],
         "cat" : "social"
        },
        {
