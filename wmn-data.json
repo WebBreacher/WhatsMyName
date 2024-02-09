@@ -3280,7 +3280,7 @@
         "name" : "Mastodon-meow.social",
         "uri_check" : "https://meow.social/@{account}",
         "e_code" : 200,
-        "e_string" : "- the mastodon instances for creatures</title>",
+        "e_string" : "- the mastodon instance for creatures fluffy, scaly and otherwise</title>",
         "m_string" : "The page you are looking for isn&#39;t here.",
         "m_code" : 404,
         "known" : ["meow", "novra"],
