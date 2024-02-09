@@ -2859,7 +2859,7 @@
         "name" : "LibraryThing",
         "uri_check" : "https://www.librarything.com/profile/{account}",
         "e_code" : 200,
-        "e_string" : "Collections",
+        "e_string" : "Books",
         "m_string" : "Error: This user doesn't exist",
         "m_code" : 200,
         "known" : ["test", "john"],
