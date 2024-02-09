@@ -2273,8 +2273,8 @@
         "e_code" : 200,
         "e_string" : " | HackerRank</title>",
         "m_string" : ":: HackerRank</title>",
-        "m_code" : 302,
-        "known" : ["johnsmith", "FMota"],
+        "m_code" : 200,
+        "known" : ["FMota", "adepanges"],
         "cat" : "tech"
        },
        {
