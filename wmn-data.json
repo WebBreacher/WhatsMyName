@@ -5570,7 +5570,7 @@
        },
        {
         "name" : "Twitter",
-        "uri_check" : "https://nitter.net/{account}",
+        "uri_check" : "https://nitter.privacydev.net/{account}",
         "uri_pretty" : "https://twitter.com/{account}",
         "e_code" : 200,
         "e_string" : "| nitter</title>",
