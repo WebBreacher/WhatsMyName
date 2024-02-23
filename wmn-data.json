@@ -5664,6 +5664,16 @@
         "cat" : "social"
        },
        {
+        "name" : "Ultimate Guitar",
+        "uri_check" : "https://www.ultimate-guitar.com/u/{account}",
+        "e_code" : 200,
+        "e_string" : " | Ultimate-Guitar.Com</title>",
+        "m_string" : "Oops! We couldn't find that page.",
+        "m_code" : 410,
+        "known" : ["LYNX-Music", "Mikhailo","MeGaDeth2314"],
+        "cat" : "hobby"
+       },
+       {
         "name" : "Ultras Diary",
         "uri_check" : "http://ultrasdiary.pl/u/{account}/",
         "e_code" : 200,
