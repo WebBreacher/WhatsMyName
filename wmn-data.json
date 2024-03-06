@@ -6308,6 +6308,16 @@
         "cat" : "xx NSFW xx"
        },
        {
+        "name": "Zenn",
+        "uri_check": "https://zenn.dev/{account}",
+        "e_code": 200,
+        "e_string": "<div class=\"UserHeader_profileMain__6Itxi\">",
+        "m_string": "<div class=\"ErrorContent_status__2Ykoq\">404</div>",
+        "m_code": 404,
+        "known": ["john", "blue"],
+        "cat": "coding"
+      },
+       {
         "name" : "Zepeto",
         "uri_check" : "https://user.zepeto.me/{account}?language=en",
         "e_code" : 200,
