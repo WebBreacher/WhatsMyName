@@ -3755,6 +3755,16 @@
         "cat" : "finance"
        },
        {
+        "name" : "Opensea",
+        "uri_check" : "https://opensea.io/{account}",
+        "e_code" : 200,
+        "e_string" : "Joined ",
+        "m_string" : "This page is lost.",
+        "m_code" : 404,
+        "known" : ["a", "suuuu"],
+        "cat" : "tech"
+       },
+       {
         "name" : "opensource",
         "uri_check" : "https://opensource.com/users/{account}",
         "e_code" : 200,
