@@ -1941,10 +1941,10 @@
         "name" : "Friendweb",
         "uri_check" : "https://friendweb.nl/{account}",
         "e_code" : 200,
-        "e_string" : "friendweb.nl",
+        "e_string" : "100% Nederlands sociaal netwerk",
         "m_string" : "Page Not Found",
         "m_code" : 404,
-        "known" : ["HoogtePiet", "JeePee"],
+        "known" : ["fransid", "Jacco"],
         "cat" : "social"
        },
        {
