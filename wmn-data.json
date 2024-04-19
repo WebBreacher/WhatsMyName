@@ -2207,6 +2207,105 @@
         "cat" : "shopping"
        },
        {
+        "name" : "Habbo.com",
+        "uri_check" : " https://www.habbo.com/api/public/users?name={account}",
+        "uri_pretty" : " https://www.habbo.com/profile/{account}",
+        "e_code" : 200,
+        "e_string" : "currentLevel",
+        "m_string" : "not-found",
+        "m_code" : 404,
+        "known" : ["john", "michelle"],
+        "cat" : "gaming"
+       },
+       {
+        "name" : "Habbo.es",
+        "uri_check" : " https://www.habbo.es/api/public/users?name={account}",
+        "uri_pretty" : " https://www.habbo.es/profile/{account}",
+        "e_code" : 200,
+        "e_string" : "currentLevel",
+        "m_string" : "not-found",
+        "m_code" : 404,
+        "known" : ["juan", "michelle"],
+        "cat" : "gaming"
+       },
+       {
+        "name" : "Habbo.com.br",
+        "uri_check" : " https://www.habbo.com.br/api/public/users?name={account}",
+        "uri_pretty" : " https://www.habbo.com.br/profile/{account}",
+        "e_code" : 200,
+        "e_string" : "currentLevel",
+        "m_string" : "not-found",
+        "m_code" : 404,
+        "known" : ["jeaniucas", "cellao"],
+        "cat" : "gaming"
+       },
+       {
+        "name" : "Habbo.de",
+        "uri_check" : " https://www.habbo.de/api/public/users?name={account}",
+        "uri_pretty" : " https://www.habbo.de/profile/{account}",
+        "e_code" : 200,
+        "e_string" : "currentLevel",
+        "m_string" : "not-found",
+        "m_code" : 404,
+        "known" : ["klaus", "angelinaa"],
+        "cat" : "gaming"
+       },
+       {
+        "name" : "Habbo.com.tr",
+        "uri_check" : " https://www.habbo.com.tr/api/public/users?name={account}",
+        "uri_pretty" : " https://www.habbo.com.tr/profile/{account}",
+        "e_code" : 200,
+        "e_string" : "currentLevel",
+        "m_string" : "not-found",
+        "m_code" : 404,
+        "known" : ["fatma9180", "elektrikci"],
+        "cat" : "gaming"
+       },
+       {
+        "name" : "Habbo.fr",
+        "uri_check" : " https://www.habbo.fr/api/public/users?name={account}",
+        "uri_pretty" : " https://www.habbo.fr/profile/{account}",
+        "e_code" : 200,
+        "e_string" : "currentLevel",
+        "m_string" : "not-found",
+        "m_code" : 404,
+        "known" : ["2006", "sicilienne"],
+        "cat" : "gaming"
+       },
+       {
+        "name" : "Habbo.it",
+        "uri_check" : " https://www.habbo.it/api/public/users?name={account}",
+        "uri_pretty" : " https://www.habbo.it/profile/{account}",
+        "e_code" : 200,
+        "e_string" : "currentLevel",
+        "m_string" : "not-found",
+        "m_code" : 404,
+        "known" : ["samsebek", "papablu"],
+        "cat" : "gaming"
+       },
+       {
+        "name" : "Habbo.nl",
+        "uri_check" : " https://www.habbo.nl/api/public/users?name={account}",
+        "uri_pretty" : " https://www.habbo.nl/profile/{account}",
+        "e_code" : 200,
+        "e_string" : "currentLevel",
+        "m_string" : "not-found",
+        "m_code" : 404,
+        "known" : ["XOTWOD.xx", "xoSorxo"],
+        "cat" : "gaming"
+       },
+       {
+        "name" : "Habbo.fi",
+        "uri_check" : " https://www.habbo.fi/api/public/users?name={account}",
+        "uri_pretty" : " https://www.habbo.fi/profile/{account}",
+        "e_code" : 200,
+        "e_string" : "currentLevel",
+        "m_string" : "not-found",
+        "m_code" : 404,
+        "known" : ["cucumberz", "Yasline"],
+        "cat" : "gaming"
+       },
+       {
         "name" : "Hackaday",
         "uri_check" : "https://hackaday.io/{account}",
         "e_code" : 200,
