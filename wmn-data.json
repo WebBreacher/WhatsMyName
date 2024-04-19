@@ -1644,12 +1644,12 @@
        },
        {
         "name" : "Facebook",
-        "uri_check" : "https://m.facebook.com/{account}",
+        "uri_check" : "https://www.facebook.com/{account}/",
         "e_code" : 200,
-        "e_string" : "| Facebook</title>",
-        "m_string" : "<title>Content not found",
-        "m_code" : 200,
-        "known" : ["zuck", "adam"],
+        "e_string" : "about_",
+        "m_string" : "",
+        "m_code" : 302,
+        "known" : ["john.miniolic", "adam"],
         "cat" : "social"
        },
        {
