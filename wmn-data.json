@@ -842,16 +842,6 @@
         "cat" : "business"
        },
        {
-        "name" : "cash.app",
-        "uri_check" : "https://cash.app/${account}",
-        "e_code" : 200,
-        "e_string" : " on Cash App</title>",
-        "m_string" : "The page you are looking for can't be found",
-        "m_code" : 404,
-        "known" : ["Jill", "john"],
-        "cat" : "finance"
-       },
-       {
         "name" : "CastingCallClub",
         "uri_check" : "https://www.castingcall.club/{account}",
         "e_code" : 200,
