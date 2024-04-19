@@ -527,6 +527,16 @@
         "cat" : "xx NSFW xx"
        },
        {
+        "name" : "Beacons",
+        "uri_check" : "https://beacons.ai/{account}",
+        "e_code" : 200,
+        "e_string" : " - Link in Bio &amp;Creator Tools | Beacons</title>",
+        "m_string" : "<title>Beacons</title>",
+        "m_code" : 200,
+        "known" : ["rafaballerini", "lexaloco", "jardred"],
+        "cat" : "social"
+       },
+       {
         "name" : "Behance",
         "uri_check" : "https://www.behance.net/{account}",
         "e_code" : 200,
@@ -773,8 +783,8 @@
         "name" : "buymeacoffee",
         "uri_check" : "https://www.buymeacoffee.com/{account}",
         "e_code" : 200,
-        "e_string" : "supporters",
-        "m_string" : "The page you’re looking for doesn’t exist.",
+        "e_string" : " - Buymeacoffee</title>",
+        "m_string" : ">- Buymeacoffee</title>",
         "m_code" : 404,
         "known" : ["freebird", "robinwong"],
         "cat" : "finance"
