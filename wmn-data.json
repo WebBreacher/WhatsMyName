@@ -22,16 +22,6 @@
         "cat" : "social"
        },
        {
-        "name" : "1001mem",
-        "uri_check" : "http://1001mem.ru/{account}",
-        "e_code" : 200,
-        "e_string" : "| Новости - Приколы - Комиксы - Мемы",
-        "m_string" : "Этот пользователь не существует, или заблокирован.",
-        "m_code" : 200,
-        "known" : ["ruslan", "dima"],
-        "cat" : "social"
-       },
-       {
         "name" : "3DNews",
         "uri_check" : "https://forum.3dnews.tech/member.php?username={account}",
         "e_code" : 200,
@@ -251,16 +241,6 @@
         "m_string" : "Page not found",
         "m_code" : 404,
         "known" : ["blue", "goddessbecca"],
-        "cat" : "social"
-       },
-       {
-        "name" : "Alloannonces",
-        "uri_check" : "https://www.alloannonces.ma/{account}/",
-        "e_code" : 200,
-        "e_string" : "Vendeurs/Agents",
-        "m_string" : "Page non defini",
-        "m_code" : 404,
-        "known" : ["Rachid13", "Ayoub"],
         "cat" : "social"
        },
        {
@@ -741,11 +721,11 @@
        },
        {
         "name" : "Brickset",
-        "uri_check" : "https://forum.brickset.com/profile/{account}",
+        "uri_check" : "https://brickset.com/profile/{account}",
         "e_code" : 200,
-        "e_string" : "Activity</h2>",
-        "m_string" : "User Not Found",
-        "m_code" : 404,
+        "e_string" : "Member since:</dt>",
+        "m_string" : "{name}</h1>",
+        "m_code" : 200,
         "known" : ["lowlead", "vwong19"],
         "cat" : "hobby"
        },
@@ -783,21 +763,11 @@
         "name" : "BuzzFeed",
         "uri_check" : "https://www.buzzfeed.com/{account}",
         "e_code" : 200,
-        "e_string" : "memberSince",
+        "e_string" : " on BuzzFeed</title><meta",
         "m_string" : "We can't find the page you're looking for",
         "m_code" : 404,
         "known" : ["janelytvynenko", "RobertK"],
         "cat" : "social"
-       },
-       {
-        "name" : "Buzznet",
-        "uri_check" : "https://www.buzznet.com/author/{account}/",
-        "e_code" : 200,
-        "e_string" : "<title>Author:",
-        "m_string" : "The page you are looking for can't be found.",
-        "m_code" : 404,
-        "known" : ["carolinegawlik"],
-        "cat" : "news"
        },
        {
         "name" : "cafecito",
@@ -1048,7 +1018,7 @@
         "name" : "Codeberg",
         "uri_check" : "https://codeberg.org/{account}",
         "e_code" : 200,
-        "e_string" : "better with JavaScript",
+        "e_string" : "Joined on",
         "m_code" : 404,
         "m_string" : "The page you are trying to reach either",
         "known" : ["dachary", "happy"],
@@ -1088,7 +1058,7 @@
         "name" : "Code Project",
         "uri_check" : "https://www.codeproject.com/Members/{account}",
         "e_code" : 200,
-        "e_string" : "member since",
+        "e_string" : "Member since",
         "m_string" : "Unable to load the requested member's information",
         "m_code" : 200,
         "known" : ["WmCraig", "Rick-York"],
@@ -1401,7 +1371,7 @@
        "name" : "DIBIZ",
         "uri_check" : "https://www.dibiz.com/{account}",
         "e_code" : 200,
-        "e_string" : "mailto:?subject=",
+        "e_string" : "Add to contacts</span>",
         "m_string" : "An Error Has Occurred",
         "m_code" : 404,
         "known" : ["fractalhue", "rid"],
@@ -1607,14 +1577,14 @@
         "e_string" : "Video/Pics views",
         "m_string" : "Profile not found",
         "m_code" : 404,
-        "known" : ["enron456", "Jomat999", "hicnobu"],
+        "known" : ["LAM_2030", "DianaX814"],
         "cat" : "xx NSFW xx"
        },
        {
         "name" : "Etsy",
         "uri_check" : "https://www.etsy.com/people/{account}",
         "e_code" : 200,
-        "e_string" : " on Etsy</title>",
+        "e_string" : " favorite items - Etsy</title>",
         "m_string" : "Sorry, the member you are looking for does not exist",
         "m_code" : 404,
         "known" : ["david", "happiness"],
@@ -1649,14 +1619,14 @@
         "e_string" : "Public Profile Page",
         "m_string" : "Closed Profile Page",
         "m_code" : 404,
-        "known" : ["ThatWitchMaeve", "Nudekiki"],
+        "known" : ["christalclear", "Nudekiki"],
         "cat" : "xx NSFW xx"
        },
        {
         "name" : "Eyeem",
         "uri_check" : "https://www.eyeem.com/u/{account}",
         "e_code" : 200,
-        "e_string" : "| EyeEm Photographer",
+        "e_string" : "Marketplace</title>",
         "m_string" : "Not Found (404) | EyeEm",
         "m_code" : 301,
         "known" : ["john", "bob"],
@@ -1707,21 +1677,11 @@
         "uri_check" : "https://fancentro.com/api/profile.get?profileAlias={account}&limit=1",
         "uri_pretty" : "https://fancentro.com/{account}/",
         "e_code" : 200,
-        "e_string" : "\"status\" :true",
-        "m_string" : "\"status\" :false",
+        "e_string" : "\"status\":true",
+        "m_string" : "\"status\":false",
         "m_code" : 200,
         "known" : ["medroxy","miaaamador"],
         "cat" : "xx NSFW xx"
-       },
-       {
-        "name" : "fandalism",
-        "uri_check" : "https://fandalism.com/{account}",
-        "e_code" : 200,
-        "e_string" : "fandalism_:user",
-        "m_string" : "404 - File or directory not found",
-        "m_code" : 404,
-        "known" : ["mike", "ted"],
-        "cat" : "hobby"
        },
        {
         "name" : "Fandom",
@@ -1879,10 +1839,10 @@
         "name" : "Fodors Forum",
         "uri_check" : "https://www.fodors.com/community/profile/{account}/forum-activity",
         "e_code" : 200,
-        "e_string" : "Member since",
+        "e_string" : "User Profile | Fodor’s Travel</title>",
         "m_string" : "Plan Your Trip Online</title>",
         "m_code" : 302,
-        "known" : ["mms", "gooster"],
+        "known" : ["jdstraveler", "gooster"],
         "cat" : "social"
        },
        {
@@ -2046,7 +2006,7 @@
         "e_string" : "window.ERROR_VIEW = null",
         "m_string" : "resourceNotFoundRoute",
         "m_code" : 200,
-        "known" : ["danielebarison", "cderalow"],
+        "known" : ["tommy", "cderalow"],
         "cat" : "health"
        },
        {
@@ -2079,16 +2039,6 @@
         "m_code" : 200,
         "known" : ["gettr", "support"],
         "cat" : "social"
-       },
-       {
-        "name" : "gfycat",
-        "uri_check" : "https://gfycat.com/@{account}",
-        "e_code" : 200,
-        "e_string" : "gfycat-username",
-        "m_string" : "<h1>Page not found</h1>",
-        "m_code" : 404,
-        "known" : ["timviechanoi", "sannahparker"],
-        "cat" : "misc"
        },
        {
         "name" : "Gigapan",
@@ -2152,16 +2102,6 @@
         "headers": {
             "accept": "text/html"
         }
-       },
-       {
-        "name" : "GitHubPlus",
-        "uri_check" : "https://githubplus.com/{account}",
-        "e_code" : 200,
-        "e_string" : ": - Github Plus</title>",
-        "m_string" : "<title>Not Found</title>",
-        "m_code" : 404,
-        "known" : ["webbreacher", "C3n7ral051nt4g3ncy"],
-        "cat" : "coding"
        },
        {
         "name" : "GitLab",
@@ -2323,8 +2263,8 @@
         "e_code" : 200,
         "e_string" : " | HackerRank</title>",
         "m_string" : ":: HackerRank</title>",
-        "m_code" : 302,
-        "known" : ["johnsmith", "FMota"],
+        "m_code" : 200,
+        "known" : ["FMota", "adepanges"],
         "cat" : "tech"
        },
        {
@@ -2354,7 +2294,7 @@
         "e_string" : "Channel Views",
         "m_code" : 302,
         "m_string" : "DYNAMIC",
-        "known" : ["z", "god"],
+        "known" : ["thecolorred-7902", "arisu-cum-stats-2787"],
         "cat" : "xx NSFW xx"
        },
        {
@@ -2909,7 +2849,7 @@
         "name" : "LibraryThing",
         "uri_check" : "https://www.librarything.com/profile/{account}",
         "e_code" : 200,
-        "e_string" : "Collections",
+        "e_string" : "Books",
         "m_string" : "Error: This user doesn't exist",
         "m_code" : 200,
         "known" : ["test", "john"],
@@ -3019,12 +2959,12 @@
         "cat" : "social"
        },
        {
-        "name" : "love_ru",
-        "uri_check" : "https://love.ru/{account}",
+        "name" : "waytohey",
+        "uri_check" : "https://waytohey.com/{account}",
         "e_code" : 200,
-        "e_string" : "Love.ru</title>",
-        "m_string" : "<title>404",
+        "e_string" : "Send message</span>",
         "m_code" : 404,
+        "m_string" : "Unfortunately, this page doesn&#039;t exist.",
         "known" : ["igor", "anna"],
         "cat" : "social"
        },
@@ -3042,20 +2982,10 @@
         "name" : "MAGABOOK",
         "uri_check" : "https://magabook.com/{account}",
         "e_code" : 200,
-        "e_string" : "Recent Updates",
-        "m_string" : "Page Not Be Found",
-        "m_code" : 200,
-        "known" : ["PamelaElliott62", "eric"],
-        "cat" : "social"
-       },
-       {
-        "name" : "MAGA-CHAT",
-        "uri_check" : "https://maga-chat.com/{account}",
-        "e_code" : 200,
-        "e_string" : "Recent Updates",
-        "m_string" : "Page Not Be Found",
-        "m_code" : 200,
-        "known" : ["Rich", "RjosephJr"],
+        "e_string" : "Timeline",
+        "m_string" : "",
+        "m_code" : 302,
+        "known" : ["KristenSuzanne", "mikeflbmer"],
         "cat" : "social"
        },
        {
@@ -3340,7 +3270,7 @@
         "name" : "Mastodon-meow.social",
         "uri_check" : "https://meow.social/@{account}",
         "e_code" : 200,
-        "e_string" : "- the mastodon instances for creatures</title>",
+        "e_string" : "- the mastodon instance for creatures fluffy, scaly and otherwise</title>",
         "m_string" : "The page you are looking for isn&#39;t here.",
         "m_code" : 404,
         "known" : ["meow", "novra"],
@@ -4058,17 +3988,6 @@
         "cat" : "video"
        },
        {
-        "name" : "Pettingzoo.co (Mastodon Instance)",
-        "uri_check" : "https://pettingzoo.co/api/v1/accounts/lookup?acct={account}",
-        "uri_pretty" : "https://pettingzoo.co/@{account}",
-        "e_code" : 200,
-        "e_string" : "display_name",
-        "m_code" : 404,
-        "m_string" : "Record not found",
-        "known" : ["tyr", "Disbear"],
-        "cat" : "social"
-       },
-       {
         "name" : "Pewex",
         "uri_check" : "https://retro.pewex.pl/user/{account}",
         "e_code" : 200,
@@ -4354,6 +4273,7 @@
        {
         "name" : "Pronouns.Page",
         "uri_check" : "https://pronouns.page/api/profile/get/{account}?version=2",
+        "uri_pretty" : "https://pronouns.page/@{account}",
         "e_code" : 200,
         "e_string" : "username",
         "m_string" : "\"profiles\": {}",
@@ -4390,16 +4310,6 @@
         "m_code" : 200,
         "known" : ["test", "test2"],
         "cat" : "tech"
-       },
-       {
-        "name" : "Psstaudio",
-        "uri_check" : "https://psstaudio.com/u/{account}",
-        "e_code" : 200,
-        "e_string" : "id=\"profile_picture\"",
-        "m_code" : 404,
-        "m_string" : "We know you were looking for something, but it is not here",
-        "known" : ["JayeWilde", "baxter"],
-        "cat" : "xx NSFW xx"
        },
        {
         "name" : "public",
@@ -5016,16 +4926,6 @@
         "m_code" : 404,
         "known" : ["reeden-landshey", "tigerzero"],
         "cat" : "art"
-       },
-       {
-        "name" : "SoliKick",
-        "uri_check" : "https://solikick.com/-{account}",
-        "e_code" : 200,
-        "e_string" : "page_guest_users-view",
-        "m_string" : "This item has been removed or is no longer available",
-        "m_code" : 302,
-        "known" : ["milehighed", "Edmundus"],
-        "cat" : "social"
        },
        {
         "name" : "soloby",
@@ -5660,7 +5560,7 @@
        },
        {
         "name" : "Twitter",
-        "uri_check" : "https://nitter.net/{account}",
+        "uri_check" : "https://nitter.privacydev.net/{account}",
         "uri_pretty" : "https://twitter.com/{account}",
         "e_code" : 200,
         "e_string" : "| nitter</title>",
@@ -5752,6 +5652,16 @@
         "m_code" : 404,
         "known" : ["john", "peter"],
         "cat" : "social"
+       },
+       {
+        "name" : "Ultimate Guitar",
+        "uri_check" : "https://www.ultimate-guitar.com/u/{account}",
+        "e_code" : 200,
+        "e_string" : " | Ultimate-Guitar.Com</title>",
+        "m_string" : "Oops! We couldn't find that page.",
+        "m_code" : 410,
+        "known" : ["LYNX-Music", "Mikhailo","MeGaDeth2314"],
+        "cat" : "hobby"
        },
        {
         "name" : "Ultras Diary",
@@ -6010,17 +5920,6 @@
         "m_code" : 301,
         "known" : ["briankirchoff", "bryankopta"],
         "cat" : "business"
-       },
-       {
-        "name" : "Wanelo",
-        "uri_check" : "https://wanelo.co/{account}",
-        "e_code" : 200,
-        "e_string" : "on Wanelo</title>",
-        "m_string" : "Hmm, that's embarrassing",
-        "m_code" : 404,
-        "known" : ["lisandrareyes"],
-        "cat" : "shopping",
-        "strip_bad_char" : "."
        },
        {
         "name" : "watchmemore.com",
@@ -6399,6 +6298,16 @@
         "cat" : "xx NSFW xx"
        },
        {
+        "name": "Zenn",
+        "uri_check": "https://zenn.dev/{account}",
+        "e_code": 200,
+        "e_string": "<div class=\"UserHeader_profileMain__6Itxi\">",
+        "m_string": "<div class=\"ErrorContent_status__2Ykoq\">404</div>",
+        "m_code": 404,
+        "known": ["john", "blue"],
+        "cat": "coding"
+      },
+       {
         "name" : "Zepeto",
         "uri_check" : "https://user.zepeto.me/{account}?language=en",
         "e_code" : 200,
@@ -6457,6 +6366,17 @@
         "m_code" : 404,
         "known" : ["rezaghezi", "hosssssein"],
         "cat" : "tech"
-       }
+       },
+       {
+        "name": "Cloudflare",
+        "uri_check": "https://community.cloudflare.com/u/{account}/card.json",
+        "uri_pretty": "https://community.cloudflare.com/u/{account}",
+        "e_code": 200,
+        "e_string": "user_avatar",
+        "m_string": "The requested URL or resource could not be found",
+        "m_code": 404,
+        "known": ["carl", "morten"],
+        "cat": "tech"
+    }
     ]
   }
