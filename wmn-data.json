@@ -507,16 +507,6 @@
         "cat" : "xx NSFW xx"
        },
        {
-        "name" : "Beacons",
-        "uri_check" : "https://beacons.ai/{account}",
-        "e_code" : 200,
-        "e_string" : " - Link in Bio &amp;Creator Tools | Beacons</title>",
-        "m_string" : "<title>Beacons</title>",
-        "m_code" : 200,
-        "known" : ["rafaballerini", "lexaloco", "jardred"],
-        "cat" : "social"
-       },
-       {
         "name" : "Behance",
         "uri_check" : "https://www.behance.net/{account}",
         "e_code" : 200,
