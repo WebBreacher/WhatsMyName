@@ -27,7 +27,10 @@
       "m_code" : 404,
       "m_string" : "Account not found",
       "known" : ["whoami", "johndoe"],
-      "cat" : "images"
+      "cat" : "images",
+      "headers": {
+               "accept": "text/html"
+       }
     }
   ]
 }
