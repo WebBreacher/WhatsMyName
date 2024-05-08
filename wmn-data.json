@@ -5638,11 +5638,11 @@
        },
        {
         "name" : "Twitch",
-        "uri_check" : "https://streamscharts.com/channels/{account}",
+        "uri_check" : "https://twitchtracker.com/{account}",
         "uri_pretty" : "https://twitch.tv/{account}/",
         "e_code" : 200,
-        "e_string" : "- Twitch Stats, Analytics and Channel Overview</title>",
-        "m_string" : "<title>Page not Found (404)",
+        "e_string" : "Overview</a>",
+        "m_string" : "<title>404 Page Not Found",
         "m_code" : 404,
         "known" : ["summit1g", "cohhcarnage"],
         "cat" : "gaming"
