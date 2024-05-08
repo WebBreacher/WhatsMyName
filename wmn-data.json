@@ -4666,16 +4666,6 @@
         "cat" : "blog"
        },
        {
-        "name" : "SaraCarterShow",
-        "uri_check" : "https://saraacarter.com/author/{account}/",
-        "e_code" : 200,
-        "e_string" : "| Sara A. Carter",
-        "m_string" : "<title>Page not found - Sara A. Carter</title>",
-        "m_code" : 301,
-        "known" : ["douglasbraff", "annaliese"],
-        "cat" : "political"
-       },
-       {
         "name" : "ScoutWiki",
         "uri_check" : "https://en.scoutwiki.org/User:{account}",
         "e_code" : 200,
