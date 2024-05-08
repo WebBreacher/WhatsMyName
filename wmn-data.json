@@ -5951,11 +5951,14 @@
         "name" : "VK",
         "uri_check" : "https://vk.com/{account}",
         "e_code" : 200,
-        "e_string" : "id=\"profile\"",
+        "e_string" : "content=\"profile\"",
         "m_string" : "404 Not Found",
         "m_code" : 404,
         "known" : ["ches_ches", "mike.kidlazy"],
-        "cat" : "social"
+        "cat" : "social",
+        "headers": {
+          "User-Agent": "Mozilla/5.0 (X11; Linux i686; rv:125.0) Gecko/20100101 Firefox/125.0"
+        }
        },
        {
         "name" : "Vkl.world (Mastodon Instance)",
