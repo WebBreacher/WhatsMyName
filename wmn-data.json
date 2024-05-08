@@ -5956,8 +5956,8 @@
         "m_code" : 404,
         "known" : ["ches_ches", "mike.kidlazy"],
         "cat" : "social",
-        "headers": {
-          "User-Agent": "Mozilla/5.0 (X11; Linux i686; rv:125.0) Gecko/20100101 Firefox/125.0"
+        "headers" : {
+          "User-Agent" : "Mozilla/5.0 (X11; Linux i686; rv:125.0) Gecko/20100101 Firefox/125.0"
         }
        },
        {
