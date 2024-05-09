@@ -2511,6 +2511,16 @@
         "cat" : "social"
        },
        {
+        "name" : "HudsonRock",
+        "uri_check" : "https://cavalier.hudsonrock.com/api/json/v2/osint-tools/search-by-username?username={account}",
+        "e_code" : 200,
+        "e_string" : "total_corporate_services",
+        "m_string" : "No results",
+        "m_code" : 200,
+        "known" : ["testadmin", "testadmin1"],
+        "cat" : "tech"
+       },
+       {
         "name" : "hugging_face",
         "uri_check" : "https://huggingface.co/{account}",
         "e_code" : 200,
