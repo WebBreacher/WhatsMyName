@@ -6,7 +6,7 @@
                 "Creative Commons, PO Box 1866, Mountain View, CA 94042, USA."],
     "authors" : ["Micah 'WebBreacher' Hoffman","C3n7ral051nt4g3ncy","L0r3m1p5um","janbinx",
                 "bcoles","swedishmike","ef1500","zewen","jocejocejoe","P3run","seintpl",
-                "djahren","K2SOsint","AccentuSoft","Bellingcat","*Contributions since 2022*"],
+                "djahren","K2SOsint","AccentuSoft","Bellingcat","*Contributions since 2022*", "p1ngul1n0"],
     "categories" : ["archived","art","blog","business","coding","dating","finance","gaming","health",
                    "hobby","images","misc","music","news","political","search","shopping","social",
                    "tech","video","xx NSFW xx"],
@@ -6470,16 +6470,66 @@
         "m_code": 404,
         "known": ["carl", "morten"],
         "cat": "tech"
-    },
-    {
-      "name": "Alura",
-      "uri_check": "https://cursos.alura.com.br/user/{account}",
-      "e_code": 200,
-      "e_string": "Perfil de",
-      "m_string": "Erro 404",
-      "m_code": 404,
-      "known": ["edmilson", "jonathan"],
-      "cat": "tech"
-    }
-    ]
-  }
+      },
+      {
+        "name": "Alura",
+        "uri_check": "https://cursos.alura.com.br/user/{account}",
+        "e_code": 200,
+        "e_string": "Perfil de",
+        "m_string": "Erro 404",
+        "m_code": 404,
+        "known": ["edmilson", "jonathan"],
+        "cat": "tech"
+      },
+      {
+        "name": "Privacy",
+        "uri_check": "https://privacy.com.br/checkout/{account}",
+        "e_code": 200,
+        "e_string": "<title> Privacy | Checkout",
+        "m_string": "<title>Privacy</title>",
+        "m_code": 302,
+        "known": ["crash", "alex"],
+        "cat": "xx NSFW xx"
+      },
+      {
+        "name": "Gartic",
+        "uri_check": "https://gartic.com.br/{account}",
+        "e_code": 200,
+        "e_string": "<strong>Nick:</strong>",
+        "m_string": "<title>Não Encontrado -",
+        "m_code": 404,
+        "known": ["test", "crash"],
+        "cat": "gaming"
+      },
+      {
+        "name": "XNXX",
+        "uri_check": "https://www.xnxx.com/mobile/profile/{account}",
+        "e_code": 200,
+        "e_string": "profile",
+        "m_string": "http-equiv=\"Refresh\"",
+        "m_code": 400,
+        "known": ["john", "mumrra"],
+        "cat": "xx NSFW xx"
+      },
+      {
+        "name": "Jusbrasil",
+        "uri_check": "https://{account}.jusbrasil.com.br/",
+        "e_code": 200,
+        "e_string": "ProfileHeader",
+        "m_string": "error-page",
+        "m_code": 404,
+        "known": ["john", "crash"],
+        "cat": "misc"
+      },
+      {
+        "name": "Kwai",
+        "uri_check": "https://www.kwai.com/@{account}",
+        "e_code": 200,
+        "e_string": "ProfilePage",
+        "m_string": "class=\"network\"",
+        "m_code": 404,
+        "known": ["carlito", "taylor"],
+        "cat": "social"
+      }
+  ]
+}
