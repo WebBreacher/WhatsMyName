@@ -6482,26 +6482,6 @@
         "cat": "tech"
       },
       {
-        "name": "Privacy",
-        "uri_check": "https://privacy.com.br/checkout/{account}",
-        "e_code": 200,
-        "e_string": "<title> Privacy | Checkout",
-        "m_string": "<title>Privacy</title>",
-        "m_code": 302,
-        "known": ["crash", "alex"],
-        "cat": "xx NSFW xx"
-      },
-      {
-        "name": "Gartic",
-        "uri_check": "https://gartic.com.br/{account}",
-        "e_code": 200,
-        "e_string": "<strong>Nick:</strong>",
-        "m_string": "<title>Não Encontrado -",
-        "m_code": 404,
-        "known": ["test", "crash"],
-        "cat": "gaming"
-      },
-      {
         "name": "XNXX",
         "uri_check": "https://www.xnxx.com/mobile/profile/{account}",
         "e_code": 200,
@@ -6510,16 +6490,6 @@
         "m_code": 400,
         "known": ["john", "mumrra"],
         "cat": "xx NSFW xx"
-      },
-      {
-        "name": "Jusbrasil",
-        "uri_check": "https://{account}.jusbrasil.com.br/",
-        "e_code": 200,
-        "e_string": "ProfileHeader",
-        "m_string": "error-page",
-        "m_code": 404,
-        "known": ["john", "crash"],
-        "cat": "misc"
       },
       {
         "name": "Kwai",
