@@ -6506,7 +6506,7 @@
         "uri_check": "https://www.xnxx.com/mobile/profile/{account}",
         "e_code": 200,
         "e_string": "<table id=\"profile\">",
-        "m_string": "http-equiv=\"Refresh\"",
+        "m_string": "<title>Bad request",
         "m_code": 400,
         "known": ["john", "mumrra"],
         "cat": "xx NSFW xx"
