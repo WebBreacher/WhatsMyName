@@ -6,7 +6,7 @@
                 "Creative Commons, PO Box 1866, Mountain View, CA 94042, USA."],
     "authors" : ["Micah 'WebBreacher' Hoffman","C3n7ral051nt4g3ncy","L0r3m1p5um","janbinx",
                 "bcoles","swedishmike","ef1500","zewen","jocejocejoe","P3run","seintpl",
-                "djahren","K2SOsint","AccentuSoft","Bellingcat","*Contributions since 2022*"],
+                "djahren","K2SOsint","AccentuSoft","Bellingcat","*Contributions since 2022*", "Lucas 'P1ngul1n0' Antoniaci"],
     "categories" : ["archived","art","blog","business","coding","dating","finance","gaming","health",
                    "hobby","images","misc","music","news","political","search","shopping","social",
                    "tech","video","xx NSFW xx"],
@@ -2715,10 +2715,11 @@
        },
        {
         "name" : "Internet Archive User Search",
-        "uri_check" : "https://archive.org/search.php?query={account}",
+        "uri_check" : "https://archive.org/advancedsearch.php?q={account}&output=json",
+        "uri_pretty" : "https://archive.org/search.php?query={account}",
         "e_code" : 200,
-        "e_string" : "<!--/.item-ia-->",
-        "m_string" : "",
+        "e_string" : "backup_location",
+        "m_string" : "numFound\":0",
         "m_code" : 200,
         "known" : ["test", "mubix"],
         "cat" : "misc"
@@ -4676,16 +4677,6 @@
         "cat" : "blog"
        },
        {
-        "name" : "SaraCarterShow",
-        "uri_check" : "https://saraacarter.com/author/{account}/",
-        "e_code" : 200,
-        "e_string" : "| Sara A. Carter",
-        "m_string" : "<title>Page not found - Sara A. Carter</title>",
-        "m_code" : 301,
-        "known" : ["douglasbraff", "annaliese"],
-        "cat" : "political"
-       },
-       {
         "name" : "ScoutWiki",
         "uri_check" : "https://en.scoutwiki.org/User:{account}",
         "e_code" : 200,
@@ -5648,11 +5639,11 @@
        },
        {
         "name" : "Twitch",
-        "uri_check" : "https://streamscharts.com/channels/{account}",
+        "uri_check" : "https://twitchtracker.com/{account}",
         "uri_pretty" : "https://twitch.tv/{account}/",
         "e_code" : 200,
-        "e_string" : "- Twitch Stats, Analytics and Channel Overview</title>",
-        "m_string" : "<title>Page not Found (404)",
+        "e_string" : "Overview</a>",
+        "m_string" : "<title>404 Page Not Found",
         "m_code" : 404,
         "known" : ["summit1g", "cohhcarnage"],
         "cat" : "gaming"
@@ -5971,11 +5962,14 @@
         "name" : "VK",
         "uri_check" : "https://vk.com/{account}",
         "e_code" : 200,
-        "e_string" : "id=\"profile\"",
+        "e_string" : "content=\"profile\"",
         "m_string" : "404 Not Found",
         "m_code" : 404,
         "known" : ["ches_ches", "mike.kidlazy"],
-        "cat" : "social"
+        "cat" : "social",
+        "headers": {
+          "User-Agent": "Mozilla/5.0 (X11; Linux i686; rv:125.0) Gecko/20100101 Firefox/125.0"
+        }
        },
        {
         "name" : "Vkl.world (Mastodon Instance)",
@@ -6486,6 +6480,36 @@
         "m_code": 404,
         "known": ["carl", "morten"],
         "cat": "tech"
-    }
-    ]
-  }
+      },
+      {
+        "name": "Alura",
+        "uri_check": "https://cursos.alura.com.br/user/{account}",
+        "e_code": 200,
+        "e_string": "Perfil de",
+        "m_string": "\"error\":\"Not Found\"",
+        "m_code": 404,
+        "known": ["edmilson", "jonathan"],
+        "cat": "tech"
+      },
+      {
+        "name": "XNXX",
+        "uri_check": "https://www.xnxx.com/mobile/profile/{account}",
+        "e_code": 200,
+        "e_string": "<table id=\"profile\">",
+        "m_string": "<title>Bad request",
+        "m_code": 400,
+        "known": ["john", "mumrra"],
+        "cat": "xx NSFW xx"
+      },
+      {
+        "name": "Kwai",
+        "uri_check": "https://www.kwai.com/@{account}",
+        "e_code": 200,
+        "e_string": "ProfilePage",
+        "m_string": "class=\"network\"",
+        "m_code": 404,
+        "known": ["carlito", "taylor"],
+        "cat": "social"
+      }
+  ]
+}
