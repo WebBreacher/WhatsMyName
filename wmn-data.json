@@ -1928,16 +1928,6 @@
         "cat" : "dating"
        },
        {
-        "name" : "Friendweb",
-        "uri_check" : "https://friendweb.nl/{account}",
-        "e_code" : 200,
-        "e_string" : "friendweb.nl",
-        "m_string" : "Page Not Found",
-        "m_code" : 404,
-        "known" : ["HoogtePiet", "JeePee"],
-        "cat" : "social"
-       },
-       {
         "name" : "FurAffinity",
         "uri_check" : "https://www.furaffinity.net/user/{account}",
         "e_code" : 200,
