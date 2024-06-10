@@ -6452,10 +6452,10 @@
        },
        {
         "name" : "Zomato",
-        "uri_check" : "https://www.zomato.com/{account}/foodjourney",
+        "uri_check" : "https://www.zomato.com/{account}/reviews",
         "e_code" : 200,
-        "e_string" : "| Zomato",
-        "m_string" : "404 | Zomato",
+        "e_string" : "Activity</h4>",
+        "m_string" : "This is a 404 page and we think it's fairly clear",
         "m_code" : 404,
         "known" : ["john", "jess"],
         "cat" : "social"
