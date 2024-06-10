@@ -6029,10 +6029,10 @@
         "name" : "warriorforum",
         "uri_check" : "https://www.warriorforum.com/members/{account}.html",
         "e_code" : 200,
-        "e_string" : "| Warrior Forum",
+        "e_string" : "Last Activity:",
         "m_string" : "Oops | Warrior Forum -",
         "m_code" : 400,
-        "known" : ["alex", "peter"],
+        "known" : ["alex", "discrat"],
         "cat" : "hobby"
        },
        {
