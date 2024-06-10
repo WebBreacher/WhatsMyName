@@ -578,12 +578,13 @@
        },
        {
         "name" : "Bitbucket",
-        "uri_check" : "https://bitbucket.org/{account}/workspace/projects/",
+        "uri_check" : "https://bitbucket.org/!api/2.0/repositories/{account}?page=1&pagelen=25&sort=-updated_on&q=&fields=-values.owner%2C-values.workspace",
+        "uri_pretty" : "https://bitbucket.org/{account}/workspace/repositories/",
         "e_code" : 200,
-        "e_string" : "Projects",
-        "m_string" : "Resource not found",
+        "e_string" : "full_name",
+        "m_string" : "No workspace with identifier",
         "m_code" : 404,
-        "known" : ["adriangrabowski4", "devsunleashed"],
+        "known" : ["LaNMaSteR53", "osamahalisawi"],
         "cat" : "coding"
        },
        {
