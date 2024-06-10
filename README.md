@@ -13,7 +13,7 @@ So, we will keep finding sites and adding them and you can feel free to try any 
 
 ## How Does It Work?
 
-WhatsMyName (WMN) consists of a JSON file with detections in it. Submissions from people all over the world are included. When a request is made to one of those sites from a tool like the ones in the next section, the server replies with data that will match one of our detections. It'll tell the checker script whether there a valid user account with the name we specified on their site or not.
+WhatsMyName (WMN) consists of a JSON file with detections in it. Submissions from people all over the world are included. When a request is made to one of those sites from a tool like the ones in the next section, the server replies with data that will match one of our detections. It'll tell the checker script whether there is a valid user account with the name we specified on their site or not.
 
 For a site to be included in WMN it has to:
 
@@ -38,7 +38,7 @@ For a site to be included in WMN it has to:
 * [Spiderfoot](https://github.com/smicallef/spiderfoot) uses this in the **sfp_account** module. There is also [this video](https://asciinema.org/a/295923) showing how to use this project using the Spiderfoot Command Line Interface (CLI).
 * [WhatsMyName-Python](https://github.com/C3n7ral051nt4g3ncy/WhatsMyName-Python) **Whats My Name** simple Python script made by [@C3n7ral051nt4g3ncy](https://github.com/C3n7ral051nt4g3ncy)
 * [WMN_screenshooter](https://github.com/swedishmike/WMN_screenshooter) a helper script that uses Selenium to try and grab screenshots of identified profile pages.
-
+* [WhatsMyName-Client](https://github.com/grabowskiadrian/WhatsMyName-Client) a simple Python script with 'request headers' and 'POST requests' support made by [@grabowskiadrian](https://github.com/grabowskiadrian). The script also allows you to test the configuration of the wmn-data.json file.
 
 ## Content
 
