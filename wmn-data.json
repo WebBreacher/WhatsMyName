@@ -4660,10 +4660,10 @@
         "name" : "Salon24",
         "uri_check" : "https://www.salon24.pl/u/{account}/",
         "e_code" : 200,
-        "e_string" : "Strona główna",
-        "m_string" : "Salon24 - blogi, newsy, opinie i komentarze",
-        "m_code" : 200,
-        "known" : ["test", "test2"],
+        "e_string" : "<span>Obserwujących</span>",
+        "m_string" : "<title>Salon24 - Blogi, wiadomości, opinie i komentarze",
+        "m_code" : 301,
+        "known" : ["matuzalem", "niewiarygodne"],
         "cat" : "blog"
        },
        {
@@ -5714,10 +5714,10 @@
         "cat" : "tech"
        },
        {
-        "name" : "uefconnect",
+        "name" : "UEF CONNECT",
         "uri_check" : "https://uefconnect.uef.fi/en/person/{account}/",
         "e_code" : 200,
-        "e_string" : "- UEFConnect</title>",
+        "e_string" : "profile-page-header__info",
         "m_string" : "<title>Page not found - UEFConnect</title>",
         "m_code" : 404,
         "known" : ["heli.mutanen", "mette.heiskanen"],
@@ -5829,8 +5829,8 @@
         "name" : "vsco",
         "uri_check" : "https://vsco.co/{account}/gallery",
         "e_code" : 200,
-        "e_string" : "| VSCO",
-        "m_string" : "This page does not exist",
+        "e_string" : "UserProfileGallery",
+        "m_string" : "Page Not Found | VSCO</title>",
         "m_code" : 404,
         "known" : ["sam", "becca"],
         "cat" : "social"
