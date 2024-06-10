@@ -2524,8 +2524,8 @@
         "name" : "Iconfinder",
         "uri_check" : "https://www.iconfinder.com/{account}",
         "e_code" : 200,
-        "e_string" : "iconsets",
-        "m_string" : "Page not found",
+        "e_string" : "data-to-user-id=",
+        "m_string" : "We couldn't find the page you are looking for.",
         "m_code" : 404,
         "known" : ["roundicons", "iconfinder"],
         "cat" : "images"
