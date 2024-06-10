@@ -6274,10 +6274,10 @@
         "name" : "Xing",
         "uri_check" : "https://www.xing.com/profile/{account}",
         "e_code" : 200,
-        "e_string" : " | XING</title>",
-        "m_string" : "Es tut uns leid",
+        "e_string" : "super-ellipsestyles__ImageContainer-vaubmx-1",
+        "m_string" : "404 Not Found | XING",
         "m_code" : 404,
-        "known" : ["Andy_Hausmann", "Ramona_Hapke"],
+        "known" : ["Andy_Hausmann", "Stephan_Abele2"],
         "cat" : "social"
        },
        {
