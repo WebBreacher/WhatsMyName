@@ -85,10 +85,10 @@
         "name" : "21buttons",
         "uri_check" : "https://www.21buttons.com/buttoner/{account}",
         "e_code" : 200,
-        "e_string" : "profile_user_followers",
+        "e_string" : "profile-info__profile-data__name",
         "m_string" : "This is not the page you're looking for",
         "m_code" : 404,
-        "known" : ["teedawod", "ginamariahoffmann"],
+        "known" : ["patricialmendro", "ginamariahoffmann", "espeworkout"],
         "cat" : "social"
        },
        {
