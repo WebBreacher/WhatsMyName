@@ -2524,8 +2524,8 @@
         "name" : "Iconfinder",
         "uri_check" : "https://www.iconfinder.com/{account}",
         "e_code" : 200,
-        "e_string" : "iconsets",
-        "m_string" : "Page not found",
+        "e_string" : "data-to-user-id=",
+        "m_string" : "We couldn't find the page you are looking for.",
         "m_code" : 404,
         "known" : ["roundicons", "iconfinder"],
         "cat" : "images"
@@ -2534,7 +2534,7 @@
         "name" : "icq-chat",
         "uri_check" : "https://icq.icqchat.co/members/{account}/",
         "e_code" : 200,
-        "e_string" : "ICQ chat",
+        "e_string" : "Last seen",
         "m_string" : "Oops! We ran into some problems",
         "m_code" : 404,
         "known" : ["brookenora.54", "bigdaddy.77"],
@@ -3488,16 +3488,6 @@
         "cat" : "gaming"
        },
        {
-        "name" : "Moneysavingexpert",
-        "uri_check" : "https://forums.moneysavingexpert.com/profile/{account}",
-        "e_code" : 200,
-        "e_string" : "Profile",
-        "m_string" : "User Not Found",
-        "m_code" : 404,
-        "known" : ["Heathermck", "MallyGirl"],
-        "cat" : "finance"
-       },
-       {
         "name" : "Motokiller",
         "uri_check" : "https://mklr.pl/user/{account}",
         "e_code" : 200,
@@ -3926,13 +3916,13 @@
        },
        {
         "name" : "palnet",
-        "uri_check" : "https://www.palnet.io/@{account}",
+        "uri_check" : "https://www.palnet.io/@{account}/",
         "e_code" : 200,
-        "e_string" : " - PALnet",
+        "e_string" : "class=\"profile-cover\"",
         "m_string" : "Unknown user account!",
         "m_code" : 404,
-        "known" : ["abdul01", "hakim"],
-        "cat" : "finance"
+        "known" : ["trincowski-pt", "anggreklestari"],
+        "cat" : "social"
        },
        {
         "name" : "Parler",
@@ -6029,10 +6019,10 @@
         "name" : "warriorforum",
         "uri_check" : "https://www.warriorforum.com/members/{account}.html",
         "e_code" : 200,
-        "e_string" : "| Warrior Forum",
+        "e_string" : "Last Activity:",
         "m_string" : "Oops | Warrior Forum -",
         "m_code" : 400,
-        "known" : ["alex", "peter"],
+        "known" : ["alex", "discrat"],
         "cat" : "hobby"
        },
        {
