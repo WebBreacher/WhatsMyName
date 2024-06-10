@@ -5714,10 +5714,10 @@
         "cat" : "tech"
        },
        {
-        "name" : "uefconnect",
+        "name" : "UEF CONNECT",
         "uri_check" : "https://uefconnect.uef.fi/en/person/{account}/",
         "e_code" : 200,
-        "e_string" : "- UEFConnect</title>",
+        "e_string" : "profile-page-header__info",
         "m_string" : "<title>Page not found - UEFConnect</title>",
         "m_code" : 404,
         "known" : ["heli.mutanen", "mette.heiskanen"],
