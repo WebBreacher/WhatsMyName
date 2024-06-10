@@ -3916,13 +3916,13 @@
        },
        {
         "name" : "palnet",
-        "uri_check" : "https://www.palnet.io/@{account}",
+        "uri_check" : "https://www.palnet.io/@{account}/",
         "e_code" : 200,
-        "e_string" : " - PALnet",
+        "e_string" : "class=\"profile-cover\"",
         "m_string" : "Unknown user account!",
         "m_code" : 404,
-        "known" : ["abdul01", "hakim"],
-        "cat" : "finance"
+        "known" : ["trincowski-pt", "anggreklestari"],
+        "cat" : "social"
        },
        {
         "name" : "Parler",
