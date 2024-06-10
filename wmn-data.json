@@ -122,10 +122,10 @@
         "cat" : "coding"
        },
        {
-        "name" : "admire_me",
+        "name" : "AdmireMe.VIP",
         "uri_check" : "https://admireme.vip/{account}/",
         "e_code" : 200,
-        "e_string" : "<div id=",
+        "e_string" : "creator-stat subscriber",
         "m_string" : "<title>Page Not Found |",
         "m_code" : 404,
         "known" : ["justjessicarabbit", "savannah250xo"],
