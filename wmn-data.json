@@ -4660,10 +4660,10 @@
         "name" : "Salon24",
         "uri_check" : "https://www.salon24.pl/u/{account}/",
         "e_code" : 200,
-        "e_string" : "Strona główna",
-        "m_string" : "Salon24 - blogi, newsy, opinie i komentarze",
-        "m_code" : 200,
-        "known" : ["test", "test2"],
+        "e_string" : "<span>Obserwujących</span>",
+        "m_string" : "<title>Salon24 - Blogi, wiadomości, opinie i komentarze",
+        "m_code" : 301,
+        "known" : ["matuzalem", "niewiarygodne"],
         "cat" : "blog"
        },
        {
