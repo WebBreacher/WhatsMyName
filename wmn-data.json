@@ -85,10 +85,10 @@
         "name" : "21buttons",
         "uri_check" : "https://www.21buttons.com/buttoner/{account}",
         "e_code" : 200,
-        "e_string" : "profile_user_followers",
+        "e_string" : "profile-info__profile-data__name",
         "m_string" : "This is not the page you're looking for",
         "m_code" : 404,
-        "known" : ["teedawod", "ginamariahoffmann"],
+        "known" : ["patricialmendro", "ginamariahoffmann", "espeworkout"],
         "cat" : "social"
        },
        {
@@ -122,10 +122,10 @@
         "cat" : "coding"
        },
        {
-        "name" : "admire_me",
+        "name" : "AdmireMe.VIP",
         "uri_check" : "https://admireme.vip/{account}/",
         "e_code" : 200,
-        "e_string" : "<div id=",
+        "e_string" : "creator-stat subscriber",
         "m_string" : "<title>Page Not Found |",
         "m_code" : 404,
         "known" : ["justjessicarabbit", "savannah250xo"],
@@ -4412,13 +4412,13 @@
         "cat" : "coding"
        },
        {
-        "name" : "QUEER",
+        "name" : "QUEER PL",
         "uri_check" : "https://queer.pl/user/{account}",
         "e_code" : 200,
-        "e_string" : "Społeczność",
+        "e_string" : "Ostatnio on-line",
         "m_string" : "Strona nie została znaleziona",
         "m_code" : 404,
-        "known" : ["test", "kowalski"],
+        "known" : ["claudii", "kowalski"],
         "cat" : "social"
        },
        {
