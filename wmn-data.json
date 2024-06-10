@@ -2534,7 +2534,7 @@
         "name" : "icq-chat",
         "uri_check" : "https://icq.icqchat.co/members/{account}/",
         "e_code" : 200,
-        "e_string" : "ICQ chat",
+        "e_string" : "Last seen",
         "m_string" : "Oops! We ran into some problems",
         "m_code" : 404,
         "known" : ["brookenora.54", "bigdaddy.77"],
