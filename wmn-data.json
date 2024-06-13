@@ -6111,9 +6111,9 @@
         "uri_check" : "https://{account}.wetransfer.com",
         "strip_bad_char" : ".",
         "e_code" : 200,
-        "e_string" : "default_recipient_email",
+        "e_string" : "workspaceName",
         "m_string" : "",
-        "m_code" : 302,
+        "m_code" : 307,
         "known" : ["mark", "joe"],
         "cat" : "misc"
        },
