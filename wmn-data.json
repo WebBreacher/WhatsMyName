@@ -5942,11 +5942,18 @@
       },
       {
         "name" : "Virustotal",
-        "uri_check" : "https://www.virustotal.com/gui/user/{account}",
+        "uri_check" : "https://www.virustotal.com/ui/users/{account}",
+        "pretty_uri" : "https://www.virustotal.com/gui/user/{account}",
+        "headers" : {
+                "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:127.0) Gecko/20100101 Firefox/127.0",
+                "X-Tool": "vt-ui-main",
+                "Accept-Ianguage": "en-US,en;q=0.9,es;q=0.8",
+                "X-VT-Anti-Abuse-Header": "MTAxOTFwMDcxOTEtWkc5dWRDQmlaU0JsZG2scy5xNzE4Mjc1NDI0LjUzMw=="
+        },
         "e_code" : 200,
-        "e_string" :"USER PROFILE",
-        "m_string" : "User not found",
-        "m_code" : 200,
+        "e_string" :"data",
+        "m_string" : "NotFoundError",
+        "m_code" : 404,
         "known" : ["cyber", "cybersecstu"],
         "cat" : "misc"
        },
