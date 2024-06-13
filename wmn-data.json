@@ -1378,14 +1378,15 @@
         "known" : ["JeffG1", "Maxatoria"],
         "cat" : "social"
        },
-       {
+      {
         "name" : "Discogs",
-        "uri_check" : "https://www.discogs.com/user/{account}",
+        "uri_check" : "https://api.discogs.com/users/{account}",
+        "pretty_uri" : "https://www.discogs.com/user/{account}",
         "e_code" : 200,
-        "e_string" : "Joined on",
+        "e_string" : "\"id\"",
         "m_code" : 404,
-        "m_string" : "We couldn't find that page.",
-        "known" : ["7jlong", "venetian-guy"],
+        "m_string" : "User does not exist",
+        "known" : ["damiano84", "bernadette69"],
         "cat" : "music"
        },
        {
