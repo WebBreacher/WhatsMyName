@@ -1378,7 +1378,7 @@
         "known" : ["JeffG1", "Maxatoria"],
         "cat" : "social"
        },
-      {
+       {
         "name" : "Discogs",
         "uri_check" : "https://api.discogs.com/users/{account}",
         "pretty_uri" : "https://www.discogs.com/user/{account}",
