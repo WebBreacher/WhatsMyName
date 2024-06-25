@@ -3811,7 +3811,7 @@
         "uri_check" : "https://ok.ru/{account}",
         "e_code" : 200,
         "e_string" : "| OK",
-        "m_string" : "This page does not exist on OK",
+        "m_string" : "/error404",
         "m_code" : 404,
         "known" : ["john", "aleksandrvasillev"],
         "cat" : "social"
