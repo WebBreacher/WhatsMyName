@@ -4632,8 +4632,8 @@
         "name" : "ru_123rf",
         "uri_check" : "https://ru.123rf.com/profile_{account}",
         "e_code" : 200,
-        "e_string" : "- 123RF",
-        "m_string" : "Векторы, Видеоролики. Подписка",
+        "e_string" : "userID",
+        "m_string" : "<title>Фотобанк 123RF - Стоковые Фото, Векторы, Видеоролики. Подписка на Фото. Royalty Free контент<",
         "m_code" : 302,
         "known" : ["ruslan", "olga"],
         "cat" : "hobby"
@@ -5008,16 +5008,6 @@
         "m_code" : 404,
         "known" : ["reeden-landshey", "tigerzero"],
         "cat" : "art"
-       },
-       {
-        "name" : "soloby",
-        "uri_check" : "http://www.soloby.ru/user/{account}",
-        "e_code" : 200,
-        "e_string" : "- Универ soloBY",
-        "m_string" : "Универ soloBY",
-        "m_code" : 404,
-        "known" : ["igor", "dana"],
-        "cat" : "social"
        },
        {
         "name" : "solo.to",
