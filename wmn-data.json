@@ -2212,8 +2212,8 @@
        },
        {
         "name" : "Habbo.com.br",
-        "uri_check" : " https://www.habbo.com.br/api/public/users?name={account}",
-        "uri_pretty" : " https://www.habbo.com.br/profile/{account}",
+        "uri_check" : "https://www.habbo.com.br/api/public/users?name={account}",
+        "uri_pretty" : "https://www.habbo.com.br/profile/{account}",
         "e_code" : 200,
         "e_string" : "currentLevel",
         "m_string" : "not-found",
@@ -2223,8 +2223,8 @@
        },
        {
         "name" : "Habbo.de",
-        "uri_check" : " https://www.habbo.de/api/public/users?name={account}",
-        "uri_pretty" : " https://www.habbo.de/profile/{account}",
+        "uri_check" : "https://www.habbo.de/api/public/users?name={account}",
+        "uri_pretty" : "https://www.habbo.de/profile/{account}",
         "e_code" : 200,
         "e_string" : "currentLevel",
         "m_string" : "not-found",
@@ -2234,8 +2234,8 @@
        },
        {
         "name" : "Habbo.com.tr",
-        "uri_check" : " https://www.habbo.com.tr/api/public/users?name={account}",
-        "uri_pretty" : " https://www.habbo.com.tr/profile/{account}",
+        "uri_check" : "https://www.habbo.com.tr/api/public/users?name={account}",
+        "uri_pretty" : "https://www.habbo.com.tr/profile/{account}",
         "e_code" : 200,
         "e_string" : "currentLevel",
         "m_string" : "not-found",
@@ -2245,8 +2245,8 @@
        },
        {
         "name" : "Habbo.fr",
-        "uri_check" : " https://www.habbo.fr/api/public/users?name={account}",
-        "uri_pretty" : " https://www.habbo.fr/profile/{account}",
+        "uri_check" : "https://www.habbo.fr/api/public/users?name={account}",
+        "uri_pretty" : "https://www.habbo.fr/profile/{account}",
         "e_code" : 200,
         "e_string" : "currentLevel",
         "m_string" : "not-found",
@@ -2256,8 +2256,8 @@
        },
        {
         "name" : "Habbo.it",
-        "uri_check" : " https://www.habbo.it/api/public/users?name={account}",
-        "uri_pretty" : " https://www.habbo.it/profile/{account}",
+        "uri_check" : "https://www.habbo.it/api/public/users?name={account}",
+        "uri_pretty" : "https://www.habbo.it/profile/{account}",
         "e_code" : 200,
         "e_string" : "currentLevel",
         "m_string" : "not-found",
@@ -2267,8 +2267,8 @@
        },
        {
         "name" : "Habbo.nl",
-        "uri_check" : " https://www.habbo.nl/api/public/users?name={account}",
-        "uri_pretty" : " https://www.habbo.nl/profile/{account}",
+        "uri_check" : "https://www.habbo.nl/api/public/users?name={account}",
+        "uri_pretty" : "https://www.habbo.nl/profile/{account}",
         "e_code" : 200,
         "e_string" : "currentLevel",
         "m_string" : "not-found",
@@ -2278,8 +2278,8 @@
        },
        {
         "name" : "Habbo.fi",
-        "uri_check" : " https://www.habbo.fi/api/public/users?name={account}",
-        "uri_pretty" : " https://www.habbo.fi/profile/{account}",
+        "uri_check" : "https://www.habbo.fi/api/public/users?name={account}",
+        "uri_pretty" : "https://www.habbo.fi/profile/{account}",
         "e_code" : 200,
         "e_string" : "currentLevel",
         "m_string" : "not-found",
@@ -3885,6 +3885,36 @@
         "m_code" : 404,
         "known" : ["txmustang302"],
         "cat" : "social"
+       },
+       {
+        "name" : "Origins.Habbo.com",
+        "uri_check" : "https://origins.habbo.com/api/public/users?name={account}",
+        "e_code" : 200,
+        "e_string" : "uniqueId",
+        "m_string" : "not-found",
+        "m_code" : 404,
+        "known" : ["john", "jane"],
+        "cat" : "gaming"
+       },
+       {
+        "name" : "Origins.Habbo.com.br",
+        "uri_check" : "https://origins.habbo.com.br/api/public/users?name={account}",
+        "e_code" : 200,
+        "e_string" : "uniqueId",
+        "m_string" : "not-found",
+        "m_code" : 404,
+        "known" : ["carlos", "pedro"],
+        "cat" : "gaming"
+       },
+       {
+        "name" : "Origins.Habbo.es",
+        "uri_check" : "https://origins.habbo.es/api/public/users?name={account}",
+        "e_code" : 200,
+        "e_string" : "uniqueId",
+        "m_string" : "not-found",
+        "m_code" : 404,
+        "known" : ["carlos", "mary"],
+        "cat" : "gaming"
        },
        {
         "name" : "osu!",
