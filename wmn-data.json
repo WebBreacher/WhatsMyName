@@ -577,6 +577,16 @@
         "cat" : "misc"
        },
        {
+        "name" : "Bio Sites",
+        "uri_check" : "https://bio.site/{account}",
+        "e_code" : 200,
+        "e_string" : "section\":{\"handles",
+        "m_string" : "This site no longer exists",
+        "m_code" : 404,
+        "known" : ["leticiabufoni", "kayurkaRhea"],
+        "cat" : "social"
+       },
+       {
         "name" : "Bitbucket",
         "uri_check" : "https://bitbucket.org/!api/2.0/repositories/{account}?page=1&pagelen=25&sort=-updated_on&q=&fields=-values.owner%2C-values.workspace",
         "uri_pretty" : "https://bitbucket.org/{account}/workspace/repositories/",
