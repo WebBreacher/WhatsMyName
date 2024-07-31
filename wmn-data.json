@@ -4281,6 +4281,16 @@
         "cat" : "social"
        },
        {
+        "name" : "Poe.com",
+        "uri_check" : "https://poe.com/profile/{account}",
+        "e_code" : 200,
+        "e_string" : "\"__isNode\":\"PoeUser\"",
+        "m_code" : 200,
+        "m_string" : "\"user\":null",
+        "known" : ["spdustin", "PromptCase"],
+        "cat" : "tech"
+       },
+       {
         "name" : "polygon",
         "uri_check" : "https://www.polygon.com/users/{account}",
         "e_code" : 200,
