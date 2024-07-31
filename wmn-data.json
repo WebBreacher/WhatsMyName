@@ -4284,9 +4284,9 @@
         "name" : "Poe.com",
         "uri_check" : "https://poe.com/profile/{account}",
         "e_code" : 200,
-        "e_string" : "\"__isNode\": \"PoeUser\"",
+        "e_string" : "\"__isNode\":\"PoeUser\"",
         "m_code" : 200,
-        "m_string" : "\"user\": null",
+        "m_string" : "\"user\":null",
         "known" : ["spdustin", "PromptCase"],
         "cat" : "tech"
        },
