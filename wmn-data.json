@@ -1208,6 +1208,16 @@
         "cat" : "gaming"
        },
        {
+        "name" : "character.ai",
+        "uri_check" : "https://character.ai/profile/{account}",
+        "e_code" : 200,
+        "e_string" : "\"page\":\"/profile/[username]\"",
+        "m_code" : 500,
+        "m_string" : "\"page\":\"/_error\"",
+        "known" : ["landon", "greg"],
+        "cat" : "tech"
+       },
+       {
         "name" : "Dailymotion",
         "uri_check" : "https://www.dailymotion.com/{account}",
         "e_code" : 200,
