@@ -6560,5 +6560,15 @@
         "known" : ["carlito", "taylor"],
         "cat" : "social"
       }
+      {
+        "name" : "Letterboxd",
+        "uri_check" : "https://letterboxd.com/{account}",
+        "e_code" : 200,
+        "e_string" : "RECENT ACTIVITY",
+        "m_string" : "Sorry, we can’t find the page you’ve requested.",
+        "m_code" : 404,
+        "known" : ["serdaraltin", "jeaba"],
+        "cat" : "social"
+      }
   ]
 }
