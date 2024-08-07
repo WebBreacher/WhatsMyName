@@ -2958,6 +2958,16 @@
         "cat" : "images"
        },
        {
+        "name" : "Letterboxd",
+        "uri_check" : "https://letterboxd.com/{account}/",
+        "e_code" : 200,
+        "e_string" : "’s profile on Letterboxd",
+        "m_string" : "Sorry, we can’t find the page you’ve requested.",
+        "m_code" : 404,
+        "known" : ["serdaraltin", "choi"],
+        "cat" : "social"
+       },
+       {
         "name" : "LibraryThing",
         "uri_check" : "https://www.librarything.com/profile/{account}",
         "e_code" : 200,
