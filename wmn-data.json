@@ -2526,8 +2526,8 @@
         "name" : "HudsonRock",
         "uri_check" : "https://cavalier.hudsonrock.com/api/json/v2/osint-tools/search-by-username?username={account}",
         "e_code" : 200,
-        "e_string" : "total_corporate_services",
-        "m_string" : "No results",
+        "e_string" : "This username is associated with a computer that was infected by an info-stealer",
+        "m_string" : "This username is not associated with a computer infected by an info-stealer",
         "m_code" : 200,
         "known" : ["testadmin", "testadmin1"],
         "cat" : "tech"
