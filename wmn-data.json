@@ -2177,8 +2177,8 @@
        },
        {
         "name" : "Gravatar",
-        "uri_check" : "http://en.gravatar.com/{account}.json",
-        "uri_pretty" : "http://en.gravatar.com/{account}",
+        "uri_check" : "https://en.gravatar.com/{account}.json",
+        "uri_pretty" : "https://en.gravatar.com/{account}",
         "e_code" : 200,
         "e_string" : "entry",
         "m_string" : "User not found",
