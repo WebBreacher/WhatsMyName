@@ -294,14 +294,25 @@
         "cat" : "social"
        },
        {
-        "name" : "Apex Legends",
-        "uri_check" : "https://apex.tracker.gg/apex/profile/origin/{account}/overview",
-        "e_code" : 200,
-        "e_string" : "Overview",
-        "m_code" : 404,
-        "m_string" : "PLAYER NOT FOUND",
-        "known" : ["tttcheekyttt", "RollsRoyce_Dawn"],
-        "cat" : "gaming"
+        "name": "Apex Legends",
+        "uri_check": "https://api.tracker.gg/api/v2/apex/standard/profile/origin/{account}?",
+        "uri_pretty": "https://apex.tracker.gg/apex/profile/origin/{account}/overview",
+        "headers": {
+            "User-Agent": "Mozilla/5.0 (Mozilla/5.0 (X11; Linux i686; rv:128.0) Gecko/20100101 Firefox/128.0",
+            "Accept-Language": "en-US,en;q=0.5",
+            "Origin": "https://apex.tracker.gg",
+            "Referer": "https://apex.tracker.gg/",
+            "TE": "trailers"
+        },
+        "e_code": 200,
+        "e_string": "platformInfo",
+        "m_code": 404,
+        "m_string": "message",
+        "known": [
+            "tttcheekyttt",
+            "RollsRoyce_Dawn"
+        ],
+        "cat": "gaming"
        },
        {
         "name" : "Appian",
