@@ -325,16 +325,6 @@
         "cat" : "tech"
        },
        {
-        "name" : "apteka",
-        "uri_check" : "https://apteka.ee/user/id/{account}",
-        "e_code" : 200,
-        "e_string" : "/gifts/user_id/",
-        "m_string" : "account-data-error",
-        "m_code" : 200,
-        "known" : ["lana", "oleg"],
-        "cat" : "social"
-       },
-       {
         "name" : "Archive Of Our Own Account",
         "uri_check" : "https://archiveofourown.org/users/{account}",
         "e_code" : 200,
