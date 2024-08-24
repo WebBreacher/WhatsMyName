@@ -25,8 +25,8 @@
         "name" : "3DNews",
         "uri_check" : "https://forum.3dnews.tech/member.php?username={account}",
         "e_code" : 200,
-        "e_string" : "<title>Форум 3Dn Tech - Просмотр профиля:",
-        "m_string" : "Пользователь не зарегистрирован и не имеет профиля для просмотра.",
+        "e_string" : "Просмотр профиля:",
+        "m_string" : "Пользователь не зарегистрирован",
         "m_code" : 200,
         "known" : ["bob", "red"],
         "cat" : "social"
