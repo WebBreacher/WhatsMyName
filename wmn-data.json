@@ -6384,7 +6384,7 @@
         "uri_check" : "https://www.yazawaj.com/profile/{account}",
         "e_code" : 200,
         "e_string" : "أنا",
-        "m_string" : "الصفحة المطلوبة غير موجودة",
+        "m_string" : "<title>nodata",
         "m_code" : 302,
         "known" : ["monya14555d", "LordMohy"],
         "cat" : "dating"
