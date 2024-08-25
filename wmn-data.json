@@ -517,8 +517,8 @@
         "name" : "Behance",
         "uri_check" : "https://www.behance.net/{account}",
         "e_code" : 200,
-        "e_string" : "<title>Behance</title>",
-        "m_string" : "<title>Behance :: Oops! We can’t find that page.</title>",
+        "e_string" : "og:site_name",
+        "m_string" : "<title>Oops!",
         "m_code" : 404,
         "known" : ["alice", "john"],
         "cat" : "business"
