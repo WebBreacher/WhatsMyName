@@ -398,8 +398,8 @@
         "name" : "ask.fm",
         "uri_check" : "https://ask.fm/{account}",
         "e_code" : 200,
-        "e_string" : "answers,",
-        "m_string" : "Well, apparently not anymore.",
+        "e_string" : "property=\"og",
+        "m_string" : "<title>Ask and Answer",
         "m_code" : 410,
         "known" : ["test", "bob"],
         "cat" : "social"
