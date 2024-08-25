@@ -1461,10 +1461,10 @@
         "name" : "DockerHub",
         "uri_check" : "https://hub.docker.com/v2/users/{account}/",
         "e_code" : 200,
-        "e_string" : "uuid",
+        "e_string" : "id",
         "m_string" : "User not found",
         "m_code" : 404,
-        "known" : ["bitnami", "torvalds"],
+        "known" : ["nwodtuhs", "bitnami"],
         "cat" : "coding"
        },
        {
