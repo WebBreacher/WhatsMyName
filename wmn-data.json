@@ -639,9 +639,9 @@
         "uri_check" : "https://www.blogger.com/profile/{account}",
         "e_code" : 200,
         "e_string" : "shadow-light user-stats",
-        "m_string" : "Sorry, the blog you were looking for does not exist.",
+        "m_string" : "/edit-profile.g",
         "m_code" : 405,
-        "known" : ["07333944864481878697", "05941544278367416980"],
+        "known" : ["06245776593991049317", "04088064945531287781"],
         "cat" : "blog"
        },
        {
