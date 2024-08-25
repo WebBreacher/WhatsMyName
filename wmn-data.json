@@ -429,7 +429,13 @@
         "uri_check" : "https://community.avid.com/members/{account}/default.aspx",
         "e_code" : 200,
         "e_string" : "My Activity",
-        "m_code" : 302,
+        "m_code" : 403,
+        "headers": {
+          "Host": "community.avid.com",
+          "User-Agent": "Mozilla/5.0 (Mozilla/5.0 (X11; Linux i686; rv:128.0) Gecko/20100101 Firefox/128.0",
+          "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/png,image/svg+xml,*/*;q=0.8",
+          "Cache-Control": "no-cache"
+        },
         "m_string" : "The user you requested cannot be found.",
         "known" : ["Thayne", "Admin"],
         "cat" : "music"
