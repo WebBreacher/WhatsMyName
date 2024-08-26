@@ -25,8 +25,8 @@
         "name" : "3DNews",
         "uri_check" : "https://forum.3dnews.tech/member.php?username={account}",
         "e_code" : 200,
-        "e_string" : "<title>Форум 3Dn Tech - Просмотр профиля:",
-        "m_string" : "Пользователь не зарегистрирован и не имеет профиля для просмотра.",
+        "e_string" : "Просмотр профиля:",
+        "m_string" : "Пользователь не зарегистрирован",
         "m_code" : 200,
         "known" : ["bob", "red"],
         "cat" : "social"
@@ -95,9 +95,9 @@
         "name" : "aaha_chat",
         "uri_check" : "https://www.aahachat.org/profile/{account}/",
         "e_code" : 200,
-        "e_string" : "og:title",
-        "m_string" : "<title>Aaha Chat Rooms - ",
-        "m_code" : 301,
+        "e_string" : "https://www.aahachat.org/profile",
+        "m_string" : "<title>Page not found",
+        "m_code" : 404,
         "known" : ["crazy", "dog"],
         "cat" : "social"
        },
@@ -294,14 +294,16 @@
         "cat" : "social"
        },
        {
-        "name" : "Apex Legends",
-        "uri_check" : "https://apex.tracker.gg/apex/profile/origin/{account}/overview",
-        "e_code" : 200,
-        "e_string" : "Overview",
-        "m_code" : 404,
-        "m_string" : "PLAYER NOT FOUND",
-        "known" : ["tttcheekyttt", "RollsRoyce_Dawn"],
-        "cat" : "gaming"
+        "name": "Apex Legends",
+        "uri_check": "https://api.tracker.gg/api/v2/apex/standard/profile/origin/{account}",
+        "uri_pretty": "https://apex.tracker.gg/apex/profile/origin/{account}/overview",
+        "headers": {"User-Agent": "Mozilla/5.0 (Mozilla/5.0 (X11; Linux i686; rv:128.0) Gecko/20100101 Firefox/128.0", "Accept-Language": "en-US,en;q=0.5", "Origin": "https://apex.tracker.gg", "Referer": "https://apex.tracker.gg/", "TE": "trailers"},
+        "e_code": 200,
+        "e_string": "platformInfo",
+        "m_code": 404,
+        "m_string": "CollectorResultStatus::NotFound",
+        "known": ["tttcheekyttt", "RollsRoyce_Dawn"],
+        "cat": "gaming"
        },
        {
         "name" : "Appian",
@@ -312,16 +314,6 @@
         "m_code" : 301,
         "known" : ["mikec", "varunkumarb0001"],
         "cat" : "tech"
-       },
-       {
-        "name" : "apteka",
-        "uri_check" : "https://apteka.ee/user/id/{account}",
-        "e_code" : 200,
-        "e_string" : "/gifts/user_id/",
-        "m_string" : "account-data-error",
-        "m_code" : 200,
-        "known" : ["lana", "oleg"],
-        "cat" : "social"
        },
        {
         "name" : "Archive Of Our Own Account",
@@ -397,8 +389,8 @@
         "name" : "ask.fm",
         "uri_check" : "https://ask.fm/{account}",
         "e_code" : 200,
-        "e_string" : "answers,",
-        "m_string" : "Well, apparently not anymore.",
+        "e_string" : "property=\"og",
+        "m_string" : "<title>Ask and Answer",
         "m_code" : 410,
         "known" : ["test", "bob"],
         "cat" : "social"
@@ -429,6 +421,7 @@
         "e_code" : 200,
         "e_string" : "My Activity",
         "m_code" : 302,
+        "headers": {"Host": "community.avid.com", "User-Agent": "Mozilla/5.0 (Mozilla/5.0 (X11; Linux i686; rv:128.0) Gecko/20100101 Firefox/128.0", "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/png,image/svg+xml,*/*;q=0.8", "Cache-Control": "no-cache"},
         "m_string" : "The user you requested cannot be found.",
         "known" : ["Thayne", "Admin"],
         "cat" : "music"
@@ -510,8 +503,8 @@
         "name" : "Behance",
         "uri_check" : "https://www.behance.net/{account}",
         "e_code" : 200,
-        "e_string" : "<title>Behance</title>",
-        "m_string" : "<title>Behance :: Oops! We can’t find that page.</title>",
+        "e_string" : "og:site_name",
+        "m_string" : "<title>Oops!",
         "m_code" : 404,
         "known" : ["alice", "john"],
         "cat" : "business"
@@ -6384,7 +6377,7 @@
         "uri_check" : "https://www.yazawaj.com/profile/{account}",
         "e_code" : 200,
         "e_string" : "أنا",
-        "m_string" : "الصفحة المطلوبة غير موجودة",
+        "m_string" : "<title>nodata",
         "m_code" : 302,
         "known" : ["monya14555d", "LordMohy"],
         "cat" : "dating"
