@@ -297,13 +297,7 @@
         "name": "Apex Legends",
         "uri_check": "https://api.tracker.gg/api/v2/apex/standard/profile/origin/{account}",
         "uri_pretty": "https://apex.tracker.gg/apex/profile/origin/{account}/overview",
-        "headers": {
-          "User-Agent": "Mozilla/5.0 (Mozilla/5.0 (X11; Linux i686; rv:128.0) Gecko/20100101 Firefox/128.0",
-          "Accept-Language": "en-US,en;q=0.5",
-          "Origin": "https://apex.tracker.gg",
-          "Referer": "https://apex.tracker.gg/",
-          "TE": "trailers"
-        },
+        "headers": {"User-Agent": "Mozilla/5.0 (Mozilla/5.0 (X11; Linux i686; rv:128.0) Gecko/20100101 Firefox/128.0", "Accept-Language": "en-US,en;q=0.5", "Origin": "https://apex.tracker.gg", "Referer": "https://apex.tracker.gg/", "TE": "trailers"},
         "e_code": 200,
         "e_string": "platformInfo",
         "m_code": 404,
@@ -427,12 +421,7 @@
         "e_code" : 200,
         "e_string" : "My Activity",
         "m_code" : 302,
-        "headers": {
-          "Host": "community.avid.com",
-          "User-Agent": "Mozilla/5.0 (Mozilla/5.0 (X11; Linux i686; rv:128.0) Gecko/20100101 Firefox/128.0",
-          "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/png,image/svg+xml,*/*;q=0.8",
-          "Cache-Control": "no-cache"
-        },
+        "headers": {"Host": "community.avid.com", "User-Agent": "Mozilla/5.0 (Mozilla/5.0 (X11; Linux i686; rv:128.0) Gecko/20100101 Firefox/128.0", "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/png,image/svg+xml,*/*;q=0.8", "Cache-Control": "no-cache"},
         "m_string" : "The user you requested cannot be found.",
         "known" : ["Thayne", "Admin"],
         "cat" : "music"
