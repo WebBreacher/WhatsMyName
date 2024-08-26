@@ -295,23 +295,20 @@
        },
        {
         "name": "Apex Legends",
-        "uri_check": "https://api.tracker.gg/api/v2/apex/standard/profile/origin/{account}?",
+        "uri_check": "https://api.tracker.gg/api/v2/apex/standard/profile/origin/{account}",
         "uri_pretty": "https://apex.tracker.gg/apex/profile/origin/{account}/overview",
         "headers": {
-            "User-Agent": "Mozilla/5.0 (Mozilla/5.0 (X11; Linux i686; rv:128.0) Gecko/20100101 Firefox/128.0",
-            "Accept-Language": "en-US,en;q=0.5",
-            "Origin": "https://apex.tracker.gg",
-            "Referer": "https://apex.tracker.gg/",
-            "TE": "trailers"
+          "User-Agent": "Mozilla/5.0 (Mozilla/5.0 (X11; Linux i686; rv:128.0) Gecko/20100101 Firefox/128.0",
+          "Accept-Language": "en-US,en;q=0.5",
+          "Origin": "https://apex.tracker.gg",
+          "Referer": "https://apex.tracker.gg/",
+          "TE": "trailers"
         },
         "e_code": 200,
         "e_string": "platformInfo",
         "m_code": 404,
-        "m_string": "message",
-        "known": [
-            "tttcheekyttt",
-            "RollsRoyce_Dawn"
-        ],
+        "m_string": "CollectorResultStatus::NotFound",
+        "known": ["tttcheekyttt", "RollsRoyce_Dawn"],
         "cat": "gaming"
        },
        {
@@ -429,7 +426,7 @@
         "uri_check" : "https://community.avid.com/members/{account}/default.aspx",
         "e_code" : 200,
         "e_string" : "My Activity",
-        "m_code" : 403,
+        "m_code" : 302,
         "headers": {
           "Host": "community.avid.com",
           "User-Agent": "Mozilla/5.0 (Mozilla/5.0 (X11; Linux i686; rv:128.0) Gecko/20100101 Firefox/128.0",
@@ -639,9 +636,9 @@
         "uri_check" : "https://www.blogger.com/profile/{account}",
         "e_code" : 200,
         "e_string" : "shadow-light user-stats",
-        "m_string" : "/edit-profile.g",
+        "m_string" : "Sorry, the blog you were looking for does not exist.",
         "m_code" : 405,
-        "known" : ["06245776593991049317", "04088064945531287781"],
+        "known" : ["07333944864481878697", "05941544278367416980"],
         "cat" : "blog"
        },
        {
@@ -1461,10 +1458,10 @@
         "name" : "DockerHub",
         "uri_check" : "https://hub.docker.com/v2/users/{account}/",
         "e_code" : 200,
-        "e_string" : "id",
+        "e_string" : "uuid",
         "m_string" : "User not found",
         "m_code" : 404,
-        "known" : ["nwodtuhs", "bitnami"],
+        "known" : ["bitnami", "torvalds"],
         "cat" : "coding"
        },
        {
