@@ -3810,6 +3810,15 @@
         "cat" : "coding"
        },
        {
+        "name" : "Noplace",
+        "uri_check" : "https://api.nospace.app/api/v1/profiles/username/availability?username={account}",
+        "e_code" : 409,
+        "e_string" : "Username is already taken",
+        "m_code" : 204,
+        "known" : ["user", "janett"],
+        "cat" : "social"
+       },
+       {
         "name" : "Note",
         "uri_check" : "https://note.com/{account}",
         "e_code" : 200,
