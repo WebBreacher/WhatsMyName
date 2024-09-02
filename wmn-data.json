@@ -2689,6 +2689,20 @@
         "cat" : "social"
        },
        {
+        "name": "Instagram2",
+        "uri_pretty": "https://instagram.com/{account}",
+        "uri_check": "https://dumpoir.com/v/{account}",
+        "e_code": 200,
+        "e_string": "Instagram Stories, Profile, Posts and Followers View Anonymous",
+        "m_string": "We are sorry. Should we search anything else?",
+        "m_code": 404,
+        "known": [
+          "katyperry",
+          "kirbstr"
+        ],
+        "cat": "social"
+       },
+       {
         "name" : "Instagram_archives",
         "uri_check" : "https://archive.org/wayback/available?url=https://instagram.com/{account}/",
         "e_code" : 200,
