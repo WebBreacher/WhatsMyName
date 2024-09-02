@@ -3815,6 +3815,7 @@
         "e_code" : 409,
         "e_string" : "Username is already taken",
         "m_code" : 204,
+        "m_string": "",
         "known" : ["user", "janett"],
         "cat" : "social"
        },
