@@ -4511,6 +4511,16 @@
         "cat" : "social"
        },
        {
+        "name" : "Quizlet",
+        "uri_check" : "https://quizlet.com/user/{account}/sets",
+        "e_code" : 200,
+        "e_string" : "Flashcard sets",
+        "m_string" : "Hmm, we can't seem to find that page",
+        "m_code" : 404,
+        "known" : ["Rita426", "Muyao_531"],
+        "cat" : "hobby"
+       },
+       {
         "name" : "quitter.pl",
         "uri_check" : "https://quitter.pl/profile/{account}",
         "e_code" : 200,
