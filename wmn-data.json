@@ -2978,7 +2978,7 @@
         "name" : "LibraryThing",
         "uri_check" : "https://www.librarything.com/profile/{account}",
         "e_code" : 200,
-        "e_string" : "Member",
+        "e_string" : "<dt>Joined</dt>",
         "m_string" : "Error: This user doesn't exist",
         "m_code" : 200,
         "known" : ["test", "john"],
