@@ -2978,7 +2978,7 @@
         "name" : "LibraryThing",
         "uri_check" : "https://www.librarything.com/profile/{account}",
         "e_code" : 200,
-        "e_string" : "Books",
+        "e_string" : "<dt>Joined</dt>",
         "m_string" : "Error: This user doesn't exist",
         "m_code" : 200,
         "known" : ["test", "john"],
@@ -3263,11 +3263,12 @@
         "cat" : "social"
        },
        {
-        "name" : "Mastodon-API",
-        "uri_check" : "https://mastodon.social/api/v2/search?q={account}",
+        "name" : "Mastodon API",
+        "uri_check" : "https://mastodon.social/api/v2/search?q={account}&limit=1&type=accounts",
+        "uri_pretty": "https://mastodon.social/api/v2/search?q={account}&type=accounts",
         "e_code" : 200,
         "e_string" : "display_name",
-        "m_string" : "accounts\":[],\"statuses\":[],\"hashtags\":",
+        "m_string" : "\"accounts\":[]",
         "m_code" : 404,
         "known" : ["Richard_Littler", "webbreacher"],
         "cat" : "social"
@@ -4512,11 +4513,12 @@
        },
        {
         "name" : "Quizlet",
-        "uri_check" : "https://quizlet.com/user/{account}/sets",
+        "uri_check" : "https://quizlet.com/webapi/3.2/users/check-username?username={account}",
+        "uri_pretty": "https://quizlet.com/user/{account}/sets",
         "e_code" : 200,
-        "e_string" : "AssemblyAvatar",
-        "m_string" : "Hmm, we can't seem to find that page",
-        "m_code" : 404,
+        "e_string" : "\"success\":false",
+        "m_string" : "\"success\":true",
+        "m_code" : 200,
         "known" : ["Rita426", "Muyao_531"],
         "cat" : "hobby"
        },
