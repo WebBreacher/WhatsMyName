@@ -1661,9 +1661,9 @@
         "name" : "Facebook",
         "uri_check" : "https://www.facebook.com/{account}/",
         "e_code" : 200,
-        "e_string" : "about_",
-        "m_string" : "",
-        "m_code" : 302,
+        "e_string" : "__isProfile",
+        "m_string" : "<title>Facebook</title>",
+        "m_code" : 200,
         "known" : ["john.miniolic", "adam"],
         "cat" : "social"
        },
