@@ -5038,12 +5038,12 @@
         "cat" : "social"
        },
        {
-        "name" : "Snapchat Stories",
-        "uri_check" : "https://story.snapchat.com/s/{account}",
+        "name" : "Snapchat",
+        "uri_check" : "https://www.snapchat.com/add/{account}",
         "e_code" : 200,
         "e_string" : "is on Snapchat!",
-        "m_string" : "Not_Found",
-        "m_code" : 404,
+        "m_string" : "NOT_FOUND",
+        "m_code" : 200,
         "known" : ["djkhaled305", "mileycyrus"],
         "cat" : "social"
        },
