@@ -5028,17 +5028,6 @@
        },
        {
         "name" : "Snapchat",
-        "uri_check" : "https://feelinsonice.appspot.com/web/deeplink/snapcode?username={account}&size=400&type=SVG",
-        "uri_pretty" : "https://www.snapchat.com/add/{account}",
-        "e_code" : 200,
-        "e_string" : "</clipPath>",
-        "m_string" : "http://www.w3.org/1999/xlink",
-        "m_code" : 404,
-        "known" : ["billy23", "mrbean", "alexis4"],
-        "cat" : "social"
-       },
-       {
-        "name" : "Snapchat",
         "uri_check" : "https://www.snapchat.com/add/{account}",
         "e_code" : 200,
         "e_string" : "is on Snapchat!",
