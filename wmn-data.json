@@ -1028,6 +1028,15 @@
         "known" : ["doctypeme", "ocean.war"],
         "cat" : "coding"
        },
+      {
+        "name" : "CodeChef",
+        "uri_check" : "https://www.codechef.com/users/{account}",
+        "e_code" : 200,
+        "e_string" : "| CodeChef User Profile for ",
+        "m_code" : 302,
+        "known" : ["maroonrk", "lyrically"],
+        "cat" : "coding"
+       },
        {
         "name" : "codeforces",
         "uri_check" : "https://codeforces.com/profile/{account}",
