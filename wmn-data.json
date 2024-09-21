@@ -2066,16 +2066,6 @@
         "cat" : "social"
        },
        {
-        "name" : "Girlfriendsmeet",
-        "uri_check" : "http://www.girlfriendsmeet.com/profile/{account}",
-        "e_code" : 200,
-        "e_string" : "online dating profile",
-        "m_string" : "Page not found",
-        "m_code" : 404,
-        "known" : ["john", "junech"],
-        "cat" : "dating"
-       },
-       {
         "name" : "gitea",
         "uri_check" : "https://gitea.com/{account}",
         "e_code" : 200,
@@ -6411,7 +6401,7 @@
         "name" : "Yazawaj",
         "uri_check" : "https://www.yazawaj.com/profile/{account}",
         "e_code" : 200,
-        "e_string" : "أنا",
+        "e_string" : "profile-description",
         "m_string" : "<title>nodata",
         "m_code" : 302,
         "known" : ["monya14555d", "LordMohy"],
