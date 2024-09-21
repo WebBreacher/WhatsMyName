@@ -395,6 +395,16 @@
         "known" : ["test", "bob"],
         "cat" : "social"
        },
+      {
+        "name" : "AtCoder",
+        "uri_check" : "https://atcoder.jp/users/{account}",
+        "e_code" : 200,
+        "e_string" : "Contest Status",
+        "m_string" : "404 Not Found - AtCoder",
+        "m_code" : 404,
+        "known" : ["apiad", "kotatsugame"],
+        "cat" : "coding"
+       },
        {
         "name" : "au.ru",
         "uri_check" : "https://au.ru/user/{account}/",
