@@ -5177,6 +5177,16 @@
         "known" : ["spicerex", "rod-it"],
         "cat" : "tech"
        },
+      {
+        "name" : "SPOJ",
+        "uri_check" : "https://www.spoj.com/users/{account}/",
+        "e_code" : 200,
+        "e_string" : "<li>Profile</li>",
+        "m_string" : " was not found on this server.",
+        "m_code" : 404,
+        "known" : ["defrager", "xilinx"],
+        "cat" : "coding"
+       },
        {
         "name" : "sporcle",
         "uri_check" : "https://www.sporcle.com/user/{account}/people/",
