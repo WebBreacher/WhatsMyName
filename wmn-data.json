@@ -2965,6 +2965,16 @@
         "cat" : "images"
        },
        {
+        "name" : "Lemon8",
+        "uri_check" : "https://www.lemon8-app.com/{account}?region=us",
+        "e_code" : 200,
+        "e_string" : "class=\"user-desc-main-info",
+        "m_string" : "unavailableReason\": \"not_found",
+        "m_code" : 404,
+        "known" : ["phinyamat", "andrianajohnson"],
+        "cat" : "social"
+       },
+       {
         "name" : "Letterboxd",
         "uri_check" : "https://letterboxd.com/{account}/",
         "e_code" : 200,
@@ -5558,7 +5568,7 @@
         "name" : "Tinder",
         "uri_check" : "https://tinder.com/@{account}",
         "e_code" : 200,
-        "e_string" : ") | Tinder</title><meta",
+        "e_string" : ") | Tinder</title>",
         "m_string" : "Tinder | Dating, Make Friends &amp; Meet New People",
         "m_code" : 200,
         "known" : ["Alexey", "peter", "john"],
