@@ -2835,16 +2835,6 @@
         "cat" : "coding"
        },
        {
-        "name" : "karab.in",
-        "uri_check" : "https://karab.in/u/{account}",
-        "e_code" : 200,
-        "e_string" : "Dołączył:",
-        "m_string" : "Błąd 404",
-        "m_code" : 404,
-        "known" : ["ernest", "puszkapandory"],
-        "cat" : "social"
-       },
-       {
         "name" : "Keybase",
         "uri_check" : "https://keybase.io/{account}",
         "e_code" : 200,
@@ -3179,17 +3169,6 @@
         "cat" : "health"
        },
        {
-        "name" : "Mas.town (Mastodon Instance)",
-        "uri_check" : "https://mas.town/api/v1/accounts/lookup?acct={account}",
-        "uri_pretty" : "https://mas.town/@{account}",
-        "e_code" : 200,
-        "e_string" : "display_name",
-        "m_code" : 404,
-        "m_string" : "Record not found",
-        "known" : ["brett", "cheng"],
-        "cat" : "social"
-       },
-       {
         "name" : "masto.ai",
         "uri_check" : "https://masto.ai/@{account}",
         "e_code" : 200,
@@ -3229,17 +3208,6 @@
         "m_string" : "The page you are looking for isn't here.",
         "m_code" : 404,
         "known" : ["john", "alex"],
-        "cat" : "social"
-       },
-       {
-        "name" : "Mastodon.chasedem.dev (Mastodon Instance)",
-        "uri_check" : "https://mastodon.chasem.dev/api/v1/accounts/lookup?acct={account}",
-        "uri_pretty" : "https://mastodon.chasem.dev/@{account}",
-        "e_code" : 200,
-        "e_string" : "display_name",
-        "m_code" : 404,
-        "m_string" : "Record not found",
-        "known" : ["chase", "George"],
         "cat" : "social"
        },
        {
@@ -3313,17 +3281,6 @@
         "m_code" : 200,
         "known" : ["smithy", "bob"],
         "cat" : "gaming"
-       },
-       {
-        "name" : "Mediakits",
-        "uri_check" : "https://restapi.mediakits.com/mediakits/{account}",
-        "uri_pretty" : "https://app.mediakits.com/{account}",
-        "e_code" : 200,
-        "e_string" : "displayName",
-        "m_code" : 404,
-        "m_string" : "The requested media kit does not exist.",
-        "known" : ["kasuminee", "honey"],
-        "cat" : "social"
        },
        {
         "name" : "Medium",
@@ -4722,17 +4679,17 @@
         "uri_check" : "https://rumble.com/c/{account}",
         "e_code" : 200,
         "e_string" : "href=https://rumble.com/c/",
-        "m_string" : "404 - Not found",
+        "m_string" : "404 error, this page does not exist",
         "m_code" : 404,
-        "known" : ["HodgeTwins", "SeanHannity"],
+        "known" : ["SaltyCracker", "GGreenwald"],
         "cat" : "political"
        },
        {
         "name" : "RumbleUser",
         "uri_check" : "https://rumble.com/user/{account}",
         "e_code" : 200,
-        "e_string" : " href=https://rumble.com/user/",
-        "m_string" : "404 - Not found",
+        "e_string" : "href=https://rumble.com/user/",
+        "m_string" : "404 error, this page does not exist",
         "m_code" : 404,
         "known" : ["SimonParkes", "djmrmusic"],
         "cat" : "political"
