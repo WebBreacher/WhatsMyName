@@ -4796,17 +4796,6 @@
         "cat" : "health"
        },
        {
-        "name" : "Shanii Writes",
-        "uri_check" : "https://forum.shanniiwrites.com/u/{account}/summary.json",
-        "uri_pretty" : "https://forum.shanniiwrites.com/u/{account}",
-        "e_code" : 200,
-        "e_string" : "topics",
-        "m_code" : 404,
-        "m_string" : "The requested URL or resource could not be found.",
-        "known" : ["chococarmela", "wolfgamergirl37"],
-        "cat" : "social"
-       },
-       {
         "name" : "Shesfreaky",
         "uri_check" : "https://www.shesfreaky.com/profile/{account}/",
         "e_code" : 200,
@@ -4859,17 +4848,6 @@
         "m_string" : "Skeb - Request Box",
         "known" : ["eipuru_", "sime064"],
         "cat" : "art"
-       },
-       {
-        "name" : "Skyrock",
-        "uri_check" : "https://{account}.skyrock.com/",
-        "strip_bad_char" : ".",
-        "e_code" : 200,
-        "e_string" : "&#039;s blog",
-        "m_string" : "<title>Page not found - ",
-        "m_code" : 404,
-        "known" : ["alice", "bob"],
-        "cat" : "social"
        },
        {
         "name" : "SlackHoles",
@@ -5521,16 +5499,6 @@
         "m_string" : "We can't find that page!",
         "known" : ["22RII", "honey"],
         "cat" : "hobby"
-       },
-       {
-        "name" : "TrackmaniaLadder",
-        "uri_check" : "https://en.tm-ladder.com/{account}_rech.php",
-        "e_code" : 200,
-        "e_string" : "Login type :",
-        "m_string" : "player unknown or invalid 'idplayer' parameter.",
-        "m_code" : 404,
-        "known" : ["bob", "jill"],
-        "cat" : "gaming"
        },
        {
         "name" : "tradingview",
@@ -6383,16 +6351,6 @@
         "m_code" : 404,
         "known" : ["tactical-systems","CybersecurityMeg"],
         "cat" : "video"
-       },
-       {
-        "name" : "zatrybi.pl",
-        "uri_check" : "https://zatrybi.pl/user/{account}",
-        "e_code" : 200,
-        "e_string" : "Zarejestrowany od:",
-        "m_string" : "Nie znaleziono strony",
-        "m_code" : 404,
-        "known" : ["Berlinek", "fenrek"],
-        "cat" : "tech"
        },
        {
         "name" : "Zbiornik",
