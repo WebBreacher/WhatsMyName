@@ -1418,8 +1418,8 @@
         "name" : "dot.cards",
         "uri_check" : "https://dot.cards/{account}",
         "e_code" : 200,
-        "e_string" : "profileID",
-        "m_string" : "The username does not exist",
+        "e_string" : "status\": \"success",
+        "m_string" : "status\": \"username_not_found",
         "m_code" : 200,
         "known" : ["dakmusic", "jhartwell"],
         "cat" : "business"
@@ -1458,10 +1458,10 @@
         "name" : "Drum",
         "uri_check" : "https://drum.io/{account}/",
         "e_code" : 200,
-        "e_string" : "firstName",
+        "e_string" : "firstName\": \"",
         "m_string" : "Page not found",
         "m_code" : 302,
-        "known" : ["kingdirtdig", "oscarqbdrums"],
+        "known" : ["huckcredibleshotz", "thesuccesspalette"],
         "cat" : "hobby"
        },
        {
