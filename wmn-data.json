@@ -601,26 +601,6 @@
         "cat" : "political"
        },
        {
-        "name" : "bitcoin forum",
-        "uri_check" : "https://bitcoinforum.com/profile/{account}",
-        "e_code" : 200,
-        "e_string" : "Profile of",
-        "m_string" : "An Error Has Occurred!",
-        "m_code" : 200,
-        "known" : ["alex", "boss"],
-        "cat" : "finance"
-       },
-       {
-        "name" : "BLIP.fm",
-        "uri_check" : "https://blip.fm/{account}",
-        "e_code" : 200,
-        "e_string" : "recommended",
-        "m_string" : "",
-        "m_code" : 404,
-        "known" : ["john", "walnuts"],
-        "cat" : "music"
-       },
-       {
         "name" : "Blogger",
         "uri_check" : "https://www.blogger.com/profile/{account}",
         "e_code" : 200,
@@ -1719,16 +1699,6 @@
         "cat" : "social"
        },
        {
-        "name" : "Farkascity",
-        "uri_check" : "https://farkascity.org/{account}/",
-        "e_code" : 200,
-        "e_string" : "blog-title",
-        "m_code" : 404,
-        "m_string" : "Are you sure it was ever here?",
-        "known" : ["gutimet", "nlowell"],
-        "cat" : "blog"
-       },
-       {
         "name" : "fansly",
         "uri_check" : "https://apiv2.fansly.com/api/v1/account?usernames={account}",
         "uri_pretty" : "https://fansly.com/{account}/posts",
@@ -1759,16 +1729,6 @@
         "m_string" : "Record not found",
         "known" : ["wood", "cliffcheney"],
         "cat" : "social"
-       },
-       {
-        "name" : "fcv",
-        "uri_check" : "https://fcv.if.ua/index.php/component/comprofiler/userprofile/{account}/",
-        "e_code" : 200,
-        "e_string" : "сторінка профілю",
-        "m_string" : "Цей профіль або більше не існує або більше не доступний",
-        "m_code" : 200,
-        "known" : ["Ruslan", "oleg"],
-        "cat" : "hobby"
        },
        {
         "name" : "figma",
@@ -2376,7 +2336,7 @@
         "uri_check" : "https://hamaha.net/{account}",
         "e_code" : 200,
         "e_string" : "- трейдинг форекс фьючерсы акции фондовый рынок ",
-        "m_string" : "HAMAHA Биткоин форум.",
+        "m_string" : "HAMAHA  Биткоин форум.",
         "m_code" : 200,
         "known" : ["oleg", "misha"],
         "cat" : "finance"
