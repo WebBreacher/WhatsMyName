@@ -274,16 +274,6 @@
         "cat" : "social"
        },
        {
-        "name" : "aNobii",
-        "uri_check" : "https://www.anobii.com/{account}/profile/activity",
-        "e_code" : 200,
-        "e_string" : ">Anobian since",
-        "m_string" : "A user matching the specified criteria could not be found",
-        "m_code" : 200,
-        "known" : ["albertoricci", "trynyty01"],
-        "cat" : "hobby"
-       },
-       {
         "name" : "anonup",
         "uri_check" : "https://anonup.com/@{account}",
         "e_code" : 200,
@@ -805,16 +795,6 @@
         "cat" : "business"
        },
        {
-        "name" : "CaringBridge",
-        "uri_check" : "https://www.caringbridge.org/visit/{account}",
-        "e_code" : 200,
-        "e_string" : "| CaringBridge",
-        "m_string" : "Sorry, we can’t find that site",
-        "m_code" : 404,
-        "known" : ["robertherring"],
-        "cat" : "health"
-       },
-       {
         "name" : "carrd.co",
         "uri_check" : "https://{account}.carrd.co",
         "strip_bad_char" : ".",
@@ -1102,10 +1082,10 @@
         "name" : "cowboys4angels",
         "uri_check" : "https://cowboys4angels.com/cowboy/{account}/",
         "e_code" : 200,
-        "e_string" : " | Cowboys 4 Angels |",
-        "m_string" : "<title>Elite Male Escorts",
-        "m_code" : 301,
-        "known" : ["jaxjames", "mike"],
+        "e_string" : " - Cowboys 4 Angels</title>",
+        "m_string" : "Error Page not found",
+        "m_code" : 404,
+        "known" : ["jaxjames", "jordan-2"],
         "cat" : "xx NSFW xx"
        },
        {
@@ -1191,16 +1171,6 @@
         "cat" : "tech"
        },
        {
-        "name" : "Dailymotion",
-        "uri_check" : "https://www.dailymotion.com/{account}",
-        "e_code" : 200,
-        "e_string" : "og:url",
-        "m_string" : "404 Page not found",
-        "m_code" : 404,
-        "known" : ["WeHappyKids", "john"],
-        "cat" : "video"
-       },
-       {
         "name" : "darudar",
         "uri_check" : "https://darudar.org/users/{account}/",
         "e_code" : 200,
@@ -1215,9 +1185,9 @@
         "uri_check" : "https://www.datezone.com/users/{account}/",
         "e_code" : 200,
         "e_string" : "profile_status",
-        "m_string" : "Błąd wczytywania",
+        "m_string" : "404: page not found",
         "m_code" : 200,
-        "known" : ["gpower550","tgoat2022"],
+        "known" : ["maniektwist","carllos"],
         "cat" : "xx NSFW xx"
        },
        {
