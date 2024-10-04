@@ -90,6 +90,7 @@ Within the `sites` elements, the format is as follows (with several parameters b
          "known" : ["a list of user accounts that can be used to test", "for user enumeration"],
          "cat" : "a category for what the site is mainly used for. The current categories are found at the top of the JSON",
          "valid" : "[OPTIONAL] single value of False. If it is present and False, then checkers should skip this site",
+         "protection" : "[OPTIONAL] a list of 1 or more site protections like: captcha, cloudflare, userauth, multiple, other",
          "headers": {"[OPTIONAL] a dictionary of headers that should be passed to a site"}
       },
       ...
@@ -110,6 +111,7 @@ Here are examples of the site elements for both HTTP GET and HTTP POST entries:
        "m_string" : "Account not found",
        "known" : ["whoami", "johndoe"],
        "cat" : "images",
+       "protection" : "cloudflare",
        "headers": {
                 "accept": "text/html"
         }
