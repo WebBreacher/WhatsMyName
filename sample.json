@@ -28,7 +28,7 @@
       "m_string" : "Account not found",
       "known" : ["whoami", "johndoe"],
       "cat" : "images",
-      "protection" : "captcha",
+      "protection" : ["captcha"],
       "headers": {
                "accept": "text/html"
        }
