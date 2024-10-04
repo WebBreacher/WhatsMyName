@@ -1578,16 +1578,6 @@
         "cat" : "social"
        },
        {
-        "name" : "ExtraLunchMoney",
-        "uri_check" : "https://extralunchmoney.com/user/{account}",
-        "e_code" : 200,
-        "e_string" : "Public Profile Page",
-        "m_string" : "Closed Profile Page",
-        "m_code" : 404,
-        "known" : ["christalclear", "Nudekiki"],
-        "cat" : "xx NSFW xx"
-       },
-       {
         "name" : "Eyeem",
         "uri_check" : "https://www.eyeem.com/u/{account}",
         "e_code" : 200,
@@ -1846,7 +1836,7 @@
         "name" : "freelancer",
         "uri_check" : "https://www.freelancer.com/u/{account}",
         "e_code" : 200,
-        "e_string" : "> joined",
+        "e_string" : "Username-displayName",
         "m_string" : "Looks like the page you are looking for doesn't exist.",
         "m_code" : 404,
         "known" : ["desiaunty", "creatvmind"],
@@ -1856,8 +1846,8 @@
         "name" : "freesound",
         "uri_check" : "https://freesound.org/people/{account}/",
         "e_code" : 200,
-        "e_string" : "START of Content area",
-        "m_string" : "Page not found",
+        "e_string" : "Has been a user for",
+        "m_string" : "Page not found</title>",
         "m_code" : 404,
         "known" : ["test", "JohnDoe"],
         "cat" : "music"
@@ -2065,7 +2055,7 @@
         "e_string" : "Last online",
         "m_string" : "Page unavailable",
         "m_code" : 404,
-        "known" : ["test", "test2"],
+        "known" : ["Irapuato", "en.news"],
         "cat" : "social"
        },
        {
@@ -2082,10 +2072,10 @@
         "name" : "Goodgame_Russia",
         "uri_check" : "https://goodgame.ru/channel/{account}/",
         "e_code" : 200,
-        "e_string" : "Онлайн-трансляция</title>",
+        "e_string" : "channel_id",
         "m_string" : "Такой страницы не существует",
         "m_code" : 400,
-        "known" : ["ejysarmat", "gegeboyz"],
+        "known" : ["ejysarmat", "JacksonTV"],
         "cat" : "gaming"
        },
        {
@@ -2661,16 +2651,6 @@
         "m_code" : 404,
         "known" : ["davidandora", "test"],
         "cat" : "hobby"
-       },
-       {
-        "name" : "Internet Archive Account",
-        "uri_check" : "https://archive.org/details/@{account}",
-        "e_code" : 200,
-        "e_string" : "<title>User Account",
-        "m_string" : "<title>cannot find account",
-        "m_code" : 200,
-        "known" : ["webbreacher", "jason_scott"],
-        "cat" : "misc"
        },
        {
         "name" : "Internet Archive User Search",
