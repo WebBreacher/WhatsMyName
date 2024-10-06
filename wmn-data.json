@@ -4393,7 +4393,7 @@
         "uri_check" : "https://www.npmjs.com/~{account}",
         "e_code" : 200,
         "e_string" : "/npm-avatar/",
-        "m_string" : "poster depicting npm's mascot wombat",
+        "m_string" : "poster depicting npm&#x27;s mascot wombat",
         "m_code" : 404,
         "known" : ["npm", "rich_harris"],
         "cat" : "coding"
