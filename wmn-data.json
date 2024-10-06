@@ -6432,6 +6432,16 @@
         "m_code" : 404,
         "known" : ["carlito", "taylor"],
         "cat" : "social"
+      },
+      {
+        "name" : "Bento",
+        "uri_check" : "https://bento.me/{account}",
+        "e_code" : 200,
+        "e_string" : "Create Your Bento",
+        "m_string" : "Claim",
+        "m_code" : 404,
+        "known" : ["carlito", "taylor"],
+        "cat" : "social"
       }
   ]
 }
