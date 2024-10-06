@@ -4389,6 +4389,16 @@
         "cat" : "coding"
        },
        {
+        "name" : "npm",
+        "uri_check" : "https://www.npmjs.com/~{account}",
+        "e_code" : 200,
+        "e_string" : "Packages",
+        "m_string" : "not found",
+        "m_code" : 404,
+        "known" : ["npm", "rich_harris"],
+        "cat" : "coding"
+       },
+       {
         "name" : "QUEER PL",
         "uri_check" : "https://queer.pl/user/{account}",
         "e_code" : 200,
