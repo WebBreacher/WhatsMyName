@@ -6437,8 +6437,8 @@
         "name" : "Bento",
         "uri_check" : "https://bento.me/{account}",
         "e_code" : 200,
-        "e_string" : "Create Your Bento",
-        "m_string" : "Claim",
+        "e_string" : "href=\"https://bento.me/explore\">",
+        "m_string" : ">Available!</div>",
         "m_code" : 404,
         "known" : ["carlito", "taylor"],
         "cat" : "social"
