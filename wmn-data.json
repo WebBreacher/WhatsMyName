@@ -2401,7 +2401,7 @@
         "m_code" : 200,
         "m_string" : "Not found",
         "known" : ["holo", "test"],
-        "cat" : "social"
+        "cat" : "hobby"
        },
        {
         "name" : "Hometech.social (Mastodon Instance)",
