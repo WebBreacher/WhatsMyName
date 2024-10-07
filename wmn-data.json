@@ -2394,6 +2394,16 @@
         "cat" : "hobby"
        },
        {
+        "name" : "Holopin",
+        "uri_check" : "https://holopin.io/@{account}#",
+        "e_code" : 200,
+        "e_string" : "Holobytes",
+        "m_code" : 200,
+        "m_string" : "Not found",
+        "known" : ["holo", "test"],
+        "cat" : "social"
+       },
+       {
         "name" : "Hometech.social (Mastodon Instance)",
         "uri_check" : "https://hometech.social/api/v1/accounts/lookup?acct={account}",
         "uri_pretty" : "https://hometech.social/@{account}",
