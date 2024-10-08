@@ -2913,6 +2913,7 @@
        {
         "name": "LeetCode",
         "uri_check": "https://leetcode.com/graphql",
+        "uri_pretty" : "https://leetcode.com/u/{account}",
         "post_body": "{\"query\":\"{matchedUser(username:\\\"{account}\\\"){username}}\"}",
         "e_code": 200,
         "e_string": "\"username\"",
