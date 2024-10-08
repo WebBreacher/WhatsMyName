@@ -2912,19 +2912,14 @@
        },
        {
         "name": "LeetCode",
-        "uri_check": "https://leetcode.com/graphql",
+        "uri_check": "https://alfa-leetcode-api.onrender.com/{account}",
         "uri_pretty" : "https://leetcode.com/u/{account}",
-        "post_body": "{\"query\":\"{matchedUser(username:\\\"{account}\\\"){username}}\"}",
         "e_code": 200,
-        "e_string": "\"username\"",
-        "m_code": 200,
-        "m_string": "\"That user does not exist.\"",
+        "e_string": "username",
+        "m_code": 304,
+        "m_string": "That user does not exist."",
         "known": ["test", "johndoe"],
         "cat": "coding",
-        "headers": {
-            "accept": "application/json",
-            "Content-Type": "application/json"
-        }
        },
        {
         "name" : "Lemon8",
