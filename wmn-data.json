@@ -3059,9 +3059,10 @@
        },
        {
         "name" : "MANYVIDS",
-        "uri_check" : "https://www.manyvids.com/results.php?keywords={account}",
+        "uri_check" : "https://www.manyvids.com/bff/search/results?keywords={account}",
+        "uri_pretty" : "https://www.manyvids.com/results.php?keywords={account}",
         "e_code" : 200,
-        "e_string" : " Vids</h3>",
+        "e_string" : "\"id\":",
         "m_string" : "did not return any results",
         "m_code" : 200,
         "known" : ["alexbreecooper", "sweetkiss_69"],
@@ -3203,12 +3204,13 @@
        },
        {
         "name" : "Mastodon-climatejustice.rocks",
-        "uri_check" : "https://climatejustice.rocks/@{account}",
+        "uri_check" : "https://climatejustice.rocks/api/v1/accounts/lookup?acct={account}",
+        "uri_pretty" : "https://climatejustice.rocks/@{account}",
         "e_code" : 200,
-        "e_string" : "@climatejustice.rocks) - Mastodon</title>",
-        "m_string" : "The page you are looking for isn&#39;t here.",
+        "e_string" : "username\":",
+        "m_string" : "Record not found",
         "m_code" : 404,
-        "known" : ["paula", "ahmed76farag"],
+        "known" : ["paula", "PaulaToThePeople"],
         "cat" : "social"
        },
        {
@@ -3274,26 +3276,6 @@
         "cat" : "dating"
        },
        {
-        "name" : "megamodels.pl",
-        "uri_check" : "http://megamodels.pl/{account}",
-        "e_code" : 200,
-        "e_string" : "Portfolio",
-        "m_string" : "OSTATNIO AKTYWNE PROFILE",
-        "m_code" : 200,
-        "known" : ["ania", "janek"],
-        "cat" : "social"
-       },
-       {
-        "name" : "memrise",
-        "uri_check" : "https://app.memrise.com/user/{account}/",
-        "e_code" : 200,
-        "e_string" : "followers",
-        "m_string" : "Memrise - Error",
-        "m_code" : 404,
-        "known" : ["alice", "john"],
-        "cat" : "hobby"
-       },
-       {
         "name" : "Mastodon-meow.social",
         "uri_check" : "https://meow.social/@{account}",
         "e_code" : 200,
@@ -3322,16 +3304,6 @@
         "m_code" : 200,
         "known" : ["dev", "matt"],
         "cat" : "hobby"
-       },
-       {
-        "name" : "Microsoft Technet Community",
-        "uri_check" : "https://social.technet.microsoft.com/profile/{account}/",
-        "e_code" : 200,
-        "e_string" : "s Profile</title>",
-        "m_string" : "The resource you are looking for has been removed",
-        "m_code" : 404,
-        "known" : ["john", "test"],
-        "cat" : "tech"
        },
        {
         "name" : "Minds",
@@ -3671,12 +3643,12 @@
        },
        {
         "name" : "newmeet",
-        "uri_check" : "https://www.newmeet.com/en/profile/{account}",
+        "uri_check" : "https://www.newmeet.com/en/profile/{account}/",
         "e_code" : 200,
-        "e_string" : "The profile of",
-        "m_string" : ", , , - |",
+        "e_string" : "<h2>The profile of",
+        "m_string" : "Chat with , , ,  - ",
         "m_code" : 200,
-        "known" : ["mamadou1", "wade"],
+        "known" : ["Harmonie06", "Bach007"],
         "cat" : "dating"
        },
        {

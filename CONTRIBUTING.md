@@ -67,7 +67,11 @@ the profile
 
 ### Format of the JSON file
 
-The format of the `wmn-data.json` JSON has 3 main elements:
+#### Alphabetize by "Name"
+
+We try to keep the entries in the `wmn-data.json` file alphabetized (A-Z) by the `name` value. So you can find `"name" : "Github"` earlier in the file than `"name" : "Snapchat"`.
+
+#### `wmn-data.json` JSON has 3 main elements
 
 1. License - The license for this project and its data
 2. Authors - The people that have recently contributed to this project
