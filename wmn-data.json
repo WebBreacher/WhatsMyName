@@ -1747,6 +1747,26 @@
         "cat" : "hobby"
        },
        {
+        "name" : "Filmot Channel Search",
+        "uri_check" : "https://filmot.com/channelsearch/{account}",
+        "e_code" : 200,
+        "e_string" : "Subscribers",
+        "m_string" : "No channels found",
+        "m_code" : 200,
+        "known" : ["bobicraft", "parodiadoranimado"],
+        "cat" : "archived"
+       },
+       {
+        "name" : "Filmot Unlisted Videos",
+        "uri_check" : "https://filmot.com/unlistedSearch?channelQuery={account}&sortField=uploaddate&sortOrder=desc&",
+        "e_code" : 200,
+        "e_string" : "clips found",
+        "m_string" : "No results",
+        "m_code" : 200,
+        "known" : ["holasoygerman", "elrubiusomg"],
+        "cat" : "archived"
+       },
+       {
         "name" : "fine_art_america",
         "uri_check" : "https://fineartamerica.com/profiles/{account}",
         "e_code" : 200,
