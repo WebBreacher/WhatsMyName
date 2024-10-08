@@ -2911,6 +2911,22 @@
         "cat" : "images"
        },
        {
+        "name": "LeetCode",
+        "uri_check": "https://leetcode.com/graphql",
+        "post_body": "{\"query\":\"{matchedUser(username:\\\"{account}\\\"){username}}\"}",
+        "e_code": 200,
+        "e_string": "\"username\"",
+        "m_code": 200,
+        "m_string": "\"That user does not exist.\"",
+        "known": ["test", "johndoe"],
+        "cat": "coding",
+        "protection": [],
+        "headers": {
+            "accept": "application/json",
+            "Content-Type": "application/json"
+        }
+       },
+       {
         "name" : "Lemon8",
         "uri_check" : "https://www.lemon8-app.com/{account}?region=us",
         "e_code" : 200,
