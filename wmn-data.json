@@ -1869,6 +1869,17 @@
         "cat" : "social"
        },
        {
+        "name" : "Fotolog Archived Profile",
+        "uri_check" : "http://archive.org/wayback/available?url=fotolog.com/{account}",
+        "uri_pretty" : "https://web.archive.org/web/2/fotolog.com/{account}",
+        "e_code" : 200,
+        "e_string" : "\"archived_snapshots\": {\"closest\"",
+        "m_string" : "\"archived_snapshots\": {}",
+        "m_code" : 200,
+        "known" : ["x_zudex_x", "angelito"],
+        "cat" : "archived"
+       },
+       {
        "name" : "Foursquare",
         "uri_check" : "https://foursquare.com/{account}",
         "e_code" : 200,
@@ -5293,6 +5304,17 @@
         "m_code" : 301,
         "known" : ["jocaxav", "engendrometal"],
         "cat" : "social"
+       },
+       {
+        "name" : "Taringa Archived Profile",
+        "uri_check" : "http://archive.org/wayback/available?url=taringa.net/{account}",
+        "uri_pretty" : "https://web.archive.org/web/2/taringa.net/{account}",
+        "e_code" : 200,
+        "e_string" : "\"archived_snapshots\": {\"closest\"",
+        "m_string" : "\"archived_snapshots\": {}",
+        "m_code" : 200,
+        "known" : ["farantic", "elrubius"],
+        "cat" : "archived"
        },
        {
         "name" : "taskrabbit",
