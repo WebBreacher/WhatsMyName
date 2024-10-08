@@ -2919,7 +2919,7 @@
         "m_code": 304,
         "m_string": "That user does not exist.",
         "known": ["test", "johndoe"],
-        "cat": "coding",
+        "cat": "coding"
        },
        {
         "name" : "Lemon8",
