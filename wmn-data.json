@@ -276,7 +276,7 @@
        {
         "name": "AniList",
         "uri_check": "https://graphql.anilist.co",
-        "uri_pretty": "https://anilist.co/user/{account}"
+        "uri_pretty": "https://anilist.co/user/{account}",
         "post_body": "{\"query\":\"query{User(name:\\\"{account}\\\"){id name}}\"}",
         "e_code": 200,
         "e_string": "\"id\":",
@@ -284,7 +284,6 @@
         "m_string": "Not Found",
         "known": ["test", "johndoe"],
         "cat": "social",
-        "protection": [],
         "headers": {
             "accept": "application/json",
             "Content-Type": "application/json"
