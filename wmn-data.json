@@ -1870,7 +1870,7 @@
        },
        {
         "name" : "Fotolog Archived Profile",
-        "uri_check" : "http://archive.org/wayback/available?url=fotolog.com/{account}",
+        "uri_check" : "http://archive.org/wayback/available?url=http://www.fotolog.com/{account}",
         "uri_pretty" : "https://web.archive.org/web/2/fotolog.com/{account}",
         "e_code" : 200,
         "e_string" : "\"archived_snapshots\": {\"closest\"",
@@ -5307,7 +5307,7 @@
        },
        {
         "name" : "Taringa Archived Profile",
-        "uri_check" : "http://archive.org/wayback/available?url=taringa.net/{account}",
+        "uri_check" : "http://archive.org/wayback/available?url=http://www.taringa.net/{account}",
         "uri_pretty" : "https://web.archive.org/web/2/taringa.net/{account}",
         "e_code" : 200,
         "e_string" : "\"archived_snapshots\": {\"closest\"",
