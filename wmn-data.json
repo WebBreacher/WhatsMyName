@@ -2397,9 +2397,9 @@
         "name" : "Holopin",
         "uri_check" : "https://holopin.io/@{account}#",
         "e_code" : 200,
-        "e_string" : "Holobytes",
+        "e_string" : " | Holopin</title>",
         "m_code" : 200,
-        "m_string" : "Not found",
+        "m_string" : "Not found</div>",
         "known" : ["holo", "test"],
         "cat" : "hobby"
        },
