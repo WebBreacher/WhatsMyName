@@ -2921,7 +2921,6 @@
         "m_string": "\"That user does not exist.\"",
         "known": ["test", "johndoe"],
         "cat": "coding",
-        "protection": [],
         "headers": {
             "accept": "application/json",
             "Content-Type": "application/json"
