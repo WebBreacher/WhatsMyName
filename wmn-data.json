@@ -1747,6 +1747,26 @@
         "cat" : "hobby"
        },
        {
+        "name" : "Filmot Channel Search",
+        "uri_check" : "https://filmot.com/channelsearch/{account}",
+        "e_code" : 200,
+        "e_string" : "Subscribers",
+        "m_string" : "No channels found",
+        "m_code" : 200,
+        "known" : ["bobicraft", "parodiadoranimado"],
+        "cat" : "archived"
+       },
+       {
+        "name" : "Filmot Unlisted Videos",
+        "uri_check" : "https://filmot.com/unlistedSearch?channelQuery={account}&sortField=uploaddate&sortOrder=desc&",
+        "e_code" : 200,
+        "e_string" : "clips found",
+        "m_string" : "No results",
+        "m_code" : 200,
+        "known" : ["holasoygerman", "elrubiusomg"],
+        "cat" : "archived"
+       },
+       {
         "name" : "fine_art_america",
         "uri_check" : "https://fineartamerica.com/profiles/{account}",
         "e_code" : 200,
@@ -1847,6 +1867,17 @@
         "m_code" : 200,
         "known" : ["test", "test2"],
         "cat" : "social"
+       },
+       {
+        "name" : "Fotolog Archived Profile",
+        "uri_check" : "https://archive.org/wayback/available?url=https://www.fotolog.com/{account}",
+        "uri_pretty" : "https://web.archive.org/web/2/fotolog.com/{account}",
+        "e_code" : 200,
+        "e_string" : "\"archived_snapshots\": {\"closest\"",
+        "m_string" : "\"archived_snapshots\": {}",
+        "m_code" : 200,
+        "known" : ["x_zudex_x", "angelito"],
+        "cat" : "archived"
        },
        {
        "name" : "Foursquare",
@@ -5273,6 +5304,17 @@
         "m_code" : 301,
         "known" : ["jocaxav", "engendrometal"],
         "cat" : "social"
+       },
+       {
+        "name" : "Taringa Archived Profile",
+        "uri_check" : "https://archive.org/wayback/available?url=https://www.taringa.net/{account}",
+        "uri_pretty" : "https://web.archive.org/web/2/taringa.net/{account}",
+        "e_code" : 200,
+        "e_string" : "\"archived_snapshots\": {\"closest\"",
+        "m_string" : "\"archived_snapshots\": {}",
+        "m_code" : 200,
+        "known" : ["farantic", "elrubius"],
+        "cat" : "archived"
        },
        {
         "name" : "taskrabbit",
