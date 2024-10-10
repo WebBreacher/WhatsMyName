@@ -399,7 +399,7 @@
         "name" : "AtCoder",
         "uri_check" : "https://atcoder.jp/users/{account}",
         "e_code" : 200,
-        "e_string" : "Contest Status",
+        "e_string" : "<h3>Contest Status</h3>",
         "m_string" : "404 Not Found - AtCoder",
         "m_code" : 404,
         "known" : ["apiad", "kotatsugame"],
