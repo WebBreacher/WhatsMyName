@@ -5091,6 +5091,16 @@
         "known" : ["spicerex", "rod-it"],
         "cat" : "tech"
        },
+      {
+        "name" : "SPOJ",
+        "uri_check" : "https://www.spoj.com/users/{account}/",
+        "e_code" : 200,
+        "e_string" : "<h3>Activity over the last year</h3>",
+        "m_string" : "<strong>Innopolis Open 2018</strong>",
+        "m_code" : 200,
+        "known" : ["defrager", "xilinx"],
+        "cat" : "coding"
+       },
        {
         "name" : "sporcle",
         "uri_check" : "https://www.sporcle.com/user/{account}/people/",
