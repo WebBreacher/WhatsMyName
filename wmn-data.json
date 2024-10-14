@@ -4869,6 +4869,14 @@
         "cat" : "images"
        },
        {
+        "name" : "SimplePlanes",
+        "uri_check" : "https://www.simpleplanes.com/u/{account}",
+        "e_code" : 200,
+        "m_code" : 302,
+        "known" : ["realSavageMan", "Jundroo", "john"],
+        "cat" : "gaming"
+       },
+       {
         "name" : "skeb",
         "uri_check" : "https://skeb.jp/@{account}",
         "e_code" : 200,
