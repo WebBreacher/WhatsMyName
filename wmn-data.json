@@ -3473,6 +3473,16 @@
         "known" : ["test", "janek"],
         "cat" : "images"
        },
+        {
+        "name" : "Moto Trip",
+        "uri_check" : "https://moto-trip.com/profil/{account}",
+        "e_code" : 200,
+        "e_string" : "Profil de:",
+        "m_string" : "Page introuvable La page que vous demandez n'existe pas ou plus.",
+        "m_code" : 404,
+        "known" : ["aesthetics", "pif"],
+        "cat" : "trip"
+       },  
        {
         "name" : "moxfield",
         "uri_check" : "https://www.moxfield.com/users/{account}",
