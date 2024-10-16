@@ -3481,7 +3481,7 @@
         "m_string" : "Page introuvable La page que vous demandez n'existe pas ou plus.",
         "m_code" : 404,
         "known" : ["aesthetics", "pif"],
-        "cat" : "trip"
+        "cat" : "hobby"
        },  
        {
         "name" : "moxfield",
