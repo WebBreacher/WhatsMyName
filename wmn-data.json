@@ -3712,7 +3712,7 @@
         "uri_check" : "https://{account}.newgrounds.com/",
         "strip_bad_char" : ".",
         "e_code" : 200,
-        "e_string" : "fans",
+        "e_string" : "user-header-name",
         "m_string" : "Whoops, that's a swing and a miss!",
         "m_code" : 404,
         "known" : ["john", "bob"],
