@@ -5924,8 +5924,8 @@
         "name" : "Vimeo",
         "uri_check" : "https://vimeo.com/{account}",
         "e_code" : 200,
-        "e_string" : "is a member of Vimeo, the",
-        "m_string" : "Make sure you’ve typed the URL correctly",
+        "e_string" : "og:type",
+        "m_string" : "VimeUhOh",
         "m_code" : 404,
         "known" : ["john", "alice"],
         "cat" : "video"
