@@ -6544,16 +6544,6 @@
         "cat" : "social"
       },
       {
-        "name" : "VirusTotal",
-        "uri_check" : "https://www.virustotal.com/gui/user/{account}",
-        "e_code" : 200,
-        "e_string" : "User Profile",
-        "m_string" : "User not found",
-        "m_code" : 404,
-        "known" : ["c_APT_ure", "BMonday"],
-        "cat" : "social"
-      },
-      {
         "name" : "Kwork",
         "uri_check" : "https://kwork.ru/user/{account}",
         "e_code" : 200,
