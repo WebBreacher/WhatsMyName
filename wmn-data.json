@@ -5993,7 +5993,7 @@
         "m_code" : 404,
         "known" : ["cyber", "cybersecstu"],
         "cat" : "misc",
-        "protection": "captcha"
+        "protection": ["captcha"]
        },
        {
         "name" : "VK",
