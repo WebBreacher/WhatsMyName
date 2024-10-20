@@ -4486,7 +4486,8 @@
         "m_string" : "\"success\":true",
         "m_code" : 200,
         "known" : ["Rita426", "Muyao_531"],
-        "cat" : "hobby"
+        "cat" : "hobby",
+        "protection": ["cloudflare"]
        },
        {
         "name" : "quitter.pl",
@@ -6533,10 +6534,9 @@
         "uri_check" : "https://www.gog.com/u/{account}",
         "e_code" : 200,
         "e_string" : "window.profilesData.profileUser",
-        "m_string" : "error404",
         "m_code" : 404,
         "known" : ["user", "Admin"],
-        "cat" : "social"
+        "cat" : "gaming"
       },
       {
         "name" : "Kwork",
@@ -6617,6 +6617,17 @@
         "m_code" : 404,
         "known" : ["mazahim33", "oleksandrseo1"],
         "cat" : "social"
+      },
+      {
+        "name" : "FACEIT",
+        "uri_check" : "https://www.faceit.com/api/users/v1/nicknames/{account}",
+        "uri_pretty": "https://www.faceit.com/en/players/{account}",
+        "e_code" : 200,
+        "e_string" : "OK",
+        "m_string" : "user not found",
+        "m_code" : 404,
+        "known" : ["s1mple", "w0nderful"],
+        "cat" : "gaming"
       }
   ]
 }
