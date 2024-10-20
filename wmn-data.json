@@ -2932,6 +2932,16 @@
         "cat" : "gaming"
        },
        {
+        "name": "komi",
+        "uri_check": "https://{account}.komi.io",
+        "e_code": 200,
+        "e_string": "Privacy Preferences",
+        "m_string": "This page is not currently available",
+        "m_code": 404,
+        "known": ["abbysage", "iamdsprings"],
+        "cat": "social"
+       },
+       {
         "name" : "Kotburger",
         "uri_check" : "https://kotburger.pl/user/{account}",
         "e_code" : 200,
