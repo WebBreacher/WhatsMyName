@@ -5146,11 +5146,12 @@
         "name" : "Spotify",
         "uri_check" : "https://open.spotify.com/user/{account}",
         "e_code" : 200,
-        "e_string" : "on Spotify</title>",
-        "m_string" : "Spotify - Web Player</title>",
-        "m_code" : 200,
+        "e_string" : "content=\"profile\"",
+        "m_string" : "Page not found",
+        "m_code" : 404,
         "known" : ["kexp_official", "mkbhd"],
-        "cat" : "music"
+        "cat" : "music",
+        "protection": ["captcha"]
        },
        {
         "name" : "Steam",
@@ -5989,7 +5990,7 @@
         "uri_check" : "https://www.virustotal.com/ui/users/{account}/avatar",
         "pretty_uri" : "https://www.virustotal.com/gui/user/{account}",
         "e_code" : 200,
-        "e_string" :"img src",
+        "e_string" : "",
         "m_string" : "NotFoundError",
         "m_code" : 404,
         "known" : ["cyber", "cybersecstu"],
@@ -6545,6 +6546,7 @@
         "e_code" : 200,
         "e_string" : "window.profilesData.profileUser",
         "m_code" : 404,
+        "m_string": "",
         "known" : ["user", "Admin"],
         "cat" : "gaming"
       },
@@ -6638,6 +6640,17 @@
         "m_code" : 404,
         "known" : ["s1mple", "w0nderful"],
         "cat" : "gaming"
+      },
+      {
+        "name" : "Beacons",
+        "uri_check" : "https://cdn.beacons.ai/profile_pictures/beacons/{account}.png",
+        "uri_pretty": "https://beacons.ai/{account}",
+        "e_code" : 200,
+        "e_string" : "",
+        "m_string" : "NoSuchKey",
+        "m_code" : 404,
+        "known" : ["rafaballerini", "lexaloco", "jardred"],
+        "cat" : "social"
       }
   ]
 }
