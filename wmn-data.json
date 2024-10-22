@@ -2885,7 +2885,7 @@
         "name" : "kik",
         "uri_check" : "https://kik.me/{account}",
         "e_code" : 200,
-        "e_string" : "<h1 class=\"display-name\">",
+        "e_string" : "/thumb.jpg\"/>",
         "m_string" : "<h1 class=\"display-name\"> </h1>",
         "m_code" : 200,
         "known" : ["adam", "smith", "jones"],
