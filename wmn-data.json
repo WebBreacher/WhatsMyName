@@ -2883,10 +2883,10 @@
        },
        {
         "name" : "kik",
-        "uri_check" : "https://ws2.kik.com/user/{account}",
+        "uri_check" : "https://kik.me/{account}",
         "e_code" : 200,
-        "e_string" : "firstName",
-        "m_string" : "The page you requested was not found",
+        "e_string" : "/thumb.jpg\"/>",
+        "m_string" : "<h1 class=\"display-name\"> </h1>",
         "m_code" : 200,
         "known" : ["adam", "smith", "jones"],
         "cat" : "social"
@@ -5797,6 +5797,16 @@
         "m_code" : 404,
         "known" : ["janek", "kowal"],
         "cat" : "hobby"
+       },
+       {
+        "name" : "Unlisted Videos",
+        "uri_check" : "https://unlistedvideos.com/search.php?user={account}",
+        "e_code" : 200,
+        "e_string" : "Date submitted",
+        "m_string" : "content=\"\"/>",
+        "m_code" : 200,
+        "known" : ["emudshit", "hirumaredx"],
+        "cat" : "archived"
        },
        {
         "name" : "unsplash",
