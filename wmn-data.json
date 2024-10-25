@@ -516,6 +516,17 @@
         "cat" : "xx NSFW xx"
        },
        {
+        "name" : "Beacons",
+        "uri_check" : "https://cdn.beacons.ai/profile_pictures/beacons/{account}.png",
+        "uri_pretty": "https://beacons.ai/{account}",
+        "e_code" : 200,
+        "e_string" : "",
+        "m_string" : "NoSuchKey",
+        "m_code" : 404,
+        "known" : ["rafaballerini", "lexaloco", "jardred"],
+        "cat" : "social"
+       },
+       {
         "name" : "Behance",
         "uri_check" : "https://www.behance.net/{account}",
         "e_code" : 200,
@@ -1644,6 +1655,17 @@
         "cat" : "dating"
        },
        {
+        "name" : "FACEIT",
+        "uri_check" : "https://www.faceit.com/api/users/v1/nicknames/{account}",
+        "uri_pretty": "https://www.faceit.com/en/players/{account}",
+        "e_code" : 200,
+        "e_string" : "\"result\": \"OK\",",
+        "m_string" : "user not found",
+        "m_code" : 404,
+        "known" : ["s1mple", "w0nderful"],
+        "cat" : "gaming"
+       },
+       {
         "name" : "Facebook",
         "uri_check" : "https://www.facebook.com/{account}/",
         "e_code" : 200,
@@ -1900,6 +1922,26 @@
         "cat" : "social"
        },
        {
+        "name" : "Freelancehunt Freelancer",
+        "uri_check" : "https://freelancehunt.com/en/freelancer/{account}.html",
+        "e_code" : 200,
+        "e_string" : "Username:",
+        "m_string" : "User not found.",
+        "m_code" : 404,
+        "known" : ["rhythmdev_top", "Zainka"],
+        "cat" : "social"
+      },
+      {
+        "name" : "Freelancehunt Employer",
+        "uri_check" : "https://freelancehunt.com/en/employer/{account}.html",
+        "e_code" : 200,
+        "e_string" : "Username:",
+        "m_string" : "User not found.",
+        "m_code" : 404,
+        "known" : ["laputkoc", "Dekovital"],
+        "cat" : "social"
+       },
+       {
         "name" : "freelancer",
         "uri_check" : "https://www.freelancer.com/u/{account}",
         "e_code" : 200,
@@ -2136,6 +2178,16 @@
         "cat" : "coding"
        },
        {
+        "name" : "GOG",
+        "uri_check" : "https://www.gog.com/u/{account}",
+        "e_code" : 200,
+        "e_string" : "window.profilesData.profileUser",
+        "m_code" : 404,
+        "m_string": "",
+        "known" : ["user", "Admin"],
+        "cat" : "gaming"
+       },
+       {
         "name" : "Goodgame_Russia",
         "uri_check" : "https://goodgame.ru/channel/{account}/",
         "e_code" : 200,
@@ -2197,6 +2249,36 @@
         "m_code" : 404,
         "known" : ["ellietalksmoney", "reallyniceimages"],
         "cat" : "shopping"
+       },
+       {
+        "name" : "Habr",
+        "uri_check" : "https://habr.com/ru/users/{account}/",
+        "e_code" : 200,
+        "e_string" : "tm-page tm-user",
+        "m_string" : "tm-error-message",
+        "m_code" : 404,
+        "known" : ["Bo0oM", "AlhimicMan"],
+        "cat" : "social"
+       },
+       {
+        "name" : "Habr Freelancer",
+        "uri_check" : "https://freelance.habr.com/freelancers/{account}",
+        "e_code" : 200,
+        "e_string" : "user-profile profile-blocks",
+        "m_string" : "icon_user_locked",
+        "m_code" : 404,
+        "known" : ["Bo0oM", "Akloom"],
+        "cat" : "social"
+       },
+       {
+        "name" : "Habr Employer",
+        "uri_check" : "https://freelance.habr.com/freelancers/{account}/employer",
+        "e_code" : 200,
+        "e_string" : "user-profile profile-blocks",
+        "m_string" : "icon_user_locked",
+        "m_code" : 404,
+        "known" : ["aufdk", "Danvantariy"],
+        "cat" : "social"
        },
        {
         "name" : "Habbo.com",
@@ -2950,6 +3032,16 @@
         "m_code" : 404,
         "known" : ["test", "janek"],
         "cat" : "images"
+       },
+       {
+        "name" : "Kwork",
+        "uri_check" : "https://kwork.ru/user/{account}",
+        "e_code" : 200,
+        "e_string" : "window.profileData",
+        "m_string" : "<not-found></not-found>",
+        "m_code" : 404,
+        "known" : ["ilkarkarakurt", "sergeymeshiy"],
+        "cat" : "social"
        },
        {
         "name" : "Lemon8",
@@ -4868,7 +4960,7 @@
         "headers" : {
           "Cookie" : "accept_rules=true;"
         }
-       },      
+       },
        {
         "name" : "shutterstock",
         "uri_check" : "https://www.shutterstock.com/g/{account}",
@@ -6117,6 +6209,16 @@
         "cat" : "misc"
        },
        {
+        "name" : "Weblancer",
+        "uri_check" : "https://www.weblancer.net/users/{account}/",
+        "e_code" : 200,
+        "e_string" : "\"user\":",
+        "m_string" : "\"page\":\"/404\"",
+        "m_code" : 404,
+        "known" : ["alpet", "WebArtyom"],
+        "cat" : "social"
+       },
+       {
         "name" : "weheartit",
         "uri_check" : "https://weheartit.com/{account}",
         "e_code" : 200,
@@ -6538,118 +6640,6 @@
         "m_string" : "class=\"network\"",
         "m_code" : 404,
         "known" : ["carlito", "taylor"],
-        "cat" : "social"
-      },
-      {
-        "name" : "GOG",
-        "uri_check" : "https://www.gog.com/u/{account}",
-        "e_code" : 200,
-        "e_string" : "window.profilesData.profileUser",
-        "m_code" : 404,
-        "m_string": "",
-        "known" : ["user", "Admin"],
-        "cat" : "gaming"
-      },
-      {
-        "name" : "Kwork",
-        "uri_check" : "https://kwork.ru/user/{account}",
-        "e_code" : 200,
-        "e_string" : "window.profileData",
-        "m_string" : "not-found",
-        "m_code" : 404,
-        "known" : ["ilkarkarakurt", "sergeymeshiy"],
-        "cat" : "social"
-      },
-      {
-        "name" : "Weblancer",
-        "uri_check" : "https://www.weblancer.net/users/{account}/",
-        "e_code" : 200,
-        "e_string" : "\"user\":",
-        "m_string" : "\"page\":\"/404\"",
-        "m_code" : 404,
-        "known" : ["alpet", "WebArtyom"],
-        "cat" : "social"
-      },
-      {
-        "name" : "Freelancehunt Freelancer",
-        "uri_check" : "https://freelancehunt.com/en/freelancer/{account}.html",
-        "e_code" : 200,
-        "e_string" : "Username:",
-        "m_string" : "User not found.",
-        "m_code" : 404,
-        "known" : ["rhythmdev_top", "vadym1232"],
-        "cat" : "social"
-      },
-      {
-        "name" : "Freelancehunt Employer",
-        "uri_check" : "https://freelancehunt.com/en/employer/{account}.html",
-        "e_code" : 200,
-        "e_string" : "Username:",
-        "m_string" : "User not found.",
-        "m_code" : 404,
-        "known" : ["rhythmdev_top", "vadym1232"],
-        "cat" : "social"
-      },
-      {
-        "name" : "Habr",
-        "uri_check" : "https://habr.com/ru/users/{account}/",
-        "e_code" : 200,
-        "e_string" : "tm-page tm-user",
-        "m_string" : "tm-error-message",
-        "m_code" : 404,
-        "known" : ["Bo0oM", "AlhimicMan"],
-        "cat" : "social"
-      },
-      {
-        "name" : "Habr Freelancer",
-        "uri_check" : "https://freelance.habr.com/freelancers/{account}",
-        "e_code" : 200,
-        "e_string" : "user-profile profile-blocks",
-        "m_string" : "icon_user_locked",
-        "m_code" : 404,
-        "known" : ["Bo0oM", "Akloom"],
-        "cat" : "social"
-      },
-      {
-        "name" : "Habr Employer",
-        "uri_check" : "https://freelance.habr.com/freelancers/{account}/employer",
-        "e_code" : 200,
-        "e_string" : "user-profile profile-blocks",
-        "m_string" : "icon_user_locked",
-        "m_code" : 404,
-        "known" : ["aufdk", "Danvantariy"],
-        "cat" : "social"
-      },
-      {
-        "name" : "Freelance Україна",
-        "uri_check" : "https://freelance.ua/user/{account}/",
-        "e_code" : 200,
-        "e_string" : "user-profile profile-blocks",
-        "m_string" : "error-page",
-        "m_code" : 404,
-        "known" : ["mazahim33", "oleksandrseo1"],
-        "cat" : "social"
-      },
-      {
-        "name" : "FACEIT",
-        "uri_check" : "https://www.faceit.com/api/users/v1/nicknames/{account}",
-        "uri_pretty": "https://www.faceit.com/en/players/{account}",
-        "e_code" : 200,
-        "e_string" : "OK",
-        "m_string" : "user not found",
-        "m_code" : 404,
-        "known" : ["s1mple", "w0nderful"],
-        "cat" : "gaming"
-      },
-      {
-        "name" : "Beacons",
-        "uri_check" : "https://cdn.beacons.ai/profile_pictures/beacons/{account}.png",
-        "uri_pretty": "https://beacons.ai/{account}",
-        "e_code" : 200,
-        "e_string" : "",
-        "m_string" : "NoSuchKey",
-        "m_code" : 404,
-        "known" : ["rafaballerini", "lexaloco", "jardred"],
         "cat" : "social"
       }
   ]
