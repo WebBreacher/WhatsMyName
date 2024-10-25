@@ -586,6 +586,17 @@
         "cat" : "tech"
        },
        {
+        "name" : "Bing Search",
+        "uri_check" : "https://omniplex.ai/api/multiSearch?q=%22{account}%22",
+        "uri_pretty" : "https://www.bing.com/search?q=%22{account}%22",
+        "e_code" : 200,
+        "e_string" : "displayUrl",
+        "m_string" : ":[]}}",
+        "m_code" : 200,
+        "known" : ["patormovies", "gtadante"],
+        "cat" : "search"
+       },
+       {
         "name" : "biolink",
         "uri_check" : "https://bio.link/{account}",
         "e_code" : 200,
