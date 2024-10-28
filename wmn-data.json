@@ -3454,6 +3454,16 @@
         "cat" : "gaming"
        },
        {
+        "name" : "MobileGTA.net",
+        "uri_check" : "https://www.mobilegta.net/en/user/{account}",
+        "e_code" : 200,
+        "e_string" : "userpage_user",
+        "m_string" : "<h1>404 Not Found",
+        "m_code" : 200,
+        "known" : ["daniel", "franco"],
+        "cat" : "gaming"
+       },
+       {
         "name" : "Mod DB",
         "uri_check" : "https://www.moddb.com/members/{account}",
         "e_code" : 200,
@@ -3533,6 +3543,16 @@
         "m_code" : 404,
         "known" : ["dave", "sarah"],
         "cat" : "music"
+       },
+       {
+        "name" : "MUYZORRAS",
+        "uri_check" : "https://www.muyzorras.com/usuarios/{account}",
+        "e_code" : 200,
+        "e_string" : "og:title",
+        "m_string" : "<title>Error 404",
+        "m_code" : 404,
+        "known" : ["anuel", "esteban"],
+        "cat" : "xx NSFW xx"
        },
        {
         "name" : "MyAnimeList",
