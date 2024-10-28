@@ -5243,7 +5243,7 @@
         "m_code" : 404,
         "known" : ["kexp_official", "mkbhd"],
         "cat" : "music",
-        "protection": ["captcha"]
+        "protection": ["other"]
        },
        {
         "name" : "Steam",
