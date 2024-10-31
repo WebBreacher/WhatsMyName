@@ -2188,6 +2188,16 @@
         "cat" : "social"
        },
        {
+        "name" : "GTAinside.com",
+        "uri_check" : "https://www.gtainside.com/user/{account}",
+        "e_code" : 200,
+        "e_string" : "userpage_user",
+        "m_string" : "<h1>404 Not Found",
+        "m_code" : 200,
+        "known" : ["daniel", "franco"],
+        "cat" : "gaming"
+       },
+       {
         "name" : "gumroad",
         "uri_check" : "https://{account}.gumroad.com/",
         "strip_bad_char" : ".",
@@ -2295,6 +2305,16 @@
         "m_string" : "not-found",
         "m_code" : 404,
         "known" : ["cucumberz", "Yasline"],
+        "cat" : "gaming"
+       },
+       {
+        "name" : "Habtium",
+        "uri_check" : "https://habtium.es/{account}",
+        "e_code" : 200,
+        "e_string" : "<div class=\"profile-info",
+        "m_string" : "<h1 class=\"section red\">Oops!",
+        "m_code" : 404,
+        "known" : ["diegjeremy", "suigetsu"],
         "cat" : "gaming"
        },
        {
@@ -6096,6 +6116,16 @@
         "m_code" : 400,
         "known" : ["medroxy", "nodjev"],
         "cat" : "xx NSFW xx"
+       },
+       {
+        "name" : "Warmerise",
+        "uri_check" : "https://warmerise.com/profile/{account}",
+        "e_code" : 200,
+        "e_string" : "<div id='profile_photo",
+        "m_string" : "<h2>Page Not Found",
+        "m_code" : 404,
+        "known" : ["alfrevid", "thepro"],
+        "cat" : "gaming"
        },
        {
         "name" : "warriorforum",
