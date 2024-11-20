@@ -40,6 +40,7 @@ For a site to be included in WMN it has to:
 * [WMN_screenshooter](https://github.com/swedishmike/WMN_screenshooter) a helper script that uses Selenium to try and grab screenshots of identified profile pages.
 * [WhatsMyName-Client](https://github.com/grabowskiadrian/WhatsMyName-Client) a simple Python script with 'request headers' and 'POST requests' support made by [@grabowskiadrian](https://github.com/grabowskiadrian). The script also allows you to test the configuration of the wmn-data.json file.
 * [WhatsMyName-Web](https://github.com/AXRoux/WhatsMyName-Web) **Whats My Name-Web** is a simple Flask web app iteration of WhatsMyName made by [@AXRoux](https://github.com/AXRoux/)
+* [WhatsMyName Docker](https://github.com/kodamaChameleon/wmn-docker) is a Docker API Wrapper over this WhatsMyName tool. Dockerization made by [@kodamaChameleon](https://github.com/kodamaChameleon)
 
 ## Content
 
