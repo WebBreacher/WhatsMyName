@@ -669,11 +669,11 @@
        },
        {
         "name" : "Blue Sky",
-        "uri_check" : "https://bsky.app/profile/{account}",
+        "uri_check" : "https://bsky.app/profile/{account}.bsky.social",
         "e_code" : 200,
-        "e_string" : "on Bluesky",
+        "e_string" : "<meta property=\"profile:username\" content=",
         "m_code" : 200,
-        "m_string" : "<p id=\"bsky_did\"></p>",
+        "m_string" : "Unable to resolve handle",
         "known" : ["bsky.app", "safety.bsky.app"],
         "cat" : "social"
        },
