@@ -2781,17 +2781,6 @@
         "cat" : "dating"
        },
        {
-        "name" : "isMyGirl",
-        "uri_check" : "https://api.fxcservices.com/pub/user/{account}",
-        "uri_pretty" : "https://ismygirl.com/{account}",
-        "e_code" : 200,
-        "e_string" : "display_name",
-        "m_code" : 404,
-        "m_string" : "User does not exist",
-        "known" : ["kasumineechan", "blinky"],
-        "cat" : "finance"
-       },
-       {
         "name" : "issuu",
         "uri_check" : "https://issuu.com/{account}",
         "e_code" : 200,
