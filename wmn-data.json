@@ -2135,6 +2135,17 @@
         "known" : ["johnny", "dev"],
         "cat" : "coding"
        },
+               {
+        "name" : "GOG",
+        "uri_check" : "https://www.gog.com/u/{account}",
+        "e_code" : 200,
+        "e_string" : "<a ng-href=\"/u/",
+        "m_string" : "The page you‘re trying to reach does not exist",
+        "m_code" : 404,
+        "known" : ["BenKii", "death"],
+        "cat" : "gaming"
+       },
+        
        {
         "name" : "Goodgame_Russia",
         "uri_check" : "https://goodgame.ru/channel/{account}/",
