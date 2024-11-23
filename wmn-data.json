@@ -3528,7 +3528,7 @@
         "uri_check" : "https://www.moxfield.com/users/{account}",
         "e_code" : 200,
         "e_string" : "Moxfield Profile",
-        "m_string" : "No user found ",
+        "m_string" : "This page is lost, but seeking.",
         "m_code" : 200,
         "known" : ["gamer", "Carlos01"],
         "cat" : "misc"
