@@ -669,11 +669,11 @@
        },
        {
         "name" : "Blue Sky",
-        "uri_check" : "https://bsky.app/profile/{account}",
+        "uri_check" : "https://bsky.app/profile/{account}.bsky.social",
         "e_code" : 200,
-        "e_string" : "on Bluesky",
+        "e_string" : "<meta property=\"profile:username\" content=",
         "m_code" : 200,
-        "m_string" : "<p id=\"bsky_did\"></p>",
+        "m_string" : "Unable to resolve handle",
         "known" : ["bsky.app", "safety.bsky.app"],
         "cat" : "social"
        },
@@ -2135,6 +2135,16 @@
         "known" : ["johnny", "dev"],
         "cat" : "coding"
        },
+        {
+        "name" : "GOG",
+        "uri_check" : "https://www.gog.com/u/{account}",
+        "e_code" : 200,
+        "e_string" : "<a ng-href=\"/u/",
+        "m_string" : "The page you‘re trying to reach does not exist",
+        "m_code" : 404,
+        "known" : ["BenKii", "death"],
+        "cat" : "gaming"
+       },
        {
         "name" : "Goodgame_Russia",
         "uri_check" : "https://goodgame.ru/channel/{account}/",
@@ -3507,7 +3517,7 @@
         "name" : "Moto Trip",
         "uri_check" : "https://moto-trip.com/profil/{account}",
         "e_code" : 200,
-        "e_string" : "<h1 class=\"h2\">Profil de pif</h1>",
+        "e_string" : "<h1 class=\"h2\">Profil de",
         "m_string" : "<h1>Page introuvable</h1>",
         "m_code" : 404,
         "known" : ["aesthetics", "pif"],
