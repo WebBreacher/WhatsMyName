@@ -673,7 +673,7 @@
         "e_code" : 200,
         "e_string" : "<meta property=\"profile:username\" content=",
         "m_code" : 200,
-        "m_string" : "Unable to resolve handle",
+        "m_string" : "Oups&nbsp!",
         "known" : ["bsky.app", "safety.bsky.app"],
         "cat" : "social"
        },
@@ -5386,16 +5386,6 @@
         "cat" : "business"
        },
        {
-        "name" : "Taringa",
-        "uri_check" : "https://www.taringa.net/{account}",
-        "e_code" : 200,
-        "e_string" : " en Taringa!</title>",
-        "m_string" : "Colectiva en Taringa!</title>",
-        "m_code" : 301,
-        "known" : ["jocaxav", "engendrometal"],
-        "cat" : "social"
-       },
-       {
         "name" : "Taringa Archived Profile",
         "uri_check" : "https://archive.org/wayback/available?url=https://www.taringa.net/{account}",
         "uri_pretty" : "https://web.archive.org/web/2/taringa.net/{account}",
@@ -5787,16 +5777,6 @@
         "m_string" : "をご確認ください。",
         "known" : ["wsise47", "tsukiusa630"],
         "cat" : "social"
-       },
-       {
-        "name" : "Ubisoft",
-        "uri_check" : "https://discussions.ubisoft.com/user/{account}",
-        "e_code" : 200,
-        "e_string" : "| Ubisoft Discussion Forums",
-        "m_string" : "You seem to have stumbled upon a page that does not exist.",
-        "m_code" : 404,
-        "known" : ["fizzle_fuze", "th05324"],
-        "cat" : "gaming"
        },
        {
         "name" : "Udemy",
