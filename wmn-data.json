@@ -5746,18 +5746,6 @@
         "cat" : "archived"
        },
        {
-        "name" : "twoplustwo",
-        "uri_check" : "https://forumserver.twoplustwo.com/ajax.php?do=usersearch",
-        "uri_pretty" : "https://forumserver.twoplustwo.com/search.php",
-        "post_body" : "securitytoken=guest&do=usersearch&fragment={account}",
-        "e_code" : 200,
-        "e_string" : "userid=",
-        "m_string" : "",
-        "m_code" : 404,
-        "known" : ["redsox", "adam"],
-        "cat" : "hobby"
-       },
-       {
         "name" : "twpro",
         "uri_check" : "https://twpro.jp/{account}",
         "e_code" : 200,
@@ -5902,7 +5890,7 @@
         "name" : "vsco",
         "uri_check" : "https://vsco.co/{account}/gallery",
         "e_code" : 200,
-        "e_string" : "UserProfileGallery",
+        "e_string" : "data-testid=\"UserProfileGallery\"",
         "m_string" : "Page Not Found | VSCO</title>",
         "m_code" : 404,
         "known" : ["sam", "becca"],
