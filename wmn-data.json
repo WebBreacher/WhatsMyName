@@ -5858,14 +5858,13 @@
         "cat" : "social"
        },
        {
-        "name" : "utip.io",
-        "uri_check" : "https://utip.io/creator/profile/{account}",
-        "uri_pretty" : "https://utip.io/{account}",
+        "name" : "uncove.io",
+        "uri_check" : "https://uncove.com{account}",
         "e_code" : 200,
-        "e_string" : "\"userName\"",
-        "m_code" : 404,
-        "m_string" : "Not a valid web service key",
-        "known" : ["honey", "chloe"],
+        "e_string" : "<div class=\"user-profil-container\">",
+        "m_code" : 200,
+        "m_string" : "SentimentVeryDissatisfiedIcon",
+        "known" : ["ornellamtl", "leamercier"],
         "cat" : "finance"
        },
        {
