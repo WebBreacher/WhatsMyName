@@ -335,9 +335,9 @@
         "name" : "Arduino",
         "uri_check" : "https://projecthub.arduino.cc/{account}",
         "e_code" : 200,
-        "e_string" : "| Arduino Project Hub",
-        "m_string" : "Arduino Project Hub",
-        "m_code" : 404,
+        "e_string" : "follow </button>",
+        "m_string" : "Oh no! Nothing to discover here",
+        "m_code" : 200,
         "known" : ["peter", "john"],
         "cat" : "tech"
        },
@@ -519,9 +519,9 @@
         "name" : "Behance",
         "uri_check" : "https://www.behance.net/{account}",
         "e_code" : 200,
-        "e_string" : "og:site_name",
+        "e_string" : "<h1 class=\"ProfileCard-userFullName-ule\">",
         "m_string" : "<title>Oops!",
-        "m_code" : 404,
+        "m_code" : 400,
         "known" : ["alice", "john"],
         "cat" : "business"
        },
@@ -6404,7 +6404,7 @@
         "e_code" : 200,
         "e_string" : "'s Reviews |",
         "m_string" : "We’re sorry. Something went wrong on this page.",
-        "m_code" : 404,
+        "m_code" : 200,
         "known" : ["j5CYhsvD2yrunyyoZvSvKA", "GHoG4X4FY8D8L563zzPX5w"],
         "cat" : "shopping"
        },
