@@ -6316,7 +6316,7 @@
         "strip_bad_char" : ".",
         "e_code" : 200,
         "e_string" : "s Xanga Site | Just",
-        "m_string" : "",
+        "m_string" : "Xanga 2.0 is Here!",
         "m_code" : 302,
         "known" : ["john"],
         "cat" : "blog"
@@ -6416,7 +6416,7 @@
         "uri_check" : "https://www.yelp.com/user_details?userid={account}",
         "e_code" : 200,
         "e_string" : "'s Reviews |",
-        "m_string" : "Doggone it! The page you’re looking for cannot be found.",
+        "m_string" : "We’re sorry. Something went wrong on this page.",
         "m_code" : 404,
         "known" : ["j5CYhsvD2yrunyyoZvSvKA", "GHoG4X4FY8D8L563zzPX5w"],
         "cat" : "shopping"
@@ -6516,7 +6516,7 @@
         "uri_check" : "https://zmarsa.com/uzytkownik/{account}/glowna/",
         "e_code" : 200,
         "e_string" : "Galeria użytkownika",
-        "m_string" : "Błąd na stronie",
+        "m_string" : "Polskie Sex Filmiki i Zdjęcia Erotyczne",
         "m_code" : 500,
         "known" : ["janek", "test"],
         "cat" : "xx NSFW xx"
