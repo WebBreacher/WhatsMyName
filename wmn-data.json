@@ -5400,8 +5400,8 @@
         "uri_check" : "https://teamtreehouse.com/{account}",
         "e_code" : 200,
         "e_string" : "Member Since",
-        "m_string" : "Oops, Something went missing",
-        "m_code" : 404,
+        "m_string" : "class=\"homepage courses\"",
+        "m_code" : 302,
         "known" : ["john"],
         "cat" : "coding"
        },
