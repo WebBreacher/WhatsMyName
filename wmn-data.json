@@ -621,7 +621,7 @@
         "uri_check" : "https://www.bitchute.com/channel/{account}/",
         "e_code" : 200,
         "e_string" : ">Subscribe</span>",
-        "m_string" : "404 - Page not found",
+        "m_string" : "404 - Page not found</h1>",
         "m_code" : 200,
         "known" : ["simon_parkes", "americafloats", "daindor"],
         "cat" : "political"
@@ -683,7 +683,7 @@
         "uri_pretty" : "http://bodyspace.bodybuilding.com/{account}/",
         "e_code" : 200,
         "e_string" : "username",
-        "m_string" : "data\" :\"\"",
+        "m_string" : "\"err_msg\"":,
         "m_code" : 200,
         "known" : ["mike"],
         "cat" : "health"
@@ -1464,8 +1464,8 @@
         "name" : "dot.cards",
         "uri_check" : "https://dot.cards/{account}",
         "e_code" : 200,
-        "e_string" : "status\": \"success",
-        "m_string" : "status\": \"username_not_found",
+        "e_string" : "class=\"image-profile-section\"",
+        "m_string" : "This username does not exist.",
         "m_code" : 200,
         "known" : ["dakmusic", "jhartwell"],
         "cat" : "business"
@@ -1516,7 +1516,7 @@
         "uri_pretty" : "https://www.duolingo.com/profile/{account}",
         "e_code" : 200,
         "e_string" : "joinedClassroomIds",
-        "m_string" : "\"users\" : []",
+        "m_string" : "{\"users\":[]}",
         "m_code" : 200,
         "known" : ["sdfsdf", "duolingo"],
         "cat" : "hobby"
@@ -1709,8 +1709,8 @@
         "uri_check" : "https://apiv2.fansly.com/api/v1/account?usernames={account}",
         "uri_pretty" : "https://fansly.com/{account}/posts",
         "e_code" : 200,
-        "e_string" : "username",
-        "m_string" : "response: []",
+        "e_string" : "displayName",
+        "m_string" : "\"response\":[]",
         "m_code" : 200,
         "known" : ["Mikomin","test"],
         "cat" : "xx NSFW xx"
@@ -1760,7 +1760,7 @@
         "name" : "Filmot Channel Search",
         "uri_check" : "https://filmot.com/channelsearch/{account}",
         "e_code" : 200,
-        "e_string" : "Subscribers",
+        "e_string" : "dth=\"Channel\"",
         "m_string" : "No channels found",
         "m_code" : 200,
         "known" : ["bobicraft", "parodiadoranimado"],
@@ -1959,16 +1959,6 @@
         "m_code" : 404,
         "known" : ["RealMarjorieGreene", "LaurenBoebert"],
         "cat" : "political"
-       },
-       {
-        "name" : "game_debate",
-        "uri_check" : "https://www.game-debate.com/profile/{account}",
-        "e_code" : 200,
-        "e_string" : "| , , GB pc game performance",
-        "m_string" : "Not Found",
-        "m_code" : 404,
-        "known" : ["Johnboy", "Crazy"],
-        "cat" : "gaming"
        },
        {
         "name" : "Game Jolt",
@@ -2444,7 +2434,7 @@
         "uri_check" : "https://hiberworld.com/user/{account}",
         "e_code" : 200,
         "e_string" : "Member since ",
-        "m_string" : "Looks like you got lost ",
+        "m_string" : "Page Ninja'd Away!",
         "m_code" : 200,
         "known" : ["Axeman", "Silver01"],
         "cat" : "gaming"
@@ -2709,7 +2699,7 @@
         "strip_bad_char" : ".",
         "e_code" : 200,
         "e_string" : "User:",
-        "m_string" : "The requested URL /profile was not found on this server",
+        "m_string" : "Unknown user",
         "m_code" : 200,
         "known" : ["test", "pint-sized", "acroamatica"],
         "cat" : "social"
@@ -2775,7 +2765,7 @@
         "uri_check" : "https://www.interpals.net/{account}",
         "e_code" : 200,
         "e_string" : "Looking for",
-        "m_string" : "User not found",
+        "m_string" : "user does not exist",
         "m_code" : 200,
         "known" : ["test"],
         "cat" : "dating"
@@ -3047,7 +3037,7 @@
         "e_code" : 200,
         "e_string" : "| Linktree",
         "m_string" : "The page you’re looking for doesn’t exist.",
-        "m_code" : 404,
+        "m_code" : 200,
         "known" : ["anne", "alex"],
         "cat" : "social"
        },
