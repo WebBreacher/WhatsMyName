@@ -659,7 +659,7 @@
        {
         "name" : "Blogspot",
         "uri_check" : "http://{account}.blogspot.com",
-        "strip_bad_char" : ".",
+        rip_bad_char" : ".",
         "e_code" : 200,
         "e_string" : "Blogger Template Style",
         "m_string" : "Blog not found",
@@ -721,7 +721,7 @@
        {
         "name" : "Booth",
         "uri_check" : "https://{account}.booth.pm/",
-        "strip_bad_char" : ".",
+        rip_bad_char" : ".",
         "e_code" : 200,
         "e_string" : "- BOOTH</title>",
         "m_string" : "BOOTH - The International Indie Art Marketplace",
@@ -812,7 +812,7 @@
        {
         "name" : "Carbonmade",
         "uri_check" : "https://{account}.carbonmade.com/",
-        "strip_bad_char" : ".",
+        rip_bad_char" : ".",
         "e_code" : 200,
         "e_string" : "s online portfolio",
         "m_string" : "site not found",
@@ -833,7 +833,7 @@
        {
         "name" : "carrd.co",
         "uri_check" : "https://{account}.carrd.co",
-        "strip_bad_char" : ".",
+        rip_bad_char" : ".",
         "e_code" : 200,
         "e_string" : "( Made with Carrd )",
         "m_code" : 404,
@@ -5222,6 +5222,17 @@
         "cat" : "shopping"
        },
        {
+        "name" : "Statuspage",
+        "uri_check" : "https://{account}.statuspage.io/api/v2/status.json",
+        "uri_pretty": "https://{account}.statuspage.io/",
+        "e_code" : 200,
+        "e_string" : "updated_at",
+        "m_string" : "<html><body>You are being <a href=\"https://www.statuspage.io\">redirected</a>.</body></html>",
+        "m_code" : 302,
+        "known" : ["8713981tpdlg", "gaming", "coinbase"],
+        "cat" : "tech"
+       },
+       {
         "name" : "StoryCorps",
         "uri_check" : "https://archive.storycorps.org/user/{account}/",
         "e_code" : 200,
@@ -6602,17 +6613,6 @@
         "m_code" : 404,
         "known" : ["carlito", "taylor"],
         "cat" : "social"
-      },
-      {
-        "name" : "Statuspage",
-        "uri_check" : "https://{account}.statuspage.io/api/v2/status.json",
-        "uri_pretty": "https://{account}.statuspage.io/",
-        "e_code" : 200,
-        "e_string" : "updated_at",
-        "m_string" : "<html><body>You are being <a href=\"https://www.statuspage.io\">redirected</a>.</body></html>",
-        "m_code" : 302,
-        "known" : ["8713981tpdlg", "gaming","coinbase"],
-        "cat" : "tech"
       }
   ]
 }
