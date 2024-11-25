@@ -2434,7 +2434,7 @@
         "uri_check" : "https://hiberworld.com/user/{account}",
         "e_code" : 200,
         "e_string" : "Member since ",
-        "m_string" : "Page Ninja'd Away!",
+        "m_string" : "Page Ninja&#x27;d Away!</h3",
         "m_code" : 200,
         "known" : ["Axeman", "Silver01"],
         "cat" : "gaming"
