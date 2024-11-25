@@ -6606,11 +6606,12 @@
       {
         "name" : "Statuspage",
         "uri_check" : "https://{account}.statuspage.io/api/v2/status.json",
+        "uri_pretty": "https://{account}.statuspage.io/",
         "e_code" : 200,
-        "e_string" : "id",
+        "e_string" : "updated_at",
         "m_string" : "<html><body>You are being <a href=\"https://www.statuspage.io\">redirected</a>.</body></html>",
         "m_code" : 302,
-        "known" : ["8713981tpdlg"],
+        "known" : ["8713981tpdlg", "gaming","coinbase"],
         "cat" : "tech"
       }
   ]
