@@ -668,7 +668,7 @@
         "cat" : "blog"
        },
        {
-        "name" : "Blue Sky",
+        "name" : "Bluesky 1",
         "uri_check" : "https://bsky.app/profile/{account}",
         "e_code" : 200,
         "e_string" : "on Bluesky",
@@ -676,6 +676,16 @@
         "m_string" : "<p id=\"bsky_did\"></p>",
         "known" : ["bsky.app", "safety.bsky.app"],
         "cat" : "social"
+       },
+       {
+         "name": "Bluesky 2",
+         "uri_check": "https://public.api.bsky.app/xrpc/app.bsky.actor.getProfile?actor={account}.bsky.social",
+         "e_code": 200,
+         "e_string": "\"handle\":\"",
+         "m_code": 400,
+         "m_string": "\"message\":\"Profile not found\"",
+         "known": ["john", "mark"],
+         "cat": "social"
        },
        {
         "name" : "BodyBuilding.com",
