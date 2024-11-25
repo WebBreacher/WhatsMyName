@@ -3396,7 +3396,7 @@
         "uri_check" : "https://minecraftlist.com/players/{account}",
         "e_code" : 200,
         "e_string" : "-->was seen on<!--",
-        "m_string" : "0 Minecraft servers recently",
+        "m_string" : "\"servers\":{}",
         "m_code" : 200,
         "known" : ["fear837", "dream"],
         "cat" : "gaming"
