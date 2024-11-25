@@ -659,7 +659,7 @@
        {
         "name" : "Blogspot",
         "uri_check" : "http://{account}.blogspot.com",
-        rip_bad_char" : ".",
+        "strip_bad_char" : ".",
         "e_code" : 200,
         "e_string" : "Blogger Template Style",
         "m_string" : "Blog not found",
@@ -721,7 +721,7 @@
        {
         "name" : "Booth",
         "uri_check" : "https://{account}.booth.pm/",
-        rip_bad_char" : ".",
+        "strip_bad_char" : ".",
         "e_code" : 200,
         "e_string" : "- BOOTH</title>",
         "m_string" : "BOOTH - The International Indie Art Marketplace",
@@ -812,7 +812,7 @@
        {
         "name" : "Carbonmade",
         "uri_check" : "https://{account}.carbonmade.com/",
-        rip_bad_char" : ".",
+        "strip_bad_char" : ".",
         "e_code" : 200,
         "e_string" : "s online portfolio",
         "m_string" : "site not found",
@@ -833,7 +833,7 @@
        {
         "name" : "carrd.co",
         "uri_check" : "https://{account}.carrd.co",
-        rip_bad_char" : ".",
+        "strip_bad_char" : ".",
         "e_code" : 200,
         "e_string" : "( Made with Carrd )",
         "m_code" : 404,
