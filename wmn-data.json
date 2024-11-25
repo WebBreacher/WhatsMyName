@@ -3035,8 +3035,8 @@
         "name" : "Linktree",
         "uri_check" : "https://linktr.ee/{account}",
         "e_code" : 200,
-        "e_string" : "| Linktree",
-        "m_string" : "The page you’re looking for doesn’t exist.",
+        "e_string" : "profilePictureUrl",
+        "m_string" : "\"statusCode\":404}",
         "m_code" : 200,
         "known" : ["anne", "alex"],
         "cat" : "social"
