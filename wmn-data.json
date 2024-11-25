@@ -680,6 +680,7 @@
        {
          "name": "Bluesky 2",
          "uri_check": "https://public.api.bsky.app/xrpc/app.bsky.actor.getProfile?actor={account}.bsky.social",
+         "uri_pretty" : "https://bsky.app/profile/{account}.bsky.social",
          "e_code": 200,
          "e_string": "\"handle\":\"",
          "m_code": 400,
