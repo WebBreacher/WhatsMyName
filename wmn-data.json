@@ -683,7 +683,7 @@
         "uri_pretty" : "http://bodyspace.bodybuilding.com/{account}/",
         "e_code" : 200,
         "e_string" : "username",
-        "m_string" : "\"err_msg\":",
+        "m_string" : "\"err_msg\"",
         "m_code" : 200,
         "known" : ["mike"],
         "cat" : "health"
