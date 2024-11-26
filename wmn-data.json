@@ -519,8 +519,8 @@
         "name" : "Behance",
         "uri_check" : "https://www.behance.net/{account}",
         "e_code" : 200,
-        "e_string" : "ProfileCard-userFullName-ule",
-        "m_string" : "<title>Oops!",
+        "e_string" : "<meta property=\"og:title",
+        "m_string" : ".ErrorPage-root",
         "m_code" : 400,
         "known" : ["alice", "john"],
         "cat" : "business"
