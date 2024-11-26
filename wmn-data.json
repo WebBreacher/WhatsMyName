@@ -1552,16 +1552,6 @@
         "cat" : "shopping"
        },
        {
-        "name" : "Ello.co",
-        "uri_check" : "https://ello.co/{account}",
-        "e_code" : 200,
-        "e_string" : "| Ello",
-        "m_string" : "| [404] Not Found",
-        "m_code" : 404,
-        "known" : ["john", "franalvez"],
-        "cat" : "art"
-       },
-       {
         "name" : "Engadget",
         "uri_check" : "https://www.engadget.com/about/editors/{account}/",
         "e_code" : 200,
