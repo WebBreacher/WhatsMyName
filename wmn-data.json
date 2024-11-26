@@ -1464,8 +1464,8 @@
         "name" : "dot.cards",
         "uri_check" : "https://dot.cards/{account}",
         "e_code" : 200,
-        "e_string" : "class=\"image-profile-section\"",
-        "m_string" : "This username does not exist.",
+        "e_string" : "status\":\"success",
+        "m_string" : "message\":\"The username does not exist",
         "m_code" : 200,
         "known" : ["dakmusic", "jhartwell"],
         "cat" : "business"
