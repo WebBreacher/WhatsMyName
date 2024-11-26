@@ -5827,7 +5827,7 @@
        },
        {
         "name" : "uncove.io",
-        "uri_check" : "https://uncove.com{account}",
+        "uri_check" : "https://uncove.com/{account}",
         "e_code" : 200,
         "e_string" : "<div class=\"user-profil-container\">",
         "m_code" : 200,
