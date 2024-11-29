@@ -335,7 +335,7 @@
         "name" : "Arduino",
         "uri_check" : "https://projecthub.arduino.cc/{account}",
         "e_code" : 200,
-        "e_string" : "follow </button>",
+        "e_string" : "follow</button>",
         "m_string" : "Oh no! Nothing to discover here",
         "m_code" : 200,
         "known" : ["peter", "john"],
