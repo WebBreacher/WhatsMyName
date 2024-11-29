@@ -1948,7 +1948,8 @@
         "m_string" : "Record not found",
         "m_code" : 404,
         "known" : ["RealMarjorieGreene", "LaurenBoebert"],
-        "cat" : "political"
+        "cat" : "political",
+        "protection" : ["cloudflare"]
        },
        {
         "name" : "Game Jolt",
