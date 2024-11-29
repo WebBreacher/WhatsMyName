@@ -2121,8 +2121,8 @@
         "uri_check" : "https://www.gog.com/u/{account}",
         "e_code" : 200,
         "e_string" : "<a ng-href=\"/u/",
-        "m_string" : "The page you‘re trying to reach does not exist",
-        "m_code" : 404,
+        "m_string" : "Redirecting to http://www.gog.com/404",
+        "m_code" : 302,
         "known" : ["BenKii", "death"],
         "cat" : "gaming"
        },
