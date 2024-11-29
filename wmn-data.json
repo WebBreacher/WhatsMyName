@@ -521,7 +521,7 @@
         "e_code" : 200,
         "e_string" : "<meta property=\"og:title",
         "m_string" : ".ErrorPage-root",
-        "m_code" : 400,
+        "m_code" : 404,
         "known" : ["alice", "john"],
         "cat" : "business"
        },
