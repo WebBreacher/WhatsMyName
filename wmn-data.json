@@ -620,8 +620,8 @@
         "name" : "Bitchute",
         "uri_check" : "https://www.bitchute.com/channel/{account}/",
         "e_code" : 200,
-        "e_string" : ">Subscribe</span>",
-        "m_string" : "404 - Page not found</h1>",
+        "e_string" : "https://api.bitchute.com/oembed/?url=https%3A%2F%2Fwww.bitchute.com%2Fchannel%2F",
+        "m_string" : "<title>Bitchute</title>",
         "m_code" : 200,
         "known" : ["simon_parkes", "americafloats", "daindor"],
         "cat" : "political"
@@ -668,14 +668,25 @@
         "cat" : "blog"
        },
        {
-        "name" : "Blue Sky",
-        "uri_check" : "https://bsky.app/profile/{account}.bsky.social",
+        "name" : "Bluesky 1",
+        "uri_check" : "https://bsky.app/profile/{account}",
         "e_code" : 200,
-        "e_string" : "<meta property=\"profile:username\" content=",
+        "e_string" : "on Bluesky",
         "m_code" : 200,
-        "m_string" : "Oups&nbsp!</div>",
+        "m_string" : "<p id=\"bsky_did\"></p>",
         "known" : ["bsky.app", "safety.bsky.app"],
         "cat" : "social"
+       },
+       {
+         "name": "Bluesky 2",
+         "uri_check": "https://public.api.bsky.app/xrpc/app.bsky.actor.getProfile?actor={account}.bsky.social",
+         "uri_pretty" : "https://bsky.app/profile/{account}.bsky.social",
+         "e_code": 200,
+         "e_string": "\"handle\":\"",
+         "m_code": 400,
+         "m_string": "\"message\":\"Profile not found\"",
+         "known": ["john", "mark"],
+         "cat": "social"
        },
        {
         "name" : "BodyBuilding.com",
