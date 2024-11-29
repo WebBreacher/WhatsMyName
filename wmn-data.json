@@ -1750,7 +1750,7 @@
         "name" : "Filmot Channel Search",
         "uri_check" : "https://filmot.com/channelsearch/{account}",
         "e_code" : 200,
-        "e_string" : "dth=\"Channel\"",
+        "e_string" : "Channel ID:",
         "m_string" : "No channels found",
         "m_code" : 200,
         "known" : ["bobicraft", "parodiadoranimado"],
