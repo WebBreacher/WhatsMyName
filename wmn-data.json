@@ -1039,16 +1039,6 @@
         "cat" : "coding"
        },
        {
-        "name" : "cohost",
-        "uri_check" : "https://cohost.org/{account}",
-        "e_code" : 200,
-        "e_string" : "cohost! - @",
-        "m_string" : "Something went wrong",
-        "m_code" : 404,
-        "known" : ["vogon", "jkap"],
-        "cat" : "social"
-       },
-       {
         "name" : "COLOURlovers",
         "uri_check" : "https://www.colourlovers.com/lover/{account}",
         "e_code" : 200,
