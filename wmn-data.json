@@ -969,6 +969,16 @@
         "cat" : "news"
        },
        {
+        "name" : "Coda",
+        "uri_check" : "https://coda.io/@{account}/",
+        "e_code" : 200,
+        "e_string" : "- Coda Profile</title>",
+        "m_string" : "<title>Coda | Page not found - Coda</title>",
+        "m_code" : 404,
+        "known" : ["huizer", "kennywong"],
+        "cat" : "hobby"
+       },
+       {
         "name" : "Codeberg",
         "uri_check" : "https://codeberg.org/{account}",
         "e_code" : 200,
