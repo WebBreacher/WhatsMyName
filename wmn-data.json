@@ -1154,6 +1154,16 @@
         "known" : ["mbattagl","Hatchback"],
         "cat" : "social"
        },
+        {
+        "name" : "Creative Assembly",
+        "uri_check" : "https://community.creative-assembly.com/search/result?term={account}",
+        "e_code" : 200,
+        "e_string" : "class=\"user-result-content-infos-username\"",
+        "m_string" : "Not Found",
+        "m_code" : 404,
+        "known" : ["iamnotarobot", "passthechips"],
+        "cat" : "gaming"
+       },
        {
         "name" : "crevado",
         "uri_check" : "https://{account}.crevado.com/",
@@ -5560,16 +5570,6 @@
         "m_string" : "Record not found",
         "known" : ["mikebeganyi", "Zugi"],
         "cat" : "social"
-       },
-       {
-        "name" : "Creative Assembly",
-        "uri_check" : "https://community.creative-assembly.com/search/result?term={account}",
-        "e_code" : 200,
-        "e_string" : "class=\"user-result-content-infos-username\"",
-        "m_string" : "Not Found",
-        "m_code" : 404,
-        "known" : ["iamnotarobot", "passthechips"],
-        "cat" : "gaming"
        },
        {
         "name" : "toyhou.se",
