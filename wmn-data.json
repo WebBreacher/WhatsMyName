@@ -1156,11 +1156,12 @@
        },
         {
         "name" : "Creative Assembly",
-        "uri_check" : "https://community.creative-assembly.com/search/result?term={account}",
+        "uri_check" : "https://api.service.community.services-creative-assembly.com/search?term={account}&from=0&size=20",
+        "uri_cpretty" : "https://community.creative-assembly.com/search/result?term={account}",
         "e_code" : 200,
-        "e_string" : "class=\"user-result-content-infos-username\"",
-        "m_string" : "Not Found",
-        "m_code" : 404,
+        "e_string" : "CreatedAt",
+        "m_string" : "Total\": 0",
+        "m_code" : 200,
         "known" : ["iamnotarobot", "passthechips"],
         "cat" : "gaming"
        },
