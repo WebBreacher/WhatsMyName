@@ -5582,6 +5582,18 @@
         "known" : ["22RII", "honey"],
         "cat" : "hobby"
        },
+        {
+        "name" : "twoplustwo",
+        "uri_check" : "https://forumserver.twoplustwo.com/ajax.php?do=usersearch",
+        "uri_pretty" : "https://forumserver.twoplustwo.com/search.php",
+        "post_body" : "securitytoken=guest&do=usersearch&fragment={account}",
+        "e_code" : 200,
+        "e_string" : "userid=",
+        "m_string" : "",
+        "m_code" : 404,
+        "known" : ["redsox", "adam"],
+        "cat" : "hobby"
+       },
        {
         "name" : "tradingview",
         "uri_check" : "https://www.tradingview.com/u/{account}/",
