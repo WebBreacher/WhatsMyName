@@ -1925,20 +1925,32 @@
         "name" : "Freelancehunt Freelancer",
         "uri_check" : "https://freelancehunt.com/en/freelancer/{account}.html",
         "e_code" : 200,
-        "e_string" : "Username:",
+        "e_string" : "\"@id\":\"https://freelancehunt.com/en/freelancers\"",
         "m_string" : "User not found.",
         "m_code" : 404,
         "known" : ["rhythmdev_top", "Zainka"],
-        "cat" : "social"
-      },
-      {
+        "cat" : "social",
+        "protection": ["other"]
+       },
+       {
         "name" : "Freelancehunt Employer",
         "uri_check" : "https://freelancehunt.com/en/employer/{account}.html",
         "e_code" : 200,
-        "e_string" : "Username:",
+        "e_string" : "\"@id\":\"https://freelancehunt.com/en/employers\"",
         "m_string" : "User not found.",
         "m_code" : 404,
-        "known" : ["laputkoc", "Dekovital"],
+        "known" : ["vadym1232", "Dekovital"],
+        "cat" : "social",
+        "protection": ["other"]
+       },
+       {
+        "name" : "Freelance.ua",
+        "uri_check" : "https://freelance.ua/user/{account}/",
+        "e_code" : 200,
+        "e_string" : "p-profile-avatar",
+        "m_string" : "Схоже, дана сторінка не знайдена",
+        "m_code" : 404,
+        "known" : ["tkachenkoalex", "oleksandrseo1"],
         "cat" : "social"
        },
        {
