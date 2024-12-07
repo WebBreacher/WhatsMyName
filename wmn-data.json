@@ -517,14 +517,14 @@
        },
        {
         "name" : "Beacons",
-        "uri_check" : "https://cdn.beacons.ai/profile_pictures/beacons/{account}.png",
-        "uri_pretty": "https://beacons.ai/{account}",
+        "uri_check" : "https://beacons.ai/{account}",
         "e_code" : 200,
-        "e_string" : "",
-        "m_string" : "NoSuchKey",
-        "m_code" : 404,
+        "e_string" : " - Link in Bio &amp; Creator Tools | Beacons</title>",
+        "m_string" : "The page you are looking for does not seem to exist anymore",
+        "m_code" : 200,
         "known" : ["rafaballerini", "lexaloco", "jardred"],
-        "cat" : "social"
+        "cat" : "social",
+        "protection": "cloudflare"
        },
        {
         "name" : "Behance",
@@ -6089,18 +6089,6 @@
         "known" : ["sarah", "brahim01"],
         "cat" : "blog"
       },
-      {
-        "name" : "VirusTotal",
-        "uri_check" : "https://www.virustotal.com/ui/users/{account}/avatar",
-        "pretty_uri" : "https://www.virustotal.com/gui/user/{account}",
-        "e_code" : 200,
-        "e_string" : "",
-        "m_string" : "NotFoundError",
-        "m_code" : 404,
-        "known" : ["cyber", "cybersecstu"],
-        "cat" : "misc",
-        "protection": ["captcha"]
-       },
        {
         "name" : "VK",
         "uri_check" : "https://vk.com/{account}",
