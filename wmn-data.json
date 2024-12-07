@@ -524,7 +524,7 @@
         "m_code" : 200,
         "known" : ["rafaballerini", "lexaloco", "jardred"],
         "cat" : "social",
-        "protection": "cloudflare"
+        "protection": ["cloudflare"]
        },
        {
         "name" : "Behance",
