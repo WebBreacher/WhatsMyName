@@ -6089,6 +6089,23 @@
         "known" : ["sarah", "brahim01"],
         "cat" : "blog"
       },
+      {
+        "name" : "VirusTotal",
+        "uri_check" : "https://www.virustotal.com/ui/users/{account}",
+        "pretty_uri" : "https://www.virustotal.com/gui/user/{account}",
+        "headers" : {
+                "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:127.0) Gecko/20100101 Firefox/127.0",
+                "X-Tool": "vt-ui-main",
+                "Accept-Ianguage": "en-US",
+                "X-VT-Anti-Abuse-Header": "MTAxOTFwMDcxOTEtWkc5dWRDQmlaU0JsZG2scy5xNzE4Mjc1NDI0LjUzMw=="
+        },
+        "e_code" : 200,
+        "e_string" :"\"data\"",
+        "m_string" : "\"code\": \"NotFoundError\"",
+        "m_code" : 404,
+        "known" : ["cyber", "cybersecstu"],
+        "cat" : "misc"
+       },
        {
         "name" : "VK",
         "uri_check" : "https://vk.com/{account}",
