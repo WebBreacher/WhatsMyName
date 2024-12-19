@@ -2109,13 +2109,13 @@
         "cat" : "hobby"
        },
        {
-        "name" : "Giphy",
+        "name" : "Giphy (Channel)",
         "uri_check" : "https://giphy.com/channel/{account}",
         "e_code" : 200,
         "e_string" : "\\\"user_id\\\"",
         "m_string" : "404 Not Found",
         "m_code" : 404,
-        "known" : ["SWAG", "aheadwithpen"],
+        "known" : ["teddy_99", "LastYear"],
         "cat" : "images",
         "protection": ["other"]
        },
