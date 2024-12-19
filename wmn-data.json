@@ -518,6 +518,17 @@
         "cat" : "xx NSFW xx"
        },
        {
+        "name" : "Beacons",
+        "uri_check" : "https://beacons.ai/{account}",
+        "e_code" : 200,
+        "e_string" : " - Link in Bio &amp; Creator Tools | Beacons</title>",
+        "m_string" : "The page you are looking for does not seem to exist anymore",
+        "m_code" : 200,
+        "known" : ["rafaballerini", "lexaloco", "jardred"],
+        "cat" : "social",
+        "protection": ["cloudflare"]
+       },
+       {
         "name" : "Behance",
         "uri_check" : "https://www.behance.net/{account}",
         "e_code" : 200,
@@ -1678,6 +1689,17 @@
         "cat" : "dating"
        },
        {
+        "name" : "FACEIT",
+        "uri_check" : "https://www.faceit.com/api/users/v1/nicknames/{account}",
+        "uri_pretty": "https://www.faceit.com/en/players/{account}",
+        "e_code" : 200,
+        "e_string" : "\"result\":\"OK\"",
+        "m_string" : "\"message\":\"user not found\"",
+        "m_code" : 404,
+        "known" : ["s1mple", "w0nderful"],
+        "cat" : "gaming"
+       },
+       {
         "name" : "Facebook",
         "uri_check" : "https://www.facebook.com/{account}/",
         "e_code" : 200,
@@ -1946,6 +1968,38 @@
         "cat" : "social"
        },
        {
+        "name" : "Freelancehunt Freelancer",
+        "uri_check" : "https://freelancehunt.com/en/freelancer/{account}.html",
+        "e_code" : 200,
+        "e_string" : "\"@id\":\"https://freelancehunt.com/en/freelancers\"",
+        "m_string" : "User not found.",
+        "m_code" : 404,
+        "known" : ["rhythmdev_top", "Zainka"],
+        "cat" : "social",
+        "protection": ["other"]
+       },
+       {
+        "name" : "Freelancehunt Employer",
+        "uri_check" : "https://freelancehunt.com/en/employer/{account}.html",
+        "e_code" : 200,
+        "e_string" : "\"@id\":\"https://freelancehunt.com/en/employers\"",
+        "m_string" : "User not found.",
+        "m_code" : 404,
+        "known" : ["vadym1232", "Dekovital"],
+        "cat" : "social",
+        "protection": ["other"]
+       },
+       {
+        "name" : "Freelance.ua",
+        "uri_check" : "https://freelance.ua/user/{account}/",
+        "e_code" : 200,
+        "e_string" : "p-profile-avatar",
+        "m_string" : "Схоже, дана сторінка не знайдена",
+        "m_code" : 404,
+        "known" : ["tkachenkoalex", "oleksandrseo1"],
+        "cat" : "social"
+       },
+       {
         "name" : "FreeSteamKeys",
         "uri_check" : "https://www.freesteamkeys.com/members/{account}/",
         "e_code" : 200,
@@ -2193,6 +2247,16 @@
         "cat" : "coding"
        },
        {
+        "name" : "GOG",
+        "uri_check" : "https://www.gog.com/u/{account}",
+        "e_code" : 200,
+        "e_string" : "window.profilesData.profileUser",
+        "m_code" : 302,
+        "m_string": "error404__img",
+        "known" : ["user", "Admin"],
+        "cat" : "gaming"
+       },
+       {
         "name" : "Goodgame_Russia",
         "uri_check" : "https://goodgame.ru/channel/{account}/",
         "e_code" : 200,
@@ -2264,6 +2328,36 @@
         "m_code" : 404,
         "known" : ["ellietalksmoney", "reallyniceimages"],
         "cat" : "shopping"
+       },
+       {
+        "name" : "Habr",
+        "uri_check" : "https://habr.com/ru/users/{account}/",
+        "e_code" : 200,
+        "e_string" : "tm-page tm-user",
+        "m_string" : "tm-error-message",
+        "m_code" : 404,
+        "known" : ["Bo0oM", "AlhimicMan"],
+        "cat" : "social"
+       },
+       {
+        "name" : "Habr Freelancer",
+        "uri_check" : "https://freelance.habr.com/freelancers/{account}",
+        "e_code" : 200,
+        "e_string" : "user-profile profile-blocks",
+        "m_string" : "icon_user_locked",
+        "m_code" : 404,
+        "known" : ["Bo0oM", "Akloom"],
+        "cat" : "social"
+       },
+       {
+        "name" : "Habr Employer",
+        "uri_check" : "https://freelance.habr.com/freelancers/{account}/employer",
+        "e_code" : 200,
+        "e_string" : "user-profile profile-blocks",
+        "m_string" : "icon_user_locked",
+        "m_code" : 404,
+        "known" : ["aufdk", "Danvantariy"],
+        "cat" : "social"
        },
        {
         "name" : "Habbo.com",
@@ -3049,6 +3143,16 @@
         "m_code" : 404,
         "known" : ["test", "janek"],
         "cat" : "images"
+       },
+       {
+        "name" : "Kwork",
+        "uri_check" : "https://kwork.ru/user/{account}",
+        "e_code" : 200,
+        "e_string" : "window.profileData",
+        "m_string" : "<not-found></not-found>",
+        "m_code" : 404,
+        "known" : ["ilkarkarakurt", "sergeymeshiy"],
+        "cat" : "social"
        },
        {
         "name" : "Lemon8",
@@ -4615,7 +4719,8 @@
         "m_string" : "\"success\":true",
         "m_code" : 200,
         "known" : ["Rita426", "Muyao_531"],
-        "cat" : "hobby"
+        "cat" : "hobby",
+        "protection": ["cloudflare"]
        },
        {
         "name" : "quitter.pl",
@@ -5284,11 +5389,12 @@
         "name" : "Spotify",
         "uri_check" : "https://open.spotify.com/user/{account}",
         "e_code" : 200,
-        "e_string" : "on Spotify</title>",
-        "m_string" : "Spotify - Web Player</title>",
-        "m_code" : 200,
+        "e_string" : "content=\"profile\"",
+        "m_string" : "Page not found",
+        "m_code" : 404,
         "known" : ["kexp_official", "mkbhd"],
-        "cat" : "music"
+        "cat" : "music",
+        "protection": ["other"]
        },
        {
         "name" : "StackOverflow",
@@ -6170,18 +6276,18 @@
         "cat" : "blog"
       },
       {
-        "name" : "Virustotal",
+        "name" : "VirusTotal",
         "uri_check" : "https://www.virustotal.com/ui/users/{account}",
         "pretty_uri" : "https://www.virustotal.com/gui/user/{account}",
         "headers" : {
                 "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:127.0) Gecko/20100101 Firefox/127.0",
                 "X-Tool": "vt-ui-main",
-                "Accept-Ianguage": "en-US,en;q=0.9,es;q=0.8",
+                "Accept-Ianguage": "en-US",
                 "X-VT-Anti-Abuse-Header": "MTAxOTFwMDcxOTEtWkc5dWRDQmlaU0JsZG2scy5xNzE4Mjc1NDI0LjUzMw=="
         },
         "e_code" : 200,
-        "e_string" :"data",
-        "m_string" : "NotFoundError",
+        "e_string" :"\"data\"",
+        "m_string" : "\"code\": \"NotFoundError\"",
         "m_code" : 404,
         "known" : ["cyber", "cybersecstu"],
         "cat" : "misc"
@@ -6314,6 +6420,16 @@
         "m_code" : 404,
         "known" : ["dave", "john"],
         "cat" : "misc"
+       },
+       {
+        "name" : "Weblancer",
+        "uri_check" : "https://www.weblancer.net/users/{account}/",
+        "e_code" : 200,
+        "e_string" : "\"user\":",
+        "m_string" : "\"page\":\"/404\"",
+        "m_code" : 404,
+        "known" : ["alpet", "WebArtyom"],
+        "cat" : "social"
        },
        {
         "name" : "weheartit",
