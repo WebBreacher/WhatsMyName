@@ -1659,8 +1659,8 @@
         "uri_check" : "https://www.faceit.com/api/users/v1/nicknames/{account}",
         "uri_pretty": "https://www.faceit.com/en/players/{account}",
         "e_code" : 200,
-        "e_string" : "\"result\": \"OK\",",
-        "m_string" : "user not found",
+        "e_string" : "\"result\":\"OK\"",
+        "m_string" : "\"message\":\"user not found\"",
         "m_code" : 404,
         "known" : ["s1mple", "w0nderful"],
         "cat" : "gaming"
@@ -2194,8 +2194,8 @@
         "uri_check" : "https://www.gog.com/u/{account}",
         "e_code" : 200,
         "e_string" : "window.profilesData.profileUser",
-        "m_code" : 404,
-        "m_string": "",
+        "m_code" : 302,
+        "m_string": "error404__img",
         "known" : ["user", "Admin"],
         "cat" : "gaming"
        },
