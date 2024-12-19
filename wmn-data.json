@@ -1035,8 +1035,8 @@
         "e_string" : "UserSearchItemContainer",
         "m_string" : "No search results found.",
         "m_code" : 200,
-        "known" : ["test"],
-        "cat" : "techc"
+        "known" : ["test", "janet"],
+        "cat" : "tech"
        },
        {
         "name" : "Coda",
@@ -1863,6 +1863,7 @@
        {
         "name" : "Folkd",
         "uri_check" : "https://www.folkd.com/?app=core&module=system&controller=ajax&do=usernameExists&input={account}",
+        "uri_pretty" : "https://www.folkd.com/search/?q={account}&quick=1&type=core_members",
         "e_code" : 200,
         "e_string" : "\"result\":\"fail\"",
         "m_string" : "\"result\":\"ok\"",
@@ -2778,7 +2779,7 @@
         "e_string" : "userinfo",
         "m_string" : "page-error notfound",
         "m_code" : 404,
-        "known" : ["instagram", "ramarim"],
+        "known" : ["therock", "ramarim"],
         "cat" : "social",
         "protection": ["cloudflare"]
        },
@@ -3566,7 +3567,7 @@
         "uri_check" : "https://modx.evo.im/profile/{account}/",
         "e_code" : 200,
         "e_string" : "class=\"profile\"",
-        "m_string" : "content-error",
+        "m_string" : "class=\"content-error\"",
         "m_code" : 404,
         "known" : ["Grinyaha", "kymage"],
         "cat" : "tech"
@@ -5699,8 +5700,7 @@
         "m_string" : "\"valid\": true",
         "m_code" : 200,
         "known" : ["tehrabbitt", "dekunukem"],
-        "cat" : "social",
-        "protection": ["shopping"],
+        "cat" : "shopping",
         "headers": {
             "Content-Type": "application/x-www-form-urlencoded"
         }
