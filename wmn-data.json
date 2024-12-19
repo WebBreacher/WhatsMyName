@@ -691,6 +691,17 @@
          "cat": "social"
        },
        {
+        "name" : "BoardGameGeek",
+        "uri_check" : "https://api.geekdo.com/api/accounts/validate/username?username={account}",
+        "uri_pretty" : "https://boardgamegeek.com/user/{account}",
+        "e_code" : 200,
+        "e_string" : "\"isValid\":false",
+        "m_string" : "\"isValid\":true",
+        "m_code" : 200,
+        "known" : ["ntrautner", "Petdoc"],
+        "cat" : "gaming"
+       },
+       {
         "name" : "BodyBuilding.com",
         "uri_check" : "http://api.bodybuilding.com/api-proxy/bbc/get?slug={account}",
         "uri_pretty" : "http://bodyspace.bodybuilding.com/{account}/",
@@ -1016,6 +1027,16 @@
         "m_code" : 301,
         "known" : ["john", "bob"],
         "cat" : "news"
+       },
+       {
+        "name" : "Community Adobe",
+        "uri_check" : "https://community.adobe.com/t5/forums/searchpage/tab/user?q={account}",
+        "e_code" : 200,
+        "e_string" : "UserSearchItemContainer",
+        "m_string" : "No search results found.",
+        "m_code" : 200,
+        "known" : ["test", "janet"],
+        "cat" : "tech"
        },
        {
         "name" : "Coda",
@@ -1840,6 +1861,18 @@
         "cat" : "social"
        },
        {
+        "name" : "Folkd",
+        "uri_check" : "https://www.folkd.com/?app=core&module=system&controller=ajax&do=usernameExists&input={account}",
+        "uri_pretty" : "https://www.folkd.com/search/?q={account}&quick=1&type=core_members",
+        "e_code" : 200,
+        "e_string" : "\"result\":\"fail\"",
+        "m_string" : "\"result\":\"ok\"",
+        "m_code" : 200,
+        "known" : ["smartplayapk", "abdulmerfantz"],
+        "cat" : "social",
+        "protection": ["other"]
+       },
+       {
         "name" : "Fodors Forum",
         "uri_check" : "https://www.fodors.com/community/profile/{account}/forum-activity",
         "e_code" : 200,
@@ -1911,6 +1944,16 @@
         "m_code" : 302,
         "known" : ["john", "ncyp23"],
         "cat" : "social"
+       },
+       {
+        "name" : "FreeSteamKeys",
+        "uri_check" : "https://www.freesteamkeys.com/members/{account}/",
+        "e_code" : 200,
+        "e_string" : "item-header-avatar",
+        "m_string" : "error404",
+        "m_code" : 404,
+        "known" : ["giveaway-su", "keygenerator"],
+        "cat" : "gaming"
        },
        {
         "name" : "freelancer",
@@ -2066,14 +2109,15 @@
         "cat" : "hobby"
        },
        {
-        "name" : "Giphy",
+        "name" : "Giphy (Channel)",
         "uri_check" : "https://giphy.com/channel/{account}",
         "e_code" : 200,
-        "e_string" : "Share on GIPHY</title>",
-        "m_string" : "<title>404 Not Found</title>",
+        "e_string" : "\\\"user_id\\\"",
+        "m_string" : "404 Not Found",
         "m_code" : 404,
-        "known" : ["buzz", "test"],
-        "cat" : "social"
+        "known" : ["teddy_99", "LastYear"],
+        "cat" : "images",
+        "protection": ["other"]
        },
        {
         "name" : "gitea",
@@ -2727,6 +2771,17 @@
         "m_code" : 404,
         "known" : ["katyperry", "kirbstr"],
         "cat" : "social"
+       },
+       {
+        "name" : "Instagram (Imginn)",
+        "uri_check" : "https://imginn.com/{account}/",
+        "e_code" : 200,
+        "e_string" : "userinfo",
+        "m_string" : "page-error notfound",
+        "m_code" : 404,
+        "known" : ["therock", "ramarim"],
+        "cat" : "social",
+        "protection": ["cloudflare"]
        },
        {
         "name": "Instagram2",
@@ -3506,6 +3561,16 @@
         "m_code" : 200,
         "known" : ["daniel", "franco"],
         "cat" : "gaming"
+       },
+       {
+        "name" : "MODX.im",
+        "uri_check" : "https://modx.evo.im/profile/{account}/",
+        "e_code" : 200,
+        "e_string" : "class=\"profile\"",
+        "m_string" : "class=\"content-error\"",
+        "m_code" : 404,
+        "known" : ["Grinyaha", "kymage"],
+        "cat" : "tech"
        },
        {
         "name" : "Mod DB",
@@ -4758,6 +4823,16 @@
         "cat" : "gaming"
        },
        {
+        "name" : "RuTracker.org",
+        "uri_check" : "https://rutracker.org/forum/profile.php?mode=viewprofile&u={account}",
+        "e_code" : 200,
+        "e_string" : "Профиль пользователя",
+        "m_string" : "Пользователь не найден",
+        "m_code" : 200,
+        "known" : ["Rutracker", "Feo156"],
+        "cat" : "misc"
+       },
+       {
         "name" : "ru_123rf",
         "uri_check" : "https://ru.123rf.com/profile_{account}",
         "e_code" : 200,
@@ -5216,6 +5291,17 @@
         "cat" : "music"
        },
        {
+        "name" : "StackOverflow",
+        "uri_check" : "https://stackoverflow.com/users/filter?search={account}",
+        "e_code" : 200,
+        "e_string" : "grid--item user-info",
+        "m_string" : "No users matched your search.",
+        "m_code" : 200,
+        "known" : ["vonc", "bergi"],
+        "cat" : "coding",
+        "protection": ["cloudflare"]
+       },
+       {
         "name" : "Steam",
         "uri_check" : "https://steamcommunity.com/id/{account}",
         "e_code" : 200,
@@ -5603,6 +5689,21 @@
         "m_string" : "Record not found",
         "known" : ["ben", "lunatic"],
         "cat" : "social"
+       },
+       {
+        "name" : "Tindie",
+        "uri_check" : "https://www.tindie.com/accounts/check_username/",
+        "uri_pretty": "https://www.tindie.com/stores/{account}/",
+        "post_body": "username={account}",
+        "e_code" : 200,
+        "e_string" : "\"valid\": false",
+        "m_string" : "\"valid\": true",
+        "m_code" : 200,
+        "known" : ["tehrabbitt", "dekunukem"],
+        "cat" : "shopping",
+        "headers": {
+            "Content-Type": "application/x-www-form-urlencoded"
+        }
        },
        {
         "name" : "Tinder",
@@ -6365,6 +6466,16 @@
         "m_code" : 404,
         "known" : ["test", "test2"],
         "cat" : "social"
+       },
+       {
+        "name" : "Xakep.ru",
+        "uri_check" : "https://xakep.ru/author/{account}/",
+        "e_code" : 200,
+        "e_string" : "authorBlock-avatar",
+        "m_string" : "Страница не найдена",
+        "m_code" : 404,
+        "known" : ["tr3harder", "stariy"],
+        "cat" : "tech"
        },
        {
         "name" : "Xanga",
