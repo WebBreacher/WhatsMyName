@@ -1888,7 +1888,7 @@
         "uri_check" : "https://www.folkd.com/?app=core&module=system&controller=ajax&do=usernameExists&input={account}",
         "uri_pretty" : "https://www.folkd.com/search/?q={account}&quick=1&type=core_members",
         "e_code" : 200,
-        "e_string" : "\"result\":\"fail\"",
+        "e_string" : "\"message\":\"That display name is in use by another member.\"",
         "m_string" : "\"result\":\"ok\"",
         "m_code" : 200,
         "known" : ["smartplayapk", "abdulmerfantz"],
