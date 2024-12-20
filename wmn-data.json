@@ -780,7 +780,7 @@
         "uri_pretty" : "https://bugcrowd.com/{account}",
         "e_code" : 200,
         "e_string" : "\"widgets\":",
-        "m_string" : "class=\\'cc-error-page__msg\\'",
+        "m_string" : "class='cc-error-page__msg'",
         "m_code" : 404,
         "known" : ["lopseg", "Ebrietas"],
         "cat" : "tech"
@@ -3812,8 +3812,8 @@
         "e_string" : "class=\"MwbUserHeader\"",
         "m_string" : "class=\"MwbError\"",
         "m_code" : 404,
-        "known" : ["ke7_2024", "jpsol"],
-        "cat" : "hobby"
+        "known" : ["ke7_2024", "alekseevvasil"],
+        "cat" : "shopping"
        },
        {
         "name" : "MyAnimeList",
