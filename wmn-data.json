@@ -631,13 +631,18 @@
        },
        {
         "name" : "Bitchute",
-        "uri_check" : "https://www.bitchute.com/channel/{account}/",
+        "uri_check" : "https://api.bitchute.com/api/beta/channel",
+        "uri_pretty" : "https://www.bitchute.com/channel/{account}/",
+        "post_body" : "{\"channel_id\":\"{account}\"}",
         "e_code" : 200,
-        "e_string" : "subscribers",
-        "m_string" : "404 - Page not found",
+        "e_string" : "channel_id",
+        "m_string" : "errors",
         "m_code" : 404,
         "known" : ["simon_parkes", "americafloats", "daindor"],
-        "cat" : "political"
+        "cat" : "political",
+        "headers" : {
+            "Content-Type": "application/json"
+        }
        },
        {
         "name" : "Blogger",
@@ -795,14 +800,19 @@
         "cat" : "social"
        },
        {
-        "name" : "buymeacoffee",
-        "uri_check" : "https://www.buymeacoffee.com/{account}",
+        "name" : "Buy Me a Coffee",
+        "uri_check" : "https://app.buymeacoffee.com/api/v1/check_availability",
+        "uri_pretty" : "https://www.buymeacoffee.com/{account}",
+        "post_body" : "{\"project_slug\":\"{account}\"}",
         "e_code" : 200,
-        "e_string" : " - Buymeacoffee</title>",
-        "m_string" : ">- Buymeacoffee</title>",
-        "m_code" : 404,
+        "e_string" : "\"available\":false",
+        "m_string" : "\"available\":true",
+        "m_code" : 200,
         "known" : ["freebird", "robinwong"],
-        "cat" : "finance"
+        "cat" : "finance",
+        "headers" : {
+            "Content-Type": "application/json"
+        }
        },
        {
         "name" : "BuzzFeed",
@@ -1023,8 +1033,8 @@
         "name" : "Clubhouse",
         "uri_check" : "https://www.clubhouse.com/@{account}",
         "e_code" : 200,
-        "e_string" : "- Clubhouse</title>",
-        "m_string" : "t find what you were looking for",
+        "e_string" : "\"user\":",
+        "m_string" : "404",
         "m_code" : 404,
         "known" : ["kirbyplessas", "rohan"],
         "cat" : "social"
@@ -2174,14 +2184,14 @@
         "protection": ["other"]
        },
        {
-        "name" : "gitea",
-        "uri_check" : "https://gitea.com/{account}",
-        "e_code" : 200,
-        "e_string" : "(Git with a cup of tea)",
-        "m_string" : "Not found.",
-        "m_code" : 404,
-        "known" : ["xin", "dev"],
-        "cat" : "coding"
+        "name": "Gitea",
+        "uri_check": "https://gitea.com/{account}",
+        "e_code": 200,
+        "e_string": "class=\"page-content user profile\"",
+        "m_string": "class=\"status-page-error\"",
+        "m_code": 404,
+        "known": ["xin", "dev"],
+        "cat": "coding"
        },
        {
         "name" : "giters",
@@ -2217,14 +2227,19 @@
         "cat" : "coding"
        },
        {
-        "name" : "gitee",
-        "uri_check" : "https://gitee.com/{account}",
-        "e_code" : 200,
-        "e_string" : "Commits, issues, and pull requests will appear",
-        "m_string" : "Gitee is more than a development platform",
-        "m_code" : 404,
-        "known" : ["maxim"],
-        "cat" : "coding"
+        "name": "Gitee",
+        "uri_check" : "https://gitee.com/check",
+        "uri_pretty": "https://gitee.com/{account}",
+        "post_body": "do=user_username&val={account}",
+        "e_code": 200,
+        "e_string": "地址已存在",
+        "m_string": "1",
+        "m_code": 200,
+        "known": ["maxim"],
+        "cat": "coding",
+        "headers" : {
+            "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8"
+        }
        },
        {
         "name" : "gloria.tv",
@@ -2247,14 +2262,14 @@
         "cat" : "coding"
        },
        {
-        "name" : "GOG",
-        "uri_check" : "https://www.gog.com/u/{account}",
-        "e_code" : 200,
-        "e_string" : "window.profilesData.profileUser",
-        "m_code" : 302,
-        "m_string": "error404__img",
-        "known" : ["user", "Admin"],
-        "cat" : "gaming"
+        "name": "GOG",
+        "uri_check": "https://www.gog.com/u/{account}",
+        "e_code": 200,
+        "e_string": "window.profilesData.profileUser",
+        "m_code": 302,
+        "m_string": "href=\"http://www.gog.com/404\"",
+        "known": ["user", "Admin"],
+        "cat": "gaming"
        },
        {
         "name" : "Goodgame_Russia",
@@ -3044,14 +3059,14 @@
         "cat" : "coding"
        },
        {
-        "name" : "Keybase",
-        "uri_check" : "https://keybase.io/{account}",
-        "e_code" : 200,
-        "e_string" : "username",
-        "m_string" : "sorry, not found",
-        "m_code" : 404,
-        "known" : ["test", "mubix"],
-        "cat" : "social"
+        "name": "Keybase",
+        "uri_check": "https://keybase.io/{account}",
+        "e_code": 200,
+        "e_string": "class=\"profile-heading\"",
+        "m_string": "<h1>Oy!</h1>",
+        "m_code": 404,
+        "known": ["test", "mubix"],
+        "cat": "social"
        },
        {
         "name" : "Kickstarter",
@@ -5418,14 +5433,19 @@
         "cat" : "gaming"
        },
        {
-        "name" : "steemit",
-        "uri_check" : "https://steemit.com/@{account}",
-        "e_code" : 200,
-        "e_string" : "blog",
-        "m_string" : "Page Not Found - Steemit",
-        "m_code" : 301,
-        "known" : ["petlover", "zalat"],
-        "cat" : "social"
+        "name": "Steemit",
+        "uri_check" : "https://signup.steemit.com/api/check_username",
+        "uri_pretty": "https://steemit.com/@{account}",
+        "post_body" : "{\"username\":\"{account}\"}",
+        "e_code": 200,
+        "e_string": "\"error\":",
+        "m_string": "\"success\":true",
+        "m_code": 200,
+        "known": ["petlover", "zalat"],
+        "cat": "social",
+        "headers" : {
+            "Content-Type": "application/json"
+        }
        },
        {
         "name" : "steller",
@@ -5470,25 +5490,26 @@
         "cat" : "finance"
        },
        {
-        "name" : "StreamLabs",
-        "uri_check" : "https://streamlabs.com/api/v6/user/{account}",
-        "uri_pretty" : "https://streamlabs.com/{account}/tip",
-        "e_code" : 200,
-        "e_string" : "display_name",
-        "m_code" : 401,
-        "m_string" : "UNAUTHORIZED",
-        "known" : ["veibae", "cutie_cori"],
-        "cat" : "finance"
+        "name": "StreamLabs",
+        "uri_check": "https://streamlabs.com/api/v6/user/{account}",
+        "uri_pretty": "https://streamlabs.com/{account}/tip",
+        "e_code": 200,
+        "e_string": "\"id\":",
+        "m_code": 401,
+        "m_string": "Unauthorized",
+        "known": ["veibae", "cutie_cori"],
+        "cat": "finance"
        },
        {
-        "name" : "Stripchat",
-        "uri_check" : "https://stripchat.com/{account}",
-        "e_code" : 200,
-        "e_string" : "I Do in My Shows:",
-        "m_string" : "Oops. The page you were looking for doesn't exist",
-        "m_code" : 404,
-        "known" : ["DulcieRichard", "Katie-Mili"],
-        "cat" : "xx NSFW xx"
+        "name": "Stripchat",
+        "uri_check" : "https://stripchat.com/api/front/users/checkUsername?username={account}",
+        "uri_pretty": "https://stripchat.com/{account}",
+        "e_code": 400,
+        "e_string": "\"error\":",
+        "m_string": "[]",
+        "m_code": 200,
+        "known": ["DulcieRichard", "Katie-Mili"],
+        "cat": "xx NSFW xx"
        },
        {
         "name" : "Subscribestar",
