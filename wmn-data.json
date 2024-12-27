@@ -164,16 +164,6 @@
         "cat" : "finance"
        },
        {
-       "name" : "aflam",
-       "uri_check" : "https://www.aflam4you.net/profile.html?u={account}",
-       "e_code" : 200,
-       "e_string" : ") on بث حي و مباشر",
-       "m_string" : "Plz Visit",
-       "m_code" : 302,
-       "known" : ["ahmed", "brahim01"],
-       "cat" : "misc"
-       },
-       {
         "name" : "Airline_Pilot_Life",
         "uri_check" : "https://airlinepilot.life/u/{account}.json",
         "uri_pretty" : "https://airlinepilot.life/u/{account}",
@@ -224,16 +214,6 @@
         "m_code" : 404,
         "known" : ["igor", "pavel"],
         "cat" : "social"
-       },
-       {
-        "name" : "allesovercrypto",
-        "uri_check" : "https://allesovercrypto.nl/user/{account}",
-        "e_code" : 200,
-        "e_string" : "Favoriete coins",
-        "m_string" : "De opgevraagde pagina kon niet gevonden worden.",
-        "m_code" : 200,
-        "known" : ["gijsv", "patrick-suiker"],
-        "cat" : "finance"
        },
        {
         "name" : "allmylinks",
@@ -635,8 +615,8 @@
         "uri_pretty" : "https://www.bitchute.com/channel/{account}/",
         "post_body" : "{\"channel_id\":\"{account}\"}",
         "e_code" : 200,
-        "e_string" : "channel_id",
-        "m_string" : "errors",
+        "e_string" : "\"channel_id\":",
+        "m_string" : "\"errors\":",
         "m_code" : 404,
         "known" : ["simon_parkes", "americafloats", "daindor"],
         "cat" : "political",
@@ -2228,18 +2208,13 @@
        },
        {
         "name": "Gitee",
-        "uri_check" : "https://gitee.com/check",
-        "uri_pretty": "https://gitee.com/{account}",
-        "post_body": "do=user_username&val={account}",
+        "uri_check": "https://gitee.com/{account}",
         "e_code": 200,
-        "e_string": "地址已存在",
-        "m_string": "1",
-        "m_code": 200,
-        "known": ["maxim"],
-        "cat": "coding",
-        "headers" : {
-            "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8"
-        }
+        "e_string": "class=\"ui container user_page\"",
+        "m_string": "class=\"container error midCenter\"",
+        "m_code": 404,
+        "known": ["maxim", "fupengfei"],
+        "cat": "coding"
        },
        {
         "name" : "gloria.tv",
@@ -3221,16 +3196,6 @@
         "cat" : "gaming"
        },
        {
-        "name" : "likeevideo",
-        "uri_check" : "https://likee.video/@{account}",
-        "e_code" : 200,
-        "e_string" : "https://img.like.video/",
-        "m_string" : " </h1>",
-        "m_code" : 404,
-        "known" : ["owlthorns", "Severkosh"],
-        "cat" : "social"
-       },
-       {
         "name" : "LINE",
         "uri_check" : "https://line.me/R/ti/p/@{account}?from=page",
         "e_code" : 200,
@@ -4027,16 +3992,6 @@
         "m_code" : 404,
         "known" : ["notabug", "hp", "zPlus"],
         "cat" : "coding"
-       },
-       {
-        "name" : "Noplace",
-        "uri_check" : "https://api.nospace.app/api/v1/profiles/username/availability?username={account}",
-        "e_code" : 409,
-        "e_string" : "Username is already taken",
-        "m_code" : 204,
-        "m_string": "",
-        "known" : ["user", "janett"],
-        "cat" : "social"
        },
        {
         "name" : "Note",
@@ -5496,7 +5451,7 @@
         "e_code": 200,
         "e_string": "\"id\":",
         "m_code": 401,
-        "m_string": "Unauthorized",
+        "m_string": "<title>Unauthorized</title>",
         "known": ["veibae", "cutie_cori"],
         "cat": "finance"
        },
