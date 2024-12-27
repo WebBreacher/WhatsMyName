@@ -790,6 +790,7 @@
         "m_code" : 200,
         "known" : ["freebird", "robinwong"],
         "cat" : "finance",
+        "protection" : ["cloudflare"],
         "headers" : {
             "Content-Type": "application/json"
         }
