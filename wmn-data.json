@@ -760,13 +760,14 @@
         "cat" : "hobby"
        },
        {
-        "name" : "Bugcrowd",
-        "uri_check" : "https://bugcrowd.com/{account}",
+        "name" : "BugCrowd",
+        "uri_check" : "https://bugcrowd.com/{account}/profile_widgets",
+        "uri_pretty" : "https://bugcrowd.com/{account}",
         "e_code" : 200,
-        "e_string" : "s researcher profile on Bugcrowd",
-        "m_string" : ">Bugcrowd | Error",
+        "e_string" : "\"widgets\":",
+        "m_string" : "class='cc-error-page__msg'",
         "m_code" : 404,
-        "known" : ["bitquark", "mert"],
+        "known" : ["lopseg", "Ebrietas"],
         "cat" : "tech"
        },
        {
@@ -1878,7 +1879,7 @@
         "uri_check" : "https://www.folkd.com/?app=core&module=system&controller=ajax&do=usernameExists&input={account}",
         "uri_pretty" : "https://www.folkd.com/search/?q={account}&quick=1&type=core_members",
         "e_code" : 200,
-        "e_string" : "\"result\":\"fail\"",
+        "e_string" : "\"message\":\"That display name is in use by another member.\"",
         "m_string" : "\"result\":\"ok\"",
         "m_code" : 200,
         "known" : ["smartplayapk", "abdulmerfantz"],
@@ -2470,6 +2471,22 @@
         "cat" : "hobby"
        },
        {
+        "name" : "hackrocks",
+        "uri_check" : "https://hackrocks.com/api/users/profile",
+        "uri_pretty" : "https://hackrocks.com/id/{account}",
+        "post_body" : "{\"username\":\"{account}\"}",
+        "e_code" : 200,
+        "e_string" : "\"username\":",
+        "m_string" : "\"error_data\":\"USER_NOT_FOUND\"",
+        "m_code" : 404,
+        "known" : ["mespejo", "NeoWaveCode"],
+        "cat" : "tech",
+        "headers": {
+            "Accept": "application/json, text/plain, */*",
+            "Content-Type": "application/json"
+        }
+       },
+       {
         "name" : "Hacker News",
         "uri_check" : "https://news.ycombinator.com/user?id={account}",
         "e_code" : 200,
@@ -2502,13 +2519,18 @@
        },
        {
         "name" : "HackerOne",
-        "uri_check" : "https://hackerone.com/{account}",
+        "uri_check" : "https://hackerone.com/graphql",
+        "uri_pretty": "https://hackerone.com/{account}",
+        "post_body" : "{\"query\":\"query($url: URI!) {\\n        resource(url: $url) {\\n            ... on User { username }\\n        }\\n    }\",\"variables\":{\"url\":\"{account}\"}}",
         "e_code" : 200,
-        "e_string" : "profile that highlights",
-        "m_string" : "Page not found",
-        "m_code" : 301,
-        "known" : ["yashrs", "ameerpornillos"],
-        "cat" : "tech"
+        "e_string" : "\"username\":",
+        "m_string" : "\"type\":\"NOT_FOUND\"",
+        "m_code" : 200,
+        "known" : ["born2hack", "godiego"],
+        "cat" : "tech",
+        "headers": {
+            "Content-Type": "application/json"
+        }
        },
        {
         "name" : "HackerRank",
@@ -2924,6 +2946,17 @@
         "cat" : "dating"
        },
        {
+        "name" : "Intigriti",
+        "uri_check" : "https://app.intigriti.com/api/user/public/profile/{account}",
+        "uri_pretty" : "https://app.intigriti.com/profile/{account}",
+        "e_code" : 200,
+        "e_string" : "\"userName\":",
+        "m_string" : "class=\"error-page-container\"",
+        "m_code" : 404,
+        "known" : ["vampire01", "kenshiin"],
+        "cat" : "tech"
+       },
+       {
         "name" : "isMyGirl",
         "uri_check" : "https://api.fxcservices.com/pub/user/{account}",
         "uri_pretty" : "https://ismygirl.com/{account}",
@@ -3137,13 +3170,18 @@
        },
        {
         "name" : "Kwork",
-        "uri_check" : "https://kwork.ru/user/{account}",
+        "uri_check" : "https://kwork.ru/user_kworks/{account}",
+        "uri_pretty" : "https://kwork.ru/user/{account}",
+        "post_body" : "{\"username\":\"{account}\",\"offset\":0,\"limit\":10}",
         "e_code" : 200,
-        "e_string" : "window.profileData",
-        "m_string" : "<not-found></not-found>",
-        "m_code" : 404,
+        "e_string" : "\"success\":true",
+        "m_string" : "\"success\":false",
+        "m_code" : 200,
         "known" : ["ilkarkarakurt", "sergeymeshiy"],
-        "cat" : "social"
+        "cat" : "social",
+        "headers": {
+            "Content-Type": "application/json"
+        }
        },
        {
         "name" : "Lemon8",
@@ -3747,6 +3785,16 @@
         "m_code" : 404,
         "known" : ["anuel", "esteban"],
         "cat" : "xx NSFW xx"
+       },
+       {
+        "name" : "myWishBoard",
+        "uri_check" : "https://mywishboard.com/@{account}",
+        "e_code" : 200,
+        "e_string" : "class=\"MwbUserHeader\"",
+        "m_string" : "class=\"MwbError\"",
+        "m_code" : 404,
+        "known" : ["ke7_2024", "alekseevvasil"],
+        "cat" : "shopping"
        },
        {
         "name" : "MyAnimeList",
@@ -5389,6 +5437,16 @@
         "cat" : "gaming"
        },
        {
+        "name" : "SteamGifts",
+        "uri_check" : "https://www.steamgifts.com/user/{account}",
+        "e_code" : 200,
+        "e_string" : "\"identifier\":",
+        "m_string" : "",
+        "m_code" : 301,
+        "known" : ["AbsurdPoncho", "Wolod1402"],
+        "cat" : "gaming"
+       },
+       {
         "name": "Steemit",
         "uri_check" : "https://signup.steemit.com/api/check_username",
         "uri_pretty": "https://steemit.com/@{account}",
@@ -5883,9 +5941,10 @@
        {
         "name" : "TryHackMe",
         "uri_check" : "https://tryhackme.com/api/user/exist/{account}",
+        "uri_pretty" : "https://tryhackme.com/r/p/{account}",
         "e_code" : 200,
-        "e_string" : "true",
-        "m_string" : "false",
+        "e_string" : "\"success\":true",
+        "m_string" : "\"success\":false",
         "m_code" : 200,
         "known" : ["user", "goyalyuval15"],
         "cat" : "tech"
@@ -6680,6 +6739,17 @@
         "m_code" : 404,
         "known" : ["j5CYhsvD2yrunyyoZvSvKA", "GHoG4X4FY8D8L563zzPX5w"],
         "cat" : "shopping"
+       },
+       {
+        "name" : "YesWeHack",
+        "uri_check" : "https://api.yeswehack.com/hunters/{account}",
+        "uri_pretty" : "https://yeswehack.com/hunters/{account}",
+        "e_code" : 200,
+        "e_string" : "\"username\":",
+        "m_string" : "\"code\":404",
+        "m_code" : 404,
+        "known" : ["xel", "rabhi"],
+        "cat" : "tech"
        },
        {
         "name" : "youpic",
