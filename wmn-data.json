@@ -802,7 +802,7 @@
        {
         "name" : "Buy Me a Coffee",
         "uri_check" : "https://app.buymeacoffee.com/api/v1/check_availability",
-        "uri_pretty" : "https://www.buymeacoffee.com/{account}",
+        "uri_pretty" : "https://buymeacoffee.com/{account}",
         "post_body" : "{\"project_slug\":\"{account}\"}",
         "e_code" : 200,
         "e_string" : "\"available\":false",
@@ -2262,14 +2262,14 @@
         "cat" : "coding"
        },
        {
-        "name": "GOG",
-        "uri_check": "https://www.gog.com/u/{account}",
-        "e_code": 200,
-        "e_string": "window.profilesData.profileUser",
-        "m_code": 302,
-        "m_string": "href=\"http://www.gog.com/404\"",
-        "known": ["user", "Admin"],
-        "cat": "gaming"
+        "name" : "GOG",
+        "uri_check" : "https://www.gog.com/u/{account}",
+        "e_code" : 200,
+        "e_string" : "window.profilesData.profileUser",
+        "m_code" : 302,
+        "m_string" : "href=\"http://www.gog.com/404\"",
+        "known" : ["user", "Admin"],
+        "cat" : "gaming"
        },
        {
         "name" : "Goodgame_Russia",
@@ -3059,14 +3059,14 @@
         "cat" : "coding"
        },
        {
-        "name": "Keybase",
-        "uri_check": "https://keybase.io/{account}",
-        "e_code": 200,
-        "e_string": "class=\"profile-heading\"",
-        "m_string": "<h1>Oy!</h1>",
-        "m_code": 404,
-        "known": ["test", "mubix"],
-        "cat": "social"
+        "name" : "Keybase",
+        "uri_check" : "https://keybase.io/{account}",
+        "e_code" : 200,
+        "e_string" : "class=\"profile-heading\"",
+        "m_string" : "<h1>Oy!</h1>",
+        "m_code" : 404,
+        "known" : ["test", "mubix"],
+        "cat" : "social"
        },
        {
         "name" : "Kickstarter",
