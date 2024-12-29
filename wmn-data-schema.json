@@ -194,6 +194,22 @@
 						],
 						"default": ""
 					},
+					"protection": {
+						"$id": "#root/sites/items/protection",
+						"title": "Protection",
+						"type": "array",
+						"default": [],
+						"items":{
+							"$id": "#root/sites/items/protection/items",
+							"title": "Items",
+							"type": "string",
+							"default": "",
+							"examples": [
+								"cloudflare", "captcha"
+							],
+							"pattern": "^.*$"
+						}
+					},
 					"headers": {
 						"$id": "#root/sites/items/headers",
 						"title": "Headers",

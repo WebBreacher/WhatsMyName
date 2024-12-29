@@ -6,7 +6,7 @@
 
 What is WhatsMyName? It is a project that [Micah "WebBreacher" Hoffman](https://webbreacher.com) created in 2015 with the goal of discovering if usernames were used on a given website. He was frustrated with the false positives that were present in the username checkers of that time and so he made his own. Fast forward to today and many people have helped this open-source project evolve into what it is today.
 
-If you are an OSINT person that has come here to run the tool, well, you are probably a bit disappointed right now. In May 2023, we decided to remove all checker scripts from the project and just focus on the project's core; its data file (`wmn-dat.json`).
+If you are an OSINT person that has come here to run the tool, well, you are probably a bit disappointed right now. In May 2023, we removed all checker scripts from the project and focus on the project's core: its data file (`wmn-dat.json`).
 
 So, we will keep finding sites and adding them and you can feel free to try any of the checker sites and scripts below that use our data.
 
@@ -40,6 +40,7 @@ For a site to be included in WMN it has to:
 * [WMN_screenshooter](https://github.com/swedishmike/WMN_screenshooter) a helper script that uses Selenium to try and grab screenshots of identified profile pages.
 * [WhatsMyName-Client](https://github.com/grabowskiadrian/WhatsMyName-Client) a simple Python script with 'request headers' and 'POST requests' support made by [@grabowskiadrian](https://github.com/grabowskiadrian). The script also allows you to test the configuration of the wmn-data.json file.
 * [WhatsMyName-Web](https://github.com/AXRoux/WhatsMyName-Web) **Whats My Name-Web** is a simple Flask web app iteration of WhatsMyName made by [@AXRoux](https://github.com/AXRoux/)
+* [WhatsMyName Docker](https://github.com/kodamaChameleon/wmn-docker) is a Docker API Wrapper over this WhatsMyName tool. Dockerization made by [@kodamaChameleon](https://github.com/kodamaChameleon)
 
 ## Content
 
