@@ -270,7 +270,7 @@
             "accept": "application/json",
             "Content-Type": "application/json"
         }
-       },  
+       },
        {
         "name" : "anonup",
         "uri_check" : "https://anonup.com/@{account}",
@@ -1251,7 +1251,9 @@
         "m_code" : 500,
         "m_string" : "\"page\":\"/_error\"",
         "known" : ["landon", "greg"],
-        "cat" : "tech"
+        "cat" : "tech",
+        "protection" : ["cloudflare"],
+        "valid" : false
        },
        {
         "name" : "darudar",
@@ -3724,7 +3726,7 @@
         "m_code" : 404,
         "known" : ["aesthetics", "pif"],
         "cat" : "hobby"
-       },  
+       },
        {
         "name" : "moxfield",
         "uri_check" : "https://www.moxfield.com/users/{account}",
