@@ -1253,7 +1253,7 @@
         "known" : ["landon", "greg"],
         "cat" : "tech",
         "protection" : ["cloudflare"],
-        "valid" : False
+        "valid" : false
        },
        {
         "name" : "darudar",
