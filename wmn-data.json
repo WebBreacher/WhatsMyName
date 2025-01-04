@@ -6866,9 +6866,9 @@
        {
         "name" : "zoomitir",
         "uri_check" : "https://www.zoomit.ir/user/{account}/",
-        "e_code" : 200,
-        "e_string" : "پروفایل - زومیت",
-        "m_string" : "404 Not found",
+        "e_code" : 301,
+        "e_string" : "",
+        "m_string" : "<title>خطای ۴۰۴ - صفحه یافت نشد</title>",
         "m_code" : 404,
         "known" : ["rezaghezi", "hosssssein"],
         "cat" : "tech"
