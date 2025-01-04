@@ -6845,11 +6845,11 @@
        },
        {
         "name" : "zmarsa.com",
-        "uri_check" : "https://zmarsa.com/uzytkownik/{account}/glowna/",
+        "uri_check" : "https://zmarsa.com/uzytkownik/{account}",
         "e_code" : 200,
-        "e_string" : "Galeria użytkownika",
-        "m_string" : "Błąd na stronie",
-        "m_code" : 500,
+        "e_string" : "Statystyki",
+        "m_string" : "<title>Error 404 - zMarsa.com<",
+        "m_code" : 404,
         "known" : ["janek", "test"],
         "cat" : "xx NSFW xx"
        },
@@ -6861,14 +6861,15 @@
         "m_string" : "This is a 404 page and we think it's fairly clear",
         "m_code" : 404,
         "known" : ["john", "jess"],
-        "cat" : "social"
+        "cat" : "social",
+        "headers" : {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:133.0) Gecko/20100101 Firefox/133.0"}
        },
        {
         "name" : "zoomitir",
         "uri_check" : "https://www.zoomit.ir/user/{account}/",
-        "e_code" : 200,
-        "e_string" : "پروفایل - زومیت",
-        "m_string" : "404 Not found",
+        "e_code" : 301,
+        "e_string" : "",
+        "m_string" : "<title>خطای ۴۰۴ - صفحه یافت نشد</title>",
         "m_code" : 404,
         "known" : ["rezaghezi", "hosssssein"],
         "cat" : "tech"
@@ -6908,9 +6909,9 @@
         "name" : "Kwai",
         "uri_check" : "https://www.kwai.com/@{account}",
         "e_code" : 200,
-        "e_string" : "ProfilePage",
-        "m_string" : "class=\"network\"",
-        "m_code" : 404,
+        "e_string" : "name=\"title\"",
+        "m_string" : "<title>Kwai</title>",
+        "m_code" : 200,
         "known" : ["carlito", "taylor"],
         "cat" : "social"
       }
