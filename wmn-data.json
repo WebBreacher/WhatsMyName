@@ -6845,11 +6845,11 @@
        },
        {
         "name" : "zmarsa.com",
-        "uri_check" : "https://zmarsa.com/uzytkownik/{account}/glowna/",
+        "uri_check" : "https://zmarsa.com/uzytkownik/{account}",
         "e_code" : 200,
-        "e_string" : "Galeria użytkownika",
-        "m_string" : "Błąd na stronie",
-        "m_code" : 500,
+        "e_string" : "Statystyki",
+        "m_string" : "<title>Error 404 - zMarsa.com<",
+        "m_code" : 404,
         "known" : ["janek", "test"],
         "cat" : "xx NSFW xx"
        },
