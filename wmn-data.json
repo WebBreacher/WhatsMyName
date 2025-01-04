@@ -6908,9 +6908,9 @@
         "name" : "Kwai",
         "uri_check" : "https://www.kwai.com/@{account}",
         "e_code" : 200,
-        "e_string" : "ProfilePage",
-        "m_string" : "class=\"network\"",
-        "m_code" : 404,
+        "e_string" : "name=\"title\"",
+        "m_string" : "<title>Kwai</title>",
+        "m_code" : 200,
         "known" : ["carlito", "taylor"],
         "cat" : "social"
       }
