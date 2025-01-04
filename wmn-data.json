@@ -6757,8 +6757,8 @@
         "name" : "youpic",
         "uri_check" : "https://youpic.com/photographer/{account}",
         "e_code" : 200,
-        "e_string" : "- Photographer - YouPic",
-        "m_string" : "Welcome to the infamous 404 page - YouPic",
+        "e_string" : "<meta name=\"og:title\"",
+        "m_string" : "<title>YouPic — Not Found</title>",
         "m_code" : 404,
         "known" : ["photodude", "mike"],
         "cat" : "hobby"
