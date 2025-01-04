@@ -6798,10 +6798,11 @@
         "uri_check" : "https://mini.zbiornik.com/{account}",
         "e_code" : 200,
         "e_string" : "INFO",
-        "m_string" : "Szukaj",
-        "m_code" : 200,
+        "m_string" : "",
+        "m_code" : 301,
         "known" : ["69uzytkownik69", "Soif"],
-        "cat" : "xx NSFW xx"
+        "cat" : "xx NSFW xx",
+        "headers" : {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:133.0) Gecko/20100101 Firefox/133.0"}
        },
        {
         "name" : "Zenn",
