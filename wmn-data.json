@@ -6614,7 +6614,7 @@
        },
        {
         "name" : "Wykop",
-        "uri_check" : "https://www.wykop.pl/ludzie/{account}/",
+        "uri_check" : "https://wykop.pl/ludzie/{account}",
         "e_code" : 200,
         "e_string" : "<title>Profil:",
         "m_string" : "Wystąpił błąd 404.",
