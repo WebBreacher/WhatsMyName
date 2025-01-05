@@ -6550,7 +6550,8 @@
         "m_string" : "People - Wireclub",
         "m_code" : 301,
         "known" : ["deae", "cheerfulsarcasm", "braydenskiresort"],
-        "cat" : "social"
+        "cat" : "social",
+        "protection": ["other"]
        },
        {
         "name" : "Wakatime",
