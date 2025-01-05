@@ -6442,7 +6442,7 @@
         "name" : "Weasyl",
         "uri_check" : "https://www.weasyl.com/~{account}",
         "e_code" : 200,
-        "e_string" : "&#39;s profile — Weasyl</title>",
+        "e_string" : "profile — Weasyl</title>",
         "m_string" : "This user doesn't seem to be in our database.",
         "m_code" : 404,
         "known" : ["weasyl", "test"],
