@@ -6388,7 +6388,7 @@
        },
        {
         "name" : "watchmemore.com",
-        "uri_check" : "https://api.watchmemore.com/api3/profile/{account}/",
+        "uri_check" : "https://api.watchmemore.com/api4/profile/{account}/",
         "uri_pretty" : "https://watchmemore.com/{account}/",
         "e_code" : 200,
         "e_string" : "displayName",
