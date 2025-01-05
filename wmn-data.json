@@ -6422,9 +6422,9 @@
         "uri_check" : "https://watchmyfeed.com/{account}",
         "e_code" : 200,
         "e_string" : "SEND ME A TIP",
-        "m_string" : "<html lang=",
+        "m_string" : "",
         "m_code" : 302,
-        "known" : ["zoe-marie", "shay-loveless"],
+        "known" : ["jennifer-ann", "shay-loveless"],
         "cat" : "xx NSFW xx"
        },
        {
