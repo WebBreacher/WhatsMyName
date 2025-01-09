@@ -6181,12 +6181,12 @@
         "name" : "vsco",
         "uri_check" : "https://vsco.co/{account}/gallery",
         "e_code" : 200,
-        "e_string" : "UserProfileGallery",
-        "m_string" : "Page Not Found | VSCO</title>",
+        "e_string" : "permaSubdomain",
+        "m_string" : "\"error\":\"site_not_found\"}",
         "m_code" : 404,
         "known" : ["sam", "becca"],
         "cat" : "social",
-        "headers" : {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:133.0) Gecko/20100101 Firefox/133.0"}
+        "headers": {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:133.0) Gecko/20100101 Firefox/133.0"}
        },
        {
         "name" : "Venmo",
