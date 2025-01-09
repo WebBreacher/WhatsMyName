@@ -6365,7 +6365,7 @@
        },
        {
         "name" : "watchmemore.com",
-        "uri_check" : "https://api.watchmemore.com/api3/profile/{account}/",
+        "uri_check" : "https://api.watchmemore.com/api4/profile/{account}/",
         "uri_pretty" : "https://watchmemore.com/{account}/",
         "e_code" : 200,
         "e_string" : "displayName",
@@ -6399,9 +6399,9 @@
         "uri_check" : "https://watchmyfeed.com/{account}",
         "e_code" : 200,
         "e_string" : "SEND ME A TIP",
-        "m_string" : "<html lang=",
+        "m_string" : "",
         "m_code" : 302,
-        "known" : ["zoe-marie", "shay-loveless"],
+        "known" : ["jennifer-ann", "shay-loveless"],
         "cat" : "xx NSFW xx"
        },
        {
@@ -6419,7 +6419,7 @@
         "name" : "Weasyl",
         "uri_check" : "https://www.weasyl.com/~{account}",
         "e_code" : 200,
-        "e_string" : "&#39;s profile — Weasyl</title>",
+        "e_string" : "profile — Weasyl</title>",
         "m_string" : "This user doesn't seem to be in our database.",
         "m_code" : 404,
         "known" : ["weasyl", "test"],
@@ -6443,8 +6443,9 @@
         "e_string" : "\"user\":",
         "m_string" : "\"page\":\"/404\"",
         "m_code" : 404,
-        "known" : ["alpet", "WebArtyom"],
-        "cat" : "social"
+        "known" : ["kevin", "WebArtyom"],
+        "cat" : "social",
+        "headers": {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:133.0) Gecko/20100101 Firefox/133.0"}
        },
        {
         "name" : "weheartit",
@@ -6526,7 +6527,8 @@
         "m_string" : "People - Wireclub",
         "m_code" : 301,
         "known" : ["deae", "cheerfulsarcasm", "braydenskiresort"],
-        "cat" : "social"
+        "cat" : "social",
+        "protection": ["other"]
        },
        {
         "name" : "Wakatime",
@@ -6590,7 +6592,7 @@
        },
        {
         "name" : "Wykop",
-        "uri_check" : "https://www.wykop.pl/ludzie/{account}/",
+        "uri_check" : "https://wykop.pl/ludzie/{account}",
         "e_code" : 200,
         "e_string" : "<title>Profil:",
         "m_string" : "Wystąpił błąd 404.",
@@ -6630,16 +6632,6 @@
         "cat" : "gaming"
        },
        {
-        "name" : "XEPHULA",
-        "uri_check" : "https://xephula.com/{account}",
-        "e_code" : 200,
-        "e_string" : "div class=\"about-list-item\"",
-        "m_string" : "OOPS! PAGE NOT BE FOUND",
-        "m_code" : 404,
-        "known" : ["MetalKyng", "CandiceSpiller"],
-        "cat" : "social"
-       },
-       {
         "name" : "xHamster",
         "uri_check" : "https://xhamster.com/users/{account}",
         "e_code" : 200,
@@ -6653,7 +6645,7 @@
         "name" : "Xing",
         "uri_check" : "https://www.xing.com/profile/{account}",
         "e_code" : 200,
-        "e_string" : "super-ellipsestyles__ImageContainer-vaubmx-1",
+        "e_string" : "<meta data-rh=",
         "m_string" : "404 Not Found | XING",
         "m_code" : 404,
         "known" : ["Andy_Hausmann", "Stephan_Abele2"],
