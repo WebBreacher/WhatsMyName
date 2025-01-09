@@ -6734,8 +6734,8 @@
         "name" : "youpic",
         "uri_check" : "https://youpic.com/photographer/{account}",
         "e_code" : 200,
-        "e_string" : "- Photographer - YouPic",
-        "m_string" : "Welcome to the infamous 404 page - YouPic",
+        "e_string" : "<meta name=\"og:title\"",
+        "m_string" : "<title>YouPic — Not Found</title>",
         "m_code" : 404,
         "known" : ["photodude", "mike"],
         "cat" : "hobby"
@@ -6775,10 +6775,11 @@
         "uri_check" : "https://mini.zbiornik.com/{account}",
         "e_code" : 200,
         "e_string" : "INFO",
-        "m_string" : "Szukaj",
-        "m_code" : 200,
+        "m_string" : "",
+        "m_code" : 301,
         "known" : ["69uzytkownik69", "Soif"],
-        "cat" : "xx NSFW xx"
+        "cat" : "xx NSFW xx",
+        "headers" : {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:133.0) Gecko/20100101 Firefox/133.0"}
        },
        {
         "name" : "Zenn",
@@ -6792,21 +6793,23 @@
       },
        {
         "name" : "Zepeto",
-        "uri_check" : "https://user.zepeto.me/{account}?language=en",
+        "uri_pretty" : "https://web.zepeto.me/share/user/profile/{account}?language=en",
+        "uri_check" : "https://gw-napi.zepeto.io/profiles/{account}",
         "e_code" : 200,
-        "e_string" : "content=\"How would you look as an avatar? Look at mine!",
-        "m_string" : "<title>ZEPETO</title>",
+        "e_string" : "zepetoId\":",
+        "m_string" : "errorCode\":",
         "m_code" : 200,
         "known" : ["joe", "james"],
         "cat" : "social"
        },
        {
         "name" : "zhihu",
-        "uri_check" : "https://www.zhihu.com/people/{account}",
+        "uri_check" : "https://api.zhihu.com/books/people/{account}/publications?offset=0&limit=5",
+        "uri_pretty" : "https://www.zhihu.com/people/{account}",
         "e_code" : 200,
-        "e_string" : "zhihu:voteupCount",
-        "m_string" : "ErrorPage-subtitle",
-        "m_code" : 400,
+        "e_string" : "\"is_start\": true",
+        "m_string" : "\"name\": \"NotFoundException\"",
+        "m_code" : 404,
         "known" : ["lushnis", "kan-shu-jiao-hua-shai-tai-yang"],
         "cat" : "social"
        },
