@@ -6057,7 +6057,7 @@
        },
        {
         "name" : "UEF CONNECT",
-        "uri_check" : "https://uefconnect.uef.fi/en/person/{account}/",
+        "uri_check" : "https://uefconnect.uef.fi/en/{account}/",
         "e_code" : 200,
         "e_string" : "profile-page-header__info",
         "m_string" : "<title>Page not found - UEFConnect</title>",
