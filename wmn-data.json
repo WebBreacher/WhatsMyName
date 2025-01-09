@@ -1244,18 +1244,6 @@
         "cat" : "gaming"
        },
        {
-        "name" : "character.ai",
-        "uri_check" : "https://character.ai/profile/{account}",
-        "e_code" : 200,
-        "e_string" : "\"page\":\"/profile/[username]\"",
-        "m_code" : 500,
-        "m_string" : "\"page\":\"/_error\"",
-        "known" : ["landon", "greg"],
-        "cat" : "tech",
-        "protection" : ["cloudflare"],
-        "valid" : false
-       },
-       {
         "name" : "darudar",
         "uri_check" : "https://darudar.org/users/{account}/",
         "e_code" : 200,
@@ -3347,17 +3335,6 @@
         "m_code" : 200,
         "known" : ["baywolfmusic", "johnebaker"],
         "cat" : "music"
-       },
-       {
-        "name" : "MANYVIDS",
-        "uri_check" : "https://www.manyvids.com/bff/search/results?keywords={account}",
-        "uri_pretty" : "https://www.manyvids.com/results.php?keywords={account}",
-        "e_code" : 200,
-        "e_string" : "\"id\":",
-        "m_string" : "did not return any results",
-        "m_code" : 200,
-        "known" : ["alexbreecooper", "sweetkiss_69"],
-        "cat" : "xx NSFW xx"
        },
        {
         "name" : "MapMyTracks",
