@@ -370,6 +370,17 @@
         "cat" : "art"
        },
        {
+        "name" : "ArchWiki",
+        "uri_check" : "https://wiki.archlinux.org/api.php?action=query&format=json&list=users&ususers={account}&usprop=cancreate&formatversion=2&errorformat=html&errorsuselocal=true&uselang=en",
+        "uri_pretty" : "https://wiki.archlinux.org/title/User:{account}",
+        "e_code" : 200,
+        "e_string" : "\"userid\":",
+        "m_string" : "\"missing\":true",
+        "m_code" : 200,
+        "known" : ["Lahwaacz", "Erus_Iluvatar"],
+        "cat" : "social"
+       },
+       {
         "name" : "asciinema",
         "uri_check" : "https://asciinema.org/~{account}",
         "e_code" : 200,
@@ -7031,17 +7042,6 @@
         "m_code" : 404,
         "known" : ["edmilson", "jonathan"],
         "cat" : "tech"
-      },
-      {
-        "name" : "ArchWiki",
-        "uri_check" : "https://wiki.archlinux.org/api.php?action=query&format=json&list=users&ususers={account}&usprop=cancreate&formatversion=2&errorformat=html&errorsuselocal=true&uselang=en",
-        "uri_pretty" : "https://wiki.archlinux.org/title/User:{account}",
-        "e_code" : 200,
-        "e_string" : "\"userid\":",
-        "m_string" : "\"missing\":true",
-        "m_code" : 200,
-        "known" : ["Lahwaacz", "Erus_Iluvatar"],
-        "cat" : "social"
       },
       {
         "name" : "XNXX",
