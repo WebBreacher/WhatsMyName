@@ -6887,6 +6887,16 @@
         "m_code" : 200,
         "known" : ["carlito", "taylor"],
         "cat" : "social"
+      },
+      {
+        "name" : "GDBrowser",
+        "uri_check" : "https://gdbrowser.com/u/{account}",
+        "e_code" : 200,
+        "e_string" : "<div class=\"popup\" id=\"statsDiv\"",
+        "m_string" : "<p>Found. Redirecting to ",
+        "m_code" : 302,
+        "known" : ["SorkoPiko", "Subwoofer"],
+        "cat" : "gaming"
       }
   ]
 }
