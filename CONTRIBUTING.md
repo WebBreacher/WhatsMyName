@@ -116,7 +116,7 @@ Here are examples of the site elements for both HTTP GET and HTTP POST entries:
        "known" : ["whoami", "johndoe"],
        "cat" : "images",
        "protection" : ["captcha", "cloudflare"],
-       "headers": {
+       "headers" : {
                 "accept": "text/html"
         }
      },

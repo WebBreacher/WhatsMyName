@@ -1,5 +1,5 @@
 {
-    "license" : ["Copyright (C) 2024 Micah Hoffman",
+    "license" : ["Copyright (C) 2025 Micah Hoffman",
                 "This work is licensed under the Creative Commons Attribution-ShareAlike",
                 "4.0 International License. To view a copy of this license, visit",
                 "http://creativecommons.org/licenses/by-sa/4.0/ or send a letter to",
@@ -8,7 +8,8 @@
                  "arin17bishwa", "AXRoux", "balestek", "Brenden2008", "C3n7ral051nt4g3ncy",
                  "degun-osint", "End of interactive chart.", "fres621", "Its-Just-Nans", "Itsoon",
                  "janhalendk", "K2SOsint", "maxk096", "ni5arga", "p1ngul1n0", "Paradoxxs",
-                 "serdaraltin", "SlopeSlayer910", "TikvahTerminator", "Contributions since 2023-12"],
+                 "serdaraltin", "SlopeSlayer910", "SorkoPiko", "TikvahTerminator",
+                 "Contributions since 2023-12"],
     "categories" : ["archived","art","blog","business","coding","dating","finance","gaming","health",
                    "hobby","images","misc","music","news","political","search","shopping","social",
                    "tech","video","xx NSFW xx"],
@@ -226,6 +227,16 @@
         "cat" : "social"
        },
        {
+         "name" : "Alura",
+         "uri_check" : "https://cursos.alura.com.br/user/{account}",
+         "e_code" : 200,
+         "e_string" : "Perfil de",
+         "m_string" : "\"error\":\"Not Found\"",
+         "m_code" : 404,
+         "known" : ["edmilson", "jonathan"],
+         "cat" : "tech"
+       },
+       {
         "name" : "Ameblo",
         "uri_check" : "https://ameblo.jp/{account}",
         "e_code" : 200,
@@ -256,17 +267,17 @@
         "cat" : "social"
        },
        {
-        "name": "AniList",
-        "uri_check": "https://graphql.anilist.co",
-        "uri_pretty": "https://anilist.co/user/{account}",
-        "post_body": "{\"query\":\"query{User(name:\\\"{account}\\\"){id name}}\"}",
-        "e_code": 200,
-        "e_string": "\"id\":",
-        "m_code": 404,
-        "m_string": "Not Found",
-        "known": ["test", "johndoe"],
-        "cat": "social",
-        "headers": {
+        "name" : "AniList",
+        "uri_check" : "https://graphql.anilist.co",
+        "uri_pretty" : "https://anilist.co/user/{account}",
+        "post_body" : "{\"query\":\"query{User(name:\\\"{account}\\\"){id name}}\"}",
+        "e_code" : 200,
+        "e_string" : "\"id\":",
+        "m_code" : 404,
+        "m_string" : "Not Found",
+        "known" : ["test", "johndoe"],
+        "cat" : "social",
+        "headers" : {
             "accept": "application/json",
             "Content-Type": "application/json"
         }
@@ -282,16 +293,16 @@
         "cat" : "social"
        },
        {
-        "name": "Apex Legends",
-        "uri_check": "https://api.tracker.gg/api/v2/apex/standard/profile/origin/{account}",
-        "uri_pretty": "https://apex.tracker.gg/apex/profile/origin/{account}/overview",
-        "headers": {"User-Agent": "Mozilla/5.0 (Mozilla/5.0 (X11; Linux i686; rv:128.0) Gecko/20100101 Firefox/128.0", "Accept-Language": "en-US,en;q=0.5", "Origin": "https://apex.tracker.gg", "Referer": "https://apex.tracker.gg/", "TE": "trailers"},
-        "e_code": 200,
-        "e_string": "platformInfo",
-        "m_code": 404,
-        "m_string": "CollectorResultStatus::NotFound",
-        "known": ["tttcheekyttt", "RollsRoyce_Dawn"],
-        "cat": "gaming"
+        "name" : "Apex Legends",
+        "uri_check" : "https://api.tracker.gg/api/v2/apex/standard/profile/origin/{account}",
+        "uri_pretty" : "https://apex.tracker.gg/apex/profile/origin/{account}/overview",
+        "headers" : {"User-Agent": "Mozilla/5.0 (Mozilla/5.0 (X11; Linux i686; rv:128.0) Gecko/20100101 Firefox/128.0", "Accept-Language": "en-US,en;q=0.5", "Origin": "https://apex.tracker.gg", "Referer": "https://apex.tracker.gg/", "TE": "trailers"},
+        "e_code" : 200,
+        "e_string" : "platformInfo",
+        "m_code" : 404,
+        "m_string" : "CollectorResultStatus::NotFound",
+        "known" : ["tttcheekyttt", "RollsRoyce_Dawn"],
+        "cat" : "gaming"
        },
        {
         "name" : "Appian",
@@ -419,7 +430,7 @@
         "e_code" : 200,
         "e_string" : "My Activity",
         "m_code" : 302,
-        "headers": {"Host": "community.avid.com", "User-Agent": "Mozilla/5.0 (Mozilla/5.0 (X11; Linux i686; rv:128.0) Gecko/20100101 Firefox/128.0", "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/png,image/svg+xml,*/*;q=0.8", "Cache-Control": "no-cache"},
+        "headers" : {"Host": "community.avid.com", "User-Agent": "Mozilla/5.0 (Mozilla/5.0 (X11; Linux i686; rv:128.0) Gecko/20100101 Firefox/128.0", "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/png,image/svg+xml,*/*;q=0.8", "Cache-Control": "no-cache"},
         "m_string" : "The user you requested cannot be found.",
         "known" : ["Thayne", "Admin"],
         "cat" : "music"
@@ -506,7 +517,7 @@
         "m_code" : 200,
         "known" : ["rafaballerini", "lexaloco", "jardred"],
         "cat" : "social",
-        "protection": ["cloudflare"]
+        "protection" : ["cloudflare"]
        },
        {
         "name" : "Behance",
@@ -676,15 +687,15 @@
         "cat" : "social"
        },
        {
-         "name": "Bluesky 2",
-         "uri_check": "https://public.api.bsky.app/xrpc/app.bsky.actor.getProfile?actor={account}.bsky.social",
+         "name" : "Bluesky 2",
+         "uri_check" : "https://public.api.bsky.app/xrpc/app.bsky.actor.getProfile?actor={account}.bsky.social",
          "uri_pretty" : "https://bsky.app/profile/{account}.bsky.social",
-         "e_code": 200,
-         "e_string": "\"handle\":\"",
-         "m_code": 400,
-         "m_string": "\"message\":\"Profile not found\"",
-         "known": ["john", "mark"],
-         "cat": "social"
+         "e_code" : 200,
+         "e_string" : "\"handle\":\"",
+         "m_code" : 400,
+         "m_string" : "\"message\":\"Profile not found\"",
+         "known" : ["john", "mark"],
+         "cat" : "social"
        },
        {
         "name" : "BoardGameGeek",
@@ -1012,6 +1023,17 @@
         "cat" : "social"
        },
        {
+        "name" : "Cloudflare",
+        "uri_check" : "https://community.cloudflare.com/u/{account}/card.json",
+        "uri_pretty" : "https://community.cloudflare.com/u/{account}",
+        "e_code" : 200,
+        "e_string" : "user_avatar",
+        "m_string" : "The requested URL or resource could not be found",
+        "m_code" : 404,
+        "known" : ["carl", "morten"],
+        "cat" : "tech"
+      },
+       {
         "name" : "Clubhouse",
         "uri_check" : "https://www.clubhouse.com/@{account}",
         "e_code" : 200,
@@ -1076,7 +1098,7 @@
         "uri_check" : "https://www.codechef.com/users/{account}",
         "e_code" : 200,
         "e_string" : "| CodeChef User Profile for ",
-        "m_string": "In Browser IDE",
+        "m_string" : "In Browser IDE",
         "m_code" : 302,
         "known" : ["maroonrk", "lyrically"],
         "cat" : "coding"
@@ -1673,7 +1695,7 @@
        {
         "name" : "FACEIT",
         "uri_check" : "https://www.faceit.com/api/users/v1/nicknames/{account}",
-        "uri_pretty": "https://www.faceit.com/en/players/{account}",
+        "uri_pretty" : "https://www.faceit.com/en/players/{account}",
         "e_code" : 200,
         "e_string" : "\"result\":\"OK\"",
         "m_string" : "\"message\":\"user not found\"",
@@ -1874,7 +1896,7 @@
         "m_code" : 200,
         "known" : ["smartplayapk", "abdulmerfantz"],
         "cat" : "social",
-        "protection": ["other"]
+        "protection" : ["other"]
        },
        {
         "name" : "Fodors Forum",
@@ -1958,7 +1980,7 @@
         "m_code" : 404,
         "known" : ["rhythmdev_top", "Zainka"],
         "cat" : "social",
-        "protection": ["other"]
+        "protection" : ["other"]
        },
        {
         "name" : "Freelancehunt Employer",
@@ -1969,7 +1991,7 @@
         "m_code" : 404,
         "known" : ["vadym1232", "Dekovital"],
         "cat" : "social",
-        "protection": ["other"]
+        "protection" : ["other"]
        },
        {
         "name" : "Freelance.ua",
@@ -2093,7 +2115,17 @@
         "known" : ["tommy", "cderalow"],
         "cat" : "health"
        },
-        {
+       {
+         "name" : "GDBrowser",
+         "uri_check" : "https://gdbrowser.com/u/{account}",
+         "e_code" : 200,
+         "e_string" : "<div class=\"popup\" id=\"statsDiv\"",
+         "m_string" : "<p>Found. Redirecting to ",
+         "m_code" : 302,
+         "known" : ["SorkoPiko", "Subwoofer"],
+         "cat" : "gaming"
+       },
+       {
         "name" : "GeeksForGeeks",
         "uri_check" : "https://www.geeksforgeeks.org/user/{account}/",
         "e_code" : 200,
@@ -2102,7 +2134,7 @@
         "m_string" : "<title>Page Not Found - GeeksforGeeks</title>",
         "known" : ["nath_789", "harshrajsinghsiwan","igovindindia"],
         "cat" : "coding"
-        },
+       },
        {
         "name" : "Geocaching",
         "uri_check" : "https://www.geocaching.com/p/?u={account}",
@@ -2153,17 +2185,17 @@
         "m_code" : 404,
         "known" : ["teddy_99", "LastYear"],
         "cat" : "images",
-        "protection": ["other"]
+        "protection" : ["other"]
        },
        {
-        "name": "Gitea",
-        "uri_check": "https://gitea.com/{account}",
-        "e_code": 200,
-        "e_string": "class=\"page-content user profile\"",
-        "m_string": "class=\"status-page-error\"",
-        "m_code": 404,
-        "known": ["xin", "dev"],
-        "cat": "coding"
+        "name" : "Gitea",
+        "uri_check" : "https://gitea.com/{account}",
+        "e_code" : 200,
+        "e_string" : "class=\"page-content user profile\"",
+        "m_string" : "class=\"status-page-error\"",
+        "m_code" : 404,
+        "known" : ["xin", "dev"],
+        "cat" : "coding"
        },
        {
         "name" : "giters",
@@ -2199,14 +2231,14 @@
         "cat" : "coding"
        },
        {
-        "name": "Gitee",
-        "uri_check": "https://gitee.com/{account}",
-        "e_code": 200,
-        "e_string": "class=\"ui container user_page\"",
-        "m_string": "class=\"container error midCenter\"",
-        "m_code": 404,
-        "known": ["maxim", "fupengfei"],
-        "cat": "coding"
+        "name" : "Gitee",
+        "uri_check" : "https://gitee.com/{account}",
+        "e_code" : 200,
+        "e_string" : "class=\"ui container user_page\"",
+        "m_string" : "class=\"container error midCenter\"",
+        "m_code" : 404,
+        "known" : ["maxim", "fupengfei"],
+        "cat" : "coding"
        },
        {
         "name" : "gloria.tv",
@@ -2471,7 +2503,7 @@
         "m_code" : 404,
         "known" : ["mespejo", "NeoWaveCode"],
         "cat" : "tech",
-        "headers": {
+        "headers" : {
             "Accept": "application/json, text/plain, */*",
             "Content-Type": "application/json"
         }
@@ -2510,7 +2542,7 @@
        {
         "name" : "HackerOne",
         "uri_check" : "https://hackerone.com/graphql",
-        "uri_pretty": "https://hackerone.com/{account}",
+        "uri_pretty" : "https://hackerone.com/{account}",
         "post_body" : "{\"query\":\"query($url: URI!) {\\n        resource(url: $url) {\\n            ... on User { username }\\n        }\\n    }\",\"variables\":{\"url\":\"{account}\"}}",
         "e_code" : 200,
         "e_string" : "\"username\":",
@@ -2518,7 +2550,7 @@
         "m_code" : 200,
         "known" : ["born2hack", "godiego"],
         "cat" : "tech",
-        "headers": {
+        "headers" : {
             "Content-Type": "application/json"
         }
        },
@@ -2878,21 +2910,21 @@
         "m_code" : 404,
         "known" : ["therock", "ramarim"],
         "cat" : "social",
-        "protection": ["cloudflare"]
+        "protection" : ["cloudflare"]
        },
        {
-        "name": "Instagram2",
-        "uri_pretty": "https://instagram.com/{account}",
-        "uri_check": "https://dumpoir.com/v/{account}",
-        "e_code": 200,
-        "e_string": "Instagram Stories, Profile, Posts and Followers View Anonymous",
-        "m_string": "We are sorry. Should we search anything else?",
-        "m_code": 404,
-        "known": [
+        "name" : "Instagram2",
+        "uri_pretty" : "https://instagram.com/{account}",
+        "uri_check" : "https://dumpoir.com/v/{account}",
+        "e_code" : 200,
+        "e_string" : "Instagram Stories, Profile, Posts and Followers View Anonymous",
+        "m_string" : "We are sorry. Should we search anything else?",
+        "m_code" : 404,
+        "known" : [
           "katyperry",
           "kirbstr"
         ],
-        "cat": "social"
+        "cat" : "social"
        },
        {
         "name" : "Instagram_archives",
@@ -3118,7 +3150,7 @@
         "cat" : "social"
        },
        {
-        "name": "komi",
+        "name" : "komi",
 	      "uri_check" : "https://api.komi.io/api/talent/usernames/{account}",
         "uri_pretty" : "https://{account}.komi.io",
         "e_code" : 200,
@@ -3149,6 +3181,16 @@
         "cat" : "images"
        },
        {
+         "name" : "Kwai",
+         "uri_check" : "https://www.kwai.com/@{account}",
+         "e_code" : 200,
+         "e_string" : "name=\"title\"",
+         "m_string" : "<title>Kwai</title>",
+         "m_code" : 200,
+         "known" : ["carlito", "taylor"],
+         "cat" : "social"
+       },
+       {
         "name" : "kwejk.pl",
         "uri_check" : "https://kwejk.pl/uzytkownik/{account}#/tablica/",
         "e_code" : 200,
@@ -3169,7 +3211,7 @@
         "m_code" : 200,
         "known" : ["ilkarkarakurt", "sergeymeshiy"],
         "cat" : "social",
-        "headers": {
+        "headers" : {
             "Content-Type": "application/json"
         }
        },
@@ -3442,7 +3484,7 @@
        {
         "name" : "Mastodon API",
         "uri_check" : "https://mastodon.social/api/v2/search?q={account}&limit=1&type=accounts",
-        "uri_pretty": "https://mastodon.social/api/v2/search?q={account}&type=accounts",
+        "uri_pretty" : "https://mastodon.social/api/v2/search?q={account}&type=accounts",
         "e_code" : 200,
         "e_string" : "display_name",
         "m_string" : "\"accounts\":[]",
@@ -4711,14 +4753,14 @@
        {
         "name" : "Quizlet",
         "uri_check" : "https://quizlet.com/webapi/3.2/users/check-username?username={account}",
-        "uri_pretty": "https://quizlet.com/user/{account}/sets",
+        "uri_pretty" : "https://quizlet.com/user/{account}/sets",
         "e_code" : 200,
         "e_string" : "\"success\":false",
         "m_string" : "\"success\":true",
         "m_code" : 200,
         "known" : ["Rita426", "Muyao_531"],
         "cat" : "hobby",
-        "protection": ["cloudflare"]
+        "protection" : ["cloudflare"]
        },
        {
         "name" : "quitter.pl",
@@ -5392,7 +5434,7 @@
         "m_code" : 404,
         "known" : ["kexp_official", "mkbhd"],
         "cat" : "music",
-        "protection": ["other"]
+        "protection" : ["other"]
        },
        {
         "name" : "StackOverflow",
@@ -5403,7 +5445,7 @@
         "m_code" : 200,
         "known" : ["vonc", "bergi"],
         "cat" : "coding",
-        "protection": ["cloudflare"]
+        "protection" : ["cloudflare"]
        },
        {
         "name" : "Steam",
@@ -5426,16 +5468,16 @@
         "cat" : "gaming"
        },
        {
-        "name": "Steemit",
+        "name" : "Steemit",
         "uri_check" : "https://signup.steemit.com/api/check_username",
-        "uri_pretty": "https://steemit.com/@{account}",
+        "uri_pretty" : "https://steemit.com/@{account}",
         "post_body" : "{\"username\":\"{account}\"}",
-        "e_code": 200,
-        "e_string": "\"error\":",
-        "m_string": "\"success\":true",
-        "m_code": 200,
-        "known": ["petlover", "zalat"],
-        "cat": "social",
+        "e_code" : 200,
+        "e_string" : "\"error\":",
+        "m_string" : "\"success\":true",
+        "m_code" : 200,
+        "known" : ["petlover", "zalat"],
+        "cat" : "social",
         "headers" : {
             "Content-Type": "application/json"
         }
@@ -5453,7 +5495,7 @@
        {
         "name" : "Statuspage",
         "uri_check" : "https://{account}.statuspage.io/api/v2/status.json",
-        "uri_pretty": "https://{account}.statuspage.io/",
+        "uri_pretty" : "https://{account}.statuspage.io/",
         "e_code" : 200,
         "e_string" : "updated_at",
         "m_string" : "<html><body>You are being <a href=\"https://www.statuspage.io\">redirected</a>.</body></html>",
@@ -5483,26 +5525,26 @@
         "cat" : "finance"
        },
        {
-        "name": "StreamLabs",
-        "uri_check": "https://streamlabs.com/api/v6/user/{account}",
-        "uri_pretty": "https://streamlabs.com/{account}/tip",
-        "e_code": 200,
-        "e_string": "\"id\":",
-        "m_code": 401,
-        "m_string": "<title>Unauthorized</title>",
-        "known": ["veibae", "cutie_cori"],
-        "cat": "finance"
+        "name" : "StreamLabs",
+        "uri_check" : "https://streamlabs.com/api/v6/user/{account}",
+        "uri_pretty" : "https://streamlabs.com/{account}/tip",
+        "e_code" : 200,
+        "e_string" : "\"id\":",
+        "m_code" : 401,
+        "m_string" : "<title>Unauthorized</title>",
+        "known" : ["veibae", "cutie_cori"],
+        "cat" : "finance"
        },
        {
-        "name": "Stripchat",
+        "name" : "Stripchat",
         "uri_check" : "https://stripchat.com/api/front/users/checkUsername?username={account}",
-        "uri_pretty": "https://stripchat.com/{account}",
-        "e_code": 400,
-        "e_string": "\"error\":",
-        "m_string": "[]",
-        "m_code": 200,
-        "known": ["DulcieRichard", "Katie-Mili"],
-        "cat": "xx NSFW xx"
+        "uri_pretty" : "https://stripchat.com/{account}",
+        "e_code" : 400,
+        "e_string" : "\"error\":",
+        "m_string" : "[]",
+        "m_code" : 200,
+        "known" : ["DulcieRichard", "Katie-Mili"],
+        "cat" : "xx NSFW xx"
        },
        {
         "name" : "Subscribestar",
@@ -5813,15 +5855,15 @@
        {
         "name" : "Tindie",
         "uri_check" : "https://www.tindie.com/accounts/check_username/",
-        "uri_pretty": "https://www.tindie.com/stores/{account}/",
-        "post_body": "username={account}",
+        "uri_pretty" : "https://www.tindie.com/stores/{account}/",
+        "post_body" : "username={account}",
         "e_code" : 200,
         "e_string" : "\"valid\": false",
         "m_string" : "\"valid\": true",
         "m_code" : 200,
         "known" : ["tehrabbitt", "dekunukem"],
         "cat" : "shopping",
-        "headers": {
+        "headers" : {
             "Content-Type": "application/x-www-form-urlencoded"
         }
        },
@@ -6186,7 +6228,7 @@
         "m_code" : 404,
         "known" : ["sam", "becca"],
         "cat" : "social",
-        "headers": {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:133.0) Gecko/20100101 Firefox/133.0"}
+        "headers" : {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:133.0) Gecko/20100101 Firefox/133.0"}
        },
        {
         "name" : "Venmo",
@@ -6446,7 +6488,7 @@
         "m_code" : 404,
         "known" : ["kevin", "WebArtyom"],
         "cat" : "social",
-        "headers": {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:133.0) Gecko/20100101 Firefox/133.0"}
+        "headers" : {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:133.0) Gecko/20100101 Firefox/133.0"}
        },
        {
         "name" : "weheartit",
@@ -6529,7 +6571,7 @@
         "m_code" : 301,
         "known" : ["deae", "cheerfulsarcasm", "braydenskiresort"],
         "cat" : "social",
-        "protection": ["other"]
+        "protection" : ["other"]
        },
        {
         "name" : "Wakatime",
@@ -6651,6 +6693,16 @@
         "m_code" : 404,
         "known" : ["Andy_Hausmann", "Stephan_Abele2"],
         "cat" : "social"
+       },
+       {
+         "name" : "XNXX",
+         "uri_check" : "https://www.xnxx.com/mobile/profile/{account}",
+         "e_code" : 200,
+         "e_string" : "<table id=\"profile\">",
+         "m_string" : "<title>Bad request",
+         "m_code" : 400,
+         "known" : ["john", "mumrra"],
+         "cat" : "xx NSFW xx"
        },
        {
         "name" : "XVIDEOS-models",
@@ -6846,57 +6898,6 @@
         "m_code" : 404,
         "known" : ["rezaghezi", "hosssssein"],
         "cat" : "tech"
-       },
-       {
-        "name" : "Cloudflare",
-        "uri_check" : "https://community.cloudflare.com/u/{account}/card.json",
-        "uri_pretty" : "https://community.cloudflare.com/u/{account}",
-        "e_code" : 200,
-        "e_string" : "user_avatar",
-        "m_string" : "The requested URL or resource could not be found",
-        "m_code" : 404,
-        "known" : ["carl", "morten"],
-        "cat" : "tech"
-      },
-      {
-        "name" : "Alura",
-        "uri_check" : "https://cursos.alura.com.br/user/{account}",
-        "e_code" : 200,
-        "e_string" : "Perfil de",
-        "m_string" : "\"error\":\"Not Found\"",
-        "m_code" : 404,
-        "known" : ["edmilson", "jonathan"],
-        "cat" : "tech"
-      },
-      {
-        "name" : "XNXX",
-        "uri_check" : "https://www.xnxx.com/mobile/profile/{account}",
-        "e_code" : 200,
-        "e_string" : "<table id=\"profile\">",
-        "m_string" : "<title>Bad request",
-        "m_code" : 400,
-        "known" : ["john", "mumrra"],
-        "cat" : "xx NSFW xx"
-      },
-      {
-        "name" : "Kwai",
-        "uri_check" : "https://www.kwai.com/@{account}",
-        "e_code" : 200,
-        "e_string" : "name=\"title\"",
-        "m_string" : "<title>Kwai</title>",
-        "m_code" : 200,
-        "known" : ["carlito", "taylor"],
-        "cat" : "social"
-      },
-      {
-        "name" : "GDBrowser",
-        "uri_check" : "https://gdbrowser.com/u/{account}",
-        "e_code" : 200,
-        "e_string" : "<div class=\"popup\" id=\"statsDiv\"",
-        "m_string" : "<p>Found. Redirecting to ",
-        "m_code" : 302,
-        "known" : ["SorkoPiko", "Subwoofer"],
-        "cat" : "gaming"
-      }
+       }
   ]
 }
