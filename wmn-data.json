@@ -6893,8 +6893,8 @@
         "uri_check" : "https://gdbrowser.com/u/{account}",
         "e_code" : 200,
         "e_string" : "<div class=\"popup\" id=\"statsDiv\"",
-        "m_string" : "<div class=\"popup\" id=\"listInfoDiv\"",
-        "m_code" : 200,
+        "m_string" : "<p>Found. Redirecting to ",
+        "m_code" : 302,
         "known" : ["SorkoPiko", "Subwoofer"],
         "cat" : "gaming"
       }
