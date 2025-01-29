@@ -44,9 +44,10 @@ For a site to be included in WMN it has to:
 
 ## Content
 
-* The https://github.com/WebBreacher/WhatsMyName/wiki/Problem-Removed-Sites page has websites that we have had in the project and are currently not working for some reason. We will retest those sites (in the future) and try to find detections.
-* If you would like to help with detections, we are happy to accept them via GitHub pull request or you can [create an issue](https://github.com/WebBreacher/WhatsMyName/issues) with the details of the site.
-* Want to suggest a site to be added? Use [this form](https://forms.office.com/r/TscnNQqrD1).
+If you would like to help with detections, we are happy to accept them via:
+1. GitHub pull request or ...
+2. [Create an issue](https://github.com/WebBreacher/WhatsMyName/issues) with the details of the site or ...
+3. Use [this form](https://forms.office.com/r/TscnNQqrD1).
 
 
 ## Format
