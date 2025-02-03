@@ -4839,12 +4839,13 @@
        },
        {
         "name" : "quitter.pl",
-        "uri_check" : "https://quitter.pl/profile/{account}",
+	"uri_check" : "https://quitter.pl/api/v1/accounts/{account}",
+        "uri_pretty" : "https://quitter.pl/users/{account}",
         "e_code" : 200,
-        "e_string" : "@quitter.pl",
-        "m_string" : "Nie znaleziono",
+        "e_string" : "avatar_static",
+        "m_string" : "error",
         "m_code" : 404,
-        "known" : ["divmod", "panoptykon"],
+        "known" : ["smok", "mik"],
         "cat" : "social"
        },
        {
