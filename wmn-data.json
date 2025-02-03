@@ -4605,7 +4605,7 @@
         "name" : "policja2009",
         "uri_check" : "http://www.policja2009.fora.pl/search.php?search_author={account}",
         "e_code" : 200,
-        "e_string" : "Znaleziono",
+        "e_string" : "Autor",
         "m_string" : "Nie znaleziono tematów ani postów pasujących do Twoich kryteriów",
         "m_code" : 200,
         "known" : ["Pvwel", "janek"],
