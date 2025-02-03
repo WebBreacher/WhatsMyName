@@ -3823,7 +3823,7 @@
         "name" : "Moto Trip",
         "uri_check" : "https://moto-trip.com/profil/{account}",
         "e_code" : 200,
-        "e_string" : "<h1 class=\"h2\">Profil de pif</h1>",
+        "e_string" : "<h1 class=\"h2\">Profil de ",
         "m_string" : "<h1>Page introuvable</h1>",
         "m_code" : 404,
         "known" : ["aesthetics", "pif"],
