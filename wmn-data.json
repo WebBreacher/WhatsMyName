@@ -6093,10 +6093,11 @@
        },
        {
         "name" : "Tunefind",
-        "uri_check" : "https://www.tunefind.com/user/profile/{account}",
+	"uri_check" : "https://www.tunefind.com/api-request/account/profile?userName={account}",
+        "uri_pretty" : "https://www.tunefind.com/user/profile/{account}",
         "e_code" : 200,
-        "e_string" : "Achievements",
-        "m_string" : "Page not found",
+        "e_string" : "user-stats-engagement",
+        "m_string" : "User not found:",
         "m_code" : 404,
         "known" : ["baywolfmusic", "mrcerny18"],
         "cat" : "music"
