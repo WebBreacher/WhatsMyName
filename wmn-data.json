@@ -401,16 +401,6 @@
         "known" : ["john", "red"],
         "cat" : "coding"
        },
-       {
-        "name" : "ask.fm",
-        "uri_check" : "https://ask.fm/{account}",
-        "e_code" : 200,
-        "e_string" : "property=\"og",
-        "m_string" : "<title>Ask and Answer",
-        "m_code" : 410,
-        "known" : ["test", "bob"],
-        "cat" : "social"
-       },
       {
         "name" : "AtCoder",
         "uri_check" : "https://atcoder.jp/users/{account}",
@@ -4605,7 +4595,7 @@
         "name" : "policja2009",
         "uri_check" : "http://www.policja2009.fora.pl/search.php?search_author={account}",
         "e_code" : 200,
-        "e_string" : "Znaleziono",
+        "e_string" : "Autor",
         "m_string" : "Nie znaleziono tematów ani postów pasujących do Twoich kryteriów",
         "m_code" : 200,
         "known" : ["Pvwel", "janek"],
