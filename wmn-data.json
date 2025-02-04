@@ -4843,7 +4843,7 @@
         "uri_pretty" : "https://quitter.pl/users/{account}",
         "e_code" : 200,
         "e_string" : "avatar_static",
-        "m_string" : "\"error\"",
+        "m_string" : "\"error\":",
         "m_code" : 404,
         "known" : ["smok", "mik"],
         "cat" : "social"
