@@ -6345,9 +6345,9 @@
         "name" : "Vero",
         "uri_check" : "https://vero.co/{account}",
         "e_code" : 200,
-        "e_string" : "on VERO™</title>",
-        "m_string" : "The page you are looking for doesn't exist.",
-        "m_code" : 404,
+        "e_string" : "on VERO",
+        "m_string" : "<h3>Not Found</h3>",
+        "m_code" : 200,
         "known" : ["alex", "johnny"],
         "cat" : "art"
        },
