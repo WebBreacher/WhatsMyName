@@ -6638,9 +6638,9 @@
         "name" : "Wikidot",
         "uri_check" : "http://www.wikidot.com/user:info/{account}",
         "e_code" : 200,
-        "e_string" : "Wikidot.com:",
-        "m_string" : "Free and Pro Wiki Hosting",
-        "m_code" : 404,
+        "e_string" : "<h1 class=\"profile-title\">",
+        "m_string" : "<div class=\"error-block\">User does not exist.</div>",
+        "m_code" : 200,
         "known" : ["jack", "allen"],
         "cat" : "social"
        },
