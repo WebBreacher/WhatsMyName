@@ -3004,14 +3004,13 @@
        },
        {
         "name" : "isMyGirl",
-        "uri_check" : "https://api.fxcservices.com/pub/user/{account}",
-        "uri_pretty" : "https://ismygirl.com/{account}",
+        "uri_check" : "https://ismygirl.com/models/{account}",
         "e_code" : 200,
-        "e_string" : "display_name",
-        "m_code" : 404,
-        "m_string" : "User does not exist",
+        "e_string" : "<a title=\"About me\">",
+        "m_code" : 200,
+        "m_string" : "No model was found",
         "known" : ["kasumineechan", "blinky"],
-        "cat" : "finance"
+        "cat" : "xx NSFW xx"
        },
        {
         "name" : "issuu",
