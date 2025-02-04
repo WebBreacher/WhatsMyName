@@ -6616,9 +6616,9 @@
         "name" : "weibo",
         "uri_check" : "https://tw.weibo.com/{account}",
         "e_code" : 200,
-        "e_string" : "粉絲",
+        "e_string" : "<div class=\"name\">",
         "m_string" : "Oops!",
-        "m_code" : 404,
+        "m_code" : 200,
         "known" : ["chentingni", "fbb0916"],
         "cat" : "social"
        },
