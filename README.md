@@ -29,6 +29,7 @@ For a site to be included in WMN it has to:
   * Exports to CSV and other formats.
   * Pulls the latest version of the project's JSON file when run.
   * Submit a username in the URL using `https://whatsmyname.app/?q=USERNAME` like https://whatsmyname.app/?q=john
+* [Naminter](https://github.com/3xp0rt/Naminter) developed specifically for the **Whats My Name** list with a beautiful console interface, browser impersonating, capable of bypassing Cloudflare and other basic protection, concurrent checking, and extensive configuration options.
 * [Blackbird](https://github.com/p1ngul1n0/blackbird) uses the **Whats My Name** list in its search.
 * [K2OSINT Bookmarklet](https://github.com/K2SOsint/Bookmarklets/blob/main/WhatsMyName.js) - Bookmarklet that lets you enter a username in a popup and then opens a new tab with the WMN results.
 * [LinkScope](https://github.com/AccentuSoft/LinkScope_Client) uses this in the **Whats My Name** resolution under the **Online Identity** category.
