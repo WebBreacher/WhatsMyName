@@ -207,6 +207,16 @@
         "cat" : "social"
        },
        {
+        "name" : "Allegro",
+        "uri_check" : "https://allegro.pl/uzytkownik/{account}",
+        "e_code" : 200,
+        "e_string" :"<title>Przedmioty użytkownika",
+        "m_string" : "<title>Allegro - użytkownik nieznaleziony</title>",
+        "m_code" : 301,
+        "known" : ["BambooWorld", "Tefal_Polska"],
+        "cat" : "shopping"
+       },
+       {
         "name" : "alik",
         "uri_check" : "https://www.alik.cz/u/{account}",
         "e_code" : 200,
