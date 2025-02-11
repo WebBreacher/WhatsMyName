@@ -1202,6 +1202,22 @@
         "cat" : "xx NSFW xx"
        },
        {
+        "name": "coub",
+        "uri_check": "https://coub.com/{account}",
+        "e_code": 200,
+        "e_string": "- Channel on Coub</title>",
+        "m_string": "Sorry, that page doesn't exist.",
+        "m_code": 404,
+        "known": [
+          "dmitry.kozhevnikov",
+          "idesignking"
+        ],
+        "headers": {
+          "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
+        },
+        "cat": "misc"
+      },
+       {
         "name" : "cracked_io",
         "uri_check" : "https://cracked.io/{account}",
         "e_code" : 200,
