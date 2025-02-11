@@ -1504,7 +1504,7 @@
         "uri_check" : "https://api.discogs.com/users/{account}",
         "uri_pretty" : "https://www.discogs.com/user/{account}",
         "e_code" : 200,
-        "e_string" : "\"id\"",
+        "e_string" : "\"id\":",
         "m_code" : 404,
         "m_string" : "\"message\": \"User does not exist or may have been deleted.\"",
         "known" : ["damiano84", "bernadette69"],
