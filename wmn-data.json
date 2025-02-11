@@ -1052,17 +1052,6 @@
         "cat" : "xx NSFW xx"
        },
        {
-        "name" : "Climatejustice.rocks (Mastodon Instance)",
-        "uri_check" : "https://climatejustice.rocks/api/v1/accounts/lookup?acct={account}",
-        "uri_pretty" : "https://climatejustice.rocks/@{account}",
-        "e_code" : 200,
-        "e_string" : "display_name",
-        "m_code" : 404,
-        "m_string" : "Record not found",
-        "known" : ["paula", "ClimbitJustice"],
-        "cat" : "social"
-       },
-       {
         "name" : "Cloudflare",
         "uri_check" : "https://community.cloudflare.com/u/{account}/card.json",
         "uri_pretty" : "https://community.cloudflare.com/u/{account}",
@@ -1513,11 +1502,11 @@
        {
         "name" : "Discogs",
         "uri_check" : "https://api.discogs.com/users/{account}",
-        "pretty_uri" : "https://www.discogs.com/user/{account}",
+        "uri_pretty" : "https://www.discogs.com/user/{account}",
         "e_code" : 200,
         "e_string" : "\"id\"",
         "m_code" : 404,
-        "m_string" : "User does not exist",
+        "m_string" : "\"message\": \"User does not exist or may have been deleted.\"",
         "known" : ["damiano84", "bernadette69"],
         "cat" : "music"
        },
@@ -4314,16 +4303,6 @@
         "cat" : "social"
        },
        {
-        "name" : "mym.fans",
-        "uri_check" : "https://mym.fans/{account}",
-        "e_code" : 200,
-        "e_string" : "posts",
-        "m_string" : "Il n’y a rien ici…",
-        "m_code" : 404,
-        "known" : ["Djelizamay","Andysparkles"],
-        "cat" : "social"
-       },
-       {
         "name" : "myportfolio",
         "uri_check" : "https://{account}.myportfolio.com/work",
         "strip_bad_char" : ".",
@@ -4462,8 +4441,8 @@
         "name" : "npm",
         "uri_check" : "https://www.npmjs.com/~{account}",
         "e_code" : 200,
-        "e_string" : "/npm-avatar/",
-        "m_string" : "poster depicting npm&#x27;s mascot wombat",
+        "e_string" : "\"id\":",
+        "m_string" : "<h1>not found</h1>",
         "m_code" : 404,
         "known" : ["npm", "rich_harris"],
         "cat" : "coding"
@@ -5301,17 +5280,6 @@
         "cat" : "blog"
        },
        {
-        "name" : "ReblogMe",
-        "uri_check" : "https://{account}.reblogme.com",
-        "in_chars" : ".",
-        "e_code" : 200,
-        "e_string" : "blogbody",
-        "m_string" : "Sorry, seems that blog doesn't exist",
-        "m_code" : 200,
-        "known" : ["staff", "chicken"],
-        "cat" : "xx NSFW xx"
-       },
-       {
         "name" : "Refsheet",
         "uri_check" : "https://refsheet.net/{account}",
         "e_code" : 200,
@@ -5354,22 +5322,12 @@
         "cat" : "xx NSFW xx"
        },
        {
-        "name" : "Replit web",
+        "name" : "Replit",
         "uri_check" : "https://replit.com/@{account}",
         "e_code" : 200,
-        "e_string" : "Copy profile link",
+        "e_string" : "\"id\":",
         "m_code" : 404,
-        "m_string" : "<title>Replit - 404 - Replit</title>",
-        "known" : ["david", "torcado"],
-        "cat" : "coding"
-       },
-       {
-        "name" : "Replit cli",
-        "uri_check" : "https://replit.com/@{account}",
-        "e_code" : 200,
-        "e_string" : "Copy profile link",
-        "m_code" : 404,
-        "m_string" : "User not found",
+        "m_string" : "\"statusCode\":404",
         "known" : ["david", "torcado"],
         "cat" : "coding"
        },
@@ -6063,7 +6021,7 @@
         "uri_check" : "https://stripchat.com/api/front/users/checkUsername?username={account}",
         "uri_pretty" : "https://stripchat.com/{account}",
         "e_code" : 400,
-        "e_string" : "\"error\":",
+        "e_string" : "\"error\":\"This username already exists\"",
         "m_string" : "[]",
         "m_code" : 200,
         "known" : ["DulcieRichard", "Katie-Mili"],
@@ -6402,7 +6360,7 @@
         "uri_pretty" : "https://www.tindie.com/stores/{account}/",
         "post_body" : "username={account}",
         "e_code" : 200,
-        "e_string" : "\"valid\": false",
+        "e_string" : "\"errors\": [\"Username taken!\"]",
         "m_string" : "\"valid\": true",
         "m_code" : 200,
         "known" : ["tehrabbitt", "dekunukem"],
