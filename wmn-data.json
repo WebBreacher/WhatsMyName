@@ -4492,9 +4492,9 @@
         "name" : "Pinterest",
         "uri_check" : "https://www.pinterest.com/{account}/",
         "e_code" : 200,
-        "e_string" : " - Profile | Pinterest",
-        "m_string" : "Whoops! We couldn't find that page",
-        "m_code" : 404,
+        "e_string" : "id=\"business-profile-header",
+        "m_string" : "pinterest.com/?show_error=true",
+        "m_code" : 200,
         "known" : ["test123", "frickcollection"],
         "cat" : "social"
        },
