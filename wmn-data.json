@@ -530,8 +530,8 @@
         "name" : "Behance",
         "uri_check" : "https://www.behance.net/{account}",
         "e_code" : 200,
-        "e_string" : "og:site_name",
-        "m_string" : "<title>Oops!",
+        "e_string" : "class=\"ProfileCard-userFullName-ule",
+        "m_string" : "class=\"errors-title",
         "m_code" : 404,
         "known" : ["alice", "john"],
         "cat" : "business"
