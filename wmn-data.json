@@ -1192,6 +1192,19 @@
         "cat" : "art"
        },
        {
+        "name": "Coub",
+        "uri_check": "https://coub.com/{account}",
+        "e_code": 200,
+        "e_string": "- Channel on Coub</title>",
+        "m_string": "Sorry, that page doesn't exist.",
+        "m_code": 404,
+        "known": ["dmitry.kozhevnikov","idesignking"],
+        "cat": "misc",
+        "headers": {
+          "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
+        }
+       },
+       {
         "name" : "cowboys4angels",
         "uri_check" : "https://cowboys4angels.com/cowboy/{account}/",
         "e_code" : 200,
@@ -1201,6 +1214,7 @@
         "known" : ["jaxjames", "jordan-2"],
         "cat" : "xx NSFW xx"
        },
+
        {
         "name" : "cracked_io",
         "uri_check" : "https://cracked.io/{account}",
@@ -4791,16 +4805,6 @@
         "m_string" : "Page Not Found (404) · PyPI",
         "m_code" : 404,
         "known" : ["dev", "pydude"],
-        "cat" : "coding"
-       },
-       {
-        "name" : "npm",
-        "uri_check" : "https://www.npmjs.com/~{account}",
-        "e_code" : 200,
-        "e_string" : "/npm-avatar/",
-        "m_string" : "poster depicting npm&#x27;s mascot wombat",
-        "m_code" : 404,
-        "known" : ["npm", "rich_harris"],
         "cat" : "coding"
        },
        {
