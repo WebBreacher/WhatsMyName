@@ -4335,6 +4335,16 @@
         "cat" : "business"
        },
        {
+        "name" : "Nitter",
+        "uri_check" : "https://nitter.privacydev.net/{account}",
+        "e_code" : 200,
+        "e_string" : "class=\"profile-tabs\"",
+        "m_string" : "class=\"error-panel\"",
+        "m_code" : 404,
+        "known" : ["WebBreacher", "OSINT_Tactical"],
+        "cat" : "social"
+       },
+       {
         "name" : "naija_planet",
         "uri_check" : "https://naijaplanet.com/{account}",
         "e_code" : 200,
@@ -6557,17 +6567,6 @@
         "cat" : "gaming"
        },
        {
-        "name" : "X",
-        "uri_check" : "https://nitter.privacydev.net/{account}",
-        "uri_pretty" : "https://x.com/{account}",
-        "e_code" : 200,
-        "e_string" : "class=\"profile-tabs\"",
-        "m_string" : "class=\"error-panel\"",
-        "m_code" : 404,
-        "known" : ["WebBreacher", "OSINT_Tactical"],
-        "cat" : "social"
-       },
-       {
         "name" : "Twitter archived profile",
         "uri_check" : "http://archive.org/wayback/available?url=https://twitter.com/{account}",
         "uri_pretty" : "https://web.archive.org/web/2/https://twitter.com/{account}",
@@ -7199,6 +7198,17 @@
         "m_code" : 404,
         "known" : ["tr3harder", "stariy"],
         "cat" : "tech"
+       },
+       {
+        "name" : "X",
+        "uri_check" : "https://api.x.com/i/users/username_available.json?username={account}",
+        "uri_pretty" : "https://x.com/{account}",
+        "e_code" : 200,
+        "e_string" : "\"reason\":\"taken\"",
+        "m_string" : "\"reason\":\"available\"",
+        "m_code" : 200,
+        "known" : ["WebBreacher", "OSINT_Tactical"],
+        "cat" : "social"
        },
        {
         "name" : "Xanga",
