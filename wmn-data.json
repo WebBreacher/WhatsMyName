@@ -746,6 +746,16 @@
         "known" : ["john", "bob"],
         "cat" : "hobby"
        },
+	{
+        "name" : "Booknode",
+        "uri_check" : "https://booknode.com/profil/{account}",
+        "e_code" : 200,
+        "e_string" : "<title>Profil de",
+        "m_string" : "<title>Page non trouvée",
+        "m_code" : 404,
+        "known" : ["Paraffine", "chanoa"],
+        "cat" : "hobby"
+       },
        {
         "name" : "boosty",
         "uri_check" : "https://boosty.to/{account}",
