@@ -488,10 +488,10 @@
         "name" : "bblog_ru",
         "uri_check" : "https://www.babyblog.ru/user/{account}",
         "e_code" : 200,
-        "e_string" : "@",
-        "m_string" : "БэбиБлог - беременность, календарь беременности, дневники",
+        "e_string" : ") — дневник на Babyblog.ru</title>",
+        "m_string" : "<title>БэбиБлог - беременность, календарь беременности, дневники</title>",
         "m_code" : 301,
-        "known" : ["igor", "olga"],
+        "known" : ["joyfitnessdance1", "bobkokatya94"],
         "cat" : "misc"
        },
        {
