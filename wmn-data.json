@@ -4537,6 +4537,7 @@
        {
         "name" : "Playstation Network",
         "uri_check" : "https://psnprofiles.com/xhr/search/users?q={account}",
+	"uri_pretty" : "https://psnprofiles.com/{account}",
         "e_code" : 200,
         "e_string" : "<div class=\"progress-bar small level\">",
         "m_string" : "We couldn't find anything ",
