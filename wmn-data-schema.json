@@ -22,7 +22,7 @@
 				"type": "string",
 				"default": "",
 				"examples": [
-					"Copyright (C) 2023 Micah Hoffman"
+					"Copyright (C) 2025 Micah Hoffman"
 				],
 				"pattern": "^.*$"
 			}
@@ -193,6 +193,22 @@
 							true
 						],
 						"default": ""
+					},
+					"protection": {
+						"$id": "#root/sites/items/protection",
+						"title": "Protection",
+						"type": "array",
+						"default": [],
+						"items":{
+							"$id": "#root/sites/items/protection/items",
+							"title": "Items",
+							"type": "string",
+							"default": "",
+							"examples": [
+								"cloudflare", "captcha"
+							],
+							"pattern": "^.*$"
+						}
 					},
 					"headers": {
 						"$id": "#root/sites/items/headers",
