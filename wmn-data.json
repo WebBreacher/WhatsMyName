@@ -2109,6 +2109,16 @@
         "cat" : "gaming"
        },
        {
+        "name" : "Gamer DVR",
+        "uri_pretty" : "https://gamerdvr.com/gamer/{account}",
+        "e_code" : 200,
+        "e_string" : "class=\"gamerpic\"",
+        "m_string" : "<body>You are being <",
+        "m_code" : 302,
+        "known" : ["dnlunger", "punksxe"],
+        "cat" : "gaming"
+       },
+       {
         "name" : "Gamespot",
         "uri_check" : "https://www.gamespot.com/profile/{account}/",
         "e_code" : 200,
