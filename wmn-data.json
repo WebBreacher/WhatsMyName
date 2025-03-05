@@ -3393,6 +3393,16 @@
         "cat" : "tech"
        },
        {
+        "name" : "LoLProfile",
+        "uri_check" : "https://lolprofile.net/search/world/{account}-world",
+        "e_code" : 200,
+        "e_string" : "class=\"content sw\">",
+        "m_string" : "We could not find any results, please try again later or check your input.",
+        "m_code" : 200,
+        "known" : ["bea", "wild"],
+        "cat" : "gaming"
+       },
+       {
         "name" : "Lor.sh (Mastodon Instance)",
         "uri_check" : "https://lor.sh/api/v1/accounts/lookup?acct={account}",
         "uri_pretty" : "https://lor.sh/@{account}",
