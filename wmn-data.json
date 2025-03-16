@@ -5140,6 +5140,16 @@
         "cat" : "blog"
        },
        {
+        "name" : "Scammer.info",
+        "uri_check" : "https://scammer.info/u/{account}/",
+        "e_code" : 200,
+        "e_string" : "<title> Profile -",
+        "m_string" : "Page Not Found - Scammer Info",
+        "m_code" : 404,
+        "known" : ["AngelFat", "lecter"],
+        "cat" : "misc"
+       },
+       {
         "name" : "ScoutWiki",
         "uri_check" : "https://en.scoutwiki.org/User:{account}",
         "e_code" : 200,
