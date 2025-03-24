@@ -1091,7 +1091,7 @@
         "m_string" : "\"error\":\"Unhandled exception\"",
         "m_code" : 404,
         "known" : ["djantidog", "mcnorington"],
-        "cat" : "coding"
+        "cat" : "social"
        },
        {
         "name" : "Community Adobe",
@@ -1272,7 +1272,7 @@
         "e_string" : "id=\"profile-page\"",
         "m_string" : "class=\"error-page\"",
         "m_code" : 404,
-        "known" : ["alex", "peter"],
+        "known" : ["erga", "peter"],
         "cat" : "hobby"
        },
        {
@@ -1314,7 +1314,7 @@
         "m_code" : 404,
         "m_string" : "Page not found! (404)",
         "known" : ["msouza", "kos"],
-        "cat" : "social"
+        "cat" : "news"
        },
        {
         "name" : "darudar",
@@ -1415,7 +1415,7 @@
         "m_code" : 400,
         "m_string" : "\"errorMessage\":\"Error happened.\"",
         "known" : ["skromnuy_fifa", "wudjer"],
-        "cat" : "business"
+        "cat" : "finance"
        },
        {
         "name" : "DeviantArt",
@@ -1552,16 +1552,6 @@
         "cat" : "gaming"
        },
        {
-        "name" : "Doxbin",
-        "uri_check" : "https://doxbin.org/user/{account}",
-        "e_code" : 200,
-        "e_string" : "class=\"profile-cont\"",
-        "m_code" : 302,
-        "m_string" : "<title>Redirecting to https://doxbin.org</title>",
-        "known" : ["Z3r0Dayz", "shots99"],
-        "cat" : "business"
-       },
-       {
         "name" : "Disqus",
         "uri_check" : "https://disqus.com/api/3.0/users/details?user=username:{account}&api_key=E8Uh5l5fHZ6gD8U3KycjAIAk46f68Zw7C6eW8WSjZvCLXebZ7p0r1yrYDrLilk2F",
         "uri_pretty" : "https://disqus.com/by/{account}/",
@@ -1624,7 +1614,7 @@
         "uri_pretty" : "https://hub.docker.com/u/{account}",
         "e_code" : 200,
         "e_string" : "\"uuid\":",
-        "m_string" : "\"orgname\":",
+        "m_string" : "\"orgname\":[\"",
         "m_code" : 404,
         "known" : ["bitnami", "tensorflow"],
         "cat" : "coding"
@@ -1638,7 +1628,7 @@
         "m_code" : 202,
         "m_string" : "\"success\":false",
         "known" : ["gorou", "saku"],
-        "cat" : "business"
+        "cat" : "finance"
        },
        {
         "name" : "Donatty",
@@ -1648,7 +1638,7 @@
         "e_string" : "\"response\":",
         "m_string" : "\"error\":\"internal error\"",
         "m_code" : 404,
-        "known" : ["takaisekai", "fantik894"],
+        "known" : ["takaisekai", "takaisekai"],
         "cat" : "business",
         "protection": ["cloudflare"]
        },
@@ -1661,7 +1651,7 @@
         "m_string" : "\"message\":\"Not found\"",
         "m_code" : 200,
         "known" : ["requiemzxc_komaru", "hexttr"],
-        "cat" : "hobby",
+        "cat" : "finance",
         "protection": ["cloudflare"]
        },
        {
@@ -1881,7 +1871,7 @@
         "m_string" : "class=\"msg_error alert alert-danger\"",
         "m_code" : 404,
         "known" : ["sunsey", "semanticlan"],
-        "cat" : "social"
+        "cat" : "business"
        },
        {
         "name" : "freeCodeCamp",
@@ -1891,7 +1881,7 @@
         "e_string" : "\"user\":",
         "m_string" : "\"error\":\"User not found\"",
         "m_code" : 404,
-        "known" : ["zaira", "zaira"],
+        "known" : ["zaira", "CaesarSage"],
         "cat" : "coding",
         "protection" : ["cloudflare"]
        },
@@ -2483,7 +2473,8 @@
         "m_string" : "[]",
         "m_code" : 200,
         "known" : ["MystikNinja", "0xMRTT"],
-        "cat" : "coding"
+        "cat" : "coding",
+        "protection" : ["other"]
        },
        {
         "name" : "GNOME Shell Extensions",
@@ -2625,7 +2616,7 @@
         "e_string" : "id=\"profile_image\"",
         "m_string" : "Invalid user.",
         "m_code" : 200,
-        "known" : ["anne", "alex"],
+        "known" : ["djjamesryan", "dxcrew2"],
         "cat" : "social"
        },
        {
@@ -3527,7 +3518,7 @@
         "m_string" : "<h1>404 - Page Not Found</h1>",
         "m_code" : 404,
         "known" : ["anne", "alex"],
-        "cat" : "social"
+        "cat" : "music"
        },
        {
         "name" : "LeakIX",
@@ -3537,7 +3528,8 @@
         "m_string" : "<title>LeakIX - Server error</title>",
         "m_code" : 500,
         "known" : ["Chocapikk", "Hug1337"],
-        "cat" : "tech"
+        "cat" : "tech",
+        "protection" : ["other"]
        },
        {
         "name" : "LevelBlue",
@@ -3614,7 +3606,7 @@
         "m_string" : "Response code: 404",
         "m_code" : 404,
         "known" : ["db0", "bnjbvr"],
-        "cat" : "hobby",
+        "cat" : "finance",
         "protection": ["cloudflare"]
        },
        {
@@ -3711,16 +3703,6 @@
         "cat" : "social"
        },
        {
-        "name" : "W3Schools",
-        "uri_check" : "https://pathfinder-api.kai.w3spaces.com/public-profile-api/{account}",
-        "e_code" : 200,
-        "e_string" : "\"userId\":",
-        "m_string" : "\"message\":\"Profile does not exists or not visible\"",
-        "m_code" : 404,
-        "known" : ["test", "admin"],
-        "cat" : "tech"
-       },
-       {
         "name" : "lowcygier.pl",
         "uri_check" : "https://bazar.lowcygier.pl/user/{account}",
         "e_code" : 200,
@@ -3738,7 +3720,7 @@
         "m_string" : "<h2>Nickname not found. Try searching for similar nicknames.</h2>",
         "m_code" : 200,
         "known" : ["tw1st", "0xDEFACED"],
-        "cat" : "shopping"
+        "cat" : "misc"
        },
        {
         "name" : "MAGABOOK",
@@ -4081,8 +4063,8 @@
        },
        {
         "name" : "Mixlr",
-        "uri_check" : "http://api.mixlr.com/users/{account}",
-        "uri_pretty" : "http://mixlr.com/{account}/",
+        "uri_check" : "https://api.mixlr.com/users/{account}",
+        "uri_pretty" : "https://mixlr.com/{account}/",
         "e_code" : 200,
         "e_string" : "\"id\":",
         "m_string" : "\"error\":\"Resource not found\"",
@@ -4503,6 +4485,7 @@
         "name" : "omg.lol",
         "uri_check" : "https://api.omg.lol/address/{account}/availability",
         "uri_pretty" : "https://{account}.omg.lol",
+        "strip_bad_char" : ".",
         "e_code" : 200,
         "e_string" : "\"available\": false",
         "m_string" : "\"available\": true",
@@ -5085,7 +5068,7 @@
         "e_string" : "\"user\":",
         "m_string" : "\"code\":404",
         "m_code" : 404,
-        "known" : ["kaizernero", "OLSUGARDADDYc"],
+        "known" : ["kaizernero", "Giga1337"],
         "cat" : "social",
         "protection" : ["cloudflare"]
        },
@@ -5249,16 +5232,6 @@
         "cat" : "social"
        },
        {
-        "name" : "RaidForums - Archive",
-        "uri_check" : "https://rf-archive.com/users.php?s_tag={account}",
-        "e_code" : 200,
-        "e_string" : "\"id\":",
-        "m_string" : "[]",
-        "m_code" : 200,
-        "known" : ["pompompurin", "DexterM1"],
-        "cat" : "archived"
-       },
-       {
         "name" : "Raddle.me",
         "uri_check" : "https://raddle.me/user/{account}",
         "e_code" : 200,
@@ -5267,6 +5240,16 @@
         "m_string" : "404 Not Found",
         "known" : ["zephyr", "Archaplain"],
         "cat" : "social"
+       },
+       {
+        "name" : "RaidForums - Archive",
+        "uri_check" : "https://rf-archive.com/users.php?s_tag={account}",
+        "e_code" : 200,
+        "e_string" : "\"id\":",
+        "m_string" : "[]",
+        "m_code" : 200,
+        "known" : ["pompompurin", "DexterM1"],
+        "cat" : "archived"
        },
        {
         "name" : "Rarible",
@@ -5687,7 +5670,7 @@
         "e_string" : "\"user\":{\"id\":",
         "m_string" : "\"error\":",
         "m_code" : 200,
-        "known" : ["test"],
+        "known" : ["rebeccaskeeles", "john"],
         "cat" : "social"
        },
        {
@@ -5896,6 +5879,16 @@
         "cat" : "coding"
        },
        {
+        "name" : "sporcle",
+        "uri_check" : "https://www.sporcle.com/user/{account}/people/",
+        "e_code" : 200,
+        "e_string" : "'s Sporcle Friends",
+        "m_string" : "This Sporcle user cannot be found.",
+        "m_code" : 301,
+        "known" : ["Test", "lolshortee"],
+        "cat" : "gaming"
+       },
+       {
         "name" : "Sports Tracker",
         "uri_check" : "https://api.sports-tracker.com/apiserver/v1/user/name/{account}",
         "uri_pretty" : "https://sports-tracker.com/view_profile/{account}",
@@ -5905,16 +5898,6 @@
         "m_code" : 200,
         "known" : ["petriola", "adisonthadat"],
         "cat" : "health"
-       },
-       {
-        "name" : "sporcle",
-        "uri_check" : "https://www.sporcle.com/user/{account}/people/",
-        "e_code" : 200,
-        "e_string" : "'s Sporcle Friends",
-        "m_string" : "This Sporcle user cannot be found.",
-        "m_code" : 301,
-        "known" : ["Test", "lolshortee"],
-        "cat" : "gaming"
        },
        {
         "name" : "Spotify",
@@ -6938,6 +6921,16 @@
         "m_code" : 301,
         "known" : ["briankirchoff", "bryankopta"],
         "cat" : "business"
+       },
+       {
+        "name" : "W3Schools",
+        "uri_check" : "https://pathfinder-api.kai.w3spaces.com/public-profile-api/{account}",
+        "e_code" : 200,
+        "e_string" : "\"userId\":",
+        "m_string" : "\"message\":\"Profile does not exists or not visible\"",
+        "m_code" : 404,
+        "known" : ["test", "admin"],
+        "cat" : "tech"
        },
        {
         "name" : "watchmemore.com",
