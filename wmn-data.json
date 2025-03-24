@@ -6024,16 +6024,6 @@
         "cat" : "social"
        },
        {
-        "name" : "TotalWar",
-        "uri_check" : "https://forums.totalwar.com/profile/{account}",
-        "e_code" : 200,
-        "e_string" : "Total War Forums",
-        "m_string" : "Not Found",
-        "m_code" : 404,
-        "known" : ["iamnotarobot", "passthechips"],
-        "cat" : "gaming"
-       },
-       {
         "name" : "toyhou.se",
         "uri_check" : "https://toyhou.se/{account}",
         "e_code" : 200,
