@@ -5141,7 +5141,8 @@
        },
        {
         "name" : "Scammer.info",
-        "uri_check" : "https://scammer.info/u/{account}/",
+        "uri_check" : "https://scammer.info/u/{account}.json",
+        "uri_pretty" : "https://scammer.info/u/{account}",
         "e_code" : 200,
         "e_string" : "<title> Profile -",
         "m_string" : "Page Not Found - Scammer Info",
