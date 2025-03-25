@@ -5667,8 +5667,8 @@
         "name" : "Slideshare",
         "uri_check" : "https://www.slideshare.net/{account}",
         "e_code" : 200,
-        "e_string" : "\"user\":{\"id\":",
-        "m_string" : "\"error\":",
+        "e_string" : "data-testid=\"report-button\"",
+        "m_string" : "id=\"username-available\"",
         "m_code" : 200,
         "known" : ["rebeccaskeeles", "john"],
         "cat" : "social"
