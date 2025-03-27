@@ -1638,7 +1638,7 @@
         "e_string" : "\"response\":",
         "m_string" : "\"error\":\"internal error\"",
         "m_code" : 404,
-        "known" : ["takaisekai", "takaisekai"],
+        "known" : ["takaisekai", "fordmac"],
         "cat" : "business",
         "protection": ["cloudflare"]
        },
@@ -4315,16 +4315,6 @@
         "m_string" : "not found",
         "known" : ["arukori", "honey"],
         "cat" : "business"
-       },
-       {
-        "name" : "Nitter",
-        "uri_check" : "https://nitter.privacydev.net/{account}",
-        "e_code" : 200,
-        "e_string" : "class=\"profile-tabs\"",
-        "m_string" : "class=\"error-panel\"",
-        "m_code" : 404,
-        "known" : ["WebBreacher", "OSINT_Tactical"],
-        "cat" : "social"
        },
        {
         "name" : "naija_planet",
