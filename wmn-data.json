@@ -3010,9 +3010,9 @@
 	"uri_check" : "https://ismygirl.com/api/model/getModel?slug={account}",
         "uri_pretty" : "https://ismygirl.com/models/{account}",
         "e_code" : 200,
-        "e_string" : "slug",
-        "m_code" : 200,
-        "m_string" : "model not found",
+        "e_string" : "\"id\":",
+        "m_code" : 404,
+        "m_string" : "detail\": \"Model not found.",
         "known" : ["summer", "littlelanta"],
         "cat" : "xx NSFW xx"
        },
