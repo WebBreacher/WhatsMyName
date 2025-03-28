@@ -3007,12 +3007,13 @@
        },
        {
         "name" : "isMyGirl",
-        "uri_check" : "https://ismygirl.com/models/{account}",
+	"uri_check" : "https://ismygirl.com/api/model/getModel?slug={account}",
+        "uri_pretty" : "https://ismygirl.com/models/{account}",
         "e_code" : 200,
-        "e_string" : "<a title=\"About me\">",
+        "e_string" : "slug",
         "m_code" : 200,
-        "m_string" : "No model was found",
-        "known" : ["kasumineechan", "blinky"],
+        "m_string" : "model not found",
+        "known" : ["summer", "littlelanta"],
         "cat" : "xx NSFW xx"
        },
        {
