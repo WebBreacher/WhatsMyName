@@ -4507,9 +4507,9 @@
         "name" : "Pinterest",
         "uri_check" : "https://www.pinterest.com/{account}/",
         "e_code" : 200,
-        "e_string" : "id=\"business-profile-header",
-        "m_string" : "pinterest.com/?show_error=true",
-        "m_code" : 200,
+        "e_string" : " - Profile | Pinterest",
+        "m_string" : "id=\"home-main-title",
+        "m_code" : 301,
         "known" : ["test123", "frickcollection"],
         "cat" : "social"
        },
@@ -6086,7 +6086,7 @@
         "cat" : "images"
        },
        {
-        "name" : "Tunefind",
+        "name" : "tunefind",
 	"uri_check" : "https://www.tunefind.com/api-request/account/profile?userName={account}",
         "uri_pretty" : "https://www.tunefind.com/user/profile/{account}",
         "e_code" : 200,
@@ -6339,7 +6339,7 @@
         "name" : "Vero",
         "uri_check" : "https://vero.co/{account}",
         "e_code" : 200,
-        "e_string" : "on VERO",
+        "e_string" : "name=\"username",
         "m_string" : "<h3>Not Found</h3>",
         "m_code" : 200,
         "known" : ["alex", "johnny"],
