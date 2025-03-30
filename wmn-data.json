@@ -549,16 +549,6 @@
         "protection" : ["cloudflare"]
        },
        {
-        "name" : "Behance",
-        "uri_check" : "https://www.behance.net/{account}",
-        "e_code" : 200,
-        "e_string" : "og:site_name",
-        "m_string" : "<title>Oops!",
-        "m_code" : 404,
-        "known" : ["alice", "john"],
-        "cat" : "business"
-       },
-       {
         "name" : "Bentbox",
         "uri_check" : "https://bentbox.co/{account}",
         "e_code" : 200,
@@ -766,6 +756,16 @@
         "m_string" : "Sorry, we were unable to locate the content that you requested.",
         "m_code" : 404,
         "known" : ["john", "bob"],
+        "cat" : "hobby"
+       },
+	{
+        "name" : "Booknode",
+        "uri_check" : "https://booknode.com/profil/{account}",
+        "e_code" : 200,
+        "e_string" : "<title>Profil de",
+        "m_string" : "<title>Page non trouvée",
+        "m_code" : 404,
+        "known" : ["Paraffine", "chanoa"],
         "cat" : "hobby"
        },
        {
@@ -1298,17 +1298,6 @@
         "m_code" : 404,
         "known" : ["Bstar3Dart", "john"],
         "cat" : "hobby"
-       },
-       {
-        "name" : "Curiouscat",
-        "uri_check" : "https://curiouscat.live/api/v2.1/profile?username={account}",
-        "uri_pretty" : "https://curiouscat.live/{account}",
-        "e_code" : 200,
-        "e_string" : "is_followed_by_me",
-        "m_code" : 200,
-        "m_string" : "\"error\": 404",
-        "known" : ["kindokja9158", "saki"],
-        "cat" : "social"
        },
        {
         "name" : "Cytoid",
@@ -3254,14 +3243,14 @@
        },
        {
         "name" : "isMyGirl",
-        "uri_check" : "https://ismygirl.com/api/model/getModel?slug={account}",
-        "uri_pretty" : "https://ismygirl.com/{account}",
+	      "uri_check" : "https://ismygirl.com/api/model/getModel?slug={account}",
+        "uri_pretty" : "https://ismygirl.com/models/{account}",
         "e_code" : 200,
         "e_string" : "\"id\":",
         "m_code" : 404,
-        "m_string" : "\"detail\":\"Model not found.\"",
-        "known" : ["littlelanta", "vanessahillz"],
-        "cat" : "finance"
+        "m_string" : "detail\": \"Model not found.",
+        "known" : ["summer", "littlelanta"],
+        "cat" : "xx NSFW xx"
        },
        {
         "name" : "Issuu",
@@ -4886,8 +4875,8 @@
         "uri_check" : "https://www.pinterest.com/{account}/",
         "e_code" : 200,
         "e_string" : " - Profile | Pinterest",
-        "m_string" : "Whoops! We couldn't find that page",
-        "m_code" : 404,
+        "m_string" : "id=\"home-main-title",
+        "m_code" : 301,
         "known" : ["test123", "frickcollection"],
         "cat" : "social"
        },
@@ -5238,12 +5227,13 @@
        },
        {
         "name" : "quitter.pl",
-        "uri_check" : "https://quitter.pl/profile/{account}",
+	"uri_check" : "https://quitter.pl/api/v1/accounts/{account}",
+        "uri_pretty" : "https://quitter.pl/users/{account}",
         "e_code" : 200,
-        "e_string" : "@quitter.pl",
-        "m_string" : "Nie znaleziono",
+        "e_string" : "avatar_static",
+        "m_string" : "\"error\":",
         "m_code" : 404,
-        "known" : ["divmod", "panoptykon"],
+        "known" : ["smok", "mik"],
         "cat" : "social"
        },
        {
@@ -6545,11 +6535,12 @@
         "cat" : "images"
        },
        {
-        "name" : "Tunefind",
-        "uri_check" : "https://www.tunefind.com/user/profile/{account}",
+        "name" : "tunefind",
+	"uri_check" : "https://www.tunefind.com/api-request/account/profile?userName={account}",
+        "uri_pretty" : "https://www.tunefind.com/user/profile/{account}",
         "e_code" : 200,
-        "e_string" : "Achievements",
-        "m_string" : "Page not found",
+        "e_string" : "user-stats-engagement",
+        "m_string" : "User not found:",
         "m_code" : 404,
         "known" : ["baywolfmusic", "mrcerny18"],
         "cat" : "music"
@@ -6786,9 +6777,9 @@
         "name" : "Vero",
         "uri_check" : "https://vero.co/{account}",
         "e_code" : 200,
-        "e_string" : "on VERO™</title>",
-        "m_string" : "The page you are looking for doesn't exist.",
-        "m_code" : 404,
+        "e_string" : "name=\"username",
+        "m_string" : "<h3>Not Found</h3>",
+        "m_code" : 200,
         "known" : ["alex", "johnny"],
         "cat" : "art"
        },
@@ -7067,9 +7058,9 @@
         "name" : "weibo",
         "uri_check" : "https://tw.weibo.com/{account}",
         "e_code" : 200,
-        "e_string" : "粉絲",
+        "e_string" : "<div class=\"name\">",
         "m_string" : "Oops!",
-        "m_code" : 404,
+        "m_code" : 200,
         "known" : ["chentingni", "fbb0916"],
         "cat" : "social"
        },
@@ -7088,9 +7079,9 @@
         "name" : "Wikidot",
         "uri_check" : "http://www.wikidot.com/user:info/{account}",
         "e_code" : 200,
-        "e_string" : "Wikidot.com:",
-        "m_string" : "Free and Pro Wiki Hosting",
-        "m_code" : 404,
+        "e_string" : "<h1 class=\"profile-title\">",
+        "m_string" : "<div class=\"error-block\">User does not exist.</div>",
+        "m_code" : 200,
         "known" : ["jack", "allen"],
         "cat" : "social"
        },
@@ -7329,16 +7320,6 @@
         "m_code" : 302,
         "known" : ["monya14555d", "LordMohy"],
         "cat" : "dating"
-       },
-       {
-        "name" : "Yelp",
-        "uri_check" : "https://www.yelp.com/user_details?userid={account}",
-        "e_code" : 200,
-        "e_string" : "'s Reviews |",
-        "m_string" : "Doggone it! The page you’re looking for cannot be found.",
-        "m_code" : 404,
-        "known" : ["j5CYhsvD2yrunyyoZvSvKA", "GHoG4X4FY8D8L563zzPX5w"],
-        "cat" : "shopping"
        },
        {
         "name" : "YesWeHack",
