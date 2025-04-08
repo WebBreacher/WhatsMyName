@@ -510,9 +510,9 @@
         "name" : "bblog_ru",
         "uri_check" : "https://www.babyblog.ru/user/{account}",
         "e_code" : 200,
-        "e_string" : ") — дневник на Babyblog.ru</title>",
-        "m_string" : "<title>БэбиБлог - беременность, календарь беременности, дневники</title>",
-        "m_code" : 301,
+        "e_string" : ") — дневник на Babyblog.ru",
+        "m_string" : "БэбиБлог - беременность, календарь беременности, дневники",
+        "m_code" : 200,
         "known" : ["joyfitnessdance1", "bobkokatya94"],
         "cat" : "misc"
        },
