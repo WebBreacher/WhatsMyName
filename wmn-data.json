@@ -1777,9 +1777,9 @@
         "name" : "Engadget",
         "uri_check" : "https://www.engadget.com/about/editors/{account}/",
         "e_code" : 200,
-        "e_string" : "- Engadget</title>",
-        "m_string" : "<title>,  -",
-        "m_code" : 404,
+        "e_string" : "\"displayName\"",
+        "m_string" : "<title>,  - Engadget</title>",
+        "m_code" : 200,
         "known" : ["devindra-hardawar", "kris-holt"],
         "cat" : "tech"
        },
