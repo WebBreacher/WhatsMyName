@@ -7179,6 +7179,16 @@
         "known" : ["test"],
         "cat" : "blog"
        },
+	{
+        "name" : "WordPress Blog",
+        "uri_check" : "https://{account}.wordpress.com",
+        "e_code" : 200,
+        "e_string" : "body class=\"home blog",
+        "m_string" : "doesn't exist",
+        "m_code" : 302,
+        "known" : ["test"],
+        "cat" : "blog"
+       },
        {
         "name" : "Wowhead",
         "uri_check" : "https://www.wowhead.com/user={account}",
