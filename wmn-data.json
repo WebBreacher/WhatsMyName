@@ -94,16 +94,6 @@
         "cat" : "social"
        },
        {
-        "name" : "aaha_chat",
-        "uri_check" : "https://www.aahachat.org/profile/{account}/",
-        "e_code" : 200,
-        "e_string" : "https://www.aahachat.org/profile",
-        "m_string" : "<title>Page not found",
-        "m_code" : 404,
-        "known" : ["crazy", "dog"],
-        "cat" : "social"
-       },
-       {
         "name" : "about.me",
         "uri_check" : "https://about.me/{account}",
         "e_code" : 200,
