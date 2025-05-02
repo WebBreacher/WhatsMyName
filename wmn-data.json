@@ -95,16 +95,6 @@
         "cat" : "social"
        },
        {
-        "name" : "aaha_chat",
-        "uri_check" : "https://www.aahachat.org/profile/{account}/",
-        "e_code" : 200,
-        "e_string" : "https://www.aahachat.org/profile",
-        "m_string" : "<title>Page not found",
-        "m_code" : 404,
-        "known" : ["crazy", "dog"],
-        "cat" : "social"
-       },
-       {
         "name" : "about.me",
         "uri_check" : "https://about.me/{account}",
         "e_code" : 200,
@@ -4777,17 +4767,6 @@
         "m_code" : 404,
         "known" : ["john", "bob"],
         "cat" : "tech"
-       },
-       {
-        "name" : "Peing",
-        "uri_check" : "https://peing.net/api/v2/items/?type=answered&account={account}",
-        "uri_pretty" : "https://peing.net/{account}",
-        "e_code" : 200,
-        "e_string" : "items",
-        "m_code" : 404,
-        "m_string" : "Not Found",
-        "known" : ["honey", "blink"],
-        "cat" : "social"
        },
        {
         "name" : "Periscope",
