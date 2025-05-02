@@ -5145,11 +5145,12 @@
        {
         "name" : "Pronouny",
         "uri_check" : "https://pronouny.xyz/api/users/profile/username/{account}",
+        "uri_pretty" : "https://pronouny.xyz/users/{account}",
         "e_code" : 200,
-        "e_string" : "username",
+        "e_string" : "\"username\":",
         "m_code" : 400,
         "m_string" : "That user doesn't exist",
-        "known" : ["test", "honey"],
+        "known" : ["donna", "honey"],
         "cat" : "social"
        },
        {
