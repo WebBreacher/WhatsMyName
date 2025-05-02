@@ -2434,7 +2434,7 @@
        {
         "name" : "GitHub Gists",
         "uri_check" : "https://api.github.com/users/{account}/gists",
-        "uri_pretty" : "https://gits.github.com/{account}",
+        "uri_pretty" : "https://gist.github.com/{account}",
         "e_code" : 200,
         "e_string" : "\"id\":",
         "m_string" : "\"status\": \"404\"",
