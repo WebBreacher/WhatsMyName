@@ -6793,16 +6793,6 @@
         "cat" : "misc"
        },
        {
-        "name" : "viddler",
-        "uri_check" : "https://www.viddler.com/channel/{account}/",
-        "e_code" : 200,
-        "e_string" : "profile-details",
-        "m_string" : "User not found",
-        "m_code" : 404,
-        "known" : ["GamingParodies", "planphilly"],
-        "cat" : "video"
-       },
-       {
         "name" : "VIEWBUG",
         "uri_check" : "https://www.viewbug.com/member/{account}",
         "e_code" : 200,
