@@ -4475,14 +4475,14 @@
        },
        {
         "name" : "omg.lol",
-        "uri_check" : "https://api.omg.lol/address/{account}/availability",
+        "uri_check" : "https://api.omg.lol/address/{account}/info",
         "uri_pretty" : "https://{account}.omg.lol",
-        "strip_bad_char" : ".",
+        "strip_bad_char" : "@.",
         "e_code" : 200,
-        "e_string" : "\"available\": false",
-        "m_string" : "\"available\": true",
+        "e_string" : "\"success\": true",
+        "m_string" : "\"success\": false",
         "m_code" : 200,
-        "known" : ["cwa", "ben"],
+        "known" : ["cwa", "adam"],
         "cat" : "social"
        },
        {
