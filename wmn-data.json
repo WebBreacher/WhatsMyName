@@ -2041,6 +2041,16 @@
         "known" : ["glaciernps", "test"],
         "cat" : "images"
        },
+	{
+        "name" : "FlightRadar",
+        "uri_check" : "https://my.flightradar24.com/{account}/",
+        "e_code" : 200,
+        "e_string" : "class=\"profile-card\" data-profile-user=",
+        "m_string" : "class=\"main page-not-found-main",
+        "m_code" : 404,
+        "known" : ["finn", "pavelkral"],
+        "cat" : "misc"
+       },
        {
         "name" : "Flipboard",
         "uri_check" : "https://flipboard.com/@{account}",
@@ -2414,7 +2424,7 @@
        {
         "name" : "GitHub Gists",
         "uri_check" : "https://api.github.com/users/{account}/gists",
-        "uri_pretty" : "https://gits.github.com/{account}",
+        "uri_pretty" : "https://gist.github.com/{account}",
         "e_code" : 200,
         "e_string" : "\"id\":",
         "m_string" : "\"status\": \"404\"",
@@ -6763,16 +6773,6 @@
         "cat" : "misc"
        },
        {
-        "name" : "viddler",
-        "uri_check" : "https://www.viddler.com/channel/{account}/",
-        "e_code" : 200,
-        "e_string" : "profile-details",
-        "m_string" : "User not found",
-        "m_code" : 404,
-        "known" : ["GamingParodies", "planphilly"],
-        "cat" : "video"
-       },
-       {
         "name" : "VIEWBUG",
         "uri_check" : "https://www.viewbug.com/member/{account}",
         "e_code" : 200,
@@ -7145,6 +7145,16 @@
         "e_string" : "s Profile &#124; WordPress.org",
         "m_string" : "User not found",
         "m_code" : 404,
+        "known" : ["test"],
+        "cat" : "blog"
+       },
+	{
+        "name" : "WordPress Blog",
+        "uri_check" : "https://{account}.wordpress.com",
+        "e_code" : 200,
+        "e_string" : "body class=\"home blog",
+        "m_string" : "doesn't exist",
+        "m_code" : 302,
         "known" : ["test"],
         "cat" : "blog"
        },
