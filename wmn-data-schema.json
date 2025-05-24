@@ -99,6 +99,16 @@
 						],
 						"pattern": "^.*$"
 					},
+					"uri_pretty": {
+						"$id": "#root/sites/items/uri_check",
+						"title": "Uri_pretty",
+						"type": "string",
+						"default": "",
+						"examples": [
+							"https://101010.pl/@{account}"
+						],
+						"pattern": "^.*$"
+					},
 					"post_body": {
 						"$id": "#root/sites/items/post_body",
 						"title": "Post_body",
