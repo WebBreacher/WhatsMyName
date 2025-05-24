@@ -1194,7 +1194,7 @@
         "m_string" : "\"_status\":\"available\"",
         "m_code" : 200,
         "known" : ["timanttimaarit", "tsoloweyko"],
-        "cat" : "social",
+        "cat" : "hobby",
         "headers" : {
             "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8"
         },
@@ -1229,7 +1229,7 @@
         "m_string" : "\"error\":\"Unhandled exception\"",
         "m_code" : 404,
         "known" : ["djantidog", "mcnorington"],
-        "cat" : "social"
+        "cat" : "misc"
        },
        {
         "name" : "cowboys4angels",
@@ -1301,7 +1301,7 @@
         "m_code" : 200,
         "m_string" : "\"error\": 404",
         "known" : ["kindokja9158", "saki"],
-        "cat" : "social"
+        "cat" : "finance"
        },
        {
         "name" : "Cytoid",
@@ -1655,7 +1655,7 @@
         "m_string" : "<title>Сторінку не знайдено (404) - Donatello</title>",
         "m_code" : 404,
         "known" : ["Metvix", "Selezenka"],
-        "cat" : "social"
+        "cat" : "finance"
        },
        {
         "name" : "Donatik",
@@ -1665,7 +1665,7 @@
         "m_string" : "id=\"__next_error__\"",
         "m_code" : 500,
         "known" : ["gypsyjitsu", "forestgamp3021"],
-        "cat" : "social"
+        "cat" : "finance"
        },
        {
         "name" : "Donatty",
@@ -1841,7 +1841,7 @@
         "m_code" : 404,
         "m_string" : "\"ErrorCode\":\"NotFound\"",
         "known" : ["jeepsontrading", "armandofoschini"],
-        "cat" : "images",
+        "cat" : "finance",
         "protection" : ["cloudflare"]
        },
        {
@@ -2389,7 +2389,7 @@
         "m_string" : "class=\"render_404\"",
         "m_code" : 404,
         "known" : ["test", "User"],
-        "cat" : "social"
+        "cat" : "music"
        },
        {
         "name" : "Genius (Artists)",
@@ -2399,7 +2399,7 @@
         "m_string" : "class=\"render_404\"",
         "m_code" : 404,
         "known" : ["Profjam", "Hozier"],
-        "cat" : "social"
+        "cat" : "music"
        },
        {
         "name" : "GeeksForGeeks",
@@ -2658,7 +2658,7 @@
         "m_string" : "\"user\":null",
         "m_code" : 200,
         "known" : ["33win1net", "goober99"],
-        "cat" : "social",
+        "cat" : "coding",
         "headers" : {
             "content-type" : "application/json"
         }
@@ -3438,7 +3438,7 @@
         "m_string" : "<title>Kaggle: Your Home for Data Science</title>",
         "m_code" : 404,
         "known" : ["charmq", "tunguz"],
-        "cat" : "social"
+        "cat" : "coding"
        },
        {
         "name" : "Keybase",
@@ -4625,7 +4625,7 @@
         "m_string" : "Нет такого пользователя",
         "m_code" : 200,
         "known" : ["Goblin", "Баир Иринчеев"],
-        "cat" : "tech"
+        "cat" : "social"
        },
        {
         "name" : "Opencollective",
@@ -4645,7 +4645,7 @@
         "m_string" : "\"errorCode\": \"404\"",
         "m_code" : 404,
         "known" : ["wuweijie", "alansmithee"],
-        "cat" : "social"
+        "cat" : "tech"
        },
        {
         "name" : "OpenStreetMap",
@@ -5407,7 +5407,7 @@
         "m_string" : "\"statusCode\":404",
         "m_code" : 404,
         "known" : ["wuweijie", "alansmithee"],
-        "cat" : "social"
+        "cat" : "coding"
        },
        {
         "name" : "Researchgate",
@@ -5521,7 +5521,7 @@
         "m_string" : "alt=\"404 error\"",
         "m_code" : 404,
         "known" : ["awscloud", "bsm"],
-        "cat" : "social"
+        "cat" : "coding"
        },
        {
         "name" : "ruVoIP.net",
@@ -6483,7 +6483,7 @@
         "m_code" : 404,
         "m_string" : "\"message\":\"Not found\"",
         "known" : ["gagzzz", "larebouille"],
-        "cat" : "business"
+        "cat" : "finance"
        },
        {
         "name" : "Tilde.zone (Mastodon Instance)",
@@ -7175,7 +7175,7 @@
         "m_code" : 404,
         "m_string" : "<h2>Page Not Found</h2>",
         "known" : ["login836039", "Datura0808"],
-        "cat" : "images"
+        "cat" : "tech"
        },
        {
         "name" : "weheartit",
