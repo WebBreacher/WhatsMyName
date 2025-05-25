@@ -100,7 +100,7 @@
 						"pattern": "^.*$"
 					},
 					"uri_pretty": {
-						"$id": "#root/sites/items/uri_check",
+						"$id": "#root/sites/items/uri_pretty",
 						"title": "Uri_pretty",
 						"type": "string",
 						"default": "",
