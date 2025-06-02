@@ -325,13 +325,13 @@
     {
       "name": "Aparat",
       "uri_check": "https://www.aparat.com/api/fa/v1/user/user/information/username/{account}",
+      "uri_pretty": "https://www.aparat.com/{account}",
       "e_code": 200,
       "e_string": "\"id\":",
       "m_string": "class=\"error-body\"",
       "m_code": 404,
       "known": ["abolfazlxmaster", "siahkolah"],
-      "cat": "social",
-      "uri_pretty": "https://www.aparat.com/{account}"
+      "cat": "social"
     },
     {
       "name": "Apex Legends",
