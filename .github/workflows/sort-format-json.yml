@@ -48,7 +48,7 @@ jobs:
 
           // ---------- Extract Schema Key Order ----------
           const siteSchema = schema.properties?.sites?.items;
-          const keyOrder = Array.isArray(siteSchema?.required) ? siteSchema.required : [];
+          const keyOrder = siteSchema?.properties ? Object.keys(siteSchema.properties) : [];
 
           // ---------- Sort authors and categories ----------
           if (Array.isArray(data.authors)) {
