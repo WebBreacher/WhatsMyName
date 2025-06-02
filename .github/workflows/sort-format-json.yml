@@ -64,8 +64,16 @@ jobs:
             data.sites = data.sites.map(site => reorderObjectKeys(site, keyOrder));
           }
 
-          fs.writeFileSync(dataPath, JSON.stringify(data, null, 2));
-          console.log('wmn-data.json sorted and reordered according to schema');
+          // Convert to JSON with 2-space indentation
+          const updated = JSON.stringify(data, null, 2);
+
+          // Only write if content has changed
+          if (original !== updated) {
+            fs.writeFileSync(dataPath, updated);
+            console.log('wmn-data.json updated and reordered.');
+          } else {
+            console.log('wmn-data.json is already sorted and formatted.');
+          }
           EOF
 
       - name: Install Prettier
