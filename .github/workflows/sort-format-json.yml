@@ -1,4 +1,4 @@
-name: Sort and Format wmn-data.json
+name: Sort and Format JSON Files
 
 on:
   push:
@@ -7,88 +7,25 @@ on:
       - 'wmn-data-schema.json'
 
 jobs:
-  sort-json:
+  sort-and-format-json:
+    name: Sort and Format JSON Files
     runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v3
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
-          node-version: '20'
+          python-version: '3.11'
 
-      - name: Create sorting script
-        run: |
-          cat << 'EOF' > sort-wmn-data.js
-          const fs = require('fs');
-
-          const dataPath = 'wmn-data.json';
-          const schemaPath = 'wmn-data-schema.json';
-
-          const original = fs.readFileSync(dataPath, 'utf8');
-          const data = JSON.parse(original);
-          const schema = JSON.parse(fs.readFileSync(schemaPath, 'utf8'));
-
-          // ---------- Sorting Helpers ----------
-          function sortArrayAlphabetically(arr) {
-            return arr.sort((a, b) => a.localeCompare(b));
-          }
-
-          function reorderObjectKeys(obj, keyOrder) {
-            const reordered = {};
-            keyOrder.forEach(key => {
-              if (key in obj) reordered[key] = obj[key];
-            });
-            Object.keys(obj).forEach(key => {
-              if (!keyOrder.includes(key)) reordered[key] = obj[key];
-            });
-            return reordered;
-          }
-
-          // ---------- Extract Schema Key Order ----------
-          const siteSchema = schema.properties?.sites?.items;
-          const keyOrder = siteSchema?.properties ? Object.keys(siteSchema.properties) : [];
-
-          // ---------- Sort authors and categories ----------
-          if (Array.isArray(data.authors)) {
-            data.authors = sortArrayAlphabetically(data.authors);
-          }
-
-          if (Array.isArray(data.categories)) {
-            data.categories = sortArrayAlphabetically(data.categories);
-          }
-
-          // ---------- Sort and Reorder Sites ----------
-          if (Array.isArray(data.sites)) {
-            data.sites.sort((a, b) => a.name.localeCompare(b.name));
-            data.sites = data.sites.map(site => reorderObjectKeys(site, keyOrder));
-          }
-
-          // Convert to JSON with 2-space indentation
-          const updated = JSON.stringify(data, null, 2);
-
-          // Only write if content has changed
-          if (original !== updated) {
-            fs.writeFileSync(dataPath, updated);
-            console.log('wmn-data.json updated and reordered.');
-          } else {
-            console.log('wmn-data.json is already sorted and formatted.');
-          }
-          EOF
-
-      - name: Install Prettier
-        run: npm install --global prettier
-
-      - name: Run sorting script and format
-        run: |
-          node sort-wmn-data.js
-          prettier --write wmn-data.json
+      - name: Run Python sorting script
+        run: python scripts/sort_wmn_data.py
 
       - name: Commit if changed
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
-          git add wmn-data.json
-          git diff --cached --quiet || git commit -m "chore: auto-sort wmn-data.json by schema"
+          git add wmn-data.json wmn-data-schema.json
+          git diff --cached --quiet || git commit -m "chore: auto-sort and format JSON files"
           git push
