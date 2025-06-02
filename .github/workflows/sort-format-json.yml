@@ -26,7 +26,8 @@ jobs:
           const dataPath = 'wmn-data.json';
           const schemaPath = 'wmn-data-schema.json';
 
-          const data = JSON.parse(fs.readFileSync(dataPath, 'utf8'));
+          const original = fs.readFileSync(dataPath, 'utf8');
+          const data = JSON.parse(original);
           const schema = JSON.parse(fs.readFileSync(schemaPath, 'utf8'));
 
           // ---------- Sorting Helpers ----------
