@@ -352,6 +352,10 @@
       "uri_check": "https://graphql.anilist.co",
       "uri_pretty": "https://anilist.co/user/{account}",
       "post_body": "{\"query\":\"query{User(name:\\\"{account}\\\"){id name}}\"}",
+      "headers": {
+        "accept": "application/json",
+        "Content-Type": "application/json"
+      },
       "e_code": 200,
       "e_string": "\"id\":",
       "m_string": "Not Found",
@@ -360,17 +364,16 @@
         "test",
         "johndoe"
       ],
-      "cat": "social",
-      "headers": {
-        "accept": "application/json",
-        "Content-Type": "application/json"
-      }
+      "cat": "social"
     },
     {
       "name": "Anime-Planet",
       "uri_check": "https://www.anime-planet.com/api/validation/username",
       "uri_pretty": "https://www.anime-planet.com/users/{account}",
       "post_body": "{\"username\":\"{account}\"}",
+      "headers": {
+        "Content-Type": "application/json"
+      },
       "e_code": 400,
       "e_string": "\"msg\":\"Username is unavailable\"",
       "m_string": "\"status\":\"ok\"",
@@ -382,10 +385,7 @@
       "cat": "social",
       "protection": [
         "cloudflare"
-      ],
-      "headers": {
-        "Content-Type": "application/json"
-      }
+      ]
     },
     {
       "name": "anonup",
@@ -418,6 +418,13 @@
       "name": "Apex Legends",
       "uri_check": "https://api.tracker.gg/api/v2/apex/standard/profile/origin/{account}",
       "uri_pretty": "https://apex.tracker.gg/apex/profile/origin/{account}/overview",
+      "headers": {
+        "Accept-Language": "en-US,en;q=0.5",
+        "Origin": "https://apex.tracker.gg",
+        "Referer": "https://apex.tracker.gg/",
+        "TE": "trailers",
+        "User-Agent": "Mozilla/5.0 (Mozilla/5.0 (X11; Linux i686; rv:128.0) Gecko/20100101 Firefox/128.0"
+      },
       "e_code": 200,
       "e_string": "platformInfo",
       "m_string": "CollectorResultStatus::NotFound",
@@ -426,14 +433,7 @@
         "tttcheekyttt",
         "RollsRoyce_Dawn"
       ],
-      "cat": "gaming",
-      "headers": {
-        "Accept-Language": "en-US,en;q=0.5",
-        "Origin": "https://apex.tracker.gg",
-        "Referer": "https://apex.tracker.gg/",
-        "TE": "trailers",
-        "User-Agent": "Mozilla/5.0 (Mozilla/5.0 (X11; Linux i686; rv:128.0) Gecko/20100101 Firefox/128.0"
-      }
+      "cat": "gaming"
     },
     {
       "name": "Appian",
@@ -609,6 +609,12 @@
     {
       "name": "Avid Community",
       "uri_check": "https://community.avid.com/members/{account}/default.aspx",
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/png,image/svg+xml,*/*;q=0.8",
+        "Cache-Control": "no-cache",
+        "Host": "community.avid.com",
+        "User-Agent": "Mozilla/5.0 (Mozilla/5.0 (X11; Linux i686; rv:128.0) Gecko/20100101 Firefox/128.0"
+      },
       "e_code": 200,
       "e_string": "My Activity",
       "m_string": "The user you requested cannot be found.",
@@ -617,13 +623,7 @@
         "Thayne",
         "Admin"
       ],
-      "cat": "music",
-      "headers": {
-        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/png,image/svg+xml,*/*;q=0.8",
-        "Cache-Control": "no-cache",
-        "Host": "community.avid.com",
-        "User-Agent": "Mozilla/5.0 (Mozilla/5.0 (X11; Linux i686; rv:128.0) Gecko/20100101 Firefox/128.0"
-      }
+      "cat": "music"
     },
     {
       "name": "babepedia",
@@ -860,6 +860,9 @@
       "uri_check": "https://api.bitchute.com/api/beta/channel",
       "uri_pretty": "https://www.bitchute.com/channel/{account}/",
       "post_body": "{\"channel_id\":\"{account}\"}",
+      "headers": {
+        "Content-Type": "application/json"
+      },
       "e_code": 200,
       "e_string": "\"channel_id\":",
       "m_string": "\"errors\":",
@@ -869,10 +872,7 @@
         "americafloats",
         "daindor"
       ],
-      "cat": "political",
-      "headers": {
-        "Content-Type": "application/json"
-      }
+      "cat": "political"
     },
     {
       "name": "Blogger",
@@ -1091,6 +1091,9 @@
       "uri_check": "https://app.buymeacoffee.com/api/v1/check_availability",
       "uri_pretty": "https://buymeacoffee.com/{account}",
       "post_body": "{\"project_slug\":\"{account}\"}",
+      "headers": {
+        "Content-Type": "application/json"
+      },
       "e_code": 200,
       "e_string": "\"available\":false",
       "m_string": "\"available\":true",
@@ -1102,10 +1105,7 @@
       "cat": "finance",
       "protection": [
         "cloudflare"
-      ],
-      "headers": {
-        "Content-Type": "application/json"
-      }
+      ]
     },
     {
       "name": "BuzzFeed",
@@ -1602,6 +1602,9 @@
     {
       "name": "Coub",
       "uri_check": "https://coub.com/{account}",
+      "headers": {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
+      },
       "e_code": 200,
       "e_string": "- Channel on Coub</title>",
       "m_string": "Sorry, that page doesn't exist.",
@@ -1610,10 +1613,7 @@
         "dmitry.kozhevnikov",
         "idesignking"
       ],
-      "cat": "misc",
-      "headers": {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
-      }
+      "cat": "misc"
     },
     {
       "name": "cowboys4angels",
@@ -1979,6 +1979,9 @@
       "name": "Discord Users",
       "uri_check": "https://discord.com/api/v9/unique-username/username-attempt-unauthed",
       "post_body": "{\"username\": \"{account}\"}",
+      "headers": {
+        "Content-Type": "application/json"
+      },
       "e_code": 200,
       "e_string": "\"taken\":true",
       "m_string": "\"taken\":false",
@@ -1987,10 +1990,7 @@
         "test",
         "web"
       ],
-      "cat": "social",
-      "headers": {
-        "Content-Type": "application/json"
-      }
+      "cat": "social"
     },
     {
       "name": "Discourse",
@@ -2270,6 +2270,9 @@
       "uri_check": "https://be.electrobel.org/register.ajax",
       "uri_pretty": "https://be.electrobel.org/{account}",
       "post_body": "action=checkUsername&username={account}",
+      "headers": {
+        "Content-Type": "application/x-www-form-urlencoded"
+      },
       "e_code": 200,
       "e_string": "\"html\":\"Username exists<br\\/>Please choose another\"",
       "m_string": "\"html\":\"Name is available\"",
@@ -2278,10 +2281,7 @@
         "wixel",
         "Gloomer"
       ],
-      "cat": "social",
-      "headers": {
-        "Content-Type": "application/x-www-form-urlencoded"
-      }
+      "cat": "social"
     },
     {
       "name": "Engadget",
@@ -3145,6 +3145,9 @@
       "name": "GitHub",
       "uri_check": "https://api.github.com/users/{account}",
       "uri_pretty": "https://github.com/{account}",
+      "headers": {
+        "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+      },
       "e_code": 200,
       "e_string": "\"id\":",
       "m_string": "\"status\": \"404\"",
@@ -3153,15 +3156,15 @@
         "test",
         "WebBreacher"
       ],
-      "cat": "coding",
-      "headers": {
-        "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
-      }
+      "cat": "coding"
     },
     {
       "name": "GitHub Gists",
       "uri_check": "https://api.github.com/users/{account}/gists",
       "uri_pretty": "https://gits.github.com/{account}",
+      "headers": {
+        "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
+      },
       "e_code": 200,
       "e_string": "\"id\":",
       "m_string": "\"status\": \"404\"",
@@ -3170,10 +3173,7 @@
         "teymurgahramanov",
         "WebBreacher"
       ],
-      "cat": "coding",
-      "headers": {
-        "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
-      }
+      "cat": "coding"
     },
     {
       "name": "GitLab",
@@ -3588,6 +3588,9 @@
       "uri_check": "https://hackerone.com/graphql",
       "uri_pretty": "https://hackerone.com/{account}",
       "post_body": "{\"query\":\"query($url: URI!) {\\n        resource(url: $url) {\\n            ... on User { username }\\n        }\\n    }\",\"variables\":{\"url\":\"{account}\"}}",
+      "headers": {
+        "Content-Type": "application/json"
+      },
       "e_code": 200,
       "e_string": "\"username\":",
       "m_string": "\"type\":\"NOT_FOUND\"",
@@ -3596,10 +3599,7 @@
         "born2hack",
         "godiego"
       ],
-      "cat": "tech",
-      "headers": {
-        "Content-Type": "application/json"
-      }
+      "cat": "tech"
     },
     {
       "name": "HackerRank",
@@ -3623,6 +3623,10 @@
       "uri_check": "https://hackrocks.com/api/users/profile",
       "uri_pretty": "https://hackrocks.com/id/{account}",
       "post_body": "{\"username\":\"{account}\"}",
+      "headers": {
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json"
+      },
       "e_code": 200,
       "e_string": "\"username\":",
       "m_string": "\"error_data\":\"USER_NOT_FOUND\"",
@@ -3631,11 +3635,7 @@
         "mespejo",
         "NeoWaveCode"
       ],
-      "cat": "tech",
-      "headers": {
-        "Accept": "application/json, text/plain, */*",
-        "Content-Type": "application/json"
-      }
+      "cat": "tech"
     },
     {
       "name": "Hackster",
@@ -4295,6 +4295,9 @@
       "uri_check": "https://www.joindota.com/ajax/search",
       "uri_pretty": "https://www.joindota.com/search?m=edb_player&q={account}",
       "post_body": "search={account}&module=edb_player&language=en",
+      "headers": {
+        "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8"
+      },
       "e_code": 200,
       "e_string": "\"items\":[{",
       "m_string": "\"count\":0",
@@ -4303,10 +4306,7 @@
         "AngryTestie",
         "amddota2"
       ],
-      "cat": "gaming",
-      "headers": {
-        "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8"
-      }
+      "cat": "gaming"
     },
     {
       "name": "JSFiddle",
@@ -4352,6 +4352,9 @@
       "uri_check": "https://www.kashipara.com/ajax/checkNewUser.php",
       "uri_pretty": "https://www.kashipara.com/profile/user/{account}",
       "post_body": "id=UserName&value={account}",
+      "headers": {
+        "Content-Type": "application/x-www-form-urlencoded"
+      },
       "e_code": 200,
       "e_string": "\"message\":\"UserName already Exist\"",
       "m_string": "\"message\":\"UserName avalible\"",
@@ -4360,10 +4363,7 @@
         "lopalopa",
         "westde123"
       ],
-      "cat": "tech",
-      "headers": {
-        "Content-Type": "application/x-www-form-urlencoded"
-      }
+      "cat": "tech"
     },
     {
       "name": "Keybase",
@@ -4535,6 +4535,9 @@
       "uri_check": "https://kwork.ru/user_kworks/{account}",
       "uri_pretty": "https://kwork.ru/user/{account}",
       "post_body": "{\"username\":\"{account}\",\"offset\":0,\"limit\":10}",
+      "headers": {
+        "Content-Type": "application/json"
+      },
       "e_code": 200,
       "e_string": "\"success\":true",
       "m_string": "\"success\":false",
@@ -4543,10 +4546,7 @@
         "ilkarkarakurt",
         "sergeymeshiy"
       ],
-      "cat": "social",
-      "headers": {
-        "Content-Type": "application/json"
-      }
+      "cat": "social"
     },
     {
       "name": "Last.fm",
@@ -4582,6 +4582,9 @@
       "uri_check": "https://leetcode.com/graphql/",
       "uri_pretty": "https://leetcode.com/u/{account}/",
       "post_body": "{\"query\":\"query userPublicProfile($username: String!) { matchedUser(username: $username) { username } }\",\"variables\":{\"username\":\"{account}\"},\"operationName\":\"userPublicProfile\"}",
+      "headers": {
+        "Content-Type": "application/json"
+      },
       "e_code": 200,
       "e_string": "\"username\":",
       "m_string": "\"matchedUser\":null",
@@ -4590,10 +4593,7 @@
         "aku_2000",
         "wengh"
       ],
-      "cat": "coding",
-      "headers": {
-        "Content-Type": "application/json"
-      }
+      "cat": "coding"
     },
     {
       "name": "Lemon8",
@@ -6666,6 +6666,9 @@
       "uri_check": "https://promodj.com/ajax/register.html?lang=en",
       "uri_pretty": "https://promodj.com/{account}",
       "post_body": "kind=nick&value={account}",
+      "headers": {
+        "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8"
+      },
       "e_code": 200,
       "e_string": "Address you entered is already taken",
       "m_string": "The address is free, it's great;)",
@@ -6674,10 +6677,7 @@
         "sekoy",
         "vovasmallny"
       ],
-      "cat": "music",
-      "headers": {
-        "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8"
-      }
+      "cat": "music"
     },
     {
       "name": "Pronouns.Page",
@@ -7296,6 +7296,9 @@
     {
       "name": "Showup.tv",
       "uri_check": "https://showup.tv/profile/{account}",
+      "headers": {
+        "Cookie": "accept_rules=true;"
+      },
       "e_code": 200,
       "e_string": "O mnie",
       "m_string": "<title>Darmowe",
@@ -7304,10 +7307,7 @@
         "LunaVee",
         "Jane_Frou"
       ],
-      "cat": "xx NSFW xx",
-      "headers": {
-        "Cookie": "accept_rules=true;"
-      }
+      "cat": "xx NSFW xx"
     },
     {
       "name": "shutterstock",
@@ -7743,6 +7743,9 @@
       "uri_check": "https://signup.steemit.com/api/check_username",
       "uri_pretty": "https://steemit.com/@{account}",
       "post_body": "{\"username\":\"{account}\"}",
+      "headers": {
+        "Content-Type": "application/json"
+      },
       "e_code": 200,
       "e_string": "\"type\":\"error_api_username_used\"",
       "m_string": "\"success\":true",
@@ -7751,10 +7754,7 @@
         "petlover",
         "zalat"
       ],
-      "cat": "social",
-      "headers": {
-        "Content-Type": "application/json"
-      }
+      "cat": "social"
     },
     {
       "name": "steller",
@@ -8264,6 +8264,9 @@
       "uri_check": "https://www.tindie.com/accounts/check_username/",
       "uri_pretty": "https://www.tindie.com/stores/{account}/",
       "post_body": "username={account}",
+      "headers": {
+        "Content-Type": "application/x-www-form-urlencoded"
+      },
       "e_code": 200,
       "e_string": "\"errors\": [\"Username taken!\"]",
       "m_string": "\"valid\": true",
@@ -8272,10 +8275,7 @@
         "tehrabbitt",
         "dekunukem"
       ],
-      "cat": "shopping",
-      "headers": {
-        "Content-Type": "application/x-www-form-urlencoded"
-      }
+      "cat": "shopping"
     },
     {
       "name": "Tooting.ch (Mastodon Instance)",
@@ -8846,6 +8846,12 @@
       "name": "VirusTotal",
       "uri_check": "https://www.virustotal.com/ui/users/{account}",
       "uri_pretty": "https://www.virustotal.com/gui/user/{account}",
+      "headers": {
+        "Accept-Ianguage": "en-US",
+        "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:127.0) Gecko/20100101 Firefox/127.0",
+        "X-Tool": "vt-ui-main",
+        "X-VT-Anti-Abuse-Header": "MTAxOTFwMDcxOTEtWkc5dWRDQmlaU0JsZG2scy5xNzE4Mjc1NDI0LjUzMw=="
+      },
       "e_code": 200,
       "e_string": "\"data\"",
       "m_string": "\"code\": \"NotFoundError\"",
@@ -8854,13 +8860,7 @@
         "cyber",
         "cybersecstu"
       ],
-      "cat": "misc",
-      "headers": {
-        "Accept-Ianguage": "en-US",
-        "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:127.0) Gecko/20100101 Firefox/127.0",
-        "X-Tool": "vt-ui-main",
-        "X-VT-Anti-Abuse-Header": "MTAxOTFwMDcxOTEtWkc5dWRDQmlaU0JsZG2scy5xNzE4Mjc1NDI0LjUzMw=="
-      }
+      "cat": "misc"
     },
     {
       "name": "visnesscard",
@@ -8892,6 +8892,9 @@
     {
       "name": "VK",
       "uri_check": "https://vk.com/{account}",
+      "headers": {
+        "User-Agent": "Mozilla/5.0 (X11; Linux i686; rv:125.0) Gecko/20100101 Firefox/125.0"
+      },
       "e_code": 200,
       "e_string": "content=\"profile\"",
       "m_string": "404 Not Found",
@@ -8900,10 +8903,7 @@
         "ches_ches",
         "mike.kidlazy"
       ],
-      "cat": "social",
-      "headers": {
-        "User-Agent": "Mozilla/5.0 (X11; Linux i686; rv:125.0) Gecko/20100101 Firefox/125.0"
-      }
+      "cat": "social"
     },
     {
       "name": "Vkl.world (Mastodon Instance)",
@@ -8963,6 +8963,9 @@
     {
       "name": "vsco",
       "uri_check": "https://vsco.co/{account}/gallery",
+      "headers": {
+        "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:133.0) Gecko/20100101 Firefox/133.0"
+      },
       "e_code": 200,
       "e_string": "permaSubdomain",
       "m_string": "\"error\":\"site_not_found\"}",
@@ -8971,10 +8974,7 @@
         "sam",
         "becca"
       ],
-      "cat": "social",
-      "headers": {
-        "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:133.0) Gecko/20100101 Firefox/133.0"
-      }
+      "cat": "social"
     },
     {
       "name": "W3Schools",
@@ -9101,6 +9101,9 @@
     {
       "name": "Weblancer",
       "uri_check": "https://www.weblancer.net/users/{account}/",
+      "headers": {
+        "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:133.0) Gecko/20100101 Firefox/133.0"
+      },
       "e_code": 200,
       "e_string": "\"user\":",
       "m_string": "\"page\":\"/404\"",
@@ -9109,10 +9112,7 @@
         "kevin",
         "WebArtyom"
       ],
-      "cat": "social",
-      "headers": {
-        "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:133.0) Gecko/20100101 Firefox/133.0"
-      }
+      "cat": "social"
     },
     {
       "name": "weebly",
@@ -9573,6 +9573,9 @@
     {
       "name": "Zbiornik",
       "uri_check": "https://mini.zbiornik.com/{account}",
+      "headers": {
+        "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:133.0) Gecko/20100101 Firefox/133.0"
+      },
       "e_code": 200,
       "e_string": "INFO",
       "m_string": "",
@@ -9581,10 +9584,7 @@
         "69uzytkownik69",
         "Soif"
       ],
-      "cat": "xx NSFW xx",
-      "headers": {
-        "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:133.0) Gecko/20100101 Firefox/133.0"
-      }
+      "cat": "xx NSFW xx"
     },
     {
       "name": "Zenn",
@@ -9672,6 +9672,9 @@
     {
       "name": "Zomato",
       "uri_check": "https://www.zomato.com/{account}/reviews",
+      "headers": {
+        "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:133.0) Gecko/20100101 Firefox/133.0"
+      },
       "e_code": 200,
       "e_string": "Activity</h4>",
       "m_string": "This is a 404 page and we think it's fairly clear",
@@ -9680,10 +9683,7 @@
         "john",
         "jess"
       ],
-      "cat": "social",
-      "headers": {
-        "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:133.0) Gecko/20100101 Firefox/133.0"
-      }
+      "cat": "social"
     },
     {
       "name": "zoomitir",
