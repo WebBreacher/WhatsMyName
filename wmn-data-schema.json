@@ -119,6 +119,24 @@
             ],
             "pattern": "^.*$"
           },
+          "headers": {
+            "$id": "#root/sites/items/headers",
+            "title": "Headers",
+            "type": "object",
+            "default": [],
+            "items": {
+              "$id": "#root/sites/items/headers/items",
+              "title": "Items",
+              "type": "string",
+              "default": "",
+              "examples": [
+                {
+                  "accept": "text/html"
+                }
+              ],
+              "pattern": "^.*$"
+            }
+          },
           "strip_bad_char": {
             "$id": "#root/sites/items/strip_bad_char",
             "title": "Strip_bad_char",
@@ -217,24 +235,6 @@
               "examples": [
                 "cloudflare",
                 "captcha"
-              ],
-              "pattern": "^.*$"
-            }
-          },
-          "headers": {
-            "$id": "#root/sites/items/headers",
-            "title": "Headers",
-            "type": "object",
-            "default": [],
-            "items": {
-              "$id": "#root/sites/items/headers/items",
-              "title": "Items",
-              "type": "string",
-              "default": "",
-              "examples": [
-                {
-                  "accept": "text/html"
-                }
               ],
               "pattern": "^.*$"
             }
