@@ -8305,19 +8305,6 @@
       "cat": "images"
     },
     {
-      "name": "Tenor",
-      "uri_check": "https://tenor.com/users/{account}",
-      "e_code": 200,
-      "e_string": "<div class=\"tagline\">",
-      "m_string": "We could not find the page you were looking for.",
-      "m_code": 404,
-      "known": [
-        "gnutv",
-        "d33jay23"
-      ],
-      "cat": "images"
-    },
-    {
       "name": "TETR.IO",
       "uri_check": "https://ch.tetr.io/api/users/{account}",
       "uri_pretty": "https://ch.tetr.io/u/{account}",
