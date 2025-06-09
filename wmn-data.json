@@ -1534,20 +1534,25 @@
       "cat": "coding"
     },
     {
-      "name" : "COLOURlovers",
-      "uri_check" : "https://www.colourlovers.com/ajax/check-username-availability",
-      "uri_pretty" : "https://www.colourlovers.com/lover/{account}",
-      "post_body" : "userName={account}",
-      "e_code" : 200,
-      "e_string" : "\"_status\":\"unavailable\"",
-      "m_string" : "\"_status\":\"available\"",
-      "m_code" : 200,
-      "known" : ["timanttimaarit", "tsoloweyko"],
-      "cat" : "social",
-      "headers" : {
-          "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8"
+      "name": "COLOURlovers",
+      "uri_check": "https://www.colourlovers.com/ajax/check-username-availability",
+      "uri_pretty": "https://www.colourlovers.com/lover/{account}",
+      "post_body": "userName={account}",
+      "headers": {
+        "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8"
       },
-      "protection" : ["cloudflare"]
+      "e_code": 200,
+      "e_string": "\"_status\":\"unavailable\"",
+      "m_string": "\"_status\":\"available\"",
+      "m_code": 200,
+      "known": [
+        "timanttimaarit",
+        "tsoloweyko"
+      ],
+      "cat": "social",
+      "protection": [
+        "cloudflare"
+      ]
     },
     {
       "name": "Community Adobe",
@@ -1601,47 +1606,6 @@
         "mcnorington"
       ],
       "cat": "social"
-    },
-    {
-      "name" : "Curiouscat",
-      "uri_check" : "https://curiouscat.live/api/v2.1/profile?username={account}",
-      "uri_pretty" : "https://curiouscat.live/{account}",
-      "e_code" : 200,
-      "e_string" : "is_followed_by_me",
-      "m_code" : 200,
-      "m_string" : "\"error\": 404",
-      "known" : ["kindokja9158", "saki"],
-      "cat" : "social"
-    },
-    {
-      "name" : "DDoSecrets",
-      "uri_check" : "https://search.ddosecrets.com/search?q={account}",
-      "e_code" : 200,
-      "e_string" : "aria-label=\"Search result pages\"",
-      "m_string" : "<p>No results</p>",
-      "m_code" : 200,
-      "known" : ["egord", "Mddearing"],
-      "cat" : "archived"
-    },
-    {
-      "name" : "Donatello",
-      "uri_check" : "https://donatello.to/{account}",
-      "e_code" : 200,
-      "e_string" : "UserPage.init",
-      "m_string" : "<title>Сторінку не знайдено (404) - Donatello</title>",
-      "m_code" : 404,
-      "known" : ["Metvix", "Selezenka"],
-      "cat" : "social"
-    },
-    {
-      "name" : "Donatik",
-      "uri_check" : "https://{account}.donatik.io/en",
-      "e_code" : 200,
-      "e_string" : "\\\"__typename\\\":\\\"User\\\"",
-      "m_string" : "id=\"__next_error__\"",
-      "m_code" : 500,
-      "known" : ["gypsyjitsu", "forestgamp3021"],
-      "cat" : "social"
     },
     {
       "name": "Coub",
@@ -1739,6 +1703,20 @@
       "cat": "hobby"
     },
     {
+      "name": "Curiouscat",
+      "uri_check": "https://curiouscat.live/api/v2.1/profile?username={account}",
+      "uri_pretty": "https://curiouscat.live/{account}",
+      "e_code": 200,
+      "e_string": "is_followed_by_me",
+      "m_string": "\"error\": 404",
+      "m_code": 200,
+      "known": [
+        "kindokja9158",
+        "saki"
+      ],
+      "cat": "social"
+    },
+    {
       "name": "Cytoid",
       "uri_check": "https://cytoid.io/profile/{account}",
       "e_code": 200,
@@ -1815,6 +1793,19 @@
         "blue"
       ],
       "cat": "dating"
+    },
+    {
+      "name": "DDoSecrets",
+      "uri_check": "https://search.ddosecrets.com/search?q={account}",
+      "e_code": 200,
+      "e_string": "aria-label=\"Search result pages\"",
+      "m_string": "<p>No results</p>",
+      "m_code": 200,
+      "known": [
+        "egord",
+        "Mddearing"
+      ],
+      "cat": "archived"
     },
     {
       "name": "Demotywatory",
@@ -2149,6 +2140,32 @@
       ]
     },
     {
+      "name": "Donatello",
+      "uri_check": "https://donatello.to/{account}",
+      "e_code": 200,
+      "e_string": "UserPage.init",
+      "m_string": "<title>Сторінку не знайдено (404) - Donatello</title>",
+      "m_code": 404,
+      "known": [
+        "Metvix",
+        "Selezenka"
+      ],
+      "cat": "social"
+    },
+    {
+      "name": "Donatik",
+      "uri_check": "https://{account}.donatik.io/en",
+      "e_code": 200,
+      "e_string": "\\\"__typename\\\":\\\"User\\\"",
+      "m_string": "id=\"__next_error__\"",
+      "m_code": 500,
+      "known": [
+        "gypsyjitsu",
+        "forestgamp3021"
+      ],
+      "cat": "social"
+    },
+    {
       "name": "Donation Alerts",
       "uri_check": "https://www.donationalerts.com/api/v1/user/{account}/donationpagesettings",
       "uri_pretty": "https://www.donationalerts.com/r/{account}",
@@ -2341,31 +2358,39 @@
       "cat": "tech"
     },
     {
-      "name" : "EPORNER",
-      "uri_check" : "https://www.eporner.com/xhr/check/",
-      "uri_pretty" : "https://www.eporner.com/profile/{account}/",
-      "post_body" : "xhr=1&act=check_login&login={account}",
-      "e_code" : 200,
-      "e_string" : "\"msg_body\":\"This login already exists. Choose another one\"",
-      "m_string" : "\"msg_body\":\"Available\"",
-      "m_code" : 200,
-      "known" : ["LAM_2030", "DianaX814"],
-      "cat" : "xx NSFW xx",
-      "headers" : {
-          "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8"
-      }
+      "name": "EPORNER",
+      "uri_check": "https://www.eporner.com/xhr/check/",
+      "uri_pretty": "https://www.eporner.com/profile/{account}/",
+      "post_body": "xhr=1&act=check_login&login={account}",
+      "headers": {
+        "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8"
+      },
+      "e_code": 200,
+      "e_string": "\"msg_body\":\"This login already exists. Choose another one\"",
+      "m_string": "\"msg_body\":\"Available\"",
+      "m_code": 200,
+      "known": [
+        "LAM_2030",
+        "DianaX814"
+      ],
+      "cat": "xx NSFW xx"
     },
     {
-      "name" : "Etoro",
-      "uri_check" : "https://www.etoro.com/api/logininfo/v1.1/users/{account}",
-      "uri_pretty" : "https://www.etoro.com/people/{account}",
-      "e_code" : 200,
-      "e_string" : "\"gcid\":",
-      "m_code" : 404,
-      "m_string" : "\"ErrorCode\":\"NotFound\"",
-      "known" : ["jeepsontrading", "armandofoschini"],
-      "cat" : "images",
-      "protection" : ["cloudflare"]
+      "name": "Etoro",
+      "uri_check": "https://www.etoro.com/api/logininfo/v1.1/users/{account}",
+      "uri_pretty": "https://www.etoro.com/people/{account}",
+      "e_code": 200,
+      "e_string": "\"gcid\":",
+      "m_string": "\"ErrorCode\":\"NotFound\"",
+      "m_code": 404,
+      "known": [
+        "jeepsontrading",
+        "armandofoschini"
+      ],
+      "cat": "images",
+      "protection": [
+        "cloudflare"
+      ]
     },
     {
       "name": "Etsy",
@@ -2647,19 +2672,22 @@
       "cat": "shopping"
     },
     {
-      "name" : "Fiverr",
-      "uri_check" : "https://www.fiverr.com/validate_username",
-      "uri_pretty" : "https://www.fiverr.com/{account}",
-      "post_body" : "{\"username\": \"{account}\"}",
-      "e_code" : 201,
-      "e_string" : "\"errorKeys\":[[\"username\",\"user_taken\"]]",
-      "m_string" : "\"status\":\"success\"",
-      "m_code" : 201,
-      "known" : ["yellowdd", "samanvay"],
-      "cat" : "shopping",
-      "headers" : {
-          "Content-Type" : "application/json"
-      }
+      "name": "Fiverr",
+      "uri_check": "https://www.fiverr.com/validate_username",
+      "uri_pretty": "https://www.fiverr.com/{account}",
+      "post_body": "{\"username\": \"{account}\"}",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "e_code": 201,
+      "e_string": "\"errorKeys\":[[\"username\",\"user_taken\"]]",
+      "m_string": "\"status\":\"success\"",
+      "m_code": 201,
+      "known": [
+        "yellowdd",
+        "samanvay"
+      ],
+      "cat": "shopping"
     },
     {
       "name": "FL.ru",
@@ -2917,50 +2945,18 @@
       "cat": "business"
     },
     {
-      "name" : "freesound",
-      "uri_check" : "https://freesound.org/people/{account}/section/stats/?ajax=1",
-      "uri_pretty" : "https://freesound.org/people/{account}/",
-      "e_code" : 200,
-      "e_string" : "forum posts",
-      "m_string" : "<h1>Page not found</h1>",
-      "m_code" : 404,
-      "known" : ["test", "JohnDoe"],
-      "cat" : "music"
-    },
-    {
-      "name" : "Genius (Users)",
-      "uri_check" : "https://genius.com/{account}",
-      "e_code" : 200,
-      "e_string" : "class=\"profile_header\"",
-      "m_string" : "class=\"render_404\"",
-      "m_code" : 404,
-      "known" : ["test", "User"],
-      "cat" : "social"
-    },
-    {
-      "name" : "Genius (Artists)",
-      "uri_check" : "https://genius.com/artists/{account}",
-      "e_code" : 200,
-      "e_string" : "class=\"profile_header\"",
-      "m_string" : "class=\"render_404\"",
-      "m_code" : 404,
-      "known" : ["Profjam", "Hozier"],
-      "cat" : "social"
-    },
-    {
-      "name" : "Hashnode",
-      "uri_check" : "https://gql.hashnode.com/",
-      "uri_pretty": "https://hashnode.com/@{account}",
-      "post_body" : "{\"operationName\":\"UserBadge\",\"query\":\"query UserBadge($username:String!){user(username:$username){id}}\",\"variables\":{\"username\":\"{account}\"}}",
-      "e_code" : 200,
-      "e_string" : "\"id\":",
-      "m_string" : "\"user\":null",
-      "m_code" : 200,
-      "known" : ["33win1net", "goober99"],
-      "cat" : "social",
-      "headers" : {
-          "content-type" : "application/json"
-      }
+      "name": "freesound",
+      "uri_check": "https://freesound.org/people/{account}/section/stats/?ajax=1",
+      "uri_pretty": "https://freesound.org/people/{account}/",
+      "e_code": 200,
+      "e_string": "forum posts",
+      "m_string": "<h1>Page not found</h1>",
+      "m_code": 404,
+      "known": [
+        "test",
+        "JohnDoe"
+      ],
+      "cat": "music"
     },
     {
       "name": "FreeSteamKeys",
@@ -3125,6 +3121,32 @@
         "igovindindia"
       ],
       "cat": "coding"
+    },
+    {
+      "name": "Genius (Artists)",
+      "uri_check": "https://genius.com/artists/{account}",
+      "e_code": 200,
+      "e_string": "class=\"profile_header\"",
+      "m_string": "class=\"render_404\"",
+      "m_code": 404,
+      "known": [
+        "Profjam",
+        "Hozier"
+      ],
+      "cat": "social"
+    },
+    {
+      "name": "Genius (Users)",
+      "uri_check": "https://genius.com/{account}",
+      "e_code": 200,
+      "e_string": "class=\"profile_header\"",
+      "m_string": "class=\"render_404\"",
+      "m_code": 404,
+      "known": [
+        "test",
+        "User"
+      ],
+      "cat": "social"
     },
     {
       "name": "Geocaching",
@@ -3770,6 +3792,24 @@
       "cat": "xx NSFW xx"
     },
     {
+      "name": "Hashnode",
+      "uri_check": "https://gql.hashnode.com/",
+      "uri_pretty": "https://hashnode.com/@{account}",
+      "post_body": "{\"operationName\":\"UserBadge\",\"query\":\"query UserBadge($username:String!){user(username:$username){id}}\",\"variables\":{\"username\":\"{account}\"}}",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "e_code": 200,
+      "e_string": "\"id\":",
+      "m_string": "\"user\":null",
+      "m_code": 200,
+      "known": [
+        "33win1net",
+        "goober99"
+      ],
+      "cat": "social"
+    },
+    {
       "name": "Hcommons.social (Mastodon Instance)",
       "uri_check": "https://hcommons.social/api/v1/accounts/lookup?acct={account}",
       "uri_pretty": "https://hcommons.social/@{account}",
@@ -4099,15 +4139,18 @@
       "cat": "images"
     },
     {
-      "name" : "Imgur",
-      "uri_check" : "https://api.imgur.com/account/v1/accounts/{account}?client_id=546c25a59c58ad7",
-      "uri_pretty" : "https://imgur.com/user/{account}/about",
-      "e_code" : 200,
-      "e_string" : "\"id\":",
-      "m_string" : "\"code\":\"404\"",
-      "m_code" : 404,
-      "known" : ["OliverClothesoff70", "DadOnTheInternet"],
-      "cat" : "images"
+      "name": "Imgur",
+      "uri_check": "https://api.imgur.com/account/v1/accounts/{account}?client_id=546c25a59c58ad7",
+      "uri_pretty": "https://imgur.com/user/{account}/about",
+      "e_code": 200,
+      "e_string": "\"id\":",
+      "m_string": "\"code\":\"404\"",
+      "m_code": 404,
+      "known": [
+        "OliverClothesoff70",
+        "DadOnTheInternet"
+      ],
+      "cat": "images"
     },
     {
       "name": "inaturalist",
@@ -4247,16 +4290,19 @@
       "cat": "tech"
     },
     {
-      "name" : "isMyGirl",
-      "uri_check" : "https://ismygirl.com/api/model/getModel?slug={account}",
-      "uri_pretty" : "https://ismygirl.com/{account}",
-      "e_code" : 200,
-      "e_string" : "\"id\":",
-      "m_code" : 404,
-      "m_string" : "\"detail\":\"Model not found.\"",
-      "known" : ["summer", "littlelanta"],
-      "cat" : "xx NSFW xx",
-      "valid" : false
+      "name": "isMyGirl",
+      "uri_check": "https://ismygirl.com/api/model/getModel?slug={account}",
+      "uri_pretty": "https://ismygirl.com/{account}",
+      "e_code": 200,
+      "e_string": "\"id\":",
+      "m_string": "\"detail\":\"Model not found.\"",
+      "m_code": 404,
+      "known": [
+        "summer",
+        "littlelanta"
+      ],
+      "cat": "xx NSFW xx",
+      "valid": false
     },
     {
       "name": "Issuu",
@@ -4395,14 +4441,17 @@
       "cat": "xx NSFW xx"
     },
     {
-      "name" : "Kaggle",
+      "name": "Kaggle",
       "uri_check": "https://www.kaggle.com/{account}",
-      "e_code" : 200,
-      "e_string" : "property=\"og:username\"",
-      "m_string" : "<title>Kaggle: Your Home for Data Science</title>",
-      "m_code" : 404,
-      "known" : ["charmq", "tunguz"],
-      "cat" : "social"
+      "e_code": 200,
+      "e_string": "property=\"og:username\"",
+      "m_string": "<title>Kaggle: Your Home for Data Science</title>",
+      "m_code": 404,
+      "known": [
+        "charmq",
+        "tunguz"
+      ],
+      "cat": "social"
     },
     {
       "name": "kashipara",
@@ -5279,24 +5328,17 @@
       "cat": "dating"
     },
     {
-      "name" : "mssg.me",
-      "uri_check" : "https://{account}.mssg.me/",
-      "e_code" : 200,
-      "e_string" : "property=\"og:title\"",
-      "m_string" : "id=\"page_404\"",
-      "m_code" : 404,
-      "known" : ["drrry", "david"],
-      "cat" : "social"
-    },
-    {
-      "name" : "Metacritic",
-      "uri_check" : "https://www.metacritic.com/user/{account}/",
-      "e_code" : 200,
-      "e_string" : "class=\"c-pageProfile-wrapper\"",
-      "m_string" : "class=\"c-error404\"",
-      "m_code" : 404,
-      "known" : ["dev", "matt"],
-      "cat" : "hobby"
+      "name": "Metacritic",
+      "uri_check": "https://www.metacritic.com/user/{account}/",
+      "e_code": 200,
+      "e_string": "class=\"c-pageProfile-wrapper\"",
+      "m_string": "class=\"c-error404\"",
+      "m_code": 404,
+      "known": [
+        "dev",
+        "matt"
+      ],
+      "cat": "hobby"
     },
     {
       "name": "Minds",
@@ -5432,15 +5474,18 @@
       "cat": "gaming"
     },
     {
-      "name" : "Mod DB",
-      "uri_check" : "https://www.moddb.com/html/scripts/autocomplete.php?a=username&q={account}",
-      "uri_pretty" : "https://www.moddb.com/members/{account}",
-      "e_code" : 200,
-      "e_string" : "\"available\":false",
-      "m_string" : "\"available\":true",
-      "m_code" : 200,
-      "known" : ["sprinklesoup", "emargy"],
-      "cat" : "gaming"
+      "name": "Mod DB",
+      "uri_check": "https://www.moddb.com/html/scripts/autocomplete.php?a=username&q={account}",
+      "uri_pretty": "https://www.moddb.com/members/{account}",
+      "e_code": 200,
+      "e_string": "\"available\":false",
+      "m_string": "\"available\":true",
+      "m_code": 200,
+      "known": [
+        "sprinklesoup",
+        "emargy"
+      ],
+      "cat": "gaming"
     },
     {
       "name": "MODX.im",
@@ -5496,36 +5541,31 @@
       "cat": "images"
     },
     {
-      "name" : "Moxfield",
-      "uri_check" : "https://api2.moxfield.com/v1/users/{account}",
-      "uri_pretty" : "https://www.moxfield.com/users/{account}",
-      "e_code" : 200,
-      "e_string" : "\"userName\":",
-      "m_string" : "\"status\":404",
-      "m_code" : 404,
-      "known" : ["gamer", "Carlos01"],
-      "cat" : "misc"
+      "name": "Moxfield",
+      "uri_check": "https://api2.moxfield.com/v1/users/{account}",
+      "uri_pretty": "https://www.moxfield.com/users/{account}",
+      "e_code": 200,
+      "e_string": "\"userName\":",
+      "m_string": "\"status\":404",
+      "m_code": 404,
+      "known": [
+        "gamer",
+        "Carlos01"
+      ],
+      "cat": "misc"
     },
     {
-      "name" : "Nifty Gateway",
-      "uri_check" : "https://api.niftygateway.com/user/profile-and-offchain-nifties-by-url/?profile_url={account}",
-      "uri_pretty" : "https://www.niftygateway.com/profile/{account}/",
-      "e_code" : 200,
-      "e_string" : "&quot;didSucceed&quot;: true",
-      "m_string" : "&quot;didSucceed&quot;: false",
-      "m_code" : 400,
-      "known" : ["kobej", "exolorian"],
-      "cat" : "social"
-    },
-    {
-      "name" : "Oper.ru",
-      "uri_check" : "https://oper.ru/visitors/info.php?t={account}",
-      "e_code" : 200,
-      "e_string" : "Информация о пользователе",
-      "m_string" : "Нет такого пользователя",
-      "m_code" : 200,
-      "known" : ["Goblin", "Баир Иринчеев"],
-      "cat" : "tech"
+      "name": "mssg.me",
+      "uri_check": "https://{account}.mssg.me/",
+      "e_code": 200,
+      "e_string": "property=\"og:title\"",
+      "m_string": "id=\"page_404\"",
+      "m_code": 404,
+      "known": [
+        "drrry",
+        "david"
+      ],
+      "cat": "social"
     },
     {
       "name": "Muck Rack",
@@ -5842,6 +5882,20 @@
       "cat": "dating"
     },
     {
+      "name": "Nifty Gateway",
+      "uri_check": "https://api.niftygateway.com/user/profile-and-offchain-nifties-by-url/?profile_url={account}",
+      "uri_pretty": "https://www.niftygateway.com/profile/{account}/",
+      "e_code": 200,
+      "e_string": "&quot;didSucceed&quot;: true",
+      "m_string": "&quot;didSucceed&quot;: false",
+      "m_code": 400,
+      "known": [
+        "kobej",
+        "exolorian"
+      ],
+      "cat": "social"
+    },
+    {
       "name": "Nightbot",
       "uri_check": "https://api.nightbot.tv/1/channels/t/{account}",
       "uri_pretty": "https://nightbot.tv/t/{account}/commands",
@@ -6018,14 +6072,17 @@
       "cat": "finance"
     },
     {
-      "name" : "OpenSource",
-      "uri_check" : "https://opensource.com/users/{account}",
-      "e_code" : 200,
-      "e_string" : "\"contentID\":",
-      "m_string" : "\"errorCode\": \"404\"",
-      "m_code" : 404,
-      "known" : ["wuweijie", "alansmithee"],
-      "cat" : "social"
+      "name": "OpenSource",
+      "uri_check": "https://opensource.com/users/{account}",
+      "e_code": 200,
+      "e_string": "\"contentID\":",
+      "m_string": "\"errorCode\": \"404\"",
+      "m_code": 404,
+      "known": [
+        "wuweijie",
+        "alansmithee"
+      ],
+      "cat": "social"
     },
     {
       "name": "OpenStreetMap",
@@ -6038,6 +6095,19 @@
         "kemkim"
       ],
       "cat": "social"
+    },
+    {
+      "name": "Oper.ru",
+      "uri_check": "https://oper.ru/visitors/info.php?t={account}",
+      "e_code": 200,
+      "e_string": "Информация о пользователе",
+      "m_string": "Нет такого пользователя",
+      "m_code": 200,
+      "known": [
+        "Goblin",
+        "Баир Иринчеев"
+      ],
+      "cat": "tech"
     },
     {
       "name": "OPGG",
@@ -6197,14 +6267,17 @@
       "cat": "archived"
     },
     {
-      "name" : "Pastebin",
-      "uri_check" : "https://pastebin.com/u/{account}",
-      "e_code" : 200,
-      "e_string" : "class=\"user-view\"",
-      "m_string" : "Not Found (#404)",
-      "m_code" : 404,
-      "known" : ["test", "john"],
-      "cat" : "tech"
+      "name": "Pastebin",
+      "uri_check": "https://pastebin.com/u/{account}",
+      "e_code": 200,
+      "e_string": "class=\"user-view\"",
+      "m_string": "Not Found (#404)",
+      "m_code": 404,
+      "known": [
+        "test",
+        "john"
+      ],
+      "cat": "tech"
     },
     {
       "name": "patch",
@@ -7000,54 +7073,17 @@
       "cat": "hobby"
     },
     {
-      "name" : "Replit",
-      "uri_check" : "https://replit.com/@{account}",
-      "e_code" : 200,
-      "e_string" : "\"__typename\":\"User\"",
-      "m_string" : "\"statusCode\":404",
-      "m_code" : 404,
-      "known" : ["wuweijie", "alansmithee"],
-      "cat" : "social"
-    },
-    {
-      "name" : "RubyGems.org",
-      "uri_check" : "https://rubygems.org/profiles/{account}",
-      "e_code" : 200,
-      "e_string" : "class=\"profile__header\"",
-      "m_string" : "alt=\"404 error\"",
-      "m_code" : 404,
-      "known" : ["awscloud", "bsm"],
-      "cat" : "social"
-    },
-    {
-      "name" : "StackShare",
-      "uri_check" : "https://stackshare.io/{account}",
-      "e_code" : 200,
-      "e_string" : "class='user-container'",
-      "m_code" : 404,
-      "m_string" : "Sorry, we couldn't find that page :(",
-      "known" : ["gordonpn68492", "Alan-Liang"],
-      "cat" : "images"
-    },
-    {
-      "name" : "Strava",
-      "uri_check" : "https://www.strava.com/athletes/{account}",
-      "e_code" : 301,
-      "e_string" : "/athletes/",
-      "m_string" : "\"page\":\"/404\"",
-      "m_code" : 404,
-      "known" : ["adam", "adam"],
-      "cat" : "social"
-    },
-    {
-      "name" : "ruVoIP.net",
-      "uri_check" : "https://ruvoip.net/members/{account}/",
-      "e_code" : 200,
-      "e_string" : "id=\"user-xprofile\"",
-      "m_string" : "Error 404 - Not Found",
-      "m_code" : 200,
-      "known" : ["dominique", "demonv"],
-      "cat" : "tech"
+      "name": "Replit",
+      "uri_check": "https://replit.com/@{account}",
+      "e_code": 200,
+      "e_string": "\"__typename\":\"User\"",
+      "m_string": "\"statusCode\":404",
+      "m_code": 404,
+      "known": [
+        "wuweijie",
+        "alansmithee"
+      ],
+      "cat": "social"
     },
     {
       "name": "Researchgate",
@@ -7156,6 +7192,19 @@
       "cat": "hobby"
     },
     {
+      "name": "RubyGems.org",
+      "uri_check": "https://rubygems.org/profiles/{account}",
+      "e_code": 200,
+      "e_string": "class=\"profile__header\"",
+      "m_string": "alt=\"404 error\"",
+      "m_code": 404,
+      "known": [
+        "awscloud",
+        "bsm"
+      ],
+      "cat": "social"
+    },
+    {
       "name": "RumbleChannel",
       "uri_check": "https://rumble.com/c/{account}",
       "e_code": 200,
@@ -7207,6 +7256,19 @@
         "Feo156"
       ],
       "cat": "misc"
+    },
+    {
+      "name": "ruVoIP.net",
+      "uri_check": "https://ruvoip.net/members/{account}/",
+      "e_code": 200,
+      "e_string": "id=\"user-xprofile\"",
+      "m_string": "Error 404 - Not Found",
+      "m_code": 200,
+      "known": [
+        "dominique",
+        "demonv"
+      ],
+      "cat": "tech"
     },
     {
       "name": "Salon24",
@@ -7798,6 +7860,19 @@
       ]
     },
     {
+      "name": "StackShare",
+      "uri_check": "https://stackshare.io/{account}",
+      "e_code": 200,
+      "e_string": "class='user-container'",
+      "m_string": "Sorry, we couldn't find that page :(",
+      "m_code": 404,
+      "known": [
+        "gordonpn68492",
+        "Alan-Liang"
+      ],
+      "cat": "images"
+    },
+    {
       "name": "Statuspage",
       "uri_check": "https://{account}.statuspage.io/api/v2/status.json",
       "uri_pretty": "https://{account}.statuspage.io/",
@@ -7880,6 +7955,19 @@
         "paul-swider"
       ],
       "cat": "blog"
+    },
+    {
+      "name": "Strava",
+      "uri_check": "https://www.strava.com/athletes/{account}",
+      "e_code": 301,
+      "e_string": "/athletes/",
+      "m_string": "\"page\":\"/404\"",
+      "m_code": 404,
+      "known": [
+        "adam",
+        "adam"
+      ],
+      "cat": "social"
     },
     {
       "name": "StreamElements",
@@ -8187,57 +8275,34 @@
       "cat": "blog"
     },
     {
-      "name" : "Tellonym",
-      "uri_check" : "https://api.tellonym.me/profiles/name/{account}",
-      "uri_pretty" : "https://tellonym.me/{account}",
-      "e_code" : 200,
-      "e_string" : "\"id\":",
-      "m_string" : "\"code\":\"NOT_FOUND\"",
-      "m_code" : 404,
-      "known" : ["jane", "jimmy"],
-      "cat" : "social",
-      "protection" : ["cloudflare"]
+      "name": "Tellonym",
+      "uri_check": "https://api.tellonym.me/profiles/name/{account}",
+      "uri_pretty": "https://tellonym.me/{account}",
+      "e_code": 200,
+      "e_string": "\"id\":",
+      "m_string": "\"code\":\"NOT_FOUND\"",
+      "m_code": 404,
+      "known": [
+        "jane",
+        "jimmy"
+      ],
+      "cat": "social",
+      "protection": [
+        "cloudflare"
+      ]
     },
     {
-      "name" : "Tenor",
-      "uri_check" : "https://tenor.com/users/{account}",
-      "e_code" : 200,
-      "e_string" : "class=\"ProfilePage page\"",
-      "m_code" : 404,
-      "m_string" : "class=\"error-page container page\"",
-      "known" : ["maggie342", "d33jay23"],
-      "cat" : "images"
-    },
-    {
-      "name" : "TipeeeStream",
-      "uri_check" : "https://www.tipeeestream.com/v3.0/pages/{account}",
-      "uri_pretty" : "https://www.tipeeestream.com/{account}/",
-      "e_code" : 200,
-      "e_string" : "\"id\":",
-      "m_code" : 404,
-      "m_string" : "\"message\":\"Not found\"",
-      "known" : ["gagzzz", "larebouille"],
-      "cat" : "business"
-    },
-    {
-      "name" : "TRAKTRAIN",
-      "uri_check" : "https://traktrain.com/{account}",
-      "e_code" : 200,
-      "e_string" : "id=\"userId\"",
-      "m_string" : "class=\"title-404\"",
-      "m_code" : 404,
-      "known" : ["terrotuga", "fr4ud"],
-      "cat" : "social"
-    },
-    {
-      "name" : "Weblate",
-      "uri_check" : "https://hosted.weblate.org/user/{account}/",
-      "e_code" : 200,
-      "e_string" : "class=\"user-page text-center\"",
-      "m_code" : 404,
-      "m_string" : "<h2>Page Not Found</h2>",
-      "known" : ["login836039", "Datura0808"],
-      "cat" : "images"
+      "name": "Tenor",
+      "uri_check": "https://tenor.com/users/{account}",
+      "e_code": 200,
+      "e_string": "class=\"ProfilePage page\"",
+      "m_string": "class=\"error-page container page\"",
+      "m_code": 404,
+      "known": [
+        "maggie342",
+        "d33jay23"
+      ],
+      "cat": "images"
     },
     {
       "name": "Tenor",
@@ -8417,6 +8482,20 @@
       "cat": "shopping"
     },
     {
+      "name": "TipeeeStream",
+      "uri_check": "https://www.tipeeestream.com/v3.0/pages/{account}",
+      "uri_pretty": "https://www.tipeeestream.com/{account}/",
+      "e_code": 200,
+      "e_string": "\"id\":",
+      "m_string": "\"message\":\"Not found\"",
+      "m_code": 404,
+      "known": [
+        "gagzzz",
+        "larebouille"
+      ],
+      "cat": "business"
+    },
+    {
       "name": "Tooting.ch (Mastodon Instance)",
       "uri_check": "https://tooting.ch/api/v1/accounts/lookup?acct={account}",
       "uri_pretty": "https://tooting.ch/@{account}",
@@ -8482,6 +8561,19 @@
         "anne"
       ],
       "cat": "video"
+    },
+    {
+      "name": "TRAKTRAIN",
+      "uri_check": "https://traktrain.com/{account}",
+      "e_code": 200,
+      "e_string": "id=\"userId\"",
+      "m_string": "class=\"title-404\"",
+      "m_code": 404,
+      "known": [
+        "terrotuga",
+        "fr4ud"
+      ],
+      "cat": "social"
     },
     {
       "name": "Trello",
@@ -9254,6 +9346,19 @@
       "cat": "social"
     },
     {
+      "name": "Weblate",
+      "uri_check": "https://hosted.weblate.org/user/{account}/",
+      "e_code": 200,
+      "e_string": "class=\"user-page text-center\"",
+      "m_string": "<h2>Page Not Found</h2>",
+      "m_code": 404,
+      "known": [
+        "login836039",
+        "Datura0808"
+      ],
+      "cat": "images"
+    },
+    {
       "name": "weebly",
       "uri_check": "https://{account}.weebly.com/",
       "strip_bad_char": ".",
@@ -9294,15 +9399,18 @@
       "cat": "social"
     },
     {
-      "name" : "Weibo",
-      "uri_check" : "https://weibo.com/ajax/profile/info?custom={account}",
-      "uri_pretty" : "https://weibo.com/{account}",
-      "e_code" : 200,
-      "e_string" : "\"user\":",
-      "m_code" : 400,
-      "m_string" : "<h2>400 Bad Request</h2>",
-      "known" : ["guoailun12", "fbb0916"],
-      "cat" : "social"
+      "name": "Weibo",
+      "uri_check": "https://weibo.com/ajax/profile/info?custom={account}",
+      "uri_pretty": "https://weibo.com/{account}",
+      "e_code": 200,
+      "e_string": "\"user\":",
+      "m_string": "<h2>400 Bad Request</h2>",
+      "m_code": 400,
+      "known": [
+        "guoailun12",
+        "fbb0916"
+      ],
+      "cat": "social"
     },
     {
       "name": "WeTransfer",
