@@ -1549,7 +1549,7 @@
         "timanttimaarit",
         "tsoloweyko"
       ],
-      "cat": "social",
+      "cat": "hobby",
       "protection": [
         "cloudflare"
       ]
@@ -2136,7 +2136,7 @@
         "Metvix",
         "Selezenka"
       ],
-      "cat": "social"
+      "cat": "finance"
     },
     {
       "name": "Donatik",
@@ -2149,7 +2149,7 @@
         "gypsyjitsu",
         "forestgamp3021"
       ],
-      "cat": "social"
+      "cat": "finance"
     },
     {
       "name": "Donation Alerts",
@@ -2373,7 +2373,7 @@
         "jeepsontrading",
         "armandofoschini"
       ],
-      "cat": "images",
+      "cat": "finance",
       "protection": [
         "cloudflare"
       ]
@@ -3119,7 +3119,7 @@
         "Profjam",
         "Hozier"
       ],
-      "cat": "social"
+      "cat": "music"
     },
     {
       "name": "Genius (Users)",
@@ -3132,7 +3132,7 @@
         "test",
         "User"
       ],
-      "cat": "social"
+      "cat": "music"
     },
     {
       "name": "Geocaching",
@@ -3793,7 +3793,7 @@
         "33win1net",
         "goober99"
       ],
-      "cat": "social"
+      "cat": "tech"
     },
     {
       "name": "Hcommons.social (Mastodon Instance)",
@@ -4437,7 +4437,7 @@
         "charmq",
         "tunguz"
       ],
-      "cat": "social"
+      "cat": "coding"
     },
     {
       "name": "kashipara",
@@ -6068,7 +6068,7 @@
         "wuweijie",
         "alansmithee"
       ],
-      "cat": "social"
+      "cat": "tech"
     },
     {
       "name": "OpenStreetMap",
@@ -7069,7 +7069,7 @@
         "wuweijie",
         "alansmithee"
       ],
-      "cat": "social"
+      "cat": "coding"
     },
     {
       "name": "Researchgate",
@@ -7188,7 +7188,7 @@
         "awscloud",
         "bsm"
       ],
-      "cat": "social"
+      "cat": "coding"
     },
     {
       "name": "RumbleChannel",
@@ -8466,7 +8466,7 @@
         "gagzzz",
         "larebouille"
       ],
-      "cat": "business"
+      "cat": "finance"
     },
     {
       "name": "Tooting.ch (Mastodon Instance)",
@@ -8546,7 +8546,7 @@
         "terrotuga",
         "fr4ud"
       ],
-      "cat": "social"
+      "cat": "music"
     },
     {
       "name": "Trello",
@@ -9329,7 +9329,7 @@
         "login836039",
         "Datura0808"
       ],
-      "cat": "images"
+      "cat": "hobby"
     },
     {
       "name": "weebly",
