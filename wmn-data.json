@@ -1608,22 +1608,6 @@
       "cat": "social"
     },
     {
-      "name": "Coub",
-      "uri_check": "https://coub.com/{account}",
-      "headers": {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
-      },
-      "e_code": 200,
-      "e_string": "- Channel on Coub</title>",
-      "m_string": "Sorry, that page doesn't exist.",
-      "m_code": 404,
-      "known": [
-        "dmitry.kozhevnikov",
-        "idesignking"
-      ],
-      "cat": "misc"
-    },
-    {
       "name": "cowboys4angels",
       "uri_check": "https://cowboys4angels.com/cowboy/{account}/",
       "e_code": 200,
@@ -9874,6 +9858,7 @@
     {
       "name": "Znanija",
       "uri_check": "https://znanija.com/graphql/ru?operationName=NickAvailability&query=query NickAvailability($nick:String!){nickAvailability(nick:$nick){isAvailable}}&variables={\"nick\":\"{account}\"}",
+      "uri_pretty": "https://www.google.com/search?q=site:znanija.com+intext:{username}",
       "e_code": 200,
       "e_string": "\"isAvailable\":false",
       "m_string": "\"isAvailable\":true",
