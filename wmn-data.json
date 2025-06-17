@@ -516,6 +516,19 @@
       "cat": "gaming"
     },
     {
+      "name": "Arsmate",
+      "uri_check": "https://arsmate.com/{account}",
+      "e_code": 200,
+      "e_string": "og:title",
+      "m_string": "no encontrada</title>",
+      "m_code": 404,
+      "known": [
+        "Angelic",
+        "Vardoc"
+      ],
+      "cat": "xx NSFW xx"
+    },    
+    {
       "name": "ArtBreeder",
       "uri_check": "https://www.artbreeder.com/{account}",
       "e_code": 200,
