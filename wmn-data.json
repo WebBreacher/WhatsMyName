@@ -519,15 +519,15 @@
       "name": "Arsmate",
       "uri_check": "https://arsmate.com/{account}",
       "e_code": 200,
-      "e_string": "og:title",
-      "m_string": "no encontrada</title>",
+      "e_string": "far fa-user-circle mr-1",
+      "m_string": "error-link mt-5",
       "m_code": 404,
       "known": [
         "Angelic",
         "Vardoc"
       ],
       "cat": "xx NSFW xx"
-    },    
+    },
     {
       "name": "ArtBreeder",
       "uri_check": "https://www.artbreeder.com/{account}",
@@ -3384,7 +3384,7 @@
       "uri_check": "https://www.habbo.com.tr/api/public/users?name={account}",
       "uri_pretty": "https://www.habbo.com.tr/profile/{account}",
       "e_code": 200,
-      "e_string": "currentLevel",
+      "e_string": "uniqueId\":",
       "m_string": "error\": \"not-found",
       "m_code": 404,
       "known": [
