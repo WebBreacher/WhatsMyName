@@ -3214,19 +3214,6 @@
       "cat": "coding"
     },
     {
-      "name": "giters",
-      "uri_check": "https://giters.com/{account}",
-      "e_code": 200,
-      "e_string": " - Giters</title>",
-      "m_string": "This page could not be found</title>",
-      "m_code": 404,
-      "known": [
-        "WebBreacher",
-        "C3n7ral051nt4g3ncy"
-      ],
-      "cat": "coding"
-    },
-    {
       "name": "GitHub",
       "uri_check": "https://api.github.com/users/{account}",
       "uri_pretty": "https://github.com/{account}",
@@ -3246,7 +3233,7 @@
     {
       "name": "GitHub Gists",
       "uri_check": "https://api.github.com/users/{account}/gists",
-      "uri_pretty": "https://gits.github.com/{account}",
+      "uri_pretty": "https://gist.github.com/{account}",
       "headers": {
         "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
       },
@@ -3262,11 +3249,11 @@
     },
     {
       "name": "GitLab",
-      "uri_check": "https://gitlab.com/users/{account}/exists",
+      "uri_check": "https://gitlab.com/api/v4/users?username={account}",
       "uri_pretty": "https://gitlab.com/{account}",
       "e_code": 200,
-      "e_string": "\"exists\":true",
-      "m_string": "\"exists\":false",
+      "e_string": "\"id\":",
+      "m_string": "[]",
       "m_code": 200,
       "known": [
         "skennedy",
