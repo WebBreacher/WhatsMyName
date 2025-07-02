@@ -4167,7 +4167,7 @@
       "name": "Instagram",
       "uri_check": "https://www.instagram.com/{account}/",
       "e_code": 200,
-      "e_string": "\"routePath\":\"\\/{username}\\/{?tab}\\/{?view_type}\\/{?igshid}\\\/\"",
+      "e_string": "\"routePath\":\"\\/{username}\\/{?tab}\\/{?view_type}\\/{?igshid}\\/\"",
       "m_string": "\"routePath\":null",
       "m_code": 200,
       "known": [
