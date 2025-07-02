@@ -2923,8 +2923,8 @@
       "m_string": "<h1>Page not found</h1>",
       "m_code": 404,
       "known": [
-        "test",
-        "JohnDoe"
+        "Manu593",
+        "somewhereinjp"
       ],
       "cat": "music"
     },
@@ -3113,8 +3113,8 @@
       "m_string": "class=\"render_404\"",
       "m_code": 404,
       "known": [
-        "test",
-        "User"
+        "Rabe8i",
+        "Tobias_the_explicator"
       ],
       "cat": "music"
     },
@@ -4100,7 +4100,7 @@
       "uri_check": "https://api.imgur.com/account/v1/accounts/{account}?client_id=546c25a59c58ad7",
       "uri_pretty": "https://imgur.com/user/{account}/about",
       "e_code": 200,
-      "e_string": "\"id\":",
+      "e_string": "\"username\":",
       "m_string": "\"code\":\"404\"",
       "m_code": 404,
       "known": [
@@ -4160,6 +4160,19 @@
         "test",
         "pint-sized",
         "acroamatica"
+      ],
+      "cat": "social"
+    },
+    {
+      "name": "Instagram",
+      "uri_check": "https://www.instagram.com/{account}/",
+      "e_code": 200,
+      "e_string": "\"routePath\":\"\\/{username}\\/{?tab}\\/{?view_type}\\/{?igshid}\\\/\"",
+      "m_string": "\"routePath\":null",
+      "m_code": 200,
+      "known": [
+        "jennaortega",
+        "cristiano"
       ],
       "cat": "social"
     },
@@ -5292,8 +5305,8 @@
       "m_string": "class=\"c-error404\"",
       "m_code": 404,
       "known": [
-        "dev",
-        "matt"
+        "Mcguy",
+        "goldzweig"
       ],
       "cat": "hobby"
     },
@@ -5509,7 +5522,7 @@
         "gamer",
         "Carlos01"
       ],
-      "cat": "misc"
+      "cat": "gaming"
     },
     {
       "name": "mssg.me",
@@ -7223,7 +7236,7 @@
       "m_code": 200,
       "known": [
         "dominique",
-        "demonv"
+        "demon"
       ],
       "cat": "tech"
     },
@@ -7827,7 +7840,7 @@
         "gordonpn68492",
         "Alan-Liang"
       ],
-      "cat": "images"
+      "cat": "tech"
     },
     {
       "name": "Statuspage",
@@ -7921,7 +7934,7 @@
       "m_string": "\"page\":\"/404\"",
       "m_code": 404,
       "known": [
-        "adam",
+        "jane",
         "adam"
       ],
       "cat": "social"
