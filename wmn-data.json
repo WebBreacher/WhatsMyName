@@ -4260,21 +4260,6 @@
       "cat": "tech"
     },
     {
-      "name": "isMyGirl",
-      "uri_check": "https://ismygirl.com/api/model/getModel?slug={account}",
-      "uri_pretty": "https://ismygirl.com/{account}",
-      "e_code": 200,
-      "e_string": "\"id\":",
-      "m_string": "\"detail\":\"Model not found.\"",
-      "m_code": 404,
-      "known": [
-        "summer",
-        "littlelanta"
-      ],
-      "cat": "xx NSFW xx",
-      "valid": false
-    },
-    {
       "name": "Issuu",
       "uri_check": "https://issuu.com/call/signup/v2/check-username/{account}",
       "uri_pretty": "https://issuu.com/{account}",
