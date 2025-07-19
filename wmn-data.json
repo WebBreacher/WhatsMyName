@@ -5257,20 +5257,6 @@
     },
     {
       "name": "Medium",
-      "uri_check": "https://{account}.medium.com/about",
-      "strip_bad_char": ".",
-      "e_code": 200,
-      "e_string": "Medium member since",
-      "m_string": "Out of nothing, something",
-      "m_code": 404,
-      "known": [
-        "zulie",
-        "jessicalexicus"
-      ],
-      "cat": "news"
-    },
-    {
-      "name": "Medium handle",
       "uri_check": "https://medium.com/@{account}",
       "strip_bad_char": ".",
       "e_code": 200,
