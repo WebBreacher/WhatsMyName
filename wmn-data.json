@@ -5257,7 +5257,7 @@
     },
     {
       "name": "Medium",
-      "uri_check": "https://{account}.medium.com/about",
+      "uri_check": "https://medium.com/@{account}/about",
       "strip_bad_char": ".",
       "e_code": 200,
       "e_string": "Medium member since",
