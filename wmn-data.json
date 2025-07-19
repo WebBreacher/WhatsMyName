@@ -5270,6 +5270,20 @@
       "cat": "news"
     },
     {
+      "name": "Medium handle",
+      "uri_check": "https://medium.com/@{account}",
+      "strip_bad_char": ".",
+      "e_code": 200,
+      "e_string": "Medium member since",
+      "m_string": "Out of nothing, something",
+      "m_code": 404,
+      "known": [
+        "zulie",
+        "jessicalexicus"
+      ],
+      "cat": "news"
+    },
+    {
       "name": "medyczka.pl",
       "uri_check": "http://medyczka.pl/user/{account}",
       "e_code": 200,
