@@ -374,6 +374,7 @@
       "headers": {
         "Content-Type": "application/json"
       },
+      "account_pattern": "^[A-Za-z0-9]{3,20}$",
       "e_code": 400,
       "e_string": "\"msg\":\"Username is unavailable\"",
       "m_string": "\"status\":\"ok\"",
@@ -3080,6 +3081,7 @@
       "name": "GDBrowser",
       "uri_check": "https://gdbrowser.com/api/profile/{account}",
       "uri_pretty": "https://gdbrowser.com/u/{account}",
+      "account_pattern": "^[a-zA-Z0-9_-]{3,20}$",
       "e_code": 200,
       "e_string": "\"accountID\":",
       "m_string": "-1",
@@ -3233,6 +3235,7 @@
       "headers": {
         "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
       },
+      "account_pattern": "^(?!-)[a-zA-Z0-9-]{3,39}(?<!-)$",
       "e_code": 200,
       "e_string": "\"id\":",
       "m_string": "\"status\": \"404\"",
@@ -3250,6 +3253,7 @@
       "headers": {
         "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0"
       },
+      "account_pattern": "^(?!-)[a-zA-Z0-9-]{3,39}(?<!-)$",
       "e_code": 200,
       "e_string": "\"id\":",
       "m_string": "\"status\": \"404\"",
@@ -3425,8 +3429,8 @@
     },
     {
       "name": "Habbo.com",
-      "uri_check": " https://www.habbo.com/api/public/users?name={account}",
-      "uri_pretty": " https://www.habbo.com/profile/{account}",
+      "uri_check": "https://www.habbo.com/api/public/users?name={account}",
+      "uri_pretty": "https://www.habbo.com/profile/{account}",
       "e_code": 200,
       "e_string": "uniqueId\":",
       "m_string": "error\": \"not-found",
@@ -3481,8 +3485,8 @@
     },
     {
       "name": "Habbo.es",
-      "uri_check": " https://www.habbo.es/api/public/users?name={account}",
-      "uri_pretty": " https://www.habbo.es/profile/{account}",
+      "uri_check": "https://www.habbo.es/api/public/users?name={account}",
+      "uri_pretty": "https://www.habbo.es/profile/{account}",
       "e_code": 200,
       "e_string": "uniqueId\":",
       "m_string": "not-found",
@@ -7703,6 +7707,7 @@
       "name": "Sourceforge",
       "uri_check": "https://sourceforge.net/user/username/{account}",
       "uri_pretty": "https://sourceforge.net/u/{account}/profile",
+      "account_pattern": "^[a-z0-9-]{3,15}$",
       "e_code": 400,
       "e_string": "\"error\": \"invalid\"",
       "m_string": "\"success\": 1",
@@ -8715,6 +8720,9 @@
       "uri_check": "https://forumserver.twoplustwo.com/ajax.php?do=usersearch",
       "uri_pretty": "https://forumserver.twoplustwo.com/search.php",
       "post_body": "securitytoken=guest&do=usersearch&fragment={account}",
+      "headers": {
+        "Content-Type": "application/x-www-form-urlencoded"
+      },
       "e_code": 200,
       "e_string": "userid=",
       "m_string": "",

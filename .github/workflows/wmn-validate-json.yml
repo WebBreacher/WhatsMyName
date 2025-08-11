@@ -1,0 +1,30 @@
+name: Validate WhatsMyName Dataset
+
+on:
+  pull_request:
+    paths:
+      - 'wmn-data.json'
+      - 'wmn-data-schema.json'
+
+jobs:
+  wmn-validate-dataset:
+    name: Validate WhatsMyName Dataset
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install jsonschema rich
+
+      - name: Run dataset validation
+        run: |
+          python scripts/wmn_validate_json.py
