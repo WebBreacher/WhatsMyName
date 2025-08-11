@@ -7584,7 +7584,7 @@
     },
     {
       "name": "Snapchat",
-      "uri_check": "https://www.snapchat.com/add/{account}",
+      "uri_check": "https://www.snapchat.com/@{account}",
       "e_code": 200,
       "e_string": "is on Snapchat!",
       "m_string": "NOT_FOUND",
