@@ -2811,7 +2811,7 @@
       "cat": "images"
     },
     {
-      "name": "FlightRadar",
+      "name": "Flightradar24",
       "uri_check": "https://my.flightradar24.com/{account}/",
       "e_code": 200,
       "e_string": "class=\"profile-card\" data-profile-user=",
