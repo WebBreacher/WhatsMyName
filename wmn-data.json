@@ -59,33 +59,6 @@
   ],
   "sites": [
     {
-      "name": "iXBT Forum",
-      "uri_check": "https://forum.ixbt.com/users.cgi?id=info:{account}",
-      "e_code": 200,
-      "e_string": "Информация об участнике:",
-      "m_string": "Проверьте регистр написания.",
-      "m_code": 404,
-      "known": [
-        "phosphor",
-        "Dronich"
-      ],
-      "cat": "tech"
-    },
-    {
-      "name": "Hackadvisor",
-      "uri_check": "https://hackadvisor.io/api/v2/profile/{account}/",
-      "uri_pretty": "https://hackadvisor.io/hacker/{account}",
-      "e_code": 200,
-      "e_string": "\"username\":",
-      "m_string": "{\"detail\":\"Username not found\"}",
-      "m_code": 404,
-      "known": [
-        "WorstWurst",
-        "shriyanss"
-      ],
-      "cat": "tech"
-    },
-    {
       "name": "21buttons",
       "uri_check": "https://www.21buttons.com/buttoner/{account}",
       "e_code": 200,
@@ -98,6 +71,19 @@
         "espeworkout"
       ],
       "cat": "social"
+    },
+    {
+      "name": "247CTF",
+      "uri_check": "https://247ctf.com/progress/{account}",
+      "e_code": 200,
+      "e_string": "property=\"og:url\"",
+      "m_string": "<h1>Redirecting...</h1>",
+      "m_code": 302,
+      "known": [
+        "pottm",
+        "jusb3"
+      ],
+      "cat": "tech"
     },
     {
       "name": "247sports",
@@ -334,7 +320,9 @@
         "goddessbecca"
       ],
       "cat": "social",
-      "protection": ["cloudflare"]
+      "protection": [
+        "cloudflare"
+      ]
     },
     {
       "name": "Alura",
@@ -1075,19 +1063,6 @@
       "cat": "hobby"
     },
     {
-      "name": "Greasy Fork",
-      "uri_check": "https://greasyfork.org/en/users?q={account}",
-      "e_code": 200,
-      "e_string": "class=\"user-list\"",
-      "m_string": "<p>No users!</p>",
-      "m_code": 200,
-      "known": [
-        "TScofield",
-        "gitscofield"
-      ],
-      "cat": "tech"
-    },
-    {
       "name": "Boosty",
       "uri_check": "https://api.boosty.to/v1/blog/{account}",
       "uri_pretty": "https://boosty.to/{account}",
@@ -1419,6 +1394,21 @@
       "cat": "gaming"
     },
     {
+      "name": "Choko.Link",
+      "uri_check": "https://choko.link/api/auth/check",
+      "uri_pretty": "https://choko.link/{account}",
+      "post_body": "{\"username\":\"{account}\"}",
+      "e_code": 200,
+      "e_string": "\"result\":false",
+      "m_string": "\"result\":true",
+      "m_code": 200,
+      "known": [
+        "yaroslava_lytvyak",
+        "eugeniapsychology"
+      ],
+      "cat": "social"
+    },
+    {
       "name": "Chomikuj.pl",
       "uri_check": "https://chomikuj.pl/{account}/",
       "e_code": 200,
@@ -1577,6 +1567,22 @@
       "cat": "coding"
     },
     {
+      "name": "CodePen",
+      "uri_check": "https://codepen.io/{account}",
+      "e_code": 200,
+      "e_string": "property=\"og:url\"",
+      "m_string": "data-test-id=\"text-404\"",
+      "m_code": 404,
+      "known": [
+        "good88gorg",
+        "RayyanDonut"
+      ],
+      "cat": "coding",
+      "protection": [
+        "cloudflare"
+      ]
+    },
+    {
       "name": "Coderwall",
       "uri_check": "https://coderwall.com/{account}/",
       "e_code": 200,
@@ -1728,6 +1734,20 @@
         "red"
       ],
       "cat": "images"
+    },
+    {
+      "name": "Cropty",
+      "uri_check": "https://api.cropty.io/v1/auth/{account}",
+      "uri_pretty": "https://www.cropty.io/@{account}",
+      "e_code": 200,
+      "e_string": "\"name\":",
+      "m_string": "\"errors\":",
+      "m_code": 404,
+      "known": [
+        "mailmal",
+        "dosash"
+      ],
+      "cat": "finance"
     },
     {
       "name": "Crowdin",
@@ -2249,6 +2269,19 @@
       "cat": "business"
     },
     {
+      "name": "Dota2.ru",
+      "uri_check": "https://dota2.ru/forum/search/?type=user&keywords={account}&sort_by=username",
+      "e_code": 200,
+      "e_string": "class=\"forum-section__item forum-section__item--first\"",
+      "m_string": "id=\"no-activity-posts\"",
+      "m_code": 200,
+      "known": [
+        "narancha",
+        "Darkness whisper"
+      ],
+      "cat": "gaming"
+    },
+    {
       "name": "DOTAFire",
       "uri_check": "https://www.dotafire.com/ajax/searchSite?text={account}&search=members",
       "e_code": 200,
@@ -2286,6 +2319,19 @@
         "keeplegend"
       ],
       "cat": "art"
+    },
+    {
+      "name": "DRIVE2.RU",
+      "uri_check": "https://www.drive2.ru/users/{account}/",
+      "e_code": 200,
+      "e_string": "itemprop=\"name\"",
+      "m_string": "<title>404 — Страница не найдена</title>",
+      "m_code": 404,
+      "known": [
+        "seryjkot",
+        "timo6a"
+      ],
+      "cat": "social"
     },
     {
       "name": "Droners",
@@ -2604,7 +2650,9 @@
         "test"
       ],
       "cat": "xx NSFW xx",
-      "protection": ["cloudfront"]
+      "protection": [
+        "cloudfront"
+      ]
     },
     {
       "name": "Fark",
@@ -2659,17 +2707,9 @@
         "mike"
       ],
       "cat": "tech",
-      "protection": ["cloudfront"]
-    },
-    {
-      "name" : "Flightradar24",
-      "uri_check" : "https://my.flightradar24.com/{account}/",
-      "e_code" : 200,
-      "e_string" : "class=\"profile-card\" data-profile-user=",
-      "m_string" : "class=\"main page-not-found-main",
-      "m_code" : 404,
-      "known" : ["finn", "pavelkral"],
-      "cat" : "misc"
+      "protection": [
+        "cloudfront"
+      ]
     },
     {
       "name": "Filmot Channel Search",
@@ -2753,7 +2793,9 @@
         "moldanovadasha"
       ],
       "cat": "social",
-      "protection": ["ddos-guard"]
+      "protection": [
+        "ddos-guard"
+      ]
     },
     {
       "name": "Flickr",
@@ -2767,6 +2809,19 @@
         "test"
       ],
       "cat": "images"
+    },
+    {
+      "name": "FlightRadar",
+      "uri_check": "https://my.flightradar24.com/{account}/",
+      "e_code": 200,
+      "e_string": "class=\"profile-card\" data-profile-user=",
+      "m_string": "class=\"main page-not-found-main",
+      "m_code": 404,
+      "known": [
+        "finn",
+        "pavelkral"
+      ],
+      "cat": "misc"
     },
     {
       "name": "Flipboard",
@@ -3282,21 +3337,6 @@
       "cat": "coding"
     },
     {
-      "name": "Choko.Link",
-      "uri_check": "https://choko.link/api/auth/check",
-      "uri_pretty": "https://choko.link/{account}",
-      "post_body": "{\"username\":\"{account}\"}",
-      "e_code": 200,
-      "e_string": "\"result\":false",
-      "m_string": "\"result\":true",
-      "m_code": 200,
-      "known": [
-        "yaroslava_lytvyak",
-        "eugeniapsychology"
-      ],
-      "cat": "social"
-    },
-    {
       "name": "Gitee",
       "uri_check": "https://gitee.com/{account}",
       "e_code": 200,
@@ -3478,6 +3518,19 @@
         "test"
       ],
       "cat": "images"
+    },
+    {
+      "name": "Greasy Fork",
+      "uri_check": "https://greasyfork.org/en/users?q={account}",
+      "e_code": 200,
+      "e_string": "class=\"user-list\"",
+      "m_string": "<p>No users!</p>",
+      "m_code": 200,
+      "known": [
+        "TScofield",
+        "gitscofield"
+      ],
+      "cat": "tech"
     },
     {
       "name": "GTAinside.com",
@@ -3710,6 +3763,20 @@
         "adam"
       ],
       "cat": "hobby"
+    },
+    {
+      "name": "Hackadvisor",
+      "uri_check": "https://hackadvisor.io/api/v2/profile/{account}/",
+      "uri_pretty": "https://hackadvisor.io/hacker/{account}",
+      "e_code": 200,
+      "e_string": "\"username\":",
+      "m_string": "{\"detail\":\"Username not found\"}",
+      "m_code": 404,
+      "known": [
+        "WorstWurst",
+        "shriyanss"
+      ],
+      "cat": "tech"
     },
     {
       "name": "Hacker News",
@@ -3948,24 +4015,6 @@
       "cat": "hobby"
     },
     {
-      "name": "Learn CW Online",
-      "uri_check": "https://lcwo.net/api/user_exists.php",
-      "uri_pretty": "https://lcwo.net/profile/{account}",
-      "post_body": "username={account}",
-      "headers": {
-        "Content-Type": "application/x-www-form-urlencoded"
-      },
-      "e_code": 200,
-      "e_string": "\"user_exists\": 1",
-      "m_string": "\"user_exists\": 0",
-      "m_code": 200,
-      "known": [
-        "wm3o",
-        "test"
-      ],
-      "cat": "hobby"
-    },
-    {
       "name": "HomeDesign3D",
       "uri_check": "https://en.homedesign3d.net/user/{account}",
       "e_code": 200,
@@ -4083,16 +4132,6 @@
         "dev"
       ],
       "cat": "tech"
-    },
-    {
-      "name" : "DRIVE2.RU",
-      "uri_check" : "https://www.drive2.ru/users/{account}/",
-      "e_code" : 200,
-      "e_string" : "itemprop=\"name\"",
-      "m_string" : "<title>404 — Страница не найдена</title>",
-      "m_code" : 404,
-      "known" : ["seryjkot", "timo6a"],
-      "cat" : "social"
     },
     {
       "name": "HulkShare",
@@ -4414,6 +4453,19 @@
         "finch"
       ],
       "cat": "gaming"
+    },
+    {
+      "name": "iXBT Forum",
+      "uri_check": "https://forum.ixbt.com/users.cgi?id=info:{account}",
+      "e_code": 200,
+      "e_string": "Информация об участнике:",
+      "m_string": "Проверьте регистр написания.",
+      "m_code": 404,
+      "known": [
+        "phosphor",
+        "Dronich"
+      ],
+      "cat": "tech"
     },
     {
       "name": "Japandict",
@@ -4766,6 +4818,24 @@
       "protection": [
         "other"
       ]
+    },
+    {
+      "name": "Learn CW Online",
+      "uri_check": "https://lcwo.net/api/user_exists.php",
+      "uri_pretty": "https://lcwo.net/profile/{account}",
+      "post_body": "username={account}",
+      "headers": {
+        "Content-Type": "application/x-www-form-urlencoded"
+      },
+      "e_code": 200,
+      "e_string": "\"user_exists\": 1",
+      "m_string": "\"user_exists\": 0",
+      "m_code": 200,
+      "known": [
+        "wm3o",
+        "test"
+      ],
+      "cat": "hobby"
     },
     {
       "name": "LeetCode",
@@ -6195,59 +6265,6 @@
       "cat": "social"
     },
     {
-      "name": "Чатовка.net",
-      "uri_check": "https://chatovka.net/search?user_nick=+{account}&user_sex_m=on&user_sex_f=on",
-      "e_code": 200,
-      "e_string": "href=\"/user/",
-      "m_string": " По Вашему запросу люди не найдены.",
-      "m_code": 200,
-      "known": [
-        "ФорматА4",
-        "Alinka1313"
-      ],
-      "cat": "social"
-    },
-    {
-      "name": "CodePen",
-      "uri_check": "https://codepen.io/{account}",
-      "e_code": 200,
-      "e_string": "property=\"og:url\"",
-      "m_string": "data-test-id=\"text-404\"",
-      "m_code": 404,
-      "known": [
-        "good88gorg",
-        "RayyanDonut"
-      ],
-      "cat": "coding",
-      "protection": ["cloudflare"]
-    },
-    {
-      "name": "247CTF",
-      "uri_check": "https://247ctf.com/progress/{account}",
-      "e_code": 200,
-      "e_string": "property=\"og:url\"",
-      "m_string": "<h1>Redirecting...</h1>",
-      "m_code": 302,
-      "known": [
-        "pottm",
-        "jusb3"
-      ],
-      "cat": "tech"
-    },
-    {
-      "name": "Dota2.ru",
-      "uri_check": "https://dota2.ru/forum/search/?type=user&keywords={account}&sort_by=username",
-      "e_code": 200,
-      "e_string": "class=\"forum-section__item forum-section__item--first\"",
-      "m_string": "id=\"no-activity-posts\"",
-      "m_code": 200,
-      "known": [
-        "narancha",
-        "Darkness whisper"
-      ],
-      "cat": "gaming"
-    },
-    {
       "name": "Oper.ru",
       "uri_check": "https://oper.ru/visitors/info.php?t={account}",
       "e_code": 200,
@@ -6594,6 +6611,9 @@
       "uri_check": "https://pikabu.ru/ajax.php",
       "uri_pretty": "https://pikabu.ru/@{account}",
       "post_body": "route=signup/check-username&username={account}",
+      "headers": {
+        "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8"
+      },
       "e_code": 200,
       "e_string": "\"result\":false",
       "m_string": "\"result\":true",
@@ -6602,10 +6622,7 @@
         "igor01",
         "serguei"
       ],
-      "cat": "social",
-      "headers": {
-        "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8"
-      }
+      "cat": "social"
     },
     {
       "name": "Pillowfort",
@@ -6620,34 +6637,6 @@
         "honey"
       ],
       "cat": "social"
-    },
-        {
-      "name": "Scored",
-      "uri_check": "https://scored.co/api/v2/user/about.json?user={account}",
-      "uri_pretty": "https://scored.co/u/{account}",
-      "e_code": 200,
-      "e_string": "\"status\":true",
-      "m_string": "\"status\":false",
-      "m_code": 200,
-      "known": [
-        "LowEnergyFaggot",
-        "libsaremental"
-      ],
-      "cat": "social"
-    },
-    {
-      "name": "Cropty",
-      "uri_check": "https://api.cropty.io/v1/auth/{account}",
-      "uri_pretty": "https://www.cropty.io/@{account}",
-      "e_code": 200,
-      "e_string": "\"name\":",
-      "m_string": "\"errors\":",
-      "m_code": 404,
-      "known": [
-        "mailmal",
-        "dosash"
-      ],
-      "cat": "finance"
     },
     {
       "name": "PinkBike",
@@ -7482,6 +7471,20 @@
         "lecter"
       ],
       "cat": "misc"
+    },
+    {
+      "name": "Scored",
+      "uri_check": "https://scored.co/api/v2/user/about.json?user={account}",
+      "uri_pretty": "https://scored.co/u/{account}",
+      "e_code": 200,
+      "e_string": "\"status\":true",
+      "m_string": "\"status\":false",
+      "m_code": 200,
+      "known": [
+        "LowEnergyFaggot",
+        "libsaremental"
+      ],
+      "cat": "social"
     },
     {
       "name": "ScoutWiki",
@@ -10119,6 +10122,19 @@
         "hosssssein"
       ],
       "cat": "tech"
+    },
+    {
+      "name": "Чатовка.net",
+      "uri_check": "https://chatovka.net/search?user_nick=+{account}&user_sex_m=on&user_sex_f=on",
+      "e_code": 200,
+      "e_string": "href=\"/user/",
+      "m_string": " По Вашему запросу люди не найдены.",
+      "m_code": 200,
+      "known": [
+        "ФорматА4",
+        "Alinka1313"
+      ],
+      "cat": "social"
     }
   ]
 }
