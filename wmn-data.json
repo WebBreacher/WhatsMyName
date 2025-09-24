@@ -9186,39 +9186,6 @@
       "cat": "misc"
     },
     {
-      "name": "WordPress.com (Public)",
-      "uri_check": "https://public-api.wordpress.com/rest/v1.1/sites/{account}.wordpress.com",
-      "uri_pretty": "https://{account}.wordpress.com",
-      "e_code": 200,
-      "e_string": "\"ID\":",
-      "m_string": "\"error\":\"unknown_blog\"",
-      "m_code": 404,
-      "known": ["dukeupress", "krolowasuperstarblog"],
-      "cat": "blog"
-    },
-    {
-      "name": "WordPress.com (Private)",
-      "uri_check": "https://public-api.wordpress.com/rest/v1.1/sites/{account}.wordpress.com",
-      "uri_pretty": "https://{account}.wordpress.com",
-      "e_code": 403,
-      "e_string": "\"message\":\"User cannot access this private blog.\"",
-      "m_string": "\"error\":\"unknown_blog\"",
-      "m_code": 404,
-      "known": ["webbreacher"],
-      "cat": "blog"
-    },
-    {
-      "name": "WordPress.com (Deleted)",
-      "uri_check": "https://public-api.wordpress.com/rest/v1.1/sites/{account}.wordpress.com",
-      "uri_pretty": "https://{account}.wordpress.com",
-      "e_code": 403,
-      "e_string": "\"message\":\"API calls to this endpoint have been disabled.\"",
-      "m_string": "\"error\":\"unknown_blog\"",
-      "m_code": 404,
-      "known": ["ahegyes"],
-      "cat": "blog"
-    },
-    {
       "name": "VIEWBUG",
       "uri_check": "https://www.viewbug.com/member/{account}",
       "e_code": 200,
@@ -9725,9 +9692,49 @@
       "cat": "gaming"
     },
     {
-      "name": "WordPress.org (Profiles)",
+      "name": "WordPress.com (Deleted)",
+      "uri_check": "https://public-api.wordpress.com/rest/v1.1/sites/{account}.wordpress.com",
+      "uri_pretty": "https://{account}.wordpress.com",
+      "e_code": 403,
+      "e_string": "\"message\":\"API calls to this endpoint have been disabled.\"",
+      "m_string": "\"error\":\"unknown_blog\"",
+      "m_code": 404,
+      "known": [
+        "ahegyes"
+      ],
+      "cat": "blog"
+    },
+    {
+      "name": "WordPress.com (Private)",
+      "uri_check": "https://public-api.wordpress.com/rest/v1.1/sites/{account}.wordpress.com",
+      "uri_pretty": "https://{account}.wordpress.com",
+      "e_code": 403,
+      "e_string": "\"message\":\"User cannot access this private blog.\"",
+      "m_string": "\"error\":\"unknown_blog\"",
+      "m_code": 404,
+      "known": [
+        "webbreacher"
+      ],
+      "cat": "blog"
+    },
+    {
+      "name": "WordPress.com (Public)",
+      "uri_check": "https://public-api.wordpress.com/rest/v1.1/sites/{account}.wordpress.com",
+      "uri_pretty": "https://{account}.wordpress.com",
+      "e_code": 200,
+      "e_string": "\"ID\":",
+      "m_string": "\"error\":\"unknown_blog\"",
+      "m_code": 404,
+      "known": [
+        "dukeupress",
+        "krolowasuperstarblog"
+      ],
+      "cat": "blog"
+    },
+    {
+      "name": "WordPress.org (Forums)",
       "uri_check": "https://login.wordpress.org/wp-json/wporg/v1/username-available/{account}",
-      "uri_pretty": "https://profiles.wordpress.org/{account}/",
+      "uri_pretty": "https://wordpress.org/support/users/{account}/",
       "e_code": 200,
       "e_string": "\"error\":\"That username is already in use.",
       "m_string": "\"available\":true",
@@ -9738,9 +9745,9 @@
       "cat": "blog"
     },
     {
-      "name": "WordPress.org (Forums)",
+      "name": "WordPress.org (Profiles)",
       "uri_check": "https://login.wordpress.org/wp-json/wporg/v1/username-available/{account}",
-      "uri_pretty": "https://wordpress.org/support/users/{account}/",
+      "uri_pretty": "https://profiles.wordpress.org/{account}/",
       "e_code": 200,
       "e_string": "\"error\":\"That username is already in use.",
       "m_string": "\"available\":true",
