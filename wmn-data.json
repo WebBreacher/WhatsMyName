@@ -2141,7 +2141,7 @@
       "cat": "political"
     },
     {
-      "name": "Docker Hub Organizations",
+      "name": "Docker Hub (Organization)",
       "uri_check": "https://hub.docker.com/v2/orgs/{account}/",
       "uri_pretty": "https://hub.docker.com/u/{account}",
       "e_code": 200,
@@ -2155,7 +2155,7 @@
       "cat": "coding"
     },
     {
-      "name": "Docker Hub Users",
+      "name": "Docker Hub (User)",
       "uri_check": "https://hub.docker.com/v2/users/{account}/",
       "uri_pretty": "https://hub.docker.com/u/{account}",
       "e_code": 200,
