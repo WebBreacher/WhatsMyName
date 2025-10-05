@@ -3411,11 +3411,11 @@
       "cat": "social"
     },
     {
-      "name": "GNOME GitLab",
+      "name": "GNOME (GitLab)",
       "uri_check": "https://gitlab.gnome.org/api/v4/users?username={account}",
       "uri_pretty": "https://gitlab.gnome.org/{account}",
       "e_code": 200,
-      "e_string": "\"id\":",
+      "e_string": "\"username\":",
       "m_string": "[]",
       "m_code": 200,
       "known": [
@@ -3424,11 +3424,11 @@
       ],
       "cat": "coding",
       "protection": [
-        "other"
+        "anubis"
       ]
     },
     {
-      "name": "GNOME Shell Extensions",
+      "name": "GNOME (Shell Extensions)",
       "uri_check": "https://extensions.gnome.org/accounts/profile/{account}",
       "e_code": 200,
       "e_string": "class=\"user-details\"",
