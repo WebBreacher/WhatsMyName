@@ -506,7 +506,7 @@
       "cat": "social"
     },
     {
-      "name": "Arduino",
+      "name": "Arduino (Project Hub)",
       "uri_check": "https://projecthub.arduino.cc/{account}",
       "e_code": 200,
       "e_string": "\"userInfo\":{",
@@ -519,7 +519,7 @@
       "cat": "tech"
     },
     {
-      "name": "Arduino Forum",
+      "name": "Arduino (Forum)",
       "uri_check": "https://forum.arduino.cc/u/{account}.json",
       "uri_pretty": "https://forum.arduino.cc/u/{account}/summary",
       "e_code": 200,
@@ -2331,7 +2331,8 @@
         "seryjkot",
         "timo6a"
       ],
-      "cat": "social"
+      "cat": "social",
+      "protection": ["ddos-guard"]
     },
     {
       "name": "Droners",
@@ -3262,7 +3263,8 @@
       "m_code": 404,
       "known": [
         "moun10bike",
-        "niraD"
+        "niraD",
+        "john"
       ],
       "cat": "social"
     },
@@ -3332,7 +3334,8 @@
       "m_code": 404,
       "known": [
         "xin",
-        "dev"
+        "dev",
+        "jane"
       ],
       "cat": "coding"
     },
@@ -4010,7 +4013,8 @@
       "m_code": 200,
       "known": [
         "holo",
-        "test"
+        "john",
+        "fire"
       ],
       "cat": "hobby"
     },
@@ -4129,7 +4133,8 @@
       "m_code": 404,
       "known": [
         "hack",
-        "dev"
+        "dev",
+        "Amanda"
       ],
       "cat": "tech"
     },
@@ -6260,7 +6265,8 @@
       "m_string": "\"missing\":\"\"",
       "m_code": 200,
       "known": [
-        "kemkim"
+        "kemkim",
+        "john"
       ],
       "cat": "social"
     },
@@ -6622,7 +6628,8 @@
         "igor01",
         "serguei"
       ],
-      "cat": "social"
+      "cat": "social",
+      "protection": ["ddos-guard"]
     },
     {
       "name": "Pillowfort",
@@ -6634,7 +6641,7 @@
       "m_code": 404,
       "known": [
         "MissMoonified",
-        "honey"
+        "lunasdestiny"
       ],
       "cat": "social"
     },
@@ -8874,7 +8881,8 @@
       "m_code": 404,
       "known": [
         "baywolfmusic",
-        "mrcerny18"
+        "mrcerny18",
+        "4evryng"
       ],
       "cat": "music"
     },
@@ -9074,8 +9082,8 @@
       "m_string": "class=\"search_404\"",
       "m_code": 404,
       "known": [
-        "test",
-        "phil"
+        "Welcomenetguy",
+        "patpatcarney"
       ],
       "cat": "social"
     },
@@ -9700,7 +9708,8 @@
       "m_string": "\"error\":\"unknown_blog\"",
       "m_code": 404,
       "known": [
-        "ahegyes"
+        "ahegyes",
+        "santinamichelle"
       ],
       "cat": "blog"
     },
@@ -9713,7 +9722,8 @@
       "m_string": "\"error\":\"unknown_blog\"",
       "m_code": 404,
       "known": [
-        "webbreacher"
+        "webbreacher",
+        "mary"
       ],
       "cat": "blog"
     },
@@ -9740,7 +9750,8 @@
       "m_string": "\"available\":true",
       "m_code": 200,
       "known": [
-        "test"
+        "jane",
+        "david"
       ],
       "cat": "blog"
     },
@@ -9753,7 +9764,8 @@
       "m_string": "\"available\":true",
       "m_code": 200,
       "known": [
-        "test"
+        "toszcze",
+        "mattsson"
       ],
       "cat": "blog"
     },
@@ -10157,7 +10169,7 @@
       "uri_check": "https://chatovka.net/search?user_nick=+{account}&user_sex_m=on&user_sex_f=on",
       "e_code": 200,
       "e_string": "href=\"/user/",
-      "m_string": " По Вашему запросу люди не найдены.",
+      "m_string": "По Вашему запросу люди не найдены.",
       "m_code": 200,
       "known": [
         "ФорматА4",
