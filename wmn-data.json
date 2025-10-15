@@ -506,19 +506,6 @@
       "cat": "social"
     },
     {
-      "name": "Arduino (Project Hub)",
-      "uri_check": "https://projecthub.arduino.cc/{account}",
-      "e_code": 200,
-      "e_string": "\"userInfo\":{",
-      "m_string": "\"userInfo\":null",
-      "m_code": 200,
-      "known": [
-        "peter",
-        "willy-js"
-      ],
-      "cat": "tech"
-    },
-    {
       "name": "Arduino (Forum)",
       "uri_check": "https://forum.arduino.cc/u/{account}.json",
       "uri_pretty": "https://forum.arduino.cc/u/{account}/summary",
@@ -529,6 +516,19 @@
       "known": [
         "martinhouse",
         "gilshultz"
+      ],
+      "cat": "tech"
+    },
+    {
+      "name": "Arduino (Project Hub)",
+      "uri_check": "https://projecthub.arduino.cc/{account}",
+      "e_code": 200,
+      "e_string": "\"userInfo\":{",
+      "m_string": "\"userInfo\":null",
+      "m_code": 200,
+      "known": [
+        "peter",
+        "willy-js"
       ],
       "cat": "tech"
     },
@@ -2332,7 +2332,9 @@
         "timo6a"
       ],
       "cat": "social",
-      "protection": ["ddos-guard"]
+      "protection": [
+        "ddos-guard"
+      ]
     },
     {
       "name": "Droners",
@@ -6629,7 +6631,9 @@
         "serguei"
       ],
       "cat": "social",
-      "protection": ["ddos-guard"]
+      "protection": [
+        "ddos-guard"
+      ]
     },
     {
       "name": "Pillowfort",
