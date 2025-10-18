@@ -43,6 +43,7 @@ For a site to be included in WMN it has to:
 * [WhatsMyName-Client](https://github.com/grabowskiadrian/WhatsMyName-Client) a simple Python script with 'request headers' and 'POST requests' support made by [@grabowskiadrian](https://github.com/grabowskiadrian). The script also allows you to test the configuration of the wmn-data.json file.
 * [WhatsMyName-Web](https://github.com/AXRoux/WhatsMyName-Web) **Whats My Name-Web** is a simple Flask web app iteration of WhatsMyName made by [@AXRoux](https://github.com/AXRoux/)
 * [WhatsMyName Docker](https://github.com/kodamaChameleon/wmn-docker) is a Docker API Wrapper over this WhatsMyName tool. Dockerization made by [@kodamaChameleon](https://github.com/kodamaChameleon)
+* [NameSeeker](https://github.com/funnyzak/name-seeker) is a powerful cross-platform desktop application that searches for usernames and email addresses across hundreds of websites, helping you quickly discover your digital footprint. Based on the WhatsMyName project data, it supports exporting search results in PDF, CSV, JSON, and other formats.
 
 ## Content
 
