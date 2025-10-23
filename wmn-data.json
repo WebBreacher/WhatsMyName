@@ -8550,7 +8550,7 @@
       "uri_check": "https://www.theguardian.com/profile/{account}",
       "e_code": 200,
       "e_string": "https://www.theguardian.com/profile/",
-      "m_string": "Page not found | The Guardian",
+      "m_string": "Sorry – we haven’t been able to serve the page you asked for.",
       "m_code": 404,
       "known": [
         "minna-salami",
