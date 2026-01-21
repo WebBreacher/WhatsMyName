@@ -1,8 +1,7 @@
 {
-  "definitions": {},
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://example.com/object1658520065.json",
-  "title": "Root",
+  "$id": "https://raw.githubusercontent.com/WebBreacher/WhatsMyName/main/wmn-data-schema.json",
+  "title": "WhatsMyName",
   "type": "object",
   "required": [
     "license",
@@ -12,61 +11,41 @@
   ],
   "properties": {
     "license": {
-      "$id": "#root/license",
-      "title": "License",
-      "type": "array",
-      "default": [],
-      "items": {
-        "$id": "#root/license/items",
-        "title": "Items",
-        "type": "string",
-        "default": "",
-        "examples": [
-          "Copyright (C) 2025 Micah Hoffman"
-        ],
-        "pattern": "^.*$"
-      }
+      "description": "CC BY-SA 4.0 license text",
+      "const": [
+        "Copyright (C) Micah Hoffman",
+        "This work is licensed under the Creative Commons Attribution-ShareAlike",
+        "4.0 International License. To view a copy of this license, visit",
+        "http://creativecommons.org/licenses/by-sa/4.0/ or send a letter to",
+        "Creative Commons, PO Box 1866, Mountain View, CA 94042, USA."
+      ]
     },
     "authors": {
-      "$id": "#root/authors",
-      "title": "Authors",
+      "description": "List of contributors to the WhatsMyName project",
       "type": "array",
-      "default": [],
+      "minItems": 1,
+      "uniqueItems": true,
       "items": {
-        "$id": "#root/authors/items",
-        "title": "Items",
         "type": "string",
-        "default": "",
-        "examples": [
-          "WebBreacher"
-        ],
-        "pattern": "^.*$"
+        "minLength": 1
       }
     },
     "categories": {
-      "$id": "#root/categories",
-      "title": "Categories",
+      "description": "List of valid category values for classifying sites",
       "type": "array",
-      "default": [],
+      "minItems": 1,
+      "uniqueItems": true,
       "items": {
-        "$id": "#root/categories/items",
-        "title": "Items",
         "type": "string",
-        "default": "",
+        "minLength": 1,
         "examples": [
           "archived"
-        ],
-        "pattern": "^.*$"
+        ]
       }
     },
     "sites": {
-      "$id": "#root/sites",
-      "title": "Sites",
       "type": "array",
-      "default": [],
       "items": {
-        "$id": "#root/sites/items",
-        "title": "Items",
         "type": "object",
         "required": [
           "name",
@@ -80,166 +59,204 @@
         ],
         "properties": {
           "name": {
-            "$id": "#root/sites/items/name",
-            "title": "Name",
             "type": "string",
-            "default": "",
+            "description": "Display name of the website",
+            "minLength": 1,
             "examples": [
-              "101010.pl"
-            ],
-            "pattern": "^.*$"
+              "Anime-Planet"
+            ]
           },
           "uri_check": {
-            "$id": "#root/sites/items/uri_check",
-            "title": "Uri_check",
             "type": "string",
-            "default": "",
+            "description": "URL to check username. Requires '{account}' placeholder unless post_body is used",
+            "format": "uri",
+            "pattern": "^(http|https)://.+$",
             "examples": [
-              "https://101010.pl/@{account}"
-            ],
-            "pattern": "^.*$"
+              "https://www.anime-planet.com/api/validation/username"
+            ]
           },
           "uri_pretty": {
-            "$id": "#root/sites/items/uri_pretty",
-            "title": "Uri_pretty",
             "type": "string",
-            "default": "",
+            "description": "User-facing profile URL when uri_check is an API",
+            "format": "uri",
+            "pattern": "^(http|https)://.+$",
             "examples": [
-              "https://101010.pl/@{account}"
-            ],
-            "pattern": "^.*$"
+              "https://www.anime-planet.com/users/{account}"
+            ]
           },
           "post_body": {
-            "$id": "#root/sites/items/post_body",
-            "title": "Post_body",
             "type": "string",
-            "default": "",
+            "description": "POST request body with '{account}' placeholder. Requires headers",
             "examples": [
-              ""
-            ],
-            "pattern": "^.*$"
+              "{\"username\":\"{account}\"}"
+            ]
           },
           "headers": {
-            "$id": "#root/sites/items/headers",
-            "title": "Headers",
             "type": "object",
-            "default": [],
-            "items": {
-              "$id": "#root/sites/items/headers/items",
-              "title": "Items",
-              "type": "string",
-              "default": "",
-              "examples": [
-                {
-                  "accept": "text/html"
-                }
-              ],
-              "pattern": "^.*$"
-            }
+            "description": "HTTP headers for the request. Required with post_body or for User-Agent protection bypass",
+            "minProperties": 1,
+            "additionalProperties": {
+              "type": "string"
+            },
+            "examples": [
+              {
+                "Content-Type": "application/json"
+              }
+            ]
           },
           "strip_bad_char": {
-            "$id": "#root/sites/items/strip_bad_char",
-            "title": "Strip_bad_char",
             "type": "string",
-            "default": "",
+            "description": "Characters to remove from usernames before checking",
+            "minLength": 1,
             "examples": [
               "."
-            ],
-            "pattern": "^.*$"
+            ]
           },
           "e_code": {
-            "$id": "#root/sites/items/e_code",
-            "title": "E_code",
             "type": "integer",
-            "default": "",
+            "description": "HTTP status code when username exists",
+            "minimum": 100,
+            "maximum": 599,
             "examples": [
-              200
-            ],
-            "pattern": "^.*$"
+              400
+            ]
           },
           "e_string": {
-            "$id": "#root/sites/items/e_string",
-            "title": "E_string",
             "type": "string",
-            "default": "",
+            "description": "Response string indicating username exists",
             "examples": [
-              "@101010.pl"
-            ],
-            "pattern": "^.*$"
+              "\"msg\":\"Username is unavailable\""
+            ]
           },
           "m_string": {
-            "$id": "#root/sites/items/m_string",
-            "title": "M_string",
             "type": "string",
-            "default": "",
+            "description": "Response string indicating username is missing",
             "examples": [
-              "The page you are looking for isn't here."
-            ],
-            "pattern": "^.*$"
+              "\"status\":\"ok\""
+            ]
           },
           "m_code": {
-            "$id": "#root/sites/items/m_code",
-            "title": "M_code",
             "type": "integer",
-            "default": "",
+            "description": "HTTP status code when username is missing",
+            "minimum": 100,
+            "maximum": 599,
             "examples": [
-              404
-            ],
-            "pattern": "^.*$"
+              200
+            ]
           },
           "known": {
-            "$id": "#root/sites/items/known",
-            "title": "Known",
             "type": "array",
-            "default": [],
+            "description": "Verified existing usernames for testing",
+            "uniqueItems": true,
+            "minItems": 1,
             "items": {
-              "$id": "#root/sites/items/known/items",
-              "title": "Items",
               "type": "string",
-              "default": "",
+              "minLength": 1,
               "examples": [
-                "szekspir"
-              ],
-              "pattern": "^.*$"
+                "zala",
+                "lindapearl"
+              ]
             }
           },
           "cat": {
-            "$id": "#root/sites/items/cat",
-            "title": "Cat",
             "type": "string",
-            "default": "",
+            "description": "Site category",
+            "enum": [
+              "archived",
+              "art",
+              "blog",
+              "business",
+              "coding",
+              "dating",
+              "finance",
+              "gaming",
+              "health",
+              "hobby",
+              "images",
+              "misc",
+              "music",
+              "news",
+              "political",
+              "search",
+              "shopping",
+              "social",
+              "tech",
+              "video",
+              "xx NSFW xx"
+            ],
             "examples": [
               "social"
-            ],
-            "pattern": "^.*$"
+            ]
           },
           "valid": {
-            "$id": "#root/sites/items/valid",
-            "title": "Valid",
             "type": "boolean",
+            "description": "Set false to skip broken sites",
             "examples": [
               true
-            ],
-            "default": ""
+            ]
           },
           "protection": {
-            "$id": "#root/sites/items/protection",
-            "title": "Protection",
             "type": "array",
-            "default": [],
+            "description": "Anti-automation measures on the site",
+            "minItems": 1,
+            "uniqueItems": true,
             "items": {
-              "$id": "#root/sites/items/protection/items",
-              "title": "Items",
               "type": "string",
-              "default": "",
-              "examples": [
+              "enum": [
+                "anubis",
+                "captcha",
+                "cloudflare",
+                "cloudfront",
+                "ddos-guard",
+                "multiple",
+                "other",
+                "user-agent",
+                "user-auth"
+              ]
+            },
+            "examples": [
+              [
                 "cloudflare",
                 "captcha"
+              ]
+            ]
+          }
+        },
+        "additionalProperties": false,
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "post_body": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "post_body"
+              ]
+            },
+            "then": {
+              "required": [
+                "headers"
               ],
-              "pattern": "^.*$"
+              "properties": {
+                "post_body": {
+                  "type": "string",
+                  "pattern": "\\{account\\}"
+                }
+              }
+            },
+            "else": {
+              "properties": {
+                "uri_check": {
+                  "type": "string",
+                  "pattern": "\\{account\\}"
+                }
+              }
             }
           }
-        }
+        ]
       }
     }
   }
