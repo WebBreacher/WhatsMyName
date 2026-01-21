@@ -1365,7 +1365,9 @@
         "josh"
       ],
       "cat": "gaming",
-      "protection": ["cloudflare"]
+      "protection": [
+        "cloudflare"
+      ]
     },
     {
       "name": "Choko.Link",
@@ -3198,7 +3200,9 @@
         "Hozier"
       ],
       "cat": "music",
-      "protection": ["cloudflare"]
+      "protection": [
+        "cloudflare"
+      ]
     },
     {
       "name": "Genius (User)",
@@ -3212,7 +3216,9 @@
         "Tobias_the_explicator"
       ],
       "cat": "music",
-      "protection": ["cloudflare"]
+      "protection": [
+        "cloudflare"
+      ]
     },
     {
       "name": "Geocaching",
@@ -3328,8 +3334,9 @@
         "jokemmy"
       ],
       "cat": "coding",
-      "protection": ["user-agent"]
-
+      "protection": [
+        "user-agent"
+      ]
     },
     {
       "name": "GitHub (User)",
@@ -3347,8 +3354,9 @@
         "WebBreacher"
       ],
       "cat": "coding",
-      "protection": ["user-agent"]
-
+      "protection": [
+        "user-agent"
+      ]
     },
     {
       "name": "GitLab",
@@ -5397,7 +5405,9 @@
         "webbreacher"
       ],
       "cat": "news",
-      "protection": ["user-agent"]
+      "protection": [
+        "user-agent"
+      ]
     },
     {
       "name": "Metacritic",
@@ -6471,6 +6481,23 @@
         "bob"
       ],
       "cat": "tech"
+    },
+    {
+      "name": "Peerlist",
+      "uri_check": "https://peerlist.io/api/v1/users/profile/tldr?handle={account}",
+      "uri_pretty": "https://peerlist.io/{account}",
+      "e_code": 200,
+      "e_string": "\"tldr\":",
+      "m_string": "\"message\":\"User Not found\"",
+      "m_code": 500,
+      "known": [
+        "taher_max_",
+        "naymurr"
+      ],
+      "cat": "coding",
+      "protection": [
+        "cloudflare"
+      ]
     },
     {
       "name": "Periscope",
@@ -7961,21 +7988,6 @@
       "protection": [
         "cloudflare"
       ]
-    },
-        {
-      "name": "Peerlist",
-      "uri_check": "https://peerlist.io/api/v1/users/profile/tldr?handle={account}",
-      "uri_pretty": "https://peerlist.io/{account}",
-      "e_code": 200,
-      "e_string": "\"tldr\":",
-      "m_string": "\"message\":\"User Not found\"",
-      "m_code": 500,
-      "known": [
-        "taher_max_",
-        "naymurr"
-      ],
-      "cat": "coding",
-      "protection": ["cloudflare"]
     },
     {
       "name": "StackShare",
