@@ -10018,7 +10018,7 @@
     },
     {
       "name": "Znanija",
-      "uri_check": "https://znanija.com/graphql/ru?operationName=NickAvailability&query=query NickAvailability($nick:String!){nickAvailability(nick:$nick){isAvailable}}&variables={\"nick\":\"{account}\"}",
+      "uri_check": "https://znanija.com/graphql/ru?operationName=NickAvailability&query=query%20NickAvailability%28%24nick%3AString%21%29%7BnickAvailability%28nick%3A%24nick%29%7BisAvailable%7D%7D&variables=%7B%22nick%22%3A%22{account}%22%7D",
       "uri_pretty": "https://www.google.com/search?q=site:znanija.com+intext:{account}",
       "e_code": 200,
       "e_string": "\"isAvailable\":false",
