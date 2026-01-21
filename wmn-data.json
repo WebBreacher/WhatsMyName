@@ -1950,7 +1950,7 @@
       "uri_check": "https://devrant.com/api/get-user-id?app=3&username={account}",
       "uri_pretty": "https://devrant.com/users/{account}",
       "e_code": 200,
-      "e_string": "\"success\":",
+      "e_string": "\"success\":true",
       "m_string": "\"success\":false",
       "m_code": 400,
       "known": [
@@ -3319,7 +3319,7 @@
       "cat": "coding"
     },
     {
-      "name": "GitHub (Gist)",
+      "name": "GitHub (Gists)",
       "uri_check": "https://api.github.com/users/{account}/gists",
       "uri_pretty": "https://gist.github.com/{account}",
       "headers": {
@@ -4219,7 +4219,7 @@
       "uri_check": "https://api.inaturalist.org/v1/users/{account}",
       "uri_pretty": "https://inaturalist.nz/people/{account}",
       "e_code": 200,
-      "e_string": "\"results\":",
+      "e_string": "\"results\":[{",
       "m_string": "\"status\":404",
       "m_code": 404,
       "known": [
