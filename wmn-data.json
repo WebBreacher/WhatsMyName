@@ -7439,8 +7439,8 @@
     },
     {
       "name": "Scribd (Document)",
-      "uri_check": "https://www.scribd.com/search/query?query={account}",
-      "uri_pretty": "https://www.scribd.com/search?query={account}",
+      "uri_check": "https://www.scribd.com/search/query?query={account}&verbatim=true",
+      "uri_pretty": "https://www.scribd.com/search?query={account}&verbatim=true",
       "e_code": 200,
       "e_string": "\"compilationId\":\"",
       "m_string": "\"compilationId\":null",
