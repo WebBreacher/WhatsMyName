@@ -8932,19 +8932,6 @@
       "cat": "business"
     },
     {
-      "name": "uid",
-      "uri_check": "http://old.uid.me/{account}",
-      "e_code": 200,
-      "e_string": "- uID.me",
-      "m_string": "Page not found",
-      "m_code": 404,
-      "known": [
-        "john",
-        "peter"
-      ],
-      "cat": "social"
-    },
-    {
       "name": "Ultimate Guitar",
       "uri_check": "https://www.ultimate-guitar.com/u/{account}",
       "e_code": 200,
