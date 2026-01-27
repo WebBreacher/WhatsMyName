@@ -1630,19 +1630,6 @@
       "cat": "tech"
     },
     {
-      "name": "contactos.sex",
-      "uri_check": "https://www.contactossex.com/profile/{account}",
-      "e_code": 200,
-      "e_string": "Información Personal",
-      "m_string": "Desde 2001 conectando gente!",
-      "m_code": 302,
-      "known": [
-        "danijak",
-        "darkfox"
-      ],
-      "cat": "xx NSFW xx"
-    },
-    {
       "name": "coroflot",
       "uri_check": "https://www.coroflot.com/{account}",
       "e_code": 200,
