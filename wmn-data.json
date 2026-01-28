@@ -5391,6 +5391,22 @@
       "cat": "dating"
     },
     {
+      "name": "Instagram (Imginn)",
+      "uri_check": "https://imginn.com/{account}/",
+      "e_code": 200,
+      "e_string": "class=\"userinfo\"",
+      "m_string": "class=\"page-error notfound\"",
+      "m_code": 404,
+      "known": [
+        "therock",
+        "ramarim"
+      ],
+      "cat": "social",
+      "protection": [
+        "cloudflare"
+      ]
+    },
+    {
       "name": "Meta-Wiki (Wikimedia)",
       "uri_check": "https://meta.wikimedia.org/wiki/Special:CentralAuth?target={account}",
       "headers": {
