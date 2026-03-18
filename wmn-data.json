@@ -9211,15 +9211,15 @@
       "name": "VK",
       "uri_check": "https://vk.com/{account}",
       "headers": {
-        "User-Agent": "Mozilla/5.0 (X11; Linux i686; rv:125.0) Gecko/20100101 Firefox/125.0"
+          "User-Agent": "Mozilla/5.0 (X11; Linux i686; rv:148.0) Gecko/20100101 Firefox/148.0"
       },
       "e_code": 200,
-      "e_string": "content=\"profile\"",
-      "m_string": "404 Not Found",
+      "e_string": "<title>VK | VK</title>",
+      "m_string": "Page not found",
       "m_code": 404,
       "known": [
-        "ches_ches",
-        "mike.kidlazy"
+          "ches_ches",
+          "mike.kidlazy"
       ],
       "cat": "social"
     },
