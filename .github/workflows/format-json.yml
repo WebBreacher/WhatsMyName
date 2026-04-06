@@ -1,0 +1,54 @@
+name: Format JSON
+
+on:
+  push:
+    paths:
+      - 'wmn-data.json'
+      - 'wmn-data-schema.json'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: format-json-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  format-json:
+    name: Format JSON
+    runs-on: ubuntu-24.04
+
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.11'
+
+      - name: Install Naminter
+        run: python -m pip install "naminter[core]==1.0.7"
+
+      - name: Format JSON
+        run: |
+          naminter format \
+            --local-schema wmn-data-schema.json \
+            --local-data wmn-data.json
+
+      - name: Commit if changed
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add wmn-data.json wmn-data-schema.json
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git commit -m "chore: auto-format JSON files"
+          for i in 1 2 3 4 5; do
+            if git pull --rebase origin "$GITHUB_REF_NAME" && git push origin "$GITHUB_REF_NAME"; then
+              exit 0
+            fi
+            sleep $((i * 5))
+          done
+          exit 1
