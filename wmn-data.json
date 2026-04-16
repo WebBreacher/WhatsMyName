@@ -2586,6 +2586,20 @@
       "cat": "social"
     },
     {
+      "name": "Fanslist (OnlyFans)",
+      "uri_check": "https://fanslist.com/search?q={account}",
+      "uri_pretty": "https://onlyfans.com/{account}",
+      "e_code": 200,
+      "e_string": "data-username=",
+      "m_string": "No results found for query",
+      "m_code": 200,
+      "known": [
+        "mirasong",
+        "milaamour"
+      ],
+      "cat": "xx NSFW xx"
+    },
+    {
       "name": "Fansly",
       "uri_check": "https://apiv3.fansly.com/api/v1/account?usernames={account}",
       "uri_pretty": "https://fansly.com/{account}/posts",
@@ -2601,20 +2615,6 @@
       "protection": [
         "cloudfront"
       ]
-    },
-    {
-      "name": "Fanslist (OnlyFans)",
-      "uri_check": "https://fanslist.com/search?q={account}",
-      "uri_pretty": "https://onlyfans.com/{account}",
-      "e_code": 200,
-      "e_string": "data-username=",
-      "m_string": "No results found for query",
-      "m_code": 200,
-      "known": [
-        "mirasong",
-        "milaamour"
-      ],
-      "cat": "xx NSFW xx"
     },
     {
       "name": "Fark",
