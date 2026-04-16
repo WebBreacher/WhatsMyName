@@ -2603,6 +2603,20 @@
       ]
     },
     {
+      "name": "Fanslist (OnlyFans)",
+      "uri_check": "https://fanslist.com/search?q={account}",
+      "uri_pretty": "https://onlyfans.com/{account}",
+      "e_code": 200,
+      "e_string": "data-username=",
+      "m_string": "No results found for query",
+      "m_code": 200,
+      "known": [
+        "mirasong",
+        "milaamour"
+      ],
+      "cat": "xx NSFW xx"
+    },
+    {
       "name": "Fark",
       "uri_check": "https://www.fark.com/users/{account}",
       "e_code": 200,
@@ -6128,20 +6142,6 @@
         "adam"
       ],
       "cat": "social"
-    },
-    {
-      "name": "OnlySearch (OnlyFans)",
-      "uri_check": "https://onlysearch.co/api/search?keyword={account}",
-      "uri_pretty": "https://onlysearch.co/profiles?keyword={account}",
-      "e_code": 200,
-      "e_string": "\"hits\":[{",
-      "m_string": "\"hits\":[]",
-      "m_code": 200,
-      "known": [
-        "miaimani",
-        "milaamour"
-      ],
-      "cat": "xx NSFW xx"
     },
     {
       "name": "Opencollective",
