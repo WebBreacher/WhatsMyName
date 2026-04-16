@@ -2587,7 +2587,7 @@
     },
     {
       "name": "Fansly",
-      "uri_check": "https://apiv2.fansly.com/api/v1/account?usernames={account}",
+      "uri_check": "https://apiv3.fansly.com/api/v1/account?usernames={account}",
       "uri_pretty": "https://fansly.com/{account}/posts",
       "e_code": 200,
       "e_string": "\"id\":",
@@ -2595,7 +2595,7 @@
       "m_code": 200,
       "known": [
         "Mikomin",
-        "test"
+        "magicalgirlbuny"
       ],
       "cat": "xx NSFW xx",
       "protection": [
