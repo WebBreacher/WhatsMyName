@@ -1,0 +1,518 @@
+{
+  "run_started": "2026-04-16 21:00 UTC",
+  "run_completed": "2026-04-16 21:00 UTC",
+  "total": 10,
+  "results": [
+    {
+      "name": "21buttons",
+      "cat": "social",
+      "uri_check": "https://www.21buttons.com/buttoner/{account}",
+      "uri_pretty": null,
+      "e_code": 200,
+      "e_string": "profile-info__profile-data__name",
+      "m_code": 404,
+      "m_string": "This is not the page you're looking for",
+      "known": [
+        "patricialmendro",
+        "ginamariahoffmann",
+        "espeworkout"
+      ],
+      "has_protection": false,
+      "protection": [],
+      "has_post_body": false,
+      "valid_field": null,
+      "checks": [
+        {
+          "username": "patricialmendro",
+          "username_type": "known",
+          "url": "https://www.21buttons.com/buttoner/patricialmendro",
+          "method": "GET",
+          "http_code": 301,
+          "body_snippet": "",
+          "status": "e_code_mismatch",
+          "note": "Expected HTTP 200, got 301"
+        },
+        {
+          "username": "ginamariahoffmann",
+          "username_type": "known",
+          "url": "https://www.21buttons.com/buttoner/ginamariahoffmann",
+          "method": "GET",
+          "http_code": 301,
+          "body_snippet": "",
+          "status": "e_code_mismatch",
+          "note": "Expected HTTP 200, got 301"
+        },
+        {
+          "username": "espeworkout",
+          "username_type": "known",
+          "url": "https://www.21buttons.com/buttoner/espeworkout",
+          "method": "GET",
+          "http_code": 301,
+          "body_snippet": "",
+          "status": "e_code_mismatch",
+          "note": "Expected HTTP 200, got 301"
+        },
+        {
+          "username": "re6p9psg1",
+          "username_type": "random",
+          "url": "https://www.21buttons.com/buttoner/re6p9psg1",
+          "method": "GET",
+          "http_code": 301,
+          "body_snippet": "",
+          "status": "m_code_mismatch",
+          "note": "Expected m_code 404, got 301"
+        }
+      ],
+      "overall_status": "e_code_mismatch",
+      "checked_at": "2026-04-16 21:00 UTC"
+    },
+    {
+      "name": "35photo",
+      "cat": "social",
+      "uri_check": "https://35photo.pro/@{account}/",
+      "uri_pretty": null,
+      "e_code": 200,
+      "e_string": "<span title=\"Total photos",
+      "m_code": 302,
+      "m_string": "Catalogs of professional author",
+      "known": [
+        "mike007",
+        "derbal"
+      ],
+      "has_protection": false,
+      "protection": [],
+      "has_post_body": false,
+      "valid_field": null,
+      "checks": [
+        {
+          "username": "mike007",
+          "username_type": "known",
+          "url": "https://35photo.pro/@mike007/",
+          "method": "GET",
+          "http_code": 200,
+          "body_snippet": "<!DOCTYPE html><html lang=\"en\"><head><link rel=\"alternate\" hreflang=\"en\" href=\"https://35photo.pro/mike007/\" /><link rel=\"alternate\" hreflang=\"ru\" href=\"https://35photo.ru/mike007/\" /><link rel=\"alternate\" hreflang=\"x-default\" href=\"https://35photo.pro/mike007/\" /><link rel=\"canonical\" href=\"https://35photo.pro/mike007/\" /><link rel=\"apple-touch-icon\" sizes=\"512x512\" href=\"https://c1.35photo.pro/files/512x512.png\"><link rel=\"icon\" sizes=\"72x72\" type=\"image/png\" href=\"https://c1.35photo.pro/favic",
+          "status": "e_string_missing",
+          "note": "e_string not found in response body (HTTP 200)"
+        },
+        {
+          "username": "derbal",
+          "username_type": "known",
+          "url": "https://35photo.pro/@derbal/",
+          "method": "GET",
+          "http_code": 200,
+          "body_snippet": "<!DOCTYPE html><html lang=\"en\"><head><link rel=\"alternate\" hreflang=\"en\" href=\"https://35photo.pro/derbal/\" /><link rel=\"alternate\" hreflang=\"ru\" href=\"https://35photo.ru/derbal/\" /><link rel=\"alternate\" hreflang=\"x-default\" href=\"https://35photo.pro/derbal/\" /><link rel=\"canonical\" href=\"https://35photo.pro/derbal/\" /><link rel=\"apple-touch-icon\" sizes=\"512x512\" href=\"https://c1.35photo.pro/files/512x512.png\"><link rel=\"icon\" sizes=\"72x72\" type=\"image/png\" href=\"https://c1.35photo.pro/favicon.p",
+          "status": "e_string_missing",
+          "note": "e_string not found in response body (HTTP 200)"
+        },
+        {
+          "username": "dxuy0awg",
+          "username_type": "random",
+          "url": "https://35photo.pro/@dxuy0awg/",
+          "method": "GET",
+          "http_code": 302,
+          "body_snippet": "",
+          "status": "m_string_missing",
+          "note": "m_string not found in response body (HTTP 302)"
+        }
+      ],
+      "overall_status": "e_string_missing",
+      "checked_at": "2026-04-16 21:00 UTC"
+    },
+    {
+      "name": "3DNews",
+      "cat": "social",
+      "uri_check": "https://forum.3dnews.tech/member.php?username={account}",
+      "uri_pretty": null,
+      "e_code": 200,
+      "e_string": "Просмотр профиля:",
+      "m_code": 200,
+      "m_string": "Пользователь не зарегистрирован",
+      "known": [
+        "bob",
+        "red"
+      ],
+      "has_protection": false,
+      "protection": [],
+      "has_post_body": false,
+      "valid_field": null,
+      "checks": [
+        {
+          "username": "bob",
+          "username_type": "known",
+          "url": "https://forum.3dnews.tech/member.php?username=bob",
+          "method": "GET",
+          "http_code": 200,
+          "body_snippet": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\" dir=\"ltr\" lang=\"ru\">\r\n<head>\r\n<meta name=\"robots\" content=\"noindex,follow\" />\r\n<!-- Google tag (gtag.js) -->\r\n<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-9WZ2L068FW\"></script>\r\n<script>\r\n  window.dataLayer = window.dataLayer || [];\r\n  function gtag(){dataLayer.push(arguments);}\r\n  gtag('js', new Date());\r\n\r\n  gt",
+          "status": "e_string_missing",
+          "note": "e_string not found in response body (HTTP 200)"
+        },
+        {
+          "username": "red",
+          "username_type": "known",
+          "url": "https://forum.3dnews.tech/member.php?username=red",
+          "method": "GET",
+          "http_code": 200,
+          "body_snippet": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\" dir=\"ltr\" lang=\"ru\">\r\n<head>\r\n<meta name=\"robots\" content=\"noindex,follow\" />\r\n<!-- Google tag (gtag.js) -->\r\n<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-9WZ2L068FW\"></script>\r\n<script>\r\n  window.dataLayer = window.dataLayer || [];\r\n  function gtag(){dataLayer.push(arguments);}\r\n  gtag('js', new Date());\r\n\r\n  gt",
+          "status": "e_string_missing",
+          "note": "e_string not found in response body (HTTP 200)"
+        },
+        {
+          "username": "hbif9m3uh4",
+          "username_type": "random",
+          "url": "https://forum.3dnews.tech/member.php?username=hbif9m3uh4",
+          "method": "GET",
+          "http_code": 200,
+          "body_snippet": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\" dir=\"ltr\" lang=\"ru\">\r\n<head>\r\n<meta name=\"robots\" content=\"noindex,follow\" />\r\n<!-- Google tag (gtag.js) -->\r\n<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-9WZ2L068FW\"></script>\r\n<script>\r\n  window.dataLayer = window.dataLayer || [];\r\n  function gtag(){dataLayer.push(arguments);}\r\n  gtag('js', new Date());\r\n\r\n  gt",
+          "status": "m_string_missing",
+          "note": "m_string not found in response body (HTTP 200)"
+        }
+      ],
+      "overall_status": "e_string_missing",
+      "checked_at": "2026-04-16 21:00 UTC"
+    },
+    {
+      "name": "7cup",
+      "cat": "social",
+      "uri_check": "https://www.7cups.com/@{account}",
+      "uri_pretty": null,
+      "e_code": 200,
+      "e_string": "Profile - 7 Cups",
+      "m_code": 404,
+      "m_string": "Oops! The content you're attempting to access could not be found.",
+      "known": [
+        "john",
+        "jbob"
+      ],
+      "has_protection": false,
+      "protection": [],
+      "has_post_body": false,
+      "valid_field": null,
+      "checks": [
+        {
+          "username": "john",
+          "username_type": "known",
+          "url": "https://www.7cups.com/@john",
+          "method": "GET",
+          "http_code": 202,
+          "body_snippet": "",
+          "status": "e_code_mismatch",
+          "note": "Expected HTTP 200, got 202"
+        },
+        {
+          "username": "jbob",
+          "username_type": "known",
+          "url": "https://www.7cups.com/@jbob",
+          "method": "GET",
+          "http_code": 202,
+          "body_snippet": "",
+          "status": "e_code_mismatch",
+          "note": "Expected HTTP 200, got 202"
+        },
+        {
+          "username": "hgrnj01nit",
+          "username_type": "random",
+          "url": "https://www.7cups.com/@hgrnj01nit",
+          "method": "GET",
+          "http_code": 202,
+          "body_snippet": "",
+          "status": "m_code_mismatch",
+          "note": "Expected m_code 404, got 202"
+        }
+      ],
+      "overall_status": "e_code_mismatch",
+      "checked_at": "2026-04-16 21:00 UTC"
+    },
+    {
+      "name": "about.me",
+      "cat": "social",
+      "uri_check": "https://about.me/{account}",
+      "uri_pretty": null,
+      "e_code": 200,
+      "e_string": " | about.me",
+      "m_code": 404,
+      "m_string": "<title>about.me</title>",
+      "known": [
+        "john",
+        "jill"
+      ],
+      "has_protection": false,
+      "protection": [],
+      "has_post_body": false,
+      "valid_field": null,
+      "checks": [
+        {
+          "username": "john",
+          "username_type": "known",
+          "url": "https://about.me/john",
+          "method": "GET",
+          "http_code": 200,
+          "body_snippet": "<!doctype html><html lang=\"en\"><head><!-- Global Site Tag (gtag.js) - Google Analytics -->\n<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-LE3EMX7RDC\"></script>\n<script>\n    window.dataLayer = window.dataLayer || [];\n    function gtag(){dataLayer.push(arguments);}\n    gtag('js', new Date());\n    gtag('config', 'G-LE3EMX7RDC');\n</script>\n<title>John | about.me</title><meta name=\"google-signin-client_id\" content=\"828605907544-2lag7tdq7k3ebk4pvjiu45vdpggiu2k0.apps.googleusercontent",
+          "status": "ok",
+          "note": "Found: HTTP 200, e_string present"
+        },
+        {
+          "username": "jill",
+          "username_type": "known",
+          "url": "https://about.me/jill",
+          "method": "GET",
+          "http_code": 200,
+          "body_snippet": "<!doctype html><html lang=\"en\"><head><!-- Global Site Tag (gtag.js) - Google Analytics -->\n<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-LE3EMX7RDC\"></script>\n<script>\n    window.dataLayer = window.dataLayer || [];\n    function gtag(){dataLayer.push(arguments);}\n    gtag('js', new Date());\n    gtag('config', 'G-LE3EMX7RDC');\n</script>\n<title>jill martin - the United Kingdom | about.me</title><meta name=\"google-signin-client_id\" content=\"828605907544-2lag7tdq7k3ebk4pvjiu45vdpgg",
+          "status": "ok",
+          "note": "Found: HTTP 200, e_string present"
+        },
+        {
+          "username": "z08eqlf0tci",
+          "username_type": "random",
+          "url": "https://about.me/z08eqlf0tci",
+          "method": "GET",
+          "http_code": 404,
+          "body_snippet": "<!doctype html><html lang=\"en\"><head><!-- Global Site Tag (gtag.js) - Google Analytics -->\n<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-LE3EMX7RDC\"></script>\n<script>\n    window.dataLayer = window.dataLayer || [];\n    function gtag(){dataLayer.push(arguments);}\n    gtag('js', new Date());\n    gtag('config', 'G-LE3EMX7RDC');\n</script>\n<title>about.me</title><meta name=\"google-signin-client_id\" content=\"828605907544-2lag7tdq7k3ebk4pvjiu45vdpggiu2k0.apps.googleusercontent.com\"/>",
+          "status": "ok",
+          "note": "Not found as expected: HTTP 404"
+        }
+      ],
+      "overall_status": "ok",
+      "checked_at": "2026-04-16 21:00 UTC"
+    },
+    {
+      "name": "247sports",
+      "cat": "hobby",
+      "uri_check": "https://247sports.com/User/{account}/",
+      "uri_pretty": null,
+      "e_code": 200,
+      "e_string": "<meta property=",
+      "m_code": 404,
+      "m_string": "<title>247Sports</title>",
+      "known": [
+        "bob",
+        "john"
+      ],
+      "has_protection": false,
+      "protection": [],
+      "has_post_body": false,
+      "valid_field": null,
+      "checks": [
+        {
+          "username": "bob",
+          "username_type": "known",
+          "url": "https://247sports.com/User/bob/",
+          "method": "GET",
+          "http_code": 403,
+          "body_snippet": "",
+          "status": "e_code_mismatch",
+          "note": "Expected HTTP 200, got 403"
+        },
+        {
+          "username": "john",
+          "username_type": "known",
+          "url": "https://247sports.com/User/john/",
+          "method": "GET",
+          "http_code": 403,
+          "body_snippet": "",
+          "status": "e_code_mismatch",
+          "note": "Expected HTTP 200, got 403"
+        },
+        {
+          "username": "7rsjcri792t2",
+          "username_type": "random",
+          "url": "https://247sports.com/User/7rsjcri792t2/",
+          "method": "GET",
+          "http_code": 403,
+          "body_snippet": "",
+          "status": "m_code_mismatch",
+          "note": "Expected m_code 404, got 403"
+        }
+      ],
+      "overall_status": "e_code_mismatch",
+      "checked_at": "2026-04-16 21:00 UTC"
+    },
+    {
+      "name": "ACF",
+      "cat": "coding",
+      "uri_check": "https://support.advancedcustomfields.com/forums/users/{account}/",
+      "uri_pretty": null,
+      "e_code": 200,
+      "e_string": "<title>ACF Support",
+      "m_code": 200,
+      "m_string": "Page Not Found",
+      "known": [
+        "mike",
+        "greg"
+      ],
+      "has_protection": false,
+      "protection": [],
+      "has_post_body": false,
+      "valid_field": null,
+      "checks": [
+        {
+          "username": "mike",
+          "username_type": "known",
+          "url": "https://support.advancedcustomfields.com/forums/users/mike/",
+          "method": "GET",
+          "http_code": 200,
+          "body_snippet": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<meta charset=\"UTF-8\">\n\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n\t<link rel=\"shortcut icon\" href=\"https://support.advancedcustomfields.com/favicon.png\" type=\"image/x-icon\" />\n\t\n\t<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />\n\n\t<!-- This site is optimized with the Yoast SEO plugin v27.4 - https://yoast.com/product/yoast-seo-wordpress/ -->\n\t<title>ACF Support</title>\n",
+          "status": "ok",
+          "note": "Found: HTTP 200, e_string present"
+        },
+        {
+          "username": "greg",
+          "username_type": "known",
+          "url": "https://support.advancedcustomfields.com/forums/users/greg/",
+          "method": "GET",
+          "http_code": 200,
+          "body_snippet": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<meta charset=\"UTF-8\">\n\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n\t<link rel=\"shortcut icon\" href=\"https://support.advancedcustomfields.com/favicon.png\" type=\"image/x-icon\" />\n\t\n\t<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />\n\n\t<!-- This site is optimized with the Yoast SEO plugin v27.4 - https://yoast.com/product/yoast-seo-wordpress/ -->\n\t<title>ACF Support</title>\n",
+          "status": "ok",
+          "note": "Found: HTTP 200, e_string present"
+        },
+        {
+          "username": "dbgfjk4gy",
+          "username_type": "random",
+          "url": "https://support.advancedcustomfields.com/forums/users/dbgfjk4gy/",
+          "method": "GET",
+          "http_code": 404,
+          "body_snippet": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<meta charset=\"UTF-8\">\n\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n\t<link rel=\"shortcut icon\" href=\"https://support.advancedcustomfields.com/favicon.png\" type=\"image/x-icon\" />\n\t\n\t<meta name='robots' content='noindex, follow' />\n\n\t<!-- This site is optimized with the Yoast SEO plugin v27.4 - https://yoast.com/product/yoast-seo-wordpress/ -->\n\t<title>Page Not Found - ACF Support</title>\n\t<meta property=\"og:locale\" content=\"en_US\" ",
+          "status": "m_code_mismatch",
+          "note": "Expected m_code 200, got 404"
+        }
+      ],
+      "overall_status": "m_code_mismatch",
+      "checked_at": "2026-04-16 21:00 UTC"
+    },
+    {
+      "name": "7dach",
+      "cat": "social",
+      "uri_check": "https://7dach.ru/profile/{account}",
+      "uri_pretty": null,
+      "e_code": 200,
+      "e_string": "Информация / Профиль",
+      "m_code": 404,
+      "m_string": "<title>Ошибка / 7dach.ru",
+      "known": [
+        "lana",
+        "svetlana"
+      ],
+      "has_protection": false,
+      "protection": [],
+      "has_post_body": false,
+      "valid_field": null,
+      "checks": [
+        {
+          "username": "lana",
+          "username_type": "known",
+          "url": "https://7dach.ru/profile/lana",
+          "method": "GET",
+          "http_code": 200,
+          "body_snippet": "<!doctype html>\n<html class=\"no-js\" lang=\"ru\">\n<head>\n\t\n\t<meta charset=\"utf-8\"/>\n\t<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"/>\n\t\t\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n\t\t\t<meta HTTP-EQUIV=\"Access-Control-Allow-Origin\" CONTENT=\"https://relap.io\">\n\t\t\t<meta property=\"og:type\" content=\"website\" />\n\t\t<meta property=\"og:image\" content=\"https://7dach.ru/media/logo-green-1024x1024.png\"/>\n\t\t<meta property=\"og:image:width\" content=\"692\"/><meta property=\"og:image:",
+          "status": "ok",
+          "note": "Found: HTTP 200, e_string present"
+        },
+        {
+          "username": "svetlana",
+          "username_type": "known",
+          "url": "https://7dach.ru/profile/svetlana",
+          "method": "GET",
+          "http_code": 200,
+          "body_snippet": "<!doctype html>\n<html class=\"no-js\" lang=\"ru\">\n<head>\n\t\n\t<meta charset=\"utf-8\"/>\n\t<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"/>\n\t\t\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n\t\t\t<meta HTTP-EQUIV=\"Access-Control-Allow-Origin\" CONTENT=\"https://relap.io\">\n\t\t\t<meta property=\"og:type\" content=\"website\" />\n\t\t<meta property=\"og:image\" content=\"https://7dach.ru/media/logo-green-1024x1024.png\"/>\n\t\t<meta property=\"og:image:width\" content=\"692\"/><meta property=\"og:image:",
+          "status": "ok",
+          "note": "Found: HTTP 200, e_string present"
+        },
+        {
+          "username": "3ewjgwsbtow",
+          "username_type": "random",
+          "url": "https://7dach.ru/profile/3ewjgwsbtow",
+          "method": "GET",
+          "http_code": 404,
+          "body_snippet": "<!doctype html>\n<html class=\"no-js\" lang=\"ru\">\n<head>\n\t\n\t<meta charset=\"utf-8\"/>\n\t<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"/>\n\t\t\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n\t\t\t<meta HTTP-EQUIV=\"Access-Control-Allow-Origin\" CONTENT=\"https://relap.io\">\n\t\t\t<meta property=\"og:type\" content=\"website\" />\n\t\t<meta property=\"og:image\" content=\"https://7dach.ru/media/logo-green-1024x1024.png\"/>\n\t\t<meta property=\"og:image:width\" content=\"692\"/><meta property=\"og:image:",
+          "status": "ok",
+          "note": "Not found as expected: HTTP 404"
+        }
+      ],
+      "overall_status": "ok",
+      "checked_at": "2026-04-16 21:00 UTC"
+    },
+    {
+      "name": "3dtoday",
+      "cat": "hobby",
+      "uri_check": "https://3dtoday.ru/blogs/{account}",
+      "uri_pretty": null,
+      "e_code": 200,
+      "e_string": "Блог владельца 3d-принтера",
+      "m_code": 302,
+      "m_string": "404 Not Found",
+      "known": [
+        "sergei",
+        "vlad"
+      ],
+      "has_protection": false,
+      "protection": [],
+      "has_post_body": false,
+      "valid_field": null,
+      "checks": [
+        {
+          "username": "sergei",
+          "username_type": "known",
+          "url": "https://3dtoday.ru/blogs/sergei",
+          "method": "GET",
+          "http_code": 200,
+          "body_snippet": "<!DOCTYPE html>\n<html>\n<head>\n    <meta charset=\"utf-8\"/>\n    <title>Блог владельца 3d-принтера sergei: на каком 3d-принтере печатает, модели распечатанные sergei</title>\n    <meta name=\"viewport\" content=\"width=device-width\">\n        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n    <meta name=\"robots\" content=\"index, follow\" />\n    <meta name=\"description\" content=\"Узнайте больше о 3D-принтерах, 3D-сканерах, 3D-ручках и 3D-моделях. Наблюдайте с нами, как 3D-технологии м",
+          "status": "ok",
+          "note": "Found: HTTP 200, e_string present"
+        },
+        {
+          "username": "vlad",
+          "username_type": "known",
+          "url": "https://3dtoday.ru/blogs/vlad",
+          "method": "GET",
+          "http_code": 200,
+          "body_snippet": "<!DOCTYPE html>\n<html>\n<head>\n    <meta charset=\"utf-8\"/>\n    <title>Блог владельца 3d-принтера --ВЛАД--: на каком 3d-принтере печатает, модели распечатанные --ВЛАД--</title>\n    <meta name=\"viewport\" content=\"width=device-width\">\n        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n    <meta name=\"robots\" content=\"index, follow\" />\n    <meta name=\"description\" content=\"Узнайте больше о 3D-принтерах, 3D-сканерах, 3D-ручках и 3D-моделях. Наблюдайте с нами, как 3D-технолог",
+          "status": "ok",
+          "note": "Found: HTTP 200, e_string present"
+        },
+        {
+          "username": "3mup4ifx7m9b",
+          "username_type": "random",
+          "url": "https://3dtoday.ru/blogs/3mup4ifx7m9b",
+          "method": "GET",
+          "http_code": 302,
+          "body_snippet": "<!DOCTYPE html>\n<html>\n    <head>\n        <meta charset=\"UTF-8\" />\n        <meta http-equiv=\"refresh\" content=\"0;url='https://3dtoday.ru/404'\" />\n\n        <title>Redirecting to https://3dtoday.ru/404</title>\n    </head>\n    <body>\n        Redirecting to <a href=\"https://3dtoday.ru/404\">https://3dtoday.ru/404</a>.\n    </body>\n</html>",
+          "status": "m_string_missing",
+          "note": "m_string not found in response body (HTTP 302)"
+        }
+      ],
+      "overall_status": "m_string_missing",
+      "checked_at": "2026-04-16 21:00 UTC"
+    },
+    {
+      "name": "247CTF",
+      "cat": "tech",
+      "uri_check": "https://247ctf.com/progress/{account}",
+      "uri_pretty": null,
+      "e_code": 200,
+      "e_string": "property=\"og:url\"",
+      "m_code": 302,
+      "m_string": "<h1>Redirecting...</h1>",
+      "known": [
+        "pottm",
+        "jusb3"
+      ],
+      "has_protection": false,
+      "protection": [],
+      "has_post_body": false,
+      "valid_field": null,
+      "checks": [
+        {
+          "username": "pottm",
+          "username_type": "known",
+          "url": "https://247ctf.com/progress/pottm",
+          "method": "GET",
+          "http_code": null,
+          "body_snippet": "",
+          "status": "site_down",
+          "note": "No response — site down or DNS failure"
+        }
+      ],
+      "overall_status": "site_down",
+      "checked_at": "2026-04-16 21:00 UTC"
+    }
+  ]
+}

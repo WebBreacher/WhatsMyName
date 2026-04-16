@@ -1,0 +1,263 @@
+{% extends "base.html" %}
+{% block body_attrs %}data-running="{{ 'true' if progress.running else 'false' }}"{% endblock %}
+{% block content %}
+
+<div id="topbar">
+  <h1>WhatsMyName Checker</h1>
+
+  <form method="POST" action="/start" style="margin:0;display:flex;align-items:center;gap:6px">
+    {% if progress.running %}
+      <button type="button" disabled>Running…</button>
+    {% elif progress.remaining and progress.remaining > 0 %}
+      <button type="submit">&#9654; Continue ({{ progress.remaining }} left)</button>
+    {% else %}
+      <button type="submit">&#9654; Run Checker</button>
+    {% endif %}
+    <label style="font-size:11px;color:#aaa">
+      Limit:
+      <input type="number" name="limit" min="1" placeholder="all"
+             value="{{ progress.limit if progress.limit else '' }}"
+             style="width:60px;background:#333;color:#e0e0e0;border:1px solid #555;padding:2px 4px;font-family:monospace;font-size:12px">
+    </label>
+  </form>
+
+  <form method="POST" action="/reset" style="margin:0"
+        onsubmit="return confirm('Clear all results and start over?')">
+    <button type="submit" class="btn" style="background:#3a1a1a;color:#ef5350;border-color:#ef5350">&#x21BA; Reset</button>
+  </form>
+
+  <div id="progress-wrap">
+    {% if progress.running %}
+      <progress id="progress-fill" value="{{ progress.done }}" max="{{ progress.total }}"></progress>
+      <span id="progress-text">{{ progress.done }} / {{ progress.total }}</span>
+    {% elif progress.total_sites %}
+      {% set checked_count = results | selectattr('checked_at') | list | length %}
+      <span style="color:#aaa">
+        <span style="color:#4caf50">{{ checked_count }}</span> / {{ progress.total_sites }} sites checked
+        {% if progress.remaining and progress.remaining > 0 %}
+          &mdash; <span style="color:#ff9800">{{ progress.remaining }} remaining</span>
+        {% else %}
+          &mdash; <span style="color:#4caf50">all done</span>
+        {% endif %}
+      </span>
+    {% endif %}
+    {% if progress.error %}
+      <span style="color:#ef5350">Error: {{ progress.error }}</span>
+    {% endif %}
+  </div>
+
+  {% if progress.run_completed %}
+  <span style="font-size:11px;color:#666" title="Run started: {{ progress.run_started }}">
+    Last run: {{ progress.run_completed }}
+  </span>
+  {% endif %}
+
+  {% if results %}
+  <span style="font-size:11px;color:#aaa">
+    <span id="visible-count">{{ results|length }}</span> / {{ results|length }} shown
+  </span>
+  {% endif %}
+</div>
+
+{% if results %}
+<div id="filters">
+  <span style="color:#888">Filter:</span>
+
+  <select id="filter-status" onchange="applyFilters()">
+    <option value="">All statuses</option>
+    {% for s in statuses %}
+    <option value="{{ s }}">{{ s }}</option>
+    {% endfor %}
+  </select>
+
+  <select id="filter-cat" onchange="applyFilters()">
+    <option value="">All categories</option>
+    {% for c in categories %}
+    <option value="{{ c }}">{{ c }}</option>
+    {% endfor %}
+  </select>
+
+  <label><input type="checkbox" id="filter-protected" onchange="applyFilters()"> Protected only</label>
+
+  <input type="text" id="filter-search" placeholder="Search site name…"
+         oninput="applyFilters()" style="width:180px">
+</div>
+
+<div id="summary">
+  {% set counts = {} %}
+  {% for r in results %}{% set _ = counts.update({r.overall_status: counts.get(r.overall_status, 0) + 1}) %}{% endfor %}
+  {% for status, count in counts.items() | sort %}
+  <span><strong>{{ status }}</strong>: {{ count }}</span>
+  {% endfor %}
+</div>
+
+<table id="results-table">
+  <thead>
+    <tr>
+      <th>Site</th>
+      <th>Cat</th>
+      <th>Status</th>
+      <th>Last checked</th>
+      <th>Protected</th>
+      <th>Known tested</th>
+      <th>e_code</th>
+      <th>e_string</th>
+      <th>m_code</th>
+      <th>m_string</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for r in results | sort(attribute='name') %}
+  <tr class="data-row status-{{ r.overall_status }}"
+      data-status="{{ r.overall_status }}"
+      data-cat="{{ r.cat }}"
+      data-name="{{ r.name }}"
+      data-protected="{{ 'true' if r.has_protection else 'false' }}">
+    <td>
+      <a href="{{ r.uri_pretty or r.uri_check }}" target="_blank" rel="noopener">{{ r.name }}</a>
+    </td>
+    <td>{{ r.cat }}</td>
+    <td class="col-status">{{ r.overall_status }}</td>
+    <td style="color:#666;white-space:nowrap">{{ r.checked_at or '—' }}</td>
+    <td>
+      {% if r.has_protection %}
+        <span title="{{ r.protection | join(', ') }}">&#x26D4; {{ r.protection | join(', ') }}</span>
+      {% endif %}
+    </td>
+    <td>
+      {% for c in r.checks if c.username_type == 'known' %}
+        <span title="{{ c.note }}" style="color:{{ '#4caf50' if c.status == 'ok' else '#ef5350' }}">
+          {{ c.username }}
+        </span>{% if not loop.last %}, {% endif %}
+      {% endfor %}
+    </td>
+    <td class="col-ecode">{{ r.e_code }}</td>
+    <td class="col-estring"><code>{{ r.e_string[:40] }}</code></td>
+    <td class="col-mcode">{{ r.m_code }}</td>
+    <td class="col-mstring"><code>{{ r.m_string[:40] }}</code></td>
+    <td style="white-space:nowrap">
+      <button class="btn" onclick="openEdit('{{ r.name | e }}')">Edit</button>
+      <button class="btn btn-recheck" onclick="recheckSite('{{ r.name | e }}')">Recheck</button>
+      <span class="recheck-msg" style="font-size:11px;margin-left:4px"></span>
+    </td>
+  </tr>
+  {% endfor %}
+  </tbody>
+</table>
+
+{# ---- Edit modals ---- #}
+{% for r in results %}
+{% set modal_id = 'modal-' + r.name | replace(' ', '_') | replace('(', '_') | replace(')', '_') | replace('/', '_') | replace('.', '_') %}
+<div id="{{ modal_id }}" class="modal-backdrop">
+  <div class="modal-box">
+    <h2>Edit: {{ r.name }}
+      <button class="btn" style="float:right" onclick="closeEdit('{{ r.name | e }}')">&#x2715; Close</button>
+    </h2>
+
+    {# Site reference info #}
+    <table style="font-size:11px;border-collapse:collapse;margin-bottom:10px;width:100%">
+      <tr>
+        <td style="color:#888;padding:2px 8px 2px 0;white-space:nowrap">uri_check</td>
+        <td><code style="word-break:break-all">{{ r.uri_check }}</code></td>
+      </tr>
+      {% if r.uri_pretty %}
+      <tr>
+        <td style="color:#888;padding:2px 8px 2px 0;white-space:nowrap">uri_pretty</td>
+        <td><code style="word-break:break-all">{{ r.uri_pretty }}</code></td>
+      </tr>
+      {% endif %}
+      <tr>
+        <td style="color:#888;padding:2px 8px 2px 0;white-space:nowrap">expected found</td>
+        <td>HTTP <strong>{{ r.e_code }}</strong> &nbsp;+&nbsp; <code>{{ r.e_string }}</code></td>
+      </tr>
+      <tr>
+        <td style="color:#888;padding:2px 8px 2px 0;white-space:nowrap">expected missing</td>
+        <td>HTTP <strong>{{ r.m_code }}</strong> &nbsp;+&nbsp; <code>{{ r.m_string }}</code></td>
+      </tr>
+      <tr>
+        <td style="color:#888;padding:2px 8px 2px 0;white-space:nowrap;vertical-align:top">known URLs</td>
+        <td>
+          {% for username in r.known %}
+            {% set url = r.uri_pretty if r.uri_pretty else r.uri_check %}
+            {% set profile_url = url | replace('{account}', username) %}
+          <div style="margin-bottom:2px">
+            <a href="{{ profile_url }}" target="_blank" rel="noopener" style="word-break:break-all">{{ profile_url }}</a>
+          </div>
+          {% endfor %}
+        </td>
+      </tr>
+    </table>
+
+    {# Check results #}
+    {% for c in r.checks %}
+    <div class="check-detail">
+      <strong>{{ c.username_type }}</strong> &ldquo;{{ c.username }}&rdquo;
+      &mdash; HTTP {{ c.http_code if c.http_code is not none else 'none' }}
+      &mdash; <span style="color:{{ '#4caf50' if c.status == 'ok' else '#ef5350' }}">{{ c.status }}</span>
+      <br><em>{{ c.note }}</em>
+      <div class="snippet">{{ c.body_snippet[:300] }}</div>
+    </div>
+    {% endfor %}
+
+    <hr style="border-color:#333;margin:10px 0">
+
+    <form onsubmit="saveEdit(event, '{{ r.name | e }}')">
+      <div class="form-row">
+        <label>e_code</label>
+        <input type="number" name="e_code" value="{{ r.e_code }}" min="100" max="599" style="width:80px;flex:none">
+        &nbsp;&nbsp;<label>e_string</label>
+        <input type="text" name="e_string" value="{{ r.e_string | e }}">
+      </div>
+      <div class="form-row">
+        <label>m_code</label>
+        <input type="number" name="m_code" value="{{ r.m_code }}" min="100" max="599" style="width:80px;flex:none">
+        &nbsp;&nbsp;<label>m_string</label>
+        <input type="text" name="m_string" value="{{ r.m_string | e }}">
+      </div>
+      <div class="form-row">
+        <label>known</label>
+        <textarea name="known">{{ r.known | join('\n') }}</textarea>
+      </div>
+      <div class="form-row">
+        <label>valid</label>
+        <select name="valid">
+          <option value="absent" {% if r.valid_field is none %}selected{% endif %}>Not set (absent)</option>
+          <option value="true" {% if r.valid_field == true %}selected{% endif %}>true</option>
+          <option value="false" {% if r.valid_field == false %}selected{% endif %}>false (skip site)</option>
+        </select>
+      </div>
+      <div class="form-row">
+        <label>protection</label>
+        <div class="protection-grid">
+          {% for ptype in protection_types %}
+          <label>
+            <input type="checkbox" name="protection" value="{{ ptype }}"
+              {% if ptype in r.protection %}checked{% endif %}>
+            {{ ptype }}
+          </label>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="modal-actions">
+        <button type="submit" class="btn btn-save">&#x2713; Save to wmn-data.json</button>
+        <button type="button" class="btn" onclick="closeEdit('{{ r.name | e }}')">Cancel</button>
+        <span class="save-msg"></span>
+        <span class="save-err"></span>
+      </div>
+    </form>
+  </div>
+</div>
+{% endfor %}
+
+{% else %}
+<div style="padding:40px;text-align:center;color:#666">
+  {% if progress.running %}
+    <p>Checker is running… see progress bar above.</p>
+  {% else %}
+    <p>No results yet. Click <strong>Run Checker</strong> to start.</p>
+  {% endif %}
+</div>
+{% endif %}
+
+{% endblock %}

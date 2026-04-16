@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WhatsMyName Checker</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  body { font-family: monospace; font-size: 13px; margin: 0; background: #1a1a1a; color: #e0e0e0; }
+  h1 { margin: 0; font-size: 18px; }
+  a { color: #7ab3e0; }
+
+  #topbar {
+    position: sticky; top: 0; z-index: 100;
+    background: #111; border-bottom: 1px solid #333;
+    padding: 8px 12px; display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+  }
+  #topbar button { cursor: pointer; padding: 4px 12px; font-size: 12px; font-family: monospace; }
+
+  #progress-wrap { display: flex; align-items: center; gap: 8px; flex: 1; min-width: 200px; }
+  progress { width: 200px; height: 14px; accent-color: #4caf50; }
+  #progress-text { font-size: 11px; color: #aaa; }
+
+  #filters {
+    padding: 6px 12px; background: #222; border-bottom: 1px solid #333;
+    display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+  }
+  #filters select, #filters input[type=text] {
+    background: #333; color: #e0e0e0; border: 1px solid #555;
+    padding: 3px 6px; font-family: monospace; font-size: 12px;
+  }
+  #filters label { font-size: 12px; display: flex; align-items: center; gap: 4px; }
+
+  #summary { padding: 6px 12px; font-size: 12px; color: #aaa; background: #1e1e1e; }
+  #summary span { margin-right: 14px; }
+
+  table { width: 100%; border-collapse: collapse; }
+  thead th {
+    position: sticky; top: 41px; background: #222; z-index: 50;
+    padding: 5px 8px; text-align: left; border-bottom: 2px solid #444;
+    white-space: nowrap;
+  }
+  tbody tr { border-bottom: 1px solid #2a2a2a; }
+  tbody tr:hover { background: #252525; }
+  td { padding: 4px 8px; vertical-align: top; max-width: 260px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  td.wrap { white-space: normal; word-break: break-all; }
+  td code { font-size: 11px; color: #ccc; }
+
+  /* Status colors */
+  tr.status-ok td:nth-child(3) { color: #4caf50; }
+  tr.status-site_down td:nth-child(3) { color: #888; }
+  tr.status-blocked td:nth-child(3) { color: #ff9800; }
+  tr.status-false_positive td:nth-child(3),
+  tr.status-false_negative td:nth-child(3),
+  tr.status-e_code_mismatch td:nth-child(3),
+  tr.status-e_string_missing td:nth-child(3),
+  tr.status-m_code_mismatch td:nth-child(3),
+  tr.status-m_string_missing td:nth-child(3) { color: #ef5350; }
+  tr.status-skipped td:nth-child(3) { color: #666; }
+
+  /* Row background for non-ok */
+  tr.status-false_positive { background: rgba(239,83,80,0.07); }
+  tr.status-false_negative { background: rgba(239,83,80,0.07); }
+
+  /* Buttons */
+  .btn { cursor: pointer; padding: 2px 8px; font-size: 11px; font-family: monospace;
+         background: #333; color: #ccc; border: 1px solid #555; }
+  .btn:hover { background: #444; }
+  .btn-save { background: #1b4e1b; color: #8bc34a; border-color: #4caf50; }
+  .btn-save:hover { background: #2a6a2a; }
+  .btn-recheck { background: #1b3a4e; color: #7ab3e0; border-color: #5599cc; }
+  .btn-recheck:hover { background: #1e4a6a; }
+
+  /* Modal overlay */
+  .modal-backdrop {
+    display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.75); z-index: 200;
+    align-items: flex-start; justify-content: center; padding-top: 40px;
+  }
+  .modal-backdrop.open { display: flex; }
+  .modal-box {
+    background: #1e1e1e; border: 1px solid #555; padding: 16px;
+    max-width: 760px; width: 100%; max-height: 85vh; overflow-y: auto;
+  }
+  .modal-box h2 { margin: 0 0 10px; font-size: 15px; color: #fff; }
+  .modal-box .check-detail {
+    background: #151515; border: 1px solid #333; padding: 6px 8px; margin-bottom: 8px;
+    font-size: 11px;
+  }
+  .modal-box .check-detail .snippet {
+    color: #888; white-space: pre-wrap; word-break: break-all;
+    max-height: 80px; overflow-y: auto; margin-top: 4px;
+  }
+
+  .form-row { margin-bottom: 8px; display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+  .form-row label { width: 90px; flex-shrink: 0; color: #aaa; font-size: 12px; }
+  .form-row input[type=text], .form-row input[type=number], .form-row select, .form-row textarea {
+    flex: 1; min-width: 200px; background: #2a2a2a; color: #e0e0e0;
+    border: 1px solid #555; padding: 3px 6px; font-family: monospace; font-size: 12px;
+  }
+  .form-row textarea { resize: vertical; min-height: 60px; }
+
+  .protection-grid { display: flex; flex-wrap: wrap; gap: 6px; }
+  .protection-grid label { width: auto; display: flex; align-items: center; gap: 4px;
+    background: #2a2a2a; border: 1px solid #444; padding: 2px 8px; font-size: 11px; }
+
+  .modal-actions { margin-top: 12px; display: flex; gap: 8px; }
+  .save-msg { font-size: 11px; color: #4caf50; }
+  .save-err { font-size: 11px; color: #ef5350; }
+
+  .hidden { display: none !important; }
+</style>
+</head>
+<body {% block body_attrs %}{% endblock %}>
+{% block content %}{% endblock %}
+
+<script>
+// ---- Progress polling ----
+let pollTimer = null;
+
+function startPolling() {
+  if (pollTimer) return;
+  pollTimer = setInterval(async () => {
+    const r = await fetch('/status');
+    const data = await r.json();
+    const bar = document.getElementById('progress-fill');
+    const txt = document.getElementById('progress-text');
+    if (bar && data.total > 0) {
+      bar.value = data.done;
+      bar.max = data.total;
+    }
+    if (txt) txt.textContent = data.done + ' / ' + data.total;
+    if (data.complete) {
+      clearInterval(pollTimer);
+      pollTimer = null;
+      window.location.reload();
+    }
+  }, 2000);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  if (document.body.dataset.running === 'true') startPolling();
+});
+
+// ---- Filters ----
+function applyFilters() {
+  const statusVal = document.getElementById('filter-status').value;
+  const catVal = document.getElementById('filter-cat').value;
+  const protectedOnly = document.getElementById('filter-protected').checked;
+  const search = document.getElementById('filter-search').value.toLowerCase();
+  let visible = 0;
+
+  document.querySelectorAll('#results-table tbody tr.data-row').forEach(row => {
+    let show = true;
+    if (statusVal && row.dataset.status !== statusVal) show = false;
+    if (catVal && row.dataset.cat !== catVal) show = false;
+    if (protectedOnly && row.dataset.protected !== 'true') show = false;
+    if (search && !row.dataset.name.toLowerCase().includes(search)) show = false;
+    row.style.display = show ? '' : 'none';
+    if (show) visible++;
+  });
+  const el = document.getElementById('visible-count');
+  if (el) el.textContent = visible;
+}
+
+// ---- Modal ----
+function openEdit(name) {
+  const id = 'modal-' + name.replace(/[^a-z0-9]/gi, '_');
+  const el = document.getElementById(id);
+  if (el) el.classList.add('open');
+}
+function closeEdit(name) {
+  const id = 'modal-' + name.replace(/[^a-z0-9]/gi, '_');
+  const el = document.getElementById(id);
+  if (el) el.classList.remove('open');
+}
+// Close on backdrop click
+document.addEventListener('click', e => {
+  if (e.target.classList.contains('modal-backdrop')) {
+    e.target.classList.remove('open');
+  }
+});
+
+// ---- Save ----
+async function saveEdit(event, siteName) {
+  event.preventDefault();
+  const form = event.target;
+  const msgEl = form.querySelector('.save-msg');
+  const errEl = form.querySelector('.save-err');
+  if (msgEl) { msgEl.textContent = 'Saving…'; }
+  if (errEl) { errEl.textContent = ''; }
+
+  const data = new FormData(form);
+  try {
+    const resp = await fetch('/save/' + encodeURIComponent(siteName), {
+      method: 'POST', body: data
+    });
+    const result = await resp.json();
+    if (result.success) {
+      if (msgEl) msgEl.textContent = 'Saved!';
+      // Update visible row values
+      const row = document.querySelector('tr[data-name="' + CSS.escape(siteName) + '"]');
+      if (row) {
+        const eCode = data.get('e_code');
+        const mCode = data.get('m_code');
+        const eStr = data.get('e_string');
+        const mStr = data.get('m_string');
+        if (eCode) row.querySelector('.col-ecode').textContent = eCode;
+        if (mCode) row.querySelector('.col-mcode').textContent = mCode;
+        if (eStr !== null) row.querySelector('.col-estring').textContent = eStr.substring(0, 40);
+        if (mStr !== null) row.querySelector('.col-mstring').textContent = mStr.substring(0, 40);
+      }
+    } else {
+      if (errEl) errEl.textContent = 'Error: ' + result.error;
+      if (msgEl) msgEl.textContent = '';
+    }
+  } catch (e) {
+    if (errEl) errEl.textContent = 'Network error: ' + e.message;
+    if (msgEl) msgEl.textContent = '';
+  }
+}
+
+// ---- Recheck ----
+async function recheckSite(siteName) {
+  const row = document.querySelector('tr[data-name="' + CSS.escape(siteName) + '"]');
+  const btn = row ? row.querySelector('.btn-recheck') : null;
+  const msgEl = row ? row.querySelector('.recheck-msg') : null;
+  if (btn) { btn.textContent = 'Checking…'; btn.disabled = true; }
+  if (msgEl) msgEl.textContent = '';
+
+  try {
+    const resp = await fetch('/recheck/' + encodeURIComponent(siteName), { method: 'POST' });
+    const data = await resp.json();
+    if (data.success && row) {
+      const s = data.result.overall_status;
+      row.dataset.status = s;
+      row.className = row.className.replace(/status-\S+/, '') + ' data-row status-' + s;
+      const sc = row.querySelector('.col-status');
+      if (sc) sc.textContent = s;
+      if (msgEl) { msgEl.textContent = '→ ' + s; msgEl.style.color = s === 'ok' ? '#4caf50' : '#ef5350'; }
+    } else if (!data.success) {
+      if (msgEl) { msgEl.textContent = 'Error: ' + data.error; msgEl.style.color = '#ef5350'; }
+      else alert('Recheck error: ' + data.error);
+    }
+  } catch (e) {
+    if (msgEl) { msgEl.textContent = 'Network error'; msgEl.style.color = '#ef5350'; }
+    else alert('Recheck network error: ' + e.message);
+  }
+  if (btn) { btn.textContent = 'Recheck'; btn.disabled = false; }
+}
+</script>
+</body>
+</html>
