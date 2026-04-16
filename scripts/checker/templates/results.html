@@ -155,54 +155,64 @@
       <button class="btn" style="float:right" onclick="closeEdit('{{ r.name | e }}')">&#x2715; Close</button>
     </h2>
 
-    {# Site reference info #}
-    <table style="font-size:11px;border-collapse:collapse;margin-bottom:10px;width:100%">
-      <tr>
-        <td style="color:#888;padding:2px 8px 2px 0;white-space:nowrap">uri_check</td>
-        <td><code style="word-break:break-all">{{ r.uri_check }}</code></td>
-      </tr>
-      {% if r.uri_pretty %}
-      <tr>
-        <td style="color:#888;padding:2px 8px 2px 0;white-space:nowrap">uri_pretty</td>
-        <td><code style="word-break:break-all">{{ r.uri_pretty }}</code></td>
-      </tr>
-      {% endif %}
-      <tr>
-        <td style="color:#888;padding:2px 8px 2px 0;white-space:nowrap">expected found</td>
-        <td>HTTP <strong>{{ r.e_code }}</strong> &nbsp;+&nbsp; <code>{{ r.e_string }}</code></td>
-      </tr>
-      <tr>
-        <td style="color:#888;padding:2px 8px 2px 0;white-space:nowrap">expected missing</td>
-        <td>HTTP <strong>{{ r.m_code }}</strong> &nbsp;+&nbsp; <code>{{ r.m_string }}</code></td>
-      </tr>
-      <tr>
-        <td style="color:#888;padding:2px 8px 2px 0;white-space:nowrap;vertical-align:top">known URLs</td>
-        <td>
-          {% for username in r.known %}
-            {% set url = r.uri_pretty if r.uri_pretty else r.uri_check %}
-            {% set profile_url = url | replace('{account}', username) %}
-          <div style="margin-bottom:2px">
-            <a href="{{ profile_url }}" target="_blank" rel="noopener" style="word-break:break-all">{{ profile_url }}</a>
-          </div>
-          {% endfor %}
-        </td>
-      </tr>
-    </table>
+    {# ---- Known account URLs (clickable) ---- #}
+    <div style="margin-bottom:8px;font-size:11px">
+      <span style="color:#888">Known account URLs:</span>
+      {% for username in r.known %}
+        {% set url = r.uri_pretty if r.uri_pretty else r.uri_check %}
+        {% set profile_url = url | replace('{account}', username) %}
+      <div style="margin-top:3px">
+        <a href="{{ profile_url }}" target="_blank" rel="noopener" style="word-break:break-all">{{ profile_url }}</a>
+      </div>
+      {% endfor %}
+    </div>
 
-    {# Check results #}
+    {# ---- Check results with full body ---- #}
+    <div class="modal-checks">
     {% for c in r.checks %}
     <div class="check-detail">
-      <strong>{{ c.username_type }}</strong> &ldquo;{{ c.username }}&rdquo;
-      &mdash; HTTP {{ c.http_code if c.http_code is not none else 'none' }}
-      &mdash; <span style="color:{{ '#4caf50' if c.status == 'ok' else '#ef5350' }}">{{ c.status }}</span>
-      <br><em>{{ c.note }}</em>
-      <div class="snippet">{{ c.body_snippet[:300] }}</div>
+      <div>
+        <strong>{{ c.username_type }}</strong> &ldquo;{{ c.username }}&rdquo;
+        &mdash; <code>{{ c.url }}</code>
+        &mdash; HTTP <strong>{{ c.http_code if c.http_code is not none else 'none' }}</strong>
+        &mdash; <span style="color:{{ '#4caf50' if c.status == 'ok' else '#ef5350' }}">{{ c.status }}</span>
+      </div>
+      <div style="color:#aaa;font-size:11px;margin:2px 0">{{ c.note }}</div>
+      {% if c.body_snippet %}
+      <details style="margin-top:4px">
+        <summary style="cursor:pointer;font-size:11px;color:#7ab3e0">Cached response body ({{ c.body_snippet | length }} chars)</summary>
+        <pre class="snippet" style="max-height:300px;overflow-y:auto;white-space:pre-wrap;word-break:break-all;font-size:10px;margin:4px 0 0">{{ c.body_snippet | e }}</pre>
+      </details>
+      {% endif %}
+      {% if c.username_type == 'known' %}
+      <div style="margin-top:4px">
+        <button class="btn" style="font-size:10px;padding:1px 6px" onclick="fetchFullBody('{{ r.name | e }}', '{{ c.username | e }}', this)">Fetch full body</button>
+        <div class="full-body-panel" style="display:none;margin-top:4px">
+          <div class="full-body-meta" style="font-size:10px;color:#888;margin-bottom:2px"></div>
+          <pre class="full-body-pre" style="max-height:500px;overflow-y:auto;white-space:pre-wrap;word-break:break-all;font-size:10px;background:#111;padding:6px;border:1px solid #333"></pre>
+        </div>
+      </div>
+      {% endif %}
     </div>
     {% endfor %}
+    </div>{# end .modal-checks #}
 
     <hr style="border-color:#333;margin:10px 0">
 
+    {# ---- Edit form ---- #}
     <form onsubmit="saveEdit(event, '{{ r.name | e }}')">
+
+      <div style="font-size:11px;color:#888;margin-bottom:6px;font-weight:bold;text-transform:uppercase;letter-spacing:1px">URL / Routing</div>
+      <div class="form-row">
+        <label>uri_check</label>
+        <input type="text" name="uri_check" value="{{ r.uri_check | e }}" placeholder="https://example.com/{account}">
+      </div>
+      <div class="form-row">
+        <label>uri_pretty</label>
+        <input type="text" name="uri_pretty" value="{{ r.uri_pretty | e if r.uri_pretty else '' }}" placeholder="(optional) human-readable profile URL">
+      </div>
+
+      <div style="font-size:11px;color:#888;margin:10px 0 6px;font-weight:bold;text-transform:uppercase;letter-spacing:1px">Detection</div>
       <div class="form-row">
         <label>e_code</label>
         <input type="number" name="e_code" value="{{ r.e_code }}" min="100" max="599" style="width:80px;flex:none">
@@ -215,10 +225,40 @@
         &nbsp;&nbsp;<label>m_string</label>
         <input type="text" name="m_string" value="{{ r.m_string | e }}">
       </div>
+
+      <div style="font-size:11px;color:#888;margin:10px 0 6px;font-weight:bold;text-transform:uppercase;letter-spacing:1px">Accounts &amp; Metadata</div>
       <div class="form-row">
         <label>known</label>
-        <textarea name="known">{{ r.known | join('\n') }}</textarea>
+        <textarea name="known" placeholder="One username per line">{{ r.known | join('\n') }}</textarea>
       </div>
+      <div class="form-row">
+        <label>cat</label>
+        <select name="cat">
+          {% for cat_opt in categories %}
+            {% if cat_opt == r.cat %}
+            <option value="{{ cat_opt }}" selected>{{ cat_opt }}</option>
+            {% else %}
+            <option value="{{ cat_opt }}">{{ cat_opt }}</option>
+            {% endif %}
+          {% endfor %}
+        </select>
+      </div>
+      <div class="form-row">
+        <label>strip_bad_char</label>
+        <input type="text" name="strip_bad_char" value="{{ r.get('strip_bad_char', '') | e if r.get is defined else '' }}" placeholder="e.g. . (chars to strip from username)">
+      </div>
+
+      <div style="font-size:11px;color:#888;margin:10px 0 6px;font-weight:bold;text-transform:uppercase;letter-spacing:1px">POST (optional)</div>
+      <div class="form-row">
+        <label>post_body</label>
+        <textarea name="post_body" placeholder="POST body with {account} placeholder (leave blank for GET)">{{ r.get('post_body', '') if r.get is defined else '' }}</textarea>
+      </div>
+      <div class="form-row">
+        <label>headers</label>
+        <textarea name="headers" placeholder="JSON object, e.g. {&quot;Content-Type&quot;: &quot;application/json&quot;}" style="min-height:80px;font-size:11px">{{ r.get('headers', '') | tojson(indent=2) if r.get is defined and r.get('headers') else '' }}</textarea>
+      </div>
+
+      <div style="font-size:11px;color:#888;margin:10px 0 6px;font-weight:bold;text-transform:uppercase;letter-spacing:1px">Status &amp; Protection</div>
       <div class="form-row">
         <label>valid</label>
         <select name="valid">
@@ -239,9 +279,12 @@
           {% endfor %}
         </div>
       </div>
+
       <div class="modal-actions">
         <button type="submit" class="btn btn-save">&#x2713; Save to wmn-data.json</button>
-        <button type="button" class="btn" onclick="closeEdit('{{ r.name | e }}')">Cancel</button>
+        <button type="button" class="btn btn-recheck btn-recheck-modal" onclick="recheckInModal('{{ r.name | e }}')">&#x21BA; Recheck</button>
+        <button type="button" class="btn" style="background:#3a1a1a;color:#ef5350;border-color:#ef5350;margin-left:auto" onclick="deleteSite('{{ r.name | e }}')">&#x1F5D1; Delete Site</button>
+        <button type="button" class="btn" onclick="closeEdit('{{ r.name | e }}')">Close</button>
         <span class="save-msg"></span>
         <span class="save-err"></span>
       </div>

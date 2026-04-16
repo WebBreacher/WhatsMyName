@@ -47,15 +47,14 @@
   "sites": [
     {
       "name": "21buttons",
-      "uri_check": "https://www.21buttons.com/buttoner/{account}",
+      "uri_check": "https://peoople.app/en/influencers/{account}/",
       "e_code": 200,
-      "e_string": "profile-info__profile-data__name",
-      "m_string": "This is not the page you're looking for",
+      "e_string": "--avatar-size:100px",
+      "m_string": "<title>Peoople</title>",
       "m_code": 404,
       "known": [
         "patricialmendro",
-        "ginamariahoffmann",
-        "espeworkout"
+        "carmensalva"
       ],
       "cat": "social"
     },
@@ -63,53 +62,48 @@
       "name": "247CTF",
       "uri_check": "https://247ctf.com/progress/{account}",
       "e_code": 200,
-      "e_string": "property=\"og:url\"",
-      "m_string": "<h1>Redirecting...</h1>",
+      "e_string": "avatar-container d-flex",
+      "m_string": "",
       "m_code": 302,
       "known": [
         "pottm",
         "jusb3"
       ],
-      "cat": "tech"
+      "cat": "tech",
+      "protection": [
+        "captcha",
+        "cloudflare",
+        "multiple"
+      ]
     },
     {
       "name": "247sports",
       "uri_check": "https://247sports.com/User/{account}/",
       "e_code": 200,
-      "e_string": "<meta property=",
+      "e_string": "staff-header-container",
       "m_string": "<title>247Sports</title>",
       "m_code": 404,
       "known": [
-        "bob",
-        "john"
+        "Travis Branham",
+        "BlairAngulo"
       ],
-      "cat": "hobby"
+      "cat": "hobby",
+      "protection": [
+        "other"
+      ]
     },
     {
       "name": "35photo",
       "uri_check": "https://35photo.pro/@{account}/",
       "e_code": 200,
-      "e_string": "<span title=\"Total photos",
-      "m_string": "Catalogs of professional author",
+      "e_string": "userNameBlock",
+      "m_string": "",
       "m_code": 302,
       "known": [
         "mike007",
         "derbal"
       ],
-      "cat": "social"
-    },
-    {
-      "name": "3DNews",
-      "uri_check": "https://forum.3dnews.tech/member.php?username={account}",
-      "e_code": 200,
-      "e_string": "Просмотр профиля:",
-      "m_string": "Пользователь не зарегистрирован",
-      "m_code": 200,
-      "known": [
-        "bob",
-        "red"
-      ],
-      "cat": "social"
+      "cat": "hobby"
     },
     {
       "name": "3dtoday",
@@ -135,7 +129,8 @@
         "john",
         "jbob"
       ],
-      "cat": "social"
+      "cat": "social",
+      "valid": false
     },
     {
       "name": "7dach",
@@ -167,9 +162,9 @@
       "name": "ACF",
       "uri_check": "https://support.advancedcustomfields.com/forums/users/{account}/",
       "e_code": 200,
-      "e_string": "<title>ACF Support",
-      "m_string": "Page Not Found",
-      "m_code": 200,
+      "e_string": "bbp-user-body",
+      "m_string": "<title>Page Not Found - ACF Support</title>",
+      "m_code": 404,
       "known": [
         "mike",
         "greg"

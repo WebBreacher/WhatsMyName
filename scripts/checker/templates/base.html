@@ -219,6 +219,118 @@ async function saveEdit(event, siteName) {
   }
 }
 
+// ---- Fetch full body on demand ----
+async function fetchFullBody(siteName, username, btnEl) {
+  const container = btnEl.closest('.check-detail').querySelector('.full-body-panel');
+  if (container.style.display !== 'none') { container.style.display = 'none'; btnEl.textContent = 'Fetch full body'; return; }
+  btnEl.textContent = 'Fetching…'; btnEl.disabled = true;
+  try {
+    const resp = await fetch('/fetch/' + encodeURIComponent(siteName) + '/' + encodeURIComponent(username));
+    const data = await resp.json();
+    if (data.success) {
+      container.querySelector('.full-body-pre').textContent = data.body;
+      container.querySelector('.full-body-meta').textContent = 'HTTP ' + data.http_code + '  •  ' + data.body.length + ' chars  •  ' + data.url;
+      container.style.display = '';
+      btnEl.textContent = 'Hide body';
+    } else {
+      alert('Fetch error: ' + data.error);
+      btnEl.textContent = 'Fetch full body';
+    }
+  } catch (e) {
+    alert('Network error: ' + e.message);
+    btnEl.textContent = 'Fetch full body';
+  }
+  btnEl.disabled = false;
+}
+
+// ---- Recheck from inside modal ----
+function renderChecks(checks) {
+  return checks.map(c => {
+    const color = c.status === 'ok' ? '#4caf50' : '#ef5350';
+    const bodyHtml = c.body_snippet
+      ? `<details style="margin-top:4px">
+           <summary style="cursor:pointer;font-size:11px;color:#7ab3e0">Response body (${c.body_snippet.length} chars)</summary>
+           <pre class="snippet" style="max-height:300px;overflow-y:auto;white-space:pre-wrap;word-break:break-all;font-size:10px;margin:4px 0 0">${escHtml(c.body_snippet)}</pre>
+         </details>`
+      : '';
+    return `<div class="check-detail">
+      <div><strong>${escHtml(c.username_type)}</strong> &ldquo;${escHtml(c.username)}&rdquo;
+        &mdash; <code>${escHtml(c.url)}</code>
+        &mdash; HTTP <strong>${c.http_code ?? 'none'}</strong>
+        &mdash; <span style="color:${color}">${escHtml(c.status)}</span></div>
+      <div style="color:#aaa;font-size:11px;margin:2px 0">${escHtml(c.note)}</div>
+      ${bodyHtml}
+    </div>`;
+  }).join('');
+}
+
+function escHtml(str) {
+  return String(str ?? '')
+    .replace(/&/g, '&amp;').replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+}
+
+async function recheckInModal(siteName) {
+  const modalId = 'modal-' + siteName.replace(/[^a-z0-9]/gi, '_');
+  const modal = document.getElementById(modalId);
+  const btn = modal ? modal.querySelector('.btn-recheck-modal') : null;
+  const checksEl = modal ? modal.querySelector('.modal-checks') : null;
+  if (btn) { btn.textContent = 'Checking…'; btn.disabled = true; }
+
+  try {
+    const resp = await fetch('/recheck/' + encodeURIComponent(siteName), { method: 'POST' });
+    const data = await resp.json();
+    if (data.success) {
+      // Update check details inside modal
+      if (checksEl) checksEl.innerHTML = renderChecks(data.result.checks);
+      // Update table row status too
+      const s = data.result.overall_status;
+      const row = document.querySelector('tr[data-name="' + CSS.escape(siteName) + '"]');
+      if (row) {
+        row.dataset.status = s;
+        row.className = row.className.replace(/status-\S+/g, '') + ' data-row status-' + s;
+        const sc = row.querySelector('.col-status');
+        if (sc) sc.textContent = s;
+        const rm = row.querySelector('.recheck-msg');
+        if (rm) { rm.textContent = '→ ' + s; rm.style.color = s === 'ok' ? '#4caf50' : '#ef5350'; }
+      }
+      if (btn) btn.textContent = 'Recheck';
+    } else {
+      if (btn) btn.textContent = 'Recheck';
+      alert('Recheck error: ' + data.error);
+    }
+  } catch (e) {
+    if (btn) { btn.textContent = 'Recheck'; btn.disabled = false; }
+    alert('Network error: ' + e.message);
+  }
+  if (btn) btn.disabled = false;
+}
+
+// ---- Delete site ----
+async function deleteSite(siteName) {
+  if (!confirm('Permanently delete "' + siteName + '" from wmn-data.json?')) return;
+  try {
+    const resp = await fetch('/delete/' + encodeURIComponent(siteName), { method: 'POST' });
+    const data = await resp.json();
+    if (data.success) {
+      // Remove table row
+      const row = document.querySelector('tr[data-name="' + CSS.escape(siteName) + '"]');
+      if (row) row.remove();
+      // Close and remove modal
+      const modalId = 'modal-' + siteName.replace(/[^a-z0-9]/gi, '_');
+      const modal = document.getElementById(modalId);
+      if (modal) modal.remove();
+      // Update visible count
+      const vc = document.getElementById('visible-count');
+      if (vc) vc.textContent = parseInt(vc.textContent || 0) - 1;
+    } else {
+      alert('Delete error: ' + data.error);
+    }
+  } catch (e) {
+    alert('Network error: ' + e.message);
+  }
+}
+
 // ---- Recheck ----
 async function recheckSite(siteName) {
   const row = document.querySelector('tr[data-name="' + CSS.escape(siteName) + '"]');

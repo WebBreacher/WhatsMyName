@@ -81,7 +81,7 @@ def do_request(
                 timeout=timeout,
                 allow_redirects=False,
             )
-        return resp.status_code, resp.text[:2000]
+        return resp.status_code, resp.text
     except (requests.exceptions.ConnectionError,
             requests.exceptions.Timeout,
             requests.exceptions.TooManyRedirects,
@@ -94,13 +94,15 @@ def _evaluate_known_check(
 ) -> tuple:
     if http_code is None:
         return STATUS_SITE_DOWN, "No response — site down or DNS failure"
+    # Check e_string first — if the expected content is present the site is working,
+    # regardless of any incidental blocking-related words in the page.
+    if http_code == e_code and e_string in body:
+        return STATUS_OK, f"Found: HTTP {http_code}, e_string present"
     if detect_blocking(body, http_code):
         return STATUS_BLOCKED, f"Bot-blocking page detected (HTTP {http_code})"
     if http_code != e_code:
         return STATUS_E_CODE_MISMATCH, f"Expected HTTP {e_code}, got {http_code}"
-    if e_string not in body:
-        return STATUS_E_STRING_MISSING, f"e_string not found in response body (HTTP {http_code})"
-    return STATUS_OK, f"Found: HTTP {http_code}, e_string present"
+    return STATUS_E_STRING_MISSING, f"e_string not found in response body (HTTP {http_code})"
 
 
 def _evaluate_random_check(
@@ -108,10 +110,13 @@ def _evaluate_random_check(
 ) -> tuple:
     if http_code is None:
         return STATUS_SITE_DOWN, "No response — site down or DNS failure"
-    if detect_blocking(body, http_code):
-        return STATUS_BLOCKED, f"Bot-blocking page detected (HTTP {http_code})"
+    # If the expected missing-account indicators are present, the site is working fine.
+    if m_code and http_code == m_code and m_string and m_string in body:
+        return STATUS_OK, f"Not found as expected: HTTP {http_code}"
     if e_string and e_string in body:
         return STATUS_FALSE_POSITIVE, "Random username matched as found (false positive)"
+    if detect_blocking(body, http_code):
+        return STATUS_BLOCKED, f"Bot-blocking page detected (HTTP {http_code})"
     if m_code and http_code != m_code:
         return STATUS_M_CODE_MISMATCH, f"Expected m_code {m_code}, got {http_code}"
     if m_string and m_string not in body:
@@ -196,7 +201,7 @@ def check_site(site: dict, ua: str) -> SiteResult:
                 url=url,
                 method=method,
                 http_code=http_code,
-                body_snippet=body,
+                body_snippet=body[:2000],
                 status=status,
                 note=note,
             ))
@@ -224,7 +229,7 @@ def check_site(site: dict, ua: str) -> SiteResult:
                 url=url,
                 method=method,
                 http_code=http_code,
-                body_snippet=body,
+                body_snippet=body[:2000],
                 status=status,
                 note=note,
             ))

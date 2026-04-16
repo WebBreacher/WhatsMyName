@@ -277,6 +277,7 @@ def save_site(site_name: str):
                     r["has_post_body"] = bool(site.get("post_body"))
                     break
 
+        _save_cache()
         return jsonify({"success": True})
 
     except ValueError as exc:
@@ -295,6 +296,21 @@ def recheck_site(site_name: str):
         if site is None:
             return jsonify({"success": False, "error": f"Site '{site_name}' not found"})
 
+        # Overlay with in-memory edits — these are updated immediately on save
+        # and are always more current than the file when the user edits then rechecks.
+        with _lock:
+            cached = next((r for r in _results if r["name"] == site_name), None)
+        if cached:
+            site["known"] = cached["known"]
+            site["e_code"] = cached["e_code"]
+            site["e_string"] = cached["e_string"]
+            site["m_code"] = cached["m_code"]
+            site["m_string"] = cached["m_string"]
+            if cached.get("uri_check"):
+                site["uri_check"] = cached["uri_check"]
+            if cached.get("uri_pretty") is not None:
+                site["uri_pretty"] = cached["uri_pretty"]
+
         import random
         from checker import check_site, UA_POOL
         from dataclasses import asdict
@@ -311,6 +327,68 @@ def recheck_site(site_name: str):
                 _results.append(result_dict)
 
         return jsonify({"success": True, "result": result_dict})
+
+    except Exception as exc:
+        return jsonify({"success": False, "error": str(exc)})
+
+
+@app.route("/fetch/<site_name>/<username>")
+def fetch_body(site_name: str, username: str):
+    try:
+        with open(DATA_FILE, "r", encoding="utf-8") as f:
+            data = json.load(f)
+
+        site = next((s for s in data["sites"] if s["name"] == site_name), None)
+        if site is None:
+            return jsonify({"success": False, "error": f"Site '{site_name}' not found"})
+
+        import random, requests as req
+        from checker import UA_POOL, apply_strip_bad_char
+
+        strip_chars = site.get("strip_bad_char", "")
+        username = apply_strip_bad_char(username, strip_chars)
+        url = site["uri_check"].replace("{account}", username)
+        post_body_template = site.get("post_body")
+        post_body_str = post_body_template.replace("{account}", username) if post_body_template else None
+        method = "POST" if post_body_template else "GET"
+        headers = {"User-Agent": random.choice(UA_POOL)}
+        headers.update(site.get("headers", {}))
+
+        with req.Session() as session:
+            fn = session.post if method == "POST" else session.get
+            resp = fn(url, data=post_body_str, headers=headers, timeout=20, allow_redirects=False)
+            return jsonify({"success": True, "http_code": resp.status_code, "body": resp.text, "url": url})
+
+    except Exception as exc:
+        return jsonify({"success": False, "error": str(exc)})
+
+
+@app.route("/delete/<site_name>", methods=["POST"])
+def delete_site(site_name: str):
+    try:
+        with open(DATA_FILE, "r", encoding="utf-8") as f:
+            data = json.load(f)
+
+        original_count = len(data["sites"])
+        data["sites"] = [s for s in data["sites"] if s["name"] != site_name]
+        if len(data["sites"]) == original_count:
+            return jsonify({"success": False, "error": f"Site '{site_name}' not found"})
+
+        with open(DATA_FILE, "w", encoding="utf-8") as f:
+            json.dump(data, f, indent=2, ensure_ascii=False)
+
+        subprocess.run(
+            [sys.executable, str(SORT_SCRIPT)],
+            cwd=str(REPO_ROOT),
+            capture_output=True,
+            timeout=30,
+        )
+
+        with _lock:
+            _results[:] = [r for r in _results if r["name"] != site_name]
+
+        _save_cache()
+        return jsonify({"success": True})
 
     except Exception as exc:
         return jsonify({"success": False, "error": str(exc)})
