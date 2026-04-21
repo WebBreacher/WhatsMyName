@@ -2588,7 +2588,6 @@
     {
       "name": "Fanslist (OnlyFans)",
       "uri_check": "https://fanslist.com/search?q={account}",
-      "uri_pretty": "https://onlyfans.com/{account}",
       "e_code": 200,
       "e_string": "data-username=",
       "m_string": "No results found for query",
