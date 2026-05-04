@@ -4326,15 +4326,29 @@
       "cat": "hobby"
     },
     {
-      "name": "Internet Archive User Search",
-      "uri_check": "https://archive.org/advancedsearch.php?q={account}&output=json",
-      "uri_pretty": "https://archive.org/search.php?query={account}",
+      "name": "Internet Archive User Contribution Search",
+      "uri_check": "https://archive.org/advancedsearch.php?q=creator:{account}&output=json",
+      "uri_pretty": "https://archive.org/search.php?query=creator:{account}",
       "e_code": 200,
       "e_string": "backup_location",
       "m_string": "numFound\":0",
       "m_code": 200,
       "known": [
-        "test",
+        "brewster_kahle",
+        "mubix"
+      ],
+      "cat": "misc"
+    },
+     {
+      "name": "Internet Archive Username Mentions",
+       "uri_check": "https://archive.org/advancedsearch.php?q={account}&output=json",
+       "uri_pretty": "https://archive.org/search.php?query={account}",
+      "e_code": 200,
+      "e_string": "backup_location",
+      "m_string": "numFound\":0",
+      "m_code": 200,
+      "known": [
+        "anazgnos",
         "mubix"
       ],
       "cat": "misc"
