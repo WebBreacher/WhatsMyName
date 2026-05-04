@@ -4339,10 +4339,10 @@
       ],
       "cat": "misc"
     },
-     {
+    {
       "name": "Internet Archive Username Mentions",
-       "uri_check": "https://archive.org/advancedsearch.php?q={account}&output=json",
-       "uri_pretty": "https://archive.org/search.php?query={account}",
+      "uri_check": "https://archive.org/advancedsearch.php?q={account}&output=json",
+      "uri_pretty": "https://archive.org/search.php?query={account}",
       "e_code": 200,
       "e_string": "backup_location",
       "m_string": "numFound\":0",
