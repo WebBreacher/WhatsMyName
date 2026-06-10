@@ -50,37 +50,37 @@ Tools and scripts read this file and do the actual checking. That separation mea
 
 ## Tools and Sites That Use WhatsMyName
 
-### Web-based (no install required)
-| Tool | Description |
-|------|-------------|
-| [whatsmyname.app](https://whatsmyname.app/) | The go-to web interface by [Chris Poulter](https://twitter.com/osintcombine). Filters by category, exports to CSV, always pulls the latest data. |
-| [Who Am I](https://chromewebstore.google.com/detail/who-am-i/gdnhlhadhgnhaenfcphpeakdghkccfoo) | Chrome/Brave extension combining WMN data with Sherlock and Maigret, by [OSINT Liar](https://osintliar.com/). |
-| [K2OSINT Bookmarklet](https://github.com/K2SOsint/Bookmarklets/blob/main/WhatsMyName.js) | Browser bookmarklet -- enter a username in a popup, results open in a new tab. |
+### 🌐 Web-based (no install required)
+| Tool | Type | Description |
+|------|------|-------------|
+| [whatsmyname.app](https://whatsmyname.app/) | ![Web](https://img.shields.io/badge/-Web-FF6F00) | The go-to web interface by [Chris Poulter](https://twitter.com/osintcombine). Filters by category, exports to CSV, always pulls the latest data. |
+| [Who Am I](https://chromewebstore.google.com/detail/who-am-i/gdnhlhadhgnhaenfcphpeakdghkccfoo) | ![Chrome Extension](https://img.shields.io/badge/-Chrome%20Extension-4285F4?logo=googlechrome&logoColor=white) | Chrome/Brave extension combining WMN data with Sherlock and Maigret, by [OSINT Liar](https://osintliar.com/). |
+| [K2OSINT Bookmarklet](https://github.com/K2SOsint/Bookmarklets/blob/main/WhatsMyName.js) | ![Bookmarklet](https://img.shields.io/badge/-Bookmarklet-lightgrey) | Browser bookmarklet -- enter a username in a popup, results open in a new tab. |
 
-### Command-line and scripts
-| Tool | Description |
-|------|-------------|
-| [Naminter](https://github.com/3xp0rt/Naminter) | Built specifically for this dataset. Supports Cloudflare bypass, browser impersonation, concurrent checking, and extensive config options. |
-| [Blackbird](https://github.com/p1ngul1n0/blackbird) | Fast username search that integrates WMN data. |
-| [WhatsMyName-Python](https://github.com/C3n7ral051nt4g3ncy/WhatsMyName-Python) | Simple Python script by [@C3n7ral051nt4g3ncy](https://github.com/C3n7ral051nt4g3ncy). |
-| [WhatsMyName-Client](https://github.com/grabowskiadrian/WhatsMyName-Client) | Python script with request header and POST support by [@grabowskiadrian](https://github.com/grabowskiadrian). Also useful for testing the JSON config. |
-| [Reveal My Name](https://github.com/yooper/reveal-my-name) | The original Python checker that shipped with this project, maintained by [@yooper](https://github.com/yooper). |
-| [WMN Screenshooter](https://github.com/swedishmike/WMN_screenshooter) | Selenium-based helper that screenshots identified profile pages. |
-| [sn0int](https://github.com/kpcyrd/sn0int) | Uses WMN data in the [kpcyrd/whatsmyname](https://sn0int.com/r/kpcyrd/whatsmyname) module. |
+### ⌨️ Command-line and scripts
+| Tool | Type | Description |
+|------|------|-------------|
+| [Naminter](https://github.com/3xp0rt/Naminter) | ![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white) | Built specifically for this dataset. Supports Cloudflare bypass, browser impersonation, concurrent checking, and extensive config options. |
+| [Blackbird](https://github.com/p1ngul1n0/blackbird) | ![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white) | Fast username search that integrates WMN data. |
+| [WhatsMyName-Python](https://github.com/C3n7ral051nt4g3ncy/WhatsMyName-Python) | ![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white) | Simple Python script by [@C3n7ral051nt4g3ncy](https://github.com/C3n7ral051nt4g3ncy). |
+| [WhatsMyName-Client](https://github.com/grabowskiadrian/WhatsMyName-Client) | ![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white) | Python script with request header and POST support by [@grabowskiadrian](https://github.com/grabowskiadrian). Also useful for testing the JSON config. |
+| [Reveal My Name](https://github.com/yooper/reveal-my-name) | ![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white) | The original Python checker that shipped with this project, maintained by [@yooper](https://github.com/yooper). |
+| [WMN Screenshooter](https://github.com/swedishmike/WMN_screenshooter) | ![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white) | Selenium-based helper that screenshots identified profile pages. |
+| [sn0int](https://github.com/kpcyrd/sn0int) | ![Rust](https://img.shields.io/badge/-Rust-000000?logo=rust&logoColor=white) | Uses WMN data in the [kpcyrd/whatsmyname](https://sn0int.com/r/kpcyrd/whatsmyname) module. |
 
-### Desktop and platforms
-| Tool | Description |
-|------|-------------|
-| [NameSeeker](https://github.com/funnyzak/name-seeker) | Cross-platform desktop app for username and email search across hundreds of sites. Exports to PDF, CSV, and JSON. |
-| [LinkScope](https://github.com/AccentuSoft/LinkScope_Client) | Uses WMN in its **Online Identity** category. |
-| [Maltego WhatsMyName Transforms](https://github.com/TURROKS/Maltego_WhatsMyName) | Local Maltego transforms that check usernames in real time using the JSON file. |
-| [Spiderfoot](https://github.com/smicallef/spiderfoot) | Integrates WMN in the `sfp_account` module. ([CLI demo video](https://asciinema.org/a/295923)) |
+### 🖥️ Desktop and platforms
+| Tool | Type | Description |
+|------|------|-------------|
+| [NameSeeker](https://github.com/funnyzak/name-seeker) | ![Electron](https://img.shields.io/badge/-Electron-47848F?logo=electron&logoColor=white) | Cross-platform desktop app for username and email search across hundreds of sites. Exports to PDF, CSV, and JSON. |
+| [LinkScope](https://github.com/AccentuSoft/LinkScope_Client) | ![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white) | Uses WMN in its **Online Identity** category. |
+| [Maltego WhatsMyName Transforms](https://github.com/TURROKS/Maltego_WhatsMyName) | ![Maltego](https://img.shields.io/badge/-Maltego-1A1A1A) | Local Maltego transforms that check usernames in real time using the JSON file. |
+| [Spiderfoot](https://github.com/smicallef/spiderfoot) | ![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white) | Integrates WMN in the `sfp_account` module. ([CLI demo video](https://asciinema.org/a/295923)) |
 
-### Self-hosted and containerized
-| Tool | Description |
-|------|-------------|
-| [WhatsMyName-Web](https://github.com/AXRoux/WhatsMyName-Web) | Simple Flask web app version of WhatsMyName by [@AXRoux](https://github.com/AXRoux/). |
-| [WhatsMyName Docker](https://github.com/kodamaChameleon/wmn-docker) | Docker API wrapper over the WMN tool by [@kodamaChameleon](https://github.com/kodamaChameleon). |
+### 🐳 Self-hosted and containerized
+| Tool | Type | Description |
+|------|------|-------------|
+| [WhatsMyName-Web](https://github.com/AXRoux/WhatsMyName-Web) | ![Flask](https://img.shields.io/badge/-Flask-000000?logo=flask&logoColor=white) | Simple Flask web app version of WhatsMyName by [@AXRoux](https://github.com/AXRoux/). |
+| [WhatsMyName Docker](https://github.com/kodamaChameleon/wmn-docker) | ![Docker](https://img.shields.io/badge/-Docker-2496ED?logo=docker&logoColor=white) | Docker API wrapper over the WMN tool by [@kodamaChameleon](https://github.com/kodamaChameleon). |
 
 ---
 

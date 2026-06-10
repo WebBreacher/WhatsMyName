@@ -1,3 +1,7 @@
+# Contributing to WhatsMyName
+
+Thanks for your interest in helping out! WhatsMyName is a community-maintained dataset, and it stays accurate because people like you report and fix site detections. Please also take a moment to read our [Code of Conduct](CODE_OF_CONDUCT.md).
+
 You can contribute to the project in at least a couple ways.
 
 ## Method 1. Non-technical
@@ -62,16 +66,15 @@ the profile
 - Test your configuration by running a tool for a given site
 - Submit a pull request with that change
 - There is also the `sample.json` file that you can use for testing. Simply replace the existing content with new data and test.
+- If a site is permanently gone or no longer meets the [inclusion criteria](README.md#how-it-works), please remove its entry entirely rather than leaving it in place.
 
 ## Format of the JSON File
 
-### Format of the JSON file
+`wmn-data.json` is validated against [`wmn-data-schema.json`](wmn-data-schema.json) automatically when you open a pull request. If you want to check your entry locally before submitting, you can validate it against that schema with any standard JSON Schema tool.
 
-#### Alphabetize by "Name"
+The file is also automatically alphabetized and reformatted by a GitHub Action, so you don't need to manually sort entries or worry about exact formatting/indentation -- just make sure your JSON is valid.
 
-We try to keep the entries in the `wmn-data.json` file alphabetized (A-Z) by the `name` value. So you can find `"name" : "Github"` earlier in the file than `"name" : "Snapchat"`.
-
-#### `wmn-data.json` JSON has 3 main elements
+### `wmn-data.json` JSON has 3 main elements
 
 1. License - The license for this project and its data
 2. Authors - The people that have recently contributed to this project
@@ -92,7 +95,7 @@ Within the `sites` elements, the format is as follows (with several parameters b
          "m_string" : "this string will only be in the response if there is no account found",
          "m_code" : "the HTTP response code for a bad 'account is not there' response as an integer",
          "known" : ["a list of user accounts that can be used to test", "for user enumeration"],
-         "cat" : "a category for what the site is mainly used for. The current categories are found at the top of the JSON",
+         "cat" : "a category for what the site is mainly used for. Must be one of the values in the top-level `categories` array in `wmn-data.json`",
          "valid" : "[OPTIONAL] single value of False. If it is present and False, then checkers should skip this site",
          "protection" : "[OPTIONAL] a list of 1 or more site protections like: [captcha, cloudflare, userauth, multiple, other]",
          "headers": {"[OPTIONAL] a dictionary of headers that should be passed to a site"}
