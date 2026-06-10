@@ -2,6 +2,8 @@ name: "New Site Request"
 description: "Request that a new website be added to wmn-data.json."
 title: "[NEW SITE] <site name here>"
 labels: ["new site", "needs review"]
+assignees:
+  - WebBreacher
 body:
   - type: markdown
     attributes:
