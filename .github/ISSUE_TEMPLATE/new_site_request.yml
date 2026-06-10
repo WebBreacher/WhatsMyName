@@ -1,0 +1,74 @@
+name: "New Site Request"
+description: "Request that a new website be added to wmn-data.json."
+title: "[NEW SITE] <site name here>"
+labels: ["new site", "needs review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a new site! Before submitting, please confirm the site meets
+        the project's three requirements:
+        - Publicly accessible (no login or paywall required to view profiles)
+        - The username appears directly in the profile URL
+        - The URL does not transform the username into a user ID number
+
+  - type: input
+    id: site_name
+    attributes:
+      label: Site name
+      description: The name of the website as it should appear in wmn-data.json
+      placeholder: e.g. Mastodon (infosec.exchange)
+    validations:
+      required: true
+
+  - type: input
+    id: example_profile_url
+    attributes:
+      label: Example profile URL (real account)
+      description: A full URL to an existing public profile on this site
+      placeholder: e.g. https://infosec.exchange/@webbreacher
+    validations:
+      required: true
+
+  - type: input
+    id: site_category
+    attributes:
+      label: Category
+      description: What category best fits this site? (Check existing categories in wmn-data.json if unsure)
+      placeholder: e.g. social, gaming, coding, images, music, etc.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: requirements
+    attributes:
+      label: Site requirements check
+      description: Please confirm the site meets all of these before submitting.
+      options:
+        - label: Profile pages are publicly visible without logging in
+          required: true
+        - label: The username appears in the profile URL
+          required: true
+        - label: The URL does not replace the username with a numeric user ID
+          required: true
+
+  - type: textarea
+    id: additional_notes
+    attributes:
+      label: Additional notes (optional)
+      description: |
+        Anything else useful -- known protections (Cloudflare, CAPTCHA), whether it's a regional site,
+        whether you've already identified good e_string/m_string candidates, etc.
+      placeholder: e.g. Site uses Cloudflare. Profile pages return 404 for missing users.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched wmn-data.json and this site isn't already included
+          required: true
+        - label: I searched existing issues and this site hasn't already been requested
+          required: true
