@@ -6,8 +6,13 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Validate JSON
-        uses: docker://orrosenblatt/validate-json-action:latest
-        env:
-          INPUT_SCHEMA: /wmn-data-schema.json
-          INPUT_JSONS: /wmn-data.json
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install jsonschema
+
+      - name: Validate wmn-data.json against schema
+        run: python scripts/validate_json.py
