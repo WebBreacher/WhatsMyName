@@ -1,0 +1,92 @@
+name: "Broken or Incorrect Detection"
+description: "A site in wmn-data.json is returning wrong results, has changed its URL structure, or is no longer working."
+title: "[BROKEN] <site name here>"
+labels: ["broken detection", "needs verification"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting this! Accurate detections are the heart of this project.
+        Please fill in as much detail as you can -- it helps us fix things faster.
+
+  - type: input
+    id: site_name
+    attributes:
+      label: Site name
+      description: The `name` value from wmn-data.json (e.g. "GitHub", "Reddit")
+      placeholder: e.g. Reddit
+    validations:
+      required: true
+
+  - type: input
+    id: site_url
+    attributes:
+      label: Site URL being checked
+      description: The full URI from the `uri_check` field (replace `{account}` with the test username)
+      placeholder: e.g. https://www.reddit.com/user/testuser123
+    validations:
+      required: true
+
+  - type: dropdown
+    id: problem_type
+    attributes:
+      label: What kind of problem is it?
+      options:
+        - "False positive -- reports a user exists when it doesn't"
+        - "False negative -- reports no user when one exists"
+        - "Site URL has changed"
+        - "Site is returning errors or is unreachable"
+        - "Site now requires authentication or has a paywall"
+        - "Other"
+    validations:
+      required: true
+
+  - type: input
+    id: known_good_username
+    attributes:
+      label: Known good username (account that exists)
+      description: A real username you confirmed exists on this site
+      placeholder: e.g. webbreacher
+    validations:
+      required: false
+
+  - type: input
+    id: known_bad_username
+    attributes:
+      label: Known bad username (account that does NOT exist)
+      description: A username you confirmed does not exist on this site
+      placeholder: e.g. ThisUserDoesNotExist99999
+    validations:
+      required: false
+
+  - type: textarea
+    id: observed_behavior
+    attributes:
+      label: What are you seeing?
+      description: Describe what the site is actually returning (HTTP status code, page content, redirect, etc.)
+      placeholder: |
+        e.g. The site now returns a 200 for all usernames including ones that don't exist.
+        The e_string "profile-header" no longer appears in the response.
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggested_fix
+    attributes:
+      label: Suggested fix (optional)
+      description: If you know what the correct e_string, m_string, or URL should be, put it here.
+      placeholder: |
+        e.g. The new e_string should be "user-profile-container"
+        The m_code is now 200 and m_string is "Sorry, nobody on Reddit goes by that name."
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched existing issues and this hasn't already been reported
+          required: true
+        - label: I tested with at least one known-good and one known-bad username
+          required: false
