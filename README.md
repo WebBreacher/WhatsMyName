@@ -1,67 +1,113 @@
-<p align="center">
-  <img src="https://github.com/WebBreacher/WhatsMyName/blob/main/whatsmyname.png" width="400">
-</p>
+![WhatsMyName](whatsmyname.png)
 
 # WhatsMyName
 
-What is WhatsMyName? It is a project that [Micah "WebBreacher" Hoffman](https://webbreacher.com) created in 2015 with the goal of discovering if usernames were used on a given website. He was frustrated with the false positives that were present in the username checkers of that time and so he made his own. Fast forward to today and many people have helped this open-source project evolve into what it is today.
+[![License: CC BY-SA 4.0](https://img.shields.io/badge/license-CC--BY--SA--4.0-lightgrey)](http://creativecommons.org/licenses/by-sa/4.0/)
+[![Sites tracked](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FWebBreacher%2FWhatsMyName%2Fmain%2Fwmn-data.json&query=%24.sites.length&label=sites&color=blue)](wmn-data.json)
+[![Categories](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FWebBreacher%2FWhatsMyName%2Fmain%2Fwmn-data.json&query=%24.categories.length&label=categories&color=blue)](wmn-data.json)
+[![Contributors](https://img.shields.io/github/contributors/WebBreacher/WhatsMyName)](https://github.com/WebBreacher/WhatsMyName/graphs/contributors)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen)](CONTRIBUTING.md)
+[![GitHub Stars](https://img.shields.io/github/stars/WebBreacher/WhatsMyName?style=social)](https://github.com/WebBreacher/WhatsMyName/stargazers)
 
-If you are an OSINT person that has come here to run the tool, well, you are probably a bit disappointed right now. In May 2023, we removed all checker scripts from the project and focus on the project's core: its data file (`wmn-dat.json`).
+**WhatsMyName (WMN) is a community-maintained dataset that lets you find out if a username exists across hundreds of websites.** If you're investigating a person of interest, verifying an online identity, or simply curious about your own digital footprint, this project powers the tools that make that possible.
 
-So, we will keep finding sites and adding them and you can feel free to try any of the checker sites and scripts below that use our data.
+Created in 2015 by [Micah "WebBreacher" Hoffman](https://webbreacher.com), WhatsMyName started as a personal fix for a real frustration: existing username checkers were full of false positives. Over the years, contributions from people all over the world have grown it into one of the most widely-used username enumeration datasets in the OSINT community.
 
+## Table of Contents
 
-## How Does It Work?
+- [Just want to search a username right now?](#just-want-to-search-a-username-right-now)
+- [How It Works](#how-it-works)
+- [Tools and Sites That Use WhatsMyName](#tools-and-sites-that-use-whatsmyname)
+- [Help Keep WMN Accurate](#help-keep-wmn-accurate)
+- [Stay Connected](#stay-connected)
+- [License](#license)
 
-WhatsMyName (WMN) consists of a JSON file with detections in it. Submissions from people all over the world are included. When a request is made to one of those sites from a tool like the ones in the next section, the server replies with data that will match one of our detections. It'll tell the checker script whether there is a valid user account with the name we specified on their site or not.
+---
 
-For a site to be included in WMN it has to:
+## Just want to search a username right now?
 
-1. **Be accessible.** _We cannot check sites behind paywalls or user authentication._
-2. **Put the username in the URL.** _If the URL to view a user's profile does not have that username in it, this tool won't work._
-3. **Not modify the username in the URL.** _URLs that have added user ID numbers to the username will not work in WMN. Also, sites that take your username and map it to a user ID number and then put that in the URL will not work._
+Head to **[whatsmyname.app](https://whatsmyname.app/)** -- a free, browser-based tool built directly on this dataset. No installation required.
 
+Or check out the [many tools below that use WMN](#tools-and-sites-that-use-whatsmyname).
 
-## Tools/Web Sites Using WhatsMyName
+---
 
-* https://whatsmyname.app/ - [Chris Poulter](https://twitter.com/osintcombine) created this site which draws the project's JSON file into an easy to use web interface.
-  * Filters for category and in search results.
-  * Exports to CSV and other formats.
-  * Pulls the latest version of the project's JSON file when run.
-  * Submit a username in the URL using `https://whatsmyname.app/?q=USERNAME` like https://whatsmyname.app/?q=john
-* [Who Am I](https://chromewebstore.google.com/detail/who-am-i/gdnhlhadhgnhaenfcphpeakdghkccfoo) Google/Brave extension that not only integrates WhatsMyName's data but Sherlock and Maigret username checkers as well. Made by [OSINT Liar](https://osintliar.com/). 
-* [Naminter](https://github.com/3xp0rt/Naminter) developed specifically for the **Whats My Name** list with a beautiful console interface, browser impersonating, capable of bypassing Cloudflare and other basic protection, concurrent checking, and extensive configuration options.
-* [Blackbird](https://github.com/p1ngul1n0/blackbird) uses the **Whats My Name** list in its search.
-* [K2OSINT Bookmarklet](https://github.com/K2SOsint/Bookmarklets/blob/main/WhatsMyName.js) - Bookmarklet that lets you enter a username in a popup and then opens a new tab with the WMN results.
-* [LinkScope](https://github.com/AccentuSoft/LinkScope_Client) uses this in the **Whats My Name** resolution under the **Online Identity** category.
-* [Maltego WhatsMyName Transforms](https://github.com/TURROKS/Maltego_WhatsMyName) - **Maltego Local Transforms** that leverage the JSON file and check for usernames in real time.
-* [Reveal My Name](https://github.com/yooper/reveal-my-name) is created by [@yooper](https://github.com/yooper) and is the Python checker tool that was bundled with this project.
-* [sn0int](https://github.com/kpcyrd/sn0int) downloads and uses the JSON file in the [kpcyrd/whatsmyname](https://sn0int.com/r/kpcyrd/whatsmyname) module, see https://twitter.com/sn0int/status/1228046880459907073 for details and instructions.
-* [Spiderfoot](https://github.com/smicallef/spiderfoot) uses this in the **sfp_account** module. There is also [this video](https://asciinema.org/a/295923) showing how to use this project using the Spiderfoot Command Line Interface (CLI).
-* [WhatsMyName-Python](https://github.com/C3n7ral051nt4g3ncy/WhatsMyName-Python) **Whats My Name** simple Python script made by [@C3n7ral051nt4g3ncy](https://github.com/C3n7ral051nt4g3ncy)
-* [WMN_screenshooter](https://github.com/swedishmike/WMN_screenshooter) a helper script that uses Selenium to try and grab screenshots of identified profile pages.
-* [WhatsMyName-Client](https://github.com/grabowskiadrian/WhatsMyName-Client) a simple Python script with 'request headers' and 'POST requests' support made by [@grabowskiadrian](https://github.com/grabowskiadrian). The script also allows you to test the configuration of the wmn-data.json file.
-* [WhatsMyName-Web](https://github.com/AXRoux/WhatsMyName-Web) **Whats My Name-Web** is a simple Flask web app iteration of WhatsMyName made by [@AXRoux](https://github.com/AXRoux/)
-* [WhatsMyName Docker](https://github.com/kodamaChameleon/wmn-docker) is a Docker API Wrapper over this WhatsMyName tool. Dockerization made by [@kodamaChameleon](https://github.com/kodamaChameleon)
-* [NameSeeker](https://github.com/funnyzak/name-seeker) is a powerful cross-platform desktop application that searches for usernames and email addresses across hundreds of websites, helping you quickly discover your digital footprint. Based on the WhatsMyName project data, it supports exporting search results in PDF, CSV, JSON, and other formats.
+## How It Works
 
-## Content
+WMN is a single, carefully maintained JSON file (`wmn-data.json`). Each entry describes how to check one website for a username -- what URL to query, what a successful response looks like, and what a "not found" response looks like.
 
-If you would like to help with detections, we are happy to accept them via:
-1. GitHub pull request or ...
-2. [Create an issue](https://github.com/WebBreacher/WhatsMyName/issues) with the details of the site or ...
-3. Use [this form](https://forms.office.com/r/TscnNQqrD1).
+Tools and scripts read this file and do the actual checking. That separation means anyone can build a checker, and the data stays accurate regardless of which tool you prefer.
 
+**For a site to be included, it must:**
 
-## Format
+1. **Be publicly accessible** -- sites behind paywalls or login walls can't be checked
+2. **Include the username in the URL** -- the profile URL must contain the username directly
+3. **Not transform the username** -- sites that swap usernames for numeric IDs won't work
 
-See [CONTRIBUTING](CONTRIBUTING.md)
+> In May 2023, we removed the bundled checker scripts and shifted focus entirely to maintaining the data file. See the tools section below for checkers that use our data.
 
+---
 
-# License
+## Tools and Sites That Use WhatsMyName
 
-<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+### 🌐 Web-based (no install required)
+| Tool | Type | Description |
+|------|------|-------------|
+| [whatsmyname.app](https://whatsmyname.app/) | ![Web](https://img.shields.io/badge/-Web-FF6F00) | The go-to web interface by [Chris Poulter](https://twitter.com/osintcombine). Filters by category, exports to CSV, always pulls the latest data. |
+| [Who Am I](https://chromewebstore.google.com/detail/who-am-i/gdnhlhadhgnhaenfcphpeakdghkccfoo) | ![Chrome Extension](https://img.shields.io/badge/-Chrome%20Extension-4285F4?logo=googlechrome&logoColor=white) | Chrome/Brave extension combining WMN data with Sherlock and Maigret, by [OSINT Liar](https://osintliar.com/). |
+| [K2OSINT Bookmarklet](https://github.com/K2SOsint/Bookmarklets/blob/main/WhatsMyName.js) | ![Bookmarklet](https://img.shields.io/badge/-Bookmarklet-lightgrey) | Browser bookmarklet -- enter a username in a popup, results open in a new tab. |
 
+### ⌨️ Command-line and scripts
+| Tool | Type | Description |
+|------|------|-------------|
+| [Naminter](https://github.com/3xp0rt/Naminter) | ![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white) | Built specifically for this dataset. Supports Cloudflare bypass, browser impersonation, concurrent checking, and extensive config options. |
+| [Blackbird](https://github.com/p1ngul1n0/blackbird) | ![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white) | Fast username search that integrates WMN data. |
+| [WhatsMyName-Python](https://github.com/C3n7ral051nt4g3ncy/WhatsMyName-Python) | ![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white) | Simple Python script by [@C3n7ral051nt4g3ncy](https://github.com/C3n7ral051nt4g3ncy). |
+| [WhatsMyName-Client](https://github.com/grabowskiadrian/WhatsMyName-Client) | ![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white) | Python script with request header and POST support by [@grabowskiadrian](https://github.com/grabowskiadrian). Also useful for testing the JSON config. |
+| [Reveal My Name](https://github.com/yooper/reveal-my-name) | ![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white) | The original Python checker that shipped with this project, maintained by [@yooper](https://github.com/yooper). |
+| [WMN Screenshooter](https://github.com/swedishmike/WMN_screenshooter) | ![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white) | Selenium-based helper that screenshots identified profile pages. |
+| [sn0int](https://github.com/kpcyrd/sn0int) | ![Rust](https://img.shields.io/badge/-Rust-000000?logo=rust&logoColor=white) | Uses WMN data in the [kpcyrd/whatsmyname](https://sn0int.com/r/kpcyrd/whatsmyname) module. |
 
-# Social Media
-Stay up to date with our project by following <a href="https://bsky.app/profile/whatsmyna.me" target="_blank">our BlueSky Account</a>.
+### 🖥️ Desktop and platforms
+| Tool | Type | Description |
+|------|------|-------------|
+| [NameSeeker](https://github.com/funnyzak/name-seeker) | ![Electron](https://img.shields.io/badge/-Electron-47848F?logo=electron&logoColor=white) | Cross-platform desktop app for username and email search across hundreds of sites. Exports to PDF, CSV, and JSON. |
+| [LinkScope](https://github.com/AccentuSoft/LinkScope_Client) | ![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white) | Uses WMN in its **Online Identity** category. |
+| [Maltego WhatsMyName Transforms](https://github.com/TURROKS/Maltego_WhatsMyName) | ![Maltego](https://img.shields.io/badge/-Maltego-1A1A1A) | Local Maltego transforms that check usernames in real time using the JSON file. |
+| [Spiderfoot](https://github.com/smicallef/spiderfoot) | ![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white) | Integrates WMN in the `sfp_account` module. ([CLI demo video](https://asciinema.org/a/295923)) |
+
+### 🐳 Self-hosted and containerized
+| Tool | Type | Description |
+|------|------|-------------|
+| [WhatsMyName-Web](https://github.com/AXRoux/WhatsMyName-Web) | ![Flask](https://img.shields.io/badge/-Flask-000000?logo=flask&logoColor=white) | Simple Flask web app version of WhatsMyName by [@AXRoux](https://github.com/AXRoux/). |
+| [WhatsMyName Docker](https://github.com/kodamaChameleon/wmn-docker) | ![Docker](https://img.shields.io/badge/-Docker-2496ED?logo=docker&logoColor=white) | Docker API wrapper over the WMN tool by [@kodamaChameleon](https://github.com/kodamaChameleon). |
+
+---
+
+## Help Keep WMN Accurate
+
+This project only stays useful if the detections stay accurate. Websites change their profile URLs, response codes, and page content constantly. **We need contributors to help find new sites and fix broken detections.**
+
+You don't need to be a developer. Here's how to help at any level:
+
+| Experience level | How to contribute |
+|-----------------|-------------------|
+| No technical background | [Submit a site via this form](https://forms.office.com/r/TscnNQqrD1) |
+| Comfortable with GitHub | [Open an issue](https://github.com/WebBreacher/WhatsMyName/issues) with a link to an example profile |
+| Comfortable with JSON and HTTP | Fork the repo, fix or add a detection, and submit a pull request |
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed instructions on adding or fixing site detections, including format requirements and examples.
+
+---
+
+## Stay Connected
+
+Follow the project on [LinkedIn](https://www.linkedin.com/company/whatsmynameproject) for updates.
+
+---
+
+## License
+
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/)
+
+This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).

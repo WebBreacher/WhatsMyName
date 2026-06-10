@@ -9,6 +9,7 @@
     "categories",
     "sites"
   ],
+  "additionalProperties": false,
   "properties": {
     "license": {
       "description": "CC BY-SA 4.0 license text",
@@ -189,10 +190,10 @@
             ]
           },
           "valid": {
-            "type": "boolean",
-            "description": "Set false to skip broken sites",
+            "const": false,
+            "description": "Only present (and set to false) to skip broken sites; omit this field otherwise",
             "examples": [
-              true
+              false
             ]
           },
           "protection": {

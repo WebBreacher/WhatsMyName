@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Submit a site via form (no GitHub account needed)
+    url: https://forms.office.com/r/TscnNQqrD1
+    about: Don't have a GitHub account? Use this form to suggest a new site or report a broken detection.
+  - name: Ask a question or start a discussion
+    url: https://github.com/WebBreacher/WhatsMyName/discussions
+    about: For general questions, ideas, or community conversation -- not bugs or site requests.

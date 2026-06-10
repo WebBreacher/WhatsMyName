@@ -2584,7 +2584,6 @@
     {
       "name": "Fanslist (OnlyFans)",
       "uri_check": "https://fanslist.com/search?q={account}",
-      "uri_pretty": "https://onlyfans.com/{account}",
       "e_code": 200,
       "e_string": "data-username=",
       "m_string": "No results found for query",
@@ -4323,7 +4322,21 @@
       "cat": "hobby"
     },
     {
-      "name": "Internet Archive User Search",
+      "name": "Internet Archive User Contribution Search",
+      "uri_check": "https://archive.org/advancedsearch.php?q=creator:{account}&output=json",
+      "uri_pretty": "https://archive.org/search.php?query=creator:{account}",
+      "e_code": 200,
+      "e_string": "backup_location",
+      "m_string": "numFound\":0",
+      "m_code": 200,
+      "known": [
+        "brewster_kahle",
+        "mubix"
+      ],
+      "cat": "misc"
+    },
+    {
+      "name": "Internet Archive Username Mentions",
       "uri_check": "https://archive.org/advancedsearch.php?q={account}&output=json",
       "uri_pretty": "https://archive.org/search.php?query={account}",
       "e_code": 200,
@@ -4331,7 +4344,7 @@
       "m_string": "numFound\":0",
       "m_code": 200,
       "known": [
-        "test",
+        "anazgnos",
         "mubix"
       ],
       "cat": "misc"
