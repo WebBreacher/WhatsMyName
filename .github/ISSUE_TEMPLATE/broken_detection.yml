@@ -2,6 +2,8 @@ name: "Broken or Incorrect Detection"
 description: "A site in wmn-data.json is returning wrong results, has changed its URL structure, or is no longer working."
 title: "[BROKEN] <site name here>"
 labels: ["broken detection", "needs verification"]
+assignees:
+  - WebBreacher
 body:
   - type: markdown
     attributes:
