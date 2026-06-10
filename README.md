@@ -102,7 +102,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed instructions on adding or fi
 
 ## Stay Connected
 
-Follow the project on [BlueSky](https://bsky.app/profile/whatsmyna.me) for updates.
+Follow the project on [LinkedIn](https://www.linkedin.com/company/whatsmynameproject) for updates.
 
 ---
 
