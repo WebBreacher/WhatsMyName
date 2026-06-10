@@ -1,5 +1,9 @@
 name: Validate JSON
-on: [pull_request]
+on:
+  pull_request:
+    paths:
+      - 'wmn-data.json'
+      - 'wmn-data-schema.json'
 jobs:
   verify-json-validation:
     runs-on: ubuntu-latest
