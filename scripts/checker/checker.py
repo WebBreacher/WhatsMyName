@@ -60,7 +60,7 @@ def do_request(
     site_headers: dict,
     post_body_str: Optional[str],
     ua: str,
-    timeout: int = 12,
+    timeout: int = 60,
 ) -> tuple:
     merged_headers = {"User-Agent": ua}
     merged_headers.update(site_headers)  # site headers take precedence

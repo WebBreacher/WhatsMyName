@@ -1,8 +1,8 @@
 {
-  "run_started": "2026-06-17 13:43 UTC",
-  "run_completed": "2026-06-17 13:58 UTC",
-  "total": 713,
-  "total_sites": 730,
+  "run_started": "2026-06-17 14:27 UTC",
+  "run_completed": "2026-06-17 14:27 UTC",
+  "total": 0,
+  "total_sites": 726,
   "limit": null,
   "results": [
     {
@@ -6477,38 +6477,6 @@
       "checked_at": "2026-06-17 13:43 UTC"
     },
     {
-      "name": "Artists & Clients",
-      "cat": "art",
-      "uri_check": "https://artistsnclients.com/people/{account}",
-      "uri_pretty": null,
-      "e_code": 200,
-      "e_string": "Member Since",
-      "m_code": 404,
-      "m_string": "The page you requested wasn't there when we tried to get it for you. What a bother!",
-      "known": [
-        "luluc0",
-        "MuraArts"
-      ],
-      "has_protection": false,
-      "protection": [],
-      "has_post_body": false,
-      "valid_field": null,
-      "checks": [
-        {
-          "username": "luluc0",
-          "username_type": "known",
-          "url": "https://artistsnclients.com/people/luluc0",
-          "method": "GET",
-          "http_code": null,
-          "body_snippet": "",
-          "status": "site_down",
-          "note": "No response — site down or DNS failure"
-        }
-      ],
-      "overall_status": "site_down",
-      "checked_at": "2026-06-17 13:43 UTC"
-    },
-    {
       "name": "Designspriation",
       "cat": "art",
       "uri_check": "https://www.designspiration.com/{account}/",
@@ -10275,38 +10243,6 @@
         }
       ],
       "overall_status": "ok",
-      "checked_at": "2026-06-17 13:43 UTC"
-    },
-    {
-      "name": "DDoSecrets",
-      "cat": "archived",
-      "uri_check": "https://search.ddosecrets.com/search?q={account}",
-      "uri_pretty": null,
-      "e_code": 200,
-      "e_string": "aria-label=\"Search result pages\"",
-      "m_code": 200,
-      "m_string": "<p>No results</p>",
-      "known": [
-        "egord",
-        "Mddearing"
-      ],
-      "has_protection": false,
-      "protection": [],
-      "has_post_body": false,
-      "valid_field": null,
-      "checks": [
-        {
-          "username": "egord",
-          "username_type": "known",
-          "url": "https://search.ddosecrets.com/search?q=egord",
-          "method": "GET",
-          "http_code": null,
-          "body_snippet": "",
-          "status": "site_down",
-          "note": "No response — site down or DNS failure"
-        }
-      ],
-      "overall_status": "site_down",
       "checked_at": "2026-06-17 13:43 UTC"
     },
     {
@@ -16258,38 +16194,6 @@
       "checked_at": "2026-06-17 13:44 UTC"
     },
     {
-      "name": "joinDOTA",
-      "cat": "gaming",
-      "uri_check": "https://www.joindota.com/ajax/search",
-      "uri_pretty": "https://www.joindota.com/search?m=edb_player&q={account}",
-      "e_code": 200,
-      "e_string": "\"items\":[{",
-      "m_code": 200,
-      "m_string": "\"count\":0",
-      "known": [
-        "AngryTestie",
-        "amddota2"
-      ],
-      "has_protection": false,
-      "protection": [],
-      "has_post_body": true,
-      "valid_field": null,
-      "checks": [
-        {
-          "username": "AngryTestie",
-          "username_type": "known",
-          "url": "https://www.joindota.com/ajax/search",
-          "method": "POST",
-          "http_code": null,
-          "body_snippet": "",
-          "status": "site_down",
-          "note": "No response — site down or DNS failure"
-        }
-      ],
-      "overall_status": "site_down",
-      "checked_at": "2026-06-17 13:44 UTC"
-    },
-    {
       "name": "Justforfans",
       "cat": "xx NSFW xx",
       "uri_check": "https://justfor.fans/{account}",
@@ -16458,8 +16362,10 @@
         "bob",
         "blue"
       ],
-      "has_protection": false,
-      "protection": [],
+      "has_protection": true,
+      "protection": [
+        "captcha"
+      ],
       "has_post_body": false,
       "valid_field": null,
       "checks": [

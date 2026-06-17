@@ -276,9 +276,8 @@ const ICON_SPIN    = '<i class="fa-solid fa-spinner fa-spin"></i>';
 
 // ---- Open URL in background tab ----
 function openBg(url) {
-  const w = window.open(url, '_blank', 'noopener,noreferrer');
-  if (w) { w.blur(); }
-  window.focus();
+  const w = window.open(url, '_blank');
+  if (w) { w.blur(); window.focus(); }
 }
 
 // ---- Edit modal ----

@@ -22,6 +22,7 @@ const WMN_CHECKS = {
     {% elif progress.remaining and progress.remaining > 0 %}
       <button type="submit">&#9654; Continue ({{ progress.remaining }} left)</button>
     {% else %}
+      <input type="hidden" name="rerun" value="1">
       <button type="submit">&#9654; Run Checker</button>
     {% endif %}
     <label style="font-size:11px;color:#aaa">
@@ -57,11 +58,9 @@ const WMN_CHECKS = {
     {% endif %}
   </div>
 
-  {% if progress.run_completed %}
-  <span style="font-size:11px;color:#666" title="Run started: {{ progress.run_started }}">
-    Last run: {{ progress.run_completed }}
+  <span style="font-size:11px;color:#aaa;white-space:nowrap" title="Run started: {{ progress.run_started or 'N/A' }}">
+    Last run: <strong style="color:#e0e0e0">{{ progress.run_completed or 'never' }}</strong>
   </span>
-  {% endif %}
 </div>
 
 {% if results %}

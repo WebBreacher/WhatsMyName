@@ -107,6 +107,7 @@ def index():
 def start_checker():
     limit_raw = request.form.get("limit", "").strip()
     limit = int(limit_raw) if limit_raw.isdigit() and int(limit_raw) > 0 else None
+    rerun = request.form.get("rerun") == "1"
 
     with _lock:
         if _progress.get("running"):
@@ -127,13 +128,13 @@ def start_checker():
             _progress["error"] = str(exc)
         return redirect(url_for("index"))
 
-    remaining = [s for s in all_sites if s["name"] not in checked_names]
+    sites_to_check = all_sites if rerun else [s for s in all_sites if s["name"] not in checked_names]
     with _lock:
         _progress["total_sites"] = len(all_sites)
-        _progress["total"] = min(len(remaining), limit) if limit else len(remaining)
-        _progress["remaining"] = len(remaining)
+        _progress["total"] = min(len(sites_to_check), limit) if limit else len(sites_to_check)
+        _progress["remaining"] = len(sites_to_check)
 
-    t = threading.Thread(target=_run_checker_thread, args=(remaining, limit), daemon=True)
+    t = threading.Thread(target=_run_checker_thread, args=(sites_to_check, limit), daemon=True)
     t.start()
     return redirect(url_for("index"))
 
@@ -395,4 +396,4 @@ def delete_site(site_name: str):
 
 
 if __name__ == "__main__":
-    app.run(host="127.0.0.1", port=5000, debug=False)
+    app.run(host="127.0.0.1", port=5000, debug=True)

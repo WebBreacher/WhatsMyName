@@ -526,19 +526,6 @@
       "cat": "art"
     },
     {
-      "name": "Artists & Clients",
-      "uri_check": "https://artistsnclients.com/people/{account}",
-      "e_code": 200,
-      "e_string": "Member Since",
-      "m_string": "The page you requested wasn't there when we tried to get it for you. What a bother!",
-      "m_code": 404,
-      "known": [
-        "luluc0",
-        "MuraArts"
-      ],
-      "cat": "art"
-    },
-    {
       "name": "ArtStation",
       "uri_check": "https://www.artstation.com/{account}",
       "e_code": 200,
@@ -1803,19 +1790,6 @@
         "blue"
       ],
       "cat": "dating"
-    },
-    {
-      "name": "DDoSecrets",
-      "uri_check": "https://search.ddosecrets.com/search?q={account}",
-      "e_code": 200,
-      "e_string": "aria-label=\"Search result pages\"",
-      "m_string": "<p>No results</p>",
-      "m_code": 200,
-      "known": [
-        "egord",
-        "Mddearing"
-      ],
-      "cat": "archived"
     },
     {
       "name": "Demotywatory",
@@ -4128,7 +4102,10 @@
         "bob",
         "blue"
       ],
-      "cat": "social"
+      "cat": "social",
+      "protection": [
+        "captcha"
+      ]
     },
     {
       "name": "ilovegrowingmarijuana",
@@ -4465,24 +4442,6 @@
         "lasior"
       ],
       "cat": "misc"
-    },
-    {
-      "name": "joinDOTA",
-      "uri_check": "https://www.joindota.com/ajax/search",
-      "uri_pretty": "https://www.joindota.com/search?m=edb_player&q={account}",
-      "post_body": "search={account}&module=edb_player&language=en",
-      "headers": {
-        "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8"
-      },
-      "e_code": 200,
-      "e_string": "\"items\":[{",
-      "m_string": "\"count\":0",
-      "m_code": 200,
-      "known": [
-        "AngryTestie",
-        "amddota2"
-      ],
-      "cat": "gaming"
     },
     {
       "name": "JSFiddle",
