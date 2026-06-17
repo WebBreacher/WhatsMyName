@@ -999,17 +999,13 @@
     {
       "name": "BongaCams",
       "uri_check": "https://bongacams.com/profile/{account}",
-      "headers": {
-        "Accept": "application/json",
-        "X-Requested-With": "XMLHttpRequest"
-      },
       "e_code": 200,
-      "e_string": "\"status\":\"success\"",
-      "m_string": "\"status\":\"redirect\"",
-      "m_code": 200,
+      "e_string": "property=\"og:url\"",
+      "m_string": "content=\"0;url=/\"",
+      "m_code": 301,
       "known": [
         "prettykatea",
-        "milaowens"
+        "sdfdsf34"
       ],
       "cat": "xx NSFW xx",
       "protection": [
@@ -8120,7 +8116,10 @@
         "gordonpn68492",
         "Alan-Liang"
       ],
-      "cat": "tech"
+      "cat": "tech",
+      "protection": [
+        "other"
+      ]
     },
     {
       "name": "Statuspage",
