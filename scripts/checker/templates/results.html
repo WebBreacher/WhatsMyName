@@ -2,17 +2,6 @@
 {% block body_attrs %}data-running="{{ 'true' if progress.running else 'false' }}"{% endblock %}
 {% block content %}
 
-{# Embed cached check data for body-view modal (populated client-side, no extra requests) #}
-{% if results %}
-<script>
-const WMN_CHECKS = {
-{% for r in results %}  {{ r.name | tojson }}: {{ r.checks | tojson }}{% if not loop.last %},
-{% endif %}
-{% endfor %}
-};
-</script>
-{% endif %}
-
 <div id="topbar">
   <h1>WhatsMyName Checker</h1>
 
@@ -72,6 +61,12 @@ const WMN_CHECKS = {
   {% endfor %}
 </div>
 
+<div id="quick-filters" style="padding:6px 12px;background:#1a1a1a;border-bottom:1px solid #2a2a2a;display:flex;align-items:center;gap:8px">
+  <span style="font-size:11px;color:#666">Quick filter:</span>
+  <button id="btn-hide-ok"   class="btn" onclick="toggleHideOk()">Hide OK</button>
+  <button id="btn-down-only" class="btn" onclick="toggleDownOnly()">Site Down Only</button>
+</div>
+
 <table id="results-table">
   <thead>
     <tr>
@@ -83,7 +78,6 @@ const WMN_CHECKS = {
       <th>m_code exp/rcvd</th>
       <th>m_string</th>
       <th>Known tested</th>
-      <th>Body</th>
       <th>Actions</th>
     </tr>
   </thead>
@@ -153,12 +147,6 @@ const WMN_CHECKS = {
     </td>
 
     <td style="white-space:nowrap">
-      {% if r.checks %}
-      <button class="btn btn-icon" title="View response body" onclick="openBodyModal({{ r.name | tojson | e }})"><i class="fa-solid fa-eye"></i></button>
-      {% endif %}
-    </td>
-
-    <td style="white-space:nowrap">
       <button class="btn btn-icon" title="Edit site" onclick="openEdit('{{ r.name | e }}')"><i class="fa-solid fa-pen"></i></button>
       <button class="btn btn-icon btn-recheck" title="Recheck site" onclick="recheckSite('{{ r.name | e }}')"><i class="fa-solid fa-rotate-right"></i></button>
       <button class="btn btn-icon" title="Delete site" style="background:#3a1a1a;color:#ef5350;border-color:#ef5350" onclick="deleteSite('{{ r.name | e }}')"><i class="fa-solid fa-trash"></i></button>
@@ -168,17 +156,6 @@ const WMN_CHECKS = {
   {% endfor %}
   </tbody>
 </table>
-
-{# ---- Body view modal (shared, populated via JS) ---- #}
-<div id="body-view-modal" class="modal-backdrop">
-  <div class="modal-box" style="max-width:900px">
-    <h2 style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px">
-      <span>Response Bodies: <span class="body-modal-title" style="color:#7ab3e0"></span></span>
-      <button class="btn" onclick="closeBodyModal()">&#x2715; Close</button>
-    </h2>
-    <div id="body-modal-content"></div>
-  </div>
-</div>
 
 {# ---- Edit modals ---- #}
 {% for r in results %}

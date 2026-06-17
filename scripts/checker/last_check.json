@@ -1,1091 +1,618 @@
 {
-  "run_started": "2026-06-17 14:29 UTC",
-  "run_completed": "2026-06-17 14:31 UTC",
-  "total": 726,
-  "total_sites": 726,
+  "run_started": "2026-06-17 14:44 UTC",
+  "run_completed": "2026-06-17 14:44 UTC",
+  "total": 25,
+  "total_sites": 725,
   "limit": null,
   "results": [
     {
       "name": "21buttons",
-      "cat": "social",
-      "uri_check": "https://peoople.app/en/influencers/{account}/",
+      "cat": "",
+      "uri_check": "",
       "uri_pretty": null,
-      "e_code": 200,
-      "e_string": "--avatar-size:100px",
-      "m_code": 404,
-      "m_string": "<title>Peoople</title>",
-      "known": [
-        "patricialmendro",
-        "carmensalva"
-      ],
-      "has_protection": false,
-      "protection": [],
-      "has_post_body": false,
-      "valid_field": null,
-      "checks": [
-        {
-          "username": "patricialmendro",
-          "username_type": "known",
-          "url": "https://peoople.app/en/influencers/patricialmendro/",
-          "method": "GET",
-          "http_code": 301,
-          "body_snippet": "/en/creator/patricialmendro/",
-          "status": "e_code_mismatch",
-          "note": "Expected HTTP 200, got 301"
-        },
-        {
-          "username": "carmensalva",
-          "username_type": "known",
-          "url": "https://peoople.app/en/influencers/carmensalva/",
-          "method": "GET",
-          "http_code": 301,
-          "body_snippet": "/en/unicorn/carmensalva/",
-          "status": "e_code_mismatch",
-          "note": "Expected HTTP 200, got 301"
-        },
-        {
-          "username": "4qogj1o8fua",
-          "username_type": "random",
-          "url": "https://peoople.app/en/influencers/4qogj1o8fua/",
-          "method": "GET",
-          "http_code": 404,
-          "body_snippet": "<!DOCTYPE html><html id=\"__next_error__\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/><link rel=\"preload\" as=\"script\" fetchPriority=\"low\" href=\"/_next/static/chunks/webpack-31d27e62c3bb1717.js\"/><script src=\"/_next/static/chunks/4bd1b696-f45617d0dd41ffc7.js\" async=\"\"></script><script src=\"/_next/static/chunks/6101-596f6418b7c1ed6e.js\" async=\"\"></script><script src=\"/_next/static/chunks/main-app-4d58617fddb9aace.js\" async=\"\"></script><meta name=\"robots\" content=\"noindex\"/><meta name=\"next-size-adjust\" content=\"\"/><meta name=\"sentry-trace\" content=\"f2b20fd83c2d9a36f157967f5d37d520-30a9acb7f94baa68-0\"/><meta name=\"baggage\" content=\"sentry-environment=production,sentry-release=v1.8.83,sentry-public_key=a24c288772c23e8d5203abbca202b973,sentry-trace_id=f2b20fd83c2d9a36f157967f5d37d520,sentry-org_id=4510952922808320,sentry-sampled=false,sentry-sample_rand=0.8405100681334228,sentry-sample_rate=0\"/><script src=\"/_next/static/chunks/polyfills-42372ed130431b0a.js\" noModule=\"\"></script></head><body><div hidden=\"\"><!--$?--><template id=\"B:0\"></template><!--/$--></div><script>requestAnimationFrame(function(){$RT=performance.now()});</script><script src=\"/_next/static/chunks/webpack-31d27e62c3bb1717.js\" id=\"_R_\" async=\"\"></script><title>People</title><meta name=\"description\" content=\"Real recommendations from real people. No algorithms, no influencers selling hype — just movies, restaurants, books and places you&#x27;ll actually love.\"/><meta name=\"robots\" content=\"index, follow\"/><meta property=\"og:title\" content=\"People\"/><meta property=\"og:description\" content=\"Real recommendations from real people. No algorithms, no influencers selling hype — just movies, restaurants, books and places you&#x27;ll actually love.\"/><meta property=\"og:url\" content=\"https://peoople.app/en/\"/><meta property=\"og:site_name\" content=\"Peoople\"/><meta property=\"og:locale\" content=\"en\"/><meta property=\"og:image:alt\" content=\"Peoople — recomendaciones r",
-          "status": "m_string_missing",
-          "note": "m_string not found in response body (HTTP 404)"
-        }
-      ],
-      "overall_status": "e_code_mismatch",
-      "checked_at": "2026-06-17 14:29 UTC"
-    },
-    {
-      "name": "247CTF",
-      "cat": "tech",
-      "uri_check": "https://247ctf.com/progress/{account}",
-      "uri_pretty": null,
-      "e_code": 200,
-      "e_string": "avatar-container d-flex",
-      "m_code": 302,
+      "e_code": 0,
+      "e_string": "",
+      "m_code": 0,
       "m_string": "",
-      "known": [
-        "pottm",
-        "jusb3"
-      ],
-      "has_protection": true,
-      "protection": [
-        "captcha",
-        "cloudflare",
-        "multiple"
-      ],
-      "has_post_body": false,
-      "valid_field": null,
-      "checks": [
-        {
-          "username": "pottm",
-          "username_type": "known",
-          "url": "https://247ctf.com/progress/pottm",
-          "method": "GET",
-          "http_code": 200,
-          "body_snippet": "<!DOCTYPE html>\n<html lang=\"en\">\n    <head>\n      <title>247CTF - pottm</title>\n        <meta charset=\"utf-8\">\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n        <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css\" integrity=\"sha512-oc9+XSs1H243/FRN9Rw62Fn8EtxjEYWHXRvjS43YtueEewbS6ObfXcJNyohjHqVKFPoXXUxwc+q1K7Dee6vv9g==\" crossorigin=\"anonymous\">\n        <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css\" integrity=\"sha512-Cv93isQdFwaKBV+Z4X8kaVBYWHST58Xb/jVOcV9aRsGSArZsgAnFIhMpDoMDcFNoUtday1hdjn0nGp3+KZyyFw==\" crossorigin=\"anonymous\">\n        \n        <link rel=\"stylesheet\" href=\"/static/css/packed.css?ed6e1e5f\">\n        <link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css?family=Overpass+Mono\" crossorigin=\"anonymous\">\n        <link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css?family=Roboto+Slab\" crossorigin=\"anonymous\">\n        <meta name=\"description\" content=\"247CTF is a security learning environment where hackers can test their abilities across a number of different Capture The Flag (CTF) challenge categories including web, cryptography, networking, reversing and exploitation.\" />\n        <meta property=\"og:type\" content=\"website\" />\n        <meta property=\"og:title\" content=\"247CTF - The game never stops\" />\n        <meta property=\"og:description\" content=\"247CTF is a security learning environment where hackers can test their abilities across a number of different Capture The Flag (CTF) challenge categories including web, cryptography, networking, reversing and exploitation.\" />\n        <meta property=\"og:url\" content=\"https://247ctf.com/\" />\n        <meta property=\"og:site_name\" content=\"247CTF\" />\n        <meta property=\"og:image\" content=\"https://247ctf.com/static/images/slogan.png\" />\n        <meta name=\"twitter:card\" content=\"summary\" />\n        <meta name=\"twitter:description\" conten",
-          "status": "ok",
-          "note": "Found: HTTP 200, e_string present"
-        },
-        {
-          "username": "jusb3",
-          "username_type": "known",
-          "url": "https://247ctf.com/progress/jusb3",
-          "method": "GET",
-          "http_code": 200,
-          "body_snippet": "<!DOCTYPE html>\n<html lang=\"en\">\n    <head>\n      <title>247CTF - jusb3</title>\n        <meta charset=\"utf-8\">\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n        <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css\" integrity=\"sha512-oc9+XSs1H243/FRN9Rw62Fn8EtxjEYWHXRvjS43YtueEewbS6ObfXcJNyohjHqVKFPoXXUxwc+q1K7Dee6vv9g==\" crossorigin=\"anonymous\">\n        <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css\" integrity=\"sha512-Cv93isQdFwaKBV+Z4X8kaVBYWHST58Xb/jVOcV9aRsGSArZsgAnFIhMpDoMDcFNoUtday1hdjn0nGp3+KZyyFw==\" crossorigin=\"anonymous\">\n        \n        <link rel=\"stylesheet\" href=\"/static/css/packed.css?ed6e1e5f\">\n        <link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css?family=Overpass+Mono\" crossorigin=\"anonymous\">\n        <link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css?family=Roboto+Slab\" crossorigin=\"anonymous\">\n        <meta name=\"description\" content=\"247CTF is a security learning environment where hackers can test their abilities across a number of different Capture The Flag (CTF) challenge categories including web, cryptography, networking, reversing and exploitation.\" />\n        <meta property=\"og:type\" content=\"website\" />\n        <meta property=\"og:title\" content=\"247CTF - The game never stops\" />\n        <meta property=\"og:description\" content=\"247CTF is a security learning environment where hackers can test their abilities across a number of different Capture The Flag (CTF) challenge categories including web, cryptography, networking, reversing and exploitation.\" />\n        <meta property=\"og:url\" content=\"https://247ctf.com/\" />\n        <meta property=\"og:site_name\" content=\"247CTF\" />\n        <meta property=\"og:image\" content=\"https://247ctf.com/static/images/slogan.png\" />\n        <meta name=\"twitter:card\" content=\"summary\" />\n        <meta name=\"twitter:description\" conten",
-          "status": "ok",
-          "note": "Found: HTTP 200, e_string present"
-        },
-        {
-          "username": "knu15meay",
-          "username_type": "random",
-          "url": "https://247ctf.com/progress/knu15meay",
-          "method": "GET",
-          "http_code": 302,
-          "body_snippet": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2 Final//EN\">\n<title>Redirecting...</title>\n<h1>Redirecting...</h1>\n<p>You should be redirected automatically to target URL: <a href=\"https://247ctf.com/dashboard\">https://247ctf.com/dashboard</a>.  If not click the link.",
-          "status": "ok",
-          "note": "Not found as expected: HTTP 302"
-        }
-      ],
-      "overall_status": "ok",
-      "checked_at": "2026-06-17 14:29 UTC"
-    },
-    {
-      "name": "about.me",
-      "cat": "social",
-      "uri_check": "https://about.me/{account}",
-      "uri_pretty": null,
-      "e_code": 200,
-      "e_string": " | about.me",
-      "m_code": 404,
-      "m_string": "<title>about.me</title>",
-      "known": [
-        "john",
-        "jill"
-      ],
+      "known": [],
       "has_protection": false,
       "protection": [],
       "has_post_body": false,
       "valid_field": null,
       "checks": [
         {
-          "username": "john",
+          "username": "",
           "username_type": "known",
-          "url": "https://about.me/john",
-          "method": "GET",
-          "http_code": 404,
-          "body_snippet": "<!doctype html><html lang=\"en\"><head><!-- Global Site Tag (gtag.js) - Google Analytics -->\n<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-LE3EMX7RDC\"></script>\n<script>\n    window.dataLayer = window.dataLayer || [];\n    function gtag(){dataLayer.push(arguments);}\n    gtag('js', new Date());\n    gtag('config', 'G-LE3EMX7RDC');\n</script>\n<title>about.me</title><meta name=\"google-signin-client_id\" content=\"828605907544-2lag7tdq7k3ebk4pvjiu45vdpggiu2k0.apps.googleusercontent.com\"/><meta name=\"HandheldFriendly\" content=\"True\"/><meta name=\"MobileOptimized\" content=\"320\"/><meta name=\"viewport\" content=\"width=device-width, minimum-scale=1\"/><meta http-equiv=\"cleartype\" content=\"on\"/><meta name=\"msapplication-TileColor\" content=\"#333333\"/><meta name=\"msapplication-TileImage\" content=\"https://about.me/s3/h/favicon/favicon_pad_310.352fbdee.png\"/><meta name=\"msapplication-square70x70logo\" content=\"https://about.me/s3/h/favicon/favicon_70.a71d3d28.png\"/><meta name=\"msapplication-square150x150logo\" content=\"https://about.me/s3/h/favicon/favicon_150.918ee2e5.png\"/><meta name=\"msapplication-wide310x150logo\" content=\"https://about.me/s3/h/favicon/favicon_wide_310.647f37e7.png\"/><meta name=\"msapplication-square310x310logo\" content=\"https://about.me/s3/h/favicon/favicon_310.4fb90897.png\"/><meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\"/><meta name=\"robots\" content=\"index\"/><link rel=\"apple-touch-icon\" href=\"https://about.me/s3/h/favicon/favicon_180.60004a0b.png\"/><link rel=\"shortcut icon\" href=\"/favicon.ico\"/><link rel=\"icon\" href=\"https://about.me/s3/h/favicon/favicon_48.0049c8b6.png\" sizes=\"48x48\"/><link rel=\"icon\" href=\"https://about.me/s3/h/favicon/favicon_192.d2899d23.png\" sizes=\"192x192\"/><link rel=\"stylesheet\" href=\"https://use.typekit.net/geu7rrs.css\"/><style type=\"text/css\">.glyph-addon:before{content:\"\\e855\"}.glyph-address:before{content:\"\\e853\"}.glyph-angle-down:before{content:\"\\e849\"}.glyph-angle-left:before{content:\"\\e82f\"}.glyph-angle",
-          "status": "blocked",
-          "note": "Bot-blocking page detected (HTTP 404)"
-        },
-        {
-          "username": "jill",
-          "username_type": "known",
-          "url": "https://about.me/jill",
-          "method": "GET",
-          "http_code": 200,
-          "body_snippet": "<!doctype html><html lang=\"en\"><head><!-- Global Site Tag (gtag.js) - Google Analytics -->\n<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-LE3EMX7RDC\"></script>\n<script>\n    window.dataLayer = window.dataLayer || [];\n    function gtag(){dataLayer.push(arguments);}\n    gtag('js', new Date());\n    gtag('config', 'G-LE3EMX7RDC');\n</script>\n<title>jill martin - the United Kingdom | about.me</title><meta name=\"google-signin-client_id\" content=\"828605907544-2lag7tdq7k3ebk4pvjiu45vdpggiu2k0.apps.googleusercontent.com\"/><meta name=\"HandheldFriendly\" content=\"True\"/><meta name=\"MobileOptimized\" content=\"320\"/><meta name=\"viewport\" content=\"width=device-width, minimum-scale=1\"/><meta http-equiv=\"cleartype\" content=\"on\"/><meta name=\"msapplication-TileColor\" content=\"#333333\"/><meta name=\"msapplication-TileImage\" content=\"https://about.me/s3/h/favicon/favicon_pad_310.352fbdee.png\"/><meta name=\"msapplication-square70x70logo\" content=\"https://about.me/s3/h/favicon/favicon_70.a71d3d28.png\"/><meta name=\"msapplication-square150x150logo\" content=\"https://about.me/s3/h/favicon/favicon_150.918ee2e5.png\"/><meta name=\"msapplication-wide310x150logo\" content=\"https://about.me/s3/h/favicon/favicon_wide_310.647f37e7.png\"/><meta name=\"msapplication-square310x310logo\" content=\"https://about.me/s3/h/favicon/favicon_310.4fb90897.png\"/><meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\"/><meta name=\"robots\" content=\"index\"/><meta name=\"description\" content=\"I am a web developer and public speaker in the United Kingdom. Visit my store.\"/><meta name=\"keywords\" content=\"reading, food, fitness, yoga, shopping\"/><meta name=\"author\" content=\"jill martin\"/><meta property=\"og:site_name\" content=\"about.me\"/><meta property=\"og:locale\" content=\"en_US\"/><meta property=\"og:url\" content=\"https://about.me/jill\"/><meta property=\"og:title\" content=\"jill martin on about.me\"/><meta property=\"og:description\" content=\"I am a web developer and public speaker in the United Kingdom. Visit",
-          "status": "ok",
-          "note": "Found: HTTP 200, e_string present"
-        },
-        {
-          "username": "sl5ifq33ypvg",
-          "username_type": "random",
-          "url": "https://about.me/sl5ifq33ypvg",
-          "method": "GET",
-          "http_code": 404,
-          "body_snippet": "<!doctype html><html lang=\"en\"><head><!-- Global Site Tag (gtag.js) - Google Analytics -->\n<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-LE3EMX7RDC\"></script>\n<script>\n    window.dataLayer = window.dataLayer || [];\n    function gtag(){dataLayer.push(arguments);}\n    gtag('js', new Date());\n    gtag('config', 'G-LE3EMX7RDC');\n</script>\n<title>about.me</title><meta name=\"google-signin-client_id\" content=\"828605907544-2lag7tdq7k3ebk4pvjiu45vdpggiu2k0.apps.googleusercontent.com\"/><meta name=\"HandheldFriendly\" content=\"True\"/><meta name=\"MobileOptimized\" content=\"320\"/><meta name=\"viewport\" content=\"width=device-width, minimum-scale=1\"/><meta http-equiv=\"cleartype\" content=\"on\"/><meta name=\"msapplication-TileColor\" content=\"#333333\"/><meta name=\"msapplication-TileImage\" content=\"https://about.me/s3/h/favicon/favicon_pad_310.352fbdee.png\"/><meta name=\"msapplication-square70x70logo\" content=\"https://about.me/s3/h/favicon/favicon_70.a71d3d28.png\"/><meta name=\"msapplication-square150x150logo\" content=\"https://about.me/s3/h/favicon/favicon_150.918ee2e5.png\"/><meta name=\"msapplication-wide310x150logo\" content=\"https://about.me/s3/h/favicon/favicon_wide_310.647f37e7.png\"/><meta name=\"msapplication-square310x310logo\" content=\"https://about.me/s3/h/favicon/favicon_310.4fb90897.png\"/><meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\"/><meta name=\"robots\" content=\"index\"/><link rel=\"apple-touch-icon\" href=\"https://about.me/s3/h/favicon/favicon_180.60004a0b.png\"/><link rel=\"shortcut icon\" href=\"/favicon.ico\"/><link rel=\"icon\" href=\"https://about.me/s3/h/favicon/favicon_48.0049c8b6.png\" sizes=\"48x48\"/><link rel=\"icon\" href=\"https://about.me/s3/h/favicon/favicon_192.d2899d23.png\" sizes=\"192x192\"/><link rel=\"stylesheet\" href=\"https://use.typekit.net/geu7rrs.css\"/><style type=\"text/css\">.glyph-addon:before{content:\"\\e855\"}.glyph-address:before{content:\"\\e853\"}.glyph-angle-down:before{content:\"\\e849\"}.glyph-angle-left:before{content:\"\\e82f\"}.glyph-angle",
-          "status": "ok",
-          "note": "Not found as expected: HTTP 404"
-        }
-      ],
-      "overall_status": "ok",
-      "checked_at": "2026-06-17 14:29 UTC"
-    },
-    {
-      "name": "7dach",
-      "cat": "social",
-      "uri_check": "https://7dach.ru/profile/{account}",
-      "uri_pretty": null,
-      "e_code": 200,
-      "e_string": "Информация / Профиль",
-      "m_code": 404,
-      "m_string": "<title>Ошибка / 7dach.ru",
-      "known": [
-        "lana",
-        "svetlana"
-      ],
-      "has_protection": false,
-      "protection": [],
-      "has_post_body": false,
-      "valid_field": null,
-      "checks": [
-        {
-          "username": "lana",
-          "username_type": "known",
-          "url": "https://7dach.ru/profile/lana",
-          "method": "GET",
-          "http_code": 200,
-          "body_snippet": "<!doctype html>\n<html class=\"no-js\" lang=\"ru\">\n<head>\n\t\n\t<meta charset=\"utf-8\"/>\n\t<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"/>\n\t\t\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n\t\t\t<meta HTTP-EQUIV=\"Access-Control-Allow-Origin\" CONTENT=\"https://relap.io\">\n\t\t\t<meta property=\"og:type\" content=\"website\" />\n\t\t<meta property=\"og:image\" content=\"https://7dach.ru/media/logo-green-1024x1024.png\"/>\n\t\t<meta property=\"og:image:width\" content=\"692\"/><meta property=\"og:image:height\" content=\"692\"/>\n\t\n\t\t\t\t\t\n\t\t<script>window.yaContextCb = window.yaContextCb || []</script>\n\t\t<script src=\"https://yandex.ru/ads/system/context.js\" async></script>\n\n\t\t<!--AdFox START-->\n\t\t<!--7dachru-->\n\t\t<!--Площадка: 7dach.ru / * / *-->\n\t\t<!--Тип баннера: Fullscreen-->\n\t\t<!--Расположение: верх страницы-->\n\t\t<div id=\"adfox_1734624491891295\"></div>\n\t\t<script>\n\t\t\twindow.yaContextCb.push(()=>{\n\t\t\t\tYa.adfoxCode.create({\n\t\t\t\t\townerId: 277363,\n\t\t\t\t\tcontainerId: 'adfox_1734624491891295',\n\t\t\t\t\ttype: 'fullscreen',\n\t\t\t\t\tplatform: 'touch',\n\t\t\t\t\tparams: {\n\t\t\t\t\t\tpp: 'g',\n\t\t\t\t\t\tps: 'czqr',\n\t\t\t\t\t\tp2: 'gkja'\n\t\t\t\t\t}\n\t\t\t\t})\n\t\t\t})\n\t\t</script>\n\t\n\t<meta name=\"description\" content=\"Клуб любителей дачи 7dach.ru - сообщество садоводов, огородников и любителей отдохнуть на даче.\"/>\n\t<meta property=\"og:title\" content=\"Информация / Профиль LANA / 7dach.ru\"/>\n\t<meta property=\"fb:app_id\" content=\"158275640990620\"/>\n\t<meta property=\"fb:pages\" content=\"145846922251311\" />\n\t<meta name=\"p:domain_verify\" content=\"33d44a426fa435063e6ea79397d278a8\"/>\n\t<link rel=\"manifest\" href=\"/manifest.json\">\n\t<meta name=\"theme-color\" content=\"#439d48\">\n\t<title>Информация / Профиль LANA / 7dach.ru</title>\n\n\t\t\t<link href=\"https://7dach.ru/templates/skin/banana/images/favicon.ico?v=5\" rel=\"shortcut icon\" />\n\t\n\t<link rel=\"search\" type=\"application/opensearchdescription+xml\" href=\"https://7dach.ru/search/opensearch/\" title=\"7dach.ru\" />\n\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\t\t\t\t\n\t\n\n\t\t\n\t\t<script type=\"text/javascript\">!function(){var t=document",
-          "status": "ok",
-          "note": "Found: HTTP 200, e_string present"
-        },
-        {
-          "username": "svetlana",
-          "username_type": "known",
-          "url": "https://7dach.ru/profile/svetlana",
-          "method": "GET",
-          "http_code": 200,
-          "body_snippet": "<!doctype html>\n<html class=\"no-js\" lang=\"ru\">\n<head>\n\t\n\t<meta charset=\"utf-8\"/>\n\t<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"/>\n\t\t\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n\t\t\t<meta HTTP-EQUIV=\"Access-Control-Allow-Origin\" CONTENT=\"https://relap.io\">\n\t\t\t<meta property=\"og:type\" content=\"website\" />\n\t\t<meta property=\"og:image\" content=\"https://7dach.ru/media/logo-green-1024x1024.png\"/>\n\t\t<meta property=\"og:image:width\" content=\"692\"/><meta property=\"og:image:height\" content=\"692\"/>\n\t\n\t\t\t\t\t\n\t\t<script>window.yaContextCb = window.yaContextCb || []</script>\n\t\t<script src=\"https://yandex.ru/ads/system/context.js\" async></script>\n\n\t\t<!--AdFox START-->\n\t\t<!--7dachru-->\n\t\t<!--Площадка: 7dach.ru / * / *-->\n\t\t<!--Тип баннера: Fullscreen-->\n\t\t<!--Расположение: верх страницы-->\n\t\t<div id=\"adfox_1734624491891295\"></div>\n\t\t<script>\n\t\t\twindow.yaContextCb.push(()=>{\n\t\t\t\tYa.adfoxCode.create({\n\t\t\t\t\townerId: 277363,\n\t\t\t\t\tcontainerId: 'adfox_1734624491891295',\n\t\t\t\t\ttype: 'fullscreen',\n\t\t\t\t\tplatform: 'touch',\n\t\t\t\t\tparams: {\n\t\t\t\t\t\tpp: 'g',\n\t\t\t\t\t\tps: 'czqr',\n\t\t\t\t\t\tp2: 'gkja'\n\t\t\t\t\t}\n\t\t\t\t})\n\t\t\t})\n\t\t</script>\n\t\n\t<meta name=\"description\" content=\"Клуб любителей дачи 7dach.ru - сообщество садоводов, огородников и любителей отдохнуть на даче.\"/>\n\t<meta property=\"og:title\" content=\"Информация / Профиль Svetlana / 7dach.ru\"/>\n\t<meta property=\"fb:app_id\" content=\"158275640990620\"/>\n\t<meta property=\"fb:pages\" content=\"145846922251311\" />\n\t<meta name=\"p:domain_verify\" content=\"33d44a426fa435063e6ea79397d278a8\"/>\n\t<link rel=\"manifest\" href=\"/manifest.json\">\n\t<meta name=\"theme-color\" content=\"#439d48\">\n\t<title>Информация / Профиль Svetlana / 7dach.ru</title>\n\n\t\t\t<link href=\"https://7dach.ru/templates/skin/banana/images/favicon.ico?v=5\" rel=\"shortcut icon\" />\n\t\n\t<link rel=\"search\" type=\"application/opensearchdescription+xml\" href=\"https://7dach.ru/search/opensearch/\" title=\"7dach.ru\" />\n\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\t\t\t\t\n\t\n\n\t\t\n\t\t<script type=\"text/javascript\">!function(){var t=",
-          "status": "ok",
-          "note": "Found: HTTP 200, e_string present"
-        },
-        {
-          "username": "pmhr9ziwv",
-          "username_type": "random",
-          "url": "https://7dach.ru/profile/pmhr9ziwv",
-          "method": "GET",
-          "http_code": 404,
-          "body_snippet": "<!doctype html>\n<html class=\"no-js\" lang=\"ru\">\n<head>\n\t\n\t<meta charset=\"utf-8\"/>\n\t<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"/>\n\t\t\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n\t\t\t<meta HTTP-EQUIV=\"Access-Control-Allow-Origin\" CONTENT=\"https://relap.io\">\n\t\t\t<meta property=\"og:type\" content=\"website\" />\n\t\t<meta property=\"og:image\" content=\"https://7dach.ru/media/logo-green-1024x1024.png\"/>\n\t\t<meta property=\"og:image:width\" content=\"692\"/><meta property=\"og:image:height\" content=\"692\"/>\n\t\n\t\t\t\t\t\n\t\t<script>window.yaContextCb = window.yaContextCb || []</script>\n\t\t<script src=\"https://yandex.ru/ads/system/context.js\" async></script>\n\n\t\t<!--AdFox START-->\n\t\t<!--7dachru-->\n\t\t<!--Площадка: 7dach.ru / * / *-->\n\t\t<!--Тип баннера: Fullscreen-->\n\t\t<!--Расположение: верх страницы-->\n\t\t<div id=\"adfox_1734624491891295\"></div>\n\t\t<script>\n\t\t\twindow.yaContextCb.push(()=>{\n\t\t\t\tYa.adfoxCode.create({\n\t\t\t\t\townerId: 277363,\n\t\t\t\t\tcontainerId: 'adfox_1734624491891295',\n\t\t\t\t\ttype: 'fullscreen',\n\t\t\t\t\tplatform: 'touch',\n\t\t\t\t\tparams: {\n\t\t\t\t\t\tpp: 'g',\n\t\t\t\t\t\tps: 'czqr',\n\t\t\t\t\t\tp2: 'gkja'\n\t\t\t\t\t}\n\t\t\t\t})\n\t\t\t})\n\t\t</script>\n\t\n\t<meta name=\"description\" content=\"Клуб любителей дачи 7dach.ru - сообщество садоводов, огородников и любителей отдохнуть на даче.\"/>\n\t<meta property=\"og:title\" content=\"Ошибка / 7dach.ru\"/>\n\t<meta property=\"fb:app_id\" content=\"158275640990620\"/>\n\t<meta property=\"fb:pages\" content=\"145846922251311\" />\n\t<meta name=\"p:domain_verify\" content=\"33d44a426fa435063e6ea79397d278a8\"/>\n\t<link rel=\"manifest\" href=\"/manifest.json\">\n\t<meta name=\"theme-color\" content=\"#439d48\">\n\t<title>Ошибка / 7dach.ru</title>\n\n\t\t\t<link href=\"https://7dach.ru/templates/skin/banana/images/favicon.ico?v=5\" rel=\"shortcut icon\" />\n\t\n\t<link rel=\"search\" type=\"application/opensearchdescription+xml\" href=\"https://7dach.ru/search/opensearch/\" title=\"7dach.ru\" />\n\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\t\t\t\t\n\t\n\n\t\t\n\t\t<script type=\"text/javascript\">!function(){var t=document.createElement(\"script\");t.type=\"text/",
-          "status": "ok",
-          "note": "Not found as expected: HTTP 404"
-        }
-      ],
-      "overall_status": "ok",
-      "checked_at": "2026-06-17 14:29 UTC"
-    },
-    {
-      "name": "35photo",
-      "cat": "hobby",
-      "uri_check": "https://35photo.pro/@{account}/",
-      "uri_pretty": null,
-      "e_code": 200,
-      "e_string": "userNameBlock",
-      "m_code": 302,
-      "m_string": "",
-      "known": [
-        "mike007",
-        "derbal"
-      ],
-      "has_protection": false,
-      "protection": [],
-      "has_post_body": false,
-      "valid_field": null,
-      "checks": [
-        {
-          "username": "mike007",
-          "username_type": "known",
-          "url": "https://35photo.pro/@mike007/",
-          "method": "GET",
-          "http_code": 200,
-          "body_snippet": "<!DOCTYPE html><html lang=\"en\"><head><link rel=\"preconnect\" href=\"https://c1.35photo.pro/\"><link rel=\"dns-prefetch\" href=\"https://c1.35photo.pro/\"><link rel=\"alternate\" hreflang=\"en\" href=\"https://35photo.pro/mike007/\" /><link rel=\"alternate\" hreflang=\"ru\" href=\"https://35photo.ru/mike007/\" /><link rel=\"alternate\" hreflang=\"x-default\" href=\"https://35photo.pro/mike007/\" /><link rel=\"canonical\" href=\"https://35photo.pro/mike007/\" /><link rel=\"apple-touch-icon\" sizes=\"512x512\" href=\"https://c1.35photo.pro/files/512x512.png\"><link rel=\"icon\" sizes=\"72x72\" type=\"image/png\" href=\"https://c1.35photo.pro/favicon.png\"><link rel=\"icon\" sizes=\"512x512\" href=\"https://c1.35photo.pro/files/512x512.png\"><meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\" /><meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\" /><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"><link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css\" integrity=\"sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu\" crossorigin=\"anonymous\"><link href=\"https://c1.35photo.pro/files/main.css?ver=13\" rel=\"stylesheet\"><link href=\"https://c1.35photo.pro/files/css/font-awesome/4.7.0/css/font-awesome.min.css\" rel=\"stylesheet\"><link href=\"https://c1.35photo.pro/files/css/animate.min.css\" rel=\"stylesheet\"><link rel=\"alternate\" type=\"application/rss+xml\" title=\"\" href=\"https://35photo.pro/rss/user_311771.xml\"><meta name=\"robots\" content=\"noindex,follow\" /><meta http-equiv=\"content-language\" content=\"en\" /><meta name=\"description\" content=\"Photographer mike. From country Poland. City Bytom. \" /><meta name=\"yandex-verification\" content=\"97e551f261e9e30e\" /><meta name=\"apple-itunes-app\" content=\"app-id=1619956280app-argument=thirtyfivephoto://?user_id=311771\" /><meta property=\"og:image\" content=\"https://35photo.pro/profile/photos/62/311771_bg.jpg\" /><style>.profileTape.grid{visibility:hidden;}</style><style>\n            .autho",
-          "status": "ok",
-          "note": "Found: HTTP 200, e_string present"
-        },
-        {
-          "username": "derbal",
-          "username_type": "known",
-          "url": "https://35photo.pro/@derbal/",
-          "method": "GET",
-          "http_code": 200,
-          "body_snippet": "<!DOCTYPE html><html lang=\"en\"><head><link rel=\"preconnect\" href=\"https://c1.35photo.pro/\"><link rel=\"dns-prefetch\" href=\"https://c1.35photo.pro/\"><link rel=\"alternate\" hreflang=\"en\" href=\"https://35photo.pro/derbal/\" /><link rel=\"alternate\" hreflang=\"ru\" href=\"https://35photo.ru/derbal/\" /><link rel=\"alternate\" hreflang=\"x-default\" href=\"https://35photo.pro/derbal/\" /><link rel=\"canonical\" href=\"https://35photo.pro/derbal/\" /><link rel=\"apple-touch-icon\" sizes=\"512x512\" href=\"https://c1.35photo.pro/files/512x512.png\"><link rel=\"icon\" sizes=\"72x72\" type=\"image/png\" href=\"https://c1.35photo.pro/favicon.png\"><link rel=\"icon\" sizes=\"512x512\" href=\"https://c1.35photo.pro/files/512x512.png\"><meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\" /><meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\" /><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"><link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css\" integrity=\"sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu\" crossorigin=\"anonymous\"><link href=\"https://c1.35photo.pro/files/main.css?ver=13\" rel=\"stylesheet\"><link href=\"https://c1.35photo.pro/files/css/font-awesome/4.7.0/css/font-awesome.min.css\" rel=\"stylesheet\"><link href=\"https://c1.35photo.pro/files/css/animate.min.css\" rel=\"stylesheet\"><link rel=\"alternate\" type=\"application/rss+xml\" title=\"\" href=\"https://35photo.pro/rss/user_363138.xml\"><meta name=\"robots\" content=\"noindex,follow\" /><meta http-equiv=\"content-language\" content=\"en\" /><meta name=\"description\" content=\"Photographer DERBAL WALID LOTFI. From country Algeria. City Blida. \" /><meta name=\"yandex-verification\" content=\"97e551f261e9e30e\" /><meta name=\"apple-itunes-app\" content=\"app-id=1619956280app-argument=thirtyfivephoto://?user_id=363138\" /><meta property=\"og:image\" content=\"https://35photo.pro/profile/photos/72/363138_bg.jpg\" /><style>.profileTape.grid{visibility:hidden;}</style><style>\n       ",
-          "status": "ok",
-          "note": "Found: HTTP 200, e_string present"
-        },
-        {
-          "username": "sfdif37b8n",
-          "username_type": "random",
-          "url": "https://35photo.pro/@sfdif37b8n/",
-          "method": "GET",
-          "http_code": 302,
-          "body_snippet": "",
-          "status": "ok",
-          "note": "Not found as expected: HTTP 302"
-        }
-      ],
-      "overall_status": "ok",
-      "checked_at": "2026-06-17 14:29 UTC"
-    },
-    {
-      "name": "247sports",
-      "cat": "hobby",
-      "uri_check": "https://247sports.com/User/{account}/",
-      "uri_pretty": null,
-      "e_code": 200,
-      "e_string": "staff-header-container",
-      "m_code": 404,
-      "m_string": "<title>247Sports</title>",
-      "known": [
-        "Travis Branham",
-        "BlairAngulo"
-      ],
-      "has_protection": true,
-      "protection": [
-        "other"
-      ],
-      "has_post_body": false,
-      "valid_field": null,
-      "checks": [
-        {
-          "username": "Travis Branham",
-          "username_type": "known",
-          "url": "https://247sports.com/User/Travis Branham/",
-          "method": "GET",
-          "http_code": 200,
-          "body_snippet": "\n        <!DOCTYPE html>\n        <html lang=\"en\">\n            <head>\n        <title data-rh=\"true\">Travis Branham | 247Sports</title>\n        <meta data-rh=\"true\" charset=\"utf-8\"/><meta data-rh=\"true\" http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\"/><meta data-rh=\"true\" name=\"viewport\" content=\"width=device-width, initial-scale=1\"/><meta data-rh=\"true\" property=\"fb:app_id\" content=\"1523983947844395\"/><meta data-rh=\"true\" property=\"og:type\" content=\"website\"/><meta data-rh=\"true\" name=\"robots\" content=\"max-image-preview:large\"/><meta data-rh=\"true\" name=\"description\" property=\"description\" content=\"Travis Branham - 247Sports Basketball Analyst - 247Sports\"/><meta data-rh=\"true\" property=\"og:title\" content=\"Travis Branham\"/><meta data-rh=\"true\" property=\"og:description\" content=\"Travis Branham - 247Sports Basketball Analyst - 247Sports\"/><meta data-rh=\"true\" property=\"og:image\" content=\"https://s3media.247sports.com/Uploads/Assets/367/779/11779367.jpeg?width=1200&amp;height=628&amp;crop=1.91:1&amp;fit=cover\"/><meta data-rh=\"true\" property=\"og:image:width\" content=\"1200\"/><meta data-rh=\"true\" property=\"og:image:height\" content=\"628\"/><meta data-rh=\"true\" property=\"og:url\" content=\"https://247sports.com/user/travis%20branham/\"/><meta data-rh=\"true\" property=\"og:site_name\" content=\"247Sports\"/><meta data-rh=\"true\" property=\"og:fb:app_id\" content=\"1523983947844395\"/><meta data-rh=\"true\" property=\"og:article:opinion\" content=\"false\"/><meta data-rh=\"true\" name=\"twitter:card\" content=\"summary_large_image\"/><meta data-rh=\"true\" name=\"twitter:title\" content=\"Travis Branham 247Sports\"/><meta data-rh=\"true\" name=\"twitter:image\" content=\"https://s3media.247sports.com/Uploads/Assets/367/779/11779367.jpeg?width=1200&amp;height=600&amp;crop=2:1&amp;fit=cover\"/><meta data-rh=\"true\" name=\"twitter:description\" content=\"Travis Branham - 247Sports Basketball Analyst - 247Sports\"/><meta data-rh=\"true\" name=\"twitter:site\" content=\"@247Sports\"/><meta data-rh=\"true\" name=\"twitter:url",
-          "status": "ok",
-          "note": "Found: HTTP 200, e_string present"
-        },
-        {
-          "username": "BlairAngulo",
-          "username_type": "known",
-          "url": "https://247sports.com/User/BlairAngulo/",
-          "method": "GET",
-          "http_code": 200,
-          "body_snippet": "\n        <!DOCTYPE html>\n        <html lang=\"en\">\n            <head>\n        <title data-rh=\"true\">Blair Angulo | 247Sports</title>\n        <meta data-rh=\"true\" charset=\"utf-8\"/><meta data-rh=\"true\" http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\"/><meta data-rh=\"true\" name=\"viewport\" content=\"width=device-width, initial-scale=1\"/><meta data-rh=\"true\" property=\"fb:app_id\" content=\"1523983947844395\"/><meta data-rh=\"true\" property=\"og:type\" content=\"website\"/><meta data-rh=\"true\" name=\"robots\" content=\"max-image-preview:large\"/><meta data-rh=\"true\" name=\"description\" property=\"description\" content=\"Blair Angulo - Mountain Region Recruiting Analyst - 247Sports\"/><meta data-rh=\"true\" property=\"og:title\" content=\"Blair Angulo\"/><meta data-rh=\"true\" property=\"og:description\" content=\"College Football Recruiting Analyst, covering the West region.\n\"/><meta data-rh=\"true\" property=\"og:image\" content=\"https://s3media.247sports.com/Uploads/Assets/449/611/8611449.jpg?width=1200&amp;height=628&amp;crop=1.91:1&amp;fit=cover\"/><meta data-rh=\"true\" property=\"og:image:width\" content=\"1200\"/><meta data-rh=\"true\" property=\"og:image:height\" content=\"628\"/><meta data-rh=\"true\" property=\"og:url\" content=\"https://247sports.com/user/blairangulo/\"/><meta data-rh=\"true\" property=\"og:site_name\" content=\"247Sports\"/><meta data-rh=\"true\" property=\"og:fb:app_id\" content=\"1523983947844395\"/><meta data-rh=\"true\" property=\"og:article:opinion\" content=\"false\"/><meta data-rh=\"true\" name=\"twitter:card\" content=\"summary_large_image\"/><meta data-rh=\"true\" name=\"twitter:title\" content=\"Blair Angulo 247Sports\"/><meta data-rh=\"true\" name=\"twitter:image\" content=\"https://s3media.247sports.com/Uploads/Assets/449/611/8611449.jpg?width=1200&amp;height=600&amp;crop=2:1&amp;fit=cover\"/><meta data-rh=\"true\" name=\"twitter:description\" content=\"Blair Angulo - Mountain Region Recruiting Analyst - 247Sports\"/><meta data-rh=\"true\" name=\"twitter:site\" content=\"@247Sports\"/><meta data-rh=\"true\" name=\"twitter:url\"",
-          "status": "ok",
-          "note": "Found: HTTP 200, e_string present"
-        },
-        {
-          "username": "os3nkdj5r",
-          "username_type": "random",
-          "url": "https://247sports.com/User/os3nkdj5r/",
-          "method": "GET",
-          "http_code": 404,
-          "body_snippet": "\n        <!DOCTYPE html>\n<html>\n    <head>\n        <title>247Sports</title>\n        <meta charset=\"utf-8\" />\n        <link type=\"text/css\" href=\"https://assets.247sports.com/Content/SkyNet/Styles/shared/style.css\" rel=\"stylesheet\" media=\"screen\" />\n        <link type=\"text/css\" href=\"https://assets.247sports.com/Content/SkyNet/Styles/shared/global.css\" rel=\"stylesheet\" media=\"screen\" />\n        <link type=\"text/css\" href=\"https://assets.247sports.com/Content/SkyNet/Styles/shared/site.css\" rel=\"stylesheet\" media=\"screen\" />\n        <link type=\"text/css\" href=\"https://assets.247sports.com/Content/247Sports/Styles/main/site.css\" rel=\"stylesheet\" media=\"screen\" />\n        <link type=\"text/css\" href=\"https://assets.247sports.com/Content/SkyNet/Styles/main/layout.css\" rel=\"stylesheet\" media=\"screen\" />\n        <link type=\"text/css\" href=\"https://assets.247sports.com/Content/SkyNet/Styles/Bundle/menu.bundle.css\" rel=\"stylesheet\" media=\"screen\" />\n        <meta data-rh=\"true\" name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n        <meta http-equiv=\"Cache-Control\" content=\"no-cache, no-store, must-revalidate\" />\n        <meta http-equiv=\"Pragma\" content=\"no-cache\" />\n        <meta http-equiv=\"Expires\" content=\"0\" />\n        <style type=\"text/css\" media=\"all\">\n            .header-wrapper { background-color: #005695; }\n        </style>\n\n        <!--[if lt IE 9]>\n            <link type=\"text/css\" href=\"https://assets.247sports.com/Content/SkyNet/Styles/ie.css\" rel=\"stylesheet\" media=\"screen\" />\n            <script src=\"https://assets.247sports.com/Scripts/SkyNet/Shared/html5.js\"></script>\n        <![endif]-->\n    </head>\n    <body>\n        <section class=\"main-wrapper\">\n            <header class=\"topnav\">\n    <div class=\"network-bar clearfix\" id=\"networkBar\">\n        <div class=\"network-block\">\n            <ul class=\"network-bar-list h_lst\">\n                <li><a href=\"https://247sports.com/League/NCAA-FB/Teams/\" title=\"NCAAF Teams\">Teams</a></li>\n              ",
-          "status": "ok",
-          "note": "Not found as expected: HTTP 404"
-        }
-      ],
-      "overall_status": "ok",
-      "checked_at": "2026-06-17 14:29 UTC"
-    },
-    {
-      "name": "3dtoday",
-      "cat": "hobby",
-      "uri_check": "https://3dtoday.ru/blogs/{account}",
-      "uri_pretty": null,
-      "e_code": 200,
-      "e_string": "Блог владельца 3d-принтера",
-      "m_code": 302,
-      "m_string": "404 Not Found",
-      "known": [
-        "sergei",
-        "vlad"
-      ],
-      "has_protection": false,
-      "protection": [],
-      "has_post_body": false,
-      "valid_field": null,
-      "checks": [
-        {
-          "username": "sergei",
-          "username_type": "known",
-          "url": "https://3dtoday.ru/blogs/sergei",
-          "method": "GET",
-          "http_code": 200,
-          "body_snippet": "<!DOCTYPE html>\n<html>\n<head>\n    <meta charset=\"utf-8\"/>\n    <title>Блог владельца 3d-принтера sergei: на каком 3d-принтере печатает, модели распечатанные sergei</title>\n    <meta name=\"viewport\" content=\"width=device-width\">\n        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n    <meta name=\"robots\" content=\"index, follow\" />\n    <meta name=\"description\" content=\"Узнайте больше о 3D-принтерах, 3D-сканерах, 3D-ручках и 3D-моделях. Наблюдайте с нами, как 3D-технологии меняют мир.\" />\n    <meta name=\"keywords\" content=\"\" />\n    <meta name=\"csrf-token\" content=\"5yWJ4XeJfFwq3P3k5zGbNwJhf4c5ACXff4ZiqGBq\" />\n    <meta name=\"google-site-verification\" content=\"jrW4K9d7d4PHb7TNlNBUR4b30FdVhirmV49bOn782Yc\" />\n    <meta name=\"yandex-verification\" content=\"729c628ccf7fc176\" />\n    <meta name=\"mailru-verification\" content=\"ec7c9dc728077f93\" />\n\n    <link href=\"https://3dtoday.ru/css/main.css?id=7g27438g3q0832e\" type=\"text/css\"  rel=\"stylesheet\" />\n    <!-- temporary -->\n    <link rel=\"stylesheet\" href=\"https://3dtoday.ru/css/banners.css\" as=\"style\" type=\"text/css\" />\n\n        <link type=\"text/css\" rel=\"stylesheet\" href=\"https://3dtoday.ru/css/events.css\" />\n\n    <meta property=\"og:title\" content=\"Блог владельца 3d-принтера sergei: на каком 3d-принтере печатает, модели распечатанные sergei\" />\n    <meta property=\"og:image\" content=\"https://3dtoday.ru/img/posts/og.png\"/>\n    <meta property=\"og:type\" content=\"main\" />\n    <meta property=\"og:url\" content=\"https://3dtoday.ru/blogs/sergei\" />\n    <meta property=\"og:description\" content=\"Узнайте больше о 3D-принтерах, 3D-сканерах, 3D-ручках и 3D-моделях. Наблюдайте с нами, как 3D-технологии меняют мир.\" />\n\n    <link href=\"https://3dtoday.ru/css/overwrite.css\" type=\"text/css\"  rel=\"stylesheet\" />\n    <script type=\"text/javascript\" src=\"https://3dtoday.ru/js/jquery-3.3.1.min.js\"></script>\n\n        <script type=\"text/javascript\" src=\"https://3dtoday.ru/js/jquery-ui.js\"></script>\n    <link href=\"https://3dtoday.",
-          "status": "ok",
-          "note": "Found: HTTP 200, e_string present"
-        },
-        {
-          "username": "vlad",
-          "username_type": "known",
-          "url": "https://3dtoday.ru/blogs/vlad",
-          "method": "GET",
-          "http_code": 200,
-          "body_snippet": "<!DOCTYPE html>\n<html>\n<head>\n    <meta charset=\"utf-8\"/>\n    <title>Блог владельца 3d-принтера --ВЛАД--: на каком 3d-принтере печатает, модели распечатанные --ВЛАД--</title>\n    <meta name=\"viewport\" content=\"width=device-width\">\n        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n    <meta name=\"robots\" content=\"index, follow\" />\n    <meta name=\"description\" content=\"Узнайте больше о 3D-принтерах, 3D-сканерах, 3D-ручках и 3D-моделях. Наблюдайте с нами, как 3D-технологии меняют мир.\" />\n    <meta name=\"keywords\" content=\"\" />\n    <meta name=\"csrf-token\" content=\"5yWJ4XeJfFwq3P3k5zGbNwJhf4c5ACXff4ZiqGBq\" />\n    <meta name=\"google-site-verification\" content=\"jrW4K9d7d4PHb7TNlNBUR4b30FdVhirmV49bOn782Yc\" />\n    <meta name=\"yandex-verification\" content=\"729c628ccf7fc176\" />\n    <meta name=\"mailru-verification\" content=\"ec7c9dc728077f93\" />\n\n    <link href=\"https://3dtoday.ru/css/main.css?id=7g27438g3q0832e\" type=\"text/css\"  rel=\"stylesheet\" />\n    <!-- temporary -->\n    <link rel=\"stylesheet\" href=\"https://3dtoday.ru/css/banners.css\" as=\"style\" type=\"text/css\" />\n\n        <link type=\"text/css\" rel=\"stylesheet\" href=\"https://3dtoday.ru/css/events.css\" />\n\n    <meta property=\"og:title\" content=\"Блог владельца 3d-принтера --ВЛАД--: на каком 3d-принтере печатает, модели распечатанные --ВЛАД--\" />\n    <meta property=\"og:image\" content=\"https://3dtoday.ru/img/posts/og.png\"/>\n    <meta property=\"og:type\" content=\"main\" />\n    <meta property=\"og:url\" content=\"https://3dtoday.ru/blogs/vlad\" />\n    <meta property=\"og:description\" content=\"Узнайте больше о 3D-принтерах, 3D-сканерах, 3D-ручках и 3D-моделях. Наблюдайте с нами, как 3D-технологии меняют мир.\" />\n\n    <link href=\"https://3dtoday.ru/css/overwrite.css\" type=\"text/css\"  rel=\"stylesheet\" />\n    <script type=\"text/javascript\" src=\"https://3dtoday.ru/js/jquery-3.3.1.min.js\"></script>\n\n        <script type=\"text/javascript\" src=\"https://3dtoday.ru/js/jquery-ui.js\"></script>\n    <link href=\"https://3d",
-          "status": "ok",
-          "note": "Found: HTTP 200, e_string present"
-        },
-        {
-          "username": "rge9blab",
-          "username_type": "random",
-          "url": "https://3dtoday.ru/blogs/rge9blab",
-          "method": "GET",
-          "http_code": 302,
-          "body_snippet": "<!DOCTYPE html>\n<html>\n    <head>\n        <meta charset=\"UTF-8\" />\n        <meta http-equiv=\"refresh\" content=\"0;url='https://3dtoday.ru/404'\" />\n\n        <title>Redirecting to https://3dtoday.ru/404</title>\n    </head>\n    <body>\n        Redirecting to <a href=\"https://3dtoday.ru/404\">https://3dtoday.ru/404</a>.\n    </body>\n</html>",
-          "status": "m_string_missing",
-          "note": "m_string not found in response body (HTTP 302)"
-        }
-      ],
-      "overall_status": "m_string_missing",
-      "checked_at": "2026-06-17 14:29 UTC"
-    },
-    {
-      "name": "AdmireMe.VIP",
-      "cat": "xx NSFW xx",
-      "uri_check": "https://admireme.vip/{account}/",
-      "uri_pretty": null,
-      "e_code": 200,
-      "e_string": "creator-stat subscriber",
-      "m_code": 404,
-      "m_string": "<title>Page Not Found |",
-      "known": [
-        "justjessicarabbit",
-        "savannah250xo"
-      ],
-      "has_protection": false,
-      "protection": [],
-      "has_post_body": false,
-      "valid_field": null,
-      "checks": [
-        {
-          "username": "justjessicarabbit",
-          "username_type": "known",
-          "url": "https://admireme.vip/justjessicarabbit/",
-          "method": "GET",
-          "http_code": 200,
-          "body_snippet": "\n<!DOCTYPE html>\n<html>\n<head>\n    <meta charset=\"utf-8\" />\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <meta name=\"apple-mobile-web-app-title\" content=\"AdmireMe.VIP\">\n    <meta name=\"application-name\" content=\"AdmireMe.VIP\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1,user-scalable=0\"/>\n    <meta name=\"msapplication-TileColor\" content=\"#ffffff\">\n    <meta name=\"msapplication-TileImage\" content=\"https://cdn.admireme.vip/images/favicon/ms-icon-144x144.png\">\n    <meta name=\"theme-color\" content=\"#ffffff\">\n\n    <title>justjessicarabbit | AdmireMe.VIP</title>\n    \n    <link rel=\"apple-touch-icon\" sizes=\"57x57\" href=\"https://cdn.admireme.vip/images/favicon/apple-icon-57x57.png\">\n    <link rel=\"apple-touch-icon\" sizes=\"60x60\" href=\"https://cdn.admireme.vip/images/favicon/apple-icon-60x60.png\">\n    <link rel=\"apple-touch-icon\" sizes=\"72x72\" href=\"https://cdn.admireme.vip/images/favicon/apple-icon-72x72.png\">\n    <link rel=\"apple-touch-icon\" sizes=\"76x76\" href=\"https://cdn.admireme.vip/images/favicon/apple-icon-76x76.png\">\n    <link rel=\"apple-touch-icon\" sizes=\"114x114\" href=\"https://cdn.admireme.vip/images/favicon/apple-icon-114x114.png\">\n    <link rel=\"apple-touch-icon\" sizes=\"120x120\" href=\"https://cdn.admireme.vip/images/favicon/apple-icon-120x120.png\">\n    <link rel=\"apple-touch-icon\" sizes=\"144x144\" href=\"https://cdn.admireme.vip/images/favicon/apple-icon-144x144.png\">\n    <link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"https://cdn.admireme.vip/images/favicon/apple-icon-152x152.png\">\n    <link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"https://cdn.admireme.vip/images/favicon/apple-icon-180x180.png\">\n    <link rel=\"icon\" type=\"image/png\" sizes=\"192x192\"  href=\"https://cdn.admireme.vip/images/favicon/android-icon-192x192.png\">\n    <link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"https://cdn.admireme.vip/images/favicon/favicon-32x32.png\">\n    <link rel=\"icon\" type=\"image/png\" sizes=\"96x96\" href=\"htt",
-          "status": "ok",
-          "note": "Found: HTTP 200, e_string present"
-        },
-        {
-          "username": "savannah250xo",
-          "username_type": "known",
-          "url": "https://admireme.vip/savannah250xo/",
-          "method": "GET",
-          "http_code": 404,
-          "body_snippet": "\n<!DOCTYPE html>\n<html>\n<head>\n    <meta charset=\"utf-8\" />\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <meta name=\"apple-mobile-web-app-title\" content=\"AdmireMe.VIP\">\n    <meta name=\"application-name\" content=\"AdmireMe.VIP\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1,user-scalable=0\"/>\n    <meta name=\"msapplication-TileColor\" content=\"#ffffff\">\n    <meta name=\"msapplication-TileImage\" content=\"https://cdn.admireme.vip/images/favicon/ms-icon-144x144.png\">\n    <meta name=\"theme-color\" content=\"#ffffff\">\n\n    <title>Page Not Found | AdmireMe.VIP</title>\n    \n    <link rel=\"apple-touch-icon\" sizes=\"57x57\" href=\"https://cdn.admireme.vip/images/favicon/apple-icon-57x57.png\">\n    <link rel=\"apple-touch-icon\" sizes=\"60x60\" href=\"https://cdn.admireme.vip/images/favicon/apple-icon-60x60.png\">\n    <link rel=\"apple-touch-icon\" sizes=\"72x72\" href=\"https://cdn.admireme.vip/images/favicon/apple-icon-72x72.png\">\n    <link rel=\"apple-touch-icon\" sizes=\"76x76\" href=\"https://cdn.admireme.vip/images/favicon/apple-icon-76x76.png\">\n    <link rel=\"apple-touch-icon\" sizes=\"114x114\" href=\"https://cdn.admireme.vip/images/favicon/apple-icon-114x114.png\">\n    <link rel=\"apple-touch-icon\" sizes=\"120x120\" href=\"https://cdn.admireme.vip/images/favicon/apple-icon-120x120.png\">\n    <link rel=\"apple-touch-icon\" sizes=\"144x144\" href=\"https://cdn.admireme.vip/images/favicon/apple-icon-144x144.png\">\n    <link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"https://cdn.admireme.vip/images/favicon/apple-icon-152x152.png\">\n    <link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"https://cdn.admireme.vip/images/favicon/apple-icon-180x180.png\">\n    <link rel=\"icon\" type=\"image/png\" sizes=\"192x192\"  href=\"https://cdn.admireme.vip/images/favicon/android-icon-192x192.png\">\n    <link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"https://cdn.admireme.vip/images/favicon/favicon-32x32.png\">\n    <link rel=\"icon\" type=\"image/png\" sizes=\"96x96\" href=\"https:",
-          "status": "blocked",
-          "note": "Bot-blocking page detected (HTTP 404)"
-        },
-        {
-          "username": "5bow1b9f2h",
-          "username_type": "random",
-          "url": "https://admireme.vip/5bow1b9f2h/",
-          "method": "GET",
-          "http_code": 404,
-          "body_snippet": "\n<!DOCTYPE html>\n<html>\n<head>\n    <meta charset=\"utf-8\" />\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <meta name=\"apple-mobile-web-app-title\" content=\"AdmireMe.VIP\">\n    <meta name=\"application-name\" content=\"AdmireMe.VIP\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1,user-scalable=0\"/>\n    <meta name=\"msapplication-TileColor\" content=\"#ffffff\">\n    <meta name=\"msapplication-TileImage\" content=\"https://cdn.admireme.vip/images/favicon/ms-icon-144x144.png\">\n    <meta name=\"theme-color\" content=\"#ffffff\">\n\n    <title>Page Not Found | AdmireMe.VIP</title>\n    \n    <link rel=\"apple-touch-icon\" sizes=\"57x57\" href=\"https://cdn.admireme.vip/images/favicon/apple-icon-57x57.png\">\n    <link rel=\"apple-touch-icon\" sizes=\"60x60\" href=\"https://cdn.admireme.vip/images/favicon/apple-icon-60x60.png\">\n    <link rel=\"apple-touch-icon\" sizes=\"72x72\" href=\"https://cdn.admireme.vip/images/favicon/apple-icon-72x72.png\">\n    <link rel=\"apple-touch-icon\" sizes=\"76x76\" href=\"https://cdn.admireme.vip/images/favicon/apple-icon-76x76.png\">\n    <link rel=\"apple-touch-icon\" sizes=\"114x114\" href=\"https://cdn.admireme.vip/images/favicon/apple-icon-114x114.png\">\n    <link rel=\"apple-touch-icon\" sizes=\"120x120\" href=\"https://cdn.admireme.vip/images/favicon/apple-icon-120x120.png\">\n    <link rel=\"apple-touch-icon\" sizes=\"144x144\" href=\"https://cdn.admireme.vip/images/favicon/apple-icon-144x144.png\">\n    <link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"https://cdn.admireme.vip/images/favicon/apple-icon-152x152.png\">\n    <link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"https://cdn.admireme.vip/images/favicon/apple-icon-180x180.png\">\n    <link rel=\"icon\" type=\"image/png\" sizes=\"192x192\"  href=\"https://cdn.admireme.vip/images/favicon/android-icon-192x192.png\">\n    <link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"https://cdn.admireme.vip/images/favicon/favicon-32x32.png\">\n    <link rel=\"icon\" type=\"image/png\" sizes=\"96x96\" href=\"https:",
-          "status": "ok",
-          "note": "Not found as expected: HTTP 404"
-        }
-      ],
-      "overall_status": "ok",
-      "checked_at": "2026-06-17 14:29 UTC"
-    },
-    {
-      "name": "adultism",
-      "cat": "xx NSFW xx",
-      "uri_check": "https://www.adultism.com/profile/{account}",
-      "uri_pretty": null,
-      "e_code": 200,
-      "e_string": "Last login:",
-      "m_code": 404,
-      "m_string": "<title> Not Found",
-      "known": [
-        "laura",
-        "sara"
-      ],
-      "has_protection": false,
-      "protection": [],
-      "has_post_body": false,
-      "valid_field": null,
-      "checks": [
-        {
-          "username": "laura",
-          "username_type": "known",
-          "url": "https://www.adultism.com/profile/laura",
-          "method": "GET",
-          "http_code": 200,
-          "body_snippet": "<!DOCTYPE html>\n<html>\n\t<head>\n\t<title>laura - Adultism</title>\n\t<meta name=\"description\" content=\"\" />\n\t\n\t\n\t<meta charset=\"utf-8\">\n\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n\t<meta name=\"msapplication-tap-highlight\" content=\"no\"/>\n\t<script>\n\t\tvar sentryOptions = {\n\t\t\tdsn: 'https://59aac062ebd14f7fb9d40f122ce000a2@o127476.ingest.sentry.io/5564472',\n\t\t\tallowUrls: ['https://www.adultism.com/'],\n\t\t\trelease: '1WdEXD'\t\t};\n\n\t\t\n\t</script>\n\n\t<script defer src=\"https://www.adultism.com/static/r-1WdEXD/js/sentry.js\" onload=\"initSentry(sentryOptions);\"></script>\n\n\t<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-NQ05STB0KZ\"></script>\n\t<script>\n\t\twindow.dataLayer = window.dataLayer || [];\n\t\tfunction gtag(){dataLayer.push(arguments);}\n\t\tgtag('js', new Date());\n\n\t\tvar options = {};gtag('config', 'G-NQ05STB0KZ', options);\n\n\t\t// Dispatch custom event once gtag is fully initialized\n\t\twindow.dispatchEvent(new Event('gtagLoaded'));\n\t</script>\t<script defer src=\"https://www.adultism.com/static/js/jquery-3.3.1.min.js\"></script>\n\t<script>\n\t\t\t\twindow.GLOBAL_clientTimeDiff = 1781706580767 - (new Date()).getTime();\n\t\tfunction domReady(e,t=!1){\"complete\"===document.readyState||\"interactive\"===document.readyState?t?e():setTimeout(e,1):document.addEventListener(\"DOMContentLoaded\",e)}\n\t</script>\n\t<link rel=\"apple-touch-icon\" href=\"/favicon/apple-touch-icon.png\" />\n\t<link rel=\"shortcut icon\" href=\"/favicon/favicon.ico\" type=\"image/x-icon\" sizes=\"16x16 24x24 32x32 64x64\" />\n\t\t<link rel=\"stylesheet\" href=\"https://www.adultism.com/static/r-1WdEXD/css/www/main.css\">\n\t\t<script defer src=\"https://www.adultism.com/static/r-1WdEXD/js/main.js\"></script>\n\t\t\t\t\t<style>\n\t\t#spr main:after{clear:both;content:\".\";display:block;height:0;visibility:hidden}#spr .subscriber-count .quantity{font-family:Helvetica,Arial,Lucida Grande,sans-serif}.control-header{align-items:center;display:flex;flex-wrap:nowrap;justify-content:center;list-style:none;margin:0;padding:0}@media(max",
-          "status": "ok",
-          "note": "Found: HTTP 200, e_string present"
-        },
-        {
-          "username": "sara",
-          "username_type": "known",
-          "url": "https://www.adultism.com/profile/sara",
-          "method": "GET",
-          "http_code": 200,
-          "body_snippet": "<!DOCTYPE html>\n<html>\n\t<head>\n\t<title>sara - Adultism</title>\n\t<meta name=\"description\" content=\"pc,sex,darts\" />\n\t\n\t\n\t<meta charset=\"utf-8\">\n\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n\t<meta name=\"msapplication-tap-highlight\" content=\"no\"/>\n\t<script>\n\t\tvar sentryOptions = {\n\t\t\tdsn: 'https://59aac062ebd14f7fb9d40f122ce000a2@o127476.ingest.sentry.io/5564472',\n\t\t\tallowUrls: ['https://www.adultism.com/'],\n\t\t\trelease: '1WdEXD'\t\t};\n\n\t\t\n\t</script>\n\n\t<script defer src=\"https://www.adultism.com/static/r-1WdEXD/js/sentry.js\" onload=\"initSentry(sentryOptions);\"></script>\n\n\t<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-NQ05STB0KZ\"></script>\n\t<script>\n\t\twindow.dataLayer = window.dataLayer || [];\n\t\tfunction gtag(){dataLayer.push(arguments);}\n\t\tgtag('js', new Date());\n\n\t\tvar options = {};gtag('config', 'G-NQ05STB0KZ', options);\n\n\t\t// Dispatch custom event once gtag is fully initialized\n\t\twindow.dispatchEvent(new Event('gtagLoaded'));\n\t</script>\t<script defer src=\"https://www.adultism.com/static/js/jquery-3.3.1.min.js\"></script>\n\t<script>\n\t\t\t\twindow.GLOBAL_clientTimeDiff = 1781706580827 - (new Date()).getTime();\n\t\tfunction domReady(e,t=!1){\"complete\"===document.readyState||\"interactive\"===document.readyState?t?e():setTimeout(e,1):document.addEventListener(\"DOMContentLoaded\",e)}\n\t</script>\n\t<link rel=\"apple-touch-icon\" href=\"/favicon/apple-touch-icon.png\" />\n\t<link rel=\"shortcut icon\" href=\"/favicon/favicon.ico\" type=\"image/x-icon\" sizes=\"16x16 24x24 32x32 64x64\" />\n\t\t<link rel=\"stylesheet\" href=\"https://www.adultism.com/static/r-1WdEXD/css/www/main.css\">\n\t\t<script defer src=\"https://www.adultism.com/static/r-1WdEXD/js/main.js\"></script>\n\t\t\t\t\t<style>\n\t\t#spr main:after{clear:both;content:\".\";display:block;height:0;visibility:hidden}#spr .subscriber-count .quantity{font-family:Helvetica,Arial,Lucida Grande,sans-serif}.control-header{align-items:center;display:flex;flex-wrap:nowrap;justify-content:center;list-style:none;margin:0;padding:0",
-          "status": "ok",
-          "note": "Found: HTTP 200, e_string present"
-        },
-        {
-          "username": "v6ynorx50bc",
-          "username_type": "random",
-          "url": "https://www.adultism.com/profile/v6ynorx50bc",
-          "method": "GET",
-          "http_code": 404,
-          "body_snippet": "<!DOCTYPE html>\n<html>\n\n\t<head>\n\t\t\t\t\t\n\t<title> Not Found - Adultism</title>\n\t\n\t\n\t\t\t\t\t\n\t<meta charset=\"utf-8\">\n\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n\t<meta name=\"msapplication-tap-highlight\" content=\"no\"/>\n\t<script>\n\t\tvar sentryOptions = {\n\t\t\tdsn: 'https://59aac062ebd14f7fb9d40f122ce000a2@o127476.ingest.sentry.io/5564472',\n\t\t\tallowUrls: ['https://www.adultism.com/'],\n\t\t\trelease: '1WdEXD'\t\t};\n\n\t\t\n\t</script>\n\n\t<script defer src=\"https://www.adultism.com/static/r-1WdEXD/js/sentry.js\" onload=\"initSentry(sentryOptions);\"></script>\n\n\t<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-NQ05STB0KZ\"></script>\n\t<script>\n\t\twindow.dataLayer = window.dataLayer || [];\n\t\tfunction gtag(){dataLayer.push(arguments);}\n\t\tgtag('js', new Date());\n\n\t\tvar options = {};gtag('config', 'G-NQ05STB0KZ', options);\n\n\t\t// Dispatch custom event once gtag is fully initialized\n\t\twindow.dispatchEvent(new Event('gtagLoaded'));\n\t</script>\t<script defer src=\"https://www.adultism.com/static/js/jquery-3.3.1.min.js\"></script>\n\t<script>\n\t\t\t\twindow.GLOBAL_clientTimeDiff = 1781706580892 - (new Date()).getTime();\n\t\tfunction domReady(e,t=!1){\"complete\"===document.readyState||\"interactive\"===document.readyState?t?e():setTimeout(e,1):document.addEventListener(\"DOMContentLoaded\",e)}\n\t</script>\n\t<link rel=\"apple-touch-icon\" href=\"/favicon/apple-touch-icon.png\" />\n\t<link rel=\"shortcut icon\" href=\"/favicon/favicon.ico\" type=\"image/x-icon\" sizes=\"16x16 24x24 32x32 64x64\" />\n\t\t<link rel=\"stylesheet\" href=\"https://www.adultism.com/static/r-1WdEXD/css/www/basic.css\">\n\t\t<script defer src=\"https://www.adultism.com/static/r-1WdEXD/js/main.js\"></script>\n\t\t\t<style>\n\t\t#errorpage h2.featured{color:#488ae0;font-size:26.4px;margin:0 0 1.2em;text-align:center}\n\n\t</style>\n\t\t<script>\n\t\t\tdomReady(function() {\n\t\t\t\tlayout.basic();\n\t\t\t});\n\t\t</script>\t\t\t\t\t\t\t<script>\n\t\t\t\t\tdomReady(function() {\n\t\t\t\t\t\tnavHistory.push({\n\t\t\t\t\t\t\taction: 'pageLoad',\n\t\t\t\t\t\t\ttitle: 'Not\\u0020Found',\n\t\t\t\t\t\t});\n\t\t\t\t\t});\n\t\t",
-          "status": "ok",
-          "note": "Not found as expected: HTTP 404"
-        }
-      ],
-      "overall_status": "ok",
-      "checked_at": "2026-06-17 14:29 UTC"
-    },
-    {
-      "name": "ADVFN",
-      "cat": "finance",
-      "uri_check": "https://uk.advfn.com/forum/profile/{account}",
-      "uri_pretty": null,
-      "e_code": 200,
-      "e_string": "Profile | ADVFN",
-      "m_code": 404,
-      "m_string": "ADVFN ERROR - Page Not Found",
-      "known": [
-        "crypto",
-        "crypto1"
-      ],
-      "has_protection": false,
-      "protection": [],
-      "has_post_body": false,
-      "valid_field": null,
-      "checks": [
-        {
-          "username": "crypto",
-          "username_type": "known",
-          "url": "https://uk.advfn.com/forum/profile/crypto",
-          "method": "GET",
-          "http_code": 403,
-          "body_snippet": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><meta http-equiv=\"content-security-policy\" content=\"default-src &#39;none&#39;; script-src &#39;nonce-aMrY2coIZLf12cpOuRwZMm&#39; &#39;unsafe-eval&#39; https://challenges.cloudflare.com; script-src-attr &#39;none&#39;; style-src &#39;unsafe-inline&#39;; img-src &#39;self&#39; https://challenges.cloudflare.com; connect-src &#39;self&#39; https://challenges.cloudflare.com; frame-src &#39;self&#39; https://challenges.cloudflare.com blob:; child-src &#39;self&#39; https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri &#39;self&#39;\"><style>*{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font-family:system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,\"Noto Sans\",sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\",\"Segoe UI Symbol\",\"Noto Color Emoji\"}body{display:flex;flex-direction:column;height:100vh;min-height:100vh}.main-content{margin:8rem auto;padding-left:1.5rem;max-width:60rem}@media (width <= 720px){.main-content{margin-top:4rem}}#challenge-error-text{background-image:url(\"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSI+PHBhdGggZmlsbD0iI0IyMEYwMyIgZD0iTTE2IDNhMTMgMTMgMCAxIDAgMTMgMTNBMTMuMDE1IDEzLjAxNSAwIDAgMCAxNiAzbTAgMjRhMTEgMTEgMCAxIDEgMTEtMTEgMTEuMDEgMTEuMDEgMCAwIDEtMTEgMTEiLz48cGF0aCBmaWxsPSIjQjIwRjAzIiBkPSJNMTcuMDM4IDE4LjYxNUgxNC44N0wxNC41NjMgOS41aDIuNzgzem0tMS4wODQgMS40MjdxLjY2IDAgMS4wNTcuMzg4LjQwNy4zODkuNDA3Ljk5NCAwIC41OTYtLjQwNy45ODQtLjM5Ny4zOS0xLjA1Ny4zODktLjY1IDAtMS4wNTYtLjM4OS0uMzk4LS4zODktLjM5OC0uOTg0IDAtLjU5Ny4zOTgtLjk4NS40MDYtLjM5NyAxLjA1Ni0uMzk3I",
-          "status": "blocked",
-          "note": "Bot-blocking page detected (HTTP 403)"
-        },
-        {
-          "username": "crypto1",
-          "username_type": "known",
-          "url": "https://uk.advfn.com/forum/profile/crypto1",
-          "method": "GET",
-          "http_code": 403,
-          "body_snippet": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><meta http-equiv=\"content-security-policy\" content=\"default-src &#39;none&#39;; script-src &#39;nonce-O0ilEPXPlegWvqMD7GKaDE&#39; &#39;unsafe-eval&#39; https://challenges.cloudflare.com; script-src-attr &#39;none&#39;; style-src &#39;unsafe-inline&#39;; img-src &#39;self&#39; https://challenges.cloudflare.com; connect-src &#39;self&#39; https://challenges.cloudflare.com; frame-src &#39;self&#39; https://challenges.cloudflare.com blob:; child-src &#39;self&#39; https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri &#39;self&#39;\"><style>*{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font-family:system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,\"Noto Sans\",sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\",\"Segoe UI Symbol\",\"Noto Color Emoji\"}body{display:flex;flex-direction:column;height:100vh;min-height:100vh}.main-content{margin:8rem auto;padding-left:1.5rem;max-width:60rem}@media (width <= 720px){.main-content{margin-top:4rem}}#challenge-error-text{background-image:url(\"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSI+PHBhdGggZmlsbD0iI0IyMEYwMyIgZD0iTTE2IDNhMTMgMTMgMCAxIDAgMTMgMTNBMTMuMDE1IDEzLjAxNSAwIDAgMCAxNiAzbTAgMjRhMTEgMTEgMCAxIDEgMTEtMTEgMTEuMDEgMTEuMDEgMCAwIDEtMTEgMTEiLz48cGF0aCBmaWxsPSIjQjIwRjAzIiBkPSJNMTcuMDM4IDE4LjYxNUgxNC44N0wxNC41NjMgOS41aDIuNzgzem0tMS4wODQgMS40MjdxLjY2IDAgMS4wNTcuMzg4LjQwNy4zODkuNDA3Ljk5NCAwIC41OTYtLjQwNy45ODQtLjM5Ny4zOS0xLjA1Ny4zODktLjY1IDAtMS4wNTYtLjM4OS0uMzk4LS4zODktLjM5OC0uOTg0IDAtLjU5Ny4zOTgtLjk4NS40MDYtLjM5NyAxLjA1Ni0uMzk3I",
-          "status": "blocked",
-          "note": "Bot-blocking page detected (HTTP 403)"
-        },
-        {
-          "username": "kzbocstpsqt",
-          "username_type": "random",
-          "url": "https://uk.advfn.com/forum/profile/kzbocstpsqt",
-          "method": "GET",
-          "http_code": 403,
-          "body_snippet": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><meta http-equiv=\"content-security-policy\" content=\"default-src &#39;none&#39;; script-src &#39;nonce-30pXeKhHVoCERXj0ryhCb1&#39; &#39;unsafe-eval&#39; https://challenges.cloudflare.com; script-src-attr &#39;none&#39;; style-src &#39;unsafe-inline&#39;; img-src &#39;self&#39; https://challenges.cloudflare.com; connect-src &#39;self&#39; https://challenges.cloudflare.com; frame-src &#39;self&#39; https://challenges.cloudflare.com blob:; child-src &#39;self&#39; https://challenges.cloudflare.com blob:; worker-src blob:; form-action http: https:; base-uri &#39;self&#39;\"><style>*{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font-family:system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,\"Noto Sans\",sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\",\"Segoe UI Symbol\",\"Noto Color Emoji\"}body{display:flex;flex-direction:column;height:100vh;min-height:100vh}.main-content{margin:8rem auto;padding-left:1.5rem;max-width:60rem}@media (width <= 720px){.main-content{margin-top:4rem}}#challenge-error-text{background-image:url(\"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSI+PHBhdGggZmlsbD0iI0IyMEYwMyIgZD0iTTE2IDNhMTMgMTMgMCAxIDAgMTMgMTNBMTMuMDE1IDEzLjAxNSAwIDAgMCAxNiAzbTAgMjRhMTEgMTEgMCAxIDEgMTEtMTEgMTEuMDEgMTEuMDEgMCAwIDEtMTEgMTEiLz48cGF0aCBmaWxsPSIjQjIwRjAzIiBkPSJNMTcuMDM4IDE4LjYxNUgxNC44N0wxNC41NjMgOS41aDIuNzgzem0tMS4wODQgMS40MjdxLjY2IDAgMS4wNTcuMzg4LjQwNy4zODkuNDA3Ljk5NCAwIC41OTYtLjQwNy45ODQtLjM5Ny4zOS0xLjA1Ny4zODktLjY1IDAtMS4wNTYtLjM4OS0uMzk4LS4zODktLjM5OC0uOTg0IDAtLjU5Ny4zOTgtLjk4NS40MDYtLjM5NyAxLjA1Ni0uMzk3I",
-          "status": "blocked",
-          "note": "Bot-blocking page detected (HTTP 403)"
-        }
-      ],
-      "overall_status": "blocked",
-      "checked_at": "2026-06-17 14:29 UTC"
-    },
-    {
-      "name": "ACF",
-      "cat": "coding",
-      "uri_check": "https://support.advancedcustomfields.com/forums/users/{account}/",
-      "uri_pretty": null,
-      "e_code": 200,
-      "e_string": "bbp-user-body",
-      "m_code": 404,
-      "m_string": "<title>Page Not Found - ACF Support</title>",
-      "known": [
-        "mike",
-        "greg"
-      ],
-      "has_protection": false,
-      "protection": [],
-      "has_post_body": false,
-      "valid_field": null,
-      "checks": [
-        {
-          "username": "mike",
-          "username_type": "known",
-          "url": "https://support.advancedcustomfields.com/forums/users/mike/",
-          "method": "GET",
-          "http_code": 200,
-          "body_snippet": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<meta charset=\"UTF-8\">\n\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n\t<link rel=\"shortcut icon\" href=\"https://support.advancedcustomfields.com/favicon.png\" type=\"image/x-icon\" />\n\t\n\t<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />\n\n\t<!-- This site is optimized with the Yoast SEO plugin v27.8 - https://yoast.com/product/yoast-seo-wordpress/ -->\n\t<title>ACF Support</title>\n\t<meta property=\"og:locale\" content=\"en_US\" />\n\t<meta property=\"og:type\" content=\"website\" />\n\t<meta property=\"og:site_name\" content=\"ACF Support\" />\n\t<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/support.advancedcustomfields.com\\/#website\",\"url\":\"https:\\/\\/support.advancedcustomfields.com\\/\",\"name\":\"ACF Support\",\"description\":\"\",\"publisher\":{\"@id\":\"https:\\/\\/support.advancedcustomfields.com\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/support.advancedcustomfields.com\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/support.advancedcustomfields.com\\/#organization\",\"name\":\"Advanced Custom Fields\",\"url\":\"https:\\/\\/support.advancedcustomfields.com\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/support.advancedcustomfields.com\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/support.advancedcustomfields.com\\/wp-content\\/uploads\\/2019\\/10\\/acf-logo-flat-green-500x500-circle.png\",\"contentUrl\":\"https:\\/\\/support.advancedcustomfields.com\\/wp-content\\/uploads\\/2019\\/10\\/acf-logo-flat-green-500x500-circle.png\",\"width\":500,\"height\":500,\"caption\":\"Advanced Custom Fields\"},\"image\":{\"@id\":\"https:\\/\\/support.advancedcustomfields.com\\/#\\/schema\\/logo\\/image\\/\"}",
-          "status": "ok",
-          "note": "Found: HTTP 200, e_string present"
-        },
-        {
-          "username": "greg",
-          "username_type": "known",
-          "url": "https://support.advancedcustomfields.com/forums/users/greg/",
-          "method": "GET",
-          "http_code": 200,
-          "body_snippet": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<meta charset=\"UTF-8\">\n\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n\t<link rel=\"shortcut icon\" href=\"https://support.advancedcustomfields.com/favicon.png\" type=\"image/x-icon\" />\n\t\n\t<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />\n\n\t<!-- This site is optimized with the Yoast SEO plugin v27.8 - https://yoast.com/product/yoast-seo-wordpress/ -->\n\t<title>ACF Support</title>\n\t<meta property=\"og:locale\" content=\"en_US\" />\n\t<meta property=\"og:type\" content=\"website\" />\n\t<meta property=\"og:site_name\" content=\"ACF Support\" />\n\t<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/support.advancedcustomfields.com\\/#website\",\"url\":\"https:\\/\\/support.advancedcustomfields.com\\/\",\"name\":\"ACF Support\",\"description\":\"\",\"publisher\":{\"@id\":\"https:\\/\\/support.advancedcustomfields.com\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/support.advancedcustomfields.com\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/support.advancedcustomfields.com\\/#organization\",\"name\":\"Advanced Custom Fields\",\"url\":\"https:\\/\\/support.advancedcustomfields.com\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/support.advancedcustomfields.com\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/support.advancedcustomfields.com\\/wp-content\\/uploads\\/2019\\/10\\/acf-logo-flat-green-500x500-circle.png\",\"contentUrl\":\"https:\\/\\/support.advancedcustomfields.com\\/wp-content\\/uploads\\/2019\\/10\\/acf-logo-flat-green-500x500-circle.png\",\"width\":500,\"height\":500,\"caption\":\"Advanced Custom Fields\"},\"image\":{\"@id\":\"https:\\/\\/support.advancedcustomfields.com\\/#\\/schema\\/logo\\/image\\/\"}",
-          "status": "ok",
-          "note": "Found: HTTP 200, e_string present"
-        },
-        {
-          "username": "9fgzgg7tu6",
-          "username_type": "random",
-          "url": "https://support.advancedcustomfields.com/forums/users/9fgzgg7tu6/",
-          "method": "GET",
-          "http_code": 404,
-          "body_snippet": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<meta charset=\"UTF-8\">\n\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n\t<link rel=\"shortcut icon\" href=\"https://support.advancedcustomfields.com/favicon.png\" type=\"image/x-icon\" />\n\t\n\t<meta name='robots' content='noindex, follow' />\n\n\t<!-- This site is optimized with the Yoast SEO plugin v27.8 - https://yoast.com/product/yoast-seo-wordpress/ -->\n\t<title>Page Not Found - ACF Support</title>\n\t<meta property=\"og:locale\" content=\"en_US\" />\n\t<meta property=\"og:title\" content=\"Page Not Found - ACF Support\" />\n\t<meta property=\"og:site_name\" content=\"ACF Support\" />\n\t<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/support.advancedcustomfields.com\\/#website\",\"url\":\"https:\\/\\/support.advancedcustomfields.com\\/\",\"name\":\"ACF Support\",\"description\":\"\",\"publisher\":{\"@id\":\"https:\\/\\/support.advancedcustomfields.com\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/support.advancedcustomfields.com\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"en-US\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/support.advancedcustomfields.com\\/#organization\",\"name\":\"Advanced Custom Fields\",\"url\":\"https:\\/\\/support.advancedcustomfields.com\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"en-US\",\"@id\":\"https:\\/\\/support.advancedcustomfields.com\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/support.advancedcustomfields.com\\/wp-content\\/uploads\\/2019\\/10\\/acf-logo-flat-green-500x500-circle.png\",\"contentUrl\":\"https:\\/\\/support.advancedcustomfields.com\\/wp-content\\/uploads\\/2019\\/10\\/acf-logo-flat-green-500x500-circle.png\",\"width\":500,\"height\":500,\"caption\":\"Advanced Custom Fields\"},\"image\":{\"@id\":\"https:\\/\\/support.advancedcustomfields.com\\/#\\/schema\\/logo\\/image\\/\"}}]}</script>\n\t<!-- / Y",
-          "status": "ok",
-          "note": "Not found as expected: HTTP 404"
-        }
-      ],
-      "overall_status": "ok",
-      "checked_at": "2026-06-17 14:29 UTC"
-    },
-    {
-      "name": "Adult_Forum",
-      "cat": "xx NSFW xx",
-      "uri_check": "https://adultforum.gr/{account}-glamour-escorts/",
-      "uri_pretty": null,
-      "e_code": 200,
-      "e_string": "Glamour Escorts ",
-      "m_code": 404,
-      "m_string": "Page not found - Adult Forum Gr",
-      "known": [
-        "nastya3",
-        "ekaterina"
-      ],
-      "has_protection": false,
-      "protection": [],
-      "has_post_body": false,
-      "valid_field": null,
-      "checks": [
-        {
-          "username": "nastya3",
-          "username_type": "known",
-          "url": "https://adultforum.gr/nastya3-glamour-escorts/",
+          "url": "",
           "method": "GET",
           "http_code": null,
           "body_snippet": "",
           "status": "site_down",
-          "note": "No response — site down or DNS failure"
+          "note": "Exception: SiteResult.__init__() got an unexpected keyword argument 'strip_bad_char'"
         }
       ],
       "overall_status": "site_down",
-      "checked_at": "2026-06-17 14:29 UTC"
+      "checked_at": ""
+    },
+    {
+      "name": "247CTF",
+      "cat": "",
+      "uri_check": "",
+      "uri_pretty": null,
+      "e_code": 0,
+      "e_string": "",
+      "m_code": 0,
+      "m_string": "",
+      "known": [],
+      "has_protection": false,
+      "protection": [],
+      "has_post_body": false,
+      "valid_field": null,
+      "checks": [
+        {
+          "username": "",
+          "username_type": "known",
+          "url": "",
+          "method": "GET",
+          "http_code": null,
+          "body_snippet": "",
+          "status": "site_down",
+          "note": "Exception: SiteResult.__init__() got an unexpected keyword argument 'strip_bad_char'"
+        }
+      ],
+      "overall_status": "site_down",
+      "checked_at": ""
+    },
+    {
+      "name": "about.me",
+      "cat": "",
+      "uri_check": "",
+      "uri_pretty": null,
+      "e_code": 0,
+      "e_string": "",
+      "m_code": 0,
+      "m_string": "",
+      "known": [],
+      "has_protection": false,
+      "protection": [],
+      "has_post_body": false,
+      "valid_field": null,
+      "checks": [
+        {
+          "username": "",
+          "username_type": "known",
+          "url": "",
+          "method": "GET",
+          "http_code": null,
+          "body_snippet": "",
+          "status": "site_down",
+          "note": "Exception: SiteResult.__init__() got an unexpected keyword argument 'strip_bad_char'"
+        }
+      ],
+      "overall_status": "site_down",
+      "checked_at": ""
+    },
+    {
+      "name": "7dach",
+      "cat": "",
+      "uri_check": "",
+      "uri_pretty": null,
+      "e_code": 0,
+      "e_string": "",
+      "m_code": 0,
+      "m_string": "",
+      "known": [],
+      "has_protection": false,
+      "protection": [],
+      "has_post_body": false,
+      "valid_field": null,
+      "checks": [
+        {
+          "username": "",
+          "username_type": "known",
+          "url": "",
+          "method": "GET",
+          "http_code": null,
+          "body_snippet": "",
+          "status": "site_down",
+          "note": "Exception: SiteResult.__init__() got an unexpected keyword argument 'strip_bad_char'"
+        }
+      ],
+      "overall_status": "site_down",
+      "checked_at": ""
+    },
+    {
+      "name": "35photo",
+      "cat": "",
+      "uri_check": "",
+      "uri_pretty": null,
+      "e_code": 0,
+      "e_string": "",
+      "m_code": 0,
+      "m_string": "",
+      "known": [],
+      "has_protection": false,
+      "protection": [],
+      "has_post_body": false,
+      "valid_field": null,
+      "checks": [
+        {
+          "username": "",
+          "username_type": "known",
+          "url": "",
+          "method": "GET",
+          "http_code": null,
+          "body_snippet": "",
+          "status": "site_down",
+          "note": "Exception: SiteResult.__init__() got an unexpected keyword argument 'strip_bad_char'"
+        }
+      ],
+      "overall_status": "site_down",
+      "checked_at": ""
+    },
+    {
+      "name": "247sports",
+      "cat": "",
+      "uri_check": "",
+      "uri_pretty": null,
+      "e_code": 0,
+      "e_string": "",
+      "m_code": 0,
+      "m_string": "",
+      "known": [],
+      "has_protection": false,
+      "protection": [],
+      "has_post_body": false,
+      "valid_field": null,
+      "checks": [
+        {
+          "username": "",
+          "username_type": "known",
+          "url": "",
+          "method": "GET",
+          "http_code": null,
+          "body_snippet": "",
+          "status": "site_down",
+          "note": "Exception: SiteResult.__init__() got an unexpected keyword argument 'strip_bad_char'"
+        }
+      ],
+      "overall_status": "site_down",
+      "checked_at": ""
+    },
+    {
+      "name": "3dtoday",
+      "cat": "",
+      "uri_check": "",
+      "uri_pretty": null,
+      "e_code": 0,
+      "e_string": "",
+      "m_code": 0,
+      "m_string": "",
+      "known": [],
+      "has_protection": false,
+      "protection": [],
+      "has_post_body": false,
+      "valid_field": null,
+      "checks": [
+        {
+          "username": "",
+          "username_type": "known",
+          "url": "",
+          "method": "GET",
+          "http_code": null,
+          "body_snippet": "",
+          "status": "site_down",
+          "note": "Exception: SiteResult.__init__() got an unexpected keyword argument 'strip_bad_char'"
+        }
+      ],
+      "overall_status": "site_down",
+      "checked_at": ""
+    },
+    {
+      "name": "AdmireMe.VIP",
+      "cat": "",
+      "uri_check": "",
+      "uri_pretty": null,
+      "e_code": 0,
+      "e_string": "",
+      "m_code": 0,
+      "m_string": "",
+      "known": [],
+      "has_protection": false,
+      "protection": [],
+      "has_post_body": false,
+      "valid_field": null,
+      "checks": [
+        {
+          "username": "",
+          "username_type": "known",
+          "url": "",
+          "method": "GET",
+          "http_code": null,
+          "body_snippet": "",
+          "status": "site_down",
+          "note": "Exception: SiteResult.__init__() got an unexpected keyword argument 'strip_bad_char'"
+        }
+      ],
+      "overall_status": "site_down",
+      "checked_at": ""
+    },
+    {
+      "name": "adultism",
+      "cat": "",
+      "uri_check": "",
+      "uri_pretty": null,
+      "e_code": 0,
+      "e_string": "",
+      "m_code": 0,
+      "m_string": "",
+      "known": [],
+      "has_protection": false,
+      "protection": [],
+      "has_post_body": false,
+      "valid_field": null,
+      "checks": [
+        {
+          "username": "",
+          "username_type": "known",
+          "url": "",
+          "method": "GET",
+          "http_code": null,
+          "body_snippet": "",
+          "status": "site_down",
+          "note": "Exception: SiteResult.__init__() got an unexpected keyword argument 'strip_bad_char'"
+        }
+      ],
+      "overall_status": "site_down",
+      "checked_at": ""
+    },
+    {
+      "name": "ADVFN",
+      "cat": "",
+      "uri_check": "",
+      "uri_pretty": null,
+      "e_code": 0,
+      "e_string": "",
+      "m_code": 0,
+      "m_string": "",
+      "known": [],
+      "has_protection": false,
+      "protection": [],
+      "has_post_body": false,
+      "valid_field": null,
+      "checks": [
+        {
+          "username": "",
+          "username_type": "known",
+          "url": "",
+          "method": "GET",
+          "http_code": null,
+          "body_snippet": "",
+          "status": "site_down",
+          "note": "Exception: SiteResult.__init__() got an unexpected keyword argument 'strip_bad_char'"
+        }
+      ],
+      "overall_status": "site_down",
+      "checked_at": ""
+    },
+    {
+      "name": "ACF",
+      "cat": "",
+      "uri_check": "",
+      "uri_pretty": null,
+      "e_code": 0,
+      "e_string": "",
+      "m_code": 0,
+      "m_string": "",
+      "known": [],
+      "has_protection": false,
+      "protection": [],
+      "has_post_body": false,
+      "valid_field": null,
+      "checks": [
+        {
+          "username": "",
+          "username_type": "known",
+          "url": "",
+          "method": "GET",
+          "http_code": null,
+          "body_snippet": "",
+          "status": "site_down",
+          "note": "Exception: SiteResult.__init__() got an unexpected keyword argument 'strip_bad_char'"
+        }
+      ],
+      "overall_status": "site_down",
+      "checked_at": ""
+    },
+    {
+      "name": "Adult_Forum",
+      "cat": "",
+      "uri_check": "",
+      "uri_pretty": null,
+      "e_code": 0,
+      "e_string": "",
+      "m_code": 0,
+      "m_string": "",
+      "known": [],
+      "has_protection": false,
+      "protection": [],
+      "has_post_body": false,
+      "valid_field": null,
+      "checks": [
+        {
+          "username": "",
+          "username_type": "known",
+          "url": "",
+          "method": "GET",
+          "http_code": null,
+          "body_snippet": "",
+          "status": "site_down",
+          "note": "Exception: SiteResult.__init__() got an unexpected keyword argument 'strip_bad_char'"
+        }
+      ],
+      "overall_status": "site_down",
+      "checked_at": ""
     },
     {
       "name": "Airline_Pilot_Life",
-      "cat": "social",
-      "uri_check": "https://airlinepilot.life/u/{account}.json",
-      "uri_pretty": "https://airlinepilot.life/u/{account}",
-      "e_code": 200,
-      "e_string": "primary_group_name",
-      "m_code": 404,
-      "m_string": "he requested URL or resource could not be found.",
-      "known": [
-        "hannah",
-        "addison"
-      ],
+      "cat": "",
+      "uri_check": "",
+      "uri_pretty": null,
+      "e_code": 0,
+      "e_string": "",
+      "m_code": 0,
+      "m_string": "",
+      "known": [],
       "has_protection": false,
       "protection": [],
       "has_post_body": false,
       "valid_field": null,
       "checks": [
         {
-          "username": "hannah",
+          "username": "",
           "username_type": "known",
-          "url": "https://airlinepilot.life/u/hannah.json",
+          "url": "",
           "method": "GET",
-          "http_code": 301,
-          "body_snippet": "<html>\r\n<head><title>301 Moved Permanently</title></head>\r\n<body>\r\n<center><h1>301 Moved Permanently</h1></center>\r\n<hr><center>cloudflare</center>\r\n</body>\r\n</html>\r\n",
-          "status": "blocked",
-          "note": "Bot-blocking page detected (HTTP 301)"
-        },
-        {
-          "username": "addison",
-          "username_type": "known",
-          "url": "https://airlinepilot.life/u/addison.json",
-          "method": "GET",
-          "http_code": 301,
-          "body_snippet": "<html>\r\n<head><title>301 Moved Permanently</title></head>\r\n<body>\r\n<center><h1>301 Moved Permanently</h1></center>\r\n<hr><center>cloudflare</center>\r\n</body>\r\n</html>\r\n",
-          "status": "blocked",
-          "note": "Bot-blocking page detected (HTTP 301)"
-        },
-        {
-          "username": "cq2rxnuv0gs",
-          "username_type": "random",
-          "url": "https://airlinepilot.life/u/cq2rxnuv0gs.json",
-          "method": "GET",
-          "http_code": 301,
-          "body_snippet": "<html>\r\n<head><title>301 Moved Permanently</title></head>\r\n<body>\r\n<center><h1>301 Moved Permanently</h1></center>\r\n<hr><center>cloudflare</center>\r\n</body>\r\n</html>\r\n",
-          "status": "blocked",
-          "note": "Bot-blocking page detected (HTTP 301)"
+          "http_code": null,
+          "body_snippet": "",
+          "status": "site_down",
+          "note": "Exception: SiteResult.__init__() got an unexpected keyword argument 'strip_bad_char'"
         }
       ],
-      "overall_status": "blocked",
-      "checked_at": "2026-06-17 14:29 UTC"
+      "overall_status": "site_down",
+      "checked_at": ""
     },
     {
       "name": "Airliners",
-      "cat": "social",
-      "uri_check": "https://www.airliners.net/user/{account}/profile",
+      "cat": "",
+      "uri_check": "",
       "uri_pretty": null,
-      "e_code": 200,
-      "e_string": "'s Profile | Airliners Members | Airliners.net",
-      "m_code": 404,
-      "m_string": "An Error Occurred",
-      "known": [
-        "pilot",
-        "pilota"
-      ],
+      "e_code": 0,
+      "e_string": "",
+      "m_code": 0,
+      "m_string": "",
+      "known": [],
       "has_protection": false,
       "protection": [],
       "has_post_body": false,
       "valid_field": null,
       "checks": [
         {
-          "username": "pilot",
+          "username": "",
           "username_type": "known",
-          "url": "https://www.airliners.net/user/pilot/profile",
+          "url": "",
           "method": "GET",
-          "http_code": 202,
-          "body_snippet": "<!DOCTYPE html>\n  <html>\n  <head>\n    <script>\n        window.POW_CHALLENGE_DATA={\n            challenge_nonce:'cdac05f375012e4b9af8452b2044b573',\n            challenge_hmac:'dc7a03c2ea7070c438b7d814',\n            difficulty:'1',\n            difficulty_char:'b',\n            issued_at:'1781706581',\n            cookie_duration:'3600',\n            cookie_domain:'www.airliners.net',\n            referrer:'(null)'\n        };\n        (async(d=window.POW_CHALLENGE_DATA)=>{if(!d)return;const utmSources={'google.com':'google','bing.com':'bing','yahoo.com':'yahoo','duckduckgo.com':'duckduckgo','yandex.com':'yandex','baidu.com':'baidu','ecosia.org':'ecosia'};function getUtmParams(ref){try{const h=new URL(ref).hostname.replace(/^www\\./,'');const s=utmSources[h];return s?'utm_source='+s+'&utm_medium=organic':null}catch(e){return null}}let f=async t=>Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(t)))).map(b=>b.toString(16).padStart(2,0)).join(''),i=0;while(i++<1e7){let u=i.toString(),c=await f(d.challenge_nonce+d.issued_at+u);if(c.startsWith(d.difficulty_char.repeat(d.difficulty))){document.cookie='pow_bypass='+d.challenge_nonce+'|'+d.issued_at+'|'+u+'|'+c+'|'+d.challenge_hmac+'; domain='+d.cookie_domain+'; path=/; max-age='+d.cookie_duration+'; SameSite=Lax; Secure';const utms=d.referrer&&getUtmParams(d.referrer);if(utms){const url=new URL(location.href);utms.split('&').forEach(p=>{const[k,v]=p.split('=');if(!url.searchParams.has(k))url.searchParams.set(k,v)});location.href=url.toString()}else{location.reload()}break}}})()\n    </script>\n  </head>\n  <body>\n    <noscript><h1>JavaScript Required</h1><p>Please enable JavaScript to continue.</p></noscript>\n  </body>\n  </html>",
-          "status": "blocked",
-          "note": "Bot-blocking page detected (HTTP 202)"
-        },
-        {
-          "username": "pilota",
-          "username_type": "known",
-          "url": "https://www.airliners.net/user/pilota/profile",
-          "method": "GET",
-          "http_code": 202,
-          "body_snippet": "<!DOCTYPE html>\n  <html>\n  <head>\n    <script>\n        window.POW_CHALLENGE_DATA={\n            challenge_nonce:'12d5951733786ca5c0185d7473e5e21a',\n            challenge_hmac:'7e767b28a0b2c4bbf609a4b3',\n            difficulty:'1',\n            difficulty_char:'b',\n            issued_at:'1781706581',\n            cookie_duration:'3600',\n            cookie_domain:'www.airliners.net',\n            referrer:'(null)'\n        };\n        (async(d=window.POW_CHALLENGE_DATA)=>{if(!d)return;const utmSources={'google.com':'google','bing.com':'bing','yahoo.com':'yahoo','duckduckgo.com':'duckduckgo','yandex.com':'yandex','baidu.com':'baidu','ecosia.org':'ecosia'};function getUtmParams(ref){try{const h=new URL(ref).hostname.replace(/^www\\./,'');const s=utmSources[h];return s?'utm_source='+s+'&utm_medium=organic':null}catch(e){return null}}let f=async t=>Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(t)))).map(b=>b.toString(16).padStart(2,0)).join(''),i=0;while(i++<1e7){let u=i.toString(),c=await f(d.challenge_nonce+d.issued_at+u);if(c.startsWith(d.difficulty_char.repeat(d.difficulty))){document.cookie='pow_bypass='+d.challenge_nonce+'|'+d.issued_at+'|'+u+'|'+c+'|'+d.challenge_hmac+'; domain='+d.cookie_domain+'; path=/; max-age='+d.cookie_duration+'; SameSite=Lax; Secure';const utms=d.referrer&&getUtmParams(d.referrer);if(utms){const url=new URL(location.href);utms.split('&').forEach(p=>{const[k,v]=p.split('=');if(!url.searchParams.has(k))url.searchParams.set(k,v)});location.href=url.toString()}else{location.reload()}break}}})()\n    </script>\n  </head>\n  <body>\n    <noscript><h1>JavaScript Required</h1><p>Please enable JavaScript to continue.</p></noscript>\n  </body>\n  </html>",
-          "status": "blocked",
-          "note": "Bot-blocking page detected (HTTP 202)"
-        },
-        {
-          "username": "uki58nor",
-          "username_type": "random",
-          "url": "https://www.airliners.net/user/uki58nor/profile",
-          "method": "GET",
-          "http_code": 202,
-          "body_snippet": "<!DOCTYPE html>\n  <html>\n  <head>\n    <script>\n        window.POW_CHALLENGE_DATA={\n            challenge_nonce:'20b468e2bb41853de178260df8aec06a',\n            challenge_hmac:'82cdce7c94b0c8ab2df67b2b',\n            difficulty:'1',\n            difficulty_char:'b',\n            issued_at:'1781706581',\n            cookie_duration:'3600',\n            cookie_domain:'www.airliners.net',\n            referrer:'(null)'\n        };\n        (async(d=window.POW_CHALLENGE_DATA)=>{if(!d)return;const utmSources={'google.com':'google','bing.com':'bing','yahoo.com':'yahoo','duckduckgo.com':'duckduckgo','yandex.com':'yandex','baidu.com':'baidu','ecosia.org':'ecosia'};function getUtmParams(ref){try{const h=new URL(ref).hostname.replace(/^www\\./,'');const s=utmSources[h];return s?'utm_source='+s+'&utm_medium=organic':null}catch(e){return null}}let f=async t=>Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(t)))).map(b=>b.toString(16).padStart(2,0)).join(''),i=0;while(i++<1e7){let u=i.toString(),c=await f(d.challenge_nonce+d.issued_at+u);if(c.startsWith(d.difficulty_char.repeat(d.difficulty))){document.cookie='pow_bypass='+d.challenge_nonce+'|'+d.issued_at+'|'+u+'|'+c+'|'+d.challenge_hmac+'; domain='+d.cookie_domain+'; path=/; max-age='+d.cookie_duration+'; SameSite=Lax; Secure';const utms=d.referrer&&getUtmParams(d.referrer);if(utms){const url=new URL(location.href);utms.split('&').forEach(p=>{const[k,v]=p.split('=');if(!url.searchParams.has(k))url.searchParams.set(k,v)});location.href=url.toString()}else{location.reload()}break}}})()\n    </script>\n  </head>\n  <body>\n    <noscript><h1>JavaScript Required</h1><p>Please enable JavaScript to continue.</p></noscript>\n  </body>\n  </html>",
-          "status": "blocked",
-          "note": "Bot-blocking page detected (HTTP 202)"
+          "http_code": null,
+          "body_snippet": "",
+          "status": "site_down",
+          "note": "Exception: SiteResult.__init__() got an unexpected keyword argument 'strip_bad_char'"
         }
       ],
-      "overall_status": "blocked",
-      "checked_at": "2026-06-17 14:29 UTC"
+      "overall_status": "site_down",
+      "checked_at": ""
     },
     {
       "name": "Albicla",
-      "cat": "social",
-      "uri_check": "https://albicla.com/{account}/post/1",
-      "uri_pretty": "https://albicla.com/{account}",
-      "e_code": 500,
-      "e_string": "500 Post tymczasowo niedostępny",
-      "m_code": 200,
-      "m_string": "404 Nie znaleziono użytkownika",
-      "known": [
-        "GazetaPolska",
-        "GPCodziennie"
-      ],
+      "cat": "",
+      "uri_check": "",
+      "uri_pretty": null,
+      "e_code": 0,
+      "e_string": "",
+      "m_code": 0,
+      "m_string": "",
+      "known": [],
       "has_protection": false,
       "protection": [],
       "has_post_body": false,
       "valid_field": null,
       "checks": [
         {
-          "username": "GazetaPolska",
+          "username": "",
           "username_type": "known",
-          "url": "https://albicla.com/GazetaPolska/post/1",
+          "url": "",
           "method": "GET",
-          "http_code": 500,
-          "body_snippet": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"utf-8\">\n  <meta http-equiv=\"x-ua-compatible\" content=\"ie=edge\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n  <title>500 Post tymczasowo niedostępny</title>\n  <style>html{overflow-y:scroll;color:#fff;font:400 62.5%/1.4 -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto,\"Helvetica Neue\",Helvetica,Arial,sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;-webkit-tap-highlight-color:transparent}body,html{height:100%;min-height:100%}body{margin:0;font-size:1.3rem;background:#29364E;color:#FFF}a{cursor:pointer;text-decoration:none;color:#FFF;background-color:transparent}a:active,a:hover{text-decoration:underline;color:#FFF;outline:0}h1,h2{margin:0 0 .5rem;color:;font-weight:400;line-height:1}h1{font-size:2.4rem}h2{font-size:3.6rem}.error-code{color:#ED1C24;font-size:8rem;line-height:1}p{margin:1.2rem 0}p.lead{font-size:1.6rem;color:#FFF}hr{box-sizing:content-box;height:0;margin:2.4rem 0;border:0;border-top:1px solid #ddd}.page{display:-webkit-box;display:-ms-flexbox;display:flex;min-height:100vh}.page:before{display:block;content:'';-webkit-box-flex:0;-ms-flex:0 1 474px;flex:0 1 474px;background:#09A0A9 50% 6em no-repeat;background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMjgiIGhlaWdodD0iNjkyIiB2aWV3Qm94PSIwIDAgMjI3LjYgNjkxLjgiPjxwYXRoIGQ9Ik02My41IDU2Ny4xaDEwMnYxMDguNGgtMTAyVjU2Ny4xeiIgZmlsbD0iI0ZGRiIvPjxwYXRoIGQ9Ik0xMTQuNyA1NjcuM2g1MHYxMDguNGgtNTBWNTY3LjN6IiBmaWxsPSIjODU4QzkzIi8+PHBhdGggZD0iTTYuMSAyOTAuOWgyMTYuNmMxLjcgMCAzIDEuMyAzIDN2MzQ0LjdjMCAxLjctMS4zIDMtMyAzSDYuMWMtMS43IDAtMy0xLjMtMy0zVjI5My45QzMuMSAyOTIuMiA0LjUgMjkwLjkgNi4xIDI5MC45eiIgZmlsbD0iIzIzQTdERSIvPjxwYXRoIGQ9Ik0xMTYuMiAyOTAuOWgxMDhjMC44IDAgMS41IDEuMyAxLjUgM3YzNDQuN2MwIDEuNy0wLjcgMy0xLjUgM0gxMTYuMmMtMC44IDAtMS41LTEuMy0xLjUtM1YyOTMuOUMxMTQuNyAyOTIuMiAxMTUuNCAyOTAuOSAxMTYuMiAyOTAuOXoiIGZpbGw9IiMxQThFQ0MiLz48cGF0aCBkPSJNMjI1LjcgNjM5LjV",
-          "status": "ok",
-          "note": "Found: HTTP 500, e_string present"
-        },
-        {
-          "username": "GPCodziennie",
-          "username_type": "known",
-          "url": "https://albicla.com/GPCodziennie/post/1",
-          "method": "GET",
-          "http_code": 500,
-          "body_snippet": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"utf-8\">\n  <meta http-equiv=\"x-ua-compatible\" content=\"ie=edge\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n  <title>500 Post tymczasowo niedostępny</title>\n  <style>html{overflow-y:scroll;color:#fff;font:400 62.5%/1.4 -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto,\"Helvetica Neue\",Helvetica,Arial,sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;-webkit-tap-highlight-color:transparent}body,html{height:100%;min-height:100%}body{margin:0;font-size:1.3rem;background:#29364E;color:#FFF}a{cursor:pointer;text-decoration:none;color:#FFF;background-color:transparent}a:active,a:hover{text-decoration:underline;color:#FFF;outline:0}h1,h2{margin:0 0 .5rem;color:;font-weight:400;line-height:1}h1{font-size:2.4rem}h2{font-size:3.6rem}.error-code{color:#ED1C24;font-size:8rem;line-height:1}p{margin:1.2rem 0}p.lead{font-size:1.6rem;color:#FFF}hr{box-sizing:content-box;height:0;margin:2.4rem 0;border:0;border-top:1px solid #ddd}.page{display:-webkit-box;display:-ms-flexbox;display:flex;min-height:100vh}.page:before{display:block;content:'';-webkit-box-flex:0;-ms-flex:0 1 474px;flex:0 1 474px;background:#09A0A9 50% 6em no-repeat;background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMjgiIGhlaWdodD0iNjkyIiB2aWV3Qm94PSIwIDAgMjI3LjYgNjkxLjgiPjxwYXRoIGQ9Ik02My41IDU2Ny4xaDEwMnYxMDguNGgtMTAyVjU2Ny4xeiIgZmlsbD0iI0ZGRiIvPjxwYXRoIGQ9Ik0xMTQuNyA1NjcuM2g1MHYxMDguNGgtNTBWNTY3LjN6IiBmaWxsPSIjODU4QzkzIi8+PHBhdGggZD0iTTYuMSAyOTAuOWgyMTYuNmMxLjcgMCAzIDEuMyAzIDN2MzQ0LjdjMCAxLjctMS4zIDMtMyAzSDYuMWMtMS43IDAtMy0xLjMtMy0zVjI5My45QzMuMSAyOTIuMiA0LjUgMjkwLjkgNi4xIDI5MC45eiIgZmlsbD0iIzIzQTdERSIvPjxwYXRoIGQ9Ik0xMTYuMiAyOTAuOWgxMDhjMC44IDAgMS41IDEuMyAxLjUgM3YzNDQuN2MwIDEuNy0wLjcgMy0xLjUgM0gxMTYuMmMtMC44IDAtMS41LTEuMy0xLjUtM1YyOTMuOUMxMTQuNyAyOTIuMiAxMTUuNCAyOTAuOSAxMTYuMiAyOTAuOXoiIGZpbGw9IiMxQThFQ0MiLz48cGF0aCBkPSJNMjI1LjcgNjM5LjV",
-          "status": "ok",
-          "note": "Found: HTTP 500, e_string present"
-        },
-        {
-          "username": "9pt0p6l45x9",
-          "username_type": "random",
-          "url": "https://albicla.com/9pt0p6l45x9/post/1",
-          "method": "GET",
-          "http_code": 200,
-          "body_snippet": "404 Nie znaleziono użytkownika",
-          "status": "ok",
-          "note": "Not found as expected: HTTP 200"
+          "http_code": null,
+          "body_snippet": "",
+          "status": "site_down",
+          "note": "Exception: SiteResult.__init__() got an unexpected keyword argument 'strip_bad_char'"
         }
       ],
-      "overall_status": "ok",
-      "checked_at": "2026-06-17 14:29 UTC"
+      "overall_status": "site_down",
+      "checked_at": ""
     },
     {
       "name": "akniga",
-      "cat": "hobby",
-      "uri_check": "https://akniga.org/profile/{account}",
+      "cat": "",
+      "uri_check": "",
       "uri_pretty": null,
-      "e_code": 200,
-      "e_string": " - Аудиокниги Клуб</title",
-      "m_code": 200,
-      "m_string": "К сожалению, такой страницы не существует. Вероятно, она была удалена с сервера, либо ее здесь никогда не было.",
-      "known": [
-        "bob",
-        "blue"
-      ],
+      "e_code": 0,
+      "e_string": "",
+      "m_code": 0,
+      "m_string": "",
+      "known": [],
       "has_protection": false,
       "protection": [],
       "has_post_body": false,
       "valid_field": null,
       "checks": [
         {
-          "username": "bob",
+          "username": "",
           "username_type": "known",
-          "url": "https://akniga.org/profile/bob",
+          "url": "",
           "method": "GET",
-          "http_code": 301,
+          "http_code": null,
           "body_snippet": "",
-          "status": "e_code_mismatch",
-          "note": "Expected HTTP 200, got 301"
-        },
-        {
-          "username": "blue",
-          "username_type": "known",
-          "url": "https://akniga.org/profile/blue",
-          "method": "GET",
-          "http_code": 301,
-          "body_snippet": "",
-          "status": "e_code_mismatch",
-          "note": "Expected HTTP 200, got 301"
-        },
-        {
-          "username": "4lxtjkt5h6yi",
-          "username_type": "random",
-          "url": "https://akniga.org/profile/4lxtjkt5h6yi",
-          "method": "GET",
-          "http_code": 404,
-          "body_snippet": "<!doctype html>\n<html lang=\"ru\">\n\n\n            \n            \n\n                    \n        \n\n\n\n<head>\n    \n        <meta charset=\"utf-8\">\n        <meta name=\"description\" content=\"Лучшая коллекция онлайн аудиокниг и аудиоспектаклей на любой вкус, ежедневное обновление свежими материалами. Слушать бесплатно с телефона или компьютера. Клуб любителей аудиокниг\">\n        <meta name=\"keywords\" content=\"слушать аудиокниги онлайн, аудиокниги, аудиоспектакли, бесплатно, фантастика, триллер, мистика, роман, приключения, детектив, классика, для детей\">\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no\">\n        <meta name=\"robots\" content=\"noindex,nofollow,max-image-preview:large\">\n        <meta name=\"theme-color\" content=\"#263440\">\n\n        <title>Ошибка / Аудиокниги слушать онлайн — Аудиокниги Клуб</title>\n\n        \n        \n        \n        \n        \n        \n            <link rel=\"preload\" href=\"https://akniga.org/application/frontend/skin/ak/assets/fonts/firaSans-medium.woff2\" as=\"font\" type=\"font/woff2\">\n   \n    <link rel=\"stylesheet\" type=\"text/css\" href=\"https://akniga.org/application/tmp/templates/cache/ak/6f83a1a6c828aa094748ac6f324a2e0d.css?v=165\" />\n\n    \n    \n   \n    <link rel=\"search\" type=\"application/opensearchdescription+xml\" href=\"https://akniga.org/search/opensearch/\" title=\"Аудиокниги слушать онлайн — Аудиокниги Клуб\" />\n    <script>(function(window, document, undefined) {var DOMReady = function(onInteractive, onComplete) {document.onreadystatechange = function() {var state = document.readyState;if (state === 'interactive' && onInteractive !== undefined) {onInteractive();}if (state === 'complete' && onComplete !== undefined) {onComplete();}};};var loadSymbols = function (callback) {var req = new XMLHttpRequest();req.onload = function (e) {var svgContainer = document.createElement('div');var svg = document.implementation.createHTMLDocument('');svgContainer.style.position = 'absolute';svgContai",
-          "status": "blocked",
-          "note": "Bot-blocking page detected (HTTP 404)"
+          "status": "site_down",
+          "note": "Exception: SiteResult.__init__() got an unexpected keyword argument 'strip_bad_char'"
         }
       ],
-      "overall_status": "blocked",
-      "checked_at": "2026-06-17 14:29 UTC"
+      "overall_status": "site_down",
+      "checked_at": ""
     },
     {
       "name": "alik",
-      "cat": "social",
-      "uri_check": "https://www.alik.cz/u/{account}",
+      "cat": "",
+      "uri_check": "",
       "uri_pretty": null,
-      "e_code": 200,
-      "e_string": "Vizitka – Alík.cz</title>",
-      "m_code": 404,
-      "m_string": "<title>Vizitka nenalezena",
-      "known": [
-        "igor",
-        "pavel"
-      ],
+      "e_code": 0,
+      "e_string": "",
+      "m_code": 0,
+      "m_string": "",
+      "known": [],
       "has_protection": false,
       "protection": [],
       "has_post_body": false,
       "valid_field": null,
       "checks": [
         {
-          "username": "igor",
+          "username": "",
           "username_type": "known",
-          "url": "https://www.alik.cz/u/igor",
+          "url": "",
           "method": "GET",
-          "http_code": 200,
-          "body_snippet": "<!doctype html>\r\n<html class=\"sekce-u\" lang=\"cs\">\r\n<meta charset=\"utf-8\">\r\n<title>Igor – Vizitka – Alík.cz</title>\r\n<meta name=\"description\" content=\"Mé skutečné jméno je Igor Chomča a je mi 26 let. S Alíkem kamarádím od 25. dubna 2019 a moje hodnost je zatoulaný.\">\r\n<meta name=\"viewport\" content=\"width=device-width\">\r\n<script>Date.serverOffset = new Date - 1781706581690</script><link rel=\"stylesheet\" href=\"//o00o.cz/2008/alik.css?404\"><link rel=\"stylesheet\" href=\"//o00o.cz/2017/layout.css?404\"><link rel=\"stylesheet\" href=\"//o00o.cz/2017/responzivni.css?404\"><link rel=\"stylesheet\" href=\"//o00o.cz/2017/stara-vizitka-responzivni.css?404\"><link rel=\"stylesheet\" href=\"//o00o.cz/2008/vizitka-default.css?404\"><link rel=\"shortcut icon\" href=\"//o00o.cz/2017/ikony/sekce-u.ico?v=2\">\r\n<meta property=\"og:site_name\" content=\"Alík.cz\">\r\n<meta property=\"og:type\" content=\"website\">\r\n<div id=\"main\" class=\"hp\">\r\n\t<div id=\"hlavicka\">\r\n    \r\n\t<h1><a href=\"/\" class=\"animace-rozhlizeni\"><img border=\"0\" width=\"120\" height=\"65\" alt=\"Alík\" src=\"//o00o.cz/2017/layout/logo-napis.png\" onmouseover=\"var s = style, π = Math.PI, x = (event.offsetX / offsetWidth - .5) * π, y = (event.offsetY / offsetHeight - .5) * π; s.transform = 'skew(' + (Math.sin(x) * (y > 0 ? -10 : 10)).toFixed(2) + 'deg,' + (Math.sin(y) * (x > 0 ? -5 : 5)).toFixed(2) + 'deg)'; setTimeout(function(){ s.transform = '' }, 200);\"></a></h1>\r\n    \r\n    <menu>\r\n        <li id=\"cedule-a\"><a href=\"/a\" class=\"cedule\"><span class=\"cedule-podklad\"></span><span class=\"cedule-obsah\"><span class=\"cedule-barva\"><span class=\"cedule-symbol\"></span></span></span><span class=\"cedule-text\"><u>A</u>líkoviny</span></a>\r\n        <li id=\"cedule-k\"><a href=\"/k\" class=\"cedule\"><span class=\"cedule-podklad\"></span><span class=\"cedule-obsah\"><span class=\"cedule-barva\"><span class=\"cedule-symbol\"></span></span></span><span class=\"cedule-text\"><u data-lidi=\"!1\" id=\"pocet-lidi\">K</u>lubovna</span></a>\r\n        <li id=\"cedule-h\"><a href=\"/h\" class=\"cedule\"><s",
-          "status": "ok",
-          "note": "Found: HTTP 200, e_string present"
-        },
-        {
-          "username": "pavel",
-          "username_type": "known",
-          "url": "https://www.alik.cz/u/pavel",
-          "method": "GET",
-          "http_code": 200,
-          "body_snippet": "<!doctype html>\r\n<html class=\"sekce-u\" lang=\"cs\">\r\n<meta charset=\"utf-8\">\r\n<title>Pavel__ – Vizitka – Alík.cz</title>\r\n<meta name=\"description\" content=\"Je mi 20 let. S Alíkem kamarádím od 3. března 2020 a moje hodnost je zatoulaný.\">\r\n<meta name=\"viewport\" content=\"width=device-width\">\r\n<script>Date.serverOffset = new Date - 1781706581877</script><link rel=\"stylesheet\" href=\"//o00o.cz/2008/alik.css?404\"><link rel=\"stylesheet\" href=\"//o00o.cz/2017/layout.css?404\"><link rel=\"stylesheet\" href=\"//o00o.cz/2017/responzivni.css?404\"><link rel=\"stylesheet\" href=\"//o00o.cz/2017/stara-vizitka-responzivni.css?404\"><link rel=\"stylesheet\" href=\"//o00o.cz/2008/vizitka-default.css?404\"><link rel=\"shortcut icon\" href=\"//o00o.cz/2017/ikony/sekce-u.ico?v=2\">\r\n<meta property=\"og:site_name\" content=\"Alík.cz\">\r\n<meta property=\"og:type\" content=\"website\">\r\n<div id=\"main\" class=\"hp\">\r\n\t<div id=\"hlavicka\">\r\n    \r\n\t<h1><a href=\"/\"><img border=\"0\" width=\"120\" height=\"65\" alt=\"Alík\" src=\"//o00o.cz/2017/layout/logo-napis.png\" onmouseover=\"var s = style, π = Math.PI, x = (event.offsetX / offsetWidth - .5) * π, y = (event.offsetY / offsetHeight - .5) * π; s.transform = 'skew(' + (Math.sin(x) * (y > 0 ? -10 : 10)).toFixed(2) + 'deg,' + (Math.sin(y) * (x > 0 ? -5 : 5)).toFixed(2) + 'deg)'; setTimeout(function(){ s.transform = '' }, 200);\"></a></h1>\r\n    \r\n    <menu>\r\n        <li id=\"cedule-a\"><a href=\"/a\" class=\"cedule\"><span class=\"cedule-podklad\"></span><span class=\"cedule-obsah\"><span class=\"cedule-barva\"><span class=\"cedule-symbol\"></span></span></span><span class=\"cedule-text\"><u>A</u>líkoviny</span></a>\r\n        <li id=\"cedule-k\"><a href=\"/k\" class=\"cedule\"><span class=\"cedule-podklad\"></span><span class=\"cedule-obsah\"><span class=\"cedule-barva\"><span class=\"cedule-symbol\"></span></span></span><span class=\"cedule-text\"><u data-lidi=\"!1\" id=\"pocet-lidi\">K</u>lubovna</span></a>\r\n        <li id=\"cedule-h\"><a href=\"/h\" class=\"cedule\"><span class=\"cedule-podklad\"></span><span class=\"cedule-obsah",
-          "status": "ok",
-          "note": "Found: HTTP 200, e_string present"
-        },
-        {
-          "username": "c4x1kq1f2nu",
-          "username_type": "random",
-          "url": "https://www.alik.cz/u/c4x1kq1f2nu",
-          "method": "GET",
-          "http_code": 404,
-          "body_snippet": "<!doctype html>\r\n<html class=\"sekce-u\" lang=\"cs\">\r\n<meta charset=\"utf-8\">\r\n<title>Vizitka nenalezena – Alík.cz</title>\r\n<meta name=\"description\" content=\"Bezpečný internetový portál pro děti. Obsahuje hry, chat, diskuze, vtipy, internetové poradny a zpravodajství určené právě dětem.\">\r\n<meta name=\"viewport\" content=\"width=device-width\">\r\n<script>Date.serverOffset = new Date - 1781706581987</script><link rel=\"stylesheet\" href=\"//o00o.cz/2017/layout.css?404\"><link rel=\"stylesheet\" href=\"//o00o.cz/2017/responzivni.css?404\"><link rel=\"shortcut icon\" href=\"//o00o.cz/2017/ikony/sekce-u.ico?v=2\">\r\n<meta property=\"og:site_name\" content=\"Alík.cz\">\r\n<meta property=\"og:type\" content=\"website\">\r\n<div id=\"main\" class=\"hpx\">\r\n\t<div id=\"hlavicka\">\r\n    \r\n\t<h1><a href=\"/\"><img border=\"0\" width=\"120\" height=\"65\" alt=\"Alík\" src=\"//o00o.cz/2017/layout/logo-napis.png\" onmouseover=\"var s = style, π = Math.PI, x = (event.offsetX / offsetWidth - .5) * π, y = (event.offsetY / offsetHeight - .5) * π; s.transform = 'skew(' + (Math.sin(x) * (y > 0 ? -10 : 10)).toFixed(2) + 'deg,' + (Math.sin(y) * (x > 0 ? -5 : 5)).toFixed(2) + 'deg)'; setTimeout(function(){ s.transform = '' }, 200);\"></a></h1>\r\n    \r\n    <menu>\r\n        <li id=\"cedule-a\"><a href=\"/a\" class=\"cedule\"><span class=\"cedule-podklad\"></span><span class=\"cedule-obsah\"><span class=\"cedule-barva\"><span class=\"cedule-symbol\"></span></span></span><span class=\"cedule-text\"><u>A</u>líkoviny</span></a>\r\n        <li id=\"cedule-k\"><a href=\"/k\" class=\"cedule\"><span class=\"cedule-podklad\"></span><span class=\"cedule-obsah\"><span class=\"cedule-barva\"><span class=\"cedule-symbol\"></span></span></span><span class=\"cedule-text\"><u data-lidi=\"!1\" id=\"pocet-lidi\">K</u>lubovna</span></a>\r\n        <li id=\"cedule-h\"><a href=\"/h\" class=\"cedule\"><span class=\"cedule-podklad\"></span><span class=\"cedule-obsah\"><span class=\"cedule-barva\"><span class=\"cedule-symbol\"></span></span></span><span class=\"cedule-text\"><u>H</u>ry</span></a>\r\n        \r\n        <li id=\"c",
-          "status": "ok",
-          "note": "Not found as expected: HTTP 404"
+          "http_code": null,
+          "body_snippet": "",
+          "status": "site_down",
+          "note": "Exception: SiteResult.__init__() got an unexpected keyword argument 'strip_bad_char'"
         }
       ],
-      "overall_status": "ok",
-      "checked_at": "2026-06-17 14:29 UTC"
+      "overall_status": "site_down",
+      "checked_at": ""
     },
     {
       "name": "AllMyLinks",
-      "cat": "social",
-      "uri_check": "https://allmylinks.com/{account}",
+      "cat": "",
+      "uri_check": "",
       "uri_pretty": null,
-      "e_code": 200,
-      "e_string": "class=\"site-profile guest\"",
-      "m_code": 404,
-      "m_string": "class=\"site-error\"",
-      "known": [
-        "blue",
-        "goddessbecca"
-      ],
-      "has_protection": true,
-      "protection": [
-        "cloudflare"
-      ],
+      "e_code": 0,
+      "e_string": "",
+      "m_code": 0,
+      "m_string": "",
+      "known": [],
+      "has_protection": false,
+      "protection": [],
       "has_post_body": false,
       "valid_field": null,
       "checks": [
         {
-          "username": "blue",
+          "username": "",
           "username_type": "known",
-          "url": "https://allmylinks.com/blue",
+          "url": "",
           "method": "GET",
-          "http_code": 200,
-          "body_snippet": "<!DOCTYPE html>\n<html lang=\"en-US\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n    <meta name=\"csrf-param\" content=\"_csrf-frontend\">\n<meta name=\"csrf-token\" content=\"w9EWsxdvJnrZpfLcJrbuzG5QGX0hC9_4dhfnkTUTFmevpCDeTz5qK5SRxOh2-peUPT58BW55ls4SUdTkXWp-MQ==\">\n    <title>Bob Cy (@blue) | AllMyLinks</title>\n    <link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"/apple-touch-icon.png?v=jrqih0mm\">\n    <link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"/favicon-32x32.png?v=jrqih0mm\">\n    <link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"/favicon-16x16.png?v=jrqih0mm\">\n    <link rel=\"shortcut icon\" href=\"/favicon.ico?v=jrqih0mm\">\n    <link rel=\"manifest\" href=\"/manifest.json?v=jrqih0mm\">\n    <link rel=\"mask-icon\" href=\"/safari-pinned-tab.svg?v=jrqih0mm\" color=\"#f4256f\">\n    <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n    <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\n    <link href=\"https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap\" rel=\"stylesheet\">\n    <meta name=\"msapplication-TileColor\" content=\"#ffffff\">\n    <meta name=\"theme-color\" content=\"#ffffff\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=5, user-scalable=1\"/>\n    <meta name=\"mobile-web-app-capable\" content=\"yes\">\n    <meta name=\"apple-mobile-web-app-capable\" content=\"yes\">\n    <meta name=\"apple-mobile-web-app-title\" content=\"AllMyLinks\">\n    <meta name=\"apple-itunes-app\" content=\"app-id=1461664069\">\n    <!-- Global site tag (gtag.js) - Google Analytics -->\n    <script async src=\"https://www.googletagmanager.com/gtag/js?id=G-3K6XN61SQS\"></script>\n    <script>\n        window.dataLayer = window.dataLayer || [];\n        function gtag(){dataLayer.push(arguments);}\n        gtag('js', new Date());\n        gtag('config', 'G-3K6XN61SQS');\n    </script>\n\n    ",
-          "status": "ok",
-          "note": "Found: HTTP 200, e_string present"
-        },
-        {
-          "username": "goddessbecca",
-          "username_type": "known",
-          "url": "https://allmylinks.com/goddessbecca",
-          "method": "GET",
-          "http_code": 200,
-          "body_snippet": "<!DOCTYPE html>\n<html lang=\"en-US\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n    <meta name=\"csrf-param\" content=\"_csrf-frontend\">\n<meta name=\"csrf-token\" content=\"SD_CX92AsMZcNJdRhTiR0HwXY_XQyR5nja-1Whv95fgkSvQyhdH8lxEAoWXVdOiIL3kGjZ-7V1Hp6YYvc4SNrg==\">\n    <title>Becca (@goddessbecca) | AllMyLinks</title>\n    <link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"/apple-touch-icon.png?v=jrqih0mm\">\n    <link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"/favicon-32x32.png?v=jrqih0mm\">\n    <link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"/favicon-16x16.png?v=jrqih0mm\">\n    <link rel=\"shortcut icon\" href=\"/favicon.ico?v=jrqih0mm\">\n    <link rel=\"manifest\" href=\"/manifest.json?v=jrqih0mm\">\n    <link rel=\"mask-icon\" href=\"/safari-pinned-tab.svg?v=jrqih0mm\" color=\"#f4256f\">\n    <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n    <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\n    <link href=\"https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap\" rel=\"stylesheet\">\n    <meta name=\"msapplication-TileColor\" content=\"#ffffff\">\n    <meta name=\"theme-color\" content=\"#ffffff\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=5, user-scalable=1\"/>\n    <meta name=\"mobile-web-app-capable\" content=\"yes\">\n    <meta name=\"apple-mobile-web-app-capable\" content=\"yes\">\n    <meta name=\"apple-mobile-web-app-title\" content=\"AllMyLinks\">\n    <meta name=\"apple-itunes-app\" content=\"app-id=1461664069\">\n    <!-- Global site tag (gtag.js) - Google Analytics -->\n    <script async src=\"https://www.googletagmanager.com/gtag/js?id=G-3K6XN61SQS\"></script>\n    <script>\n        window.dataLayer = window.dataLayer || [];\n        function gtag(){dataLayer.push(arguments);}\n        gtag('js', new Date());\n        gtag('config', 'G-3K6XN61SQS');\n    </script",
-          "status": "ok",
-          "note": "Found: HTTP 200, e_string present"
-        },
-        {
-          "username": "4whktg3n",
-          "username_type": "random",
-          "url": "https://allmylinks.com/4whktg3n",
-          "method": "GET",
-          "http_code": 404,
-          "body_snippet": "<!DOCTYPE html>\n<html lang=\"en-US\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n    <meta name=\"csrf-param\" content=\"_csrf-frontend\">\n<meta name=\"csrf-token\" content=\"l9EBF8_6gmqVd_L8SSsdcQap9rK6E1w5B9a52G0KcE_7pDd6l6vOO9hDxMgZZ2QpVceTyvVhFQ9jkIqtBXMYGQ==\">\n    <title>Not Found</title>\n    <link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"/apple-touch-icon.png?v=jrqih0mm\">\n    <link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"/favicon-32x32.png?v=jrqih0mm\">\n    <link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"/favicon-16x16.png?v=jrqih0mm\">\n    <link rel=\"shortcut icon\" href=\"/favicon.ico?v=jrqih0mm\">\n    <link rel=\"manifest\" href=\"/manifest.json?v=jrqih0mm\">\n    <link rel=\"mask-icon\" href=\"/safari-pinned-tab.svg?v=jrqih0mm\" color=\"#f4256f\">\n    <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n    <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\n    <link href=\"https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap\" rel=\"stylesheet\">\n    <meta name=\"msapplication-TileColor\" content=\"#ffffff\">\n    <meta name=\"theme-color\" content=\"#ffffff\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=5, user-scalable=1\"/>\n    <meta name=\"mobile-web-app-capable\" content=\"yes\">\n    <meta name=\"apple-mobile-web-app-capable\" content=\"yes\">\n    <meta name=\"apple-mobile-web-app-title\" content=\"AllMyLinks\">\n    <meta name=\"apple-itunes-app\" content=\"app-id=1461664069\">\n    <!-- Global site tag (gtag.js) - Google Analytics -->\n    <script async src=\"https://www.googletagmanager.com/gtag/js?id=G-3K6XN61SQS\"></script>\n    <script>\n        window.dataLayer = window.dataLayer || [];\n        function gtag(){dataLayer.push(arguments);}\n        gtag('js', new Date());\n        gtag('config', 'G-3K6XN61SQS');\n    </script>\n\n    <script type=\"text",
-          "status": "ok",
-          "note": "Not found as expected: HTTP 404"
+          "http_code": null,
+          "body_snippet": "",
+          "status": "site_down",
+          "note": "Exception: SiteResult.__init__() got an unexpected keyword argument 'strip_bad_char'"
         }
       ],
-      "overall_status": "ok",
-      "checked_at": "2026-06-17 14:29 UTC"
+      "overall_status": "site_down",
+      "checked_at": ""
     },
     {
       "name": "AniList",
-      "cat": "social",
-      "uri_check": "https://graphql.anilist.co",
-      "uri_pretty": "https://anilist.co/user/{account}",
-      "e_code": 200,
-      "e_string": "\"id\":",
-      "m_code": 404,
-      "m_string": "Not Found",
-      "known": [
-        "test",
-        "johndoe"
-      ],
-      "has_protection": false,
-      "protection": [],
-      "has_post_body": true,
-      "valid_field": null,
-      "checks": [
-        {
-          "username": "test",
-          "username_type": "known",
-          "url": "https://graphql.anilist.co",
-          "method": "POST",
-          "http_code": 200,
-          "body_snippet": "{\"data\":{\"User\":{\"id\":6295817,\"name\":\"Test\"}}}",
-          "status": "ok",
-          "note": "Found: HTTP 200, e_string present"
-        },
-        {
-          "username": "johndoe",
-          "username_type": "known",
-          "url": "https://graphql.anilist.co",
-          "method": "POST",
-          "http_code": 200,
-          "body_snippet": "{\"data\":{\"User\":{\"id\":5115099,\"name\":\"JohnDoe\"}}}",
-          "status": "ok",
-          "note": "Found: HTTP 200, e_string present"
-        },
-        {
-          "username": "gr9e30ci7s5",
-          "username_type": "random",
-          "url": "https://graphql.anilist.co",
-          "method": "POST",
-          "http_code": 404,
-          "body_snippet": "{\"errors\":[{\"message\":\"Not Found.\",\"status\":404,\"locations\":[{\"line\":1,\"column\":7}]}],\"data\":{\"User\":null}}",
-          "status": "ok",
-          "note": "Not found as expected: HTTP 404"
-        }
-      ],
-      "overall_status": "ok",
-      "checked_at": "2026-06-17 14:29 UTC"
-    },
-    {
-      "name": "AmericanThinker",
-      "cat": "political",
-      "uri_check": "https://www.americanthinker.com/author/{account}/",
+      "cat": "",
+      "uri_check": "",
       "uri_pretty": null,
-      "e_code": 200,
-      "e_string": "Articles &amp;",
-      "m_code": 301,
-      "m_string": "American Thinker</title>",
-      "known": [
-        "terrypaulding",
-        "monicashowalter"
-      ],
+      "e_code": 0,
+      "e_string": "",
+      "m_code": 0,
+      "m_string": "",
+      "known": [],
       "has_protection": false,
       "protection": [],
       "has_post_body": false,
       "valid_field": null,
       "checks": [
         {
-          "username": "terrypaulding",
+          "username": "",
           "username_type": "known",
-          "url": "https://www.americanthinker.com/author/terrypaulding/",
+          "url": "",
           "method": "GET",
-          "http_code": 200,
-          "body_snippet": "\n    \n<!DOCTYPE html>\n<html>\n\n<head>\n    <meta charset=utf-8 />\n    <title>Terry Paulding - American Thinker</title>\n\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n\n    <meta property=\"og:title\" content=\"Terry Paulding - American Thinker\" /><meta property=\"og:url\" content=\"https://www.americanthinker.com/\" /><meta property=\"og:type\" content=\"article\"/><meta property=\"fb:app_id\" content=\"1006646233035842\" /><script async src='https://talk.hyvor.com/embed/embed.js' type='module'></script><script src='https://talk.hyvor.com/embed/comment-counts.js'></script>\n          <script id=\"headerbidder\" type=\"text/javascript\" async data-cfasync=\"false\" src=\"//a.publir.com/platform/1378.js\"></script>\n    \n    <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=65497fe7a9ff0f0012c0d90c&product=inline-share-buttons' async='async'></script>\n    <link rel=\"shortcut icon\" href=\"/favicon.ico\" />\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"/assets/css/headers.css?v=7\" />\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"/assets/css/new_main.css?v=13\" />\n    <link rel=\"alternate\" type=\"application/rss+xml\" title=\"RSS 2.0\" href=\"//feeds.feedburner.com/americanthinker\" />\n    <link rel=\"alternate\" type=\"application/rss+xml\" title=\"RSS 2.0\" href=\"//feeds.feedburner.com/AmericanThinkerBlog\" />\n\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"/assets/css/footer.css?v=3\" />\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"/assets/css/shared.css?v=2\" />\n    <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css\">\n\n\n\n    <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css\" integrity=\"sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==\" crossorigin=\"anonymous\" referrerpolicy=\"no-referrer\" />\n    <script type=\"text/javascript\" src=\"/assets/3rd_party/html5shiv-printshiv.js\"></scri",
-          "status": "blocked",
-          "note": "Bot-blocking page detected (HTTP 200)"
-        },
-        {
-          "username": "monicashowalter",
-          "username_type": "known",
-          "url": "https://www.americanthinker.com/author/monicashowalter/",
-          "method": "GET",
-          "http_code": 200,
-          "body_snippet": "<!DOCTYPE html>\r\n<html>\r\n\r\n  <head>\r\n    <meta charset=utf-8 />\r\n    <title>Articles: Monica Showalter Archives - American Thinker</title>\r\n\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n\r\n    \r\n    <link rel=\"shortcut icon\" href=\"/favicon.ico\" />\r\n\r\n    <link rel=\"alternate\" type=\"application/rss+xml\" title=\"RSS 2.0\" href=\"//feeds.feedburner.com/americanthinker\" />\r\n    <link rel=\"alternate\" type=\"application/rss+xml\" title=\"RSS 2.0\" href=\"//feeds.feedburner.com/AmericanThinkerBlog\" />\r\n    <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css\" integrity=\"sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==\" crossorigin=\"anonymous\" referrerpolicy=\"no-referrer\" />\r\n    <script type=\"text/javascript\" src=\"/assets/3rd_party/html5shiv-printshiv.js\"></script>\r\n    <script type=\"text/javascript\" src=\"/assets/3rd_party/jquery-1.10.2.min.js\"></script>\r\n    <script type=\"text/javascript\" src=\"/assets/3rd_party/viewportSize-min.js\"></script>\r\n\r\n            <!--Confiant-->\r\n        <script async=\"\"\r\n                src=\"https://confiant-integrations.global.ssl.fastly.net/7Wu_Kxa62SVklAT2KI86xg35u9c/gpt_and_prebid/config.js\">\r\n        </script>\r\n\r\n\r\n        <script>\r\n            function getCookie(cname) {\r\n              var name = cname + \"=\";\r\n              var ca = document.cookie.split(';');\r\n              for(var i = 0; i < ca.length; i++) {\r\n                var c = ca[i];\r\n                while (c.charAt(0) == ' ') {\r\n                  c = c.substring(1);\r\n                }\r\n                if (c.indexOf(name) == 0) {\r\n                  return c.substring(name.length, c.length);\r\n                }\r\n              }\r\n              return \"\";\r\n            }\r\n\r\n            var cookieValueOld = getCookie(\"PUBLIR_SUBSCRIBER\");\r\n            var cookieValueNew = getCookie(\"publir_subscriber\");\r\n            var publir_show_ads = true;\r\n            var do_air",
-          "status": "ok",
-          "note": "Found: HTTP 200, e_string present"
-        },
-        {
-          "username": "oo99qozm2g",
-          "username_type": "random",
-          "url": "https://www.americanthinker.com/author/oo99qozm2g/",
-          "method": "GET",
-          "http_code": 404,
-          "body_snippet": "<html>\r\n<head><title>404 Not Found</title></head>\r\n<body>\r\n<center><h1>404 Not Found</h1></center>\r\n<hr><center>nginx/1.27.1</center>\r\n<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML=\"window.__CF$cv$params={r:'a0d2bf77ed677608',t:'MTc4MTcwNjU4MQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);\";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>\r\n</html>\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n",
-          "status": "m_code_mismatch",
-          "note": "Expected m_code 301, got 404"
+          "http_code": null,
+          "body_snippet": "",
+          "status": "site_down",
+          "note": "Exception: SiteResult.__init__() got an unexpected keyword argument 'strip_bad_char'"
         }
       ],
-      "overall_status": "m_code_mismatch",
-      "checked_at": "2026-06-17 14:29 UTC"
+      "overall_status": "site_down",
+      "checked_at": ""
     },
     {
-      "name": "Anime-Planet",
-      "cat": "social",
-      "uri_check": "https://www.anime-planet.com/api/validation/username",
-      "uri_pretty": "https://www.anime-planet.com/users/{account}",
-      "e_code": 400,
-      "e_string": "\"msg\":\"Username is unavailable\"",
-      "m_code": 200,
-      "m_string": "\"status\":\"ok\"",
-      "known": [
-        "zala",
-        "lindapearl"
-      ],
-      "has_protection": true,
-      "protection": [
-        "cloudflare"
-      ],
-      "has_post_body": true,
+      "name": "AmericanThinker",
+      "cat": "",
+      "uri_check": "",
+      "uri_pretty": null,
+      "e_code": 0,
+      "e_string": "",
+      "m_code": 0,
+      "m_string": "",
+      "known": [],
+      "has_protection": false,
+      "protection": [],
+      "has_post_body": false,
       "valid_field": null,
       "checks": [
         {
-          "username": "zala",
+          "username": "",
           "username_type": "known",
-          "url": "https://www.anime-planet.com/api/validation/username",
-          "method": "POST",
-          "http_code": 400,
-          "body_snippet": "{\"status\":\"err\",\"msg\":\"Username is unavailable\"}",
-          "status": "ok",
-          "note": "Found: HTTP 400, e_string present"
-        },
-        {
-          "username": "lindapearl",
-          "username_type": "known",
-          "url": "https://www.anime-planet.com/api/validation/username",
-          "method": "POST",
-          "http_code": 400,
-          "body_snippet": "{\"status\":\"err\",\"msg\":\"Username is unavailable\"}",
-          "status": "ok",
-          "note": "Found: HTTP 400, e_string present"
-        },
-        {
-          "username": "pju2ru4pun",
-          "username_type": "random",
-          "url": "https://www.anime-planet.com/api/validation/username",
-          "method": "POST",
-          "http_code": 200,
-          "body_snippet": "{\"status\":\"ok\",\"data\":null}",
-          "status": "ok",
-          "note": "Not found as expected: HTTP 200"
+          "url": "",
+          "method": "GET",
+          "http_code": null,
+          "body_snippet": "",
+          "status": "site_down",
+          "note": "Exception: SiteResult.__init__() got an unexpected keyword argument 'strip_bad_char'"
         }
       ],
-      "overall_status": "ok",
-      "checked_at": "2026-06-17 14:29 UTC"
+      "overall_status": "site_down",
+      "checked_at": ""
+    },
+    {
+      "name": "Anime-Planet",
+      "cat": "",
+      "uri_check": "",
+      "uri_pretty": null,
+      "e_code": 0,
+      "e_string": "",
+      "m_code": 0,
+      "m_string": "",
+      "known": [],
+      "has_protection": false,
+      "protection": [],
+      "has_post_body": false,
+      "valid_field": null,
+      "checks": [
+        {
+          "username": "",
+          "username_type": "known",
+          "url": "",
+          "method": "GET",
+          "http_code": null,
+          "body_snippet": "",
+          "status": "site_down",
+          "note": "Exception: SiteResult.__init__() got an unexpected keyword argument 'strip_bad_char'"
+        }
+      ],
+      "overall_status": "site_down",
+      "checked_at": ""
     },
     {
       "name": "Arch Linux GitLab",
@@ -1141,55 +668,32 @@
     },
     {
       "name": "anonup",
-      "cat": "social",
-      "uri_check": "https://anonup.com/@{account}",
+      "cat": "",
+      "uri_check": "",
       "uri_pretty": null,
-      "e_code": 200,
-      "e_string": "Show followings",
-      "m_code": 302,
-      "m_string": "Page not found!",
-      "known": [
-        "john",
-        "peter"
-      ],
+      "e_code": 0,
+      "e_string": "",
+      "m_code": 0,
+      "m_string": "",
+      "known": [],
       "has_protection": false,
       "protection": [],
       "has_post_body": false,
       "valid_field": null,
       "checks": [
         {
-          "username": "john",
+          "username": "",
           "username_type": "known",
-          "url": "https://anonup.com/@john",
+          "url": "",
           "method": "GET",
-          "http_code": 302,
-          "body_snippet": "<!DOCTYPE html>\n<html>\n    <head>\n        <meta charset=\"UTF-8\" />\n        <meta http-equiv=\"refresh\" content=\"0;url='https://anonup.com/auth/login'\" />\n\n        <title>Redirecting to https://anonup.com/auth/login</title>\n    </head>\n    <body>\n        Redirecting to <a href=\"https://anonup.com/auth/login\">https://anonup.com/auth/login</a>.\n    </body>\n</html>",
-          "status": "e_code_mismatch",
-          "note": "Expected HTTP 200, got 302"
-        },
-        {
-          "username": "peter",
-          "username_type": "known",
-          "url": "https://anonup.com/@peter",
-          "method": "GET",
-          "http_code": 302,
-          "body_snippet": "<!DOCTYPE html>\n<html>\n    <head>\n        <meta charset=\"UTF-8\" />\n        <meta http-equiv=\"refresh\" content=\"0;url='https://anonup.com/auth/login'\" />\n\n        <title>Redirecting to https://anonup.com/auth/login</title>\n    </head>\n    <body>\n        Redirecting to <a href=\"https://anonup.com/auth/login\">https://anonup.com/auth/login</a>.\n    </body>\n</html>",
-          "status": "e_code_mismatch",
-          "note": "Expected HTTP 200, got 302"
-        },
-        {
-          "username": "40yv458dtq3",
-          "username_type": "random",
-          "url": "https://anonup.com/@40yv458dtq3",
-          "method": "GET",
-          "http_code": 302,
-          "body_snippet": "<!DOCTYPE html>\n<html>\n    <head>\n        <meta charset=\"UTF-8\" />\n        <meta http-equiv=\"refresh\" content=\"0;url='https://anonup.com/auth/login'\" />\n\n        <title>Redirecting to https://anonup.com/auth/login</title>\n    </head>\n    <body>\n        Redirecting to <a href=\"https://anonup.com/auth/login\">https://anonup.com/auth/login</a>.\n    </body>\n</html>",
-          "status": "m_string_missing",
-          "note": "m_string not found in response body (HTTP 302)"
+          "http_code": null,
+          "body_snippet": "",
+          "status": "site_down",
+          "note": "Exception: SiteResult.__init__() got an unexpected keyword argument 'strip_bad_char'"
         }
       ],
-      "overall_status": "e_code_mismatch",
-      "checked_at": "2026-06-17 14:29 UTC"
+      "overall_status": "site_down",
+      "checked_at": ""
     },
     {
       "name": "ArmorGames",
@@ -1349,55 +853,32 @@
     },
     {
       "name": "Apex Legends",
-      "cat": "gaming",
-      "uri_check": "https://api.tracker.gg/api/v2/apex/standard/profile/origin/{account}",
-      "uri_pretty": "https://apex.tracker.gg/apex/profile/origin/{account}/overview",
-      "e_code": 200,
-      "e_string": "platformInfo",
-      "m_code": 404,
-      "m_string": "CollectorResultStatus::NotFound",
-      "known": [
-        "tttcheekyttt",
-        "RollsRoyce_Dawn"
-      ],
+      "cat": "",
+      "uri_check": "",
+      "uri_pretty": null,
+      "e_code": 0,
+      "e_string": "",
+      "m_code": 0,
+      "m_string": "",
+      "known": [],
       "has_protection": false,
       "protection": [],
       "has_post_body": false,
       "valid_field": null,
       "checks": [
         {
-          "username": "tttcheekyttt",
+          "username": "",
           "username_type": "known",
-          "url": "https://api.tracker.gg/api/v2/apex/standard/profile/origin/tttcheekyttt",
+          "url": "",
           "method": "GET",
-          "http_code": 200,
-          "body_snippet": "{\"data\":{\"platformInfo\":{\"platformSlug\":\"origin\",\"platformUserId\":\"tttcheekyttt\",\"platformUserHandle\":\"tttcheekyttt\",\"platformUserIdentifier\":\"tttcheekyttt\",\"avatarUrl\":\"https://eaavatarservice.akamaized.net/production/avatar/prod/1/599/208x208.JPEG\",\"additionalParameters\":null},\"userInfo\":{\"userId\":null,\"isPremium\":false,\"isVerified\":false,\"isInfluencer\":false,\"isPartner\":false,\"countryCode\":null,\"customAvatarUrl\":null,\"customHeroUrl\":null,\"customAvatarFrame\":null,\"customAvatarFrameInfo\":null,\"premiumDuration\":null,\"socialAccounts\":[],\"badges\":null,\"pageviews\":6873,\"xpTier\":null,\"isSuspicious\":null},\"metadata\":{\"currentSeason\":29,\"activeLegend\":\"legend_7\",\"activeLegendName\":\"Lifeline\",\"activeLegendStats\":null,\"isGameBanned\":false,\"isOverwolfAppUser\":false},\"segments\":[{\"type\":\"overview\",\"attributes\":{},\"metadata\":{\"name\":\"Lifetime\"},\"expiryDate\":\"2026-06-17T14:31:31.5002153+00:00\",\"stats\":{\"level\":{\"percentile\":0.0,\"displayName\":\"Level\",\"displayCategory\":\"Combat\",\"metadata\":{},\"value\":1.0,\"displayValue\":\"1\",\"displayType\":\"Unspecified\"},\"rankScore\":{\"displayName\":\"Rank Score\",\"displayCategory\":\"Game\",\"metadata\":{\"iconUrl\":\"https://trackercdn.com/cdn/apex.tracker.gg/ranks/rookie4.png\",\"rankName\":\"Rookie 4\"},\"value\":0.0,\"displayValue\":\"0\",\"displayType\":\"Unspecified\"},\"arenaRankScore\":{\"displayName\":\"Arena Rank Score\",\"displayCategory\":\"Game\",\"metadata\":{\"iconUrl\":\"https://trackercdn.com/cdn/apex.tracker.gg/ranks/bronze4.png\",\"rankName\":\"Bronze 4\"},\"value\":0.0,\"displayValue\":\"0\",\"displayType\":\"Unspecified\"}}},{\"type\":\"legend\",\"attributes\":{\"id\":\"legend_7\"},\"metadata\":{\"name\":\"Lifeline\",\"imageUrl\":\"https://trackercdn.com/cdn/apex.tracker.gg/legends/lifeline-tile.png\",\"tallImageUrl\":\"https://trackercdn.com/cdn/apex.tracker.gg/legends/lifeline-tall.png\",\"bgImageUrl\":\"https://trackercdn.com/cdn/apex.tracker.gg/legends/lifeline-concept-bg-small.jpg\",\"portraitImageUrl\":\"https://trackercdn.com/cdn/apex.tracker.gg/legends/portraits/lifeline.png\",\"legendColor\":\"#A872B8\",\"isActi",
-          "status": "ok",
-          "note": "Found: HTTP 200, e_string present"
-        },
-        {
-          "username": "RollsRoyce_Dawn",
-          "username_type": "known",
-          "url": "https://api.tracker.gg/api/v2/apex/standard/profile/origin/RollsRoyce_Dawn",
-          "method": "GET",
-          "http_code": 200,
-          "body_snippet": "{\"data\":{\"platformInfo\":{\"platformSlug\":\"origin\",\"platformUserId\":\"RollsRoyce_Dawn\",\"platformUserHandle\":\"RollsRoyce_Dawn\",\"platformUserIdentifier\":\"RollsRoyce_Dawn\",\"avatarUrl\":\"https://eaavatarservice.akamaized.net/production/avatar/prod/userAvatar/27468973/208x208.JPEG\",\"additionalParameters\":null},\"userInfo\":{\"userId\":null,\"isPremium\":false,\"isVerified\":false,\"isInfluencer\":false,\"isPartner\":false,\"countryCode\":null,\"customAvatarUrl\":null,\"customHeroUrl\":null,\"customAvatarFrame\":null,\"customAvatarFrameInfo\":null,\"premiumDuration\":null,\"socialAccounts\":[],\"badges\":null,\"pageviews\":13531,\"xpTier\":null,\"isSuspicious\":null},\"metadata\":{\"currentSeason\":29,\"activeLegend\":\"legend_1\",\"activeLegendName\":\"Wraith\",\"activeLegendStats\":[\"Kills\",\"Wins\",\"Damage\"],\"isGameBanned\":false,\"isOverwolfAppUser\":false},\"segments\":[{\"type\":\"overview\",\"attributes\":{},\"metadata\":{\"name\":\"Lifetime\"},\"expiryDate\":\"2026-06-17T14:32:42.4403579+00:00\",\"stats\":{\"level\":{\"percentile\":59.0,\"displayName\":\"Level\",\"displayCategory\":\"Combat\",\"metadata\":{},\"value\":189.0,\"displayValue\":\"189\",\"displayType\":\"Unspecified\"},\"kills\":{\"percentile\":65.0,\"displayName\":\"Kills\",\"displayCategory\":\"Combat\",\"metadata\":{},\"value\":760.0,\"displayValue\":\"760\",\"displayType\":\"Unspecified\"},\"damage\":{\"percentile\":38.0,\"displayName\":\"Damage\",\"displayCategory\":\"Combat\",\"metadata\":{},\"value\":55243.0,\"displayValue\":\"55,243\",\"displayType\":\"Unspecified\"},\"rankScore\":{\"displayName\":\"Rank Score\",\"displayCategory\":\"Game\",\"metadata\":{\"iconUrl\":\"https://trackercdn.com/cdn/apex.tracker.gg/ranks/rookie4.png\",\"rankName\":\"Rookie 4\"},\"value\":0.0,\"displayValue\":\"0\",\"displayType\":\"Unspecified\"},\"arenaRankScore\":{\"displayName\":\"Arena Rank Score\",\"displayCategory\":\"Game\",\"metadata\":{\"iconUrl\":\"https://trackercdn.com/cdn/apex.tracker.gg/ranks/bronze4.png\",\"rankName\":\"Bronze 4\"},\"value\":0.0,\"displayValue\":\"0\",\"displayType\":\"Unspecified\"},\"season7Wins\":{\"displayName\":\"Season 7 Wins\",\"displayCategory\":\"Game\",\"metadata\":{},\"value\":0.0,\"displayVal",
-          "status": "ok",
-          "note": "Found: HTTP 200, e_string present"
-        },
-        {
-          "username": "yjz850sjy",
-          "username_type": "random",
-          "url": "https://api.tracker.gg/api/v2/apex/standard/profile/origin/yjz850sjy",
-          "method": "GET",
-          "http_code": 404,
-          "body_snippet": "{\"errors\":[{\"code\":\"CollectorResultStatus::NotFound\",\"message\":\"We could not find the player yjz850sjy on EA.\",\"data\":{}}]}",
-          "status": "ok",
-          "note": "Not found as expected: HTTP 404"
+          "http_code": null,
+          "body_snippet": "",
+          "status": "site_down",
+          "note": "Exception: SiteResult.__init__() got an unexpected keyword argument 'strip_bad_char'"
         }
       ],
-      "overall_status": "ok",
-      "checked_at": "2026-06-17 14:29 UTC"
+      "overall_status": "site_down",
+      "checked_at": ""
     },
     {
       "name": "ArtBreeder",
@@ -1505,107 +986,61 @@
     },
     {
       "name": "Alura",
-      "cat": "tech",
-      "uri_check": "https://cursos.alura.com.br/user/{account}",
+      "cat": "",
+      "uri_check": "",
       "uri_pretty": null,
-      "e_code": 200,
-      "e_string": "Perfil de",
-      "m_code": 404,
-      "m_string": "\"error\":\"Not Found\"",
-      "known": [
-        "edmilson",
-        "jonathan"
-      ],
+      "e_code": 0,
+      "e_string": "",
+      "m_code": 0,
+      "m_string": "",
+      "known": [],
       "has_protection": false,
       "protection": [],
       "has_post_body": false,
       "valid_field": null,
       "checks": [
         {
-          "username": "edmilson",
+          "username": "",
           "username_type": "known",
-          "url": "https://cursos.alura.com.br/user/edmilson",
+          "url": "",
           "method": "GET",
-          "http_code": 200,
-          "body_snippet": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n    \n    \n        \n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<!DOCTYPE html>\n<html lang=\"pt-BR\" data-product=\"alura\" class=\"\ntheme-dark\n\">\n\n<head>\n\t\n<script>\n(function () {\n  function normalizeTheme(theme) {\n    return theme === \"light\" ? \"light\" : \"dark\";\n  }\n\n  const match = document.cookie.match(/(?:^|; )user-theme=([^;]*)/);\n  let theme = \"dark\";\n\n  if (match) {\n    try {\n      theme = normalizeTheme(decodeURIComponent(match[1]));\n    } catch (error) {\n      theme = \"dark\";\n    }\n  }\n\n  document.documentElement.classList.add(\"theme-\" + theme);\n})();\n</script>\n\n\t<meta charset=\"UTF-8\">\n\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n\n\t\n\n\t\n\t\t\n\n\n\n\n\n\n    \n        \n            <!-- Google Tag Manager -->\n            <script>\n                ;(function(w, d, s, l, i) {\n                    w[l] = w[l] || [];\n                    w[l].push({\n                        'gtm.start': new Date().getTime(),\n                        event: 'gtm.js'\n                    });\n                    var f = d.getElementsByTagName(s)[0],\n                        j = d.createElement(s);\n                    j.async = true;\n                    j.src = \"https://stape.alura.com.br/aqukryqvi.js?\" + i;\n                    f.parentNode.insertBefore(j, f);\n                })(window, document, 'script', 'dataLayerAlura', '9e=ABJMPiYmWD89OiYuPjlTB1REX0hUB0gVCAIQNRMSEAMoGgQLE00RH1QXHQwAClsSBhtfGwA%3D');\n            </script>\n            <!-- End Google Tag Manager -->\n        \n        \n    \n\n\n    <script>\n        let dataLayerAlura = window.dataLayerAlura || [];\n        dataLayerAlura.push({\n            'event': 'virtual_page_view',\n            'page_category': 'Profile',\n            \n        });\n    </script>\n\n\n\n\n\n\n\n\t\n\n\t\n\n\n\n\n\n\n\n\t\n\n\t<title>Perfil de Edmilson | Alura - Cursos online de tecnologia</title>\n\n\t<link rel=\"shortcut icon\" href=\"/assets/images/alura/favicon.ico\">\n\n\t\n\t\t<meta name=\"description\" content=\"Veja o perfil e certificados de Edmilson\">\n\t\n",
-          "status": "ok",
-          "note": "Found: HTTP 200, e_string present"
-        },
-        {
-          "username": "jonathan",
-          "username_type": "known",
-          "url": "https://cursos.alura.com.br/user/jonathan",
-          "method": "GET",
-          "http_code": 200,
-          "body_snippet": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n    \n    \n        \n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<!DOCTYPE html>\n<html lang=\"pt-BR\" data-product=\"alura\" class=\"\ntheme-dark\n\">\n\n<head>\n\t\n<script>\n(function () {\n  function normalizeTheme(theme) {\n    return theme === \"light\" ? \"light\" : \"dark\";\n  }\n\n  const match = document.cookie.match(/(?:^|; )user-theme=([^;]*)/);\n  let theme = \"dark\";\n\n  if (match) {\n    try {\n      theme = normalizeTheme(decodeURIComponent(match[1]));\n    } catch (error) {\n      theme = \"dark\";\n    }\n  }\n\n  document.documentElement.classList.add(\"theme-\" + theme);\n})();\n</script>\n\n\t<meta charset=\"UTF-8\">\n\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n\n\t\n\n\t\n\t\t\n\n\n\n\n\n\n    \n        \n            <!-- Google Tag Manager -->\n            <script>\n                ;(function(w, d, s, l, i) {\n                    w[l] = w[l] || [];\n                    w[l].push({\n                        'gtm.start': new Date().getTime(),\n                        event: 'gtm.js'\n                    });\n                    var f = d.getElementsByTagName(s)[0],\n                        j = d.createElement(s);\n                    j.async = true;\n                    j.src = \"https://stape.alura.com.br/aqukryqvi.js?\" + i;\n                    f.parentNode.insertBefore(j, f);\n                })(window, document, 'script', 'dataLayerAlura', '9e=ABJMPiYmWD89OiYuPjlTB1REX0hUB0gVCAIQNRMSEAMoGgQLE00RH1QXHQwAClsSBhtfGwA%3D');\n            </script>\n            <!-- End Google Tag Manager -->\n        \n        \n    \n\n\n    <script>\n        let dataLayerAlura = window.dataLayerAlura || [];\n        dataLayerAlura.push({\n            'event': 'virtual_page_view',\n            'page_category': 'Profile',\n            \n        });\n    </script>\n\n\n\n\n\n\n\n\t\n\n\t\n\n\n\n\n\n\n\n\t\n\n\t<title>Perfil de Jonathan Brandão Paulo Pereira | Alura - Cursos online de tecnologia</title>\n\n\t<link rel=\"shortcut icon\" href=\"/assets/images/alura/favicon.ico\">\n\n\t\n\t\t<meta name=\"description\" content=\"Veja o perfil e certifi",
-          "status": "ok",
-          "note": "Found: HTTP 200, e_string present"
-        },
-        {
-          "username": "95d61we1y",
-          "username_type": "random",
-          "url": "https://cursos.alura.com.br/user/95d61we1y",
-          "method": "GET",
-          "http_code": 404,
-          "body_snippet": "{\"timestamp\":\"2026-06-17T14:29:43.046+00:00\",\"status\":404,\"error\":\"Not Found\",\"path\":\"/user/95d61we1y\"}",
-          "status": "ok",
-          "note": "Not found as expected: HTTP 404"
+          "http_code": null,
+          "body_snippet": "",
+          "status": "site_down",
+          "note": "Exception: SiteResult.__init__() got an unexpected keyword argument 'strip_bad_char'"
         }
       ],
-      "overall_status": "ok",
-      "checked_at": "2026-06-17 14:29 UTC"
+      "overall_status": "site_down",
+      "checked_at": ""
     },
     {
       "name": "Ameblo",
-      "cat": "blog",
-      "uri_check": "https://ameblo.jp/{account}",
+      "cat": "",
+      "uri_check": "",
       "uri_pretty": null,
-      "e_code": 200,
-      "e_string": "画像一覧",
-      "m_code": 404,
-      "m_string": "削除された可能性がございます。",
-      "known": [
-        "ereko-blog",
-        "senpai"
-      ],
+      "e_code": 0,
+      "e_string": "",
+      "m_code": 0,
+      "m_string": "",
+      "known": [],
       "has_protection": false,
       "protection": [],
       "has_post_body": false,
       "valid_field": null,
       "checks": [
         {
-          "username": "ereko-blog",
+          "username": "",
           "username_type": "known",
-          "url": "https://ameblo.jp/ereko-blog",
+          "url": "",
           "method": "GET",
-          "http_code": 301,
-          "body_snippet": "<p>Moved Permanently. Redirecting to <a href=\"/ereko-blog/\">/ereko-blog/</a></p>",
-          "status": "e_code_mismatch",
-          "note": "Expected HTTP 200, got 301"
-        },
-        {
-          "username": "senpai",
-          "username_type": "known",
-          "url": "https://ameblo.jp/senpai",
-          "method": "GET",
-          "http_code": 301,
-          "body_snippet": "Moved Permanently. Redirecting to /senpai/",
-          "status": "e_code_mismatch",
-          "note": "Expected HTTP 200, got 301"
-        },
-        {
-          "username": "01tuyd0vxp1",
-          "username_type": "random",
-          "url": "https://ameblo.jp/01tuyd0vxp1",
-          "method": "GET",
-          "http_code": 301,
-          "body_snippet": "Moved Permanently. Redirecting to /01tuyd0vxp1/",
-          "status": "m_code_mismatch",
-          "note": "Expected m_code 404, got 301"
+          "http_code": null,
+          "body_snippet": "",
+          "status": "site_down",
+          "note": "Exception: SiteResult.__init__() got an unexpected keyword argument 'strip_bad_char'"
         }
       ],
-      "overall_status": "e_code_mismatch",
-      "checked_at": "2026-06-17 14:29 UTC"
+      "overall_status": "site_down",
+      "checked_at": ""
     },
     {
       "name": "asciinema",
@@ -21780,38 +21215,6 @@
         }
       ],
       "overall_status": "e_string_missing",
-      "checked_at": "2026-06-17 14:30 UTC"
-    },
-    {
-      "name": "Mastodon-climatejustice.rocks",
-      "cat": "social",
-      "uri_check": "https://climatejustice.rocks/api/v1/accounts/lookup?acct={account}",
-      "uri_pretty": "https://climatejustice.rocks/@{account}",
-      "e_code": 200,
-      "e_string": "username\":",
-      "m_code": 404,
-      "m_string": "Record not found",
-      "known": [
-        "paula",
-        "PaulaToThePeople"
-      ],
-      "has_protection": false,
-      "protection": [],
-      "has_post_body": false,
-      "valid_field": null,
-      "checks": [
-        {
-          "username": "paula",
-          "username_type": "known",
-          "url": "https://climatejustice.rocks/api/v1/accounts/lookup?acct=paula",
-          "method": "GET",
-          "http_code": null,
-          "body_snippet": "",
-          "status": "site_down",
-          "note": "No response — site down or DNS failure"
-        }
-      ],
-      "overall_status": "site_down",
       "checked_at": "2026-06-17 14:30 UTC"
     },
     {

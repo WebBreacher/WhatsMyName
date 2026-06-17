@@ -154,6 +154,47 @@
 <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
 <script>
+// ---- Quick filters (status column = index 1) ----
+let _filterHideOk   = false;
+let _filterDownOnly = false;
+
+$.fn.dataTable.ext.search.push(function(settings, data) {
+  if (!settings.nTable || settings.nTable.id !== 'results-table') return true;
+  const status = data[1];
+  if (_filterDownOnly) return status === 'site_down';
+  if (_filterHideOk)   return status !== 'ok';
+  return true;
+});
+
+function toggleHideOk() {
+  _filterHideOk = !_filterHideOk;
+  if (_filterHideOk) _filterDownOnly = false;
+  _syncFilterBtns();
+  if ($('#results-table').length) $('#results-table').DataTable().draw();
+}
+
+function toggleDownOnly() {
+  _filterDownOnly = !_filterDownOnly;
+  if (_filterDownOnly) _filterHideOk = false;
+  _syncFilterBtns();
+  if ($('#results-table').length) $('#results-table').DataTable().draw();
+}
+
+function _syncFilterBtns() {
+  const okBtn   = document.getElementById('btn-hide-ok');
+  const downBtn = document.getElementById('btn-down-only');
+  if (okBtn) {
+    okBtn.style.background   = _filterHideOk ? '#3a2a00' : '#333';
+    okBtn.style.color        = _filterHideOk ? '#ffb300' : '#ccc';
+    okBtn.style.borderColor  = _filterHideOk ? '#ffb300' : '#555';
+  }
+  if (downBtn) {
+    downBtn.style.background  = _filterDownOnly ? '#1b3a4e' : '#333';
+    downBtn.style.color       = _filterDownOnly ? '#7ab3e0' : '#ccc';
+    downBtn.style.borderColor = _filterDownOnly ? '#5599cc' : '#555';
+  }
+}
+
 // ---- DataTables init ----
 $(document).ready(function() {
   if ($('#results-table').length) {
@@ -162,8 +203,8 @@ $(document).ready(function() {
       lengthMenu: [[10, 25, 50, 100, -1], [10, 25, 50, 100, 'All']],
       order: [[0, 'asc']],
       columnDefs: [
-        { orderable: false, targets: [-1, -2] },
-        { searchable: false, targets: [-1, -2] }
+        { orderable: false, targets: [-1] },
+        { searchable: false, targets: [-1] }
       ],
       language: {
         search: 'Filter:',
@@ -196,80 +237,6 @@ document.addEventListener('DOMContentLoaded', () => {
   if (document.body.dataset.running === 'true') startPolling();
 });
 
-// ---- Body view modal ----
-function openBodyModal(siteName) {
-  const checks = (typeof WMN_CHECKS !== 'undefined' && WMN_CHECKS[siteName]) || [];
-  const titleSpan = document.querySelector('#body-view-modal .body-modal-title');
-  if (titleSpan) titleSpan.textContent = siteName;
-  const content = document.getElementById('body-modal-content');
-  if (!content) return;
-
-  if (!checks.length) {
-    content.innerHTML = '<div style="color:#666;padding:12px">No check data cached — run the checker first.</div>';
-  } else {
-    content.innerHTML = checks.map(c => {
-      const color = c.status === 'ok' ? '#4caf50' : '#ef5350';
-      const bodyHtml = c.body_snippet
-        ? `<details style="margin-top:6px">
-             <summary style="cursor:pointer;font-size:11px;color:#7ab3e0">Cached body (${c.body_snippet.length} chars)</summary>
-             <pre style="max-height:400px;overflow-y:auto;white-space:pre-wrap;word-break:break-all;
-                         font-size:10px;background:#111;padding:8px;border:1px solid #333;margin:4px 0 0">${escHtml(c.body_snippet)}</pre>
-           </details>`
-        : '<div style="color:#666;font-size:11px;margin-top:4px">No body cached</div>';
-      return `<div style="background:#151515;border:1px solid #333;padding:8px 10px;margin-bottom:10px">
-        <div style="margin-bottom:4px">
-          <strong style="color:#888;text-transform:uppercase;font-size:10px;letter-spacing:1px">${escHtml(c.username_type)}</strong>
-          &nbsp;<code style="font-size:12px">${escHtml(c.username)}</code>
-          &nbsp;&mdash;&nbsp;<span style="font-size:11px;color:#555;word-break:break-all">${escHtml(c.url)}</span>
-        </div>
-        <div style="font-size:12px">
-          HTTP <strong>${c.http_code ?? 'none'}</strong>
-          &nbsp;&mdash;&nbsp;<span style="color:${color}">${escHtml(c.status)}</span>
-          &nbsp;&mdash;&nbsp;<span style="color:#999">${escHtml(c.note)}</span>
-        </div>
-        <div style="margin-top:6px">
-          <button class="btn" style="font-size:10px;padding:1px 6px"
-            onclick="fetchLiveBody(${JSON.stringify(siteName)},${JSON.stringify(c.username)},this)">Fetch live</button>
-          <div class="full-body-panel" style="display:none;margin-top:4px">
-            <div class="full-body-meta" style="font-size:10px;color:#888;margin-bottom:2px"></div>
-            <pre class="full-body-pre" style="max-height:500px;overflow-y:auto;white-space:pre-wrap;word-break:break-all;
-                 font-size:10px;background:#111;padding:6px;border:1px solid #333"></pre>
-          </div>
-        </div>
-        ${bodyHtml}
-      </div>`;
-    }).join('');
-  }
-  document.getElementById('body-view-modal').classList.add('open');
-}
-
-function closeBodyModal() {
-  document.getElementById('body-view-modal').classList.remove('open');
-}
-
-async function fetchLiveBody(siteName, username, btnEl) {
-  const panel = btnEl.parentElement.querySelector('.full-body-panel');
-  if (panel.style.display !== 'none') { panel.style.display = 'none'; btnEl.textContent = 'Fetch live'; return; }
-  btnEl.textContent = 'Fetching…'; btnEl.disabled = true;
-  try {
-    const resp = await fetch('/fetch/' + encodeURIComponent(siteName) + '/' + encodeURIComponent(username));
-    const data = await resp.json();
-    if (data.success) {
-      panel.querySelector('.full-body-pre').textContent = data.body;
-      panel.querySelector('.full-body-meta').textContent =
-        'HTTP ' + data.http_code + '  •  ' + data.body.length + ' chars  •  ' + data.url;
-      panel.style.display = '';
-      btnEl.textContent = 'Hide live body';
-    } else {
-      alert('Fetch error: ' + data.error);
-      btnEl.textContent = 'Fetch live';
-    }
-  } catch (e) {
-    alert('Network error: ' + e.message);
-    btnEl.textContent = 'Fetch live';
-  }
-  btnEl.disabled = false;
-}
 
 const ICON_RECHECK = '<i class="fa-solid fa-rotate-right"></i>';
 const ICON_SPIN    = '<i class="fa-solid fa-spinner fa-spin"></i>';
