@@ -325,14 +325,24 @@ def main():
         description="WMN standalone checker — writes a dated markdown report",
         formatter_class=argparse.ArgumentDefaultsHelpFormatter,
     )
-    parser.add_argument("--limit",      type=int,  default=None,
+    parser.add_argument("--limit",      type=int,    default=None,
                         help="Max number of sites to check")
-    parser.add_argument("--workers",    type=int,  default=10,
+    parser.add_argument("--workers",    type=int,    default=10,
                         help="Concurrent worker threads")
-    parser.add_argument("--output-dir", type=Path, default=HERE,
+    parser.add_argument("--output-dir", type=Path,   default=HERE,
                         help="Directory for the output .md file")
-    parser.add_argument("--data",       type=Path, default=DEFAULT_DATA,
+    parser.add_argument("--data",       type=Path,   default=DEFAULT_DATA,
                         help="Path to wmn-data.json")
+
+    start_group = parser.add_mutually_exclusive_group()
+    start_group.add_argument("--start-at", type=str, default=None,
+                             metavar="NAME",
+                             help="Start checking at this site name (case-insensitive, "
+                                  "prefix match allowed)")
+    start_group.add_argument("--offset",   type=int, default=None,
+                             metavar="N",
+                             help="Skip the first N sites and start from position N")
+
     args = parser.parse_args()
 
     logging.basicConfig(
@@ -343,7 +353,30 @@ def main():
         force=True,
     )
 
-    sites = load_sites(args.data)
+    all_sites = load_sites(args.data)
+    sites = all_sites
+
+    if args.start_at:
+        target = args.start_at.lower()
+        names = [s["name"].lower() for s in sites]
+        # Exact match first, then prefix match
+        idx = next((i for i, n in enumerate(names) if n == target), None)
+        if idx is None:
+            idx = next((i for i, n in enumerate(names) if n.startswith(target)), None)
+        if idx is None:
+            print(f"Error: no site found matching '{args.start_at}'")
+            print("Hint: names are case-insensitive; a prefix is enough (e.g. 'flickr')")
+            sys.exit(1)
+        print(f"Starting at '{sites[idx]['name']}' (position {idx + 1} of {len(sites)})")
+        sites = sites[idx:]
+
+    elif args.offset is not None:
+        if args.offset < 0 or args.offset >= len(sites):
+            print(f"Error: --offset {args.offset} is out of range (0–{len(sites) - 1})")
+            sys.exit(1)
+        print(f"Skipping first {args.offset} sites — starting at '{sites[args.offset]['name']}'")
+        sites = sites[args.offset:]
+
     if args.limit:
         sites = sites[: args.limit]
 
