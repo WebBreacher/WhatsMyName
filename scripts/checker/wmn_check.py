@@ -24,7 +24,7 @@ from pathlib import Path
 HERE = Path(__file__).parent.resolve()
 sys.path.insert(0, str(HERE))
 
-from checker import load_sites, run_checker, _c, _cs
+from checker import load_sites, run_checker, request_stop, _c, _cs
 from models import (
     STATUS_OK, STATUS_SITE_DOWN, STATUS_BLOCKED, STATUS_SKIPPED,
     STATUS_E_CODE_MISMATCH, STATUS_E_STRING_MISSING,
@@ -253,14 +253,20 @@ def playwright_section(results: list) -> str:
 # ── Full report ────────────────────────────────────────────────────────────
 
 def render_report(results: list, cats: dict, ts_str: str,
-                  sites_checked: int, workers: int) -> str:
+                  sites_checked: int, workers: int,
+                  partial: bool = False) -> str:
     total = len(results)
+    partial_banner = (
+        "\n> ⚠️ **PARTIAL RUN** — interrupted by user. "
+        f"{total} of {sites_checked} sites completed.\n"
+    ) if partial else ""
 
     header = [
         "# WhatsMyName Check Report",
         "",
+        partial_banner,
         f"**Date:** {ts_str}  ",
-        f"**Sites checked:** {sites_checked}  ",
+        f"**Sites checked:** {total} / {sites_checked}  " if partial else f"**Sites checked:** {sites_checked}  ",
         f"**Workers:** {workers}  ",
         "",
         "## Summary",
@@ -346,16 +352,25 @@ def main():
     results: list = []
     progress: dict = {"total": 0, "done": 0, "complete": False, "running": False}
     lock = threading.Lock()
+    partial = False
 
-    run_checker(sites, results, lock, progress, max_workers=args.workers)
+    try:
+        run_checker(sites, results, lock, progress, max_workers=args.workers)
+    except KeyboardInterrupt:
+        partial = True
+        request_stop()
+        print(f"\n{_c('Interrupted — writing partial report…', 'orange')}")
 
     ts = datetime.now(timezone.utc)
     ts_str = ts.strftime("%Y-%m-%d %H:%M UTC")
     filename = ts.strftime("%Y%m%d-%H%M-wmncheck.md")
+    if partial:
+        filename = ts.strftime("%Y%m%d-%H%M-wmncheck-partial.md")
     output_path = args.output_dir / filename
 
     cats = categorize(results)
-    report = render_report(results, cats, ts_str, len(sites), args.workers)
+    report = render_report(results, cats, ts_str, len(sites), args.workers,
+                           partial=partial)
 
     args.output_dir.mkdir(parents=True, exist_ok=True)
     output_path.write_text(report, encoding="utf-8")
@@ -363,6 +378,8 @@ def main():
     issues = len(results) - len(cats["ok"]) - len(cats["skipped"])
     pw_count = sum(1 for r in results if r.get("browser_used"))
     print(f"\n{'─' * 60}")
+    if partial:
+        print(f"  {_c('PARTIAL', 'orange')} — {len(results)} of {len(sites)} sites completed")
     print(f"  Report : {output_path}")
     print(f"  Checked: {_c(str(len(results)), 'bold')}")
     print(f"  OK     : {_c(str(len(cats['ok'])), 'green')}")
