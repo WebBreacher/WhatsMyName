@@ -1,5 +1,5 @@
 from dataclasses import dataclass, field
-from typing import Optional, List
+from typing import Dict, Optional, List
 
 STATUS_OK = "ok"
 STATUS_FALSE_POSITIVE = "false_positive"
@@ -61,4 +61,7 @@ class SiteResult:
     valid_field: Optional[bool]     # None = field absent in JSON
     checks: List[CheckDetail] = field(default_factory=list)
     overall_status: str = "pending"
-    checked_at: str = ""   # ISO 8601 UTC timestamp set after each check
+    checked_at: str = ""
+    strip_bad_char: str = ""
+    post_body: str = ""
+    headers: Dict[str, str] = field(default_factory=dict)

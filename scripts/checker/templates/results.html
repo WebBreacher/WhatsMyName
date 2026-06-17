@@ -22,10 +22,16 @@
     </label>
   </form>
 
+  {% if progress.running %}
+  <form method="POST" action="/stop" style="margin:0">
+    <button type="submit" class="btn" style="background:#3a1a1a;color:#ef5350;border-color:#ef5350">&#x23F9; Stop</button>
+  </form>
+  {% else %}
   <form method="POST" action="/reset" style="margin:0"
         onsubmit="return confirm('Clear all results and start over?')">
     <button type="submit" class="btn" style="background:#3a1a1a;color:#ef5350;border-color:#ef5350">&#x21BA; Reset</button>
   </form>
+  {% endif %}
 
   <div id="progress-wrap">
     {% if progress.running %}

@@ -1,5 +1,6 @@
 import functools
 import json
+import logging
 import random
 import shutil
 import string
@@ -9,6 +10,8 @@ from dataclasses import asdict
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Optional
+
+log = logging.getLogger("wmn")
 
 import requests
 import requests.exceptions
@@ -57,6 +60,13 @@ _CHROMIUM_CANDIDATES = [
 # Playwright's sync API is not thread-safe; serialize all browser launches
 _playwright_lock = threading.Lock()
 
+_stop_event = threading.Event()
+
+
+def request_stop() -> None:
+    _stop_event.set()
+    log.info("Stop requested")
+
 
 @functools.lru_cache(maxsize=1)
 def _find_chromium() -> Optional[str]:
@@ -70,11 +80,20 @@ def _find_chromium() -> Optional[str]:
     )
 
 
+@functools.lru_cache(maxsize=1)
 def _playwright_available() -> bool:
+    """Check once at startup whether Playwright + a Chromium binary are usable."""
     try:
         import playwright  # noqa: F401
-        return _find_chromium() is not None
-    except ImportError:
+        path = _find_chromium()
+        if path:
+            log.info("Playwright available — chromium: %s", path)
+            return True
+        log.info("Playwright installed but no Chromium binary found — browser fallback disabled")
+        return False
+    except Exception as exc:
+        log.warning("Playwright not available (%s: %s) — browser fallback disabled",
+                    type(exc).__name__, exc)
         return False
 
 
@@ -381,6 +400,7 @@ def check_site(site: dict, ua: str) -> SiteResult:
 
     # --- Phase 2: Playwright fallback for inconclusive results ---
     if result.overall_status in PLAYWRIGHT_RETRY_STATUSES and _playwright_available():
+        log.info("  %-40s %s → retrying with browser", site["name"], result.overall_status)
         browser_checks = _run_browser_checks(
             site, strip_chars, post_body_template, method, site_headers,
             result.e_code, result.e_string, result.m_code, result.m_string,
@@ -389,6 +409,7 @@ def check_site(site: dict, ua: str) -> SiteResult:
         if browser_checks:
             result.checks = browser_checks
             result.overall_status = _aggregate_status(result.checks)
+            log.info("  %-40s %s (browser)", site["name"], result.overall_status)
 
     result.checked_at = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
     return result
@@ -405,6 +426,8 @@ def run_checker(
     if limit and limit > 0:
         sites = sites[:limit]
 
+    _stop_event.clear()
+
     selected_uas = random.sample(UA_POOL, 2)
     ua_assignments = {i: selected_uas[i % 2] for i in range(len(sites))}
 
@@ -413,17 +436,26 @@ def run_checker(
     progress["complete"] = False
     progress["running"] = True
 
+    log.info("Checker started: %d sites, %d workers", len(sites), max_workers)
     futures = {}
-    with ThreadPoolExecutor(max_workers=max_workers) as executor:
+    executor = ThreadPoolExecutor(max_workers=max_workers)
+    try:
         for i, site in enumerate(sites):
             future = executor.submit(check_site, site, ua_assignments[i])
             futures[future] = site["name"]
 
         for future in as_completed(futures):
+            if _stop_event.is_set():
+                for f in futures:
+                    f.cancel()
+                log.info("Checker stopped by user (%d/%d done)", progress["done"], progress["total"])
+                break
+
             site_name = futures[future]
             try:
                 result = future.result()
             except Exception as exc:
+                log.error("  EXCEPTION [%s]: %s: %s", site_name, type(exc).__name__, exc, exc_info=True)
                 result = SiteResult(
                     name=site_name, cat="", uri_check="", uri_pretty=None,
                     e_code=0, e_string="", m_code=0, m_string="",
@@ -434,20 +466,26 @@ def run_checker(
                         username="", username_type="known", url="",
                         method="GET", http_code=None,
                         body_snippet="", status=STATUS_SITE_DOWN,
-                        note=f"Exception: {exc}",
+                        note=f"Exception: {type(exc).__name__}: {exc}",
                     )],
                 )
 
             result_dict = asdict(result)
+            log.info("  [%d/%d] %-40s %s",
+                     progress["done"] + 1, progress["total"],
+                     result_dict["name"], result_dict["overall_status"])
             with lock:
-                for i, r in enumerate(results_list):
+                for j, r in enumerate(results_list):
                     if r["name"] == result_dict["name"]:
-                        results_list[i] = result_dict
+                        results_list[j] = result_dict
                         break
                 else:
                     results_list.append(result_dict)
                 progress["done"] += 1
+    finally:
+        executor.shutdown(wait=False, cancel_futures=True)
 
+    log.info("Checker finished: %d/%d sites processed", progress["done"], progress["total"])
     with lock:
         progress["complete"] = True
         progress["running"] = False

@@ -1,4 +1,5 @@
 import json
+import logging
 import subprocess
 import sys
 import threading
@@ -7,8 +8,17 @@ from pathlib import Path
 
 from flask import Flask, jsonify, redirect, render_template, request, url_for
 
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s [%(levelname)-5s] %(message)s",
+    datefmt="%H:%M:%S",
+    stream=sys.stdout,
+    force=True,
+)
+log = logging.getLogger("wmn")
+
 sys.path.insert(0, str(Path(__file__).parent))
-from checker import load_sites, run_checker
+from checker import load_sites, run_checker, request_stop
 from models import PROTECTION_TYPES
 
 app = Flask(__name__)
@@ -36,12 +46,14 @@ def _save_cache() -> None:
         }
         with open(CACHE_FILE, "w", encoding="utf-8") as f:
             json.dump(payload, f, indent=2, ensure_ascii=False)
+        log.info("Cache saved (%d results)", len(_results))
     except Exception as exc:
-        app.logger.warning("Could not save cache: %s", exc)
+        log.warning("Could not save cache: %s", exc)
 
 
 def _load_cache() -> None:
     if not CACHE_FILE.exists():
+        log.info("No cache file found — starting fresh")
         return
     try:
         with open(CACHE_FILE, "r", encoding="utf-8") as f:
@@ -60,15 +72,19 @@ def _load_cache() -> None:
             "run_completed": payload.get("run_completed"),
             "limit": payload.get("limit"),
         })
+        log.info("Cache loaded: %d results (%d checked, %d remaining)",
+                 len(_results), checked, max(0, total_sites - checked))
     except Exception as exc:
-        app.logger.warning("Could not load cache: %s", exc)
+        log.warning("Could not load cache: %s", exc)
 
 
 def _run_checker_thread(sites: list, limit: int) -> None:
     try:
         run_checker(sites, _results, _lock, _progress, limit=limit)
         _save_cache()
+        log.info("Run complete")
     except Exception as exc:
+        log.error("Checker thread crashed: %s", exc, exc_info=True)
         with _lock:
             _progress["running"] = False
             _progress["complete"] = True
@@ -77,12 +93,13 @@ def _run_checker_thread(sites: list, limit: int) -> None:
 
 with app.app_context():
     _load_cache()
+log.info("WMN Checker ready — data file: %s", DATA_FILE)
 
 
 @app.route("/")
 def index():
     with _lock:
-        results = list(_results)
+        results = [r for r in _results if r.get("checked_at")]
         progress = dict(_progress)
 
     try:
@@ -108,11 +125,14 @@ def start_checker():
     limit_raw = request.form.get("limit", "").strip()
     limit = int(limit_raw) if limit_raw.isdigit() and int(limit_raw) > 0 else None
     rerun = request.form.get("rerun") == "1"
+    log.info("/start called — rerun=%s limit=%s form=%s", rerun, limit, dict(request.form))
 
     with _lock:
         if _progress.get("running"):
+            log.warning("Checker already running — ignoring start request")
             return redirect(url_for("index"))
         checked_names = {r["name"] for r in _results if r.get("checked_at")}
+        log.info("Already checked: %d sites", len(checked_names))
         _progress.update({
             "done": 0, "complete": False, "running": True, "error": None,
             "run_started": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
@@ -122,20 +142,42 @@ def start_checker():
 
     try:
         all_sites = load_sites(DATA_FILE)
+        log.info("Loaded %d sites from data file", len(all_sites))
     except Exception as exc:
+        log.error("Failed to load sites from %s: %s", DATA_FILE, exc)
         with _lock:
             _progress["running"] = False
             _progress["error"] = str(exc)
         return redirect(url_for("index"))
 
     sites_to_check = all_sites if rerun else [s for s in all_sites if s["name"] not in checked_names]
+
+    if not sites_to_check:
+        log.warning("No sites to check (rerun=%s, all_sites=%d, checked=%d) — aborting",
+                    rerun, len(all_sites), len(checked_names))
+        with _lock:
+            _progress["running"] = False
+            _progress["complete"] = True
+        return redirect(url_for("index"))
+
     with _lock:
         _progress["total_sites"] = len(all_sites)
         _progress["total"] = min(len(sites_to_check), limit) if limit else len(sites_to_check)
         _progress["remaining"] = len(sites_to_check)
 
+    mode = "full rerun" if rerun else "continue"
+    log.info("Starting checker (%s): %d/%d sites queued%s",
+             mode, len(sites_to_check), len(all_sites), f" (limit {limit})" if limit else "")
+
     t = threading.Thread(target=_run_checker_thread, args=(sites_to_check, limit), daemon=True)
     t.start()
+    log.info("Checker thread started")
+    return redirect(url_for("index"))
+
+
+@app.route("/stop", methods=["POST"])
+def stop_checker():
+    request_stop()
     return redirect(url_for("index"))
 
 
