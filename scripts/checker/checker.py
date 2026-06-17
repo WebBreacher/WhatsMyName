@@ -1,5 +1,7 @@
+import functools
 import json
 import random
+import shutil
 import string
 import threading
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -35,6 +37,46 @@ BLOCKING_SIGNALS = [
     "captcha", "access denied", "enable javascript", "checking your browser",
 ]
 
+# Statuses from the requests pass that warrant a Playwright retry
+PLAYWRIGHT_RETRY_STATUSES = {
+    STATUS_BLOCKED,
+    STATUS_FALSE_POSITIVE,
+    STATUS_E_STRING_MISSING,
+    STATUS_M_STRING_MISSING,
+    STATUS_E_CODE_MISMATCH,
+    STATUS_M_CODE_MISMATCH,
+}
+
+_CHROMIUM_CANDIDATES = [
+    "/usr/bin/chromium-browser",
+    "/usr/bin/chromium",
+    "/usr/bin/google-chrome",
+    "/usr/bin/google-chrome-stable",
+]
+
+# Playwright's sync API is not thread-safe; serialize all browser launches
+_playwright_lock = threading.Lock()
+
+
+@functools.lru_cache(maxsize=1)
+def _find_chromium() -> Optional[str]:
+    for path in _CHROMIUM_CANDIDATES:
+        if Path(path).exists():
+            return path
+    return (
+        shutil.which("chromium-browser")
+        or shutil.which("chromium")
+        or shutil.which("google-chrome")
+    )
+
+
+def _playwright_available() -> bool:
+    try:
+        import playwright  # noqa: F401
+        return _find_chromium() is not None
+    except ImportError:
+        return False
+
 
 def generate_random_username() -> str:
     length = random.randint(8, 12)
@@ -63,7 +105,7 @@ def do_request(
     timeout: int = 60,
 ) -> tuple:
     merged_headers = {"User-Agent": ua}
-    merged_headers.update(site_headers)  # site headers take precedence
+    merged_headers.update(site_headers)
 
     try:
         if method == "POST":
@@ -89,13 +131,122 @@ def do_request(
         return None, ""
 
 
+def _fetch_via_playwright(
+    url: str,
+    method: str,
+    post_body_str: Optional[str],
+    site_headers: dict,
+    timeout: int,
+) -> tuple:
+    """Fetch a URL using headless Chromium. Returns (http_code, body)."""
+    try:
+        from playwright.sync_api import sync_playwright
+    except ImportError:
+        return None, ""
+
+    chromium = _find_chromium()
+    if not chromium:
+        return None, ""
+
+    timeout_ms = timeout * 1000
+    try:
+        with _playwright_lock:
+            with sync_playwright() as p:
+                browser = p.chromium.launch(
+                    executable_path=chromium,
+                    headless=True,
+                    args=["--no-sandbox", "--disable-dev-shm-usage"],
+                )
+                try:
+                    ctx = browser.new_context(
+                        user_agent=random.choice(UA_POOL),
+                        extra_http_headers=site_headers,
+                    )
+                    if method == "POST":
+                        resp = ctx.request.post(url, data=post_body_str or "", timeout=timeout_ms)
+                        return resp.status, resp.text()
+                    else:
+                        page = ctx.new_page()
+                        try:
+                            response = page.goto(url, wait_until="domcontentloaded", timeout=timeout_ms)
+                            try:
+                                page.wait_for_load_state("networkidle", timeout=5000)
+                            except Exception:
+                                pass
+                            content = page.content()
+                            return (response.status if response else None), content
+                        finally:
+                            page.close()
+                finally:
+                    browser.close()
+    except Exception:
+        return None, ""
+
+
+def _run_browser_checks(
+    site: dict,
+    strip_chars: str,
+    post_body_template: Optional[str],
+    method: str,
+    site_headers: dict,
+    e_code: int,
+    e_string: str,
+    m_code: int,
+    m_string: str,
+    known_usernames: list,
+    timeout: int = 60,
+) -> list:
+    """Run known + random checks via Playwright. Returns list of CheckDetail."""
+    checks = []
+
+    for username in known_usernames:
+        username = apply_strip_bad_char(username, strip_chars)
+        url = site["uri_check"].replace("{account}", username)
+        post_body_str = post_body_template.replace("{account}", username) if post_body_template else None
+
+        http_code, body = _fetch_via_playwright(url, method, post_body_str, site_headers, timeout)
+        status, note = _evaluate_known_check(http_code, body, e_code, e_string)
+        checks.append(CheckDetail(
+            username=username,
+            username_type="known",
+            url=url,
+            method=method,
+            http_code=http_code,
+            body_snippet=body[:2000],
+            status=status,
+            note=f"[browser] {note}",
+        ))
+        if status == STATUS_SITE_DOWN:
+            break
+
+    known_statuses = {c.status for c in checks}
+    if STATUS_SITE_DOWN not in known_statuses:
+        random_username = generate_random_username()
+        random_username = apply_strip_bad_char(random_username, strip_chars)
+        url = site["uri_check"].replace("{account}", random_username)
+        post_body_str = post_body_template.replace("{account}", random_username) if post_body_template else None
+
+        http_code, body = _fetch_via_playwright(url, method, post_body_str, site_headers, timeout)
+        status, note = _evaluate_random_check(http_code, body, e_string, m_code, m_string)
+        checks.append(CheckDetail(
+            username=random_username,
+            username_type="random",
+            url=url,
+            method=method,
+            http_code=http_code,
+            body_snippet=body[:2000],
+            status=status,
+            note=f"[browser] {note}",
+        ))
+
+    return checks
+
+
 def _evaluate_known_check(
     http_code: Optional[int], body: str, e_code: int, e_string: str
 ) -> tuple:
     if http_code is None:
         return STATUS_SITE_DOWN, "No response — site down or DNS failure"
-    # Check e_string first — if the expected content is present the site is working,
-    # regardless of any incidental blocking-related words in the page.
     if http_code == e_code and e_string in body:
         return STATUS_OK, f"Found: HTTP {http_code}, e_string present"
     if detect_blocking(body, http_code):
@@ -110,7 +261,6 @@ def _evaluate_random_check(
 ) -> tuple:
     if http_code is None:
         return STATUS_SITE_DOWN, "No response — site down or DNS failure"
-    # If the expected missing-account indicators are present, the site is working fine.
     if m_code and http_code == m_code and m_string and m_string in body:
         return STATUS_OK, f"Not found as expected: HTTP {http_code}"
     if e_string and e_string in body:
@@ -128,27 +278,21 @@ def _aggregate_status(checks: list) -> str:
     known_checks = [c for c in checks if c.username_type == "known"]
     random_checks = [c for c in checks if c.username_type == "random"]
 
-    # If any known username passed, the site detection works — don't fail on a stale account
     known_statuses = {c.status for c in known_checks}
     any_known_ok = STATUS_OK in known_statuses
-
-    # Random check statuses always count (false positive, m_code mismatch, etc.)
     random_statuses = {c.status for c in random_checks}
 
-    # Site-down or blocked on all known checks overrides everything
     if known_checks and known_statuses <= {STATUS_SITE_DOWN}:
         return STATUS_SITE_DOWN
     if known_checks and known_statuses <= {STATUS_BLOCKED}:
         return STATUS_BLOCKED
 
-    # If at least one known check passed, only surface random-check failures
     if any_known_ok:
         for priority_status in STATUS_PRIORITY:
             if priority_status in random_statuses and priority_status not in (STATUS_OK,):
                 return priority_status
         return STATUS_OK
 
-    # All known checks failed — surface worst known failure, then random failures
     all_statuses = known_statuses | random_statuses
     for priority_status in STATUS_PRIORITY:
         if priority_status in all_statuses:
@@ -162,6 +306,7 @@ def check_site(site: dict, ua: str) -> SiteResult:
     post_body_template = site.get("post_body")
     method = "POST" if post_body_template else "GET"
     strip_chars = site.get("strip_bad_char", "")
+    site_headers = site.get("headers", {})
 
     result = SiteResult(
         name=site["name"],
@@ -177,16 +322,17 @@ def check_site(site: dict, ua: str) -> SiteResult:
         protection=protection,
         has_post_body=bool(post_body_template),
         valid_field=valid_field,
+        strip_bad_char=strip_chars,
+        post_body=post_body_template or "",
+        headers=site_headers,
     )
 
     if valid_field is False:
         result.overall_status = STATUS_SKIPPED
         return result
 
-    site_headers = site.get("headers", {})
-
+    # --- Phase 1: fast requests-based check ---
     with requests.Session() as session:
-        # Test all known usernames — one may be stale while others still work
         for username in result.known:
             username = apply_strip_bad_char(username, strip_chars)
             url = site["uri_check"].replace("{account}", username)
@@ -206,19 +352,16 @@ def check_site(site: dict, ua: str) -> SiteResult:
                 note=note,
             ))
 
-            # Stop on site-down to avoid redundant timeouts
             if status == STATUS_SITE_DOWN:
                 break
 
-        # Test random username (false positive detection)
-        random_username = generate_random_username()
-        random_username = apply_strip_bad_char(random_username, strip_chars)
-        url = site["uri_check"].replace("{account}", random_username)
-        post_body_str = post_body_template.replace("{account}", random_username) if post_body_template else None
-
-        # Skip random check if site already confirmed down
         known_statuses = {c.status for c in result.checks}
         if STATUS_SITE_DOWN not in known_statuses:
+            random_username = generate_random_username()
+            random_username = apply_strip_bad_char(random_username, strip_chars)
+            url = site["uri_check"].replace("{account}", random_username)
+            post_body_str = post_body_template.replace("{account}", random_username) if post_body_template else None
+
             http_code, body = do_request(session, url, method, site_headers, post_body_str, ua)
             status, note = _evaluate_random_check(
                 http_code, body, result.e_string, result.m_code, result.m_string
@@ -235,6 +378,18 @@ def check_site(site: dict, ua: str) -> SiteResult:
             ))
 
     result.overall_status = _aggregate_status(result.checks)
+
+    # --- Phase 2: Playwright fallback for inconclusive results ---
+    if result.overall_status in PLAYWRIGHT_RETRY_STATUSES and _playwright_available():
+        browser_checks = _run_browser_checks(
+            site, strip_chars, post_body_template, method, site_headers,
+            result.e_code, result.e_string, result.m_code, result.m_string,
+            result.known,
+        )
+        if browser_checks:
+            result.checks = browser_checks
+            result.overall_status = _aggregate_status(result.checks)
+
     result.checked_at = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
     return result
 
