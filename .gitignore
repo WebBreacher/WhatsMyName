@@ -141,3 +141,7 @@ docs/_build/
 
 # AI
 .claude
+
+# WMN checker output reports
+scripts/checker/*-wmncheck.md
+scripts/checker/*-wmncheck-partial.md
