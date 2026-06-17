@@ -16,6 +16,45 @@ log = logging.getLogger("wmn")
 import requests
 import requests.exceptions
 
+# ── Terminal colours ───────────────────────────────────────────────────────
+_TTY = hasattr(sys.stdout, "isatty") and sys.stdout.isatty()
+
+_ANSI = {
+    "reset":  "\033[0m",
+    "green":  "\033[92m",
+    "red":    "\033[91m",
+    "orange": "\033[93m",
+    "purple": "\033[95m",
+    "gray":   "\033[90m",
+    "blue":   "\033[94m",
+    "bold":   "\033[1m",
+}
+
+_STATUS_COLOUR = {
+    "ok":               "green",
+    "blocked":          "purple",
+    "site_down":        "gray",
+    "skipped":          "gray",
+    "false_positive":   "red",
+    "false_negative":   "red",
+    "e_code_mismatch":  "orange",
+    "e_string_missing": "orange",
+    "m_code_mismatch":  "orange",
+    "m_string_missing": "orange",
+}
+
+
+def _c(text: str, colour: str) -> str:
+    """Wrap text in an ANSI colour escape — no-op when not writing to a TTY."""
+    if not _TTY:
+        return text
+    return f"{_ANSI.get(colour, '')}{text}{_ANSI['reset']}"
+
+
+def _cs(status: str) -> str:
+    """Colour-wrap a status string."""
+    return _c(status, _STATUS_COLOUR.get(status, ""))
+
 from models import (
     CheckDetail, SiteResult,
     STATUS_OK, STATUS_FALSE_POSITIVE, STATUS_SITE_DOWN, STATUS_BLOCKED,
@@ -401,7 +440,8 @@ def check_site(site: dict, ua: str) -> SiteResult:
 
     # --- Phase 2: Playwright fallback for inconclusive results ---
     if result.overall_status in PLAYWRIGHT_RETRY_STATUSES and _playwright_available():
-        log.info("  %-40s %s → retrying with browser", site["name"], result.overall_status)
+        log.info("  %-40s %s → retrying with browser",
+                 site["name"], _cs(result.overall_status))
         browser_checks = _run_browser_checks(
             site, strip_chars, post_body_template, method, site_headers,
             result.e_code, result.e_string, result.m_code, result.m_string,
@@ -411,7 +451,9 @@ def check_site(site: dict, ua: str) -> SiteResult:
             result.checks = browser_checks
             result.overall_status = _aggregate_status(result.checks)
             result.browser_used = True
-            log.info("  %-40s %s (browser)", site["name"], result.overall_status)
+            log.info("  %-40s %s %s",
+                     site["name"], _cs(result.overall_status),
+                     _c("(browser)", "blue"))
 
     result.checked_at = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
     return result
@@ -473,9 +515,17 @@ def run_checker(
                 )
 
             result_dict = asdict(result)
-            log.info("  [%d/%d] %-40s %s",
+            status = result_dict["overall_status"]
+            browser_note = ""
+            if result_dict.get("browser_used"):
+                req_s = result_dict.get("requests_status", "")
+                if req_s and req_s != status:
+                    browser_note = f"  {_cs(req_s)} → {_c('🌐', 'blue')}"
+                else:
+                    browser_note = f"  {_c('🌐', 'blue')}"
+            log.info("  [%d/%d] %-40s %s%s",
                      progress["done"] + 1, progress["total"],
-                     result_dict["name"], result_dict["overall_status"])
+                     result_dict["name"], _cs(status), browser_note)
             with lock:
                 for j, r in enumerate(results_list):
                     if r["name"] == result_dict["name"]:

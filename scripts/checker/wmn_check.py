@@ -24,7 +24,7 @@ from pathlib import Path
 HERE = Path(__file__).parent.resolve()
 sys.path.insert(0, str(HERE))
 
-from checker import load_sites, run_checker
+from checker import load_sites, run_checker, _c, _cs
 from models import (
     STATUS_OK, STATUS_SITE_DOWN, STATUS_BLOCKED, STATUS_SKIPPED,
     STATUS_E_CODE_MISMATCH, STATUS_E_STRING_MISSING,
@@ -361,12 +361,15 @@ def main():
     output_path.write_text(report, encoding="utf-8")
 
     issues = len(results) - len(cats["ok"]) - len(cats["skipped"])
+    pw_count = sum(1 for r in results if r.get("browser_used"))
     print(f"\n{'─' * 60}")
     print(f"  Report : {output_path}")
-    print(f"  Checked: {len(results)}")
-    print(f"  OK     : {len(cats['ok'])}")
-    print(f"  Issues : {issues}")
-    print(f"  Browser: {sum(1 for r in results if r.get('browser_used'))} site(s) used Playwright")
+    print(f"  Checked: {_c(str(len(results)), 'bold')}")
+    print(f"  OK     : {_c(str(len(cats['ok'])), 'green')}")
+    print(f"  Issues : {_c(str(issues), 'red' if issues else 'green')}")
+    print(f"  Down   : {_c(str(len(cats['site_down'])), 'gray')}")
+    print(f"  Blocked: {_c(str(len(cats['blocked'])), 'purple')}")
+    print(f"  Browser: {_c(str(pw_count), 'blue')} site(s) used Playwright")
     print(f"{'─' * 60}\n")
 
 
