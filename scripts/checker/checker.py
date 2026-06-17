@@ -397,6 +397,7 @@ def check_site(site: dict, ua: str) -> SiteResult:
             ))
 
     result.overall_status = _aggregate_status(result.checks)
+    result.requests_status = result.overall_status   # snapshot before any browser override
 
     # --- Phase 2: Playwright fallback for inconclusive results ---
     if result.overall_status in PLAYWRIGHT_RETRY_STATUSES and _playwright_available():

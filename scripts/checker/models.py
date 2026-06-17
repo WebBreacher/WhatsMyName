@@ -66,3 +66,4 @@ class SiteResult:
     post_body: str = ""
     headers: Dict[str, str] = field(default_factory=dict)
     browser_used: bool = False
+    requests_status: str = ""     # overall_status from Phase 1 before any Playwright override
