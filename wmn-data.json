@@ -594,7 +594,10 @@
         "Thayne",
         "Admin"
       ],
-      "cat": "music"
+      "cat": "music",
+      "protection": [
+        "cloudflare"
+      ]
     },
     {
       "name": "babepedia",
