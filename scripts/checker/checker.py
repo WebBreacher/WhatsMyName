@@ -409,6 +409,7 @@ def check_site(site: dict, ua: str) -> SiteResult:
         if browser_checks:
             result.checks = browser_checks
             result.overall_status = _aggregate_status(result.checks)
+            result.browser_used = True
             log.info("  %-40s %s (browser)", site["name"], result.overall_status)
 
     result.checked_at = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")

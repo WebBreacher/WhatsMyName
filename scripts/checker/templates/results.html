@@ -102,7 +102,10 @@
       <a href="#" onclick="openBg('{{ profile_url | e }}');return false;" title="{{ profile_url }}">{{ r.name }}</a>
     </td>
 
-    <td class="col-status">{{ r.overall_status }}</td>
+    <td class="col-status">
+      {{ r.overall_status }}
+      {% if r.browser_used %}<i class="fa-solid fa-globe" title="Checked with browser (Playwright)" style="color:#7ab3e0;margin-left:5px;font-size:10px"></i>{% endif %}
+    </td>
 
     <td data-order="{{ r.checked_at or '' }}" style="color:#666;white-space:nowrap">
       {{ r.checked_at or '—' }}
@@ -171,6 +174,14 @@
     <h2>Edit: {{ r.name }}
       <button class="btn" style="float:right" onclick="closeEdit('{{ r.name | e }}')">&#x2715; Close</button>
     </h2>
+    {% set h = history.get(r.name) %}
+    {% if h %}
+    <div style="font-size:11px;color:#666;margin-bottom:8px">
+      History: last checked <strong style="color:#aaa">{{ h.last_checked }}</strong>
+      — <span style="color:{{ '#4caf50' if h.status == 'ok' else '#aaa' }}">{{ h.status }}</span>
+      {% if h.browser_used %}<i class="fa-solid fa-globe" title="Playwright" style="color:#7ab3e0"></i>{% endif %}
+    </div>
+    {% endif %}
 
     {# Known account URLs (clickable) #}
     <div style="margin-bottom:8px;font-size:11px">

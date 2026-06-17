@@ -65,3 +65,4 @@ class SiteResult:
     strip_bad_char: str = ""
     post_body: str = ""
     headers: Dict[str, str] = field(default_factory=dict)
+    browser_used: bool = False

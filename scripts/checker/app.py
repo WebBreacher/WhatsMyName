@@ -28,10 +28,43 @@ REPO_ROOT = Path(__file__).parent.parent.parent
 DATA_FILE = REPO_ROOT / "wmn-data.json"
 SORT_SCRIPT = REPO_ROOT / "scripts" / "sort_format_json.py"
 CACHE_FILE = Path(__file__).parent / "last_check.json"
+HISTORY_FILE = Path(__file__).parent / "check_history.json"
 
 _results: list = []
 _progress: dict = {"total": 0, "done": 0, "complete": False, "running": False, "error": None, "run_started": None, "run_completed": None}
 _lock = threading.Lock()
+
+
+def _update_history() -> None:
+    """Merge checked results into the persistent history file (never wiped by reset)."""
+    try:
+        history = {}
+        if HISTORY_FILE.exists():
+            with open(HISTORY_FILE, "r", encoding="utf-8") as f:
+                history = json.load(f)
+        for r in _results:
+            if r.get("checked_at"):
+                history[r["name"]] = {
+                    "last_checked": r["checked_at"],
+                    "status": r["overall_status"],
+                    "browser_used": r.get("browser_used", False),
+                }
+        with open(HISTORY_FILE, "w", encoding="utf-8") as f:
+            json.dump(history, f, indent=2, ensure_ascii=False)
+        log.info("History updated: %d sites tracked", len(history))
+    except Exception as exc:
+        log.warning("Could not update history: %s", exc)
+
+
+def _load_history() -> dict:
+    if not HISTORY_FILE.exists():
+        return {}
+    try:
+        with open(HISTORY_FILE, "r", encoding="utf-8") as f:
+            return json.load(f)
+    except Exception as exc:
+        log.warning("Could not load history: %s", exc)
+        return {}
 
 
 def _save_cache() -> None:
@@ -82,6 +115,7 @@ def _run_checker_thread(sites: list, limit: int) -> None:
     try:
         run_checker(sites, _results, _lock, _progress, limit=limit)
         _save_cache()
+        _update_history()
         log.info("Run complete")
     except Exception as exc:
         log.error("Checker thread crashed: %s", exc, exc_info=True)
@@ -117,6 +151,7 @@ def index():
         categories=categories,
         statuses=statuses,
         protection_types=PROTECTION_TYPES,
+        history=_load_history(),
     )
 
 

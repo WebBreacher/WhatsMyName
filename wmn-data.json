@@ -185,19 +185,6 @@
       "cat": "xx NSFW xx"
     },
     {
-      "name": "Adult_Forum",
-      "uri_check": "https://adultforum.gr/{account}-glamour-escorts/",
-      "e_code": 200,
-      "e_string": "Glamour Escorts ",
-      "m_string": "Page not found - Adult Forum Gr",
-      "m_code": 404,
-      "known": [
-        "nastya3",
-        "ekaterina"
-      ],
-      "cat": "xx NSFW xx"
-    },
-    {
       "name": "adultism",
       "uri_check": "https://www.adultism.com/profile/{account}",
       "e_code": 200,
