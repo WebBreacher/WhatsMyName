@@ -990,17 +990,20 @@
       "cat": "health"
     },
     {
-      "name": "bonga_cams",
-      "uri_check": "https://pt.bongacams.com/{account}",
+      "name": "BongaCams",
+      "uri_check": "https://bongacams.com/profile/{account}",
       "e_code": 200,
-      "e_string": "Chat público ao vivo de",
-      "m_string": "Câmaras de sexo free: chat pornô ao vivo",
-      "m_code": 404,
+      "e_string": "property=\"og:url\"",
+      "m_string": "content=\"0;url=/\"",
+      "m_code": 301,
       "known": [
         "prettykatea",
-        "milaowens"
+        "sdfdsf34"
       ],
-      "cat": "xx NSFW xx"
+      "cat": "xx NSFW xx",
+      "protection": [
+        "cloudflare"
+      ]
     },
     {
       "name": "Bookcrossing",
@@ -1070,15 +1073,15 @@
       "cat": "hobby"
     },
     {
-      "name": "BugCrowd",
-      "uri_check": "https://bugcrowd.com/{account}/profile_widgets",
-      "uri_pretty": "https://bugcrowd.com/{account}",
+      "name": "Bugcrowd",
+      "uri_check": "https://bugcrowd.com/profile-service/v1/profiles/{account}",
+      "uri_pretty": "https://bugcrowd.com/h/{account}",
       "e_code": 200,
-      "e_string": "\"widgets\":",
-      "m_string": "class='cc-error-page__msg'",
+      "e_string": "\"username\":",
+      "m_string": "\"error\":\"Not Found\"",
       "m_code": 404,
       "known": [
-        "lopseg",
+        "Asaph",
         "Ebrietas"
       ],
       "cat": "tech"
@@ -1145,10 +1148,11 @@
     },
     {
       "name": "Calendy",
-      "uri_check": "https://calendly.com/{account}",
+      "uri_check": "https://calendly.com/api/booking/profiles/{account}",
+      "uri_pretty": "https://calendly.com/{account}",
       "e_code": 200,
-      "e_string": "og:author",
-      "m_string": "Sorry, but the page you were looking for could not be found.",
+      "e_string": "\"id\":",
+      "m_string": "\"message\":\"not found\"",
       "m_code": 404,
       "known": [
         "honey",
@@ -1361,6 +1365,19 @@
       "protection": [
         "cloudflare"
       ]
+    },
+    {
+      "name": "Chocolatey",
+      "uri_check": "https://community.chocolatey.org/profiles/{account}",
+      "e_code": 200,
+      "e_string": "id =\"bioSection\"",
+      "m_string": "id=\"error404Message\"",
+      "m_code": 404,
+      "known": [
+        "daronmcintosh",
+        "dcmtkOL"
+      ],
+      "cat": "tech"
     },
     {
       "name": "Choko.Link",
@@ -1616,6 +1633,20 @@
       "protection": [
         "cloudflare"
       ]
+    },
+    {
+      "name": "Commudle",
+      "uri_check": "https://json.commudle.com/api/v2/users?username={account}",
+      "uri_pretty": "https://www.commudle.com/users/{account}",
+      "e_code": 200,
+      "e_string": "\"status\":200",
+      "m_string": "\"status\":404",
+      "m_code": 404,
+      "known": [
+        "akaashtripathi",
+        "cataluna84"
+      ],
+      "cat": "tech"
     },
     {
       "name": "Community Adobe",
@@ -3169,7 +3200,7 @@
     {
       "name": "GeeksForGeeks",
       "uri_check": "https://authapi.geeksforgeeks.org/api-get/user-profile-info/?handle={account}",
-      "uri_pretty": "https://www.geeksforgeeks.org/user/{account}/",
+      "uri_pretty": "https://www.geeksforgeeks.org/profile/{account}/",
       "e_code": 200,
       "e_string": "\"message\":\"data retrieved successfully\"",
       "m_string": "\"message\":\"User not found!\"",
@@ -3707,7 +3738,7 @@
       "cat": "hobby"
     },
     {
-      "name": "Hackadvisor",
+      "name": "HackAdvisor",
       "uri_check": "https://hackadvisor.io/api/v2/profile/{account}/",
       "uri_pretty": "https://hackadvisor.io/hacker/{account}",
       "e_code": 200,
@@ -3722,14 +3753,15 @@
     },
     {
       "name": "Hacker News",
-      "uri_check": "https://news.ycombinator.com/user?id={account}",
+      "uri_check": "https://hacker-news.firebaseio.com/v0/user/{account}.json?print=pretty",
+      "uri_pretty": "https://news.ycombinator.com/user?id={account}",
       "e_code": 200,
-      "e_string": "created:",
-      "m_string": "No such user.",
+      "e_string": "\"id\" :",
+      "m_string": "null",
       "m_code": 200,
       "known": [
         "mubix",
-        "egypt"
+        "hggh"
       ],
       "cat": "tech"
     },
@@ -4206,6 +4238,19 @@
         "DadOnTheInternet"
       ],
       "cat": "images"
+    },
+    {
+      "name": "Immunefi",
+      "uri_check": "https://immunefi.com/profile/{account}/",
+      "e_code": 200,
+      "e_string": "content=\"profile\"",
+      "m_string": "id=\"__next_error__\"",
+      "m_code": 404,
+      "known": [
+        "bugdefeat",
+        "Norah"
+      ],
+      "cat": "tech"
     },
     {
       "name": "inaturalist",
@@ -5431,6 +5476,20 @@
         "goldzweig"
       ],
       "cat": "hobby"
+    },
+    {
+      "name": "Microsoft Learn",
+      "uri_check": "https://learn.microsoft.com/api/profiles/{account}",
+      "uri_pretty": "https://learn.microsoft.com/en-us/users/{account}/",
+      "e_code": 200,
+      "e_string": "\"userId\":",
+      "m_string": "",
+      "m_code": 404,
+      "known": [
+        "nityan",
+        "kimberlm"
+      ],
+      "cat": "tech"
     },
     {
       "name": "Minds",
@@ -7529,6 +7588,20 @@
       "cat": "social"
     },
     {
+      "name": "Sepia Search (PeerTube)",
+      "uri_check": "https://sepiasearch.org/api/v1/search/video-channels?search=%22{account}%22&start=0&count=10",
+      "uri_pretty": "https://sepiasearch.org/search?search=%22{account}%22&page=1&resultType=channels",
+      "e_code": 200,
+      "e_string": "\"data\":[{",
+      "m_string": "\"data\":[]",
+      "m_code": 200,
+      "known": [
+        "sustainable_sailing",
+        "t_mattei"
+      ],
+      "cat": "video"
+    },
+    {
       "name": "setlist.fm",
       "uri_check": "https://www.setlist.fm/user/{account}",
       "e_code": 200,
@@ -7566,6 +7639,19 @@
         "fitzsta"
       ],
       "cat": "xx NSFW xx"
+    },
+    {
+      "name": "Shikimori",
+      "uri_check": "https://shikimori.io/{account}",
+      "e_code": 200,
+      "e_string": "class=\"profile-head\"",
+      "m_string": "class=\"error-404\"",
+      "m_code": 404,
+      "known": [
+        "STARHun",
+        "Докеси"
+      ],
+      "cat": "social"
     },
     {
       "name": "shopify",
@@ -7979,14 +8065,17 @@
       "name": "StackShare",
       "uri_check": "https://stackshare.io/{account}",
       "e_code": 200,
-      "e_string": "class='user-container'",
-      "m_string": "Sorry, we couldn't find that page :(",
-      "m_code": 404,
+      "e_string": "\\\"userProfile\\\":",
+      "m_string": "\\\"content\\\":\\\"The requested page could not be found.\\\"",
+      "m_code": 200,
       "known": [
         "gordonpn68492",
         "Alan-Liang"
       ],
-      "cat": "tech"
+      "cat": "tech",
+      "protection": [
+        "other"
+      ]
     },
     {
       "name": "Statuspage",
@@ -8142,11 +8231,12 @@
     },
     {
       "name": "Substack",
-      "uri_check": "https://substack.com/@{account}",
+      "uri_check": "https://substack.com/api/v1/user/{account}/public_profile",
+      "uri_pretty": "https://substack.com/@{account}",
       "e_code": 200,
-      "e_string": "| Substack</title>",
-      "m_string": "&quot; on Substack</title>",
-      "m_code": 200,
+      "e_string": "\"id\":",
+      "m_string": "\"error\":\"profile not found\"",
+      "m_code": 404,
       "known": [
         "janellehardacre",
         "janeclairebradley"
@@ -9179,16 +9269,17 @@
     },
     {
       "name": "Vivino",
-      "uri_check": "https://www.vivino.com/users/{account}",
+      "uri_check": "https://api.vivino.com/users/{account}",
+      "uri_pretty": "https://www.vivino.com/users/{account}",
       "e_code": 200,
-      "e_string": "<!-- User details -->",
-      "m_string": "Page not found",
+      "e_string": "\"id\":",
+      "m_string": "\"error\":{\"message\":\"Record not found\"}",
       "m_code": 404,
       "known": [
-        "test",
-        "admin"
+        "laurauncorked",
+        "courtney.schie"
       ],
-      "cat": "video"
+      "cat": "shopping"
     },
     {
       "name": "VK",
@@ -9276,6 +9367,19 @@
         "becca"
       ],
       "cat": "social"
+    },
+    {
+      "name": "VseTop",
+      "uri_check": "https://vsetop.org/user/{account}/",
+      "e_code": 200,
+      "e_string": "class=\"userinfo\"",
+      "m_string": "<p>Пользователь с таким именем не найден.</p>",
+      "m_code": 404,
+      "known": [
+        "pyau",
+        "DarkenSouls"
+      ],
+      "cat": "tech"
     },
     {
       "name": "W3Schools",
