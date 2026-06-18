@@ -9,17 +9,10 @@
   "authors": [
     "3xp0rt",
     "AlexisPradoOficial",
-    "balestek",
-    "C3n7ral051nt4g3ncy",
-    "degun-osint",
     "funnyzak",
-    "janhelendk",
-    "jankoksik",
     "mbiesiad",
     "Micah Hoffman",
-    "paulmockford",
-    "SorkoPiko",
-    "TURROKS"
+    "mtedholm"
   ],
   "categories": [
     "archived",
@@ -5399,33 +5392,6 @@
       "cat": "social"
     },
     {
-      "name": "Matrix",
-      "uri_check": "https://matrix-client.matrix.org/_matrix/client/v3/profile/@{account}:matrix.org",
-      "uri_pretty": "https://matrix.to/#/@{account}:matrix.org",
-      "e_code": 200,
-      "e_string": "\"displayname\":",
-      "m_string": "\"errcode\":\"M_UNKNOWN\"",
-      "m_code": 404,
-      "known": [
-        "dregad",
-        "lberrymage"
-      ],
-      "cat": "social"
-    },
-    {
-      "name": "MCName (Minecraft)",
-      "uri_check": "https://mcname.info/en/search?q={account}",
-      "e_code": 200,
-      "e_string": "card mb-3 text-monospace",
-      "m_string": "alert alert-success px-0 py-1",
-      "m_code": 200,
-      "known": [
-        "unrevive",
-        "nxtuny"
-      ],
-      "cat": "gaming"
-    },
-    {
       "name": "MCUUID (Minecraft)",
       "uri_check": "https://playerdb.co/api/player/minecraft/{account}",
       "uri_pretty": "https://mcuuid.net/?q={account}",
@@ -7163,7 +7129,10 @@
         "John-Galan-5",
         "Alex-Clay"
       ],
-      "cat": "social"
+      "cat": "social",
+      "protection": [
+        "cloudflare"
+      ]
     },
     {
       "name": "Raddle.me",
@@ -7816,19 +7785,6 @@
         "john.young"
       ],
       "cat": "health"
-    },
-    {
-      "name": "smelsy",
-      "uri_check": "https://www.smelsy.com/profile/{account}",
-      "e_code": 200,
-      "e_string": "Smelsy -",
-      "m_string": "Server Error",
-      "m_code": 500,
-      "known": [
-        "mohamed01",
-        "ahmed"
-      ],
-      "cat": "misc"
     },
     {
       "name": "SmugMug",
