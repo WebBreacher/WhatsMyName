@@ -302,11 +302,11 @@
       "name": "AmericanThinker",
       "uri_check": "https://www.americanthinker.com/author/{account}/",
       "e_code": 200,
-      "e_string": "Articles &amp;",
-      "m_string": "American Thinker</title>",
-      "m_code": 301,
+      "e_string": "class=\"author_image\"",
+      "m_string": "title>404 Not Found</title>",
+      "m_code": 404,
       "known": [
-        "terrypaulding",
+        "james_g_robertson",
         "monicashowalter"
       ],
       "cat": "political"
@@ -373,12 +373,12 @@
       "cat": "gaming"
     },
     {
-      "name": "Appian",
+      "name": "appian Community",
       "uri_check": "https://community.appian.com/members/{account}",
       "e_code": 200,
-      "e_string": "User Profile",
-      "m_string": "Go back to our",
-      "m_code": 301,
+      "e_string": "class=\"avatar-container",
+      "m_string": "",
+      "m_code": 302,
       "known": [
         "mikec",
         "varunkumarb0001"
@@ -610,8 +610,8 @@
       "uri_check": "https://www.bandlab.com/api/v1.3/users/{account}",
       "uri_pretty": "https://www.bandlab.com/{account}",
       "e_code": 200,
-      "e_string": "about",
-      "m_string": "Couldn't find any matching element, it might be deleted",
+      "e_string": "\"username\":",
+      "m_string": "Couldn’t find any matching element, it might be deleted",
       "m_code": 404,
       "known": [
         "rave_flawless",
@@ -654,11 +654,11 @@
       "uri_check": "https://www.bdsmsingles.com/members/{account}/",
       "e_code": 200,
       "e_string": "<title>Profile",
-      "m_string": "BDSM Singles",
+      "m_string": "",
       "m_code": 302,
       "known": [
         "GoddessBlueDiamo",
-        "aalama"
+        "Hank437"
       ],
       "cat": "xx NSFW xx"
     },
@@ -832,20 +832,20 @@
       "cat": "blog"
     },
     {
-      "name": "Bluesky 1",
+      "name": "Bluesky Domain as User",
       "uri_check": "https://bsky.app/profile/{account}",
       "e_code": 200,
-      "e_string": "on Bluesky",
-      "m_string": "<p id=\"bsky_did\"></p>",
+      "e_string": "on Bluesky</title>",
+      "m_string": "<title>Bluesky</title>",
       "m_code": 200,
       "known": [
         "bsky.app",
-        "safety.bsky.app"
+        "webbreacher.com"
       ],
       "cat": "social"
     },
     {
-      "name": "Bluesky 2",
+      "name": "Bluesky Username",
       "uri_check": "https://public.api.bsky.app/xrpc/app.bsky.actor.getProfile?actor={account}.bsky.social",
       "uri_pretty": "https://bsky.app/profile/{account}.bsky.social",
       "e_code": 200,
