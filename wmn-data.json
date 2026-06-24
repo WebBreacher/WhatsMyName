@@ -1127,19 +1127,6 @@
       "cat": "hobby"
     },
     {
-      "name": "CD-Action",
-      "uri_check": "https://cdaction.pl/uzytkownicy/{account}",
-      "e_code": 200,
-      "e_string": "Lista gier:",
-      "m_string": "Coś się popsuło...",
-      "m_code": 404,
-      "known": [
-        "saczuan",
-        "cormac"
-      ],
-      "cat": "gaming"
-    },
-    {
       "name": "cda.pl",
       "uri_check": "https://www.cda.pl/{account}",
       "e_code": 200,
@@ -1268,17 +1255,12 @@
     {
       "name": "Choko.Link",
       "uri_check": "https://choko.link/api/auth/check",
-      "uri_pretty": "https://choko.link/{account}",
-      "post_body": "{\"username\":\"{account}\"}",
-      "headers": {
-        "Content-Type": "application/json"
-      },
       "e_code": 200,
-      "e_string": "\"result\":false",
-      "m_string": "\"result\":true",
-      "m_code": 200,
+      "e_string": "--title-font-family: Roboto;",
+      "m_string": "The link might be incorrect or the profile has been deleted.",
+      "m_code": 404,
       "known": [
-        "yaroslava_lytvyak",
+        "ForgedSteelTools",
         "eugeniapsychology"
       ],
       "cat": "social"
