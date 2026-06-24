@@ -1254,7 +1254,7 @@
     },
     {
       "name": "Choko.Link",
-      "uri_check": "https://choko.link/api/auth/check",
+      "uri_check": "https://choko.link/{account}",
       "e_code": 200,
       "e_string": "--title-font-family: Roboto;",
       "m_string": "The link might be incorrect or the profile has been deleted.",
