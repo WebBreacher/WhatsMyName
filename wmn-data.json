@@ -876,14 +876,17 @@
       "name": "Bookcrossing",
       "uri_check": "https://www.bookcrossing.com/mybookshelf/{account}",
       "e_code": 200,
-      "e_string": "Recent Book Activity",
-      "m_string": "Sorry, we were unable to locate the content that you requested.",
+      "e_string": "membersbycity/",
+      "m_string": "BookCrossing - Not Found",
       "m_code": 404,
       "known": [
-        "john",
-        "bob"
+        "countofmonte",
+        "Doris52"
       ],
-      "cat": "hobby"
+      "cat": "hobby",
+      "protection": [
+        "cloudflare"
+      ]
     },
     {
       "name": "Booknode",
@@ -918,13 +921,16 @@
       "strip_bad_char": ".",
       "e_code": 200,
       "e_string": "- BOOTH</title>",
-      "m_string": "BOOTH - The International Indie Art Marketplace",
+      "m_string": "",
       "m_code": 302,
       "known": [
         "monoliorder",
         "hasya"
       ],
-      "cat": "shopping"
+      "cat": "shopping",
+      "protection": [
+        "cloudflare"
+      ]
     },
     {
       "name": "Brickset",
@@ -948,8 +954,8 @@
       "m_string": "\"error\":\"Not Found\"",
       "m_code": 404,
       "known": [
-        "Asaph",
-        "Ebrietas"
+        "BlackMist",
+        "buraaqsec"
       ],
       "cat": "tech"
     },
