@@ -1094,8 +1094,8 @@
       "m_string": "Ошибка 404",
       "m_code": 404,
       "known": [
-        "alex",
-        "bob"
+        "sergey-kobets3",
+        "fixten"
       ],
       "cat": "business"
     },
@@ -1343,19 +1343,6 @@
         "kennywong"
       ],
       "cat": "hobby"
-    },
-    {
-      "name": "Code Project",
-      "uri_check": "https://www.codeproject.com/Members/{account}",
-      "e_code": 200,
-      "e_string": "Member since",
-      "m_string": "Unable to load the requested member's information",
-      "m_code": 200,
-      "known": [
-        "WmCraig",
-        "Rick-York"
-      ],
-      "cat": "coding"
     },
     {
       "name": "Codeberg",
