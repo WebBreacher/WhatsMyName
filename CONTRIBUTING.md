@@ -1,7 +1,8 @@
-You can contribute to the project in at least three different ways.
+# Contributing to WhatsMyName
 
-# Warning: These notes are currently out of date
-Our project is undergoing a few changes (See #414) that impact this document. After we have completed those changes, this will be revised.
+Thanks for your interest in helping out! WhatsMyName is a community-maintained dataset, and it stays accurate because people like you report and fix site detections. Please also take a moment to read our [Code of Conduct](CODE_OF_CONDUCT.md).
+
+You can contribute to the project in at least a couple ways.
 
 ## Method 1. Non-technical
 
@@ -10,6 +11,7 @@ Suggest a new site to be covered by the tool.
 How to do that:
 
 - Find the new site which has public profiles of people (with no authentication required)
+- Use [this form](https://forms.office.com/r/TscnNQqrD1) to tell us about it.... OR....
 - Create a Github Issue and submit the link to an example profile. You can
   do that by navigating to [Issues](https://github.com/WebBreacher/WhatsMyName/issues)
   and clicking "New issue"
@@ -32,14 +34,13 @@ How to do that:
   non-existing profile, e.g.
   ```
   # existing
-  curl https://twitter.com/WebBreacher
+  curl https://infosec.exchange/WebBreacher
 
   # non-existing
-  curl https://twitter.com/ThisDoesNotExistForSure504
+  curl https://infosec.exchange/ThisDoesNotExistForSure504
   ```
 - Observe the outcome for non-existing profile. Some sites use 404 (error), some use 302
-(redirection), some confusingly use 200 (OK) for profiles which don't exist,
-e.g.
+(redirection), some confusingly use 200 (OK) for profiles which don't exist.
   ```
   $ curl https://github.com/ThisDoesNotExistForSure504
   [...]
@@ -57,20 +58,26 @@ This is too specific:
 ```
 <h2>You are browsing the profile of WebBreacher</h2>
 ```
-- Add a section to `web_accounts_list.json`
-- Test your configuration by running the tool for a given site, e.g.
+This is too general:
 ```
-python3 ./web_accounts_list_checker.py -s my.new.site.Ive.added
+the profile
 ```
+- Add a section to `wmn-data.json`
+- Test your configuration by running a tool for a given site
 - Submit a pull request with that change
 - There is also the `sample.json` file that you can use for testing. Simply replace the existing content with new data and test.
+- If a site is permanently gone or no longer meets the [inclusion criteria](README.md#how-it-works), please remove its entry entirely rather than leaving it in place.
 
-## Format of the JSON file
+## Format of the JSON File
 
-The format of the JSON is simple. There are 3 main elements:
+`wmn-data.json` is validated against [`wmn-data-schema.json`](wmn-data-schema.json) automatically when you open a pull request. If you want to check your entry locally before submitting, you can validate it against that schema with any standard JSON Schema tool.
+
+The file is also automatically alphabetized and reformatted by a GitHub Action, so you don't need to manually sort entries or worry about exact formatting/indentation -- just make sure your JSON is valid.
+
+### `wmn-data.json` JSON has 3 main elements
 
 1. License - The license for this project and its data
-2. Authors - The people that have contributed to this project
+2. Authors - The people that have recently contributed to this project
 3. Sites - This is the main data
 
 Within the `sites` elements, the format is as follows (with several parameters being optional):
@@ -79,39 +86,57 @@ Within the `sites` elements, the format is as follows (with several parameters b
      ...
       {
          "name" : "name of the site",
-         "check_uri" : "URI to check the site with the {account} string replaced by a username",
-         "pretty_uri" : "if the check_uri is for an API, this OPTIONAL element can show a human-readable page",
-         "account_existence_code" : "the HTTP response code for a good 'account is there' response",
-         "account_existence_string" : "the string in the response that we look for for a good response",
-         "account_missing_string" : "this OPTIONAL string will only be in the response if there is no account found ",
-         "account_missing_code" : "the HTTP response code for a bad 'account is not there' response",
-         "known_accounts" : ["a list of user accounts that can be used to test", "for user enumeration"],
-         "category" : "a category for what the site is mainly used for. These are found at the top of the JSON",
-         "valid" : "this true or false boolean field is used to enable or disable this site element"
+         "uri_check" : "URI to check the site with the {account} string replaced by a username",
+         "uri_pretty" : "[OPTIONAL] if the check_uri is for an API, this element can show a human-readable page",
+         "post_body" : "[OPTIONAL] if non-empty, then this entry is an HTTP POST and the content of this field are the data",
+         "strip_bad_char" : "[OPTIONAL] checking apps should ignore or strip these characters from usernames",
+         "e_code" : "the HTTP response code for a good 'account is there' response as an integer",
+         "e_string" : "the string in the response that we look for for a good response",
+         "m_string" : "this string will only be in the response if there is no account found",
+         "m_code" : "the HTTP response code for a bad 'account is not there' response as an integer",
+         "known" : ["a list of user accounts that can be used to test", "for user enumeration"],
+         "cat" : "a category for what the site is mainly used for. Must be one of the values in the top-level `categories` array in `wmn-data.json`",
+         "valid" : "[OPTIONAL] single value of False. If it is present and False, then checkers should skip this site",
+         "protection" : "[OPTIONAL] a list of 1 or more site protections like: [captcha, cloudflare, userauth, multiple, other]",
+         "headers": {"[OPTIONAL] a dictionary of headers that should be passed to a site"}
       },
       ...
 ```
 
-Here is an example of a site element:
+Here are examples of the site elements for both HTTP GET and HTTP POST entries:
+
+**HTTP GET entry:**
 
 ```json
-     ...
-      {
-         "name" : "GitHub",
-         "check_uri" : "https://api.github.com/users/{account}",
-         "pretty_uri" : "https://github.com/{account}",
-         "account_existence_code" : "200",
-         "account_existence_string" : "login:",
-         "account_missing_string" : "Not Found",
-         "account_missing_code" : "404",
-         "known_accounts" : ["test", "webbreacher"],
-         "category" : "coding",
-         "valid" : true
-      },
-      ...
+     {
+       "name" : "Example GET",
+       "uri_check" : "https://www.example.com/load_profile_info.php?name={account}",
+       "uri_pretty" : "https://www.test.com/profile/{account}",
+       "e_code" : 200,
+       "e_string" : "regist_at",
+       "m_code" : 404,
+       "m_string" : "Account not found",
+       "known" : ["whoami", "johndoe"],
+       "cat" : "images",
+       "protection" : ["captcha", "cloudflare"],
+       "headers" : {
+                "accept": "text/html"
+        }
+     },
 ```
 
-## Method 3. Programming, enhancing the tool itself
+**HTTP POST entry:**
 
-Basic python programming skills required.
-
+```json
+     {
+       "name" : "Example POST",
+       "uri_check" : "https://www.example.com/interact_api/load_profile_info.php",
+       "post_body" : "Name=Gareth+Wylie&Age=24&Formula=a%2Bb+%3D%3D+21",
+       "e_code" : 200,
+       "e_string" : "regist_at",
+       "m_code" : 404,
+       "m_string" : "Account not found",
+       "known" : ["whoami", "johndoe"],
+       "cat" : "images"
+     },
+```
