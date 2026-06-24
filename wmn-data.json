@@ -40,15 +40,14 @@
   "sites": [
     {
       "name": "21buttons",
-      "uri_check": "https://www.21buttons.com/buttoner/{account}",
+      "uri_check": "https://peoople.app/en/influencers/{account}/",
       "e_code": 200,
-      "e_string": "profile-info__profile-data__name",
-      "m_string": "This is not the page you're looking for",
+      "e_string": "--avatar-size:100px",
+      "m_string": "<title>Peoople</title>",
       "m_code": 404,
       "known": [
         "patricialmendro",
-        "ginamariahoffmann",
-        "espeworkout"
+        "carmensalva"
       ],
       "cat": "social"
     },
@@ -56,53 +55,48 @@
       "name": "247CTF",
       "uri_check": "https://247ctf.com/progress/{account}",
       "e_code": 200,
-      "e_string": "property=\"og:url\"",
-      "m_string": "<h1>Redirecting...</h1>",
+      "e_string": "avatar-container d-flex",
+      "m_string": "",
       "m_code": 302,
       "known": [
         "pottm",
         "jusb3"
       ],
-      "cat": "tech"
+      "cat": "tech",
+      "protection": [
+        "captcha",
+        "cloudflare",
+        "multiple"
+      ]
     },
     {
       "name": "247sports",
       "uri_check": "https://247sports.com/User/{account}/",
       "e_code": 200,
-      "e_string": "<meta property=",
+      "e_string": "staff-header-container",
       "m_string": "<title>247Sports</title>",
       "m_code": 404,
       "known": [
-        "bob",
-        "john"
+        "Travis Branham",
+        "BlairAngulo"
       ],
-      "cat": "hobby"
+      "cat": "hobby",
+      "protection": [
+        "other"
+      ]
     },
     {
       "name": "35photo",
       "uri_check": "https://35photo.pro/@{account}/",
       "e_code": 200,
-      "e_string": "<span title=\"Total photos",
-      "m_string": "Catalogs of professional author",
+      "e_string": "userNameBlock",
+      "m_string": "",
       "m_code": 302,
       "known": [
         "mike007",
         "derbal"
       ],
-      "cat": "social"
-    },
-    {
-      "name": "3DNews",
-      "uri_check": "https://forum.3dnews.tech/member.php?username={account}",
-      "e_code": 200,
-      "e_string": "Просмотр профиля:",
-      "m_string": "Пользователь не зарегистрирован",
-      "m_code": 200,
-      "known": [
-        "bob",
-        "red"
-      ],
-      "cat": "social"
+      "cat": "hobby"
     },
     {
       "name": "3dtoday",
@@ -128,7 +122,8 @@
         "john",
         "jbob"
       ],
-      "cat": "social"
+      "cat": "social",
+      "valid": false
     },
     {
       "name": "7dach",
@@ -160,9 +155,9 @@
       "name": "ACF",
       "uri_check": "https://support.advancedcustomfields.com/forums/users/{account}/",
       "e_code": 200,
-      "e_string": "<title>ACF Support",
-      "m_string": "Page Not Found",
-      "m_code": 200,
+      "e_string": "bbp-user-body",
+      "m_string": "<title>Page Not Found - ACF Support</title>",
+      "m_code": 404,
       "known": [
         "mike",
         "greg"
@@ -179,19 +174,6 @@
       "known": [
         "justjessicarabbit",
         "savannah250xo"
-      ],
-      "cat": "xx NSFW xx"
-    },
-    {
-      "name": "Adult_Forum",
-      "uri_check": "https://adultforum.gr/{account}-glamour-escorts/",
-      "e_code": 200,
-      "e_string": "Glamour Escorts ",
-      "m_string": "Page not found - Adult Forum Gr",
-      "m_code": 404,
-      "known": [
-        "nastya3",
-        "ekaterina"
       ],
       "cat": "xx NSFW xx"
     },
@@ -222,29 +204,15 @@
       "cat": "finance"
     },
     {
-      "name": "Airline_Pilot_Life",
-      "uri_check": "https://airlinepilot.life/u/{account}.json",
-      "uri_pretty": "https://airlinepilot.life/u/{account}",
-      "e_code": 200,
-      "e_string": "primary_group_name",
-      "m_string": "he requested URL or resource could not be found.",
-      "m_code": 404,
-      "known": [
-        "hannah",
-        "addison"
-      ],
-      "cat": "social"
-    },
-    {
       "name": "Airliners",
       "uri_check": "https://www.airliners.net/user/{account}/profile",
       "e_code": 200,
-      "e_string": "'s Profile | Airliners Members | Airliners.net",
-      "m_string": "An Error Occurred",
+      "e_string": "class=\"user-profile-body-offset\"",
+      "m_string": "An Error Occurred: Not Found",
       "m_code": 404,
       "known": [
-        "pilot",
-        "pilota"
+        "Dazed767",
+        "dummy0085825"
       ],
       "cat": "social"
     },
@@ -334,11 +302,11 @@
       "name": "AmericanThinker",
       "uri_check": "https://www.americanthinker.com/author/{account}/",
       "e_code": 200,
-      "e_string": "Articles &amp;",
-      "m_string": "American Thinker</title>",
-      "m_code": 301,
+      "e_string": "class=\"author_image\"",
+      "m_string": "title>404 Not Found</title>",
+      "m_code": 404,
       "known": [
-        "terrypaulding",
+        "james_g_robertson",
         "monicashowalter"
       ],
       "cat": "political"
@@ -384,19 +352,6 @@
       ]
     },
     {
-      "name": "anonup",
-      "uri_check": "https://anonup.com/@{account}",
-      "e_code": 200,
-      "e_string": "Show followings",
-      "m_string": "Page not found!",
-      "m_code": 302,
-      "known": [
-        "john",
-        "peter"
-      ],
-      "cat": "social"
-    },
-    {
       "name": "Apex Legends",
       "uri_check": "https://api.tracker.gg/api/v2/apex/standard/profile/origin/{account}",
       "uri_pretty": "https://apex.tracker.gg/apex/profile/origin/{account}/overview",
@@ -418,12 +373,12 @@
       "cat": "gaming"
     },
     {
-      "name": "Appian",
+      "name": "appian Community",
       "uri_check": "https://community.appian.com/members/{account}",
       "e_code": 200,
-      "e_string": "User Profile",
-      "m_string": "Go back to our",
-      "m_code": 301,
+      "e_string": "class=\"avatar-container",
+      "m_string": "",
+      "m_code": 302,
       "known": [
         "mikec",
         "varunkumarb0001"
@@ -456,20 +411,6 @@
         "john"
       ],
       "cat": "hobby"
-    },
-    {
-      "name": "ArchWiki",
-      "uri_check": "https://wiki.archlinux.org/api.php?action=query&format=json&list=users&ususers={account}&usprop=cancreate&formatversion=2&errorformat=html&errorsuselocal=true&uselang=en",
-      "uri_pretty": "https://wiki.archlinux.org/title/User:{account}",
-      "e_code": 200,
-      "e_string": "\"userid\":",
-      "m_string": "\"missing\":true",
-      "m_code": 200,
-      "known": [
-        "Lahwaacz",
-        "Erus_Iluvatar"
-      ],
-      "cat": "social"
     },
     {
       "name": "Arduino (Forum)",
@@ -534,19 +475,6 @@
       "known": [
         "dolores",
         "cyborghyena"
-      ],
-      "cat": "art"
-    },
-    {
-      "name": "Artists & Clients",
-      "uri_check": "https://artistsnclients.com/people/{account}",
-      "e_code": 200,
-      "e_string": "Member Since",
-      "m_string": "The page you requested wasn't there when we tried to get it for you. What a bother!",
-      "m_code": 404,
-      "known": [
-        "luluc0",
-        "MuraArts"
       ],
       "cat": "art"
     },
@@ -632,7 +560,10 @@
         "Thayne",
         "Admin"
       ],
-      "cat": "music"
+      "cat": "music",
+      "protection": [
+        "cloudflare"
+      ]
     },
     {
       "name": "babepedia",
@@ -679,8 +610,8 @@
       "uri_check": "https://www.bandlab.com/api/v1.3/users/{account}",
       "uri_pretty": "https://www.bandlab.com/{account}",
       "e_code": 200,
-      "e_string": "about",
-      "m_string": "Couldn't find any matching element, it might be deleted",
+      "e_string": "\"username\":",
+      "m_string": "Couldn’t find any matching element, it might be deleted",
       "m_code": 404,
       "known": [
         "rave_flawless",
@@ -699,7 +630,10 @@
         "joyfitnessdance1",
         "bobkokatya94"
       ],
-      "cat": "misc"
+      "cat": "misc",
+      "protection": [
+        "other"
+      ]
     },
     {
       "name": "BDSMLR",
@@ -720,11 +654,11 @@
       "uri_check": "https://www.bdsmsingles.com/members/{account}/",
       "e_code": 200,
       "e_string": "<title>Profile",
-      "m_string": "BDSM Singles",
+      "m_string": "",
       "m_code": 302,
       "known": [
         "GoddessBlueDiamo",
-        "aalama"
+        "Hank437"
       ],
       "cat": "xx NSFW xx"
     },
@@ -760,19 +694,6 @@
       "cat": "xx NSFW xx"
     },
     {
-      "name": "Bento",
-      "uri_check": "https://bento.me/{account}",
-      "e_code": 200,
-      "e_string": "href=\"https://bento.me/explore\"",
-      "m_string": ">Available!</div>",
-      "m_code": 404,
-      "known": [
-        "carlito",
-        "taylor"
-      ],
-      "cat": "social"
-    },
-    {
       "name": "BiggerPockets",
       "uri_check": "https://www.biggerpockets.com/users/{account}",
       "e_code": 200,
@@ -797,19 +718,6 @@
         "Jacin19"
       ],
       "cat": "gaming"
-    },
-    {
-      "name": "Bikemap",
-      "uri_check": "https://www.bikemap.net/en/u/{account}/routes/created/",
-      "e_code": 200,
-      "e_string": "- 🚲 Bikemap</title>",
-      "m_string": "<title>Page not found - Error 404 ",
-      "m_code": 404,
-      "known": [
-        "mike",
-        "greg"
-      ],
-      "cat": "health"
     },
     {
       "name": "Bimpos",
@@ -884,19 +792,6 @@
       "cat": "political"
     },
     {
-      "name": "Blogger",
-      "uri_check": "https://www.blogger.com/profile/{account}",
-      "e_code": 200,
-      "e_string": "shadow-light user-stats",
-      "m_string": "Sorry, the blog you were looking for does not exist.",
-      "m_code": 405,
-      "known": [
-        "07333944864481878697",
-        "05941544278367416980"
-      ],
-      "cat": "blog"
-    },
-    {
       "name": "blogi.pl",
       "uri_check": "https://www.blogi.pl/osoba,{account}.html",
       "e_code": 200,
@@ -931,25 +826,26 @@
       "m_string": "Blog not found",
       "m_code": 404,
       "known": [
-        "test"
+        "mashatischool",
+        "davidhelbich"
       ],
       "cat": "blog"
     },
     {
-      "name": "Bluesky 1",
+      "name": "Bluesky Domain as User",
       "uri_check": "https://bsky.app/profile/{account}",
       "e_code": 200,
-      "e_string": "on Bluesky",
-      "m_string": "<p id=\"bsky_did\"></p>",
+      "e_string": "on Bluesky</title>",
+      "m_string": "<title>Bluesky</title>",
       "m_code": 200,
       "known": [
         "bsky.app",
-        "safety.bsky.app"
+        "webbreacher.com"
       ],
       "cat": "social"
     },
     {
-      "name": "Bluesky 2",
+      "name": "Bluesky Username",
       "uri_check": "https://public.api.bsky.app/xrpc/app.bsky.actor.getProfile?actor={account}.bsky.social",
       "uri_pretty": "https://bsky.app/profile/{account}.bsky.social",
       "e_code": 200,
@@ -975,35 +871,6 @@
         "Petdoc"
       ],
       "cat": "gaming"
-    },
-    {
-      "name": "BodyBuilding.com",
-      "uri_check": "http://api.bodybuilding.com/api-proxy/bbc/get?slug={account}",
-      "uri_pretty": "http://bodyspace.bodybuilding.com/{account}/",
-      "e_code": 200,
-      "e_string": "username",
-      "m_string": "data\" :\"\"",
-      "m_code": 200,
-      "known": [
-        "mike"
-      ],
-      "cat": "health"
-    },
-    {
-      "name": "BongaCams",
-      "uri_check": "https://bongacams.com/profile/{account}",
-      "e_code": 200,
-      "e_string": "property=\"og:url\"",
-      "m_string": "content=\"0;url=/\"",
-      "m_code": 301,
-      "known": [
-        "prettykatea",
-        "sdfdsf34"
-      ],
-      "cat": "xx NSFW xx",
-      "protection": [
-        "cloudflare"
-      ]
     },
     {
       "name": "Bookcrossing",
@@ -1144,7 +1011,10 @@
         "braftty",
         "guillermo"
       ],
-      "cat": "misc"
+      "cat": "misc",
+      "protection": [
+        "cloudflare"
+      ]
     },
     {
       "name": "Calendy",
@@ -1162,11 +1032,12 @@
     },
     {
       "name": "Cameo",
-      "uri_check": "https://www.cameo.com/{account}",
+      "uri_check": "https://www.cameo.com/api/v2/users/{account}",
+      "uri_pretty": "https://www.cameo.com/{account}",
       "e_code": 200,
-      "e_string": "aggregateRating",
-      "m_string": "",
-      "m_code": 301,
+      "e_string": "\"_id\":\"",
+      "m_string": "\"message\":\"We could not find the user:",
+      "m_code": 404,
       "known": [
         "michael_owen10",
         "sarahall3"
@@ -1178,14 +1049,14 @@
       "uri_check": "https://{account}.carbonmade.com/",
       "strip_bad_char": ".",
       "e_code": 200,
-      "e_string": "s online portfolio",
-      "m_string": "site not found",
+      "e_string": "<meta name=\"description\" content=\"",
+      "m_string": ".carbonmade.com not found",
       "m_code": 404,
       "known": [
-        "jenny",
-        "bob"
+        "danreeves",
+        "allisonchoppick"
       ],
-      "cat": "hobby"
+      "cat": "business"
     },
     {
       "name": "Career.habr",
@@ -1195,8 +1066,8 @@
       "m_string": "Ошибка 404",
       "m_code": 404,
       "known": [
-        "alex",
-        "bob"
+        "sergey-kobets3",
+        "fixten"
       ],
       "cat": "business"
     },
@@ -1226,19 +1097,6 @@
         "Danye"
       ],
       "cat": "hobby"
-    },
-    {
-      "name": "CD-Action",
-      "uri_check": "https://cdaction.pl/uzytkownicy/{account}",
-      "e_code": 200,
-      "e_string": "Lista gier:",
-      "m_string": "Coś się popsuło...",
-      "m_code": 404,
-      "known": [
-        "saczuan",
-        "cormac"
-      ],
-      "cat": "gaming"
     },
     {
       "name": "cda.pl",
@@ -1381,18 +1239,13 @@
     },
     {
       "name": "Choko.Link",
-      "uri_check": "https://choko.link/api/auth/check",
-      "uri_pretty": "https://choko.link/{account}",
-      "post_body": "{\"username\":\"{account}\"}",
-      "headers": {
-        "Content-Type": "application/json"
-      },
+      "uri_check": "https://choko.link/{account}",
       "e_code": 200,
-      "e_string": "\"result\":false",
-      "m_string": "\"result\":true",
-      "m_code": 200,
+      "e_string": "--title-font-family: Roboto;",
+      "m_string": "The link might be incorrect or the profile has been deleted.",
+      "m_code": 404,
       "known": [
-        "yaroslava_lytvyak",
+        "ForgedSteelTools",
         "eugeniapsychology"
       ],
       "cat": "social"
@@ -1475,19 +1328,6 @@
         "kennywong"
       ],
       "cat": "hobby"
-    },
-    {
-      "name": "Code Project",
-      "uri_check": "https://www.codeproject.com/Members/{account}",
-      "e_code": 200,
-      "e_string": "Member since",
-      "m_string": "Unable to load the requested member's information",
-      "m_code": 200,
-      "known": [
-        "WmCraig",
-        "Rick-York"
-      ],
-      "cat": "coding"
     },
     {
       "name": "Codeberg",
@@ -1845,19 +1685,6 @@
         "blue"
       ],
       "cat": "dating"
-    },
-    {
-      "name": "DDoSecrets",
-      "uri_check": "https://search.ddosecrets.com/search?q={account}",
-      "e_code": 200,
-      "e_string": "aria-label=\"Search result pages\"",
-      "m_string": "<p>No results</p>",
-      "m_code": 200,
-      "known": [
-        "egord",
-        "Mddearing"
-      ],
-      "cat": "archived"
     },
     {
       "name": "Demotywatory",
@@ -4171,7 +3998,10 @@
         "bob",
         "blue"
       ],
-      "cat": "social"
+      "cat": "social",
+      "protection": [
+        "captcha"
+      ]
     },
     {
       "name": "ilovegrowingmarijuana",
@@ -4523,24 +4353,6 @@
       "cat": "misc"
     },
     {
-      "name": "joinDOTA",
-      "uri_check": "https://www.joindota.com/ajax/search",
-      "uri_pretty": "https://www.joindota.com/search?m=edb_player&q={account}",
-      "post_body": "search={account}&module=edb_player&language=en",
-      "headers": {
-        "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8"
-      },
-      "e_code": 200,
-      "e_string": "\"items\":[{",
-      "m_string": "\"count\":0",
-      "m_code": 200,
-      "known": [
-        "AngryTestie",
-        "amddota2"
-      ],
-      "cat": "gaming"
-    },
-    {
       "name": "JSFiddle",
       "uri_check": "https://jsfiddle.net/user/{account}/",
       "e_code": 200,
@@ -4849,12 +4661,12 @@
       "name": "Lemon8",
       "uri_check": "https://www.lemon8-app.com/{account}?region=us",
       "e_code": 200,
-      "e_string": "class=\"user-desc-main-info",
-      "m_string": "unavailableReason\": \"not_found",
+      "e_string": "id=\"user-description\"",
+      "m_string": "class=\"not_found_text\"",
       "m_code": 404,
       "known": [
-        "phinyamat",
-        "andrianajohnson"
+        "dateandtravell",
+        "rolinda_reyes"
       ],
       "cat": "social"
     },
@@ -5256,20 +5068,6 @@
       "known": [
         "dictvm",
         "sml"
-      ],
-      "cat": "social"
-    },
-    {
-      "name": "Mastodon-climatejustice.rocks",
-      "uri_check": "https://climatejustice.rocks/api/v1/accounts/lookup?acct={account}",
-      "uri_pretty": "https://climatejustice.rocks/@{account}",
-      "e_code": 200,
-      "e_string": "username\":",
-      "m_string": "Record not found",
-      "m_code": 404,
-      "known": [
-        "paula",
-        "PaulaToThePeople"
       ],
       "cat": "social"
     },
