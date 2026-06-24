@@ -191,19 +191,6 @@
       "cat": "finance"
     },
     {
-      "name": "Airliners",
-      "uri_check": "https://www.airliners.net/user/{account}/profile",
-      "e_code": 200,
-      "e_string": "class=\"user-profile-body-offset\"",
-      "m_string": "An Error Occurred: Not Found",
-      "m_code": 404,
-      "known": [
-        "Dazed767",
-        "dummy0085825"
-      ],
-      "cat": "social"
-    },
-    {
       "name": "akniga",
       "uri_check": "https://akniga.org/profile/{account}",
       "e_code": 200,
