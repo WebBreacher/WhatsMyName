@@ -191,19 +191,6 @@
       "cat": "finance"
     },
     {
-      "name": "akniga",
-      "uri_check": "https://akniga.org/profile/{account}",
-      "e_code": 200,
-      "e_string": " - Аудиокниги Клуб</title",
-      "m_string": "К сожалению, такой страницы не существует. Вероятно, она была удалена с сервера, либо ее здесь никогда не было.",
-      "m_code": 200,
-      "known": [
-        "bob",
-        "blue"
-      ],
-      "cat": "hobby"
-    },
-    {
       "name": "Albicla",
       "uri_check": "https://albicla.com/{account}/post/1",
       "uri_pretty": "https://albicla.com/{account}",
