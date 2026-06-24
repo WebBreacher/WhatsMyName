@@ -89,12 +89,12 @@
       "name": "3dtoday",
       "uri_check": "https://3dtoday.ru/blogs/{account}",
       "e_code": 200,
-      "e_string": "Блог владельца 3d-принтера",
-      "m_string": "404 Not Found",
+      "e_string": "class=\"header_user_name",
+      "m_string": "",
       "m_code": 302,
       "known": [
-        "sergei",
-        "vlad"
+        "anforma",
+        "eta4ever"
       ],
       "cat": "hobby"
     },
