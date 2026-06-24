@@ -400,19 +400,6 @@
       "cat": "social"
     },
     {
-      "name": "Archive Of Our Own Account",
-      "uri_check": "https://archiveofourown.org/users/{account}",
-      "e_code": 200,
-      "e_string": "class=\"user home\"",
-      "m_string": "class=\"system errors error-404 region\"",
-      "m_code": 404,
-      "known": [
-        "test",
-        "john"
-      ],
-      "cat": "hobby"
-    },
-    {
       "name": "Arduino (Forum)",
       "uri_check": "https://forum.arduino.cc/u/{account}.json",
       "uri_pretty": "https://forum.arduino.cc/u/{account}/summary",
