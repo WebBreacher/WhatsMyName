@@ -4163,7 +4163,7 @@
       "e_code": 200,
       "e_string": "class=\"userinfo\"",
       "m_string": "class=\"page-error notfound\"",
-      "m_code": 404,
+      "m_code": 410,
       "known": [
         "therock",
         "ramarim"
