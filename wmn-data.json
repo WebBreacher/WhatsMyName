@@ -921,13 +921,16 @@
       "strip_bad_char": ".",
       "e_code": 200,
       "e_string": "- BOOTH</title>",
-      "m_string": "BOOTH - The International Indie Art Marketplace",
+      "m_string": "",
       "m_code": 302,
       "known": [
         "monoliorder",
         "hasya"
       ],
-      "cat": "shopping"
+      "cat": "shopping",
+      "protection": [
+        "cloudflare"
+      ]
     },
     {
       "name": "Brickset",
