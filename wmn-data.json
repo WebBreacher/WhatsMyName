@@ -733,11 +733,11 @@
       "cat": "tech"
     },
     {
-      "name": "Bio Sites",
+      "name": "Bio Site",
       "uri_check": "https://bio.site/{account}",
       "e_code": 200,
-      "e_string": "section\":{\"handles",
-      "m_string": "This site no longer exists",
+      "e_string": "— Bio Sites</title>",
+      "m_string": "This Bio Site doesn’t exist — Bio Site</title>",
       "m_code": 404,
       "known": [
         "leticiabufoni",
