@@ -1095,14 +1095,14 @@
       "name": "CastingCallClub",
       "uri_check": "https://www.castingcall.club/{account}",
       "e_code": 200,
-      "e_string": "| Casting Call Club",
-      "m_string": "404: This is not the page you were looking for. In the future, our AI robot overlords will be able to better predict exactly what you were looking for.",
+      "e_string": "class=\"text-sm text-gray-500\">Joined",
+      "m_string": "",
       "m_code": 302,
       "known": [
         "Lindz",
-        "Danye"
+        "boxofmyheart"
       ],
-      "cat": "hobby"
+      "cat": "business"
     },
     {
       "name": "cda.pl",
