@@ -39,19 +39,6 @@
   ],
   "sites": [
     {
-      "name": "21buttons",
-      "uri_check": "https://peoople.app/en/influencers/{account}/",
-      "e_code": 200,
-      "e_string": "--avatar-size:100px",
-      "m_string": "<title>Peoople</title>",
-      "m_code": 404,
-      "known": [
-        "patricialmendro",
-        "carmensalva"
-      ],
-      "cat": "social"
-    },
-    {
       "name": "247CTF",
       "uri_check": "https://247ctf.com/progress/{account}",
       "e_code": 200,
@@ -102,12 +89,12 @@
       "name": "3dtoday",
       "uri_check": "https://3dtoday.ru/blogs/{account}",
       "e_code": 200,
-      "e_string": "Блог владельца 3d-принтера",
-      "m_string": "404 Not Found",
+      "e_string": "class=\"header_user_name",
+      "m_string": "",
       "m_code": 302,
       "known": [
-        "sergei",
-        "vlad"
+        "anforma",
+        "eta4ever"
       ],
       "cat": "hobby"
     },
@@ -204,32 +191,6 @@
       "cat": "finance"
     },
     {
-      "name": "Airliners",
-      "uri_check": "https://www.airliners.net/user/{account}/profile",
-      "e_code": 200,
-      "e_string": "class=\"user-profile-body-offset\"",
-      "m_string": "An Error Occurred: Not Found",
-      "m_code": 404,
-      "known": [
-        "Dazed767",
-        "dummy0085825"
-      ],
-      "cat": "social"
-    },
-    {
-      "name": "akniga",
-      "uri_check": "https://akniga.org/profile/{account}",
-      "e_code": 200,
-      "e_string": " - Аудиокниги Клуб</title",
-      "m_string": "К сожалению, такой страницы не существует. Вероятно, она была удалена с сервера, либо ее здесь никогда не было.",
-      "m_code": 200,
-      "known": [
-        "bob",
-        "blue"
-      ],
-      "cat": "hobby"
-    },
-    {
       "name": "Albicla",
       "uri_check": "https://albicla.com/{account}/post/1",
       "uri_pretty": "https://albicla.com/{account}",
@@ -255,22 +216,6 @@
         "pavel"
       ],
       "cat": "social"
-    },
-    {
-      "name": "AllMyLinks",
-      "uri_check": "https://allmylinks.com/{account}",
-      "e_code": 200,
-      "e_string": "class=\"site-profile guest\"",
-      "m_string": "class=\"site-error\"",
-      "m_code": 404,
-      "known": [
-        "blue",
-        "goddessbecca"
-      ],
-      "cat": "social",
-      "protection": [
-        "cloudflare"
-      ]
     },
     {
       "name": "Alura",
@@ -400,19 +345,6 @@
       "cat": "social"
     },
     {
-      "name": "Archive Of Our Own Account",
-      "uri_check": "https://archiveofourown.org/users/{account}",
-      "e_code": 200,
-      "e_string": "class=\"user home\"",
-      "m_string": "class=\"system errors error-404 region\"",
-      "m_code": 404,
-      "known": [
-        "test",
-        "john"
-      ],
-      "cat": "hobby"
-    },
-    {
       "name": "Arduino (Forum)",
       "uri_check": "https://forum.arduino.cc/u/{account}.json",
       "uri_pretty": "https://forum.arduino.cc/u/{account}/summary",
@@ -466,11 +398,11 @@
       "cat": "xx NSFW xx"
     },
     {
-      "name": "ArtBreeder",
+      "name": "Artbreeder",
       "uri_check": "https://www.artbreeder.com/{account}",
       "e_code": 200,
-      "e_string": "<title>",
-      "m_string": "Not found:",
+      "e_string": "data-tutorial=\"profile-filter\"",
+      "m_string": "error: {message:\"User not found\"",
       "m_code": 404,
       "known": [
         "dolores",
@@ -733,11 +665,11 @@
       "cat": "tech"
     },
     {
-      "name": "Bio Sites",
+      "name": "Bio Site",
       "uri_check": "https://bio.site/{account}",
       "e_code": 200,
-      "e_string": "section\":{\"handles",
-      "m_string": "This site no longer exists",
+      "e_string": "— Bio Sites</title>",
+      "m_string": "This Bio Site doesn’t exist — Bio Site</title>",
       "m_code": 404,
       "known": [
         "leticiabufoni",
@@ -4148,7 +4080,7 @@
       "name": "Instagram",
       "uri_check": "https://www.instagram.com/{account}/",
       "e_code": 200,
-      "e_string": "\"routePath\":\"\\/{username}\\/{?tab}\\/{?view_type}\\/{?igshid}\\/\"",
+      "e_string": "Posts - See Instagram photos and videos from",
       "m_string": "\"routePath\":null",
       "m_code": 200,
       "known": [
@@ -4163,7 +4095,7 @@
       "e_code": 200,
       "e_string": "class=\"userinfo\"",
       "m_string": "class=\"page-error notfound\"",
-      "m_code": 404,
+      "m_code": 410,
       "known": [
         "therock",
         "ramarim"
@@ -6357,6 +6289,54 @@
       "cat": "coding",
       "protection": [
         "cloudflare"
+      ]
+    },
+    {
+      "name": "peoople (Creator)",
+      "uri_check": "https://peoople.app/en/creator/{account}/",
+      "e_code": 200,
+      "e_string": "class=\"a1jhaptw\"",
+      "m_string": "<title>Peoople</title>",
+      "m_code": 404,
+      "known": [
+        "patricialmendro",
+        "loquidooo"
+      ],
+      "cat": "social",
+      "protection": [
+        "cloudfront"
+      ]
+    },
+    {
+      "name": "peoople (Star)",
+      "uri_check": "https://peoople.app/en/star/{account}/",
+      "e_code": 200,
+      "e_string": "class=\"a1jhaptw\"",
+      "m_string": "<title>Peoople</title>",
+      "m_code": 404,
+      "known": [
+        "lamenteesmaravillosa",
+        "streammood"
+      ],
+      "cat": "social",
+      "protection": [
+        "cloudfront"
+      ]
+    },
+    {
+      "name": "peoople (Unicorn)",
+      "uri_check": "https://peoople.app/en/unicorn/{account}/",
+      "e_code": 200,
+      "e_string": "class=\"a1jhaptw\"",
+      "m_string": "<title>Peoople</title>",
+      "m_code": 404,
+      "known": [
+        "carmensalva",
+        "teletextopuntocom"
+      ],
+      "cat": "social",
+      "protection": [
+        "cloudfront"
       ]
     },
     {
