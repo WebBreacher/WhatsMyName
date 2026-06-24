@@ -839,20 +839,20 @@
       "cat": "blog"
     },
     {
-      "name": "Bluesky 1",
+      "name": "Bluesky Domain as User",
       "uri_check": "https://bsky.app/profile/{account}",
       "e_code": 200,
-      "e_string": "on Bluesky",
-      "m_string": "<p id=\"bsky_did\"></p>",
+      "e_string": "on Bluesky</title>",
+      "m_string": "<title>Bluesky</title>",
       "m_code": 200,
       "known": [
         "bsky.app",
-        "safety.bsky.app"
+        "webbreacher.com"
       ],
       "cat": "social"
     },
     {
-      "name": "Bluesky 2",
+      "name": "Bluesky Username",
       "uri_check": "https://public.api.bsky.app/xrpc/app.bsky.actor.getProfile?actor={account}.bsky.social",
       "uri_pretty": "https://bsky.app/profile/{account}.bsky.social",
       "e_code": 200,
