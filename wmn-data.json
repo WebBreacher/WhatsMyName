@@ -1095,14 +1095,14 @@
       "name": "CastingCallClub",
       "uri_check": "https://www.castingcall.club/{account}",
       "e_code": 200,
-      "e_string": "| Casting Call Club",
-      "m_string": "404: This is not the page you were looking for. In the future, our AI robot overlords will be able to better predict exactly what you were looking for.",
+      "e_string": "class=\"text-sm text-gray-500\">Joined",
+      "m_string": "",
       "m_code": 302,
       "known": [
         "Lindz",
-        "Danye"
+        "boxofmyheart"
       ],
-      "cat": "hobby"
+      "cat": "business"
     },
     {
       "name": "cda.pl",
@@ -1201,16 +1201,17 @@
       "cat": "xx NSFW xx"
     },
     {
-      "name": "cHEEZburger",
-      "uri_check": "https://profile.cheezburger.com/{account}",
+      "name": "CHEEZburger",
+      "uri_check": "https://cheezburger.com/Editor/{account}",
       "e_code": 200,
-      "e_string": "profile-header",
-      "m_string": "<title>Home - ",
-      "m_code": 302,
+      "e_string": "<title>Recent Posts from",
+      "m_string": "<title>404 Not Found</title>",
+      "m_code": 404,
       "known": [
-        "john"
+        "BarMorHazut",
+        "inessoubrie"
       ],
-      "cat": "hobby"
+      "cat": "news"
     },
     {
       "name": "Chess.com",
@@ -1313,12 +1314,12 @@
       "name": "cnet",
       "uri_check": "https://www.cnet.com/profiles/{account}/",
       "e_code": 200,
-      "e_string": "Member Since:",
-      "m_string": "Page Not Found (404) - CNET",
-      "m_code": 301,
+      "e_string": "<span>Joined CNET</span>",
+      "m_string": "class=\"c-error404_message\">",
+      "m_code": 404,
       "known": [
-        "john",
-        "bob"
+        "mlong",
+        "atomaschek"
       ],
       "cat": "news"
     },
