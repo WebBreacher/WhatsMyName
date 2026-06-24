@@ -873,35 +873,6 @@
       "cat": "gaming"
     },
     {
-      "name": "BodyBuilding.com",
-      "uri_check": "http://api.bodybuilding.com/api-proxy/bbc/get?slug={account}",
-      "uri_pretty": "http://bodyspace.bodybuilding.com/{account}/",
-      "e_code": 200,
-      "e_string": "username",
-      "m_string": "data\" :\"\"",
-      "m_code": 200,
-      "known": [
-        "mike"
-      ],
-      "cat": "health"
-    },
-    {
-      "name": "BongaCams",
-      "uri_check": "https://bongacams.com/profile/{account}",
-      "e_code": 200,
-      "e_string": "property=\"og:url\"",
-      "m_string": "content=\"0;url=/\"",
-      "m_code": 301,
-      "known": [
-        "prettykatea",
-        "sdfdsf34"
-      ],
-      "cat": "xx NSFW xx",
-      "protection": [
-        "cloudflare"
-      ]
-    },
-    {
       "name": "Bookcrossing",
       "uri_check": "https://www.bookcrossing.com/mybookshelf/{account}",
       "e_code": 200,
@@ -1040,7 +1011,10 @@
         "braftty",
         "guillermo"
       ],
-      "cat": "misc"
+      "cat": "misc",
+      "protection": [
+        "cloudflare"
+      ]
     },
     {
       "name": "Calendy",
@@ -1058,11 +1032,12 @@
     },
     {
       "name": "Cameo",
-      "uri_check": "https://www.cameo.com/{account}",
+      "uri_check": "https://www.cameo.com/api/v2/users/{account}",
+      "uri_pretty": "https://www.cameo.com/{account}",
       "e_code": 200,
-      "e_string": "aggregateRating",
-      "m_string": "",
-      "m_code": 301,
+      "e_string": "\"_id\":\"",
+      "m_string": "\"message\":\"We could not find the user:",
+      "m_code": 404,
       "known": [
         "michael_owen10",
         "sarahall3"
@@ -1074,14 +1049,14 @@
       "uri_check": "https://{account}.carbonmade.com/",
       "strip_bad_char": ".",
       "e_code": 200,
-      "e_string": "s online portfolio",
-      "m_string": "site not found",
+      "e_string": "<meta name=\"description\" content=\"",
+      "m_string": ".carbonmade.com not found",
       "m_code": 404,
       "known": [
-        "jenny",
-        "bob"
+        "danreeves",
+        "allisonchoppick"
       ],
-      "cat": "hobby"
+      "cat": "business"
     },
     {
       "name": "Career.habr",
