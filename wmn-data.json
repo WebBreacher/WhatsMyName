@@ -380,12 +380,12 @@
       "cat": "gaming"
     },
     {
-      "name": "Appian",
+      "name": "appian Community",
       "uri_check": "https://community.appian.com/members/{account}",
       "e_code": 200,
-      "e_string": "User Profile",
-      "m_string": "Go back to our",
-      "m_code": 301,
+      "e_string": "class=\"avatar-container",
+      "m_string": "",
+      "m_code": 302,
       "known": [
         "mikec",
         "varunkumarb0001"
