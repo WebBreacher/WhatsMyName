@@ -1068,14 +1068,14 @@
       "uri_check": "https://{account}.carbonmade.com/",
       "strip_bad_char": ".",
       "e_code": 200,
-      "e_string": "s online portfolio",
-      "m_string": "site not found",
+      "e_string": "<meta name=\"description\" content=\"",
+      "m_string": ".carbonmade.com not found",
       "m_code": 404,
       "known": [
-        "jenny",
-        "bob"
+        "danreeves",
+        "allisonchoppick"
       ],
-      "cat": "hobby"
+      "cat": "business"
     },
     {
       "name": "Career.habr",
