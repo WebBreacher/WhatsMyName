@@ -617,8 +617,8 @@
       "uri_check": "https://www.bandlab.com/api/v1.3/users/{account}",
       "uri_pretty": "https://www.bandlab.com/{account}",
       "e_code": 200,
-      "e_string": "about",
-      "m_string": "Couldn't find any matching element, it might be deleted",
+      "e_string": "\"username\":",
+      "m_string": "Couldn’t find any matching element, it might be deleted",
       "m_code": 404,
       "known": [
         "rave_flawless",
