@@ -1201,16 +1201,17 @@
       "cat": "xx NSFW xx"
     },
     {
-      "name": "cHEEZburger",
-      "uri_check": "https://profile.cheezburger.com/{account}",
+      "name": "CHEEZburger",
+      "uri_check": "https://cheezburger.com/Editor/{account}",
       "e_code": 200,
-      "e_string": "profile-header",
-      "m_string": "<title>Home - ",
-      "m_code": 302,
+      "e_string": "<title>Recent Posts from",
+      "m_string": "<title>404 Not Found</title>",
+      "m_code": 404,
       "known": [
-        "john"
+        "BarMorHazut",
+        "inessoubrie"
       ],
-      "cat": "hobby"
+      "cat": "news"
     },
     {
       "name": "Chess.com",
