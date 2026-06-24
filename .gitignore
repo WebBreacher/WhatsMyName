@@ -139,3 +139,9 @@ docs/_build/
 # Apple
 .DS_Store
 
+# AI
+.claude
+
+# WMN checker output reports
+scripts/checker/*-wmncheck.md
+scripts/checker/*-wmncheck-partial.md
