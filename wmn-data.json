@@ -39,54 +39,6 @@
   ],
   "sites": [
     {
-      "name": "peoople (Creator)",
-      "uri_check": "https://peoople.app/en/creator/{account}/",
-      "e_code": 200,
-      "e_string": "class=\"a1jhaptw\"",
-      "m_string": "<title>Peoople</title>",
-      "m_code": 404,
-      "known": [
-        "patricialmendro",
-        "loquidooo"
-      ],
-      "cat": "social",
-      "protection": [
-        "cloudfront"
-      ]
-    },
-    {
-      "name": "peoople (Star)",
-      "uri_check": "https://peoople.app/en/star/{account}/",
-      "e_code": 200,
-      "e_string": "class=\"a1jhaptw\"",
-      "m_string": "<title>Peoople</title>",
-      "m_code": 404,
-      "known": [
-        "lamenteesmaravillosa",
-        "streammood"
-      ],
-      "cat": "social",
-      "protection": [
-        "cloudfront"
-      ]
-    },
-    {
-      "name": "peoople (Unicorn)",
-      "uri_check": "https://peoople.app/en/unicorn/{account}/",
-      "e_code": 200,
-      "e_string": "class=\"a1jhaptw\"",
-      "m_string": "<title>Peoople</title>",
-      "m_code": 404,
-      "known": [
-        "carmensalva",
-        "teletextopuntocom"
-      ],
-      "cat": "social",
-      "protection": [
-        "cloudfront"
-      ]
-    },
-    {
       "name": "247CTF",
       "uri_check": "https://247ctf.com/progress/{account}",
       "e_code": 200,
@@ -6379,6 +6331,54 @@
       "cat": "coding",
       "protection": [
         "cloudflare"
+      ]
+    },
+    {
+      "name": "peoople (Creator)",
+      "uri_check": "https://peoople.app/en/creator/{account}/",
+      "e_code": 200,
+      "e_string": "class=\"a1jhaptw\"",
+      "m_string": "<title>Peoople</title>",
+      "m_code": 404,
+      "known": [
+        "patricialmendro",
+        "loquidooo"
+      ],
+      "cat": "social",
+      "protection": [
+        "cloudfront"
+      ]
+    },
+    {
+      "name": "peoople (Star)",
+      "uri_check": "https://peoople.app/en/star/{account}/",
+      "e_code": 200,
+      "e_string": "class=\"a1jhaptw\"",
+      "m_string": "<title>Peoople</title>",
+      "m_code": 404,
+      "known": [
+        "lamenteesmaravillosa",
+        "streammood"
+      ],
+      "cat": "social",
+      "protection": [
+        "cloudfront"
+      ]
+    },
+    {
+      "name": "peoople (Unicorn)",
+      "uri_check": "https://peoople.app/en/unicorn/{account}/",
+      "e_code": 200,
+      "e_string": "class=\"a1jhaptw\"",
+      "m_string": "<title>Peoople</title>",
+      "m_code": 404,
+      "known": [
+        "carmensalva",
+        "teletextopuntocom"
+      ],
+      "cat": "social",
+      "protection": [
+        "cloudfront"
       ]
     },
     {
