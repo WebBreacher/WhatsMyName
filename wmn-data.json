@@ -211,29 +211,15 @@
       "cat": "finance"
     },
     {
-      "name": "Airline_Pilot_Life",
-      "uri_check": "https://airlinepilot.life/u/{account}.json",
-      "uri_pretty": "https://airlinepilot.life/u/{account}",
-      "e_code": 200,
-      "e_string": "primary_group_name",
-      "m_string": "he requested URL or resource could not be found.",
-      "m_code": 404,
-      "known": [
-        "hannah",
-        "addison"
-      ],
-      "cat": "social"
-    },
-    {
       "name": "Airliners",
       "uri_check": "https://www.airliners.net/user/{account}/profile",
       "e_code": 200,
-      "e_string": "'s Profile | Airliners Members | Airliners.net",
-      "m_string": "An Error Occurred",
+      "e_string": "class=\"user-profile-body-offset\"",
+      "m_string": "An Error Occurred: Not Found",
       "m_code": 404,
       "known": [
-        "pilot",
-        "pilota"
+        "Dazed767",
+        "dummy0085825"
       ],
       "cat": "social"
     },
@@ -371,19 +357,6 @@
       "protection": [
         "cloudflare"
       ]
-    },
-    {
-      "name": "anonup",
-      "uri_check": "https://anonup.com/@{account}",
-      "e_code": 200,
-      "e_string": "Show followings",
-      "m_string": "Page not found!",
-      "m_code": 302,
-      "known": [
-        "john",
-        "peter"
-      ],
-      "cat": "social"
     },
     {
       "name": "Apex Legends",
@@ -664,7 +637,10 @@
         "joyfitnessdance1",
         "bobkokatya94"
       ],
-      "cat": "misc"
+      "cat": "misc",
+      "protection": [
+        "other"
+      ]
     },
     {
       "name": "BDSMLR",
@@ -723,19 +699,6 @@
         "hotoptics"
       ],
       "cat": "xx NSFW xx"
-    },
-    {
-      "name": "Bento",
-      "uri_check": "https://bento.me/{account}",
-      "e_code": 200,
-      "e_string": "href=\"https://bento.me/explore\"",
-      "m_string": ">Available!</div>",
-      "m_code": 404,
-      "known": [
-        "carlito",
-        "taylor"
-      ],
-      "cat": "social"
     },
     {
       "name": "BiggerPockets",
