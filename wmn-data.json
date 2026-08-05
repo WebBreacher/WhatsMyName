@@ -332,20 +332,6 @@
       "cat": "tech"
     },
     {
-      "name": "Arch Linux GitLab",
-      "uri_check": "https://gitlab.archlinux.org/api/v4/users?username={account}",
-      "uri_pretty": "https://gitlab.archlinux.org/{account}",
-      "e_code": 200,
-      "e_string": "\"id\":",
-      "m_string": "[]",
-      "m_code": 200,
-      "known": [
-        "morganamilo",
-        "nl6720"
-      ],
-      "cat": "social"
-    },
-    {
       "name": "Arduino (Forum)",
       "uri_check": "https://forum.arduino.cc/u/{account}.json",
       "uri_pretty": "https://forum.arduino.cc/u/{account}/summary",
