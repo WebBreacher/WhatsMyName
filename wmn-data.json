@@ -9964,5 +9964,29 @@
       ],
       "cat": "social"
     }
+    {
+      "name": "tryhackme",
+      "uri_check": "https://tryhackme.com/p/{account}",
+      "e_code": 200,
+      "m_string": "Page not found",
+      "headers" : {
+                "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+      },
+      "cat": "hacking"
+    }
+    {
+      "name": "chess.com",
+      "uri_check": "https://chess.com/member/{username}",
+      "e_code": 200,
+      "m_string": "404 Page not found",
+      "cat": "games"
+    }
+    {
+      "name": "tripadvisor.com",
+      "uri_check": "https://tripadvisor.com.au/Profile/{username}",
+      "e_code": 200,
+      "m_string": "This page is on holiday",
+      "cat": "travel"
+    }
   ]
 }
