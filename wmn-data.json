@@ -12,6 +12,7 @@
     "funnyzak",
     "mbiesiad",
     "Micah Hoffman",
+    "Owen Ross @Dev2023-Op"
     "mtedholm"
   ],
   "categories": [
@@ -9968,25 +9969,52 @@
       "name": "tryhackme",
       "uri_check": "https://tryhackme.com/p/{account}",
       "e_code": 200,
+      "e_string": "Rank",
+      "m_code": 404,
       "m_string": "Page not found",
       "headers" : {
                 "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
       },
-      "cat": "hacking"
-    }
+      "known": [
+        "oross21"
+      ]
+      "cat": "tech"
+    },
     {
       "name": "chess.com",
       "uri_check": "https://chess.com/member/{username}",
       "e_code": 200,
+      "e_string": "Game History";
+      "m_code": 404,
       "m_string": "404 Page not found",
-      "cat": "games"
-    }
+      "known": [
+        "oross21"
+      ],
+      "cat": "gaming"
+    },
     {
-      "name": "tripadvisor.com",
+      "name": "tripadvisor australia",
       "uri_check": "https://tripadvisor.com.au/Profile/{username}",
       "e_code": 200,
+      "e_string": "Recent Achievements",
+      "m_code": 404,
       "m_string": "This page is on holiday",
-      "cat": "travel"
+      "known": [
+        "amiresteki"
+      ],
+      "cat": "misc"
+    },
+    {
+      "name": "tripadvisor",
+      "uri_check": "https://tripadvisor.com/Profile/{username}",
+      "e_code": 200,
+      "e_sring": "Recent Achievements",
+      "m_code": 404,
+      "m_string": "This page is on holiday",
+      "known": [
+        "amiresteki"
+      ],
+      "cat": "misc"
     }
   ]
 }
