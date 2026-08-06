@@ -9953,7 +9953,7 @@
     },
     {
       "name": "tripadvisor australia",
-      "uri_check": "https://tripadvisor.com.au/Profile/{username}",
+      "uri_check": "https://tripadvisor.com.au/Profile/{account}",
       "e_code": 200,
       "e_string": "Recent Achievements",
       "m_code": 404,
@@ -9965,7 +9965,7 @@
     },
     {
       "name": "tripadvisor",
-      "uri_check": "https://tripadvisor.com/Profile/{username}",
+      "uri_check": "https://tripadvisor.com/Profile/{account}",
       "e_code": 200,
       "e_sring": "Recent Achievements",
       "m_code": 404,
