@@ -1737,11 +1737,11 @@
       "cat": "coding"
     },
     {
-      "name": "dfgames",
-      "uri_check": "https://www.dfgames.com.br/user/{account}",
+      "name": "DFG",
+      "uri_check": "https://www.dfg.com.br/user/{account}",
       "e_code": 200,
-      "e_string": "Reputa",
-      "m_string": "404 Not Found",
+      "e_string": "class=\"container user-information\"",
+      "m_string": "content=\"https://www.dfg.com.br/Layout/HandleStatusCode/404\"",
       "m_code": 404,
       "known": [
         "carlos01",
@@ -2269,19 +2269,6 @@
       "cat": "social"
     },
     {
-      "name": "Eyeem",
-      "uri_check": "https://www.eyeem.com/u/{account}",
-      "e_code": 200,
-      "e_string": "Marketplace</title>",
-      "m_string": "Not Found (404) | EyeEm",
-      "m_code": 301,
-      "known": [
-        "john",
-        "bob"
-      ],
-      "cat": "art"
-    },
-    {
       "name": "Fabswingers",
       "uri_check": "https://www.fabswingers.com/profile/{account}",
       "e_code": 200,
@@ -2417,19 +2404,6 @@
         "bobby"
       ],
       "cat": "social"
-    },
-    {
-      "name": "FatSecret",
-      "uri_check": "https://www.fatsecret.com/member/{account}",
-      "e_code": 200,
-      "e_string": "- Member</title>",
-      "m_string": "Your Key to Success",
-      "m_code": 302,
-      "known": [
-        "bob",
-        "bobby"
-      ],
-      "cat": "health"
     },
     {
       "name": "Federated.press (Mastodon Instance)",
@@ -2815,19 +2789,6 @@
       "cat": "music"
     },
     {
-      "name": "FreeSteamKeys",
-      "uri_check": "https://www.freesteamkeys.com/members/{account}/",
-      "e_code": 200,
-      "e_string": "item-header-avatar",
-      "m_string": "error404",
-      "m_code": 404,
-      "known": [
-        "giveaway-su",
-        "keygenerator"
-      ],
-      "cat": "gaming"
-    },
-    {
       "name": "FriendFinder",
       "uri_check": "https://friendfinder.com/profile/{account}",
       "e_code": 200,
@@ -2937,11 +2898,11 @@
       ]
     },
     {
-      "name": "Garmin connect",
-      "uri_check": "https://connect.garmin.com/modern/profile/{account}",
+      "name": "Garmin Connect",
+      "uri_check": "https://connect.garmin.com/app/profile/{account}",
       "e_code": 200,
-      "e_string": "window.ERROR_VIEW = null",
-      "m_string": "resourceNotFoundRoute",
+      "e_string": "window.VIEWER_USERPREFERENCES = {",
+      "m_string": "window.VIEWER_USERPREFERENCES = null",
       "m_code": 200,
       "known": [
         "tommy",
@@ -3742,12 +3703,12 @@
       "cat": "hobby"
     },
     {
-      "name": "HomeDesign3D",
-      "uri_check": "https://en.homedesign3d.net/user/{account}",
+      "name": "Home Design 3D",
+      "uri_check": "https://www.homedesign3d.net/user/{account}",
       "e_code": 200,
-      "e_string": "userspace",
-      "m_string": "An Error Occurred: Internal Server Error",
-      "m_code": 500,
+      "e_string": "id=\"user_content\"",
+      "m_string": "content=\"0;url='/community'\"",
+      "m_code": 302,
       "known": [
         "carlos01",
         "paul"
@@ -3875,32 +3836,6 @@
       "cat": "social"
     },
     {
-      "name": "Iconfinder",
-      "uri_check": "https://www.iconfinder.com/{account}",
-      "e_code": 200,
-      "e_string": "data-to-user-id=",
-      "m_string": "We couldn't find the page you are looking for.",
-      "m_code": 404,
-      "known": [
-        "roundicons",
-        "iconfinder"
-      ],
-      "cat": "images"
-    },
-    {
-      "name": "icq-chat",
-      "uri_check": "https://icq.icqchat.co/members/{account}/",
-      "e_code": 200,
-      "e_string": "Last seen",
-      "m_string": "Oops! We ran into some problems",
-      "m_code": 404,
-      "known": [
-        "brookenora.54",
-        "bigdaddy.77"
-      ],
-      "cat": "social"
-    },
-    {
       "name": "IFTTT",
       "uri_check": "https://ifttt.com/p/{account}",
       "e_code": 200,
@@ -3943,15 +3878,16 @@
       ]
     },
     {
-      "name": "ilovegrowingmarijuana",
-      "uri_check": "https://support.ilovegrowingmarijuana.com/u/{account}",
+      "name": "ILGM Growers Forum",
+      "uri_check": "https://ilgmforum.com/u/{account}/summary.json",
+      "uri_pretty": "https://ilgmforum.com/u/{account}/summary",
       "e_code": 200,
-      "e_string": "<title>  Profile - ",
-      "m_string": "Oops! That page doesn’t exist or is private",
+      "e_string": "\"users\":[{",
+      "m_string": "\"error_type\":\"not_found\"",
       "m_code": 404,
       "known": [
-        "ILGM.Stacy",
-        "Mosaicmind9x"
+        "spc95b00",
+        "growdoc"
       ],
       "cat": "social"
     },
@@ -4227,11 +4163,11 @@
       "cat": "tech"
     },
     {
-      "name": "Japandict",
+      "name": "JapanDict",
       "uri_check": "https://forum.japandict.com/u/{account}",
       "e_code": 200,
-      "e_string": "modern browser",
-      "m_string": "The page you requested could not be found.",
+      "e_string": "class=\"UserPage\"",
+      "m_string": "<p>The page you requested could not be found.</p>",
       "m_code": 404,
       "known": [
         "Yan",
@@ -4473,19 +4409,6 @@
         "test"
       ],
       "cat": "gaming"
-    },
-    {
-      "name": "Kotburger",
-      "uri_check": "https://kotburger.pl/user/{account}",
-      "e_code": 200,
-      "e_string": "Zamieszcza kotburgery od:",
-      "m_string": "Nie znaleziono użytkownika o podanym loginie.",
-      "m_code": 200,
-      "known": [
-        "ania",
-        "janek"
-      ],
-      "cat": "images"
     },
     {
       "name": "Kwai",
@@ -5157,19 +5080,6 @@
       "cat": "news"
     },
     {
-      "name": "medyczka.pl",
-      "uri_check": "http://medyczka.pl/user/{account}",
-      "e_code": 200,
-      "e_string": "Lista uzytkownikow",
-      "m_string": "This user has not registered and therefore does not have a profile to view.",
-      "m_code": 200,
-      "known": [
-        "test",
-        "janek"
-      ],
-      "cat": "health"
-    },
-    {
       "name": "meet me",
       "uri_check": "https://www.meetme.com/{account}",
       "e_code": 200,
@@ -5730,19 +5640,6 @@
       "cat": "social"
     },
     {
-      "name": "netvibes",
-      "uri_check": "https://www.netvibes.com/{account}",
-      "e_code": 200,
-      "e_string": "userId",
-      "m_string": "Page not found",
-      "m_code": 404,
-      "known": [
-        "nebkacrea",
-        "cdiljda"
-      ],
-      "cat": "social"
-    },
-    {
       "name": "Newgrounds",
       "uri_check": "https://{account}.newgrounds.com/",
       "strip_bad_char": ".",
@@ -5798,12 +5695,13 @@
       "cat": "social"
     },
     {
-      "name": "nihbuatjajan",
-      "uri_check": "https://www.nihbuatjajan.com/{account}",
+      "name": "Nih Buat Jajan",
+      "uri_check": "https://www.nihbuatjajan.com/manifest/{account}.json",
+      "uri_pretty": "https://www.nihbuatjajan.com/{account}",
       "e_code": 200,
-      "e_string": ") | Nih buat jajan</title>",
-      "m_string": "<title>Nih Buat Jajan</title>",
-      "m_code": 302,
+      "e_string": "\"name\":",
+      "m_string": "\"error\":\"Creator not found\"",
+      "m_code": 404,
       "known": [
         "banyusadewa",
         "danirachmat"
@@ -6089,19 +5987,6 @@
       "cat": "social"
     },
     {
-      "name": "ow.ly",
-      "uri_check": "http://ow.ly/user/{account}",
-      "e_code": 200,
-      "e_string": "Images",
-      "m_string": "404 error",
-      "m_code": 404,
-      "known": [
-        "StopAdMedia",
-        "jokervendetti"
-      ],
-      "cat": "social"
-    },
-    {
       "name": "palnet",
       "uri_check": "https://www.palnet.io/@{account}/",
       "e_code": 200,
@@ -6235,31 +6120,31 @@
       "cat": "finance"
     },
     {
-      "name": "Paypal",
-      "uri_check": "https://www.paypal.com/paypalme/{account}",
+      "name": "Paypal Business",
+      "uri_check": "https://www.paypal.com/biz/profile-data/{account}",
+      "uri_pretty": "https://www.paypal.com/biz/profile/{account}",
       "e_code": 200,
-      "e_string": "userInfo",
-      "m_string": "<title>PayPal.Me</title><meta",
-      "m_code": 200,
+      "e_string": "\"payerId\":",
+      "m_string": "\"error\":\"RESOURCE_NOT_FOUND\"",
+      "m_code": 404,
       "known": [
-        "OCMermaid",
-        "blackrock"
+        "chaminajjan",
+        "northstarhealth"
       ],
       "cat": "finance"
     },
     {
-      "name": "PCGamer",
-      "uri_check": "https://forums.pcgamer.com/members/{account}/",
+      "name": "PayPal.Me",
+      "uri_check": "https://www.paypal.com/paypalme/{account}",
       "e_code": 200,
-      "e_string": "Joined",
-      "m_string": "Oops! We ran into some problems",
-      "m_code": 404,
+      "e_string": "\"recipientSlugDetails\":",
+      "m_string": "\",\"griffinMetadata\":{\"",
+      "m_code": 200,
       "known": [
-        "volley.302",
-        "cjmariani.94198",
-        "cholidsnake.2334"
+        "ckl94",
+        "blackrock"
       ],
-      "cat": "gaming"
+      "cat": "finance"
     },
     {
       "name": "PCPartPicker",
@@ -6292,11 +6177,24 @@
       ]
     },
     {
-      "name": "peoople (Creator)",
+      "name": "Peing",
+      "uri_check": "https://peing.net/en/{account}",
+      "e_code": 200,
+      "e_string": "data-route-user-id-main=''",
+      "m_string": "user_is_not_found",
+      "m_code": 302,
+      "known": [
+        "sumiyoshiryosai",
+        "yhforedh"
+      ],
+      "cat": "social"
+    },
+    {
+      "name": "Peoople (Creator)",
       "uri_check": "https://peoople.app/en/creator/{account}/",
       "e_code": 200,
-      "e_string": "class=\"a1jhaptw\"",
-      "m_string": "<title>Peoople</title>",
+      "e_string": "\"@type\":\"BreadcrumbList\"",
+      "m_string": "id=\"__next_error__\"",
       "m_code": 404,
       "known": [
         "patricialmendro",
@@ -6308,11 +6206,27 @@
       ]
     },
     {
-      "name": "peoople (Star)",
+      "name": "Peoople (Influencer)",
+      "uri_check": "https://peoople.app/en/influencer/{account}/",
+      "e_code": 200,
+      "e_string": "\"@type\":\"BreadcrumbList\"",
+      "m_string": "id=\"__next_error__\"",
+      "m_code": 404,
+      "known": [
+        "loquidooo",
+        "Laragax"
+      ],
+      "cat": "social",
+      "protection": [
+        "cloudfront"
+      ]
+    },
+    {
+      "name": "Peoople (Star)",
       "uri_check": "https://peoople.app/en/star/{account}/",
       "e_code": 200,
-      "e_string": "class=\"a1jhaptw\"",
-      "m_string": "<title>Peoople</title>",
+      "e_string": "\"@type\":\"BreadcrumbList\"",
+      "m_string": "id=\"__next_error__\"",
       "m_code": 404,
       "known": [
         "lamenteesmaravillosa",
@@ -6324,11 +6238,11 @@
       ]
     },
     {
-      "name": "peoople (Unicorn)",
+      "name": "Peoople (Unicorn)",
       "uri_check": "https://peoople.app/en/unicorn/{account}/",
       "e_code": 200,
-      "e_string": "class=\"a1jhaptw\"",
-      "m_string": "<title>Peoople</title>",
+      "e_string": "\"@type\":\"BreadcrumbList\"",
+      "m_string": "id=\"__next_error__\"",
       "m_code": 404,
       "known": [
         "carmensalva",
@@ -7107,19 +7021,6 @@
       "cat": "social"
     },
     {
-      "name": "rsi",
-      "uri_check": "https://robertsspaceindustries.com/citizens/{account}",
-      "e_code": 200,
-      "e_string": "CITIZEN DOSSIER",
-      "m_string": "404 NAVIGATING UNCHARTED TERRITORY",
-      "m_code": 404,
-      "known": [
-        "alpHackeronee",
-        "Quantum_Physicist"
-      ],
-      "cat": "gaming"
-    },
-    {
       "name": "ru_123rf",
       "uri_check": "https://ru.123rf.com/profile_{account}",
       "e_code": 200,
@@ -7306,32 +7207,6 @@
         "tom"
       ],
       "cat": "hobby"
-    },
-    {
-      "name": "secure_donation",
-      "uri_check": "https://secure.donationpay.org/{account}/",
-      "e_code": 200,
-      "e_string": "| DonationPay</title>",
-      "m_string": "<title>secure.donationpay.org</title>",
-      "m_code": 404,
-      "known": [
-        "rareimpact",
-        "safc"
-      ],
-      "cat": "finance"
-    },
-    {
-      "name": "sedisp@ce",
-      "uri_check": "https://sedispace.com/@{account}",
-      "e_code": 200,
-      "e_string": "Membre depuis -",
-      "m_string": "- Page non trouvée!",
-      "m_code": 302,
-      "known": [
-        "mamadou",
-        "konate"
-      ],
-      "cat": "social"
     },
     {
       "name": "Seneporno",
@@ -7522,11 +7397,12 @@
       "cat": "xx NSFW xx"
     },
     {
-      "name": "slant",
-      "uri_check": "https://www.slant.co/users/{account}",
+      "name": "Slant",
+      "uri_check": "https://www.slant.co/users/{account}?format=jsonp&callback=jsonLoaded",
+      "uri_pretty": "https://www.slant.co/users/{account}",
       "e_code": 200,
-      "e_string": "s Profile - Slant",
-      "m_string": "404 - Page Not Found - Slant",
+      "e_string": "\"uuid\":",
+      "m_string": "\"error\":404",
       "m_code": 404,
       "known": [
         "bob",
@@ -7613,19 +7489,6 @@
       "cat": "social"
     },
     {
-      "name": "Snipfeed",
-      "uri_check": "https://snipfeed.co/{account}",
-      "e_code": 200,
-      "e_string": "creatorLink",
-      "m_string": "Oops, you hit a dead end!",
-      "m_code": 404,
-      "known": [
-        "mycherrycrush",
-        "honey"
-      ],
-      "cat": "misc"
-    },
-    {
       "name": "soc.citizen4.eu",
       "uri_check": "https://soc.citizen4.eu/profile/{account}/profile",
       "e_code": 200,
@@ -7648,19 +7511,6 @@
       "known": [
         "bfdi",
         "bmdv"
-      ],
-      "cat": "social"
-    },
-    {
-      "name": "social_msdn",
-      "uri_check": "https://social.msdn.microsoft.com/profile/{account}",
-      "e_code": 200,
-      "e_string": "Member Since",
-      "m_string": "The resource you are looking for has been removed, had its name changed, or is temporarily unavailable.",
-      "m_code": 404,
-      "known": [
-        "edoardo",
-        "microsoftfan"
       ],
       "cat": "social"
     },
@@ -8081,19 +7931,6 @@
       "cat": "misc"
     },
     {
-      "name": "Tagged",
-      "uri_check": "https://secure.tagged.com/{account}",
-      "e_code": 200,
-      "e_string": "s Profile</title>",
-      "m_string": "Tagged - The social network for meeting new people",
-      "m_code": 302,
-      "known": [
-        "Samantha",
-        "Robert"
-      ],
-      "cat": "social"
-    },
-    {
       "name": "TamTam",
       "uri_check": "https://tamtam.chat/{account}",
       "e_code": 200,
@@ -8503,11 +8340,11 @@
       "cat": "hobby"
     },
     {
-      "name": "tradingview",
+      "name": "TradingView",
       "uri_check": "https://www.tradingview.com/u/{account}/",
       "e_code": 200,
-      "e_string": "— Trading Ideas &amp;",
-      "m_string": "Page not found — TradingView",
+      "e_string": "class=\"js-user-profile\"",
+      "m_string": "class=\"tv-http-error-page__image tv-http-error-page__image--404\"",
       "m_code": 404,
       "known": [
         "liam",
@@ -8668,6 +8505,20 @@
       "cat": "music"
     },
     {
+      "name": "Twitcast",
+      "uri_check": "https://frontendapi.twitcasting.tv/users/{account}",
+      "uri_pretty": "https://twitcasting.tv/{account}",
+      "e_code": 200,
+      "e_string": "\"user\":{",
+      "m_string": "\"message\":\"User Not Found\"",
+      "m_code": 404,
+      "known": [
+        "yuno___nico",
+        "2_t0_"
+      ],
+      "cat": "social"
+    },
+    {
       "name": "Tweetapus",
       "uri_check": "https://tweetapus.tiag.workers.dev/@{account}.json",
       "uri_pretty": "https://tweeta.tiago.zip/@{account}",
@@ -8678,19 +8529,6 @@
       "known": [
         "tiago",
         "admin"
-      ],
-      "cat": "social"
-    },
-    {
-      "name": "Twitcasting",
-      "uri_check": "https://twitcasting.tv/{account}",
-      "e_code": 200,
-      "e_string": "Live History",
-      "m_string": "Not Found",
-      "m_code": 302,
-      "known": [
-        "yuno___nico",
-        "2_t0_"
       ],
       "cat": "social"
     },
@@ -8766,19 +8604,6 @@
         "tsukiusa630"
       ],
       "cat": "social"
-    },
-    {
-      "name": "Ubisoft",
-      "uri_check": "https://discussions.ubisoft.com/user/{account}",
-      "e_code": 200,
-      "e_string": "| Ubisoft Discussion Forums",
-      "m_string": "You seem to have stumbled upon a page that does not exist.",
-      "m_code": 404,
-      "known": [
-        "fizzle_fuze",
-        "th05324"
-      ],
-      "cat": "gaming"
     },
     {
       "name": "Udemy",
@@ -9385,20 +9210,6 @@
         "fbb0916"
       ],
       "cat": "social"
-    },
-    {
-      "name": "WeTransfer",
-      "uri_check": "https://{account}.wetransfer.com",
-      "strip_bad_char": ".",
-      "e_code": 200,
-      "e_string": "workspaceName",
-      "m_string": "",
-      "m_code": 307,
-      "known": [
-        "mark",
-        "joe"
-      ],
-      "cat": "misc"
     },
     {
       "name": "Wikidot",
