@@ -12,7 +12,7 @@
     "funnyzak",
     "mbiesiad",
     "Micah Hoffman",
-    "Owen Ross @Dev2023-Op",
+    "Owen Ross",
     "mtedholm"
   ],
   "categories": [
@@ -330,6 +330,21 @@
         "varunkumarb0001"
       ],
       "cat": "tech"
+    },
+    {
+      "name": "Arch Linux GitLab",
+      "uri_check": "https://gitlab.archlinux.org/api/v4/users?username={account}",
+      "uri_pretty": "https://gitlab.archlinux.org/{account}",
+      "protection": [ "anubis" ],
+      "e_code": 200,
+      "e_string": "\"id\":",
+      "m_string": "[]",
+      "m_code": 200,
+      "known": [
+        "morganamilo",
+        "nl6720"
+      ],
+      "cat": "social"
     },
     {
       "name": "Arduino (Forum)",
@@ -8550,7 +8565,7 @@
       "uri_check": "https://www.tripadvisor.com/Profile/{account}",
       "e_code": 200,
       "e_string": "Contributions",
-      "m_string": "This page is on vacation",
+      "m_string": "<div class=\"error404",
       "m_code": 404,
       "known": [
         "john",
@@ -9950,30 +9965,6 @@
         "Alinka1313"
       ],
       "cat": "social"
-    },
-    {
-      "name": "tripadvisor australia",
-      "uri_check": "https://tripadvisor.com.au/Profile/{account}",
-      "e_code": 200,
-      "e_string": "Recent Achievements",
-      "m_code": 404,
-      "m_string": "This page is on holiday",
-      "known": [
-        "amiresteki"
-      ],
-      "cat": "misc"
-    },
-    {
-      "name": "tripadvisor",
-      "uri_check": "https://tripadvisor.com/Profile/{account}",
-      "e_code": 200,
-      "e_sring": "Recent Achievements",
-      "m_code": 404,
-      "m_string": "This page is on holiday",
-      "known": [
-        "amiresteki"
-      ],
-      "cat": "misc"
     }
   ]
 }
