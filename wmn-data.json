@@ -3673,10 +3673,10 @@
     },
     {
       "name": "HiHello",
-      "uri_check": "https://www.hihello.me/author/{account}",
+      "uri_check": "https://www.hihello.com/author/{account}",
       "e_code": 200,
-      "e_string": "<title>HiHello Blog Author: ",
-      "m_string": "Well, this is awkward",
+      "e_string": "\"mainEntity\": {",
+      "m_string": "class=\"utility-page-wrap-404\"",
       "m_code": 404,
       "known": [
         "pascal-theriault",
@@ -3877,7 +3877,7 @@
     },
     {
       "name": "igromania",
-      "uri_check": "http://forum.igromania.ru/member.php?username={account}",
+      "uri_check": "https://forum.igromania.ru/member.php?username={account}",
       "e_code": 200,
       "e_string": "Форум Игромании - Просмотр профиля:",
       "m_string": "Пользователь не зарегистрирован и не имеет профиля для просмотра.",
@@ -4869,10 +4869,11 @@
     },
     {
       "name": "masto.ai",
-      "uri_check": "https://masto.ai/@{account}",
+      "uri_check": "https://masto.ai/api/v1/accounts/lookup?acct={account}",
+      "uri_pretty": "https://masto.ai/@{account}",
       "e_code": 200,
-      "e_string": "@masto.ai) - Mastodon</title>",
-      "m_string": "The page you are looking for isn&#39;t here.",
+      "e_string": "\"id\":",
+      "m_string": "\"error\":\"Record not found\"",
       "m_code": 404,
       "known": [
         "rbreich",
@@ -5168,10 +5169,11 @@
     },
     {
       "name": "Minecraft List",
-      "uri_check": "https://minecraftlist.com/players/{account}",
+      "uri_check": "https://minecraftlist.com/api/legacy/players/{account}",
+      "uri_pretty": "https://minecraftlist.com/players/{account}",
       "e_code": 200,
-      "e_string": "-->was seen on<!--",
-      "m_string": "0 Minecraft servers recently",
+      "e_string": "\"found\":true",
+      "m_string": "\"found\":false",
       "m_code": 200,
       "known": [
         "fear837",
@@ -5766,10 +5768,11 @@
     },
     {
       "name": "Note",
-      "uri_check": "https://note.com/{account}",
+      "uri_check": "https://note.com/api/v2/creators/{account}",
+      "uri_pretty": "https://note.com/{account}",
       "e_code": 200,
-      "e_string": "フォロワー",
-      "m_string": "お探しのページが見つかりません。",
+      "e_string": "\"data\":{",
+      "m_string": "\"data\":\"リソースが見つかりません\"",
       "m_code": 404,
       "known": [
         "honey",
@@ -6109,11 +6112,12 @@
     },
     {
       "name": "Patriots Win",
-      "uri_check": "https://patriots.win/u/{account}/",
+      "uri_check": "https://patriots.win/api/v2/user/about.json?user={account}",
+      "uri_pretty": "https://patriots.win/u/{account}/",
       "e_code": 200,
-      "e_string": "nav-user active register",
-      "m_string": "An error occurred",
-      "m_code": 500,
+      "e_string": "\"users\":[{",
+      "m_string": "\"error\":\"invalid user\"",
+      "m_code": 200,
       "known": [
         "r3deleven",
         "MemeFactory"
@@ -8162,13 +8166,14 @@
     },
     {
       "name": "TF2 Backpack Examiner",
-      "uri_check": "http://www.tf2items.com/id/{account}/",
+      "uri_check": "https://www.tf2items.com/id/{account}",
       "e_code": 200,
-      "e_string": "<title>TF2 Backpack -",
+      "e_string": "var profileId",
       "m_string": "",
       "m_code": 302,
       "known": [
-        "test"
+        "Hasnof",
+        "McCrasAaronMcCras"
       ],
       "cat": "gaming"
     },
@@ -8504,15 +8509,15 @@
     },
     {
       "name": "tumblr",
-      "uri_check": "https://{account}.tumblr.com",
+      "uri_check": "https://www.tumblr.com/{account}",
       "strip_bad_char": ".",
       "e_code": 200,
-      "e_string": "avatar",
-      "m_string": "There's nothing here",
+      "e_string": "\"queryKey\":[",
+      "m_string": "\"status\":404",
       "m_code": 404,
       "known": [
-        "test",
-        "test1"
+        "luumia",
+        "ofhouses"
       ],
       "cat": "images"
     },
@@ -8621,13 +8626,14 @@
     },
     {
       "name": "twpro",
-      "uri_check": "https://twpro.jp/{account}",
+      "uri_check": "https://twpro.jp/{account}/q-data.json",
+      "uri_pretty": "https://twpro.jp/{account}",
       "e_code": 200,
-      "e_string": "おとなりさん",
-      "m_string": "をご確認ください。",
+      "e_string": ",200,\"/",
+      "m_string": ",404,\"/",
       "m_code": 404,
       "known": [
-        "wsise47",
+        "kipuron_ghibli",
         "tsukiusa630"
       ],
       "cat": "social"
@@ -8872,7 +8878,7 @@
     },
     {
       "name": "VIP-blog",
-      "uri_check": "http://{account}.vip-blog.com",
+      "uri_check": "https://{account}.vip-blog.com/",
       "strip_bad_char": ".",
       "e_code": 200,
       "e_string": "blog : ",
@@ -9253,7 +9259,7 @@
     },
     {
       "name": "Wikidot",
-      "uri_check": "http://www.wikidot.com/user:info/{account}",
+      "uri_check": "https://www.wikidot.com/user:info/{account}",
       "e_code": 200,
       "e_string": "<h1 class=\"profile-title\">",
       "m_string": "<div class=\"error-block\">User does not exist.</div>",
@@ -9461,14 +9467,15 @@
     },
     {
       "name": "Xanga",
-      "uri_check": "http://{account}.xanga.com/",
+      "uri_check": "https://{account}.xanga.com/",
       "strip_bad_char": ".",
       "e_code": 200,
-      "e_string": "s Xanga Site | Just",
+      "e_string": "class=\"module module-weblog\"",
       "m_string": "",
       "m_code": 302,
       "known": [
-        "john"
+        "kwantifiable",
+        "seekingxxhappiness"
       ],
       "cat": "blog"
     },
