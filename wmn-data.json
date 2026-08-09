@@ -8668,6 +8668,20 @@
       "cat": "music"
     },
     {
+      "name": "Tweetapus",
+      "uri_check": "https://tweetapus.tiag.workers.dev/@{account}.json",
+      "uri_pretty": "https://tweeta.tiago.zip/@{account}",
+      "e_code": 200,
+      "e_string": "\"username\":",
+      "m_string": "\"error\": \"User not found\"",
+      "m_code": 404,
+      "known": [
+        "tiago",
+        "admin"
+      ],
+      "cat": "social"
+    },
+    {
       "name": "Twitcasting",
       "uri_check": "https://twitcasting.tv/{account}",
       "e_code": 200,
