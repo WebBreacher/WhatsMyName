@@ -335,7 +335,6 @@
       "name": "Arch Linux GitLab",
       "uri_check": "https://gitlab.archlinux.org/api/v4/users?username={account}",
       "uri_pretty": "https://gitlab.archlinux.org/{account}",
-      "protection": [ "anubis" ],
       "e_code": 200,
       "e_string": "\"id\":",
       "m_string": "[]",
@@ -345,6 +344,9 @@
         "nl6720"
       ],
       "cat": "social"
+      "protection": [ 
+        "anubis" 
+      ],
     },
     {
       "name": "Arduino (Forum)",
