@@ -390,10 +390,14 @@
     },
     {
       "name": "Arsmate",
-      "uri_check": "https://arsmate.com/{account}",
+      "uri_check": "https://arsmate.com/api/creators/{account}",
+      "uri_pretty": "https://arsmate.com/{account}",
+      "headers": {
+        "Accept": "application/json"
+      },
       "e_code": 200,
-      "e_string": "far fa-user-circle mr-1",
-      "m_string": "error-link mt-5",
+      "e_string": "\"success\":true",
+      "m_string": "\"statusCode\": 404",
       "m_code": 404,
       "known": [
         "Angelic",
@@ -416,10 +420,11 @@
     },
     {
       "name": "ArtStation",
-      "uri_check": "https://www.artstation.com/{account}",
+      "uri_check": "https://www.artstation.com/api/v2/user_profiles/{account}.json",
+      "uri_pretty": "https://www.artstation.com/{account}",
       "e_code": 200,
-      "e_string": "Portfolio",
-      "m_string": "Page not found",
+      "e_string": "\"id\":",
+      "m_string": "\"message\":\"User with username:",
       "m_code": 404,
       "known": [
         "kongaxl_design",
@@ -573,12 +578,16 @@
     },
     {
       "name": "BDSMLR",
-      "uri_check": "https://{account}.bdsmlr.com",
-      "strip_bad_char": ".",
+      "uri_check": "https://api-prod.bdsmlr.com/v2/api/blog-tag-affinity",
+      "uri_pretty": "https://bdsmlr.com/blog/{account}",
+      "post_body": "{\"blog_name\":\"{account}\"}",
+      "headers": {
+        "Content-Type": "application/json"
+      },
       "e_code": 200,
-      "e_string": "login",
-      "m_string": "This blog doesn't exist.",
-      "m_code": 200,
+      "e_string": "\"blogId\":",
+      "m_string": "\"error\":\"blog_id or blog_name required\"",
+      "m_code": 400,
       "known": [
         "themunch",
         "shibari4all"
@@ -755,15 +764,15 @@
     },
     {
       "name": "Blogspot",
-      "uri_check": "http://{account}.blogspot.com",
+      "uri_check": "https://{account}.blogspot.com/?hl=en-US",
       "strip_bad_char": ".",
       "e_code": 200,
-      "e_string": "Blogger Template Style",
-      "m_string": "Blog not found",
+      "e_string": "_WidgetManager._Init",
+      "m_string": ">Blog not found<",
       "m_code": 404,
       "known": [
-        "mashatischool",
-        "davidhelbich"
+        "kaikore",
+        "kalenderimlek"
       ],
       "cat": "blog"
     },
@@ -977,7 +986,7 @@
       "uri_check": "https://www.cameo.com/api/v2/users/{account}",
       "uri_pretty": "https://www.cameo.com/{account}",
       "e_code": 200,
-      "e_string": "\"_id\":\"",
+      "e_string": "\"_id\":",
       "m_string": "\"message\":\"We could not find the user:",
       "m_code": 404,
       "known": [
@@ -1125,16 +1134,20 @@
     },
     {
       "name": "chaturbate",
-      "uri_check": "https://chaturbate.com/{account}/",
+      "uri_check": "https://chaturbate.com/api/biocontext/{account}/",
+      "uri_pretty": "https://chaturbate.com/{account}/",
       "e_code": 200,
-      "e_string": "'s Bio and Free Webcam",
-      "m_string": "It's probably just a broken link",
+      "e_string": "\"fan_club_join_url\":",
+      "m_string": "<h1>HTTP 404 - Page Not Found</h1>",
       "m_code": 404,
       "known": [
         "pussylovekate",
         "kemii"
       ],
-      "cat": "xx NSFW xx"
+      "cat": "xx NSFW xx",
+      "protection": [
+        "cloudflare"
+      ]
     },
     {
       "name": "CHEEZburger",
@@ -1605,11 +1618,11 @@
     },
     {
       "name": "datezone",
-      "uri_check": "https://www.datezone.com/users/{account}/",
+      "uri_check": "https://en.datezone.com/users/{account}",
       "e_code": 200,
-      "e_string": "profile_status",
-      "m_string": "404: page not found",
-      "m_code": 200,
+      "e_string": "property=\"og:url\"",
+      "m_string": "<title>Page not found</title>",
+      "m_code": 404,
       "known": [
         "maniektwist",
         "carllos"
@@ -1981,9 +1994,9 @@
     },
     {
       "name": "Donatik",
-      "uri_check": "https://{account}.donatik.io/en",
+      "uri_check": "https://{account}.donatik.ua/",
       "e_code": 200,
-      "e_string": "\\\"__typename\\\":\\\"User\\\"",
+      "e_string": "\\\"__typename\\\":\\\"UserPageOutput\\\"",
       "m_string": "id=\"__next_error__\"",
       "m_code": 500,
       "known": [
@@ -2471,11 +2484,12 @@
     },
     {
       "name": "Filmweb",
-      "uri_check": "https://www.filmweb.pl/user/{account}",
+      "uri_check": "https://www.filmweb.pl/api/v1/users/{account}/id",
+      "uri_pretty": "https://www.filmweb.pl/user/{account}",
       "e_code": 200,
-      "e_string": "profil w Filmweb</title>",
-      "m_string": "Varnish 404",
-      "m_code": 200,
+      "e_string": "\"userId\":",
+      "m_string": "",
+      "m_code": 204,
       "known": [
         "test",
         "Marcin_P"
@@ -2570,13 +2584,13 @@
     },
     {
       "name": "flowcode",
-      "uri_check": "https://www.flowcode.com/page/{account}",
+      "uri_check": "https://www.flow.page/{account}",
       "e_code": 200,
-      "e_string": ";s Flowpage",
-      "m_string": "Nobody's reserved this Flowpage yet.",
+      "e_string": "\"page\":{",
+      "m_string": "\"page\":null",
       "m_code": 404,
       "known": [
-        "evdokia",
+        "slotrhouse",
         "irina"
       ],
       "cat": "social"
@@ -2656,12 +2670,12 @@
       "uri_check": "https://api.fotka.com/v2/user/dataStatic?login={account}",
       "uri_pretty": "https://fotka.com/profil/{account}",
       "e_code": 200,
-      "e_string": "profil",
-      "m_string": "ERROR",
+      "e_string": "\"profil\":",
+      "m_string": "\"status\":\"ERROR\"",
       "m_code": 200,
       "known": [
-        "test",
-        "test2"
+        "Asiaaa17",
+        "czaarnullkaaa"
       ],
       "cat": "social"
     },
