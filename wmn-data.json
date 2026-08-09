@@ -8505,20 +8505,6 @@
       "cat": "music"
     },
     {
-      "name": "Twitcast",
-      "uri_check": "https://frontendapi.twitcasting.tv/users/{account}",
-      "uri_pretty": "https://twitcasting.tv/{account}",
-      "e_code": 200,
-      "e_string": "\"user\":{",
-      "m_string": "\"message\":\"User Not Found\"",
-      "m_code": 404,
-      "known": [
-        "yuno___nico",
-        "2_t0_"
-      ],
-      "cat": "social"
-    },
-    {
       "name": "Tweetapus",
       "uri_check": "https://tweetapus.tiag.workers.dev/@{account}.json",
       "uri_pretty": "https://tweeta.tiago.zip/@{account}",
@@ -8529,6 +8515,20 @@
       "known": [
         "tiago",
         "admin"
+      ],
+      "cat": "social"
+    },
+    {
+      "name": "Twitcast",
+      "uri_check": "https://frontendapi.twitcasting.tv/users/{account}",
+      "uri_pretty": "https://twitcasting.tv/{account}",
+      "e_code": 200,
+      "e_string": "\"user\":{",
+      "m_string": "\"message\":\"User Not Found\"",
+      "m_code": 404,
+      "known": [
+        "yuno___nico",
+        "2_t0_"
       ],
       "cat": "social"
     },
