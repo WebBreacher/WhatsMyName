@@ -1747,7 +1747,10 @@
         "carlos01",
         "eduardo"
       ],
-      "cat": "gaming"
+      "cat": "gaming",
+      "protection": [
+        "cloudflare"
+      ]
     },
     {
       "name": "Diablo",
@@ -3707,7 +3710,7 @@
       "uri_check": "https://www.homedesign3d.net/user/{account}",
       "e_code": 200,
       "e_string": "id=\"user_content\"",
-      "m_string": "content=\"0;url='/community'\"",
+      "m_string": "<title>Community</title>",
       "m_code": 302,
       "known": [
         "carlos01",
@@ -3836,6 +3839,19 @@
       "cat": "social"
     },
     {
+      "name": "icq-chat",
+      "uri_check": "https://icq.icqchat.co/members/{account}/",
+      "e_code": 200,
+      "e_string": "class=\"memberHeader-mainContent",
+      "m_string": "<title>Oops! We ran into some problems.",
+      "m_code": 404,
+      "known": [
+        "brookenora.54",
+        "bigdaddy.77"
+      ],
+      "cat": "social"
+    },
+    {
       "name": "IFTTT",
       "uri_check": "https://ifttt.com/p/{account}",
       "e_code": 200,
@@ -3882,8 +3898,8 @@
       "uri_check": "https://ilgmforum.com/u/{account}/summary.json",
       "uri_pretty": "https://ilgmforum.com/u/{account}/summary",
       "e_code": 200,
-      "e_string": "\"users\":[{",
-      "m_string": "\"error_type\":\"not_found\"",
+      "e_string": "user_summary\":{",
+      "m_string": "errors\":[\"The requested URL",
       "m_code": 404,
       "known": [
         "spc95b00",
@@ -4167,7 +4183,7 @@
       "uri_check": "https://forum.japandict.com/u/{account}",
       "e_code": 200,
       "e_string": "class=\"UserPage\"",
-      "m_string": "<p>The page you requested could not be found.</p>",
+      "m_string": "The page you requested could not be found.",
       "m_code": 404,
       "known": [
         "Yan",
@@ -6120,7 +6136,7 @@
       "cat": "finance"
     },
     {
-      "name": "Paypal Business",
+      "name": "PayPal Business",
       "uri_check": "https://www.paypal.com/biz/profile-data/{account}",
       "uri_pretty": "https://www.paypal.com/biz/profile/{account}",
       "e_code": 200,
@@ -7019,6 +7035,19 @@
         "JonathanSetzer"
       ],
       "cat": "social"
+    },
+    {
+      "name": "Roberts Space Industries",
+      "uri_check": "https://robertsspaceindustries.com/community-hub/user/{account}",
+      "e_code": 200,
+      "e_string": "Query\",\"creator",
+      "m_string": "\"/404\",\"query",
+      "m_code": 404,
+      "known": [
+        "BASXIII",
+        "Quantum_Physicist"
+      ],
+      "cat": "gaming"
     },
     {
       "name": "ru_123rf",
@@ -9210,6 +9239,19 @@
         "fbb0916"
       ],
       "cat": "social"
+    },
+    {
+      "name": "WeTransfer",
+      "uri_check": "https://wepresent.wetransfer.com/artists/{account}",
+      "e_code": 200,
+      "e_string": "name\":\"WePresent | ",
+      "m_string": "text-display-4\">404 error",
+      "m_code": 404,
+      "known": [
+        "orly-anan",
+        "jeremy-pope"
+      ],
+      "cat": "art"
     },
     {
       "name": "Wikidot",
