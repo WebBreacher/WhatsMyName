@@ -12,6 +12,7 @@
     "funnyzak",
     "mbiesiad",
     "Micah Hoffman",
+    "Owen Ross",
     "mtedholm"
   ],
   "categories": [
@@ -342,7 +343,10 @@
         "morganamilo",
         "nl6720"
       ],
-      "cat": "social"
+      "cat": "social",
+      "protection": [
+        "anubis"
+      ]
     },
     {
       "name": "Arduino (Forum)",
@@ -8429,7 +8433,7 @@
       "uri_check": "https://www.tripadvisor.com/Profile/{account}",
       "e_code": 200,
       "e_string": "Contributions",
-      "m_string": "This page is on vacation",
+      "m_string": "<div class=\"error404",
       "m_code": 404,
       "known": [
         "john",
