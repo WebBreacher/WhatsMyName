@@ -7010,6 +7010,19 @@
       "cat": "hobby"
     },
     {
+      "name": "Roberts Space Industries",
+      "uri_check": "https://robertsspaceindustries.com/community-hub/user/{account}",
+      "e_code": 200,
+      "e_string": "Query\",\"creator",
+      "m_string": "\"/404\",\"query",
+      "m_code": 404,
+      "known": [
+        "BASXIII",
+        "Quantum_Physicist"
+      ],
+      "cat": "gaming"
+    },
+    {
       "name": "Roblox",
       "uri_check": "https://auth.roblox.com/v1/usernames/validate?username={account}&birthday=2019-12-31T23:00:00.000Z",
       "uri_pretty": "https://www.roblox.com/search/users?keyword={account}",
@@ -7035,19 +7048,6 @@
         "JonathanSetzer"
       ],
       "cat": "social"
-    },
-    {
-      "name": "Roberts Space Industries",
-      "uri_check": "https://robertsspaceindustries.com/community-hub/user/{account}",
-      "e_code": 200,
-      "e_string": "Query\",\"creator",
-      "m_string": "\"/404\",\"query",
-      "m_code": 404,
-      "known": [
-        "BASXIII",
-        "Quantum_Physicist"
-      ],
-      "cat": "gaming"
     },
     {
       "name": "ru_123rf",
