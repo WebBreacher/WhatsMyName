@@ -8895,7 +8895,7 @@
       "uri_check": "https://www.virustotal.com/ui/users/{account}",
       "uri_pretty": "https://www.virustotal.com/gui/user/{account}",
       "headers": {
-        "Accept-Ianguage": "en-US",
+        "Accept-Language": "en-US",
         "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:127.0) Gecko/20100101 Firefox/127.0",
         "X-Tool": "vt-ui-main",
         "X-VT-Anti-Abuse-Header": "MTAxOTFwMDcxOTEtWkc5dWRDQmlaU0JsZG2scy5xNzE4Mjc1NDI0LjUzMw=="
