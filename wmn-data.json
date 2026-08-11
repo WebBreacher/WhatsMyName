@@ -263,7 +263,7 @@
       "uri_pretty": "https://anilist.co/user/{account}",
       "post_body": "{\"query\":\"query{User(name:\\\"{account}\\\"){id name}}\"}",
       "headers": {
-        "accept": "application/json",
+        "Accept": "application/json",
         "Content-Type": "application/json"
       },
       "e_code": 200,
@@ -306,7 +306,7 @@
         "Origin": "https://apex.tracker.gg",
         "Referer": "https://apex.tracker.gg/",
         "TE": "trailers",
-        "User-Agent": "Mozilla/5.0 (Mozilla/5.0 (X11; Linux i686; rv:128.0) Gecko/20100101 Firefox/128.0"
+        "User-Agent": "Mozilla/5.0 (X11; Linux i686; rv:128.0) Gecko/20100101 Firefox/128.0"
       },
       "e_code": 200,
       "e_string": "platformInfo",
@@ -486,7 +486,7 @@
         "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/png,image/svg+xml,*/*;q=0.8",
         "Cache-Control": "no-cache",
         "Host": "community.avid.com",
-        "User-Agent": "Mozilla/5.0 (Mozilla/5.0 (X11; Linux i686; rv:128.0) Gecko/20100101 Firefox/128.0"
+        "User-Agent": "Mozilla/5.0 (X11; Linux i686; rv:128.0) Gecko/20100101 Firefox/128.0"
       },
       "e_code": 200,
       "e_string": "My Activity",
@@ -3625,7 +3625,7 @@
       "uri_pretty": "https://hashnode.com/@{account}",
       "post_body": "{\"operationName\":\"UserBadge\",\"query\":\"query UserBadge($username:String!){user(username:$username){id}}\",\"variables\":{\"username\":\"{account}\"}}",
       "headers": {
-        "content-type": "application/json"
+        "Content-Type": "application/json"
       },
       "e_code": 200,
       "e_string": "\"id\":",
