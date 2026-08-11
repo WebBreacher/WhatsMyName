@@ -22,7 +22,7 @@ These are the most common reasons a PR gets sent back for changes. Read them bef
 6. **Don't add new categories.** Use one of the existing values in the top-level `categories` array. If you think a genuinely new category is needed, open an issue to discuss it first rather than adding one in a data PR.
 7. **First-time contributor? Add yourself to `authors`.** Add your name or handle to the `authors` array at the top of `wmn-data.json`. Welcome, and thank you.
 8. **Validate your JSON before you submit.** Edit with a syntax-highlighting editor or JSON-aware IDE and fix anything it flags as invalid before opening the PR. See [Formatting and validation](#formatting-and-validation) for how to check this yourself.
-9. **Keep PRs to about 8-9 sites.** If you have more additions, fixes, or removals than that, split them into separate PRs, or submit one and wait for it to be reviewed before opening the next. A single error in a 50-site PR can hold up 49 good changes.
+9. **Keep PRs less than 10 sites.** If you have more additions, fixes, or removals than that, split them into separate PRs, or submit one and wait for it to be reviewed before opening the next. A single error in a 50-site PR can hold up 49 good changes.
 10. **Remove entries for sites that are permanently gone**, rather than leaving a broken entry in place. If a site no longer meets the [inclusion criteria](README.md#how-it-works) (paywalled, login-only, or usernames no longer appear in the URL), remove it.
 
 ---
@@ -126,7 +126,7 @@ If you get stuck here, an issue with your example profile link is a perfectly go
 
 1. Confirm your JSON is valid and your entry follows the field order above.
 2. Confirm `known` has at least two durable accounts (rule 3).
-3. Keep the PR to about 8-9 changed, added, or removed sites (rule 9). More than that, split it up.
+3. Keep the PR to fewer than 10 changed, added, or removed sites (rule 9). More than that, split it up.
 4. If you're a first-time contributor, add yourself to `authors` (rule 7).
 5. Open the pull request. GitHub will pre-fill the description with our PR template -- fill it out rather than deleting it (see below).
 
