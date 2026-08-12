@@ -135,6 +135,12 @@ If you get stuck here, an issue with your example profile link is a perfectly go
 
 ## Using AI tools
 
+If you're using an AI assistant for your work, make sure you start off right: have it read this page before it touches anything. Beyond this page, also point it at:
+
+- [`wmn-data-schema.json`](wmn-data-schema.json) -- the authoritative field types and required/optional fields, plus the full list of valid `cat` and `protection` values (this page only summarizes them)
+- A few existing entries in [`wmn-data.json`](wmn-data.json) in the same category as your site, so it matches real-world entries rather than just the illustrative examples above
+- [`.github/PULL_REQUEST_TEMPLATE.md`](.github/PULL_REQUEST_TEMPLATE.md), if you're also having it draft your PR description
+
 Feel free to leverage the power and attention to detail of AI systems to format, verify, and validate your changes before submitting -- checking JSON validity, comparing your entry against the rules above, or double-checking `e_string`/`m_string` uniqueness. If you do, please keep any AI-generated commentary in the PR description brief; we want a couple of sentences on what changed and why, not a lengthy AI-authored writeup.
 
 ---
