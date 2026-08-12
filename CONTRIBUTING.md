@@ -2,141 +2,157 @@
 
 Thanks for your interest in helping out! WhatsMyName is a community-maintained dataset, and it stays accurate because people like you report and fix site detections. Please also take a moment to read our [Code of Conduct](CODE_OF_CONDUCT.md).
 
-You can contribute to the project in at least a couple ways.
+## Two ways to help
 
-## Method 1. Non-technical
+**Don't want to touch JSON or GitHub?** [Submit a site via this form](https://forms.office.com/r/TscnNQqrD1), or [open an issue](https://github.com/WebBreacher/WhatsMyName/issues) with a link to an example profile. Someone else will do the implementation.
 
-Suggest a new site to be covered by the tool.
+**Comfortable with JSON, HTTP, and a fork/pull-request workflow?** Add or fix a site entry yourself and submit a pull request. The rest of this document covers that path.
 
-How to do that:
+---
 
-- Find the new site which has public profiles of people (with no authentication required)
-- Use [this form](https://forms.office.com/r/TscnNQqrD1) to tell us about it.... OR....
-- Create a Github Issue and submit the link to an example profile. You can
-  do that by navigating to [Issues](https://github.com/WebBreacher/WhatsMyName/issues)
-  and clicking "New issue"
+## The rules
 
+These are the most common reasons a PR gets sent back for changes. Read them before you start, not after review.
 
-## Method 2. Technical, no programming skills required
+1. **Capitalize the name the way the site does.** Visit the site and copy its own branding. If they write `PayPal`, the `name` field is `PayPal` -- not `paypal`, not `Paypal`.
+2. **Order the fields the same way every entry does.** See [Field order](#field-order) below. This is what makes diffs fast to review; inconsistent ordering makes a one-line fix look like a rewrite. Note that our formatting bot only reorders fields after a PR merges, not during review, so get it right before you submit (see [Formatting and validation](#formatting-and-validation)).
+3. **List at least two `known` accounts, and prefer well-established ones.** Pick accounts that are unlikely to be deleted or renamed -- popular, long-standing users are safer bets than accounts created for testing.
+4. **Prefer GET over POST.** The project supports both, but GET is simpler to maintain and debug. Only use `post_body` when the site genuinely requires it.
+5. **Make `e_string` and `m_string` truly unique.** Prefer a fragment of JSON or a distinctive piece of HTML (an id, a class name, a JSON key) over a plain phrase like `"joined at"`, which can appear on unrelated pages and cause false positives.
+6. **Don't add new categories.** Use one of the existing values in the top-level `categories` array. If you think a genuinely new category is needed, open an issue to discuss it first rather than adding one in a data PR.
+7. **First-time contributor? Add yourself to `authors`.** Add your name or handle to the `authors` array at the top of `wmn-data.json`. Welcome, and thank you.
+8. **Validate your JSON before you submit.** Edit with a syntax-highlighting editor or JSON-aware IDE and fix anything it flags as invalid before opening the PR. See [Formatting and validation](#formatting-and-validation) for how to check this yourself.
+9. **Keep PRs less than 10 sites.** If you have more additions, fixes, or removals than that, split them into separate PRs, or submit one and wait for it to be reviewed before opening the next. A single error in a 50-site PR can hold up 49 good changes.
+10. **Remove entries for sites that are permanently gone**, rather than leaving a broken entry in place. If a site no longer meets the [inclusion criteria](README.md#how-it-works) (paywalled, login-only, or usernames no longer appear in the URL), remove it.
 
-Requires a basic understanding of how Web/HTTP works (HTTP status codes, how
-what you see in a website translates to the source code).
-And some experience in Github contributions (fork, pull-request).
+---
 
-Implement support for a new site or fix an existing implementation for a site.
+## Site entry format
 
-How to do that:
+`wmn-data.json` has three top-level elements: `license`, `authors`, and `sites`. You'll only ever touch `authors` (rule 7) and `sites`.
 
-- Among existing [Issues](https://github.com/WebBreacher/WhatsMyName/issues)
-  or from somewhere else, establish which site you want to add
-- Using a web client of your choice (preferred `curl` or `wget`) perform
-  simple requests for two different scenarios: existing profile,
-  non-existing profile, e.g.
-  ```
-  # existing
-  curl https://infosec.exchange/WebBreacher
+### Field order
 
-  # non-existing
-  curl https://infosec.exchange/ThisDoesNotExistForSure504
-  ```
-- Observe the outcome for non-existing profile. Some sites use 404 (error), some use 302
-(redirection), some confusingly use 200 (OK) for profiles which don't exist.
-  ```
-  $ curl https://github.com/ThisDoesNotExistForSure504
-  [...]
-  HTTP request sent, awaiting response... 404 Not Found
-  ```
-- Observe the outcome for existing profile. The response code should be 200.
-And among the downloaded source code find a text expected to be observed in
-all profiles. Avoid picking a text which might be dynamic (e.g. include the
-profile name).
-This seems right:
-```
-<h2>You are browsing the profile of
-```
-This is too specific:
-```
-<h2>You are browsing the profile of WebBreacher</h2>
-```
-This is too general:
-```
-the profile
-```
-- Add a section to `wmn-data.json`
-- Test your configuration by running a tool for a given site
-- Submit a pull request with that change
-- There is also the `sample.json` file that you can use for testing. Simply replace the existing content with new data and test.
-- If a site is permanently gone or no longer meets the [inclusion criteria](README.md#how-it-works), please remove its entry entirely rather than leaving it in place.
+Fields marked optional can be omitted, but when present, keep them in this order:
 
-## Format of the JSON File
+| Field | Required? | Purpose |
+|---|---|---|
+| `name` | required | Display name, capitalized per rule 1 |
+| `uri_check` | required | URL to check, with `{account}` in place of the username |
+| `uri_pretty` | optional | Human-readable profile URL, if `uri_check` is an API endpoint |
+| `post_body` | optional | POST body content; if present, this entry is a POST request |
+| `headers` | optional | HTTP headers to send; required if `post_body` is set |
+| `strip_bad_char` | optional | Characters checking apps should strip from usernames first |
+| `e_code` | required | HTTP status code for an account that exists |
+| `e_string` | required | A unique string present only when the account exists (rule 5) |
+| `m_string` | required | A unique string present only when the account does not exist (rule 5) |
+| `m_code` | required | HTTP status code for an account that doesn't exist |
+| `known` | required | At least two verified usernames for testing (rule 3) |
+| `cat` | required | One of the existing values in the top-level `categories` array (rule 6) |
+| `valid` | optional | Only set to `false` to tell checkers to skip a temporarily-broken site |
+| `protection` | optional | Anti-automation measures present: `captcha`, `cloudflare`, `user-agent`, `user-auth`, etc. |
 
-`wmn-data.json` is validated against [`wmn-data-schema.json`](wmn-data-schema.json) automatically when you open a pull request. If you want to check your entry locally before submitting, you can validate it against that schema with any standard JSON Schema tool.
-
-The file is also automatically alphabetized and reformatted by a GitHub Action, so you don't need to manually sort entries or worry about exact formatting/indentation -- just make sure your JSON is valid.
-
-### `wmn-data.json` JSON has 3 main elements
-
-1. License - The license for this project and its data
-2. Authors - The people that have recently contributed to this project
-3. Sites - This is the main data
-
-Within the `sites` elements, the format is as follows (with several parameters being optional):
+### Example: GET entry
 
 ```json
-     ...
-      {
-         "name" : "name of the site",
-         "uri_check" : "URI to check the site with the {account} string replaced by a username",
-         "uri_pretty" : "[OPTIONAL] if the check_uri is for an API, this element can show a human-readable page",
-         "post_body" : "[OPTIONAL] if non-empty, then this entry is an HTTP POST and the content of this field are the data",
-         "strip_bad_char" : "[OPTIONAL] checking apps should ignore or strip these characters from usernames",
-         "e_code" : "the HTTP response code for a good 'account is there' response as an integer",
-         "e_string" : "the string in the response that we look for for a good response",
-         "m_string" : "this string will only be in the response if there is no account found",
-         "m_code" : "the HTTP response code for a bad 'account is not there' response as an integer",
-         "known" : ["a list of user accounts that can be used to test", "for user enumeration"],
-         "cat" : "a category for what the site is mainly used for. Must be one of the values in the top-level `categories` array in `wmn-data.json`",
-         "valid" : "[OPTIONAL] single value of False. If it is present and False, then checkers should skip this site",
-         "protection" : "[OPTIONAL] a list of 1 or more site protections like: [captcha, cloudflare, userauth, multiple, other]",
-         "headers": {"[OPTIONAL] a dictionary of headers that should be passed to a site"}
-      },
-      ...
+{
+  "name": "Example GET",
+  "uri_check": "https://www.example.com/load_profile_info.php?name={account}",
+  "uri_pretty": "https://www.example.com/profile/{account}",
+  "e_code": 200,
+  "e_string": "\"registered_at\":",
+  "m_string": "\"error\":\"not_found\"",
+  "m_code": 404,
+  "known": [
+    "whoami",
+    "johndoe"
+  ],
+  "cat": "images",
+  "protection": [
+    "captcha",
+    "cloudflare"
+  ],
+  "headers": {
+    "Accept": "text/html"
+  }
+}
 ```
 
-Here are examples of the site elements for both HTTP GET and HTTP POST entries:
-
-**HTTP GET entry:**
+### Example: POST entry
 
 ```json
-     {
-       "name" : "Example GET",
-       "uri_check" : "https://www.example.com/load_profile_info.php?name={account}",
-       "uri_pretty" : "https://www.test.com/profile/{account}",
-       "e_code" : 200,
-       "e_string" : "regist_at",
-       "m_code" : 404,
-       "m_string" : "Account not found",
-       "known" : ["whoami", "johndoe"],
-       "cat" : "images",
-       "protection" : ["captcha", "cloudflare"],
-       "headers" : {
-                "accept": "text/html"
-        }
-     },
+{
+  "name": "Example POST",
+  "uri_check": "https://www.example.com/interact_api/load_profile_info.php",
+  "post_body": "{\"username\":\"{account}\"}",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "e_code": 200,
+  "e_string": "\"registered_at\":",
+  "m_string": "\"error\":\"not_found\"",
+  "m_code": 404,
+  "known": [
+    "whoami",
+    "johndoe"
+  ],
+  "cat": "images"
+}
 ```
 
-**HTTP POST entry:**
+Note the header casing in both examples (`Accept`, `Content-Type`) -- HTTP header names are conventionally capitalized. Copy the case a browser's dev tools show you, and keep it consistent within an entry.
 
-```json
-     {
-       "name" : "Example POST",
-       "uri_check" : "https://www.example.com/interact_api/load_profile_info.php",
-       "post_body" : "Name=Gareth+Wylie&Age=24&Formula=a%2Bb+%3D%3D+21",
-       "e_code" : 200,
-       "e_string" : "regist_at",
-       "m_code" : 404,
-       "m_string" : "Account not found",
-       "known" : ["whoami", "johndoe"],
-       "cat" : "images"
-     },
+---
+
+## Finding `e_code`, `m_code`, `e_string`, and `m_string`
+
+So maybe you're wondering: how do I even find these things to add to the project? Good news -- it's mostly just comparing two web pages side by side, and you don't need to be a developer to do it.
+
+Using a browser or a client like `curl`, request an existing profile and a profile you're confident doesn't exist, and compare the two responses:
+
 ```
+# existing account
+curl -i https://infosec.exchange/WebBreacher
+
+# non-existing account
+curl -i https://infosec.exchange/ThisDoesNotExistForSure504
+```
+
+- `e_code` / `m_code` are the HTTP status codes from each response. Don't assume 200/404 -- some sites return 200 for missing profiles, or 302 redirects.
+- For `e_string` and `m_string`, look for a fragment that's on every matching page regardless of username. Per rule 5, prefer something structural (a JSON key, an HTML id or class) over ordinary text, and never include the username itself.
+
+If you get stuck here, an issue with your example profile link is a perfectly good contribution on its own -- see [Two ways to help](#two-ways-to-help).
+
+---
+
+## Formatting and validation
+
+- **Schema validation runs automatically on every PR** against [`wmn-data-schema.json`](wmn-data-schema.json) (via GitHub Actions). If it fails, check the workflow output for which field or entry it flagged.
+- **The auto-sort/format bot does not run on your PR.** It only fires on pushes to branches in this repository, which for a fork-based PR means it applies after your change is merged, not before. Don't rely on it to fix your field order (rule 2) or alphabetize your entry -- do that yourself.
+- **`sample.json`** is a small standalone file you can use to test a single entry against a checker tool without touching the full dataset. Replace its contents with your entry and run your checker of choice against it.
+
+---
+
+## Submitting your PR
+
+1. Confirm your JSON is valid and your entry follows the field order above.
+2. Confirm `known` has at least two durable accounts (rule 3).
+3. Keep the PR to fewer than 10 changed, added, or removed sites (rule 9). More than that, split it up.
+4. If you're a first-time contributor, add yourself to `authors` (rule 7).
+5. Open the pull request. GitHub will pre-fill the description with our PR template -- fill it out rather than deleting it (see below).
+
+Someone will review, may ask for changes, and will merge once it looks right. Thanks again for helping keep the data accurate.
+
+### Filling out the PR template
+
+Every PR starts from [`.github/PULL_REQUEST_TEMPLATE.md`](.github/PULL_REQUEST_TEMPLATE.md). Here's what each part is actually asking for:
+
+**Type of change** -- check the one box that describes this PR. If you're touching both a new site and a fix in the same PR, that's a sign the PR should probably be split (rule 9).
+
+**Checklist (for new or updated site entries)** -- don't check a box you haven't actually done:
+- The two `uri_check` boxes mean you ran the request yourself, once against a real account and once against one you're confident doesn't exist, and confirmed the codes and strings in your entry actually match what came back (see [Finding e_code, m_code, e_string, and m_string](#finding-e_code-m_code-e_string-and-m_string)).
+- The `e_string`/`m_string` specificity box is rule 5 -- if the best you found is a generic phrase, keep looking before checking this.
+- The public-access box is the [inclusion criteria](README.md#how-it-works): no login, no paywall, username visible in the URL.
+- The JSON-valid box is rule 8. Note that despite what the checklist item says, auto-formatting does not run on your PR before review if you're contributing from a fork -- see [Formatting and validation](#formatting-and-validation). Validate it yourself first.
+
+**Description** -- replace the comment with a couple of sentences: what site(s), what changed, and why (new addition, detection was broken, site is dead, etc.). This is what a reviewer reads before opening the diff, so a blank or one-word description slows review down.
