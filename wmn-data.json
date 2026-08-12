@@ -392,12 +392,9 @@
       "name": "Arsmate",
       "uri_check": "https://arsmate.com/api/creators/{account}",
       "uri_pretty": "https://arsmate.com/{account}",
-      "headers": {
-        "Accept": "application/json"
-      },
       "e_code": 200,
       "e_string": "\"success\":true",
-      "m_string": "\"statusCode\": 404",
+      "m_string": "404,\"Server Error",
       "m_code": 404,
       "known": [
         "Angelic",
@@ -1131,23 +1128,6 @@
         "equicentric"
       ],
       "cat": "social"
-    },
-    {
-      "name": "chaturbate",
-      "uri_check": "https://chaturbate.com/api/biocontext/{account}/",
-      "uri_pretty": "https://chaturbate.com/{account}/",
-      "e_code": 200,
-      "e_string": "\"fan_club_join_url\":",
-      "m_string": "<h1>HTTP 404 - Page Not Found</h1>",
-      "m_code": 404,
-      "known": [
-        "pussylovekate",
-        "kemii"
-      ],
-      "cat": "xx NSFW xx",
-      "protection": [
-        "cloudflare"
-      ]
     },
     {
       "name": "CHEEZburger",
@@ -2491,7 +2471,7 @@
       "m_string": "",
       "m_code": 204,
       "known": [
-        "test",
+        "MajkelBlack",
         "Marcin_P"
       ],
       "cat": "hobby"
