@@ -133,6 +133,12 @@ If you get stuck here, an issue with your example profile link is a perfectly go
 
 ---
 
+## Using AI tools
+
+Feel free to leverage the power and attention to detail of AI systems to format, verify, and validate your changes before submitting -- checking JSON validity, comparing your entry against the rules above, or double-checking `e_string`/`m_string` uniqueness. If you do, please keep any AI-generated commentary in the PR description brief; we want a couple of sentences on what changed and why, not a lengthy AI-authored writeup.
+
+---
+
 ## Submitting your PR
 
 1. Confirm your JSON is valid and your entry follows the field order above.
