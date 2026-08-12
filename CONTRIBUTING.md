@@ -63,9 +63,15 @@ Fields marked optional can be omitted, but when present, keep them in this order
   "e_string": "\"registered_at\":",
   "m_string": "\"error\":\"not_found\"",
   "m_code": 404,
-  "known": ["whoami", "johndoe"],
+  "known": [
+    "whoami",
+    "johndoe"
+  ],
   "cat": "images",
-  "protection": ["captcha", "cloudflare"],
+  "protection": [
+    "captcha",
+    "cloudflare"
+  ],
   "headers": {
     "Accept": "text/html"
   }
@@ -86,7 +92,10 @@ Fields marked optional can be omitted, but when present, keep them in this order
   "e_string": "\"registered_at\":",
   "m_string": "\"error\":\"not_found\"",
   "m_code": 404,
-  "known": ["whoami", "johndoe"],
+  "known": [
+    "whoami",
+    "johndoe"
+  ],
   "cat": "images"
 }
 ```
@@ -96,6 +105,8 @@ Note the header casing in both examples (`Accept`, `Content-Type`) -- HTTP heade
 ---
 
 ## Finding `e_code`, `m_code`, `e_string`, and `m_string`
+
+So maybe you're wondering: how do I even find these things to add to the project? Good news -- it's mostly just comparing two web pages side by side, and you don't need to be a developer to do it.
 
 Using a browser or a client like `curl`, request an existing profile and a profile you're confident doesn't exist, and compare the two responses:
 
