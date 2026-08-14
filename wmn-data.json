@@ -298,6 +298,20 @@
       ]
     },
     {
+      "name": "Aparat",
+      "uri_check": "https://www.aparat.com/api/fa/v1/user/user/information/username/{account}",
+      "uri_pretty": "https://www.aparat.com/{account}",
+      "e_code": 200,
+      "e_string": "\"data\":{",
+      "m_string": "\"status\":404",
+      "m_code": 404,
+      "known": [
+        "unni_gilda",
+        "Dokhmal1389"
+      ],
+      "cat": "video"
+    },
+    {
       "name": "Apex Legends",
       "uri_check": "https://api.tracker.gg/api/v2/apex/standard/profile/origin/{account}",
       "uri_pretty": "https://apex.tracker.gg/apex/profile/origin/{account}/overview",
@@ -620,6 +634,19 @@
       "protection": [
         "cloudflare"
       ]
+    },
+    {
+      "name": "Behance",
+      "uri_check": "https://www.behance.net/{account}",
+      "e_code": 200,
+      "e_string": "\"entityOwners\":[{\"username",
+      "m_string": "\"entityOwners\":[]",
+      "m_code": 404,
+      "known": [
+        "mangarawma",
+        "atelieravocado"
+      ],
+      "cat": "business"
     },
     {
       "name": "Bentbox",
@@ -1571,6 +1598,20 @@
       "cat": "news"
     },
     {
+      "name": "Dailymotion",
+      "uri_check": "https://api.dailymotion.com/user/{account}?fields=id,username,screenname,description,avatar_720_url,cover_250_url,followers_total,following_total,videos_total,country,created_time,verified,url",
+      "uri_pretty": "https://www.dailymotion.com/user/{account}",
+      "e_code": 200,
+      "e_string": "\"id\":",
+      "m_string": "\"code\":404",
+      "m_code": 404,
+      "known": [
+        "chinesedramastudio",
+        "franceinter"
+      ],
+      "cat": "video"
+    },
+    {
       "name": "darudar",
       "uri_check": "https://darudar.org/users/{account}/",
       "e_code": 200,
@@ -1996,6 +2037,19 @@
       "known": [
         "gorou",
         "saku"
+      ],
+      "cat": "finance"
+    },
+    {
+      "name": "DonationPay",
+      "uri_check": "https://give.donationpay.org/hopewell-fund/{account}/",
+      "e_code": 200,
+      "e_string": "id=\"dp-payment-form\"",
+      "m_string": "<title>404 Not Found</title>",
+      "m_code": 404,
+      "known": [
+        "rareimpact",
+        "leadershipnow"
       ],
       "cat": "finance"
     },
@@ -4670,6 +4724,20 @@
       "cat": "tech"
     },
     {
+      "name": "LiveJasmin",
+      "uri_check": "https://www.livejasmin.com/en/flash/get-performer-details/{account}",
+      "uri_pretty": "https://www.livejasmin.com/en/chat/{account}",
+      "e_code": 200,
+      "e_string": "\"success\":true",
+      "m_string": "\"success\":false",
+      "m_code": 200,
+      "known": [
+        "NaiaCollins",
+        "LoraClay"
+      ],
+      "cat": "xx NSFW xx"
+    },
+    {
       "name": "Livejournal",
       "uri_check": "https://{account}.livejournal.com",
       "strip_bad_char": ".",
@@ -4774,6 +4842,20 @@
         "johnebaker"
       ],
       "cat": "music"
+    },
+    {
+      "name": "Magnific",
+      "uri_check": "https://www.magnific.com/app/api/community/creator-info-by-name?creator_name={account}&lang=en_US",
+      "uri_pretty": "https://www.magnific.com/app/creator/{account}",
+      "e_code": 200,
+      "e_string": "\"creator\":",
+      "m_string": "\"message\":\"Creator not found\"",
+      "m_code": 404,
+      "known": [
+        "membiz",
+        "LaraRed"
+      ],
+      "cat": "art"
     },
     {
       "name": "Malpedia Actors",
@@ -6017,6 +6099,23 @@
       "cat": "social"
     },
     {
+      "name": "Paragraph",
+      "uri_check": "https://paragraph.com/api/blogs/@{account}",
+      "uri_pretty": "https://paragraph.com/@{account}",
+      "headers": {
+        "Accept": "application/json"
+      },
+      "e_code": 200,
+      "e_string": "\"user\":{",
+      "m_string": "\"Missing blog\"",
+      "m_code": 404,
+      "known": [
+        "wibtal",
+        "developerdao"
+      ],
+      "cat": "blog"
+    },
+    {
       "name": "Parler",
       "uri_check": "https://parler.com/user/{account}",
       "e_code": 200,
@@ -6397,6 +6496,19 @@
         "john"
       ],
       "cat": "social"
+    },
+    {
+      "name": "Planoly",
+      "uri_check": "https://planoly.store/{account}",
+      "e_code": 200,
+      "e_string": "\"creatorLink\":{",
+      "m_string": "\"statusCode\":404",
+      "m_code": 404,
+      "known": [
+        "divinemystique",
+        "brujasesoterica"
+      ],
+      "cat": "misc"
     },
     {
       "name": "Playstation Network",
@@ -7742,6 +7854,20 @@
       "protection": [
         "other"
       ]
+    },
+    {
+      "name": "stats.fm",
+      "uri_check": "https://api.stats.fm/api/v1/users/{account}",
+      "uri_pretty": "https://stats.fm/{account}",
+      "e_code": 200,
+      "e_string": "\"item\":{",
+      "m_string": "\"status\":404",
+      "m_code": 404,
+      "known": [
+        "korel",
+        "linnealawder"
+      ],
+      "cat": "music"
     },
     {
       "name": "Statuspage",
