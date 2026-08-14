@@ -8512,7 +8512,7 @@
       "uri_check": "https://www.tumblr.com/{account}",
       "strip_bad_char": ".",
       "e_code": 200,
-      "e_string": "\"queryKey\":[",
+      "e_string": "\"queryKey\":[\"user-info",
       "m_string": "\"status\":404",
       "m_code": 404,
       "known": [
