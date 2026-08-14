@@ -1,0 +1,28 @@
+name: 'Lock closed threads'
+
+on:
+  schedule:
+    # Runs daily. Adjust frequency once the initial backlog is processed.
+    - cron: '0 3 * * *'
+  workflow_dispatch:
+
+permissions:
+  issues: write
+  pull-requests: write
+
+jobs:
+  lock:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: dessant/lock-threads@v6
+        with:
+          github-token: ${{ github.token }}
+          # Lock PRs 3 days after they're closed. Adjust to taste.
+          pr-inactive-days: '3'
+          pr-lock-reason: 'resolved'
+          # Same for issues. Set to '' on either line to leave that type unlocked.
+          issue-inactive-days: '30'
+          issue-lock-reason: 'resolved'
+          # Don't touch threads that already have ongoing discussion tags.
+          exclude-any-issue-labels: 'help wanted, keep-open'
+          exclude-any-pr-labels: 'keep-open'
