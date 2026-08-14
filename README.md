@@ -96,7 +96,7 @@ You don't need to be a developer. Here's how to help at any level:
 | Comfortable with GitHub | [Open an issue](https://github.com/WebBreacher/WhatsMyName/issues) with a link to an example profile |
 | Comfortable with JSON and HTTP | Fork the repo, fix or add a detection, and submit a pull request |
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed instructions on adding or fixing site detections, including format requirements and examples.
+See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed instructions on adding or fixing site detections, including format requirements and examples. Please also read our [Code of Conduct](CODE_OF_CONDUCT.md).
 
 ---
 
