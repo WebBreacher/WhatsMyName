@@ -633,7 +633,7 @@
       "name": "Behance",
       "uri_check": "https://www.behance.net/{account}",
       "e_code": 200,
-      "e_string": "\"entityOwners\":[{",
+      "e_string": "\"entityOwners\":[{\"username",
       "m_string": "\"entityOwners\":[]",
       "m_code": 404,
       "known": [
@@ -1607,7 +1607,7 @@
     {
       "name": "Dailymotion",
       "uri_check": "https://api.dailymotion.com/user/{account}?fields=id,username,screenname,description,avatar_720_url,cover_250_url,followers_total,following_total,videos_total,country,created_time,verified,url",
-      "uri_pretty": "https://www.dailymotion.com/{account}",
+      "uri_pretty": "https://www.dailymotion.com/user/{account}",
       "e_code": 200,
       "e_string": "\"id\":",
       "m_string": "\"code\":404",
@@ -7866,8 +7866,8 @@
       "m_string": "\"status\":404",
       "m_code": 404,
       "known": [
-        "boskiseksowny",
-        "matsuoshi"
+        "korel",
+        "linnealawder"
       ],
       "cat": "music"
     },
