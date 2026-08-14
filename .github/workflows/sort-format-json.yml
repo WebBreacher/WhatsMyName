@@ -6,6 +6,9 @@ on:
       - 'wmn-data.json'
       - 'wmn-data-schema.json'
 
+permissions:
+  contents: write
+
 jobs:
   sort-and-format-json:
     name: Sort and Format JSON Files
@@ -27,5 +30,4 @@ jobs:
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
           git add wmn-data.json wmn-data-schema.json
-          git diff --cached --quiet || git commit -m "chore: auto-sort and format JSON files"
-          git push
+          git diff --cached --quiet || (git commit -m "chore: auto-sort and format JSON files" && git push)

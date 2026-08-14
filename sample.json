@@ -1,37 +1,65 @@
 {
   "_comment1": "Do not submit your changes in this sample.json file as it is only for testing!",
 
-  "categories" : ["archived","art","blog","business","coding","dating","finance","gaming","health",
-  "hobby","images","misc","music","news","political","search","shopping","social",
-  "tech","video","xx NSFW xx"],
+  "categories": [
+    "archived",
+    "art",
+    "blog",
+    "business",
+    "coding",
+    "dating",
+    "finance",
+    "gaming",
+    "health",
+    "hobby",
+    "images",
+    "misc",
+    "music",
+    "news",
+    "political",
+    "search",
+    "shopping",
+    "social",
+    "tech",
+    "video",
+    "xx NSFW xx"
+  ],
 
-  "sites" : [
+  "sites": [
     {
-      "name" : "Example GET",
-      "uri_check" : "https://www.example.com/load_profile_info.php?name={account}",
-      "uri_pretty" : "https://www.test.com/profile/{account}",
-      "e_code" : 200,
-      "e_string" : "regist_at",
-      "m_code" : 404,
-      "m_string" : "Account not found",
-      "known" : ["whoami", "johndoe"],
-      "cat" : "images"
+      "name": "Example GET",
+      "uri_check": "https://www.example.com/load_profile_info.php?name={account}",
+      "uri_pretty": "https://www.test.com/profile/{account}",
+      "e_code": 200,
+      "e_string": "regist_at",
+      "m_string": "Account not found",
+      "m_code": 404,
+      "known": [
+        "whoami",
+        "johndoe"
+      ],
+      "cat": "images"
     },
     {
-      "name" : "Example POST",
-      "uri_check" : "https://www.example.com/interact_api/load_profile_info.php",
-      "post_body" : "username={account}&csrf_token=abc123",
-      "strip_bad_char" : ".",
-      "e_code" : 200,
-      "e_string" : "regist_at",
-      "m_code" : 404,
-      "m_string" : "Account not found",
-      "known" : ["whoami", "johndoe"],
-      "cat" : "images",
-      "protection" : ["captcha"],
+      "name": "Example POST",
+      "uri_check": "https://www.example.com/interact_api/load_profile_info.php",
+      "post_body": "username={account}&csrf_token=abc123",
       "headers": {
-               "accept": "text/html"
-       }
+        "Accept": "text/html"
+      },
+      "strip_bad_char": ".",
+      "e_code": 200,
+      "e_string": "regist_at",
+      "m_string": "Account not found",
+      "m_code": 404,
+      "known": [
+        "whoami",
+        "johndoe"
+      ],
+      "cat": "images",
+      "protection": [
+        "captcha"
+      ]
     }
   ]
 }
