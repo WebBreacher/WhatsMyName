@@ -7,12 +7,18 @@ DATA_FILE = "wmn-data.json"
 SCHEMA_FILE = "wmn-data-schema.json"
 
 
-def main():
-    with open(DATA_FILE, encoding="utf-8") as f:
-        data = json.load(f)
+def load_json(path):
+    with open(path, encoding="utf-8") as f:
+        try:
+            return json.load(f)
+        except json.JSONDecodeError as e:
+            print(f"ERROR: {path} is not valid JSON: {e.msg} at line {e.lineno} column {e.colno}")
+            sys.exit(1)
 
-    with open(SCHEMA_FILE, encoding="utf-8") as f:
-        schema = json.load(f)
+
+def main():
+    data = load_json(DATA_FILE)
+    schema = load_json(SCHEMA_FILE)
 
     validator = Draft7Validator(schema)
     errors = sorted(validator.iter_errors(data), key=lambda e: list(e.path))
