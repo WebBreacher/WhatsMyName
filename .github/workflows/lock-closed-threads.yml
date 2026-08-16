@@ -26,3 +26,6 @@ jobs:
           # Don't touch threads that already have ongoing discussion tags.
           exclude-any-issue-labels: 'help wanted, keep-open'
           exclude-any-pr-labels: 'keep-open'
+          # This repo doesn't have GitHub Discussions enabled; the action locks
+          # discussions by default and errors out if that feature is off.
+          process-only: 'issues, prs'
