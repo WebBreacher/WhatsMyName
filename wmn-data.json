@@ -4141,8 +4141,8 @@
       "uri_check": "https://archive.org/advancedsearch.php?q=creator:{account}&output=json",
       "uri_pretty": "https://archive.org/search.php?query=creator:{account}",
       "e_code": 200,
-      "e_string": "backup_location",
-      "m_string": "numFound\":0",
+      "e_string": "<a aria-describedby=\"link-aria-description\" class=\"tile-link\" href=\"/details/",
+      "m_string": "<div class=\"search-empty-message\" slot=\"cb-results\">",
       "m_code": 200,
       "known": [
         "brewster_kahle",
@@ -4155,8 +4155,8 @@
       "uri_check": "https://archive.org/advancedsearch.php?q={account}&output=json",
       "uri_pretty": "https://archive.org/search.php?query={account}",
       "e_code": 200,
-      "e_string": "backup_location",
-      "m_string": "numFound\":0",
+      "e_string": "<a aria-describedby=\"link-aria-description\" class=\"tile-link\" href=\"/details/",
+      "m_string": "<div class=\"search-empty-message\" slot=\"cb-results\">",
       "m_code": 200,
       "known": [
         "anazgnos",
