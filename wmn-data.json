@@ -8307,8 +8307,8 @@
       "name": "thegatewaypundit",
       "uri_check": "https://www.thegatewaypundit.com/author/{account}/",
       "e_code": 200,
-      "e_string": "summary",
-      "m_string": "Not found, error 404",
+      "e_string": "<meta property=\"og:type\" content=\"profile\" />",
+      "m_string": "ai_insert ('after', '.home-posts-list-grid', b64d",
       "m_code": 404,
       "known": [
         "patti",
