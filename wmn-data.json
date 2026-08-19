@@ -350,8 +350,8 @@
       "uri_check": "https://gitlab.archlinux.org/api/v4/users?username={account}",
       "uri_pretty": "https://gitlab.archlinux.org/{account}",
       "e_code": 200,
-      "e_string": "\"id\":",
-      "m_string": "[]",
+      "e_string": "activity\" href=\"https://gitlab.archlinux.org/",
+      "m_string": "<div class=\"gl-grow\">Sign in before continuing.",
       "m_code": 200,
       "known": [
         "morganamilo",
