@@ -10,6 +10,7 @@
     "3xp0rt",
     "AlexisPradoOficial",
     "funnyzak",
+    "jschibberges",
     "mbiesiad",
     "Micah Hoffman",
     "mtedholm",
@@ -350,7 +351,7 @@
       "uri_check": "https://gitlab.archlinux.org/api/v4/users?username={account}",
       "uri_pretty": "https://gitlab.archlinux.org/{account}",
       "e_code": 200,
-      "e_string": "\"id\":",
+      "e_string": "\"username\":",
       "m_string": "[]",
       "m_code": 200,
       "known": [
@@ -8304,17 +8305,20 @@
       "cat": "gaming"
     },
     {
-      "name": "thegatewaypundit",
+      "name": "The Gateway Pundit",
       "uri_check": "https://www.thegatewaypundit.com/author/{account}/",
       "e_code": 200,
-      "e_string": "summary",
-      "m_string": "Not found, error 404",
-      "m_code": 404,
+      "e_string": "meta property=\"og:type\" content=\"profile\"",
+      "m_string": "<title>The Gateway Pundit * Conservative news and commentary",
+      "m_code": 200,
       "known": [
-        "patti",
-        "joehoft"
+        "andrewmeyer",
+        "jimhoft"
       ],
-      "cat": "political"
+      "cat": "political",
+      "protection": [
+        "cloudflare"
+      ]
     },
     {
       "name": "theguardian",
