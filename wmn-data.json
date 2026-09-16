@@ -14,7 +14,8 @@
     "mbiesiad",
     "Micah Hoffman",
     "mtedholm",
-    "Owen Ross"
+    "Owen Ross",
+    "MRashad01"
   ],
   "categories": [
     "archived",
@@ -1850,7 +1851,7 @@
       "uri_pretty": "https://www.discogs.com/user/{account}",
       "e_code": 200,
       "e_string": "\"id\":",
-      "m_string": "\"message\": \"User does not exist or may have been deleted.\"",
+      "m_string": "\"message\":\"User does not exist or may have been deleted.\"",
       "m_code": 404,
       "known": [
         "damiano84",
@@ -2171,7 +2172,7 @@
       "uri_pretty": "https://www.duolingo.com/profile/{account}",
       "e_code": 200,
       "e_string": "joinedClassroomIds",
-      "m_string": "\"users\" : []",
+      "m_string": "\"users\":[]",
       "m_code": 200,
       "known": [
         "sdfsdf",
@@ -4373,7 +4374,7 @@
       "uri_pretty": "https://kick.com/{account}",
       "e_code": 200,
       "e_string": "\"id\"",
-      "m_string": "<title>Not Found</title>",
+      "m_string": "\"message\":\"Channel not found.\"",
       "m_code": 404,
       "known": [
         "deepak",
@@ -8560,7 +8561,7 @@
       "uri_pretty": "https://trello.com/{account}",
       "e_code": 200,
       "e_string": "\"id\":",
-      "m_string": "<h1>Oh no! 404!</h1>",
+      "m_string": "model not found",
       "m_code": 404,
       "known": [
         "naranjasan",
@@ -8998,7 +8999,7 @@
       "uri_check": "https://vimeo.com/{account}",
       "e_code": 200,
       "e_string": "og:type",
-      "m_string": "VimeUhOh",
+      "m_string": "Sorry, we couldn",
       "m_code": 404,
       "known": [
         "john",
@@ -9653,8 +9654,8 @@
       "name": "Xing",
       "uri_check": "https://www.xing.com/profile/{account}",
       "e_code": 200,
-      "e_string": "<meta data-rh=",
-      "m_string": "404 Not Found | XING",
+      "e_string": "\"firstName\"",
+      "m_string": "404 - Not Found | XING",
       "m_code": 404,
       "known": [
         "Andy_Hausmann",
@@ -9831,8 +9832,8 @@
       "name": "Zenn",
       "uri_check": "https://zenn.dev/{account}",
       "e_code": 200,
-      "e_string": "<div class=\"UserHeader_profileMain__6Itxi\">",
-      "m_string": "<div class=\"ErrorContent_status__2Ykoq\">404</div>",
+      "e_string": "UserHeader",
+      "m_string": "見つかりませんでした",
       "m_code": 404,
       "known": [
         "john",
