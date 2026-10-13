@@ -14,6 +14,7 @@
     "mbiesiad",
     "Micah Hoffman",
     "mtedholm",
+    "NovaCode37",
     "Owen Ross"
   ],
   "categories": [
@@ -1271,8 +1272,8 @@
       "name": "cnet",
       "uri_check": "https://www.cnet.com/profiles/{account}/",
       "e_code": 200,
-      "e_string": "<span>Joined CNET</span>",
-      "m_string": "class=\"c-error404_message\">",
+      "e_string": "class=\"author-header__stat-label\"",
+      "m_string": "<title>Page Not Found - CNET",
       "m_code": 404,
       "known": [
         "mlong",
@@ -1752,7 +1753,7 @@
       "name": "DeviantArt",
       "uri_check": "https://www.deviantart.com/{account}",
       "e_code": 200,
-      "e_string": " | DeviantArt</title>",
+      "e_string": " on DeviantArt</title>",
       "m_string": "DeviantArt: 404",
       "m_code": 404,
       "known": [
