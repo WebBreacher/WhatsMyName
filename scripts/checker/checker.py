@@ -234,6 +234,44 @@ def detect_blocking(body: str, code: int, headers: Optional[dict] = None) -> boo
     return any(signal in body_lower for signal in BLOCKING_BODY_SIGNALS)
 
 
+def _chain_has(exc: BaseException, *types: type) -> bool:
+    """Walk __cause__/__context__ looking for one of the given exception types,
+    since requests/urllib3 usually wrap the real low-level error."""
+    seen = set()
+    cur = exc
+    while cur is not None and id(cur) not in seen:
+        seen.add(id(cur))
+        if isinstance(cur, types):
+            return True
+        cur = cur.__cause__ or cur.__context__
+    return False
+
+
+def _classify_connection_error(exc: Exception) -> str:
+    """Short, specific diagnosis for a failed connection attempt — distinguishes
+    the common real-world causes instead of a single generic 'no response'."""
+    if isinstance(exc, requests.exceptions.SSLError):
+        return ("TLS/certificate error (expired cert, hostname mismatch, or "
+                "similar) — site may still be running but misconfigured")
+    if isinstance(exc, requests.exceptions.ConnectTimeout):
+        return ("connection timed out before completing — consistent with a "
+                "firewall or VPN silently dropping the connection, or the "
+                "server being down")
+    if isinstance(exc, requests.exceptions.ReadTimeout):
+        return ("connected fine but the server never sent a response — the "
+                "app/backend may be hung or overloaded rather than the "
+                "whole site being gone")
+    if isinstance(exc, requests.exceptions.TooManyRedirects):
+        return "too many redirects (possible redirect loop) — site is up but misconfigured"
+    if _chain_has(exc, ConnectionRefusedError):
+        return ("connection actively refused — nothing is listening on that "
+                "port, server is likely down or decommissioned")
+    if _chain_has(exc, TimeoutError, socket.timeout):
+        return ("connection timed out — consistent with a firewall or VPN "
+                "silently dropping the connection, or the server being down")
+    return "connection failed"
+
+
 def do_request(
     session: requests.Session,
     url: str,
@@ -262,12 +300,12 @@ def do_request(
                 timeout=timeout,
                 allow_redirects=True,
             )
-        return resp.status_code, resp.text, dict(resp.headers)
+        return resp.status_code, resp.text, dict(resp.headers), ""
     except (requests.exceptions.ConnectionError,
             requests.exceptions.Timeout,
             requests.exceptions.TooManyRedirects,
-            OSError):
-        return None, "", {}
+            OSError) as exc:
+        return None, "", {}, _classify_connection_error(exc)
 
 
 def _fetch_via_playwright(
@@ -385,26 +423,44 @@ def _run_browser_checks(
     return checks
 
 
-def _site_down_note(url: str) -> str:
+# HTTP codes a reverse proxy (nginx, Apache, Cloudflare) returns when it's up
+# but the backend app behind it isn't — a server-side outage, not domain death.
+_GATEWAY_ERROR_CODES = {502, 503, 504, 521, 522, 523, 524}
+
+
+def _site_down_note(url: str, error_detail: str = "") -> str:
     resolves = _dns_resolves(url)
     if resolves is False:
         return "No response — domain does not resolve (DNS lookup failed, likely gone)"
     if resolves is True:
+        if error_detail:
+            return f"No response — domain resolves, but {error_detail}"
         return "No response — domain resolves but the connection failed or timed out " \
                "(server down/unreachable, not necessarily gone)"
     return "No response — site down or DNS failure"
 
 
+def _gateway_error_note(http_code: int, expected_code: int) -> Optional[str]:
+    if http_code in _GATEWAY_ERROR_CODES:
+        return (f"HTTP {http_code} (expected {expected_code}) — looks like a "
+                f"server-side outage (bad gateway/service unavailable/timeout "
+                f"from the reverse proxy), not necessarily domain death")
+    return None
+
+
 def _evaluate_known_check(
     http_code: Optional[int], body: str, headers: dict, e_code: int, e_string: str,
-    url: str = "",
+    url: str = "", error_detail: str = "",
 ) -> tuple:
     if http_code is None:
-        return STATUS_SITE_DOWN, _site_down_note(url)
+        return STATUS_SITE_DOWN, _site_down_note(url, error_detail)
     if http_code == e_code and e_string in body:
         return STATUS_OK, f"Found: HTTP {http_code}, e_string present"
     if detect_blocking(body, http_code, headers):
         return STATUS_BLOCKED, f"Bot-blocking page detected (HTTP {http_code})"
+    gateway_note = _gateway_error_note(http_code, e_code)
+    if gateway_note:
+        return STATUS_E_CODE_MISMATCH, gateway_note
     if http_code != e_code:
         return STATUS_E_CODE_MISMATCH, f"Expected HTTP {e_code}, got {http_code}"
     return STATUS_E_STRING_MISSING, f"e_string not found in response body (HTTP {http_code})"
@@ -412,16 +468,19 @@ def _evaluate_known_check(
 
 def _evaluate_random_check(
     http_code: Optional[int], body: str, headers: dict, e_string: str, m_code: int, m_string: str,
-    url: str = "",
+    url: str = "", error_detail: str = "",
 ) -> tuple:
     if http_code is None:
-        return STATUS_SITE_DOWN, _site_down_note(url)
+        return STATUS_SITE_DOWN, _site_down_note(url, error_detail)
     if m_code and http_code == m_code and m_string and m_string in body:
         return STATUS_OK, f"Not found as expected: HTTP {http_code}"
     if e_string and e_string in body:
         return STATUS_FALSE_POSITIVE, "Random username matched as found (false positive)"
     if detect_blocking(body, http_code, headers):
         return STATUS_BLOCKED, f"Bot-blocking page detected (HTTP {http_code})"
+    gateway_note = _gateway_error_note(http_code, m_code)
+    if gateway_note:
+        return STATUS_M_CODE_MISMATCH, gateway_note
     if m_code and http_code != m_code:
         return STATUS_M_CODE_MISMATCH, f"Expected m_code {m_code}, got {http_code}"
     if m_string and m_string not in body:
@@ -493,8 +552,10 @@ def check_site(site: dict, ua: str) -> SiteResult:
             url = site["uri_check"].replace("{account}", username)
             post_body_str = post_body_template.replace("{account}", username) if post_body_template else None
 
-            http_code, body, resp_headers = do_request(session, url, method, site_headers, post_body_str, ua)
-            status, note = _evaluate_known_check(http_code, body, resp_headers, result.e_code, result.e_string, url)
+            http_code, body, resp_headers, error_detail = do_request(session, url, method, site_headers, post_body_str, ua)
+            status, note = _evaluate_known_check(
+                http_code, body, resp_headers, result.e_code, result.e_string, url, error_detail
+            )
 
             result.checks.append(CheckDetail(
                 username=username,
@@ -517,9 +578,10 @@ def check_site(site: dict, ua: str) -> SiteResult:
             url = site["uri_check"].replace("{account}", random_username)
             post_body_str = post_body_template.replace("{account}", random_username) if post_body_template else None
 
-            http_code, body, resp_headers = do_request(session, url, method, site_headers, post_body_str, ua)
+            http_code, body, resp_headers, error_detail = do_request(session, url, method, site_headers, post_body_str, ua)
             status, note = _evaluate_random_check(
-                http_code, body, resp_headers, result.e_string, result.m_code, result.m_string, url
+                http_code, body, resp_headers, result.e_string, result.m_code, result.m_string,
+                url, error_detail
             )
             result.checks.append(CheckDetail(
                 username=random_username,
