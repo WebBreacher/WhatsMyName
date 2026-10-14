@@ -5,6 +5,7 @@ import os
 import random
 import re
 import shutil
+import socket
 import string
 import sys
 import threading
@@ -13,6 +14,7 @@ from dataclasses import asdict
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Optional
+from urllib.parse import urlparse
 
 log = logging.getLogger("wmn")
 
@@ -194,6 +196,25 @@ def apply_strip_bad_char(username: str, chars: str) -> str:
     return username.translate(str.maketrans("", "", chars))
 
 
+@functools.lru_cache(maxsize=256)
+def _dns_resolves(url: str) -> Optional[bool]:
+    """Best-effort check of whether the URL's hostname resolves at all.
+
+    Only called on an already-failed request, so a slow resolver timeout
+    here doesn't cost anything on the common (successful) path. Cached per
+    hostname since known/random checks for the same site share one host.
+    Returns None if the hostname can't even be parsed out of the URL.
+    """
+    hostname = urlparse(url).hostname
+    if not hostname:
+        return None
+    try:
+        socket.gethostbyname(hostname)
+        return True
+    except (socket.gaierror, UnicodeError):
+        return False
+
+
 def detect_blocking(body: str, code: int, headers: Optional[dict] = None) -> bool:
     headers_lower = {k.lower(): v.lower() for k, v in (headers or {}).items()}
     for header, expected in BLOCKING_HEADER_SIGNALS.items():
@@ -327,7 +348,7 @@ def _run_browser_checks(
         post_body_str = post_body_template.replace("{account}", username) if post_body_template else None
 
         http_code, body, resp_headers = _fetch_via_playwright(url, method, post_body_str, site_headers, timeout)
-        status, note = _evaluate_known_check(http_code, body, resp_headers, e_code, e_string)
+        status, note = _evaluate_known_check(http_code, body, resp_headers, e_code, e_string, url)
         checks.append(CheckDetail(
             username=username,
             username_type="known",
@@ -349,7 +370,7 @@ def _run_browser_checks(
         post_body_str = post_body_template.replace("{account}", random_username) if post_body_template else None
 
         http_code, body, resp_headers = _fetch_via_playwright(url, method, post_body_str, site_headers, timeout)
-        status, note = _evaluate_random_check(http_code, body, resp_headers, e_string, m_code, m_string)
+        status, note = _evaluate_random_check(http_code, body, resp_headers, e_string, m_code, m_string, url)
         checks.append(CheckDetail(
             username=random_username,
             username_type="random",
@@ -364,11 +385,22 @@ def _run_browser_checks(
     return checks
 
 
+def _site_down_note(url: str) -> str:
+    resolves = _dns_resolves(url)
+    if resolves is False:
+        return "No response — domain does not resolve (DNS lookup failed, likely gone)"
+    if resolves is True:
+        return "No response — domain resolves but the connection failed or timed out " \
+               "(server down/unreachable, not necessarily gone)"
+    return "No response — site down or DNS failure"
+
+
 def _evaluate_known_check(
-    http_code: Optional[int], body: str, headers: dict, e_code: int, e_string: str
+    http_code: Optional[int], body: str, headers: dict, e_code: int, e_string: str,
+    url: str = "",
 ) -> tuple:
     if http_code is None:
-        return STATUS_SITE_DOWN, "No response — site down or DNS failure"
+        return STATUS_SITE_DOWN, _site_down_note(url)
     if http_code == e_code and e_string in body:
         return STATUS_OK, f"Found: HTTP {http_code}, e_string present"
     if detect_blocking(body, http_code, headers):
@@ -379,10 +411,11 @@ def _evaluate_known_check(
 
 
 def _evaluate_random_check(
-    http_code: Optional[int], body: str, headers: dict, e_string: str, m_code: int, m_string: str
+    http_code: Optional[int], body: str, headers: dict, e_string: str, m_code: int, m_string: str,
+    url: str = "",
 ) -> tuple:
     if http_code is None:
-        return STATUS_SITE_DOWN, "No response — site down or DNS failure"
+        return STATUS_SITE_DOWN, _site_down_note(url)
     if m_code and http_code == m_code and m_string and m_string in body:
         return STATUS_OK, f"Not found as expected: HTTP {http_code}"
     if e_string and e_string in body:
@@ -461,7 +494,7 @@ def check_site(site: dict, ua: str) -> SiteResult:
             post_body_str = post_body_template.replace("{account}", username) if post_body_template else None
 
             http_code, body, resp_headers = do_request(session, url, method, site_headers, post_body_str, ua)
-            status, note = _evaluate_known_check(http_code, body, resp_headers, result.e_code, result.e_string)
+            status, note = _evaluate_known_check(http_code, body, resp_headers, result.e_code, result.e_string, url)
 
             result.checks.append(CheckDetail(
                 username=username,
@@ -486,7 +519,7 @@ def check_site(site: dict, ua: str) -> SiteResult:
 
             http_code, body, resp_headers = do_request(session, url, method, site_headers, post_body_str, ua)
             status, note = _evaluate_random_check(
-                http_code, body, resp_headers, result.e_string, result.m_code, result.m_string
+                http_code, body, resp_headers, result.e_string, result.m_code, result.m_string, url
             )
             result.checks.append(CheckDetail(
                 username=random_username,
