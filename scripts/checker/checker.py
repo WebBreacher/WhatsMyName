@@ -1,6 +1,7 @@
 import functools
 import json
 import logging
+import os
 import random
 import re
 import shutil
@@ -522,6 +523,15 @@ def check_site(site: dict, ua: str) -> SiteResult:
     return result
 
 
+def _append_checkpoint(checkpoint_path: Path, result_dict: dict) -> None:
+    """Append one result as a JSON line and force it to disk immediately,
+    so a crash mid-run loses at most the one result currently in flight."""
+    with open(checkpoint_path, "a", encoding="utf-8") as f:
+        f.write(json.dumps(result_dict) + "\n")
+        f.flush()
+        os.fsync(f.fileno())
+
+
 def run_checker(
     sites: list,
     results_list: list,
@@ -529,11 +539,20 @@ def run_checker(
     progress: dict,
     max_workers: int = 10,
     limit: Optional[int] = None,
+    checkpoint_path: Optional[Path] = None,
 ) -> None:
     if limit and limit > 0:
         sites = sites[:limit]
 
     _stop_event.clear()
+
+    if checkpoint_path:
+        checkpoint_path.parent.mkdir(parents=True, exist_ok=True)
+        # First line records the planned total so a recovered report can
+        # still say "N of <planned>" instead of just "N of N".
+        checkpoint_path.write_text(
+            json.dumps({"_meta": {"total": len(sites)}}) + "\n", encoding="utf-8"
+        )
 
     # Cycle through the full UA pool (shuffled once per run) rather than
     # picking just 2 of them, so checks spread across all known browsers.
@@ -600,6 +619,8 @@ def run_checker(
                 else:
                     results_list.append(result_dict)
                 progress["done"] += 1
+                if checkpoint_path:
+                    _append_checkpoint(checkpoint_path, result_dict)
     finally:
         executor.shutdown(wait=False, cancel_futures=True)
 
