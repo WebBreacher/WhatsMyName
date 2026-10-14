@@ -53,6 +53,7 @@ python3 wmn_check.py [OPTIONS]
 | `--data PATH` | `wmn-data.json` | Path to the data file |
 | `--start-at NAME` | — | Start at this site name (case-insensitive, prefix match). Mutually exclusive with `--offset` |
 | `--offset N` | — | Skip the first N sites. Mutually exclusive with `--start-at` |
+| `--from-checkpoint PATH` | — | Skip checking entirely; render a report from an existing `*.checkpoint.jsonl` file instead. For recovering a report after a crash (see below) |
 
 ### Examples
 
@@ -80,6 +81,18 @@ python3 wmn_check.py --output-dir ~/reports
 ```
 
 Press **Ctrl+C** at any time to stop — the script will write a partial report of whatever was completed before the interrupt.
+
+### Recovering from a crash
+
+Every run writes a `*.checkpoint.jsonl` file into the output directory alongside the eventual report, updated after every single site (one JSON line each, flushed and fsynced immediately). This is separate from the Ctrl+C handling above — it also covers a hard crash, an OOM kill, or the machine going down mid-run, where nothing ever gets a chance to write the final report.
+
+If a run doesn't make it to the end, the checkpoint file is still on disk with everything completed so far. Render a report from it directly:
+
+```bash
+python3 wmn_check.py --from-checkpoint 20261014-2106-wmncheck.checkpoint.jsonl
+```
+
+This writes a `*-wmncheck-recovered.md` report from just the checkpoint's contents — no re-checking, no network calls. The checkpoint file isn't deleted after a normal run finishes either, so it's also available as a plain JSONL record of the raw per-site results if you want it.
 
 ## Output
 

@@ -145,3 +145,5 @@ docs/_build/
 # WMN checker output reports
 scripts/checker/*-wmncheck.md
 scripts/checker/*-wmncheck-partial.md
+scripts/checker/*-wmncheck-recovered.md
+scripts/checker/*.checkpoint.jsonl
