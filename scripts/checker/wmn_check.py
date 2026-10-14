@@ -14,6 +14,7 @@ Usage:
 """
 
 import argparse
+import json
 import logging
 import sys
 import threading
@@ -254,10 +255,11 @@ def playwright_section(results: list) -> str:
 
 def render_report(results: list, cats: dict, ts_str: str,
                   sites_checked: int, workers: int,
-                  partial: bool = False) -> str:
+                  partial: bool = False,
+                  partial_reason: str = "interrupted by user") -> str:
     total = len(results)
     partial_banner = (
-        "\n> ⚠️ **PARTIAL RUN** — interrupted by user. "
+        f"\n> ⚠️ **PARTIAL RUN** — {partial_reason}. "
         f"{total} of {sites_checked} sites completed.\n"
     ) if partial else ""
 
@@ -333,6 +335,10 @@ def main():
                         help="Directory for the output .md file")
     parser.add_argument("--data",       type=Path,   default=DEFAULT_DATA,
                         help="Path to wmn-data.json")
+    parser.add_argument("--from-checkpoint", type=Path, default=None, metavar="PATH",
+                        help="Skip checking; render a report from an existing "
+                             "*.checkpoint.jsonl file instead (e.g. recovering "
+                             "after a crash killed the run before it wrote a report)")
 
     start_group = parser.add_mutually_exclusive_group()
     start_group.add_argument("--start-at", type=str, default=None,
@@ -352,6 +358,40 @@ def main():
         stream=sys.stdout,
         force=True,
     )
+
+    if args.from_checkpoint:
+        results = []
+        planned_total = None
+        with open(args.from_checkpoint, encoding="utf-8") as f:
+            for line in f:
+                line = line.strip()
+                if not line:
+                    continue
+                record = json.loads(line)
+                if "_meta" in record:
+                    planned_total = record["_meta"].get("total")
+                    continue
+                results.append(record)
+
+        if not results:
+            print(f"Error: {args.from_checkpoint} has no recoverable results")
+            sys.exit(1)
+
+        ts = datetime.now(timezone.utc)
+        ts_str = ts.strftime("%Y-%m-%d %H:%M UTC")
+        output_path = args.output_dir / ts.strftime("%Y%m%d-%H%M-wmncheck-recovered.md")
+
+        cats = categorize(results)
+        report = render_report(
+            results, cats, ts_str, planned_total or len(results), args.workers, partial=True,
+            partial_reason=f"recovered from checkpoint `{args.from_checkpoint.name}` "
+                            "after an incomplete run",
+        )
+        args.output_dir.mkdir(parents=True, exist_ok=True)
+        output_path.write_text(report, encoding="utf-8")
+        print(f"Recovered {len(results)} site result(s) from {args.from_checkpoint}")
+        print(f"Report: {output_path}")
+        return
 
     all_sites = load_sites(args.data)
     sites = all_sites
@@ -382,13 +422,21 @@ def main():
 
     print(f"Checking {len(sites)} sites with {args.workers} workers…")
 
+    args.output_dir.mkdir(parents=True, exist_ok=True)
+    checkpoint_path = args.output_dir / (
+        datetime.now(timezone.utc).strftime("%Y%m%d-%H%M") + "-wmncheck.checkpoint.jsonl"
+    )
+    print(f"Checkpoint: {checkpoint_path} (updated after every site — "
+          f"use --from-checkpoint to recover a report if this run doesn't finish)")
+
     results: list = []
     progress: dict = {"total": 0, "done": 0, "complete": False, "running": False}
     lock = threading.Lock()
     partial = False
 
     try:
-        run_checker(sites, results, lock, progress, max_workers=args.workers)
+        run_checker(sites, results, lock, progress, max_workers=args.workers,
+                    checkpoint_path=checkpoint_path)
     except KeyboardInterrupt:
         partial = True
         request_stop()
