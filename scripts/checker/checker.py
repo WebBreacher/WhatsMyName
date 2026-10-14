@@ -2,6 +2,7 @@ import functools
 import json
 import logging
 import random
+import re
 import shutil
 import string
 import sys
@@ -64,21 +65,64 @@ from models import (
     STATUS_SKIPPED, STATUS_PRIORITY,
 )
 
+# Note: Brave intentionally sends a stock Chrome User-Agent (no "Brave" token)
+# so it can't be fingerprinted/blocked differently from Chrome — a recent
+# Chrome UA below covers Brave users too; there is no separate Brave string.
+# Versions are a point-in-time snapshot; bump periodically.
 UA_POOL = [
-    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
-    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
-    "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0",
-    "Mozilla/5.0 (Macintosh; Intel Mac OS X 14.4; rv:125.0) Gecko/20100101 Firefox/125.0",
-    "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_4_1) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4.1 Safari/605.1.15",
-    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0",
-    "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
-    "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:125.0) Gecko/20100101 Firefox/125.0",
+    # Chrome / Brave — Windows, macOS, Linux
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_6_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36",
+    # Firefox — Windows, macOS, Linux
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:132.0) Gecko/20100101 Firefox/132.0",
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 14.6; rv:132.0) Gecko/20100101 Firefox/132.0",
+    "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:132.0) Gecko/20100101 Firefox/132.0",
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:130.0) Gecko/20100101 Firefox/130.0",
+    # Safari — macOS
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_6_1) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.6 Safari/605.1.15",
+    # Edge (Chromium-based) — Windows
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0",
 ]
 
-BLOCKING_SIGNALS = [
-    "cloudflare", "cf-ray", "just a moment", "ddos-guard",
-    "captcha", "access denied", "enable javascript", "checking your browser",
+# Signals that only count when they appear in the page <title> — generic
+# enough elsewhere (an article mentioning "access denied", a DDoS-Guard blog
+# post) that matching anywhere in the body produces false positives.
+BLOCKING_TITLE_SIGNALS = [
+    "just a moment",
+    "attention required",
+    "access denied",
+    "ddos-guard",
 ]
+
+# Signals specific enough to trust anywhere in the body: named anti-bot
+# products/phrases that don't show up on an ordinary page by coincidence.
+# Deliberately excludes bare "cloudflare", "cf-ray", and "captcha" — those
+# match on completely normal pages (a Cloudflare CDN script tag, an
+# unrelated comment-form reCAPTCHA widget, a redirect's server header).
+BLOCKING_BODY_SIGNALS = [
+    "checking your browser before accessing",
+    "enable javascript and cookies to continue",
+    "cf-browser-verification",
+    "sucuri website firewall",
+    "incapsula incident id",
+    "akamai bot manager",
+    "perimeterx",
+    "datadome",
+    "g-recaptcha",
+    "h-captcha",
+    "hcaptcha.com",
+    "cf-turnstile",
+    "ddos-guard.net",
+]
+
+# Header-based signals — the most reliable indicator when present, since
+# they're set by the protection layer itself rather than inferred from copy.
+BLOCKING_HEADER_SIGNALS = {
+    "cf-mitigated": "challenge",
+}
 
 # Statuses from the requests pass that warrant a Playwright retry
 PLAYWRIGHT_RETRY_STATUSES = {
@@ -149,9 +193,23 @@ def apply_strip_bad_char(username: str, chars: str) -> str:
     return username.translate(str.maketrans("", "", chars))
 
 
-def detect_blocking(body: str, code: int) -> bool:
+def detect_blocking(body: str, code: int, headers: Optional[dict] = None) -> bool:
+    headers_lower = {k.lower(): v.lower() for k, v in (headers or {}).items()}
+    for header, expected in BLOCKING_HEADER_SIGNALS.items():
+        if expected in headers_lower.get(header, ""):
+            return True
+
     body_lower = body.lower()
-    return any(signal in body_lower for signal in BLOCKING_SIGNALS)
+
+    # Only trust title-based signals when they're actually in <title> —
+    # search just the head of the document for speed and to avoid matching
+    # deep in a large body.
+    title_match = re.search(r"<title[^>]*>(.*?)</title>", body_lower[:3000], re.DOTALL)
+    title = title_match.group(1) if title_match else ""
+    if any(signal in title for signal in BLOCKING_TITLE_SIGNALS):
+        return True
+
+    return any(signal in body_lower for signal in BLOCKING_BODY_SIGNALS)
 
 
 def do_request(
@@ -173,21 +231,21 @@ def do_request(
                 data=post_body_str,
                 headers=merged_headers,
                 timeout=timeout,
-                allow_redirects=False,
+                allow_redirects=True,
             )
         else:
             resp = session.get(
                 url,
                 headers=merged_headers,
                 timeout=timeout,
-                allow_redirects=False,
+                allow_redirects=True,
             )
-        return resp.status_code, resp.text
+        return resp.status_code, resp.text, dict(resp.headers)
     except (requests.exceptions.ConnectionError,
             requests.exceptions.Timeout,
             requests.exceptions.TooManyRedirects,
             OSError):
-        return None, ""
+        return None, "", {}
 
 
 def _fetch_via_playwright(
@@ -197,15 +255,17 @@ def _fetch_via_playwright(
     site_headers: dict,
     timeout: int,
 ) -> tuple:
-    """Fetch a URL using headless Chromium. Returns (http_code, body)."""
+    """Fetch a URL using headless Chromium. Returns (http_code, body, headers)."""
     try:
         from playwright.sync_api import sync_playwright
-    except ImportError:
-        return None, ""
+    except ImportError as exc:
+        log.warning("Playwright import failed for %s: %s", url, exc)
+        return None, "", {}
 
     chromium = _find_chromium()
     if not chromium:
-        return None, ""
+        log.warning("No Chromium binary found for browser fallback on %s", url)
+        return None, "", {}
 
     timeout_ms = timeout * 1000
     try:
@@ -223,7 +283,7 @@ def _fetch_via_playwright(
                     )
                     if method == "POST":
                         resp = ctx.request.post(url, data=post_body_str or "", timeout=timeout_ms)
-                        return resp.status, resp.text()
+                        return resp.status, resp.text(), dict(resp.headers)
                     else:
                         page = ctx.new_page()
                         try:
@@ -233,13 +293,15 @@ def _fetch_via_playwright(
                             except Exception:
                                 pass
                             content = page.content()
-                            return (response.status if response else None), content
+                            resp_headers = response.headers if response else {}
+                            return (response.status if response else None), content, resp_headers
                         finally:
                             page.close()
                 finally:
                     browser.close()
-    except Exception:
-        return None, ""
+    except Exception as exc:
+        log.warning("Playwright fetch failed for %s: %s: %s", url, type(exc).__name__, exc)
+        return None, "", {}
 
 
 def _run_browser_checks(
@@ -263,8 +325,8 @@ def _run_browser_checks(
         url = site["uri_check"].replace("{account}", username)
         post_body_str = post_body_template.replace("{account}", username) if post_body_template else None
 
-        http_code, body = _fetch_via_playwright(url, method, post_body_str, site_headers, timeout)
-        status, note = _evaluate_known_check(http_code, body, e_code, e_string)
+        http_code, body, resp_headers = _fetch_via_playwright(url, method, post_body_str, site_headers, timeout)
+        status, note = _evaluate_known_check(http_code, body, resp_headers, e_code, e_string)
         checks.append(CheckDetail(
             username=username,
             username_type="known",
@@ -285,8 +347,8 @@ def _run_browser_checks(
         url = site["uri_check"].replace("{account}", random_username)
         post_body_str = post_body_template.replace("{account}", random_username) if post_body_template else None
 
-        http_code, body = _fetch_via_playwright(url, method, post_body_str, site_headers, timeout)
-        status, note = _evaluate_random_check(http_code, body, e_string, m_code, m_string)
+        http_code, body, resp_headers = _fetch_via_playwright(url, method, post_body_str, site_headers, timeout)
+        status, note = _evaluate_random_check(http_code, body, resp_headers, e_string, m_code, m_string)
         checks.append(CheckDetail(
             username=random_username,
             username_type="random",
@@ -302,13 +364,13 @@ def _run_browser_checks(
 
 
 def _evaluate_known_check(
-    http_code: Optional[int], body: str, e_code: int, e_string: str
+    http_code: Optional[int], body: str, headers: dict, e_code: int, e_string: str
 ) -> tuple:
     if http_code is None:
         return STATUS_SITE_DOWN, "No response — site down or DNS failure"
     if http_code == e_code and e_string in body:
         return STATUS_OK, f"Found: HTTP {http_code}, e_string present"
-    if detect_blocking(body, http_code):
+    if detect_blocking(body, http_code, headers):
         return STATUS_BLOCKED, f"Bot-blocking page detected (HTTP {http_code})"
     if http_code != e_code:
         return STATUS_E_CODE_MISMATCH, f"Expected HTTP {e_code}, got {http_code}"
@@ -316,7 +378,7 @@ def _evaluate_known_check(
 
 
 def _evaluate_random_check(
-    http_code: Optional[int], body: str, e_string: str, m_code: int, m_string: str
+    http_code: Optional[int], body: str, headers: dict, e_string: str, m_code: int, m_string: str
 ) -> tuple:
     if http_code is None:
         return STATUS_SITE_DOWN, "No response — site down or DNS failure"
@@ -324,7 +386,7 @@ def _evaluate_random_check(
         return STATUS_OK, f"Not found as expected: HTTP {http_code}"
     if e_string and e_string in body:
         return STATUS_FALSE_POSITIVE, "Random username matched as found (false positive)"
-    if detect_blocking(body, http_code):
+    if detect_blocking(body, http_code, headers):
         return STATUS_BLOCKED, f"Bot-blocking page detected (HTTP {http_code})"
     if m_code and http_code != m_code:
         return STATUS_M_CODE_MISMATCH, f"Expected m_code {m_code}, got {http_code}"
@@ -397,8 +459,8 @@ def check_site(site: dict, ua: str) -> SiteResult:
             url = site["uri_check"].replace("{account}", username)
             post_body_str = post_body_template.replace("{account}", username) if post_body_template else None
 
-            http_code, body = do_request(session, url, method, site_headers, post_body_str, ua)
-            status, note = _evaluate_known_check(http_code, body, result.e_code, result.e_string)
+            http_code, body, resp_headers = do_request(session, url, method, site_headers, post_body_str, ua)
+            status, note = _evaluate_known_check(http_code, body, resp_headers, result.e_code, result.e_string)
 
             result.checks.append(CheckDetail(
                 username=username,
@@ -421,9 +483,9 @@ def check_site(site: dict, ua: str) -> SiteResult:
             url = site["uri_check"].replace("{account}", random_username)
             post_body_str = post_body_template.replace("{account}", random_username) if post_body_template else None
 
-            http_code, body = do_request(session, url, method, site_headers, post_body_str, ua)
+            http_code, body, resp_headers = do_request(session, url, method, site_headers, post_body_str, ua)
             status, note = _evaluate_random_check(
-                http_code, body, result.e_string, result.m_code, result.m_string
+                http_code, body, resp_headers, result.e_string, result.m_code, result.m_string
             )
             result.checks.append(CheckDetail(
                 username=random_username,
@@ -473,8 +535,11 @@ def run_checker(
 
     _stop_event.clear()
 
-    selected_uas = random.sample(UA_POOL, 2)
-    ua_assignments = {i: selected_uas[i % 2] for i in range(len(sites))}
+    # Cycle through the full UA pool (shuffled once per run) rather than
+    # picking just 2 of them, so checks spread across all known browsers.
+    pool = UA_POOL.copy()
+    random.shuffle(pool)
+    ua_assignments = {i: pool[i % len(pool)] for i in range(len(sites))}
 
     progress["total"] = len(sites)
     progress["done"] = 0
