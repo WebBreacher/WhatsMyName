@@ -7034,17 +7034,19 @@
     },
     {
       "name": "Reddit",
-      "uri_check": "https://www.reddit.com/user/{account}/about.json",
-      "uri_pretty": "https://www.reddit.com/user/{account}",
+      "uri_check": "https://www.reddit.com/user/{account}/",
       "e_code": 200,
-      "e_string": "\"id\":",
-      "m_string": "\"error\":404",
-      "m_code": 404,
+      "e_string": "aria-label=\"Profile information",
+      "m_string": "Sorry, nobody on Reddit goes by that name.",
+      "m_code": 200,
       "known": [
-        "koavf",
-        "alabasterheart"
+        "horrible_curiosity",
+        "ExactlySorta"
       ],
-      "cat": "social"
+      "cat": "social",
+      "protection": [
+        "other"
+      ]
     },
     {
       "name": "RedGIFs",
