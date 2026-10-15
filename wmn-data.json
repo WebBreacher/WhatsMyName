@@ -1888,19 +1888,6 @@
       "cat": "social"
     },
     {
-      "name": "Dissenter",
-      "uri_check": "https://dissenter.com/user/{account}",
-      "e_code": 200,
-      "e_string": "Dissenter | The Comment Section of the Internet",
-      "m_string": "That user is not registered here.",
-      "m_code": 404,
-      "known": [
-        "pryerlee",
-        "archdukeofevil"
-      ],
-      "cat": "political"
-    },
-    {
       "name": "Docker Hub (Organization)",
       "uri_check": "https://hub.docker.com/v2/orgs/{account}/",
       "uri_pretty": "https://hub.docker.com/u/{account}",
@@ -2819,19 +2806,6 @@
       "cat": "gaming"
     },
     {
-      "name": "game_debate",
-      "uri_check": "https://www.game-debate.com/profile/{account}",
-      "e_code": 200,
-      "e_string": "| , , GB pc game performance",
-      "m_string": "Not Found",
-      "m_code": 404,
-      "known": [
-        "Johnboy",
-        "Crazy"
-      ],
-      "cat": "gaming"
-    },
-    {
       "name": "Gamer DVR",
       "uri_check": "https://gamerdvr.com/gamer/{account}",
       "e_code": 200,
@@ -3600,19 +3574,6 @@
       "cat": "misc"
     },
     {
-      "name": "hiberworld",
-      "uri_check": "https://hiberworld.com/user/{account}",
-      "e_code": 200,
-      "e_string": "Member since ",
-      "m_string": "Looks like you got lost ",
-      "m_code": 200,
-      "known": [
-        "Axeman",
-        "Silver01"
-      ],
-      "cat": "gaming"
-    },
-    {
       "name": "HiHello",
       "uri_check": "https://www.hihello.com/author/{account}",
       "e_code": 200,
@@ -3675,14 +3636,14 @@
       "name": "hoo.be",
       "uri_check": "https://hoo.be/{account}",
       "e_code": 200,
-      "e_string": "--profile-name-color",
-      "m_string": "Page Not Found</h3>",
+      "e_string": "ProfilePage\",\"mainEntity",
+      "m_string": "<title>hoo.be</title>",
       "m_code": 404,
       "known": [
         "chrishemsworth",
         "alextackie"
       ],
-      "cat": "business"
+      "cat": "social"
     },
     {
       "name": "Hostux.social (Mastodon Instance)",
@@ -4089,19 +4050,6 @@
         "finch"
       ],
       "cat": "gaming"
-    },
-    {
-      "name": "iXBT Forum",
-      "uri_check": "https://forum.ixbt.com/users.cgi?id=info:{account}",
-      "e_code": 200,
-      "e_string": "Информация об участнике:",
-      "m_string": "Проверьте регистр написания.",
-      "m_code": 404,
-      "known": [
-        "phosphor",
-        "Dronich"
-      ],
-      "cat": "tech"
     },
     {
       "name": "JapanDict",
@@ -4737,9 +4685,9 @@
       "name": "MapMyTracks",
       "uri_check": "https://www.mapmytracks.com/{account}",
       "e_code": 200,
-      "e_string": "Daily distance this week",
-      "m_string": "Outside together",
-      "m_code": 302,
+      "e_string": "class=\"profile-header\"",
+      "m_string": "Sorry, there is nothing to see here!",
+      "m_code": 200,
       "known": [
         "ulirad",
         "CBSloan"
