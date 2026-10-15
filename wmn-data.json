@@ -5701,6 +5701,19 @@
       "cat": "social"
     },
     {
+      "name": "OP.GG",
+      "uri_check": "https://eune.op.gg/summoners/eune/{account}",
+      "e_code": 200,
+      "e_string": "- Summoner Stats - League of Legends",
+      "m_string": "Guide - OP.GG",
+      "m_code": 200,
+      "known": [
+        "xin",
+        "carlos01"
+      ],
+      "cat": "gaming"
+    },
+    {
       "name": "Opencollective",
       "uri_check": "https://opencollective.com/{account}",
       "e_code": 200,
@@ -5765,19 +5778,6 @@
         "Баир Иринчеев"
       ],
       "cat": "tech"
-    },
-    {
-      "name": "OP.GG",
-      "uri_check": "https://eune.op.gg/summoners/eune/{account}",
-      "e_code": 200,
-      "e_string": "- Summoner Stats - League of Legends",
-      "m_string": "Guide - OP.GG",
-      "m_code": 200,
-      "known": [
-        "xin",
-        "carlos01"
-      ],
-      "cat": "gaming"
     },
     {
       "name": "Origins.Habbo.com",
