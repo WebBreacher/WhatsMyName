@@ -2164,16 +2164,19 @@
     },
     {
       "name": "eBay",
-      "uri_check": "https://www.ebay.com/usr/{account}",
+      "uri_check": "https://www.ebay.com/usr/{account}?_tab=about",
       "e_code": 200,
-      "e_string": "on eBay</title>",
-      "m_string": "The User ID you entered was not found",
+      "e_string": "\"text\":\" followers\"",
+      "m_string": "Sorry, this store was not found.",
       "m_code": 200,
       "known": [
-        "the_gqs",
-        "johnny"
+        "mwdavis50",
+        "quickshipelectronics"
       ],
-      "cat": "shopping"
+      "cat": "shopping",
+      "protection": [
+        "other"
+      ]
     },
     {
       "name": "ebay_stores",
@@ -2404,19 +2407,6 @@
       "protection": [
         "cloudfront"
       ]
-    },
-    {
-      "name": "Fark",
-      "uri_check": "https://www.fark.com/users/{account}",
-      "e_code": 200,
-      "e_string": "Fark account number",
-      "m_string": "Tastes like chicken.",
-      "m_code": 200,
-      "known": [
-        "bob",
-        "bobby"
-      ],
-      "cat": "social"
     },
     {
       "name": "Federated.press (Mastodon Instance)",
@@ -4139,20 +4129,6 @@
         "kenshiin"
       ],
       "cat": "tech"
-    },
-    {
-      "name": "Issuu",
-      "uri_check": "https://issuu.com/call/signup/v2/check-username/{account}",
-      "uri_pretty": "https://issuu.com/{account}",
-      "e_code": 200,
-      "e_string": "\"status\":\"unavailable\"",
-      "m_string": "\"status\":\"available\"",
-      "m_code": 200,
-      "known": [
-        "letsplayhockey",
-        "the_anchor"
-      ],
-      "cat": "social"
     },
     {
       "name": "itch.io",
