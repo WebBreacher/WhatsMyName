@@ -204,6 +204,7 @@
             "items": {
               "type": "string",
               "enum": [
+                "akamai",
                 "anubis",
                 "captcha",
                 "cloudflare",
