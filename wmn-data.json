@@ -1692,8 +1692,8 @@
       "uri_pretty": "https://destream.net/live/{account}",
       "e_code": 200,
       "e_string": "\"userName\":",
-      "m_string": "\"errorMessage\":\"Error happened.\"",
-      "m_code": 400,
+      "m_string": "",
+      "m_code": 404,
       "known": [
         "skromnuy_fifa",
         "wudjer"
@@ -3166,17 +3166,20 @@
       "name": "GNOME (GitLab)",
       "uri_check": "https://gitlab.gnome.org/api/v4/users?username={account}",
       "uri_pretty": "https://gitlab.gnome.org/{account}",
+      "headers": {
+        "User-Agent": "curl/8.4.0"
+      },
       "e_code": 200,
       "e_string": "\"username\":",
       "m_string": "[]",
       "m_code": 200,
       "known": [
-        "MystikNinja",
+        "ebassi",
         "0xMRTT"
       ],
       "cat": "coding",
       "protection": [
-        "anubis"
+        "user-agent"
       ]
     },
     {
@@ -4733,7 +4736,10 @@
         "redart",
         "ellentoy"
       ],
-      "cat": "shopping"
+      "cat": "shopping",
+      "protection": [
+        "other"
+      ]
     },
     {
       "name": "lobste.rs",
@@ -6575,19 +6581,6 @@
       "cat": "social"
     },
     {
-      "name": "policja2009",
-      "uri_check": "http://www.policja2009.fora.pl/search.php?search_author={account}",
-      "e_code": 200,
-      "e_string": "Autor",
-      "m_string": "Nie znaleziono tematów ani postów pasujących do Twoich kryteriów",
-      "m_code": 200,
-      "known": [
-        "Pvwel",
-        "janek"
-      ],
-      "cat": "misc"
-    },
-    {
       "name": "Poll Everywhere",
       "uri_check": "https://pollev.com/proxy/api/users/{account}",
       "uri_pretty": "https://pollev.com/{account}",
@@ -6728,7 +6721,7 @@
       "name": "Pravda.me",
       "uri_check": "https://pravda.me/@{account}",
       "e_code": 200,
-      "e_string": "Российская социальная сеть (by mastodon)</title>",
+      "e_string": "Социальная сеть - Правда (by mastodon)</title>",
       "m_string": "<title>The page you are looking for isn&#39;t here.",
       "m_code": 404,
       "known": [
@@ -6872,20 +6865,6 @@
       "known": [
         "claudii",
         "kowalski"
-      ],
-      "cat": "social"
-    },
-    {
-      "name": "quitter.pl",
-      "uri_check": "https://quitter.pl/api/v1/accounts/{account}",
-      "uri_pretty": "https://quitter.pl/users/{account}",
-      "e_code": 200,
-      "e_string": "avatar_static",
-      "m_string": "\"error\":",
-      "m_code": 404,
-      "known": [
-        "smok",
-        "mik"
       ],
       "cat": "social"
     },
