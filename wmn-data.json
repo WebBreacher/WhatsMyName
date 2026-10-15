@@ -715,14 +715,17 @@
       "uri_check": "https://bitbucket.org/!api/2.0/repositories/{account}?page=1&pagelen=25&sort=-updated_on&q=&fields=-values.owner%2C-values.workspace",
       "uri_pretty": "https://bitbucket.org/{account}/workspace/repositories/",
       "e_code": 200,
-      "e_string": "full_name",
-      "m_string": "No workspace with identifier",
+      "e_string": "\"full_name\":",
+      "m_string": "\"message\":\"No workspace with identifier",
       "m_code": 404,
       "known": [
-        "LaNMaSteR53",
-        "osamahalisawi"
+        "jlippuner",
+        "memahaxx"
       ],
-      "cat": "coding"
+      "cat": "coding",
+      "protection": [
+        "other"
+      ]
     },
     {
       "name": "Bitchute",
@@ -5545,11 +5548,11 @@
       "cat": "social"
     },
     {
-      "name": "MyFitnessPal Author",
+      "name": "myfitnesspal Author",
       "uri_check": "https://blog.myfitnesspal.com/author/{account}/",
       "e_code": 200,
-      "e_string": "About the Author",
-      "m_string": "<title>Page not found ",
+      "e_string": "\"isPartOf\":",
+      "m_string": "<title>Page not found | MyFitnessPal Blog</title>",
       "m_code": 404,
       "known": [
         "lauren-krouse",
@@ -5558,7 +5561,7 @@
       "cat": "health"
     },
     {
-      "name": "MyFitnessPal Community",
+      "name": "myfitnesspal Community",
       "uri_check": "https://community.myfitnesspal.com/en/profile/{account}",
       "e_code": 200,
       "e_string": ">Last Active<",
