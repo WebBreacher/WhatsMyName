@@ -3686,19 +3686,6 @@
       "cat": "blog"
     },
     {
-      "name": "Hubski",
-      "uri_check": "https://hubski.com/user/{account}",
-      "e_code": 200,
-      "e_string": "'s profile",
-      "m_string": "No such user.",
-      "m_code": 200,
-      "known": [
-        "john",
-        "blue"
-      ],
-      "cat": "social"
-    },
-    {
       "name": "HudsonRock",
       "uri_check": "https://cavalier.hudsonrock.com/api/json/v2/osint-tools/search-by-username?username={account}",
       "e_code": 200,
@@ -4217,19 +4204,6 @@
         "jones"
       ],
       "cat": "social"
-    },
-    {
-      "name": "kipin",
-      "uri_check": "https://kipin.app/{account}",
-      "e_code": 200,
-      "e_string": "kipin.app/data/photos/resized2/",
-      "m_string": "Page not found. Link expired, broken or wrong.",
-      "m_code": 302,
-      "known": [
-        "monethica",
-        "asd_fca"
-      ],
-      "cat": "business"
     },
     {
       "name": "KnowYourMeme",
@@ -5034,15 +5008,15 @@
       ]
     },
     {
-      "name": "Metacritic",
+      "name": "metacritic",
       "uri_check": "https://www.metacritic.com/user/{account}/",
       "e_code": 200,
-      "e_string": "class=\"c-pageProfile-wrapper\"",
-      "m_string": "class=\"c-error404\"",
+      "e_string": "data-testid=\"profile-name\">",
+      "m_string": "re looking for. Sorry about that.</p>",
       "m_code": 404,
       "known": [
-        "Mcguy",
-        "goldzweig"
+        "Joxel",
+        "Amartyesh"
       ],
       "cat": "hobby"
     },
@@ -5367,17 +5341,17 @@
       "cat": "social"
     },
     {
-      "name": "MyBuilder.com",
-      "uri_check": "https://www.mybuilder.com/profile/view/{account}",
+      "name": "MyBuilder",
+      "uri_check": "https://www.mybuilder.com/profile/{account}",
       "e_code": 200,
-      "e_string": "feedback",
-      "m_string": "Whoops! You broke our site!",
+      "e_string": "\"legalName\":",
+      "m_string": "Sorry, we can't find that page.",
       "m_code": 404,
       "known": [
-        "blue",
-        "john"
+        "breeze_roofing",
+        "jsb_construction"
       ],
-      "cat": "social"
+      "cat": "business"
     },
     {
       "name": "myfitnesspal Author",
@@ -5444,20 +5418,6 @@
       "cat": "misc"
     },
     {
-      "name": "myportfolio",
-      "uri_check": "https://{account}.myportfolio.com/work",
-      "strip_bad_char": ".",
-      "e_code": 200,
-      "e_string": "class=\"page-title",
-      "m_string": "<title>Adobe Portfolio | Build your own personalized website</title>",
-      "m_code": 302,
-      "known": [
-        "artkonina",
-        "fox"
-      ],
-      "cat": "misc"
-    },
-    {
       "name": "MySpace",
       "uri_check": "https://myspace.com/{account}",
       "e_code": 200,
@@ -5474,11 +5434,11 @@
       "name": "myWishBoard",
       "uri_check": "https://mywishboard.com/@{account}",
       "e_code": 200,
-      "e_string": "class=\"MwbUserHeader\"",
-      "m_string": "class=\"MwbError\"",
+      "e_string": "user.profile\\\",\\\"login\\\":",
+      "m_string": "User not found</span>",
       "m_code": 404,
       "known": [
-        "ke7_2024",
+        "ilia_komarov",
         "alekseevvasil"
       ],
       "cat": "shopping"
@@ -5807,7 +5767,7 @@
       "cat": "tech"
     },
     {
-      "name": "OPGG",
+      "name": "OP.GG",
       "uri_check": "https://eune.op.gg/summoners/eune/{account}",
       "e_code": 200,
       "e_string": "- Summoner Stats - League of Legends",
