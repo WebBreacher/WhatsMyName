@@ -1663,12 +1663,12 @@
       "name": "depop",
       "uri_check": "https://www.depop.com/{account}/",
       "e_code": 200,
-      "e_string": "s Shop - Depop",
+      "e_string": "{\"name\":\"",
       "m_string": "Sorry, that page doesn't exist",
       "m_code": 404,
       "known": [
         "sara",
-        "susan"
+        "avastone1234"
       ],
       "cat": "shopping"
     },
@@ -7679,19 +7679,6 @@
       "cat": "gaming"
     },
     {
-      "name": "SpiceWorks",
-      "uri_check": "https://community.spiceworks.com/people/{account}",
-      "e_code": 200,
-      "e_string": "Portfolio of IT Projects - Spiceworks",
-      "m_string": "Page Not Found",
-      "m_code": 404,
-      "known": [
-        "spicerex",
-        "rod-it"
-      ],
-      "cat": "tech"
-    },
-    {
       "name": "SPOJ",
       "uri_check": "https://www.spoj.com/users/{account}/",
       "e_code": 200,
@@ -9146,16 +9133,15 @@
       "cat": "hobby"
     },
     {
-      "name": "watchmemore.com",
-      "uri_check": "https://api.watchmemore.com/api4/profile/{account}/",
-      "uri_pretty": "https://watchmemore.com/{account}/",
+      "name": "WatchMeMore",
+      "uri_check": "https://watchmemore.com/{account}/",
       "e_code": 200,
-      "e_string": "displayName",
-      "m_string": "notExists",
-      "m_code": 400,
+      "e_string": "\"dateCreated\":",
+      "m_string": "\"Account not exists",
+      "m_code": 404,
       "known": [
-        "medroxy",
-        "nodjev"
+        "ladykingaxxx",
+        "slodkapsotka"
       ],
       "cat": "xx NSFW xx"
     },
