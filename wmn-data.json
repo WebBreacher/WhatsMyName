@@ -1689,20 +1689,6 @@
       "cat": "finance"
     },
     {
-      "name": "Destructoid",
-      "uri_check": "https://www.destructoid.com/?name={account}",
-      "e_code": 200,
-      "e_string": "Follow",
-      "m_string": "Error in query",
-      "m_code": 200,
-      "known": [
-        "john",
-        "alice",
-        "bob"
-      ],
-      "cat": "social"
-    },
-    {
       "name": "dev.to",
       "uri_check": "https://dev.to/api/users/by_username?url={account}",
       "uri_pretty": "https://dev.to/{account}",
@@ -2046,8 +2032,8 @@
       "name": "dot.cards",
       "uri_check": "https://dot.cards/{account}",
       "e_code": 200,
-      "e_string": "status\": \"success",
-      "m_string": "status\": \"username_not_found",
+      "e_string": "\"user_id\":\"",
+      "m_string": "\"status\":\"username_not_found",
       "m_code": 200,
       "known": [
         "dakmusic",
@@ -2366,19 +2352,6 @@
       "cat": "gaming"
     },
     {
-      "name": "fanpop",
-      "uri_check": "https://www.fanpop.com/fans/{account}",
-      "e_code": 200,
-      "e_string": "Fanpopping since",
-      "m_string": "",
-      "m_code": 302,
-      "known": [
-        "test",
-        "johndoe"
-      ],
-      "cat": "social"
-    },
-    {
       "name": "Fanslist (OnlyFans)",
       "uri_check": "https://fanslist.com/search?q={account}",
       "e_code": 200,
@@ -2620,19 +2593,6 @@
         "sam"
       ],
       "cat": "gaming"
-    },
-    {
-      "name": "forumprawne.org",
-      "uri_check": "https://forumprawne.org/members/{account}.html",
-      "e_code": 200,
-      "e_string": "Wiadomość",
-      "m_string": "",
-      "m_code": 500,
-      "known": [
-        "test",
-        "test2"
-      ],
-      "cat": "misc"
     },
     {
       "name": "Fosstodon.org (Mastodon Instance)",
@@ -2990,19 +2950,6 @@
       "cat": "social"
     },
     {
-      "name": "getmonero",
-      "uri_check": "https://forum.getmonero.org/user/{account}",
-      "e_code": 200,
-      "e_string": "Monero | User",
-      "m_string": "Monero | Page not found. Error: 404",
-      "m_code": 200,
-      "known": [
-        "silverfox",
-        "monero"
-      ],
-      "cat": "misc"
-    },
-    {
       "name": "Gettr",
       "uri_check": "https://gettr.com/api/s/uinf/{account}",
       "uri_pretty": "https://gettr.com/user/{account}",
@@ -3255,14 +3202,14 @@
     },
     {
       "name": "GTAinside.com",
-      "uri_check": "https://www.gtainside.com/user/{account}",
+      "uri_check": "https://www.gtainside.com/profile/{account}",
       "e_code": 200,
-      "e_string": "userpage_user",
-      "m_string": "<h1>404 Not Found",
-      "m_code": 200,
+      "e_string": "class=\"user-profile-name\"",
+      "m_string": "<title>Page not found - 404</title>",
+      "m_code": 404,
       "known": [
-        "daniel",
-        "franco"
+        "yessin0624",
+        "Asyr0n"
       ],
       "cat": "gaming"
     },
