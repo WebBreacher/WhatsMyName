@@ -3268,13 +3268,14 @@
       "uri_check": "https://en.gravatar.com/{account}.json",
       "uri_pretty": "https://en.gravatar.com/{account}",
       "e_code": 200,
-      "e_string": "entry",
-      "m_string": "User not found",
+      "e_string": "{\"entry\":",
+      "m_string": "\"User not found\"",
       "m_code": 404,
       "known": [
-        "test"
+        "webbreacher",
+        "mubix"
       ],
-      "cat": "images"
+      "cat": "social"
     },
     {
       "name": "Greasy Fork",
@@ -6521,11 +6522,11 @@
       "uri_check": "https://pokec.azet.sk/{account}",
       "e_code": 200,
       "e_string": "idReportedUser",
-      "m_string": "Neexistujúci používateľ",
+      "m_string": "profile--unknown_title\">Neexistujúci používateľ",
       "m_code": 404,
       "known": [
-        "tobias",
-        "brahim1"
+        "frantisekraj",
+        "palinoo100"
       ],
       "cat": "social"
     },
@@ -6544,17 +6545,16 @@
     },
     {
       "name": "Polarsteps",
-      "uri_check": "https://api.polarsteps.com/users/byusername/{account}",
-      "uri_pretty": "https://www.polarsteps.com/{account}",
+      "uri_check": "https://www.polarsteps.com/{account}",
       "e_code": 200,
-      "e_string": "\"id\":",
-      "m_string": "<title>404 Not Found</title>",
-      "m_code": 404,
+      "e_string": "\"user-profile\"",
+      "m_string": "Ups! User not found.",
+      "m_code": 200,
       "known": [
-        "EngelBos",
-        "GunnarEndlich"
+        "CharlineVerhulst",
+        "TwenteTravelers"
       ],
-      "cat": "hobby"
+      "cat": "social"
     },
     {
       "name": "Polchat.pl",
@@ -6817,19 +6817,6 @@
         "test2"
       ],
       "cat": "tech"
-    },
-    {
-      "name": "Public.com",
-      "uri_check": "https://public.com/@{account}",
-      "e_code": 200,
-      "e_string": "\"publicId\":",
-      "m_string": "<title>404 - Page Not Found</title>",
-      "m_code": 404,
-      "known": [
-        "igor1",
-        "david2"
-      ],
-      "cat": "finance"
     },
     {
       "name": "pypi",
@@ -9569,8 +9556,8 @@
       "m_string": "<title>Bad request",
       "m_code": 400,
       "known": [
-        "john",
-        "mumrra"
+        "lustfullibertines",
+        "lia-lin"
       ],
       "cat": "xx NSFW xx"
     },
