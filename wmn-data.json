@@ -176,20 +176,6 @@
       "cat": "finance"
     },
     {
-      "name": "Albicla",
-      "uri_check": "https://albicla.com/{account}/post/1",
-      "uri_pretty": "https://albicla.com/{account}",
-      "e_code": 500,
-      "e_string": "500 Post tymczasowo niedostępny",
-      "m_string": "404 Nie znaleziono użytkownika",
-      "m_code": 200,
-      "known": [
-        "GazetaPolska",
-        "GPCodziennie"
-      ],
-      "cat": "social"
-    },
-    {
       "name": "alik",
       "uri_check": "https://www.alik.cz/u/{account}",
       "e_code": 200,
@@ -2178,16 +2164,19 @@
     },
     {
       "name": "eBay",
-      "uri_check": "https://www.ebay.com/usr/{account}",
+      "uri_check": "https://www.ebay.com/usr/{account}?_tab=about",
       "e_code": 200,
-      "e_string": "on eBay</title>",
-      "m_string": "The User ID you entered was not found",
+      "e_string": "\"text\":\" followers\"",
+      "m_string": "Sorry, this store was not found.",
       "m_code": 200,
       "known": [
-        "the_gqs",
-        "johnny"
+        "mwdavis50",
+        "quickshipelectronics"
       ],
-      "cat": "shopping"
+      "cat": "shopping",
+      "protection": [
+        "other"
+      ]
     },
     {
       "name": "ebay_stores",
@@ -2219,19 +2208,6 @@
         "Gloomer"
       ],
       "cat": "social"
-    },
-    {
-      "name": "Engadget",
-      "uri_check": "https://www.engadget.com/about/editors/{account}/",
-      "e_code": 200,
-      "e_string": "\"displayName\"",
-      "m_string": "<title>,  - Engadget</title>",
-      "m_code": 200,
-      "known": [
-        "devindra-hardawar",
-        "kris-holt"
-      ],
-      "cat": "tech"
     },
     {
       "name": "EPORNER",
@@ -2431,19 +2407,6 @@
       "protection": [
         "cloudfront"
       ]
-    },
-    {
-      "name": "Fark",
-      "uri_check": "https://www.fark.com/users/{account}",
-      "e_code": 200,
-      "e_string": "Fark account number",
-      "m_string": "Tastes like chicken.",
-      "m_code": 200,
-      "known": [
-        "bob",
-        "bobby"
-      ],
-      "cat": "social"
     },
     {
       "name": "Federated.press (Mastodon Instance)",
@@ -4168,20 +4131,6 @@
       "cat": "tech"
     },
     {
-      "name": "Issuu",
-      "uri_check": "https://issuu.com/call/signup/v2/check-username/{account}",
-      "uri_pretty": "https://issuu.com/{account}",
-      "e_code": 200,
-      "e_string": "\"status\":\"unavailable\"",
-      "m_string": "\"status\":\"available\"",
-      "m_code": 200,
-      "known": [
-        "letsplayhockey",
-        "the_anchor"
-      ],
-      "cat": "social"
-    },
-    {
       "name": "itch.io",
       "uri_check": "https://itch.io/profile/{account}",
       "e_code": 200,
@@ -4271,19 +4220,6 @@
         "lasior"
       ],
       "cat": "misc"
-    },
-    {
-      "name": "JSFiddle",
-      "uri_check": "https://jsfiddle.net/user/{account}/",
-      "e_code": 200,
-      "e_string": "Settings - JSFiddle - Code Playground",
-      "m_string": "That page doesn't exist.",
-      "m_code": 404,
-      "known": [
-        "john",
-        "alex"
-      ],
-      "cat": "coding"
     },
     {
       "name": "Justforfans",
