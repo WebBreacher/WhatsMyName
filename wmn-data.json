@@ -505,11 +505,10 @@
       "name": "babepedia",
       "uri_check": "https://www.babepedia.com/user/{account}",
       "e_code": 200,
-      "e_string": "'s Page</title>",
+      "e_string": "'s Profile</title>",
       "m_string": "Profile not found",
       "m_code": 404,
       "known": [
-        "cherry",
         "betty"
       ],
       "cat": "xx NSFW xx"
@@ -761,7 +760,7 @@
       "name": "Blogmarks",
       "uri_check": "http://blogmarks.net/user/{account}",
       "e_code": 200,
-      "e_string": "class=\"mark\"",
+      "e_string": "Public marks from",
       "m_string": "",
       "m_code": 200,
       "known": [
@@ -1572,11 +1571,11 @@
       "name": "Daily Kos",
       "uri_check": "https://www.dailykos.com/user/{account}",
       "e_code": 200,
-      "e_string": "id=\"userData\"",
+      "e_string": "\"@type\":\"ProfilePage\"",
       "m_string": "Page not found! (404)",
       "m_code": 404,
       "known": [
-        "msouza",
+        "Hunter",
         "kos"
       ],
       "cat": "news"
@@ -1664,12 +1663,12 @@
       "name": "depop",
       "uri_check": "https://www.depop.com/{account}/",
       "e_code": 200,
-      "e_string": "s Shop - Depop",
+      "e_string": "{\"name\":\"",
       "m_string": "Sorry, that page doesn't exist",
       "m_code": 404,
       "known": [
         "sara",
-        "susan"
+        "avastone1234"
       ],
       "cat": "shopping"
     },
@@ -4662,7 +4661,7 @@
       "name": "LINE",
       "uri_check": "https://line.me/R/ti/p/@{account}?from=page",
       "e_code": 200,
-      "e_string": "Add LINE Friends via QR Code",
+      "e_string": "Add LINE friend",
       "m_string": "404 Not Found",
       "m_code": 404,
       "known": [
@@ -5679,7 +5678,7 @@
       "name": "NaturalNews",
       "uri_check": "https://naturalnews.com/author/{account}/",
       "e_code": 200,
-      "e_string": "All posts by",
+      "e_string": "class=\"Headline\"",
       "m_string": "The page you are looking for cannot be found or is no longer available.",
       "m_code": 200,
       "known": [
@@ -6036,19 +6035,6 @@
         "spiken8"
       ],
       "cat": "gaming"
-    },
-    {
-      "name": "Our Freedom Book",
-      "uri_check": "https://www.ourfreedombook.com/{account}",
-      "e_code": 200,
-      "e_string": "meta property=\"og:",
-      "m_string": "Sorry, page not found",
-      "m_code": 302,
-      "known": [
-        "DaveLipsky",
-        "StarlaJene"
-      ],
-      "cat": "social"
     },
     {
       "name": "palnet",
@@ -6453,7 +6439,7 @@
       "name": "pixelfed.social",
       "uri_check": "https://pixelfed.social/{account}",
       "e_code": 200,
-      "e_string": "on pixelfed</title>",
+      "e_string": "- Pixelfed</title>",
       "m_string": "<title>pixelfed</title>",
       "m_code": 404,
       "known": [
@@ -6735,7 +6721,7 @@
       "uri_check": "https://discuss.privacyguides.net/u/{account}.json",
       "uri_pretty": "https://discuss.privacyguides.net/u/{account}/summary",
       "e_code": 200,
-      "e_string": "assign_path",
+      "e_string": "\"user_badges\":",
       "m_string": "The requested URL or resource could not be found.",
       "m_code": 404,
       "known": [
@@ -6859,11 +6845,10 @@
       "name": "QUEER PL",
       "uri_check": "https://queer.pl/user/{account}",
       "e_code": 200,
-      "e_string": "Ostatnio on-line",
+      "e_string": " - Profile</title>",
       "m_string": "Strona nie została znaleziona",
       "m_code": 404,
       "known": [
-        "claudii",
         "kowalski"
       ],
       "cat": "social"
@@ -7694,19 +7679,6 @@
       "cat": "gaming"
     },
     {
-      "name": "SpiceWorks",
-      "uri_check": "https://community.spiceworks.com/people/{account}",
-      "e_code": 200,
-      "e_string": "Portfolio of IT Projects - Spiceworks",
-      "m_string": "Page Not Found",
-      "m_code": 404,
-      "known": [
-        "spicerex",
-        "rod-it"
-      ],
-      "cat": "tech"
-    },
-    {
       "name": "SPOJ",
       "uri_check": "https://www.spoj.com/users/{account}/",
       "e_code": 200,
@@ -8263,7 +8235,7 @@
       "name": "theguardian",
       "uri_check": "https://www.theguardian.com/profile/{account}",
       "e_code": 200,
-      "e_string": "<h2 class=\"dcr-1ln6kec\">",
+      "e_string": "content=\"&#x3C;p&#x3E;",
       "m_string": "<title>Page Not Found | The Guardian</title>",
       "m_code": 404,
       "known": [
@@ -8844,7 +8816,7 @@
       "name": "Uwumarket",
       "uri_check": "https://uwumarket.us/collections/{account}",
       "e_code": 200,
-      "e_string": "collection-hero__text-wrapper",
+      "e_string": "data-collection-filters",
       "m_string": "Page not found",
       "m_code": 404,
       "known": [
@@ -8896,7 +8868,7 @@
       "name": "vibilagare",
       "uri_check": "https://www.vibilagare.se/users/{account}",
       "e_code": 200,
-      "e_string": "Profil på vibilagare.se",
+      "e_string": "class=\"user-profile\"",
       "m_string": "Sidan hittades inte |",
       "m_code": 404,
       "known": [
@@ -8909,7 +8881,7 @@
       "name": "VIEWBUG",
       "uri_check": "https://www.viewbug.com/member/{account}",
       "e_code": 200,
-      "e_string": "class=\"top-profile-since\"",
+      "e_string": "class=\"top-profile-membership\"",
       "m_string": "id=\"missing-this\"",
       "m_code": 404,
       "known": [
@@ -9111,7 +9083,7 @@
       "name": "W3Schools",
       "uri_check": "https://pathfinder-api.kai.w3spaces.com/public-profile-api/{account}",
       "e_code": 200,
-      "e_string": "\"userId\":",
+      "e_string": "\"createdAt\":",
       "m_string": "\"message\":\"Profile does not exists or not visible\"",
       "m_code": 404,
       "known": [
@@ -9161,16 +9133,15 @@
       "cat": "hobby"
     },
     {
-      "name": "watchmemore.com",
-      "uri_check": "https://api.watchmemore.com/api4/profile/{account}/",
-      "uri_pretty": "https://watchmemore.com/{account}/",
+      "name": "WatchMeMore",
+      "uri_check": "https://watchmemore.com/{account}/",
       "e_code": 200,
-      "e_string": "displayName",
-      "m_string": "notExists",
-      "m_code": 400,
+      "e_string": "\"dateCreated\":",
+      "m_string": "\"Account not exists",
+      "m_code": 404,
       "known": [
-        "medroxy",
-        "nodjev"
+        "ladykingaxxx",
+        "slodkapsotka"
       ],
       "cat": "xx NSFW xx"
     },
@@ -9565,7 +9536,7 @@
       "name": "xHamster",
       "uri_check": "https://xhamster.com/users/{account}",
       "e_code": 200,
-      "e_string": "s profile | xHamster</title>",
+      "e_string": "and bio on xHamster",
       "m_string": "User not found</title>",
       "m_code": 404,
       "known": [
