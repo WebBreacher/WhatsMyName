@@ -176,20 +176,6 @@
       "cat": "finance"
     },
     {
-      "name": "Albicla",
-      "uri_check": "https://albicla.com/{account}/post/1",
-      "uri_pretty": "https://albicla.com/{account}",
-      "e_code": 500,
-      "e_string": "500 Post tymczasowo niedostępny",
-      "m_string": "404 Nie znaleziono użytkownika",
-      "m_code": 200,
-      "known": [
-        "GazetaPolska",
-        "GPCodziennie"
-      ],
-      "cat": "social"
-    },
-    {
       "name": "alik",
       "uri_check": "https://www.alik.cz/u/{account}",
       "e_code": 200,
@@ -2219,19 +2205,6 @@
         "Gloomer"
       ],
       "cat": "social"
-    },
-    {
-      "name": "Engadget",
-      "uri_check": "https://www.engadget.com/about/editors/{account}/",
-      "e_code": 200,
-      "e_string": "\"displayName\"",
-      "m_string": "<title>,  - Engadget</title>",
-      "m_code": 200,
-      "known": [
-        "devindra-hardawar",
-        "kris-holt"
-      ],
-      "cat": "tech"
     },
     {
       "name": "EPORNER",
@@ -4271,19 +4244,6 @@
         "lasior"
       ],
       "cat": "misc"
-    },
-    {
-      "name": "JSFiddle",
-      "uri_check": "https://jsfiddle.net/user/{account}/",
-      "e_code": 200,
-      "e_string": "Settings - JSFiddle - Code Playground",
-      "m_string": "That page doesn't exist.",
-      "m_code": 404,
-      "known": [
-        "john",
-        "alex"
-      ],
-      "cat": "coding"
     },
     {
       "name": "Justforfans",
