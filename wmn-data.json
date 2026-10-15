@@ -505,11 +505,10 @@
       "name": "babepedia",
       "uri_check": "https://www.babepedia.com/user/{account}",
       "e_code": 200,
-      "e_string": "'s Page</title>",
+      "e_string": "'s Profile</title>",
       "m_string": "Profile not found",
       "m_code": 404,
       "known": [
-        "cherry",
         "betty"
       ],
       "cat": "xx NSFW xx"
@@ -761,7 +760,7 @@
       "name": "Blogmarks",
       "uri_check": "http://blogmarks.net/user/{account}",
       "e_code": 200,
-      "e_string": "class=\"mark\"",
+      "e_string": "Public marks from",
       "m_string": "",
       "m_code": 200,
       "known": [
@@ -1572,11 +1571,11 @@
       "name": "Daily Kos",
       "uri_check": "https://www.dailykos.com/user/{account}",
       "e_code": 200,
-      "e_string": "id=\"userData\"",
+      "e_string": "\"@type\":\"ProfilePage\"",
       "m_string": "Page not found! (404)",
       "m_code": 404,
       "known": [
-        "msouza",
+        "Hunter",
         "kos"
       ],
       "cat": "news"
@@ -4662,7 +4661,7 @@
       "name": "LINE",
       "uri_check": "https://line.me/R/ti/p/@{account}?from=page",
       "e_code": 200,
-      "e_string": "Add LINE Friends via QR Code",
+      "e_string": "Add LINE friend",
       "m_string": "404 Not Found",
       "m_code": 404,
       "known": [
@@ -5679,7 +5678,7 @@
       "name": "NaturalNews",
       "uri_check": "https://naturalnews.com/author/{account}/",
       "e_code": 200,
-      "e_string": "All posts by",
+      "e_string": "class=\"Headline\"",
       "m_string": "The page you are looking for cannot be found or is no longer available.",
       "m_code": 200,
       "known": [
@@ -6453,7 +6452,7 @@
       "name": "pixelfed.social",
       "uri_check": "https://pixelfed.social/{account}",
       "e_code": 200,
-      "e_string": "on pixelfed</title>",
+      "e_string": "- Pixelfed</title>",
       "m_string": "<title>pixelfed</title>",
       "m_code": 404,
       "known": [
@@ -6859,11 +6858,10 @@
       "name": "QUEER PL",
       "uri_check": "https://queer.pl/user/{account}",
       "e_code": 200,
-      "e_string": "Ostatnio on-line",
+      "e_string": " - Profile</title>",
       "m_string": "Strona nie została znaleziona",
       "m_code": 404,
       "known": [
-        "claudii",
         "kowalski"
       ],
       "cat": "social"
