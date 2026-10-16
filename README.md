@@ -76,6 +76,7 @@ Tools and scripts read this file and do the actual checking. That separation mea
 | [LinkScope](https://github.com/AccentuSoft/LinkScope_Client) | ![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white) | Uses WMN in its **Online Identity** category. |
 | [Maltego WhatsMyName Transforms](https://github.com/TURROKS/Maltego_WhatsMyName) | ![Maltego](https://img.shields.io/badge/-Maltego-1A1A1A) | Local Maltego transforms that check usernames in real time using the JSON file. |
 | [Spiderfoot](https://github.com/smicallef/spiderfoot) | ![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white) | Integrates WMN in the `sfp_account` module. ([CLI demo video](https://asciinema.org/a/295923)) |
+| [WhatsMyName Apps (Android)](https://play.google.com/store/apps/details?id=whatsmyname.app.us) | ![Android](https://img.shields.io/badge/-Android-3DDC84?logo=android&logoColor=white) | Free Android app — username search across 3,150+ sites, scans on your phone, 10 languages. No account needed. |
 
 ### 🐳 Self-hosted and containerized
 | Tool | Type | Description |
