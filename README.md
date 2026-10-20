@@ -54,7 +54,7 @@ Tools and scripts read this file and do the actual checking. That separation mea
 | Tool | Type | Description |
 |------|------|-------------|
 | [whatsmyname.app](https://whatsmyname.app/) | ![Web](https://img.shields.io/badge/-Web-FF6F00) | The go-to web interface by [Chris Poulter](https://twitter.com/osintcombine). Filters by category, exports to CSV, always pulls the latest data. |
-| [WhatsMyName Apps](https://whatsmynameapps.us/) | ![Web](https://img.shields.io/badge/-Web-FF6F00) | Free browser-based username search across 3,165 sites (WMN data merged with Sherlock and Maigret). Live results, grid/list/table views, public profile details, export to JSON/CSV, 10 languages. No sign-up. |
+| [WhatsMyName Apps](https://whatsmynameapps.us/) | ![Web](https://img.shields.io/badge/-Web-FF6F00) | WhatsMyName Apps (independent, not affiliated). Merges WMN data with Sherlock and Maigret. |
 | [Who Am I](https://chromewebstore.google.com/detail/who-am-i/gdnhlhadhgnhaenfcphpeakdghkccfoo) | ![Chrome Extension](https://img.shields.io/badge/-Chrome%20Extension-4285F4?logo=googlechrome&logoColor=white) | Chrome/Brave extension combining WMN data with Sherlock and Maigret, by [OSINT Liar](https://osintliar.com/). |
 | [K2OSINT Bookmarklet](https://github.com/K2SOsint/Bookmarklets/blob/main/WhatsMyName.js) | ![Bookmarklet](https://img.shields.io/badge/-Bookmarklet-lightgrey) | Browser bookmarklet -- enter a username in a popup, results open in a new tab. |
 
@@ -82,6 +82,27 @@ Tools and scripts read this file and do the actual checking. That separation mea
 |------|------|-------------|
 | [WhatsMyName-Web](https://github.com/AXRoux/WhatsMyName-Web) | ![Flask](https://img.shields.io/badge/-Flask-000000?logo=flask&logoColor=white) | Simple Flask web app version of WhatsMyName by [@AXRoux](https://github.com/AXRoux/). |
 | [WhatsMyName Docker](https://github.com/kodamaChameleon/wmn-docker) | ![Docker](https://img.shields.io/badge/-Docker-2496ED?logo=docker&logoColor=white) | Docker API wrapper over the WMN tool by [@kodamaChameleon](https://github.com/kodamaChameleon). |
+
+---
+
+## The WhatsMyName name
+
+WhatsMyName is the name of this project, created by Micah Hoffman in 2015.
+
+The CC BY-SA 4.0 license covers the data in this repository. It does not grant rights to the WhatsMyName name or logo. You are welcome to build on the data, and we ask that you credit the project as the license requires, for example: "Uses data from the WhatsMyName project (CC BY-SA 4.0)." 
+
+**Using the name in your tool:**
+- **Describing what your tool uses is fine:** "Powered by WhatsMyName data", "a WhatsMyName client", "WhatsMyName transforms for Maltego".
+- **Naming your product, domain, app or social accounts "WhatsMyName" (or a close variant) needs our permission first.** This includes ad-supported and commercial sites. It keeps users from confusing your product with this project.
+- **Don't describe your tool as "official"** or imply it is run or endorsed by the WhatsMyName project unless we have agreed to that in writing.
+
+Questions or permission requests: open an issue in this respository.
+
+---
+
+## Official resources
+
+The only official home of WhatsMyName is this repository: https://github.com/WebBreacher/WhatsMyName and https://whatsmyna.me.
 
 ---
 
