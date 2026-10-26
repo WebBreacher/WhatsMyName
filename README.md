@@ -73,7 +73,7 @@ Tools and scripts read this file and do the actual checking. That separation mea
 ### 🖥️ Desktop, browser, and platforms
 | Tool | Type | Description |
 |------|------|-------------|
-| [NameSeeker](https://github.com/funnyzak/name-seeker) | ![Electron](https://img.shields.io/badge/-Electron-47848F?logo=electron&logoColor=white) | Cross-platform desktop app for username and email search across hundreds of sites. Exports to PDF, CSV, and JSON. |
+| [NameSeeker](https://github.com/funnyzak/name-seeker) | ![Tauri](https://img.shields.io/badge/-Tauri-FFC131?logo=tauri&logoColor=white) | Cross-platform desktop app for username and email search across hundreds of sites. Exports to PDF, CSV, and JSON. |
 | [Maltego WhatsMyName Transforms](https://github.com/TURROKS/Maltego_WhatsMyName) | ![Maltego](https://img.shields.io/badge/-Maltego-1A1A1A) | Local Maltego transforms that check usernames in real time using the JSON file. |
 | [Who Am I](https://chromewebstore.google.com/detail/who-am-i/gdnhlhadhgnhaenfcphpeakdghkccfoo) | ![Chrome Extension](https://img.shields.io/badge/-Chrome%20Extension-4285F4?logo=googlechrome&logoColor=white) | Chrome/Brave extension combining WMN data with Sherlock and Maigret, by [OSINT Liar](https://osintliar.com/). |
 
