@@ -1,7 +1,7 @@
 import json
 import sys
 
-from jsonschema import Draft7Validator
+from jsonschema.validators import validator_for
 
 DATA_FILE = "wmn-data.json"
 SCHEMA_FILE = "wmn-data-schema.json"
@@ -39,16 +39,40 @@ def check_categories_match_cat_enum(data, schema):
     return "categories array and cat enum are out of sync (" + "; ".join(details) + ")"
 
 
+def check_duplicate_site_names(data):
+    names = [site.get("name") for site in data.get("sites", []) if site.get("name")]
+    seen = set()
+    duplicates = set()
+    for name in names:
+        if name in seen:
+            duplicates.add(name)
+        else:
+            seen.add(name)
+    if not duplicates:
+        return None
+    return f"duplicate site name(s) in sites: {sorted(duplicates)}"
+
+
 def main():
     data = load_json(DATA_FILE)
     schema = load_json(SCHEMA_FILE)
 
-    validator = Draft7Validator(schema)
+    # Picks the validator class matching the schema's own declared $schema
+    # draft, instead of hardcoding one -- upgrading the schema's draft later
+    # won't require a matching code change here.
+    validator = validator_for(schema)(schema)
     errors = sorted(validator.iter_errors(data), key=lambda e: list(e.path))
 
-    category_sync_error = check_categories_match_cat_enum(data, schema)
+    extra_errors = [
+        err
+        for err in (
+            check_categories_match_cat_enum(data, schema),
+            check_duplicate_site_names(data),
+        )
+        if err
+    ]
 
-    if not errors and not category_sync_error:
+    if not errors and not extra_errors:
         print(f"{DATA_FILE} is valid against {SCHEMA_FILE}.")
         return 0
 
@@ -60,10 +84,10 @@ def main():
         location = f"sites[{path[1]}] ({site_name})" if site_name else "/".join(str(p) for p in path)
         print(f"ERROR at {location}: {error.message}")
 
-    if category_sync_error:
-        print(f"ERROR: {category_sync_error}")
+    for extra_error in extra_errors:
+        print(f"ERROR: {extra_error}")
 
-    total_errors = len(errors) + (1 if category_sync_error else 0)
+    total_errors = len(errors) + len(extra_errors)
     print(f"\n{total_errors} error(s) found in {DATA_FILE}.")
     return 1
 

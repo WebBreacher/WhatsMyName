@@ -25,6 +25,12 @@ jobs:
       - name: Run Python sorting script
         run: python scripts/sort_format_json.py
 
+      - name: Install dependencies
+        run: pip install -r scripts/requirements.txt
+
+      - name: Validate JSON before committing
+        run: python scripts/validate_json.py
+
       - name: Commit if changed
         run: |
           git config --global user.name "github-actions"
