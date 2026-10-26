@@ -16,7 +16,7 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install jsonschema
+        run: pip install -r scripts/requirements.txt
 
       - name: Validate wmn-data.json against schema
         run: python scripts/validate_json.py

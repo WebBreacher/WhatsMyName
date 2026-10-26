@@ -19,7 +19,7 @@ These are the most common reasons a PR gets sent back for changes. Read them bef
 3. **List at least two `known` accounts, and prefer well-established ones.** Pick accounts that are unlikely to be deleted or renamed -- popular, long-standing users are safer bets than accounts created for testing.
 4. **Prefer GET over POST.** The project supports both, but GET is simpler to maintain and debug. Only use `post_body` when the site genuinely requires it.
 5. **Make `e_string` and `m_string` truly unique.** Prefer a fragment of JSON or a distinctive piece of HTML (an id, a class name, a JSON key) over a plain phrase like `"joined at"`, which can appear on unrelated pages and cause false positives.
-6. **Don't add new categories.** Use one of the existing values in the top-level `categories` array. If you think a genuinely new category is needed, open an issue to discuss it first rather than adding one in a data PR.
+6. **Don't add new categories.** Use one of the existing values in [`wmn-data-schema.json`](wmn-data-schema.json)'s `cat` enum -- that's the authoritative list. The top-level `categories` array in `wmn-data.json` is just a generated mirror of it (kept in sync automatically), not a separate source. If you think a genuinely new category is needed, open an issue to discuss it first rather than adding one in a data PR.
 7. **First-time contributor? Add yourself to `authors`.** Add your name or handle to the `authors` array at the top of `wmn-data.json`. Welcome, and thank you.
 8. **Validate your JSON before you submit.** Edit with a syntax-highlighting editor or JSON-aware IDE and fix anything it flags as invalid before opening the PR. See [Formatting and validation](#formatting-and-validation) for how to check this yourself.
 9. **Keep PRs less than 10 sites.** If you have more additions, fixes, or removals than that, split them into separate PRs, or submit one and wait for it to be reviewed before opening the next. A single error in a 50-site PR can hold up 49 good changes.
@@ -48,7 +48,7 @@ Fields marked optional can be omitted, but when present, keep them in this order
 | `m_string` | required | A unique string present only when the account does not exist (rule 5) |
 | `m_code` | required | HTTP status code for an account that doesn't exist |
 | `known` | required | At least two verified usernames for testing (rule 3) |
-| `cat` | required | One of the existing values in the top-level `categories` array (rule 6) |
+| `cat` | required | One of the existing values in the schema's `cat` enum (rule 6) |
 | `valid` | optional | Only set to `false` to tell checkers to skip a temporarily-broken site |
 | `protection` | optional | Anti-automation measures present: `captcha`, `cloudflare`, `user-agent`, `user-auth`, etc. |
 
