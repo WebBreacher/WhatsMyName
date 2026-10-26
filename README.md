@@ -64,7 +64,7 @@ Tools and scripts read this file and do the actual checking. That separation mea
 | Tool | Type | Description |
 |------|------|-------------|
 | [Naminter](https://github.com/3xp0rt/Naminter) | ![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white) | Built specifically for this dataset. Supports Cloudflare bypass, browser impersonation, concurrent checking, and extensive config options. |
-| [Blackbird](https://github.com/p1ngul1n0/blackbird) | ![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white) | Fast username search that integrates WMN data. |
+| [Blackbird](https://github.com/antoniaci/blackbird) | ![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white) | Fast username search that integrates WMN data. |
 | [WhatsMyName-Python](https://github.com/C3n7ral051nt4g3ncy/WhatsMyName-Python) | ![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white) | Simple Python script by [@C3n7ral051nt4g3ncy](https://github.com/C3n7ral051nt4g3ncy). |
 
 ### 🖥️ Desktop, browser, and platforms
