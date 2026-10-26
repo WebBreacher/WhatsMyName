@@ -13,6 +13,10 @@
 
 Created in 2015 by [Micah "WebBreacher" Hoffman](https://webbreacher.com), WhatsMyName started as a personal fix for a real frustration: existing username checkers were full of false positives. Over the years, contributions from people all over the world have grown it into one of the most widely-used username enumeration datasets in the OSINT community.
 
+WhatsMyName has grown well beyond this repository. Many tools and sites now build on our data, and some have adopted the WhatsMyName name as well. Not all of them are connected to this project. The tools in [Tools and Sites That Use WhatsMyName](#tools-and-sites-that-use-whatsmyname) use WhatsMyName data and acknowledge the project. If you're looking for a username search built on WhatsMyName data, start there.
+
+**Short link:** whatsmyna.me redirects to this repository and is our official domain name.
+
 ## Table of Contents
 
 - [Just want to search a username right now?](#just-want-to-search-a-username-right-now)
@@ -54,9 +58,7 @@ Tools and scripts read this file and do the actual checking. That separation mea
 | Tool | Type | Description |
 |------|------|-------------|
 | [whatsmyname.app](https://whatsmyname.app/) | ![Web](https://img.shields.io/badge/-Web-FF6F00) | The go-to web interface by [Chris Poulter](https://twitter.com/osintcombine). Filters by category, exports to CSV, always pulls the latest data. |
-| [WhatsMyName Apps](https://whatsmynameapps.us/) | ![Web](https://img.shields.io/badge/-Web-FF6F00) | Free browser-based username search across 3,165 sites (WMN data merged with Sherlock and Maigret). Live results, grid/list/table views, public profile details, export to JSON/CSV, 10 languages. No sign-up. |
-| [Who Am I](https://chromewebstore.google.com/detail/who-am-i/gdnhlhadhgnhaenfcphpeakdghkccfoo) | ![Chrome Extension](https://img.shields.io/badge/-Chrome%20Extension-4285F4?logo=googlechrome&logoColor=white) | Chrome/Brave extension combining WMN data with Sherlock and Maigret, by [OSINT Liar](https://osintliar.com/). |
-| [K2OSINT Bookmarklet](https://github.com/K2SOsint/Bookmarklets/blob/main/WhatsMyName.js) | ![Bookmarklet](https://img.shields.io/badge/-Bookmarklet-lightgrey) | Browser bookmarklet -- enter a username in a popup, results open in a new tab. |
+| [WhatsMyName Apps](https://whatsmynameapps.us/) | ![Web](https://img.shields.io/badge/-Web-FF6F00) | WhatsMyName Apps (independent, not affiliated). Merges WMN data with Sherlock and Maigret. |
 
 ### ⌨️ Command-line and scripts
 | Tool | Type | Description |
@@ -67,21 +69,40 @@ Tools and scripts read this file and do the actual checking. That separation mea
 | [WhatsMyName-Client](https://github.com/grabowskiadrian/WhatsMyName-Client) | ![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white) | Python script with request header and POST support by [@grabowskiadrian](https://github.com/grabowskiadrian). Also useful for testing the JSON config. |
 | [Reveal My Name](https://github.com/yooper/reveal-my-name) | ![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white) | The original Python checker that shipped with this project, maintained by [@yooper](https://github.com/yooper). |
 | [WMN Screenshooter](https://github.com/swedishmike/WMN_screenshooter) | ![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white) | Selenium-based helper that screenshots identified profile pages. |
-| [sn0int](https://github.com/kpcyrd/sn0int) | ![Rust](https://img.shields.io/badge/-Rust-000000?logo=rust&logoColor=white) | Uses WMN data in the [kpcyrd/whatsmyname](https://sn0int.com/r/kpcyrd/whatsmyname) module. |
 
-### 🖥️ Desktop and platforms
+### 🖥️ Desktop, browser, and platforms
 | Tool | Type | Description |
 |------|------|-------------|
 | [NameSeeker](https://github.com/funnyzak/name-seeker) | ![Electron](https://img.shields.io/badge/-Electron-47848F?logo=electron&logoColor=white) | Cross-platform desktop app for username and email search across hundreds of sites. Exports to PDF, CSV, and JSON. |
-| [LinkScope](https://github.com/AccentuSoft/LinkScope_Client) | ![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white) | Uses WMN in its **Online Identity** category. |
 | [Maltego WhatsMyName Transforms](https://github.com/TURROKS/Maltego_WhatsMyName) | ![Maltego](https://img.shields.io/badge/-Maltego-1A1A1A) | Local Maltego transforms that check usernames in real time using the JSON file. |
-| [Spiderfoot](https://github.com/smicallef/spiderfoot) | ![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white) | Integrates WMN in the `sfp_account` module. ([CLI demo video](https://asciinema.org/a/295923)) |
+| [Who Am I](https://chromewebstore.google.com/detail/who-am-i/gdnhlhadhgnhaenfcphpeakdghkccfoo) | ![Chrome Extension](https://img.shields.io/badge/-Chrome%20Extension-4285F4?logo=googlechrome&logoColor=white) | Chrome/Brave extension combining WMN data with Sherlock and Maigret, by [OSINT Liar](https://osintliar.com/). |
 
 ### 🐳 Self-hosted and containerized
 | Tool | Type | Description |
 |------|------|-------------|
 | [WhatsMyName-Web](https://github.com/AXRoux/WhatsMyName-Web) | ![Flask](https://img.shields.io/badge/-Flask-000000?logo=flask&logoColor=white) | Simple Flask web app version of WhatsMyName by [@AXRoux](https://github.com/AXRoux/). |
 | [WhatsMyName Docker](https://github.com/kodamaChameleon/wmn-docker) | ![Docker](https://img.shields.io/badge/-Docker-2496ED?logo=docker&logoColor=white) | Docker API wrapper over the WMN tool by [@kodamaChameleon](https://github.com/kodamaChameleon). |
+
+---
+
+## The WhatsMyName name
+
+WhatsMyName is the name of this project, created by Micah Hoffman in 2015.
+
+The CC BY-SA 4.0 license covers the data in this repository. It does not grant rights to the WhatsMyName name or logo. You are welcome to build on the data, and we ask that you credit the project as the license requires, for example: "Uses data from the WhatsMyName project (CC BY-SA 4.0)." 
+
+**Using the name in your tool:**
+- **Describing what your tool uses is fine:** "Powered by WhatsMyName data", "a WhatsMyName client", "WhatsMyName transforms for Maltego".
+- **Naming your product, domain, app or social accounts "WhatsMyName" (or a close variant) needs our permission first.** This includes ad-supported and commercial sites. It keeps users from confusing your product with this project.
+- **Don't describe your tool as "official"** or imply it is run or endorsed by the WhatsMyName project unless we have agreed to that in writing.
+
+Questions or permission requests: open an issue in this respository.
+
+---
+
+## Official resources
+
+The only official home of WhatsMyName is this repository: https://github.com/WebBreacher/WhatsMyName and https://whatsmyna.me.
 
 ---
 
