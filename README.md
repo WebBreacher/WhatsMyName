@@ -59,8 +59,6 @@ Tools and scripts read this file and do the actual checking. That separation mea
 |------|------|-------------|
 | [whatsmyname.app](https://whatsmyname.app/) | ![Web](https://img.shields.io/badge/-Web-FF6F00) | The go-to web interface by [Chris Poulter](https://twitter.com/osintcombine). Filters by category, exports to CSV, always pulls the latest data. |
 | [WhatsMyName Apps](https://whatsmynameapps.us/) | ![Web](https://img.shields.io/badge/-Web-FF6F00) | WhatsMyName Apps (independent, not affiliated). Merges WMN data with Sherlock and Maigret. |
-| [Who Am I](https://chromewebstore.google.com/detail/who-am-i/gdnhlhadhgnhaenfcphpeakdghkccfoo) | ![Chrome Extension](https://img.shields.io/badge/-Chrome%20Extension-4285F4?logo=googlechrome&logoColor=white) | Chrome/Brave extension combining WMN data with Sherlock and Maigret, by [OSINT Liar](https://osintliar.com/). |
-| [K2OSINT Bookmarklet](https://github.com/K2SOsint/Bookmarklets/blob/main/WhatsMyName.js) | ![Bookmarklet](https://img.shields.io/badge/-Bookmarklet-lightgrey) | Browser bookmarklet -- enter a username in a popup, results open in a new tab. |
 
 ### ⌨️ Command-line and scripts
 | Tool | Type | Description |
@@ -72,11 +70,12 @@ Tools and scripts read this file and do the actual checking. That separation mea
 | [Reveal My Name](https://github.com/yooper/reveal-my-name) | ![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white) | The original Python checker that shipped with this project, maintained by [@yooper](https://github.com/yooper). |
 | [WMN Screenshooter](https://github.com/swedishmike/WMN_screenshooter) | ![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white) | Selenium-based helper that screenshots identified profile pages. |
 
-### 🖥️ Desktop and platforms
+### 🖥️ Desktop, browser, and platforms
 | Tool | Type | Description |
 |------|------|-------------|
 | [NameSeeker](https://github.com/funnyzak/name-seeker) | ![Electron](https://img.shields.io/badge/-Electron-47848F?logo=electron&logoColor=white) | Cross-platform desktop app for username and email search across hundreds of sites. Exports to PDF, CSV, and JSON. |
 | [Maltego WhatsMyName Transforms](https://github.com/TURROKS/Maltego_WhatsMyName) | ![Maltego](https://img.shields.io/badge/-Maltego-1A1A1A) | Local Maltego transforms that check usernames in real time using the JSON file. |
+| [Who Am I](https://chromewebstore.google.com/detail/who-am-i/gdnhlhadhgnhaenfcphpeakdghkccfoo) | ![Chrome Extension](https://img.shields.io/badge/-Chrome%20Extension-4285F4?logo=googlechrome&logoColor=white) | Chrome/Brave extension combining WMN data with Sherlock and Maigret, by [OSINT Liar](https://osintliar.com/). |
 
 ### 🐳 Self-hosted and containerized
 | Tool | Type | Description |
