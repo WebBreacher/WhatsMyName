@@ -35,16 +35,19 @@ schema, schema_raw, schema_formatted = load_and_format_json(schema_path)
 
 changed = False
 
-# Sort authors and categories
+# Sort authors
 if isinstance(data.get('authors'), list):
     data['authors'] = sort_array_alphabetically(data['authors'])
-
-if isinstance(data.get('categories'), list):
-    data['categories'] = sort_array_alphabetically(data['categories'])
 
 # Sort and reorder sites
 site_schema = schema.get('properties', {}).get('sites', {}).get('items', {})
 key_order = list(site_schema.get('properties', {}).keys())
+
+# The schema's cat enum is the source of truth for valid categories; derive
+# the data file's top-level categories list from it so the two can't drift.
+cat_enum = site_schema.get('properties', {}).get('cat', {}).get('enum', [])
+if cat_enum:
+    data['categories'] = sort_array_alphabetically(cat_enum)
 
 if isinstance(data.get('sites'), list):
     data['sites'].sort(key=lambda site: site.get('name', '').lower())
