@@ -13,6 +13,10 @@
 
 Created in 2015 by [Micah "WebBreacher" Hoffman](https://webbreacher.com), WhatsMyName started as a personal fix for a real frustration: existing username checkers were full of false positives. Over the years, contributions from people all over the world have grown it into one of the most widely-used username enumeration datasets in the OSINT community.
 
+WhatsMyName has grown well beyond this repository. Many tools and sites now build on our data, and some have adopted the WhatsMyName name as well. Not all of them are connected to this project. The tools in [Tools and Sites That Use WhatsMyName](#tools-and-sites-that-use-whatsmyname) use WhatsMyName data and acknowledge the project. If you're looking for a username search built on WhatsMyName data, start there.
+
+**Short link:** whatsmyna.me redirects to this repository and is our official domain name.
+
 ## Table of Contents
 
 - [Just want to search a username right now?](#just-want-to-search-a-username-right-now)
