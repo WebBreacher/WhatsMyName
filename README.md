@@ -71,15 +71,12 @@ Tools and scripts read this file and do the actual checking. That separation mea
 | [WhatsMyName-Client](https://github.com/grabowskiadrian/WhatsMyName-Client) | ![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white) | Python script with request header and POST support by [@grabowskiadrian](https://github.com/grabowskiadrian). Also useful for testing the JSON config. |
 | [Reveal My Name](https://github.com/yooper/reveal-my-name) | ![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white) | The original Python checker that shipped with this project, maintained by [@yooper](https://github.com/yooper). |
 | [WMN Screenshooter](https://github.com/swedishmike/WMN_screenshooter) | ![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white) | Selenium-based helper that screenshots identified profile pages. |
-| [sn0int](https://github.com/kpcyrd/sn0int) | ![Rust](https://img.shields.io/badge/-Rust-000000?logo=rust&logoColor=white) | Uses WMN data in the [kpcyrd/whatsmyname](https://sn0int.com/r/kpcyrd/whatsmyname) module. |
 
 ### 🖥️ Desktop and platforms
 | Tool | Type | Description |
 |------|------|-------------|
 | [NameSeeker](https://github.com/funnyzak/name-seeker) | ![Electron](https://img.shields.io/badge/-Electron-47848F?logo=electron&logoColor=white) | Cross-platform desktop app for username and email search across hundreds of sites. Exports to PDF, CSV, and JSON. |
-| [LinkScope](https://github.com/AccentuSoft/LinkScope_Client) | ![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white) | Uses WMN in its **Online Identity** category. |
 | [Maltego WhatsMyName Transforms](https://github.com/TURROKS/Maltego_WhatsMyName) | ![Maltego](https://img.shields.io/badge/-Maltego-1A1A1A) | Local Maltego transforms that check usernames in real time using the JSON file. |
-| [Spiderfoot](https://github.com/smicallef/spiderfoot) | ![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white) | Integrates WMN in the `sfp_account` module. ([CLI demo video](https://asciinema.org/a/295923)) |
 
 ### 🐳 Self-hosted and containerized
 | Tool | Type | Description |
