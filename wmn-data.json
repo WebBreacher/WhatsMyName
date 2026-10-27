@@ -6556,16 +6556,16 @@
       "cat": "music"
     },
     {
-      "name": "Pronouns.Page",
+      "name": "Pronouns.page",
       "uri_check": "https://pronouns.page/api/profile/get/{account}?version=2",
       "uri_pretty": "https://pronouns.page/@{account}",
       "e_code": 200,
-      "e_string": "username",
-      "m_string": "\"profiles\": {}",
-      "m_code": 304,
+      "e_string": "\"username\":",
+      "m_string": "Page was not found",
+      "m_code": 404,
       "known": [
-        "cannabis_cervi",
-        "user"
+        "neo",
+        "john"
       ],
       "cat": "social"
     },

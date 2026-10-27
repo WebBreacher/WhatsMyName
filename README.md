@@ -93,6 +93,8 @@ The CC BY-SA 4.0 license covers the data in this repository. It does not grant r
 - **Naming your product, domain, app or social accounts "WhatsMyName" (or a close variant) needs our permission first.** This includes ad-supported and commercial sites. It keeps users from confusing your product with this project.
 - **Don't describe your tool as "official"** or imply it is run or endorsed by the WhatsMyName project unless we have agreed to that in writing.
 
+Sites, apps, or services whose name or domain uses "WhatsMyName" or a close variant will not be listed on this page unless we've given permission. Community scripts and libraries that describe themselves as a WhatsMyName client or tool are fine. If you are making an awesome username checker tool, choose a strong name for it that is unique from this project's.
+
 Questions or permission requests: open an issue in this respository.
 
 ---
