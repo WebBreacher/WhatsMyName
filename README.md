@@ -58,6 +58,7 @@ Tools and scripts read this file and do the actual checking. That separation mea
 | Tool | Type | Description |
 |------|------|-------------|
 | [whatsmyname.app](https://whatsmyname.app/) | ![Web](https://img.shields.io/badge/-Web-FF6F00) | The go-to web interface by [the OSINT Combine team](https://twitter.com/osintcombine). Filters by category, exports to CSV and PDF, always pulls the latest data. |
+| [FreeUsername](https://freeusername.com/) | ![Web](https://img.shields.io/badge/-Web-FF6F00) | Formerly WhatsMyName Apps (independent, not affiliated). Combines WMN data with Sherlock and Maigret, with live results and JSON/CSV export. |
 
 ### ⌨️ Command-line and scripts
 | Tool | Type | Description |
