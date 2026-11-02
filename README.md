@@ -73,6 +73,7 @@ Tools and scripts read this file and do the actual checking. That separation mea
 | [NameSeeker](https://github.com/funnyzak/name-seeker) | ![Tauri](https://img.shields.io/badge/-Tauri-FFC131?logo=tauri&logoColor=white) | Cross-platform desktop app for username and email search across hundreds of sites. Exports to PDF, CSV, and JSON. |
 | [Maltego WhatsMyName Transforms](https://github.com/TURROKS/Maltego_WhatsMyName) | ![Maltego](https://img.shields.io/badge/-Maltego-1A1A1A) | Local Maltego transforms that check usernames in real time using the JSON file. |
 | [Who Am I](https://chromewebstore.google.com/detail/who-am-i/gdnhlhadhgnhaenfcphpeakdghkccfoo) | ![Chrome Extension](https://img.shields.io/badge/-Chrome%20Extension-4285F4?logo=googlechrome&logoColor=white) | Chrome/Brave extension combining WMN data with Sherlock and Maigret, by [OSINT Liar](https://osintliar.com/). |
+| [FreeUsername (Android)](https://play.google.com/store/apps/details?id=whatsmyname.app.us) | ![Android](https://img.shields.io/badge/-Android-3DDC84?logo=android&logoColor=white) | Android version of [FreeUsername](https://freeusername.com/), combining WMN data with Sherlock and Maigret. Checks run on the device. Exports to JSON and CSV. |
 
 ### 🐳 Self-hosted and containerized
 | Tool | Type | Description |
