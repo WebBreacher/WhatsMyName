@@ -41,7 +41,6 @@ Websites change all the time and nobody is updating these detections now, so the
 - [How It Works](#how-it-works)
 - [Data format](#data-format)
 - [Tools and Sites That Use WhatsMyName](#tools-and-sites-that-use-whatsmyname)
-- [The WhatsMyName name](#the-whatsmyname-name)
 - [License](#license)
 
 ---
@@ -183,21 +182,6 @@ These tools used WhatsMyName data and credited the project as of November 2026. 
 |------|------|-------------|
 | [WhatsMyName-Web](https://github.com/AXRoux/WhatsMyName-Web) | ![Flask](https://img.shields.io/badge/-Flask-000000?logo=flask&logoColor=white) | Simple Flask web app version of WhatsMyName by [@AXRoux](https://github.com/AXRoux/). |
 | [WhatsMyName Docker](https://github.com/kodamaChameleon/wmn-docker) | ![Docker](https://img.shields.io/badge/-Docker-2496ED?logo=docker&logoColor=white) | Docker API wrapper over the WMN tool by [@kodamaChameleon](https://github.com/kodamaChameleon). |
-
----
-
-## The WhatsMyName name
-
-WhatsMyName is the name of this project, created by Micah Hoffman in 2015.
-
-The CC BY-SA 4.0 license covers the data in this repository. It does not grant rights to the WhatsMyName name or logo. You are welcome to build on the data. Please credit the project as the license requires, for example: "Uses data from the WhatsMyName project (CC BY-SA 4.0)."
-
-**Using the name in your tool:**
-- **Describing what your tool uses is fine:** "Powered by WhatsMyName data", "a WhatsMyName client", "WhatsMyName transforms for Maltego".
-- **Don't name your product, domain, app or social accounts "WhatsMyName" (or a close variant).** This includes ad-supported and commercial sites. It keeps users from confusing your product with this project.
-- **Don't describe your tool as "official"** or imply it is run or endorsed by the WhatsMyName project. The project has closed, so there is no official successor, fork or continuation.
-
-The only official home of WhatsMyName is this repository: https://github.com/WebBreacher/WhatsMyName. The short link whatsmyna.me redirects here while its registration lasts. If that domain ever points anywhere else, it is not this project.
 
 ---
 
