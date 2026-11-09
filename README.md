@@ -3,56 +3,158 @@
 # WhatsMyName
 
 [![License: CC BY-SA 4.0](https://img.shields.io/badge/license-CC--BY--SA--4.0-lightgrey)](http://creativecommons.org/licenses/by-sa/4.0/)
-[![Sites tracked](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FWebBreacher%2FWhatsMyName%2Fmain%2Fwmn-data.json&query=%24.sites.length&label=sites&color=blue)](wmn-data.json)
-[![Categories](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FWebBreacher%2FWhatsMyName%2Fmain%2Fwmn-data.json&query=%24.categories.length&label=categories&color=blue)](wmn-data.json)
+[![Status: archived](https://img.shields.io/badge/status-archived-red)](#the-project-has-closed)
+[![Sites](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FWebBreacher%2FWhatsMyName%2Fmain%2Fwmn-data.json&query=%24.sites.length&label=sites&color=blue)](wmn-data.json)
 [![Contributors](https://img.shields.io/github/contributors/WebBreacher/WhatsMyName)](https://github.com/WebBreacher/WhatsMyName/graphs/contributors)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen)](CONTRIBUTING.md)
-[![GitHub Stars](https://img.shields.io/github/stars/WebBreacher/WhatsMyName?style=social)](https://github.com/WebBreacher/WhatsMyName/stargazers)
 
-**WhatsMyName (WMN) is a community-maintained dataset that lets you find out if a username exists across hundreds of websites.** If you're investigating a person of interest, verifying an online identity, or simply curious about your own digital footprint, this project powers the tools that make that possible.
+## The project has closed
 
-Created in 2015 by [Micah "WebBreacher" Hoffman](https://webbreacher.com), WhatsMyName started as a personal fix for a real frustration: existing username checkers were full of false positives. Over the years, contributions from people all over the world have grown it into one of the most widely-used username enumeration datasets in the OSINT community.
+**As of November 9, 2026, WhatsMyName is no longer maintained.** This repository is archived and read-only. Issues, pull requests and discussions are closed.
 
-WhatsMyName has grown well beyond this repository. Many tools and sites now build on our data, and some have adopted the WhatsMyName name as well. Not all of them are connected to this project. The tools in [Tools and Sites That Use WhatsMyName](#tools-and-sites-that-use-whatsmyname) use WhatsMyName data and acknowledge the project. If you're looking for a username search built on WhatsMyName data, start there.
+### Why I'm closing it
 
-**Short link:** whatsmyna.me redirects to this repository and is our official domain name.
+I started WhatsMyName in 2015 because I was frustrated with how inaccurate the username checker sites of the time were. Eleven years later, a few things have changed:
+
+1. **My interests have moved on.** These days I spend my time on bookmarklets and other projects rather than on WhatsMyName.
+2. **Maintenance has become too much.** Keeping hundreds of site detections working has fallen to me and a few others, and that's more than we can sustain.
+3. **The problem it was built to solve has been solved.** There are some really neat username enumeration sites and tools now. WhatsMyName was a fix for a 2015 problem, and the field has caught up.
+
+### Thank you
+
+For eleven years, people used, forked, extended and argued about this project. Thank you to everyone who contributed a site or a fix, opened an issue, wrote a script or tool on top of the data, maintained a fork, taught it in a class, or used it in an investigation. WhatsMyName was only ever as good as the community around it, and that community made it better than I could have alone.
+
+— Micah "WebBreacher" Hoffman
+
+### What stays
+
+The data stays here, and you can keep using it under its license:
+
+- [`wmn-data.json`](wmn-data.json) holds the final dataset: 691 sites, last updated November 9, 2026.
+- [`wmn-data-schema.json`](wmn-data-schema.json) is its JSON schema.
+- Both stay at their current URLs, so tools that download them from `main` keep working.
+
+Websites change all the time and nobody is updating these detections now, so the data will get less accurate over time. Treat results as leads to verify, not as facts.
 
 ## Table of Contents
 
-- [Just want to search a username right now?](#just-want-to-search-a-username-right-now)
+- [About WhatsMyName](#about-whatsmyname)
 - [How It Works](#how-it-works)
+- [Data format](#data-format)
 - [Tools and Sites That Use WhatsMyName](#tools-and-sites-that-use-whatsmyname)
-- [Help Keep WMN Accurate](#help-keep-wmn-accurate)
-- [Stay Connected](#stay-connected)
 - [License](#license)
 
 ---
 
-## Just want to search a username right now?
+## About WhatsMyName
 
-Head to **[whatsmyname.app](https://whatsmyname.app/)** -- a free, browser-based tool built directly on this dataset. No installation required.
+WhatsMyName (WMN) was a community-maintained dataset for finding out whether a username exists across hundreds of websites. Investigators, researchers and curious people used it to verify online identities and check their own digital footprints.
 
-Or check out the [many tools below that use WMN](#tools-and-sites-that-use-whatsmyname).
+[Micah "WebBreacher" Hoffman](https://webbreacher.com) created WhatsMyName in 2015 to deal with a real frustration: existing username checkers were full of false positives. Contributions from people all over the world grew it into one of the most widely used username enumeration datasets in the OSINT community.
+
+Many tools and sites build on the data, and some have adopted the WhatsMyName name as well. Not all of them are connected to this project. The tools listed in [Tools and Sites That Use WhatsMyName](#tools-and-sites-that-use-whatsmyname) use WhatsMyName data and credit the project.
 
 ---
 
 ## How It Works
 
-WMN is a single, carefully maintained JSON file (`wmn-data.json`). Each entry describes how to check one website for a username -- what URL to query, what a successful response looks like, and what a "not found" response looks like.
+WMN is a single JSON file, `wmn-data.json`. Each entry describes how to check one website for a username: what URL to request, what a response looks like when the account exists, and what it looks like when it doesn't.
 
-Tools and scripts read this file and do the actual checking. That separation means anyone can build a checker, and the data stays accurate regardless of which tool you prefer.
+Tools read this file and do the actual checking. That separation means anyone can build a checker on top of the same data.
 
-**For a site to be included, it must:**
+To be included, a site had to:
 
-1. **Be publicly accessible** -- sites behind paywalls or login walls can't be checked
-2. **Include the username in the URL** -- the profile URL must contain the username directly
-3. **Not transform the username** -- sites that swap usernames for numeric IDs won't work
+1. **Be publicly accessible.** Sites behind paywalls or logins can't be checked.
+2. **Include the username in the URL.** The profile URL must contain the username directly.
+3. **Not transform the username.** Sites that swap usernames for numeric IDs won't work.
 
-> In May 2023, we removed the bundled checker scripts and shifted focus entirely to maintaining the data file. See the tools section below for checkers that use our data.
+---
+
+## Data format
+
+`wmn-data.json` has four top-level elements: `license`, `authors`, `categories` and `sites`. Each item in `sites` uses these fields, in this order:
+
+| Field | Required? | Purpose |
+|---|---|---|
+| `name` | required | Display name of the site |
+| `uri_check` | required | URL to check, with `{account}` in place of the username |
+| `uri_pretty` | optional | Human-readable profile URL, used when `uri_check` is an API endpoint |
+| `post_body` | optional | Request body. If present, the check is a POST request |
+| `headers` | optional | HTTP headers to send. Always present when `post_body` is set |
+| `strip_bad_char` | optional | Characters to remove from the username before building the request. Each character is removed separately (`"@."` means remove `@` and `.`) |
+| `e_code` | required | HTTP status code when the account exists |
+| `e_string` | required | A string present only when the account exists |
+| `m_string` | required | A string present only when the account does not exist |
+| `m_code` | required | HTTP status code when the account does not exist |
+| `known` | required | Usernames that existed on the site when the entry was last verified |
+| `cat` | required | Category, one of the values in the schema's `cat` enum |
+| `valid` | optional | `false` means the entry was known to be broken. Checkers should skip it |
+| `protection` | optional | Anti-automation measures seen on the site, such as `cloudflare`, `captcha` or `user-agent` |
+
+### Checking a site
+
+1. Remove any `strip_bad_char` characters from the username.
+2. Replace `{account}` in `uri_check` (and in `post_body`, if present) with the username. Use plain string replacement: many `post_body` values are JSON, so template functions that treat `{` and `}` as placeholders will break them.
+3. Send a POST with `post_body` and `headers` if `post_body` exists. Otherwise send a GET, still including any `headers`.
+4. Decide the result:
+   - **Found:** the status code equals `e_code` and the body contains `e_string`.
+   - **Not found:** the status code equals `m_code` and the body contains `m_string`.
+   - **Anything else** is unknown: the site may be blocking you, down, or changed since the entry was written.
+
+Many sites use the same code for both outcomes (often `200`), so never decide on the status code alone. Always check the strings too.
+
+### Example: GET entry
+
+```json
+{
+  "name": "Example GET",
+  "uri_check": "https://www.example.com/load_profile_info.php?name={account}",
+  "uri_pretty": "https://www.example.com/profile/{account}",
+  "headers": {
+    "Accept": "text/html"
+  },
+  "e_code": 200,
+  "e_string": "\"registered_at\":",
+  "m_string": "\"error\":\"not_found\"",
+  "m_code": 404,
+  "known": [
+    "whoami",
+    "johndoe"
+  ],
+  "cat": "images",
+  "protection": [
+    "captcha",
+    "cloudflare"
+  ]
+}
+```
+
+### Example: POST entry
+
+```json
+{
+  "name": "Example POST",
+  "uri_check": "https://www.example.com/interact_api/load_profile_info.php",
+  "post_body": "{\"username\":\"{account}\"}",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "e_code": 200,
+  "e_string": "\"registered_at\":",
+  "m_string": "\"error\":\"not_found\"",
+  "m_code": 404,
+  "known": [
+    "whoami",
+    "johndoe"
+  ],
+  "cat": "images"
+}
+```
 
 ---
 
 ## Tools and Sites That Use WhatsMyName
+
+These tools used WhatsMyName data and credited the project as of November 2026. Their maintainers run them independently, and this list will not be updated.
 
 ### 🌐 Web-based (no install required)
 | Tool | Type | Description |
@@ -80,51 +182,6 @@ Tools and scripts read this file and do the actual checking. That separation mea
 |------|------|-------------|
 | [WhatsMyName-Web](https://github.com/AXRoux/WhatsMyName-Web) | ![Flask](https://img.shields.io/badge/-Flask-000000?logo=flask&logoColor=white) | Simple Flask web app version of WhatsMyName by [@AXRoux](https://github.com/AXRoux/). |
 | [WhatsMyName Docker](https://github.com/kodamaChameleon/wmn-docker) | ![Docker](https://img.shields.io/badge/-Docker-2496ED?logo=docker&logoColor=white) | Docker API wrapper over the WMN tool by [@kodamaChameleon](https://github.com/kodamaChameleon). |
-
----
-
-## The WhatsMyName name
-
-WhatsMyName is the name of this project, created by Micah Hoffman in 2015.
-
-The CC BY-SA 4.0 license covers the data in this repository. It does not grant rights to the WhatsMyName name or logo. You are welcome to build on the data, and we ask that you credit the project as the license requires, for example: "Uses data from the WhatsMyName project (CC BY-SA 4.0)." 
-
-**Using the name in your tool:**
-- **Describing what your tool uses is fine:** "Powered by WhatsMyName data", "a WhatsMyName client", "WhatsMyName transforms for Maltego".
-- **Naming your product, domain, app or social accounts "WhatsMyName" (or a close variant) needs our permission first.** This includes ad-supported and commercial sites. It keeps users from confusing your product with this project.
-- **Don't describe your tool as "official"** or imply it is run or endorsed by the WhatsMyName project unless we have agreed to that in writing.
-
-Sites, apps, or services whose name or domain uses "WhatsMyName" or a close variant will not be listed on this page unless we've given permission. Community scripts and libraries that describe themselves as a WhatsMyName client or tool are fine. If you are making an awesome username checker tool, choose a strong name for it that is unique from this project's.
-
-Questions or permission requests: open an issue in this respository.
-
----
-
-## Official resources
-
-The only official home of WhatsMyName is this repository: https://github.com/WebBreacher/WhatsMyName and https://whatsmyna.me.
-
----
-
-## Help Keep WMN Accurate
-
-This project only stays useful if the detections stay accurate. Websites change their profile URLs, response codes, and page content constantly. **We need contributors to help find new sites and fix broken detections.**
-
-You don't need to be a developer. Here's how to help at any level:
-
-| Experience level | How to contribute |
-|-----------------|-------------------|
-| No technical background | [Submit a site via this form](https://forms.office.com/r/TscnNQqrD1) |
-| Comfortable with GitHub | [Open an issue](https://github.com/WebBreacher/WhatsMyName/issues) with a link to an example profile |
-| Comfortable with JSON and HTTP | Fork the repo, fix or add a detection, and submit a pull request |
-
-See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed instructions on adding or fixing site detections, including format requirements and examples. Please also read our [Code of Conduct](CODE_OF_CONDUCT.md).
-
----
-
-## Stay Connected
-
-Follow the project on [LinkedIn](https://www.linkedin.com/company/whatsmynameproject) for updates.
 
 ---
 
