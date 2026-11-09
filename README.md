@@ -9,7 +9,7 @@
 
 ## The project has closed
 
-**As of December 1, 2026, WhatsMyName is no longer maintained.** This repository is archived and read-only. Issues, pull requests and discussions are closed.
+**As of November 9, 2026, WhatsMyName is no longer maintained.** This repository is archived and read-only. Issues, pull requests and discussions are closed.
 
 ### Why I'm closing it
 
@@ -194,13 +194,10 @@ The CC BY-SA 4.0 license covers the data in this repository. It does not grant r
 
 **Using the name in your tool:**
 - **Describing what your tool uses is fine:** "Powered by WhatsMyName data", "a WhatsMyName client", "WhatsMyName transforms for Maltego".
-- **Naming your product, domain, app or social accounts "WhatsMyName" (or a close variant) needs permission first.** This includes ad-supported and commercial sites. It keeps users from confusing your product with this project.
-- **Don't describe your tool as "official"** or imply it is run or endorsed by the WhatsMyName project.
+- **Don't name your product, domain, app or social accounts "WhatsMyName" (or a close variant).** This includes ad-supported and commercial sites. It keeps users from confusing your product with this project.
+- **Don't describe your tool as "official"** or imply it is run or endorsed by the WhatsMyName project. The project has closed, so there is no official successor, fork or continuation.
 
-<!-- TODO(Micah): permission contact now that issues are closed -->
-
-The only official home of WhatsMyName is this repository: https://github.com/WebBreacher/WhatsMyName.
-<!-- TODO(Micah): keep or drop whatsmyna.me -->
+The only official home of WhatsMyName is this repository: https://github.com/WebBreacher/WhatsMyName. The short link whatsmyna.me redirects here while its registration lasts. If that domain ever points anywhere else, it is not this project.
 
 ---
 
