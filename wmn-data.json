@@ -4603,19 +4603,6 @@
       "cat": "gaming"
     },
     {
-      "name": "MAGABOOK",
-      "uri_check": "https://magabook.com/{account}",
-      "e_code": 200,
-      "e_string": "Timeline",
-      "m_string": "",
-      "m_code": 302,
-      "known": [
-        "KristenSuzanne",
-        "mikeflbmer"
-      ],
-      "cat": "social"
-    },
-    {
       "name": "Magix",
       "uri_check": "https://www.magix.info/us/users/profile/{account}/",
       "e_code": 200,
