@@ -11,7 +11,21 @@
 
 **As of December 1, 2026, WhatsMyName is no longer maintained.** This repository is archived and read-only. Issues, pull requests and discussions are closed.
 
-<!-- TODO(Micah): reasons for closing -->
+### Why I'm closing it
+
+I started WhatsMyName in 2015 because I was frustrated with how inaccurate the username checker sites of the time were. Eleven years later, a few things have changed:
+
+1. **My interests have moved on.** These days I spend my time on bookmarklets and other projects rather than on WhatsMyName.
+2. **Maintenance has become too much.** Keeping hundreds of site detections working has fallen to me and a few others, and that's more than we can sustain.
+3. **The problem it was built to solve has been solved.** There are some really neat username enumeration sites and tools now. WhatsMyName was a fix for a 2015 problem, and the field has caught up.
+
+### Thank you
+
+For eleven years, people used, forked, extended and argued about this project. Thank you to everyone who contributed a site or a fix, opened an issue, wrote a script or tool on top of the data, maintained a fork, taught it in a class, or used it in an investigation. WhatsMyName was only ever as good as the community around it, and that community made it better than I could have alone.
+
+— Micah "WebBreacher" Hoffman
+
+### What stays
 
 The data stays here, and you can keep using it under its license:
 
@@ -20,8 +34,6 @@ The data stays here, and you can keep using it under its license:
 - Both stay at their current URLs, so tools that download them from `main` keep working.
 
 Websites change all the time and nobody is updating these detections now, so the data will get less accurate over time. Treat results as leads to verify, not as facts.
-
-Thank you to everyone who contributed sites, fixes, tools and ideas since 2015.
 
 ## Table of Contents
 
